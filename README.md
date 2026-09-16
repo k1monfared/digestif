@@ -101,7 +101,10 @@ The generated `graph.html` is one self-contained file, no server and no network 
 - Ctrl+1..9 show that many layers, Ctrl+0 shows all of them, Ctrl+Alt+1..9 focus the selected branch.
 - The selected node's edges are bold and stay bold even when the node is panned out of view, so you can trace a link to its far end.
 - Click or tap an edge to highlight it. A small pill appears with the relation type and a follow button. The arrow points in the direction of travel relative to the selected node, and following smoothly pans the graph to the other end over a quarter second instead of jumping.
-- The sidebar shows the selected node: type, attribution, its cited excerpts expanded by default, and every relation with its color. Its left edge drags to resize the panel. On small screens it becomes a drawer toggled by a floating button in the top right, and the graph keeps the full width.
+- The sidebar is docked to the right edge, top to bottom, with a thin divider. A small pill in the middle of the divider drags left and right to resize it. The sidebar header, with the node title and the Source toggle, stays in place while the content below it scrolls. Its body shows the selected node: type, attribution, its cited excerpts expanded by default, and every relation with its color.
+- A toggle button in the top right opens and closes the sidebar. It sits in the top right corner of the graph when the sidebar is closed, and becomes part of the sidebar header when it is open. This works the same on every screen size. Clicking or tapping a node selects it but no longer opens the sidebar, and Enter opens it on the selected node.
+- Help and Legend sit as two separate buttons in the top bar, each opening a small popover. The top bar lays itself out in two clean rows on narrow screens instead of wrapping raggedly.
+- On small screens the sidebar becomes a drawer at 88 percent of the width, toggled by the same button, and it overlays the graph instead of shrinking it.
 - The Source toggle in the sidebar switches between the excerpts and the full source text. The selected node's sentences are tinted in its type color, related nodes' sentences in the color of the relation, claim blue, evidence green, contradicts red, and so on. Clicking a highlighted sentence jumps to a node that cites it.
 
 ## The skill

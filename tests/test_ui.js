@@ -75,6 +75,81 @@ const state = page => page.evaluate(() => {
   ok("sidebar: no parent or children sections", !panelInfo.sects.includes("Parent") && !panelInfo.sects.includes("Children"), panelInfo.sects);
   ok("sidebar: citations expanded by default", panelInfo.passages === 2 && panelInfo.passagesVisible, panelInfo);
 
+  const chrome = await page.evaluate(() => {
+    const panel = document.getElementById("panel").getBoundingClientRect();
+    const toggle = document.getElementById("panelToggle").getBoundingClientRect();
+    const head = document.getElementById("panelHead").getBoundingClientRect();
+    const wrapTop = document.getElementById("canvasWrap").getBoundingClientRect().top;
+    return {
+      grip: !!document.getElementById("panelGrip"),
+      docked: Math.abs(panel.right - window.innerWidth) <= 1 && Math.abs(panel.top - wrapTop) <= 1,
+      toggleInsideHead: toggle.top >= head.top - 2 && toggle.bottom <= head.bottom + 2,
+      toggleTopRight: toggle.right > window.innerWidth - 60
+    };
+  });
+  ok("sidebar: docked flush right with a grip handle", chrome.grip && chrome.docked, chrome);
+  ok("sidebar: toggle sits in the sidebar header when open", chrome.toggleInsideHead, chrome);
+  const headerSticky = await page.evaluate(() => {
+    const body = document.getElementById("panelBody");
+    const before = Math.round(document.getElementById("pMode").getBoundingClientRect().top);
+    body.scrollTop = body.scrollHeight;
+    const after = Math.round(document.getElementById("pMode").getBoundingClientRect().top);
+    const pr = document.getElementById("panel").getBoundingClientRect();
+    body.scrollTop = 0;
+    return { before, after, inside: after >= pr.top && after <= pr.bottom };
+  });
+  ok("sidebar: header stays visible while the body scrolls", headerSticky.before === headerSticky.after && headerSticky.inside, headerSticky);
+
+  const pops = await page.evaluate(() => {
+    document.getElementById("btnHelp").click();
+    const helpOpen = document.getElementById("help").classList.contains("open");
+    const legendClosed = !document.getElementById("legend").classList.contains("open");
+    document.getElementById("btnLegend").click();
+    const legendOpen = document.getElementById("legend").classList.contains("open");
+    const helpClosed = !document.getElementById("help").classList.contains("open");
+    return {
+      helpOpen, legendClosed, legendOpen, helpClosed,
+      inTopbar: !!document.getElementById("btnHelp").closest("#topbar") && !!document.getElementById("btnLegend").closest("#topbar")
+    };
+  });
+  ok("topbar: help and legend are separate toggles that swap", pops.helpOpen && pops.legendClosed && pops.legendOpen && pops.helpClosed && pops.inTopbar, pops);
+  await page.keyboard.press("Escape");
+  const popsClosed = await page.evaluate(() => !document.getElementById("legend").classList.contains("open") && !document.getElementById("help").classList.contains("open"));
+  ok("topbar: escape closes the popovers", popsClosed, popsClosed);
+
+  await page.click("#panelToggle");
+  await page.waitForTimeout(120);
+  const closed = await page.evaluate(() => ({
+    open: document.getElementById("panel").classList.contains("open"),
+    wrapRight: document.getElementById("canvasWrap").style.right
+  }));
+  ok("sidebar: toggle closes it and frees the width", !closed.open && closed.wrapRight === "0px", closed);
+  const boxOf = ref => page.evaluate(ref => {
+    const g = [...document.querySelectorAll("#gNodes g")].find(el => el.querySelector("text").textContent.startsWith(ref));
+    const r = g.getBoundingClientRect();
+    return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
+  }, ref);
+  let nb = await boxOf("3 ");
+  await page.mouse.click(nb.x, nb.y);
+  await page.waitForTimeout(120);
+  const afterClick = await page.evaluate(() => ({
+    open: document.getElementById("panel").classList.contains("open"),
+    selected: (() => { const g = document.querySelector("#gNodes g.selected"); return g ? g.querySelector("text").textContent.split(" ")[0] : null; })()
+  }));
+  ok("sidebar: clicking a node selects but does not open it", !afterClick.open && afterClick.selected === "3", afterClick);
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(120);
+  const afterEnter = await page.evaluate(() => ({
+    open: document.getElementById("panel").classList.contains("open"),
+    title: document.getElementById("panelTitle").textContent
+  }));
+  ok("sidebar: enter opens it on the selected node", afterEnter.open && afterEnter.title === "Node 3", afterEnter);
+  nb = await boxOf("summary");
+  await page.mouse.click(nb.x, nb.y);
+  await page.waitForTimeout(120);
+  s = await state(page);
+  ok("sidebar: root selected again for the next checks", s.selected === "summary", s.selected);
+
   await page.keyboard.press("Enter");
   s = await state(page);
   ok("enter: sidebar focus on first row", s.kbdFocus === 1, s.kbdFocus);
@@ -669,8 +744,8 @@ const state = page => page.evaluate(() => {
   await page.waitForTimeout(150);
   s = await state(page);
   ok("big graph: space unfolds the summary", s.nodes === 1 + bigMains, s.nodes);
-  const noSrc = await page.evaluate(() => !document.getElementById("pMode"));
-  ok("big graph: no source toggle without source text", noSrc);
+  const noSrc = await page.evaluate(() => getComputedStyle(document.getElementById("pMode")).display);
+  ok("big graph: no source toggle without source text", noSrc === "none", noSrc);
   fs.rmSync(bigTmp, { recursive: true, force: true });
 
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
@@ -678,22 +753,22 @@ const state = page => page.evaluate(() => {
   await mobile.waitForTimeout(400);
   const m = await mobile.evaluate(() => ({
     panelOpen: document.getElementById("panel").classList.contains("open"),
-    fab: getComputedStyle(document.getElementById("panelFab")).display,
+    toggle: getComputedStyle(document.getElementById("panelToggle")).display,
     wrapRight: document.getElementById("canvasWrap").style.right,
     touchAction: getComputedStyle(document.getElementById("canvasWrap")).touchAction,
     scrollbar: getComputedStyle(document.getElementById("canvasWrap")).scrollbarWidth
   }));
-  ok("mobile: panel starts closed with a floating toggle", !m.panelOpen && m.fab === "flex", m);
+  ok("mobile: panel starts closed with the toggle visible", !m.panelOpen && m.toggle === "flex", m);
   ok("mobile: canvas owns touch gestures and hides scrollbars",
     m.touchAction === "pan-x pan-y" && m.scrollbar === "none" && m.wrapRight !== undefined, m);
-  await mobile.tap("#panelFab");
+  await mobile.tap("#panelToggle");
   await mobile.waitForTimeout(150);
   const m2 = await mobile.evaluate(() => ({
     open: document.getElementById("panel").classList.contains("open"),
-    fabShifted: document.getElementById("panelFab").classList.contains("shifted"),
+    on: document.getElementById("panelToggle").classList.contains("on"),
     wrapRight: document.getElementById("canvasWrap").style.right
   }));
-  ok("mobile: floating toggle opens the drawer", m2.open && m2.fabShifted, m2);
+  ok("mobile: toggle opens the drawer", m2.open && m2.on, m2);
   ok("mobile: drawer overlays the graph without shrinking it", m2.wrapRight === "0px", m2.wrapRight);
   const zBefore = await mobile.evaluate(() => z);
   await mobile.evaluate(() => {
@@ -709,10 +784,10 @@ const state = page => page.evaluate(() => {
   await mobile.waitForTimeout(120);
   const zAfter = await mobile.evaluate(() => z);
   ok("mobile: pinch zooms the graph, not the page", zAfter > zBefore * 1.4, [zBefore, zAfter]);
-  await mobile.tap("#panelFab");
+  await mobile.tap("#panelToggle");
   await mobile.waitForTimeout(150);
   const m3 = await mobile.evaluate(() => document.getElementById("panel").classList.contains("open"));
-  ok("mobile: floating toggle closes the drawer", !m3, m3);
+  ok("mobile: toggle closes the drawer", !m3, m3);
   await mobile.close();
 
   ok("no page errors", errors.length === 0, errors);

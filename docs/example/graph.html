@@ -18,18 +18,20 @@
   body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
   #topbar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 20;
-    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
-    padding: 10px 14px; background: rgba(255,255,255,.92); border-bottom: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px;
+    padding: 8px 12px; background: rgba(255,255,255,.94); border-bottom: 1px solid var(--line);
   }
-  #topbar h1 { font-size: 15px; margin: 0 8px 0 0; font-weight: 650; }
-  #topbar .src { color: var(--muted); font-size: 12px; margin-right: 6px; }
+  #brand { display: flex; align-items: baseline; gap: 8px; flex: 1 1 200px; min-width: 0; }
+  #title { font-size: 14.5px; margin: 0; font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #srcname { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #tools { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-left: auto; }
   #topbar button, #topbar input[type="text"] {
-    font: inherit; font-size: 12.5px; padding: 5px 10px; border: 1px solid var(--line);
+    font: inherit; font-size: 12.5px; height: 28px; padding: 0 10px; border: 1px solid var(--line);
     border-radius: 7px; background: #fff; color: var(--ink); cursor: pointer;
   }
   #topbar button:hover { border-color: var(--accent); }
-  #topbar input[type="range"] { width: 120px; }
-  #searchBox { width: 180px; cursor: text; }
+  #topbar button.on { background: #eef2ff; border-color: var(--accent); color: var(--accent); }
+  #searchBox { width: 190px; cursor: text; }
   #searchCount { font-size: 12px; color: var(--muted); }
   #canvasWrap { position: absolute; left: 0; right: 0; top: 52px; bottom: 0; overflow: auto; cursor: grab; touch-action: pan-x pan-y; scrollbar-width: none; }
   #canvasWrap.panning { cursor: grabbing; }
@@ -38,23 +40,17 @@
   svg { display: block; cursor: grab; }
   svg.panning { cursor: grabbing; }
   svg text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
-  #blPanel {
-    position: fixed; left: 12px; bottom: 12px; z-index: 20; max-width: 500px;
-    background: rgba(255,255,255,.94); border: 1px solid var(--line); border-radius: 10px;
-    padding: 10px 12px; font-size: 12px;
+  .pop {
+    position: fixed; left: 12px; z-index: 21; display: none; max-width: 520px;
+    background: rgba(255,255,255,.97); border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px 14px; font-size: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    max-height: calc(100vh - 100px); overflow: auto;
   }
-  #helpHead {
-    display: flex; justify-content: space-between; align-items: center; gap: 8px;
-    cursor: pointer; font-weight: 650; font-size: 11px; color: var(--muted);
-    text-transform: uppercase; letter-spacing: .06em; user-select: none;
-  }
-  #blPanel.collapsed #helpBody { display: none; }
-  #helpToggle { border: none; background: none; cursor: pointer; color: var(--muted); font-size: 14px; line-height: 1; padding: 0 2px; }
-  #helpBody { margin-top: 6px; color: var(--ink); }
+  .pop.open { display: block; }
   #helpGrid { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; align-items: baseline; }
-  #helpBody .k { color: var(--accent); font-weight: 600; white-space: nowrap; }
-  #legend { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 2px; }
-  #legend .lg-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 0; align-items: center; }
+  #helpGrid .k { color: var(--accent); font-weight: 600; white-space: nowrap; }
+  #legend .lg-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; align-items: center; }
+  #legend .lg-row:last-child { margin-bottom: 0; }
   #legend .chip {
     display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px;
     border: 1px solid var(--line); border-radius: 999px; background: #fff; cursor: pointer;
@@ -64,13 +60,18 @@
   #legend .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
   #legend .lswatch { width: 22px; height: 0; border-top-width: 2.4px; display: inline-block; }
   #panel {
-    position: fixed; top: 52px; right: 12px; bottom: 12px; width: 330px; z-index: 25;
-    background: var(--panel-bg); border: 1px solid var(--line); border-radius: 12px;
-    padding: 14px; overflow-y: auto; display: none; box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    position: fixed; top: 52px; right: 0; bottom: 0; width: 330px; z-index: 25;
+    background: var(--panel-bg); border-left: 1px solid var(--line);
+    display: none; flex-direction: column;
   }
-  #panel.open { display: block; }
-  #panel h2 { font-size: 13px; margin: 0 0 8px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
-  #panel .close { float: right; border: none; background: none; font-size: 16px; cursor: pointer; color: var(--muted); }
+  #panel.open { display: flex; }
+  #panelHead {
+    display: flex; align-items: center; gap: 8px; flex: none;
+    padding: 9px 56px 9px 14px; border-bottom: 1px solid var(--line); background: var(--panel-bg);
+  }
+  #panelTitle { flex: 1; margin: 0; font-size: 13px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #panelBody { flex: 1; overflow-y: auto; padding: 12px 14px 20px; }
+  #panelBody h2 { font-size: 13px; margin: 0 0 8px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
   #panel .tagrow { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
   #panel .tag { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #eef2ff; color: #3730a3; }
   #panel .text { font-size: 14px; line-height: 1.45; margin-bottom: 10px; }
@@ -83,28 +84,27 @@
   #panel .srcbtn { display: inline-block; font: inherit; font-size: 12px; padding: 3px 8px; margin: 2px 4px 2px 0; border: 1px solid var(--line); border-radius: 7px; background: #fff; cursor: pointer; }
   #panel .passage { display: none; font-size: 12.5px; line-height: 1.5; background: #f7f7f4; border: 1px solid var(--line); border-radius: 7px; padding: 8px; margin: 4px 0; }
   #panel .passage.show { display: block; cursor: pointer; }
-  #panelHead { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-  #panelHead h2 { flex: 1; margin: 0; }
-  #pMode { font-size: 11px; padding: 3px 9px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); cursor: pointer; white-space: nowrap; }
+  #pMode { font-size: 11px; height: 24px; padding: 0 9px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); cursor: pointer; white-space: nowrap; }
   #pMode:hover { border-color: var(--accent); }
   #pMode.on { background: #eef2ff; border-color: var(--accent); color: var(--accent); }
   #sourceBody { font-size: 12.5px; line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
   #sourceBody mark { background: transparent; border-radius: 2px; cursor: pointer; padding: 0 1px; }
   #panelHandle {
-    position: fixed; top: 52px; bottom: 12px; width: 9px; right: 0; z-index: 26;
-    cursor: col-resize; display: none; border-radius: 5px;
+    position: fixed; top: 52px; bottom: 0; width: 14px; right: 0; z-index: 26;
+    cursor: col-resize; display: none; align-items: center; justify-content: center;
   }
-  #panelHandle.open { display: block; }
-  #panelHandle:hover, #panelHandle.dragging { background: rgba(37, 99, 235, .25); }
-  #panelFab {
-    position: fixed; top: 60px; right: 12px; z-index: 27;
-    width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line);
-    background: rgba(255, 255, 255, .95); color: var(--ink); cursor: pointer;
-    display: none; align-items: center; justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .10);
+  #panelHandle.open { display: flex; }
+  #panelGrip { width: 4px; height: 42px; border-radius: 3px; background: #d1d5db; transition: background .12s; }
+  #panelHandle:hover #panelGrip, #panelHandle.dragging #panelGrip { background: var(--accent); }
+  #panelToggle {
+    position: fixed; top: 60px; right: 10px; z-index: 27;
+    width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--line);
+    background: rgba(255,255,255,.95); color: var(--ink); cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
   }
-  #panelFab svg { width: 18px; height: 18px; display: block; }
-  #panelFab:hover { border-color: var(--accent); }
+  #panelToggle svg { width: 17px; height: 17px; display: block; }
+  #panelToggle:hover { border-color: var(--accent); }
+  #panelToggle.on { background: #eef2ff; border-color: var(--accent); color: var(--accent); }
   #edgePop {
     position: fixed; z-index: 28; display: flex; align-items: center; gap: 6px;
     background: rgba(255, 255, 255, .97); border: 1px solid var(--line); border-radius: 999px;
@@ -121,13 +121,13 @@
   #edgeFollow:hover { border-color: var(--accent); }
   .edge-hit { pointer-events: stroke; }
   @media (max-width: 720px) {
-    #panelFab { display: flex; }
-    #panelFab.shifted { right: calc(min(88vw, 360px) + 20px); }
+    #topbar { padding: 7px 10px; gap: 6px 8px; }
+    #brand { flex: 1 1 100%; }
+    #tools { flex: 1 1 100%; margin-left: 0; }
+    #searchBox { flex: 1 1 120px; width: auto; min-width: 110px; }
+    #panel { width: min(88vw, 360px); }
     #panelHandle { display: none !important; }
-    #panel { width: min(88vw, 360px); top: 56px; }
-    #blPanel { max-width: calc(100vw - 24px); }
-    #searchBox { width: 120px; }
-    #topbar h1 { font-size: 14px; }
+    .pop { left: 8px; right: 8px; max-width: none; }
   }
   .node rect { stroke-width: 1.2; }
   .node { cursor: pointer; }
@@ -142,12 +142,16 @@
 </head>
 <body>
 <div id="topbar">
-  <h1 id="title"></h1><span class="src" id="srcname"></span>
-  <button id="btnAll">All layers</button>
-  <button id="btnFit">Fit</button>
-  <button id="btnReset">Reset</button>
-  <input type="text" id="searchBox" placeholder="search ideas...">
-  <span id="searchCount"></span>
+  <div id="brand"><h1 id="title"></h1><span id="srcname"></span></div>
+  <div id="tools">
+    <button id="btnAll">All layers</button>
+    <button id="btnFit">Fit</button>
+    <button id="btnReset">Reset</button>
+    <button id="btnHelp">Help</button>
+    <button id="btnLegend">Legend</button>
+    <input type="text" id="searchBox" placeholder="search ideas...">
+    <span id="searchCount"></span>
+  </div>
 </div>
 <div id="canvasWrap"><div id="world"><svg id="canvas">
   <defs id="defs"></defs>
@@ -156,39 +160,43 @@
   <g id="gNodes"></g>
   <g id="gTop"></g>
 </svg></div></div>
-<div id="blPanel" class="collapsed">
-  <div id="helpHead"><span>help &amp; legend</span><button id="helpToggle" title="collapse/expand">+</button></div>
-  <div id="helpBody">
-    <div id="helpGrid">
-      <span class="k">scroll</span><span>move the page</span>
-      <span class="k">shift+scroll</span><span>move sideways</span>
-      <span class="k">ctrl+scroll</span><span>zoom at cursor</span>
-      <span class="k">ctrl+= / ctrl+-</span><span>zoom in and out</span>
-      <span class="k">drag</span><span>free pan in any direction</span>
-      <span class="k">dblclick</span><span>fit view</span>
-      <span class="k">arrows</span><span>navigate, top to bottom order</span>
-      <span class="k">left</span><span>fold the branch, or go to parent</span>
-      <span class="k">right</span><span>unfold, go to first child</span>
-      <span class="k">space</span><span>fold or unfold selected branch</span>
-      <span class="k">enter</span><span>step into the sidebar</span>
-      <span class="k">esc</span><span>back to the graph</span>
-      <span class="k">ctrl+1..9</span><span>show that many layers</span>
-      <span class="k">ctrl+0</span><span>unfold everything</span>
-      <span class="k">ctrl+alt+1..9</span><span>focus the selected branch</span>
-      <span class="k">source</span><span>sidebar toggle between excerpts and the full source</span>
-      <span class="k">edge</span><span>click an edge, then follow it to the other end</span>
-      <span class="k">drag edge</span><span>resize the sidebar</span>
-      <span class="k">click</span><span>select a node</span>
-    </div>
-    <div id="legend">
-      <div class="lg-row" id="legendNodeChips"></div>
-      <div class="lg-row" id="legendEdgeChips"></div>
-    </div>
+<div id="help" class="pop">
+  <div id="helpGrid">
+    <span class="k">scroll</span><span>move the page</span>
+    <span class="k">shift+scroll</span><span>move sideways</span>
+    <span class="k">ctrl+scroll</span><span>zoom at cursor</span>
+    <span class="k">ctrl+= / ctrl+-</span><span>zoom in and out</span>
+    <span class="k">drag</span><span>free pan in any direction</span>
+    <span class="k">dblclick</span><span>fit view</span>
+    <span class="k">arrows</span><span>navigate, top to bottom order</span>
+    <span class="k">left</span><span>fold the branch, or go to parent</span>
+    <span class="k">right</span><span>unfold, go to first child</span>
+    <span class="k">space</span><span>fold or unfold selected branch</span>
+    <span class="k">enter</span><span>open the sidebar and step into it</span>
+    <span class="k">esc</span><span>back to the graph, close popovers</span>
+    <span class="k">ctrl+1..9</span><span>show that many layers</span>
+    <span class="k">ctrl+0</span><span>unfold everything</span>
+    <span class="k">ctrl+alt+1..9</span><span>focus the selected branch</span>
+    <span class="k">sidebar</span><span>the top right button opens and closes it</span>
+    <span class="k">source</span><span>sidebar toggle between excerpts and the full source</span>
+    <span class="k">edge</span><span>click an edge, then follow it to the other end</span>
+    <span class="k">cursor pill</span><span>drag the divider to resize the sidebar</span>
+    <span class="k">click</span><span>select a node, it does not open the sidebar</span>
   </div>
 </div>
-<div id="panel"></div>
-<div id="panelHandle" title="drag to resize the sidebar"></div>
-<button id="panelFab" title="toggle the sidebar" aria-label="toggle the sidebar">
+<div id="legend" class="pop">
+  <div class="lg-row" id="legendNodeChips"></div>
+  <div class="lg-row" id="legendEdgeChips"></div>
+</div>
+<aside id="panel">
+  <div id="panelHead">
+    <h2 id="panelTitle"></h2>
+    <button id="pMode" style="display: none"></button>
+  </div>
+  <div id="panelBody"></div>
+</aside>
+<div id="panelHandle" title="drag to resize the sidebar"><span id="panelGrip"></span></div>
+<button id="panelToggle" title="open or close the sidebar" aria-label="open or close the sidebar">
   <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6">
     <rect x="1.5" y="3" width="15" height="12" rx="2"></rect>
     <line x1="11" y1="3" x2="11" y2="15"></line>
@@ -601,9 +609,10 @@ function followEdge() {
   const target = edgeFollowTarget(edgeSelected);
   edgeSelected = null;
   hideEdgePop();
+  sideMode = false;
   selected = target;
   render();
-  buildPanel(target);
+  refreshPanel();
   const rt = revealTarget(target);
   if (rt) animateScrollTo(rt.l, rt.t);
 }
@@ -748,10 +757,11 @@ function select(id) {
   if (!nodes.has(id)) return;
   edgeSelected = null;
   hideEdgePop();
+  sideMode = false;
   selected = id;
   render();
   ensureVisible(id);
-  buildPanel(id);
+  refreshPanel();
 }
 function toggleFold(id) {
   const kids = children.get(id) || [];
@@ -812,6 +822,7 @@ function focusToLayer(level) {
 function closePanel() {
   document.getElementById("panel").classList.remove("open");
   document.getElementById("panelHandle").classList.remove("open");
+  document.getElementById("panelToggle").classList.remove("on");
   wrap.style.right = "0px";
   updateCulling();
   sideMode = false;
@@ -826,11 +837,9 @@ function applyPanelWidth() {
   const mobile = isMobile();
   const max = Math.max(260, Math.round(window.innerWidth * 0.75));
   panelW = Math.min(Math.max(panelW, 260), max);
-  const panel = document.getElementById("panel");
-  panel.style.width = mobile ? "" : panelW + "px";
-  document.getElementById("panelHandle").style.right = (panelW + 10) + "px";
-  wrap.style.right = mobile ? "0px" : (panelW + 24) + "px";
-  document.getElementById("panelFab").classList.toggle("shifted", mobile && panel.classList.contains("open"));
+  document.getElementById("panel").style.width = mobile ? "" : panelW + "px";
+  document.getElementById("panelHandle").style.right = (panelW - 7) + "px";
+  wrap.style.right = mobile ? "0px" : panelW + "px";
   updateCulling();
 }
 function panelItems() {
@@ -938,11 +947,8 @@ function buildPanel(id) {
       (e.note ? `<div class="note">${esc(e.note)}</div>` : "") + `</button>`;
   };
   if (!sourceBodyEl) panelMode = "excerpts";
-  const modeBtn = sourceBodyEl
-    ? `<button id="pMode" class="${panelMode === "source" ? "on" : ""}" title="${panelMode === "source" ? "switch back to the cited excerpts" : "show this node in the full source text"}">${panelMode === "source" ? "Excerpts" : "Source"}</button>`
-    : "";
-  panel.innerHTML =
-    `<div id="panelHead"><h2>Node ${esc(id)}</h2>${modeBtn}<button class="close" id="pClose">&#215;</button></div>` +
+  const body = document.getElementById("panelBody");
+  body.innerHTML =
     `<div class="tagrow"><span class="tag">${esc(n.type)}</span>` +
     (n.attribution && n.attribution !== "n/a" ? `<span class="tag">${esc(n.attribution)}</span>` : "") +
     `</div>` +
@@ -951,31 +957,41 @@ function buildPanel(id) {
       : `<div class="sect">Where it comes from</div>${srcs}`) +
     (out.length ? `<div class="sect">Links out</div>${out.map(e => edgeRow(e, "out")).join("")}` : "") +
     (inc.length ? `<div class="sect">Links in</div>${inc.map(e => edgeRow(e, "in")).join("")}` : "");
-  if (panelMode === "source" && sourceBodyEl) panel.appendChild(sourceBodyEl);
+  if (panelMode === "source" && sourceBodyEl) body.appendChild(sourceBodyEl);
+  document.getElementById("panelTitle").textContent = "Node " + id;
+  const mode = document.getElementById("pMode");
+  mode.style.display = sourceBodyEl ? "" : "none";
+  mode.textContent = panelMode === "source" ? "Excerpts" : "Source";
+  mode.classList.toggle("on", panelMode === "source");
+  mode.title = panelMode === "source" ? "switch back to the cited excerpts" : "show this node in the full source text";
   panel.classList.add("open");
   document.getElementById("panelHandle").classList.add("open");
+  document.getElementById("panelToggle").classList.add("on");
   applyPanelWidth();
-  const mode = document.getElementById("pMode");
-  if (mode) mode.addEventListener("click", () => {
-    panelMode = panelMode === "source" ? "excerpts" : "source";
-    buildPanel(id);
-  });
-  panel.querySelectorAll(".srcbtn").forEach(b => b.addEventListener("click", () => {
+  body.querySelectorAll(".srcbtn").forEach(b => b.addEventListener("click", () => {
     const t = document.getElementById("pass-" + b.dataset.ref.slice(1));
     if (t) t.classList.toggle("show");
   }));
-  panel.querySelectorAll(".passage").forEach(el => el.addEventListener("click", () => {
+  body.querySelectorAll(".passage").forEach(el => el.addEventListener("click", () => {
     panelMode = "source";
     buildPanel(id);
     scrollToRef(el.id.replace("pass-", "¶"));
   }));
-  panel.querySelectorAll("[data-jump]").forEach(b => b.addEventListener("click", () => jump(b.dataset.jump)));
-  document.getElementById("pClose").addEventListener("click", () => {
-    closePanel();
-    selected = null;
-    render();
-  });
+  body.querySelectorAll("[data-jump]").forEach(b => b.addEventListener("click", () => jump(b.dataset.jump)));
   updateSourceHighlights(true);
+}
+function panelOpen() {
+  return document.getElementById("panel").classList.contains("open");
+}
+function refreshPanel() {
+  if (panelOpen() && selected) buildPanel(selected);
+}
+function togglePanel() {
+  if (panelOpen()) {
+    closePanel();
+  } else {
+    buildPanel(selected || "0");
+  }
 }
 function buildLegend() {
   const counts = {};
@@ -1001,20 +1017,19 @@ function buildLegend() {
     c.classList.toggle("off");
     render();
   }));
-  const togglePanel = () => {
-    const off = document.getElementById("blPanel").classList.toggle("collapsed");
-    document.getElementById("helpToggle").innerHTML = off ? "+" : "&#8722;";
-  };
-  document.getElementById("helpHead").addEventListener("click", togglePanel);
 }
 function init() {
   document.getElementById("title").textContent = (GRAPH.meta && GRAPH.meta.title) || "Point graph";
   document.getElementById("srcname").textContent = (GRAPH.meta && GRAPH.meta.source) || "";
   const topbar = document.getElementById("topbar");
   const fitCanvasToTopbar = () => {
-    wrap.style.top = topbar.offsetHeight + "px";
-    document.getElementById("panelHandle").style.top = topbar.offsetHeight + "px";
-    document.getElementById("panelFab").style.top = (topbar.offsetHeight + 10) + "px";
+    const h = topbar.offsetHeight;
+    wrap.style.top = h + "px";
+    document.getElementById("panel").style.top = h + "px";
+    document.getElementById("panelHandle").style.top = h + "px";
+    document.getElementById("panelToggle").style.top = (h + 9) + "px";
+    document.getElementById("help").style.top = (h + 6) + "px";
+    document.getElementById("legend").style.top = (h + 6) + "px";
   };
   fitCanvasToTopbar();
   window.addEventListener("resize", () => { fitCanvasToTopbar(); applyPanelWidth(); });
@@ -1025,16 +1040,34 @@ function init() {
   if (selected && !isMobile()) buildPanel(selected);
   fitView();
 
-  document.getElementById("panelFab").addEventListener("click", () => {
-    const panel = document.getElementById("panel");
-    if (panel.classList.contains("open")) {
-      closePanel();
-      render();
-    } else {
-      buildPanel(selected || "0");
-    }
-  });
+  document.getElementById("panelToggle").addEventListener("click", togglePanel);
   document.getElementById("edgeFollow").addEventListener("click", followEdge);
+  document.getElementById("pMode").addEventListener("click", () => {
+    panelMode = panelMode === "source" ? "excerpts" : "source";
+    if (selected) buildPanel(selected);
+  });
+  const closePops = () => {
+    document.getElementById("help").classList.remove("open");
+    document.getElementById("legend").classList.remove("open");
+    document.getElementById("btnHelp").classList.remove("on");
+    document.getElementById("btnLegend").classList.remove("on");
+  };
+  const togglePop = (id, btn) => {
+    const pop = document.getElementById(id);
+    const wasOpen = pop.classList.contains("open");
+    closePops();
+    if (!wasOpen) {
+      pop.classList.add("open");
+      btn.classList.add("on");
+    }
+  };
+  document.getElementById("btnHelp").addEventListener("click", ev => {
+    togglePop("help", ev.currentTarget);
+  });
+  document.getElementById("btnLegend").addEventListener("click", ev => {
+    togglePop("legend", ev.currentTarget);
+  });
+  wrap.addEventListener("mousedown", closePops);
 
   const handle = document.getElementById("panelHandle");
   let resize = null;
@@ -1096,7 +1129,6 @@ function init() {
     if (ev.target === svg || ev.target === wrap) {
       clearEdgeSelection();
       selected = null;
-      closePanel();
       render();
     }
   });
@@ -1288,10 +1320,14 @@ function init() {
         break;
       }
       case "Escape":
+        if (document.getElementById("help").classList.contains("open") ||
+            document.getElementById("legend").classList.contains("open")) {
+          closePops();
+          break;
+        }
         if (edgeSelected) { clearEdgeSelection(); break; }
         if (selected) {
           selected = null;
-          closePanel();
           render();
         }
         break;
