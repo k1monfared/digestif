@@ -132,6 +132,7 @@
   .node rect { stroke-width: 1.2; }
   .node { cursor: pointer; }
   .node.dim { opacity: .12; pointer-events: none; }
+  .node.hide { display: none; }
   .node.match rect { stroke: #f59e0b; stroke-width: 3; }
   .node.selected rect { stroke: #111827; stroke-width: 2.6; }
   .edge { fill: none; }
@@ -530,7 +531,8 @@ function render() {
     if (hiddenNodeTypes.has(n.type)) g.classList.add("dim");
     if (searching) {
       if (n.text.toLowerCase().includes(searchQ) || n.id.includes(searchQ)) g.classList.add("match");
-      else g.classList.add("dim");
+      else if (forceVisible.has(n.id)) g.classList.add("dim");
+      else g.classList.add("hide");
     }
     if (selected === n.id) g.classList.add("selected");
     g.addEventListener("mouseenter", () => setEdgeFocus(n.id, true));
@@ -575,8 +577,13 @@ function updateCulling() {
   const inView = r => r && r.x <= vx1 && r.x + r.w >= vx0 && r.y <= vy1 && r.y + r.h >= vy0;
   containsE.concat(crossE).forEach(e => {
     if (!e._el && !e._hit) return;
-    const keep = e === edgeSelected || (selected && (e.from === selected || e.to === selected));
-    const on = keep || inView(pos.get(e.from)) || inView(pos.get(e.to));
+    let on;
+    if (searchQ) {
+      on = forceVisible.has(e.from) && forceVisible.has(e.to);
+    } else {
+      const keep = e === edgeSelected || (selected && (e.from === selected || e.to === selected));
+      on = keep || inView(pos.get(e.from)) || inView(pos.get(e.to));
+    }
     if (e._el) e._el.style.display = on ? "" : "none";
     if (e._hit) e._hit.style.display = on ? "" : "none";
   });

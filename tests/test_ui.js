@@ -291,6 +291,36 @@ const state = page => page.evaluate(() => {
   s = await state(page);
   ok("back to two layers after the search box check", s.nodes === 10 && s.selected === "2", s);
 
+  await page.fill("#searchBox", "Leiden");
+  await page.waitForTimeout(180);
+  const searchState = await page.evaluate(() => {
+    const nodeEls = [...document.querySelectorAll("#gNodes g")];
+    const visibleEdges = [...document.querySelectorAll("#gEdges path.edge, #gXEdges path.edge, #gTop path.edge")]
+      .filter(p => p.style.display !== "none");
+    return {
+      total: nodeEls.length,
+      hidden: nodeEls.filter(g => g.classList.contains("hide")).length,
+      dim: nodeEls.filter(g => g.classList.contains("dim")).length,
+      match: nodeEls.filter(g => g.classList.contains("match")).length,
+      visibleEdges: visibleEdges.length,
+      count: document.getElementById("searchCount").textContent
+    };
+  });
+  ok("search: non-matching nodes are hidden, not dimmed", searchState.hidden === 8 && searchState.match === 1, searchState);
+  ok("search: the parents of the match stay as a masked skeleton", searchState.dim === 2, searchState);
+  ok("search: only the skeleton keeps its edges", searchState.visibleEdges === 2, searchState);
+  ok("search: result count is shown", searchState.count === "1 matches", searchState.count);
+  await page.fill("#searchBox", "");
+  await page.waitForTimeout(180);
+  const searchCleared = await page.evaluate(() => ({
+    hidden: [...document.querySelectorAll("#gNodes g")].filter(g => g.classList.contains("hide")).length,
+    total: document.querySelectorAll("#gNodes g").length,
+    visibleEdges: [...document.querySelectorAll("#gEdges path.edge, #gXEdges path.edge, #gTop path.edge")]
+      .filter(p => p.style.display !== "none").length
+  }));
+  ok("search: clearing restores every node and edge",
+    searchCleared.hidden === 0 && searchCleared.total === 10 && searchCleared.visibleEdges >= 11, searchCleared);
+
   const edgeHit = await page.evaluate(() => {
     const hit = document.querySelector('path.edge-hit[data-from="6"][data-to="2"]');
     if (!hit) return null;
