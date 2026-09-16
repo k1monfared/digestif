@@ -1,0 +1,466 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "07_intentionalism",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Top-level thesis, canonical source for proposer-advantage later restated."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Historical fact about Gale-Shapley, unique background not repeated."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Definition of deferred acceptance mechanism, distinct content."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical mathematical proposer extreme, later recaps depend on it."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical structural-not-talent-or-luck claim, first appearance."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Scope claim that real situations mirror the structure, distinct."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete receiver examples add specific detail."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Prevalence observation, distinct from the structural claim."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "General receiver-shortfall claim, first statement."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Partially supported causal claim, kept visible and distinct."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Stability-via-comfort mechanism, new causal detail."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ignorance from not practicing wanting, distinct."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical intention-prerequisite-and-product claim, first statement."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Least-disliked-choice nuance, distinct from example C016."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C013",
+      "reasoning": "Same prerequisite-product content as C013, only adds trap label."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete algorithm and swipe example adds specificity."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Progressive muscle-building thesis, first statement."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Tonight-feeling exercise, first appearance."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical practice-to-patterns-to-values chain."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Negation not-from-thought-alone, negations never trivia."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Presented-options agency confusion, distinct."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Seekers gain better outcomes, distinct from C032 extension."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C005",
+      "reasoning": "Restates C005 structural-over-personal-ability point."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Receiver-majority system-incentive claim, distinct."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Platform engagement example, new specificity."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Platform optimal-vs-good-enough supports C009 but adds platform detail."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Switching-cost and resistance-to-change claim, distinct from C011."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Understanding-without-switching claim, distinct."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Definition of proposing actions, distinct."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical ask-what-wanted-before-deciding instruction."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Refusal and atrophied-wanting mechanism, distinct."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Shifters gain outside exact math, extends C022 with new scope."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Closing meta on willingness, distinct."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete first-hour timing adds schedule detail to C017."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds four feeling categories, new enumeration."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Scrolling-awareness and journaling exercise, new."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Domain-scaling recap with criteria-first, adds domains."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "9.4"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C019",
+      "reasoning": "Repeats C019 practice-to-values ladder as muscle-to-proposers chain."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "9.5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C004",
+      "reasoning": "Restates C004 proposer-advantage and mathematical extreme."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Appendix roadmap, structural meta, distinct."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "10.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Entertainment exercise, distinct recommendation."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "10.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Shopping exercise, distinct recommendation."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "10.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Toothpaste drill, distinct recommendation."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "10.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Career exercise, distinct recommendation."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "10.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Dating exercise, distinct recommendation."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "10.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Friendship exercise, distinct recommendation."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "10.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Daily routine exercise, distinct recommendation."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "10.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Journaling exercise, distinct recommendation."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "10.9"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C030",
+      "reasoning": "Restates ask-what-wanted (C030) and small-reps (C017), no new information."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 49,
+    "unique": 44,
+    "duplicates": 5,
+    "trivia": 0,
+    "redundancy_rate": 0.102,
+    "trivia_rate": 0.0,
+    "structured_tokens": 502,
+    "tokens_per_unique_claim": 11.41
+  },
+  "prune_list": [
+    "C015 duplicates C013, safe to merge",
+    "C023 duplicates C005, safe to merge",
+    "C038 duplicates C019, safe to merge",
+    "C039 duplicates C004, safe to merge",
+    "C049 duplicates C030, safe to merge"
+  ]
+}

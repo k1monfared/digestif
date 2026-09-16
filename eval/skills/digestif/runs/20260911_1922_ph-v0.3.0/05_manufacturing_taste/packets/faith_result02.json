@@ -1,0 +1,90 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "05_manufacturing_taste part 2 of 2",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Bach was excellent AND positioned; reshuffled patronage yields an almost entirely different canon.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "He was excellent AND well-positioned... Reshuffle patronage and you get an almost entirely different canon.",
+   "reasoning": "Source states both the excellence/positioning conjunction and the patronage reshuffle result."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Surgeon analogy: one of fifty equally skilled becomes the best via profile, talks, book.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the one surgeon who gets famous out of fifty equally skilled surgeons... a profile in the New York Times, which led to speaking invitations, which led to a book deal",
+   "reasoning": "Source gives one-of-fifty surgeon and the profile, talks, book chain."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Probably 20 to 50 equally great contemporaries stay unknown for missing the Leipzig-type job.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know, because they didn't get that job.",
+   "reasoning": "Numbers 20 to 50 and the cause (missing the job) match the source exactly."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "If the mechanisms in this simulation are right, future canons track distribution and algorithms.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "if the mechanisms in this simulation are right, then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music.",
+   "reasoning": "Node keeps the same conditional and the same distribution/algorithm drivers."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "Taste itself was manufactured: surviving canon sets what counts as beautiful.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "our taste was manufactured along with it... The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent",
+   "reasoning": "Source explicitly ties manufactured taste to what counts as beautiful."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "Author honestly does not know whether Bieber survives 300 years hence.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "whether people 300 years from now will be listening to Bieber... I honestly don't know.",
+   "reasoning": "Source directly states the 300-year Bieber question and the author's lack of knowledge."
+  }
+ ],
+ "metrics": {
+  "total_claims": 6,
+  "supported": 6,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash, 2026-09-15",
+  "source_id": "point-hierarchy",
+  "inputs": {
+    "faithfulness_precision": 0.9506,
+    "critical_errors": 1,
+    "must_recall": 0.7667,
+    "overall_recall": 0.7667,
+    "redundancy_rate": 0.0494,
+    "trivia_rate": 0.2099
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4 * 0.9506 + 0.4 * 0.7667 - 0.2 * 0.0494 = 0.38024 + 0.30668 - 0.00988 = 0.67704",
+  "weighted_score": 0.67704,
+  "verdict": "Fail",
+  "tradeoff_note": "Hard gates are missed before any tradeoff applies: one Critical contradicted claim (C041) fails the sample regardless of the passing precision, and must_recall at 0.7667 is far below the 0.9 minimum, so no coverage-for-length or concision tradeoff can rescue it.",
+  "fix_list": [
+    "Resolve Critical contradicted claim C041: source dates the Roper overview 1950s to present (roughly seven decades), so correct 'six decades' to 'seven decades' (or '1950s to present') at loglog 7.1.2.",
+    "Raise must_recall by restoring stripped concrete evidence in the seven Partial Must-have points, highest leverage first: K07 (929 institutions, 1,887 systems, 3,000+ services, 2001, 2nd EGDI, 20+ years no major breach), K08 (2004 date, Transparency Card 430,000+ cards / 20M+ notifications, 60GB), K11 (Sept 2020 Ninth Circuit, FISA relevance, Stone, 2018/2015 dates), K12 (66%, 86%, Brennan Center 2024, 735 officials, 22%-to-38% rise), K13 (Oman JCPOA, Camp David, FOMC 3-week/5-year, TTIP).",
+    "Soften overstatements on Minor Partials: C021 restore 'major' qualifier ('breach-free' becomes 'no major breaches'), C034 hedge capture ('can be captured or worn down' rather than asserted fact), C045 replace 'hotlines' with 'backchannels'.",
+    "Trim trivia (trivia_rate 0.2099, C016-C075 source-list evidence nodes are not gated but folding them into parents raises signal density without lowering recall)."
+  ],
+  "reasoning": "Gate checks in policy order. (1) Critical errors: faithfulness reports critical_errors = 1 (C041, 'six decades of opinion' at loglog 7.1.2, source says '1950s to present', roughly seven decades). critical_contradicted_max = 0, so this alone hard-fails the sample. (2) must_recall gate: coverage reports must_recall = 0.7667 against must_recall_min = 0.9, a miss of 0.1333, failing 7 of 15 Must-have points as Partial (K07, K08, K10, K11, K12, K13, K14). This independently hard-fails the sample. (3) faithfulness_precision = 0.9506 is just above faithfulness_precision_min = 0.95, so that gate passes, but it is moot given the two prior hard fails. redundancy_rate = 0.0494 is below redundancy_max = 0.15, and trivia_rate = 0.2099 is reported but not a configured gate. Because hard gates were missed, the weighted score is computed for audit only: 0.4(0.9506) + 0.4(0.7667) - 0.2(0.0494) = 0.38024 + 0.30668 - 0.00988 = 0.67704. Tradeoff analysis: concision (redundancy 0.0494) does not rescue faithfulness or coverage failures, and no coverage gain is claimed here (overall_recall 0.7667 equals must_recall 0.7667, so there is no breadth-for-depth compensation). The dominant failure driver is coverage: every one of the seven Partial Must-have points lost its quantifying detail (dates, counts, named cases), collapsing K07's scale argument ('thousands' for 929 institutions / 1,887 systems / 3,000+ services), K08's entire Transparency Card component, K10/K11's dates and case substance, K12's poll and Brennan Center precision, and K13/K14's supporting examples and quantified findings. Borderline does not apply because the numbers miss hard gates rather than passing with a flagged Partial/Unverifiable claim. Verdict: Fail."
+}

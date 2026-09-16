@@ -1,0 +1,291 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "07_intentionalism",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "Central thesis: outcome differences trace to proposing versus receiving, not talent, luck, or choice quality.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "1",
+        "1.1"
+      ],
+      "evidence_quote": "\"nothing to do with talent, luck, or even the quality of their choices\" (1)",
+      "reasoning": "Thesis restated with all three exclusions and the propose/receive distinction intact."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "The 1962 Gale-Shapley setup: proving stable matchings always exist and presenting an algorithm to find them.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "1.2",
+        "1.3"
+      ],
+      "evidence_quote": "\"In 1962, David Gale and Lloyd Shapley worked on creating stable pairings\" (1.2)",
+      "reasoning": "Year, names, stability goal, existence proof, and algorithm all captured."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "Deferred acceptance result: proposers get their best stable partner, receivers their worst, provably extreme for each individual.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "1.4",
+        "1.5",
+        "1.6"
+      ],
+      "evidence_quote": "\"Proposers get their best possible partner among all stable matchings, while receivers get their worst\" (1.5)",
+      "reasoning": "Mechanism, best/worst asymmetry, and extremity nuance all present with exact scope."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "Real-world systems share the proposer-receiver structure even roughly, so the same pattern is expected.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "2",
+        "2.1",
+        "2.2"
+      ],
+      "evidence_quote": "\"they share the structure: one side initiates, the other responds\" (2.2)",
+      "reasoning": "The not-exact-algorithm caveat and \"even roughly\" scope survive in the theme."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "Everyday examples (Netflix, phone, job, friendship) show that most of us default to receiving.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ],
+      "evidence_quote": "\"For most of these, most of us are receivers\" (3.5)",
+      "reasoning": "All four examples and both \"most\" hedges preserved."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "Receiver outcomes are acceptable and good enough but not best, and the system is self-sustaining because it never stings enough to prompt revolt; you never know what you are missing.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.9.1",
+        "3.10"
+      ],
+      "evidence_quote": "\"does not screw you badly enough to make you revolt\" (3.9); \"You do not even know what you are missing\" (3.10)",
+      "reasoning": "The terrible-outcomes negation, decent-vs-best distinction, no-conspiracy note, and stability mechanism all preserved."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "The chicken-and-egg trap: intention is needed to propose but develops only through proposing, and selecting among presented options reveals only the least-disliked choice.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "4",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7"
+      ],
+      "evidence_quote": "\"you need intention to propose, but you develop intention through proposing\" (4.3)",
+      "reasoning": "Trap, least-disliked mechanism, and the lost/never-developed capacity all captured."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "The intention muscle builds progressively: start small tonight, and patterns become preferences then values, since values are practiced into, not thought into.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "5",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6"
+      ],
+      "evidence_quote": "\"Start tonight: before opening any app, decide what you actually want\" (5.2); \"practice your way into them\" (5.6)",
+      "reasoning": "Progressive-build claim, the small start, the values chain, and the think/practice negation all present."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "Major life decisions also run on presented options, and proposers end up systematically better off, not smarter or luckier.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "6",
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.3.1",
+        "6.4",
+        "6.5",
+        "6.5.1",
+        "6.6",
+        "6.7"
+      ],
+      "evidence_quote": "\"Most people, most of the time, are evaluating presented options\" (6.3); \"Not because they are smarter or luckier\" (6.7)",
+      "reasoning": "Receiver default, feels-like-agency nuance, proposer behaviors, and the not-smarter/luckier negation preserved."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "Collective effect: systems optimize for whoever proposes, the platforms are the proposers, they collect attention, data, and money, and you stay because leaving is harder.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "7",
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6"
+      ],
+      "evidence_quote": "\"The proposers in these systems are not the users; they are the platforms\" (7.4)",
+      "reasoning": "All three platform examples, the platform-as-proposer claim, and the stability-persistence mechanism present."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "Understanding does not remove the disadvantage; you must switch positions, and proposing means deciding before seeing, pursuing specifics, creating opportunities, and accepting friction.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "8",
+        "8.1",
+        "8.1.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5",
+        "8.6",
+        "8.6.1"
+      ],
+      "evidence_quote": "\"Understanding the disadvantage does not remove it\" (8); \"deciding intentionally what you want before seeing what is available\" (8.2)",
+      "reasoning": "All four definitional bullets, the every-major/most-minor scope, and the designed-environment claim captured."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "Most people will not make the shift (it is effortful and comfortable), but those who do get structurally, not incrementally, better outcomes.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "8.7",
+        "8.8",
+        "8.9",
+        "8.10",
+        "9.9"
+      ],
+      "evidence_quote": "\"Most people will not do this\" (8.7); \"Systematically better, not just incrementally: structurally\" (8.10)",
+      "reasoning": "Refusal reasons, the not-exact-mathematics caveat, and the structural (not incremental) emphasis preserved."
+    },
+    {
+      "point_id": "K13",
+      "point_text": "The closing challenge: the dynamic is confirmed by mathematics and observed patterns, and the open question is whether the reader will act.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "8.11",
+        "8.12"
+      ],
+      "evidence_quote": "\"The question is whether you are willing to do something about it\" (8.12)",
+      "reasoning": "Both closing questions preserved."
+    },
+    {
+      "point_id": "K14",
+      "point_text": "Appendix drills: three-week entertainment plan, shopping rules (3-5 features, $100 day, toothpaste), career quarter (two-week energy map, 5 non-negotiables, 4-of-5), relationships (3-5 values), micro-practices (three intentions, 10-second pause), and a 30-day three-column journal.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "10",
+        "10.1",
+        "10.1.1",
+        "10.1.1.1",
+        "10.1.1.2",
+        "10.1.1.3",
+        "10.1.2",
+        "10.1.2.1",
+        "10.1.2.2",
+        "10.1.2.3",
+        "10.1.3",
+        "10.1.3.1",
+        "10.1.3.2",
+        "10.2",
+        "10.2.1",
+        "10.2.1.1",
+        "10.2.2",
+        "10.2.3",
+        "10.2.4",
+        "10.2.5",
+        "10.2.6",
+        "10.2.6.1",
+        "10.3",
+        "10.3.1",
+        "10.3.2",
+        "10.3.3",
+        "10.3.4",
+        "10.3.5",
+        "10.3.6",
+        "10.4",
+        "10.4.1",
+        "10.4.2",
+        "10.4.3",
+        "10.4.4",
+        "10.4.5",
+        "10.4.6",
+        "10.4.7",
+        "10.5",
+        "10.5.1",
+        "10.5.1.1",
+        "10.5.2",
+        "10.5.2.1",
+        "10.5.3",
+        "10.5.3.1",
+        "10.5.3.2",
+        "10.6",
+        "10.6.1",
+        "10.6.2",
+        "10.6.3",
+        "10.6.4"
+      ],
+      "evidence_quote": "\"For anything over $100, wait a day after deciding\" (10.2.5); \"After 30 days the pattern is clear\" (10.6.4)",
+      "reasoning": "Every exercise and numeric rule from the appendix is present; $100, 3-5, 4-of-5, 10 seconds, and 30 days all survive."
+    },
+    {
+      "point_id": "K15",
+      "point_text": "Key insight: intention is not about knowing everything, it is practicing the question \"what do I want?\" before someone else answers, starting small until it becomes natural.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "10.7",
+        "10.8",
+        "10.9"
+      ],
+      "evidence_quote": "\"practicing the question what do I want before someone else provides the answer\" (10.8)",
+      "reasoning": "The negation, the practice framing, and the progressive-growth close all present."
+    }
+  ],
+  "metrics": {
+    "total_points": 15,
+    "must_have_total": 14,
+    "must_have_present": 14,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+  },
+  "missing_list": []
+}

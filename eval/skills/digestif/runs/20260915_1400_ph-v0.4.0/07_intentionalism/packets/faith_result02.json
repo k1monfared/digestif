@@ -1,0 +1,306 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "07_intentionalism",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Intention and initiative build progressively, like a muscle.",
+   "claim_type": "theme",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The muscle of intention and initiative builds progressively.",
+   "reasoning": "SOURCE states this directly, including the muscle metaphor."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "You cannot jump straight from picking from Netflix recommendations to a clear vision for your life's work.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You can't jump straight from \"I pick from what Netflix recommends\" to \"I have a clear vision for my life's work.\"",
+   "reasoning": "Negation and content preserved with identical meaning."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Start tonight: before opening any app, decide what you actually want from the next hour, specifically whether to laugh, learn, feel calm, or be challenged.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tonight, before opening any app, decide intentionally what you actually want from the next hour... do you want to laugh? Learn something? Feel calm? Be challenged?",
+   "reasoning": "All four options and the timing match the source."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Then pursue that intentionally: do not open Netflix and see what it suggests, do not scroll TikTok until something catches you.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Don't open Netflix and see what it suggests. Don't scroll TikTok until something catches you.",
+   "reasoning": "Both negations preserved exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "The practice is not about one evening; it rebuilds the capacity to intend and then act on that intention.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The practice isn't about that one evening's entertainment. It's about rebuilding the capacity to intend and then act on that intention.",
+   "reasoning": "Meaning and negation preserved."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Do it enough times and patterns in what satisfies you become preferences, and preferences become values.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Do this enough times, and you start to notice patterns in what satisfies you. Those patterns become preferences. Those preferences become values.",
+   "reasoning": "Direct restatement of the source chain."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "You cannot think your way into values; you have to practice your way into them.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You can't think your way into values. You have to practice your way into them.",
+   "reasoning": "Exact match."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "The same receiver default shows up in major life decisions.",
+   "claim_type": "theme",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Most people, most of the time, are evaluating presented options... you're choosing as a receiver.",
+   "reasoning": "Fair summary of the section's receiver framing for major decisions."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "A last major life decision: getting married, taking a job, moving to a city, or choosing what to study.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Getting married, taking a job, moving to a city, choosing what to study.",
+   "reasoning": "All four examples listed identically."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "The question is whether you decided what you wanted first and then pursued it, or evaluated options that presented themselves.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Did you decide what you wanted first and then pursue it? Or did you evaluate among options that presented themselves",
+   "reasoning": "Both alternatives preserved as posed."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Most people, most of the time, are evaluating presented options.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Most people, most of the time, are evaluating presented options.",
+   "reasoning": "Verbatim match including the hedge qualifiers."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "claim_text": "This feels like agency because you are choosing, but you are choosing as a receiver, in a structure that systematically favors the other side.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This feels like agency because you're choosing. But you're choosing as a receiver, which means you're operating in a structure that systematically favors the other side.",
+   "reasoning": "Faithful restatement of the same claim."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Proposers decide intentionally what kind of work they want and pursue those specific opportunities.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the people who decided intentionally what kind of work they wanted to do and pursued those specific opportunities",
+   "reasoning": "Matches the source description of proposers."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "They identify what they value in a partner and seek those people out.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "who identified what they valued in a partner and sought those people out",
+   "reasoning": "Direct match."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "6.5.1"
+   ],
+   "claim_text": "They pick cities based on how they want to live rather than where they got offers.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "who picked cities based on how they wanted to live rather than where they got offers",
+   "reasoning": "Direct match with contrast preserved."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "Those people end up with systematically better outcomes.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "those people end up with systematically better outcomes",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "Not because they are smarter or luckier, but because they are on the other side of a structure that mathematically favors proposers.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Not because they're smarter or luckier. Because they're on the other side of a structure that mathematically favors proposers.",
+   "reasoning": "Cause and negation preserved exactly."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "When most people are receivers, entire systems shift to optimize for whoever is doing the proposing.",
+   "claim_type": "theme",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "When most people are receivers, entire systems shift to optimize for whoever's doing the proposing.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Companies build for what they can convince people to want among presented options, not for what people need.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Companies don't build products for what people need—they build for what they can convince people to want among presented options.",
+   "reasoning": "Contrast preserved with same meaning."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Dating apps optimize for engagement among available profiles, not for people finding compatible partners.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Dating apps don't facilitate people finding compatible partners—they optimize for engagement among available profiles.",
+   "reasoning": "Both halves and the contrast match."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Content platforms test what keeps you scrolling among suggested posts, not what would genuinely satisfy you.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Content platforms don't serve what would genuinely satisfy you—they test what keeps you scrolling among suggested posts.",
+   "reasoning": "Contrast and content preserved."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "The proposers in these systems are not the users; they are the platforms.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The proposers in these systems aren't the users. They're the platforms.",
+   "reasoning": "Negation preserved exactly."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "The platforms get your attention, data, and money, while you get outcomes good enough to keep participating but not serving your best interests.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the platforms get optimal outcomes (your attention, your data, your money), and you get outcomes that are good enough to keep you participating, but not actually serving your best interests",
+   "reasoning": "All three items and the contrast preserved."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "claim_text": "You stay because leaving feels harder than accepting good enough; that stability, resistance to change, is why the system persists.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You stay because leaving feels harder than accepting \"good enough.\" That's stability (resistance to change). That's why the system persists.",
+   "reasoning": "Cause and the stability gloss match the source."
+  }
+ ],
+ "metrics": {
+  "total_claims": 24,
+  "supported": 24,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

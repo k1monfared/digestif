@@ -1,0 +1,36 @@
+L001: - House-hunting weekend: sweet offer, stalling, price-drop duel, walkaway (source: 04_house_hunting_shenanigans/source.txt)
+L002:     Summary: Buyer spends a weekend chasing one house through stalling, a 20K price cut, and standoff, then walks away vindicated. (¶1, ¶5, ¶12, ¶20, ¶23)
+L003:         - 1 Theme: Year-long search in a weird split market sets up the weekend. (¶1, ¶2)
+L004:             - 1.1 Evidence: Some houses linger unsold for months; others vanish within one or two days. (¶1)
+L005:             - 1.2 Example: First Wednesday offer 30K below asking fails; buyer resolves to move faster. (¶3, ¶4)
+L006:         - 2 Theme: Friday sweet full-price offer meets silence and delay requests. (¶5, ¶7)
+L007:             - 2.1 Evidence: Buyer offers asking price with sweet terms and a midnight deadline. (¶5, ¶7)
+L008:             - 2.2 Counterpoint: Own realtor N advises bidding 10K below to leave negotiating room. (¶6) [reported]
+L009:             - 2.3 Evidence: Seller agents unreachable, then request extension citing another offer. (¶8)
+L010:             - 2.4 Nuance: Buyer suspects stalling and extends only until Saturday 10:30am. (¶9)
+L011:         - 3 Theme: Saturday duel: buyer slashes 20K, sellers counter 5K above asking. (¶10, ¶12, ¶15)
+L012:             - 3.1 Evidence: Saturday morning silence looks like using his offer as leverage. (¶10)
+L013:             - 3.2 Example: Afternoon nap marks rare emotional release and detachment. (¶11)
+L014:             - 3.3 Buyer drops price 20K and strips sweet terms against N's strong advice. (¶12)
+L015:             - 3.4 Evidence: Seller partner asks to fix the drop; J's listings switch to C. (¶13, ¶14)
+L016:             - 3.5 Evidence: Disclosure letter arrives with counteroffer 5K above asking price. (¶15)
+L017:         - 4 Theme: Sunday email spat ends in refusal to keep any offer open. (¶16, ¶17)
+L018:             - 4.1 Counterpoint: Assistant L calls the two-hour Sunday deadline unprofessional. (¶16) [counter]
+L019:             - 4.2 Rebuttal: N replies Friday full-price offer deserved timely professional handling. (¶16)
+L020:             - 4.3 Nuance: Buyer offers in-person presentation only, never another open offer. (¶17)
+L021:         - 5 Theme: Aftermath rules and below-asking sale vindicate the walkaway. (¶18, ¶20)
+L022:             - 5.1 Evidence: New rules: disclose competing offers only in writing, volunteer nothing. (¶18)
+L023:             - 5.2 Evidence: House sells 10K below asking; N owes buyer a coffee. (¶20)
+L024:             - 5.3 Example: Earlier 7-month listing sold just 5% over his refused top-up. (¶21)
+L025:         - 6 Theme: Reflections blame realtor incentives and praise disciplined detachment. (¶19, ¶23)
+L026:             - 6.1 Realtor levers push buyers to pay 5-10% extra, buyer believes. (¶19)
+L027:             - 6.2 Nuance: System serves realtors while buyers obey; fixing processes feels taboo. (¶22)
+L028:             - 6.3 Evidence: Debrief: three-day negotiation, walked away, flexibility beat transactional success. (¶23) [reported]
+L029:             - 6.4 Nuance: Kept price discipline and bluff detection; no house, strained relations. (¶24) [reported]
+L030:     - Cross-links
+L031:         - 2.3 supports 3.3 (¶8, ¶15) note: claimed rival offer foreshadows the later disclosure letter
+L032:         - 2.4 restates 4.2 (¶9, ¶16) note: N repeats the Friday full-price offer grievance
+L033:         - 3.3 supports 5.2 (¶12, ¶20) note: price-drop pressure anticipates the below-asking sale
+L034:         - 4.1 contradicts 4.2 (¶16) note: assistant and N accounts directly conflict over professionalism
+L035:         - 6.1 supports 5.1 (¶18, ¶19) note: lever critique grounds the written-disclosure rule
+L036:     - Coverage: 24 of 24 passages cited

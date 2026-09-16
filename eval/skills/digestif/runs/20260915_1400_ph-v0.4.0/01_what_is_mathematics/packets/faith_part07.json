@@ -1,0 +1,159 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 7,
+ "of": 9,
+ "nodes": [
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The craft's middle can empty out, as woodworking shows, taking with it the people who make results legible, checkable, and taught.",
+   "evidence": [
+    {
+     "ref": "¶66",
+     "text": "## What the craft becomes"
+    },
+    {
+     "ref": "¶67",
+     "text": "What does all of this do to the people who actually love doing math? Woodworking went through its own version of this in the last century, and the shape of what happened is instructive. CNC machines and high-throughput manufacturing changed furniture. Most furniture is now the Ikea kind, mass produced, cheap, replaceable."
+    },
+    {
+     "ref": "¶70",
+     "text": "This is the same middle Tao was trying to protect. His punchline was that the bottleneck shifts to digestion: exposition, verification, canonicalization, the low-prestige work that is first to empty out. That is the creative carpenter's shop. If we let it empty out the way furniture's middle emptied, mathematics keeps producing results while losing the people who make them legible, checkable, and taught."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Woodworking went through this last century: CNC machines and high-throughput manufacturing changed furniture.",
+   "evidence": [
+    {
+     "ref": "¶67",
+     "text": "What does all of this do to the people who actually love doing math? Woodworking went through its own version of this in the last century, and the shape of what happened is instructive. CNC machines and high-throughput manufacturing changed furniture. Most furniture is now the Ikea kind, mass produced, cheap, replaceable."
+    }
+   ]
+  },
+  {
+   "id": "7.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Most furniture is now the Ikea kind: mass produced, cheap, replaceable.",
+   "evidence": [
+    {
+     "ref": "¶67",
+     "text": "What does all of this do to the people who actually love doing math? Woodworking went through its own version of this in the last century, and the shape of what happened is instructive. CNC machines and high-throughput manufacturing changed furniture. Most furniture is now the Ikea kind, mass produced, cheap, replaceable."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A good chunk is still built at scale, but smaller than Ikea, with more variety and local taste; custom pieces still cost thousands of dollars.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars. Woodworking did not disappear, and some things even cost less when made by humans than when bought. But in volume, what we have is the simplest functional things. There is not much room left for creativity, because not every neighborhood now has a carpenter building furniture for the people of that neighborhood. And the reason might not be just the need. It's that the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one."
+    }
+   ]
+  },
+  {
+   "id": "7.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Woodworking did not disappear; some things even cost less made by humans than bought.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars. Woodworking did not disappear, and some things even cost less when made by humans than when bought. But in volume, what we have is the simplest functional things. There is not much room left for creativity, because not every neighborhood now has a carpenter building furniture for the people of that neighborhood. And the reason might not be just the need. It's that the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one."
+    }
+   ]
+  },
+  {
+   "id": "7.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "In volume we get the simplest functional things, with little room left for creativity.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars. Woodworking did not disappear, and some things even cost less when made by humans than when bought. But in volume, what we have is the simplest functional things. There is not much room left for creativity, because not every neighborhood now has a carpenter building furniture for the people of that neighborhood. And the reason might not be just the need. It's that the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one."
+    }
+   ]
+  },
+  {
+   "id": "7.2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Not every neighborhood has a carpenter building for its people, and the creative carpenter cannot make a living.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars. Woodworking did not disappear, and some things even cost less when made by humans than when bought. But in volume, what we have is the simplest functional things. There is not much room left for creativity, because not every neighborhood now has a carpenter building furniture for the people of that neighborhood. And the reason might not be just the need. It's that the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one."
+    }
+   ]
+  },
+  {
+   "id": "7.2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "At best they fix Ikea furniture, but it is so cheap nobody fixes it; they buy a new one.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars. Woodworking did not disappear, and some things even cost less when made by humans than when bought. But in volume, what we have is the simplest functional things. There is not much room left for creativity, because not every neighborhood now has a carpenter building furniture for the people of that neighborhood. And the reason might not be just the need. It's that the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "AI software shows the same shape: an app generated in minutes, the real work discovered in the details, then abandonment.",
+   "evidence": [
+    {
+     "ref": "¶69",
+     "text": "Watch how people use AI to build software and you see the same shape: someone generates an app in minutes, discovers the real work is in the details, abandons it, and moves on. The volume of starts goes up, the number of finishes goes down, and the middle, where the craft lives, is the desert."
+    }
+   ]
+  },
+  {
+   "id": "7.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The volume of starts goes up, the number of finishes goes down, and the middle, where the craft lives, is the desert.",
+   "evidence": [
+    {
+     "ref": "¶69",
+     "text": "Watch how people use AI to build software and you see the same shape: someone generates an app in minutes, discovers the real work is in the details, abandons it, and moves on. The volume of starts goes up, the number of finishes goes down, and the middle, where the craft lives, is the desert."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That middle is the digestion bottleneck Tao was trying to protect: exposition, verification, canonicalization, first to empty out.",
+   "evidence": [
+    {
+     "ref": "¶70",
+     "text": "This is the same middle Tao was trying to protect. His punchline was that the bottleneck shifts to digestion: exposition, verification, canonicalization, the low-prestige work that is first to empty out. That is the creative carpenter's shop. If we let it empty out the way furniture's middle emptied, mathematics keeps producing results while losing the people who make them legible, checkable, and taught."
+    }
+   ]
+  },
+  {
+   "id": "7.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If it empties like furniture's middle, mathematics keeps producing results while losing the people who make them legible, checkable, and taught.",
+   "evidence": [
+    {
+     "ref": "¶70",
+     "text": "This is the same middle Tao was trying to protect. His punchline was that the bottleneck shifts to digestion: exposition, verification, canonicalization, the low-prestige work that is first to empty out. That is the creative carpenter's shop. If we let it empty out the way furniture's middle emptied, mathematics keeps producing results while losing the people who make them legible, checkable, and taught."
+    }
+   ]
+  }
+ ]
+}

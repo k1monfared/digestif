@@ -1,0 +1,154 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "cant-stop-addicted-to-the-shindig",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: Can't Stop is a masterclass in practical game design, where imperfect mathematical balance is acceptable and rules are used to compensate for it.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "Game rules: roll four dice, pair them to move markers on columns 2 through 12, need three completed columns to win; column lengths are 3,5,7,9,11,13,11,9,7,5,3.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Forced-move rule: if a chosen pairing creates any valid move you must take all legal moves from that pairing, even onto unwanted columns; you cannot cherry-pick.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Two-dice baseline: sum 7 is most likely at 16.67%, exactly 6 times more likely than sum 2 at 2.78%.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "With four dice the distribution flattens: P(can make 7) = 64.4% and P(can make 2) = 13.2%, only a 4.88x ratio versus 6x with two dice.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Expected rolls to complete a column = length / probability; column 2 needs about 22.73 rolls while column 7 needs about 20.18, so 7 is slightly faster despite being 4x longer.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Column combinations matter: {6,7,8} succeeds 92.0% of the time versus 43.8% for {2,3,12}; all 165 three-column combinations were analyzed, with 37 rated excellent (>=85% success) and a median success of 79.6%.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "\"Clean\" moves are rare: even the best combination {6,7,8} yields only 39.8% clean rolls, and {2,3,12} only 2.3%, so the forced-move rule contaminates good combinations.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Stopping heuristic: keep rolling if (P_success x Q) > (P_bust x U), where Q is expected markers advanced and U is unsaved progress; example on {6,7,8} says roll (1.32 > 0.4) and on {2,3,12} says stop (1.12 > 0.46).",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Tournament of 38 strategies across 2,500 head-to-head games each (3.6M total games) found FiftyPercentSurvival the champion at 69.84% win rate, and probabilistic strategies dominate the top rankings.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Consistency beats speed: GreedyUntil1Col is fastest (10.5 turns) but only ranks #11 at 58.90% due to high variance and bust rate, while FiftyPercentSurvival at 11.3 turns wins most.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Significant first-player advantage: P1 wins 55.59% of games for a +11.18% edge, larger than chess (~5%) or Go (~7%); GreedyUntil1Col shows extreme bias at +31.24%.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Balance analysis: single-column completion times deviate at most +/-13.6% from 20 rolls, an optimal board one step from current reaches +/-3.09%, and a 20-step board reaches +/-2.17%.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Stated caveat: continuation versus switching strategies were not fully analyzed quantitatively and remain an open question for future work.",
+   "weight": "Nice to have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Recommendations: players should use FiftyPercentSurvival and aim for columns 5-9 while avoiding forced activation of 2-3 and 11-12; designers should prioritize playability and use rules to compensate for imbalance, considering handicaps for turn order.",
+   "weight": "Must have",
+   "presence": "unmapped",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only, no mapping performed."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 14,
+  "must_have_present": 0,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 0,
+  "must_recall": 0.0,
+  "overall_recall": 0.0
+ },
+ "missing_list": []
+}

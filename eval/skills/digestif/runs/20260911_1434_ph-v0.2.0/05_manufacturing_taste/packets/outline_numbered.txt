@@ -1,0 +1,63 @@
+L001: - Manufacturing Taste: simulation of canon formation (source: source.txt)
+L002:     Summary: Simulated cultural markets show patronage and feedback manufacture canons: quality filters but capital decides. (¶1, ¶2, ¶5, ¶45, ¶64)
+L003:         - 1 Canon question: we remember under 20 of thousands; patrons, not merit, may have chosen. (¶2, ¶3)
+L004:             - 1.1 Evidence: Vienna had 200 to 500 active composers; IMSLP catalogs over 3,400 survivors. (¶3)
+L005:             - 1.2 History cannot rerun; Haydn without Esterhazy patronage is empirically unanswerable. (¶4)
+L006:         - 2 Project tests three competing stories of canon formation. (¶6, ¶7)
+L007:             - 2.1 Story 1 Cream Rises: quality wins over time; replayed history yields same canon. (¶8)
+L008:             - 2.2 Story 2 Money Writes History: early exposure becomes familiarity, then canon; quality nearly irrelevant. (¶9)
+L009:             - 2.3 Story 3 Floors and Ceilings: extremes decided by quality, middle by luck and money. (¶10)
+L010:             - 2.4 Example: Job-market analogy: top and bottom rank easily; middle hires depend on luck. (¶11)
+L011:         - 3 Model combines three documented mechanisms to quantify their joint canon effect. (¶12, ¶13)
+L012:             - 3.1 Evidence: Mere exposure: liking grows with familiarity; Zajonc 1968, Bornstein 1989 r equals 0.26. (¶14) [reported]
+L013:             - 3.2 Nuance: Exposure advantage contaminates sincere judgment; money set the exposure. (¶15)
+L014:             - 3.3 Evidence: Social influence snowballs popularity; Salganik MusicLab 2006 ranked same song 1st or 40th. (¶16) [reported]
+L015:             - 3.4 Evidence: Cumulative advantage magnifies small starts; Merton Matthew Effect compounds court posts. (¶17) [reported]
+L016:             - 3.5 Open question: what happens when all three interact over generations. (¶18)
+L017:         - 4 Simulation uses producers, consumers, gatekeepers with independent quality and capital scores. (¶19, ¶20)
+L018:             - 4.1 Nuance: Quality and capital are uncorrelated; wealth does not make talent. (¶20)
+L019:             - 4.2 Capital buys exposure; consumers add quality, exposure, social signals; success feeds exposure. (¶21)
+L020:             - 4.3 Evidence: Thousands of runs; 1,000 producers, 10,000 consumers; 360 plus per condition with power analysis. (¶22)
+L021:         - 5 Results favor capital-plus-feedback over pure quality across experiments. (¶23)
+L022:             - 5.1 Evidence: Visible social influence significantly weakens quality-success link, p below 0.0001. (¶24, ¶25)
+L023:             - 5.2 Charts push us from independent judgment toward optimizing a popularity proxy. (¶26)
+L024:             - 5.3 Evidence: Talent held fixed across 200 runs; only patronage reshuffled. (¶27, ¶28)
+L025:             - 5.4 Evidence: Counterfactual distance 0.88; top-decile talent has 1-in-4 fame chance; middle is lottery. (¶29, ¶30)
+L026:             - 5.5 Without Esterhazy hire, Haydn likely joins forgotten hundreds despite excellence. (¶31)
+L027:             - 5.6 Evidence: Ablation: full 0.32, no-social 0.35, equal-capital 0.46, quality-only 0.46. (¶32, ¶33, ¶34)
+L028:             - 5.7 Equalizing resources raises quality link 44 percent; exclusion distorts most. (¶35)
+L029:             - 5.8 Modern gate: major labels reach playlists first; downstream is noise amplification. (¶36)
+L030:             - 5.9 Evidence: Stylized Vienna: 300 composers, distance 0.97, only 2.5 percent shared. (¶37, ¶38)
+L031:             - 5.10 Winners likely excellent, but dozens of equals lost the patronage lottery. (¶39)
+L032:             - 5.11 Manufacturing taste means losers were not meaningfully worse. (¶40)
+L033:             - 5.12 Evidence: Robustness plus-minus 50 percent: steep capital-to-exposure conversion erases quality fastest. (¶41, ¶42)
+L034:             - 5.13 Steep playlist reach gaps predict fame decoupled from quality. (¶43)
+L035:         - 6 Story 3 wins: quality sets floor and ceiling; capital and luck rule middle. (¶44, ¶45)
+L036:             - 6.1 Theme: Implications worth spelling out below. (¶46)
+L037:             - 6.2 Nuance: Bach greatest only among heard, published, preserved; equals may never have survived. (¶47)
+L038:             - 6.3 Feedback loops run faster today; playlists decide in hours, patronage took decades. (¶48)
+L039:             - 6.4 Leverage is wider exposure; blind auditions lifted women hires 5 to 25 percent. (¶49) [reported]
+L040:             - 6.5 Canon-as-best confuses metric with thing; curricula built on forgotten proxy. (¶50)
+L041:         - 7 Caveats bound what the model can and cannot tell us. (¶51, ¶52)
+L042:             - 7.1 Concession: Quality may be partly constituted socially, making decomposition ill-posed. (¶53)
+L043:             - 7.2 Concession: Calibration leaps from teens judging pop over weeks to aristocrats over decades. (¶54)
+L044:             - 7.3 Concession: Model omits genre, discourse, technology, politics; direction robust, magnitudes uncertain. (¶55)
+L045:         - 8 Bach was not Bieber, but closer than expected. (¶56, ¶57)
+L046:             - 8.1 Nuance: Bieber analogy gets mechanism right but quality floor wrong; court posts demanded skill. (¶58)
+L047:             - 8.2 Bach was excellent and well-positioned; positioning matters more than merit gap. (¶59)
+L048:             - 8.3 Example: Famous surgeon among fifty equals: profile led to talks, book, best reputation. (¶60)
+L049:             - 8.4 Leipzig job decided it; 20 to 50 equals forgotten for missing that post. (¶61)
+L050:             - 8.5 Canon is one of hundreds of valid possible canons, treated as inevitable. (¶62)
+L051:             - 8.6 Taste itself was manufactured: survivors set harmonic foundations we judge by. (¶63, ¶64)
+L052:             - 8.7 Future canons will reward distribution and algorithms over musical merit. (¶65)
+L053:     - Cross-links
+L054:         - 3.2 supports 5.7 (¶15) note: exposure contamination explains why equalizing resources restores quality link
+L055:         - 5.2 restates 6.5 (¶26) note: algorithmic proxy complaint recurs as canon-as-best metric complaint
+L056:         - 5.4 supports 6 (¶30) note: reshuffled-money canon lottery backs floors-and-ceilings verdict
+L057:         - 5.5 restates 8.4 (¶31) note: Haydn patronage counterfactual returns as Leipzig-job verdict
+L058:         - 5.7 supports 6.4 (¶35) note: capital-gating result backs exposure-widening intervention
+L059:         - 5.10 supports 8.2 (¶39) note: excellent winners with equal losers support positioning claim
+L060:         - 7.1 qualifies 6 (¶53) note: social constitution of quality limits Story 3 verdict
+L061:         - 7.2 qualifies 5 (¶54) note: teen-pop calibration leap limits result generalization
+L062:         - 8.3 exemplifies 8.2 (¶60) note: surgeon story illustrates excellence-plus-position claim
+L063:     - Coverage: 65 of 65 passages cited

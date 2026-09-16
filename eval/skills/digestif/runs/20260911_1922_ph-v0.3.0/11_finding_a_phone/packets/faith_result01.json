@@ -1,0 +1,297 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "11_finding_a_phone",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Seeking problem-solving rugged phones over ecosystems, from Droid obsession to Ulefone and data-driven search.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "finding one that genuinely solves my problems without forcing me into unnecessary ecosystems... my current obsession with rugged, no-nonsense devices.",
+   "reasoning": "Summary matches the stated motive, Droid era, Ulefone discovery, and LLM-assisted comparison search."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "From reliable J100 and day-one Droid centerpiece to disillusioned dial-pad switch.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "My first cellphone was a Sony Ericsson J100... reliable, durable, and hardy... I bought it on day one, and it quickly became a centerpiece of my life... I switched to a dial-pad phone.",
+   "reasoning": "All four stages appear in source with matching meaning."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "J100 was no-frills reliable; Droid bought day one became life centerpiece.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "It was a no-frills device... reliable, durable, and hardy... I bought it on day one, and it quickly became a centerpiece of my life.",
+   "reasoning": "Direct restatement of J100 qualities and Droid purchase."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "Smartphones created notifications and attention traps; felt consumer, not user.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "Notifications, endless customization, and attention-stealing apps made me feel more like a consumer than a user.",
+   "reasoning": "Keeps causality, the 'not user' negation, and the listed causes."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "Honeymoon ended after smartwatch experiments; switched to dial-pad phone.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "even experimented with one of the world's first smartwatches. For a while, I was captivated. But the honeymoon phase didn't last... I switched to a dial-pad phone.",
+   "reasoning": "Source orders smartwatch experiments before the honeymoon ended and the dial-pad switch."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Wanted offline functionality: battery, toughness, SD, jack, mic, customization.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "Long battery life; Waterproofing and shockproofing; SD card slots and headphone jacks; Decent mic and speaker quality; Customization options.",
+   "reasoning": "'Offline functionality' compresses the source's offline independence and listed priorities."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Needed long battery, waterproof shockproof, SD plus jack, decent mic speaker.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "Long battery life... Waterproofing and shockproofing... SD card slots and headphone jacks... decent mic and speaker quality.",
+   "reasoning": "Matches each listed priority."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Dismissed best camera, AI enhancements, cloud; preferred simple offline independence.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "Didn't care about: Having the best camera... AI 'enhancements'... Cloud storage—I preferred offline independence.",
+   "reasoning": "Retains the dismissals and offline preference."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Apple and Google deliberately cut SD and storage to push cloud.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "Companies like Apple and Google deliberately limited options for offline use, removing SD card slots and offering minimal onboard storage to push cloud services.",
+   "reasoning": "Entities, intent, and causal push to cloud all match."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Ulefone rugged value: durable, practical, week-long single model, 1/10th price.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "Durability: Waterproof, shockproof, and dustproof... One model lasted an entire week on a single charge. Affordability: these phones cost about 1/10th the price of flagship devices.",
+   "reasoning": "All four value points match source figures and features."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Small Chinese Ulefone: waterproof shockproof dustproof, dual SIM, SD, jack.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "Ulefone, a small Chinese company specializing in rugged phones... Waterproof, shockproof, and dustproof... Dual SIM, SD card slots, headphone jacks.",
+   "reasoning": "Every attribute matches source."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "One Ulefone model lasted an entire week on a single charge.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "One model lasted an entire week on a single charge.",
+   "reasoning": "Verbatim match on the duration and condition."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Ulefone costs about 1/10th the price of major-brand flagships.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "these phones cost about 1/10th the price of flagship devices from major brands.",
+   "reasoning": "Fraction, 'about' qualifier, and comparison class preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Survived countless drops and swims; deep lake dive hurt but still works.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "I've dropped them countless times, taken them swimming... I dived a bit too deep into a lake with my current Ulefone, and while it started acting up, it still works.",
+   "reasoning": "Drop, swim, and lake incident plus survival all match."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Pixel deal declined; LLM-assisted GSMArena scraping and cleaning began.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market... I asked openAI's O1 model... found specs on all of them in gsmarena.com... asked gpt-4o-mini to write some python code.",
+   "reasoning": "Compression of the abandoned Pixel order and the LLM scraping/cleaning workflow is accurate."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Declined Pixel over lock-in years and extra charges; O1 gave names, wrong specs.",
+   "claim_type": "fact",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "It gave me a bunch of them with generally wrong specs, but the model names where correct.",
+   "reasoning": "Source says 'generally wrong specs'; node drops the hedge and states specs simply wrong."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Scraper retries 3 times, sleeps 2 to 5 seconds, parses GSMArena into DataFrame.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "Retry(total=3... time.sleep(uniform(2, 5))... phones_df = pd.DataFrame(all_phones)",
+   "reasoning": "Retry count, sleep range, and DataFrame return match the code."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Listed 18 GSMArena URLs with duplicated Narzo; refined Claude prompts iteratively.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "realme_narzo_60... realme_narzo_60 appear twice... then a few more prompts and it made it mostly work.",
+   "reasoning": "URL count is 18, Narzo 60 repeated, and prompts were iterated."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "Cleaner extracts 5G, eSIM, year, screen, battery, SD, cameras, price.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "cleaned_df['has_5g']... cleaned_df['has_esim']... cleaned_df['release_year']... cleaned_df['battery_mah']... cleaned_df['has_sd_slot']... cleaned_df['price_usd']",
+   "reasoning": "Cleaner function attempts each named field consistent with source code."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Only two matches disappointed; TCL returned; G85 next after G75 unavailable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "only fairphone 4 and Moto G Power have 5g, esim, and sdcard slot. Their cameras are not great... screen sizes are too big... So, I've returned it. Next I'm going to try a motorolla Motorola G85... wanted a G75... couldn't find it in any stores.",
+   "reasoning": "Two matches, disappointment, TCL return, and G85 plan all present."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Only Fairphone 4 from 2021 and Moto G Power matched; Edge 40 lacks SD.",
+   "claim_type": "fact",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "it seems like it doesn't have sd card slot!",
+   "reasoning": "Filter result is right, but source hedges Edge 40 SD while node states it as fact."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "TCL returned: weak, hot calls, unreadable light screen, fake ink mode.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "It is pretty weak... It got pretty hot while on a video call... almost impossible to see the content of the screen when there is direct light... it is just a blakc and while mode. So, I've returned it.",
+   "reasoning": "Weakness, heat, unreadability, ink-mode reality, and return all match."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Next Motorola G85 water-repellent only; wanted IP68 G75, unavailable in stores.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": null,
+   "evidence_quote": "I wanted a G75 model since it is more waterproof (IP68), but I couldn't find it in any stores. G85 only has a water repellent design",
+   "reasoning": "G85 plan, G75 IP68 desire, store unavailability, and water repellent match."
+  }
+ ],
+ "metrics": {
+  "total_claims": 23,
+  "supported": 21,
+  "partially_supported": 2,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.913
+ },
+ "fail_list": [
+  "C16 partially supported: node drops 'generally' and states O1 specs simply wrong, source says 'generally wrong specs'",
+  "C21 partially supported: node states Edge 40 lacks SD as fact, source hedges 'it seems like it doesn't have sd card slot'"
+ ]
+}

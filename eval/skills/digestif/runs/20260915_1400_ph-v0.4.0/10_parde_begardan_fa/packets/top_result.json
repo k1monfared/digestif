@@ -1,0 +1,28 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "point-hierarchy run: 15 points / 29 claims",
+ "inputs": {
+  "faithfulness_precision": 0.9655,
+  "critical_errors": 1,
+  "must_recall": 1.0,
+  "overall_recall": 1.0,
+  "redundancy_rate": 0.1034,
+  "trivia_rate": 0.0
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "Hard gates first: critical_contradicted_max=0, but critical_errors=1 (C008) -> FAIL. (For audit, gate checks: faithfulness_precision 0.9655 >= 0.95 PASS; must_recall 1.0 >= 0.9 PASS; redundancy 0.1034 <= 0.15 PASS.) Weighted score (computed but non-decisive since a hard gate failed): 0.4*0.9655 + 0.4*1.0 - 0.2*0.1034 = 0.3862 + 0.4 - 0.02068 = 0.76552",
+ "weighted_score": 0.76552,
+ "verdict": "Fail",
+ "tradeoff_note": "Coverage is perfect (must_recall 1.0) and redundancy is within budget, but none of that rescues the sample: the single Critical contradicted claim C008 flips the santur purchase into a first-person action, which fails the critical_contradicted_max gate.",
+ "fix_list": [
+  "Fix C008 (loglog id 2): change 'سنتور را با تخفیف خریدم' to reflect that the santur was bought for the author (برام یه سنتور خریدن), not by the author, since wrong attribution contradicts the source quote 'بالاخره برام یه سنتور خریدن. ۲۰هزار تومن، با تخفیف شد ۱۸هزار تومن.'",
+  "Remove C021 (merge into C020), C027 (recap echoing C002/C016), and C029 (merge into C028) to drop redundancy_rate from 0.1034 toward ~0 without any coverage loss."
+ ],
+ "reasoning": "Gate evaluation in policy order. (1) Hard fail on critical errors: Judge F reports critical_errors=1, driven solely by C008, a Contradicted/Critical interpretation claim tied to loglog id 2. The source states the santur was bought for the author ('برام یه سنتور خریدن'), while the claim renders it as the author's own purchase ('خریدم'). Policy sets critical_contradicted_max=0, so any Critical contradicted claim fails the sample regardless of other metrics. (2) Must-have recall gate: 8/8 must-have points present, must_have_partial=0, must_have_missing=0, must_recall=1.0 >= 0.9 -> PASS. (3) Faithfulness precision gate: 28 supported of 29 total, faithfulness_precision=0.9655 >= 0.95 -> PASS numerically, though the one miss is the Critical C008, which is why the numeric pass does not save the sample. (4) Redundancy gate: 3 duplicates of 29 scored claims, redundancy_rate=0.1034 <= 0.15 -> PASS; trivia_rate=0.0. (5) Tradeoff among passes is moot because the hard gate failed, but for audit the weighted score is 0.4*0.9655 + 0.4*1.0 - 0.2*0.1034 = 0.3862 + 0.4 - 0.02068 = 0.76552. Coverage is maximal and concision is inside budget, so there is no coverage-vs-length tension to resolve; the verdict is decided entirely by the C008 attribution error. Verdict: Fail. Highest-leverage fix is repairing C008's attribution at loglog id 2, followed by pruning the three flagged duplicates for a clean concision pass on the next run."
+}

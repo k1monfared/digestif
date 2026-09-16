@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "point-hierarchy sample (source_id not provided in inputs)",
+  "inputs": {
+    "faithfulness_precision": 0.9714,
+    "critical_errors": 0,
+    "must_recall": 0.9583,
+    "overall_recall": 0.9667,
+    "redundancy_rate": 0.0571,
+    "trivia_rate": 0.0286
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4*0.9714 + 0.4*0.9583 - 0.2*0.0571 = 0.38856 + 0.38332 - 0.01142 = 0.76046",
+  "weighted_score": 0.7605,
+  "verdict": "Borderline",
+  "tradeoff_note": "All numeric gates pass and concision is comfortably under the redundancy max, so the 18.5 tokens per unique claim is justified by near-complete must-have coverage. However a Must-have point (K11) is only partially covered and one Partial claim (C001) sits near a Must-have trust point, so human review is advised before ship.",
+  "fix_list": [
+    "Restore the dropped scope qualifier in K11: state that history is stored only on your device and deleted from servers after delivery, in addition to the three device-switching options (L019/L020).",
+    "Narrow C001 to match the source: Signal's client-controlled keys yield a smaller attack surface, rather than asserting that only client-held keys minimize provider trust (source quote: 'With Signal using recovery keys, the attack surface is much smaller').",
+    "Merge duplicate pair C023/C031 and C033/C026 to lift the unique-claim ratio, and drop the trivia claim C003.",
+    "If any slack remains after K11, spend it on the C001 nuance rather than new material, since redundancy headroom (0.0571 vs 0.15) is still ample and coverage is the binding constraint."
+  ],
+  "reasoning": "Gate checks in order: (1) critical_errors = 0, at the config max of 0, so no hard fail and no Critical error is present. (2) must_recall = 0.9583, computed as (11 present + 0.5 partial)/(12 must-have) from coverage metrics (must_have_total 12, present 11, partial 1, missing 0), which clears the 0.9 minimum. (3) faithfulness_precision = 0.9714 = 34 supported / 35 total claims, which clears the 0.95 minimum; there are 0 contradicted and 0 unverifiable claims. (4) redundancy_rate = 0.0571 = 2 duplicates/35 scored claims, under the 0.15 max, with trivia_rate 0.0286 from the single trivia claim C003. Because all gates pass, the weighted score applies per the config aspect_weights: 0.4 faithfulness (0.9714) gives 0.38856, 0.4 must_recall (0.9583) gives 0.38332, minus 0.2 redundancy (0.0571) = 0.01142, for 0.76046, reported as 0.7605. Verdict is Borderline rather than Pass because, although the numbers clear every gate, the one Partial faith-fulness claim C001 (Minor severity) is an overstated-scope interpretation ('only client-held keys minimize that trust') that the source does not assert, and the coverage partial K11 is a Must-have whose dropped qualifier is the default local-only storage plus server-side deletion. Under the policy's borderline rule (gates met but a Partial claim affects a Must-have point), this warrants human review, so I name C001 and K11. Concision does not affect the verdict downgrade: redundancy is low and no concision metric rescues or harms a faithfulness or coverage concern, it only serves as a tie-breaker, which is moot here."
+}

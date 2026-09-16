@@ -1,0 +1,318 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "12_lets_talk_privacy part 3",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Even trusting the encryption architecture, plaintext password storage on servers cannot be ruled out.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Even if we trust the encryption architecture, how do we know companies don't store your password in plaintext on their servers?",
+   "reasoning": "Source poses exactly this open question, matching the loglog claim."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "If they have your password and your encrypted private key, they can decrypt everything.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if they have your password and your encrypted private key, they can decrypt everything",
+   "reasoning": "Verbatim restatement of the source sentence."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "The short answer is that we do not know for certain.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The short answer: we don't know for certain.",
+   "reasoning": "Identical meaning, only contraction expanded."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "You can verify what the client does if it is open source: that passwords are hashed before transmission.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You can verify what the client does (if it's open source) - you can confirm that passwords are hashed before transmission.",
+   "reasoning": "Source states precisely this verifiable client behavior."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "But you cannot verify what happens on the server after your password or password hash arrives; the server code is almost always closed source.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you cannot verify what happens on the server after your password (or password hash) arrives. The server code is almost always closed source",
+   "reasoning": "Both the negation and the 'almost always' qualifier are preserved."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Even with security audits, you are trusting the server operator.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "even with security audits, you're trusting that:",
+   "reasoning": "Source introduces a list of things trusted after audits; paraphrase holds."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "5.5.1"
+   ],
+   "claim_text": "That the audited code is what is actually running.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The audited code is what's actually running",
+   "reasoning": "Direct verbatim restatement of the bullet."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "5.5.2"
+   ],
+   "claim_text": "That they have not changed it since the audit.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They haven't changed it since the audit",
+   "reasoning": "Negation and meaning preserved exactly."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "5.5.3"
+   ],
+   "claim_text": "That no rogue employee has modified it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "No rogue employee has modified it",
+   "reasoning": "Direct restatement of the bullet."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "5.5.4"
+   ],
+   "claim_text": "That their infrastructure has not been breached.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Their infrastructure hasn't been breached",
+   "reasoning": "Negation and content preserved."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "Real-world examples show this is not just paranoia.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Real-world examples show this isn't just paranoia.",
+   "reasoning": "Verbatim restatement, contraction expanded only."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "5.6.1"
+   ],
+   "claim_text": "Facebook disclosed in 2019 that they had been accidentally logging hundreds of millions of passwords in plaintext in internal logs for years.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Facebook disclosed in 2019 that they'd been \"accidentally\" logging hundreds of millions of passwords in plaintext in internal logs for years.",
+   "reasoning": "Year 2019 and quantity 'hundreds of millions' preserved; only scare quotes dropped."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "5.6.2"
+   ],
+   "claim_text": "Adobe's 2013 breach revealed they stored password hints in plaintext.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Adobe's 2013 breach revealed they stored password hints in plaintext.",
+   "reasoning": "Entity, year 2013, and detail match source exactly."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "5.6.3"
+   ],
+   "claim_text": "Many smaller services store passwords in plaintext or use weak hashing like MD5 without salting.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Many smaller services store passwords in plaintext or use weak hashing like MD5 without salting.",
+   "reasoning": "Verbatim restatement including the 'without salting' negation."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "5.7"
+   ],
+   "claim_text": "For Proton specifically: resetting your password via email or SMS recovery loses access to all your old encrypted emails.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if you reset your password via email/SMS recovery, you lose access to all your old encrypted emails",
+   "reasoning": "Service, method, and consequence all match source."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "5.7.1"
+   ],
+   "claim_text": "That suggests they genuinely cannot decrypt your data without your password.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This suggests they genuinely can't decrypt your data without your password.",
+   "reasoning": "Hedged 'suggests' retained; meaning identical."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "5.8"
+   ],
+   "claim_text": "But even this is not proof: they could deliberately withhold access to maintain their privacy-focused image, even if they technically could decrypt.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "But even this isn't proof - they could be deliberately not providing access to maintain their privacy-focused image, even if they technically could.",
+   "reasoning": "Negation and both hedging clauses ('could') preserved."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "The fundamental problem: you are trusting reputation, jurisdiction, business model, and past behavior rather than cryptographically verifiable guarantees.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you're trusting the company's reputation, jurisdiction, business model, and past behavior rather than having cryptographically verifiable guarantees.",
+   "reasoning": "All four trust factors and the contrast are retained."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Architecture matters: with WhatsApp, you are trusting Meta's entire server infrastructure.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is why the architecture matters so much. With WhatsApp, you're trusting Meta's entire server infrastructure.",
+   "reasoning": "Entity and claim match source directly."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "With Proton, you are trusting that they will not serve malicious code.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "With Proton, you're trusting they won't serve malicious code.",
+   "reasoning": "Negation and content preserved."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "With Signal and recovery keys, the attack surface is much smaller: they would need to compromise your device or steal your recovery key.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "With Signal using recovery keys, the attack surface is much smaller - they'd need to compromise your device or steal your recovery key",
+   "reasoning": "Mechanism and both required attack paths match source."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "The comparison tables contrast key generation, key storage, new-device behavior, provider device injection, server storage, required trust, and security model.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Where encryption keys are generated ... Where private keys are stored ... What happens when you add a new device ... What you must trust ... Security model name",
+   "reasoning": "Enumerated table aspects correspond to source rows; meta summary is accurate."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Can the provider add a device without your knowledge? WhatsApp yes; Proton no, but could serve malicious client code; Signal no.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "YES - WhatsApp controls device authentication ... NO - but they could serve malicious client code ... NO - they cannot authenticate a device",
+   "reasoning": "All three per-service verdicts match the source table."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "What the server stores: WhatsApp keeps encrypted history, keys, and device-to-key mappings; Proton keeps emails and the encrypted private key; Signal keeps nothing by default.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "WhatsApp: 1. Encrypted message history 2. Encrypted encryption keys 3. Device-to-key mappings ... Signal: 1. Nothing by default",
+   "reasoning": "Storage items for each service match the source table."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Security model names: server-mediated key escrow for WhatsApp, password-encrypted server-side key storage for Proton, client-controlled keys for Signal.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Security model name | Server-mediated key escrow | Password-encrypted server-side key storage | Client-controlled keys",
+   "reasoning": "All three labels reproduce the source table exactly."
+  }
+ ],
+ "metrics": {
+  "total_claims": 25,
+  "supported": 25,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

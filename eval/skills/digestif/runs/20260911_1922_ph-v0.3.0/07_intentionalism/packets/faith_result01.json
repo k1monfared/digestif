@@ -1,0 +1,333 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "07_intentionalism",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Life systematically favors proposers over receivers, so build intention by proposing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "it has nothing to do with talent, luck ... whether they propose or receive",
+   "reasoning": "Source thesis asserts proposers get systematically better outcomes and prescribes building intention. Summary is faithful."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Better outcomes come from whether one proposes or receives, not talent or luck.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "nothing to do with talent, luck, or even the quality of their choices",
+   "reasoning": "Source explicitly denies talent and luck, attributing outcomes to propose/receive position."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "In 1962 Gale and Shapley sought pairings no unmatched pair would break.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "In 1962, mathematician-economists David Gale and Lloyd Shapley ... no two unmatched people would prefer each other",
+   "reasoning": "Year, names, and stable-matching goal all match the source."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Deferred acceptance gives each proposer their best stable partner, each receiver their worst.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "proposers get their best possible partner ... receivers get their worst possible partner",
+   "reasoning": "Node restates the source's central algorithm result exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "The gap is systematically, provably, mathematically extreme, not slight.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "isn't just slightly better or worse—it's systematically, provably, mathematically extreme",
+   "reasoning": "Direct paraphrase preserving the not-slight negation."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Real situations skip the exact algorithm but share the propose-respond structure.",
+   "claim_type": "claim",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "most real-world situations don't follow the exact Gale-Shapley algorithm",
+   "reasoning": "Source hedges with most; node states it universally, dropping the quantifier."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Netflix, phones, jobs, friendships: pre-decided pursuit versus presented selection.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "did you decide what kind of experience you wanted? Or did you scroll through recommendations",
+   "reasoning": "The four source examples and their pursue-versus-select framing are accurately compressed."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "For most of these, most of us are receivers choosing from presentations.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "For most of these, most of us are receivers. We're choosing from what's presented",
+   "reasoning": "Node matches the source sentence including its most-of-these hedge."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Receivers get acceptable, good-enough outcomes, never terrible ones.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "isn't that you get terrible outcomes. You don't. You get acceptable ones. Good enough ones.",
+   "reasoning": "Node preserves the source's negation that outcomes are not terrible."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Decent differs from best-serving; structure favors proposers without conspiracy.",
+   "claim_type": "causal_link",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "the outcomes tend to favor whoever's doing the proposing",
+   "reasoning": "Source hedges with tend to; node states structure favors as absolute."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Fine feelings block revolt-driving dissatisfaction; quiet under-service stays stable.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "because your outcomes feel fine, you never develop the dissatisfaction ... The system is stable",
+   "reasoning": "Node captures the source's mechanism linking feeling-fine to stability."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Intention is needed to propose, yet intention develops only through proposing.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "You need intention to propose, but you develop intention through proposing",
+   "reasoning": "The chicken-and-egg assertion is directly stated by the source."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Receiver choices reveal the least-disliked option, never freely pursued desire.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "reveal which option you dislike least ... They don't tell you what you'd pursue if you could",
+   "reasoning": "Node preserves both the least-disliked framing and the negation."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Algorithmic songs and swiped partners leave wants as reactions to offerings.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "\"preferences\" are just reactions to what gets put in front of them",
+   "reasoning": "Node reflects the source's music and dating examples and reaction claim."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "The intention muscle builds progressively; no jump from Netflix to life vision.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "You can't jump straight from ... Netflix ... to ... your life's work. The muscle ... builds progressively",
+   "reasoning": "Both the progressive build and the no-jump negation match the source."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Tonight: name the hour's want (laugh, learn, calm, challenge), then seek it.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "do you want to laugh? Learn something? Feel calm? Be challenged? ... Actively seek what you decided",
+   "reasoning": "The four options and the seek-it instruction match the source exercise."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Patterns become preferences, preferences values; values are practiced into, not thought into.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Those patterns become preferences. Those preferences become values. You can't think your way into values.",
+   "reasoning": "Node replicates the progression and the practiced-not-thought negation."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Major decisions usually evaluate presented options; receiving feels like agency.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Most people, most of the time, are evaluating presented options. This feels like agency",
+   "reasoning": "Node's usually matches the source's most-of-the-time hedge."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Proposers of work, partners, and cities win systematically from structural position.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "those people end up with systematically better outcomes. Not because they're smarter or luckier. Because they're on the other side",
+   "reasoning": "Source states the systematic advantage and structural cause for exactly these domains."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Platforms take optimal outcomes (attention, data, money); users keep good-enough engagement.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "the platforms get optimal outcomes (your attention, your data, your money), and you get outcomes that are good enough",
+   "reasoning": "Node matches the platform-user outcome split and listed currencies."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Staying wins because leaving feels harder; stability is resistance to change.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "You stay because leaving feels harder than accepting \"good enough.\" That's stability (resistance to change)",
+   "reasoning": "Node restates the source's definition and persistence explanation."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Understanding changes nothing; one must actually switch positions against designed defaults.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "doesn't go away because you understand it. You have to actually switch positions",
+   "reasoning": "Node faithfully conveys that understanding alone is insufficient and switching is required."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Propose: decide before seeing options, pursue specifics, create openings, accept friction.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Deciding intentionally what you want before seeing what's available ... Accepting the friction",
+   "reasoning": "All four listed proposal actions correspond to source bullets."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Ask what one wants before every major decision and most minor ones, then act.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "before every major decision and most minor ones. Then acting on that answer",
+   "reasoning": "Node matches the source scope and the act-after-asking instruction."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Most will refuse: effortful, comfortable, and forgetful of what to propose.",
+   "claim_type": "concession",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Most people won't do this. It's effortful. The receiver position is comfortable ... lost the capacity",
+   "reasoning": "Node captures both the majority refusal and all three cited reasons."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "The dynamic is confirmed; the open question is whether the reader acts.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The question isn't whether this dynamic exists ... The question is whether you're willing to do something about it",
+   "reasoning": "Node reframes the source's settled-existence and reader-action questions faithfully."
+  }
+ ],
+ "metrics": {
+  "total_claims": 26,
+  "supported": 24,
+  "partially_supported": 2,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9231
+ },
+ "fail_list": [
+  "C06 Partially supported: source says most real-world situations skip the algorithm, node drops the most hedge",
+  "C10 Partially supported: source says outcomes tend to favor proposers, node states it as absolute structural fact"
+ ]
+}

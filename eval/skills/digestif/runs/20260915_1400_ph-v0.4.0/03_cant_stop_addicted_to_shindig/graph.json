@@ -1,0 +1,1636 @@
+{
+  "meta": {
+    "title": "Can't Stop: Four-Dice Probabilities, Strategy, and Balance",
+    "source": "03_cant_stop_addicted_to_shindig/source.txt",
+    "passages": {
+      "¶1": "I recently got introduced to this game called [Can't Stop](https://boardgamegeek.com/boardgame/41/cant-stop) and it got me thinking about probabilities. You know how it is - you start playing a dice game and suddenly you're knee-deep in combinatorics at 2am.\n\n![Can't Stop Board And Dice](files/20251201/cant-stop.png)",
+      "¶2": "The game is deceptively simple but mathematically rich. In this post, I'll take you through:\n- The probability foundations (2-dice vs 4-dice)\n- Which columns to choose and why\n- When to stop rolling (the eternal question!)\n- Whether to continue your current columns or switch to new ones\n- How different strategies perform head-to-head\n- Whether the game designers nailed the balance",
+      "¶3": "Let's dive in.\n\n## The Game\n\nThe rules are straightforward: roll four dice, pair them up however you want, move your markers on a board. The catch? You can keep rolling as long as you want, but if you can't move any of your three active markers, you lose everything you've gained that turn. Classic push-your-luck. [Here](https://www.youtube.com/watch?v=L6Zk7j1mJDE) is a brief explanation of how the game is played.",
+      "¶4": "The board has columns numbered 2 through 12, with different lengths:\n- Columns 2 and 12: 3 steps\n- Columns 3 and 11: 5 steps\n- Columns 4 and 10: 7 steps\n- Columns 5 and 9: 9 steps\n- Columns 6 and 8: 11 steps\n- Column 7: 13 steps",
+      "¶5": "You need to complete three columns to win.\n\nI've implemented a fully interactive web version of the game with a Python/FastAPI backend and React frontend. You can [play it online](https://cantstop-frontend.onrender.com/) and check out the\n  [source code](https://github.com/k1monfared/cantstop-game).",
+      "¶6": "**The Forced-Move Rule (Important!)**\n\nHere's a critical rule that shapes the entire strategy: **you must take all available moves**. If you roll the dice and choose a pairing that creates any valid move, you must make ALL legal moves from that pairing, even if you don't want them.\n\nFor example, if you're working on columns {6, 7, 8} and you roll (1,1,3,4), you could choose pairing (1,1)+(3,4) = 2+7. But if you do, you're forced to take BOTH the 2 and the 7, even though column 2 isn't in your plan. You can't just cherry-pick the 7.\n\nThis rule prevents the game from being trivially easy and adds tactical depth.",
+      "¶7": "## Probability Foundations\n\n### Two Dice: The Baseline\n\nYou probably know this one already, but let's start here for comparison. With two dice, how likely are you to roll each sum?",
+      "¶8": "| Sum | Ways to make it | Probability | Percentage |\n|----:|:---------------|------------:|-----------:|\n| 2 | (1,1) | 1/36 | 2.78% |\n| 3 | (1,2), (2,1) | 2/36 | 5.56% |\n| 4 | (1,3), (2,2), (3,1) | 3/36 | 8.33% |\n| 5 | (1,4), (2,3), (3,2), (4,1) | 4/36 | 11.11% |\n| 6 | (1,5), (2,4), (3,3), (4,2), (5,1) | 5/36 | 13.89% |\n| 7 | (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) | 6/36 | 16.67% |\n| 8 | (2,6), (3,5), (4,4), (5,3), (6,2) | 5/36 | 13.89% |\n| 9 | (3,6), (4,5), (5,4), (6,3) | 4/36 | 11.11% |\n| 10 | (4,6), (5,5), (6,4) | 3/36 | 8.33% |\n| 11 | (5,6), (6,5) | 2/36 | 5.56% |\n| 12 | (6,6) | 1/36 | 2.78% |",
+      "¶9": "![Two Dice Distribution](files/20251201/two_dice_distribution.png)\n\nSum 7 is the most likely at 16.67%, and it's exactly 6× more likely than sum 2 at 2.78%.\n\n**Quick proof:** For sum 2, there's only one way: both dice must show 1. That's $\\frac{1}{6} \\times \\frac{1}{6} = \\frac{1}{36}$. For sum 7, you need complementary pairs: (1,6), (2,5), or (3,4), and order matters, so that's 6 ways total out of 36 possible outcomes.",
+      "¶10": "Now if Can't Stop used two dice, column 7 would need to be 6× longer than column 2 to be equally hard. Instead it's only $\\frac{13}{3} \\approx 4.3\\times$ longer. So something interesting must be happening with four dice.",
+      "¶11": "### Four Dice: This Is Where It Gets Interesting\n\nIn Can't Stop, you roll FOUR dice and then pair them up. Say you roll 2, 3, 4, 5. You can make:\n- (2,3)+(4,5) = 5 and 9\n- (2,4)+(3,5) = 6 and 8\n- (2,5)+(3,4) = 7 and 7\n\nThat's it, just three possible pairings. The question is: if I'm trying to hit column 7, what's the probability that at least one of those pairings gives me a 7?\n\nLet me work this out properly.",
+      "¶12": "#### Computing P(can make a 2)\n\nTo make a 2, I need a pair that sums to 2, which means two 1's. So I need at least two 1's among my four dice.",
+      "¶13": "**Probability of NOT getting enough 1's:**\n\n- $P(\\text{zero 1's}) = \\left(\\frac{5}{6}\\right)^4 = \\frac{625}{1296}$\n\n- $P(\\text{exactly one 1}) = \\binom{4}{1} \\times \\left(\\frac{1}{6}\\right)^1 \\times \\left(\\frac{5}{6}\\right)^3 = 4 \\times \\frac{1}{6} \\times \\frac{125}{216} = \\frac{500}{1296}$",
+      "¶14": "**Therefore:**\n\n$$P(\\text{can make a 2}) = 1 - \\frac{625}{1296} - \\frac{500}{1296} = \\frac{171}{1296} \\approx 13.2\\%$$",
+      "¶15": "13.2%! That's way higher than the 2.78% we had with two dice.\n\n#### Computing P(can make a 7)\n\nTo make a 7, I need one of these pairs: (1,6), (2,5), or (3,4). The intuition: I want to count rolls with at least one of these complementary pairs, but I need to be careful not to double-count rolls that contain multiple pairs. I'll use inclusion-exclusion.",
+      "¶16": "Let A = \"I can make pair (1,6)\" = \"I have at least one 1 AND at least one 6\"\nLet B = \"I can make pair (2,5)\" = \"I have at least one 2 AND at least one 5\"\nLet C = \"I can make pair (3,4)\" = \"I have at least one 3 AND at least one 4\"",
+      "¶17": "**First, P(A) - having both a 1 and a 6:**\n\n$$P(A) = 1 - P(\\text{no 1's}) - P(\\text{no 6's}) + P(\\text{no 1's AND no 6's})$$\n$$= 1 - \\left(\\frac{5}{6}\\right)^4 - \\left(\\frac{5}{6}\\right)^4 + \\left(\\frac{4}{6}\\right)^4$$\n$$= \\frac{1296 - 625 - 625 + 256}{1296} = \\frac{302}{1296}$$",
+      "¶18": "By the same logic, $P(B) = \\frac{302}{1296}$ and $P(C) = \\frac{302}{1296}$.\n\n**Next, the overlaps:**",
+      "¶19": "$P(A \\cap B) = P(\\text{have 1, 6, 2, 5})$ = $\\frac{24}{1296}$ (all four distinct values among four dice)\n\nSimilarly, $P(A \\cap C) = \\frac{24}{1296}$ and $P(B \\cap C) = \\frac{24}{1296}$.\n\n$P(A \\cap B \\cap C) = 0$ because you'd need 6 specific dice values with only 4 dice.",
+      "¶20": "**Final answer:**\n\n$$P(\\text{can make a 7}) = P(A \\cup B \\cup C) = 302 + 302 + 302 - 24 - 24 - 24 + 0 = \\frac{834}{1296} \\approx 64.4\\%$$",
+      "¶21": "With two dice, P(7) was 16.67%. With four dice, it jumped to 64.4%. And P(2) went from 2.78% to 13.2%.\n\nDid the distribution get flatter?",
+      "¶22": "#### The Complete Picture\n\nLet me calculate all of them (see [probability_calculations.py](files/20251201/probability_calculations.py) for the code):",
+      "¶23": "| Sum | At Least One Pair | Normalized | Column Length | Normalized |\n|----:|-----------------:|-----------:|--------------:|-----------:|\n| 2 | 171 (13.2%) | 1.00 | 3 | 1.00 |\n| 3 | 302 (23.3%) | 1.77 | 5 | 1.67 |\n| 4 | 461 (35.6%) | 2.70 | 7 | 2.33 |\n| 5 | 580 (44.8%) | 3.39 | 9 | 3.00 |\n| 6 | 727 (56.1%) | 4.25 | 11 | 3.67 |\n| 7 | 834 (64.4%) | 4.88 | 13 | 4.33 |\n| 8 | 727 (56.1%) | 4.25 | 11 | 3.67 |\n| 9 | 580 (44.8%) | 3.39 | 9 | 3.00 |\n| 10 | 461 (35.6%) | 2.70 | 7 | 2.33 |\n| 11 | 302 (23.3%) | 1.77 | 5 | 1.67 |\n| 12 | 171 (13.2%) | 1.00 | 3 | 1.00 |",
+      "¶24": "![Four Dice Distribution](files/20251201/four_dice_distribution.png)\n\nNow look at those normalized columns. The probability ratio from 2 to 7 is 4.88. The length ratio is 4.33. Pretty close! The game designers were definitely thinking about this.",
+      "¶25": "## Column Selection Strategy\n\n### Which Column Should You Go For?\n\nOn one hand, column 2 is only 3 steps. On the other hand, you'll only hit it 13.2% of the time. Column 7 is 13 steps but you hit it 64.4% of the time.",
+      "¶26": "**Expected number of rolls to complete column n:**\n\n$$\\mathbb{E}[\\text{rolls}] = \\frac{\\text{length}}{\\text{probability}} = \\frac{L(n)}{P(n)}$$\n\nFor column 2: $\\frac{3}{0.132} = 22.73$ rolls\nFor column 7: $\\frac{13}{0.644} = 20.18$ rolls\n\nColumn 7 is slightly faster, even though it's 4× longer. Let me check all of them:",
+      "¶27": "| Column | Length | P(n) | Expected Rolls |\n|-------:|-------:|-----:|---------------:|\n| 2, 12 | 3 | 13.2% | 22.73 |\n| 3, 11 | 5 | 23.3% | 21.46 |\n| 4, 10 | 7 | 35.6% | 19.67 |\n| 5, 9 | 9 | 44.8% | 20.09 |\n| 6, 8 | 11 | 56.1% | 19.60 |\n| 7 | 13 | 64.4% | 20.18 |",
+      "¶28": "Columns 2 and 12 require the most rolls. Columns 6, 7, and 8 are all close to each other around 20 rolls.\n\n![Expected Rolls per Column](files/20251201/expected_rolls_per_column.png)\n\n### But Wait - Three Columns at Once\n\nHere's the thing though: you don't play Can't Stop one column at a time. You have THREE active columns, and you bust if you can't hit ANY of them.",
+      "¶29": "If you're on columns {6, 7, 8}, what's your bust probability?\n\nI need $P(\\text{can't make 6 AND can't make 7 AND can't make 8})$. The easiest way is to enumerate all 1296 possible rolls and count (see [column_combinations.py](files/20251201/column_combinations.py)):\n\n**Result: 1193/1296 = 92.0% success rate**\n\nSo if you're on {6,7,8}, you have a 92% chance of not busting.",
+      "¶30": "What about {2,3,12}?\n\n**Result: 568/1296 = 43.8% success rate**\n\nLess than 50% chance of not busting. You're more likely to bust than succeed!",
+      "¶31": "### All 165 Three-Column Combinations\n\nLet me analyze all possible combinations and show you the best and worst (see [column_combinations.py](files/20251201/column_combinations.py) for complete results):",
+      "¶32": "**Top 10 Best Combinations:**\n\n| Rank | Columns | Success | Bust | Clean | Q (expected markers/roll) |\n|-----:|:--------|--------:|-----:|------:|--------------------------:|\n| 1 | {6,7,8} | 92.0% | 8.0% | 39.8% | 1.43 |\n| 2 | {5,7,8} | 91.4% | 8.6% | 38.2% | 1.42 |\n| 3 | {6,7,9} | 91.4% | 8.6% | 38.2% | 1.42 |\n| 4 | {4,6,8} | 91.1% | 8.9% | 28.2% | 1.31 |\n| 5 | {6,8,10} | 91.1% | 8.9% | 28.2% | 1.31 |\n| 6 | {4,7,8} | 90.3% | 9.7% | 34.0% | 1.38 |\n| 7 | {6,7,10} | 90.3% | 9.7% | 34.0% | 1.38 |\n| 8 | {5,6,8} | 89.5% | 10.5% | 33.3% | 1.37 |\n| 9 | {6,8,9} | 89.5% | 10.5% | 33.3% | 1.37 |\n| 10 | {5,7,10} | 89.3% | 10.7% | 29.1% | 1.33 |",
+      "¶33": "**Bottom 10 Worst Combinations:**\n\n| Rank | Columns | Success | Bust | Clean | Q (expected markers/roll) |\n|-----:|:--------|--------:|-----:|------:|--------------------------:|\n| 156 | {2,10,11} | 57.9% | 42.1% | 5.6% | 1.10 |\n| 157 | {3,4,12} | 57.9% | 42.1% | 5.6% | 1.10 |\n| 158 | {2,4,12} | 55.2% | 44.8% | 4.2% | 1.08 |\n| 159 | {2,10,12} | 55.2% | 44.8% | 4.2% | 1.08 |\n| 160 | {2,3,11} | 52.5% | 47.5% | 4.1% | 1.08 |\n| 161 | {3,11,12} | 52.5% | 47.5% | 4.1% | 1.08 |\n| 162 | {2,3,4} | 52.2% | 47.8% | 3.9% | 1.07 |\n| 163 | {10,11,12} | 52.2% | 47.8% | 3.9% | 1.07 |\n| 164 | {2,3,12} | 43.8% | 56.2% | 2.3% | 1.05 |\n| 165 | {2,11,12} | 43.8% | 56.2% | 2.3% | 1.05 |",
+      "¶34": "![Top 10 best and bottom 10 worst column combinations by success rate](files/20251201/column_combinations_comparison.png)\n\n**What's \"Clean\"?** Remember the forced-move rule? A \"clean\" move is one where you only hit columns you actually want. Even the best combination {6,7,8} only has 39.8% clean moves - the rest of the time you're forced onto unwanted columns.",
+      "¶35": "Here's the complete picture - all 165 combinations ranked by success rate:\n\n![All 165 Combinations Ranked](files/20251201/all_165_combinations_ranked.png)\n\nThe distribution reveals some interesting patterns: 37 combinations are \"excellent\" (≥85% success rate), mostly centered around columns 5-9. The median combination still succeeds 79.6% of the time, but the worst combinations drop dramatically to just 43.8% - you're more likely to bust than succeed!\n\nThe full detailed results are in [column_combinations_all.csv](files/20251201/column_combinations_all.csv).",
+      "¶36": "## When Should You Stop Rolling?\n\nThis is the classic push-your-luck question. You've made some progress this turn - should you roll again or bank it?",
+      "¶37": "### The Basic Heuristic\n\nHere's a mathematical framework (see [stopping_heuristic.py](files/20251201/stopping_heuristic.py) for implementation):\n\n**Keep rolling if:** $(P_{\\text{success}} \\times Q) > (P_{\\text{bust}} \\times U)$",
+      "¶38": "Where:\n- $P_{\\text{success}}$ = probability of hitting at least one active column\n- $Q$ = expected number of markers you'll advance on a successful roll\n- $P_{\\text{bust}}$ = probability of hitting no active columns\n- $U$ = unsaved progress (steps you'd lose if you bust)",
+      "¶39": "Let's test this on {6,7,8} with 5 unsaved steps:\n\n**Risk of rolling again:**\n- 8% chance you bust and lose those 5 steps\n- Expected loss: $0.08 \\times 5 = 0.4$ steps",
+      "¶40": "**Expected gain from rolling again:**\n- 92% chance you succeed\n- You'll advance about 1.43 markers on average\n- Expected gain: $0.92 \\times 1.43 = 1.32$ steps\n\nSince $1.32 > 0.4$, you should keep rolling.",
+      "¶41": "Now try the same on {2,3,12} with 2 unsaved steps:\n\n**Risk:** $0.562 \\times 2 = 1.12$ steps\n**Expected gain:** $0.438 \\times 1.05 = 0.46$ steps\n\nSince $1.12 > 0.46$, you should STOP.",
+      "¶42": "### The Forced-Move Impact\n\nRemember that forced-move rule? It changes everything. Let me recalculate success rates for \"clean\" moves only.",
+      "¶43": "For {6,7,8}, the old analysis said 92% success rate. But how many of those rolls force you onto columns outside {6,7,8}?\n\nA roll is \"clean\" if at least one pairing gives you ONLY sums in {6,7,8}. Running the calculation:\n\n**Result: Only 39.8% of rolls give you a clean move on {6,7,8}!**",
+      "¶44": "The other 52.2% of rolls let you make progress BUT also force you onto unwanted columns, slowly contaminating your combination.\n\n**For {2,3,12}: Only 2.3% of rolls are clean!**\n\nThe forced-move rule is a balancing mechanism. It prevents {6,7,8} from being completely dominant by forcing players onto suboptimal columns when they push their luck.",
+      "¶45": "## Continuation vs. Switching\n\nShould you continue your current columns or switch to new ones? This depends on progress already made: if columns are nearly complete (e.g., 10/11 steps), continuing makes sense. But with minimal progress (2-3 steps), switching to a better combination might be faster.\n\nThe mathematics favor continuation in most cases: wasting accumulated progress hurts more than the marginal benefit of a slightly better combination. However, the forced-move rule gradually contaminates good combinations over time, sometimes forcing strategic switches.",
+      "¶46": "**Note:** I haven't fully analyzed this aspect quantitatively. A complete treatment would require simulating \"always continue\" vs \"switch when X\" strategies across different board states and comparing their win rates. This is an interesting open question for future work, but for now I'm focusing on the stopping decision given a fixed set of active columns.",
+      "¶47": "## Strategy Performance\n\nNow let's see how different strategies actually perform. I implemented 38 different strategies and ran them against each other in a comprehensive simulation (1,000 single-player trials per strategy, 2,500 head-to-head games per matchup, 3.6 million total games).",
+      "¶48": "### The Strategies\n\nI tested 38 strategies across 14 different strategic families:",
+      "¶49": "**Core Strategy Types:**\n\n**1. Baseline** - Greedy (always rolls) and Random (30% stop probability) establish performance bounds.\n\n**2. Conservative(k)** - Stops after accumulating k unsaved steps, with k ∈ {1, 2, 3, 4}. Critically updated to respect the \"can't bust with <3 active runners\" rule.\n\n**3. Heuristic(α)** - Mathematical stopping rule: Keep rolling if $(P_{\\text{success}} \\times Q) > (\\alpha \\times P_{\\text{bust}} \\times U)$ with α ∈ {0.3, 0.5, 1.0, 1.5, 2.0}. Pure EV at α = 1.0, aggressive when α < 1, conservative when α > 1.\n\n**4. OpponentAware** - Dynamic risk adjustment based on game state with four variants: (0.3,1,2), (0.5,1,2), (0.7,1,1.5) [aggressive when behind], and (2,1,0.3) [conservative when behind - the opposite approach].",
+      "¶50": "**5. Greedy-Improved** - Simple threshold improvements: GreedyImproved1 (progress on all 3 active columns) and GreedyImproved2 (exactly 5 unsaved steps).\n\n**6. Adaptive** - AdaptiveThreshold dynamically adjusts stopping threshold based on current success probability.\n\n**7. Proportional** - ProportionalThreshold(f) with f ∈ {0.33, 0.5}, stops based on fraction of remaining distance.\n\n**8. Progressive Milestones** - GreedyFraction(f) with f ∈ {0.33, 0.5}, stops when reaching next progressive milestone (1/3 → 2/3 → complete).\n\n**9. Probabilistic** - FiftyPercentSurvival (stops when cumulative survival < 50%) and ExpectedValueMax (stops when EV ≤ 0).\n\n**10. Column-Count** - GreedyUntil1Col (stops after 1 column complete) and GreedyUntil3Col (never stops).",
+      "¶51": "**New Strategy Types (Groups 11-14):**\n\n**11. Outside/Middle Preference** - OutsideFirst, MiddleFirst, MinimumRunnerActivation explore column selection biases.\n\n**12. Runner-Aware** - TwoRunnerSweet and DynamicRunnerThreshold optimize based on active runner count.\n\n**13. Column-Quality** - MiddleColumnsOnly, WeightedColumnValue, WeightedColumnValueOuter, OpportunisticActivation prioritize column quality over quantity.\n\n**14. Hybrid/Advanced** - TwoPhase (evolves strategy as game progresses), RiskBudget (20% cumulative bust limit per turn), and MonteCarloLookahead (simulates 100 future rolls for \"perfect play\").",
+      "¶52": "Full strategy details: [strategy_analysis_updated.md](files/20251201/strategy_analysis_updated.md)\n\n### Single-Player Performance\n\nFirst, let's see how fast each strategy completes 3 columns when playing alone (1,000 trials each):",
+      "¶53": "| Rank | Strategy | Avg Turns | Median | StdDev | Avg Busts |\n|------|----------|-----------|--------|--------|-----------|\n| 1 | **GreedyUntil1Col** | **10.5** | 9 | 5.73 | 7.50 |\n| 2 | **FiftyPercentSurvival** | **11.3** | 11 | 2.86 | 2.67 |\n| 3 | OpponentAware(0.5,1,2) | 11.4 | 11 | 3.02 | 2.86 |\n| 4 | OpponentAware(0.3,1,2) | 11.6 | 11 | 3.15 | 2.95 |\n| 5 | OpponentAware(0.7,1,1.5) | 11.8 | 11 | 3.63 | 3.59 |\n| 6 | Heuristic(1.5) | 11.9 | 12 | 2.78 | 2.03 |\n| 7 | Heuristic(2.0) | 12.3 | 12 | 2.14 | 0.92 |\n| 8 | Heuristic(1.0) | 12.3 | 12 | 4.26 | 4.87 |\n| 9 | ExpectedValueMax | 12.3 | 12 | 5.01 | 4.98 |\n| 10 | MonteCarloLookahead | 12.4 | 12 | 2.14 | 0.97 |\n| 11 | WeightedColumnValue | 12.4 | 12 | 3.82 | 2.86 |\n| 12 | AdaptiveThreshold | 12.5 | 12 | 2.37 | 1.63 |\n| 13 | GreedyImproved2 | 12.6 | 12 | 2.50 | 2.35 |\n| 14 | MiddleColumnsOnly | 12.8 | 13 | 1.70 | 0.25 |\n| 15 | OpportunisticActivation | 12.8 | 11 | 6.08 | 6.42 |",
+      "¶54": "Full results (all 38 strategies): [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md)\n\n**Key insights:**\n- **GreedyUntil1Col** is fastest (10.5 turns) but has high variance (σ=5.73) and bust rate (7.5 per game)\n- **FiftyPercentSurvival** balances speed with remarkable consistency (σ=2.86, only 2.67 busts)\n- Conservative strategies like **Heuristic(2.0)** and **MonteCarloLookahead** average <1 bust per game\n- The top 15 all complete games in 10.5-12.8 turns - a narrow performance band",
+      "¶55": "![Single-Player Performance](files/20251201/single_player_performance.png)\n\n### Head-to-Head Tournament Results",
+      "¶56": "Now the real test: 38 strategies, each playing 2,500 games against every other strategy (3.6 million total games). Here are the overall win rates:",
+      "¶57": "| Rank | Strategy | Win Rate | Total Wins | First-Player Advantage |\n|------|----------|----------|------------|------------------------|\n| **1** | **FiftyPercentSurvival** | **69.84%** | **132,696/190,000** | **+9.42%** |\n| 2 | Heuristic(1.5) | 66.46% | 126,274/190,000 | +10.15% |\n| 3 | Heuristic(2.0) | 63.26% | 120,194/190,000 | +11.73% |\n| 4 | MonteCarloLookahead | 63.09% | 119,871/190,000 | +11.38% |\n| 5 | AdaptiveThreshold | 62.21% | 118,199/190,000 | +11.14% |\n| 6 | ExpectedValueMax | 62.08% | 117,952/190,000 | +8.40% |\n| 7 | Heuristic(1.0) | 61.87% | 117,553/190,000 | +8.49% |\n| 8 | OpportunisticActivation | 61.43% | 116,717/190,000 | +7.28% |\n| 9 | GreedyImproved2 | 60.23% | 114,437/190,000 | +11.06% |\n| 10 | OpponentAware(0.7,1,1.5) | 59.92% | 113,848/190,000 | +12.58% |\n| 11 | GreedyUntil1Col | 58.90% | 111,910/190,000 | +31.24% ⚠️ |\n| 12 | WeightedColumnValue | 58.42% | 111,002/190,000 | +10.26% |\n| 13 | MiddleColumnsOnly | 58.33% | 110,834/190,000 | +12.65% |\n| 14 | TwoRunnerSweet | 56.97% | 108,251/190,000 | +12.51% |\n| 15 | Conservative(4) | 56.82% | 107,965/190,000 | +11.99% |",
+      "¶58": "Full results (all 38 strategies): [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md) | [Comprehensive analysis](files/20251201/COMPREHENSIVE_RESULTS.md)\n\n**Major findings:**\n- **Overall first-player advantage: +11.18%** (Player 1 wins 55.59% across all games)\n- 4 strategies show **unfair self-play** (>10% P1 bias in mirror matchups)\n- **Probabilistic strategies dominate** the top rankings\n- **GreedyUntil1Col** has extreme position bias (+31.24%) despite being fastest",
+      "¶59": "![Strategy Tournament Rankings](files/20251201/strategy_tournament_rankings.png)\n\n### The Champion: FiftyPercentSurvival\n\n**FiftyPercentSurvival dominates with 69.84% overall win rate**, establishing a new performance benchmark for Can't Stop strategy.",
+      "¶60": "**The strategy:** Roll until cumulative survival probability drops below 50%, calculated as $n = \\log(0.5) / \\log(P_{\\text{success}})$ where $P_{\\text{success}}$ accounts for active runners and blocked columns.\n\n**Why it dominates:**",
+      "¶61": "1. **Mathematically sound** - Uses actual probability calculations rather than heuristics or thresholds. Adapts automatically as columns get blocked and board state changes.\n\n2. **Optimal risk tolerance** - The 50% threshold is aggressive enough to make meaningful progress but conservative enough to avoid frequent busts (only 2.67 busts per game vs 7.50 for GreedyUntil1Col).\n\n3. **Balanced performance** - #2 in single-player speed (11.3 turns) while #1 in competitive play. Achieves the best of both worlds: fast AND consistent.\n\n4. **Low variance** - Standard deviation of only 2.86 turns (vs 5.73 for GreedyUntil1Col). Consistency matters in competitive play.\n\n5. **Moderate position bias** - First-player advantage of +9.42% is below the overall average (+11.18%), making it more robust across positions.",
+      "¶62": "**Column preferences** (from 1,000 trials):\n- Most completed: Column 8 (42.0%), Column 7 (38.4%), Column 6 (37.7%)\n- Most used: Column 8 (3.14×), Column 6 (3.09×), Column 7 (3.08×)\n- Pattern: Strong middle column preference with balanced usage",
+      "¶63": "**Key matchups:**\n- vs GreedyUntil1Col (#1 speed): 55.22% win rate\n- vs Heuristic(1.5) (#2 overall): 54.38% win rate\n- vs MonteCarloLookahead (perfect play baseline): 63.09% total wins\n- vs itself (self-play): 50.00% (perfectly fair)",
+      "¶64": "### Full Tournament Matrix\n\nHere's the complete head-to-head win-rate matrix (row vs column, percentage shown is row's win rate):\n\n![Tournament Heatmap](files/20251201/tournament_heatmap_full.png)\n\n[Download full CSV](files/20251201/tournament_results_full.csv)",
+      "¶65": "| Strategy | vs Greedy | vs Cons(3) | vs Heur(1.0) | vs GreedyImp2 | vs GreedyU1Col |\n|:---------|:---------:|:----------:|:------------:|:-------------:|:--------------:|\n| GreedyUntil1Col | 100.0% | 79.1% | 76.7% | 65.1% | -- |\n| GreedyImproved2 | 100.0% | 76.9% | 68.8% | -- | 34.9% |\n| GreedyFraction(0.33) | 99.9% | 74.5% | 69.8% | 45.6% | 35.4% |\n| GreedyImproved1 | 99.9% | 71.2% | 66.0% | 52.4% | 30.5% |\n| AdaptiveThreshold | 99.9% | 67.4% | 61.7% | 34.8% | 29.6% |\n| Conservative(4) | 100.0% | 59.4% | 64.9% | 32.8% | 26.4% |\n| Heuristic(1.0) | 100.0% | 42.6% | -- | 31.2% | 23.3% |\n| ExpectedValueMax | 100.0% | 39.7% | 45.6% | 23.6% | 23.6% |\n| Random(0.3) | 100.0% | 31.6% | 40.8% | 21.2% | 20.6% |\n| Conservative(3) | 100.0% | -- | 57.4% | 23.1% | 20.9% |\n| GreedyUntil3Col | 99.9% | 44.6% | 41.2% | 36.4% | 27.6% |\n| Greedy | -- | 0.0% | 0.0% | 0.0% | 0.0% |\n\n(Full 25×25 matrix available in CSV)",
+      "¶66": "### The Speed vs Competition Paradox\n\nSomething fascinating emerges from the data: **the fastest strategy is not the best competitive strategy**.",
+      "¶67": "| Strategy | Speed Rank | Avg Turns | Competition Rank | Win Rate | Trade-off |\n|----------|------------|-----------|------------------|----------|-----------|\n| GreedyUntil1Col | #1 | 10.5 | #11 | 58.90% | Speed > Power |\n| FiftyPercentSurvival | #2 | 11.3 | #1 | 69.84% | ✅ Optimal Balance |\n| OpponentAware(0.5,1,2) | #3 | 11.4 | #15 | 56.20% | Speed > Power |\n| Heuristic(1.5) | #6 | 11.9 | #2 | 66.46% | Power > Speed |\n| Heuristic(2.0) | #7 | 12.3 | #3 | 63.26% | Power > Speed |",
+      "¶68": "![Speed vs Win Rate Analysis](files/20251201/speed_vs_winrate_analysis.png)\n\n**GreedyUntil1Col** wins in 10.5 turns but only achieves 58.90% competitive win rate. Why?\n\n1. **High variance** (σ=5.73) - Sometimes finishes in 5 turns, sometimes 22. Inconsistent.\n2. **Extreme bust rate** (7.5 per game) - Frequently loses all progress.\n3. **Massive position bias** (+31.24% first-player advantage) - Wins 73% as P1, only 42% as P2.",
+      "¶69": "**FiftyPercentSurvival** takes 0.8 turns longer but wins 10.9% more games because:\n\n1. **Low variance** (σ=2.86) - Consistently finishes in 11-12 turns.\n2. **Low bust rate** (2.67 per game) - Rarely loses progress.\n3. **Balanced position** (+9.42% advantage) - Performs well from either position.",
+      "¶70": "**The lesson:** In Can't Stop, **consistency beats raw speed**. It's better to reliably finish in 11 turns than to average 10.5 with high variance.\n\nThe aggressive strategies complete fast WHEN they succeed, but they bust more often. In single-player, you can retry forever and those busts get averaged in. In competitive play, busts lose you the game. Consistency matters more than raw speed.",
+      "¶71": "### First-Player Advantage: A Major Discovery\n\nThe simulation revealed a **significant first-player advantage** in Can't Stop:\n\n**Overall Statistics (3.6M games):**\n- Player 1 win rate: **55.59%**\n- Player 2 win rate: 44.41%\n- **First-player advantage: +11.18%**",
+      "¶72": "This is substantial - larger than chess (~5%) or Go (~7%). Going first provides consistent advantage, likely due to:\n1. First access to middle columns (6-8)\n2. Setting the pace and forcing opponent to play catch-up\n3. Initiative in column selection",
+      "¶73": "**Strategies with Extreme Position Bias:**\n\n| Strategy | P1 Advantage | Self-Play P1 Rate | Issue |\n|----------|--------------|-------------------|-------|\n| GreedyUntil1Col | +31.24% | 73.28% | ⚠️ SEVERE bias |\n| GreedyFraction(0.5) | +31.00% | 70.16% | ⚠️ SEVERE bias |\n| GreedyFraction(0.33) | +11.44% | 61.44% | Moderate bias |\n| OpponentAware(0.3,1,2) | +18.94% | N/A | High bias |",
+      "¶74": "**Fairest Strategies (Lowest P1 Advantage):**\n\n| Strategy | P1 Advantage | Interpretation |\n|----------|--------------|----------------|\n| OpponentAware(2,1,0.3) | -4.14% | Actually favors P2! |\n| Greedy | -0.03% | Perfectly balanced |\n| Heuristic(0.3) | +0.65% | Nearly balanced |\n| Heuristic(0.5) | +3.30% | Fair |",
+      "¶75": "The \"opposite\" OpponentAware strategy (conservative when behind, aggressive when ahead) actually performs better as Player 2, suggesting that **catching up rewards patience** in Can't Stop.\n\n**Impact on Rankings:** Strategies with high position bias (like GreedyUntil1Col) may be overrated in aggregate statistics. Their overall win rate includes massive advantages as P1 that don't reflect true strategic strength.",
+      "¶76": "### What Actually Works (And What Doesn't)\n\nSo what did we learn from 3.6 million simulated games?",
+      "¶77": "**Probabilistic strategies dominate.** The top 7 strategies ALL use mathematical probability calculations. FiftyPercentSurvival (#1, 69.84%), Heuristic variants (#2-3, 63-66%), and MonteCarloLookahead (#4, 63.09%) all base decisions on P(success) and P(bust). Simple threshold strategies lag behind.\n\n**Never going full greedy.** The pure Greedy strategy (never stop voluntarily) lost essentially every game. Being too aggressive is catastrophic. But GreedyUntil1Col (stop after 1 column) also underperforms (#11) despite being fastest, showing that even moderate aggression has downsides.\n\n**Consistency > Speed.** The top strategy (FiftyPercentSurvival) is only #2 in speed but has the lowest variance among top performers. In competitive play, finishing in 11 turns consistently beats averaging 10.5 with high variance.\n\n**But also, don't be too scared.** Being overly conservative doesn't work either. You need to take calculated risks. The sweet spot is the 50% survival threshold used by the champion strategy.",
+      "¶78": "**Position matters tremendously.** The +11.18% overall first-player advantage is huge. Some strategies exploit this better than others, while position-independent strategies like FiftyPercentSurvival perform consistently from either seat.\n\n**Monte Carlo isn't perfect.** Despite simulating 100 future rolls per decision (our \"perfect play\" baseline), MonteCarloLookahead only places 4th (63.09%). The top 3 strategies all use simpler probability-based rules, suggesting we've found near-optimal play without expensive computation.\n\n**Being \"opponent aware\" didn't help.** I tried three variants that adjusted risk based on whether you're ahead or behind. All three performed worse than simple threshold strategies. The problem? They only looked at completed columns, not partial progress. A better implementation might track \"estimated turns until opponent wins\" - but that's a problem for future me.",
+      "¶79": "## Game Design: Is It Balanced?\n\nOkay, back to game design. Is Can't Stop balanced? That is, do all columns take roughly the same time to complete?",
+      "¶80": "### Single-Column Balance\n\nWith single-column analysis, here's what we get:",
+      "¶81": "| Column | Length | P(n) | Expected Rolls | Deviation from 20 |\n|-------:|-------:|-----:|---------------:|------------------:|\n| 2 | 3 | 13.2% | 22.73 | +13.6% |\n| 3 | 5 | 23.3% | 21.46 | +7.3% |\n| 4 | 7 | 35.6% | 19.67 | -1.6% |\n| 5 | 9 | 44.8% | 20.09 | +0.4% |\n| 6 | 11 | 56.1% | 19.60 | -2.0% |\n| 7 | 13 | 64.4% | 20.18 | +0.9% |\n| 8 | 11 | 56.1% | 19.60 | -2.0% |\n| 9 | 9 | 44.8% | 20.09 | +0.4% |\n| 10 | 7 | 35.6% | 19.67 | -1.6% |\n| 11 | 5 | 23.3% | 21.46 | +7.3% |\n| 12 | 3 | 13.2% | 22.73 | +13.6% |",
+      "¶82": "The deviations are ±13.6% at most. That's pretty good given that lengths must be integers!\n\n### Multi-Column Reality\n\nBut in realistic multi-column play, column combination choice dominates individual column balance:",
+      "¶83": "- Column 7 in {6,7,8}: expected completion in ~2 turns\n- Column 2 in {2,3,12}: expected completion in ~30 turns\n\nThe game heavily favors middle columns. The designers DID balance individual column completion times, but they couldn't (or didn't want to) balance the three-column combinations.",
+      "¶84": "### Design Philosophy\n\nCan't Stop's designer, Sid Sackson, was known for mathematical rigor, but practical constraints shaped the final design:\n\n1. **Simple enough to understand** - The current board (3-5-7-9-11-13) is instantly graspable\n2. **Physically manufacturable** - Integer lengths, reasonable board size (especially in 1980)\n3. **Engaging to a broad audience** - The visual length creates emotional investment",
+      "¶85": "Then, **rules and mechanics compensate for inevitable imbalances**. In Can't Stop, that compensating rule is the forced-move rule: you MUST take both columns even if you don't want them.\n\nThis rule:\n- Forces players into sub-optimal column combinations\n- Prevents the game from devolving into \"everyone only picks {6,7,8}\"\n- Adds tactical complexity\n- **Compensates for the mathematical imbalance**",
+      "¶86": "This is elegant game design: accept imperfect balance in the core mechanics, then add rules that turn that imbalance into interesting strategic choices.\n\n### Could They Have Done Better?\n\nFor perfect balance where every column takes exactly the same expected number of rolls, we'd need column lengths that are exact multiples of their probabilities. The minimum integer solution requires:",
+      "¶87": "- Column 2/12: 171 steps\n- Column 7: 834 steps\n\nGame duration: ~8 hours. Yeah, that's not happening.",
+      "¶88": "But what about smaller improvements? Running an optimization (see [cant_stop_optimization.py](files/20251201/cant_stop_optimization.py)):\n\n**Current board:**\n- Max height: 13 steps\n- Max deviation: ±13.6%\n- Lengths: [3, 5, 7, 9, 11, 13, 11, 9, 7, 5, 3]",
+      "¶89": "**Optimal board (±1 step from current):**\n- Max height: 14 steps\n- Max deviation: ±3.09%\n- Lengths: [3, 5, 8, 10, 12, 14, 12, 10, 8, 5, 3]\n- **4× more balanced with just +1 step!**",
+      "¶90": "**Best balance under 20 steps:**\n- Max height: 20 steps\n- Max deviation: ±2.17%\n- Lengths: [4, 7, 11, 14, 17, 20, 17, 14, 11, 7, 4]\n- **6× improvement in balance**",
+      "¶91": "Why didn't the designers do this?\n\n1. **Round numbers** - The current design uses nice symmetric patterns\n2. **Intentional imbalance** - Maybe they wanted strategic tension\n3. **Testing limitations** - In 1980, computing optimal scales would have required extensive manual calculation\n4. **Player psychology** - A 13-step column \"feels\" much harder than a 3-step column, even if mathematically balanced",
+      "¶92": "The current design is excellent for 1980. For a modern Can't Stop 2.0, I'd seriously consider the 20-step board.\n\n### Linear Progression\n\nOne elegant feature of the current design is its linear progression: columns increase by exactly 2 steps each time. What if we maintained this constraint but optimized the parameters?",
+      "¶93": "(See [cant_stop_linear_optimization.py](files/20251201/cant_stop_linear_optimization.py) for full analysis)\n\n**Best linear design with similar size (step=2.25):**\n- Lengths: [3, 5, 8, 10, 12, 14, 12, 10, 8, 5, 3]\n- Max deviation: ±3.09%\n- **3.2× better balance with just +1 step!**",
+      "¶94": "**Best with integer step (base=5, step=4):**\n- Lengths: [5, 9, 13, 17, 21, 25, 21, 17, 13, 9, 5]\n- Max deviation: ±3.32%\n- Maintains aesthetic appeal (all odd numbers, easy to manufacture)\n\nLinear designs can never achieve perfect balance because the probability curve is nonlinear, but they can get within ~2-3% deviation while maintaining elegance.",
+      "¶95": "## Conclusion\n\nCan't Stop is a masterclass in practical game design. The mathematics reveal that:",
+      "¶96": "1. **Four-dice probabilities flatten the distribution** - P(7) = 64.4% vs P(2) = 13.2%, only a 4.88× difference compared to 6× with two dice\n\n2. **Column combinations matter more than individual columns** - {6,7,8} has 92% success rate, {2,3,12} has 44%",
+      "¶97": "3. **Probabilistic strategies dominate** - The champion strategy (FiftyPercentSurvival, 69.84% win rate) uses mathematically sound probability calculations with a 50% survival threshold, beating even \"perfect play\" Monte Carlo simulation\n\n4. **Consistency beats speed** - Finishing in 11 turns reliably outperforms averaging 10.5 turns with high variance. Low bust rate and low standard deviation matter more than raw speed in competitive play",
+      "¶98": "5. **First-player advantage is significant** - Player 1 wins 55.59% of games (+11.18% advantage), larger than chess or Go. Some strategies amplify this (GreedyUntil1Col: +31.24%), while others minimize it (FiftyPercentSurvival: +9.42%)\n\n6. **The forced-move rule is brilliant** - It compensates for mathematical imbalances by forcing contamination of good column combinations",
+      "¶99": "7. **Perfect balance isn't necessary** - The game is engaging despite (or because of) favoring middle columns",
+      "¶100": "**For players:** Use the FiftyPercentSurvival strategy - roll until cumulative survival probability drops below 50%. Aim for columns 5-9, avoid forcing activation of columns 2-3 and 11-12, and prioritize consistency over aggressive play.\n\n**For game designers:** Prioritize playability over mathematical perfection, then use rules to compensate for inevitable imbalances. Be aware that turn order can create significant advantages - consider handicap systems for competitive play.",
+      "¶101": "**For probability nerds:** The data suggests we've found near-optimal play at ~70% win rate. The question is whether any strategy can break the 75% barrier, or if we've hit fundamental game limits.",
+      "¶102": "---\n\n## Code and Data",
+      "¶103": "All analysis code and simulation results are available:\n\n**Probability calculations:**\n- [probability_calculations.py](files/20251201/probability_calculations.py) - 2-dice and 4-dice probabilities\n- [column_combinations.py](files/20251201/column_combinations.py) - All 165 three-column combinations",
+      "¶104": "**Strategy implementation and simulation:**\n- [strategies_correct_implementation.py](files/20251201/strategies_correct_implementation.py) - All 38 strategies with correct game rules\n- [comprehensive_benchmark_enhanced.py](files/20251201/comprehensive_benchmark_enhanced.py) - Full simulation framework\n- [data_loader.py](files/20251201/data_loader.py) - Data loading and analysis utilities\n- [stopping_heuristic.py](files/20251201/stopping_heuristic.py) - Mathematical stopping rule",
+      "¶105": "**Game design:**\n- [cant_stop_optimization.py](files/20251201/cant_stop_optimization.py) - Optimal board designs\n- [cant_stop_linear_optimization.py](files/20251201/cant_stop_linear_optimization.py) - Linear progression optimization",
+      "¶106": "**Simulation results (3.6M games, 3.89 hours runtime):**\n- [COMPREHENSIVE_RESULTS.md](files/20251201/COMPREHENSIVE_RESULTS.md) - **Complete analysis with all findings**\n- [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md) - Top 10 rankings\n- [results/single_player_raw_20251210_145529.jsonl.gz](files/20251201/results/single_player_raw_20251210_145529.jsonl.gz) - 38,000 trials (658 KB compressed)\n- [results/head_to_head_raw_20251210_145529.jsonl.gz](files/20251201/results/head_to_head_raw_20251210_145529.jsonl.gz) - 3.6M games (20 MB compressed)\n- [DATA_FORMATS_GUIDE.md](files/20251201/DATA_FORMATS_GUIDE.md) - How to analyze the data\n- [DATA_DOCUMENTATION.md](files/20251201/DATA_DOCUMENTATION.md) - Complete field definitions",
+      "¶107": "**Reference:**\n- [column_combinations_all.csv](files/20251201/column_combinations_all.csv) - All 165 combinations analyzed\n- [strategy_analysis_updated.md](files/20251201/strategy_analysis_updated.md) - Strategy descriptions and design rationale"
+    }
+  },
+  "nodes": [
+    {
+      "id": "0",
+      "type": "summary",
+      "text": "Can't Stop's four-dice probabilities and forced-move rule make it nearly balanced, and simulations show probabilistic, consistent play wins, though going first is a large advantage.",
+      "attribution": "author",
+      "source": [
+        "¶1",
+        "¶2",
+        "¶95",
+        "¶96",
+        "¶98",
+        "¶100"
+      ]
+    },
+    {
+      "id": "1",
+      "type": "claim",
+      "text": "Can't Stop has players roll four dice, pair them into sums, and advance markers on columns 2 through 12, needing three completed columns to win.",
+      "attribution": "author",
+      "source": [
+        "¶3",
+        "¶4",
+        "¶5"
+      ]
+    },
+    {
+      "id": "1.1",
+      "type": "claim",
+      "text": "You can keep rolling as long as you want, but busting when no marker can move loses the turn's gains.",
+      "attribution": "author",
+      "source": [
+        "¶3"
+      ]
+    },
+    {
+      "id": "1.2",
+      "type": "claim",
+      "text": "Column lengths run 3, 5, 7, 9, 11, 13, 11, 9, 7, 5, and 3 steps for columns 2 through 12.",
+      "attribution": "author",
+      "source": [
+        "¶4"
+      ]
+    },
+    {
+      "id": "1.3",
+      "type": "claim",
+      "text": "The forced-move rule requires taking all legal moves from a chosen pairing, even unwanted ones.",
+      "attribution": "author",
+      "source": [
+        "¶6"
+      ]
+    },
+    {
+      "id": "1.4",
+      "type": "example",
+      "text": "On {6,7,8}, rolling (1,1,3,4) and pairing 2+7 forces moving both 2 and 7 as well.",
+      "attribution": "author",
+      "source": [
+        "¶6"
+      ]
+    },
+    {
+      "id": "1.5",
+      "type": "nuance",
+      "text": "The forced-move rule prevents trivial play and adds tactical depth.",
+      "attribution": "author",
+      "source": [
+        "¶6"
+      ]
+    },
+    {
+      "id": "1.6",
+      "type": "evidence",
+      "text": "An interactive web version exists with a Python/FastAPI backend and React frontend.",
+      "attribution": "author",
+      "source": [
+        "¶5"
+      ]
+    },
+    {
+      "id": "2",
+      "type": "claim",
+      "text": "Four dice flatten the distribution: P(7) rises to 64.4% and P(2) to 13.2%, far closer together than with two dice.",
+      "attribution": "author",
+      "source": [
+        "¶7",
+        "¶15",
+        "¶21"
+      ]
+    },
+    {
+      "id": "2.1",
+      "type": "claim",
+      "text": "With two dice, sum 7 is most likely at 16.67% and exactly 6× more likely than sum 2 at 2.78%.",
+      "attribution": "author",
+      "source": [
+        "¶8",
+        "¶9"
+      ]
+    },
+    {
+      "id": "2.1.1",
+      "type": "evidence",
+      "text": "Sum 2 requires both dice showing 1 (1/36); sum 7 has 6 order-sensitive ways: (1,6), (2,5), (3,4).",
+      "attribution": "author",
+      "source": [
+        "¶9"
+      ]
+    },
+    {
+      "id": "2.2",
+      "type": "nuance",
+      "text": "If Can't Stop used two dice, column 7 would need to be 6× longer than column 2, but it is only 13/3 ≈ 4.3×.",
+      "attribution": "author",
+      "source": [
+        "¶10"
+      ]
+    },
+    {
+      "id": "2.3",
+      "type": "example",
+      "text": "Rolling 2, 3, 4, 5 gives just three pairings: 5 and 9, 6 and 8, or 7 and 7.",
+      "attribution": "author",
+      "source": [
+        "¶11"
+      ]
+    },
+    {
+      "id": "2.4",
+      "type": "claim",
+      "text": "Four dice give P(can make a 2) = 171/1296 ≈ 13.2%, requiring at least two 1s among the four.",
+      "attribution": "author",
+      "source": [
+        "¶12",
+        "¶13",
+        "¶14"
+      ]
+    },
+    {
+      "id": "2.4.1",
+      "type": "evidence",
+      "text": "P(zero 1s) = 625/1296 and P(exactly one 1) = 500/1296, so P(can make 2) = 1 - 625/1296 - 500/1296.",
+      "attribution": "author",
+      "source": [
+        "¶13",
+        "¶14"
+      ]
+    },
+    {
+      "id": "2.5",
+      "type": "claim",
+      "text": "Four dice give P(can make a 7) = 834/1296 ≈ 64.4%, via inclusion-exclusion over pairs (1,6), (2,5), (3,4).",
+      "attribution": "author",
+      "source": [
+        "¶15",
+        "¶16",
+        "¶20"
+      ]
+    },
+    {
+      "id": "2.5.1",
+      "type": "evidence",
+      "text": "Each pair event has probability 302/1296, each pairwise overlap 24/1296, and the triple overlap is 0.",
+      "attribution": "author",
+      "source": [
+        "¶17",
+        "¶18",
+        "¶19"
+      ]
+    },
+    {
+      "id": "2.5.2",
+      "type": "evidence",
+      "text": "Final sum: 302 + 302 + 302 - 24 - 24 - 24 + 0 = 834/1296 ≈ 64.4%.",
+      "attribution": "author",
+      "source": [
+        "¶20"
+      ]
+    },
+    {
+      "id": "2.6",
+      "type": "evidence",
+      "text": "The full four-dice table shows at-least-one-pair counts from 171 (13.2%) for sum 2 up to 834 (64.4%) for sum 7.",
+      "attribution": "author",
+      "source": [
+        "¶22",
+        "¶23"
+      ]
+    },
+    {
+      "id": "2.7",
+      "type": "claim",
+      "text": "The probability ratio from column 2 to 7 is 4.88 against a length ratio of 4.33, close enough to suggest deliberate design.",
+      "attribution": "author",
+      "source": [
+        "¶24"
+      ]
+    },
+    {
+      "id": "2.8",
+      "type": "claim",
+      "text": "The conclusion restates this: four-dice probabilities flatten the distribution, with P(7) = 64.4% versus P(2) = 13.2%, only a 4.88× difference.",
+      "attribution": "author",
+      "source": [
+        "¶96"
+      ]
+    },
+    {
+      "id": "3",
+      "type": "claim",
+      "text": "Single columns are nearly balanced: expected rolls stay between 19.60 and 22.73 across all columns.",
+      "attribution": "author",
+      "source": [
+        "¶25",
+        "¶26",
+        "¶27"
+      ]
+    },
+    {
+      "id": "3.1",
+      "type": "evidence",
+      "text": "Expected rolls equal length over probability: column 2 needs 3/0.132 = 22.73 rolls; column 7 needs 13/0.644 = 20.18.",
+      "attribution": "author",
+      "source": [
+        "¶26"
+      ]
+    },
+    {
+      "id": "3.2",
+      "type": "nuance",
+      "text": "Column 7 is slightly faster than column 2 even though it is 4× longer.",
+      "attribution": "author",
+      "source": [
+        "¶26"
+      ]
+    },
+    {
+      "id": "3.3",
+      "type": "evidence",
+      "text": "Expected rolls by column: 22.73 (2/12), 21.46 (3/11), 19.67 (4/10), 20.09 (5/9), 19.60 (6/8), 20.18 (7).",
+      "attribution": "author",
+      "source": [
+        "¶27"
+      ]
+    },
+    {
+      "id": "3.4",
+      "type": "evidence",
+      "text": "Columns 2 and 12 require the most rolls; columns 6, 7, and 8 cluster near 20.",
+      "attribution": "author",
+      "source": [
+        "¶28"
+      ]
+    },
+    {
+      "id": "3.5",
+      "type": "evidence",
+      "text": "Column 2 is only 3 steps but hit 13.2% of the time; column 7 is 13 steps but hit 64.4% of the time.",
+      "attribution": "author",
+      "source": [
+        "¶25"
+      ]
+    },
+    {
+      "id": "4",
+      "type": "claim",
+      "text": "Three-column combinations dominate outcomes: {6,7,8} succeeds 92.0% of the time while {2,3,12} succeeds only 43.8%.",
+      "attribution": "author",
+      "source": [
+        "¶28",
+        "¶29",
+        "¶30"
+      ]
+    },
+    {
+      "id": "4.1",
+      "type": "evidence",
+      "text": "{6,7,8} succeeds on 1193/1296 rolls; {2,3,12} on only 568/1296, less than half.",
+      "attribution": "author",
+      "source": [
+        "¶29",
+        "¶30"
+      ]
+    },
+    {
+      "id": "4.2",
+      "type": "claim",
+      "text": "Across all 165 combinations, 37 are excellent at ≥85% success, the median is 79.6%, and the worst fall to 43.8%.",
+      "attribution": "author",
+      "source": [
+        "¶31",
+        "¶35"
+      ]
+    },
+    {
+      "id": "4.3",
+      "type": "evidence",
+      "text": "The best combination, {6,7,8}, has 92.0% success, 8.0% bust, 39.8% clean moves, and Q = 1.43.",
+      "attribution": "author",
+      "source": [
+        "¶32"
+      ]
+    },
+    {
+      "id": "4.4",
+      "type": "evidence",
+      "text": "The worst, {2,11,12}, has 43.8% success, 56.2% bust, 2.3% clean moves, and Q = 1.05.",
+      "attribution": "author",
+      "source": [
+        "¶33"
+      ]
+    },
+    {
+      "id": "4.5",
+      "type": "nuance",
+      "text": "A 'clean' move hits only wanted columns; even {6,7,8} is clean only 39.8% of the time.",
+      "attribution": "author",
+      "source": [
+        "¶34",
+        "¶42"
+      ]
+    },
+    {
+      "id": "4.6",
+      "type": "claim",
+      "text": "Forced moves contaminate good combinations: 52.2% of {6,7,8} rolls force unwanted columns, and only 2.3% of {2,3,12} rolls are clean.",
+      "attribution": "author",
+      "source": [
+        "¶43",
+        "¶44"
+      ]
+    },
+    {
+      "id": "4.7",
+      "type": "nuance",
+      "text": "The forced-move rule is a balancing mechanism preventing {6,7,8} from being completely dominant, and it is the design's compensating rule.",
+      "attribution": "author",
+      "source": [
+        "¶44",
+        "¶98"
+      ]
+    },
+    {
+      "id": "4.8",
+      "type": "claim",
+      "text": "The conclusion restates this: column combinations matter more than individual columns, {6,7,8} at 92% success and {2,3,12} at 44%.",
+      "attribution": "author",
+      "source": [
+        "¶96"
+      ]
+    },
+    {
+      "id": "5",
+      "type": "claim",
+      "text": "The stopping rule is EV-based: keep rolling if P(success) × Q exceeds P(bust) × U.",
+      "attribution": "author",
+      "source": [
+        "¶36",
+        "¶37",
+        "¶38"
+      ]
+    },
+    {
+      "id": "5.1",
+      "type": "evidence",
+      "text": "For {6,7,8} with 5 unsaved steps: loss 0.08 × 5 = 0.4 versus gain 0.92 × 1.43 = 1.32, so keep rolling.",
+      "attribution": "author",
+      "source": [
+        "¶39",
+        "¶40"
+      ]
+    },
+    {
+      "id": "5.2",
+      "type": "evidence",
+      "text": "For {2,3,12} with 2 unsaved steps: loss 0.562 × 2 = 1.12 versus gain 0.438 × 1.05 = 0.46, so stop.",
+      "attribution": "author",
+      "source": [
+        "¶41"
+      ]
+    },
+    {
+      "id": "5.3",
+      "type": "nuance",
+      "text": "Q is expected markers advanced on a successful roll; U is unsaved progress lost on a bust.",
+      "attribution": "author",
+      "source": [
+        "¶38"
+      ]
+    },
+    {
+      "id": "6",
+      "type": "claim",
+      "text": "Simulations of 38 strategies across 14 families (3.6 million games) show probabilistic play winning and consistency beating speed.",
+      "attribution": "author",
+      "source": [
+        "¶47",
+        "¶48"
+      ]
+    },
+    {
+      "id": "6.1",
+      "type": "evidence",
+      "text": "Single-player, GreedyUntil1Col is fastest at 10.5 turns but has σ = 5.73 and 7.50 busts per game.",
+      "attribution": "author",
+      "source": [
+        "¶52",
+        "¶53",
+        "¶54"
+      ]
+    },
+    {
+      "id": "6.2",
+      "type": "evidence",
+      "text": "FiftyPercentSurvival is second at 11.3 turns with σ = 2.86 and only 2.67 busts per game.",
+      "attribution": "author",
+      "source": [
+        "¶53",
+        "¶54"
+      ]
+    },
+    {
+      "id": "6.3",
+      "type": "claim",
+      "text": "Head-to-head, FiftyPercentSurvival wins 69.84% (132,696/190,000), then Heuristic(1.5) 66.46% and Heuristic(2.0) 63.26%.",
+      "attribution": "author",
+      "source": [
+        "¶55",
+        "¶56",
+        "¶57",
+        "¶58"
+      ]
+    },
+    {
+      "id": "6.4",
+      "type": "claim",
+      "text": "The champion rolls until cumulative survival probability drops below 50%, with n = log(0.5)/log(P_success).",
+      "attribution": "author",
+      "source": [
+        "¶59",
+        "¶60"
+      ]
+    },
+    {
+      "id": "6.5",
+      "type": "evidence",
+      "text": "It wins through sound probability math, balanced risk, speed and consistency (σ = 2.86), and only +9.42% position bias.",
+      "attribution": "author",
+      "source": [
+        "¶61"
+      ]
+    },
+    {
+      "id": "6.6",
+      "type": "evidence",
+      "text": "Its favorite columns are middle ones: most completed 8 (42.0%), 7 (38.4%), 6 (37.7%).",
+      "attribution": "author",
+      "source": [
+        "¶62"
+      ]
+    },
+    {
+      "id": "6.7",
+      "type": "evidence",
+      "text": "Key matchups: 55.22% vs GreedyUntil1Col, 54.38% vs Heuristic(1.5), 63.09% vs MonteCarloLookahead, 50.00% in self-play.",
+      "attribution": "author",
+      "source": [
+        "¶63"
+      ]
+    },
+    {
+      "id": "6.8",
+      "type": "claim",
+      "text": "GreedyUntil1Col finishes in 10.5 turns but wins only 58.90%, while FiftyPercentSurvival takes 0.8 turns longer and wins 10.9% more.",
+      "attribution": "author",
+      "source": [
+        "¶66",
+        "¶67",
+        "¶68",
+        "¶69",
+        "¶70"
+      ]
+    },
+    {
+      "id": "6.8.1",
+      "type": "nuance",
+      "text": "The fastest strategy is not the best competitive strategy.",
+      "attribution": "author",
+      "source": [
+        "¶66"
+      ]
+    },
+    {
+      "id": "6.9",
+      "type": "evidence",
+      "text": "Core families: Greedy and Random (30% stop), Conservative(k) with k ∈ {1,2,3,4}, Heuristic(α) with α ∈ {0.3,0.5,1.0,1.5,2.0}, and OpponentAware variants.",
+      "attribution": "author",
+      "source": [
+        "¶49"
+      ]
+    },
+    {
+      "id": "6.10",
+      "type": "evidence",
+      "text": "Other core types: Greedy-Improved, Adaptive, Proportional, progressive milestones, probabilistic, and column-count strategies.",
+      "attribution": "author",
+      "source": [
+        "¶50"
+      ]
+    },
+    {
+      "id": "6.11",
+      "type": "evidence",
+      "text": "Newer groups 11-14 cover outside/middle preference, runner-aware, column-quality, and hybrid/advanced strategies.",
+      "attribution": "author",
+      "source": [
+        "¶51"
+      ]
+    },
+    {
+      "id": "6.12",
+      "type": "evidence",
+      "text": "RiskBudget caps cumulative bust risk at 20% per turn; MonteCarloLookahead simulates 100 future rolls.",
+      "attribution": "author",
+      "source": [
+        "¶51"
+      ]
+    },
+    {
+      "id": "6.13",
+      "type": "evidence",
+      "text": "The top 15 all finish in 10.5 to 12.8 turns; conservative strategies like Heuristic(2.0) average under 1 bust per game.",
+      "attribution": "author",
+      "source": [
+        "¶54"
+      ]
+    },
+    {
+      "id": "6.14",
+      "type": "evidence",
+      "text": "A full head-to-head win-rate matrix and a downloadable CSV accompany the rankings.",
+      "attribution": "author",
+      "source": [
+        "¶64",
+        "¶65"
+      ]
+    },
+    {
+      "id": "6.15",
+      "type": "claim",
+      "text": "Probabilistic strategies dominate: the top 7 all use probability calculations, and pure Greedy lost essentially every game.",
+      "attribution": "author",
+      "source": [
+        "¶58",
+        "¶76",
+        "¶77"
+      ]
+    },
+    {
+      "id": "6.16",
+      "type": "nuance",
+      "text": "MonteCarloLookahead, simulating 100 future rolls, only places 4th at 63.09%, so simpler rules are near-optimal.",
+      "attribution": "author",
+      "source": [
+        "¶78"
+      ]
+    },
+    {
+      "id": "6.17",
+      "type": "concession",
+      "text": "Opponent-aware variants all underperformed simple thresholds because they only looked at completed columns, not partial progress.",
+      "attribution": "author",
+      "source": [
+        "¶78"
+      ]
+    },
+    {
+      "id": "6.18",
+      "type": "claim",
+      "text": "For players: use FiftyPercentSurvival, aim for columns 5-9, avoid forced activation of 2-3 and 11-12, and prioritize consistency.",
+      "attribution": "author",
+      "source": [
+        "¶100"
+      ]
+    },
+    {
+      "id": "6.19",
+      "type": "nuance",
+      "text": "For probability nerds: near-optimal play sits near 70% win rate; breaking the 75% barrier remains an open question.",
+      "attribution": "author",
+      "source": [
+        "¶101"
+      ]
+    },
+    {
+      "id": "6.20",
+      "type": "claim",
+      "text": "The conclusion restates this: probabilistic strategies dominate, with FiftyPercentSurvival's 69.84% win rate beating even Monte Carlo 'perfect play'.",
+      "attribution": "author",
+      "source": [
+        "¶97"
+      ]
+    },
+    {
+      "id": "6.21",
+      "type": "claim",
+      "text": "The conclusion restates this: consistency beats speed, since finishing in 11 turns reliably outperforms averaging 10.5 with high variance.",
+      "attribution": "author",
+      "source": [
+        "¶97"
+      ]
+    },
+    {
+      "id": "7",
+      "type": "claim",
+      "text": "Simulations revealed a significant first-player advantage: Player 1 wins 55.59%, +11.18%, larger than chess (~5%) or Go (~7%).",
+      "attribution": "author",
+      "source": [
+        "¶71",
+        "¶72"
+      ]
+    },
+    {
+      "id": "7.1",
+      "type": "evidence",
+      "text": "Going first likely helps via first access to middle columns 6-8, setting the pace, and initiative in column selection.",
+      "attribution": "author",
+      "source": [
+        "¶72"
+      ]
+    },
+    {
+      "id": "7.2",
+      "type": "claim",
+      "text": "GreedyUntil1Col (+31.24%) and GreedyFraction(0.5) (+31.00%) show severe position bias; OpponentAware(0.3,1,2) is high at +18.94%.",
+      "attribution": "author",
+      "source": [
+        "¶73"
+      ]
+    },
+    {
+      "id": "7.3",
+      "type": "evidence",
+      "text": "Fairest: OpponentAware(2,1,0.3) at -4.14% favors P2, Greedy -0.03%, Heuristic(0.3) +0.65%, Heuristic(0.5) +3.30%.",
+      "attribution": "author",
+      "source": [
+        "¶74"
+      ]
+    },
+    {
+      "id": "7.4",
+      "type": "nuance",
+      "text": "High position bias may overrate strategies like GreedyUntil1Col in aggregate statistics.",
+      "attribution": "author",
+      "source": [
+        "¶75"
+      ]
+    },
+    {
+      "id": "7.5",
+      "type": "claim",
+      "text": "The 'opposite' OpponentAware, conservative when behind, performs better as Player 2, suggesting catching up rewards patience.",
+      "attribution": "author",
+      "source": [
+        "¶75"
+      ]
+    },
+    {
+      "id": "7.6",
+      "type": "evidence",
+      "text": "GreedyUntil1Col wins 73% as P1 but only 42% as P2, with σ = 5.73 and 7.5 busts per game.",
+      "attribution": "author",
+      "source": [
+        "¶68"
+      ]
+    },
+    {
+      "id": "7.7",
+      "type": "claim",
+      "text": "The conclusion restates this: the first-player advantage is significant, Player 1 winning 55.59% (+11.18%), larger than chess or Go.",
+      "attribution": "author",
+      "source": [
+        "¶98"
+      ]
+    },
+    {
+      "id": "8",
+      "type": "claim",
+      "text": "The designers balanced individual columns but not combinations; the forced-move rule compensates, and better boards exist.",
+      "attribution": "author",
+      "source": [
+        "¶79",
+        "¶80"
+      ]
+    },
+    {
+      "id": "8.1",
+      "type": "evidence",
+      "text": "Single-column deviations from 20 expected rolls are at most ±13.6% on the current board, good given integer lengths.",
+      "attribution": "author",
+      "source": [
+        "¶81",
+        "¶82"
+      ]
+    },
+    {
+      "id": "8.2",
+      "type": "claim",
+      "text": "In multi-column play, column 7 in {6,7,8} completes in about 2 turns while column 2 in {2,3,12} takes about 30.",
+      "attribution": "author",
+      "source": [
+        "¶82",
+        "¶83"
+      ]
+    },
+    {
+      "id": "8.3",
+      "type": "evidence",
+      "text": "Design constraints were simplicity (the 3-5-7-9-11-13 board), 1980 manufacturability, and emotional engagement from visual length.",
+      "attribution": "author",
+      "source": [
+        "¶84"
+      ]
+    },
+    {
+      "id": "8.4",
+      "type": "claim",
+      "text": "The forced-move rule compensates by forcing sub-optimal columns, preventing all-{6,7,8} play, and adding tactical complexity.",
+      "attribution": "author",
+      "source": [
+        "¶85"
+      ]
+    },
+    {
+      "id": "8.5",
+      "type": "evidence",
+      "text": "Perfect balance needs lengths as exact multiples of probability: 171 steps for columns 2/12 and 834 for column 7, about 8 hours per game.",
+      "attribution": "author",
+      "source": [
+        "¶86",
+        "¶87"
+      ]
+    },
+    {
+      "id": "8.6",
+      "type": "evidence",
+      "text": "The current board has maximum height 13 steps and maximum deviation ±13.6%.",
+      "attribution": "author",
+      "source": [
+        "¶88"
+      ]
+    },
+    {
+      "id": "8.7",
+      "type": "evidence",
+      "text": "A board one step higher per column (max 14) cuts maximum deviation to ±3.09%, 4× more balanced.",
+      "attribution": "author",
+      "source": [
+        "¶89"
+      ]
+    },
+    {
+      "id": "8.8",
+      "type": "evidence",
+      "text": "A 20-step board gives lengths [4,7,11,14,17,20,17,14,11,7,4] and maximum deviation ±2.17%, a 6× improvement.",
+      "attribution": "author",
+      "source": [
+        "¶90"
+      ]
+    },
+    {
+      "id": "8.9",
+      "type": "nuance",
+      "text": "The designers likely kept the current board for round numbers, intentional tension, 1980 testing limits, and player psychology.",
+      "attribution": "author",
+      "source": [
+        "¶91"
+      ]
+    },
+    {
+      "id": "8.10",
+      "type": "evidence",
+      "text": "The current lengths rise by 2 steps; a linear step=2.25 design gives ±3.09%, 3.2× better balance with +1 step.",
+      "attribution": "author",
+      "source": [
+        "¶92",
+        "¶93"
+      ]
+    },
+    {
+      "id": "8.11",
+      "type": "evidence",
+      "text": "An integer linear design (base=5, step=4) yields lengths 5 to 25 and ±3.32% deviation, keeping odd, manufacturable numbers.",
+      "attribution": "author",
+      "source": [
+        "¶94"
+      ]
+    },
+    {
+      "id": "8.12",
+      "type": "nuance",
+      "text": "Linear designs can never achieve perfect balance because the probability curve is nonlinear.",
+      "attribution": "author",
+      "source": [
+        "¶94"
+      ]
+    },
+    {
+      "id": "8.13",
+      "type": "claim",
+      "text": "The author would seriously consider the 20-step board for a modern Can't Stop 2.0.",
+      "attribution": "author",
+      "source": [
+        "¶92"
+      ]
+    },
+    {
+      "id": "8.14",
+      "type": "claim",
+      "text": "For designers: prioritize playability over mathematical perfection, compensate imbalances with rules, and consider turn-order handicaps.",
+      "attribution": "author",
+      "source": [
+        "¶100"
+      ]
+    },
+    {
+      "id": "8.15",
+      "type": "claim",
+      "text": "The conclusion restates this: perfect balance isn't necessary, as the game is engaging despite (or because of) favoring middle columns.",
+      "attribution": "author",
+      "source": [
+        "¶99"
+      ]
+    },
+    {
+      "id": "9",
+      "type": "claim",
+      "text": "Continuation versus switching depends on progress: the math favors continuing, but forced-move contamination can force strategic switches.",
+      "attribution": "author",
+      "source": [
+        "¶45"
+      ]
+    },
+    {
+      "id": "9.1",
+      "type": "nuance",
+      "text": "With columns nearly complete (e.g., 10/11 steps) continuing makes sense; with 2-3 steps, switching might be faster.",
+      "attribution": "author",
+      "source": [
+        "¶45"
+      ]
+    },
+    {
+      "id": "9.2",
+      "type": "nuance",
+      "text": "The author has not analyzed this quantitatively; comparing 'always continue' versus 'switch when X' is left open.",
+      "attribution": "author",
+      "source": [
+        "¶46"
+      ]
+    },
+    {
+      "id": "10",
+      "type": "evidence",
+      "text": "All analysis code and simulation data are linked: probability, column-combination, strategy, and design scripts plus results.",
+      "attribution": "author",
+      "source": [
+        "¶102",
+        "¶103",
+        "¶104",
+        "¶105",
+        "¶106",
+        "¶107"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "0",
+      "to": "1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2.1",
+      "to": "2.1.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2.4",
+      "to": "2.4.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2.5",
+      "to": "2.5.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2.5",
+      "to": "2.5.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6.8",
+      "to": "6.8.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.9",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.10",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.11",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.12",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.13",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.14",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.15",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.16",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.17",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.18",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.19",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.20",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.21",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.9",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.10",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.11",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.12",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.13",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.14",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.15",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "9",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "9",
+      "to": "9.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "9",
+      "to": "9.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "10",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2.7",
+      "to": "3",
+      "type": "supports",
+      "note": "probability-to-length ratio explains near-equal expected rolls"
+    },
+    {
+      "from": "4.1",
+      "to": "5",
+      "type": "supports",
+      "note": "92% not-bust rate is the success term in the EV rule"
+    },
+    {
+      "from": "4.5",
+      "to": "5.1",
+      "type": "qualifies",
+      "note": "clean-move rate limits the crude 92% success figure"
+    },
+    {
+      "from": "1.3",
+      "to": "4.6",
+      "type": "supports",
+      "note": "the rule's mechanics produce the contamination rates"
+    },
+    {
+      "from": "6.2",
+      "to": "6.3",
+      "type": "supports",
+      "note": "single-player consistency converts to tournament wins"
+    },
+    {
+      "from": "7.2",
+      "to": "6.8",
+      "type": "supports",
+      "note": "position bias explains GreedyUntil1Col's weak competitive showing"
+    },
+    {
+      "from": "7.5",
+      "to": "6.17",
+      "type": "qualifies",
+      "note": "the opposite variant's P2 strength contrasts with opponent-aware failures"
+    },
+    {
+      "from": "8.2",
+      "to": "3",
+      "type": "qualifies",
+      "note": "multi-column reality limits single-column balance"
+    },
+    {
+      "from": "9",
+      "to": "4.6",
+      "type": "qualifies",
+      "note": "contamination can force switching between columns"
+    },
+    {
+      "from": "2.4",
+      "to": "3.5",
+      "type": "exemplifies",
+      "note": "13.2% is the four-dice version of the two-dice 2.78%"
+    },
+    {
+      "from": "8.7",
+      "to": "8.5",
+      "type": "supports",
+      "note": "the close 14-step board as a practical compromise"
+    },
+    {
+      "from": "2",
+      "to": "2.8",
+      "type": "restates"
+    },
+    {
+      "from": "4",
+      "to": "4.8",
+      "type": "restates"
+    },
+    {
+      "from": "4.7",
+      "to": "8.4",
+      "type": "restates",
+      "note": "same compensating mechanism invoked in the design section"
+    },
+    {
+      "from": "6.15",
+      "to": "6.20",
+      "type": "restates"
+    },
+    {
+      "from": "6.8.1",
+      "to": "6.21",
+      "type": "restates"
+    },
+    {
+      "from": "7",
+      "to": "7.7",
+      "type": "restates"
+    },
+    {
+      "from": "8",
+      "to": "8.15",
+      "type": "restates"
+    }
+  ]
+}

@@ -7,6 +7,8 @@ Turn any text into a rooted, fully cited idea graph. The agent does the reading 
 - `src/digestif/skill/` — the extraction skill, the source of truth. `SKILL.md`, `scripts/graph.py`, `templates/viewer.html`, `examples/`
 - `src/digestif/` — the CLI: `cli.py`, `pipeline.py`, `agents.py`
 - `tests/` — renderer suite (`test_graph.sh`), headless UI suite (`test_ui.js`, `test_ui.sh`), CLI pipeline tests with a fake agent (`test_cli.py`), fixtures
+- `eval/` — the multi skill evaluation harness with the frozen 12 sample digestif corpus, judge prompts, and every historical run as an audit trail
+- `docs/` — the GitHub Pages example: the interactive viewer on a real run of this tool
 - `digestif-runs/` — run workspaces (gitignored), one folder per build
 
 ## Rules

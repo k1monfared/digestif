@@ -1,0 +1,102 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "09_not_even_wrong",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Beyond tribal thinking closes the piece with a case for critical tools and shared standards.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "developing the intellectual tools to engage critically ... healthy societies ... need shared standards for evaluating claims.",
+   "reasoning": "Source's Beyond Tribal Thinking section and later shared-standards passage directly support this summary."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "The challenge is not for or against any figure but developing tools to engage critically while appreciating innovations offered.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The challenge isn't about being \"for\" or \"against\" any particular business leader ... developing the intellectual tools to engage critically ... appreciating genuine innovations.",
+   "reasoning": "Loglog preserves the negation and the critical-tools plus appreciation framing verbatim in meaning."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Recognize that financial and emotional investment can cloud judgment and consciously separate claim evaluation from support or opposition.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "recognizing how financial and emotional investment can cloud judgment, and consciously working to separate the evaluation of specific claims from overall support or opposition.",
+   "reasoning": "Direct paraphrase retaining the 'can cloud' hedge and the separation recommendation."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Evaluating claims independently of investments and affiliations may be one of the most important skills, navigating between blind acceptance and reflexive rejection.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "may be one of the most important skills we can cultivate. It allows us to navigate between blind acceptance and reflexive rejection.",
+   "reasoning": "Loglog retains the 'may be' hedge and both endpoints of the navigation verbatim."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Healthy societies, like scientific fields, need shared standards, and balancing openness with evidence is perhaps the central challenge.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "healthy societies, like healthy scientific fields, need shared standards for evaluating claims ... is perhaps the central challenge of our current information age.",
+   "reasoning": "Claim keeps the analogy and the 'perhaps' hedging intact."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "We might sympathize with Atiyah's attempt while valuing the community's rigorous standards, our best hope across domains.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "While we might sympathize with Michael Atiyah's final ambitious attempt ... commitment to rigorous standards of proof. This same commitment ... adapted to different domains, offers our best hope.",
+   "reasoning": "The 'might' hedge and best-hope-across-domains meaning are preserved accurately."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "Calling Bullshit addresses statements directly, narrow in focus but broadly applicable, and Surveillance Capitalism covers narrative-steering and belief formation indirectly.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "this is directly about how to understand statements ... focus ... somewhat narrow ... does apply to a very broad range ... doesn't directly talk to this topic, but goes very deep in how certain companies are stealing the narrative and forming our beliefs.",
+   "reasoning": "Names and both characterizations match source, though 'somewhat narrow' is compressed to 'narrow'."
+  }
+ ],
+ "metrics": {
+  "total_claims": 7,
+  "supported": 7,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

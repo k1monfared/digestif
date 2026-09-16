@@ -1,0 +1,283 @@
+{
+ "sample": "05_manufacturing_taste",
+ "part": 1,
+ "of": 5,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "A simulation finds quality only loosely filters canon success, exposure and capital dominate, so the canon and our taste are more contingent than they feel.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "---\ntags: simulation, statistics, philosophy, observation, python\n---\n# Manufacturing Taste"
+    },
+    {
+     "ref": "¶35",
+     "text": "## What This Means\nStory 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will. But the vast middle ground, where most artists live, is dominated by capital and luck."
+    },
+    {
+     "ref": "¶52",
+     "text": "That's the real meaning of the title. It's not just that the canon was manufactured. It's that our taste was manufactured along with it. We like what we were taught to like, and we were taught to like the survivors, and the survivors were selected by money and luck as much as by merit. The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The canon's winners may be the best, or merely the best positioned, and history cannot tell us which.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Because here's the thing: in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time. Across all of Europe during the Classical era, [IMSLP catalogs over 3,400 composers](https://imslp.org/wiki/Category:People_from_the_Classical_era) whose work survived in some form, and many more left no trace at all. [Wikipedia's curated list](https://en.wikipedia.org/wiki/List_of_Classical-era_composers) names several hundred. We remember fewer than 20. The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?"
+    },
+    {
+     "ref": "¶4",
+     "text": "We can't rewind history and run it again with different initial conditions. If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name? We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run *that* thousands of times."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question began half-jokingly: was Bach the Justin Bieber of his time?",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time. Are we just listening to the most \"popular\" artists of the 1700s and calling it high culture? And the flip side: will people 300 years from now be listening to Bieber and think that was the best we had to offer? He strongly disagreed, but the question stuck with me."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Because here's the thing: in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time. Across all of Europe during the Classical era, [IMSLP catalogs over 3,400 composers](https://imslp.org/wiki/Category:People_from_the_Classical_era) whose work survived in some form, and many more left no trace at all. [Wikipedia's curated list](https://en.wikipedia.org/wiki/List_of_Classical-era_composers) names several hundred. We remember fewer than 20. The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?"
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred, and many more left no trace; we remember fewer than 20.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Because here's the thing: in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time. Across all of Europe during the Classical era, [IMSLP catalogs over 3,400 composers](https://imslp.org/wiki/Category:People_from_the_Classical_era) whose work survived in some form, and many more left no trace at all. [Wikipedia's curated list](https://en.wikipedia.org/wiki/List_of_Classical-era_composers) names several hundred. We remember fewer than 20. The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?"
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The standard explanation says we remember the best, but the winners may be those with the right patron, court position, orchestra, and publisher.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Because here's the thing: in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time. Across all of Europe during the Classical era, [IMSLP catalogs over 3,400 composers](https://imslp.org/wiki/Category:People_from_the_Classical_era) whose work survived in some form, and many more left no trace at all. [Wikipedia's curated list](https://en.wikipedia.org/wiki/List_of_Classical-era_composers) names several hundred. We remember fewer than 20. The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?"
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If the Esterházys had hired a different Kapellmeister instead of Haydn, would we still know his name?",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "We can't rewind history and run it again with different initial conditions. If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name? We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run *that* thousands of times."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "We can't rewind history and run it again with different initial conditions. If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name? We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run *that* thousands of times."
+    }
+   ]
+  },
+  {
+   "id": "1.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The author built a simulation and wrote this less formal version of the full technical paper.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "So that's what I did. I built a [simulation](https://github.com/k1monfared/manufacturing_taste) to find out. The full technical paper is [here](https://github.com/k1monfared/manufacturing_taste/blob/master/paper/paper.pdf). This post is the less formal version."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Three competing hypotheses were set up to explain how canons form.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "## Three Stories About How Canons Form\nI set up the project to test three competing hypotheses. Each tells a different story."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Story 1 (The Cream Rises): the works we remember are the best works, and over long horizons genuine quality wins.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "**Story 1: The Cream Rises.** The works we remember are the best works. Period. Money might help someone get a head start, but over long enough time horizons, genuine quality wins. If you replayed history with different patrons, you'd end up with roughly the same canon."
+    }
+   ]
+  },
+  {
+   "id": "2.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Money might buy a head start, but replaying history with different patrons would end with roughly the same canon.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "**Story 1: The Cream Rises.** The works we remember are the best works. Period. Money might help someone get a head start, but over long enough time horizons, genuine quality wins. If you replayed history with different patrons, you'd end up with roughly the same canon."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Story 2 (Money Writes History): success is mostly about who gets heard first, and quality is almost irrelevant.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "**Story 2: Money Writes History.** Success is mostly about who gets heard first. A composer with a wealthy patron gets performed; audiences grow to like what they hear (a real psychological phenomenon, more on this below); that familiarity gets retroactively interpreted as quality; and institutions lock it in for future generations. Quality is almost irrelevant."
+    }
+   ]
+  },
+  {
+   "id": "2.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A wealthy patron gets a composer performed, audiences like what they hear, and the familiarity gets read as quality.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "**Story 2: Money Writes History.** Success is mostly about who gets heard first. A composer with a wealthy patron gets performed; audiences grow to like what they hear (a real psychological phenomenon, more on this below); that familiarity gets retroactively interpreted as quality; and institutions lock it in for future generations. Quality is almost irrelevant."
+    }
+   ]
+  },
+  {
+   "id": "2.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Institutions lock that advantage in for future generations.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "**Story 2: Money Writes History.** Success is mostly about who gets heard first. A composer with a wealthy patron gets performed; audiences grow to like what they hear (a real psychological phenomenon, more on this below); that familiarity gets retroactively interpreted as quality; and institutions lock it in for future generations. Quality is almost irrelevant."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Story 3 (Floors and Ceilings): both stories are partly right.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "**Story 3: Floors and Ceilings.** Both are partly right. The truly terrible never succeed no matter how much money backs them. The truly transcendent sometimes break through despite everything. But for the vast majority in the middle, the \"very good but not obviously once-in-a-generation\" group, whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'."
+    }
+   ]
+  },
+  {
+   "id": "2.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The truly terrible never succeed no matter how much money backs them.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "**Story 3: Floors and Ceilings.** Both are partly right. The truly terrible never succeed no matter how much money backs them. The truly transcendent sometimes break through despite everything. But for the vast majority in the middle, the \"very good but not obviously once-in-a-generation\" group, whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'."
+    }
+   ]
+  },
+  {
+   "id": "2.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The truly transcendent sometimes break through despite everything.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "**Story 3: Floors and Ceilings.** Both are partly right. The truly terrible never succeed no matter how much money backs them. The truly transcendent sometimes break through despite everything. But for the vast majority in the middle, the \"very good but not obviously once-in-a-generation\" group, whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'."
+    }
+   ]
+  },
+  {
+   "id": "2.3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "**Story 3: Floors and Ceilings.** Both are partly right. The truly terrible never succeed no matter how much money backs them. The truly transcendent sometimes break through despite everything. But for the vast majority in the middle, the \"very good but not obviously once-in-a-generation\" group, whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "example",
+   "attribution": "author",
+   "text": "The canon is like a job market: the very best and the very worst candidates are easy to rank.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Think of it like a job market. The very best candidate and the very worst are easy to rank. But among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile. The classical music canon is the same problem at civilizational scale."
+    }
+   ]
+  },
+  {
+   "id": "2.4.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Among twenty pretty good candidates, who gets hired often comes down to who knew someone, a good interview day, or resume order.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Think of it like a job market. The very best candidate and the very worst are easy to rank. But among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile. The classical music canon is the same problem at civilizational scale."
+    }
+   ]
+  },
+  {
+   "id": "2.4.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The classical music canon is the same problem at civilizational scale.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Think of it like a job market. The very best candidate and the very worst are easy to rank. But among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile. The classical music canon is the same problem at civilizational scale."
+    }
+   ]
+  }
+ ]
+}

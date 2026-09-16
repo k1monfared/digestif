@@ -1,0 +1,1350 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "02_case_for_transparent_government",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Objections to complete transparency deserve engagement: some protect power, but some are genuine and each is answerable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Some come from officials protecting their power. But some come from citizens with genuine concerns. These deserve honest engagement.",
+   "reasoning": "Source states objections from power-protectors and genuine citizens deserve engagement; the answering is evidenced by the section."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Government transparency will violate my privacy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"My Privacy Will Be Violated\"",
+   "reasoning": "This is the stated objection heading in SOURCE."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "6.1.1"
+   ],
+   "claim_text": "2019 Pew: 66% concerned about government data collection, 64% about its use, only 6% very confident records stay private.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "66% of Americans are concerned about government data collection, and 64% are concerned about how the government uses their data. Only 6% are \"very confident\"",
+   "reasoning": "All three figures and the survey year match SOURCE exactly."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "6.1.2"
+   ],
+   "claim_text": "A 2000 ABC News poll: 86% said agencies should not put records like driving, marriage, or court cases online.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In an earlier [2000 ABC News poll], 86% said government agencies should *not* make public records like driving records, marriage records, and court cases available online.",
+   "reasoning": "Year, percentage, negation, and examples all match SOURCE."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "6.1.3"
+   ],
+   "claim_text": "These polls measure fear about citizen data held by government, not fear about government decisions being visible.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "fear about *citizen data* held by government. Not fear about *government decisions* being visible to citizens.",
+   "reasoning": "Negation and distinction preserved from SOURCE."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "6.1.4"
+   ],
+   "claim_text": "Asking how tax money was spent is not asking for a neighbor's medical records.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you're not asking for your neighbor's medical records",
+   "reasoning": "SOURCE states the same comparison with identical negation."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "6.1.5"
+   ],
+   "claim_text": "How $50 million in infrastructure spending was decided is public; nearby citizens' personal data is not.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"Here is how we decided to allocate $50 million in infrastructure spending.\" It does not mean: \"Here is the personal information of every citizen who lives near the proposed highway.\"",
+   "reasoning": "Amount and both halves of the contrast match SOURCE."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "6.1.6"
+   ],
+   "claim_text": "Aggregate reporting, anonymization, and differential privacy make the distinction technically trivial.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "aggregate reporting, anonymization, differential privacy - make this distinction technically trivial.",
+   "reasoning": "Identical wording in SOURCE."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "6.1.7"
+   ],
+   "claim_text": "Governments historically bundled citizen and government data; the solution is to separate them, not keep everything secret.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "governments have historically bundled citizen data with government data... the solution is to separate them, not to keep everything secret.",
+   "reasoning": "Both claims and negation preserved from SOURCE."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "If every action is public, deliberation becomes impossible and officials will fear proposing ideas.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if every action is public, deliberation becomes impossible. Officials will be afraid to propose ideas.",
+   "reasoning": "Stated objection verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "6.2.1"
+   ],
+   "claim_text": "A Cambridge study of EU Council negotiations found tension between transparent deliberation and efficient decision-making.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A [Cambridge study of EU Council negotiations] found tension between transparent deliberation and efficient decision-making.",
+   "reasoning": "Matches SOURCE exactly."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "6.2.2"
+   ],
+   "claim_text": "An IMF analysis argued government is a fortress, not a sports car: friction forces accountability and catches errors.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "government \"is not a sports car - it's a fortress\" and that \"friction forces accountability\" and \"catches errors before they cause harm.\"",
+   "reasoning": "All quoted phrases preserved with correct attribution."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "6.2.3"
+   ],
+   "claim_text": "The IMF cites Australia's Robodebt: 470,000 incorrect debt notices and a $1.8 billion settlement.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "470,000 incorrect debt notices and a $1.8 billion settlement.",
+   "reasoning": "Both figures match SOURCE."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "6.2.4"
+   ],
+   "claim_text": "The concern confuses the speed of decision-making with the documentation of decision-making.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "this concern confuses two things: the speed of decision-making and the documentation of decision-making.",
+   "reasoning": "Identical meaning in SOURCE."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "6.2.5"
+   ],
+   "claim_text": "Transparency documents what happens at current speed; the CEO demands documentation, not slower work.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The CEO doesn't demand employees work slower. The CEO demands employees document their work.",
+   "reasoning": "Same claim and negation as SOURCE."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6.2.6"
+   ],
+   "claim_text": "If documentation is burdensome, improve the documentation systems, do not abandon accountability.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you improve the documentation systems - you don't abandon accountability.",
+   "reasoning": "Recommendation and negation match SOURCE."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.2.7"
+   ],
+   "claim_text": "New Zealand publishes cabinet papers within 30 days and its government has not ground to a halt.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "New Zealand publishes cabinet papers within 30 days. Their government hasn't ground to a halt.",
+   "reasoning": "Number and negation preserved from SOURCE."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6.2.8"
+   ],
+   "claim_text": "Opacity does not make decisions better, only unaccountable; transparency pressures logical consistency.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "opacity doesn't make decisions *better* - it just makes them *unaccountable*... Transparency creates pressure for logical consistency",
+   "reasoning": "Both clauses and negation match SOURCE."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Diplomacy requires secrecy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Diplomacy Requires Secrecy\"",
+   "reasoning": "Stated objection heading in SOURCE."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "claim_text": "This is the most legitimate concern and it deserves nuance.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is the most legitimate concern, and it deserves nuance.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6.3.2"
+   ],
+   "claim_text": "JCPOA talks began in 2012 with a secret backchannel; Camp David (1978) and Cold War backchannels also needed privacy.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "negotiations began in 2012 with a secret backchannel... The Camp David Accords (1978) similarly required private space... Cold War backchannels",
+   "reasoning": "Year and all examples match SOURCE."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.3.3"
+   ],
+   "claim_text": "Academic research frames the democratic dilemma: negotiations succeed only in secret but are barren without popular consent.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"negotiations can be flexible and successful only if they are kept secret, but they will be barren without popular consent.\"",
+   "reasoning": "Quote reproduced faithfully with hedge 'only' intact."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.3.4"
+   ],
+   "claim_text": "A CEO may keep negotiations confidential during talks but expects full disclosure once they conclude.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A CEO may authorize a negotiation team to keep details confidential *during* the negotiation. But the CEO expects full disclosure once it concludes.",
+   "reasoning": "Same temporal distinction as SOURCE."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6.3.5"
+   ],
+   "claim_text": "Temporary operational secrecy during active negotiations may be acceptable; permanent secrecy about what was decided is not.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "*Temporary operational secrecy during active negotiations* may be acceptable. *Permanent secrecy about what was decided and why* is not.",
+   "reasoning": "Both hedges and negation preserved."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "6.3.6"
+   ],
+   "claim_text": "Time-delayed transparency: release full documentation after conclusion, e.g. 30-90 days, keeping future negotiators accountable.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Full documentation released after conclusion (e.g., 30-90 days)... Future negotiators are accountable for their decisions",
+   "reasoning": "Range and accountability point match SOURCE bullets."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "6.3.7"
+   ],
+   "claim_text": "The 'other countries won't deal with us' argument proves too much; foreign governments are not the principals, citizens are.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The \"other countries won't deal with us\" argument proves too much... foreign governments are not the principals here. You are.",
+   "reasoning": "Same argument and assignment of principal status as SOURCE."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Special interests will benefit more than ordinary citizens.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Special Interests Will Benefit More Than Ordinary Citizens\"",
+   "reasoning": "Stated objection heading in SOURCE."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "6.4.1"
+   ],
+   "claim_text": "Harden and Kirkland studied all 50 US state legislatures over multiple decades, comparing open and closed meetings.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "studied all 50 US state legislatures over multiple decades. They compared states with open versus closed legislative meetings",
+   "reasoning": "Scope and method match SOURCE."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "6.4.2"
+   ],
+   "claim_text": "More lobbying groups register, lobbyists donate more, and policy-opinion correlation is the same either way.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "more lobbying groups register in states with open meetings. Lobbyists donate more to incumbents. And public policy's correlation with public opinion is *the same*",
+   "reasoning": "All three findings match SOURCE, including sameness qualifier."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "6.4.3"
+   ],
+   "claim_text": "Harden: the laws don't make citizen representation better, they make it better for interest groups.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"The laws don't make citizen representation better, they make it better for interest groups, which aren't representative of the general public.\"",
+   "reasoning": "Quote reproduced faithfully with negation."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "6.4.4"
+   ],
+   "claim_text": "Princeton's Douglas Arnold (1990): open markup sessions often give organized interests a powerful advantage over inattentive citizens.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Princeton's Douglas Arnold (1990) observed the same dynamic: \"Open markup sessions often give organized interests a powerful advantage over inattentive citizens.\"",
+   "reasoning": "Attribution, year, and hedge 'often' match SOURCE."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "6.4.5"
+   ],
+   "claim_text": "A 2024 Irish survey experiment with 569 participants found lobbying information does not improve trust evaluations.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A [2024 survey experiment in Ireland] with 569 participants found that citizens exposed to lobbying information don't develop more positive evaluations of trust",
+   "reasoning": "Year, count, and negation all match SOURCE."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "6.4.6"
+   ],
+   "claim_text": "The asymmetry is the problem: lobbyists are paid to monitor government, citizens have finite attention.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the *asymmetry* is the problem. Lobbyists are paid to monitor government... Citizens have jobs, families, and finite attention.",
+   "reasoning": "Same diagnosis and contrast as SOURCE."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "6.4.7"
+   ],
+   "claim_text": "Build citizen capacity instead: fund watchdogs, investigative journalism, and civic technology.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "fund watchdog organizations, support investigative journalism, build civic technology",
+   "reasoning": "All three remedies listed in SOURCE."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "6.4.8"
+   ],
+   "claim_text": "Brazil's Fiquem Sabendo files 2,000-3,000 FOI requests per year on behalf of citizens.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Brazil's Fiquem Sabendo files 2,000-3,000 FOI requests per year on behalf of citizens.",
+   "reasoning": "Range matches SOURCE exactly."
+  },
+  {
+   "claim_id": "C36",
+   "loglog_ids": [
+    "6.4.9"
+   ],
+   "claim_text": "Harden and Kirkland concluded the real key to quality representation is a robust, competitive electoral environment.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Harden and Kirkland themselves concluded: \"the real key to quality representation is a robust and competitive electoral environment.\"",
+   "reasoning": "Quote and attribution match SOURCE."
+  },
+  {
+   "claim_id": "C37",
+   "loglog_ids": [
+    "6.4.10"
+   ],
+   "claim_text": "Transparency alone is insufficient but necessary; opacity guarantees no accountability.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Transparency alone is insufficient. But it's a necessary condition. Opacity *guarantees* no accountability.",
+   "reasoning": "Both claims preserved without qualifier drift."
+  },
+  {
+   "claim_id": "C38",
+   "loglog_ids": [
+    "6.4.11"
+   ],
+   "claim_text": "The problem is citizens lack capacity to use information; the answer is to build capacity, not reduce information.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The problem is that citizens lack capacity to use it. The answer is to build capacity, not reduce information.",
+   "reasoning": "Diagnosis and recommendation match SOURCE."
+  },
+  {
+   "claim_id": "C39",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Public officials will be harassed.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Public Officials Will Be Harassed\"",
+   "reasoning": "Stated objection heading in SOURCE."
+  },
+  {
+   "claim_id": "C40",
+   "loglog_ids": [
+    "6.5.1"
+   ],
+   "claim_text": "This concern is real, documented, and growing.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This concern is real, documented, and growing.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C41",
+   "loglog_ids": [
+    "6.5.2"
+   ],
+   "claim_text": "The Brennan Center surveyed 735 local election officials in February-March 2024, weighted, margin of error ±3%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "surveyed 735 local election officials between February and March 2024 (weighted by region and jurisdiction size, margin of error ±3%)",
+   "reasoning": "Count, dates, and margin match SOURCE."
+  },
+  {
+   "claim_id": "C42",
+   "loglog_ids": [
+    "6.5.3"
+   ],
+   "claim_text": "38% experienced threats, harassment, or abuse; more than half fear for colleagues' or staff safety.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "38% experienced threats, harassment, or abuse - More than half are concerned about the safety of colleagues or staff",
+   "reasoning": "Figures match SOURCE bullets."
+  },
+  {
+   "claim_id": "C43",
+   "loglog_ids": [
+    "6.5.4"
+   ],
+   "claim_text": "More than 1 in 4 worry about being assaulted; 34% know someone who resigned over safety, up from 22% in 2023.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "More than 1 in 4 worry about being assaulted... 34% know someone who resigned due to safety concerns (up from 22% in 2023)",
+   "reasoning": "All figures and comparison match SOURCE."
+  },
+  {
+   "claim_id": "C44",
+   "loglog_ids": [
+    "6.5.5"
+   ],
+   "claim_text": "61% of those threatened received threats in person or by phone.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "61% of those threatened received threats in person or by phone",
+   "reasoning": "Figure and detail match SOURCE."
+  },
+  {
+   "claim_id": "C45",
+   "loglog_ids": [
+    "6.5.6"
+   ],
+   "claim_text": "NAAG: doxxing and swatting are sophisticated technology-enabled harassment, with AI intensifying scale, precision, and anonymity.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "doxxing and swatting have \"evolved into sophisticated, technology-enabled tools of harassment,\" with AI... intensifying \"the scale, precision, and anonymity\"",
+   "reasoning": "Quoted phrases and attribution match SOURCE."
+  },
+  {
+   "claim_id": "C46",
+   "loglog_ids": [
+    "6.5.7"
+   ],
+   "claim_text": "Since 2022, 22 states have passed protections for election officials.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Since 2022, [22 states have passed protections] for election officials.",
+   "reasoning": "Year and count match SOURCE."
+  },
+  {
+   "claim_id": "C47",
+   "loglog_ids": [
+    "6.5.8"
+   ],
+   "claim_text": "Decisions should be public; personal information like home addresses and schedules should be protected.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "**Transparency of decisions**... should be public. **Personal information of officials** (home addresses, family members, daily schedules) should be protected.",
+   "reasoning": "Both halves and examples match SOURCE."
+  },
+  {
+   "claim_id": "C48",
+   "loglog_ids": [
+    "6.5.9"
+   ],
+   "claim_text": "Accountability for work product is not the same as personal vulnerability.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Accountability for work product is not the same as personal vulnerability.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C49",
+   "loglog_ids": [
+    "6.5.10"
+   ],
+   "claim_text": "Much current harassment stems from lack of transparency; conspiracy theories need information gaps to grow.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "much of the *current* harassment stems from *lack* of transparency... the conspiracy theories would have less room to grow.",
+   "reasoning": "Cause and gap mechanism preserved from SOURCE."
+  },
+  {
+   "claim_id": "C50",
+   "loglog_ids": [
+    "6.5.11"
+   ],
+   "claim_text": "More transparency about reasoning might reduce, not increase, the rage.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "More transparency about the reasoning might reduce, not increase, the rage.",
+   "reasoning": "Hedge 'might' and negation preserved."
+  },
+  {
+   "claim_id": "C51",
+   "loglog_ids": [
+    "6.5.12"
+   ],
+   "claim_text": "Solution: better protection for individuals combined with more transparency about processes.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's better protection for individuals, combined with *more* transparency about processes.",
+   "reasoning": "Both parts match SOURCE."
+  },
+  {
+   "claim_id": "C52",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "National security requires secrecy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"National Security!\"",
+   "reasoning": "Stated objection in SOURCE section."
+  },
+  {
+   "claim_id": "C53",
+   "loglog_ids": [
+    "6.6.1"
+   ],
+   "claim_text": "Chicago Council surveys 2020-2022: roughly 60% say the intelligence community plays a vital warning role.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "surveyed Americans in 2020 and 2022 and found that roughly 60% agree the intelligence community \"plays a vital role in warning against foreign threats.\"",
+   "reasoning": "Years, figure, and hedge 'roughly' match SOURCE."
+  },
+  {
+   "claim_id": "C54",
+   "loglog_ids": [
+    "6.6.2"
+   ],
+   "claim_text": "But a majority agreed the IC could share more without compromising effectiveness.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a majority also agreed the IC \"could share more information with the American people without compromising effectiveness.\"",
+   "reasoning": "Matches SOURCE."
+  },
+  {
+   "claim_id": "C55",
+   "loglog_ids": [
+    "6.6.3"
+   ],
+   "claim_text": "Belief that the IC threatens civil liberties rose from 12% in 2021 to 17% in 2022.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "rising (from 12% in 2021 to 17% in 2022)",
+   "reasoning": "Both percentages and years match SOURCE."
+  },
+  {
+   "claim_id": "C56",
+   "loglog_ids": [
+    "6.6.4"
+   ],
+   "claim_text": "The Brennan Center states federal officials and outside experts agree far too much information is classified.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"federal officials and outside experts agree that far too much information is classified.\"",
+   "reasoning": "Quote and attribution match SOURCE."
+  },
+  {
+   "claim_id": "C57",
+   "loglog_ids": [
+    "6.6.5"
+   ],
+   "claim_text": "Excessive secrecy in national security policy undermines the basic functions of democratic self-government.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"excessive secrecy in national security policy undermines the basic functions of democratic self-government.\"",
+   "reasoning": "Verbatim quote from SOURCE."
+  },
+  {
+   "claim_id": "C58",
+   "loglog_ids": [
+    "6.6.6"
+   ],
+   "claim_text": "SIPRI: military transparency is essential for trust between states and can help prevent wasteful spending.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"transparency in military matters is generally considered essential for building trust between states\" and \"can help prevent wasteful spending.\"",
+   "reasoning": "Both quoted points match SOURCE with hedge 'generally'."
+  },
+  {
+   "claim_id": "C59",
+   "loglog_ids": [
+    "6.6.7"
+   ],
+   "claim_text": "Snowden is the strongest evidence: catastrophe predicted, minimal impact found, programs illegal, reforms improved liberties, country intact.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The government predicted catastrophe. Independent research found minimal impact. The court found the programs *illegal*. The reforms improved civil liberties. The country didn't collapse.",
+   "reasoning": "All five elements match SOURCE."
+  },
+  {
+   "claim_id": "C60",
+   "loglog_ids": [
+    "6.6.8"
+   ],
+   "claim_text": "Almost everything is classified by default and citizens must prove their need for access.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Almost everything is classified by default, and citizens must prove their need for access.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C61",
+   "loglog_ids": [
+    "6.6.9"
+   ],
+   "claim_text": "A citizen-CEO model flips it: transparent by default, officials must prove their need for secrecy.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "almost everything is transparent by default, and officials must prove their need for secrecy",
+   "reasoning": "Both flips match SOURCE."
+  },
+  {
+   "claim_id": "C62",
+   "loglog_ids": [
+    "6.6.10"
+   ],
+   "claim_text": "For genuinely necessary operational secrecy the CEO framing still works: temporary classification during an operation.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "For genuinely necessary operational secrecy... the CEO framing still works. The CEO may authorize temporary classification during an operation.",
+   "reasoning": "Same concession as SOURCE."
+  },
+  {
+   "claim_id": "C63",
+   "loglog_ids": [
+    "6.6.11"
+   ],
+   "claim_text": "After conclusion full documentation should be available; strategy, doctrine, budget, procurement, rules of engagement always transparent.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "after it concludes, full documentation should be available. Strategy, doctrine, budget, procurement, rules of engagement should always be transparent.",
+   "reasoning": "All listed categories match SOURCE."
+  },
+  {
+   "claim_id": "C64",
+   "loglog_ids": [
+    "6.6.12"
+   ],
+   "claim_text": "The national security label is overused to hide embarrassing decisions, illegal activities, incompetence, and corruption.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The \"national security\" label is overused to hide embarrassing decisions, illegal activities... bureaucratic incompetence, and corruption.",
+   "reasoning": "All four hidden items match SOURCE."
+  },
+  {
+   "claim_id": "C65",
+   "loglog_ids": [
+    "6.6.13"
+   ],
+   "claim_text": "Who decides what qualifies is a conflict of interest; the CEO should set the criteria, not the employees.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That's a conflict of interest. The CEO should set the criteria, not the employees.",
+   "reasoning": "Both diagnosis and recommendation match SOURCE."
+  },
+  {
+   "claim_id": "C66",
+   "loglog_ids": [
+    "6.6.14"
+   ],
+   "claim_text": "The author says this objection is used most often and scrutinized least.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is the objection that gets used most often and scrutinized least.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C67",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "Populists will weaponize transparency.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Populists Will Weaponize Transparency\"",
+   "reasoning": "Stated objection heading in SOURCE."
+  },
+  {
+   "claim_id": "C68",
+   "loglog_ids": [
+    "6.7.1"
+   ],
+   "claim_text": "Kyle and Gultchin dataset: populist governments in 43 democratic countries, 1990-2018, Polity IV score ≥6.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "studying populist governments in 43 democratic countries between 1990 and 2018... countries coded as democratic using Polity IV score ≥6",
+   "reasoning": "Count, span, and threshold match SOURCE."
+  },
+  {
+   "claim_id": "C69",
+   "loglog_ids": [
+    "6.7.2"
+   ],
+   "claim_text": "Populist governments are 4x more likely to damage democratic institutions, 23% versus 6%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Populist governments are 4x more likely to damage democratic institutions (23% vs 6% of non-populists)",
+   "reasoning": "Multiplier and both percentages match SOURCE."
+  },
+  {
+   "claim_id": "C70",
+   "loglog_ids": [
+    "6.7.3"
+   ],
+   "claim_text": "Countries fall an average of 5 places on the Corruption Perceptions Index under populist rule; top-half starters fall 11 (Venezuela dropped 83 under Chávez).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Countries fall an average of 5 places... Countries starting in the top half fall an average of 11 places (Venezuela dropped 83 under Chávez)",
+   "reasoning": "All three figures and the country match SOURCE."
+  },
+  {
+   "claim_id": "C71",
+   "loglog_ids": [
+    "6.7.4"
+   ],
+   "claim_text": "Over 50% of populist leaders amended or rewrote constitutions, often extending term limits or weakening checks.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Over 50% of populist leaders amended or rewrote constitutions, often extending term limits or weakening checks on power",
+   "reasoning": "Figure and hedge 'often' match SOURCE."
+  },
+  {
+   "claim_id": "C72",
+   "loglog_ids": [
+    "6.7.5"
+   ],
+   "claim_text": "Populists hold office twice as long on average, 6.5 versus 3 years.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Populists hold office twice as long as non-populists on average (6.5 vs 3 years)",
+   "reasoning": "Both figures and comparison match SOURCE."
+  },
+  {
+   "claim_id": "C73",
+   "loglog_ids": [
+    "6.7.6"
+   ],
+   "claim_text": "A Stanford analysis: when re-election hinges on immediate visibility, leaders may opt for short-term populist policies.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "leaders may opt for populist policies that garner short-term applause at the expense of policy robustness",
+   "reasoning": "Hedge 'may' preserved and attribution correct."
+  },
+  {
+   "claim_id": "C74",
+   "loglog_ids": [
+    "6.7.7"
+   ],
+   "claim_text": "In Sweden, research documents the Sweden Democrats repurposing freedom of information and alternative media to erode trust in elites.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the Sweden Democrats... have \"strategically repurposed\" transparency mechanisms, using freedom of information... alternative media to amplify anti-elite narratives",
+   "reasoning": "Party, mechanisms, and goal match SOURCE."
+  },
+  {
+   "claim_id": "C75",
+   "loglog_ids": [
+    "6.7.8"
+   ],
+   "claim_text": "The causal story is backwards: populists damage democracy by reducing transparency, which is opacity.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the causal story is backwards. The research shows populists *damage* democracy - and they do so by *reducing* transparency... That's *opacity*",
+   "reasoning": "Same reversal and mechanism as SOURCE."
+  },
+  {
+   "claim_id": "C76",
+   "loglog_ids": [
+    "6.7.9"
+   ],
+   "claim_text": "The Sweden Democrats exploit selective transparency; cherry-picking works because not everything is visible.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they exploit *selective* transparency... This works precisely because *not everything* is visible.",
+   "reasoning": "Negation and mechanism match SOURCE."
+  },
+  {
+   "claim_id": "C77",
+   "loglog_ids": [
+    "6.7.10"
+   ],
+   "claim_text": "In a fully transparent system selective leaking loses its power; you cannot cherry-pick the full record.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "selective leaking loses its power. You can't cherry-pick when the full record is available to everyone.",
+   "reasoning": "Claim and negation preserved from SOURCE."
+  },
+  {
+   "claim_id": "C78",
+   "loglog_ids": [
+    "6.7.11"
+   ],
+   "claim_text": "Short-term incentives exist with or without transparency; documenting long-term rationale can counter them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the \"short-term thinking\" problem exists with or without transparency... transparency of *reasoning* can actually counter this",
+   "reasoning": "Hedge 'can' and both claims match SOURCE."
+  },
+  {
+   "claim_id": "C79",
+   "loglog_ids": [
+    "6.7.12"
+   ],
+   "claim_text": "Documentation protects an unpopular but wise decision and exposes a crowd-pleasing decision with bad reasoning.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If an employee makes an unpopular but wise decision... the documentation protects them. If an employee makes a crowd-pleasing decision with bad reasoning, documentation exposes this.",
+   "reasoning": "Both examples match SOURCE."
+  },
+  {
+   "claim_id": "C80",
+   "loglog_ids": [
+    "6.7.13"
+   ],
+   "claim_text": "Transparency enables evaluation of reasoning, which is the antidote to populism, not its enabler.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Transparency enables evaluation of *reasoning*, not just outcomes. And that's the antidote to populism, not its enabler.",
+   "reasoning": "Claim and negation match SOURCE."
+  },
+  {
+   "claim_id": "C81",
+   "loglog_ids": [
+    "6.7.14"
+   ],
+   "claim_text": "The author calls this a sophisticated concern backed by real research.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is a sophisticated concern backed by real research.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C82",
+   "loglog_ids": [
+    "6.8"
+   ],
+   "claim_text": "Misinformation makes transparency pointless.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Misinformation Makes Transparency Pointless\"",
+   "reasoning": "Stated objection heading in SOURCE."
+  },
+  {
+   "claim_id": "C83",
+   "loglog_ids": [
+    "6.8.1"
+   ],
+   "claim_text": "A 2023 Canadian panel study found false beliefs, specifically COVID-19 related, predict perceiving government as less transparent regardless of actual levels.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "(2023, based on a Canadian panel survey) found that people who endorse false beliefs (specifically COVID-19 related) perceive government as *less* transparent, regardless of actual transparency levels",
+   "reasoning": "Year, sample, topic, and qualifier match SOURCE."
+  },
+  {
+   "claim_id": "C84",
+   "loglog_ids": [
+    "6.8.2"
+   ],
+   "claim_text": "Negative transparency perceptions are associated with decline in voting intentions, trust, and satisfaction with democracy.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "negative transparency perceptions are associated with decline in voting intentions, trust, and satisfaction with democracy",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C85",
+   "loglog_ids": [
+    "6.8.3"
+   ],
+   "claim_text": "A separate experiment found citizens value the idea of transparency but may react negatively to actual disclosure content.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "citizens value the *idea* of transparency but may react negatively to the *content* of actual disclosures",
+   "reasoning": "Hedge 'may' and contrast match SOURCE."
+  },
+  {
+   "claim_id": "C86",
+   "loglog_ids": [
+    "6.8.4"
+   ],
+   "claim_text": "The research shows false beliefs lead to perceived non-transparency, not that transparency produces false beliefs.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "false beliefs lead to perceived non-transparency. It does *not* show: actual transparency leads to more false beliefs.",
+   "reasoning": "Negation preserved from SOURCE."
+  },
+  {
+   "claim_id": "C87",
+   "loglog_ids": [
+    "6.8.5"
+   ],
+   "claim_text": "Opacity enables false beliefs: conspiracy theories thrive on gaps and speculation fills the vacuum of secrecy.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "opacity *enables* false beliefs. Conspiracy theories thrive on gaps in information... fills the vacuum of secrecy.",
+   "reasoning": "Mechanism and wording match SOURCE."
+  },
+  {
+   "claim_id": "C88",
+   "loglog_ids": [
+    "6.8.6"
+   ],
+   "claim_text": "Transparency provides ground truth; with full documentation, false claims can be checked against reality.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Transparency provides ground truth. If full documentation exists, false claims can be checked against reality.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C89",
+   "loglog_ids": [
+    "6.8.7"
+   ],
+   "claim_text": "Latent transparency supports the CEO framing: availability changes behavior even without consumption.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The \"latent transparency\" finding... actually supports the CEO framing perfectly... Availability changes behavior even without consumption.",
+   "reasoning": "All three elements match SOURCE."
+  },
+  {
+   "claim_id": "C90",
+   "loglog_ids": [
+    "6.8.8"
+   ],
+   "claim_text": "Trust requires consistency over time; persistent comprehensive transparency creates a verifiable track record.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Trust-building requires consistency over time... Persistent, comprehensive transparency creates a verifiable track record.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C91",
+   "loglog_ids": [
+    "6.8.9"
+   ],
+   "claim_text": "Better transparency means accessibility, explanation, and intermediaries like journalists, civic tech, and educators.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "better transparency - accompanied by accessibility, explanation, and intermediaries (journalists, civic tech, educators)",
+   "reasoning": "All three intermediaries and accompaniments match SOURCE."
+  },
+  {
+   "claim_id": "C92",
+   "loglog_ids": [
+    "6.9"
+   ],
+   "claim_text": "Publishing negotiating positions or monetary decisions could let traders exploit advance knowledge.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If monetary policy is being decided, couldn't traders exploit advance knowledge?",
+   "reasoning": "Stated objection with same hedge in SOURCE."
+  },
+  {
+   "claim_id": "C93",
+   "loglog_ids": [
+    "6.9.1"
+   ],
+   "claim_text": "The concern is valid but narrow; the solution is time-delayed transparency, not permanent secrecy.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This concern is valid but narrow. The solution isn't permanent secrecy. It's time-delayed transparency.",
+   "reasoning": "Judgement and recommendation match SOURCE with negation."
+  },
+  {
+   "claim_id": "C94",
+   "loglog_ids": [
+    "6.9.2"
+   ],
+   "claim_text": "The US Federal Reserve releases FOMC minutes after three weeks and full transcripts after five years.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The US Federal Reserve releases FOMC minutes with a three-week delay and full transcripts with a five-year delay.",
+   "reasoning": "Both delays match SOURCE."
+  },
+  {
+   "claim_id": "C95",
+   "loglog_ids": [
+    "6.9.3"
+   ],
+   "claim_text": "The EU's failed TTIP negotiations suffered from too much secrecy; backlash grew as citizens felt excluded.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The EU's failed TTIP trade negotiations actually suffered from *too much* secrecy - public backlash grew partly because citizens felt excluded",
+   "reasoning": "Same cause and partial-effect hedge as SOURCE."
+  },
+  {
+   "claim_id": "C96",
+   "loglog_ids": [
+    "6.9.4"
+   ],
+   "claim_text": "Timing may be managed per category: monetary policy until implementation, trade until conclusion, procurement until award.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "monetary policy (delay until implementation), trade negotiations (delay until conclusion), procurement (delay until contract award)",
+   "reasoning": "Hedge 'may' and all three categories match SOURCE."
+  },
+  {
+   "claim_id": "C97",
+   "loglog_ids": [
+    "6.9.5"
+   ],
+   "claim_text": "Nothing stays secret forever.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "But nothing stays secret forever.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C98",
+   "loglog_ids": [
+    "6.9.6"
+   ],
+   "claim_text": "Secrecy in procurement enables corruption; opaque bidding lets officials favor connected contractors with impunity.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "secrecy in procurement *enables* corruption. If bidding processes are opaque, officials can favor connected contractors with impunity.",
+   "reasoning": "Mechanism and wording match SOURCE."
+  },
+  {
+   "claim_id": "C99",
+   "loglog_ids": [
+    "6.9.7"
+   ],
+   "claim_text": "Brazil's Transparency Portal includes contract information because sunlight in procurement prevents fraud.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Brazil's Transparency Portal includes contract information specifically because sunlight in procurement prevents fraud.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C100",
+   "loglog_ids": [
+    "6.10"
+   ],
+   "claim_text": "Those in power will never allow this.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Those in Power Will Never Allow This\"",
+   "reasoning": "Stated objection heading with negation in SOURCE."
+  },
+  {
+   "claim_id": "C101",
+   "loglog_ids": [
+    "6.10.1"
+   ],
+   "claim_text": "This describes the political challenge, not a principled objection.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's a description of the political challenge... not a principled objection",
+   "reasoning": "Both halves and negation match SOURCE."
+  },
+  {
+   "claim_id": "C102",
+   "loglog_ids": [
+    "6.10.2"
+   ],
+   "claim_text": "Iceland after 2008: 950 randomly selected citizens identified values; a 25-person council excluding politicians drafted openly with 3,600 comments.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "After the 2008 financial crisis, 950 randomly selected citizens identified constitutional values. A 25-person council (explicitly excluding politicians)... with 3,600 public comments",
+   "reasoning": "All three counts and exclusions match SOURCE."
+  },
+  {
+   "claim_id": "C103",
+   "loglog_ids": [
+    "6.10.3"
+   ],
+   "claim_text": "The draft was approved unanimously by the council and by a two-thirds majority in a national referendum.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "approved unanimously by the council and by a two-thirds majority in a national referendum.",
+   "reasoning": "Both approval figures match SOURCE."
+  },
+  {
+   "claim_id": "C104",
+   "loglog_ids": [
+    "6.10.4"
+   ],
+   "claim_text": "Then the existing parliament refused to ratify it.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "And then the existing parliament refused to ratify it.",
+   "reasoning": "Verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C105",
+   "loglog_ids": [
+    "6.10.5"
+   ],
+   "claim_text": "OGP, 75 countries and 4,500+ commitments since 2011: one-third of delayed commitments fail from lack of funding and technical capacity.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "(75 countries, 4,500+ commitments since 2011) found that one-third of delayed commitments fail due to \"lack of funding and technical capacity.\"",
+   "reasoning": "All figures and cause match SOURCE."
+  },
+  {
+   "claim_id": "C106",
+   "loglog_ids": [
+    "6.10.6"
+   ],
+   "claim_text": "Other causes: poor institutional coordination, lack of political support, and discontinuity across administrations.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"poor institutional coordination, lack of political support, and discontinuity from one administration to another during political transitions.\"",
+   "reasoning": "All three causes match SOURCE quote."
+  },
+  {
+   "claim_id": "C107",
+   "loglog_ids": [
+    "6.10.7"
+   ],
+   "claim_text": "Those who benefit from opacity, corrupt officials, connected interests, entrenched power holders, will always resist.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "corrupt officials, connected special interests, entrenched power holders - will resist transparency. They will always resist.",
+   "reasoning": "All three groups and absoluteness match SOURCE."
+  },
+  {
+   "claim_id": "C108",
+   "loglog_ids": [
+    "6.10.8"
+   ],
+   "claim_text": "It is not an argument that transparency is bad; it says transparency threatens the powerful, which is exactly the point.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"Those in power won't allow it\" is not an argument that transparency is bad. It's a statement that transparency threatens the powerful. Which is exactly the point.",
+   "reasoning": "Negation and conclusion match SOURCE."
+  },
+  {
+   "claim_id": "C109",
+   "loglog_ids": [
+    "6.10.9"
+   ],
+   "claim_text": "Precedents: Sweden 1766 had declining aristocratic power, post-Watergate scandal opened reform, post-2008 Iceland created demand.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Sweden 1766: aristocratic power was declining... Post-Watergate US: scandal created a window for reform - Post-2008 Iceland: financial crisis created demand for accountability",
+   "reasoning": "All three precedents match SOURCE bullets."
+  },
+  {
+   "claim_id": "C110",
+   "loglog_ids": [
+    "6.10.10"
+   ],
+   "claim_text": "The CEO framing asks who works for whom, not whether politicians grant permission.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The CEO framing asks: \"Who works for whom?\"... It treats politicians as principals who grant or withhold permission. That's the wrong question.",
+   "reasoning": "Contrast and negation match SOURCE."
+  },
+  {
+   "claim_id": "C111",
+   "loglog_ids": [
+    "6.10.11"
+   ],
+   "claim_text": "This is a governance design problem, not a permission-seeking problem.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is a governance design problem, not a permission-seeking problem.",
+   "reasoning": "Verbatim in SOURCE."
+  }
+ ],
+ "metrics": {
+  "total_claims": 111,
+  "supported": 111,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

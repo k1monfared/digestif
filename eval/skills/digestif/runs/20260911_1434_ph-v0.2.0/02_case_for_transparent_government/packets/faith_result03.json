@@ -1,0 +1,489 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "02_case_for_transparent_government_part3",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Citizens raise genuine objections that deserve honest engagement, not dismissal.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "But some come from citizens with genuine concerns. These deserve honest engagement.",
+   "reasoning": "Source explicitly says some objections come from citizens with genuine concerns and deserve honest engagement."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Objection: full transparency will expose citizens' private data.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"My Privacy Will Be Violated\"",
+   "reasoning": "Source presents this exact objection heading and frames it as the most common objection."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "7.1.1"
+   ],
+   "claim_text": "Polls fear citizen-data exposure, not visible decisions; aggregate reporting separates them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "fear about *citizen data* held by government. Not fear about *government decisions* being visible to citizens.",
+   "reasoning": "Source states polls measure citizen-data fear, and cites aggregate reporting as the separating approach."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "7.1.2"
+   ],
+   "claim_text": "Pew and Roper surveys record citizen-data fears and six decades of opinion.",
+   "claim_type": "number_or_date",
+   "verdict": "Contradicted",
+   "severity": "Critical",
+   "evidence_quote": "Historical overview of American public opinion on government transparency from 1950s to present",
+   "reasoning": "Source dates the Roper overview 1950s to present, roughly seven decades, not six. Numeric drift fails."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Objection: public deliberation will paralyze government.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Officials will be afraid to propose ideas. Processes will be paralyzed.",
+   "reasoning": "Source states this objection and its paralysis framing directly in the heading and body."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "7.2.1"
+   ],
+   "claim_text": "Documentation is not slower work; New Zealand deliberates openly and opacity drifts randomly.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Transparency does not require changing the speed at which government operates... New Zealand publishes cabinet papers within 30 days.",
+   "reasoning": "Source makes both points: documentation separate from speed, and the NZ example."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "7.2.2"
+   ],
+   "claim_text": "IMF, Cambridge, and World Bank weigh deliberation friction, Robodebt, and mixed effects.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "26. **[World Bank - Evidence on the Impact of Transparency]...mixed findings on effectiveness",
+   "reasoning": "Appendix lists all three sources with those respective framings, matching the node."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Objection: diplomacy needs secrecy, from backchannels to Cold War hotlines.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "Cold War backchannels between the US and Soviet Union helped manage rivalry and avoid direct confrontation.",
+   "reasoning": "Backchannels supported, but source says Cold War backchannels, not hotlines, a substituted term."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "7.3.1"
+   ],
+   "claim_text": "Concede temporary negotiation secrecy, then publish everything within 30 to 90 days.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Full documentation released after conclusion (e.g., 30-90 days)",
+   "reasoning": "Source grants temporary secrecy and specifies release after conclusion, 30-90 days."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "7.3.2"
+   ],
+   "claim_text": "Others won't deal with us justifies any secrecy and surrenders principals' authority.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It could justify any level of secrecy. It makes citizens' oversight contingent on foreign governments' preferences.",
+   "reasoning": "Source states the argument proves too much and subordinates citizens' oversight to foreign preferences."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "7.3.3"
+   ],
+   "claim_text": "Harvard and Oxford sources record backchannel breakthroughs and the democratic dilemma.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "frames the \"democratic dilemma\"",
+   "reasoning": "Appendix lists Harvard explainer on the Oman backchannel and Oxford on the democratic dilemma."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "Objection: transparency helps lobbyists more than citizens.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Special Interests Will Benefit More Than Ordinary Citizens\"",
+   "reasoning": "Source presents this exact objection heading."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "7.4.1"
+   ],
+   "claim_text": "Harden and Kirkland show open meetings aid organized interests without improving representation.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The laws don't make citizen representation better, they make it better for interest groups",
+   "reasoning": "Source attributes exactly this finding to Harden and Kirkland across state legislatures."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "7.4.2"
+   ],
+   "claim_text": "Asymmetry is the problem, so build citizen capacity: auditors, watchdogs, civic tech.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the *asymmetry* is the problem...fund watchdog organizations, support investigative journalism, build civic technology.",
+   "reasoning": "Source names asymmetry and lists watchdogs, journalism, and civic technology as capacity builders."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "7.4.3"
+   ],
+   "claim_text": "Notre Dame, Cambridge UP, and Irish experiments show lobbyists gain without trust gains.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "finding lobbying transparency does not improve citizen trust in political process",
+   "reasoning": "Appendix lists all three; the Irish experiment notes no trust improvement, matching the node."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "Objection: public officials face threats, doxxing, and harassment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Public Officials Will Be Harassed\"\n\nThis concern is real, documented, and growing.",
+   "reasoning": "Source presents the objection and calls it real, documented, and growing."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "7.5.1"
+   ],
+   "claim_text": "38 percent of surveyed US election officials faced threats; a third know resignations.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "38% experienced threats, harassment, or abuse...34% know someone who resigned",
+   "reasoning": "38% and 34% (approximately a third) match the Brennan survey figures in source."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "7.5.2"
+   ],
+   "claim_text": "Publish decisions, protect personal data; opacity breeds the conspiracies driving harassment.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "much of the *current* harassment stems from *lack* of transparency",
+   "reasoning": "Source urges publishing decisions, protecting personal data, and links harassment partly to opacity."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "7.5.3"
+   ],
+   "claim_text": "Brennan, NAAG, and Issue One track threats, doxxing tech, and 22-state protections.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "legislative responses across 22 states since 2022",
+   "reasoning": "Appendix lists Brennan, NAAG, and Issue One with those topics, matching the node."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "7.5.4"
+   ],
+   "claim_text": "Doxxing and swatting intensified with AI scraping; 22 states passed protections.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "AI and automated data scraping intensifying \"the scale, precision, and anonymity\"...22 states have passed protections",
+   "reasoning": "Source states AI/scraping intensification and 22 states passing protections since 2022."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "claim_text": "Objection: national security requires secrecy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"National Security!\"",
+   "reasoning": "Source presents this exact objection heading."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "7.6.1"
+   ],
+   "claim_text": "Majorities back intelligence but want openness; overclassification hides illegality, so flip the burden.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a majority also agreed the IC \"could share more information\"...A citizen-CEO model would flip this",
+   "reasoning": "Source cites majority support plus desire for openness, Brennan on overclassification, and flipping the burden."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "7.6.2"
+   ],
+   "claim_text": "Allow temporary operational secrecy, then document strategy, budgets, and rules openly.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Strategy, doctrine, budget, procurement, rules of engagement should always be transparent.",
+   "reasoning": "Source permits temporary classification, requires post-conclusion docs, and lists strategy and budget."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "7.6.3"
+   ],
+   "claim_text": "Chicago Council, Brennan, and SIPRI poll support, decry overclassification, urge openness.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "shows general support (~60%)...current classification levels far exceed genuine security needs",
+   "reasoning": "Appendix lists all three sources with those framings, matching the node."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "7.7"
+   ],
+   "claim_text": "Objection: populists will weaponize transparency.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Populists Will Weaponize Transparency\"",
+   "reasoning": "Source presents this exact objection heading."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "7.7.1"
+   ],
+   "claim_text": "Populists damage democracy by reducing transparency; full records defeat cherry-picking.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they do so by *reducing* transparency...You can't cherry-pick when the full record is available",
+   "reasoning": "Source argues populists reduce transparency and that full records neutralize selective leaking."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "7.7.2"
+   ],
+   "claim_text": "Documented long-term reasoning protects wise unpopular decisions and exposes pandering.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An unpopular decision with documented reasoning is defensible...documentation exposes this.",
+   "reasoning": "Source states documentation defends wise unpopular decisions and exposes crowd-pleasing bad reasoning."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "7.7.3"
+   ],
+   "claim_text": "Blair Institute, Stanford, and Swedish studies quantify populist damage and transparency abuse.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "populist governments 4x more likely to damage democratic institutions",
+   "reasoning": "Appendix lists all three sources with those framings, matching the node."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "7.8"
+   ],
+   "claim_text": "Objection: misinformation makes transparency pointless.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Misinformation Makes Transparency Pointless\"",
+   "reasoning": "Source presents this exact objection heading."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "7.8.1"
+   ],
+   "claim_text": "False beliefs lower perceived transparency, but only real records let claims be checked.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It does *not* show: actual transparency leads to more false beliefs...Without documentation, there's no way to verify",
+   "reasoning": "Source states false beliefs reduce perceived transparency and documentation grounds verification."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "7.8.2"
+   ],
+   "claim_text": "Citizens value available-but-unread records; persistent disclosure builds trust over time.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "citizens value the *availability* of information even without consuming it...Persistent, comprehensive transparency creates a verifiable track record.",
+   "reasoning": "Source states the latent transparency value and that persistent disclosure builds trust over time."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "7.8.3"
+   ],
+   "claim_text": "HKS and ScienceDirect studies link false beliefs to perceived opacity and latent transparency.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "false beliefs causally reduce perceived transparency...identifies \"latent transparency\" concept",
+   "reasoning": "Appendix lists both sources with those framings, matching the node."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "7.9"
+   ],
+   "claim_text": "Objection: markets will front-run published negotiations and policy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If monetary policy is being decided, couldn't traders exploit advance knowledge?",
+   "reasoning": "Source raises advance-knowledge exploitation in trade and monetary decisions, matching the objection."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "7.9.1"
+   ],
+   "claim_text": "Delay monetary and procurement releases, then publish all; secrecy enables contract fraud.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "secrecy in procurement *enables* corruption...nothing stays secret forever",
+   "reasoning": "Source recommends category delays with eventual full release and links procurement secrecy to corruption."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "7.10"
+   ],
+   "claim_text": "Objection: those in power will never allow this.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### \"Those in Power Will Never Allow This\"",
+   "reasoning": "Source presents this exact objection heading."
+  },
+  {
+   "claim_id": "C36",
+   "loglog_ids": [
+    "7.10.1"
+   ],
+   "claim_text": "Iceland's blocked draft and abandoned OGP pledges describe resistance, not refutation.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the existing parliament refused to ratify it...new governments abandon their predecessors' transparency promises.",
+   "reasoning": "Source shows Iceland's parliament blocking the draft and OGP commitments abandoned across transitions."
+  },
+  {
+   "claim_id": "C37",
+   "loglog_ids": [
+    "7.10.2"
+   ],
+   "claim_text": "Ask not permission but design: principals assert authority through governance, as Sweden did.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's how the principal asserts authority.\n\nThis is a governance design problem, not a permission-seeking problem.",
+   "reasoning": "Source frames this as governance design and cites Sweden 1766 as an overcoming precedent."
+  },
+  {
+   "claim_id": "C38",
+   "loglog_ids": [
+    "7.10.3"
+   ],
+   "claim_text": "OGP, Wiley, SAGE, and ScienceDirect studies map funding gaps and bureaucratic resistance.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "public servants resist open government data policy through workarounds",
+   "reasoning": "Appendix lists OGP funding gaps plus Wiley, SAGE, and ScienceDirect on capacity and resistance."
+  },
+  {
+   "claim_id": "C39",
+   "loglog_ids": [
+    "7.11"
+   ],
+   "claim_text": "This case is under construction and requests feedback and criticism.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "this is a thought very much under construction...Feedback and criticism are mor than welcome",
+   "reasoning": "Source note states the piece is under construction and invites feedback and criticism."
+  }
+ ],
+ "metrics": {
+  "total_claims": 39,
+  "supported": 37,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 1,
+  "critical_errors": 1,
+  "faithfulness_precision": 0.9487
+ },
+ "fail_list": [
+  "C04 contradicted: source dates Roper overview 1950s to present, about seven decades, not six",
+  "C08 partially supported: source says Cold War backchannels, not hotlines"
+ ]
+}

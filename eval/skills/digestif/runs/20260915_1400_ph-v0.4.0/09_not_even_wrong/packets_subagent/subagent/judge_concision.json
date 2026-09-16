@@ -1,0 +1,361 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "09_not_even_wrong",
+  "labels": [
+    {
+      "claim_id": "C01",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Root synthesis; combines persuasion channels no single node states together."
+    },
+    {
+      "claim_id": "C02",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Definition of not-even-wrong; first statement of the concept."
+    },
+    {
+      "claim_id": "C03",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the Pauli attribution."
+    },
+    {
+      "claim_id": "C04",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the Atiyah facts, the 89 and 1859 numbers, and both prizes."
+    },
+    {
+      "claim_id": "C05",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the community reaction and rigor/evaluation analysis."
+    },
+    {
+      "claim_id": "C06",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the extension to powerful figures beyond math."
+    },
+    {
+      "claim_id": "C07",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme introducing the investment loop."
+    },
+    {
+      "claim_id": "C08",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the financial-stake incentive claim."
+    },
+    {
+      "claim_id": "C09",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the dissonance rather than protection negation."
+    },
+    {
+      "claim_id": "C10",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the outside-expertise receptivity."
+    },
+    {
+      "claim_id": "C11",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds milestone reinforcement and the without-scrutiny clause."
+    },
+    {
+      "claim_id": "C12",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the four-stage self-reinforcing cycle."
+    },
+    {
+      "claim_id": "C13",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds material self-interest plus identity formation."
+    },
+    {
+      "claim_id": "C14",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the founder promise pairing with the might hedge."
+    },
+    {
+      "claim_id": "C15",
+      "loglog_ids": [
+        "2.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the credibility transfer and different evidentiary standards; distinct from 2.4, which lacks the standards contrast."
+    },
+    {
+      "claim_id": "C16",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme introducing social proof and tribal identity."
+    },
+    {
+      "claim_id": "C17",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the thousands-or-millions social proof claim."
+    },
+    {
+      "claim_id": "C18",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the humans-look-to-others principle; general claim distinct from the leader example."
+    },
+    {
+      "claim_id": "C19",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds outsider positioning and tribal betrayal."
+    },
+    {
+      "claim_id": "C20",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds algorithmic echo chambers with the tend-to hedge."
+    },
+    {
+      "claim_id": "C21",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds unfiltered posts and perceived authenticity."
+    },
+    {
+      "claim_id": "C22",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme stating the not-purely-rational thesis."
+    },
+    {
+      "claim_id": "C23",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the four influence factors."
+    },
+    {
+      "claim_id": "C24",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the override-critical-faculties consequence with can/might."
+    },
+    {
+      "claim_id": "C25",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the standards asymmetry across Atiyah, leaders, and society."
+    },
+    {
+      "claim_id": "C26",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme framing the two recommendation lists."
+    },
+    {
+      "claim_id": "C27",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the separate-finance prescription."
+    },
+    {
+      "claim_id": "C28",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the domain-specific expertise prescription."
+    },
+    {
+      "claim_id": "C29",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the counter-narratives prescription with its credible/relevant qualifiers."
+    },
+    {
+      "claim_id": "C30",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the would-I-believe counterfactual test."
+    },
+    {
+      "claim_id": "C31",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the four societal measures; distinct list from individuals."
+    },
+    {
+      "claim_id": "C32",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme framing the closing argument."
+    },
+    {
+      "claim_id": "C33",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the not-for-or-against framing with the critical-tools balance."
+    },
+    {
+      "claim_id": "C34",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the cloud-judgment recognition and separation practice."
+    },
+    {
+      "claim_id": "C35",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the most-important-skill claim and the two extremes."
+    },
+    {
+      "claim_id": "C36",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the societies-science shared-standards parallel and central challenge."
+    },
+    {
+      "claim_id": "C37",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the Atiyah-sympathy and best-hope synthesis; related to 6.4 but distinct passage and claim."
+    },
+    {
+      "claim_id": "C38",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the two book characterizations."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 38,
+    "unique": 38,
+    "duplicates": 0,
+    "trivia": 0,
+    "redundancy_rate": 0.0,
+    "trivia_rate": 0.0,
+    "structured_tokens": 837,
+    "tokens_per_unique_claim": 22.03
+  },
+  "prune_list": []
+}

@@ -1,0 +1,366 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Mathematics was never theorem production: it was a process of thinking, and the process was the product.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "mathematics was never the production of theorems. It was a process of thinking, and the process was the product.",
+   "reasoning": "SOURCE states the same denial and the same positive definition in near-identical wording."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "The old definition was wrong, and both authors know it.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The old definition was wrong, and both authors know it.",
+   "reasoning": "SOURCE sentence is verbatim identical."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Moradifam: we teach math for the struggle, not the facts; the student discovers what matters and what does not.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Moradifam opens with the reason we teach math at all: not the facts, the struggle.",
+   "reasoning": "Attribution to Moradifam and the not-facts-but-struggle point match SOURCE."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "2.2.1"
+   ],
+   "claim_text": "That process builds the habit of tracking assumptions, moving between examples and principles, and the confidence to keep thinking.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That process builds the habit of tracking assumptions, the ability to move between concrete examples and general principles, the confidence to keep thinking",
+   "reasoning": "Compression drops qualifier 'when the answer is not immediate' but preserves meaning. Style change passes."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Cognitive offloading delegates mental effort to a tool; the illusion of explanatory depth confuses fluency with ownership.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Cognitive offloading is the tendency to delegate mental effort to an external tool. The illusion of explanatory depth is the way fluency gets confused with ownership.",
+   "reasoning": "Both definitions match SOURCE exactly."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.3.1"
+   ],
+   "claim_text": "A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.3.2"
+   ],
+   "claim_text": "A calculator does not undermine arithmetic for a student who already understands place value; it becomes harmful when it arrives before the understanding.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A calculator does not undermine arithmetic for a student who already understands place value. It becomes harmful when it arrives before the understanding.",
+   "reasoning": "Negation and condition preserved verbatim."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.3.3"
+   ],
+   "claim_text": "AI adds a twist: it produces plausible explanations in a confident tone, so student and instructor can mistake output for learning.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it produces plausible explanations in a confident tone, so both student and instructor can mistake the output for the learning.",
+   "reasoning": "Same mechanism and hedge 'can' retained."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "An airport ad from an early AI company: let the AI do the thinking for you.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "an ad I saw in the San Francisco airport, from an early AI company: \"let the AI do the thinking for you.\"",
+   "reasoning": "Ad location, company descriptor, and quoted slogan match SOURCE."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.4.1"
+   ],
+   "claim_text": "The ad treats thinking the way earlier automation treated laundry, as toil to be eliminated.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The marketing treats thinking the way earlier automation treated laundry, as toil to be eliminated.",
+   "reasoning": "Near-verbatim match, 'marketing' vs 'ad' is a harmless synonym."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2.4.2"
+   ],
+   "claim_text": "Fixing a car is instrumental; thinking is constitutive, since working through a problem is what builds judgment.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Fixing a car is instrumental. ... Thinking is constitutive. The process of working through a problem is what builds judgment",
+   "reasoning": "All three propositions match SOURCE."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "2.4.3"
+   ],
+   "claim_text": "Offload the chore and you keep the car; offload the thinking and you keep an answer with an unchanged mind.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Offload the chore and you keep the car. Offload the thinking and you keep an answer with an unchanged mind.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "claim_text": "The boundary is blurry: the same was said about mental arithmetic, memorizing poetry, and navigation.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the boundary is blurry. We said the same things about mental arithmetic, memorizing poetry, navigation.",
+   "reasoning": "Same three examples and same claim about the boundary."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "2.5.1"
+   ],
+   "claim_text": "Some of those losses turned out fine; some cost something real.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Some of those losses turned out fine. Some cost us something real,",
+   "reasoning": "Near-verbatim, hedge 'some' retained."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "2.5.2"
+   ],
+   "claim_text": "Longitudinal work: more GPS use predicts a steeper decline in hippocampal-dependent spatial memory (Dahmani & Bohbot, 2020).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "longitudinal work finds that more GPS use predicts a steeper decline in hippocampal-dependent spatial memory ([Dahmani & Bohbot, 2020])",
+   "reasoning": "Finding and citation match SOURCE exactly."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "2.5.3"
+   ],
+   "claim_text": "Long-term GPS use is associated with worse mental rotation and perspective-taking, which hurts environmental learning (Ruginski et al., 2019).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "long-term GPS use is associated with worse mental rotation and perspective-taking, which in turn hurts environmental learning ([Ruginski et al., 2019])",
+   "reasoning": "Correlation wording, chain, and citation match SOURCE."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "2.6"
+   ],
+   "claim_text": "The question is which cognitive activities are load-bearing for everything else.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It is which cognitive activities are load-bearing for everything else.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "2.6.1"
+   ],
+   "claim_text": "Calculation turned out not to be.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Calculation turned out not to be.",
+   "reasoning": "Verbatim match, negation preserved."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "2.6.2"
+   ],
+   "claim_text": "Problem framing, noticing what is missing, deciding what is worth attention look load-bearing, precisely what the ad proposes to outsource.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing, and those are precisely the things the ad proposes to outsource.",
+   "reasoning": "Hedge 'look' retained and the ad linkage matches."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "2.6.3"
+   ],
+   "claim_text": "Proving is the gym where the finding is trained: the slog of a rigorous proof builds the muscle for spotting patterns.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "proving is the gym where the finding is trained. The slog of writing a rigorous proof is what builds the muscle for spotting patterns",
+   "reasoning": "Metaphor and mechanism match SOURCE."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "2.6.4"
+   ],
+   "claim_text": "The chore and the training are the same act; even failed proofs bring a slew of ideas and learning.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the chore and the training are the same act. Even when proofs go wrong and don't work, there are a slew of ideas that comes to the mathematician's mind and learning occurs.",
+   "reasoning": "Both propositions match, compression harmless."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "2.7"
+   ],
+   "claim_text": "Tao reaches the same place through exposition: AI-polished proofs are close to flawless in spelling, grammar, and formatting, almost too flawless.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tao reaches the same place from the other end, through exposition. AI-polished proofs, he says, are close to flawless in spelling, grammar, and formatting, almost too flawless in a way.",
+   "reasoning": "Attribution to Tao and the almost-too-flawless point match."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "2.7.1"
+   ],
+   "claim_text": "They dwell on trivialities, rush past the novel parts, and fail to connect to prior literature.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They dwell on trivialities and rush past the novel parts of an argument. They fail to connect to prior literature.",
+   "reasoning": "All three defects match SOURCE."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "2.7.2"
+   ],
+   "claim_text": "They remove friction: in human proofs the difficult parts keep a natural friction that makes the reader slow down.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "And they remove friction. In a human-written proof, the parts the author found difficult keep a natural friction that makes the reader slow down and pay attention.",
+   "reasoning": "Same friction point, 'pay attention' dropped is harmless compression."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "2.7.3"
+   ],
+   "claim_text": "An over-polished proof removes natural and artificial friction; the reader sails through without learning the key ideas.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An over-polished proof removes both natural and artificial friction, and the reader sails through without learning the key ideas.",
+   "reasoning": "Verbatim except 'both', meaning unchanged."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "2.7.4"
+   ],
+   "claim_text": "Paradoxically, mistakes in human exposition can be helpful: they mark where the work is.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Paradoxically, mistakes in human exposition can be helpful. They mark where the work is.",
+   "reasoning": "Hedge 'can' and both clauses match SOURCE."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "2.7.5"
+   ],
+   "claim_text": "Thurston: success is whether what we do enables people to understand and think more clearly and effectively about math, not production quotas.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The measure of our success is whether what we do enables people to understand and think more clearly and effectively about math.",
+   "reasoning": "Quote faithfully attributed to Thurston, negation against quotas preserved."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "2.8"
+   ],
+   "claim_text": "The struggle, the friction, the process point at the same thing, the thing the pipeline optimizes away.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The struggle, the friction, the process. All three point at the same thing, and it is the thing the pipeline optimizes away.",
+   "reasoning": "Near-verbatim match."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "2.8.1"
+   ],
+   "claim_text": "The slides are a delight to go through and completely non-technical.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The whole set of slides is a delight to go through, and it is completely non-technical",
+   "reasoning": "Verbatim match."
+  }
+ ],
+ "metrics": {
+  "total_claims": 29,
+  "supported": 29,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

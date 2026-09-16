@@ -1,0 +1,453 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "07_intentionalism",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "claim_text": "Life systematically favors proposers over receivers, so build intention by proposing.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "it has nothing to do with talent, luck ... whether they propose or receive",
+      "reasoning": "Source thesis asserts proposers get systematically better outcomes and prescribes building intention. Summary is faithful."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "claim_text": "Better outcomes come from whether one proposes or receives, not talent or luck.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "nothing to do with talent, luck, or even the quality of their choices",
+      "reasoning": "Source explicitly denies talent and luck, attributing outcomes to propose/receive position."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "2"
+      ],
+      "claim_text": "In 1962 Gale and Shapley sought pairings no unmatched pair would break.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "In 1962, mathematician-economists David Gale and Lloyd Shapley ... no two unmatched people would prefer each other",
+      "reasoning": "Year, names, and stable-matching goal all match the source."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "claim_text": "Deferred acceptance gives each proposer their best stable partner, each receiver their worst.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "proposers get their best possible partner ... receivers get their worst possible partner",
+      "reasoning": "Node restates the source's central algorithm result exactly."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "claim_text": "The gap is systematically, provably, mathematically extreme, not slight.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "isn't just slightly better or worse—it's systematically, provably, mathematically extreme",
+      "reasoning": "Direct paraphrase preserving the not-slight negation."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "3"
+      ],
+      "claim_text": "Real situations skip the exact algorithm but share the propose-respond structure.",
+      "claim_type": "claim",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "most real-world situations don't follow the exact Gale-Shapley algorithm",
+      "reasoning": "Source hedges with most; node states it universally, dropping the quantifier."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "claim_text": "Netflix, phones, jobs, friendships: pre-decided pursuit versus presented selection.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "did you decide what kind of experience you wanted? Or did you scroll through recommendations",
+      "reasoning": "The four source examples and their pursue-versus-select framing are accurately compressed."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "claim_text": "For most of these, most of us are receivers choosing from presentations.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "For most of these, most of us are receivers. We're choosing from what's presented",
+      "reasoning": "Node matches the source sentence including its most-of-these hedge."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "4"
+      ],
+      "claim_text": "Receivers get acceptable, good-enough outcomes, never terrible ones.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "isn't that you get terrible outcomes. You don't. You get acceptable ones. Good enough ones.",
+      "reasoning": "Node preserves the source's negation that outcomes are not terrible."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "claim_text": "Decent differs from best-serving; structure favors proposers without conspiracy.",
+      "claim_type": "causal_link",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "the outcomes tend to favor whoever's doing the proposing",
+      "reasoning": "Source hedges with tend to; node states structure favors as absolute."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "claim_text": "Fine feelings block revolt-driving dissatisfaction; quiet under-service stays stable.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "because your outcomes feel fine, you never develop the dissatisfaction ... The system is stable",
+      "reasoning": "Node captures the source's mechanism linking feeling-fine to stability."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "5"
+      ],
+      "claim_text": "Intention is needed to propose, yet intention develops only through proposing.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "You need intention to propose, but you develop intention through proposing",
+      "reasoning": "The chicken-and-egg assertion is directly stated by the source."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "claim_text": "Receiver choices reveal the least-disliked option, never freely pursued desire.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "reveal which option you dislike least ... They don't tell you what you'd pursue if you could",
+      "reasoning": "Node preserves both the least-disliked framing and the negation."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "claim_text": "Algorithmic songs and swiped partners leave wants as reactions to offerings.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "\"preferences\" are just reactions to what gets put in front of them",
+      "reasoning": "Node reflects the source's music and dating examples and reaction claim."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "6"
+      ],
+      "claim_text": "The intention muscle builds progressively; no jump from Netflix to life vision.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "You can't jump straight from ... Netflix ... to ... your life's work. The muscle ... builds progressively",
+      "reasoning": "Both the progressive build and the no-jump negation match the source."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "claim_text": "Tonight: name the hour's want (laugh, learn, calm, challenge), then seek it.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "do you want to laugh? Learn something? Feel calm? Be challenged? ... Actively seek what you decided",
+      "reasoning": "The four options and the seek-it instruction match the source exercise."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "claim_text": "Patterns become preferences, preferences values; values are practiced into, not thought into.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Those patterns become preferences. Those preferences become values. You can't think your way into values.",
+      "reasoning": "Node replicates the progression and the practiced-not-thought negation."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "7"
+      ],
+      "claim_text": "Major decisions usually evaluate presented options; receiving feels like agency.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Most people, most of the time, are evaluating presented options. This feels like agency",
+      "reasoning": "Node's usually matches the source's most-of-the-time hedge."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "claim_text": "Proposers of work, partners, and cities win systematically from structural position.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "those people end up with systematically better outcomes. Not because they're smarter or luckier. Because they're on the other side",
+      "reasoning": "Source states the systematic advantage and structural cause for exactly these domains."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "claim_text": "Platforms take optimal outcomes (attention, data, money); users keep good-enough engagement.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "the platforms get optimal outcomes (your attention, your data, your money), and you get outcomes that are good enough",
+      "reasoning": "Node matches the platform-user outcome split and listed currencies."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "claim_text": "Staying wins because leaving feels harder; stability is resistance to change.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "You stay because leaving feels harder than accepting \"good enough.\" That's stability (resistance to change)",
+      "reasoning": "Node restates the source's definition and persistence explanation."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "8"
+      ],
+      "claim_text": "Understanding changes nothing; one must actually switch positions against designed defaults.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "doesn't go away because you understand it. You have to actually switch positions",
+      "reasoning": "Node faithfully conveys that understanding alone is insufficient and switching is required."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "claim_text": "Propose: decide before seeing options, pursue specifics, create openings, accept friction.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Deciding intentionally what you want before seeing what's available ... Accepting the friction",
+      "reasoning": "All four listed proposal actions correspond to source bullets."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "claim_text": "Ask what one wants before every major decision and most minor ones, then act.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "before every major decision and most minor ones. Then acting on that answer",
+      "reasoning": "Node matches the source scope and the act-after-asking instruction."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "claim_text": "Most will refuse: effortful, comfortable, and forgetful of what to propose.",
+      "claim_type": "concession",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Most people won't do this. It's effortful. The receiver position is comfortable ... lost the capacity",
+      "reasoning": "Node captures both the majority refusal and all three cited reasons."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "claim_text": "The dynamic is confirmed; the open question is whether the reader acts.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "The question isn't whether this dynamic exists ... The question is whether you're willing to do something about it",
+      "reasoning": "Node reframes the source's settled-existence and reader-action questions faithfully."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "9"
+      ],
+      "claim_text": "Start tomorrow morning small, practice a week, then scale to big decisions.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Start with tomorrow morning... Do this for a week with small things... Then scale up. Apply it to bigger decisions.",
+      "reasoning": "SOURCE prescribes morning start, one week of small practice, then scaling to larger decisions."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "claim_text": "Morning: decide the first hour's want before the phone, then pursue it.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Before you check your phone, decide intentionally: what do you actually want from the first hour of your day?... Then pursue that.",
+      "reasoning": "SOURCE states decide first-hour want before phone, then pursue it."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "claim_text": "Log small satisfactions a week, then decide work, love, and problems first.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Do this for a week with small things... Then scale up... decide what kind of work you want to do... what kind of relationship you're looking for... what problem you're trying to solve.",
+      "reasoning": "SOURCE matches week of small things then deciding work, relationship, and problem first; 'love' compresses relationship."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "claim_text": "Muscle enables intentions, intentions values; proposers win from the other side.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The muscle enables larger intentions. Larger intentions become values... Because they're on the other side of the equation.",
+      "reasoning": "SOURCE gives the muscle-intentions-values chain and proposers ending better from the equation's other side."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "9.4"
+      ],
+      "claim_text": "Entertainment drill: three weeks of naming, seeking, and protecting intention with timers.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Week 1: Name your intention... Week 2: Seek intentionally... Week 3: Protect your intention... Set a timer.",
+      "reasoning": "SOURCE appendix gives three weeks named, seeking, then protecting intention with a timer."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "9.5"
+      ],
+      "claim_text": "Shopping drill: exact problem, 3-5 must-haves, 24-hour rule over $100.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Define the problem... List must-haves: What 3-5 features actually matter... 24-hour rule: For anything over $100, wait a day.",
+      "reasoning": "SOURCE matches problem definition, 3-5 must-haves, and $100 threshold rule."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "9.6"
+      ],
+      "claim_text": "Jobs drill: two-week energy map, five non-negotiables, apply only at 4-of-5 matches.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "For two weeks, note what tasks give you energy... Write 5 non-negotiables... Only apply to roles that match at least 4 of your 5 criteria.",
+      "reasoning": "SOURCE gives two-week energy mapping, five non-negotiables, and at-least-4-of-5 application filter."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "9.7"
+      ],
+      "claim_text": "Relationships drill: specific intention plus 3-5 must-align values, seek and filter.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Write your relationship intention... What 3-5 values absolutely must align?... Seek intentionally... First date filter.",
+      "reasoning": "SOURCE matches specific relationship intention, 3-5 must-align values, intentional seeking, first-date filtering."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "9.8"
+      ],
+      "claim_text": "Micro-practices: 5-minute morning trio, 5-minute review, 10-second pause.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Morning routine (5 minutes): What are my three intentions for today?... Evening review (5 minutes)... pause for 10 seconds.",
+      "reasoning": "SOURCE gives five-minute morning with three intentions, five-minute evening review, ten-second pause."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "9.9"
+      ],
+      "claim_text": "Three-column journal for 30 days: situation, mode, outcome; start small.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "a simple journal with three columns: Situation... Mode... Outcome... After 30 days... Start small.",
+      "reasoning": "SOURCE matches three-column journal, 30 days, and start-small framing."
+    }
+  ],
+  "metrics": {
+    "total_claims": 36,
+    "supported": 34,
+    "partially_supported": 2,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9444
+  },
+  "fail_list": [
+    "C006",
+    "C010"
+  ]
+}

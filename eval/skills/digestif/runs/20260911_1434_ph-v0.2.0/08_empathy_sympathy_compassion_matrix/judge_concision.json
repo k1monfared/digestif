@@ -1,0 +1,247 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "08_empathy_sympathy_compassion_matrix",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "L002"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Summary names all four components and five profiles, the document's core inventory."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "L003"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds left/right layout of the double rule, not stated elsewhere."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "L004"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the four row blocks, a distinct structural axis."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "L005"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines cognitive empathy's parts and survival in manipulators."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "L006"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Maps the psychopath column onto cognitive empathy, new evidence."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "L007"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sympathy partial-modeling caveat is new."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "L008"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines affective empathy's sharing, contagion, burnout, bias."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "L009"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Missing boundary is a distinct structural nuance of affective empathy."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "L010"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contagion-without-concern limits affective empathy; new caveat."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "L011"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sociopath's clamped affective composition is new content."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "L012"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Compassion's four-part combination is the branch's core claim."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "L013"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C011",
+      "reasoning": "Restates compassion alone leading helping and sustainability; adds no information."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "L014"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bloom and Singer position caveat is new."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "L015"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Psychopath/sociopath control split is the branch's core claim."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "L016"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C014",
+      "reasoning": "Only control being psychopath-only restates C014; degradation nuance is minor."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "L017"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Enumerates specific affective rows owned by sociopath; new detail."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "L018"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Empath is not the moral ideal; new verdict."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "L019"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lists empat's specific failed dimensions; new evidence."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "L020"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Altruist's Light Triad mapping is new."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "L021"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Integrated ideal scoring across every block is new."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "L022"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Kantianism inversion nuance is new."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "L023"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Deliberate scope and ideal-type disclaimer is new."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "L024"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Etiology exclusion is new."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "L025"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "ASPD non-diagnosis fact is new."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "L026"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Terminology divergence caveat is new."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 25,
+    "unique": 23,
+    "duplicates": 2,
+    "trivia": 0,
+    "redundancy_rate": 0.08,
+    "trivia_rate": 0.0,
+    "structured_tokens": 308,
+    "tokens_per_unique_claim": 13.39
+  },
+  "prune_list": [
+    "C012 duplicates C011, safe to merge",
+    "C015 duplicates C014, safe to merge"
+  ]
+}

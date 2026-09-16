@@ -1,0 +1,301 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "08_empathy_sympathy_compassion_matrix",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "L002"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Opening frame names the five-profile span and four constructs; not restated verbatim by children."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "L003"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the cold-control block label grouping four rows; grouping insight absent from leaves."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "L004"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct matrix row with its own mark pattern; core Must-have data."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "L005"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct matrix row; pattern differs from every other row."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "L006"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct manipulators row; unique cog-only pattern."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "L007"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct controlled-not-reactive row; unique mark pattern."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "L008"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Block-level interpretation of sociopath ownership; leaves give marks but never state ownership."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "L009"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct affective-care row; new mark pattern."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "L010"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct capacity-to-care row; unique pattern with psy blank."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "L011"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct motivation-to-help row; no duplicate pattern."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "L012"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct guilt-after-harm row; emp-only positive is unique."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "L013"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct contagion-burnout row; new pattern."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "L014"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct vivid-similar bias row; new pattern."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "L015"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct ends-not-means row; matrix data not repeated despite noted triad overlap."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "L016"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct dignity-worth row; mark data not repeated elsewhere."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "L017"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Interprets block ownership beyond both dark profiles; new block-level claim."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "L018"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct beyond-in-group row; feature differs from similar patterns."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "L019"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct fundamentally-good row; unique dark-blank pattern."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "L020"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct sustainable-scalable row; adds cog mark absent from neighbours."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "L021"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Generic section header; scope-to-ideal-types content already carried by C027 and C028."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "L022"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New interpretive nuance on sympathy modeling minds."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "L023"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New interpretive nuance on involuntary affective contagion."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "L024"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds diagnostic interpretation of the manipulators row beyond C005 data."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "L025"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Positions sustainability as contested view; new caveat with critics."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "L026"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Causal link joining boundary, motivation, burnout, bias; not stated elsewhere."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "L027"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C007",
+      "reasoning": "Recaps dark-block asymmetry already asserted by theme 2; adds only rephrasing, no new data."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "L028"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New scope exclusion of etiology with justification."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "L029"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Definitional counterpoint on contested ASPD status; new information."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "L030"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New definition distinguishing neutral research sympathy from Brown usage."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "L031"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds spectrum specifics and Light Triad attribution not given elsewhere."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "L032"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Meta-insight on triad-row overlap; new claim about redundancy itself."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 31,
+    "unique": 29,
+    "duplicates": 1,
+    "trivia": 1,
+    "redundancy_rate": 0.0323,
+    "trivia_rate": 0.0323,
+    "structured_tokens": 511,
+    "tokens_per_unique_claim": 17.62
+  },
+  "prune_list": [
+    "C020 trivia, generic header restating scope notes C027/C028, safe to drop",
+    "C026 duplicates C007, dark-column recap, safe to merge"
+  ]
+}

@@ -1,0 +1,399 @@
+{
+ "sample": "04_house_hunting_shenanigans",
+ "part": 1,
+ "of": 1,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Buyer spends a weekend chasing one house through stalling, a 20K price cut, and standoff, then walks away vindicated.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "So, I've been looking for a house for almost a year now. It's been way longer than I expected and the market has been weird, to say the least. There are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days."
+    },
+    {
+     "ref": "¶5",
+     "text": "Thursday 5pm: a new house comes on the market. Friday 1pm: We see the house. I like it. I'm going to put an offer at the asking price. I don't want to get into a bidding war; I'll make the offer as sweet as possible so that they accept it right away."
+    },
+    {
+     "ref": "¶12",
+     "text": "Saturday 5pm: N calls, they say they have another offer which they're going to consider in an hour. My offer is much better than the other offer; they want to encourage me to rewrite the offer. I drop the offer by 20K from the asking price and remove most of those sweet things. N strongly advises me against doing it. I do it anyways."
+    },
+    {
+     "ref": "¶20",
+     "text": "One week later: N says he thinks the house had an offer of 5K above asking price. Two weeks later: the house is sold for 10K below the asking price. N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price."
+    },
+    {
+     "ref": "¶23",
+     "text": "Transaction debrief via Claude: Negotiation Duration 3 Days (Friday-Sunday), Final Outcome: Walked away. Key Takeaway: In negotiations, information, emotional control, and strategic flexibility are more valuable than immediate transactional success."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Year-long search in a weird split market sets up the weekend.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "So, I've been looking for a house for almost a year now. It's been way longer than I expected and the market has been weird, to say the least. There are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days."
+    },
+    {
+     "ref": "¶2",
+     "text": "N is my realtor; J is the seller's realtor; C is J's partner; L is J and C's assistant."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Some houses linger unsold for months; others vanish within one or two days.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "So, I've been looking for a house for almost a year now. It's been way longer than I expected and the market has been weird, to say the least. There are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "First Wednesday offer 30K below asking fails; buyer resolves to move faster.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Wednesday Afternoon: I put the highest price I can afford on a house that I like, but that is still about 30K below the asking price. The house is worth more than my offer but I'm hoping I might have a chance."
+    },
+    {
+     "ref": "¶4",
+     "text": "Thursday 6pm: I'm informed that my offer is not accepted and they are moving forward with other offers. The house was worth that much but I couldn't afford anymore; I've gotta move faster with the new ones."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Friday sweet full-price offer meets silence and delay requests.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Thursday 5pm: a new house comes on the market. Friday 1pm: We see the house. I like it. I'm going to put an offer at the asking price. I don't want to get into a bidding war; I'll make the offer as sweet as possible so that they accept it right away."
+    },
+    {
+     "ref": "¶7",
+     "text": "Friday 6pm: We send an offer with as much sweet things in it as possible at the asking price with the deadline of same day midnight. They had other showings today, but it is unlikely that they'll get an offer at the asking price."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Buyer offers asking price with sweet terms and a midnight deadline.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Thursday 5pm: a new house comes on the market. Friday 1pm: We see the house. I like it. I'm going to put an offer at the asking price. I don't want to get into a bidding war; I'll make the offer as sweet as possible so that they accept it right away."
+    },
+    {
+     "ref": "¶7",
+     "text": "Friday 6pm: We send an offer with as much sweet things in it as possible at the asking price with the deadline of same day midnight. They had other showings today, but it is unlikely that they'll get an offer at the asking price."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "counterpoint",
+   "attribution": "reported",
+   "text": "Own realtor N advises bidding 10K below to leave negotiating room.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "N says to write an offer 10K below and let them negotiate and then go up, because people always expect to negotiate. I'm not convinced since I'm offering their asking price."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Seller agents unreachable, then request extension citing another offer.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Friday 9pm: N calls me, he can't get a hold of their realtor. Friday 10:30pm: she is driving up island for a family thing. They ask us to extend the offer until tomorrow midnight. They mention in passing that there's another offer on the house."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Buyer suspects stalling and extends only until Saturday 10:30am.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "I don't buy this. They just want to buy time. I don't want to get into a bidding war and my offer to be used for pushing others to put a higher price. Friday 11pm: I extend the offer until 10:30am Saturday."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Saturday duel: buyer slashes 20K, sellers counter 5K above asking.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Saturday Morning: Nothing happens. Seems like they just wanted to keep my offer open so that they use it to compete with other offers. N thinks the other offer was better. I don't even believe there was another offer. I ask them to disclose the other offer."
+    },
+    {
+     "ref": "¶12",
+     "text": "Saturday 5pm: N calls, they say they have another offer which they're going to consider in an hour. My offer is much better than the other offer; they want to encourage me to rewrite the offer. I drop the offer by 20K from the asking price and remove most of those sweet things. N strongly advises me against doing it. I do it anyways."
+    },
+    {
+     "ref": "¶15",
+     "text": "Saturday 9pm: I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K above the asking price. Seems like they are defending forward. They want a response by 11pm. I ask it to be extended for 24 hours."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Saturday morning silence looks like using his offer as leverage.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Saturday Morning: Nothing happens. Seems like they just wanted to keep my offer open so that they use it to compete with other offers. N thinks the other offer was better. I don't even believe there was another offer. I ask them to disclose the other offer."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "Afternoon nap marks rare emotional release and detachment.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Saturday Afternoon: I take a nap. They didn't even respond. I've moved on emotionally. It is super rare for me to take a nap in the afternoon, like once every few years."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Buyer drops price 20K and strips sweet terms against N's strong advice.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Saturday 5pm: N calls, they say they have another offer which they're going to consider in an hour. My offer is much better than the other offer; they want to encourage me to rewrite the offer. I drop the offer by 20K from the asking price and remove most of those sweet things. N strongly advises me against doing it. I do it anyways."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Seller partner asks to fix the drop; J's listings switch to C.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Saturday 7pm: the partner of the seller's realtor called N saying they've noticed the drop in price and wondering if he could fix that. The other offer apparently sucks and sucks real bad. They are trying to work with me."
+    },
+    {
+     "ref": "¶14",
+     "text": "In the meantime the name of the seller's realtor J on the REW website is changed to her partner's C, and her name is removed from all her listings (a total of 4)! I'm guessing the seller is really pissed at the realtor."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Disclosure letter arrives with counteroffer 5K above asking price.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Saturday 9pm: I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K above the asking price. Seems like they are defending forward. They want a response by 11pm. I ask it to be extended for 24 hours."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Sunday email spat ends in refusal to keep any offer open.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Sunday: L to N: Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond? N to L: Professional service would have been to work with our excellent Full Price offer on Friday night / Saturday morning."
+    },
+    {
+     "ref": "¶17",
+     "text": "Sunday 5:30pm: If we do hear from them I will only present my offer in person and would need a response right away. Sunday 6pm: I'm not writing another offer, I will not have an open offer for any period of time."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "counterpoint",
+   "attribution": "counter",
+   "text": "Assistant L calls the two-hour Sunday deadline unprofessional.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Sunday: L to N: Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond? N to L: Professional service would have been to work with our excellent Full Price offer on Friday night / Saturday morning."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "rebuttal",
+   "attribution": "author",
+   "text": "N replies Friday full-price offer deserved timely professional handling.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Sunday: L to N: Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond? N to L: Professional service would have been to work with our excellent Full Price offer on Friday night / Saturday morning."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Buyer offers in-person presentation only, never another open offer.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Sunday 5:30pm: If we do hear from them I will only present my offer in person and would need a response right away. Sunday 6pm: I'm not writing another offer, I will not have an open offer for any period of time."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Aftermath rules and below-asking sale vindicate the walkaway.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Monday morning: please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it. Also, any time that a seller's agent mentions an existing or competing offer please ask them to provide that in writing."
+    },
+    {
+     "ref": "¶20",
+     "text": "One week later: N says he thinks the house had an offer of 5K above asking price. Two weeks later: the house is sold for 10K below the asking price. N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "New rules: disclose competing offers only in writing, volunteer nothing.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Monday morning: please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it. Also, any time that a seller's agent mentions an existing or competing offer please ask them to provide that in writing."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "House sells 10K below asking; N owes buyer a coffee.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "One week later: N says he thinks the house had an offer of 5K above asking price. Two weeks later: the house is sold for 10K below the asking price. N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Earlier 7-month listing sold just 5% over his refused top-up.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "There was this other house about 7 months ago. I wrote an offer at a price I was comfortable with. He again pushed me multiple times to go 5-10% more which I didn't. The house was just sold for 5% more than my price, but it took 7 months."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Reflections blame realtor incentives and praise disciplined detachment.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Feels like there are a million levers that realtors have to push you to increase the price, even when everything is pointing the other way. I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so."
+    },
+    {
+     "ref": "¶23",
+     "text": "Transaction debrief via Claude: Negotiation Duration 3 Days (Friday-Sunday), Final Outcome: Walked away. Key Takeaway: In negotiations, information, emotional control, and strategic flexibility are more valuable than immediate transactional success."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Realtor levers push buyers to pay 5-10% extra, buyer believes.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Feels like there are a million levers that realtors have to push you to increase the price, even when everything is pointing the other way. I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "System serves realtors while buyers obey; fixing processes feels taboo.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "It feels like the realtors have created this system that works fine for them, and the buyers and sellers now have to obey. A house bought/sold is not worth fighting for, realtors know what they're doing. When it comes to fixing the processes we don't even want to talk about it."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Debrief: three-day negotiation, walked away, flexibility beat transactional success.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Transaction debrief via Claude: Negotiation Duration 3 Days (Friday-Sunday), Final Outcome: Walked away. Key Takeaway: In negotiations, information, emotional control, and strategic flexibility are more valuable than immediate transactional success."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "nuance",
+   "attribution": "reported",
+   "text": "Kept price discipline and bluff detection; no house, strained relations.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Claude analysis: SUCCESSES: identified when competing offers were likely bluffs; avoided overpaying; price discipline. FAILURES: no house purchased; tension with selling agents. Keep price discipline and verification; modify timeline flexibility and communication style."
+    }
+   ]
+  }
+ ]
+}

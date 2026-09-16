@@ -1,0 +1,203 @@
+{
+ "sample": "03_cant_stop_addicted_to_shindig",
+ "part": 2,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Three-column combinations dominate outcomes: {6,7,8} succeeds 92.0% of the time while {2,3,12} succeeds only 43.8%.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "Columns 2 and 12 require the most rolls. Columns 6, 7, and 8 are all close to each other around 20 rolls.\n\n![Expected Rolls per Column](files/20251201/expected_rolls_per_column.png)\n\n### But Wait - Three Columns at Once\n\nHere's the thing though: you don't play Can't Stop one column at a time. You have THREE active columns, and you bust if you can't hit ANY of them."
+    },
+    {
+     "ref": "¶29",
+     "text": "If you're on columns {6, 7, 8}, what's your bust probability?\n\nI need $P(\\text{can't make 6 AND can't make 7 AND can't make 8})$. The easiest way is to enumerate all 1296 possible rolls and count (see [column_combinations.py](files/20251201/column_combinations.py)):\n\n**Result: 1193/1296 = 92.0% success rate**\n\nSo if you're on {6,7,8}, you have a 92% chance of not busting."
+    },
+    {
+     "ref": "¶30",
+     "text": "What about {2,3,12}?\n\n**Result: 568/1296 = 43.8% success rate**\n\nLess than 50% chance of not busting. You're more likely to bust than succeed!"
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "{6,7,8} succeeds on 1193/1296 rolls; {2,3,12} on only 568/1296, less than half.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "If you're on columns {6, 7, 8}, what's your bust probability?\n\nI need $P(\\text{can't make 6 AND can't make 7 AND can't make 8})$. The easiest way is to enumerate all 1296 possible rolls and count (see [column_combinations.py](files/20251201/column_combinations.py)):\n\n**Result: 1193/1296 = 92.0% success rate**\n\nSo if you're on {6,7,8}, you have a 92% chance of not busting."
+    },
+    {
+     "ref": "¶30",
+     "text": "What about {2,3,12}?\n\n**Result: 568/1296 = 43.8% success rate**\n\nLess than 50% chance of not busting. You're more likely to bust than succeed!"
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Across all 165 combinations, 37 are excellent at ≥85% success, the median is 79.6%, and the worst fall to 43.8%.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "### All 165 Three-Column Combinations\n\nLet me analyze all possible combinations and show you the best and worst (see [column_combinations.py](files/20251201/column_combinations.py) for complete results):"
+    },
+    {
+     "ref": "¶35",
+     "text": "Here's the complete picture - all 165 combinations ranked by success rate:\n\n![All 165 Combinations Ranked](files/20251201/all_165_combinations_ranked.png)\n\nThe distribution reveals some interesting patterns: 37 combinations are \"excellent\" (≥85% success rate), mostly centered around columns 5-9. The median combination still succeeds 79.6% of the time, but the worst combinations drop dramatically to just 43.8% - you're more likely to bust than succeed!\n\nThe full detailed results are in [column_combinations_all.csv](files/20251201/column_combinations_all.csv)."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The best combination, {6,7,8}, has 92.0% success, 8.0% bust, 39.8% clean moves, and Q = 1.43.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "**Top 10 Best Combinations:**\n\n| Rank | Columns | Success | Bust | Clean | Q (expected markers/roll) |\n|-----:|:--------|--------:|-----:|------:|--------------------------:|\n| 1 | {6,7,8} | 92.0% | 8.0% | 39.8% | 1.43 |\n| 2 | {5,7,8} | 91.4% | 8.6% | 38.2% | 1.42 |\n| 3 | {6,7,9} | 91.4% | 8.6% | 38.2% | 1.42 |\n| 4 | {4,6,8} | 91.1% | 8.9% | 28.2% | 1.31 |\n| 5 | {6,8,10} | 91.1% | 8.9% | 28.2% | 1.31 |\n| 6 | {4,7,8} | 90.3% | 9.7% | 34.0% | 1.38 |\n| 7 | {6,7,10} | 90.3% | 9.7% | 34.0% | 1.38 |\n| 8 | {5,6,8} | 89.5% | 10.5% | 33.3% | 1.37 |\n| 9 | {6,8,9} | 89.5% | 10.5% | 33.3% | 1.37 |\n| 10 | {5,7,10} | 89.3% | 10.7% | 29.1% | 1.33 |"
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The worst, {2,11,12}, has 43.8% success, 56.2% bust, 2.3% clean moves, and Q = 1.05.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "**Bottom 10 Worst Combinations:**\n\n| Rank | Columns | Success | Bust | Clean | Q (expected markers/roll) |\n|-----:|:--------|--------:|-----:|------:|--------------------------:|\n| 156 | {2,10,11} | 57.9% | 42.1% | 5.6% | 1.10 |\n| 157 | {3,4,12} | 57.9% | 42.1% | 5.6% | 1.10 |\n| 158 | {2,4,12} | 55.2% | 44.8% | 4.2% | 1.08 |\n| 159 | {2,10,12} | 55.2% | 44.8% | 4.2% | 1.08 |\n| 160 | {2,3,11} | 52.5% | 47.5% | 4.1% | 1.08 |\n| 161 | {3,11,12} | 52.5% | 47.5% | 4.1% | 1.08 |\n| 162 | {2,3,4} | 52.2% | 47.8% | 3.9% | 1.07 |\n| 163 | {10,11,12} | 52.2% | 47.8% | 3.9% | 1.07 |\n| 164 | {2,3,12} | 43.8% | 56.2% | 2.3% | 1.05 |\n| 165 | {2,11,12} | 43.8% | 56.2% | 2.3% | 1.05 |"
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "A 'clean' move hits only wanted columns; even {6,7,8} is clean only 39.8% of the time.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "![Top 10 best and bottom 10 worst column combinations by success rate](files/20251201/column_combinations_comparison.png)\n\n**What's \"Clean\"?** Remember the forced-move rule? A \"clean\" move is one where you only hit columns you actually want. Even the best combination {6,7,8} only has 39.8% clean moves - the rest of the time you're forced onto unwanted columns."
+    },
+    {
+     "ref": "¶42",
+     "text": "### The Forced-Move Impact\n\nRemember that forced-move rule? It changes everything. Let me recalculate success rates for \"clean\" moves only."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Forced moves contaminate good combinations: 52.2% of {6,7,8} rolls force unwanted columns, and only 2.3% of {2,3,12} rolls are clean.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "For {6,7,8}, the old analysis said 92% success rate. But how many of those rolls force you onto columns outside {6,7,8}?\n\nA roll is \"clean\" if at least one pairing gives you ONLY sums in {6,7,8}. Running the calculation:\n\n**Result: Only 39.8% of rolls give you a clean move on {6,7,8}!**"
+    },
+    {
+     "ref": "¶44",
+     "text": "The other 52.2% of rolls let you make progress BUT also force you onto unwanted columns, slowly contaminating your combination.\n\n**For {2,3,12}: Only 2.3% of rolls are clean!**\n\nThe forced-move rule is a balancing mechanism. It prevents {6,7,8} from being completely dominant by forcing players onto suboptimal columns when they push their luck."
+    }
+   ]
+  },
+  {
+   "id": "4.7",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The forced-move rule is a balancing mechanism preventing {6,7,8} from being completely dominant, and it is the design's compensating rule.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "The other 52.2% of rolls let you make progress BUT also force you onto unwanted columns, slowly contaminating your combination.\n\n**For {2,3,12}: Only 2.3% of rolls are clean!**\n\nThe forced-move rule is a balancing mechanism. It prevents {6,7,8} from being completely dominant by forcing players onto suboptimal columns when they push their luck."
+    },
+    {
+     "ref": "¶98",
+     "text": "5. **First-player advantage is significant** - Player 1 wins 55.59% of games (+11.18% advantage), larger than chess or Go. Some strategies amplify this (GreedyUntil1Col: +31.24%), while others minimize it (FiftyPercentSurvival: +9.42%)\n\n6. **The forced-move rule is brilliant** - It compensates for mathematical imbalances by forcing contamination of good column combinations"
+    }
+   ]
+  },
+  {
+   "id": "4.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The conclusion restates this: column combinations matter more than individual columns, {6,7,8} at 92% success and {2,3,12} at 44%.",
+   "evidence": [
+    {
+     "ref": "¶96",
+     "text": "1. **Four-dice probabilities flatten the distribution** - P(7) = 64.4% vs P(2) = 13.2%, only a 4.88× difference compared to 6× with two dice\n\n2. **Column combinations matter more than individual columns** - {6,7,8} has 92% success rate, {2,3,12} has 44%"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The stopping rule is EV-based: keep rolling if P(success) × Q exceeds P(bust) × U.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "## When Should You Stop Rolling?\n\nThis is the classic push-your-luck question. You've made some progress this turn - should you roll again or bank it?"
+    },
+    {
+     "ref": "¶37",
+     "text": "### The Basic Heuristic\n\nHere's a mathematical framework (see [stopping_heuristic.py](files/20251201/stopping_heuristic.py) for implementation):\n\n**Keep rolling if:** $(P_{\\text{success}} \\times Q) > (P_{\\text{bust}} \\times U)$"
+    },
+    {
+     "ref": "¶38",
+     "text": "Where:\n- $P_{\\text{success}}$ = probability of hitting at least one active column\n- $Q$ = expected number of markers you'll advance on a successful roll\n- $P_{\\text{bust}}$ = probability of hitting no active columns\n- $U$ = unsaved progress (steps you'd lose if you bust)"
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "For {6,7,8} with 5 unsaved steps: loss 0.08 × 5 = 0.4 versus gain 0.92 × 1.43 = 1.32, so keep rolling.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "Let's test this on {6,7,8} with 5 unsaved steps:\n\n**Risk of rolling again:**\n- 8% chance you bust and lose those 5 steps\n- Expected loss: $0.08 \\times 5 = 0.4$ steps"
+    },
+    {
+     "ref": "¶40",
+     "text": "**Expected gain from rolling again:**\n- 92% chance you succeed\n- You'll advance about 1.43 markers on average\n- Expected gain: $0.92 \\times 1.43 = 1.32$ steps\n\nSince $1.32 > 0.4$, you should keep rolling."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "For {2,3,12} with 2 unsaved steps: loss 0.562 × 2 = 1.12 versus gain 0.438 × 1.05 = 0.46, so stop.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "Now try the same on {2,3,12} with 2 unsaved steps:\n\n**Risk:** $0.562 \\times 2 = 1.12$ steps\n**Expected gain:** $0.438 \\times 1.05 = 0.46$ steps\n\nSince $1.12 > 0.46$, you should STOP."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Q is expected markers advanced on a successful roll; U is unsaved progress lost on a bust.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Where:\n- $P_{\\text{success}}$ = probability of hitting at least one active column\n- $Q$ = expected number of markers you'll advance on a successful roll\n- $P_{\\text{bust}}$ = probability of hitting no active columns\n- $U$ = unsaved progress (steps you'd lose if you bust)"
+    }
+   ]
+  }
+ ]
+}

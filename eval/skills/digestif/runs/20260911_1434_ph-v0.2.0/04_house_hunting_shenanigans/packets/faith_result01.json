@@ -1,0 +1,356 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "04_house_hunting_shenanigans",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Buyer spends a weekend chasing one house through stalling, a 20K price cut, and standoff, then walks away vindicated.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I drop the offer by 20K from the asking price... Final Outcome: Walked away... the house is sold for 10K below the asking price.",
+   "reasoning": "Source shows weekend Friday-Sunday, delay tactics, a 20K drop, walkaway, and below-asking sale confirming vindication."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Year-long search in a weird split market sets up the weekend.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I've been looking for a house for almost a year now... the market has been weird... gone in usually 1-2 days.",
+   "reasoning": "Source states nearly a year, weird market, and fast-selling versus lingering houses."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Some houses linger unsold for months; others vanish within one or two days.",
+   "claim_type": "fact",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "stay for a loooooong time and there are some that are gone in usually 1-2 days",
+   "reasoning": "The 1-2 days matches, but source says only a vague 'loooooong time', not the unit 'months'."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "First Wednesday offer 30K below asking fails; buyer resolves to move faster.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "about 30K below the asking price... my offer is not accepted... I've gotta move faster with the new ones.",
+   "reasoning": "Source states the 30K-below Wednesday offer, non-acceptance, and resolve to move faster."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Friday sweet full-price offer meets silence and delay requests.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We send an offer with as much sweet things in it as possible at the asking price... he can't get a hold of their realtor... extend the offer",
+   "reasoning": "Source shows the sweet asking-price offer, unreachable agents, and extension request."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Buyer offers asking price with sweet terms and a midnight deadline.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "an offer with as much sweet things in it as possible at the asking price with the deadline of same day midnight",
+   "reasoning": "Matches asking price, sweet terms, and same-day midnight deadline exactly."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Own realtor N advises bidding 10K below to leave negotiating room.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "N says to write an offer 10K below and let them negotiate and then go up",
+   "reasoning": "Source directly reports N's 10K-below advice to allow negotiation."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Seller agents unreachable, then request extension citing another offer.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "he can't get a hold of their realtor... extend the offer until tomorrow midnight... another offer on the house",
+   "reasoning": "Source confirms unreachable realtor, extension request, and mention of another offer."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "Buyer suspects stalling and extends only until Saturday 10:30am.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They just want to buy time... I extend the offer until 10:30am Saturday.",
+   "reasoning": "Source states suspicion of stalling and 10:30am Saturday extension."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Saturday duel: buyer slashes 20K, sellers counter 5K above asking.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I drop the offer by 20K from the asking price... The counter offer is for 5K 'above' the asking price.",
+   "reasoning": "Both figures and events are stated in source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Saturday morning silence looks like using his offer as leverage.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they just wanted to keep my offer open so that they use it to compete with other offers",
+   "reasoning": "Source states nothing happened and the leverage suspicion directly."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Afternoon nap marks rare emotional release and detachment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I take a nap... I've moved on emotionally. It is super rare for me to take a nap in the afternoon",
+   "reasoning": "Source supports nap, emotional detachment, and its rarity."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Buyer drops price 20K and strips sweet terms against N's strong advice.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I drop the offer by 20K... remove most of those sweet things... N strongly advises me against doing it.",
+   "reasoning": "All three elements match the source paragraph."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Seller partner asks to fix the drop; J's listings switch to C.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the partner of the seller's realtor called N saying they've noticed the drop... wondering if he could fix that... J on the REW website is changed to her partner's C",
+   "reasoning": "Source states the partner call and the REW name change to C."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "claim_text": "Disclosure letter arrives with counteroffer 5K above asking price.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K 'above' the asking price.",
+   "reasoning": "Matches disclosure letter and 5K-above counteroffer exactly."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Sunday email spat ends in refusal to keep any offer open.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I will not have an open offer for any period of time",
+   "reasoning": "Source contains the exchanged emails and the explicit refusal to keep an offer open."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Assistant L calls the two-hour Sunday deadline unprofessional.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "less than 2 hours for the Sellers to respond? That seems very unprofessional to me",
+   "reasoning": "Source quotes L calling the two-hour window unprofessional."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "N replies Friday full-price offer deserved timely professional handling.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Professional and to your client's interest service would have been to work with our excellent Full Price offer on Friday night / Saturday morning",
+   "reasoning": "Source reports N's reply referencing the Friday full-price offer."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Buyer offers in-person presentation only, never another open offer.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I will only present my offer in person... I will not have an open offer for any period of time",
+   "reasoning": "Source states both the in-person-only position and no open offers."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Aftermath rules and below-asking sale vindicate the walkaway.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "please do not volunteer any information... the house is sold for 10K below the asking price.",
+   "reasoning": "Source gives the Monday rules and the below-asking final sale price."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "New rules: disclose competing offers only in writing, volunteer nothing.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "please do not volunteer any information... unless I explicitly ask for it... ask them to provide that in writing",
+   "reasoning": "Source states not volunteering and requesting written disclosure."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "House sells 10K below asking; N owes buyer a coffee.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the house is sold for 10K below the asking price... N is going to buy me a coffee!",
+   "reasoning": "Matches 10K-below sale and coffee stake exactly."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Earlier 7-month listing sold just 5% over his refused top-up.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "7 months ago... pushed me multiple times to go 5-10% more which I didn't. The house was just sold for 5% more than my price, but it took 7 months.",
+   "reasoning": "Source confirms 7 months and 5% over his price after refusing to raise."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Reflections blame realtor incentives and praise disciplined detachment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a million levers that realtors have to push you to increase the price... emotional control... more valuable than immediate transactional success.",
+   "reasoning": "Source criticizes realtor incentives and values emotional control."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Realtor levers push buyers to pay 5-10% extra, buyer believes.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "realtors have to push you to increase the price... he pushed me multiple times to go 5-10% more... I don't want to pay extra 5-10%",
+   "reasoning": "Source ties realtor price-pushing to 5-10% figures the buyer resists."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "System serves realtors while buyers obey; fixing processes feels taboo.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "realtors have created this system that works fine for them, and the buyers and sellers now have to obey... when it comes to fixing the processes we don't even want to talk about it",
+   "reasoning": "Source directly states the system favoring realtors and reluctance to fix it."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Debrief: three-day negotiation, walked away, flexibility beat transactional success.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Negotiation Duration: 3 Days (Friday-Sunday)... Final Outcome: Walked away... strategic flexibility are more valuable than immediate transactional success.",
+   "reasoning": "All three debrief elements appear verbatim in the appended report."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Kept price discipline and bluff detection; no house, strained relations.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "identified when competing offers were likely bluffs... Maintained discipline on maximum price point... FAILURES: No house purchased... Created tension with selling agents",
+   "reasoning": "Source analysis lists these successes and failures directly."
+  }
+ ],
+ "metrics": {
+  "total_claims": 28,
+  "supported": 27,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9643
+ },
+ "fail_list": [
+  "C03 with reason: source says 'loooooong time', not the added unit 'months'"
+ ]
+}

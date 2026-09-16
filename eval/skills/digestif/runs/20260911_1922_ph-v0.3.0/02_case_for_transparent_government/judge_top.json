@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash (opencode-go/deepseek-v4.1-flash), 2026-09-15",
+  "source_id": "unspecified",
+  "inputs": {
+    "faithfulness_precision": 0.98,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.144,
+    "trivia_rate": 0.008
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted = 0.4*0.98 + 0.4*1.0 - 0.2*0.144 = 0.392 + 0.4 - 0.0288 = 0.7632",
+  "weighted_score": 0.7632,
+  "verdict": "Pass",
+  "tradeoff_note": "Coverage is complete (must_recall 1.0) and faithfulness is clean (0.98, zero critical), so the length cost is justified. Redundancy at 0.144 sits just under the 0.15 max, leaving almost no margin, so it is the main risk to watch but does not fail the sample.",
+  "fix_list": [
+    "Merge the register recap duplicates C217-C246 (30 entries) plus C006/C084/C122/C133/C144/C174/C176/C177/C208/C215 to pull redundancy well below the 0.15 cap.",
+    "Fix C032: say environmental regulation and urban planning (not 'permits'), and tie 'real time' to showing citizens, matching 5.3.1.",
+    "Fix C068: restore the 'reportedly' hedge for the NSA's 2018 abandonment per 6.9.",
+    "Soften absolute framings to match hedged sources: C135 ('starve' vs 'less room to grow', 7.5.12), C143 (SIPRI 'can help prevent'/'generally considered', 7.6.6), C170 (citizens 'may react negatively', 7.8.4)."
+  ],
+  "reasoning": "Gate checks in order. (1) critical_errors = 0 against critical_contradicted_max = 0: pass. (2) must_recall = 1.0 against must_recall_min = 0.90: pass, all 15 must-have points present with zero partial or missing. (3) faithfulness_precision = 0.98 against faithfulness_precision_min = 0.95: pass, 245/250 supported and 0 contradicted. (4) redundancy_rate = 0.144 against redundancy_max = 0.15: pass, though only by 0.006. No hard gate is missed, so the sample cannot Fail. The remaining non-supported items are five Partially supported claims, all severity Minor: C032 (number correct but 'permits' mislabels environmental/urban items in 5.3.1), C068 (drops source's 'reportedly' from 6.9), C135 ('starve' strengthens 'less room to grow' from 7.5.12), C143 (absolutes where source hedges 'generally considered', 'can help prevent' in 7.6.6), C170 (settled dislike vs 'may react negatively' in 7.8.4). These are hedging/attribution slips rather than factual contradictions, none is Critical, and coverage marks no must-have as partial or missing, so no Partial claim is shown to sit on an unmet Must-have point. That fails to trigger the Borderline condition as specified, so the label is Pass rather than Borderline. Weighted score: 0.4*0.98=0.392, 0.4*1.0=0.4, 0.2*0.144=0.0288, total 0.7632. Concision played no rescue role; its only effect is the -0.0288 penalty, and the coverage gain (1.0 recall) justifies the current length only because redundancy stayed under the cap. Highest-leverage improvement is trimming the 36 duplicates, dominated by the C217-C246 register recap block, since that both lowers redundancy and raises tokens-per-unique-claim efficiency without touching coverage."
+}

@@ -1,0 +1,403 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 1,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Automated proving shows math was struggling toward importance, now risking capture by attention.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    },
+    {
+     "ref": "¶16",
+     "text": "## The process was the product\n\nThe old definition was wrong, and both authors know it. The sentence underneath everything they wrote is that mathematics was never the production of theorems. It was a process of thinking, and the process was the product."
+    },
+    {
+     "ref": "¶27",
+     "text": "His punchline: we are moving from proof scarcity to proof abundance. Under the Working Hypothesis, mismatches appear at every stage. AI proofs accumulate, unverified. Verified proofs await readable writeups. Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    },
+    {
+     "ref": "¶32",
+     "text": "And here is where the two threads of this piece finally meet. The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about in the first place. That is importance, and I think importance was never a stable, purely human judgment. This is also, I suspect, why Hadi and I were worried. Consider how the field actually decided what was worth working on before AI. There were two levers."
+    },
+    {
+     "ref": "¶57",
+     "text": "## So what is mathematics\n\nCorrectness was never the binding constraint on what mathematicians actually do. It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation. And importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle between them, shaped by careers, incentives, taste, and luck, whether we admit it or not. Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns."
+    },
+    {
+     "ref": "¶59",
+     "text": "So the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them. The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human. I am not claiming mathematics was always mostly the finding. I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Old definition broke when AI automated proof production while humans kept choosing problems.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "## The answer that stopped working\n\nLet's start with the facts that broke the old answer into two."
+    },
+    {
+     "ref": "¶7",
+     "text": "First Proof, an independent group, ran a standardized test[*](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full) of AI at research mathematics in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each, and the one step they could not automate was choosing the problems, which is exactly the judgment this post is about."
+    },
+    {
+     "ref": "¶9",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Professor loves research, hates grading; research now feels grading a clever lying student.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "---\ntags: math, philosophy, observation\n---\n# What is mathematics\n\nLast night Ehssan sent me a post from a math professor that has been making the rounds. The professor loves research and hates grading. Who doesn't? But lately, he wrote, his research has started to feel like grading the proofs of a very clever student who is desperate to get an A and doesn't mind lying to do so. A lot of people shared that feeling. Not only in mathematics, but also in (open source) software, in creative writing, and other areas."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "That grading feeling is shared beyond mathematics, in open-source software and creative writing.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "---\ntags: math, philosophy, observation\n---\n# What is mathematics\n\nLast night Ehssan sent me a post from a math professor that has been making the rounds. The professor loves research and hates grading. Who doesn't? But lately, he wrote, his research has started to feel like grading the proofs of a very clever student who is desperate to get an A and doesn't mind lying to do so. A lot of people shared that feeling. Not only in mathematics, but also in (open source) software, in creative writing, and other areas."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Old answer: mathematics finds patterns where claims can be proven.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "For a long time I had a confident answer to the question in the title, the kind you give outsiders and then stop thinking about. \n> Mathematics is the discipline of finding patterns where claims can be proven."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Experts could settle right or wrong for good, well, most of the times; math had ground truth.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "An idea can be right or wrong, and a community of experts can settle which, for good, well, most of the times. That was what made math different from art criticism, politics, business, psychology, biology, or even physics. Everything else had opinions. Math had ground truth."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Summer 2026 Tao lecture and Moradifam essay ask what math is when proofs stop being scarce.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "The summer of 2026 things happened that warranted another take on this question. At the International Congress of Mathematicians, Terence Tao gave a public lecture called \"[Mathematics in the age of AI](files/20260806/Tao_slides.pdf)\". Around the same time, Amir Moradifam published an essay, \"[What Remains Human in Mathematics in the Age of AI](files/20260806/Moradifam_paper.pdf)\". Both are attempts to say what mathematics is when the production of proofs stops being scarce. I read them, argued with them, and I mostly agree with them. However, they stop at the edge of the question I want to push on: the next step is speculation, which they have to avoid and the do so perfectly."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Author mostly agrees with both, but wants speculation they must avoid.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "The summer of 2026 things happened that warranted another take on this question. At the International Congress of Mathematicians, Terence Tao gave a public lecture called \"[Mathematics in the age of AI](files/20260806/Tao_slides.pdf)\". Around the same time, Amir Moradifam published an essay, \"[What Remains Human in Mathematics in the Age of AI](files/20260806/Moradifam_paper.pdf)\". Both are attempts to say what mathematics is when the production of proofs stops being scarce. I read them, argued with them, and I mostly agree with them. However, they stop at the edge of the question I want to push on: the next step is speculation, which they have to avoid and the do so perfectly."
+    }
+   ]
+  },
+  {
+   "id": "1.7",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Late May 2026 First Proof: four systems solved seven of ten unpublished problems.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "First Proof, an independent group, ran a standardized test[*](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full) of AI at research mathematics in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each, and the one step they could not automate was choosing the problems, which is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "1.8",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Those solutions reached publication quality for ten to a thousand dollars of compute each.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "First Proof, an independent group, ran a standardized test[*](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full) of AI at research mathematics in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each, and the one step they could not automate was choosing the problems, which is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "1.9",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Early 2026 machine-checked Lean proof of Erdős Problem #728; humans wrote digestible version.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "In early 2026, an AI system produced a machine-checked Lean proof of Erdős Problem #728, and in May 2026 an OpenAI model disproved the planar unit distance conjecture Erdős had posed in 1946[**](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full). In all cases human mathematicians verified the proofs and wrote human digestable versions of them."
+    }
+   ]
+  },
+  {
+   "id": "1.10",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "May 2026 OpenAI model disproved planar unit distance conjecture Erdős posed in 1946.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "In early 2026, an AI system produced a machine-checked Lean proof of Erdős Problem #728, and in May 2026 an OpenAI model disproved the planar unit distance conjecture Erdős had posed in 1946[**](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full). In all cases human mathematicians verified the proofs and wrote human digestable versions of them."
+    }
+   ]
+  },
+  {
+   "id": "1.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Split: models produced results; humans checked, digested, and presented them.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.12",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Seven of ten novel problems solved for a few hundred to a few thousand dollars each.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.13",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Problems were chosen by people, handed one at a time; models still might need much handholding.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Conjecture generators propose patterns but do not decide which ones matter.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.15",
+   "type": "claim",
+   "attribution": "author",
+   "text": "So either mathematics is over, or the old definition was wrong.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.16",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It is not over; if anything it has just started, author thinks.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "It's so over baby.\n\nlol jk, it isn't. I don't think it is, if anything, I think it has just started. But I want to explore how my old definition was wrong. Or maybe the proving was the chore and the finding was always the real thing?! And meanwhile in all of this I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing, so anything that goes wrong is not part of that religion."
+    }
+   ]
+  },
+  {
+   "id": "1.17",
+   "type": "implicit",
+   "attribution": "author",
+   "text": "Maybe proving was the chore and finding was always the real thing.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "It's so over baby.\n\nlol jk, it isn't. I don't think it is, if anything, I think it has just started. But I want to explore how my old definition was wrong. Or maybe the proving was the chore and the finding was always the real thing?! And meanwhile in all of this I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing, so anything that goes wrong is not part of that religion."
+    }
+   ]
+  },
+  {
+   "id": "1.18",
+   "type": "concession",
+   "attribution": "author",
+   "text": "Argument implicitly assumes mathematics is what we humans do.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "It's so over baby.\n\nlol jk, it isn't. I don't think it is, if anything, I think it has just started. But I want to explore how my old definition was wrong. Or maybe the proving was the chore and the finding was always the real thing?! And meanwhile in all of this I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing, so anything that goes wrong is not part of that religion."
+    }
+   ]
+  },
+  {
+   "id": "1.19",
+   "type": "example",
+   "attribution": "author",
+   "text": "The linked post image that started the discussion.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "![The post that started all this](files/20260806/OBryant_post.jpg){: width=\"55%\" }"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Verification is human work too, unreliable, and being automated as well.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "The proof process has a second half though. Verifying the proof is often implicitly part of the proof process, and that is being automated too."
+    },
+    {
+     "ref": "¶12",
+     "text": "## Verification is human work too\n\nTao's Working Hypothesis covers performing mathematical tasks, and verifying is one. So taken seriously, the hypothesis covers verification too. The question is what level of error we tolerate in it."
+    },
+    {
+     "ref": "¶15",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Tao hypothesis covers performing tasks including verification; tolerance for error is the question.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "## Verification is human work too\n\nTao's Working Hypothesis covers performing mathematical tasks, and verifying is one. So taken seriously, the hypothesis covers verification too. The question is what level of error we tolerate in it."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Voevodsky, Fields Medal 2002, had to retract work years later after Deligne found wrong lemma.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Late nineties Deligne found key lemma unsalvageable as stated; Kapranov paper theorem proved false.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Multiple groups used and taught those papers, yet nobody noticed for years.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Scared Voevodsky asked who ensures no forgotten mistake, then pushed computer verification.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "[Voevodsky was scared by this](https://www.ias.edu/ideas/2014/voevodsky-origins). He asked: who would ensure that I did not forget something and did not make a mistake, if even the mistakes in much simpler arguments take years to uncover. He spent the rest of his career pushing for computer proof verification, because he no longer trusted the human process."
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Human verification is not reliable; a key lemma stayed wrong for years, a theorem for decades.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "AI verification with comparable error will look like business as usual, author argues.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "2.8",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Premise assumed, not measured: generation plus verification automated, imperfect like people; years by hand versus million daily checks.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  }
+ ]
+}

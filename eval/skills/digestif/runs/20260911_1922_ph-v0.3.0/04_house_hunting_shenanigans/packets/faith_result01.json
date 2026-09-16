@@ -1,0 +1,440 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "04_house_hunting_shenanigans",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Buyer chronicles a failed asking-price negotiation, retaliatory cuts, walkaway, and lessons on realtor leverage.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "my offer is not accepted ... the house is sold for 10K below the asking price",
+   "reasoning": "Source shows failed asking-price bid, 20K/10K cuts, no purchase, and realtor-lever critique."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Year-long search in a split market with N, J, C, and L.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "looking for a house for almost a year ... N is my realtor ... J is the seller's realtor ... C is J's partner ... L is J and C's assistant",
+   "reasoning": "Source states almost a year, mixed-market behavior, and exactly this four-person cast."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Many houses linger very long; some vanish in 1-2 days.",
+   "claim_type": "fact",
+   "verdict": "Partially supported",
+   "severity": "Harmless",
+   "evidence_quote": "some that are gone in usually 1-2 days",
+   "reasoning": "Numbers match but source qualifier 'usually' is dropped, making the 1-2 day turnover slightly more absolute."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "N buyer's realtor; J seller's realtor; C partner; L assistant.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "N is my realtor; J is the seller's realtor; C is J's partner; L is J and C's assistant",
+   "reasoning": "Roles and entity relationships match source exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "First Wednesday offer at affordability ceiling still fails.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "highest price I can afford ... about 30K below the asking price ... my offer is not accepted",
+   "reasoning": "Source confirms highest-affordable Wednesday offer and its Thursday rejection."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Highest affordable bid sits about 30K below asking price.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the highest price I can afford ... still about 30K below the asking price",
+   "reasoning": "Value, modifier 'about', and unit match source."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Thursday 6pm rejection; sellers proceed with other offers.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Thursday 6pm ... my offer is not accepted and they are moving forward with other offers",
+   "reasoning": "Time and event match source verbatim."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Friday asking-price bid seeks instant acceptance before rivals.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "put an offer at the asking price ... accept it right away, but I don't give them time for other showings",
+   "reasoning": "Source states asking-price offer intended for immediate acceptance ahead of rival showings."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Friday 1pm showing convinces; sweet asking-price offer planned.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Friday 1pm We see the house. I like it. I'm going to put an offer at the asking price.",
+   "reasoning": "Showing, liking, and asking-price plan match source."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "N advises 10K below to leave negotiation room; buyer unconvinced.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "N says to write an offer 10K below and let them negotiate ... I'm not convinced",
+   "reasoning": "Advice, rationale, and buyer disbelief all present in source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Friday 6pm offer at asking with sweets, deadline midnight same day.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Friday 6pm ... offer with as much sweet things ... at the asking price with the deadline of same day midnight",
+   "reasoning": "Time, price, terms, and deadline match source."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Seller side cites busyness, seeks extension, mentions rival offer.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "she is driving up island for a family thing and is busy. They are asking us to extend ... there's another offer on the house",
+   "reasoning": "Busyness, extension request, and passing rival-offer mention all in source."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Friday 10:30pm: driving up island; extend to tomorrow midnight; another offer mentioned.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Friday 10:30pm ... she is driving up island ... extend the offer until tomorrow midnight ... another offer",
+   "reasoning": "Time and all three details match source."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Buyer doubts the rival offer and fears bid-war leverage.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I don't even believe there was another offer ... I don't want to get into a bidding war",
+   "reasoning": "Skepticism and bid-war concern stated directly in source."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Friday 11pm counter: extension only to 10:30am Saturday.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Friday 11pm I extend the offer until 10:30am Saturday.",
+   "reasoning": "Time and extension deadline match source."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Buyer retaliates with cuts; sellers counter above asking.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I drop the offer by 20K from the asking price ... counter offer is for 5K \"above\" the asking price",
+   "reasoning": "20K cut and above-asking counter both stated in source."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Saturday 5pm: buyer drops 20K from asking, strips sweets, defying N.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I drop the offer by 20K from the asking price and remove most of those sweet things ... N strongly advises me against ... I do it anyways",
+   "reasoning": "Time, 20K figure, stripped sweets, and defiance match source."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "J replaced by C on REW, gone from 4 listings; $3.5M showing noted.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "name ... J ... changed to her partner's C ... removed from all her listings (a total of 4) ... showings of a $3.5M house",
+   "reasoning": "Entity swap, 4 listings, and $3.5M figure all match source."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Saturday 9pm counter 5K above asking with disclosure; reply by 11pm.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K \"above\" the asking price ... response by 11pm",
+   "reasoning": "Disclosure, 5K counter, and 11pm deadline match source."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Saturday silence, rare nap as load lifts; N later endorses cuts.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Saturday Morning Nothing happens ... super rare for me to take a nap ... when a big load is taken off of me ... he thinks I did the right thing",
+   "reasoning": "Silence, rare nap rationale, and N's endorsement all in source."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Sunday email fight ends cooperation; buyer demands in-person terms.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I will only present my offer in person",
+   "reasoning": "Source shows acrimonious Sunday emails and buyer conditioning on in-person presentation."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "L calls sub-2-hour Sunday deadline unprofessional; cites 37 years admin experience.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "less than 2 hours for the Sellers to respond? That seems very unprofessional ... over 37 years",
+   "reasoning": "L's objection and 37-year tenure both stated, value consistent."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "N replies Friday full-price stall left unwanted 2nd and 3rd offers.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "work with our excellent Full Price offer on Friday night ... ended up with a 2nd and 3rd offers your clients are not interested in",
+   "reasoning": "N's rebuttal names Friday full-price offer and unwanted 2nd/3rd offers."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Sunday 8am: 10K below asking, no sweets, 11am deadline; believes rival ceiling is 45K-30K below.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "update it to 10K below ... remove every single sweet thing ... until 11am ... 45K below ... up to 30K below",
+   "reasoning": "All figures and times match source, and the 45K-30K range reflects it."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Buyer refuses further open offers; wants in-person Monday after 5:30.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I will only present my offer in person ... Likely Monday after 5:30 ... I will not have an open offer for any period of time",
+   "reasoning": "In-person-only demand, Monday timing, and no-open-offer stance all in source."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "House sells below asking; buyer sets disclosure rules.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the house is sold for 10K below the asking price ... ask them to provide that in writing in form of the disclosure letter",
+   "reasoning": "Below-asking sale and new disclosure requirement both stated in source."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Two weeks later sold 10K below asking; N owes coffee.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "two weeks later ... sold for 10K below the asking price ... N is going to buy me a coffee!",
+   "reasoning": "Timing, price, and coffee outcome all match source."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "New rule: no volunteered offer talk; written disclosure letters required.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "do not volunteer any information regarding existing or competing offers ... provide that in writing in form of the disclosure letter",
+   "reasoning": "Both instructions to N match source wording."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Earlier house resisted 5-10% push; sold 5% over bid after 7 months.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "pushed me multiple times to go 5-10% more which I didn't. The house was just sold for 5% more than my price ... it took 7 months",
+   "reasoning": "5-10% push, refusal, 5% over price, and 7 months all in source."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "Seller trains car dealerships; realtor system plays clients as pawns.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the seller is a marketing and sales person who teaches car dealerships how to sell cars ... playing with us as pawns in their chess game",
+   "reasoning": "Seller occupation and pawn metaphor are the author's stated view in source."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Claude debrief: February 2025, 3-day Friday-Sunday talks, walked away.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Date of Experience: February 2025 ... Negotiation Duration: 3 Days (Friday-Sunday) ... Final Outcome: Walked away",
+   "reasoning": "Date, duration, and outcome match the appended debrief exactly."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Arc: optimistic start, skeptical middle, detached strategic end.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Initial Stage: Cautiously optimistic ... Mid-Negotiation: Increasing skepticism ... Late Stage: Emotionally detached, strategic focus",
+   "reasoning": "Three-phase emotional arc matches debrief wording."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Tactics: disclosure demands, short windows, stripped sweets, no bidding war.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Requested written disclosure ... short-duration offer windows ... Removing favorable conditions progressively ... Avoiding bidding war engagement",
+   "reasoning": "All four tactics listed in the debrief and supported by main text."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Successes: bluff detection, discipline; failures: no purchase, strained ties.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "identified when competing offers were likely bluffs ... Maintained discipline ... No house purchased ... Created tension with selling agents",
+   "reasoning": "Verdict mirrors the appended successes/failures lists."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "Keep verification; soften timelines and style; add walkaway thresholds.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Keep: ... Information verification requirements ... Modify: Timeline flexibility (less rigid deadlines) ... Add: ... walk away price threshold",
+   "reasoning": "Keep/modify/add recommendations match the debrief lists."
+  }
+ ],
+ "metrics": {
+  "total_claims": 35,
+  "supported": 34,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9714
+ },
+ "fail_list": [
+  "C03 (node 1.1) Partially supported: drops source qualifier 'usually' from 'gone in usually 1-2 days', slightly strengthening turnover speed; Harmless."
+ ]
+}

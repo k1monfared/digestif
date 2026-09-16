@@ -1,0 +1,440 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "AI proposes while humans digest, but importance was never stable human judgment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the AI proposes, humans check, digest, and present ... I think importance was never a stable, purely human judgment",
+   "reasoning": "SOURCE states the AI-proposes/humans-digest pattern and directly asserts importance was never stable purely human judgment."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Davies ML pumped knot intuitions humans formalized; AlphaTensor gamed new matrix-multiplication algorithms.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Davies results used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. AlphaTensor framed matrix multiplication search as a game",
+   "reasoning": "Both examples match SOURCE wording exactly for method and subject."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Pattern repeats: AI proposes, humans check, digest, present; by 2026 AI takes most discovery.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The pattern is the same every time: the AI proposes, humans check, digest, and present ... where AI takes on most of the discovery process",
+   "reasoning": "This is a near-verbatim restatement of the SOURCE sentence."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Opaque precedents four-color and finite-simple classification survive communal verification beyond any individual.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "survived extensive communal verification, even though no single person holds the whole proof in mind",
+   "reasoning": "Names and the communal-verification point match SOURCE directly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Understanding shifts constructive rebuilding to hermeneutic interpreting; builder becomes interpreter.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter",
+   "reasoning": "Direct paraphrase preserving the constructive-to-hermeneutic shift."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Thesis: automated routine makes framing, judgment, taste more visible and more valuable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable",
+   "reasoning": "Verbatim content of Moradifam's stated thesis."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "Moradifam keeps interesting and deep human; Tao keeps acceptance external and non-optimizable by authors.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Those judgments remain human ... community acceptance is 'ultimately an external process that cannot be optimized purely by the authors and their AI tools.'",
+   "reasoning": "Both quoted positions are attributed accurately to the named authors."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "5.7"
+   ],
+   "claim_text": "Both stop rightly there; this blog speculates onward, building rather than correcting.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That is the right place for their documents to stop ... I am building on their ground, not correcting it, and the next step is speculation",
+   "reasoning": "SOURCE explicitly frames the blog as building, speculating, not correcting."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "5.8"
+   ],
+   "claim_text": "Process as product means importance, what was worth thinking, is what matters.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about",
+   "reasoning": "Direct restatement of the SOURCE inference."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "5.9"
+   ],
+   "claim_text": "Importance was never stable purely human judgment, author thinks and suspects.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I think importance was never a stable, purely human judgment",
+   "reasoning": "Preserves the stated and hedged belief exactly."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "5.10"
+   ],
+   "claim_text": "First lever applicability: real use elsewhere, fairly measurable, partly steered by funding.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Did a problem solve something real elsewhere ... You could measure that fairly directly, and it was partly driven by where research funding lived",
+   "reasoning": "All three components match SOURCE without drift."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "5.11"
+   ],
+   "claim_text": "Second lever big-name taste compounds fame, genuine interest, network favoritism.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the taste of the big names ... Partly fame ... Partly genuine interest. And partly network favoritism",
+   "reasoning": "The three components of taste are accurately enumerated."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "5.12"
+   ],
+   "claim_text": "Nash allegedly but not verified worked only on problems that could make him famous.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Nash, allegedly but not verified, was infamous for working only on problems that could get him famous",
+   "reasoning": "Name, hedge, and the 'only famous problems' claim all preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "5.13"
+   ],
+   "claim_text": "Neither lever is pure judgment; both social, hidden while slow, local, invisible.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Neither lever is pure mathematical judgment. Both are social. The field could pretend otherwise as long as the process was slow, local, and invisible",
+   "reasoning": "Preserves the negation and all three qualifiers."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "5.14"
+   ],
+   "claim_text": "Author leans on Tao and Moradifam for checkable reasoning, not names, perhaps imperfectly.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I lean on them because their reasoning is checkable, not because their names are big ... I am not sure I fully live up to it",
+   "reasoning": "Maintains the 'not names' negation and the self-doubt concession."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Cheap generation leaves scarce attention, inviting an influencer economy for mathematics.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "generating a result and verifying it both become cheap. What stays scarce is attention, and markets for scarce attention develop influencer structure",
+   "reasoning": "SOURE applies the influencer-structure inference to mathematics explicitly."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Everything is sales; globalization widened competition, production cheapened, distribution constrains.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the competition used to be across town, now it's everyone with an internet connection. Production got cheap everywhere, so distribution became the constraint",
+   "reasoning": "Cause chain matches SOURCE, including the globalization hedge."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Blogs outproduced books while readership fell; important lost to popular; video displaced writing.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Blogs were written in vastly greater volume, and people read fewer books. Topics that were important got deprioritized relative to topics that were popular ... moved away from writing toward video",
+   "reasoning": "All three sequence points mirror SOURCE faithfully."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Random possibly-unqualified voices beat experts; paid relatable urgency beats challenge, supporting priors.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "And often it supports your current understanding, far better than it challenges it.",
+   "reasoning": "SOURCE hedges with 'often'; the node states prior-support as an absolute fact, dropping the hedge."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Math faces similar shift in years, probably decades, not months, author guesses.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it might take years, probably decades, not months though",
+   "reasoning": "Preserves the uncertainty and the 'not months' contrast."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Current influencers Tao and Gowers earned standing under slow journal-seminar canon; old gatekeeping flawed, coming worse.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tao, Gowers ... earned their standing in a world where the canon was set slowly, by journals and seminars. Not that the old gatekeeping mechanism was good, but what is about to happens is defintiely worse",
+   "reasoning": "Names and the flawed-but-lesser evaluation both match."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "Gatekeeping has a function needing merit, per Levitsky nostalgia, author not endorsing old politics.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Levitsky talks ... somewhat nostalgically ... I'm not saying that, but there is a function for gatekeeping and we need that to be more merit based",
+   "reasoning": "Keeps the non-endorsement and the merit-based function claim."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "Compute budgets will prize direct impact first, influencer advertising second; applied tails may self-solve separately.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "based on direct impact on other fields first, and on what the influencers of mathematics advertise second ... they could solve it themselves",
+   "reasoning": "Ordering and the self-solving applied-tail prediction are both stated in SOURCE."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6.8"
+   ],
+   "claim_text": "Naive faith treats Tao as disinterested; attention allocation is private with public consequences, unaudited.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "naive faith ... treat figures like Tao as disinterested ... attention allocation is a public good when it is actually a private act with public consequences ... Nobody audits",
+   "reasoning": "All components, including the unaudited point, are directly in SOURCE."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "6.9"
+   ],
+   "claim_text": "Private acts likely aligned publicly so far, with no guarantee under influencer incentives.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "so far we are lucky that private acts (likely) align with the public interest, but in an influencer economy there is no guarantee they will",
+   "reasoning": "Keeps the 'likely' hedge and the no-guarantee claim."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "6.10"
+   ],
+   "claim_text": "Old trust was structural: decades of checkable work, checkable judgments, wrong calls costing standing.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "their standing was built over decades of checkable work, their judgments were open to being checked by the community, and a wrong call could cost them their standing",
+   "reasoning": "Enumerates the same three structural grounds."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "6.11"
+   ],
+   "claim_text": "Engagement standing answers only to engagement; slow journals gave little gain from attention-seeking.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a standing earned by engagement and answerable to nothing but more engagement ... little to gain from attention-maximizing behavior",
+   "reasoning": "Both clauses restate SOURCE sentences closely."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "6.12"
+   ],
+   "claim_text": "Visibility into grants, posts, media, training data pits seeming to judge well against judging well.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "visibility converts into grants, positions, media presence, and now prominence in AI training data, the incentive to 'be seen judging well' starts competing with 'judging well'",
+   "reasoning": "All four conversion targets and the competing incentive are preserved."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "6.13"
+   ],
+   "claim_text": "Canon simulation: reshuffled exposure yields almost entirely different canons; middle is lottery.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Reshuffle who has access to the exposure pipeline and you get almost entirely different canons ... The vast middle is a lottery",
+   "reasoning": "The simulation claim and lottery characterization match directly."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "6.14"
+   ],
+   "claim_text": "Attention canon selects legible narratable brand over nearby usefulness; unread theorems are inert.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "shifts from 'what did nearby researchers find useful' to 'what is legible, narratable, and aligned with a curator's brand' ... a result that nobody reads is inert",
+   "reasoning": "Both the selection-shift and inertness claim are verbatim."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "6.15"
+   ],
+   "claim_text": "Floor is checkability, ceiling structural buildability; social layer decides vast middle housing careers.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The floor is checkability ... The ceiling is structural value: a result that nothing can build on ... the middle is where almost every career lives",
+   "reasoning": "The definitional pair and the middle/careers point match SOURCE."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "6.16"
+   ],
+   "claim_text": "Attention metric invites viral framing; loop feeds problem choice; biases freeze into training data.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the pipeline is a loop, not a line: which results win attention feeds back into which problems are posed next ... whatever biases exist in today's canon get frozen in and amplified",
+   "reasoning": "Loop and bias-freezing both preserved including the 'loop not line' negation."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "6.17"
+   ],
+   "claim_text": "Moradifam stable culture is up for grabs; social-media precedent gives doubt, not certainty.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The collective culture that Moradifam treats as a stable arbiter is precisely what is up for grabs ... Judging from how social media turned out, I highly doubt it",
+   "reasoning": "Both the up-for-grabs claim and the hedged doubt are in SOURCE."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "6.18"
+   ],
+   "claim_text": "Not all doom: Polymath, blogging, arXiv widened judgment; small checkable audience resists farming.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Polymath-style open collaboration, working mathematicians blogging proofs in progress, arXiv culture generally: all of these expanded who could participate in judgment ... its audience is small and expert",
+   "reasoning": "The anti-doom examples and audience-protection point match SOURCE."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "6.19"
+   ],
+   "claim_text": "Danger is AI changing the audience, shifting selection from peer trust to engagement.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "shifts from 'trusted by peers over decades' to 'performs well on engagement metrics' ... The danger with AI is that it changes the audience",
+   "reasoning": "The danger and the selection shift are stated directly."
+  }
+ ],
+ "metrics": {
+  "total_claims": 35,
+  "supported": 34,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.971
+ },
+ "fail_list": [
+  "C19 drops the SOURCE hedge 'often', stating prior-support as an absolute fact"
+ ]
+}

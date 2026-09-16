@@ -1,0 +1,31 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 1,
+ "of": 9,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "As AI automates proof and verification, mathematics is shifting toward deciding which patterns matter, a partly social judgment with no established home.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "The proof process has a second half though. Verifying the proof is often implicitly part of the proof process, and that is being automated too."
+    },
+    {
+     "ref": "¶84",
+     "text": "I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    },
+    {
+     "ref": "¶85",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it."
+    },
+    {
+     "ref": "¶86",
+     "text": "When proving gets automated, the finding, the judgment, the taste become visible in a way they never were before, because they are now the only parts that can't be generated on demand. And what is revealed has to land somewhere. Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy, and the deciding gets made by whoever holds attention, or whoever owns the compute it runs on."
+    }
+   ]
+  }
+ ]
+}

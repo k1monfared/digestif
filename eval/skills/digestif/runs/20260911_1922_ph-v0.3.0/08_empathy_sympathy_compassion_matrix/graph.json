@@ -1,0 +1,528 @@
+{
+  "edges": [
+    {
+      "from": "0",
+      "to": "1",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "2",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "3",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "4",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.1",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.2",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.3",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.4",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.1",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.2",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.3",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.4",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.5",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.6",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.7",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.8",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.1",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.2",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.3",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.1",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.2",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.3",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.4",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.5",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.6",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.7",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.8",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.9",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.10",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.11",
+      "type": "contains"
+    },
+    {
+      "from": "4.3",
+      "note": "manipulators row is the stated sharpest diagnostic of the split",
+      "source": [
+        "¶21"
+      ],
+      "to": "1.3",
+      "type": "supports"
+    },
+    {
+      "from": "4.4",
+      "note": "Bloom/Singer reading is a position with critics, limiting the row",
+      "source": [
+        "¶22"
+      ],
+      "to": "3.3",
+      "type": "qualifies"
+    },
+    {
+      "from": "4.5",
+      "note": "boundary merging drives motivation, burnout and bias together",
+      "source": [
+        "¶23"
+      ],
+      "to": "2.5",
+      "type": "supports"
+    },
+    {
+      "from": "4.6",
+      "note": "dark-column reading summarizes the block asymmetry",
+      "source": [
+        "¶24"
+      ],
+      "to": "2",
+      "type": "supports"
+    },
+    {
+      "from": "2.7",
+      "note": "Kantianism row is stated as inverse of manipulators row",
+      "source": [
+        "¶29"
+      ],
+      "to": "4.11",
+      "type": "restates"
+    },
+    {
+      "from": "2.8",
+      "note": "Humanism row overlaps caring and beyond-in-group rows",
+      "source": [
+        "¶29"
+      ],
+      "to": "4.11",
+      "type": "restates"
+    }
+  ],
+  "meta": {
+    "passages": {
+      "¶1": "**Legend:**\n    ✓ = present / defining\n    ~ = partial / possible\n      = absent / not required",
+      "¶10": "| Motivation to help or act |   | ~ | ~ | ✓ |   | ~ | ~ | ✓ | ✓ |",
+      "¶11": "| Produces guilt / remorse after causing harm |   | ~ | ~ | ~ |   | ~ | ✓ | ~ | ~ |",
+      "¶12": "| Risk of emotional contagion and burnout |   | ✓ | ~ |   |   | ~ | ✓ |   | ~ |",
+      "¶13": "| Biased toward vivid, similar individuals | ~ | ✓ | ~ |   |   | ✓ | ✓ |   | ~ |",
+      "¶14": "| Treats people as ends, not means (Kantianism) |   | ~ | ~ | ✓ |   | ~ | ✓ | ✓ | ✓ |",
+      "¶15": "| Values each person's dignity and worth (Humanism) |   | ~ | ✓ | ✓ |   | ~ | ✓ | ✓ | ✓ |",
+      "¶16": "| Concern reaches *beyond* a vivid / similar in-group |   |   | ~ | ✓ |   |   |   | ✓ | ✓ |",
+      "¶17": "| Believes people are fundamentally good (Faith in Humanity) |   |   | ~ | ~ |   |   | ✓ | ✓ | ✓ |",
+      "¶18": "| Sustainable and scalable as a moral guide | ~ |   | ~ | ✓ |   |   |   | ✓ | ✓ |",
+      "¶19": "1. **Sympathy gets \"~\" on modeling the other's mind** because you can pity someone while badly misreading them. Accurate understanding helps sympathy but isn't constitutive of it, the way it is for cognitive empathy.",
+      "¶2": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest: psychopath, sociopath, empath, altruist, and the integrated ideal. Rows stay ordered by the two dark profiles' contrast, in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither.",
+      "¶20": "2. **Affective empathy gets \"~\" on \"capacity to care\"**: emotional contagion can happen involuntarily, without any real concern for the person: you can catch someone's anxiety and simply want to get away from them.",
+      "¶21": "3. **The \"manipulators\" row is the sharpest diagnostic** for the cognitive/affective split, and it is essentially the psychopath's signature. Cognitive empathy alone is compatible with cruelty: a skilled con artist models minds precisely without resonating with or caring about them.",
+      "¶22": "4. **The \"sustainable and scalable\" row reflects the Bloom/Singer argument** (Paul Bloom, *Against Empathy*, and Tania Singer's compassion-training research), which is a position, not a consensus. Critics reply that compassion without empathic grounding risks becoming abstract or paternalistic.",
+      "¶23": "5. **Boundary maintenance is the structural difference** between affective empathy and everything else in the table: empathizing affectively means partially merging with the other's state, which is what drives both its motivational power and its burnout and bias problems.",
+      "¶24": "6. **Reading the two dark profiles as columns**: the psychopath is close to the *cognitive-empathy column standing alone*, accurate modeling with the affective and caring machinery deleted. The sociopath is close to the *affective-empathy and sympathy columns clamped to a narrow in-group* and stripped of regulation. The row groups make the asymmetry visible: almost everything the psychopath has, the sociopath also has in degraded form, so the psychopath's one distinguishing possession is cold instrumental control, while a whole cluster of affective and caring rows belongs to the sociopath and not the psychopath.",
+      "¶25": "7. **Etiology is deliberately left out as a row**: psychopathy is often theorized as innate and temperamental, sociopathy as environmentally acquired. That is a claim about *causes*, not about the shape of the response, so it does not belong in a feature table. Every other row answers \"what is the response like,\" and mixing in an origin variable would muddy that logic.",
+      "¶26": "8. **Clinical caveat on the two profiles**: \"psychopath\" and \"sociopath\" are not formal diagnoses. Both fall under Antisocial Personality Disorder, and the split between them is a contested, largely theoretical convention. Treat these two columns as ideal types, not categories.",
+      "¶27": "9. **Terminology caveat**: usage varies across the literature. Some authors use \"empathic concern\" roughly where this table uses \"compassion,\" and pop-psych usage (e.g. Brené Brown) treats \"sympathy\" as inherently distancing. This table uses the more neutral research sense.",
+      "¶28": "10. **The five profile columns are ideal types on a dark-to-light spectrum.** The psychopath is the cognitive column standing alone. The sociopath is affective empathy plus sympathy clamped to an in-group and stripped of regulation. The empath is the affective column maxed out and unregulated, which is why it lights up emotion-sharing, contagion, and vividness bias while failing on boundary, scope, and scalability: it is the opposite of the psychopath's coldness but it inherits the sociopath's distortions, so it is not the moral ideal. The altruist is the compassion column embodied, matching the research \"Light Triad\" (Kantianism, Humanism, and Faith in Humanity, from Kaufman et al., 2019). The integrated ideal is the only column that scores well across every block, including the \"present in neither\" rows, so it is the true opposite of both dark profiles at once.",
+      "¶29": "11. **The three Light Triad rows partly restate earlier rows.** \"Treats people as ends, not means\" (Kantianism) is essentially the inverse of the \"manipulators\" row: the psychopath is blank here precisely because it excels at instrumentalizing people. \"Values each person's dignity and worth\" (Humanism) overlaps with the caring and beyond-the-in-group rows. Only \"Believes people are fundamentally good\" (Faith in Humanity) adds a genuinely new dimension, an attitude rather than an empathy component, which is why both dark profiles score blank while the empath and the lighter profiles do not.",
+      "¶3": "| Feature | Empathy: cognitive | Empathy: affective | Sympathy | Compassion | Psychopath | Sociopath | Empath | Altruist | Integrated |",
+      "¶4": "| Accurately modeling the other's mental state | ✓ | ~ | ~ | ✓ | ✓ | ~ | ~ | ✓ | ✓ |",
+      "¶5": "| Maintains self/other boundary | ✓ |   | ✓ | ✓ | ✓ | ~ |   | ✓ | ✓ |",
+      "¶6": "| Can exist in manipulators / con artists | ✓ |   |   |   | ✓ | ~ |   |   |   |",
+      "¶7": "| Controlled / instrumental rather than reactive / impulsive | ✓ |   | ~ | ✓ | ✓ |   |   | ✓ | ✓ |",
+      "¶8": "| Actually sharing / mirroring the emotion |   | ✓ |   |   |   | ~ | ✓ | ~ | ✓ |",
+      "¶9": "| Capacity to genuinely care about the person *at all* |   | ~ | ✓ | ✓ |   | ✓ | ✓ | ✓ | ✓ |"
+    },
+    "source": "08_empathy_sympathy_compassion_matrix/source.txt",
+    "title": "Empathy sympathy compassion feature matrix"
+  },
+  "nodes": [
+    {
+      "attribution": "author",
+      "id": "0",
+      "source": [
+        "¶1",
+        "¶2",
+        "¶28"
+      ],
+      "text": "Matrix contrasts cognitive/affective empathy, sympathy, compassion across five profiles from psychopath to integrated ideal.",
+      "type": "summary"
+    },
+    {
+      "attribution": "author",
+      "id": "1",
+      "source": [
+        "¶2",
+        "¶3"
+      ],
+      "text": "Cold-control block: modeling, boundary, manipulators, control across components and dark profiles.",
+      "type": "theme"
+    },
+    {
+      "attribution": "author",
+      "id": "1.1",
+      "source": [
+        "¶4"
+      ],
+      "text": "Accurate modeling: cog ✓, aff ~, sym ~, comp ✓; psy ✓, soc ~, emp ~, alt ✓, int ✓.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "1.2",
+      "source": [
+        "¶5"
+      ],
+      "text": "Boundary kept: cog ✓, aff blank, sym ✓, comp ✓; psy ✓, soc ~, emp blank, alt ✓, int ✓.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "1.3",
+      "source": [
+        "¶6"
+      ],
+      "text": "Manipulators possible: cog ✓ only; psy ✓, soc ~, all others blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "1.4",
+      "source": [
+        "¶7"
+      ],
+      "text": "Controlled not reactive: cog ✓, sym ~, comp ✓; psy ✓, alt ✓, int ✓, others blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2",
+      "source": [
+        "¶2"
+      ],
+      "text": "Affective-care block belongs to sociopath not psychopath, with partial marks throughout.",
+      "type": "theme"
+    },
+    {
+      "attribution": "author",
+      "id": "2.1",
+      "source": [
+        "¶8"
+      ],
+      "text": "Sharing emotion: aff ✓; soc ~, emp ✓, alt ~, int ✓; rest blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.2",
+      "source": [
+        "¶9"
+      ],
+      "text": "Capacity to care at all: aff ~, sym ✓, comp ✓; soc ✓, emp ✓, alt ✓, int ✓; psy blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.3",
+      "source": [
+        "¶10"
+      ],
+      "text": "Motivation to help: aff ~, sym ~, comp ✓; soc ~, emp ~, alt ✓, int ✓; psy blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.4",
+      "source": [
+        "¶11"
+      ],
+      "text": "Guilt after harm: emp ✓; aff ~, sym ~, comp ~, soc ~, alt ~, int ~; cog blank, psy blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.5",
+      "source": [
+        "¶12"
+      ],
+      "text": "Contagion-burnout risk: aff ✓, emp ✓; sym ~, soc ~, int ~; rest blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.6",
+      "source": [
+        "¶13"
+      ],
+      "text": "Vivid-similar bias: aff ✓, soc ✓, emp ✓; cog ~, sym ~, int ~; rest blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.7",
+      "source": [
+        "¶14"
+      ],
+      "text": "Ends-not-means: comp ✓, emp ✓, alt ✓, int ✓; aff ~, sym ~, soc ~; cog blank, psy blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.8",
+      "source": [
+        "¶15"
+      ],
+      "text": "Dignity-worth: sym ✓, comp ✓, emp ✓, alt ✓, int ✓; aff ~, soc ~; cog blank, psy blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "3",
+      "source": [
+        "¶2"
+      ],
+      "text": "Beyond-in-group scope, faith, and scalability belong to neither dark profile.",
+      "type": "theme"
+    },
+    {
+      "attribution": "author",
+      "id": "3.1",
+      "source": [
+        "¶16"
+      ],
+      "text": "Beyond vivid in-group: sym ~, comp ✓, alt ✓, int ✓; all others blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "3.2",
+      "source": [
+        "¶17"
+      ],
+      "text": "Fundamentally good: sym ~, comp ~, emp ✓, alt ✓, int ✓; dark both blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "3.3",
+      "source": [
+        "¶18"
+      ],
+      "text": "Sustainable scalable guide: cog ~, sym ~, comp ✓, alt ✓, int ✓; rest blank.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "4",
+      "source": [
+        "¶24",
+        "¶26"
+      ],
+      "text": "Notes interpret the matrix and limit its scope to ideal types.",
+      "type": "theme"
+    },
+    {
+      "attribution": "author",
+      "id": "4.1",
+      "source": [
+        "¶19"
+      ],
+      "text": "Sympathy models minds only ~: pity can misread; understanding helps but not constitutive.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "4.2",
+      "source": [
+        "¶20"
+      ],
+      "text": "Affective empathy cares only ~: contagion is involuntary, can merely prompt escape.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "4.3",
+      "source": [
+        "¶21"
+      ],
+      "text": "Manipulators row diagnoses cog/aff split; cog alone fits cruelty and psychopath signature.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "reported",
+      "id": "4.4",
+      "source": [
+        "¶22"
+      ],
+      "text": "Sustainability reflects Bloom/Singer position, not consensus; critics warn of abstract paternalism.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "4.5",
+      "source": [
+        "¶23"
+      ],
+      "text": "Boundary is structural: affective merging drives motivation plus burnout and bias.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "4.6",
+      "source": [
+        "¶24"
+      ],
+      "text": "Psychopath is cog alone; sociopath is clamped affect-sympathy minus regulation.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "4.7",
+      "source": [
+        "¶25"
+      ],
+      "text": "Etiology excluded: psychopathy often innate, sociopathy acquired; causes would muddy shape logic.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "4.8",
+      "source": [
+        "¶26"
+      ],
+      "text": "Psychopath/sociopath are contested ideal types under ASPD, not formal diagnoses.",
+      "type": "counterpoint"
+    },
+    {
+      "attribution": "author",
+      "id": "4.9",
+      "source": [
+        "¶27"
+      ],
+      "text": "Table uses neutral research sympathy, not Brown-style distancing; empathic concern differs.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "4.10",
+      "source": [
+        "¶28"
+      ],
+      "text": "Spectrum: empath is maxed unregulated affect, altruist embodies compassion Light Triad Kaufman 2019, integrated scores everywhere.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "4.11",
+      "source": [
+        "¶29"
+      ],
+      "text": "Triad rows partly restate: Kantianism inverts manipulators; Humanism overlaps care; only Faith adds new attitude.",
+      "type": "nuance"
+    }
+  ]
+}

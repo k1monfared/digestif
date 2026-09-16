@@ -1,0 +1,30 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (opencode-go), 2026-09-15",
+ "source_id": "point-hierarchy sample (loglog source per Judge F/Cov/Con inputs)",
+ "inputs": {
+  "faithfulness_precision": 0.9828,
+  "critical_errors": 0,
+  "must_recall": 0.9545,
+  "overall_recall": 0.9667,
+  "redundancy_rate": 0.0172,
+  "trivia_rate": 0.1897
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted_score = 0.4*faithfulness_precision + 0.4*must_recall - 0.2*redundancy_rate = 0.4*0.9828 + 0.4*0.9545 - 0.2*0.0172 = 0.39312 + 0.3818 - 0.00344 = 0.77148",
+ "weighted_score": 0.77148,
+ "verdict": "Borderline",
+ "tradeoff_note": "All numeric gates pass and the low redundancy (0.0172) comfortably clears max, so there is no concision-driven penalty to weigh against coverage. The verdict is Borderline not because of a number miss but because Must-have point K15 is only Partial (the 2025-01-05 date is dropped), which the rubric routes to human review.",
+ "fix_list": [
+  "Restore the dropped date in K15 (loglog L055-L059) so the TCL 50 XE NXTPAPER return update carries its 2025-01-05 timestamp and upgrades from Partial to Present; this is the single gate-relevant gap.",
+  "Correct C033 (loglog 5.1.1): source says a deal from his network provider as Black Friday approached, not a Black Friday deal; restore the provider attribution to remove the lone Partial claim.",
+  "Prune or merge the 12 flagged header/transition claims (C002, C009, C012, C017, C024, C030, C031, C032, C036, C047, C048, C053) to cut trivia_rate (0.1897) without touching coverage."
+ ],
+ "reasoning": "Gate checks in policy order. (1) Hard fails: critical_errors = 0, so critical_contradicted_max (0) is met. must_recall = 0.9545 >= must_recall_min (0.9), so no coverage hard fail. faithfulness_precision = 0.9828 >= faithfulness_precision_min (0.95), so no faithfulness hard fail. No Fail trigger fires. (2) Redundancy check: redundancy_rate = 0.0172 <= redundancy_max (0.15), so the length cost is not disqualifying and the coverage gain is allowed to stand. (3) Weighted score with config aspect_weights: 0.4*0.9828 (faithfulness_precision) = 0.39312; 0.4*0.9545 (coverage_must_recall) = 0.3818; 0.2*0.0172 (redundancy_penalty) = 0.00344; 0.39312 + 0.3818 - 0.00344 = 0.77148. (4) Borderline trigger: gates pass, but Must-have point K15 is Partial, and the coverage judge caps it at Partial solely because the update date 2025-01-05 is dropped from loglog L055-L059 even though all substantive content (weak performance, hot video calls, unreadable screen in direct/lamp light, average camera, paper/ink modes poorly implemented and not true e-ink, return, next Motorola G85 with G75 IP68 wish) is present. A Partial on a Must-have point is exactly the borderline-and-name-the-claim condition, so I set verdict Borderline and name K15. The faithfulness judge's lone Partial claim C033 (loglog 5.1.1) is Minor severity and does not itself trigger Fail, but it corroborates the need for human review. Concision is not rescuing any fail because none exists; with all gates passing it only served as the tie-breaker term, and its very low redundancy (one duplicate, C030 vs C001) left the score essentially at the coverage/faithfulness level. Trivia_rate 0.1897 is notable (11 trivia, mostly restated headers), but trivia is not a configured hard gate, so it appears only in the fix list.",
+ "verdict_confidence_note": "Not part of the required schema; omit."
+}

@@ -1,0 +1,411 @@
+{
+ "sample": "04_house_hunting_shenanigans",
+ "part": 1,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "A weekend of offers and counteroffers led the buyer to suspect the sellers' realtors bluffed about competing offers and to change how he shares information.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "So, I've been looking for a house for almost a year now. It's been way longer than I expected and the market has been weird, to say the least. But just for the context, there are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days. I've just had one of the most informative experiences of my life in the past two days. Here is what happend, and how I think about it."
+    },
+    {
+     "ref": "¶27",
+     "text": "  <tr>\n    <td>Sunday 6pm</td>\n    <td>I respond: Hi N, I do not believe that they didn't see the offer. My understanding is that today's showings didn't produce a better offer, or any at all. And now they are saying they want to open the closed doors again by pretending the assistant didn't see it on time, sure. OK, I get it, they wanted to try the whole weekend, and lucky for them I didn't have another house in mind to write an offer on, because I totally would. Anyways, what has happened over the weekend gave me a ton of valuable information which I really appreciate, whether this transaction happens or not. I'm certainly not writing another offer, I will not have an open offer for any period of time, so it is either what you mentioned happening or what I asked as an in person thing, whether it has every happened before or not is none of my concerns. What I know is that I'm not giving them another chance to try to find another competing offer. I've done more than enough in that regard. K</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    },
+    {
+     "ref": "¶28",
+     "text": "  <tr>\n    <td>Monday morning</td>\n    <td>I send this to my realtor: Hi N, What a weekend that was. Thank you very much for working so patiently with me, and I'm sorry you had to deal with those unprofessional behaviors. Anyways, this was a great experience for me and I learned a lot. Going forward I would like to make a couple of changes: please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it. Also, any time that a seller's agent mentions an existing or competing offer please ask them to provide that in writing in form of the disclosure letter. I think this will immensely help me make better decisions and have a smoother process. Cheers, K</td>\n    <td>Feels like there are a million levers that realtors have to push you to increase the price, even when everything is pointing the other way, which makes sense. They want the deal to close and as a buyer I have more chance of doing that if I increase the price, hence the push. But I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so. And it takes energy to distill all information and remove noise that influences my decision in the heat of back and forth in negotiations.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Context: almost a year of house hunting in a weird market, told through a table of events, thoughts, and details.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "[This is not a typical blog post, hence the weird format, likely not good for reading on the phone. It is a representations of events happening and my thoughts on them.]"
+    },
+    {
+     "ref": "¶2",
+     "text": "So, I've been looking for a house for almost a year now. It's been way longer than I expected and the market has been weird, to say the least. But just for the context, there are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days. I've just had one of the most informative experiences of my life in the past two days. Here is what happend, and how I think about it."
+    },
+    {
+     "ref": "¶3",
+     "text": "- N is my realtor\n- J is the seller's realtor\n- C is J's partner\n- L is J and C's assistant"
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The post is not a typical blog post but a representation of events and the author's thoughts.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "[This is not a typical blog post, hence the weird format, likely not good for reading on the phone. It is a representations of events happening and my thoughts on them.]"
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He had been looking for a house for almost a year, longer than expected, in a weird market.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "So, I've been looking for a house for almost a year now. It's been way longer than I expected and the market has been weird, to say the least. But just for the context, there are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days. I've just had one of the most informative experiences of my life in the past two days. Here is what happend, and how I think about it."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Houses either stay on the market a long time or are gone in usually 1-2 days.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "So, I've been looking for a house for almost a year now. It's been way longer than I expected and the market has been weird, to say the least. But just for the context, there are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days. I've just had one of the most informative experiences of my life in the past two days. Here is what happend, and how I think about it."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Cast: N his realtor, J the seller's realtor, C J's partner, L their assistant.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "- N is my realtor\n- J is the seller's realtor\n- C is J's partner\n- L is J and C's assistant"
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The events are laid out in a table with Time, Events, My Thoughts, and Other Details columns.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "<table style=\"width:100%;\">\n  <tr>\n    <th style=\"width:10%;\">Time</th>\n    <th style=\"width:30%;\">Events</th>\n    <th style=\"width:30%;\">My Thoughts</th>\n    <th style=\"width:30%;\">Other Details</th>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Thursday noon he sent other houses to N to book showings for the weekend.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "  <tr>\n    <td>Thursday Noon</td>\n    <td>I send a couple of other houses to my realtor to book a showing for over the weekend.</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "House A: the offer at his maximum affordable price, about 30K below asking, was rejected.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "  <tr>\n    <td>Wednesday Afternoon</td>\n    <td>I put the highest price I can afford on a house that I like, but that is still about 30K below the asking price.</td>\n    <td>The house is worth more than my offer but I'm hoping I might have a chance.</td>\n    <td></td>\n  </tr>"
+    },
+    {
+     "ref": "¶8",
+     "text": "  <tr>\n    <td>Thursday 6pm</td>\n    <td>I'm informed that my offer is not accepted and they are moving forward with other offers.</td>\n    <td>The house was worth that much but I couldn't afford anymore, this is fine, I've gotta move faster with the new ones. This last one is actually very exciting.</td>\n    <td></td>\n  </tr>"
+    },
+    {
+     "ref": "¶30",
+     "text": "  <tr>\n      <td>\n          two weeks later\n      </td>\n      <td>\n          the house is sold for 10K below the asking price.\n      </td>\n      <td>\n          They were not only stupid but also had a very huge ego.\n      </td>\n      <td>\n          N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price.\n      </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Wednesday afternoon he put the highest price he could afford on a house he liked, about 30K below asking.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "  <tr>\n    <td>Wednesday Afternoon</td>\n    <td>I put the highest price I can afford on a house that I like, but that is still about 30K below the asking price.</td>\n    <td>The house is worth more than my offer but I'm hoping I might have a chance.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He hoped he might have a chance since the house was worth more than his offer.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "  <tr>\n    <td>Wednesday Afternoon</td>\n    <td>I put the highest price I can afford on a house that I like, but that is still about 30K below the asking price.</td>\n    <td>The house is worth more than my offer but I'm hoping I might have a chance.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Thursday 6pm the offer was not accepted; the sellers moved forward with other offers.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "  <tr>\n    <td>Thursday 6pm</td>\n    <td>I'm informed that my offer is not accepted and they are moving forward with other offers.</td>\n    <td>The house was worth that much but I couldn't afford anymore, this is fine, I've gotta move faster with the new ones. This last one is actually very exciting.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He took it as fine but decided to move faster on the new houses.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "  <tr>\n    <td>Thursday 6pm</td>\n    <td>I'm informed that my offer is not accepted and they are moving forward with other offers.</td>\n    <td>The house was worth that much but I couldn't afford anymore, this is fine, I've gotta move faster with the new ones. This last one is actually very exciting.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The house he first offered on later sold for waaaaay higher than the asking price.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "  <tr>\n      <td>\n          two weeks later\n      </td>\n      <td>\n          the house is sold for 10K below the asking price.\n      </td>\n      <td>\n          They were not only stupid but also had a very huge ego.\n      </td>\n      <td>\n          N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price.\n      </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "An earlier house he offered on sold 5% above his price after 7 months; N had pushed for 5-10% more.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "- There was this other house that I was interested in about 7 months ago. I wrote an offer at a price I was comfortable with and which I thought that house is worth. He again pushed me multiple times to go 5-10% more which I didn't. The house was just sold for 5% more than my price, but keep in mind it took 7 months. In this case I couldn't really afford it at that price."
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "He could not really afford that earlier house at the higher price.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "- There was this other house that I was interested in about 7 months ago. I wrote an offer at a price I was comfortable with and which I thought that house is worth. He again pushed me multiple times to go 5-10% more which I didn't. The house was just sold for 5% more than my price, but keep in mind it took 7 months. In this case I couldn't really afford it at that price."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "theme",
+   "attribution": "author",
+   "text": "House B, Friday: an asking-price offer with sweeteners, a midnight deadline, then a first extension.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "  <tr>\n    <td>Thursday 5pm</td>\n    <td>a new house comes on the market. I send it to my realtor to book a showing. He adds it to our weekend tour.</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    },
+    {
+     "ref": "¶10",
+     "text": "  <tr>\n    <td>Friday 1pm</td>\n    <td>We see the house. I like it. I'm going to put an offer at the asking price.</td>\n    <td>I don't want to get into a bidding war with potential other offers. I'll make the offer as sweet as possible so that they accept it right away, but I don't give them time for other showings.</td>\n    <td>N says to write an offer 10K below and let them negotiate and then go up, because people always expect to negotiate. I'm not convinced since I'm offering their asking price, and they shouldn't want to negotiate on their asking price!</td>\n  </tr>"
+    },
+    {
+     "ref": "¶14",
+     "text": "  <tr>\n    <td>Friday 11pm</td>\n    <td>I extend the offer until 10:30am Saturday.</td>\n    <td>People might be actually busy. But tomorrow morning should be enough to accept an offer that has met all their conditions.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Thursday 5pm a new house came on the market and N added it to the weekend tour.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "  <tr>\n    <td>Thursday 5pm</td>\n    <td>a new house comes on the market. I send it to my realtor to book a showing. He adds it to our weekend tour.</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Thursday 7pm he asked N to book that showing as soon as possible on Friday.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "  <tr>\n    <td>Thursday 7pm</td>\n    <td>Asked N to book the showing for the last house as soon as possible on Friday.</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Friday 1pm he saw the house, liked it, and decided to offer the full asking price.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "  <tr>\n    <td>Friday 1pm</td>\n    <td>We see the house. I like it. I'm going to put an offer at the asking price.</td>\n    <td>I don't want to get into a bidding war with potential other offers. I'll make the offer as sweet as possible so that they accept it right away, but I don't give them time for other showings.</td>\n    <td>N says to write an offer 10K below and let them negotiate and then go up, because people always expect to negotiate. I'm not convinced since I'm offering their asking price, and they shouldn't want to negotiate on their asking price!</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He wanted to avoid a bidding war, so he made the offer as sweet as possible with no time for other showings.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "  <tr>\n    <td>Friday 1pm</td>\n    <td>We see the house. I like it. I'm going to put an offer at the asking price.</td>\n    <td>I don't want to get into a bidding war with potential other offers. I'll make the offer as sweet as possible so that they accept it right away, but I don't give them time for other showings.</td>\n    <td>N says to write an offer 10K below and let them negotiate and then go up, because people always expect to negotiate. I'm not convinced since I'm offering their asking price, and they shouldn't want to negotiate on their asking price!</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "N advised writing 10K below and letting them negotiate up; the buyer was not convinced.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "  <tr>\n    <td>Friday 1pm</td>\n    <td>We see the house. I like it. I'm going to put an offer at the asking price.</td>\n    <td>I don't want to get into a bidding war with potential other offers. I'll make the offer as sweet as possible so that they accept it right away, but I don't give them time for other showings.</td>\n    <td>N says to write an offer 10K below and let them negotiate and then go up, because people always expect to negotiate. I'm not convinced since I'm offering their asking price, and they shouldn't want to negotiate on their asking price!</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Friday 6pm they sent a sweetened offer at the asking price with a same-day midnight deadline.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "  <tr>\n    <td>Friday 6pm</td>\n    <td>We send an offer with as much sweet things in it as possible at the asking price with the deadline of same day midnight.</td>\n    <td>They had other showings today, but it is unlikely that they'll get an offer at the asking price. So I should have a good chance.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He judged other showings unlikely to yield an asking-price offer, so he had a good chance.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "  <tr>\n    <td>Friday 6pm</td>\n    <td>We send an offer with as much sweet things in it as possible at the asking price with the deadline of same day midnight.</td>\n    <td>They had other showings today, but it is unlikely that they'll get an offer at the asking price. So I should have a good chance.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Friday 9pm N could not reach the sellers' realtor and said he would keep trying.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "  <tr>\n    <td>Friday 9pm</td>\n    <td>N calls me, he can't get a hold of their realtor, and he hasn't heard anything from them. He says he'll keep trying.</td>\n    <td></td>\n    <td>N think it is a but unprofessional that they don't respond, but also hegets it, people might be busy with life.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.9",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "N found the non-response a bit unprofessional but understood people might be busy with life.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "  <tr>\n    <td>Friday 9pm</td>\n    <td>N calls me, he can't get a hold of their realtor, and he hasn't heard anything from them. He says he'll keep trying.</td>\n    <td></td>\n    <td>N think it is a but unprofessional that they don't respond, but also hegets it, people might be busy with life.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Friday 10:30pm J was driving up island for a family thing and asked to extend the offer to Saturday midnight.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "  <tr>\n    <td>Friday 10:30pm</td>\n    <td>N has got a hold of the seller's realtor, she is driving up island for a family thing and is busy. They are asking us to extend the offer until tomorrow midnight. They mention in passing that there's another offer on the house.</td>\n    <td>I don't buy this. They just want to buy time. I'm not even sure they have another offer. I don't want to get into a bidding war and my offer to be used for pushing others to put a higher price.</td>\n    <td>They have 4 more showings tomorrow. We don't want to let them get another competing offer while we are waiting for them.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "They mentioned in passing that there was another offer on the house.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "  <tr>\n    <td>Friday 10:30pm</td>\n    <td>N has got a hold of the seller's realtor, she is driving up island for a family thing and is busy. They are asking us to extend the offer until tomorrow midnight. They mention in passing that there's another offer on the house.</td>\n    <td>I don't buy this. They just want to buy time. I'm not even sure they have another offer. I don't want to get into a bidding war and my offer to be used for pushing others to put a higher price.</td>\n    <td>They have 4 more showings tomorrow. We don't want to let them get another competing offer while we are waiting for them.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The buyer didn't buy it, didn't want a bidding war, and didn't want his offer used to push others higher.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "  <tr>\n    <td>Friday 10:30pm</td>\n    <td>N has got a hold of the seller's realtor, she is driving up island for a family thing and is busy. They are asking us to extend the offer until tomorrow midnight. They mention in passing that there's another offer on the house.</td>\n    <td>I don't buy this. They just want to buy time. I'm not even sure they have another offer. I don't want to get into a bidding war and my offer to be used for pushing others to put a higher price.</td>\n    <td>They have 4 more showings tomorrow. We don't want to let them get another competing offer while we are waiting for them.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.13",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "They had 4 more showings the next day.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "  <tr>\n    <td>Friday 10:30pm</td>\n    <td>N has got a hold of the seller's realtor, she is driving up island for a family thing and is busy. They are asking us to extend the offer until tomorrow midnight. They mention in passing that there's another offer on the house.</td>\n    <td>I don't buy this. They just want to buy time. I'm not even sure they have another offer. I don't want to get into a bidding war and my offer to be used for pushing others to put a higher price.</td>\n    <td>They have 4 more showings tomorrow. We don't want to let them get another competing offer while we are waiting for them.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "3.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Friday 11pm he extended the offer until 10:30am Saturday, reasoning a morning should be enough.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "  <tr>\n    <td>Friday 11pm</td>\n    <td>I extend the offer until 10:30am Saturday.</td>\n    <td>People might be actually busy. But tomorrow morning should be enough to accept an offer that has met all their conditions.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  }
+ ]
+}

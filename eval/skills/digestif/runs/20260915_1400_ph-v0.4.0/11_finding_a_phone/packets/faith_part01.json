@@ -1,0 +1,431 @@
+{
+ "sample": "11_finding_a_phone",
+ "part": 1,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Seeking a phone that solves problems without ecosystems or gimmicks, from Droid obsession to rugged Ulefone and a data-driven search.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Finding a phone\n--\n\n# My Cellphone Journey: From Obsession to Purpose  \n\nFor years, I’ve been particular about the cellphones I use. It’s not just about having a phone—it’s about finding one that genuinely solves my problems without forcing me into unnecessary ecosystems or gimmicks. Here's a look at how my relationship with cellphones evolved over time, from the early days of indestructible feature phones to my current obsession with rugged, no-nonsense devices.  "
+    },
+    {
+     "ref": "¶16",
+     "text": "For me, phones are tools, not status symbols. I don’t want a device that decides what’s important for me or forces me to conform to its limitations. I want a phone that fits into my life, solves my problems, and respects my choices.  "
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Early phone history: simple reliability, smartphone immersion, then disillusion and retreat.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "My first cellphone was a **Sony Ericsson J100**. It was a no-frills device, but it did what it needed to do: it was reliable, durable, and hardy. I used it without complaints, and it never let me down.  "
+    },
+    {
+     "ref": "¶3",
+     "text": "For a while, I didn’t even own a phone. Back then, I didn’t feel the need for one. That changed with the release of the **Motorola Droid**, one of the first Android smartphones widely available in the U.S. I bought it on day one, and it quickly became a centerpiece of my life.  "
+    },
+    {
+     "ref": "¶4",
+     "text": "The Droid ushered in a new era for me. I explored every feature it offered and even experimented with one of the world’s first smartwatches. For a while, I was captivated. My phone was a tool, an organizer, and a companion rolled into one.  "
+    },
+    {
+     "ref": "¶5",
+     "text": "But the honeymoon phase didn’t last. Over time, I became disillusioned with smartphones. They weren’t solving problems for me; they were creating new ones. Notifications, endless customization, and attention-stealing apps made me feel more like a consumer than a user.  "
+    },
+    {
+     "ref": "¶6",
+     "text": "So, I made a drastic decision: I switched to a **dial-pad phone**.  "
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The first phone, a Sony Ericsson J100, was no-frills, reliable, durable, and hardy; it never let him down.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "My first cellphone was a **Sony Ericsson J100**. It was a no-frills device, but it did what it needed to do: it was reliable, durable, and hardy. I used it without complaints, and it never let me down.  "
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "After a phoneless spell, he bought the Motorola Droid on day one; it quickly became a centerpiece of his life.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "For a while, I didn’t even own a phone. Back then, I didn’t feel the need for one. That changed with the release of the **Motorola Droid**, one of the first Android smartphones widely available in the U.S. I bought it on day one, and it quickly became a centerpiece of my life.  "
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The Droid was one of the first Android smartphones widely available in the U.S., and it ushered in a new era.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "For a while, I didn’t even own a phone. Back then, I didn’t feel the need for one. That changed with the release of the **Motorola Droid**, one of the first Android smartphones widely available in the U.S. I bought it on day one, and it quickly became a centerpiece of my life.  "
+    },
+    {
+     "ref": "¶4",
+     "text": "The Droid ushered in a new era for me. I explored every feature it offered and even experimented with one of the world’s first smartwatches. For a while, I was captivated. My phone was a tool, an organizer, and a companion rolled into one.  "
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He explored every feature, tried one of the world's first smartwatches, and was captivated; his phone was tool, organizer, and companion.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The Droid ushered in a new era for me. I explored every feature it offered and even experimented with one of the world’s first smartwatches. For a while, I was captivated. My phone was a tool, an organizer, and a companion rolled into one.  "
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The honeymoon didn't last: notifications, endless customization, and attention-stealing apps made him feel more consumer than user.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "But the honeymoon phase didn’t last. Over time, I became disillusioned with smartphones. They weren’t solving problems for me; they were creating new ones. Notifications, endless customization, and attention-stealing apps made me feel more like a consumer than a user.  "
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He made a drastic decision and switched to a dial-pad phone.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "So, I made a drastic decision: I switched to a **dial-pad phone**.  "
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Needs redefined: offline functionality, toughness, and independence over flashy features.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "After a break from smartphones, I slowly ventured back into the market, testing different devices. I tried it all:  "
+    },
+    {
+     "ref": "¶8",
+     "text": "But no matter what I tried, the result was the same: these phones were not built for people like me. They were built to sell features I didn’t need, push ads I didn’t want, and lock me into ecosystems I avoided.  "
+    },
+    {
+     "ref": "¶9",
+     "text": "This realization shifted my focus. I started looking for phones that prioritized **functionality over flashiness**.  "
+    },
+    {
+     "ref": "¶10",
+     "text": "What did I want from a phone? My priorities boiled down to these essentials:  \n- **Long battery life**  \n- **Waterproofing and shockproofing**  \n- **SD card slots and headphone jacks**  \n- **Decent mic and speaker quality**  \n- **Customization options**  "
+    },
+    {
+     "ref": "¶11",
+     "text": "I didn’t care about:  \n- Having the **best camera**—a simple one was fine.  \n- AI “enhancements” in photos—frankly, I found them unnecessary.  \n- Cloud storage—I preferred offline independence.  "
+    },
+    {
+     "ref": "¶12",
+     "text": "The tech industry’s obsession with connectivity frustrated me. Companies like Apple and Google deliberately limited options for offline use, removing SD card slots and offering minimal onboard storage to push cloud services. I didn’t want that. I wanted to take my phone to the mountains, listen to music, read, and take notes without worrying about connectivity.  "
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He tested small and large screens, physical keyboards, stylus-equipped phones, and the latest smartwatches.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "After a break from smartphones, I slowly ventured back into the market, testing different devices. I tried it all:  "
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "No matter what he tried, phones were not built for people like him: they sold unneeded features, pushed unwanted ads, locked him into avoided ecosystems.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "But no matter what I tried, the result was the same: these phones were not built for people like me. They were built to sell features I didn’t need, push ads I didn’t want, and lock me into ecosystems I avoided.  "
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That realization shifted his focus to phones prioritizing functionality over flashiness.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "This realization shifted my focus. I started looking for phones that prioritized **functionality over flashiness**.  "
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Priorities: long battery life, waterproofing and shockproofing, SD card slots and headphone jacks, decent mic and speaker, customization.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "What did I want from a phone? My priorities boiled down to these essentials:  \n- **Long battery life**  \n- **Waterproofing and shockproofing**  \n- **SD card slots and headphone jacks**  \n- **Decent mic and speaker quality**  \n- **Customization options**  "
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Didn't care about the best camera, AI photo 'enhancements', or cloud storage; preferred offline independence.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "I didn’t care about:  \n- Having the **best camera**—a simple one was fine.  \n- AI “enhancements” in photos—frankly, I found them unnecessary.  \n- Cloud storage—I preferred offline independence.  "
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Apple and Google deliberately limited offline options, removing SD card slots and offering minimal onboard storage to push cloud services.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "The tech industry’s obsession with connectivity frustrated me. Companies like Apple and Google deliberately limited options for offline use, removing SD card slots and offering minimal onboard storage to push cloud services. I didn’t want that. I wanted to take my phone to the mountains, listen to music, read, and take notes without worrying about connectivity.  "
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He wanted to take the phone to the mountains for music, reading, and notes without worrying about connectivity.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "The tech industry’s obsession with connectivity frustrated me. Companies like Apple and Google deliberately limited options for offline use, removing SD card slots and offering minimal onboard storage to push cloud services. I didn’t want that. I wanted to take my phone to the mountains, listen to music, read, and take notes without worrying about connectivity.  "
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Ulefone delivered rugged value: toughness, battery, price, and survival.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "This search led me to **Ulefone**, a small Chinese company specializing in rugged phones. These devices were a revelation. Ulefone phones weren’t trying to compete with the likes of Apple or Samsung. Instead, they focused on solving real problems for people who needed tough, reliable devices.  "
+    },
+    {
+     "ref": "¶14",
+     "text": "Here’s what I loved about Ulefone:  \n- **Durability:** Waterproof, shockproof, and dustproof.  \n- **Practical features:** Dual SIM, SD card slots, headphone jacks.  \n- **Battery life:** One model lasted an entire week on a single charge.  \n- **Affordability:** These phones cost about **1/10th the price** of flagship devices from major brands.  "
+    },
+    {
+     "ref": "¶15",
+     "text": "I’ve put these phones through hell. I’ve dropped them countless times, taken them swimming, and generally abused them in ways that would destroy most devices. Yet they’ve held up remarkably well. This summer, I dived a bit too deep into a lake with my current Ulefone, and while it started acting up, it still works.  "
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Ulefone devices were a revelation: a small Chinese company specializing in rugged phones, not competing with Apple or Samsung but solving real problems.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "This search led me to **Ulefone**, a small Chinese company specializing in rugged phones. These devices were a revelation. Ulefone phones weren’t trying to compete with the likes of Apple or Samsung. Instead, they focused on solving real problems for people who needed tough, reliable devices.  "
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Loved the durability (waterproof, shockproof, dustproof) and practical features: dual SIM, SD card slots, headphone jacks.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "Here’s what I loved about Ulefone:  \n- **Durability:** Waterproof, shockproof, and dustproof.  \n- **Practical features:** Dual SIM, SD card slots, headphone jacks.  \n- **Battery life:** One model lasted an entire week on a single charge.  \n- **Affordability:** These phones cost about **1/10th the price** of flagship devices from major brands.  "
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "One Ulefone model lasted an entire week on a single charge.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "Here’s what I loved about Ulefone:  \n- **Durability:** Waterproof, shockproof, and dustproof.  \n- **Practical features:** Dual SIM, SD card slots, headphone jacks.  \n- **Battery life:** One model lasted an entire week on a single charge.  \n- **Affordability:** These phones cost about **1/10th the price** of flagship devices from major brands.  "
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "These phones cost about 1/10th the price of flagship devices from major brands.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "Here’s what I loved about Ulefone:  \n- **Durability:** Waterproof, shockproof, and dustproof.  \n- **Practical features:** Dual SIM, SD card slots, headphone jacks.  \n- **Battery life:** One model lasted an entire week on a single charge.  \n- **Affordability:** These phones cost about **1/10th the price** of flagship devices from major brands.  "
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Put through hell: countless drops, swimming, abuse that would destroy most devices; they held up remarkably well.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "I’ve put these phones through hell. I’ve dropped them countless times, taken them swimming, and generally abused them in ways that would destroy most devices. Yet they’ve held up remarkably well. This summer, I dived a bit too deep into a lake with my current Ulefone, and while it started acting up, it still works.  "
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "A dive a bit too deep into a lake this summer made the current Ulefone act up, but it still works.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "I’ve put these phones through hell. I’ve dropped them countless times, taken them swimming, and generally abused them in ways that would destroy most devices. Yet they’ve held up remarkably well. This summer, I dived a bit too deep into a lake with my current Ulefone, and while it started acting up, it still works.  "
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Why this matters: phones as tools, with smaller makers filling the gap.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "For me, phones are tools, not status symbols. I don’t want a device that decides what’s important for me or forces me to conform to its limitations. I want a phone that fits into my life, solves my problems, and respects my choices.  "
+    },
+    {
+     "ref": "¶17",
+     "text": "The big players in the industry—Apple, Google, Samsung—don’t cater to people like me. Their focus is on creating ecosystems that prioritize profit over genuine user needs. Smaller companies like Ulefone, however, are filling that gap.  "
+    },
+    {
+     "ref": "¶18",
+     "text": "If there’s one thing I’ve learned, it’s that you don’t have to settle for what the market says you need. With a bit of searching, you can find tools that work for you—not against you.  "
+    },
+    {
+     "ref": "¶19",
+     "text": "My journey with cellphones has been about rejecting trends and seeking solutions. While the world chases megapixels and AI gimmicks, I’ll be here with my rugged, reliable phone, ready for whatever life throws at me.  "
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Phones are tools, not status symbols; he doesn't want a device that decides what's important or forces conformity.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "For me, phones are tools, not status symbols. I don’t want a device that decides what’s important for me or forces me to conform to its limitations. I want a phone that fits into my life, solves my problems, and respects my choices.  "
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He wants a phone that fits his life, solves his problems, and respects his choices.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "For me, phones are tools, not status symbols. I don’t want a device that decides what’s important for me or forces me to conform to its limitations. I want a phone that fits into my life, solves my problems, and respects my choices.  "
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Big players (Apple, Google, Samsung) don't cater to people like him; their ecosystems prioritize profit over genuine user needs.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "The big players in the industry—Apple, Google, Samsung—don’t cater to people like me. Their focus is on creating ecosystems that prioritize profit over genuine user needs. Smaller companies like Ulefone, however, are filling that gap.  "
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Smaller companies like Ulefone are filling that gap.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "The big players in the industry—Apple, Google, Samsung—don’t cater to people like me. Their focus is on creating ecosystems that prioritize profit over genuine user needs. Smaller companies like Ulefone, however, are filling that gap.  "
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You don't have to settle for what the market says you need; searching can find tools that work for you, not against you.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "If there’s one thing I’ve learned, it’s that you don’t have to settle for what the market says you need. With a bit of searching, you can find tools that work for you—not against you.  "
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "His journey was about rejecting trends and seeking solutions; the world chases megapixels and AI gimmicks while he keeps a rugged, reliable phone.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "My journey with cellphones has been about rejecting trends and seeking solutions. While the world chases megapixels and AI gimmicks, I’ll be here with my rugged, reliable phone, ready for whatever life throws at me.  "
+    }
+   ]
+  }
+ ]
+}

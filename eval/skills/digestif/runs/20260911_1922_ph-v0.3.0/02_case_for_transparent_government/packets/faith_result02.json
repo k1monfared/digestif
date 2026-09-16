@@ -1,0 +1,452 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "02_case_for_transparent_government part 2 of 6",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Pieces of this system already exist and prove it works.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Pieces of this system already exist around the world... several have gone far enough to prove it works.",
+   "reasoning": "SOURCE asserts existing pieces and that several cases prove it works; identical meaning."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "No country nears complete transparency, but several prove feasibility.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "No country has achieved anything close to complete transparency, but several have gone far enough to prove it works.",
+   "reasoning": "Direct paraphrase preserving the concession and the feasibility claim."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Sweden's 260-year openness shows transparency endures without collapse.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Two hundred and sixty years later, Sweden still operates under this principle... The country has not collapsed.",
+   "reasoning": "260 years, endurance, and non-collapse are all stated in SOURCE."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "5.2.1"
+   ],
+   "claim_text": "In 1766 Sweden passed the world's first freedom-of-information law.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In 1766, Sweden passed the Freedom of the Press Act - the world's first freedom of information law.",
+   "reasoning": "Date and superlative match SOURCE exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "5.2.2"
+   ],
+   "claim_text": "It abolished censorship and is now constitutional.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It abolished censorship... It's now part of the Swedish constitution.",
+   "reasoning": "Both facts appear verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "5.2.3"
+   ],
+   "claim_text": "Finnish-Swedish priest-politician Chydenius drove Hats-versus-Caps explicitly anti-corruption law.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Anders Chydenius, a Finnish-Swedish priest and politician, drove the legislation through parliament. The motivation was explicitly anti-corruption.",
+   "reasoning": "Name, roles, driving role, and anti-corruption motive all match; Hats/Caps context is adjacent."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "5.2.4"
+   ],
+   "claim_text": "Offentlighetsprincipen keeps documents public by default 260 years on.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Two hundred and sixty years later, Sweden still operates under this principle. It's called offentlighetsprincipen... Government documents are public by default.",
+   "reasoning": "Term, default-public rule, and 260-year persistence all stated."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "5.2.5"
+   ],
+   "claim_text": "Nordics consistently rank among least corrupt, most effective democracies.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Nordic countries consistently rank among the least corrupt and most effective democracies in the world.",
+   "reasoning": "Near-verbatim restatement."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Seoul's 1999 OPEN system made bribery-prone permitting visible.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In 1999, Seoul launched the OPEN system... shows citizens exactly who made what decision.",
+   "reasoning": "Year and the visibility of corruption-prone tasks match."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "claim_text": "OPEN tracks 70 corruption-prone tasks, including construction, environmental, and urban planning permits, in real time.",
+   "claim_type": "number_or_date",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "tracks 70 municipal tasks most prone to corruption - construction permits, environmental regulation, urban planning - and shows citizens... in real time.",
+   "reasoning": "Number 70 is correct, but SOURCE lists environmental regulation and urban planning, not permits, and ties real time to showing citizens."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "5.3.2"
+   ],
+   "claim_text": "Citizens see exactly who decided what at each process point.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "shows citizens exactly who made what decision, at which point in the process, in real time.",
+   "reasoning": "Direct restatement of SOURCE."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "5.3.3"
+   ],
+   "claim_text": "Previously invisible processing let officials demand speed-up bribes unprovably.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This opacity enabled bribery: officials could demand payments to \"move things along\" and nobody could prove it.",
+   "reasoning": "Opacity-to-bribery causal link and unprovability all stated."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "5.3.4"
+   ],
+   "claim_text": "Visibility eliminated that bribery leverage entirely.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Making the process visible eliminated that leverage entirely.",
+   "reasoning": "Verbatim in meaning."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "5.3.5"
+   ],
+   "claim_text": "Corruption decreases as e-participation increases; UN, OECD, World Bank recognized it.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"corruption decreases as e-participation increases.\" The system was recognized by the UN, OECD, and World Bank.",
+   "reasoning": "Quote and the three recognizing bodies match SOURCE."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Estonia's 2001 X-Road proves transparency infrastructure scales.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### Estonia: The Infrastructure Proof (2001)... If your objection is \"this can't scale,\" look at Estonia's X-Road.",
+   "reasoning": "Year and scale-proof framing both supported."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "claim_text": "X-Road links 929+ institutions, 1,887 systems, 3,000+ services, timestamped, signed, logged.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "connecting 929+ institutions, 1,887 information systems, and 3,000+ digital services. Every transaction is timestamped and cryptographically signed. All data access is logged.",
+   "reasoning": "All three figures and the three properties match SOURCE."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "5.4.2"
+   ],
+   "claim_text": "Citizens can see who accessed their data and why.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Citizens can see who accessed their data and why.",
+   "reasoning": "Verbatim."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5.4.3"
+   ],
+   "claim_text": "Estonia ranks 2nd on the UN E-Government Development Index.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Estonia now ranks 2nd in the UN E-Government Development Index.",
+   "reasoning": "Rank and index match."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.4.4"
+   ],
+   "claim_text": "No major breaches in over 20 years despite constant cyber attacks.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The system has had no major security breaches in over 20 years, despite constant cyber attacks.",
+   "reasoning": "Negation, duration, and qualifier preserved."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.4.5"
+   ],
+   "claim_text": "X-Road is MIT-licensed open source, deployed in 20+ countries.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's open source (MIT license) and deployed in 20+ countries.",
+   "reasoning": "License and deployment count match."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.4.6"
+   ],
+   "claim_text": "X-Road proves every-email-available infrastructure is technically feasible.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "X-Road proves the \"every email available up the chain\" infrastructure is technically feasible.",
+   "reasoning": "Identical claim in SOURCE."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.4.7"
+   ],
+   "claim_text": "The technology is feasible; the bottleneck is will.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The technology is not the bottleneck. The will is.",
+   "reasoning": "Meaning preserved."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Brazil's 2004 Transparency Portal follows all federal money.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### Brazil: Following the Money (2004)... publishes all federal spending.",
+   "reasoning": "Year heading and all-federal-spending scope match."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "5.5.1"
+   ],
+   "claim_text": "It publishes contracts, transfers, salaries, travel, and credit-card transactions.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "contracts, transfers, salaries, travel expenses, and government credit card transactions.",
+   "reasoning": "All five categories match SOURCE."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "5.5.2"
+   ],
+   "claim_text": "The portal receives over 20 million accesses per year.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It receives over 20 million accesses per year.",
+   "reasoning": "Verbatim figure."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "5.5.3"
+   ],
+   "claim_text": "Transparency Card sent 20+ million notifications via 430,000+ active cards.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "over 430,000 active cards, 20+ million notifications sent.",
+   "reasoning": "Both counts match."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "5.5.4"
+   ],
+   "claim_text": "Journalists uncovered 60GB of hidden pension payments spanning 27 years.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they uncovered 60GB of hidden pension payment data going back 27 years.",
+   "reasoning": "Amount and span match."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "5.5.5"
+   ],
+   "claim_text": "Give citizens CEO tools and they find the fraud.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is what happens when you give citizens the tools to be CEOs: they find the fraud.",
+   "reasoning": "Restatement preserving meaning."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "New Zealand publishes cabinet papers by default since 2019.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Since 2019, New Zealand has proactively published all Cabinet papers and minutes online.",
+   "reasoning": "Year, actor, and default publishing match."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "5.6.1"
+   ],
+   "claim_text": "All papers and minutes appear online within 30 business days.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "all Cabinet papers and minutes online within 30 business days of decisions being made.",
+   "reasoning": "Window and scope match."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "5.6.2"
+   ],
+   "claim_text": "Cabinet deliberations are typically the world's most protected government information.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "cabinet deliberations are typically the most protected category of government information anywhere in the world.",
+   "reasoning": "Hedge 'typically' and superlative preserved."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "5.6.3"
+   ],
+   "claim_text": "Government has not halted; ministers still deliberate; citizens see why.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The government has not ground to a halt. Ministers have not stopped deliberating. What has changed is that citizens can see why.",
+   "reasoning": "All three negations and the affirmative claim preserved."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "5.7"
+   ],
+   "claim_text": "Taiwan's vTaiwan crowdsources laws through consensus-finding deliberation.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Taiwan's vTaiwan platform uses Pol.is to let citizens participate in policy deliberation... surfaces statements that find cross-group consensus.",
+   "reasoning": "Actor, method, and consensus mechanism match."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "5.7.1"
+   ],
+   "claim_text": "Pol.is takes agree-disagree votes with no replies, surfacing cross-group consensus.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "vote agree or disagree (no replies allowed - this prevents flame wars), and an algorithm surfaces statements that find cross-group consensus.",
+   "reasoning": "Voting mode, no-replies rule, and consensus surfacing all present."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "5.7.2"
+   ],
+   "claim_text": "By 2018, 26 issues processed; 80% led to government action.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "By 2018, 26 issues had been processed, and 80% led to government action.",
+   "reasoning": "Year, count, and percentage match exactly."
+  },
+  {
+   "claim_id": "C36",
+   "loglog_ids": [
+    "5.7.3"
+   ],
+   "claim_text": "Participation is downstream of transparency, not core transparency itself.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This isn't core transparency - it's what becomes possible downstream of transparency.",
+   "reasoning": "Negation and downstream framing preserved."
+  }
+ ],
+ "metrics": {
+  "total_claims": 36,
+  "supported": 35,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9722222222222222
+ },
+ "fail_list": [
+  "C10 Partially supported: recasts 'environmental regulation, urban planning' as permits and attaches 'in real time' to tracking rather than to showing citizens"
+ ]
+}

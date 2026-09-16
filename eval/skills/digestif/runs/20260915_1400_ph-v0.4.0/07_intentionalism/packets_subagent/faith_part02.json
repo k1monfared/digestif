@@ -1,0 +1,643 @@
+{
+ "sample": "07_intentionalism",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "10",
+   "type": "theme",
+   "attribution": "author",
+   "text": "The appendix gives concrete exercises for practicing intention in progressively larger domains.",
+   "evidence": [
+    {
+     "ref": "¶58",
+     "text": "## Appendix: Building Intention - Concrete Steps\nThe shift from receiver to proposer requires practicing intention in progressively larger domains. Here are specific exercises for the scenarios mentioned throughout this post."
+    }
+   ]
+  },
+  {
+   "id": "10.1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Entertainment: name, seek, and protect your intention over three weeks.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "### Entertainment (Netflix, YouTube, TikTok)\n**Week 1: Name your intention**\n- Before opening any entertainment app, write down (or say aloud) what you want to feel: \"I want to laugh,\" \"I want to learn about X,\" \"I want to feel inspired,\" \"I want to relax completely\"\n- If you can't name it, close the app and try again later\n- Keep a simple log: intention → what you watched → did it deliver?"
+    }
+   ]
+  },
+  {
+   "id": "10.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Week 1: before opening any entertainment app, write down or say aloud what you want to feel.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "### Entertainment (Netflix, YouTube, TikTok)\n**Week 1: Name your intention**\n- Before opening any entertainment app, write down (or say aloud) what you want to feel: \"I want to laugh,\" \"I want to learn about X,\" \"I want to feel inspired,\" \"I want to relax completely\"\n- If you can't name it, close the app and try again later\n- Keep a simple log: intention → what you watched → did it deliver?"
+    }
+   ]
+  },
+  {
+   "id": "10.1.1.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "I want to laugh, or learn about X, or feel inspired, or relax completely.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "### Entertainment (Netflix, YouTube, TikTok)\n**Week 1: Name your intention**\n- Before opening any entertainment app, write down (or say aloud) what you want to feel: \"I want to laugh,\" \"I want to learn about X,\" \"I want to feel inspired,\" \"I want to relax completely\"\n- If you can't name it, close the app and try again later\n- Keep a simple log: intention → what you watched → did it deliver?"
+    }
+   ]
+  },
+  {
+   "id": "10.1.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If you cannot name it, close the app and try again later.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "### Entertainment (Netflix, YouTube, TikTok)\n**Week 1: Name your intention**\n- Before opening any entertainment app, write down (or say aloud) what you want to feel: \"I want to laugh,\" \"I want to learn about X,\" \"I want to feel inspired,\" \"I want to relax completely\"\n- If you can't name it, close the app and try again later\n- Keep a simple log: intention → what you watched → did it deliver?"
+    }
+   ]
+  },
+  {
+   "id": "10.1.1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Keep a simple log: intention, what you watched, and whether it delivered.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "### Entertainment (Netflix, YouTube, TikTok)\n**Week 1: Name your intention**\n- Before opening any entertainment app, write down (or say aloud) what you want to feel: \"I want to laugh,\" \"I want to learn about X,\" \"I want to feel inspired,\" \"I want to relax completely\"\n- If you can't name it, close the app and try again later\n- Keep a simple log: intention → what you watched → did it deliver?"
+    }
+   ]
+  },
+  {
+   "id": "10.1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Week 2: based on your named intention, search for specific content rather than scrolling recommendations.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "**Week 2: Seek intentionally**\n- Based on your named intention, search for specific content rather than scrolling recommendations\n- If \"laugh\" → search for specific comedians you know make you laugh\n- If \"learn\" → search for specific topics, not just what's trending\n- Notice how much faster you find satisfaction"
+    }
+   ]
+  },
+  {
+   "id": "10.1.2.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "If the goal is to laugh, search for specific comedians you know make you laugh.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "**Week 2: Seek intentionally**\n- Based on your named intention, search for specific content rather than scrolling recommendations\n- If \"laugh\" → search for specific comedians you know make you laugh\n- If \"learn\" → search for specific topics, not just what's trending\n- Notice how much faster you find satisfaction"
+    }
+   ]
+  },
+  {
+   "id": "10.1.2.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "If the goal is to learn, search specific topics, not just what is trending.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "**Week 2: Seek intentionally**\n- Based on your named intention, search for specific content rather than scrolling recommendations\n- If \"laugh\" → search for specific comedians you know make you laugh\n- If \"learn\" → search for specific topics, not just what's trending\n- Notice how much faster you find satisfaction"
+    }
+   ]
+  },
+  {
+   "id": "10.1.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Notice how much faster you find satisfaction.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "**Week 2: Seek intentionally**\n- Based on your named intention, search for specific content rather than scrolling recommendations\n- If \"laugh\" → search for specific comedians you know make you laugh\n- If \"learn\" → search for specific topics, not just what's trending\n- Notice how much faster you find satisfaction"
+    }
+   ]
+  },
+  {
+   "id": "10.1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Week 3: set a timer for how long you intended to spend.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "**Week 3: Protect your intention**\n- Set a timer for how long you intended to spend\n- When autoplay starts, ask: \"Does this serve my original intention?\"\n- Practice closing the app when your intention is fulfilled, not when you're exhausted"
+    }
+   ]
+  },
+  {
+   "id": "10.1.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "When autoplay starts, ask whether this serves your original intention.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "**Week 3: Protect your intention**\n- Set a timer for how long you intended to spend\n- When autoplay starts, ask: \"Does this serve my original intention?\"\n- Practice closing the app when your intention is fulfilled, not when you're exhausted"
+    }
+   ]
+  },
+  {
+   "id": "10.1.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Practice closing the app when your intention is fulfilled, not when you are exhausted.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "**Week 3: Protect your intention**\n- Set a timer for how long you intended to spend\n- When autoplay starts, ask: \"Does this serve my original intention?\"\n- Practice closing the app when your intention is fulfilled, not when you're exhausted"
+    }
+   ]
+  },
+  {
+   "id": "10.2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Shopping: define the problem, list must-haves, research intentionally, ignore the store layout, and wait a day over $100.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "### Shopping (Phones, Products, Toothpaste)\n**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it."
+    }
+   ]
+  },
+  {
+   "id": "10.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Define the problem specifically: not I need a phone, but reliable video calls with family.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "### Shopping (Phones, Products, Toothpaste)\n**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it."
+    }
+   ]
+  },
+  {
+   "id": "10.2.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A good camera for travel, and battery that lasts full days.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "### Shopping (Phones, Products, Toothpaste)\n**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it."
+    }
+   ]
+  },
+  {
+   "id": "10.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "List the 3-5 features that actually matter, being clear about what you will use versus what sounds cool.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "### Shopping (Phones, Products, Toothpaste)\n**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it."
+    }
+   ]
+  },
+  {
+   "id": "10.2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Research those specific features, not best phones 2025.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "### Shopping (Phones, Products, Toothpaste)\n**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it."
+    }
+   ]
+  },
+  {
+   "id": "10.2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "In person, go directly to compare items that meet your criteria; do not browse the store layout.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "### Shopping (Phones, Products, Toothpaste)\n**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it."
+    }
+   ]
+  },
+  {
+   "id": "10.2.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For anything over $100, wait a day after deciding; if you still want that specific item, buy it.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "### Shopping (Phones, Products, Toothpaste)\n**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it."
+    }
+   ]
+  },
+  {
+   "id": "10.2.6",
+   "type": "example",
+   "attribution": "author",
+   "text": "Toothpaste run: define what you actually need, sensitive teeth, whitening, or just clean teeth.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "**Practice run**: Next time you need toothpaste\n- Before going to store: What do you actually need? (sensitive teeth? whitening? just clean teeth?)\n- Research which ingredient addresses that need\n- Go to store, find that ingredient, buy it\n- Notice how different this feels from standing in the aisle comparing packaging"
+    }
+   ]
+  },
+  {
+   "id": "10.2.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Research which ingredient addresses that need, buy it, and notice the difference from comparing packaging.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "**Practice run**: Next time you need toothpaste\n- Before going to store: What do you actually need? (sensitive teeth? whitening? just clean teeth?)\n- Research which ingredient addresses that need\n- Go to store, find that ingredient, buy it\n- Notice how different this feels from standing in the aisle comparing packaging"
+    }
+   ]
+  },
+  {
+   "id": "10.3",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Jobs and career: quarterly intention-setting, even if you are not job hunting.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "### Jobs and Career\n**Quarterly intention-setting** (do this even if you're not job hunting):\n1. **Map your energy**: For two weeks, note what tasks give you energy vs. drain you\n2. **Identify patterns**: What type of problems do you enjoy solving? What environments let you thrive?\n3. **Define your criteria**: Write 5 non-negotiables for your next role (not \"good pay\" but \"solving X type of problem, with Y type of people, in Z type of environment\")\n4. **Find the companies**: Research companies doing that work, regardless of whether they have postings\n5. **Reach out intentionally**: Contact people at those companies, explain what you're looking for, ask about their experience"
+    }
+   ]
+  },
+  {
+   "id": "10.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Map your energy for two weeks, noting which tasks give you energy and which drain you.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "### Jobs and Career\n**Quarterly intention-setting** (do this even if you're not job hunting):\n1. **Map your energy**: For two weeks, note what tasks give you energy vs. drain you\n2. **Identify patterns**: What type of problems do you enjoy solving? What environments let you thrive?\n3. **Define your criteria**: Write 5 non-negotiables for your next role (not \"good pay\" but \"solving X type of problem, with Y type of people, in Z type of environment\")\n4. **Find the companies**: Research companies doing that work, regardless of whether they have postings\n5. **Reach out intentionally**: Contact people at those companies, explain what you're looking for, ask about their experience"
+    }
+   ]
+  },
+  {
+   "id": "10.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Identify patterns: what type of problems do you enjoy solving, and what environments let you thrive?",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "### Jobs and Career\n**Quarterly intention-setting** (do this even if you're not job hunting):\n1. **Map your energy**: For two weeks, note what tasks give you energy vs. drain you\n2. **Identify patterns**: What type of problems do you enjoy solving? What environments let you thrive?\n3. **Define your criteria**: Write 5 non-negotiables for your next role (not \"good pay\" but \"solving X type of problem, with Y type of people, in Z type of environment\")\n4. **Find the companies**: Research companies doing that work, regardless of whether they have postings\n5. **Reach out intentionally**: Contact people at those companies, explain what you're looking for, ask about their experience"
+    }
+   ]
+  },
+  {
+   "id": "10.3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Write 5 non-negotiables for your next role, specific ones about problem type, people, and environment, not good pay.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "### Jobs and Career\n**Quarterly intention-setting** (do this even if you're not job hunting):\n1. **Map your energy**: For two weeks, note what tasks give you energy vs. drain you\n2. **Identify patterns**: What type of problems do you enjoy solving? What environments let you thrive?\n3. **Define your criteria**: Write 5 non-negotiables for your next role (not \"good pay\" but \"solving X type of problem, with Y type of people, in Z type of environment\")\n4. **Find the companies**: Research companies doing that work, regardless of whether they have postings\n5. **Reach out intentionally**: Contact people at those companies, explain what you're looking for, ask about their experience"
+    }
+   ]
+  },
+  {
+   "id": "10.3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Research companies doing that work regardless of whether they have postings, contact people there, and ask about their experience.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "### Jobs and Career\n**Quarterly intention-setting** (do this even if you're not job hunting):\n1. **Map your energy**: For two weeks, note what tasks give you energy vs. drain you\n2. **Identify patterns**: What type of problems do you enjoy solving? What environments let you thrive?\n3. **Define your criteria**: Write 5 non-negotiables for your next role (not \"good pay\" but \"solving X type of problem, with Y type of people, in Z type of environment\")\n4. **Find the companies**: Research companies doing that work, regardless of whether they have postings\n5. **Reach out intentionally**: Contact people at those companies, explain what you're looking for, ask about their experience"
+    }
+   ]
+  },
+  {
+   "id": "10.3.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If you must apply to postings, apply only to roles that match at least 4 of your 5 criteria, and customize every application.",
+   "evidence": [
+    {
+     "ref": "¶65",
+     "text": "**If you must apply to postings:**\n- Only apply to roles that match at least 4 of your 5 criteria\n- Customize every application to explain why this specific role matches your intentions\n- Track: are you just submitting many applications (receiver) or carefully selecting few (proposer)?"
+    }
+   ]
+  },
+  {
+   "id": "10.3.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Track whether you are submitting many applications as a receiver or carefully selecting few as a proposer.",
+   "evidence": [
+    {
+     "ref": "¶65",
+     "text": "**If you must apply to postings:**\n- Only apply to roles that match at least 4 of your 5 criteria\n- Customize every application to explain why this specific role matches your intentions\n- Track: are you just submitting many applications (receiver) or carefully selecting few (proposer)?"
+    }
+   ]
+  },
+  {
+   "id": "10.4",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Relationships: write your intention, identify values, and seek people who demonstrate them.",
+   "evidence": [
+    {
+     "ref": "¶66",
+     "text": "### Relationships (Dating, Friendships)\n**Before dating:**\n1. **Write your relationship intention**: Not \"find someone\" but specifically what kind of relationship you want to build. What does daily life look like? How do you handle conflict? What do you build together?\n2. **Identify values alignment**: What 3-5 values absolutely must align? (not \"nice person\" but specific things like \"prioritizes growth,\" \"values deep conversation,\" \"wants intellectual partnership\")\n3. **Seek intentionally**: Look for people who demonstrate those values, not just attractive profiles\n4. **First date filter**: Ask questions that reveal value alignment, not just \"getting to know you\" surface chat"
+    }
+   ]
+  },
+  {
+   "id": "10.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Write what kind of relationship you want to build: what daily life looks like, how conflict is handled, what you build together.",
+   "evidence": [
+    {
+     "ref": "¶66",
+     "text": "### Relationships (Dating, Friendships)\n**Before dating:**\n1. **Write your relationship intention**: Not \"find someone\" but specifically what kind of relationship you want to build. What does daily life look like? How do you handle conflict? What do you build together?\n2. **Identify values alignment**: What 3-5 values absolutely must align? (not \"nice person\" but specific things like \"prioritizes growth,\" \"values deep conversation,\" \"wants intellectual partnership\")\n3. **Seek intentionally**: Look for people who demonstrate those values, not just attractive profiles\n4. **First date filter**: Ask questions that reveal value alignment, not just \"getting to know you\" surface chat"
+    }
+   ]
+  },
+  {
+   "id": "10.4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Identify the 3-5 values that absolutely must align, specific things like prioritizing growth or wanting intellectual partnership.",
+   "evidence": [
+    {
+     "ref": "¶66",
+     "text": "### Relationships (Dating, Friendships)\n**Before dating:**\n1. **Write your relationship intention**: Not \"find someone\" but specifically what kind of relationship you want to build. What does daily life look like? How do you handle conflict? What do you build together?\n2. **Identify values alignment**: What 3-5 values absolutely must align? (not \"nice person\" but specific things like \"prioritizes growth,\" \"values deep conversation,\" \"wants intellectual partnership\")\n3. **Seek intentionally**: Look for people who demonstrate those values, not just attractive profiles\n4. **First date filter**: Ask questions that reveal value alignment, not just \"getting to know you\" surface chat"
+    }
+   ]
+  },
+  {
+   "id": "10.4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Seek people who demonstrate those values, not just attractive profiles.",
+   "evidence": [
+    {
+     "ref": "¶66",
+     "text": "### Relationships (Dating, Friendships)\n**Before dating:**\n1. **Write your relationship intention**: Not \"find someone\" but specifically what kind of relationship you want to build. What does daily life look like? How do you handle conflict? What do you build together?\n2. **Identify values alignment**: What 3-5 values absolutely must align? (not \"nice person\" but specific things like \"prioritizes growth,\" \"values deep conversation,\" \"wants intellectual partnership\")\n3. **Seek intentionally**: Look for people who demonstrate those values, not just attractive profiles\n4. **First date filter**: Ask questions that reveal value alignment, not just \"getting to know you\" surface chat"
+    }
+   ]
+  },
+  {
+   "id": "10.4.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Use the first date to ask questions that reveal value alignment, not surface chat.",
+   "evidence": [
+    {
+     "ref": "¶66",
+     "text": "### Relationships (Dating, Friendships)\n**Before dating:**\n1. **Write your relationship intention**: Not \"find someone\" but specifically what kind of relationship you want to build. What does daily life look like? How do you handle conflict? What do you build together?\n2. **Identify values alignment**: What 3-5 values absolutely must align? (not \"nice person\" but specific things like \"prioritizes growth,\" \"values deep conversation,\" \"wants intellectual partnership\")\n3. **Seek intentionally**: Look for people who demonstrate those values, not just attractive profiles\n4. **First date filter**: Ask questions that reveal value alignment, not just \"getting to know you\" surface chat"
+    }
+   ]
+  },
+  {
+   "id": "10.4.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For friendships, name what you need: friends who push you intellectually, friends you can be quiet with, friends who share this specific hobby.",
+   "evidence": [
+    {
+     "ref": "¶67",
+     "text": "**For friendships:**\n1. **Name what you need**: \"I want friends who push me intellectually,\" \"I want friends I can be quiet with,\" \"I want friends who share this specific hobby\"\n2. **Go where those people are**: Join specific communities, not just \"networking events\"\n3. **Initiate based on intention**: Invite people to do specific things you actually want to do, not generic \"let's hang out sometime\""
+    }
+   ]
+  },
+  {
+   "id": "10.4.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Go where those people are: join specific communities, not just networking events.",
+   "evidence": [
+    {
+     "ref": "¶67",
+     "text": "**For friendships:**\n1. **Name what you need**: \"I want friends who push me intellectually,\" \"I want friends I can be quiet with,\" \"I want friends who share this specific hobby\"\n2. **Go where those people are**: Join specific communities, not just \"networking events\"\n3. **Initiate based on intention**: Invite people to do specific things you actually want to do, not generic \"let's hang out sometime\""
+    }
+   ]
+  },
+  {
+   "id": "10.4.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Initiate based on intention: invite people to specific things you actually want to do, not a generic let us hang out sometime.",
+   "evidence": [
+    {
+     "ref": "¶67",
+     "text": "**For friendships:**\n1. **Name what you need**: \"I want friends who push me intellectually,\" \"I want friends I can be quiet with,\" \"I want friends who share this specific hobby\"\n2. **Go where those people are**: Join specific communities, not just \"networking events\"\n3. **Initiate based on intention**: Invite people to do specific things you actually want to do, not generic \"let's hang out sometime\""
+    }
+   ]
+  },
+  {
+   "id": "10.5",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Daily micro-practices: a morning routine, an evening review, and the pause practice.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "### Daily Micro-Practices\n**Morning routine** (5 minutes):\n- Before checking phone: \"What are my three intentions for today?\" (Write them down)\n- Not \"be productive\" but specific: \"have meaningful conversation with X,\" \"make progress on Y,\" \"spend 30 minutes on Z\""
+    }
+   ]
+  },
+  {
+   "id": "10.5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Before checking your phone, write down your three intentions for today.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "### Daily Micro-Practices\n**Morning routine** (5 minutes):\n- Before checking phone: \"What are my three intentions for today?\" (Write them down)\n- Not \"be productive\" but specific: \"have meaningful conversation with X,\" \"make progress on Y,\" \"spend 30 minutes on Z\""
+    }
+   ]
+  },
+  {
+   "id": "10.5.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Not be productive but specific: have a meaningful conversation with X, make progress on Y, spend 30 minutes on Z.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "### Daily Micro-Practices\n**Morning routine** (5 minutes):\n- Before checking phone: \"What are my three intentions for today?\" (Write them down)\n- Not \"be productive\" but specific: \"have meaningful conversation with X,\" \"make progress on Y,\" \"spend 30 minutes on Z\""
+    }
+   ]
+  },
+  {
+   "id": "10.5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Evening review: did you act as proposer or receiver today, and what would you propose instead tomorrow?",
+   "evidence": [
+    {
+     "ref": "¶69",
+     "text": "**Evening review** (5 minutes):\n- Did you act as proposer or receiver today?\n- When you were a receiver, what would you propose instead tomorrow?\n- Note one small thing you'll do intentionally tomorrow"
+    }
+   ]
+  },
+  {
+   "id": "10.5.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Note one small thing you will do intentionally tomorrow.",
+   "evidence": [
+    {
+     "ref": "¶69",
+     "text": "**Evening review** (5 minutes):\n- Did you act as proposer or receiver today?\n- When you were a receiver, what would you propose instead tomorrow?\n- Note one small thing you'll do intentionally tomorrow"
+    }
+   ]
+  },
+  {
+   "id": "10.5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The pause practice: before any significant choice today, pause for 10 seconds.",
+   "evidence": [
+    {
+     "ref": "¶70",
+     "text": "**The pause practice**:\n- Before any significant choice today, pause for 10 seconds\n- Ask: \"Am I choosing this intentionally, or just selecting from what's in front of me?\"\n- This builds awareness, which is the first step"
+    }
+   ]
+  },
+  {
+   "id": "10.5.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Ask: am I choosing this intentionally, or just selecting from what is in front of me?",
+   "evidence": [
+    {
+     "ref": "¶70",
+     "text": "**The pause practice**:\n- Before any significant choice today, pause for 10 seconds\n- Ask: \"Am I choosing this intentionally, or just selecting from what's in front of me?\"\n- This builds awareness, which is the first step"
+    }
+   ]
+  },
+  {
+   "id": "10.5.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This builds awareness, which is the first step.",
+   "evidence": [
+    {
+     "ref": "¶70",
+     "text": "**The pause practice**:\n- Before any significant choice today, pause for 10 seconds\n- Ask: \"Am I choosing this intentionally, or just selecting from what's in front of me?\"\n- This builds awareness, which is the first step"
+    }
+   ]
+  },
+  {
+   "id": "10.6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Tracking progress: keep a journal with three columns, situation, mode, and outcome.",
+   "evidence": [
+    {
+     "ref": "¶71",
+     "text": "### Tracking Progress\nKeep a simple journal with three columns:\n- **Situation**: What was the choice?\n- **Mode**: Did I propose (decide what I want, then pursue it) or receive (choose from what was offered)?\n- **Outcome**: How satisfied am I with the result?"
+    }
+   ]
+  },
+  {
+   "id": "10.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Situation: what was the choice?",
+   "evidence": [
+    {
+     "ref": "¶71",
+     "text": "### Tracking Progress\nKeep a simple journal with three columns:\n- **Situation**: What was the choice?\n- **Mode**: Did I propose (decide what I want, then pursue it) or receive (choose from what was offered)?\n- **Outcome**: How satisfied am I with the result?"
+    }
+   ]
+  },
+  {
+   "id": "10.6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Mode: did I propose, deciding what I want and then pursuing it, or receive, choosing from what was offered?",
+   "evidence": [
+    {
+     "ref": "¶71",
+     "text": "### Tracking Progress\nKeep a simple journal with three columns:\n- **Situation**: What was the choice?\n- **Mode**: Did I propose (decide what I want, then pursue it) or receive (choose from what was offered)?\n- **Outcome**: How satisfied am I with the result?"
+    }
+   ]
+  },
+  {
+   "id": "10.6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Outcome: how satisfied am I with the result?",
+   "evidence": [
+    {
+     "ref": "¶71",
+     "text": "### Tracking Progress\nKeep a simple journal with three columns:\n- **Situation**: What was the choice?\n- **Mode**: Did I propose (decide what I want, then pursue it) or receive (choose from what was offered)?\n- **Outcome**: How satisfied am I with the result?"
+    }
+   ]
+  },
+  {
+   "id": "10.6.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "After 30 days the pattern is clear: proposer entries show higher satisfaction, and this evidence motivates continued practice.",
+   "evidence": [
+    {
+     "ref": "¶72",
+     "text": "After 30 days, you'll see the pattern clearly. Proposer entries will show higher satisfaction. This evidence will motivate continued practice."
+    }
+   ]
+  },
+  {
+   "id": "10.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The key insight: intention is not about always knowing exactly what you want for your entire life.",
+   "evidence": [
+    {
+     "ref": "¶73",
+     "text": "### The Key Insight\nIntention isn't about always knowing exactly what you want for your entire life. It's about practicing the question \"what do I want?\" before someone else provides the answer. Start small. The muscle builds. The capacity grows. Eventually, the intentional approach becomes natural—and that's when you've truly shifted from receiver to proposer."
+    }
+   ]
+  },
+  {
+   "id": "10.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It is about practicing the question what do I want before someone else provides the answer.",
+   "evidence": [
+    {
+     "ref": "¶73",
+     "text": "### The Key Insight\nIntention isn't about always knowing exactly what you want for your entire life. It's about practicing the question \"what do I want?\" before someone else provides the answer. Start small. The muscle builds. The capacity grows. Eventually, the intentional approach becomes natural—and that's when you've truly shifted from receiver to proposer."
+    }
+   ]
+  },
+  {
+   "id": "10.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Start small: the muscle builds, the capacity grows, and eventually the intentional approach becomes natural.",
+   "evidence": [
+    {
+     "ref": "¶73",
+     "text": "### The Key Insight\nIntention isn't about always knowing exactly what you want for your entire life. It's about practicing the question \"what do I want?\" before someone else provides the answer. Start small. The muscle builds. The capacity grows. Eventually, the intentional approach becomes natural—and that's when you've truly shifted from receiver to proposer."
+    }
+   ]
+  }
+ ]
+}

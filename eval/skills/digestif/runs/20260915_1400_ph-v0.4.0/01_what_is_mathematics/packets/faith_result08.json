@@ -1,0 +1,306 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Agreement is not evidence: shared conclusions without shared reasoning are hollow, and the attention economy manufactures exactly that.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That is the epistemically hollow version of agreement, and it is precisely what the attention economy manufactures",
+   "reasoning": "SOURCE header plus the hollow-agreement passage directly state this, including that the attention economy manufactures it."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "The desert in the middle is also about who you can trust to tell you what a result means.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The desert in the middle is not only about making a living. It is also about who you can trust to tell you what a result means.",
+   "reasoning": "Near-verbatim paraphrase; the additive 'also' matches 'not only ... is also'."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "8.1.1"
+   ],
+   "claim_text": "The author says the epistemology is the part that matters most.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "There is an epistemology to all of this, and it is the part I think matters most",
+   "reasoning": "Directly states the epistemology is the part the author thinks matters most."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "When someone agrees, the author asks why; sometimes the different reasoning gives a new perspective, sometimes he disregards the agreement entirely.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "sometimes that difference gives me a new perspective, and sometimes it makes me disregard the agreement entirely",
+   "reasoning": "Both hedged outcomes are preserved exactly, including the 'sometimes' qualifiers."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "8.2.1"
+   ],
+   "claim_text": "The decision was never the end goal, the way it is sometimes portrayed; the process of reaching it was.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The decision was never the end goal, the way it is sometimes portrayed. The process of reaching it was.",
+   "reasoning": "Verbatim quote; the negation 'never' is retained intact."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine.",
+   "reasoning": "Verbatim quote from SOURCE paragraph on default epistemology."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "8.3.1"
+   ],
+   "claim_text": "Two people at the same conclusion via different reasoning are not in the same epistemic state; the interesting information lives in the delta.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta",
+   "reasoning": "Negation preserved; dropping 'entirely' is harmless compression that does not change the claim's meaning."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "8.3.2"
+   ],
+   "claim_text": "If their path is sound and different, you now have two independent lines of support: genuine corroboration.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration.",
+   "reasoning": "Conditional and its consequence match SOURCE directly."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "8.3.3"
+   ],
+   "claim_text": "If their path is broken, their agreement is evidence against your confidence in a strange way: the conclusion is reachable by bad reasoning.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning",
+   "reasoning": "Condition, direction of evidence, and explanation all match SOURCE."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "8.3.4"
+   ],
+   "claim_text": "It also means your own arrival needs at least a recheck, and the person sharing your conclusion is not necessarily your ally.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally!",
+   "reasoning": "Both consequences preserved, including 'at least a recheck' and 'not necessarily your ally'."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8.3.5"
+   ],
+   "claim_text": "Agreement without shared reasoning is coincidence wearing the costume of confirmation.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Agreement without shared reasoning is coincidence wearing the costume of confirmation.",
+   "reasoning": "Verbatim quote from SOURCE."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "This breaks in influencer dynamics: deference to a Tao-tier figure is conclusion-adoption with the reasoning step amputated.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is exactly the mechanism that breaks in influencer dynamics. Deference to a Tao-tier figure is conclusion-adoption with the reasoning step amputated.",
+   "reasoning": "Both clauses are near-verbatim from SOURCE."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.4.1"
+   ],
+   "claim_text": "You inherit the belief without the justification and cannot detect when it would not survive your own scrutiny.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You inherit the belief without the justification, so you cannot detect when the justification would not survive your own scrutiny.",
+   "reasoning": "Negations 'without', 'cannot', and 'would not' all preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "8.4.2"
+   ],
+   "claim_text": "Scaled up, a community's beliefs correlate because everyone copied from the same node, not because reasoning converged.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "beliefs are correlated not because reasoning independently converged, but because everyone copied from the same node",
+   "reasoning": "Cause and the excluded alternative match SOURCE exactly."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "It looks like consensus, which we treat as strong evidence, but the effective sample size is one.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It looks like consensus, which we treat as strong evidence. The effective sample size is one.",
+   "reasoning": "Both sentences are verbatim from SOURCE."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "8.5.1"
+   ],
+   "claim_text": "Atiyah's last claim about proving the Riemann Hypothesis had all the authority yet did not stand up under harsh scrutiny.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Atiyah's last claim about proving the Riemann Hypothesis. He had all the authority in the mathematical community, but ... it didn't stand up.",
+   "reasoning": "Entity, claim subject, and outcome all match SOURCE, with negation retained."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "8.5.2"
+   ],
+   "claim_text": "One might say he wasn't even wrong.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "One might say he wasn't even wrong",
+   "reasoning": "Verbatim quote, hedge 'one might say' and negation preserved."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "8.5.3"
+   ],
+   "claim_text": "Imagine a million of these every day, on far less important topics, stacked into the body of AI-assisted mathematics.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Now imagine a million of these every day, on far less important topics, stacked on top of each other to form the body of mathematics done by AI with the help of humans.",
+   "reasoning": "Number 'a million', 'every day', and 'far less important' all match SOURCE."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "The attention economy manufactures hollow agreement: it propagates conclusions at high velocity while reasoning gets stripped in transit.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it is precisely what the attention economy manufactures: it propagates conclusions at high velocity while reasoning ... gets stripped in transit.",
+   "reasoning": "Mechanism and both parts of the process match SOURCE."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "claim_text": "An AI answer is the limit case of conclusion without process.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "And an AI answer is the limit case of conclusion without process.",
+   "reasoning": "Verbatim quote from SOURCE."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "8.7.1"
+   ],
+   "claim_text": "The fluent AI explanation is engineered to feel like the perspective-gaining moment without necessarily being one.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The fluent AI explanation is engineered to feel like that moment without necessarily being one.",
+   "reasoning": "Verbatim quote; qualifier 'without necessarily' retained."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "8.7.2"
+   ],
+   "claim_text": "The danger is not only students confusing exposure with ownership, though that is real.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The danger is not only that students confuse exposure with ownership, though that is real.",
+   "reasoning": "Scope marker 'not only' and concession 'though that is real' both preserved."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "8.7.3"
+   ],
+   "claim_text": "It is that everyone loses the practice of treating why as the real question and the conclusion as merely its byproduct.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It is that everyone loses the practice of treating \"why\" as the real question, and the conclusion as merely its byproduct.",
+   "reasoning": "Verbatim quote; all qualifiers retained."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "claim_text": "The author connects this to the tree falling in a jungle thought experiment.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "this also reminds me of the the thought experiment of a [tree falling in a jungle]",
+   "reasoning": "SOURCE explicitly links the discussion to the tree-in-a-jungle thought experiment."
+  }
+ ],
+ "metrics": {
+  "total_claims": 24,
+  "supported": 24,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

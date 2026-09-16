@@ -1,0 +1,28 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash, 2026-09-15",
+  "source_id": "point-hierarchy run (as provided in inputs)",
+  "inputs": {
+    "faithfulness_precision": 1.0,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.0286,
+    "trivia_rate": 0.0286
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4 * 1.0 (faithfulness_precision) + 0.4 * 1.0 (must_recall) - 0.2 * 0.0286 (redundancy_rate) = 0.4 + 0.4 - 0.00572 = 0.79428",
+  "weighted_score": 0.79428,
+  "verdict": "Pass",
+  "tradeoff_note": "All three aspect judges agree: 35/35 claims supported, 12/12 must-have points present, and redundancy is well under the 0.15 max, so no length-for-coverage tradeoff is needed. The only concision cost is one trivial restatement (C020) and one duplicate (C034), which are cosmetic rather than structural.",
+  "fix_list": [
+    "Merge C034 into C014 (it also near-duplicates C015), collapsing the three Kantianism/Humanism relation recaps into one canonical statement.",
+    "Drop C020 (trivia restatement of the 'Notes' Theme header); it carries no information beyond the section label."
+  ],
+  "reasoning": "Gate checks, in policy order. (1) Hard fails by critical errors: faithfulness reports critical_errors = 0, which is <= config.pass_gates.critical_contradicted_max = 0, so no critical fail. All 35 claims are classified supported with empty Non-Supported list, so there is no contradicted or partially_supported claim, and thus no quote re-read of SOURCE was required since the faithfulness and coverage judges do not conflict on any fact. (2) Faithfulness gate: faithfulness_precision = 1.0 >= config.pass_gates.faithfulness_precision_min = 0.95, pass with margin 0.05. (3) Coverage gate: must_recall = 1.0 >= config.pass_gates.must_recall_min = 0.9, pass with margin 0.10; must_have_present 12 of 12, must_have_partial 0, must_have_missing 0, and the Non-Present key points list is empty. overall_recall = 1.0 with 15 of 15 total_points present. (4) Concision is not a hard gate on its own, but redundancy_rate = 0.0286 is far below config.pass_gates.redundancy_max = 0.15, so the length cost is fully justified and no pruning is forced. The scored claim base is 35 with 33 unique, 1 duplicate (C034) and 1 trivia (C020); note that C034 is flagged as both duplicate of C014 and near-duplicate of C015, so the 1 duplicate count slightly understates the overlap cluster, but even treating the whole cluster as redundant the rate remains clearly under 0.15. tokens_per_unique_claim = 2.727 is not a gate and does not change the verdict. (5) Weighted score: 0.4*1.0 + 0.4*1.0 - 0.2*0.0286 = 0.79428, computed only because all gates passed, per the top_policy of ranking passes by weighted score. (6) Borderline check: the policy says to use Borderline when gates pass numerically but a Partial or Unverifiable claim affects a Must-have point. Here partially_supported = 0, unverifiable = 0, and all 12 must-have points are fully present, so there is no claim to name and Borderline is not warranted. Everything points to a clean Pass: the only residual work is the two-item prune list (C020, C034), which improves tokens without touching faithfulness or coverage. Verdict: Pass at weighted_score 0.79428."
+}

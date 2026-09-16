@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash 2026-09-15",
+  "source_id": "unspecified",
+  "inputs": {
+    "faithfulness_precision": 0.9804,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.1373,
+    "trivia_rate": 0.049
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4*0.9804 + 0.4*1.0 - 0.2*0.1373 = 0.39216 + 0.4 - 0.02746 = 0.76470",
+  "weighted_score": 0.7647,
+  "verdict": "Pass",
+  "tradeoff_note": "All gates clear: precision 0.9804 >= 0.95, must recall 1.0 >= 0.9, critical errors 0, redundancy 0.1373 <= 0.15. Full must-have coverage (14/14) earns its length cost because redundancy stays below max. The two Partial claims are Minor interpretations and are not tied to a Must-have point, so they do not trigger Borderline.",
+  "fix_list": [
+    "Restore the scope qualifier in C036: change 'naps are super rare' to 'afternoon naps are super rare' to match loglog 4.4.",
+    "Soften C047 from settled fact to hedge ('might have a condition') per loglog 4.15.",
+    "Merge the 14 duplicate pairs (C009/C010, C032/C039, C067/C065, C070/C075, C085/C084, C087/C020, C088/C039, C090/C021, C091/C072, C095/C072, C097/C069, C098/C084, C099/C029, C102/C094) to push redundancy further under the 0.15 cap.",
+    "Prune section-header/structural trivia C002, C017, C055, C077, C007."
+  ],
+  "reasoning": "Gate checks in order. (1) Hard fail on criticals: faithfulness critical_errors = 0, which is at or below critical_contradicted_max = 0, so no fail. (2) must_recall = 1.0 (14/14 must-have points present) >= must_recall_min = 0.9, pass. (3) faithfulness_precision = 0.9804 >= faithfulness_precision_min = 0.95, pass. (4) Concision gate redundancy_rate = 0.1373 <= redundancy_max = 0.15, pass; trivia_rate = 0.049 is low and not a hard gate. All gates pass, so the sample is not a Fail. Weighted score from config aspect_weights: 0.4*0.9804 + 0.4*1.0 - 0.2*0.1373 = 0.39216 + 0.4 - 0.02746 = 0.76470. Borderline check: gates pass on numbers, and the only non-supported claims are two Minor Partially-supported interpretations, C036 (loglog 4.4, drops the 'afternoon' scope on nap rarity) and C047 (loglog 4.15, converts 'might be a condition' into a settled 'had a condition'). Coverage shows must_have_partial = 0 and must_have_missing = 0, so neither partial maps to a Must-have point; per policy Borderline requires a Partial/Unverifiable claim affecting a Must-have point, which is absent. Verdict is Pass. Tradeoff: strong coverage (overall_recall 1.0) justifies the length because redundancy remains under the max, and concision does not need to rescue anything since no faithfulness gate is at risk. Fix leverage is dominated by closing the two Minor precision leaks and merging the 14 duplicate pairs to widen the redundancy margin."
+}

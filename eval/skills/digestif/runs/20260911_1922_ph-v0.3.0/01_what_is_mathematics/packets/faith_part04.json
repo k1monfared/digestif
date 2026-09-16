@@ -1,0 +1,451 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 4,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The middle where craft lives risks emptying like furniture and software middles.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "## What the craft becomes\n\nWhat does all of this do to the people who actually love doing math? Woodworking went through its own version of this in the last century, and the shape of what happened is instructive. CNC machines and high-throughput manufacturing changed furniture. Most furniture is now the Ikea kind, mass produced, cheap, replaceable. A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars. Woodworking did not disappear, and some things even cost less when made by humans than when bought. But in volume, what we have is the simplest functional things. There is not much room left for creativity, because not every neighborhood now has a carpenter building furniture for the people of that neighborhood. And the reason might not be just the need. It's that the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one."
+    },
+    {
+     "ref": "¶48",
+     "text": "Watch how people use AI to build software and you see the same shape: someone generates an app in minutes, discovers the real work is in the details, abandons it, and moves on. The volume of starts goes up, the number of finishes goes down, and the middle, where the craft lives, is the desert."
+    },
+    {
+     "ref": "¶49",
+     "text": "This is the same middle Tao was trying to protect. His punchline was that the bottleneck shifts to digestion: exposition, verification, canonicalization, the low-prestige work that is first to empty out. That is the creative carpenter's shop. If we let it empty out the way furniture's middle emptied, mathematics keeps producing results while losing the people who make them legible, checkable, and taught."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "CNC made most furniture cheap Ikea, some mid-scale local, some custom costing thousands.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "## What the craft becomes\n\nWhat does all of this do to the people who actually love doing math? Woodworking went through its own version of this in the last century, and the shape of what happened is instructive. CNC machines and high-throughput manufacturing changed furniture. Most furniture is now the Ikea kind, mass produced, cheap, replaceable. A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars. Woodworking did not disappear, and some things even cost less when made by humans than when bought. But in volume, what we have is the simplest functional things. There is not much room left for creativity, because not every neighborhood now has a carpenter building furniture for the people of that neighborhood. And the reason might not be just the need. It's that the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Neighborhood creative carpenter vanished; fixing cheap Ikea beats nobody buying new.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "## What the craft becomes\n\nWhat does all of this do to the people who actually love doing math? Woodworking went through its own version of this in the last century, and the shape of what happened is instructive. CNC machines and high-throughput manufacturing changed furniture. Most furniture is now the Ikea kind, mass produced, cheap, replaceable. A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars. Woodworking did not disappear, and some things even cost less when made by humans than when bought. But in volume, what we have is the simplest functional things. There is not much room left for creativity, because not every neighborhood now has a carpenter building furniture for the people of that neighborhood. And the reason might not be just the need. It's that the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "AI apps generate in minutes, stall in details, get abandoned; starts rise, finishes fall.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "Watch how people use AI to build software and you see the same shape: someone generates an app in minutes, discovers the real work is in the details, abandons it, and moves on. The volume of starts goes up, the number of finishes goes down, and the middle, where the craft lives, is the desert."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Digestion work is the carpenter shop; empty it and results lose legibility and teaching.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "This is the same middle Tao was trying to protect. His punchline was that the bottleneck shifts to digestion: exposition, verification, canonicalization, the low-prestige work that is first to empty out. That is the creative carpenter's shop. If we let it empty out the way furniture's middle emptied, mathematics keeps producing results while losing the people who make them legible, checkable, and taught."
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Agreement without shared reasoning is coincidence, not evidence.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "## Agreement is not evidence\n\nThere is an epistemology to all of this, and it is the part I think matters most, so let me slow down. The desert in the middle is not only about making a living. It is also about who you can trust to tell you what a result means."
+    },
+    {
+     "ref": "¶52",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    },
+    {
+     "ref": "¶54",
+     "text": "That is the epistemically hollow version of agreement, and it is precisely what the attention economy manufactures: it propagates conclusions at high velocity while reasoning, which is expensive to transmit and verify, gets stripped in transit."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Middle desert is also whom to trust on what results mean.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "## Agreement is not evidence\n\nThere is an epistemology to all of this, and it is the part I think matters most, so let me slow down. The desert in the middle is not only about making a living. It is also about who you can trust to tell you what a result means."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Author asks why agreers agree; divergent paths sometimes enlighten, sometimes void agreement.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "When someone agrees with me on a topic, I don't immediately buy their idea. I ask why. There have been plenty of times when their reasoning was very different from mine, and sometimes that difference gives me a new perspective, and sometimes it makes me disregard the agreement entirely. The decision was never the end goal, the way it is sometimes portrayed. The process of reaching it was."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Same conclusion by different reasoning differs epistemically; delta holds the information.",
+   "evidence": [
+    {
+     "ref": "¶52",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Sound distinct path corroborates doubly; broken path warns your arrival needs recheck.",
+   "evidence": [
+    {
+     "ref": "¶52",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Tao-tier deference amputates reasoning; copies correlate, mimicking consensus with sample size one.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "This is exactly the mechanism that breaks in influencer dynamics. Deference to a Tao-tier figure is conclusion-adoption with the reasoning step amputated. You inherit the belief without the justification, so you cannot detect when the justification would not survive your own scrutiny. Scale it up and you get a community whose beliefs are correlated not because reasoning independently converged, but because everyone copied from the same node. It looks like consensus, which we treat as strong evidence. The effective sample size is one. This also reminds me of Atiyah's last claim about proving the Riemann Hypothesis. He had all the authority in the mathematical community, but the consequences of the claim were so big that it was put under harsh scrutiny, and it didn't stand up. One might say he [wasn't even wrong](https://k1monfared.com/notes/blog/20250312-not-even-wrong/). Now imagine a million of these every day, on far less important topics, stacked on top of each other to form the body of mathematics done by AI with the help of humans."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "example",
+   "attribution": "author",
+   "text": "Atiyah Riemann claim failed harsh scrutiny despite authority; imagine a million daily lesser claims.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "This is exactly the mechanism that breaks in influencer dynamics. Deference to a Tao-tier figure is conclusion-adoption with the reasoning step amputated. You inherit the belief without the justification, so you cannot detect when the justification would not survive your own scrutiny. Scale it up and you get a community whose beliefs are correlated not because reasoning independently converged, but because everyone copied from the same node. It looks like consensus, which we treat as strong evidence. The effective sample size is one. This also reminds me of Atiyah's last claim about proving the Riemann Hypothesis. He had all the authority in the mathematical community, but the consequences of the claim were so big that it was put under harsh scrutiny, and it didn't stand up. One might say he [wasn't even wrong](https://k1monfared.com/notes/blog/20250312-not-even-wrong/). Now imagine a million of these every day, on far less important topics, stacked on top of each other to form the body of mathematics done by AI with the help of humans."
+    }
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Attention economy spreads conclusions fast while expensive reasoning is stripped in transit.",
+   "evidence": [
+    {
+     "ref": "¶54",
+     "text": "That is the epistemically hollow version of agreement, and it is precisely what the attention economy manufactures: it propagates conclusions at high velocity while reasoning, which is expensive to transmit and verify, gets stripped in transit."
+    }
+   ]
+  },
+  {
+   "id": "8.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "AI answers are conclusions without process; fluent feel need not be perspective gain.",
+   "evidence": [
+    {
+     "ref": "¶55",
+     "text": "And an AI answer is the limit case of conclusion without process. When you ask a person why, sometimes the answer reveals their reasoning was different from yours, and that is the perspective-gaining moment. The fluent AI explanation is engineered to feel like that moment without necessarily being one. The danger is not only that students confuse exposure with ownership, though that is real. It is that everyone loses the practice of treating \"why\" as the real question, and the conclusion as merely its byproduct."
+    }
+   ]
+  },
+  {
+   "id": "8.9",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Risk is losing why as the question, keeping conclusions as mere byproducts.",
+   "evidence": [
+    {
+     "ref": "¶55",
+     "text": "And an AI answer is the limit case of conclusion without process. When you ask a person why, sometimes the answer reveals their reasoning was different from yours, and that is the perspective-gaining moment. The fluent AI explanation is engineered to feel like that moment without necessarily being one. The danger is not only that students confuse exposure with ownership, though that is real. It is that everyone loses the practice of treating \"why\" as the real question, and the conclusion as merely its byproduct."
+    }
+   ]
+  },
+  {
+   "id": "8.10",
+   "type": "example",
+   "attribution": "author",
+   "text": "Related thought experiment: tree falling unheard in a jungle.",
+   "evidence": [
+    {
+     "ref": "¶56",
+     "text": "Somewhat relatedly, this also reminds me of the the thought experiment of a [tree falling in a jungle](https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest_and_no_one_is_around_to_hear_it%2C_does_it_make_a_sound%3F)"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Math was finding plus proving; automation shifts weight to deciding what matters.",
+   "evidence": [
+    {
+     "ref": "¶57",
+     "text": "## So what is mathematics\n\nCorrectness was never the binding constraint on what mathematicians actually do. It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation. And importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle between them, shaped by careers, incentives, taste, and luck, whether we admit it or not. Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns."
+    },
+    {
+     "ref": "¶59",
+     "text": "So the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them. The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human. I am not claiming mathematics was always mostly the finding. I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    },
+    {
+     "ref": "¶60",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it. When proving gets automated, the finding, the judgment, the taste become visible in a way they never were before, because they are now the only parts that can't be generated on demand. And what is revealed has to land somewhere. Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy, and the deciding gets made by whoever holds attention, or whoever owns the compute it runs on. The community can try to keep hold of the deciding before it leaves their hands, but it was never fully theirs to begin with: a lot of what the field chose to work on was steered from outside, by physics and by what was useful elsewhere, and that steering at least answered to results, while what replaces it answers to engagement. I do not know which way it lands, and that is the point: it is not decided yet."
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Correctness was the floor; importance deciding attention, depth, teaching was the constraint.",
+   "evidence": [
+    {
+     "ref": "¶57",
+     "text": "## So what is mathematics\n\nCorrectness was never the binding constraint on what mathematicians actually do. It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation. And importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle between them, shaped by careers, incentives, taste, and luck, whether we admit it or not. Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Importance is partly social within checkability floor and structural ceiling; confession hard for a mathematician.",
+   "evidence": [
+    {
+     "ref": "¶57",
+     "text": "## So what is mathematics\n\nCorrectness was never the binding constraint on what mathematicians actually do. It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation. And importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle between them, shaped by careers, incentives, taste, and luck, whether we admit it or not. Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Some publish anything provable; grants chase big problems, then publish detours.",
+   "evidence": [
+    {
+     "ref": "¶58",
+     "text": "I know of mathematicians who will publish anything they can prove. In fact much of science works that way. A scientist writes a grant proposal for a big important problem, gets funded, works for years, has nothing to show, then publishes whatever detour they ended up on, and the big problem quietly stays unsolved."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proving, the checking chore, got cheap; finding, deciding worth, stays human.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "So the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them. The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human. I am not claiming mathematics was always mostly the finding. I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Mix is speculatively shifting toward deciding values; software already split love versus attention.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "So the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them. The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human. I am not claiming mathematics was always mostly the finding. I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Deciding was never counted or paid, holding no professional home.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it. When proving gets automated, the finding, the judgment, the taste become visible in a way they never were before, because they are now the only parts that can't be generated on demand. And what is revealed has to land somewhere. Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy, and the deciding gets made by whoever holds attention, or whoever owns the compute it runs on. The community can try to keep hold of the deciding before it leaves their hands, but it was never fully theirs to begin with: a lot of what the field chose to work on was steered from outside, by physics and by what was useful elsewhere, and that steering at least answered to results, while what replaces it answers to engagement. I do not know which way it lands, and that is the point: it is not decided yet."
+    }
+   ]
+  },
+  {
+   "id": "9.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "AI reveals rather than replaces practice; judgment becomes visible as the ungeneratable remainder.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it. When proving gets automated, the finding, the judgment, the taste become visible in a way they never were before, because they are now the only parts that can't be generated on demand. And what is revealed has to land somewhere. Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy, and the deciding gets made by whoever holds attention, or whoever owns the compute it runs on. The community can try to keep hold of the deciding before it leaves their hands, but it was never fully theirs to begin with: a lot of what the field chose to work on was steered from outside, by physics and by what was useful elsewhere, and that steering at least answered to results, while what replaces it answers to engagement. I do not know which way it lands, and that is the point: it is not decided yet."
+    }
+   ]
+  },
+  {
+   "id": "9.8",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Fate undecided: loved fun, influencer attention, or compute ownership; outside physics steering answered to results.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it. When proving gets automated, the finding, the judgment, the taste become visible in a way they never were before, because they are now the only parts that can't be generated on demand. And what is revealed has to land somewhere. Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy, and the deciding gets made by whoever holds attention, or whoever owns the compute it runs on. The community can try to keep hold of the deciding before it leaves their hands, but it was never fully theirs to begin with: a lot of what the field chose to work on was steered from outside, by physics and by what was useful elsewhere, and that steering at least answered to results, while what replaces it answers to engagement. I do not know which way it lands, and that is the point: it is not decided yet."
+    }
+   ]
+  },
+  {
+   "id": "9.9",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Statistics precedent: cheap arithmetic moved identity to question design; Halmos made exposition prestigious.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "There is a precedent for landing well. Statistics went through the same turn when arithmetic got cheap: the calculation became a tool, the field's identity shifted from computing to designing the questions, and deciding which questions matter became the discipline itself. And prestige is assignable, the Halmos lesson: the community made a man famous for exposition, so the middle can be revalued if it wants to be."
+    }
+   ]
+  },
+  {
+   "id": "9.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Craft need not die yet loses living; question is whether paid creative middle survives.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "The woodworking story is the same story told in furniture. The craft doesn't die. It stops being how people make a living, and the neighborhood carpenter disappears. The question isn't whether anyone still makes things by hand. The question is whether the craft still has a middle, whether the creative carpenter still has a way to be paid for being creative."
+    }
+   ]
+  },
+  {
+   "id": "9.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Thinking is what we are for; math practices it publicly with checkable stakes.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "There is also the thing that outlasts all of it, the thing the airport ad got backwards. Thinking is what we are for. If we outsource it, there is little else we are good for. Mathematics has been, for centuries, one of the main places we practice thinking in public, with the stakes visible and the errors checkable. The question was never whether machines can do math. They can, and they will do more of it. The question is whether we keep doing the part that was always the point: framing the problem, judging what matters, and actually coming to understand. The struggle is the product. The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  },
+  {
+   "id": "9.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proof is the gym: unlike the sport, unloved, yet quitting ends performance.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "There is also the thing that outlasts all of it, the thing the airport ad got backwards. Thinking is what we are for. If we outsource it, there is little else we are good for. Mathematics has been, for centuries, one of the main places we practice thinking in public, with the stakes visible and the errors checkable. The question was never whether machines can do math. They can, and they will do more of it. The question is whether we keep doing the part that was always the point: framing the problem, judging what matters, and actually coming to understand. The struggle is the product. The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  },
+  {
+   "id": "9.13",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Coach keeps taste without lifting; robot athletes plus human coach risk judgment floating free.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "There is also the thing that outlasts all of it, the thing the airport ad got backwards. Thinking is what we are for. If we outsource it, there is little else we are good for. Mathematics has been, for centuries, one of the main places we practice thinking in public, with the stakes visible and the errors checkable. The question was never whether machines can do math. They can, and they will do more of it. The question is whether we keep doing the part that was always the point: framing the problem, judging what matters, and actually coming to understand. The struggle is the product. The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  },
+  {
+   "id": "9.14",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "First Proof collects unpublished problems, picks ten, allows one attempt each, grades blind.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "## Appendix\n\n\\* [First Proof](https://1stproof.org/) is an independent group of mathematicians trying to answer a concrete question: how good are AI systems at research mathematics? Their method is essentially a standardized test. They collect unpublished research problems from mathematicians across fields, pick ten for each batch, hand them to the leading AI systems to solve with one attempt each, then have human referees grade the solutions blind. The second batch ran in late May 2026, against four leading AI systems. Seven of the ten problems were solved at publication quality by at least one team, at a compute cost of ten to a thousand dollars per problem. The step they could not automate was the choosing, and it did its work before any model ran: which ten problems deserve the batch's compute is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "9.15",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Second batch late May 2026: four systems, seven of ten at publication quality, ten to thousand dollars each.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "## Appendix\n\n\\* [First Proof](https://1stproof.org/) is an independent group of mathematicians trying to answer a concrete question: how good are AI systems at research mathematics? Their method is essentially a standardized test. They collect unpublished research problems from mathematicians across fields, pick ten for each batch, hand them to the leading AI systems to solve with one attempt each, then have human referees grade the solutions blind. The second batch ran in late May 2026, against four leading AI systems. Seven of the ten problems were solved at publication quality by at least one team, at a compute cost of ten to a thousand dollars per problem. The step they could not automate was the choosing, and it did its work before any model ran: which ten problems deserve the batch's compute is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "9.16",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "GPT-5.2 Pro plus Aristotle gave machine-checked Lean #728, translated by Sothanaphan, marked proved.",
+   "evidence": [
+    {
+     "ref": "¶65",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  },
+  {
+   "id": "9.17",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "May 2026 model built infinite families with at least n^1+eps versus n^1+o(1), via algebraic number theory.",
+   "evidence": [
+    {
+     "ref": "¶65",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  },
+  {
+   "id": "9.18",
+   "type": "nuance",
+   "attribution": "reported",
+   "text": "Alon, Bloom, Gowers and others digested that disproof for the community.",
+   "evidence": [
+    {
+     "ref": "¶65",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  }
+ ]
+}

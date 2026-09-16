@@ -1,0 +1,241 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "05_manufacturing_taste",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "Central thesis: the classical music canon is manufactured by money, luck, and exposure rather than pure quality, and our very sense of 'good taste' was manufactured along with it (the canon is one of many equally valid possible canons).",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L002",
+        "L114",
+        "L118",
+        "L120"
+      ],
+      "evidence_quote": "Our taste was manufactured along with the canon: we like what we were taught to like. (L118)",
+      "reasoning": "The summary (L002) states quality only loosely filters canon success and taste is contingent; L114 states the canon is one of hundreds of equally valid ones; L118-L120 state taste was manufactured and the chain from funding to beauty is contingent. Thesis fully captured with qualifiers intact."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "The scale of forgotten composers: 200 to 500 active composers in 18th-century Vienna alone; IMSLP catalogs over 3,400 Classical-era composers who survived in some form; Wikipedia lists several hundred; we remember fewer than 20.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L005",
+        "L006"
+      ],
+      "evidence_quote": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time. (L005) ... IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred ... we remember fewer than 20. (L006)",
+      "reasoning": "All four numbers (200-500, 3,400, several hundred, fewer than 20) preserved exactly with no dropped qualifiers."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "Since history cannot be replayed with different initial conditions, the author built a simulation of how cultural markets work and ran it thousands of times to test whether the remembered composers were actually the best or merely well-positioned.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L003",
+        "L009",
+        "L010",
+        "L042"
+      ],
+      "evidence_quote": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times. (L009)",
+      "reasoning": "L003 frames best vs best-positioned, L009 gives the counterfactual-replay rationale and thousands of runs, L010 notes the simulation and write-up, L042 confirms thousands of runs. Fully captured."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "Three competing hypotheses: Story 1 'The Cream Rises' (quality wins over time), Story 2 'Money Writes History' (success is mostly who gets heard first, quality nearly irrelevant), Story 3 'Floors and Ceilings' (quality sets a floor and ceiling, but the vast middle is dominated by luck, money, and timing). Story 3 is the conclusion.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L011",
+        "L012",
+        "L014",
+        "L017",
+        "L020",
+        "L081"
+      ],
+      "evidence_quote": "Story 3 (Floors and Ceilings): both stories are partly right. (L017) ... For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers. (L020) ... Story 3 wins. (L081)",
+      "reasoning": "All three hypotheses are stated with their labels and defining content, and L081 explicitly declares Story 3 the conclusion. Numbers/qualifiers intact."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "Three well-documented mechanisms are combined: the mere exposure effect, social influence, and cumulative advantage (the Matthew Effect, named by sociologist Robert Merton).",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L024",
+        "L025",
+        "L033",
+        "L037"
+      ],
+      "evidence_quote": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified. (L024) ... Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect. (L037)",
+      "reasoning": "All three mechanisms are named and Merton's attribution is preserved. The novel-combination framing (L024, L041) matches the point."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "Mere exposure effect details: demonstrated by Zajonc in 1968 and confirmed by Bornstein's 1989 meta-analysis of 208 experiments with average effect size r = 0.26; peaks at moderate exposure and reverses with overexposure.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L028",
+        "L029",
+        "L030"
+      ],
+      "evidence_quote": "Zajonc demonstrated the effect in 1968. (L028) ... Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. (L029) ... The effect peaks at moderate exposure and reverses with overexposure. (L030)",
+      "reasoning": "Names, years, 208 experiments, r = 0.26, and the moderate/overexposure qualifier are all present verbatim."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "Salganik MusicLab experiment (2006): 14,341 participants judged 48 unknown songs; some saw download counts and others did not, and the same song could rank 1st or 40th in different worlds purely from random early download differences.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L035",
+        "L036"
+      ],
+      "evidence_quote": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not. (L035) ... The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads. (L036)",
+      "reasoning": "Year, participant count, song count, condition, and the rank-1-vs-40 result are all intact."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "Model setup: three agent types (producers, consumers, gatekeepers); each producer gets a quality score and an independently drawn capital score (quality and capital uncorrelated); 1,000 producers and 10,000 consumers per run, about two minutes each, parallelized with 360+ runs per condition and formal power analysis.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L043",
+        "L044",
+        "L047",
+        "L048"
+      ],
+      "evidence_quote": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently. (L043) ... Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores. (L047) ... 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes. (L048)",
+      "reasoning": "Agent types, independent draw, 1,000/10,000, two minutes, parallelization, 360+ runs, and power analysis all present."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "Social influence weakens the quality-success link: with visible consumption the quality-commercial-success correlation drops significantly (p < 0.0001 across 360 runs per condition); a mediocre work lucky early can ride social proof to stardom.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L049",
+        "L050",
+        "L051",
+        "L053"
+      ],
+      "evidence_quote": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition). (L050) ... A mediocre work that gets lucky early can ride social proof to stardom. (L053)",
+      "reasoning": "Direction, p-value, run count, and the lucky-mediocre-work mechanism are all captured, including the no-visibility contrast at L051."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "Counterfactual experiment: holding every composer's talent constant and reshuffling only resources over 200 runs produced a counterfactual distance of 0.88 on a 0-to-1 scale; only the top 10% of talent had a meaningful shot (~1 in 4), and the 50th to 90th percentile faced fame as essentially a lottery.",
+      "weight": "Must have",
+      "presence": "Partial",
+      "loglog_ids": [
+        "L057",
+        "L058",
+        "L059",
+        "L060"
+      ],
+      "evidence_quote": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones. (L058) ... Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four. (L059) ... 50th to 90th percentile of quality, canonical status was effectively a lottery. (L060)",
+      "reasoning": "The core numbers (0.88, top 10%, ~1 in 4, 50th-90th lottery) and the talent-constant/reshuffle setup are fully present. However, the stated run count of 200 for this specific experiment is omitted; L047-L048 give run counts only for the main experiments generally. Because this is a Must have point with a dropped number, per the strict rule it is capped at Partial even though the substance is intact."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "Four-condition comparison of quality-canon correlation: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46; equalizing resources raises the correlation 44%, showing unequal initial exposure (capital gating access) is the bigger distortion than herd behavior.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L064",
+        "L065",
+        "L066"
+      ],
+      "evidence_quote": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46. (L064) ... Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%. (L065)",
+      "reasoning": "All four correlation values and the 44% figure are exact; the conclusion that limited exposure dominates herd behavior is stated at L066."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "18th-century Vienna stylized model (300 composers, few wealthy patrons, strong word-of-mouth, no recording): counterfactual distance 0.97, near maximum, with only 2.5% of canonical composers shared between alternate histories.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L069",
+        "L070"
+      ],
+      "evidence_quote": "A stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology. (L069) ... Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories. (L070)",
+      "reasoning": "All setup parameters (300 composers, patrons, word-of-mouth, no recording) and both outcome numbers (0.97, 2.5%) preserved with the 'near maximum' qualifier."
+    },
+    {
+      "point_id": "K13",
+      "point_text": "Robustness: varying every parameter by ±50% shows the single most important factor is how steeply money converts into attention (convex relationship makes the rich get richer and quality barely matter, concave leaves more room for quality).",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L075",
+        "L076",
+        "L077",
+        "L078"
+      ],
+      "evidence_quote": "The results held with every parameter varied by ±50%. (L075) ... The single most important factor is how steeply money converts into attention. (L076) ... If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters. (L077) ... If doubling a budget less than doubles the audience, quality has more room to breathe. (L078)",
+      "reasoning": "The ±50% robustness, the key factor, and both the convex and concave branches are captured with correct meaning."
+    },
+    {
+      "point_id": "K14",
+      "point_text": "Highest-leverage intervention is wider exposure, not better judgment: blind auditions in major US orchestras (adopted 1970s-80s) raised the proportion of women hired from 5% to 25%, proving the talent was there and the barrier was exposure.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L088",
+        "L089",
+        "L090",
+        "L091"
+      ],
+      "evidence_quote": "The highest-leverage intervention is not better judgment, it is wider exposure. (L088) ... Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%. (L090) ... The talent was always there; the barrier was exposure. (L091)",
+      "reasoning": "Recommendation, decade of adoption, 5% to 25%, and the interpretation are all intact."
+    },
+    {
+      "point_id": "K15",
+      "point_text": "Caveats: the model assumes quality is a real, stable property independent of who hears it (philosophically debatable); calibration comes from the Salganik study of American teenagers judging pop songs over weeks, so generalizing to 18th-century aristocrats over decades is a leap; and the model omits genre formation, critical discourse, technological change, and cultural politics.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L095",
+        "L096",
+        "L097",
+        "L099",
+        "L100"
+      ],
+      "evidence_quote": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable. (L095) ... The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith. (L097) ... The model omits genre formation, critical discourse, technological change, and cultural politics. (L099)",
+      "reasoning": "All three caveats are present with the debatable assumption, the calibration leap (teenagers/weeks vs aristocrats/decades), and the full list of omitted factors."
+    },
+    {
+      "point_id": "K16",
+      "point_text": "Answer to the Bach-Bieber question: the Bieber analogy gets the mechanism right but the quality floor wrong; Bach was both excellent and well-positioned, the 'AND' does most of the work, and there were probably 20 to 50 equally great contemporaries whose names we will never know. The mechanisms are stronger today because algorithmic feedback loops operate in hours rather than decades.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L101",
+        "L102",
+        "L104",
+        "L105",
+        "L113",
+        "L085",
+        "L086"
+      ],
+      "evidence_quote": "Bach was excellent AND well-positioned, and the second half of that conjunction matters more than the first. (L101) ... The Bieber analogy gets the mechanism right but the quality floor wrong. (L102) ... There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know. (L113) ... An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours. (L086)",
+      "reasoning": "All components present: the analogy's correctness/error, the excellent-AND-positioned framing, the 20-50 contemporaries, and the stronger-today argument with the hours-vs-decades contrast."
+    }
+  ],
+  "metrics": {
+    "total_points": 16,
+    "must_have_total": 16,
+    "must_have_present": 15,
+    "must_have_partial": 1,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 0.9688,
+    "overall_recall": 0.9688
+  },
+  "missing_list": []
+}

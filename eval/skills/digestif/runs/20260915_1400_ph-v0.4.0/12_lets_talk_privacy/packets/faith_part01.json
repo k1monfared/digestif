@@ -1,0 +1,375 @@
+{
+ "sample": "12_lets_talk_privacy",
+ "part": 1,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "E2EE trust varies by architecture: WhatsApp mediates keys, Proton stores password-encrypted keys, Signal never holds them, and plaintext password storage stays unverifiable.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "---\ntags: privacy, computer science\n---\n# Let's Talk Privacy"
+    },
+    {
+     "ref": "¶3",
+     "text": "## What Does \"End-to-End Encryption\" Really Mean?\nWhen a company talks about \"end-to-end encryption\" (E2EE) they could mean several things in practical terms. The fact that data is encrypted \"on sender's device\" and then decrypted \"on receiver's device\" without it ever being decrypted along the way is in fact the definition of it. But we need to remember what is the purpose of this. If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough. But usually that is not the main purpose when people need/want E2EE. In general one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\". That is if you're using WhatsApp, you don't want Facebook as a company to have access to the content of your messages. They still have a lot of information they can use to interpret things, e.g. they know your network, the frequency and amount of communication, times of communication etc. Any ways, the real question is that in theory, and in practice, can Facebook access the content of your WhatsApp messages or not."
+    },
+    {
+     "ref": "¶43",
+     "text": "## Bottom Line\nFor most commercial services, you're trusting their reputation, jurisdiction, business model, and past behavior rather than cryptographically verifiable guarantees. Security-conscious people prefer client-side encryption, open-source everything, decentralized systems that minimize trust, and hardware security keys (like YubiKey) that never expose the secret.\n---"
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "End-to-end encryption can mean several things in practice, and the real question is whether the provider can access your data.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "## What Does \"End-to-End Encryption\" Really Mean?\nWhen a company talks about \"end-to-end encryption\" (E2EE) they could mean several things in practical terms. The fact that data is encrypted \"on sender's device\" and then decrypted \"on receiver's device\" without it ever being decrypted along the way is in fact the definition of it. But we need to remember what is the purpose of this. If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough. But usually that is not the main purpose when people need/want E2EE. In general one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\". That is if you're using WhatsApp, you don't want Facebook as a company to have access to the content of your messages. They still have a lot of information they can use to interpret things, e.g. they know your network, the frequency and amount of communication, times of communication etc. Any ways, the real question is that in theory, and in practice, can Facebook access the content of your WhatsApp messages or not."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The author is not a security expert and writes this as an attempt to understand privacy as an end user.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "[This came out of a conversation with Omid. DISCLAIMER: I'm not a security expert and most of how these things work are out of my ballpark. This is an attempt to understand this as an end user.]"
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Encrypting on the sender's device and decrypting on the receiver's device without decryption along the way is the definition of E2EE.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "## What Does \"End-to-End Encryption\" Really Mean?\nWhen a company talks about \"end-to-end encryption\" (E2EE) they could mean several things in practical terms. The fact that data is encrypted \"on sender's device\" and then decrypted \"on receiver's device\" without it ever being decrypted along the way is in fact the definition of it. But we need to remember what is the purpose of this. If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough. But usually that is not the main purpose when people need/want E2EE. In general one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\". That is if you're using WhatsApp, you don't want Facebook as a company to have access to the content of your messages. They still have a lot of information they can use to interpret things, e.g. they know your network, the frequency and amount of communication, times of communication etc. Any ways, the real question is that in theory, and in practice, can Facebook access the content of your WhatsApp messages or not."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If the purpose is only to defeat a man-in-the-middle attack, most implementations should be good enough.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "## What Does \"End-to-End Encryption\" Really Mean?\nWhen a company talks about \"end-to-end encryption\" (E2EE) they could mean several things in practical terms. The fact that data is encrypted \"on sender's device\" and then decrypted \"on receiver's device\" without it ever being decrypted along the way is in fact the definition of it. But we need to remember what is the purpose of this. If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough. But usually that is not the main purpose when people need/want E2EE. In general one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\". That is if you're using WhatsApp, you don't want Facebook as a company to have access to the content of your messages. They still have a lot of information they can use to interpret things, e.g. they know your network, the frequency and amount of communication, times of communication etc. Any ways, the real question is that in theory, and in practice, can Facebook access the content of your WhatsApp messages or not."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Usually the purpose is that no one, and in particular the provider, can access the data.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "## What Does \"End-to-End Encryption\" Really Mean?\nWhen a company talks about \"end-to-end encryption\" (E2EE) they could mean several things in practical terms. The fact that data is encrypted \"on sender's device\" and then decrypted \"on receiver's device\" without it ever being decrypted along the way is in fact the definition of it. But we need to remember what is the purpose of this. If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough. But usually that is not the main purpose when people need/want E2EE. In general one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\". That is if you're using WhatsApp, you don't want Facebook as a company to have access to the content of your messages. They still have a lot of information they can use to interpret things, e.g. they know your network, the frequency and amount of communication, times of communication etc. Any ways, the real question is that in theory, and in practice, can Facebook access the content of your WhatsApp messages or not."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "example",
+   "attribution": "author",
+   "text": "With WhatsApp, you do not want Facebook to access message content, though it still knows your network, communication frequency, amount, and times.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "## What Does \"End-to-End Encryption\" Really Mean?\nWhen a company talks about \"end-to-end encryption\" (E2EE) they could mean several things in practical terms. The fact that data is encrypted \"on sender's device\" and then decrypted \"on receiver's device\" without it ever being decrypted along the way is in fact the definition of it. But we need to remember what is the purpose of this. If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough. But usually that is not the main purpose when people need/want E2EE. In general one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\". That is if you're using WhatsApp, you don't want Facebook as a company to have access to the content of your messages. They still have a lot of information they can use to interpret things, e.g. they know your network, the frequency and amount of communication, times of communication etc. Any ways, the real question is that in theory, and in practice, can Facebook access the content of your WhatsApp messages or not."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The real question is whether Facebook can access the content of your WhatsApp messages in theory and in practice.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "## What Does \"End-to-End Encryption\" Really Mean?\nWhen a company talks about \"end-to-end encryption\" (E2EE) they could mean several things in practical terms. The fact that data is encrypted \"on sender's device\" and then decrypted \"on receiver's device\" without it ever being decrypted along the way is in fact the definition of it. But we need to remember what is the purpose of this. If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough. But usually that is not the main purpose when people need/want E2EE. In general one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\". That is if you're using WhatsApp, you don't want Facebook as a company to have access to the content of your messages. They still have a lot of information they can use to interpret things, e.g. they know your network, the frequency and amount of communication, times of communication etc. Any ways, the real question is that in theory, and in practice, can Facebook access the content of your WhatsApp messages or not."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "WhatsApp's answer is not completely clear: it depends on unverifiable implementation claims.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The answer is not completely clear. In short, if they have implemented the things in the way they \"claim\" they have, and if they haven't implemented other backdoors that they have kept secret, then yes, they \"can't\" access that data. But we won't really know because the app is not open source, and hence not really auditable. The external audits and tests will lack any certainty in the \"negative\" direction. That is, they can never claim it can't access those data. In reality, when you think about what the company's business is, their [2021 privacy policy changes](https://www.whatsapp.com/legal/privacy-policy) that allow sharing data with Facebook for [\"showing relevant offers and ads across the Meta Company Products\"](https://www.macrumors.com/2021/01/06/whatsapp-privacy-policy-data-sharing-facebook/), and [previous security failures like storing hundreds of millions of passwords in plaintext](https://about.fb.com/news/2019/03/keeping-passwords-secure/), you can almost be certain that they can, and they do access them."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If they implemented things as claimed and added no secret backdoors, then yes, they cannot access the data.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The answer is not completely clear. In short, if they have implemented the things in the way they \"claim\" they have, and if they haven't implemented other backdoors that they have kept secret, then yes, they \"can't\" access that data. But we won't really know because the app is not open source, and hence not really auditable. The external audits and tests will lack any certainty in the \"negative\" direction. That is, they can never claim it can't access those data. In reality, when you think about what the company's business is, their [2021 privacy policy changes](https://www.whatsapp.com/legal/privacy-policy) that allow sharing data with Facebook for [\"showing relevant offers and ads across the Meta Company Products\"](https://www.macrumors.com/2021/01/06/whatsapp-privacy-policy-data-sharing-facebook/), and [previous security failures like storing hundreds of millions of passwords in plaintext](https://about.fb.com/news/2019/03/keeping-passwords-secure/), you can almost be certain that they can, and they do access them."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "We will not really know, because the app is not open source and hence not really auditable.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The answer is not completely clear. In short, if they have implemented the things in the way they \"claim\" they have, and if they haven't implemented other backdoors that they have kept secret, then yes, they \"can't\" access that data. But we won't really know because the app is not open source, and hence not really auditable. The external audits and tests will lack any certainty in the \"negative\" direction. That is, they can never claim it can't access those data. In reality, when you think about what the company's business is, their [2021 privacy policy changes](https://www.whatsapp.com/legal/privacy-policy) that allow sharing data with Facebook for [\"showing relevant offers and ads across the Meta Company Products\"](https://www.macrumors.com/2021/01/06/whatsapp-privacy-policy-data-sharing-facebook/), and [previous security failures like storing hundreds of millions of passwords in plaintext](https://about.fb.com/news/2019/03/keeping-passwords-secure/), you can almost be certain that they can, and they do access them."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "External audits and tests lack certainty in the negative direction: they can never claim it cannot access the data.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The answer is not completely clear. In short, if they have implemented the things in the way they \"claim\" they have, and if they haven't implemented other backdoors that they have kept secret, then yes, they \"can't\" access that data. But we won't really know because the app is not open source, and hence not really auditable. The external audits and tests will lack any certainty in the \"negative\" direction. That is, they can never claim it can't access those data. In reality, when you think about what the company's business is, their [2021 privacy policy changes](https://www.whatsapp.com/legal/privacy-policy) that allow sharing data with Facebook for [\"showing relevant offers and ads across the Meta Company Products\"](https://www.macrumors.com/2021/01/06/whatsapp-privacy-policy-data-sharing-facebook/), and [previous security failures like storing hundreds of millions of passwords in plaintext](https://about.fb.com/news/2019/03/keeping-passwords-secure/), you can almost be certain that they can, and they do access them."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The 2021 privacy policy changes allow sharing data with Facebook for relevant offers and ads across Meta company products.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The answer is not completely clear. In short, if they have implemented the things in the way they \"claim\" they have, and if they haven't implemented other backdoors that they have kept secret, then yes, they \"can't\" access that data. But we won't really know because the app is not open source, and hence not really auditable. The external audits and tests will lack any certainty in the \"negative\" direction. That is, they can never claim it can't access those data. In reality, when you think about what the company's business is, their [2021 privacy policy changes](https://www.whatsapp.com/legal/privacy-policy) that allow sharing data with Facebook for [\"showing relevant offers and ads across the Meta Company Products\"](https://www.macrumors.com/2021/01/06/whatsapp-privacy-policy-data-sharing-facebook/), and [previous security failures like storing hundreds of millions of passwords in plaintext](https://about.fb.com/news/2019/03/keeping-passwords-secure/), you can almost be certain that they can, and they do access them."
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Previous security failures include storing hundreds of millions of passwords in plaintext.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The answer is not completely clear. In short, if they have implemented the things in the way they \"claim\" they have, and if they haven't implemented other backdoors that they have kept secret, then yes, they \"can't\" access that data. But we won't really know because the app is not open source, and hence not really auditable. The external audits and tests will lack any certainty in the \"negative\" direction. That is, they can never claim it can't access those data. In reality, when you think about what the company's business is, their [2021 privacy policy changes](https://www.whatsapp.com/legal/privacy-policy) that allow sharing data with Facebook for [\"showing relevant offers and ads across the Meta Company Products\"](https://www.macrumors.com/2021/01/06/whatsapp-privacy-policy-data-sharing-facebook/), and [previous security failures like storing hundreds of millions of passwords in plaintext](https://about.fb.com/news/2019/03/keeping-passwords-secure/), you can almost be certain that they can, and they do access them."
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Given the company's business, you can almost be certain that they can, and do, access the messages.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The answer is not completely clear. In short, if they have implemented the things in the way they \"claim\" they have, and if they haven't implemented other backdoors that they have kept secret, then yes, they \"can't\" access that data. But we won't really know because the app is not open source, and hence not really auditable. The external audits and tests will lack any certainty in the \"negative\" direction. That is, they can never claim it can't access those data. In reality, when you think about what the company's business is, their [2021 privacy policy changes](https://www.whatsapp.com/legal/privacy-policy) that allow sharing data with Facebook for [\"showing relevant offers and ads across the Meta Company Products\"](https://www.macrumors.com/2021/01/06/whatsapp-privacy-policy-data-sharing-facebook/), and [previous security failures like storing hundreds of millions of passwords in plaintext](https://about.fb.com/news/2019/03/keeping-passwords-secure/), you can almost be certain that they can, and they do access them."
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A smoking gun is whether the platform or app can back up your data.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "### The Smoking Gun: Multi-Device Access Without Manual Key Transfer\nFor me, a smoking gun is whether the platform/app is able to \"backup\" your data. Whether you can access your history across devices without \"manually\" linking them somehow. I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it and can unlock it). Now, let's say you have master key on your phone for your WhatsApp (this is by default the case when you create an account the key is created and stored on your phone). Then you might go to another device and log-in again with the same credentials. In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages. This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device. Now, there are a lot of ways you could do this, but if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard. They can take the key and decrypt any/all of your messages whenever they want."
+    }
+   ]
+  },
+  {
+   "id": "2.7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It is whether you can access history across devices without manually linking them somehow.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "### The Smoking Gun: Multi-Device Access Without Manual Key Transfer\nFor me, a smoking gun is whether the platform/app is able to \"backup\" your data. Whether you can access your history across devices without \"manually\" linking them somehow. I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it and can unlock it). Now, let's say you have master key on your phone for your WhatsApp (this is by default the case when you create an account the key is created and stored on your phone). Then you might go to another device and log-in again with the same credentials. In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages. This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device. Now, there are a lot of ways you could do this, but if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard. They can take the key and decrypt any/all of your messages whenever they want."
+    }
+   ]
+  },
+  {
+   "id": "2.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Encryption is locking something with a key: one that only locks and that everyone has, and a master key only the receiver holds.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "### The Smoking Gun: Multi-Device Access Without Manual Key Transfer\nFor me, a smoking gun is whether the platform/app is able to \"backup\" your data. Whether you can access your history across devices without \"manually\" linking them somehow. I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it and can unlock it). Now, let's say you have master key on your phone for your WhatsApp (this is by default the case when you create an account the key is created and stored on your phone). Then you might go to another device and log-in again with the same credentials. In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages. This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device. Now, there are a lot of ways you could do this, but if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard. They can take the key and decrypt any/all of your messages whenever they want."
+    }
+   ]
+  },
+  {
+   "id": "2.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Your master key is created and stored on your phone by default when you create an account.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "### The Smoking Gun: Multi-Device Access Without Manual Key Transfer\nFor me, a smoking gun is whether the platform/app is able to \"backup\" your data. Whether you can access your history across devices without \"manually\" linking them somehow. I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it and can unlock it). Now, let's say you have master key on your phone for your WhatsApp (this is by default the case when you create an account the key is created and stored on your phone). Then you might go to another device and log-in again with the same credentials. In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages. This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device. Now, there are a lot of ways you could do this, but if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard. They can take the key and decrypt any/all of your messages whenever they want."
+    }
+   ]
+  },
+  {
+   "id": "2.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "In a simple implementation, another device should not have the same master key to decrypt past messages.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "### The Smoking Gun: Multi-Device Access Without Manual Key Transfer\nFor me, a smoking gun is whether the platform/app is able to \"backup\" your data. Whether you can access your history across devices without \"manually\" linking them somehow. I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it and can unlock it). Now, let's say you have master key on your phone for your WhatsApp (this is by default the case when you create an account the key is created and stored on your phone). Then you might go to another device and log-in again with the same credentials. In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages. This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device. Now, there are a lot of ways you could do this, but if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard. They can take the key and decrypt any/all of your messages whenever they want."
+    }
+   ]
+  },
+  {
+   "id": "2.10.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This is what happens in Signal, where you somehow copy the key from your original device to the new one.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "### The Smoking Gun: Multi-Device Access Without Manual Key Transfer\nFor me, a smoking gun is whether the platform/app is able to \"backup\" your data. Whether you can access your history across devices without \"manually\" linking them somehow. I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it and can unlock it). Now, let's say you have master key on your phone for your WhatsApp (this is by default the case when you create an account the key is created and stored on your phone). Then you might go to another device and log-in again with the same credentials. In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages. This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device. Now, there are a lot of ways you could do this, but if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard. They can take the key and decrypt any/all of your messages whenever they want."
+    }
+   ]
+  },
+  {
+   "id": "2.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If at any time Facebook has access to the key, the situation is compromised.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "### The Smoking Gun: Multi-Device Access Without Manual Key Transfer\nFor me, a smoking gun is whether the platform/app is able to \"backup\" your data. Whether you can access your history across devices without \"manually\" linking them somehow. I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it and can unlock it). Now, let's say you have master key on your phone for your WhatsApp (this is by default the case when you create an account the key is created and stored on your phone). Then you might go to another device and log-in again with the same credentials. In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages. This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device. Now, there are a lot of ways you could do this, but if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard. They can take the key and decrypt any/all of your messages whenever they want."
+    }
+   ]
+  },
+  {
+   "id": "2.11.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "It is as if you locked your door and left a copy at the local farmers market billboard.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "### The Smoking Gun: Multi-Device Access Without Manual Key Transfer\nFor me, a smoking gun is whether the platform/app is able to \"backup\" your data. Whether you can access your history across devices without \"manually\" linking them somehow. I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it and can unlock it). Now, let's say you have master key on your phone for your WhatsApp (this is by default the case when you create an account the key is created and stored on your phone). Then you might go to another device and log-in again with the same credentials. In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages. This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device. Now, there are a lot of ways you could do this, but if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard. They can take the key and decrypt any/all of your messages whenever they want."
+    }
+   ]
+  },
+  {
+   "id": "2.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "WhatsApp's official documentation says the server stores encrypted message history and maintains mappings between your account and your device identities.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "### How WhatsApp Actually Works\nSo what does WhatsApp do? According to their [official documentation](https://engineering.fb.com/2021/07/14/security/whatsapp-multi-device/), the server stores encrypted message history and maintains mappings between your account and all your device identities. When you add a new device, the server authenticates it and provides it with the keys needed to decrypt your message history. This is fundamentally different from Signal's approach - the server is a trusted intermediary that controls access to your encryption keys. While the keys themselves are encrypted, the server orchestrates who gets access to them. This means WhatsApp (Meta) *could* theoretically authenticate a \"device\" that isn't actually yours and give it access to decrypt your messages. Their claimed safeguards (device lists you can check, security codes you can verify) all depend on the server honestly reporting what devices exist - but since they control that server, they could simply hide a rogue device from your device list entirely."
+    }
+   ]
+  },
+  {
+   "id": "2.13",
+   "type": "claim",
+   "attribution": "author",
+   "text": "When you add a new device, the server authenticates it and provides the keys needed to decrypt your message history.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "### How WhatsApp Actually Works\nSo what does WhatsApp do? According to their [official documentation](https://engineering.fb.com/2021/07/14/security/whatsapp-multi-device/), the server stores encrypted message history and maintains mappings between your account and all your device identities. When you add a new device, the server authenticates it and provides it with the keys needed to decrypt your message history. This is fundamentally different from Signal's approach - the server is a trusted intermediary that controls access to your encryption keys. While the keys themselves are encrypted, the server orchestrates who gets access to them. This means WhatsApp (Meta) *could* theoretically authenticate a \"device\" that isn't actually yours and give it access to decrypt your messages. Their claimed safeguards (device lists you can check, security codes you can verify) all depend on the server honestly reporting what devices exist - but since they control that server, they could simply hide a rogue device from your device list entirely."
+    }
+   ]
+  },
+  {
+   "id": "2.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This is fundamentally different from Signal: the server is a trusted intermediary that controls access to your encryption keys.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "### How WhatsApp Actually Works\nSo what does WhatsApp do? According to their [official documentation](https://engineering.fb.com/2021/07/14/security/whatsapp-multi-device/), the server stores encrypted message history and maintains mappings between your account and all your device identities. When you add a new device, the server authenticates it and provides it with the keys needed to decrypt your message history. This is fundamentally different from Signal's approach - the server is a trusted intermediary that controls access to your encryption keys. While the keys themselves are encrypted, the server orchestrates who gets access to them. This means WhatsApp (Meta) *could* theoretically authenticate a \"device\" that isn't actually yours and give it access to decrypt your messages. Their claimed safeguards (device lists you can check, security codes you can verify) all depend on the server honestly reporting what devices exist - but since they control that server, they could simply hide a rogue device from your device list entirely."
+    }
+   ]
+  },
+  {
+   "id": "2.15",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Meta could theoretically authenticate a device that is not yours and give it access to decrypt your messages.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "### How WhatsApp Actually Works\nSo what does WhatsApp do? According to their [official documentation](https://engineering.fb.com/2021/07/14/security/whatsapp-multi-device/), the server stores encrypted message history and maintains mappings between your account and all your device identities. When you add a new device, the server authenticates it and provides it with the keys needed to decrypt your message history. This is fundamentally different from Signal's approach - the server is a trusted intermediary that controls access to your encryption keys. While the keys themselves are encrypted, the server orchestrates who gets access to them. This means WhatsApp (Meta) *could* theoretically authenticate a \"device\" that isn't actually yours and give it access to decrypt your messages. Their claimed safeguards (device lists you can check, security codes you can verify) all depend on the server honestly reporting what devices exist - but since they control that server, they could simply hide a rogue device from your device list entirely."
+    }
+   ]
+  },
+  {
+   "id": "2.15.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The claimed safeguards, device lists you can check and security codes you can verify, depend on the server accurately reporting what devices exist.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "### How WhatsApp Actually Works\nSo what does WhatsApp do? According to their [official documentation](https://engineering.fb.com/2021/07/14/security/whatsapp-multi-device/), the server stores encrypted message history and maintains mappings between your account and all your device identities. When you add a new device, the server authenticates it and provides it with the keys needed to decrypt your message history. This is fundamentally different from Signal's approach - the server is a trusted intermediary that controls access to your encryption keys. While the keys themselves are encrypted, the server orchestrates who gets access to them. This means WhatsApp (Meta) *could* theoretically authenticate a \"device\" that isn't actually yours and give it access to decrypt your messages. Their claimed safeguards (device lists you can check, security codes you can verify) all depend on the server honestly reporting what devices exist - but since they control that server, they could simply hide a rogue device from your device list entirely."
+    }
+   ]
+  },
+  {
+   "id": "2.15.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Since they control that server, they could simply hide a rogue device from your device list entirely.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "### How WhatsApp Actually Works\nSo what does WhatsApp do? According to their [official documentation](https://engineering.fb.com/2021/07/14/security/whatsapp-multi-device/), the server stores encrypted message history and maintains mappings between your account and all your device identities. When you add a new device, the server authenticates it and provides it with the keys needed to decrypt your message history. This is fundamentally different from Signal's approach - the server is a trusted intermediary that controls access to your encryption keys. While the keys themselves are encrypted, the server orchestrates who gets access to them. This means WhatsApp (Meta) *could* theoretically authenticate a \"device\" that isn't actually yours and give it access to decrypt your messages. Their claimed safeguards (device lists you can check, security codes you can verify) all depend on the server honestly reporting what devices exist - but since they control that server, they could simply hide a rogue device from your device list entirely."
+    }
+   ]
+  },
+  {
+   "id": "2.16",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The multi-device description comes from Meta's engineering post on how WhatsApp enables multi-device capability, from July 2021.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "## Sources\n### WhatsApp\n- [How WhatsApp enables multi-device capability](https://engineering.fb.com/2021/07/14/security/whatsapp-multi-device/) (Engineering at Meta, July 2021)"
+    }
+   ]
+  }
+ ]
+}

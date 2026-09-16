@@ -1,0 +1,337 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "08_empathy_sympathy_compassion_matrix",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Thesis summary stating the matrix's overall contrast; not restated elsewhere."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines cold-control block grouping logic, substantive structural information."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Accurate-modeling row scores; distinct data not repeated."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Boundary-kept row scores; distinct data."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Manipulators row scores; distinct data."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Controlled/instrumental row scores; distinct data."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines affective-care block grouping; substantive structural information."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sharing/mirroring row scores; distinct data."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Capacity-to-care row scores; distinct data."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Motivation-to-help row scores; distinct data."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Guilt/remorse row scores; distinct data."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contagion/burnout row scores; distinct data."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Vivid/similar bias row scores; distinct data."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Kantianism row scores; distinct data, read before C034 recap."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Humanism row scores; distinct data, read before C034 recap."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines neither-dark block grouping; substantive structural information."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Beyond in-group row scores; distinct data."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Faith-in-humanity row scores; distinct data."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sustainability row scores; distinct data."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header; scope caveat already carried by clinical note 4.9."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Explains why sympathy is partial on modeling minds; new interpretation."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Explains affective empathy's partial care; new interpretation."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Manipulators row as diagnostic; adds interpretation beyond row data."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bloom/Singer provenance and critics; new sourced caveat."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Boundary maintenance as causal difference; new causal link."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Dark-column synthesis; new interpretive reading."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Psychopath/sociopath asymmetry framing; adds relation not stated earlier."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "4.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Etiology omission caveat; distinct methodological note."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "4.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Clinical caveat about contested diagnosis; distinct caveat."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "4.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Terminology caveat; distinct caveat."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "4.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Empath profile synthesis; new cross-block interpretation."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "4.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Altruist Light Triad mapping; new named entity reference."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "4.13"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Integrated ideal synthesis; new cross-block interpretation."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "4.14"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C014",
+      "reasoning": "Recap of Kantianism and Humanism row relations already stated; near-duplicates C014 and C015."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "4.15"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Faith in humanity as new dimension; interpretation absent earlier."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 35,
+    "unique": 33,
+    "duplicates": 1,
+    "trivia": 1,
+    "redundancy_rate": 0.0286,
+    "trivia_rate": 0.0286,
+    "structured_tokens": 90,
+    "tokens_per_unique_claim": 2.727272727272727
+  },
+  "prune_list": [
+    "C020 trivia: restated 'Notes' Theme header, low information, safe to drop",
+    "C034 duplicates C014 (also near-duplicates C015): recap of Kantianism/Humanism row relations, safe to merge into C014"
+  ]
+}

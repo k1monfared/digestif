@@ -1,0 +1,127 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "10_parde_begardan_fa",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "Age-seven discovery at the aunt's: her newly bought santur (she was learning it) in the corner of the room; she played a song the narrator thinks was Zard-e Malijeh, one of the first pieces taught in santur lessons; the narrator was shown how to hold the mallet and tried the instrument.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L03", "L04", "L05"],
+      "evidence_quote": "سنتور خاله که تازه خریده بود و داشت یاد می‌گرفت کنج اتاق بود و زرد ملیجه زد، فکر کنم (L04)؛ زرد ملیجه از اولین آهنگ‌هایی بود که در آموزش سنتور یاد می‌دهند؛ با روی گشاده مضراب دست گرفتن را نشانم داد (L05)",
+      "reasoning": "Age ۷/هفت, the aunt's santur, newly bought and being learned, the corner, the hedged song, first-pieces background, and the mallet lesson are all present. The theme (L03) also keeps فکر کنم, repairing the v0.3.0 header-level hedge drop."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "The night ended with her being forcibly lifted from the instrument; she nagged all the way home and kept it up for six months until the family bought her a santur.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L06", "L07", "L08"],
+      "evidence_quote": "تنها چیز یادم از آن شب این است که آخر شب به زور از پای ساز بلندم کردند (L06)؛ تمام طول راه زر زدم که سنتور می‌خواهم (L07)؛ شیش ماه زر زدن و لج‌کردن ادامه داشت تا بالاخره برایم سنتور خریدند (L08)",
+      "reasoning": "Forced removal, the all-the-way nagging, the six-month duration, and the purchase with correct third-person agency (برایم خریدند) are all captured."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "The santur cost 20,000 toman, discounted to 18,000; she started classes six months later.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L10"],
+      "evidence_quote": "۲۰هزار تومن بود، با تخفیف ۱۸هزار شد؛ شیش ماه بعدتر رفتم کلاس و شروع کردم به یاد گرفتن",
+      "reasoning": "Both price figures, the discount direction, and the second six-month interval are exact."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "Background on lessons and place: teacher first came home because the city had no institute; the santur lived in the closed living room, colder than other rooms (as she remembers); sofas were used only when guests came; later the Ershad office opened a class and the same teacher taught there.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": ["L11", "L12"],
+      "evidence_quote": "اوایل استاد به خانه می‌آمد چون در شهرمان آموزشگاهی نبود؛ سنتورم در اتاق پذیرایی دربسته و از بقیه سردتر بود، حداقل این‌طور در ذهنم مانده (L11)؛ مبل‌های آن اتاق فقط وقتی مهمان داشتیم استفاده می‌شدند؛ بعدترها اداره ارشاد کلاس دایر کرد و استاد همان‌جا تدریس می‌کرد (L12)",
+      "reasoning": "All background elements present with the guest-only scope and memory hedge; the source's و من هم میرفتم اونجا is omitted but the class attendance is stated in 2.1, so a new reader loses nothing material."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "The instrument was bigger than her and hard to carry; 72 strings made tuning a specialist job; she had to carry it to class for tuning until the tuner arrived and ended that need.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L13", "L15"],
+      "evidence_quote": "سازم از خودم گنده‌تر بود و به زور می‌بردمش سر کلاس؛ ۷۲ سیم داشت و کوکش کار هرکسی نبود (L13)؛ بعدترها تیونر آمد و دیگر لازم نبود ساز را برای کوک به کلاس ببرم (L15)",
+      "reasoning": "Size, difficulty, the 72 count, the not-anyone's-job negation, and the tuner resolution all present. The explicit why (باید ساز رو میبردم که کوک بشه) is split across nodes but recoverable from L15's برای کوک, so the point is fully reachable."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "The santur is diatonic: at one time only one dastgah/scale can be played on it, and modulation requires changing the tuning, which is time-consuming.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L16"],
+      "evidence_quote": "سنتور دیاتونیک است: در آن واحد فقط یک دستگاه/گام، و مدولاسیون یعنی عوض کردن کوک که زمانبر است",
+      "reasoning": "Definition, the only-one-at-a-time scope, and the time-consuming retune all intact."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "The one-game-at-the-party analogy: only one game allowed; if bored of it, all toys had to be packed away before another could come out, so play lost its point; when other kids switched games she had to sit quietly in a corner and watch, even a game she loved.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L17", "L18", "L19"],
+      "evidence_quote": "حس بچه‌ای را داشتم که در مهمانی فقط اجازه یک بازی به او داده شده باشد (L17)؛ اول باید همه اسباب‌بازی‌ها را جمع می‌کردم و بعد بازی دیگری در می‌آوردم؛ نمی‌صرفید، حس بازی می‌رفت (L18)؛ مجبور بودم ساکت گوشه‌ای بنشینم و نگاه کنم، حتی اگر آن بازی را خیلی دوست داشتم (L19)",
+      "reasoning": "All three beats of the analogy captured, including the فقط scope and the حتی اگه concession."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "A newly made keyed santur inspired by the harp: keys let any note be sharpened a quarter or half step in a fraction of a second, enabling fast movement from any dastgah to any other with just a few clicks and within seconds.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L20", "L21", "L22"],
+      "evidence_quote": "راه‌حل کلیددار با ایده چنگ، محدودیت دیاتونیک را برداشت (L20)؛ کلیدها ربع یا نیم پرده زیرتر کردن هر نت را در کسری از ثانیه ممکن کردند (L21)؛ جابه‌جایی سریع از هر دستگاهی به هر دستگاه دیگر ممکن شد، فقط با چند کلیک و در چند ثانیه (L22)",
+      "reasoning": "Harp origin, keys, quarter/half-step raise, fraction of a second, any-to-any, clicks, and seconds all preserved. The loose چندوقت پیش opener is omitted, which costs no meaning."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "Two years of thinking about it without knowing how to bring it safely from Langroud to Langford; with unstinting help from family, friends, officials, and imams it reached her hands today.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L23", "L24"],
+      "evidence_quote": "دو سالی بود به آن فکر می‌کردم ولی نمی‌دانستم چطور سالم از لنگرود به لنگفورد بیاورمش (L23)؛ با کمک‌های بی‌دریغ خانواده و دوستان و مسئولین و ائمه، امروز به دستم رسید (L24)",
+      "reasoning": "Duration, both place names, the safe-transport qualifier, the full helper list, and امروز all present."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "First playing session on the keyed santur: the dastgah chain Esfahan to Segah to Nava to Shur to Homayoun, feeling like a dream.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L26"],
+      "evidence_quote": "از اصفهان به سه‌گاه، از سه‌گاه به نوا، از نوا به شور، از شور به همایون رفتم؛ انگار خواب می‌دیدم",
+      "reasoning": "Full chain with correct order and the dream simile. The clause اصلا نمیتونستم تصورش رو هم بکنم که اینقدر راحته is compressed into the simile and the payoff statements in L22/L27; the point remains fully recoverable."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "Emotional payoff: released fattened sheep running without pause, skipped lunch, back ache from playing; the feeling of the first night when the aunt handed her the mallets; feeling like a child with any game and a person with any word.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": ["L27", "L28"],
+      "evidence_quote": "حکم گوسفند پرواری رهاشده‌ای را داشتم که بدون وقفه می‌دوید؛ نهار نخوردم و آن‌قدر ساز زدم که پشتم درد گرفت (L27)؛ حس شب اولی را داشتم که خاله‌م مضراب‌ها را داد دستم؛ حس بچه‌ای با هر بازی و کسی با هر حرف (L28)",
+      "reasoning": "All similes and consequences present; the unrestricted-choice feelings survive compressed as با هر بازی / با هر حرف."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "From tomorrow a week-long trip; sad at not being home to play; even before leaving, waiting to return and sit at the instrument.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": ["L29", "L30"],
+      "evidence_quote": "از فردا یک هفته‌ای مسافرم؛ ناراحتم که چرا خانه نیستم که ساز بزنم (L29)؛ نرفته منتظرم برگردم و بنشینم پای ساز (L30)",
+      "reasoning": "Trip timing, sadness, and the closing waiting-to-return are all captured."
+    }
+  ],
+  "metrics": {
+    "total_points": 12,
+    "must_have_total": 10,
+    "must_have_present": 10,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 12,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+  },
+  "missing_list": []
+}

@@ -1,0 +1,236 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "05_manufacturing_taste part 2 of 5",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "three phenomena that are individually well-documented in psychology and economics, but whose combined effect on cultural canons hasn't been quantified",
+   "reasoning": "Source states exactly this framing of the three well-documented phenomena and the unquantified combined effect."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Mere exposure: we tend to like things we have encountered before.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We tend to like things we've encountered before.",
+   "reasoning": "Identical meaning to source definition of the mere exposure effect."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "3.1.1"
+   ],
+   "claim_text": "A song played on the radio ten times starts to feel catchy even if it did not grab you the first time.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time.",
+   "reasoning": "Near-verbatim restatement with identical number and negation preserved."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "3.1.2"
+   ],
+   "claim_text": "This is not about learning to appreciate complexity; it happens with nonsense syllables, abstract shapes, and strangers' faces.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers.",
+   "reasoning": "Negation and the three listed stimulus types are all retained faithfully."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "3.1.3"
+   ],
+   "claim_text": "Zajonc demonstrated the effect in 1968.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Zajonc demonstrated this in 1968",
+   "reasoning": "Name and year match source exactly."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "3.1.4"
+   ],
+   "claim_text": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26",
+   "reasoning": "All numbers (1989, 208, r = 0.26) and the name match source exactly."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "3.1.5"
+   ],
+   "claim_text": "The effect peaks at moderate exposure and reverses with overexposure.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The effect peaks at moderate exposure and reverses with overexposure",
+   "reasoning": "Identical to the source sentence about the exposure curve."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "3.1.6"
+   ],
+   "claim_text": "Artists who get more initial airtime develop an artificial quality advantage, because audiences genuinely perceive funded work as better.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better ... the exposure was determined by money",
+   "reasoning": "Source links initial airtime to artificial advantage and ties exposure to money, so \"funded work\" is a faithful compression."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3.1.7"
+   ],
+   "claim_text": "The problem is not that people are bad judges; the judging is contaminated by exposure, and the exposure was determined by money.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money.",
+   "reasoning": "Negation and causal chain match source verbatim in meaning."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Social influence: we use what others consume as a shortcut for what is good.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We look at what others consume and use it as a shortcut for what's good.",
+   "reasoning": "Direct restatement of the social influence definition."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.2.1"
+   ],
+   "claim_text": "Bestseller lists, download counts, trending labels, and view counts nudge us toward what is already popular, creating snowball effects.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects.",
+   "reasoning": "All four signal types and the snowball-effect consequence are preserved."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.2.2"
+   ],
+   "claim_text": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Salganik MusicLab experiment (2006) ... 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't.",
+   "reasoning": "Year, participant count, song count, and the split condition all match; \"choose among\" tracks the market task."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.2.3"
+   ],
+   "claim_text": "The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads.",
+   "claim_type": "number_or_date",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first",
+   "reasoning": "Numbers 1 and 40 match, but source hedges with \"could\"; loglog states \"ranked\" as certain fact."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The rich get richer. ... The sociologist Robert Merton called this the Matthew Effect.",
+   "reasoning": "Entity name Robert Merton and the Matthew Effect attribution match source exactly."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "claim_text": "A first album that sells well buys a bigger marketing budget, better tour slots, more press, and prominent playlist placement.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement",
+   "reasoning": "All four listed benefits are retained; wording compression preserves meaning."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "claim_text": "Small initial differences, whether from luck, timing, or money, get magnified into enormous gaps over time.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time.",
+   "reasoning": "The three possible sources and the magnification effect match; \"whether from\" remains a list of possibilities."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "claim_text": "A composer who secures a court position at 20 accumulates decades of performances and reputation that a one-year miss never builds.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build.",
+   "reasoning": "Age, decades, one-year miss, and the negation \"never\" all match; only publications is omitted, not contradicted."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Each mechanism is well-understood alone; the open question is what happens when all three interact over many generations.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Each of these alone is well-understood. What I wanted to know is: when you put all three together ... over many generations, what happens?",
+   "reasoning": "Reflects the source's contrast between individual understanding and the combined multi-generation question."
+  }
+ ],
+ "metrics": {
+  "total_claims": 18,
+  "supported": 17,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.944
+ },
+ "fail_list": [
+  "C13 partially supported: source hedges with \"could rank\" but loglog asserts \"ranked\" as definite, dropping the modal qualifier"
+ ]
+}

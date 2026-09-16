@@ -1,0 +1,440 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "06_valuing_consistency part 1 of 2",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Behavioral consistency is a bad proxy; judge anchor, responsiveness, and whether evidence or cost moved it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process",
+   "reasoning": "Source states consistency is a bad proxy and names anchor, responsiveness, and evidence-versus-cost as the real process."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Consistency is vague, structureless, and inconsistently moralized as compliment or accusation.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a word I keep reaching for ... that is vaguer than I'd like, and it doesn't let me build any structure around it ... sometimes it's a compliment, sometimes an accusation",
+   "reasoning": "Source directly calls it vague, structureless, and alternately compliment or accusation."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Mother story: miniskirts to chador after 1979 versus steady modest dressers.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Before the 1979 revolution in Iran, someone she knew wore mini skirts all the time. Right after the revolution she switched to chador and niqab.",
+   "reasoning": "Source reports the 1979 revolution, miniskirts to chador, and others dressing modestly throughout."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "Swing alone cannot be judged since updating beliefs is virtuous; something deeper carries weight.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the swing itself can't be what we're judging. Consistency ... is not carrying the moral weight I assumed it did. Something underneath it is.",
+   "reasoning": "Source says updating is a virtue, so swing cannot be the criterion, and something deeper carries the weight."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Clothing model blends fixed anchor with social reference via responsiveness weight.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Hypothesis: her behavior is a blend of her own fixed point and the social reference",
+   "reasoning": "Source defines behavior as blending a fixed point with the social reference weighted by responsiveness."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Equation: Behavior equals w times Reference plus (1 minus w) times Anchor.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "$$\text{Behavior} = w \times \text{Reference} + (1 - w) \times \text{Anchor}$$",
+   "reasoning": "Equation matches the source verbatim."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Anchor defined absent pull; w is reference weight; two observations solve both.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the Anchor is what she'd do if the reference had no pull on her, and $w$, the Responsiveness, is how much weight the reference actually carries. Two observations give two equations",
+   "reasoning": "All three definitions and the two-equation setup match the source."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Modest woman: anchor 0, responsiveness 0.2; behavior tracks reference slightly.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the anchor is $a = 0$. Subtracting gives $w = 0.2$. Her behavior is exactly $0.2 \times \text{Reference}$",
+   "reasoning": "Numbers and values exactly match the source computation."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "Output moved while rule stayed fixed; stable person conceding ground under pressure.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Her *output* moved ... Her *rule* never did: same anchor, same responsiveness, both times. An unusually stable person, conceding a fixed fraction of ground under pressure.",
+   "reasoning": "Source says exactly this about output moving while the rule stays fixed."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "claim_text": "Swinging woman at 0.9 and minus 0.9: anchor 0, responsiveness 1.8, overshooting both.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "at $0.9$ when society is $0.5$, and at $-0.9$ when society is $-0.5$ ... The anchor comes out to $0$ again, and $w$ comes out to $1.8$",
+   "reasoning": "Positions and computed anchor and responsiveness match the source exactly."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2.6"
+   ],
+   "claim_text": "Chameleon rule equally consistent; difference is content, not stability of rule.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Her rule is exactly as consistent as the modest woman's ... The difference between the two women is not that one has a stable rule ... The difference is what the rule says",
+   "reasoning": "Source explicitly says the difference is rule content, not rule stability."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "2.7"
+   ],
+   "claim_text": "Consistency splits into output, policy, and anchor layers, independently passable.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"consistency\" has now been asked of three different things, and it can pass or fail on each one independently ... **output** ... **policy** ... **anchor**",
+   "reasoning": "Source names the three layers and says each can pass or fail independently."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "2.8"
+   ],
+   "claim_text": "Moral weight lives in anchor drift, often invisible in small steps.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Policy can stay fixed while the anchor drifts underneath it, invisibly, in steps small enough that no single moment feels like a change of mind. That drift is where the moral weight lives",
+   "reasoning": "Source states anchor drift is invisible, in small steps, and holds the moral weight."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Contrarian runs same model with flipped sign and doubled magnitude.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "She runs the same model as the modest woman, with the sign flipped and the magnitude doubled",
+   "reasoning": "Source directly describes the contrarian as same model with flipped sign and doubled magnitude."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Observed 0.2 against minus 0.5 and minus 0.2 against 0.5; responsiveness minus 0.4.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "She is observed at $0.2$ when the average is $-0.5$, and at $-0.2$ when the average is $0.5$ ... The responsiveness comes out to $-0.4$.",
+   "reasoning": "Observations and computed responsiveness match the source exactly."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Contrarianism is dependency with minus sign, tracking reference more than conformist.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "She is more dependent on the social reference than the modest woman, in absolute terms ... Contrarianism is dependency with a minus sign, not independence.",
+   "reasoning": "Source says the contrarian is more reference-dependent than the modest woman and calls it dependency with a minus sign."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Responsiveness values form named postures from amplifier to extremist rebel.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The values of $w$ carve out a named family of postures ... an extremist rebel?",
+   "reasoning": "Source lists the posture family from amplifier down to the extremist rebel."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Only the independent acts without reference information; extremes mirror each other.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The independent is the only entry that doesn't need to know what the reference is doing ... the absolute conformist and the absolute contrarian sit closer to each other ... below $-1$ sits the mirror image of the chameleon",
+   "reasoning": "Source states the independent alone needs no reference info and describes the mirror-image symmetry of extremes."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Model is morally neutral until the reference kind is specified.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "So far the model is morally neutral, and that's the point. High or low responsiveness is neither good nor bad until you ask what kind of reference is in play.",
+   "reasoning": "Source states neutrality until the reference type is specified."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Normative references should be resisted; structural references should be tracked.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A normative reference ... is something your anchor is supposed to resist ... A structural reference ... is something your anchor is supposed to track.",
+   "reasoning": "Source prescribes resisting normative references and tracking structural ones."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Author prefers small responsiveness and educated anchors, conceding non-ideal world.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in an ideal world, IMHO the $|w|$ should be generally small, and everyone should have an educated Anchor. But this is not an ideal world",
+   "reasoning": "Source expresses this preference and the non-ideal-world concession."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Lifecycle investing: 110-minus-age equities; moving allocation with horizon is consistency.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "sets equity allocation at roughly $110$ minus your age ... Someone who follows this ... is not \"inconsistent\". Their reference point is the years until the money is needed",
+   "reasoning": "Source gives the 110-minus-age rule and calls horizon-tracking behavior consistent."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Clothing conformist and lifecycle investor share form but opposite verdicts.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "look superficially alike: behavior that moves as a reference moves. Morally they are opposites ... Same form, opposite verdict.",
+   "reasoning": "Source states same form and opposite verdict explicitly."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Anchor movement comes from evidence or cost, crossed with update or hold.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The world's facts can change ... Or the cost of expressing a given position can change ... Cross those forces with whether the anchor actually moved and you get four cells",
+   "reasoning": "Source names evidence and cost forces crossed with anchor movement."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Four cells: rational revision, ossification, preference laundering, held anchor.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "| **Driven by evidence** | Rational revision ... | Ossification ... | **Driven by cost** | Preference laundering ... | Anchor held",
+   "reasoning": "All four cells match the source table."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Held anchor splits into revealed preference versus hysteresis after cost lifts.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "**Anchor held.** When cost changes but the anchor genuinely doesn't move ... **Revealed preference.** Behavior snaps to the anchor once the cost ... drops ... **Hysteresis.** Behavior fails to snap back even after the cost is gone",
+   "reasoning": "Source defines both sub-cases of the held-anchor cell."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Evidence can arrive without reference moving; beliefs about static facts still update.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The evidence column doesn't require the reference itself to have moved. Tax law can sit perfectly still while your grasp of it moves ... perspective gain.",
+   "reasoning": "Source describes evidence-driven anchor movement inside a static reference."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Revision and laundering can reach identical anchors, indistinguishable inside and out.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "From outside they are indistinguishable. Often from inside too.",
+   "reasoning": "Source hedges inside indistinguishability with often, but the claim states it as absolute."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Socialist-at-20 aphorism fits both evidence and self-interest processes.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Both processes produce the same trajectory and the same retrospective story",
+   "reasoning": "Source says the aphorism's trajectory follows from both evidence and self-interest processes."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Age-brings-taxes story reads as lifecycle-like rational revision.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Structurally that's the lifecycle investing story: rational revision, tracking new information about how the world works.",
+   "reasoning": "Source explicitly equates the age-experience reading with the lifecycle rational-revision story."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Asset-acquiring drift reads as preference laundering with extra steps.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "As people age they typically acquire assets, income, and things to lose from redistribution. Views can drift to track self-interest ... Preference laundering with extra steps.",
+   "reasoning": "Source uses this exact label for the self-interest drift."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Toy model breaks on three unavoidable complications.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Real cases add complications the toy model doesn't capture. Three seem unavoidable.",
+   "reasoning": "Source states three complications of the toy model seem unavoidable."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Confounded attribution: cost and evidence move together; reliable process matters beyond correct belief.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Circumstances rarely change as pure evidence or pure cost. Usually both move together ... A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one.",
+   "reasoning": "Source states cost and evidence usually move together and that a reliable process matters."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Misperceived reference corrupts all downstream judgments without anchor or policy flaws.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is an error upstream of anchor, responsiveness, and policy entirely. It corrupts every downstream judgment without any of those three being flawed.",
+   "reasoning": "Source says the error lies upstream and corrupts downstream judgments with no flaws in the three layers."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Reference lag: diaspora preserves frozen origin norm, appearing principled while conforming.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "their real reference is ... the origin country's norm at the moment their family left it, frozen the day they emigrated ... Apparent principle, real conformity to the wrong clock.",
+   "reasoning": "Source describes diaspora language as frozen origin norm, appearing principled while conforming to a stale reference."
+  }
+ ],
+ "metrics": {
+  "total_claims": 35,
+  "supported": 34,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.971
+ },
+ "fail_list": [
+  "C28 partially supported: source hedges internal indistinguishability with 'Often from inside too', but the claim states it absolutely"
+ ]
+}

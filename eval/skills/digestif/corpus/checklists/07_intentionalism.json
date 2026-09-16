@@ -1,0 +1,154 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "on-intentionalism",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: proposers systematically end up with better outcomes than receivers, and this is not because of talent, luck, or the quality of their choices.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "In 1962 mathematicians-economists David Gale and Lloyd Shapley worked on creating stable pairings between two groups and proved a stable matching (no unmatched pair preferring each other) always exists.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Their deferred acceptance algorithm works by having one side propose in order of preference while the other side accepts or tentatively rejects based on its preferences.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Core mathematical result: proposers each get their best possible stable partner and receivers each get their worst possible stable partner, a provably extreme gap, not a slight difference.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Most real-world situations do not follow the exact algorithm but share the same proposer/receiver structure, so the same pattern of advantage should be expected even when only approximate.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Everyday illustrations show most people are receivers: choosing Netflix by scrolling, picking among displayed phones, applying to posted jobs, accepting friendships formed by proximity.",
+   "weight": "Nice to have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "The insidious part is that receivers get acceptable, good-enough outcomes, so they never feel dissatisfied enough to change, and the system stays stable (self-sustaining) while quietly giving them less than they could have.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Chicken-and-egg trap: you need intention to propose, but you develop intention through proposing; choosing among presented options only reveals what you dislike least, not what you would pursue.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Training ground: the muscle of intention builds progressively, so start small by intentionally deciding what you want from the next hour before opening any app, rather than scrolling until something catches you.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "You cannot think your way into values, you have to practice your way into them: repeated intentional acts yield patterns, patterns become preferences, preferences become values.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Structural disadvantage does not disappear with understanding, you must actually switch positions, and proposing means deciding what you want before seeing options, pursuing specifics, creating opportunities, and accepting friction against default flows.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Collective effect: when most people are receivers, systems optimize for the proposers, namely the platforms, which capture optimal outcomes (attention, data, money) while users get only good-enough outcomes.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Most people will not make the shift because it is effortful, the receiver position is comfortable, and after years of receiver mode many have lost the capacity to know what they would want to propose.",
+   "weight": "Nice to have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Practical progression: begin with tomorrow morning before checking your phone, practice for a week on small things (breakfast, evening activities, weekend plans), then scale to bigger decisions like work, relationships, and purchases.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Appendix concrete tools: domain exercises (entertainment, shopping with must-haves and 24-hour rule over $100, career with 5 non-negotiables and applying only when 4 of 5 match, relationships), daily pause and journaling practices, and a 30-day tracking journal showing proposers report higher satisfaction.",
+   "weight": "Nice to have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 only, no mapping performed yet."
+  }
+ ],
+ "metrics": {
+  "total_points": 0,
+  "must_have_total": 0,
+  "must_have_present": 0,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 0,
+  "must_recall": 0.0,
+  "overall_recall": 0.0
+ },
+ "missing_list": []
+}

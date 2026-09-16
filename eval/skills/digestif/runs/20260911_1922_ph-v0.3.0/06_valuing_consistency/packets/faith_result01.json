@@ -1,0 +1,414 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "06_valuing_consistency",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Valuing consistency means judging hidden anchor processes, not surface behavior.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one... I'm actually trying to evaluate... the process",
+   "reasoning": "Source concludes the real evaluation target is the process, not surface behavior. Meaning preserved."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Consistency is vague yet morally loaded: compliment and accusation at once.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "vaguer than I'd like... I attach a moral value to it: sometimes it's a compliment, sometimes an accusation",
+   "reasoning": "Source states both vagueness and dual moral loading directly."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Mini skirts to chador after 1979 versus steady modesty across the revolution.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Before the 1979 revolution in Iran, someone she knew wore mini skirts all the time. Right after the revolution she switched to chador and niqab.",
+   "reasoning": "Matches example exactly, including year and contrast group."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "Updating beliefs is a virtue, so the swing itself cannot carry the moral weight.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "being able to 'update' your beliefs on certain topics is a virtue... So the swing itself can't be what we're judging",
+   "reasoning": "Source makes the same inference from the virtue of updating."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Openness from -1 to 1; society at -0.5 and 0.5; modest woman at -0.1 and 0.1.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "scale from -1 (fully closed) to 1 (fully open). Say society's average sits at -0.5... and 0.5... her at -0.1... and 0.1",
+   "reasoning": "All numeric values match source precisely."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Behavior is w times Reference plus (1-w) times Anchor; modest anchor 0, w 0.2.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the anchor is a = 0. Subtracting gives w = 0.2. Her behavior is exactly 0.2 x Reference",
+   "reasoning": "Formula and computed values match source."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Output moved (-0.1, 0.1) while the rule never did: fixed twenty percent concession.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Her output moved: -0.1 then 0.1, no fixed value. Her rule never did: same anchor, same responsiveness... fixed twenty percent",
+   "reasoning": "Claims match source wording and numbers."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Model is a linear combination; economists might call anchor endogenous, reference exogenous.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An economists perhaps would call the anchor an indogenous variable, and the reference an exogenous variable... a linear convex combination",
+   "reasoning": "Source hedges with perhaps; loglog keeps might. Spelling fix only."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Chameleon at 0.9 and -0.9 yields anchor 0, w 1.8: overshoot by eighty percent.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "at 0.9 when society is 0.5, and at -0.9 when society is -0.5... anchor comes out to 0 again, and w comes out to 1.8... overshoot it by eighty percent",
+   "reasoning": "All values and the eighty percent match source."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Her rule is exactly as consistent as the modest woman's; only content differs.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Her rule is exactly as consistent as the modest woman's... The difference is what the rule says",
+   "reasoning": "Direct restatement of source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Consistency splits three ways: output, policy (anchor plus responsiveness), anchor itself.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Consistency of output... Consistency of policy: did the rule stay the same, same anchor, same responsiveness. Consistency of anchor",
+   "reasoning": "All three layers match source definitions."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Policy can hold while the anchor drifts invisibly; drift carries the moral weight.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Policy can stay fixed while the anchor drifts underneath it, invisibly... That drift is where the moral weight lives",
+   "reasoning": "Direct restatement of source."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Contrarian at 0.2 and -0.2 yields anchor 0, w -0.4: same model, flipped sign.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "observed at 0.2 when the average is -0.5, and at -0.2 when the average is 0.5... anchor comes out to 0 again. The responsiveness comes out to -0.4",
+   "reasoning": "All values and the sign description match source."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Contrarianism is dependency with a minus sign, tracking the reference closely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Contrarianism is dependency with a minus sign, not independence... requires tracking that thing closely",
+   "reasoning": "Both clauses restate source directly."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Spectrum: above 1 amplifier; 1 absolute conformist; 0 to 1 partial; 0 independent.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "above 1 Amplifier... 1 Absolute conformist... between 0 and 1 Partial conformist... 0 Independent",
+   "reasoning": "Table rows match source."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4.2.1"
+   ],
+   "claim_text": "-1 to 0 partial contrarian; -1 absolute contrarian; below -1 overshooting rebel, perhaps.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "between -1 and 0 Partial contrarian... -1 Absolute contrarian... below -1 sits the mirror image of the chameleon, a contrarian who overshoots, an extremist rebel?",
+   "reasoning": "Rows match; the source's questioning hedge is preserved as perhaps."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "High or low responsiveness is neutral until the reference kind is asked.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the model is morally neutral... High or low responsiveness is neither good nor bad until you ask what kind of reference is in play",
+   "reasoning": "Direct restatement."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Normative references (fashion, approval) merit resistance; structural ones (budget, body) tracking.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A normative reference (peer pressure, fashion, social approval) is something your anchor is supposed to resist... A structural reference... is supposed to track",
+   "reasoning": "Matches source examples and prescriptions."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "IMHO |w| should be generally small with an educated anchor; this world is less than ideal.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in an ideal world, IMHO the |w| should be generally small, and everyone should have an educated Anchor. But this is not an ideal world",
+   "reasoning": "Preserves the IMHO hedge and the non-ideal-world condition."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Equity rule 110 minus age: about 85% stocks at 25, about 50% at 60.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "roughly 110 minus your age: about 85% stocks at 25, about 50% at 60",
+   "reasoning": "All numbers and hedges match source."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Staying 85% equities at 65 from lifelong aggression is refusal, not conviction.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "stays at 85% equities at 65 because 'I've always been aggressive' isn't showing conviction. They're refusing to let a correctly varying function vary",
+   "reasoning": "Source states the same refusal/conviction contrast."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Same moving form, opposite verdicts: the verdict depends entirely on reference kind.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Same form, opposite verdict. The verdict depends entirely on which kind of reference is being held fixed against",
+   "reasoning": "Compression of source claim; reference-kind dependence preserved."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Evidence versus cost crossed with anchor moved or held yields four cells.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The world's facts can change... Or the cost... Cross those forces with whether the anchor actually moved and you get four cells",
+   "reasoning": "Source explicitly defines the same two-by-two."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Rational revision (evidence, moved) is good; ossification (evidence, held) is stubbornness as principle.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Rational revision: the good case... Ossification: the bad case... 'Not swinging' is stubbornness in the costume of principle",
+   "reasoning": "Matches table labels and ossification description."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Preference laundering dresses social proof as re-examined belief.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Social proof gets laundered into belief that was never actually re-examined",
+   "reasoning": "'Dresses as' implies the belief was not truly re-examined, preserving the source's negation."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Anchor held under cost change splits into revealed preference versus hysteresis.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Anchor held, two sub-cases below... Revealed preference... Hysteresis",
+   "reasoning": "The two sub-cases match source."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "claim_text": "Revealed preference: behavior snaps to anchor once cost drops; swing was suppression.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Behavior snaps to the anchor once the cost of expressing it drops... The swing is what suppression looked like from outside",
+   "reasoning": "Direct restatement."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "6.3.2"
+   ],
+   "claim_text": "Hysteresis: behavior never snaps back; installed fear runs on its own.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own",
+   "reasoning": "Matches source description of hysteresis; negation preserved."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Anchor nearer or farther from reference deliberately unexplored for lack of examples.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I deliberately haven't explored the cases where the anchor is closer or farther from the reference. Mainly because I couldn't come up with meaningful examples",
+   "reasoning": "Direct restatement of PS1."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Perspective gain: grasp of a static reference can move, then overturn again.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tax law can sit perfectly still while your grasp of it moves... a second pass at the very same unchanged reference can overturn it again. Call it perspective gain",
+   "reasoning": "Matches the footnote's definition of perspective gain."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Revision and laundering can reach an identical anchor; Often indistinguishable even inside.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Rational revision and preference laundering can produce an identical new anchor... From outside they are indistinguishable. Often from inside too",
+   "reasoning": "Preserves can and often hedges exactly."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Socialist at 20, still socialist at 40: revision and laundering share one trajectory.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If you're still a socialist at 40... Both processes produce the same trajectory",
+   "reasoning": "Aphorism phrases and the shared-trajectory assertion both appear in source."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "I used to be naive fits both; nothing about the shift reveals which occurred.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the same retrospective story: 'I used to be naive.' Nothing about the shift itself tells you which one occurred",
+   "reasoning": "Direct restatement with negation intact."
+  }
+ ],
+ "metrics": {
+  "total_claims": 33,
+  "supported": 33,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

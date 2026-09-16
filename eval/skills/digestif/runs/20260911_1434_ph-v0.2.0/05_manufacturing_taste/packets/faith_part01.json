@@ -1,0 +1,463 @@
+{
+ "sample": "05_manufacturing_taste",
+ "part": 1,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Simulated cultural markets show patronage and feedback manufacture canons: quality filters but capital decides.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "---\ntags: simulation, statistics, philosophy, observation, python\n---\n# Manufacturing Taste"
+    },
+    {
+     "ref": "¶2",
+     "text": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time. Are we just listening to the most \"popular\" artists of the 1700s and calling it high culture? And the flip side: will people 300 years from now be listening to Bieber and think that was the best we had to offer? He strongly disagreed, but the question stuck with me."
+    },
+    {
+     "ref": "¶5",
+     "text": "So that's what I did. I built a [simulation](https://github.com/k1monfared/manufacturing_taste) to find out. The full technical paper is [here](https://github.com/k1monfared/manufacturing_taste/blob/master/paper/paper.pdf). This post is the less formal version."
+    },
+    {
+     "ref": "¶45",
+     "text": "Story 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will. But the vast middle ground, where most artists live, is dominated by capital and luck."
+    },
+    {
+     "ref": "¶64",
+     "text": "That's the real meaning of the title. It's not just that the canon was manufactured. It's that our taste was manufactured along with it. We like what we were taught to like, and we were taught to like the survivors, and the survivors were selected by money and luck as much as by merit. The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Canon question: we remember under 20 of thousands; patrons, not merit, may have chosen.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time. Are we just listening to the most \"popular\" artists of the 1700s and calling it high culture? And the flip side: will people 300 years from now be listening to Bieber and think that was the best we had to offer? He strongly disagreed, but the question stuck with me."
+    },
+    {
+     "ref": "¶3",
+     "text": "Because here's the thing: in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time. Across all of Europe during the Classical era, [IMSLP catalogs over 3,400 composers](https://imslp.org/wiki/Category:People_from_the_Classical_era) whose work survived in some form, and many more left no trace at all. [Wikipedia's curated list](https://en.wikipedia.org/wiki/List_of_Classical-era_composers) names several hundred. We remember fewer than 20. The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?"
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Vienna had 200 to 500 active composers; IMSLP catalogs over 3,400 survivors.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Because here's the thing: in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time. Across all of Europe during the Classical era, [IMSLP catalogs over 3,400 composers](https://imslp.org/wiki/Category:People_from_the_Classical_era) whose work survived in some form, and many more left no trace at all. [Wikipedia's curated list](https://en.wikipedia.org/wiki/List_of_Classical-era_composers) names several hundred. We remember fewer than 20. The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?"
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "History cannot rerun; Haydn without Esterhazy patronage is empirically unanswerable.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "We can't rewind history and run it again with different initial conditions. If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name? We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run *that* thousands of times."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Project tests three competing stories of canon formation.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "## Three Stories About How Canons Form"
+    },
+    {
+     "ref": "¶7",
+     "text": "I set up the project to test three competing hypotheses. Each tells a different story."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Story 1 Cream Rises: quality wins over time; replayed history yields same canon.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "**Story 1: The Cream Rises.** The works we remember are the best works. Period. Money might help someone get a head start, but over long enough time horizons, genuine quality wins. If you replayed history with different patrons, you'd end up with roughly the same canon."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Story 2 Money Writes History: early exposure becomes familiarity, then canon; quality nearly irrelevant.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "**Story 2: Money Writes History.** Success is mostly about who gets heard first. A composer with a wealthy patron gets performed; audiences grow to like what they hear (a real psychological phenomenon, more on this below); that familiarity gets retroactively interpreted as quality; and institutions lock it in for future generations. Quality is almost irrelevant."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Story 3 Floors and Ceilings: extremes decided by quality, middle by luck and money.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "**Story 3: Floors and Ceilings.** Both are partly right. The truly terrible never succeed no matter how much money backs them. The truly transcendent sometimes break through despite everything. But for the vast majority in the middle, the \"very good but not obviously once-in-a-generation\" group, whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "example",
+   "attribution": "author",
+   "text": "Job-market analogy: top and bottom rank easily; middle hires depend on luck.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Think of it like a job market. The very best candidate and the very worst are easy to rank. But among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile. The classical music canon is the same problem at civilizational scale."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Model combines three documented mechanisms to quantify their joint canon effect.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "## The Mechanisms"
+    },
+    {
+     "ref": "¶13",
+     "text": "The model incorporates three phenomena that are individually well-documented in psychology and economics, but whose *combined* effect on cultural canons hasn't been quantified."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Mere exposure: liking grows with familiarity; Zajonc 1968, Bornstein 1989 r equals 0.26.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "**The Mere Exposure Effect.** We tend to like things we've encountered before. A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time. This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers. Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\")."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Exposure advantage contaminates sincere judgment; money set the exposure.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "What this means for canons: artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better, not because they're deluded, but because familiarity really does affect aesthetic experience. The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Social influence snowballs popularity; Salganik MusicLab 2006 ranked same song 1st or 40th.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "**Social Influence.** We look at what others consume and use it as a shortcut for what's good. Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects. The [Salganik MusicLab experiment](https://doi.org/10.1126/science.1121066) (2006) demonstrated this beautifully: they created an online music market where 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't. Result: the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Cumulative advantage magnifies small starts; Merton Matthew Effect compounds court posts.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "**Cumulative Advantage.** The rich get richer. An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement, all of which make the second album more likely to succeed regardless of whether it's better. The sociologist Robert Merton called this the Matthew Effect. Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time. A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Open question: what happens when all three interact over generations.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Each of these alone is well-understood. What I wanted to know is: when you put all three together in a system and let them interact over many generations, what happens?"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Simulation uses producers, consumers, gatekeepers with independent quality and capital scores.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "## What The Simulation Does"
+    },
+    {
+     "ref": "¶20",
+     "text": "The model has three types of agents: producers (composers/artists), consumers (audiences), and gatekeepers (critics, curators, playlist editors). Each producer gets a quality score drawn randomly (how good their work actually is) and a capital score drawn independently (how much money and access they start with). Quality and capital are uncorrelated. Being wealthy doesn't make you talented."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Quality and capital are uncorrelated; wealth does not make talent.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "The model has three types of agents: producers (composers/artists), consumers (audiences), and gatekeepers (critics, curators, playlist editors). Each producer gets a quality score drawn randomly (how good their work actually is) and a capital score drawn independently (how much money and access they start with). Quality and capital are uncorrelated. Being wealthy doesn't make you talented."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Capital buys exposure; consumers add quality, exposure, social signals; success feeds exposure.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "Then the simulation runs. Producers with more capital get more exposure. Consumers form opinions based on actual quality plus the mere exposure effect plus social signals. Success feeds back into more exposure (cumulative advantage). After many rounds, some producers achieve \"canonical\" status. They're the ones we remember."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Thousands of runs; 1,000 producers, 10,000 consumers; 360 plus per condition with power analysis.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "I ran this thousands of times under different conditions. Each run takes about two minutes with 1,000 producers and 10,000 consumers, so I parallelized it across CPU cores and ran 360+ per condition for the main experiments, with formal power analysis to make sure the sample sizes were sufficient."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Results favor capital-plus-feedback over pure quality across experiments.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "## What Happened"
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Visible social influence significantly weakens quality-success link, p below 0.0001.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "### Does social influence weaken the quality-success link?"
+    },
+    {
+     "ref": "¶25",
+     "text": "Yes. When simulated listeners can see what others are consuming, the correlation between actual quality and commercial success drops significantly (p < 0.0001 across 360 runs per condition). In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success. But in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker. A mediocre work that gets lucky early can ride social proof to stardom, while an equally good work that starts slow may never recover."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Charts push us from independent judgment toward optimizing a popularity proxy.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "This is, incidentally, why I distrust recommendation algorithms so much. Every \"Top 40\" chart, every \"Customers Also Bought\" widget, every view count is a form of social influence that systematically pushes us away from independent judgment. It's the measurement trap I wrote about [before](https://k1monfared.com/notes/blog/20251023-from-measurement-to-intention/). We use popularity as a proxy for quality, then optimize for the proxy, then forget it was a proxy."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Talent held fixed across 200 runs; only patronage reshuffled.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "### If we replayed history, would we get the same canon?"
+    },
+    {
+     "ref": "¶28",
+     "text": "This is the experiment that surprised me most. I held talent constant. Every simulated composer kept the exact same quality score. I only reshuffled their resources: who had wealthy patrons and who didn't. Then I ran it 200 times."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Counterfactual distance 0.88; top-decile talent has 1-in-4 fame chance; middle is lottery.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means \"identical canon every time\" and 1 means \"completely different canons every time.\" Almost entirely different canons from just reshuffling money."
+    },
+    {
+     "ref": "¶30",
+     "text": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then it was only about 1 in 4. For everyone in the 50th to 90th percentile of quality, the solidly good but not unmistakably transcendent, canonical status was effectively a lottery."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Without Esterhazy hire, Haydn likely joins forgotten hundreds despite excellence.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "This is the simulation equivalent of the Haydn question. If the Esterházys had hired someone else, Haydn would very likely be one of the hundreds of forgotten 18th-century composers you've never heard of. Not because he wasn't excellent, but because excellence alone isn't enough when the exposure pipeline is this narrow."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Ablation: full 0.32, no-social 0.35, equal-capital 0.46, quality-only 0.46.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "### What matters more: unequal money or herd behavior?"
+    },
+    {
+     "ref": "¶33",
+     "text": "I ran the simulation under four conditions, removing one factor at a time:"
+    },
+    {
+     "ref": "¶34",
+     "text": "1. **Full model** (everything active): quality-canon correlation = 0.32\n2. **No social influence** (people judge independently): 0.35\n3. **Equal capital** (everyone starts with the same resources): 0.46\n4. **Quality only** (no social influence, no capital inequality): 0.46"
+    }
+   ]
+  },
+  {
+   "id": "5.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Equalizing resources raises quality link 44 percent; exclusion distorts most.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "Turning off social influence barely helps. But equalizing starting resources jumps the quality-canon correlation by 44%. The biggest distortion isn't that audiences follow trends. It's that some artists never get heard in the first place."
+    }
+   ]
+  },
+  {
+   "id": "5.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Modern gate: major labels reach playlists first; downstream is noise amplification.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "This maps directly to the modern world. The problem isn't that people blindly follow Spotify playlists. It's that only major-label artists get on those playlists to begin with. Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification."
+    }
+   ]
+  },
+  {
+   "id": "5.9",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Stylized Vienna: 300 composers, distance 0.97, only 2.5 percent shared.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "### What about 18th-century Vienna specifically?"
+    },
+    {
+     "ref": "¶38",
+     "text": "I built a stylized version: 300 composers, a handful of very wealthy patrons, strong word-of-mouth, no recording technology. The counterfactual distance was 0.97, near maximum. Only 2.5% of canonical composers were shared between any two alternate histories."
+    }
+   ]
+  },
+  {
+   "id": "5.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Winners likely excellent, but dozens of equals lost the patronage lottery.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "To say that plainly: if you could rewind to 1750 and randomly reassign which composers got which court positions, the names we teach in music history would be almost entirely different. The winners in our timeline were very likely excellent. You had to be good to compete for a court position. But dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery."
+    }
+   ]
+  },
+  {
+   "id": "5.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Manufacturing taste means losers were not meaningfully worse.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "That's what \"manufacturing taste\" means. Not that the winners were bad. That the losers weren't meaningfully worse."
+    }
+   ]
+  },
+  {
+   "id": "5.12",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Robustness plus-minus 50 percent: steep capital-to-exposure conversion erases quality fastest.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "### How robust is this?"
+    },
+    {
+     "ref": "¶42",
+     "text": "I varied every parameter by ±50%. The single most important factor is how steeply money converts into attention. If doubling your marketing budget more than doubles your audience (a convex relationship), the rich get richer very fast and quality barely matters. If doubling your budget less than doubles your audience, quality has more room to breathe."
+    }
+   ]
+  },
+  {
+   "id": "5.13",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Steep playlist reach gaps predict fame decoupled from quality.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "This isn't just a modeling knob. It corresponds to a real structural question about the industry. When a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500, the capital-to-exposure curve is extremely steep. Our model predicts that under those conditions, quality has very little to do with who becomes famous."
+    }
+   ]
+  }
+ ]
+}

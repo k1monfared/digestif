@@ -1,0 +1,258 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "03_cant_stop_addicted_to_shindig",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "The designers balanced individual columns but not combinations; the forced-move rule compensates, and better boards exist.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The designers DID balance individual column completion times, but they couldn't (or didn't want to) balance the three-column combinations.",
+   "reasoning": "Source states individual columns balanced, combinations not, forced-move compensates, and optimization shows better boards exist."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Single-column deviations from 20 expected rolls are at most ±13.6% on the current board, good given integer lengths.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The deviations are ±13.6% at most. That's pretty good given that lengths must be integers!",
+   "reasoning": "Source states identical figure ±13.6% and same justification about integer lengths."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "In multi-column play, column 7 in {6,7,8} completes in about 2 turns while column 2 in {2,3,12} takes about 30.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "- Column 7 in {6,7,8}: expected completion in ~2 turns\n- Column 2 in {2,3,12}: expected completion in ~30 turns",
+   "reasoning": "Source gives same approximations, ~2 turns and ~30 turns, for the same column sets."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Design constraints were simplicity (the 3-5-7-9-11-13 board), 1980 manufacturability, and emotional engagement from visual length.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "1. **Simple enough to understand** - The current board (3-5-7-9-11-13)... 2. **Physically manufacturable**... 3. **Engaging to a broad audience** - The visual length creates emotional investment",
+   "reasoning": "Source lists the same three constraints with matching board and 1980 context."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "The forced-move rule compensates by forcing sub-optimal columns, preventing all-{6,7,8} play, and adding tactical complexity.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Forces players into sub-optimal column combinations - Prevents the game from devolving into \"everyone only picks {6,7,8}\" - Adds tactical complexity",
+   "reasoning": "Source lists these exact effects of the forced-move rule."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "Perfect balance needs lengths as exact multiples of probability: 171 steps for columns 2/12 and 834 for column 7, about 8 hours per game.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "- Column 2/12: 171 steps\n- Column 7: 834 steps\n\nGame duration: ~8 hours.",
+   "reasoning": "Source states identical numbers 171, 834, and ~8 hours."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "The current board has maximum height 13 steps and maximum deviation ±13.6%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Current board:**\n- Max height: 13 steps\n- Max deviation: ±13.6%",
+   "reasoning": "Source gives identical figures for the current board."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "claim_text": "A board one step higher per column (max 14) cuts maximum deviation to ±3.09%, 4× more balanced.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "- Max height: 14 steps\n- Max deviation: ±3.09%\n- **4× more balanced with just +1 step!**",
+   "reasoning": "Source states same height 14, deviation ±3.09%, and 4× claim."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "claim_text": "A 20-step board gives lengths [4,7,11,14,17,20,17,14,11,7,4] and maximum deviation ±2.17%, a 6× improvement.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "- Max height: 20 steps\n- Max deviation: ±2.17%\n- Lengths: [4, 7, 11, 14, 17, 20, 17, 14, 11, 7, 4]\n- **6× improvement in balance**",
+   "reasoning": "Source gives identical lengths, deviation ±2.17%, and 6× improvement."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "8.9"
+   ],
+   "claim_text": "The designers likely kept the current board for round numbers, intentional tension, 1980 testing limits, and player psychology.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "1. **Round numbers**... 2. **Intentional imbalance** - Maybe they wanted strategic tension 3. **Testing limitations** - In 1980... 4. **Player psychology**",
+   "reasoning": "Source lists the same four likely reasons for the designers' choice."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8.10"
+   ],
+   "claim_text": "The current lengths rise by 2 steps; a linear step=2.25 design gives ±3.09%, 3.2× better balance with +1 step.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "columns increase by exactly 2 steps each time... **Best linear design with similar size (step=2.25):**... Max deviation: ±3.09%... **3.2× better balance with just +1 step!**",
+   "reasoning": "Source states step of 2, step=2.25 design, ±3.09%, and 3.2× with +1 step."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.11"
+   ],
+   "claim_text": "An integer linear design (base=5, step=4) yields lengths 5 to 25 and ±3.32% deviation, keeping odd, manufacturable numbers.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Best with integer step (base=5, step=4):**\n- Lengths: [5, 9, 13, 17, 21, 25, ...]\n- Max deviation: ±3.32%\n- Maintains aesthetic appeal (all odd numbers, easy to manufacture)",
+   "reasoning": "Source gives same base/step, length range 5-25, ±3.32%, and odd/manufacturable note."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.12"
+   ],
+   "claim_text": "Linear designs can never achieve perfect balance because the probability curve is nonlinear.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Linear designs can never achieve perfect balance because the probability curve is nonlinear",
+   "reasoning": "Source states this verbatim, including the 'never' negation."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "8.13"
+   ],
+   "claim_text": "The author would seriously consider the 20-step board for a modern Can't Stop 2.0.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "For a modern Can't Stop 2.0, I'd seriously consider the 20-step board.",
+   "reasoning": "Source states this recommendation verbatim."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "8.14"
+   ],
+   "claim_text": "For designers: prioritize playability over mathematical perfection, compensate imbalances with rules, and consider turn-order handicaps.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**For game designers:** Prioritize playability over mathematical perfection, then use rules to compensate for inevitable imbalances... consider handicap systems for competitive play.",
+   "reasoning": "Source gives the same three designer recommendations."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "8.15"
+   ],
+   "claim_text": "The conclusion restates this: perfect balance isn't necessary, as the game is engaging despite (or because of) favoring middle columns.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "7. **Perfect balance isn't necessary** - The game is engaging despite (or because of) favoring middle columns",
+   "reasoning": "Source conclusion item matches the claim nearly verbatim."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Continuation versus switching depends on progress: the math favors continuing, but forced-move contamination can force strategic switches.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The mathematics favor continuation in most cases... However, the forced-move rule gradually contaminates good combinations over time, sometimes forcing strategic switches.",
+   "reasoning": "Source states math favors continuing and contamination can sometimes force switches, hedge preserved."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "With columns nearly complete (e.g., 10/11 steps) continuing makes sense; with 2-3 steps, switching might be faster.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "if columns are nearly complete (e.g., 10/11 steps), continuing makes sense. But with minimal progress (2-3 steps), switching to a better combination might be faster.",
+   "reasoning": "Source gives identical step thresholds and same hedged wording."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "The author has not analyzed this quantitatively; comparing 'always continue' versus 'switch when X' is left open.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Note:** I haven't fully analyzed this aspect quantitatively... simulating \"always continue\" vs \"switch when X\" strategies... is an interesting open question",
+   "reasoning": "Source explicitly says not fully analyzed and frames it as open future work."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "10"
+   ],
+   "claim_text": "All analysis code and simulation data are linked: probability, column-combination, strategy, and design scripts plus results.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "All analysis code and simulation results are available",
+   "reasoning": "Source links scripts across probability, column-combination, strategy, design, and results sections."
+  }
+ ],
+ "metrics": {
+  "total_claims": 20,
+  "supported": 20,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

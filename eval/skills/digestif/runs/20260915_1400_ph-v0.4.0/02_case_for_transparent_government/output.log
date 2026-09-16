@@ -1,0 +1,248 @@
+- The Case for Complete Government Transparency (source: source.txt)
+    Summary: Every government decision should be fully documented and publicly available by default, because citizens are principals, secret oversight fails, and objections are answerable. (¶7, ¶8, ¶10, ¶27, ¶33)
+        - 1 Every government decision should be fully documented and publicly available, not just the final policy. (¶7, ¶8)
+            - 1.1 Full chain: data used, considerations, participants, alternatives, arguments for and against, implementation, evaluation, course-correction, reconsideration. (¶8)
+            - 1.2 This is not radical; it is what any competent board of directors or CEO expects, basic accountability. (¶9)
+            - 1.3 It only sounds radical because the opposite has been normalized. (¶9)
+            - 1.4 Example: An owner refused an explanation of a million dollars of spending would sue, force disclosure, fire the manager. (¶3, ¶4)
+            - 1.5 Citizens asking how decisions were made are told classified, national security, ongoing operations, or slowdown. (¶5)
+            - 1.6 Citizens fund government with taxes, live with its consequences, and their children inherit what it builds or breaks. (¶5)
+            - 1.7 Nuance: Draft under construction, to be updated frequently; feedback and criticism welcome. (¶1, ¶2)
+            - 1.8 Implicit: The author questions whether citizens should accept these secrecy justifications. (¶6)
+        - 2 In a democracy citizens are the principals and every public servant, from clerk to president, is their agent. (¶10)
+            - 2.1 In a company the CEO cannot read every email but could, and that possibility shapes behavior. (¶11)
+            - 2.2 Accountability exists because the trail exists: when something goes wrong, the full chain can be traced. (¶11)
+            - 2.3 Example: A company where managers could classify emails or declare meetings corporate security would be bankrupt within a year. (¶11)
+            - 2.4 The author says that is how your government operates. (¶12)
+            - 2.5 Availability differs from consumption: citizens need not read everything but must be able to trace what affects them. (¶12)
+        - 3 Transparency means government decisions, data, and processes flow to citizens, not citizens' data flowing out. (¶13, ¶14)
+            - 3.1 About: decisions visible to citizens, processes traceable by citizens, officials accountable to citizens. (¶13)
+            - 3.2 Not about: tax returns visible to neighbors, medical records public, or citizens surveilling each other. (¶13)
+            - 3.3 Direction matters: the CEO sees employee work product but does not publish employees' medical records. (¶14)
+            - 3.4 Example: Spending totals by category are public, an individual's $47,000 tax payment is not. (¶14)
+            - 3.5 Aggregate data, anonymization, and differential privacy make this technically straightforward. (¶14)
+        - 4 No country has complete transparency, but several have gone far enough to prove the pieces work. (¶15)
+            - 4.1 Sweden's 1766 Freedom of the Press Act was the world's first freedom of information law. (¶16, ¶17)
+                - 4.1.1 It abolished censorship, granted citizens access to government documents, and is now part of the constitution. (¶16)
+                - 4.1.2 Born from political conflict, not idealism: the Hats had held power for decades, the Caps saw accountability needed visibility. (¶17)
+                - 4.1.3 Anders Chydenius drove the legislation through parliament, motivated explicitly by anti-corruption. (¶17)
+                - 4.1.4 Two hundred and sixty years later Sweden still operates under offentlighetsprincipen, documents public by default. (¶17)
+                - 4.1.5 Sweden has not collapsed; Nordic countries consistently rank among the least corrupt and most effective democracies. (¶17)
+            - 4.2 Seoul's 1999 OPEN system tracks 70 municipal tasks most prone to corruption. (¶18, ¶19)
+                - 4.2.1 It shows citizens exactly who made what decision, at which point in the process, in real time. (¶18)
+                - 4.2.2 Before OPEN, applicants could not see how permits were processed, enabling bribery that could not be proven. (¶19)
+                - 4.2.3 Research confirmed corruption decreases as e-participation increases; the UN, OECD, and World Bank recognized it. (¶19)
+            - 4.3 Estonia's X-Road is a distributed data exchange layer connecting 929+ institutions, 1,887 information systems, 3,000+ services. (¶20, ¶21)
+                - 4.3.1 Every transaction is timestamped and cryptographically signed, and all data access is logged. (¶20)
+                - 4.3.2 Citizens can see who accessed their data and why. (¶20)
+                - 4.3.3 Evidence: Estonia ranks 2nd in the UN E-Government Development Index with no major breaches in over 20 years despite constant cyber attacks. (¶21)
+                - 4.3.4 X-Road is open source under an MIT license and deployed in 20+ countries. (¶21)
+                - 4.3.5 X-Road proves the infrastructure is technically feasible; the technology is not the bottleneck, the will is. (¶21)
+            - 4.4 Brazil's 2004 Transparency Portal publishes all federal spending: contracts, transfers, salaries, travel expenses, government credit card transactions. (¶22, ¶23)
+                - 4.4.1 Evidence: The portal receives over 20 million accesses per year. (¶22)
+                - 4.4.2 The Transparency Card sends real-time notifications: over 430,000 active cards, 20+ million notifications sent. (¶23)
+                - 4.4.3 Journalists used the Access to Information Law to uncover 60GB of hidden pension data going back 27 years. (¶23)
+                - 4.4.4 This is what happens when citizens get CEO tools: they find the fraud. (¶23)
+            - 4.5 Since 2019 New Zealand publishes all Cabinet papers and minutes within 30 business days of decisions. (¶24, ¶25)
+                - 4.5.1 Cabinet deliberations are typically the most protected category of government information anywhere. (¶24)
+                - 4.5.2 The government has not ground to a halt; ministers still deliberate, but citizens can see why decisions were made. (¶25)
+            - 4.6 Taiwan's vTaiwan uses Pol.is: citizens vote agree or disagree, no replies allowed, and consensus statements surface. (¶26)
+                - 4.6.1 Evidence: By 2018, 26 issues had been processed and 80% led to government action. (¶26)
+                - 4.6.2 This is not core transparency but what becomes possible downstream of transparency. (¶26)
+        - 5 Programs shielded by secrecy are repeatedly revealed as illegal or built on lies, and internal oversight failed inside the same bubble. (¶27)
+            - 5.1 Evidence: In 1971 the Pentagon Papers revealed the US knew the Vietnam War was unwinnable while claiming progress. (¶28)
+            - 5.2 Evidence: That year activists exposed COINTELPRO, a program of illegal surveillance, infiltration, and disruption targeting civil rights leaders. (¶28)
+            - 5.3 Evidence: In 2013 Snowden revealed NSA bulk phone metadata collection, PRISM access to tech companies, and surveillance of foreign leaders. (¶28)
+            - 5.4 In each case government predicted catastrophe; the programs turned out illegal, unconstitutional, or based on deception. (¶28)
+            - 5.5 September 2020: the Ninth Circuit ruled the NSA's bulk phone record collection illegal and possibly unconstitutional. (¶29)
+                - 5.5.1 The court held the government failed FISA's requirement of relevance to a particular authorized investigation. (¶29)
+                - 5.5.2 Evidence: Panel member Geoffrey R. Stone found no evidence bulk collection had stopped any terror attacks. (¶29)
+                - 5.5.3 The NSA reportedly abandoned the program in 2018, saying it no longer made sense. (¶29)
+            - 5.6 The FISA court, congressional committees, and inspectors general existed but failed inside the secrecy structure. (¶30)
+                - 5.6.1 Secret oversight can be captured, co-opted, or worn down by institutional pressure. (¶30)
+                - 5.6.2 Structural argument: not that any single disclosure was costless, but that secret oversight reliably fails. (¶30)
+            - 5.7 The 2015 USA FREEDOM Act was the first legislation to rein in NSA spying in over 30 years. (¶31)
+                - 5.7.1 It ended bulk phone metadata collection and required the FISC to release significant opinions. (¶31)
+                - 5.7.2 The tech sector adopted transparency reporting on government data requests; HTTPS became default on most websites. (¶31)
+                - 5.7.3 The EU's GDPR was accelerated by the revelations. (¶31)
+                - 5.7.4 Nuance: Whether the disclosures caused operational harm is genuinely uncertain; full intelligence impact cannot be publicly assessed. (¶31)
+            - 5.8 The only correction came from outside the secrecy bubble. (¶31)
+            - 5.9 Whistleblower leaks are not the model; they are what happens in the absence of a model. (¶32)
+                - 5.9.1 Snowden is the symptom of a system where the only alternative to permanent secrecy is uncontrolled disclosure. (¶32)
+                - 5.9.2 Designed-in transparency would have made the illegal programs visible before they scaled, without bulk-leak damage. (¶32)
+        - 6 Objections to complete transparency deserve engagement: some protect power, but some are genuine and each is answerable. (¶33)
+            - 6.1 Counterpoint: Government transparency will violate my privacy. (¶34) [counter]
+                - 6.1.1 Evidence: 2019 Pew: 66% concerned about government data collection, 64% about its use, only 6% very confident records stay private. (¶34)
+                - 6.1.2 Evidence: A 2000 ABC News poll: 86% said agencies should not put records like driving, marriage, or court cases online. (¶34)
+                - 6.1.3 Rebuttal: These polls measure fear about citizen data held by government, not fear about government decisions being visible. (¶34)
+                - 6.1.4 Rebuttal: Asking how tax money was spent is not asking for a neighbor's medical records. (¶35)
+                - 6.1.5 Example: How $50 million in infrastructure spending was decided is public; nearby citizens' personal data is not. (¶35)
+                - 6.1.6 Aggregate reporting, anonymization, and differential privacy make the distinction technically trivial. (¶35)
+                - 6.1.7 Governments historically bundled citizen and government data; the solution is to separate them, not keep everything secret. (¶35)
+            - 6.2 Counterpoint: If every action is public, deliberation becomes impossible and officials will fear proposing ideas. (¶36) [counter]
+                - 6.2.1 Evidence: A Cambridge study of EU Council negotiations found tension between transparent deliberation and efficient decision-making. (¶36)
+                - 6.2.2 Evidence: An IMF analysis argued government is a fortress, not a sports car: friction forces accountability and catches errors. (¶36) [reported]
+                - 6.2.3 Evidence: The IMF cites Australia's Robodebt: 470,000 incorrect debt notices and a $1.8 billion settlement. (¶36)
+                - 6.2.4 Rebuttal: The concern confuses the speed of decision-making with the documentation of decision-making. (¶37)
+                - 6.2.5 Rebuttal: Transparency documents what happens at current speed; the CEO demands documentation, not slower work. (¶37)
+                - 6.2.6 Rebuttal: If documentation is burdensome, improve the documentation systems, do not abandon accountability. (¶37)
+                - 6.2.7 Evidence: New Zealand publishes cabinet papers within 30 days and its government has not ground to a halt. (¶37)
+                - 6.2.8 Opacity does not make decisions better, only unaccountable; transparency pressures logical consistency. (¶37)
+            - 6.3 Counterpoint: Diplomacy requires secrecy. (¶38) [counter]
+                - 6.3.1 Concession: This is the most legitimate concern and it deserves nuance. (¶38) [conceded]
+                - 6.3.2 Evidence: JCPOA talks began in 2012 with a secret backchannel; Camp David (1978) and Cold War backchannels also needed privacy. (¶38)
+                - 6.3.3 Evidence: Academic research frames the democratic dilemma: negotiations succeed only in secret but are barren without popular consent. (¶38) [reported]
+                - 6.3.4 Rebuttal: A CEO may keep negotiations confidential during talks but expects full disclosure once they conclude. (¶38)
+                - 6.3.5 Rebuttal: Temporary operational secrecy during active negotiations may be acceptable; permanent secrecy about what was decided is not. (¶38)
+                - 6.3.6 Time-delayed transparency: release full documentation after conclusion, e.g. 30-90 days, keeping future negotiators accountable. (¶38, ¶39)
+                - 6.3.7 The 'other countries won't deal with us' argument proves too much; foreign governments are not the principals, citizens are. (¶39)
+            - 6.4 Counterpoint: Special interests will benefit more than ordinary citizens. (¶40) [counter]
+                - 6.4.1 Evidence: Harden and Kirkland studied all 50 US state legislatures over multiple decades, comparing open and closed meetings. (¶40)
+                - 6.4.2 Evidence: More lobbying groups register, lobbyists donate more, and policy-opinion correlation is the same either way. (¶40)
+                - 6.4.3 Evidence: Harden: the laws don't make citizen representation better, they make it better for interest groups. (¶40) [reported]
+                - 6.4.4 Evidence: Princeton's Douglas Arnold (1990): open markup sessions often give organized interests a powerful advantage over inattentive citizens. (¶40) [reported]
+                - 6.4.5 Evidence: A 2024 Irish survey experiment with 569 participants found lobbying information does not improve trust evaluations. (¶40)
+                - 6.4.6 Rebuttal: The asymmetry is the problem: lobbyists are paid to monitor government, citizens have finite attention. (¶41)
+                - 6.4.7 Rebuttal: Build citizen capacity instead: fund watchdogs, investigative journalism, and civic technology. (¶41)
+                - 6.4.8 Evidence: Brazil's Fiquem Sabendo files 2,000-3,000 FOI requests per year on behalf of citizens. (¶41)
+                - 6.4.9 Evidence: Harden and Kirkland concluded the real key to quality representation is a robust, competitive electoral environment. (¶41)
+                - 6.4.10 Transparency alone is insufficient but necessary; opacity guarantees no accountability. (¶41)
+                - 6.4.11 The problem is citizens lack capacity to use information; the answer is to build capacity, not reduce information. (¶41)
+            - 6.5 Counterpoint: Public officials will be harassed. (¶42) [counter]
+                - 6.5.1 Concession: This concern is real, documented, and growing. (¶42) [conceded]
+                - 6.5.2 Evidence: The Brennan Center surveyed 735 local election officials in February-March 2024, weighted, margin of error ±3%. (¶42)
+                - 6.5.3 Evidence: 38% experienced threats, harassment, or abuse; more than half fear for colleagues' or staff safety. (¶42)
+                - 6.5.4 Evidence: More than 1 in 4 worry about being assaulted; 34% know someone who resigned over safety, up from 22% in 2023. (¶42)
+                - 6.5.5 Evidence: 61% of those threatened received threats in person or by phone. (¶42)
+                - 6.5.6 Evidence: NAAG: doxxing and swatting are sophisticated technology-enabled harassment, with AI intensifying scale, precision, and anonymity. (¶42)
+                - 6.5.7 Evidence: Since 2022, 22 states have passed protections for election officials. (¶42)
+                - 6.5.8 Rebuttal: Decisions should be public; personal information like home addresses and schedules should be protected. (¶43)
+                - 6.5.9 Accountability for work product is not the same as personal vulnerability. (¶43)
+                - 6.5.10 Rebuttal: Much current harassment stems from lack of transparency; conspiracy theories need information gaps to grow. (¶43)
+                - 6.5.11 Rebuttal: More transparency about reasoning might reduce, not increase, the rage. (¶43)
+                - 6.5.12 Solution: better protection for individuals combined with more transparency about processes. (¶43)
+            - 6.6 Counterpoint: National security requires secrecy. (¶44) [counter]
+                - 6.6.1 Evidence: Chicago Council surveys 2020-2022: roughly 60% say the intelligence community plays a vital warning role. (¶44)
+                - 6.6.2 Evidence: But a majority agreed the IC could share more without compromising effectiveness. (¶44)
+                - 6.6.3 Evidence: Belief that the IC threatens civil liberties rose from 12% in 2021 to 17% in 2022. (¶44)
+                - 6.6.4 Evidence: The Brennan Center states federal officials and outside experts agree far too much information is classified. (¶44) [reported]
+                - 6.6.5 Excessive secrecy in national security policy undermines the basic functions of democratic self-government. (¶44) [reported]
+                - 6.6.6 Evidence: SIPRI: military transparency is essential for trust between states and can help prevent wasteful spending. (¶44) [reported]
+                - 6.6.7 Evidence: Snowden is the strongest evidence: catastrophe predicted, minimal impact found, programs illegal, reforms improved liberties, country intact. (¶44)
+                - 6.6.8 Almost everything is classified by default and citizens must prove their need for access. (¶44)
+                - 6.6.9 A citizen-CEO model flips it: transparent by default, officials must prove their need for secrecy. (¶44)
+                - 6.6.10 Rebuttal: For genuinely necessary operational secrecy the CEO framing still works: temporary classification during an operation. (¶44)
+                - 6.6.11 Rebuttal: After conclusion full documentation should be available; strategy, doctrine, budget, procurement, rules of engagement always transparent. (¶44)
+                - 6.6.12 The national security label is overused to hide embarrassing decisions, illegal activities, incompetence, and corruption. (¶44)
+                - 6.6.13 Who decides what qualifies is a conflict of interest; the CEO should set the criteria, not the employees. (¶44)
+                - 6.6.14 Nuance: The author says this objection is used most often and scrutinized least. (¶44)
+            - 6.7 Counterpoint: Populists will weaponize transparency. (¶45) [counter]
+                - 6.7.1 Evidence: Kyle and Gultchin dataset: populist governments in 43 democratic countries, 1990-2018, Polity IV score ≥6. (¶45)
+                - 6.7.2 Evidence: Populist governments are 4x more likely to damage democratic institutions, 23% versus 6%. (¶45)
+                - 6.7.3 Evidence: Countries fall an average of 5 places on the Corruption Perceptions Index under populist rule; top-half starters fall 11 (Venezuela dropped 83 under Chávez). (¶45)
+                - 6.7.4 Evidence: Over 50% of populist leaders amended or rewrote constitutions, often extending term limits or weakening checks. (¶45)
+                - 6.7.5 Evidence: Populists hold office twice as long on average, 6.5 versus 3 years. (¶45)
+                - 6.7.6 Evidence: A Stanford analysis: when re-election hinges on immediate visibility, leaders may opt for short-term populist policies. (¶45) [reported]
+                - 6.7.7 Evidence: In Sweden, research documents the Sweden Democrats repurposing freedom of information and alternative media to erode trust in elites. (¶45)
+                - 6.7.8 Rebuttal: The causal story is backwards: populists damage democracy by reducing transparency, which is opacity. (¶46)
+                - 6.7.9 Rebuttal: The Sweden Democrats exploit selective transparency; cherry-picking works because not everything is visible. (¶46)
+                - 6.7.10 Rebuttal: In a fully transparent system selective leaking loses its power; you cannot cherry-pick the full record. (¶46)
+                - 6.7.11 Rebuttal: Short-term incentives exist with or without transparency; documenting long-term rationale can counter them. (¶46)
+                - 6.7.12 Documentation protects an unpopular but wise decision and exposes a crowd-pleasing decision with bad reasoning. (¶46)
+                - 6.7.13 Transparency enables evaluation of reasoning, which is the antidote to populism, not its enabler. (¶46)
+                - 6.7.14 Nuance: The author calls this a sophisticated concern backed by real research. (¶45)
+            - 6.8 Counterpoint: Misinformation makes transparency pointless. (¶47) [counter]
+                - 6.8.1 Evidence: A 2023 Canadian panel study found false beliefs, specifically COVID-19 related, predict perceiving government as less transparent regardless of actual levels. (¶47)
+                - 6.8.2 Evidence: Negative transparency perceptions are associated with decline in voting intentions, trust, and satisfaction with democracy. (¶47)
+                - 6.8.3 Evidence: A separate experiment found citizens value the idea of transparency but may react negatively to actual disclosure content. (¶47)
+                - 6.8.4 Rebuttal: The research shows false beliefs lead to perceived non-transparency, not that transparency produces false beliefs. (¶47)
+                - 6.8.5 Rebuttal: Opacity enables false beliefs: conspiracy theories thrive on gaps and speculation fills the vacuum of secrecy. (¶47)
+                - 6.8.6 Rebuttal: Transparency provides ground truth; with full documentation, false claims can be checked against reality. (¶47)
+                - 6.8.7 Evidence: Latent transparency supports the CEO framing: availability changes behavior even without consumption. (¶47)
+                - 6.8.8 Trust requires consistency over time; persistent comprehensive transparency creates a verifiable track record. (¶47)
+                - 6.8.9 Better transparency means accessibility, explanation, and intermediaries like journalists, civic tech, and educators. (¶47)
+            - 6.9 Counterpoint: Publishing negotiating positions or monetary decisions could let traders exploit advance knowledge. (¶48) [counter]
+                - 6.9.1 Rebuttal: The concern is valid but narrow; the solution is time-delayed transparency, not permanent secrecy. (¶48)
+                - 6.9.2 Evidence: The US Federal Reserve releases FOMC minutes after three weeks and full transcripts after five years. (¶48)
+                - 6.9.3 Evidence: The EU's failed TTIP negotiations suffered from too much secrecy; backlash grew as citizens felt excluded. (¶48)
+                - 6.9.4 Timing may be managed per category: monetary policy until implementation, trade until conclusion, procurement until award. (¶48)
+                - 6.9.5 Nothing stays secret forever. (¶48)
+                - 6.9.6 Secrecy in procurement enables corruption; opaque bidding lets officials favor connected contractors with impunity. (¶48)
+                - 6.9.7 Evidence: Brazil's Transparency Portal includes contract information because sunlight in procurement prevents fraud. (¶48)
+            - 6.10 Counterpoint: Those in power will never allow this. (¶49) [counter]
+                - 6.10.1 Rebuttal: This describes the political challenge, not a principled objection. (¶49)
+                - 6.10.2 Evidence: Iceland after 2008: 950 randomly selected citizens identified values; a 25-person council excluding politicians drafted openly with 3,600 comments. (¶49)
+                - 6.10.3 Evidence: The draft was approved unanimously by the council and by a two-thirds majority in a national referendum. (¶49)
+                - 6.10.4 Evidence: Then the existing parliament refused to ratify it. (¶49)
+                - 6.10.5 Evidence: OGP, 75 countries and 4,500+ commitments since 2011: one-third of delayed commitments fail from lack of funding and technical capacity. (¶49)
+                - 6.10.6 Evidence: Other causes: poor institutional coordination, lack of political support, and discontinuity across administrations. (¶49)
+                - 6.10.7 Those who benefit from opacity, corrupt officials, connected interests, entrenched power holders, will always resist. (¶49)
+                - 6.10.8 Rebuttal: It is not an argument that transparency is bad; it says transparency threatens the powerful, which is exactly the point. (¶50)
+                - 6.10.9 Evidence: Precedents: Sweden 1766 had declining aristocratic power, post-Watergate scandal opened reform, post-2008 Iceland created demand. (¶50)
+                - 6.10.10 Rebuttal: The CEO framing asks who works for whom, not whether politicians grant permission. (¶50)
+                - 6.10.11 This is a governance design problem, not a permission-seeking problem. (¶50)
+        - 7 Transparency is not a value to balance against efficiency, security, privacy, and speed; it is the measuring stick. (¶51)
+            - 7.1 Reject the framing of finding an optimal tradeoff point. (¶51)
+            - 7.2 Speed and accountability are byproducts: document everything at whatever speed, then improve processes transparency reveals as broken. (¶51)
+            - 7.3 Availability of the record creates pressure for consistency, sound reasoning, and accountability. (¶51)
+            - 7.4 Officials who know their reasoning will be reviewed produce better reasoning; documented decisions are more carefully considered. (¶51)
+            - 7.5 Corruption that leaves a trail is easier to prosecute. (¶51)
+            - 7.6 Transparency is the measuring stick for whether government works; reaching 100% requires solving speed and accountability along the way. (¶51)
+        - 8 Open source shows complex collaborative work can be built and maintained in public, enabling accountability. (¶52)
+            - 8.1 Evidence: Linux runs most of the internet, built by thousands in public view: every commit visible, issues tracked, pull requests discussed. (¶52)
+            - 8.2 Maintainers are accountable to users, and if you disagree with a decision you can fork the project. (¶52)
+            - 8.3 Government is more complex, but the principle is the same. (¶52)
+            - 8.4 In open source participation is voluntary and you can leave; in government you cannot fork your country. (¶52)
+            - 8.5 That makes the case for government transparency stronger: less choice means more right to see how decisions are made. (¶52)
+            - 8.6 You pay for this government, you live with its consequences, you are the CEO. Act like it. (¶52)
+        - 9 Theme: Appendix: 49 sourced references with summaries, grouped by topic. (¶53, ¶54, ¶55, ¶56, ¶57, ¶58, ¶59, ¶60, ¶61, ¶62, ¶63, ¶64, ¶65, ¶66, ¶67, ¶68)
+            - 9.1 Evidence: Historical foundations: three sources on the 1766 act, UNESCO's world's-first recognition, and its 250th anniversary. (¶53)
+            - 9.2 Evidence: Digital infrastructure: X-Road history (started 1998, launched 2001), a 1996 leak behind distributed design, Estonia 16th to 2nd, 100% digitalization 2024. (¶54)
+            - 9.3 Evidence: Government spending: Brazil's portal created 2004 by CGU with five data categories; 20+ million yearly accesses; 2018 integration of 17 sources. (¶55)
+                - 9.3.1 Evidence: Fiquem Sabendo used LAI to uncover 60GB of hidden pension data spanning 27 years of former presidents. (¶55)
+            - 9.4 Evidence: Process transparency: OPEN launched April 1999 (70 tasks), anti-corruption study, NZ's 30 business day release from January 2019 and exceptions. (¶56)
+            - 9.5 Evidence: Participatory democracy: Pol.is details (Uber first test, 2014 Sunflower origins, Audrey Tang, g0v), Iceland's rejection, deliberative-quality assessment. (¶57)
+            - 9.6 Evidence: Snowden sources: 10-year reform retrospective, GDPR acceleration, the 2020 ruling, and the ACLU calling it a privacy-rights victory. (¶58)
+            - 9.7 Evidence: Privacy sources: Pew 2019 (66% concerned about government data collection) and Roper's opinion history from the 1950s onward. (¶59)
+            - 9.8 Evidence: Efficiency sources: IMF fortress and Robodebt, Cambridge's EU Council perception study, World Bank's mixed findings and incumbent rollback. (¶60)
+            - 9.9 Evidence: Diplomacy sources: the Harvard explainer on the Oman backchannel and Oxford's democratic-dilemma overview. (¶61)
+            - 9.10 Evidence: Special-interest sources: Notre Dame's 50-state study, the Cambridge book, Springer's 569-participant Irish experiment. (¶62)
+            - 9.11 Evidence: Safety sources: Brennan's 735-official survey (38% threatened, ±3%), NAAG analysis, Issue One's 22-state tracking since 2022. (¶63)
+            - 9.12 Evidence: National-security sources: Chicago Council (about 60% support; 12% to 17% liberties concern), Brennan, and SIPRI. (¶64)
+            - 9.13 Evidence: Populism sources: the 43-country 1990-2018 study (4x, average 5 places), Stanford, and the Sweden Democrats case study. (¶65)
+            - 9.14 Evidence: Misinformation sources: HKS review on false beliefs reducing perceived transparency and the latent-transparency study. (¶66)
+            - 9.15 Evidence: Structural-barrier sources: OGP (75 countries), Hong 2024, Ruijer et al. 2020, and a study on workarounds and non-compliance. (¶67)
+            - 9.16 Evidence: Nordic sources: nordics.info (250+ years), Nordicom's five-country comparison, Finland's 1999 openness act. (¶68)
+    - Cross-links
+        - 1.4 exemplifies 1
+        - 1.4 exemplifies 2
+        - 2.3 exemplifies 2
+        - 3.4 exemplifies 3
+        - 3.5 restates 6.1.6
+        - 4.1 restates 9.1
+        - 4.2 restates 9.4
+        - 4.3 restates 9.2
+        - 4.3.5 supports 4
+        - 4.4.4 supports 2
+        - 4.5 restates 6.2.7
+        - 4.5 restates 9.4
+        - 5.4 restates 6.6.7
+        - 5.7 restates 9.6
+        - 5.7.4 qualifies 5
+        - 5.9.2 supports 5
+        - 6.1.3 supports 3
+        - 6.2.8 restates 6.4.10
+        - 6.3.6 restates 6.9.4
+        - 6.4.8 exemplifies 6.4.7
+        - 6.4.9 qualifies 6.4.10
+        - 6.5.10 supports 5
+        - 6.6.10 qualifies 7
+        - 6.7 restates 9.13
+        - 6.7.13 supports 1
+        - 6.8 restates 9.14
+        - 6.8.7 supports 2.5
+        - 6.10.4 exemplifies 6.10
+        - 6.10.8 supports 6
+        - 7 qualifies 6
+        - 8.5 supports 1
+    - Coverage: 68 of 68 passages cited

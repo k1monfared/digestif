@@ -1,0 +1,384 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "06_valuing_consistency",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States the paper's core thesis; canonical reference for later repeated statements."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the ambiguity and moral loading; distinct framing not repeated."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete historical example supplying new evidence; not restated elsewhere."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Argumentative premise about revision being a virtue; adds new reasoning."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specifies openness scale and positions; numeric content protected."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines the behavior equation and parameters; core model detail."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Reports output movement under fixed rule; distinct numeric result."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Names economic reading of anchor and reference; adds terminology."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Chameleon numeric case with overshoot; new worked example."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Rule-level consistency comparison; distinct point about differing content."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines three-way split of consistency; key taxonomy not repeated."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Body restatement of thesis that hidden anchor drift carries moral weight."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contrarian numeric case with flipped sign; new worked example."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Characterizes contrarianism as signed dependency; distinct interpretation."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Positive spectrum taxonomy; distinct definitional content."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "4.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Negative spectrum taxonomy; continues definition with new categories."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Establishes reference-kind dependence; canonical for later recap."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Recommends resistance versus tracking by reference type; new prescription."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Personal recommendation on |w| magnitude; new normative claim."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Equity glidepath numbers; distinct numeric evidence, protected from trivia."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Interpretation of holding equities as refusal; new application."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C017",
+      "reasoning": "Recap repeats reference-kind dependence with no new content."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines the evidence-cost four-cell grid; new framework."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Classifies rational revision versus ossification; new distinctions."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines preference laundering; distinct mechanism not repeated."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Splits anchor-held-under-cost into two mechanisms; new definition."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "6.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines revealed preference as suppression; distinct subcase."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "6.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines hysteresis and installed fear; distinct subcase."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Scope caveat about unexplored anchor distance; caveats excluded from trivia."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines perspective gain; adds recursive-reference nuance."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Central claim that revision and laundering converge; canonical anchor."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Socialist example illustrating convergence; new concrete case."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C031",
+      "reasoning": "Restates indistinguishability using a phrase; nothing substantively new."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces confounded attribution; distinct failure mode."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Claims misperceived reference corrupts downstream; new causal claim."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Reference lag with diaspora and Quebec examples; new evidence."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States the prior-prediction test; canonical recommendation."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Falsifiability example; adds concrete illustration of the test."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds never-default-to-flattering injunction beyond C037; new recommendation."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Recap restates bad-proxy thesis; no new information."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 40,
+    "unique": 36,
+    "duplicates": 4,
+    "trivia": 0,
+    "redundancy_rate": 0.1,
+    "trivia_rate": 0.0,
+    "structured_tokens": 489,
+    "tokens_per_unique_claim": 13.58
+  },
+  "prune_list": [
+    "C012 duplicates C001, safe to merge",
+    "C022 duplicates C017, safe to merge",
+    "C033 duplicates C031, safe to merge",
+    "C040 duplicates C001, safe to merge"
+  ]
+}

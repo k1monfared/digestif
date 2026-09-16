@@ -1,0 +1,447 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 3,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "AI proposes while humans digest, but importance was never stable human judgment.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "## What remains human\n\nMoradifam walks the research side faster. The [Davies results](https://www.nature.com/articles/s41586-021-04086-x) used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4) framed matrix multiplication search as a game and found algorithms humans had not. The pattern is the same every time: the AI proposes, humans check, digest, and present. Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process."
+    },
+    {
+     "ref": "¶30",
+     "text": "His epistemology section is the interesting one. Mathematics already has precedents for accepted-but-opaque results: the [four-color theorem](https://en.wikipedia.org/wiki/Four_color_theorem), the [classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups). We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind. As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual. And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    },
+    {
+     "ref": "¶31",
+     "text": "## The blind spot they share\n\nBoth documents stop at the same edge, and it is the edge I want to step past. Moradifam writes that AI \"does not by itself determine what the mathematical community should regard as interesting, deep, or worth understanding. Those judgments remain human, shaped by taste, experience, and the collective culture of the field.\" Tao's equivalent is the claim that community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\" Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it. That is the right place for their documents to stop. Mine is a blog post, and it is a different genre: I am building on their ground, not correcting it, and the next step is speculation, not scholarship."
+    },
+    {
+     "ref": "¶32",
+     "text": "And here is where the two threads of this piece finally meet. The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about in the first place. That is importance, and I think importance was never a stable, purely human judgment. This is also, I suspect, why Hadi and I were worried. Consider how the field actually decided what was worth working on before AI. There were two levers."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Davies ML pumped knot intuitions humans formalized; AlphaTensor gamed new matrix-multiplication algorithms.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "## What remains human\n\nMoradifam walks the research side faster. The [Davies results](https://www.nature.com/articles/s41586-021-04086-x) used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4) framed matrix multiplication search as a game and found algorithms humans had not. The pattern is the same every time: the AI proposes, humans check, digest, and present. Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Pattern repeats: AI proposes, humans check, digest, present; by 2026 AI takes most discovery.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "## What remains human\n\nMoradifam walks the research side faster. The [Davies results](https://www.nature.com/articles/s41586-021-04086-x) used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4) framed matrix multiplication search as a game and found algorithms humans had not. The pattern is the same every time: the AI proposes, humans check, digest, and present. Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Opaque precedents four-color and finite-simple classification survive communal verification beyond any individual.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "His epistemology section is the interesting one. Mathematics already has precedents for accepted-but-opaque results: the [four-color theorem](https://en.wikipedia.org/wiki/Four_color_theorem), the [classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups). We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind. As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual. And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Understanding shifts constructive rebuilding to hermeneutic interpreting; builder becomes interpreter.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "His epistemology section is the interesting one. Mathematics already has precedents for accepted-but-opaque results: the [four-color theorem](https://en.wikipedia.org/wiki/Four_color_theorem), the [classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups). We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind. As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual. And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Thesis: automated routine makes framing, judgment, taste more visible and more valuable.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "His epistemology section is the interesting one. Mathematics already has precedents for accepted-but-opaque results: the [four-color theorem](https://en.wikipedia.org/wiki/Four_color_theorem), the [classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups). We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind. As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual. And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Moradifam keeps interesting and deep human; Tao keeps acceptance external and non-optimizable by authors.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "## The blind spot they share\n\nBoth documents stop at the same edge, and it is the edge I want to step past. Moradifam writes that AI \"does not by itself determine what the mathematical community should regard as interesting, deep, or worth understanding. Those judgments remain human, shaped by taste, experience, and the collective culture of the field.\" Tao's equivalent is the claim that community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\" Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it. That is the right place for their documents to stop. Mine is a blog post, and it is a different genre: I am building on their ground, not correcting it, and the next step is speculation, not scholarship."
+    }
+   ]
+  },
+  {
+   "id": "5.7",
+   "type": "concession",
+   "attribution": "author",
+   "text": "Both stop rightly there; this blog speculates onward, building rather than correcting.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "## The blind spot they share\n\nBoth documents stop at the same edge, and it is the edge I want to step past. Moradifam writes that AI \"does not by itself determine what the mathematical community should regard as interesting, deep, or worth understanding. Those judgments remain human, shaped by taste, experience, and the collective culture of the field.\" Tao's equivalent is the claim that community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\" Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it. That is the right place for their documents to stop. Mine is a blog post, and it is a different genre: I am building on their ground, not correcting it, and the next step is speculation, not scholarship."
+    }
+   ]
+  },
+  {
+   "id": "5.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Process as product means importance, what was worth thinking, is what matters.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "And here is where the two threads of this piece finally meet. The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about in the first place. That is importance, and I think importance was never a stable, purely human judgment. This is also, I suspect, why Hadi and I were worried. Consider how the field actually decided what was worth working on before AI. There were two levers."
+    }
+   ]
+  },
+  {
+   "id": "5.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Importance was never stable purely human judgment, author thinks and suspects.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "And here is where the two threads of this piece finally meet. The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about in the first place. That is importance, and I think importance was never a stable, purely human judgment. This is also, I suspect, why Hadi and I were worried. Consider how the field actually decided what was worth working on before AI. There were two levers."
+    }
+   ]
+  },
+  {
+   "id": "5.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "First lever applicability: real use elsewhere, fairly measurable, partly steered by funding.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "The first was applicability. Did a problem solve something real elsewhere, in science, engineering, society? You could measure that fairly directly, and it was partly driven by where research funding lived. Money went to areas where results were wanted."
+    }
+   ]
+  },
+  {
+   "id": "5.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Second lever big-name taste compounds fame, genuine interest, network favoritism.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "The second was the taste of the big names. What the field's influencers thought was important. That taste was itself a compound. Partly fame: [Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.), allegedly but not verified, was infamous for working only on problems that could get him famous. Partly genuine interest. And partly network favoritism: I know you, so if you work on a problem I become interested in it, so I work on it too, and as a result we both grow in our social position. That kind of thinking was always there, quietly."
+    }
+   ]
+  },
+  {
+   "id": "5.12",
+   "type": "example",
+   "attribution": "reported",
+   "text": "Nash allegedly but not verified worked only on problems that could make him famous.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "The second was the taste of the big names. What the field's influencers thought was important. That taste was itself a compound. Partly fame: [Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.), allegedly but not verified, was infamous for working only on problems that could get him famous. Partly genuine interest. And partly network favoritism: I know you, so if you work on a problem I become interested in it, so I work on it too, and as a result we both grow in our social position. That kind of thinking was always there, quietly."
+    }
+   ]
+  },
+  {
+   "id": "5.13",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Neither lever is pure judgment; both social, hidden while slow, local, invisible.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "Neither lever is pure mathematical judgment. Both are social. The field could pretend otherwise as long as the process was slow, local, and invisible. The AI era removes the cover story."
+    }
+   ]
+  },
+  {
+   "id": "5.14",
+   "type": "concession",
+   "attribution": "conceded",
+   "text": "Author leans on Tao and Moradifam for checkable reasoning, not names, perhaps imperfectly.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "I should own the irony of saying this while leaning on Tao and Moradifam for most of the argument so far. They are exactly the kind of authority I am saying we should interrogate. I lean on them because their reasoning is checkable, not because their names are big, and I am trying to show my work the whole way. That is the difference I am pointing at, and I am not sure I fully live up to it."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Cheap generation leaves scarce attention, inviting an influencer economy for mathematics.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "## The influencer economy\n\nEverything these days is sales, in a way. Whatever you create, you need to do more work to sell it than you did to make it. I think that's partly globalization, if that term is still in fashion: the competition used to be across town, now it's everyone with an internet connection. Production got cheap everywhere, so distribution became the constraint. The same is about to happen to mathematics. Under the Working Hypothesis, generating a result and verifying it both become cheap. What stays scarce is attention, and markets for scarce attention develop influencer structure."
+    },
+    {
+     "ref": "¶39",
+     "text": "Something similar will happen to mathematics. I'm not sure about timing, it might take years, probably decades, not months though. The current influencers are still highly qualified. Tao, Gowers, even the slightly lower ranked mathematicians with a successful social media presence, earned their standing in a world where the canon was set slowly, by journals and seminars. Not that the old gatekeeping mechanism was good, but what is about to happens is defintiely worse. In \"How democracies die\" Levitsky talks at length and somewhat nostalgically about how old gatekeeping mechanism in politics was working and implicitely longs for it. I'm not saying that, but there is a function for gatekeeping and we need that to be more merit based, but we are moving in the opposite direction. The problem is not them. The problem is the mechanism that selects the next generation. What is written about, what is read, and what problems are allocated computation money to be solved by AI, will all be defined differently going forward. When compute becomes the budget, a research problem is worth what it costs in compute time, and that allocation will be based on direct impact on other fields first, and on what the influencers of mathematics advertise second. There would be also a long tail of problems that \"applications\" would not contribute to theory anymore because they could solve it themselves without the need of so called mathematicians, like how physics worked in the past, a physicist would just develop the math they needed and use it, but since everything was so much slower, they would have become known in the mathematical world, or even be known as mathematicians. Now, the problem will be solved internally and the tools used to solve their problems, the next company or science field would need to solve the problem themselves, with their own compute budget."
+    },
+    {
+     "ref": "¶45",
+     "text": "And there is a Goodhart recursion that Tao doesn't reach. Once attention becomes the metric, the AI tools optimize for attention, so results get chosen and framed for virality among mathematicians, proofs of statements that make good talks. And the pipeline is a loop, not a line: which results win attention feeds back into which problems are posed next, so the attention economy reaches all the way back to problem selection. The community's last non-automatable function becomes the new proxy target. And if models become the primary readers and rankers of mathematics, whatever biases exist in today's canon get frozen in and amplified. The influencers of today become the training distribution of tomorrow. The collective culture that Moradifam treats as a stable arbiter is precisely what is up for grabs. One might argue this is exactly the best thing for the community and the science. Judging from how social media turned out, I highly doubt it."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Everything is sales; globalization widened competition, production cheapened, distribution constrains.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "## The influencer economy\n\nEverything these days is sales, in a way. Whatever you create, you need to do more work to sell it than you did to make it. I think that's partly globalization, if that term is still in fashion: the competition used to be across town, now it's everyone with an internet connection. Production got cheap everywhere, so distribution became the constraint. The same is about to happen to mathematics. Under the Working Hypothesis, generating a result and verifying it both become cheap. What stays scarce is attention, and markets for scarce attention develop influencer structure."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Blogs outproduced books while readership fell; important lost to popular; video displaced writing.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "The internet did this to writing, and social media did it to the internet. Blogs were written in vastly greater volume, and people read fewer books. Topics that were important got deprioritized relative to topics that were popular. That's what any influencer economy does. Then social media pushed it further, and the conversation moved away from writing toward video and voice, short-form clips and podcasts everywhere. Now people spend more time listening to random dudes on the internet talk about topics they may or may not be qualified to have an opinion on than reading a book by an expert on the topic, let alone accepting it. Furthermore, more people are interested in food supplemants than they are in world affairs, simple because the random dudes get paid to talk about them on their podcasts. It's easier to digest. It's more relatable, it creates a sense of urgency directly relevant to your life. And often it supports your current understanding, far better than it challenges it."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Random possibly-unqualified voices beat experts; paid relatable urgency beats challenge, supporting priors.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "The internet did this to writing, and social media did it to the internet. Blogs were written in vastly greater volume, and people read fewer books. Topics that were important got deprioritized relative to topics that were popular. That's what any influencer economy does. Then social media pushed it further, and the conversation moved away from writing toward video and voice, short-form clips and podcasts everywhere. Now people spend more time listening to random dudes on the internet talk about topics they may or may not be qualified to have an opinion on than reading a book by an expert on the topic, let alone accepting it. Furthermore, more people are interested in food supplemants than they are in world affairs, simple because the random dudes get paid to talk about them on their podcasts. It's easier to digest. It's more relatable, it creates a sense of urgency directly relevant to your life. And often it supports your current understanding, far better than it challenges it."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Math faces similar shift in years, probably decades, not months, author guesses.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "Something similar will happen to mathematics. I'm not sure about timing, it might take years, probably decades, not months though. The current influencers are still highly qualified. Tao, Gowers, even the slightly lower ranked mathematicians with a successful social media presence, earned their standing in a world where the canon was set slowly, by journals and seminars. Not that the old gatekeeping mechanism was good, but what is about to happens is defintiely worse. In \"How democracies die\" Levitsky talks at length and somewhat nostalgically about how old gatekeeping mechanism in politics was working and implicitely longs for it. I'm not saying that, but there is a function for gatekeeping and we need that to be more merit based, but we are moving in the opposite direction. The problem is not them. The problem is the mechanism that selects the next generation. What is written about, what is read, and what problems are allocated computation money to be solved by AI, will all be defined differently going forward. When compute becomes the budget, a research problem is worth what it costs in compute time, and that allocation will be based on direct impact on other fields first, and on what the influencers of mathematics advertise second. There would be also a long tail of problems that \"applications\" would not contribute to theory anymore because they could solve it themselves without the need of so called mathematicians, like how physics worked in the past, a physicist would just develop the math they needed and use it, but since everything was so much slower, they would have become known in the mathematical world, or even be known as mathematicians. Now, the problem will be solved internally and the tools used to solve their problems, the next company or science field would need to solve the problem themselves, with their own compute budget."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Current influencers Tao and Gowers earned standing under slow journal-seminar canon; old gatekeeping flawed, coming worse.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "Something similar will happen to mathematics. I'm not sure about timing, it might take years, probably decades, not months though. The current influencers are still highly qualified. Tao, Gowers, even the slightly lower ranked mathematicians with a successful social media presence, earned their standing in a world where the canon was set slowly, by journals and seminars. Not that the old gatekeeping mechanism was good, but what is about to happens is defintiely worse. In \"How democracies die\" Levitsky talks at length and somewhat nostalgically about how old gatekeeping mechanism in politics was working and implicitely longs for it. I'm not saying that, but there is a function for gatekeeping and we need that to be more merit based, but we are moving in the opposite direction. The problem is not them. The problem is the mechanism that selects the next generation. What is written about, what is read, and what problems are allocated computation money to be solved by AI, will all be defined differently going forward. When compute becomes the budget, a research problem is worth what it costs in compute time, and that allocation will be based on direct impact on other fields first, and on what the influencers of mathematics advertise second. There would be also a long tail of problems that \"applications\" would not contribute to theory anymore because they could solve it themselves without the need of so called mathematicians, like how physics worked in the past, a physicist would just develop the math they needed and use it, but since everything was so much slower, they would have become known in the mathematical world, or even be known as mathematicians. Now, the problem will be solved internally and the tools used to solve their problems, the next company or science field would need to solve the problem themselves, with their own compute budget."
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "type": "concession",
+   "attribution": "conceded",
+   "text": "Gatekeeping has a function needing merit, per Levitsky nostalgia, author not endorsing old politics.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "Something similar will happen to mathematics. I'm not sure about timing, it might take years, probably decades, not months though. The current influencers are still highly qualified. Tao, Gowers, even the slightly lower ranked mathematicians with a successful social media presence, earned their standing in a world where the canon was set slowly, by journals and seminars. Not that the old gatekeeping mechanism was good, but what is about to happens is defintiely worse. In \"How democracies die\" Levitsky talks at length and somewhat nostalgically about how old gatekeeping mechanism in politics was working and implicitely longs for it. I'm not saying that, but there is a function for gatekeeping and we need that to be more merit based, but we are moving in the opposite direction. The problem is not them. The problem is the mechanism that selects the next generation. What is written about, what is read, and what problems are allocated computation money to be solved by AI, will all be defined differently going forward. When compute becomes the budget, a research problem is worth what it costs in compute time, and that allocation will be based on direct impact on other fields first, and on what the influencers of mathematics advertise second. There would be also a long tail of problems that \"applications\" would not contribute to theory anymore because they could solve it themselves without the need of so called mathematicians, like how physics worked in the past, a physicist would just develop the math they needed and use it, but since everything was so much slower, they would have become known in the mathematical world, or even be known as mathematicians. Now, the problem will be solved internally and the tools used to solve their problems, the next company or science field would need to solve the problem themselves, with their own compute budget."
+    }
+   ]
+  },
+  {
+   "id": "6.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Compute budgets will prize direct impact first, influencer advertising second; applied tails may self-solve separately.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "Something similar will happen to mathematics. I'm not sure about timing, it might take years, probably decades, not months though. The current influencers are still highly qualified. Tao, Gowers, even the slightly lower ranked mathematicians with a successful social media presence, earned their standing in a world where the canon was set slowly, by journals and seminars. Not that the old gatekeeping mechanism was good, but what is about to happens is defintiely worse. In \"How democracies die\" Levitsky talks at length and somewhat nostalgically about how old gatekeeping mechanism in politics was working and implicitely longs for it. I'm not saying that, but there is a function for gatekeeping and we need that to be more merit based, but we are moving in the opposite direction. The problem is not them. The problem is the mechanism that selects the next generation. What is written about, what is read, and what problems are allocated computation money to be solved by AI, will all be defined differently going forward. When compute becomes the budget, a research problem is worth what it costs in compute time, and that allocation will be based on direct impact on other fields first, and on what the influencers of mathematics advertise second. There would be also a long tail of problems that \"applications\" would not contribute to theory anymore because they could solve it themselves without the need of so called mathematicians, like how physics worked in the past, a physicist would just develop the math they needed and use it, but since everything was so much slower, they would have become known in the mathematical world, or even be known as mathematicians. Now, the problem will be solved internally and the tools used to solve their problems, the next company or science field would need to solve the problem themselves, with their own compute budget."
+    }
+   ]
+  },
+  {
+   "id": "6.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Naive faith treats Tao as disinterested; attention allocation is private with public consequences, unaudited.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "There is a naive faith underneath the current system that nobody examines. We treat figures like Tao as disinterested, as if canonization decisions flowed from pure mathematical judgment rather than from people with careers, incentives, aesthetic biases, and finite attention. The assumption is not that they are corrupt. It is subtler. It is that their attention allocation is a public good when it is actually a private act with public consequences. A blog post by Tao can redirect years of collective effort. Nobody audits whether the redirection was optimal. The prestige itself becomes the justification. And so far we are lucky that private acts (likely) align with the public interest, but in an influencer economy there is no guarantee they will."
+    }
+   ]
+  },
+  {
+   "id": "6.9",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Private acts likely aligned publicly so far, with no guarantee under influencer incentives.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "There is a naive faith underneath the current system that nobody examines. We treat figures like Tao as disinterested, as if canonization decisions flowed from pure mathematical judgment rather than from people with careers, incentives, aesthetic biases, and finite attention. The assumption is not that they are corrupt. It is subtler. It is that their attention allocation is a public good when it is actually a private act with public consequences. A blog post by Tao can redirect years of collective effort. Nobody audits whether the redirection was optimal. The prestige itself becomes the justification. And so far we are lucky that private acts (likely) align with the public interest, but in an influencer economy there is no guarantee they will."
+    }
+   ]
+  },
+  {
+   "id": "6.10",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Old trust was structural: decades of checkable work, checkable judgments, wrong calls costing standing.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "Historically the faith sort of worked, but for structural reasons that are eroding, not because mathematicians are unusually virtuous. The old gatekeepers were trustable to a real extent, and the trust was earned structurally: their standing was built over decades of checkable work, their judgments were open to being checked by the community, and a wrong call could cost them their standing. The influencer economy replaces that with a standing earned by engagement and answerable to nothing but more engagement. The old gatekeepers operated in a low-velocity, low-visibility attention economy: journals, seminars, letters. Feedback loops were slow, audiences were small, and there was little to gain from attention-maximizing behavior, because attention did not convert to much. They were influencers too, just slow ones: editors, program officers, referees, the institutional names the non-elite mathematician's fate already flowed through."
+    }
+   ]
+  },
+  {
+   "id": "6.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Engagement standing answers only to engagement; slow journals gave little gain from attention-seeking.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "Historically the faith sort of worked, but for structural reasons that are eroding, not because mathematicians are unusually virtuous. The old gatekeepers were trustable to a real extent, and the trust was earned structurally: their standing was built over decades of checkable work, their judgments were open to being checked by the community, and a wrong call could cost them their standing. The influencer economy replaces that with a standing earned by engagement and answerable to nothing but more engagement. The old gatekeepers operated in a low-velocity, low-visibility attention economy: journals, seminars, letters. Feedback loops were slow, audiences were small, and there was little to gain from attention-maximizing behavior, because attention did not convert to much. They were influencers too, just slow ones: editors, program officers, referees, the institutional names the non-elite mathematician's fate already flowed through."
+    }
+   ]
+  },
+  {
+   "id": "6.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Visibility into grants, posts, media, training data pits seeming to judge well against judging well.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "The influencer economy changes the conversion rate. When visibility converts into grants, positions, media presence, and now prominence in AI training data, the incentive to \"be seen judging well\" starts competing with \"judging well\". The moment influence becomes measurable and monetizable, it gets optimized for, and the optimization target diverges from the thing it proxied. This is the [measurement trap](https://k1monfared.com/notes/blog/20251023-from-measurement-to-intention/) I keep writing about, applied to the field itself."
+    }
+   ]
+  },
+  {
+   "id": "6.13",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Canon simulation: reshuffled exposure yields almost entirely different canons; middle is lottery.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "I built a simulation of how canons form, in the context of classical music, and it applies here almost directly ([manufacturing taste](https://k1monfared.com/notes/blog/20260326-manufacturing-taste/)). Reshuffle who has access to the exposure pipeline and you get almost entirely different canons. Quality sets a floor and a ceiling. The vast middle is a lottery. If citation networks already made the pre-AI mathematical canon path-dependent, an attention-mediated canon would be worse, because the selection pressure shifts from \"what did nearby researchers find useful\" to \"what is legible, narratable, and aligned with a curator's brand.\" I worried this applied to composers. It applies harder to theorems, because a result that nobody reads is inert: reputation and readership are the same gate, so whoever controls the gate controls what exists."
+    }
+   ]
+  },
+  {
+   "id": "6.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Attention canon selects legible narratable brand over nearby usefulness; unread theorems are inert.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "I built a simulation of how canons form, in the context of classical music, and it applies here almost directly ([manufacturing taste](https://k1monfared.com/notes/blog/20260326-manufacturing-taste/)). Reshuffle who has access to the exposure pipeline and you get almost entirely different canons. Quality sets a floor and a ceiling. The vast middle is a lottery. If citation networks already made the pre-AI mathematical canon path-dependent, an attention-mediated canon would be worse, because the selection pressure shifts from \"what did nearby researchers find useful\" to \"what is legible, narratable, and aligned with a curator's brand.\" I worried this applied to composers. It applies harder to theorems, because a result that nobody reads is inert: reputation and readership are the same gate, so whoever controls the gate controls what exists."
+    }
+   ]
+  },
+  {
+   "id": "6.15",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Floor is checkability, ceiling structural buildability; social layer decides vast middle housing careers.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "I should say what that floor and ceiling are made of, because the honest claim is narrower than the dramatic one. The floor is checkability: a result that fails to check does not survive, no matter who wants it to, and the machine-checked proofs are the clearest case of the world pushing back. The ceiling is structural value: a result that nothing can build on cannot be talked into importance. What the social layer decides is the vast middle between the two, and that is still the decisive part of a mathematician's work, because the middle is where almost every career lives."
+    }
+   ]
+  },
+  {
+   "id": "6.16",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Attention metric invites viral framing; loop feeds problem choice; biases freeze into training data.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "And there is a Goodhart recursion that Tao doesn't reach. Once attention becomes the metric, the AI tools optimize for attention, so results get chosen and framed for virality among mathematicians, proofs of statements that make good talks. And the pipeline is a loop, not a line: which results win attention feeds back into which problems are posed next, so the attention economy reaches all the way back to problem selection. The community's last non-automatable function becomes the new proxy target. And if models become the primary readers and rankers of mathematics, whatever biases exist in today's canon get frozen in and amplified. The influencers of today become the training distribution of tomorrow. The collective culture that Moradifam treats as a stable arbiter is precisely what is up for grabs. One might argue this is exactly the best thing for the community and the science. Judging from how social media turned out, I highly doubt it."
+    }
+   ]
+  },
+  {
+   "id": "6.17",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Moradifam stable culture is up for grabs; social-media precedent gives doubt, not certainty.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "And there is a Goodhart recursion that Tao doesn't reach. Once attention becomes the metric, the AI tools optimize for attention, so results get chosen and framed for virality among mathematicians, proofs of statements that make good talks. And the pipeline is a loop, not a line: which results win attention feeds back into which problems are posed next, so the attention economy reaches all the way back to problem selection. The community's last non-automatable function becomes the new proxy target. And if models become the primary readers and rankers of mathematics, whatever biases exist in today's canon get frozen in and amplified. The influencers of today become the training distribution of tomorrow. The collective culture that Moradifam treats as a stable arbiter is precisely what is up for grabs. One might argue this is exactly the best thing for the community and the science. Judging from how social media turned out, I highly doubt it."
+    }
+   ]
+  },
+  {
+   "id": "6.18",
+   "type": "concession",
+   "attribution": "conceded",
+   "text": "Not all doom: Polymath, blogging, arXiv widened judgment; small checkable audience resists farming.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "Is this all doom? No, I don't think so. [Polymath](https://en.wikipedia.org/wiki/Polymath_Project)-style open collaboration, working mathematicians blogging proofs in progress, arXiv culture generally: all of these expanded who could participate in judgment rather than concentrating it. The failure mode is not visibility itself. It's when the selection mechanism for who gets amplified shifts from \"trusted by peers over decades\" to \"performs well on engagement metrics.\" Mathematics has been partly protected because its audience is small and expert. Engagement farming does not work well when your readers can check your proofs. The danger with AI is that it changes the audience."
+    }
+   ]
+  },
+  {
+   "id": "6.19",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Danger is AI changing the audience, shifting selection from peer trust to engagement.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "Is this all doom? No, I don't think so. [Polymath](https://en.wikipedia.org/wiki/Polymath_Project)-style open collaboration, working mathematicians blogging proofs in progress, arXiv culture generally: all of these expanded who could participate in judgment rather than concentrating it. The failure mode is not visibility itself. It's when the selection mechanism for who gets amplified shifts from \"trusted by peers over decades\" to \"performs well on engagement metrics.\" Mathematics has been partly protected because its audience is small and expert. Engagement farming does not work well when your readers can check your proofs. The danger with AI is that it changes the audience."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "source.txt",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: canon manufactured by money, luck, exposure, and our sense of taste was manufactured too (canon is one of many valid possible canons).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002",
+    "L050",
+    "L051"
+   ],
+   "evidence_quote": "patronage and feedback manufacture canons: quality filters but capital decides (L002); Taste itself was manufactured: survivors set harmonic foundations we judge by (L051)",
+   "reasoning": "Thesis captured explicitly in the summary and restated at the end: canons are manufactured, and the canon is one of hundreds of valid possible canons, with taste itself manufactured."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "Scale of forgotten composers: 200-500 active in 18th-century Vienna; IMSLP catalogs over 3,400; Wikipedia lists several hundred; fewer than 20 remembered.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L003",
+    "L004"
+   ],
+   "evidence_quote": "Vienna had 200 to 500 active composers; IMSLP catalogs over 3,400 survivors (L004); we remember under 20 of thousands (L003)",
+   "reasoning": "All load-bearing numbers are intact (200-500 Vienna, 3,400 IMSLP, under 20 remembered). The Wikipedia 'several hundred' count is a redundant corroborating inventory whose omission does not change the magnitude or meaning of the point."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "History cannot be replayed, so the author simulated cultural markets and ran thousands of iterations to test whether remembered composers were best or merely well-positioned.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005",
+    "L006",
+    "L020",
+    "L021"
+   ],
+   "evidence_quote": "History cannot rerun; Haydn without Esterhazy patronage is empirically unanswerable (L005); Thousands of runs (L020)",
+   "reasoning": "Motivation (irreversibility of history), the simulation approach, the thousands-of-runs scale, and the best-vs-positioned test are all captured."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Three competing hypotheses: Cream Rises (quality wins), Money Writes History (who gets heard first), Floors and Ceilings (quality floor/ceiling, middle by luck); Story 3 is conclusion.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L007",
+    "L008",
+    "L009",
+    "L035"
+   ],
+   "evidence_quote": "Story 3 wins: quality sets floor and ceiling; capital and luck rule middle (L035)",
+   "reasoning": "All three stories are stated distinctly and the verdict for Story 3 is explicit."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Three mechanisms combined: mere exposure, social influence, cumulative advantage (Matthew Effect, named by Merton).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L011",
+    "L012",
+    "L014",
+    "L015"
+   ],
+   "evidence_quote": "Model combines three documented mechanisms (L011); Merton Matthew Effect compounds court posts (L015)",
+   "reasoning": "All three mechanisms appear, and Merton's attribution for cumulative advantage is preserved."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Mere exposure: Zajonc 1968, Bornstein 1989 meta-analysis of 208 experiments, r=0.26; peaks at moderate exposure and reverses with overexposure.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L012"
+   ],
+   "evidence_quote": "Mere exposure: liking grows with familiarity; Zajonc 1968, Bornstein 1989 r equals 0.26 (L012)",
+   "reasoning": "Years and effect size r=0.26 survive, but the 208-experiment meta-analysis count is dropped and the inverted-U qualifier (peaks at moderate exposure, reverses with overexposure) is entirely absent, which materially reduces the claim's precision."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Salganik MusicLab 2006: 14,341 participants judged 48 unknown songs; social-count vs independent conditions; same song ranked 1st or 40th from random early downloads.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L014"
+   ],
+   "evidence_quote": "Salganik MusicLab 2006 ranked same song 1st or 40th (L014)",
+   "reasoning": "The striking rank instability is kept, but the sample size (14,341 participants), the 48-song set, and the presence of an independent-judgment control condition are all dropped, narrowing the study's scope."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Model setup: producers, consumers, gatekeepers; quality and capital drawn independently; 1,000 producers and 10,000 consumers per run, ~2 minutes each, parallelized; 360+ runs per condition and power analysis.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L017",
+    "L018",
+    "L020"
+   ],
+   "evidence_quote": "independent quality and capital scores (L017); 1,000 producers, 10,000 consumers; 360 plus per condition with power analysis (L020)",
+   "reasoning": "Agent types, the key independence/uncorrelated assumption, the 1,000/10,000 scale, 360+ runs per condition, and the power analysis are all present. The ~2-minute runtime and parallelization are incidental operational details that do not affect interpretation."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Social influence weakens quality-success link: visible consumption drops the correlation significantly (p<0.0001 across 360 runs/condition); a mediocre work lucky early can ride social proof to stardom.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L020",
+    "L022",
+    "L014",
+    "L023"
+   ],
+   "evidence_quote": "Visible social influence significantly weakens quality-success link, p below 0.0001 (L022)",
+   "reasoning": "The significance and p-value are preserved, the 360 runs-per-condition appears at L020, and the social-proof-to-stardom mechanism is conveyed by the MusicLab 1st-or-40th result and the popularity-proxy line."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Counterfactual: talent held constant, only resources reshuffled over 200 runs; counterfactual distance 0.88 on 0-to-1 scale; only top 10% had a real shot (~1 in 4); 50th-90th percentile fame essentially a lottery.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L024",
+    "L025"
+   ],
+   "evidence_quote": "Talent held fixed across 200 runs; only patronage reshuffled (L024); Counterfactual distance 0.88; top-decile talent has 1-in-4 fame chance; middle is lottery (L025)",
+   "reasoning": "Held-fixed talent, 200 runs, distance 0.88, the 1-in-4 top-decile chance, and the middle-as-lottery finding are all intact; '50th-90th percentile' is generalized to 'middle' without altering meaning."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Four-condition comparison: full 0.32, no social 0.35, equal capital 0.46, quality only 0.46; equalizing resources raises correlation 44%, so unequal exposure is the bigger distortion over herd behavior.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L027",
+    "L028",
+    "L058"
+   ],
+   "evidence_quote": "full 0.32, no-social 0.35, equal-capital 0.46, quality-only 0.46 (L027); Equalizing resources raises quality link 44 percent; exclusion distorts most (L028)",
+   "reasoning": "All four coefficients and the 44 percent lift are preserved, and the interpretation that exclusion/capital gating distorts most is stated and reinforced by the cross-link."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "18th-century Vienna stylized model (300 composers, few wealthy patrons, strong word-of-mouth, no recording): counterfactual distance 0.97 near maximum, only 2.5% of canonical composers shared.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L030"
+   ],
+   "evidence_quote": "Stylized Vienna: 300 composers, distance 0.97, only 2.5 percent shared (L030)",
+   "reasoning": "The head-line results (300 composers, 0.97 distance, 2.5 percent overlap) are exact, but the scenario's defining conditions, few wealthy patrons, strong word-of-mouth, and especially the 'no recording' negation, are dropped, so a new reader cannot tell what makes the Vienna setup distinct or why contingency is near maximal."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Robustness: varying every parameter by ±50%, the most important factor is how steeply money converts into attention (convex makes rich get richer and quality barely matter; concave leaves room for quality).",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L033",
+    "L034"
+   ],
+   "evidence_quote": "Robustness plus-minus 50 percent: steep capital-to-exposure conversion erases quality fastest (L033)",
+   "reasoning": "The ±50% sweep and the primacy of capital-to-exposure steepness are present, but the convex-vs-concave distinction, which is the mechanism explaining why steepness matters, is dropped."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Highest-leverage intervention is wider exposure, not better judgment: major US orchestras' blind auditions (1970s-80s) raised women hires from 5% to 25%, proving talent was there and the barrier was exposure.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L039"
+   ],
+   "evidence_quote": "Leverage is wider exposure; blind auditions lifted women hires 5 to 25 percent (L039)",
+   "reasoning": "The core claim (leverage is exposure, not judgment), the intervention (blind auditions), and the 5-to-25-percent figure are intact. The 1970s-80s date and 'US' qualifier are dropped but are peripheral to the point's argument."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Caveats: quality assumed real and stable independent of who hears it (debatable); calibration leaps from Salganik's American teens judging pop over weeks to 18th-century aristocrats over decades; model omits genre formation, critical discourse, technological change, cultural politics.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L042",
+    "L043",
+    "L044"
+   ],
+   "evidence_quote": "Quality may be partly constituted socially, making decomposition ill-posed (L042); Calibration leaps from teens judging pop over weeks to aristocrats over decades (L043); Model omits genre, discourse, technology, politics (L044)",
+   "reasoning": "All three caveats match: the social constitution of quality, the calibration leap, and the four omitted factors."
+  },
+  {
+   "point_id": "K16",
+   "point_text": "Bach-Bieber answer: Bieber analogy gets mechanism right but quality floor wrong; Bach was both excellent and well-positioned, the 'AND' does most of the work; ~20-50 equally great contemporaries unknown; mechanisms stronger today (hours vs decades).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L045",
+    "L046",
+    "L047",
+    "L049",
+    "L038"
+   ],
+   "evidence_quote": "Bieber analogy gets mechanism right but quality floor wrong; court posts demanded skill (L046); Bach was excellent and well-positioned; positioning matters more than merit gap (L047); 20 to 50 equals forgotten for missing that post (L049); playlists decide in hours, patronage took decades (L038)",
+   "reasoning": "Every element is preserved: the analogy's mechanism-right/floor-wrong split, Bach's excellence-plus-positioning (the AND), the 20-50 forgotten equals, and the faster feedback loops today."
+  }
+ ],
+ "metrics": {
+  "total_points": 16,
+  "must_have_total": 16,
+  "must_have_present": 12,
+  "must_have_partial": 4,
+  "must_have_missing": 0,
+  "overall_present": 12,
+  "must_recall": 0.875,
+  "overall_recall": 0.875
+ },
+ "missing_list": []
+}

@@ -1,0 +1,330 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "07_intentionalism",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Understanding the disadvantage does not remove it; you have to actually switch positions.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The structural disadvantage of being a receiver doesn't go away because you understand it. You have to actually switch positions.",
+   "reasoning": "Source states identical meaning, negation preserved."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "This is harder than it sounds, because the environment is designed to keep us receiving.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is harder than it sounds, because our entire environment is designed to keep us receiving.",
+   "reasoning": "Loglog compresses 'entire environment' to 'environment'; meaning unchanged."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "8.1.1"
+   ],
+   "claim_text": "Every interface, recommendation system, application process, and social script presents options and waits for you to choose.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "every interface, every recommendation system, every application process, every social script is built around presenting options and waiting for you to choose",
+   "reasoning": "All four items and the universal 'every' preserved with same meaning."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Proposing means deciding intentionally what you want before seeing what is available.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Deciding intentionally what you want before seeing what's available",
+   "reasoning": "Direct match to source bullet."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "It means pursuing specific things rather than evaluating presented options.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Pursuing specific things rather than evaluating presented options",
+   "reasoning": "Direct match to source bullet."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "It means being willing to create opportunities rather than waiting for them.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Being willing to create opportunities rather than waiting for them",
+   "reasoning": "Direct match to source bullet."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "It means accepting the friction of going against default flows.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Accepting the friction of going against default flows",
+   "reasoning": "Direct match to source bullet."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "It means asking what do I actually want before every major decision and most minor ones.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "asking \"what do I actually want?\" before every major decision and most minor ones",
+   "reasoning": "Quantifiers 'every major' and 'most minor' preserved exactly."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "8.6.1"
+   ],
+   "claim_text": "Then acting on that answer intentionally, even when it is inconvenient.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Then acting on that answer intentionally, even when it's inconvenient.",
+   "reasoning": "Identical meaning, only contraction expanded."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "claim_text": "Most people will not do this: it is effortful, and the receiver position is comfortable enough not to motivate change.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Most people won't do this. It's effortful. The receiver position is comfortable enough to not motivate change.",
+   "reasoning": "Both negations and hedge 'most' preserved."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "claim_text": "After years of receiver mode, most people have lost the capacity to even know what they would want to propose.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "after years of receiver mode, most people have lost the capacity to even know what they'd want to propose",
+   "reasoning": "Exact match of scope and meaning."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.9"
+   ],
+   "claim_text": "For those who do shift, real life does not follow the exact mathematics but shares enough of the structure.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "while real life doesn't follow the exact mathematics of the Gale-Shapley algorithm, it shares enough of the structure",
+   "reasoning": "Negation and qualifier preserved; entity reference intact."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.10"
+   ],
+   "claim_text": "Systematically better, not just incrementally: structurally.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Systematically better. Not just incrementally—structurally.",
+   "reasoning": "Near verbatim, meaning identical."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "8.11"
+   ],
+   "claim_text": "The question is not whether this dynamic exists; the mathematics and the patterns we see around us both point to it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question isn't whether this dynamic exists. The mathematics and the patterns we see around us both point to it.",
+   "reasoning": "Negation structure and both sources of evidence preserved."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "8.12"
+   ],
+   "claim_text": "The question is whether you are willing to do something about it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question is whether you're willing to do something about it.",
+   "reasoning": "Identical meaning."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Start with tomorrow morning, not your career or life partner.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Don't start with your career or life partner. Start with tomorrow morning.",
+   "reasoning": "Order swapped but both exclusion and prescription preserved."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "Before you check your phone, decide intentionally what you actually want from the first hour: calm, energy, connection, or solitude.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Before you check your phone, decide intentionally: what do you actually want from the first hour of your day? ... do you want calm? Energy? Connection? Solitude?",
+   "reasoning": "All four options and timing match source."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "If you want calm, do not open apps that will agitate you; if connection, reach out to someone specific; if energy, do something physical.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If you want calm, don't open apps that will agitate you. If you want connection, reach out to someone specific. If you want energy, do something physical.",
+   "reasoning": "All three conditionals and the negation preserved."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "claim_text": "Notice how different this feels from scrolling until something grabs you.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Notice how different this feels from scrolling until something grabs you.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "9.4"
+   ],
+   "claim_text": "Do this for a week with small things, breakfast, evening activities, weekend plans, noticing what actually satisfies you versus what just filled time.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Do this for a week with small things—breakfast, evening activities, weekend plans. Notice what actually satisfies you versus what just filled time.",
+   "reasoning": "Duration, examples, and contrast all preserved."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "9.5"
+   ],
+   "claim_text": "Those patterns are the beginning of intention.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Those patterns are the beginning of intention.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "9.6"
+   ],
+   "claim_text": "Then scale up: before looking at job postings, decide what kind of work you want to do.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Before looking at job postings, decide what kind of work you want to do.",
+   "reasoning": "Direct match, scaling context preserved."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "9.7"
+   ],
+   "claim_text": "Before swiping on dating apps, decide what kind of relationship you are looking for, and before browsing products, what problem you are solving.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Before swiping on dating apps, decide what kind of relationship you're looking for. Before browsing products, decide what problem you're trying to solve.",
+   "reasoning": "Both recommendations match source meaning."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "9.8"
+   ],
+   "claim_text": "The practice builds the muscle, the muscle enables larger intentions, larger intentions become values, and values make you a proposer.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The practice builds the muscle. The muscle enables larger intentions. Larger intentions become values. Values make you a proposer.",
+   "reasoning": "Chain of four links all preserved in order."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "9.9"
+   ],
+   "claim_text": "Proposers, whether in the pure mathematics of matching algorithms or the messy approximations of real life, end up with better outcomes.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "proposers—whether in the pure mathematics of matching algorithms or in the messy approximations of real life—end up with better outcomes",
+   "reasoning": "Exact match of both scopes and the outcome claim."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "9.10"
+   ],
+   "claim_text": "Not because they are special, but because they are on the other side of the equation.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Not because they're special. Because they're on the other side of the equation.",
+   "reasoning": "Negation of the cause and alternative cause preserved."
+  }
+ ],
+ "metrics": {
+  "total_claims": 26,
+  "supported": 26,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

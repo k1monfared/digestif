@@ -1,0 +1,1238 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "07_intentionalism",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical abstract stating the whole thesis; later sections elaborate but this frames it."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the anomaly of unearned outcome differences; not previously stated."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Names propose-versus-receive as the mechanism; distinct."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Dated historical fact, numbers never trivia and no duplicate."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Existence proof and algorithm claim; distinct."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines deferred acceptance; foundational definition."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Extremal proposer-best receiver-worst result; mathematical backbone."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Emphasizes extremity of the result; adds degree nuance."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "First bridge from mathematics to real-world analogy."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical real-world proposer-advantage claim; later recaps cite it."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Clarifies structural rather than algorithmic similarity; new."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Names the everyday decide-versus-choose dichotomy; section spine."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Netflix example; distinct illustration."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Phone example; distinct illustration."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Job example; distinct illustration."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Friendship example; distinct illustration."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical most-people-are-receivers generalization."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Good-enough outcomes claim; core to the insidiousness argument."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Decent is not best nuance; distinct."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "3.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds not-a-conspiracy caveat to the structural advantage."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "3.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical self-sustaining-system claim for later recap."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "3.9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Quietly-gets-less claim; distinct consequence of persistence."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "3.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical never-practiced-wanting claim."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical trap statement; C027 restates it verbatim."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Proposer needs to know wants; distinct premise."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Choosing among options cannot build preferences; distinct mechanism."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C024",
+      "reasoning": "Verbatim restatement of the trap already asserted as theme."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Music preference example; distinct illustration."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Dating preference example; distinct illustration."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C023",
+      "reasoning": "Preferences-as-reactions repeats never-practiced-wanting point."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical lost-capacity nuance."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Muscle theme; section spine."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "No jumping claim; distinct."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical start-tonight instruction."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pursue-intentionally instruction; distinct from C034."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Practice rebuilds capacity; distinct."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Patterns to preferences to values progression; distinct."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cannot think values, must practice; distinct."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Receiver default extends to major decisions; section spine."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lists major decision domains; distinct."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Decide-first question applied to life; distinct."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C017",
+      "reasoning": "Reasserts most people are receivers, already generalized in C017."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "6.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Choosing feels like agency but is receiving; distinct nuance."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Proposers decide desired work; specific instance."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Seek partners by values; specific instance."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "6.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pick cities by lifestyle; specific instance."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C010",
+      "reasoning": "Those people end better restates systematic proposer advantage."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical not-smarter-but-structure claim; C081 recaps it."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Systems shift to optimize proposers; section spine."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Companies build for persuaded wants; distinct domain."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Dating apps optimize engagement; distinct domain."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Content platforms optimize scrolling; distinct domain."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Platforms are the proposers; distinct reframe."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "7.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Platforms extract attention data money; distinct consequence."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "7.6"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C022",
+      "reasoning": "System persists because good enough repeats self-sustaining claim."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Understanding does not remove disadvantage; section spine."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Environment designed to keep us receiving; distinct."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "8.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Every interface presents options; evidentiary fact."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical definition of proposing."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pursuing specifics versus evaluating; distinct facet."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Create opportunities rather than wait; distinct facet."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Accept friction of going against defaults; distinct facet."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "8.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical ask-what-you-want imperative; C133 recaps it."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "8.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Act on the answer even when inconvenient; adds action step."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "8.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Most will not do this due to effort and comfort; distinct."
+    },
+    {
+      "claim_id": "C066",
+      "loglog_ids": [
+        "8.8"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C031",
+      "reasoning": "Lost capacity to know wants repeats C031."
+    },
+    {
+      "claim_id": "C067",
+      "loglog_ids": [
+        "8.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Real life shares structure not exact math; distinct."
+    },
+    {
+      "claim_id": "C068",
+      "loglog_ids": [
+        "8.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Structurally not incrementally better; distinct emphasis."
+    },
+    {
+      "claim_id": "C069",
+      "loglog_ids": [
+        "8.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Dynamic exists per math and patterns; distinct."
+    },
+    {
+      "claim_id": "C070",
+      "loglog_ids": [
+        "8.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Willingness to act question; distinct."
+    },
+    {
+      "claim_id": "C071",
+      "loglog_ids": [
+        "9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Start tomorrow morning theme; section spine."
+    },
+    {
+      "claim_id": "C072",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C034",
+      "reasoning": "Decide what you want before phone repeats start-tonight practice."
+    },
+    {
+      "claim_id": "C073",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Branched actions for calm/connection/energy add specifics."
+    },
+    {
+      "claim_id": "C074",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Notice contrast with scrolling; distinct observation."
+    },
+    {
+      "claim_id": "C075",
+      "loglog_ids": [
+        "9.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Week of small practices; distinct scope."
+    },
+    {
+      "claim_id": "C076",
+      "loglog_ids": [
+        "9.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Patterns begin intention; distinct framing."
+    },
+    {
+      "claim_id": "C077",
+      "loglog_ids": [
+        "9.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Scale to job postings; distinct domain."
+    },
+    {
+      "claim_id": "C078",
+      "loglog_ids": [
+        "9.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Scale to dating and products; distinct domain."
+    },
+    {
+      "claim_id": "C079",
+      "loglog_ids": [
+        "9.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical muscle-to-values sequence; C134 recaps it."
+    },
+    {
+      "claim_id": "C080",
+      "loglog_ids": [
+        "9.9"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C010",
+      "reasoning": "Proposers end better repeats the core advantage claim."
+    },
+    {
+      "claim_id": "C081",
+      "loglog_ids": [
+        "9.10"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C048",
+      "reasoning": "Not special, other side of equation restates C048."
+    },
+    {
+      "claim_id": "C082",
+      "loglog_ids": [
+        "10"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Appendix announcement only; pure navigation, no argument content."
+    },
+    {
+      "claim_id": "C083",
+      "loglog_ids": [
+        "10.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Entertainment agenda header restating its children."
+    },
+    {
+      "claim_id": "C084",
+      "loglog_ids": [
+        "10.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Week 1 operational detail adds write-it-down step."
+    },
+    {
+      "claim_id": "C085",
+      "loglog_ids": [
+        "10.1.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Feeling examples; concrete content."
+    },
+    {
+      "claim_id": "C086",
+      "loglog_ids": [
+        "10.1.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Close app if unnamed; distinct rule."
+    },
+    {
+      "claim_id": "C087",
+      "loglog_ids": [
+        "10.1.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Keep intention log; distinct method."
+    },
+    {
+      "claim_id": "C088",
+      "loglog_ids": [
+        "10.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Week 2 search specifics; distinct step."
+    },
+    {
+      "claim_id": "C089",
+      "loglog_ids": [
+        "10.1.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Comedian search example; concrete."
+    },
+    {
+      "claim_id": "C090",
+      "loglog_ids": [
+        "10.1.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Learn-topic search example; concrete."
+    },
+    {
+      "claim_id": "C091",
+      "loglog_ids": [
+        "10.1.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Notice faster satisfaction; distinct feedback."
+    },
+    {
+      "claim_id": "C092",
+      "loglog_ids": [
+        "10.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Week 3 timer on intended duration; distinct step."
+    },
+    {
+      "claim_id": "C093",
+      "loglog_ids": [
+        "10.1.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Autoplay intention check; distinct rule."
+    },
+    {
+      "claim_id": "C094",
+      "loglog_ids": [
+        "10.1.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Close when fulfilled not exhausted; distinct rule."
+    },
+    {
+      "claim_id": "C095",
+      "loglog_ids": [
+        "10.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Shopping agenda containing the 100-dollar number; number never trivia."
+    },
+    {
+      "claim_id": "C096",
+      "loglog_ids": [
+        "10.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Define problem specifically; concrete method."
+    },
+    {
+      "claim_id": "C097",
+      "loglog_ids": [
+        "10.2.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Camera and battery specifics; concrete detail."
+    },
+    {
+      "claim_id": "C098",
+      "loglog_ids": [
+        "10.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "List 3-5 must-have features; distinct step."
+    },
+    {
+      "claim_id": "C099",
+      "loglog_ids": [
+        "10.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Research features not best phones; distinct."
+    },
+    {
+      "claim_id": "C100",
+      "loglog_ids": [
+        "10.2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Go directly, ignore store layout; distinct."
+    },
+    {
+      "claim_id": "C101",
+      "loglog_ids": [
+        "10.2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Wait a day over 100 dollars; number never trivia."
+    },
+    {
+      "claim_id": "C102",
+      "loglog_ids": [
+        "10.2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Toothpaste need definition; concrete application."
+    },
+    {
+      "claim_id": "C103",
+      "loglog_ids": [
+        "10.2.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Research ingredient by need; concrete application."
+    },
+    {
+      "claim_id": "C104",
+      "loglog_ids": [
+        "10.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Quarterly setting even without job hunt; negation carries content."
+    },
+    {
+      "claim_id": "C105",
+      "loglog_ids": [
+        "10.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Map energy two weeks; distinct exercise."
+    },
+    {
+      "claim_id": "C106",
+      "loglog_ids": [
+        "10.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Identify problem and environment patterns; distinct."
+    },
+    {
+      "claim_id": "C107",
+      "loglog_ids": [
+        "10.3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Five specific non-negotiables; distinct method."
+    },
+    {
+      "claim_id": "C108",
+      "loglog_ids": [
+        "10.3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Research and contact companies pre-posting; distinct."
+    },
+    {
+      "claim_id": "C109",
+      "loglog_ids": [
+        "10.3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Apply matching four of five and customize; number carries content."
+    },
+    {
+      "claim_id": "C110",
+      "loglog_ids": [
+        "10.3.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Track receiver versus proposer applications; distinct."
+    },
+    {
+      "claim_id": "C111",
+      "loglog_ids": [
+        "10.4"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Relationships agenda header restating its children."
+    },
+    {
+      "claim_id": "C112",
+      "loglog_ids": [
+        "10.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Write relationship vision; concrete exercise."
+    },
+    {
+      "claim_id": "C113",
+      "loglog_ids": [
+        "10.4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Identify 3-5 aligning values; concrete."
+    },
+    {
+      "claim_id": "C114",
+      "loglog_ids": [
+        "10.4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Seek demonstrators not profiles; distinct."
+    },
+    {
+      "claim_id": "C115",
+      "loglog_ids": [
+        "10.4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "First-date alignment questions; distinct."
+    },
+    {
+      "claim_id": "C116",
+      "loglog_ids": [
+        "10.4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Name friendship needs; concrete."
+    },
+    {
+      "claim_id": "C117",
+      "loglog_ids": [
+        "10.4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Join specific communities; distinct."
+    },
+    {
+      "claim_id": "C118",
+      "loglog_ids": [
+        "10.4.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Invite to specific things; distinct."
+    },
+    {
+      "claim_id": "C119",
+      "loglog_ids": [
+        "10.5"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Daily micro-practices agenda header restating its children."
+    },
+    {
+      "claim_id": "C120",
+      "loglog_ids": [
+        "10.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Write three morning intentions; concrete."
+    },
+    {
+      "claim_id": "C121",
+      "loglog_ids": [
+        "10.5.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specific rather than productive intentions; adds examples."
+    },
+    {
+      "claim_id": "C122",
+      "loglog_ids": [
+        "10.5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Evening proposer-or-receiver review; distinct."
+    },
+    {
+      "claim_id": "C123",
+      "loglog_ids": [
+        "10.5.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Note one intentional action tomorrow; concrete."
+    },
+    {
+      "claim_id": "C124",
+      "loglog_ids": [
+        "10.5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pause ten seconds; number never trivia."
+    },
+    {
+      "claim_id": "C125",
+      "loglog_ids": [
+        "10.5.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Intentional-versus-selecting question; distinct."
+    },
+    {
+      "claim_id": "C126",
+      "loglog_ids": [
+        "10.5.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pause builds awareness, the first step; distinct."
+    },
+    {
+      "claim_id": "C127",
+      "loglog_ids": [
+        "10.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Journal three-column structure; defines the columns."
+    },
+    {
+      "claim_id": "C128",
+      "loglog_ids": [
+        "10.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Situation column definition; concrete."
+    },
+    {
+      "claim_id": "C129",
+      "loglog_ids": [
+        "10.6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Mode column definition; concrete."
+    },
+    {
+      "claim_id": "C130",
+      "loglog_ids": [
+        "10.6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Outcome column definition; concrete."
+    },
+    {
+      "claim_id": "C131",
+      "loglog_ids": [
+        "10.6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Thirty-day pattern and motivation; date and inference kept."
+    },
+    {
+      "claim_id": "C132",
+      "loglog_ids": [
+        "10.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Intention is not lifelong omniscience; denial carries content."
+    },
+    {
+      "claim_id": "C133",
+      "loglog_ids": [
+        "10.8"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C063",
+      "reasoning": "Practicing what-do-I-want-first repeats the ask-what-you-want imperative."
+    },
+    {
+      "claim_id": "C134",
+      "loglog_ids": [
+        "10.9"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C079",
+      "reasoning": "Muscle builds and capacity grows restates the muscle sequence."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 134,
+    "unique": 119,
+    "duplicates": 11,
+    "trivia": 4,
+    "redundancy_rate": 0.0821,
+    "trivia_rate": 0.0299,
+    "structured_tokens": 134,
+    "tokens_per_unique_claim": 1.126
+  },
+  "prune_list": [
+    "C027 duplicates C024 (verbatim trap restatement), safe to merge",
+    "C030 duplicates C023 (preferences-as-reactions), safe to merge",
+    "C042 duplicates C017 (most people are receivers), safe to merge",
+    "C047 duplicates C010 (proposer advantage), safe to merge",
+    "C055 duplicates C022 (self-sustaining good-enough system), safe to merge",
+    "C066 duplicates C031 (lost capacity to want), safe to merge",
+    "C072 duplicates C034 (decide-before-phone practice), safe to merge",
+    "C080 duplicates C010 (proposers end better), safe to merge",
+    "C081 duplicates C048 (not special, other side of equation), safe to merge",
+    "C133 duplicates C063 (ask what you want first), safe to merge",
+    "C134 duplicates C079 (muscle builds capacity), safe to merge",
+    "C082, C083, C111, C119 are agenda headers restating their children, candidates to cut"
+  ]
+}

@@ -1,0 +1,291 @@
+{
+ "sample": "04_house_hunting_shenanigans",
+ "part": 2,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "4",
+   "type": "theme",
+   "attribution": "author",
+   "text": "The Saturday standoff: the buyer dropped the offer 20K, then refused to chase the counteroffer.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "  <tr>\n    <td>Saturday Morning</td>\n    <td>Nothing happens.</td>\n    <td>Seems like they just wanted to keep my offer open so that they use it to compete with another offers if they come today, and also to tell potential buyers that there is an offer on the house.</td>\n    <td>N thinks the other offer was better. I don't even believe there was another offer. I ask them to disclose the other offer.</td>\n  </tr>"
+    },
+    {
+     "ref": "¶20",
+     "text": "  <tr>\n    <td>Saturday 9pm</td>\n    <td>I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K \"above\" the asking price.</td>\n    <td>Seems like they are \"defending forward\" as someone said once. They saw they lost 20K, now they want to recoup that by pretending the other offer is so much better, and C is going to make up whatever J has messed up with a simple strategy like this.</td>\n    <td>I ask N what kind of morons are these people? He thinks the other offer is actually at this price but there might be a condition in there that they don't like it and they want to work with me instead. I don't buy any of it. They want a response by 11pm. I ask it to be extended for 24 hours. N says let's just respond in the morning.</td>\n  </tr>"
+    },
+    {
+     "ref": "¶22",
+     "text": "  <tr>\n    <td>Sunday 8am</td>\n    <td>N messages me that we should respond soon. I tell him to update it to 10K below the asking price, remove every single sweet thing in the offer, and give them until 11am to respond.</td>\n    <td>They have 3 more showings today and I don't want another offer open until they get more.</td>\n    <td>N thinks I should meet them at the asking price or even at the 5K higher counteroffer. I don't think so. I tell him I believe they could get an offer at 45K below and with competing they probably could have brought them up to 30K below, but I'm almost certain they don't have anything above that and I might want to actually reduce it even more. He gets angry and says I shouldn't. I then tell him that I'm ok with 10K below and that's best and final offer.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Saturday morning nothing happened; he suspected they kept his offer open to compete and to advertise it.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "  <tr>\n    <td>Saturday Morning</td>\n    <td>Nothing happens.</td>\n    <td>Seems like they just wanted to keep my offer open so that they use it to compete with another offers if they come today, and also to tell potential buyers that there is an offer on the house.</td>\n    <td>N thinks the other offer was better. I don't even believe there was another offer. I ask them to disclose the other offer.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "N thought the other offer was better; the buyer asked them to disclose it.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "  <tr>\n    <td>Saturday Morning</td>\n    <td>Nothing happens.</td>\n    <td>Seems like they just wanted to keep my offer open so that they use it to compete with another offers if they come today, and also to tell potential buyers that there is an offer on the house.</td>\n    <td>N thinks the other offer was better. I don't even believe there was another offer. I ask them to disclose the other offer.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Saturday afternoon he took a nap and had moved on emotionally.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "  <tr>\n    <td>Saturday Afternoon</td>\n    <td>I take a nap.</td>\n    <td>They didn't even respond. I've moved on emotionally.</td>\n    <td>It is super rare for me to take a nap in the afternoon, like once every few years. And usually it happens when a big load is taken off of me.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Naps are super rare for him, about once every few years, usually when a big load is lifted.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "  <tr>\n    <td>Saturday Afternoon</td>\n    <td>I take a nap.</td>\n    <td>They didn't even respond. I've moved on emotionally.</td>\n    <td>It is super rare for me to take a nap in the afternoon, like once every few years. And usually it happens when a big load is taken off of me.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Saturday 5pm N relayed that another offer would be considered in an hour and they should submit in time.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "  <tr>\n    <td>Saturday 5pm</td>\n    <td>N calls, they say they have another offer which they're going to consider in an hour and if we are interested, we should provide ours in time.</td>\n    <td>They've had their shows, no other offer came in. My offer is much better than the other offer, they want to encourage me to rewrite the offer and then have the other one compete with me.</td>\n    <td>N thinks the other offer might be better, suggests if I want to increase the price. I don't think that's the case, I drop the offer by 20K from the asking price and remove most of those sweet things I'd put in the original offer. N strongly advises me against doing it. I do it anyways.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The buyer concluded no other offer came in and the sellers wanted him to rewrite his offer.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "  <tr>\n    <td>Saturday 5pm</td>\n    <td>N calls, they say they have another offer which they're going to consider in an hour and if we are interested, we should provide ours in time.</td>\n    <td>They've had their shows, no other offer came in. My offer is much better than the other offer, they want to encourage me to rewrite the offer and then have the other one compete with me.</td>\n    <td>N thinks the other offer might be better, suggests if I want to increase the price. I don't think that's the case, I drop the offer by 20K from the asking price and remove most of those sweet things I'd put in the original offer. N strongly advises me against doing it. I do it anyways.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.7",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "He dropped the offer by 20K from asking and removed most sweeteners; N strongly advised against it.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "  <tr>\n    <td>Saturday 5pm</td>\n    <td>N calls, they say they have another offer which they're going to consider in an hour and if we are interested, we should provide ours in time.</td>\n    <td>They've had their shows, no other offer came in. My offer is much better than the other offer, they want to encourage me to rewrite the offer and then have the other one compete with me.</td>\n    <td>N thinks the other offer might be better, suggests if I want to increase the price. I don't think that's the case, I drop the offer by 20K from the asking price and remove most of those sweet things I'd put in the original offer. N strongly advises me against doing it. I do it anyways.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Saturday 6pm they sent the new offer, open until 8:30pm the same day.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "  <tr>\n    <td>Saturday 6pm</td>\n    <td>We send the new offer and keep it open until 8:30pm the same day.</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Saturday 7pm C called N noticing the price drop and wondering if he could 'fix' that; N offered a counteroffer route.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "  <tr>\n    <td>Saturday 7pm</td>\n    <td>N calls, the partner of the seller's realtor called N saying they've noticed the drop in price and wondering if he could \"fix\" that. He says if they want they can write a counteroffer.</td>\n    <td>The other offer apparently sucks and sucks real bad. They are trying to work with me.</td>\n    <td>In the mean time the name of the seller's realtor J on the REW website is changed to her partner's C, and in fact, her name is removed from all her listings (a total of 4)!. I'm guessing the seller is really pissed at the realtor that they've lost 20K just like that and they don't want to work with her anymore. But I'm not sure why her name would be removed from all other listings. In the meantime she was busy with showings of a $3.5M house too.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The buyer thought the other offer sucked and that they were trying to work with him.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "  <tr>\n    <td>Saturday 7pm</td>\n    <td>N calls, the partner of the seller's realtor called N saying they've noticed the drop in price and wondering if he could \"fix\" that. He says if they want they can write a counteroffer.</td>\n    <td>The other offer apparently sucks and sucks real bad. They are trying to work with me.</td>\n    <td>In the mean time the name of the seller's realtor J on the REW website is changed to her partner's C, and in fact, her name is removed from all her listings (a total of 4)!. I'm guessing the seller is really pissed at the realtor that they've lost 20K just like that and they don't want to work with her anymore. But I'm not sure why her name would be removed from all other listings. In the meantime she was busy with showings of a $3.5M house too.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.11",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "J's name was removed from all her 4 listings on REW and replaced by C's; the buyer guessed they were angry about the 20K loss.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "  <tr>\n    <td>Saturday 7pm</td>\n    <td>N calls, the partner of the seller's realtor called N saying they've noticed the drop in price and wondering if he could \"fix\" that. He says if they want they can write a counteroffer.</td>\n    <td>The other offer apparently sucks and sucks real bad. They are trying to work with me.</td>\n    <td>In the mean time the name of the seller's realtor J on the REW website is changed to her partner's C, and in fact, her name is removed from all her listings (a total of 4)!. I'm guessing the seller is really pissed at the realtor that they've lost 20K just like that and they don't want to work with her anymore. But I'm not sure why her name would be removed from all other listings. In the meantime she was busy with showings of a $3.5M house too.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.12",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "She was meanwhile busy with showings of a $3.5M house.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "  <tr>\n    <td>Saturday 7pm</td>\n    <td>N calls, the partner of the seller's realtor called N saying they've noticed the drop in price and wondering if he could \"fix\" that. He says if they want they can write a counteroffer.</td>\n    <td>The other offer apparently sucks and sucks real bad. They are trying to work with me.</td>\n    <td>In the mean time the name of the seller's realtor J on the REW website is changed to her partner's C, and in fact, her name is removed from all her listings (a total of 4)!. I'm guessing the seller is really pissed at the realtor that they've lost 20K just like that and they don't want to work with her anymore. But I'm not sure why her name would be removed from all other listings. In the meantime she was busy with showings of a $3.5M house too.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.13",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Saturday 9pm a disclosure of multiple offers arrived with a counteroffer 5K 'above' the asking price.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "  <tr>\n    <td>Saturday 9pm</td>\n    <td>I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K \"above\" the asking price.</td>\n    <td>Seems like they are \"defending forward\" as someone said once. They saw they lost 20K, now they want to recoup that by pretending the other offer is so much better, and C is going to make up whatever J has messed up with a simple strategy like this.</td>\n    <td>I ask N what kind of morons are these people? He thinks the other offer is actually at this price but there might be a condition in there that they don't like it and they want to work with me instead. I don't buy any of it. They want a response by 11pm. I ask it to be extended for 24 hours. N says let's just respond in the morning.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He read it as 'defending forward': recouping 20K by pretending the other offer was much better.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "  <tr>\n    <td>Saturday 9pm</td>\n    <td>I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K \"above\" the asking price.</td>\n    <td>Seems like they are \"defending forward\" as someone said once. They saw they lost 20K, now they want to recoup that by pretending the other offer is so much better, and C is going to make up whatever J has messed up with a simple strategy like this.</td>\n    <td>I ask N what kind of morons are these people? He thinks the other offer is actually at this price but there might be a condition in there that they don't like it and they want to work with me instead. I don't buy any of it. They want a response by 11pm. I ask it to be extended for 24 hours. N says let's just respond in the morning.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.15",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "N thought the other offer was at that price but had a condition they disliked; the buyer didn't buy any of it.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "  <tr>\n    <td>Saturday 9pm</td>\n    <td>I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K \"above\" the asking price.</td>\n    <td>Seems like they are \"defending forward\" as someone said once. They saw they lost 20K, now they want to recoup that by pretending the other offer is so much better, and C is going to make up whatever J has messed up with a simple strategy like this.</td>\n    <td>I ask N what kind of morons are these people? He thinks the other offer is actually at this price but there might be a condition in there that they don't like it and they want to work with me instead. I don't buy any of it. They want a response by 11pm. I ask it to be extended for 24 hours. N says let's just respond in the morning.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.16",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "They wanted a response by 11pm; N said to respond in the morning.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "  <tr>\n    <td>Saturday 9pm</td>\n    <td>I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K \"above\" the asking price.</td>\n    <td>Seems like they are \"defending forward\" as someone said once. They saw they lost 20K, now they want to recoup that by pretending the other offer is so much better, and C is going to make up whatever J has messed up with a simple strategy like this.</td>\n    <td>I ask N what kind of morons are these people? He thinks the other offer is actually at this price but there might be a condition in there that they don't like it and they want to work with me instead. I don't buy any of it. They want a response by 11pm. I ask it to be extended for 24 hours. N says let's just respond in the morning.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.17",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Saturday 9:30pm N called to say he thought the buyer did the right thing and thanked him.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "  <tr>\n    <td>Saturday 9:30pm</td>\n    <td>N calls, he says he thinks I did the right thing and he thanks me for doing so.</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.18",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Sunday 8am he told N to update to 10K below asking, remove every sweetener, and give until 11am.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "  <tr>\n    <td>Sunday 8am</td>\n    <td>N messages me that we should respond soon. I tell him to update it to 10K below the asking price, remove every single sweet thing in the offer, and give them until 11am to respond.</td>\n    <td>They have 3 more showings today and I don't want another offer open until they get more.</td>\n    <td>N thinks I should meet them at the asking price or even at the 5K higher counteroffer. I don't think so. I tell him I believe they could get an offer at 45K below and with competing they probably could have brought them up to 30K below, but I'm almost certain they don't have anything above that and I might want to actually reduce it even more. He gets angry and says I shouldn't. I then tell him that I'm ok with 10K below and that's best and final offer.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.19",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He believed they could get 45K below and that competing could have brought them up to 30K below.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "  <tr>\n    <td>Sunday 8am</td>\n    <td>N messages me that we should respond soon. I tell him to update it to 10K below the asking price, remove every single sweet thing in the offer, and give them until 11am to respond.</td>\n    <td>They have 3 more showings today and I don't want another offer open until they get more.</td>\n    <td>N thinks I should meet them at the asking price or even at the 5K higher counteroffer. I don't think so. I tell him I believe they could get an offer at 45K below and with competing they probably could have brought them up to 30K below, but I'm almost certain they don't have anything above that and I might want to actually reduce it even more. He gets angry and says I shouldn't. I then tell him that I'm ok with 10K below and that's best and final offer.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.19.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "He was almost certain no offer was above 30K below and might reduce his own offer even more.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "  <tr>\n    <td>Sunday 8am</td>\n    <td>N messages me that we should respond soon. I tell him to update it to 10K below the asking price, remove every single sweet thing in the offer, and give them until 11am to respond.</td>\n    <td>They have 3 more showings today and I don't want another offer open until they get more.</td>\n    <td>N thinks I should meet them at the asking price or even at the 5K higher counteroffer. I don't think so. I tell him I believe they could get an offer at 45K below and with competing they probably could have brought them up to 30K below, but I'm almost certain they don't have anything above that and I might want to actually reduce it even more. He gets angry and says I shouldn't. I then tell him that I'm ok with 10K below and that's best and final offer.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.20",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "N got angry and favored the 5K-higher counter; the buyer settled on 10K below as best and final.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "  <tr>\n    <td>Sunday 8am</td>\n    <td>N messages me that we should respond soon. I tell him to update it to 10K below the asking price, remove every single sweet thing in the offer, and give them until 11am to respond.</td>\n    <td>They have 3 more showings today and I don't want another offer open until they get more.</td>\n    <td>N thinks I should meet them at the asking price or even at the 5K higher counteroffer. I don't think so. I tell him I believe they could get an offer at 45K below and with competing they probably could have brought them up to 30K below, but I'm almost certain they don't have anything above that and I might want to actually reduce it even more. He gets angry and says I shouldn't. I then tell him that I'm ok with 10K below and that's best and final offer.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "4.21",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "They had 3 more showings that day and he didn't want another offer open while they collected more.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "  <tr>\n    <td>Sunday 8am</td>\n    <td>N messages me that we should respond soon. I tell him to update it to 10K below the asking price, remove every single sweet thing in the offer, and give them until 11am to respond.</td>\n    <td>They have 3 more showings today and I don't want another offer open until they get more.</td>\n    <td>N thinks I should meet them at the asking price or even at the 5K higher counteroffer. I don't think so. I tell him I believe they could get an offer at 45K below and with competing they probably could have brought them up to 30K below, but I'm almost certain they don't have anything above that and I might want to actually reduce it even more. He gets angry and says I shouldn't. I then tell him that I'm ok with 10K below and that's best and final offer.</td>\n  </tr>"
+    }
+   ]
+  }
+ ]
+}

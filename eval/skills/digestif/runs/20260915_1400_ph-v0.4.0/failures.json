@@ -1,0 +1,2251 @@
+{
+ "run": "20260915_1400_ph-v0.4.0",
+ "generated": "2026-09-16",
+ "samples": {
+  "01_what_is_mathematics": {
+   "verdict": "Borderline",
+   "weighted_score": 0.7781,
+   "faithfulness_metrics": {
+    "total_claims": 274,
+    "supported": 270,
+    "partially_supported": 4,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9854
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 14,
+    "must_have_present": 14,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 274,
+    "unique": 248,
+    "duplicates": 22,
+    "trivia": 4,
+    "redundancy_rate": 0.0803,
+    "trivia_rate": 0.0146,
+    "structured_tokens": 5252,
+    "tokens_per_unique_claim": 21.18
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C003",
+     "loglog_ids": [
+      "0"
+     ],
+     "claim_text": "Mathematics is shifting toward deciding which patterns matter.",
+     "claim_type": "interpretation",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter",
+     "reasoning": "Source hedges with \"I am speculating\"; the node states the shift as fact, dropping the qualifier."
+    },
+    {
+     "claim_id": "C077",
+     "loglog_ids": [
+      "3"
+     ],
+     "claim_text": "Tao's pipeline: proof abundance threatens to break the correlation of the community's goals, and the bottleneck shifts to digestion, the work treated as low prestige.",
+     "claim_type": "causal_link",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "AI optimization threatens to break the correlation. ... The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige.",
+     "reasoning": "Bottleneck-low-prestige part is exact, but source attributes the correlation break to AI optimization, not proof abundance itself."
+    },
+    {
+     "claim_id": "C179",
+     "loglog_ids": [
+      "6.12.3"
+     ],
+     "claim_text": "Citation networks already made the pre-AI canon path-dependent, so an attention-mediated canon would be worse.",
+     "claim_type": "interpretation",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "If citation networks already made the pre-AI mathematical canon path-dependent, an attention-mediated canon would be worse",
+     "reasoning": "Source frames the antecedent conditionally with 'If'; node asserts it as established fact, dropping the condition."
+    },
+    {
+     "claim_id": "C241",
+     "loglog_ids": [
+      "9.2"
+     ],
+     "claim_text": "Many mathematicians publish anything they can prove, and much of science works that way.",
+     "claim_type": "fact",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "I know of mathematicians who will publish anything they can prove. In fact much of science works that way.",
+     "reasoning": "Source says 'I know of mathematicians', an existence claim; loglog strengthens it to 'Many', an unsupported quantifier upgrade."
+    }
+   ],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C001",
+     "loglog_ids": [
+      "0"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C025",
+     "reasoning": "Summary restates proof production automated; 1.9 carries no less."
+    },
+    {
+     "claim_id": "C002",
+     "loglog_ids": [
+      "0"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C034",
+     "reasoning": "Summary restates verification automated; 1.13 states it fully."
+    },
+    {
+     "claim_id": "C003",
+     "loglog_ids": [
+      "0"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C246",
+     "reasoning": "Summary thesis restated at 9.4 speculation on shifting weight."
+    },
+    {
+     "claim_id": "C004",
+     "loglog_ids": [
+      "0"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C239",
+     "reasoning": "Summary claim restated fully at 9.1.1."
+    },
+    {
+     "claim_id": "C005",
+     "loglog_ids": [
+      "0"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C250",
+     "reasoning": "Summary home claim restated at 9.5."
+    },
+    {
+     "claim_id": "C026",
+     "loglog_ids": [
+      "1.10"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C013",
+     "reasoning": "Restates First Proof result already given at 1.5."
+    },
+    {
+     "claim_id": "C027",
+     "loglog_ids": [
+      "1.11"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C015",
+     "reasoning": "Restates choosing stayed human already at 1.5.2."
+    },
+    {
+     "claim_id": "C072",
+     "loglog_ids": [
+      "2.7.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C071",
+     "reasoning": "Restates friction removal and reader learning loss."
+    },
+    {
+     "claim_id": "C113",
+     "loglog_ids": [
+      "4.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C024",
+     "reasoning": "Restates the split already given at 1.8."
+    },
+    {
+     "claim_id": "C124",
+     "loglog_ids": [
+      "5.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C090",
+     "reasoning": "Restates acceptance external and unoptimizable."
+    },
+    {
+     "claim_id": "C125",
+     "loglog_ids": [
+      "5.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C122",
+     "reasoning": "Restates both locate importance on stable ground."
+    },
+    {
+     "claim_id": "C151",
+     "loglog_ids": [
+      "6.5"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C144",
+     "reasoning": "Restates same-for-math, adding only timing."
+    },
+    {
+     "claim_id": "C168",
+     "loglog_ids": [
+      "6.10.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C140",
+     "reasoning": "Restates engagement replacing checkable standing."
+    },
+    {
+     "claim_id": "C211",
+     "loglog_ids": [
+      "7.4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C101",
+     "reasoning": "Restates the digestion bottleneck at 7.4."
+    },
+    {
+     "claim_id": "C212",
+     "loglog_ids": [
+      "7.4.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C201",
+     "reasoning": "Restates middle emptying loses legible, checkable people."
+    },
+    {
+     "claim_id": "C231",
+     "loglog_ids": [
+      "8.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C213",
+     "reasoning": "Restates attention economy manufacturing hollow agreement."
+    },
+    {
+     "claim_id": "C238",
+     "loglog_ids": [
+      "9.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C237",
+     "reasoning": "Restates importance as the real constraint."
+    },
+    {
+     "claim_id": "C239",
+     "loglog_ids": [
+      "9.1.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C183",
+     "reasoning": "Recaps checkability floor and structural ceiling."
+    },
+    {
+     "claim_id": "C253",
+     "loglog_ids": [
+      "9.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C110",
+     "reasoning": "Restates finding, judgment, taste becoming visible."
+    },
+    {
+     "claim_id": "C262",
+     "loglog_ids": [
+      "9.9"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C204",
+     "reasoning": "Retells woodworking craft-does-not-die in conclusion."
+    },
+    {
+     "claim_id": "C268",
+     "loglog_ids": [
+      "9.11.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C049",
+     "reasoning": "Restates process-product as struggle is product."
+    },
+    {
+     "claim_id": "C269",
+     "loglog_ids": [
+      "9.12"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C067",
+     "reasoning": "Restates proving-as-gym image."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C076",
+     "loglog_ids": [
+      "2.8.1"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Aside about slides; no argumentative weight."
+    },
+    {
+     "claim_id": "C109",
+     "loglog_ids": [
+      "3.11.2"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "One-line filler restating the inversion already implied."
+    },
+    {
+     "claim_id": "C229",
+     "loglog_ids": [
+      "8.5.2"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Quip adding no substantive claim."
+    },
+    {
+     "claim_id": "C233",
+     "loglog_ids": [
+      "8.8"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Pointer to thought experiment, no new information."
+    }
+   ],
+   "top_fix_list": [
+    "Restore causal attribution in C077 (loglog 3): source says AI optimization threatens to break the correlation, not proof abundance itself; this sits on the Tao-pipeline Must have point.",
+    "Re-add the speculation qualifier in C003 (loglog 0): change the asserted shift to 'I am speculating that the mix is shifting' so the deciding-which-patterns point is not stated as fact.",
+    "Restore the conditional in C179 (loglog 6.12.3): keep 'If citation networks already made the canon path-dependent' rather than asserting it as established.",
+    "Downgrade the quantifier in C241 (loglog 9.2): 'Many mathematicians' should read 'mathematicians I know of' per the existence claim in source.",
+    "Prune redundancy to push below current 0.0803: C026/C027 restatements, C113, C211, C239, C262, C268, C269 are the cheapest single-line drops; C003 also duplicates C246."
+   ],
+   "top_tradeoff_note": "Coverage is perfect (must_recall 1.0, 15/15 points) and redundancy 0.0803 sits well under the 0.15 max, so the length is fully justified by coverage; the only risk is four Minor Partials that drop source hedges and quantifiers, at least one of which touches a Must have point."
+  },
+  "02_case_for_transparent_government": {
+   "verdict": "Pass",
+   "weighted_score": 0.77664,
+   "faithfulness_metrics": {
+    "total_claims": 214,
+    "supported": 214,
+    "partially_supported": 0,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 1.0
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 15,
+    "must_have_present": 15,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 214,
+    "unique": 181,
+    "duplicates": 25,
+    "trivia": 7,
+    "redundancy_rate": 0.1168,
+    "trivia_rate": 0.0327,
+    "structured_tokens": 214,
+    "tokens_per_unique_claim": 1.1383
+   },
+   "non_supported_claims": [],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C079",
+     "loglog_ids": [
+      "6.1.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C022",
+     "reasoning": "Repeats C022 privacy-tech feasibility; adds nothing new."
+    },
+    {
+     "claim_id": "C088",
+     "loglog_ids": [
+      "6.2.7"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C045",
+     "reasoning": "Repeats NZ 30-day release already in C045."
+    },
+    {
+     "claim_id": "C108",
+     "loglog_ids": [
+      "6.4.10"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C089",
+     "reasoning": "Repeats C089 opacity-versus-accountability point."
+    },
+    {
+     "claim_id": "C109",
+     "loglog_ids": [
+      "6.4.11"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C105",
+     "reasoning": "Repeats C105 build-capacity-not-reduce-information recommendation."
+    },
+    {
+     "claim_id": "C130",
+     "loglog_ids": [
+      "6.6.7"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C055",
+     "reasoning": "Repeats C055 predicted-catastrophe pattern using Snowden."
+    },
+    {
+     "claim_id": "C133",
+     "loglog_ids": [
+      "6.6.10"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C095",
+     "reasoning": "Repeats C095 temporary operational secrecy concession."
+    },
+    {
+     "claim_id": "C134",
+     "loglog_ids": [
+      "6.6.11"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C096",
+     "reasoning": "Repeats C096 post-conclusion disclosure recommendation."
+    },
+    {
+     "claim_id": "C158",
+     "loglog_ids": [
+      "6.8.5"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C120",
+     "reasoning": "Repeats C120 conspiracy-theories-need-information-gaps claim."
+    },
+    {
+     "claim_id": "C167",
+     "loglog_ids": [
+      "6.9.4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C096",
+     "reasoning": "Repeats C096 time-delayed transparency recommendation."
+    },
+    {
+     "claim_id": "C189",
+     "loglog_ids": [
+      "7.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C183",
+     "reasoning": "Repeats C183 measuring-stick claim."
+    },
+    {
+     "claim_id": "C198",
+     "loglog_ids": [
+      "9.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C024",
+     "reasoning": "Appendix recap of C024 Sweden 1766 claim."
+    },
+    {
+     "claim_id": "C199",
+     "loglog_ids": [
+      "9.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C034",
+     "reasoning": "Appendix recap of C034 X-Road claim."
+    },
+    {
+     "claim_id": "C200",
+     "loglog_ids": [
+      "9.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C040",
+     "reasoning": "Appendix recap of C040 Brazil portal claim."
+    },
+    {
+     "claim_id": "C201",
+     "loglog_ids": [
+      "9.3.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C043",
+     "reasoning": "Near-verbatim repeat of C043 pension-data finding."
+    },
+    {
+     "claim_id": "C202",
+     "loglog_ids": [
+      "9.4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C030",
+     "reasoning": "Appendix recap of C030 Seoul OPEN claim."
+    },
+    {
+     "claim_id": "C204",
+     "loglog_ids": [
+      "9.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C063",
+     "reasoning": "Appendix recap of C063 USA FREEDOM claim."
+    },
+    {
+     "claim_id": "C205",
+     "loglog_ids": [
+      "9.7"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C074",
+     "reasoning": "Appendix recap of C074 Pew numbers."
+    },
+    {
+     "claim_id": "C206",
+     "loglog_ids": [
+      "9.8"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C082",
+     "reasoning": "Appendix recap of C082-C084 efficiency sources."
+    },
+    {
+     "claim_id": "C207",
+     "loglog_ids": [
+      "9.9"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C092",
+     "reasoning": "Appendix recap of C092 diplomacy backchannel evidence."
+    },
+    {
+     "claim_id": "C208",
+     "loglog_ids": [
+      "9.10"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C099",
+     "reasoning": "Appendix recap of C099-C104 special-interest studies."
+    },
+    {
+     "claim_id": "C209",
+     "loglog_ids": [
+      "9.11"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C112",
+     "reasoning": "Appendix recap of C112-C118 safety survey."
+    },
+    {
+     "claim_id": "C210",
+     "loglog_ids": [
+      "9.12"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C124",
+     "reasoning": "Appendix recap of C124-C130 security sources."
+    },
+    {
+     "claim_id": "C211",
+     "loglog_ids": [
+      "9.13"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C138",
+     "reasoning": "Appendix recap of C138 populism objection and sources."
+    },
+    {
+     "claim_id": "C212",
+     "loglog_ids": [
+      "9.14"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C153",
+     "reasoning": "Appendix recap of C153 misinformation objection."
+    },
+    {
+     "claim_id": "C213",
+     "loglog_ids": [
+      "9.15"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C176",
+     "reasoning": "Appendix recap of C176 OGP structural-barrier evidence."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C009",
+     "loglog_ids": [
+      "1.7"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Draft-status note, no argumentative content, low information value."
+    },
+    {
+     "claim_id": "C010",
+     "loglog_ids": [
+      "1.8"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Meta aside about author stance; adds no substantive point."
+    },
+    {
+     "claim_id": "C091",
+     "loglog_ids": [
+      "6.3.1"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Concession filler, no substantive information."
+    },
+    {
+     "claim_id": "C111",
+     "loglog_ids": [
+      "6.5.1"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Concession filler, no substantive content beyond transition."
+    },
+    {
+     "claim_id": "C137",
+     "loglog_ids": [
+      "6.6.14"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Meta aside about the author, no substantive point."
+    },
+    {
+     "claim_id": "C152",
+     "loglog_ids": [
+      "6.7.14"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Meta aside about the author, no substantive point."
+    },
+    {
+     "claim_id": "C193",
+     "loglog_ids": [
+      "8.3"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Bridging transition, no substantive information."
+    }
+   ],
+   "top_fix_list": [
+    "Collapse the appendix recap duplicates flagged by Judge Con (C198-C213 mapping to C024/C030/C034/C040/C043/C055/C063/C074/C082/C092/C099/C112/C120/C124/C138/C153/C176), since they add length with zero coverage gain and are the largest single block of the 25 duplicates.",
+    "Merge the near-verbatim and same-idea inline duplicates before the appendix: C201/C043 (60GB pension data), C079/C022, C088/C045, C108/C089, C109/C105, C130/C055, C133/C095, C134/C096, C158/C120, C167/C096, C189/C183.",
+    "Trim or drop the 7 trivia claims (trivia_rate 0.0327) identified by the concision judge to push redundancy further under the 0.15 gate ahead of future edits."
+   ],
+   "top_tradeoff_note": "All three aspects clear their gates: full faithfulness (214/214 supported, 0 contradicted) and full must-have recall (15/15) at a redundancy rate (0.1168) below the 0.15 max, so the coverage is earned without an over-length penalty. The 25 duplicates are concentrated in an explicit appendix recap, meaning they inflate length without adding coverage."
+  },
+  "03_cant_stop_addicted_to_shindig": {
+   "verdict": "Borderline",
+   "weighted_score": 0.7802,
+   "faithfulness_metrics": {
+    "total_claims": 91,
+    "supported": 90,
+    "partially_supported": 1,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.989
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 14,
+    "must_have_present": 14,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 91,
+    "unique": 81,
+    "duplicates": 7,
+    "trivia": 3,
+    "redundancy_rate": 0.0769,
+    "trivia_rate": 0.033,
+    "structured_tokens": 112,
+    "tokens_per_unique_claim": 1.38
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C001",
+     "loglog_ids": [
+      "0"
+     ],
+     "claim_text": "Can't Stop's four-dice probabilities and forced-move rule make it nearly balanced, and simulations show probabilistic, consistent play wins, though going first is a large advantage.",
+     "claim_type": "interpretation",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "The game heavily favors middle columns.",
+     "reasoning": "Probabilistic consistency and first-player advantage are supported, but source says combination play is badly imbalanced, not 'nearly balanced'."
+    }
+   ],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C021",
+     "loglog_ids": [
+      "L022"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C009",
+     "reasoning": "Explicit conclusion recap of section 2; adds nothing."
+    },
+    {
+     "claim_id": "C036",
+     "loglog_ids": [
+      "L037"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C029",
+     "reasoning": "Explicit conclusion recap of section 4; adds nothing."
+    },
+    {
+     "claim_id": "C062",
+     "loglog_ids": [
+      "L063"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C057",
+     "reasoning": "Conclusion recap of probabilistic dominance; repeats C057/C044."
+    },
+    {
+     "claim_id": "C063",
+     "loglog_ids": [
+      "L064"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C050",
+     "reasoning": "Conclusion recap of consistency-beats-speed; repeats C050."
+    },
+    {
+     "claim_id": "C071",
+     "loglog_ids": [
+      "L072"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C064",
+     "reasoning": "Conclusion recap of first-player advantage; adds nothing."
+    },
+    {
+     "claim_id": "C076",
+     "loglog_ids": [
+      "L077"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C035",
+     "reasoning": "Restates 4.7 balancing mechanism per cross-link; same point."
+    },
+    {
+     "claim_id": "C087",
+     "loglog_ids": [
+      "L088"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C072",
+     "reasoning": "Conclusion recap of design conclusion; adds nothing."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C008",
+     "loglog_ids": [
+      "L009"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Web artifact mention, low analytical value for the argument."
+    },
+    {
+     "claim_id": "C056",
+     "loglog_ids": [
+      "L057"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Matrix/CSV artifact mention, no analytical value."
+    },
+    {
+     "claim_id": "C091",
+     "loglog_ids": [
+      "L092"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Code/data link meta, no analytical value."
+    }
+   ],
+   "top_fix_list": [
+    "Fix C001: source loglog line 0 says combination play is 'badly imbalanced' and 'heavily favors middle columns', so soften 'nearly balanced' on the Must-have balance point.",
+    "Fix C076: merge into C035, same balancing mechanism, redundant.",
+    "Fix C021/C036/C062/C063/C071/C087: merge section recaps into their originals C009/C029/C057/C050/C064/C072.",
+    "Cut low-value artifact claims C008, C056, C091, which add trivia without supporting a point."
+   ],
+   "top_tradeoff_note": "Full must-have coverage (14/14) and zero critical errors clear all hard gates, and length cost is justified because redundancy (0.0769) stays below the 0.15 max. The one Partially supported claim C001 is on a Must-have balance point, so human review is advised despite a strong weighted score."
+  },
+  "04_house_hunting_shenanigans": {
+   "verdict": "Pass",
+   "weighted_score": 0.7647,
+   "faithfulness_metrics": {
+    "total_claims": 102,
+    "supported": 100,
+    "partially_supported": 2,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9804
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 14,
+    "must_have_present": 14,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 102,
+    "unique": 83,
+    "duplicates": 14,
+    "trivia": 5,
+    "redundancy_rate": 0.1373,
+    "trivia_rate": 0.049,
+    "structured_tokens": 1548,
+    "tokens_per_unique_claim": 18.65
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C036",
+     "loglog_ids": [
+      "4.4"
+     ],
+     "claim_text": "Naps are super rare for him, about once every few years, usually when a big load is lifted.",
+     "claim_type": "interpretation",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "It is super rare for me to take a nap in the afternoon, like once every few years.",
+     "reasoning": "Source restricts rarity to afternoon naps, node generalizes to all naps, dropping that scope qualifier."
+    },
+    {
+     "claim_id": "C047",
+     "loglog_ids": [
+      "4.15"
+     ],
+     "claim_text": "N thought the other offer was at that price but had a condition they disliked; the buyer didn't buy any of it.",
+     "claim_type": "interpretation",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "He thinks the other offer is actually at this price but there might be a condition in there that they don't like it.",
+     "reasoning": "Source hedges with 'might be a condition', node states 'had a condition' as settled fact."
+    }
+   ],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C009",
+     "loglog_ids": [
+      "2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C010",
+     "reasoning": "Theme header restating the 30K maximum-affordability offer already in C010."
+    },
+    {
+     "claim_id": "C032",
+     "loglog_ids": [
+      "4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C039",
+     "reasoning": "Theme header restating the 20K drop already in C039."
+    },
+    {
+     "claim_id": "C067",
+     "loglog_ids": [
+      "5.12"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C065",
+     "reasoning": "Second statement of N seeing the team as incompetent; no new content."
+    },
+    {
+     "claim_id": "C070",
+     "loglog_ids": [
+      "6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C075",
+     "reasoning": "Theme header restating the 10K-below sale already in C075."
+    },
+    {
+     "claim_id": "C085",
+     "loglog_ids": [
+      "8.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C084",
+     "reasoning": "Repeats the Claude debrief intro from C084 with no new detail."
+    },
+    {
+     "claim_id": "C087",
+     "loglog_ids": [
+      "8.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C020",
+     "reasoning": "AI recap of the full-asking first offer already in C020."
+    },
+    {
+     "claim_id": "C088",
+     "loglog_ids": [
+      "8.4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C039",
+     "reasoning": "AI recap of pivots already in C031, C039, C050."
+    },
+    {
+     "claim_id": "C090",
+     "loglog_ids": [
+      "8.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C021",
+     "reasoning": "Recaps strategic moves already stated in C021 and C029."
+    },
+    {
+     "claim_id": "C091",
+     "loglog_ids": [
+      "8.7"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C072",
+     "reasoning": "Restates the realtor manipulation lesson already in C072."
+    },
+    {
+     "claim_id": "C095",
+     "loglog_ids": [
+      "8.9"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C072",
+     "reasoning": "Same manipulation and asymmetry framing as C072 and C091."
+    },
+    {
+     "claim_id": "C097",
+     "loglog_ids": [
+      "8.11"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C069",
+     "reasoning": "Repeats the weekend's information value already claimed in C069."
+    },
+    {
+     "claim_id": "C098",
+     "loglog_ids": [
+      "8.12"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C084",
+     "reasoning": "Meta line repeating that the post includes AI analysis, already in C084."
+    },
+    {
+     "claim_id": "C099",
+     "loglog_ids": [
+      "8.13"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C029",
+     "reasoning": "Successes recap the bluff detection already in C029 and C064."
+    },
+    {
+     "claim_id": "C102",
+     "loglog_ids": [
+      "8.16"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C094",
+     "reasoning": "Recommendation list overlapping C094's improvements list."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C002",
+     "loglog_ids": [
+      "1"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating context already carried by C004 and C007."
+    },
+    {
+     "claim_id": "C007",
+     "loglog_ids": [
+      "1.5"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Structural description of table columns; presentation detail, low value."
+    },
+    {
+     "claim_id": "C017",
+     "loglog_ids": [
+      "3"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating House B events delivered by its children."
+    },
+    {
+     "claim_id": "C055",
+     "loglog_ids": [
+      "5"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating the email exchange detailed in its children."
+    },
+    {
+     "claim_id": "C077",
+     "loglog_ids": [
+      "7"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating reflections delivered by 7.1 through 7.5."
+    }
+   ],
+   "top_fix_list": [
+    "Restore the scope qualifier in C036: change 'naps are super rare' to 'afternoon naps are super rare' to match loglog 4.4.",
+    "Soften C047 from settled fact to hedge ('might have a condition') per loglog 4.15.",
+    "Merge the 14 duplicate pairs (C009/C010, C032/C039, C067/C065, C070/C075, C085/C084, C087/C020, C088/C039, C090/C021, C091/C072, C095/C072, C097/C069, C098/C084, C099/C029, C102/C094) to push redundancy further under the 0.15 cap.",
+    "Prune section-header/structural trivia C002, C017, C055, C077, C007."
+   ],
+   "top_tradeoff_note": "All gates clear: precision 0.9804 >= 0.95, must recall 1.0 >= 0.9, critical errors 0, redundancy 0.1373 <= 0.15. Full must-have coverage (14/14) earns its length cost because redundancy stays below max. The two Partial claims are Minor interpretations and are not tied to a Must-have point, so they do not trigger Borderline."
+  },
+  "05_manufacturing_taste": {
+   "verdict": "Borderline",
+   "weighted_score": 0.76784,
+   "faithfulness_metrics": {
+    "total_claims": 122,
+    "supported": 121,
+    "partially_supported": 1,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9918
+   },
+   "coverage_metrics": {
+    "total_points": 16,
+    "must_have_total": 16,
+    "must_have_present": 15,
+    "must_have_partial": 1,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 0.9688,
+    "overall_recall": 0.9688
+   },
+   "concision_metrics": {
+    "scored_claims": 122,
+    "unique": 109,
+    "duplicates": 10,
+    "trivia": 3,
+    "redundancy_rate": 0.082,
+    "trivia_rate": 0.0246,
+    "structured_tokens": 2018,
+    "tokens_per_unique_claim": 18.5
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C035",
+     "loglog_ids": [
+      "3.2.3"
+     ],
+     "claim_text": "The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads.",
+     "claim_type": "number_or_date",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first",
+     "reasoning": "Numbers 1 and 40 match, but source hedges with \"could\"; loglog states \"ranked\" as certain fact."
+    }
+   ],
+   "non_present_points": [
+    {
+     "point_id": "K10",
+     "point_text": "Counterfactual experiment: holding every composer's talent constant and reshuffling only resources over 200 runs produced a counterfactual distance of 0.88 on a 0-to-1 scale; only the top 10% of talent had a meaningful shot (~1 in 4), and the 50th to 90th percentile faced fame as essentially a lottery.",
+     "weight": "Must have",
+     "presence": "Partial",
+     "loglog_ids": [
+      "L057",
+      "L058",
+      "L059",
+      "L060"
+     ],
+     "evidence_quote": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones. (L058) ... Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four. (L059) ... 50th to 90th percentile of quality, canonical status was effectively a lottery. (L060)",
+     "reasoning": "The core numbers (0.88, top 10%, ~1 in 4, 50th-90th lottery) and the talent-constant/reshuffle setup are fully present. However, the stated run count of 200 for this specific experiment is omitted; L047-L048 give run counts only for the main experiments generally. Because this is a Must have point with a dropped number, per the strict rule it is capped at Partial even though the substance is intact."
+    }
+   ],
+   "duplicate_labels": [
+    {
+     "claim_id": "C059",
+     "loglog_ids": [
+      "4.3.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C019",
+     "reasoning": "Restates middle-is-luck as a lottery; cross-linked to 2.3.3."
+    },
+    {
+     "claim_id": "C060",
+     "loglog_ids": [
+      "4.3.4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C007",
+     "reasoning": "Cross-linked restatement of the Haydn question from 1.5."
+    },
+    {
+     "claim_id": "C061",
+     "loglog_ids": [
+      "4.3.5"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C007",
+     "reasoning": "Same Esterházy counterfactual as 1.5, restated with its answer."
+    },
+    {
+     "claim_id": "C080",
+     "loglog_ids": [
+      "5"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C001",
+     "reasoning": "Conclusion restates the opening summary thesis with little added."
+    },
+    {
+     "claim_id": "C082",
+     "loglog_ids": [
+      "5.1.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C072",
+     "reasoning": "Repeats lost equally-gifted composers from 4.5.4."
+    },
+    {
+     "claim_id": "C090",
+     "loglog_ids": [
+      "5.3.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C088",
+     "reasoning": "Punchline repeats the exposure-bottleneck claim from 5.3.1."
+    },
+    {
+     "claim_id": "C105",
+     "loglog_ids": [
+      "7.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C069",
+     "reasoning": "Cross-linked restatement of the 2.5% overlap from 4.5.1."
+    },
+    {
+     "claim_id": "C110",
+     "loglog_ids": [
+      "7.4.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C081",
+     "reasoning": "Cross-linked restatement of the qualified-greatest claim from 5.1."
+    },
+    {
+     "claim_id": "C113",
+     "loglog_ids": [
+      "7.5"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C092",
+     "reasoning": "Repeats canon contingency and inevitability already stated in 5.4.1."
+    },
+    {
+     "claim_id": "C119",
+     "loglog_ids": [
+      "7.7.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C092",
+     "reasoning": "Third restatement of contingency claim from 5.4.1."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C009",
+     "loglog_ids": [
+      "1.7"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Housekeeping meta about this being a less formal paper; no substantive point."
+    },
+    {
+     "claim_id": "C040",
+     "loglog_ids": [
+      "3.4"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Transition restating section 3 theme and previewing interaction."
+    },
+    {
+     "claim_id": "C111",
+     "loglog_ids": [
+      "7.4.2"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Bare pointer to the simulation verdict already conveyed; adds nothing."
+    }
+   ],
+   "top_fix_list": [
+    "K10 (L057-L060): restore the explicit run count of 200 for the counterfactual experiment so the Must have point is fully supported and must_recall rises toward 1.0",
+    "C035 (3.2.3): reinstate the source hedge, change 'ranked 1st ... and 40th' to 'could rank 1st ... and 40th', to clear the sole non-supported claim",
+    "Prune the 10 duplicate claims per the concision list (e.g. C059/C019, C060/C061/C007, C090/C088) to lower redundancy without touching coverage"
+   ],
+   "top_tradeoff_note": "All numeric gates pass with length well under the redundancy ceiling, so concision neither rescues nor harms anything here. Human review is advised because Must have point K10 is only Partial (dropped run count of 200) and Minor partial claim C035 asserts a fact the source hedges."
+  },
+  "06_valuing_consistency": {
+   "verdict": "Borderline",
+   "weighted_score": 0.77902,
+   "faithfulness_metrics": {
+    "total_claims": 124,
+    "supported": 123,
+    "partially_supported": 1,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9919
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 14,
+    "must_have_present": 14,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 124,
+    "unique": 109,
+    "duplicates": 11,
+    "trivia": 4,
+    "redundancy_rate": 0.0887,
+    "trivia_rate": 0.0323,
+    "structured_tokens": 136,
+    "tokens_per_unique_claim": 1.2477
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C090",
+     "loglog_ids": [
+      "6.11"
+     ],
+     "claim_text": "But the same trajectory falls out of a much less flattering process: aging brings assets, income, and things to lose from redistribution.",
+     "claim_type": "causal_link",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "As people age they typically acquire assets, income, and things to lose from redistribution.",
+     "reasoning": "Source hedges with 'typically'; loglog states 'aging brings' as absolute, dropping the qualifier."
+    }
+   ],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C029",
+     "loglog_ids": [
+      "2.18"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C028",
+     "reasoning": "Restates C028 that the output-observed gap vanishes at deeper layers."
+    },
+    {
+     "claim_id": "C031",
+     "loglog_ids": [
+      "2.20"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C030",
+     "reasoning": "Repeats C030's invisible drift and moral-weight location."
+    },
+    {
+     "claim_id": "C041",
+     "loglog_ids": [
+      "3.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C039",
+     "reasoning": "Restates C039 as a formula, adding no new claim."
+    },
+    {
+     "claim_id": "C050",
+     "loglog_ids": [
+      "4.7"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C047",
+     "reasoning": "Restates C047 that only the Independent needs no reference information."
+    },
+    {
+     "claim_id": "C069",
+     "loglog_ids": [
+      "5.13"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C067",
+     "reasoning": "Restates C067's same-form opposite-verdict conclusion."
+    },
+    {
+     "claim_id": "C082",
+     "loglog_ids": [
+      "6.7.4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C081",
+     "reasoning": "Image restating C081's hysteresis with no new claim."
+    },
+    {
+     "claim_id": "C092",
+     "loglog_ids": [
+      "6.12"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C085",
+     "reasoning": "Restates C085's identical-outcome point plus retrospective story already implied."
+    },
+    {
+     "claim_id": "C107",
+     "loglog_ids": [
+      "7.3.5"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C106",
+     "reasoning": "Pithy restatement of C106, no new claim."
+    },
+    {
+     "claim_id": "C108",
+     "loglog_ids": [
+      "8"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C085",
+     "reasoning": "Restates the identical-behavior and identical-retrospection already asserted."
+    },
+    {
+     "claim_id": "C119",
+     "loglog_ids": [
+      "9.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C009",
+     "reasoning": "Restates C009 that behavioral consistency was only a bad proxy."
+    },
+    {
+     "claim_id": "C123",
+     "loglog_ids": [
+      "9.5"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C111",
+     "reasoning": "Restates C111 that only the advance question is trusted."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C010",
+     "loglog_ids": [
+      "1.7"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Restated purpose line, no claim beyond C002 and C009."
+    },
+    {
+     "claim_id": "C033",
+     "loglog_ids": [
+      "2.22"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Economist vocabulary aside, no argumentative contribution."
+    },
+    {
+     "claim_id": "C110",
+     "loglog_ids": [
+      "8.2"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Rhetorical transition, no claim beyond the surrounding lines."
+    },
+    {
+     "claim_id": "C117",
+     "loglog_ids": [
+      "9"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Recap header about the word splitting, no new claim."
+    }
+   ],
+   "top_fix_list": [
+    "C090 (loglog 6.11): restore the source's 'typically' qualifier so 'aging brings assets' reads 'as people age they typically acquire assets', removing the unsupported absolute causal phrasing that affects this Must-have point.",
+    "Merge the 11 duplicate claims flagged by concision (C029, C031, C041, C050, C069, C082, C092, C107, C108, C119, C123) to lower redundancy further, though redundancy already passes at 0.0887."
+   ],
+   "top_tradeoff_note": "Coverage is maximal and redundancy sits well under the 0.15 max, so no length-vs-coverage tradeoff is at stake. The lone concern is a Minor Partial claim (C090) that drops the source's hedge on a Must-have point, which trips the Borderline rule and warrants human review despite all numeric gates passing."
+  },
+  "07_intentionalism": {
+   "verdict": "Borderline",
+   "weighted_score": 0.78058,
+   "faithfulness_metrics": {
+    "total_claims": 134,
+    "supported": 133,
+    "partially_supported": 1,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9925
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 12,
+    "must_have_present": 12,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 134,
+    "unique": 119,
+    "duplicates": 11,
+    "trivia": 4,
+    "redundancy_rate": 0.0821,
+    "trivia_rate": 0.0299,
+    "structured_tokens": 134,
+    "tokens_per_unique_claim": 1.126
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C131",
+     "loglog_ids": [
+      "10.6.4"
+     ],
+     "claim_text": "After 30 days the pattern is clear: proposer entries show higher satisfaction, and this evidence motivates continued practice.",
+     "claim_type": "interpretation",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "After 30 days, you'll see the pattern clearly. Proposer entries will show higher satisfaction.",
+     "reasoning": "Source presents future prediction ('you'll see', 'will show'); node asserts it as present fact."
+    }
+   ],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C027",
+     "loglog_ids": [
+      "4.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C024",
+     "reasoning": "Verbatim restatement of the trap already asserted as theme."
+    },
+    {
+     "claim_id": "C030",
+     "loglog_ids": [
+      "4.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C023",
+     "reasoning": "Preferences-as-reactions repeats never-practiced-wanting point."
+    },
+    {
+     "claim_id": "C042",
+     "loglog_ids": [
+      "6.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C017",
+     "reasoning": "Reasserts most people are receivers, already generalized in C017."
+    },
+    {
+     "claim_id": "C047",
+     "loglog_ids": [
+      "6.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C010",
+     "reasoning": "Those people end better restates systematic proposer advantage."
+    },
+    {
+     "claim_id": "C055",
+     "loglog_ids": [
+      "7.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C022",
+     "reasoning": "System persists because good enough repeats self-sustaining claim."
+    },
+    {
+     "claim_id": "C066",
+     "loglog_ids": [
+      "8.8"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C031",
+     "reasoning": "Lost capacity to know wants repeats C031."
+    },
+    {
+     "claim_id": "C072",
+     "loglog_ids": [
+      "9.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C034",
+     "reasoning": "Decide what you want before phone repeats start-tonight practice."
+    },
+    {
+     "claim_id": "C080",
+     "loglog_ids": [
+      "9.9"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C010",
+     "reasoning": "Proposers end better repeats the core advantage claim."
+    },
+    {
+     "claim_id": "C081",
+     "loglog_ids": [
+      "9.10"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C048",
+     "reasoning": "Not special, other side of equation restates C048."
+    },
+    {
+     "claim_id": "C133",
+     "loglog_ids": [
+      "10.8"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C063",
+     "reasoning": "Practicing what-do-I-want-first repeats the ask-what-you-want imperative."
+    },
+    {
+     "claim_id": "C134",
+     "loglog_ids": [
+      "10.9"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C079",
+     "reasoning": "Muscle builds and capacity grows restates the muscle sequence."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C082",
+     "loglog_ids": [
+      "10"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Appendix announcement only; pure navigation, no argument content."
+    },
+    {
+     "claim_id": "C083",
+     "loglog_ids": [
+      "10.1"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Entertainment agenda header restating its children."
+    },
+    {
+     "claim_id": "C111",
+     "loglog_ids": [
+      "10.4"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Relationships agenda header restating its children."
+    },
+    {
+     "claim_id": "C119",
+     "loglog_ids": [
+      "10.5"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Daily micro-practices agenda header restating its children."
+    }
+   ],
+   "top_fix_list": [
+    "Re-tense C131 (loglog 10.6.4) to match the source's predictive framing: change 'proposer entries show higher satisfaction' to 'the source predicts proposer entries will show higher satisfaction after 30 days', since the quote is 'you'll see ... will show'.",
+    "Merge the 11 listed duplicates, starting with the verbatim trap restatements: C027 into C024 and C030 into C023, then C042/C047/C055/C066/C072/C080/C081/C133/C134.",
+    "Cut agenda-header restatements C082, C083, C111, C119, which only restate their children and add no unique claim.",
+    "Trim trivia (4 items, trivia_rate 0.0299) to push redundancy closer to zero and raise weighted score toward 0.8."
+   ],
+   "top_tradeoff_note": "All hard gates pass and the weighted score is healthy (0.781), with must-have recall full at 1.0 and redundancy well under the 0.15 cap, so no coverage-for-length tradeoff is needed; the only drag is the single partially supported interpretation C131, which warrants human review rather than a fail."
+  },
+  "08_empathy_sympathy_compassion_matrix": {
+   "verdict": "Pass",
+   "weighted_score": 0.79428,
+   "faithfulness_metrics": {
+    "total_claims": 35,
+    "supported": 35,
+    "partially_supported": 0,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 1.0
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 12,
+    "must_have_present": 12,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 35,
+    "unique": 33,
+    "duplicates": 1,
+    "trivia": 1,
+    "redundancy_rate": 0.0286,
+    "trivia_rate": 0.0286,
+    "structured_tokens": 90,
+    "tokens_per_unique_claim": 2.727272727272727
+   },
+   "non_supported_claims": [],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C034",
+     "loglog_ids": [
+      "4.14"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C014",
+     "reasoning": "Recap of Kantianism and Humanism row relations already stated; near-duplicates C014 and C015."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C020",
+     "loglog_ids": [
+      "4"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Restated section header; scope caveat already carried by clinical note 4.9."
+    }
+   ],
+   "top_fix_list": [
+    "Merge C034 into C014 (it also near-duplicates C015), collapsing the three Kantianism/Humanism relation recaps into one canonical statement.",
+    "Drop C020 (trivia restatement of the 'Notes' Theme header); it carries no information beyond the section label."
+   ],
+   "top_tradeoff_note": "All three aspect judges agree: 35/35 claims supported, 12/12 must-have points present, and redundancy is well under the 0.15 max, so no length-for-coverage tradeoff is needed. The only concision cost is one trivial restatement (C020) and one duplicate (C034), which are cosmetic rather than structural."
+  },
+  "09_not_even_wrong": {
+   "verdict": "Pass",
+   "weighted_score": 0.7789,
+   "faithfulness_metrics": {
+    "total_claims": 38,
+    "supported": 38,
+    "partially_supported": 0,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 1.0
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 15,
+    "must_have_present": 15,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 38,
+    "unique": 32,
+    "duplicates": 4,
+    "trivia": 2,
+    "redundancy_rate": 0.1053,
+    "trivia_rate": 0.0526,
+    "structured_tokens": 804,
+    "tokens_per_unique_claim": 25.1
+   },
+   "non_supported_claims": [],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C024",
+     "loglog_ids": [
+      "4.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C001",
+     "reasoning": "Restates summary thesis that factors override scrutiny; no new proposition."
+    },
+    {
+     "claim_id": "C030",
+     "loglog_ids": [
+      "5.4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C027",
+     "reasoning": "Same advice as C027 with a heuristic question; no new proposition."
+    },
+    {
+     "claim_id": "C034",
+     "loglog_ids": [
+      "6.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C027",
+     "reasoning": "Repeats separating evaluation from support, already stated in C027."
+    },
+    {
+     "claim_id": "C035",
+     "loglog_ids": [
+      "6.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C033",
+     "reasoning": "Repeats independent evaluation and not-for/against from C033."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C026",
+     "loglog_ids": [
+      "5"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Roadmap header restating section structure; low information value."
+    },
+    {
+     "claim_id": "C032",
+     "loglog_ids": [
+      "6"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Meta description of the closing; restated header, low value."
+    }
+   ],
+   "top_fix_list": [
+    "Merge C024 into C001 to remove the one body-level duplicate (no factual impact).",
+    "Merge C030 and C034 into C027, and C035 into C033, to cut the remaining 3 duplicate claims and lower redundancy_rate further.",
+    "Prune restated headers C026 and C032 from the scored body to reduce trivia_rate from 0.0526 and improve tokens_per_unique_claim (currently 25.1)."
+   ],
+   "top_tradeoff_note": "All hard gates clear with perfect faithfulness (38/38 supported, 0 contradicted) and full must-have recall (15/15). Redundancy at 0.1053 stays under the 0.15 max, so no length penalty is triggered beyond the small weighted deduction; concision loss is not at issue here."
+  },
+  "10_parde_begardan_fa": {
+   "verdict": "Fail",
+   "weighted_score": 0.76552,
+   "faithfulness_metrics": {
+    "total_claims": 29,
+    "supported": 28,
+    "partially_supported": 0,
+    "unverifiable": 0,
+    "contradicted": 1,
+    "critical_errors": 1,
+    "faithfulness_precision": 0.9655
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 8,
+    "must_have_present": 8,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 29,
+    "unique": 26,
+    "duplicates": 3,
+    "trivia": 0,
+    "redundancy_rate": 0.1034,
+    "trivia_rate": 0.0,
+    "structured_tokens": 768,
+    "tokens_per_unique_claim": 30.7
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C008",
+     "loglog_ids": [
+      "2"
+     ],
+     "claim_text": "سنتور را با تخفیف خریدم و یادگیری را با دشواری‌های ساز و مکان شروع کردم.",
+     "claim_type": "interpretation",
+     "verdict": "Contradicted",
+     "severity": "Critical",
+     "evidence_quote": "بالاخره برام یه سنتور خریدن. ۲۰هزار تومن، با تخفیف شد ۱۸هزار تومن.",
+     "reasoning": "Source says the santur was bought for the author (خریدن), but the node attributes the purchase to the author (خریدم): wrong attribution."
+    }
+   ],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C021",
+     "loglog_ids": [
+      "4.2"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C020",
+     "reasoning": "Rapid key retuning restated; reader learns nothing new beyond C020."
+    },
+    {
+     "claim_id": "C027",
+     "loglog_ids": [
+      "5.3"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C002",
+     "reasoning": "Recaps the first-night scene (C002/C003) and kid metaphor (C016); adds no information."
+    },
+    {
+     "claim_id": "C029",
+     "loglog_ids": [
+      "5.5"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C028",
+     "reasoning": "Same travel-longing as C028; only a rhetorical inversion is added."
+    }
+   ],
+   "trivia_labels": [],
+   "top_fix_list": [
+    "Fix C008 (loglog id 2): change 'سنتور را با تخفیف خریدم' to reflect that the santur was bought for the author (برام یه سنتور خریدن), not by the author, since wrong attribution contradicts the source quote 'بالاخره برام یه سنتور خریدن. ۲۰هزار تومن، با تخفیف شد ۱۸هزار تومن.'",
+    "Remove C021 (merge into C020), C027 (recap echoing C002/C016), and C029 (merge into C028) to drop redundancy_rate from 0.1034 toward ~0 without any coverage loss."
+   ],
+   "top_tradeoff_note": "Coverage is perfect (must_recall 1.0) and redundancy is within budget, but none of that rescues the sample: the single Critical contradicted claim C008 flips the santur purchase into a first-person action, which fails the critical_contradicted_max gate."
+  },
+  "11_finding_a_phone": {
+   "verdict": "Borderline",
+   "weighted_score": 0.77148,
+   "faithfulness_metrics": {
+    "total_claims": 58,
+    "supported": 57,
+    "partially_supported": 1,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9828
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 11,
+    "must_have_present": 10,
+    "must_have_partial": 1,
+    "must_have_missing": 0,
+    "overall_present": 14,
+    "must_recall": 0.9545,
+    "overall_recall": 0.9667
+   },
+   "concision_metrics": {
+    "scored_claims": 58,
+    "unique": 46,
+    "duplicates": 1,
+    "trivia": 11,
+    "redundancy_rate": 0.0172,
+    "trivia_rate": 0.1897,
+    "structured_tokens": 971,
+    "tokens_per_unique_claim": 21.11
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C033",
+     "loglog_ids": [
+      "5.1.1"
+     ],
+     "claim_text": "Ordered a latest Google Pixel on a Black Friday deal, thinking to maybe try the always-connected life; people generally said good things.",
+     "claim_type": "fact",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel",
+     "reasoning": "Source says a network-provider deal as Black Friday approached; loglog recasts it as a Black Friday deal and drops the provider."
+    }
+   ],
+   "non_present_points": [
+    {
+     "point_id": "K15",
+     "point_text": "Update 2025-01-05: he tried the TCL 50 XE NXTPAPER for a couple of weeks; weak performance, uncomfortably hot video calls, much worse almost-unreadable screen in direct or lamp light, average camera; paper and ink color modes were good ideas but poorly implemented with many restrictions and not true e-ink. He returned it and next plans the Motorola G85, wanting the more waterproof IP68 G75 but unable to find it in stores; G85 is only water repellent and Motorola cameras generally not expected to be good.",
+     "weight": "Must have",
+     "presence": "Partial",
+     "loglog_ids": [
+      "L055",
+      "L056",
+      "L057",
+      "L058",
+      "L059"
+     ],
+     "evidence_quote": "TCL 50 XE NXTPAPER returned after a couple of weeks: weak performance, uncomfortably hot video calls, so-so camera. ... not at all readable in direct light, even lamp light ... Paper and ink color modes were good ideas but restricted and not customizable; the ink mode was just black-and-white, not e-ink as advertised. ... Next: Motorola G85 ... wanted the more waterproof IP68 G75 but couldn't find it in stores.",
+     "reasoning": "All substantive content is captured, but the update date 2025-01-05 is dropped entirely. The rubric requires dates as key numbers, so a Must have point lacking its date is capped at Partial."
+    }
+   ],
+   "duplicate_labels": [
+    {
+     "claim_id": "C030",
+     "loglog_ids": [
+      "4.6"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C001",
+     "reasoning": "Closing recap of same journey and anti-gimmick thesis, no new point."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C002",
+     "loglog_ids": [
+      "1"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Restated section header summarizing C003-C008, adds no new information."
+    },
+    {
+     "claim_id": "C009",
+     "loglog_ids": [
+      "2"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating C010-C016, no information beyond children."
+    },
+    {
+     "claim_id": "C012",
+     "loglog_ids": [
+      "2.3"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Filler transition restating theme 2 functionality-over-flashiness, no new fact."
+    },
+    {
+     "claim_id": "C017",
+     "loglog_ids": [
+      "3"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating C018-C023, redundant summary."
+    },
+    {
+     "claim_id": "C024",
+     "loglog_ids": [
+      "4"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating C025-C029, no new information."
+    },
+    {
+     "claim_id": "C031",
+     "loglog_ids": [
+      "5"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating C032 and C036, redundant."
+    },
+    {
+     "claim_id": "C032",
+     "loglog_ids": [
+      "5.1"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Sub-header restating C033-C035, redundant."
+    },
+    {
+     "claim_id": "C036",
+     "loglog_ids": [
+      "5.2"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating C037-C046, no new information."
+    },
+    {
+     "claim_id": "C047",
+     "loglog_ids": [
+      "6"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Section header restating C048 and C053, redundant."
+    },
+    {
+     "claim_id": "C048",
+     "loglog_ids": [
+      "6.1"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Sub-header restating C049-C052, no new information."
+    },
+    {
+     "claim_id": "C053",
+     "loglog_ids": [
+      "6.2"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Sub-header restating C054-C058, redundant."
+    }
+   ],
+   "top_fix_list": [
+    "Restore the dropped date in K15 (loglog L055-L059) so the TCL 50 XE NXTPAPER return update carries its 2025-01-05 timestamp and upgrades from Partial to Present; this is the single gate-relevant gap.",
+    "Correct C033 (loglog 5.1.1): source says a deal from his network provider as Black Friday approached, not a Black Friday deal; restore the provider attribution to remove the lone Partial claim.",
+    "Prune or merge the 12 flagged header/transition claims (C002, C009, C012, C017, C024, C030, C031, C032, C036, C047, C048, C053) to cut trivia_rate (0.1897) without touching coverage."
+   ],
+   "top_tradeoff_note": "All numeric gates pass and the low redundancy (0.0172) comfortably clears max, so there is no concision-driven penalty to weigh against coverage. The verdict is Borderline not because of a number miss but because Must-have point K15 is only Partial (the 2025-01-05 date is dropped), which the rubric routes to human review."
+  },
+  "12_lets_talk_privacy": {
+   "verdict": "Borderline",
+   "weighted_score": 0.78,
+   "faithfulness_metrics": {
+    "total_claims": 110,
+    "supported": 108,
+    "partially_supported": 2,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9818
+   },
+   "coverage_metrics": {
+    "total_points": 15,
+    "must_have_total": 12,
+    "must_have_present": 12,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+   },
+   "concision_metrics": {
+    "scored_claims": 110,
+    "unique": 98,
+    "duplicates": 7,
+    "trivia": 5,
+    "redundancy_rate": 0.0636,
+    "trivia_rate": 0.0455,
+    "structured_tokens": 1900,
+    "tokens_per_unique_claim": 19.4
+   },
+   "non_supported_claims": [
+    {
+     "claim_id": "C005",
+     "loglog_ids": [
+      "1.3"
+     ],
+     "claim_text": "If the purpose is only to defeat a man-in-the-middle attack, most implementations should be good enough.",
+     "claim_type": "interpretation",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough",
+     "reasoning": "Source hedges with \"not likely compromise\"; node strengthens to \"defeat\" and adds \"only\", dropping the probabilistic qualifier."
+    },
+    {
+     "claim_id": "C018",
+     "loglog_ids": [
+      "2.8"
+     ],
+     "claim_text": "Encryption is locking something with a key: one that only locks and that everyone has, and a master key only the receiver holds.",
+     "claim_type": "definition",
+     "verdict": "Partially supported",
+     "severity": "Minor",
+     "evidence_quote": "I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it",
+     "reasoning": "Source frames this as the author's model and hedges \"usually a pair of keys\"; node states it as a flat definition."
+    }
+   ],
+   "non_present_points": [],
+   "duplicate_labels": [
+    {
+     "claim_id": "C023",
+     "loglog_ids": [
+      "2.11.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C022",
+     "reasoning": "Billboard analogy restates C022 with no new proposition."
+    },
+    {
+     "claim_id": "C075",
+     "loglog_ids": [
+      "5.5.4"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C052",
+     "reasoning": "Infrastructure not breached restates item 3.12.3 with no new content."
+    },
+    {
+     "claim_id": "C088",
+     "loglog_ids": [
+      "7.1"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C027",
+     "reasoning": "Table row recaps the provider rogue-device point from 2.15."
+    },
+    {
+     "claim_id": "C101",
+     "loglog_ids": [
+      "8.9"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C077",
+     "reasoning": "Facebook plaintext logging recap; only adds figures to the same fact."
+    },
+    {
+     "claim_id": "C103",
+     "loglog_ids": [
+      "8.10"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C078",
+     "reasoning": "Adobe 2013 plaintext hints restated with brute-force note."
+    },
+    {
+     "claim_id": "C104",
+     "loglog_ids": [
+      "8.11"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C079",
+     "reasoning": "Small-services plaintext/MD5 restated with breach discovery."
+    },
+    {
+     "claim_id": "C109",
+     "loglog_ids": [
+      "9"
+     ],
+     "label": "Duplicate",
+     "canonical_id": "C083",
+     "reasoning": "Bottom line restates the section 6 trust-basis claim nearly verbatim."
+    }
+   ],
+   "trivia_labels": [
+    {
+     "claim_id": "C035",
+     "loglog_ids": [
+      "3.3"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Pure signpost introducing the login sequence; no independent content."
+    },
+    {
+     "claim_id": "C049",
+     "loglog_ids": [
+      "3.12"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Signpost to the trust list; supplies no facts itself."
+    },
+    {
+     "claim_id": "C076",
+     "loglog_ids": [
+      "5.6"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Lead-in to the examples; filler framing with no fact."
+    },
+    {
+     "claim_id": "C087",
+     "loglog_ids": [
+      "7"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Restated header describing the comparison tables; no new claim."
+    },
+    {
+     "claim_id": "C091",
+     "loglog_ids": [
+      "8"
+     ],
+     "label": "Trivia",
+     "canonical_id": null,
+     "reasoning": "Restated header for the verification theme; no independent claim."
+    }
+   ],
+   "top_fix_list": [
+    "Fix C005 (loglog 1.3): restore the source hedge, change 'defeat a man-in-the-middle attack' back to 'will not likely compromise your data' and drop 'only', so the probabilistic qualifier survives.",
+    "Fix C018 (loglog 2.8): frame the encryption statement as the author's model with the source hedge 'usually a pair of keys' instead of asserting it as a flat definition.",
+    "Prune the seven duplication pairs (C023/C022, C075/C052, C088/C027, C101/C077, C103/C078, C104/C079, C109/C083) and the five trivia signposts/headers (C035, C049, C076, C087, C091) to push redundancy (0.0636) and trivia (0.0455) further down."
+   ],
+   "top_tradeoff_note": "Coverage is maximal (must_recall 1.0, overall_recall 1.0) and redundancy (0.0636) sits well below the 0.15 max, so the extra length is justified by coverage with no concision penalty. The numbers pass every gate, but two Partial claims sit on core definitional/interpretive points, so human review is advised."
+  }
+ },
+ "summary": {
+  "claims": 1331,
+  "non_supported": 14,
+  "partial": 13,
+  "unverifiable": 0,
+  "contradicted": 1,
+  "critical": 1,
+  "points_non_present": 2,
+  "duplicates": 116,
+  "trivia": 49
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "03_cant_stop_addicted_to_shindig part 2 of 2",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Board fits 1980 constraints; forced-move rule compensates residual imbalance.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The current design is excellent for 1980. ... rules and mechanics compensate ... that compensating rule is the forced-move rule",
+   "reasoning": "SOURCE states design is excellent for 1980 and forced-move rule compensates the imbalance."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Single-column deviations stay within +/-13.6% given integer lengths.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The deviations are ±13.6% at most. That's pretty good given that lengths must be integers!",
+   "reasoning": "Number and qualifier match SOURCE exactly."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Perfect balance needs 171 vs 834 steps, about an 8-hour game.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Column 2/12: 171 steps ... Column 7: 834 steps. Game duration: ~8 hours.",
+   "reasoning": "Step counts and duration match SOURCE."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Optimal +-1-step board [3,5,8,10,12,14,12,10,8,5,3] cuts deviation to +/-3.09%, 4x better.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Max deviation: ±3.09% ... Lengths: [3, 5, 8, 10, 12, 14, 12, 10, 8, 5, 3] ... 4× more balanced with just +1 step!",
+   "reasoning": "Lengths, deviation, and 4x improvement all match SOURCE."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "Best under-20 board [4,7,11,14,17,20,17,14,11,7,4] hits +/-2.17%; integer linear design +/-3.32%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Max deviation: ±2.17% ... [4, 7, 11, 14, 17, 20, 17, 14, 11, 7, 4] ... integer step (base=5, step=4): ... Max deviation: ±3.32%",
+   "reasoning": "Both boards and deviations match SOURCE numbers."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "Advice: play 50% rule on columns 5-9; designers prioritize playability plus handicaps.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Use the FiftyPercentSurvival strategy ... Aim for columns 5-9 ... Prioritize playability over mathematical perfection ... consider handicap systems",
+   "reasoning": "Both player and designer advice match SOURCE conclusion."
+  }
+ ],
+ "metrics": {
+  "total_claims": 6,
+  "supported": 6,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

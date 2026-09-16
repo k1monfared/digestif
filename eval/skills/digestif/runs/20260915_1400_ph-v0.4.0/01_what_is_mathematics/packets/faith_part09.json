@@ -1,0 +1,471 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 9,
+ "of": 9,
+ "nodes": [
+  {
+   "id": "9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Correctness was only the floor: importance is the real constraint, and the deciding was never paid work with a home in the profession.",
+   "evidence": [
+    {
+     "ref": "¶80",
+     "text": "## So what is mathematics"
+    },
+    {
+     "ref": "¶81",
+     "text": "Correctness was never the binding constraint on what mathematicians actually do. It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation. And importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle between them, shaped by careers, incentives, taste, and luck, whether we admit it or not. Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns."
+    },
+    {
+     "ref": "¶85",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it."
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation.",
+   "evidence": [
+    {
+     "ref": "¶81",
+     "text": "Correctness was never the binding constraint on what mathematicians actually do. It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation. And importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle between them, shaped by careers, incentives, taste, and luck, whether we admit it or not. Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns."
+    }
+   ]
+  },
+  {
+   "id": "9.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Importance is partly social: checkability and structural value set floor and ceiling, the social layer decides the middle, shaped by careers, incentives, taste, and luck.",
+   "evidence": [
+    {
+     "ref": "¶81",
+     "text": "Correctness was never the binding constraint on what mathematicians actually do. It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation. And importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle between them, shaped by careers, incentives, taste, and luck, whether we admit it or not. Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns."
+    }
+   ]
+  },
+  {
+   "id": "9.1.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Confession: the author, a practicing mathematician, always thought math was pure correctness and the art of finding beautiful patterns.",
+   "evidence": [
+    {
+     "ref": "¶81",
+     "text": "Correctness was never the binding constraint on what mathematicians actually do. It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation. And importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle between them, shaped by careers, incentives, taste, and luck, whether we admit it or not. Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Many mathematicians publish anything they can prove, and much of science works that way.",
+   "evidence": [
+    {
+     "ref": "¶82",
+     "text": "I know of mathematicians who will publish anything they can prove. In fact much of science works that way. A scientist writes a grant proposal for a big important problem, gets funded, works for years, has nothing to show, then publishes whatever detour they ended up on, and the big problem quietly stays unsolved."
+    }
+   ]
+  },
+  {
+   "id": "9.2.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "A scientist proposes a big problem, gets funded, works for years, publishes a detour, and the big problem quietly stays unsolved.",
+   "evidence": [
+    {
+     "ref": "¶82",
+     "text": "I know of mathematicians who will publish anything they can prove. In fact much of science works that way. A scientist writes a grant proposal for a big important problem, gets funded, works for years, has nothing to show, then publishes whatever detour they ended up on, and the big problem quietly stays unsolved."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The answer is not the production of correct statements of found patterns; mathematics was always both finding and proving.",
+   "evidence": [
+    {
+     "ref": "¶83",
+     "text": "So the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them. The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human. I am not claiming mathematics was always mostly the finding."
+    }
+   ]
+  },
+  {
+   "id": "9.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The proving is the chore, the checking, now cheap; the finding is deciding which patterns are worth proving, still human.",
+   "evidence": [
+    {
+     "ref": "¶83",
+     "text": "So the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them. The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human. I am not claiming mathematics was always mostly the finding."
+    }
+   ]
+  },
+  {
+   "id": "9.3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The author is not claiming mathematics was always mostly the finding.",
+   "evidence": [
+    {
+     "ref": "¶83",
+     "text": "So the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them. The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human. I am not claiming mathematics was always mostly the finding."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Speculation: the mix is shifting, as proving and verification get automated the weight moves to deciding which patterns matter, where the field's values will live.",
+   "evidence": [
+    {
+     "ref": "¶84",
+     "text": "I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    }
+   ]
+  },
+  {
+   "id": "9.4.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Software engineering already made this turn: engineers spend more time deciding what to build than writing code.",
+   "evidence": [
+    {
+     "ref": "¶84",
+     "text": "I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    }
+   ]
+  },
+  {
+   "id": "9.4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Some became product managers, some architects; the coding got cheap and the deciding got loud.",
+   "evidence": [
+    {
+     "ref": "¶84",
+     "text": "I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    }
+   ]
+  },
+  {
+   "id": "9.4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Did the turn land well? Both ways: open source runs on love, the framework wars run on attention, software is both futures at once.",
+   "evidence": [
+    {
+     "ref": "¶84",
+     "text": "I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home.",
+   "evidence": [
+    {
+     "ref": "¶85",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it."
+    }
+   ]
+  },
+  {
+   "id": "9.5.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "It was a personal measure of someone great: how much my work is directing the field.",
+   "evidence": [
+    {
+     "ref": "¶85",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it."
+    }
+   ]
+  },
+  {
+   "id": "9.5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The AI era does not replace the practice; it reveals it.",
+   "evidence": [
+    {
+     "ref": "¶85",
+     "text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home in the profession. It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing. The AI era does not replace the practice. It reveals it."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "When proving is automated, finding, judgment, and taste become visible as the only parts that cannot be generated on demand.",
+   "evidence": [
+    {
+     "ref": "¶86",
+     "text": "When proving gets automated, the finding, the judgment, the taste become visible in a way they never were before, because they are now the only parts that can't be generated on demand. And what is revealed has to land somewhere. Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy, and the deciding gets made by whoever holds attention, or whoever owns the compute it runs on."
+    }
+   ]
+  },
+  {
+   "id": "9.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "What is revealed has to land somewhere: either a fun activity for those who can afford it, or an influencer economy.",
+   "evidence": [
+    {
+     "ref": "¶86",
+     "text": "When proving gets automated, the finding, the judgment, the taste become visible in a way they never were before, because they are now the only parts that can't be generated on demand. And what is revealed has to land somewhere. Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy, and the deciding gets made by whoever holds attention, or whoever owns the compute it runs on."
+    }
+   ]
+  },
+  {
+   "id": "9.6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Then the deciding gets made by whoever holds attention, or whoever owns the compute it runs on.",
+   "evidence": [
+    {
+     "ref": "¶86",
+     "text": "When proving gets automated, the finding, the judgment, the taste become visible in a way they never were before, because they are now the only parts that can't be generated on demand. And what is revealed has to land somewhere. Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy, and the deciding gets made by whoever holds attention, or whoever owns the compute it runs on."
+    }
+   ]
+  },
+  {
+   "id": "9.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The community can try to keep hold of the deciding, but it was never fully theirs: physics and usefulness steered it from outside.",
+   "evidence": [
+    {
+     "ref": "¶87",
+     "text": "The community can try to keep hold of the deciding before it leaves their hands, but it was never fully theirs to begin with: a lot of what the field chose to work on was steered from outside, by physics and by what was useful elsewhere, and that steering at least answered to results, while what replaces it answers to engagement. I do not know which way it lands, and that is the point: it is not decided yet."
+    }
+   ]
+  },
+  {
+   "id": "9.7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That steering at least answered to results, while what replaces it answers to engagement.",
+   "evidence": [
+    {
+     "ref": "¶87",
+     "text": "The community can try to keep hold of the deciding before it leaves their hands, but it was never fully theirs to begin with: a lot of what the field chose to work on was steered from outside, by physics and by what was useful elsewhere, and that steering at least answered to results, while what replaces it answers to engagement. I do not know which way it lands, and that is the point: it is not decided yet."
+    }
+   ]
+  },
+  {
+   "id": "9.7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The author does not know which way it lands; that is the point: it is not decided yet.",
+   "evidence": [
+    {
+     "ref": "¶87",
+     "text": "The community can try to keep hold of the deciding before it leaves their hands, but it was never fully theirs to begin with: a lot of what the field chose to work on was steered from outside, by physics and by what was useful elsewhere, and that steering at least answered to results, while what replaces it answers to engagement. I do not know which way it lands, and that is the point: it is not decided yet."
+    }
+   ]
+  },
+  {
+   "id": "9.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Statistics landed well when arithmetic got cheap: calculation became a tool and the field shifted from computing to designing the questions.",
+   "evidence": [
+    {
+     "ref": "¶88",
+     "text": "There is a precedent for landing well. Statistics went through the same turn when arithmetic got cheap: the calculation became a tool, the field's identity shifted from computing to designing the questions, and deciding which questions matter became the discipline itself. And prestige is assignable, the Halmos lesson: the community made a man famous for exposition, so the middle can be revalued if it wants to be."
+    }
+   ]
+  },
+  {
+   "id": "9.8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Deciding which questions matter became the discipline itself.",
+   "evidence": [
+    {
+     "ref": "¶88",
+     "text": "There is a precedent for landing well. Statistics went through the same turn when arithmetic got cheap: the calculation became a tool, the field's identity shifted from computing to designing the questions, and deciding which questions matter became the discipline itself. And prestige is assignable, the Halmos lesson: the community made a man famous for exposition, so the middle can be revalued if it wants to be."
+    }
+   ]
+  },
+  {
+   "id": "9.8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Prestige is assignable: the community made a man famous for exposition, so the middle can be revalued if it wants to be.",
+   "evidence": [
+    {
+     "ref": "¶88",
+     "text": "There is a precedent for landing well. Statistics went through the same turn when arithmetic got cheap: the calculation became a tool, the field's identity shifted from computing to designing the questions, and deciding which questions matter became the discipline itself. And prestige is assignable, the Halmos lesson: the community made a man famous for exposition, so the middle can be revalued if it wants to be."
+    }
+   ]
+  },
+  {
+   "id": "9.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The woodworking story is the same story told in furniture: the craft does not die, it stops being how people make a living.",
+   "evidence": [
+    {
+     "ref": "¶89",
+     "text": "The woodworking story is the same story told in furniture. The craft doesn't die. It stops being how people make a living, and the neighborhood carpenter disappears. The question isn't whether anyone still makes things by hand. The question is whether the craft still has a middle, whether the creative carpenter still has a way to be paid for being creative."
+    }
+   ]
+  },
+  {
+   "id": "9.9.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question is whether the craft still has a middle, whether the creative carpenter can still be paid for being creative.",
+   "evidence": [
+    {
+     "ref": "¶89",
+     "text": "The woodworking story is the same story told in furniture. The craft doesn't die. It stops being how people make a living, and the neighborhood carpenter disappears. The question isn't whether anyone still makes things by hand. The question is whether the craft still has a middle, whether the creative carpenter still has a way to be paid for being creative."
+    }
+   ]
+  },
+  {
+   "id": "9.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Thinking is what we are for; if we outsource it, there is little else we are good for.",
+   "evidence": [
+    {
+     "ref": "¶90",
+     "text": "There is also the thing that outlasts all of it, the thing the airport ad got backwards. Thinking is what we are for. If we outsource it, there is little else we are good for. Mathematics has been, for centuries, one of the main places we practice thinking in public, with the stakes visible and the errors checkable."
+    }
+   ]
+  },
+  {
+   "id": "9.10.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Mathematics has been for centuries one of the main places we practice thinking in public, with the stakes visible and the errors checkable.",
+   "evidence": [
+    {
+     "ref": "¶90",
+     "text": "There is also the thing that outlasts all of it, the thing the airport ad got backwards. Thinking is what we are for. If we outsource it, there is little else we are good for. Mathematics has been, for centuries, one of the main places we practice thinking in public, with the stakes visible and the errors checkable."
+    }
+   ]
+  },
+  {
+   "id": "9.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question was never whether machines can do math; they can, and they will do more of it.",
+   "evidence": [
+    {
+     "ref": "¶91",
+     "text": "The question was never whether machines can do math. They can, and they will do more of it. The question is whether we keep doing the part that was always the point: framing the problem, judging what matters, and actually coming to understand. The struggle is the product."
+    }
+   ]
+  },
+  {
+   "id": "9.11.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question is whether we keep doing the point: framing the problem, judging what matters, and actually coming to understand.",
+   "evidence": [
+    {
+     "ref": "¶91",
+     "text": "The question was never whether machines can do math. They can, and they will do more of it. The question is whether we keep doing the part that was always the point: framing the problem, judging what matters, and actually coming to understand. The struggle is the product."
+    }
+   ]
+  },
+  {
+   "id": "9.11.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The struggle is the product.",
+   "evidence": [
+    {
+     "ref": "¶91",
+     "text": "The question was never whether machines can do math. They can, and they will do more of it. The question is whether we keep doing the part that was always the point: framing the problem, judging what matters, and actually coming to understand. The struggle is the product."
+    }
+   ]
+  },
+  {
+   "id": "9.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun.",
+   "evidence": [
+    {
+     "ref": "¶92",
+     "text": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  },
+  {
+   "id": "9.12.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The athlete who stops lifting cannot perform at that level: that is the difference between the coach and the pro athlete.",
+   "evidence": [
+    {
+     "ref": "¶92",
+     "text": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  },
+  {
+   "id": "9.12.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The coach has the ideas, taste, and judgment, can tell you what to do and why, but cannot do it anymore, maybe never could.",
+   "evidence": [
+    {
+     "ref": "¶92",
+     "text": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  },
+  {
+   "id": "9.12.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Automating proving does not merely cheapen a chore: it risks stopping the training that produces people who can find patterns.",
+   "evidence": [
+    {
+     "ref": "¶92",
+     "text": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  },
+  {
+   "id": "9.12.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Imagine the athletes are robots with extreme powers: the coach still decides which patterns to chase, but the gym belongs to the robot.",
+   "evidence": [
+    {
+     "ref": "¶92",
+     "text": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  },
+  {
+   "id": "9.12.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A coach who only ever coaches robots keeps the taste and loses the performance; judgment floats free of any act of doing.",
+   "evidence": [
+    {
+     "ref": "¶92",
+     "text": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete. The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could. The pro athlete is the one who still goes to the gym. Finding patterns is trained by proving, so automate the proving and you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all. Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing."
+    }
+   ]
+  }
+ ]
+}

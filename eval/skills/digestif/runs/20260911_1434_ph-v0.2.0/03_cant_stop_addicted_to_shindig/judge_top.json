@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+  "source_id": "point-hierarchy",
+  "inputs": {
+    "faithfulness_precision": 0.9688,
+    "critical_errors": 0,
+    "must_recall": 0.6429,
+    "overall_recall": 0.6667,
+    "redundancy_rate": 0.0312,
+    "trivia_rate": 0.0312
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted score = 0.4 * faithfulness_precision + 0.4 * must_recall - 0.2 * redundancy_rate = 0.4*0.9688 + 0.4*0.6429 - 0.2*0.0312 = 0.38752 + 0.25716 - 0.00624 = 0.63844",
+  "weighted_score": 0.63844,
+  "verdict": "Fail",
+  "tradeoff_note": "The length budget is not the problem: redundancy is only 0.0312 against a 0.15 max, so concision is comfortably passing. The sample fails because must-have recall is 0.6429, far under the 0.9 gate, and concision cannot rescue a coverage fail.",
+  "fix_list": [
+    "Recover the 10 Partial must-haves by restoring dropped numbers, not prose: K02 column lengths (3,5,7,9,11,13,11,9,7,5,3), K04 sum-2 baseline 2.78%, K06 expected rolls 22.73 vs 20.18, K07 the 165 total combinations and >=85% excellent threshold, K09 the inequality and values 1.32/0.4 vs 1.12/0.46.",
+    "Finish the remaining dropped figures on K10 (2,500 games per head-to-head), K11 (#11 rank, 58.90%, 11.3 turns), K12 (GreedyUntil1Col +31.24%), K13 (+/-3.09% and +/-2.17%), and K15 (explicit FiftyPercentSurvival player pick and turn-order handicap).",
+    "Correct C021 to say 14 strategic families tested, not 38 families, to clear the sole Partially supported claim (0.9688 -> 1.0 faithfulness).",
+    "Optionally apply the prune list (merge C024 into C020, trim cross-links L035-L038, move C032 to appendix) after coverage numbers are restored."
+  ],
+  "reasoning": "Gate order per policy. Hard gate 1: critical_errors = 0, equals critical_contradicted_max = 0, pass. Hard gate 2: must_recall = 0.6429 versus must_recall_min = 0.9, FAIL by 0.2571. Hard gate 3: faithfulness_precision = 0.9688 versus min 0.95, pass. Redundancy = 0.0312 versus max 0.15, pass, so the length budget is healthy and not a factor. Because a hard gate is missed, the sample is a Fail and the weighted score is computed only for audit, not to overturn the gate: 0.38752 + 0.25716 - 0.00624 = 0.63844. The coverage judge marked 10 of 14 must-haves (K02, K04, K06, K07, K09, K10, K11, K12, K13, K15) as Partial, and every one of those Partial verdicts traces to a dropped exact number or a dropped explicit recommendation rather than to a missing concept. K02 lost the enumeration 3,5,7,9,11,13,11,9,7,5,3 (only the 3-to-13 range survives); K04 kept 16.67% and the 6x ratio but dropped 2.78%; K06 kept the qualitative finding but dropped 22.73 and 20.18; K07 kept 92%/43.8%/37/79.6% but dropped 165 combinations and the >=85% excellent threshold; K09 kept the directional decisions but dropped the inequality and the 1.32/0.4 and 1.12/0.46 values; K10 dropped 2,500 games per pairing; K11 dropped the #11 rank, 58.90% and 11.3 turns; K12 dropped GreedyUntil1Col +31.24%; K13 dropped +/-3.09% and +/-2.17%; K15 dropped the explicit FiftyPercentSurvival player recommendation and the turn-order handicap. Only 4 must-haves are fully Present, giving 0.6429. Faithfulness is effectively clean: 31 supported, 1 Partial (C021), 0 contradicted, 0 critical, and C021 is a labeling slip (38 strategies justified, 14 families correct) rather than a fabrication. Borderline does not apply because the failure is a hard gate, not a numeric pass with a Partial/Unverifiable claim on a Must-have. Concision is not implicated: redundancy 0.0312 and trivia 0.0312 are well inside budget, and the prune list (C024 duplicate of C020, C032 meta-note, L035-L038 cross-links) would trim tokens without touching the recall deficit. The dominant root cause is summarization that preserves findings while discarding the quantified detail the point hierarchy grades on; restoring those numbers is the single highest-leverage path from 0.6429 back over 0.9."
+}

@@ -1,0 +1,162 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (opencode-go), 2026-09-15",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "The craft's middle can empty out, as woodworking shows, taking with it the people who make results legible, checkable, and taught.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If we let it empty out the way furniture's middle emptied, mathematics keeps producing results while losing the people who make them legible, checkable, and taught.",
+   "reasoning": "Source conditions this on 'if we let it', and node keeps the modal 'can', matching meaning."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Woodworking went through this last century: CNC machines and high-throughput manufacturing changed furniture.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Woodworking went through its own version of this in the last century... CNC machines and high-throughput manufacturing changed furniture.",
+   "reasoning": "Direct restatement of the source sentence with identical content."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "7.1.1"
+   ],
+   "claim_text": "Most furniture is now the Ikea kind: mass produced, cheap, replaceable.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Most furniture is now the Ikea kind, mass produced, cheap, replaceable.",
+   "reasoning": "Exact restatement of the source clause."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "A good chunk is still built at scale, but smaller than Ikea, with more variety and local taste; custom pieces still cost thousands of dollars.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A good chunk is still built at scale but at much smaller scale than Ikea, with more variety and local taste. And there are still custom built pieces that cost thousands of dollars.",
+   "reasoning": "Identical content, preserving the smaller-scale, variety, and price details."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "7.2.1"
+   ],
+   "claim_text": "Woodworking did not disappear; some things even cost less made by humans than bought.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Woodworking did not disappear, and some things even cost less when made by humans than when bought.",
+   "reasoning": "Negation 'did not disappear' kept intact; second clause matches directly."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "7.2.2"
+   ],
+   "claim_text": "In volume we get the simplest functional things, with little room left for creativity.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "But in volume, what we have is the simplest functional things. There is not much room left for creativity.",
+   "reasoning": "Matches source's volume claim and the 'not much room' qualifier."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "7.2.3"
+   ],
+   "claim_text": "Not every neighborhood has a carpenter building for its people, and the creative carpenter cannot make a living.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "not every neighborhood now has a carpenter building furniture for the people of that neighborhood... the carpenter who wants to be creative can't make a living at it anymore.",
+   "reasoning": "Both clauses restate source directly, preserving the negations."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "7.2.4"
+   ],
+   "claim_text": "At best they fix Ikea furniture, but it is so cheap nobody fixes it; they buy a new one.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it. They just buy a new one.",
+   "reasoning": "Direct restatement preserving the 'nobody fixes it' negation."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "AI software shows the same shape: an app generated in minutes, the real work discovered in the details, then abandonment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "someone generates an app in minutes, discovers the real work is in the details, abandons it, and moves on.",
+   "reasoning": "Source makes the same comparison to AI software with identical sequence."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "7.3.1"
+   ],
+   "claim_text": "The volume of starts goes up, the number of finishes goes down, and the middle, where the craft lives, is the desert.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The volume of starts goes up, the number of finishes goes down, and the middle, where the craft lives, is the desert.",
+   "reasoning": "Exact restatement of the source sentence."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "That middle is the digestion bottleneck Tao was trying to protect: exposition, verification, canonicalization, first to empty out.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is the same middle Tao was trying to protect. His punchline was that the bottleneck shifts to digestion: exposition, verification, canonicalization, the low-prestige work that is first to empty out.",
+   "reasoning": "All three listed activities and the 'first to empty out' detail match source."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "7.4.1"
+   ],
+   "claim_text": "If it empties like furniture's middle, mathematics keeps producing results while losing the people who make them legible, checkable, and taught.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If we let it empty out the way furniture's middle emptied, mathematics keeps producing results while losing the people who make them legible, checkable, and taught.",
+   "reasoning": "Conditional structure and result clause reproduce the source exactly."
+  }
+ ],
+ "metrics": {
+  "total_claims": 12,
+  "supported": 12,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

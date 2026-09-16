@@ -1,0 +1,223 @@
+{
+ "sample": "05_manufacturing_taste",
+ "part": 2,
+ "of": 5,
+ "nodes": [
+  {
+   "id": "3",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "## The Mechanisms\nThe model incorporates three phenomena that are individually well-documented in psychology and economics, but whose *combined* effect on cultural canons hasn't been quantified."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Mere exposure: we tend to like things we have encountered before.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "**The Mere Exposure Effect.** We tend to like things we've encountered before. A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time. This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers. Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\")."
+    }
+   ]
+  },
+  {
+   "id": "3.1.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "A song played on the radio ten times starts to feel catchy even if it did not grab you the first time.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "**The Mere Exposure Effect.** We tend to like things we've encountered before. A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time. This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers. Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\")."
+    }
+   ]
+  },
+  {
+   "id": "3.1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This is not about learning to appreciate complexity; it happens with nonsense syllables, abstract shapes, and strangers' faces.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "**The Mere Exposure Effect.** We tend to like things we've encountered before. A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time. This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers. Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\")."
+    }
+   ]
+  },
+  {
+   "id": "3.1.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Zajonc demonstrated the effect in 1968.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "**The Mere Exposure Effect.** We tend to like things we've encountered before. A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time. This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers. Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\")."
+    }
+   ]
+  },
+  {
+   "id": "3.1.4",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "**The Mere Exposure Effect.** We tend to like things we've encountered before. A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time. This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers. Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\")."
+    }
+   ]
+  },
+  {
+   "id": "3.1.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The effect peaks at moderate exposure and reverses with overexposure.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "**The Mere Exposure Effect.** We tend to like things we've encountered before. A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time. This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers. Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\")."
+    }
+   ]
+  },
+  {
+   "id": "3.1.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Artists who get more initial airtime develop an artificial quality advantage, because audiences genuinely perceive funded work as better.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "What this means for canons: artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better, not because they're deluded, but because familiarity really does affect aesthetic experience. The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money."
+    }
+   ]
+  },
+  {
+   "id": "3.1.7",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The problem is not that people are bad judges; the judging is contaminated by exposure, and the exposure was determined by money.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "What this means for canons: artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better, not because they're deluded, but because familiarity really does affect aesthetic experience. The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Social influence: we use what others consume as a shortcut for what is good.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "**Social Influence.** We look at what others consume and use it as a shortcut for what's good. Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects. The [Salganik MusicLab experiment](https://doi.org/10.1126/science.1121066) (2006) demonstrated this beautifully: they created an online music market where 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't. Result: the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first."
+    }
+   ]
+  },
+  {
+   "id": "3.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Bestseller lists, download counts, trending labels, and view counts nudge us toward what is already popular, creating snowball effects.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "**Social Influence.** We look at what others consume and use it as a shortcut for what's good. Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects. The [Salganik MusicLab experiment](https://doi.org/10.1126/science.1121066) (2006) demonstrated this beautifully: they created an online music market where 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't. Result: the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first."
+    }
+   ]
+  },
+  {
+   "id": "3.2.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "**Social Influence.** We look at what others consume and use it as a shortcut for what's good. Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects. The [Salganik MusicLab experiment](https://doi.org/10.1126/science.1121066) (2006) demonstrated this beautifully: they created an online music market where 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't. Result: the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first."
+    }
+   ]
+  },
+  {
+   "id": "3.2.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "**Social Influence.** We look at what others consume and use it as a shortcut for what's good. Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects. The [Salganik MusicLab experiment](https://doi.org/10.1126/science.1121066) (2006) demonstrated this beautifully: they created an online music market where 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't. Result: the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "**Cumulative Advantage.** The rich get richer. An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement, all of which make the second album more likely to succeed regardless of whether it's better. The sociologist Robert Merton called this the Matthew Effect. Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time. A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build."
+    }
+   ]
+  },
+  {
+   "id": "3.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A first album that sells well buys a bigger marketing budget, better tour slots, more press, and prominent playlist placement.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "**Cumulative Advantage.** The rich get richer. An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement, all of which make the second album more likely to succeed regardless of whether it's better. The sociologist Robert Merton called this the Matthew Effect. Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time. A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build."
+    }
+   ]
+  },
+  {
+   "id": "3.3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Small initial differences, whether from luck, timing, or money, get magnified into enormous gaps over time.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "**Cumulative Advantage.** The rich get richer. An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement, all of which make the second album more likely to succeed regardless of whether it's better. The sociologist Robert Merton called this the Matthew Effect. Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time. A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build."
+    }
+   ]
+  },
+  {
+   "id": "3.3.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "A composer who secures a court position at 20 accumulates decades of performances and reputation that a one-year miss never builds.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "**Cumulative Advantage.** The rich get richer. An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement, all of which make the second album more likely to succeed regardless of whether it's better. The sociologist Robert Merton called this the Matthew Effect. Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time. A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Each mechanism is well-understood alone; the open question is what happens when all three interact over many generations.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Each of these alone is well-understood. What I wanted to know is: when you put all three together in a system and let them interact over many generations, what happens?"
+    }
+   ]
+  }
+ ]
+}

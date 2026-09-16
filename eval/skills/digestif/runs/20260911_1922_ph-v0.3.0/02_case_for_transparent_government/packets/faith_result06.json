@@ -1,0 +1,438 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "02_case_for_transparent_government",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Appendix registers 49 sources backing the case.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Appendix: Sources with Summaries ... 49. [Finnish Ministry of Justice - Act on Openness of Government Activities]",
+   "reasoning": "Source appendix lists numbered sources 1 through 49."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "UNESCO lists the 1766 ordinance as first free-communication legislation.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "UNESCO recognition of the 1766 act as world's first legislation guaranteeing free communication of information",
+   "reasoning": "Source states UNESCO recognizes it as first such legislation."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "GWU archive marks the FOI act's 250th anniversary; Britannica covers the 1766 act's Hats-Caps-Chydenius origins.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "George Washington University archive documenting the 250th anniversary of the world's first FOI act ... origins in the political conflict between Hats and Caps parties; role of Anders Chydenius",
+   "reasoning": "Source describes both the 250th anniversary archive and the Hats-Caps-Chydenius origins."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "claim_text": "X-Road official specs plus wiki history: 1998 start, 2001 launch, 1996 leak.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "history (started 1998, launched 2001), architecture decisions, 1996 data leak",
+   "reasoning": "All three dates match source exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "9.4"
+   ],
+   "claim_text": "Estonia's 30-year journey rose 16th to 2nd, hitting 100% digitalization in 2024; Brazil's 2004 CGU portal holds five categories.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "rise from 16th to 2nd ... 100% digitalization milestone in 2024 ... portal in 2004 by CGU; details five data categories",
+   "reasoning": "Source matches all figures: 30-year, 16th to 2nd, 2024, 2004, five categories."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "9.5"
+   ],
+   "claim_text": "OECD logs 20+ million yearly portal visits and 17-source 2018 integration.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "portal accessed 20+ million times yearly; describes 2018 data warehouse integration of 17 sources",
+   "reasoning": "Numbers and year match source."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "9.6"
+   ],
+   "claim_text": "Fiquem Sabendo's LAI probe surfaced 60GB over 27 years of former presidents.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Fiquem Sabendo used LAI to uncover 60GB of hidden pension payment data spanning 27 years of former presidents",
+   "reasoning": "Actor, volume, and span match source."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "9.7"
+   ],
+   "claim_text": "OPEN launched April 1999 under Mayor Goh, covering 70 tasks.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "OPEN system launched April 1999 under Mayor Goh's anti-corruption campaign; covers 70 municipal tasks",
+   "reasoning": "Date, actor, and count match source."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "9.8"
+   ],
+   "claim_text": "Peer-reviewed OPEN study confirms corruption falls as e-participation rises.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Peer-reviewed study ... confirms corruption decreases with e-participation",
+   "reasoning": "Source states the same inverse relationship."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "9.9"
+   ],
+   "claim_text": "NZ guidance plus DPMC: 30-business-day cabinet releases from January 2019.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "details 30 business day requirement from January 2019",
+   "reasoning": "Requirement and start date match source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "9.10"
+   ],
+   "claim_text": "Taiwan's Pol.is crowdsourced Uber rules; paper traces Sunflower 2014, Tang, g0v.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "details Uber regulation as first test case ... traces origins to 2014 Sunflower Movement; analyzes Audrey Tang's role and g0v community",
+   "reasoning": "Uber case, 2014, Tang, and g0v all appear in source."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "9.11"
+   ],
+   "claim_text": "Iceland analyses cover rejected crowdsourced draft and deliberative quality.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "why parliament rejected the crowdsourced draft despite referendum approval ... assessment of the deliberative quality",
+   "reasoning": "Both analyses described match source."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "9.12"
+   ],
+   "claim_text": "EFF's 10-year Snowden review details FREEDOM Act gains and limits.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "10-year retrospective ... details USA FREEDOM Act passage and limitations",
+   "reasoning": "Source matches on both gains and limitations."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "9.13"
+   ],
+   "claim_text": "IAPP review links disclosures to legal change and GDPR acceleration.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "legal and policy changes triggered by disclosures; notes GDPR acceleration",
+   "reasoning": "Source states the same linkage."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "9.14"
+   ],
+   "claim_text": "TechCrunch and ACLU cover 2020 illegality rulings and privacy victory.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "2020 court ruling that NSA program was illegal ... ACLU attorney calls ruling \"a victory for privacy rights\"",
+   "reasoning": "Both outlets and characterizations match source."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "9.15"
+   ],
+   "claim_text": "Pew 2019: 66% concerned; Roper tracks 1950s-present transparency opinion.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "66% concerned about government data collection ... from 1950s to present",
+   "reasoning": "Percentage and period match source."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "9.16"
+   ],
+   "claim_text": "Roper adds ABC and Freedom Forum poll history on openness.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "includes ABC News and Freedom Forum poll data",
+   "reasoning": "Both poll sources named in source."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "9.17"
+   ],
+   "claim_text": "IMF defends friction as accountability; Cambridge studies EU legitimacy perceptions.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "intentional accountability design ... transparency affects how public perceives decision-making legitimacy",
+   "reasoning": "Both the IMF argument and Cambridge finding match source."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "9.18"
+   ],
+   "claim_text": "World Bank reviews mixed transparency impacts incumbents can undo.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "mixed findings on effectiveness; notes incumbents can undo positive effects of information",
+   "reasoning": "Source states both mixed findings and incumbent reversal."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "9.19"
+   ],
+   "claim_text": "Harvard details Oman's Iran backchannel; Oxford frames the democratic dilemma.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "secret backchannel in Oman in achieving framework before public talks ... frames the \"democratic dilemma\"",
+   "reasoning": "Both Harvard Oman detail and Oxford dilemma appear in source."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "9.20"
+   ],
+   "claim_text": "Notre Dame release: transparency aids lobbyists across 50 states, decades studied.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "transparency benefits lobbyists more than citizens in US state legislatures; ... multi-decade study of 50 states",
+   "reasoning": "Source supports lobbyist benefit and 50-state multi-decade scope."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "9.21"
+   ],
+   "claim_text": "Oxford surveys diplomacy's secrecy evolution from antiquity to modernity.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "traces historical evolution from ancient diplomacy to modern era",
+   "reasoning": "Source matches the ancient-to-modern scope."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "9.22"
+   ],
+   "claim_text": "Harden-Kirkland book blames electoral competition gaps; Irish 2024 trial had 569 subjects.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "proposes electoral competition as the key variable ... 2024 experimental study with 569 participants in Ireland",
+   "reasoning": "Key variable and 569 participants match source."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "9.23"
+   ],
+   "claim_text": "Brennan 2024: 735 officials, threats rising since 2020, 38% threatened, ±3% margin.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "survey of 735 officials ... since 2020; 38% report threats; margin of error ±3%",
+   "reasoning": "Sample size, trend, percentage, and margin match source."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "9.24"
+   ],
+   "claim_text": "NAAG tracks doxxing-swatting systematization and AI intensification.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "evolution from fringe behavior to systematic harassment; notes AI intensification",
+   "reasoning": "Source states systematization and AI intensification."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "9.25"
+   ],
+   "claim_text": "Issue One counts 22 protective states since 2022; Chicago finds ~60% support, 12% to 17% wariness in 2021-2022.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "across 22 states since 2022 ... general support (~60%) but increasing civil liberties concerns (12% to 17% 2021-2022)",
+   "reasoning": "State count, support level, and concern range match source."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "9.26"
+   ],
+   "claim_text": "Brennan decries overclassification; SIPRI links military openness to trust.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "classification levels far exceed genuine security needs ... military budget transparency ... builds inter-state trust",
+   "reasoning": "Source supports overclassification critique and transparency-trust link."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "9.27"
+   ],
+   "claim_text": "Blair Institute: 43 states 1990-2018, populists 4x damaging, 5-place corruption slide.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "43 countries (1990-2018) ... 4x more likely to damage democratic institutions; countries fall average 5 places",
+   "reasoning": "Country count, period, multiplier, and places match source."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "9.28"
+   ],
+   "claim_text": "Stanford warns visibility-driven re-election tempts short-term populism.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "transparency can create perverse incentives for short-term populist policies when re-election depends on immediate visibility",
+   "reasoning": "Source states the same causal warning."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "9.29"
+   ],
+   "claim_text": "Sweden-Democrats study plus Harvard misinformation panel on perceived transparency.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Swedish populist party exploits transparency norms ... false beliefs causally reduce perceived transparency regardless of actual transparency levels",
+   "reasoning": "Both studies described match source."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "9.30"
+   ],
+   "claim_text": "Latent-transparency experiments plus OGP's 75-country commitment autopsy.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "identifies \"latent transparency\" concept ... failed commitments across 75 member countries",
+   "reasoning": "Latent transparency concept and 75 countries match source."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "9.31"
+   ],
+   "claim_text": "Hong 2024 ties competition-data quality to capacity; Ruijer (2020) maps conformity-to-resistance.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Hong (2024) ... only when administrative capacity is also high ... Ruijer et al. (2020) ... ranging from conformity to active resistance",
+   "reasoning": "Both authors, years, and findings match source."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "9.32"
+   ],
+   "claim_text": "Workaround-resistance study plus Nordics' 250+ year openness overview.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "resist open government data policy through workarounds ... traces 250+ years of FOI practice",
+   "reasoning": "Workaround study and 250+ year span match source."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "9.33"
+   ],
+   "claim_text": "Nordicom compares five Nordic regimes with inconsistent openness patterns.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "comparing right-of-access rules across five Nordic countries; notes inconsistent patterns",
+   "reasoning": "Five-country comparison and inconsistency match source."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "9.34"
+   ],
+   "claim_text": "Finland's 1999 law deems documents public unless specifically exempted.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "transparency law (1999 amendment); establishes principle that all government documents are public unless specifically exempted",
+   "reasoning": "Year, default-public rule, and exemption match source."
+  }
+ ],
+ "metrics": {
+  "total_claims": 35,
+  "supported": 35,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

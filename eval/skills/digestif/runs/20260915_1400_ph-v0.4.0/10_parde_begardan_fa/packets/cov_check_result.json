@@ -1,0 +1,155 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "from Langroud to Langford (پرده بگردان و بزن ساز نو)",
+ "phase": "1-blind-checklist",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "At age 7, at his aunt's house, the author first encountered the santur his cousin had just bought; the cousin let him sit at it and taught him how to hold the mizrab, and he had to be dragged away from it at night's end.",
+   "weight": "Must have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Origin story that establishes the lifelong attachment the whole piece builds on."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The first tune he heard on that santur was likely 'Zard Maliheh' (زرد ملیجه), one of the first songs taught to santur beginners.",
+   "weight": "Nice to have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Specific detail that adds texture but is not needed to follow the argument."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "After six months of nagging and sulking, his family finally bought him a santur for 20,000 toman, discounted to 18,000 toman.",
+   "weight": "Must have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Carries the key numbers and the acquisition milestone."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "He started lessons six months later; the teacher initially came to his home because their city had no school, and only later did the Ershad office open a class where the teacher taught.",
+   "weight": "Nice to have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Background on how he learned; useful context but not the core claim."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "The santur has 72 strings and is hard for an ordinary person to tune, so he had to haul the oversized instrument to class to be tuned, until electronic tuners reached the market and he could tune it himself.",
+   "weight": "Must have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Key number and stated practical constraint that motivates the later modulation problem."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "The santur is a diatonic instrument: only one dastgah/scale can be played at a time, and modulation requires retuning, which is time-consuming.",
+   "weight": "Must have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "The central technical limitation the entire essay is about."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "This limitation made him feel like a child at a party allowed only one game: to switch he would have to pack up all his toys first, by which time the mood is gone, or else sit silently aside while the other children move to a game he loves.",
+   "weight": "Nice to have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Illustrative analogy that dramatizes the limitation but is not a distinct factual claim."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Recently a santur was built inspired by the harp, with a set of keys allowing any note to be lowered by a quarter or half step in a fraction of a second.",
+   "weight": "Must have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "The new development that resolves the limitation; the pivot of the piece."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "This makes it possible to move quickly from any dastgah to any other with a few clicks, in just seconds.",
+   "weight": "Must have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "States the payoff of the new design."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "He had been thinking about such an instrument for two years but did not know how to bring it safely from Langroud to Langford.",
+   "weight": "Nice to have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Adds the two-year wait and the title's migration thread; context rather than core claim."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "With the unstinting help of family, friends, officials, and clerics/community leaders, the instrument finally reached him today.",
+   "weight": "Must have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Reports the arrival, the event the essay culminates in, and credits the helpers."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "He tuned it and played, moving from dastgah to dastgah: Isfahan to Segah, Segah to Nava, Nava to Shur, Shur to Homayoun.",
+   "weight": "Must have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "The specific demonstration list that proves the modulation now works."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "He felt like a penned fattened sheep set loose, running without pause: he skipped lunch and played so long his back ached.",
+   "weight": "Nice to have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Vivid illustration of his joy; emotional color, not a load-bearing fact."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "He felt like the first night his aunt put the mizrabs in his hand, like a child allowed to play any game he wants, like a person free to say anything he wishes.",
+   "weight": "Nice to have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "The emotional payoff and callback; reinforces theme but restates already-covered ground."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "He leaves tomorrow on a week of travel and is unhappy at not being home to play, already waiting to return and sit at the instrument.",
+   "weight": "Nice to have",
+   "presence": null,
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Closing note on his reluctance to leave; pleasant coda, not essential."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 8,
+  "must_have_present": 0,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 0,
+  "must_recall": 0.0,
+  "overall_recall": 0.0
+ },
+ "missing_list": []
+}

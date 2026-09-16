@@ -1,0 +1,391 @@
+{
+ "sample": "06_valuing_consistency",
+ "part": 4,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "7",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Real cases add three complications the toy model does not capture.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "## Three ways the clean model gets dirty\nReal cases add complications the toy model doesn't capture. Three seem unavoidable."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Confounded attribution: circumstances rarely change as pure evidence or pure cost; usually both move together.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "**Confounded attribution.** Circumstances rarely change as pure evidence or pure cost. Usually both move together. A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence. A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree. The flaw stays invisible until cost and evidence next point in opposite directions, at which point the process, having never been evidence-driven, follows cost again and gets it wrong that time. A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one."
+    }
+   ]
+  },
+  {
+   "id": "7.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "**Confounded attribution.** Circumstances rarely change as pure evidence or pure cost. Usually both move together. A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence. A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree. The flaw stays invisible until cost and evidence next point in opposite directions, at which point the process, having never been evidence-driven, follows cost again and gets it wrong that time. A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one."
+    }
+   ]
+  },
+  {
+   "id": "7.1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "**Confounded attribution.** Circumstances rarely change as pure evidence or pure cost. Usually both move together. A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence. A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree. The flaw stays invisible until cost and evidence next point in opposite directions, at which point the process, having never been evidence-driven, follows cost again and gets it wrong that time. A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one."
+    }
+   ]
+  },
+  {
+   "id": "7.1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The flaw stays invisible until cost and evidence next point in opposite directions, when the process follows cost again and gets it wrong.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "**Confounded attribution.** Circumstances rarely change as pure evidence or pure cost. Usually both move together. A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence. A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree. The flaw stays invisible until cost and evidence next point in opposite directions, at which point the process, having never been evidence-driven, follows cost again and gets it wrong that time. A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one."
+    }
+   ]
+  },
+  {
+   "id": "7.1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "**Confounded attribution.** Circumstances rarely change as pure evidence or pure cost. Usually both move together. A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence. A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree. The flaw stays invisible until cost and evidence next point in opposite directions, at which point the process, having never been evidence-driven, follows cost again and gets it wrong that time. A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Misperceived reference: everything so far assumes the person correctly perceives where the reference sits, and they might not.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "**Misperceived reference.** Everything so far assumes the person correctly perceives where the reference sits. They might not: thinking a norm still forbids something it no longer does, or a market is still risk-off when it has turned. This is an error upstream of anchor, responsiveness, and policy entirely. It corrupts every downstream judgment without any of those three being flawed."
+    }
+   ]
+  },
+  {
+   "id": "7.2.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "They may think a norm still forbids something it no longer does, or that a market is still risk-off when it has turned.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "**Misperceived reference.** Everything so far assumes the person correctly perceives where the reference sits. They might not: thinking a norm still forbids something it no longer does, or a market is still risk-off when it has turned. This is an error upstream of anchor, responsiveness, and policy entirely. It corrupts every downstream judgment without any of those three being flawed."
+    }
+   ]
+  },
+  {
+   "id": "7.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This error is upstream of anchor, responsiveness, and policy entirely, corrupting every downstream judgment without any of the three being flawed.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "**Misperceived reference.** Everything so far assumes the person correctly perceives where the reference sits. They might not: thinking a norm still forbids something it no longer does, or a market is still risk-off when it has turned. This is an error upstream of anchor, responsiveness, and policy entirely. It corrupts every downstream judgment without any of those three being flawed."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Reference lag: what looks like a fixed anchor resisting a reference may be perfect tracking of a different, stale reference.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "**Reference lag.** Sometimes what looks like a fixed anchor resisting a reference is actually perfect tracking of a different, stale reference. Diaspora communities do this with language. Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin. Quebec French keeps features that metropolitan French has dropped, and you can hear the same pattern informally in many diaspora communities' speech. A person raised on that preserved form isn't holding out against assimilation into the host country's norm out of principle. Their real reference is a third thing entirely: the origin country's norm at the moment their family left it, frozen the day they emigrated, while the living language back home kept moving. The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze. Apparent principle, real conformity to the wrong clock."
+    }
+   ]
+  },
+  {
+   "id": "7.3.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "**Reference lag.** Sometimes what looks like a fixed anchor resisting a reference is actually perfect tracking of a different, stale reference. Diaspora communities do this with language. Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin. Quebec French keeps features that metropolitan French has dropped, and you can hear the same pattern informally in many diaspora communities' speech. A person raised on that preserved form isn't holding out against assimilation into the host country's norm out of principle. Their real reference is a third thing entirely: the origin country's norm at the moment their family left it, frozen the day they emigrated, while the living language back home kept moving. The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze. Apparent principle, real conformity to the wrong clock."
+    }
+   ]
+  },
+  {
+   "id": "7.3.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "Quebec French keeps features that metropolitan French has dropped.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "**Reference lag.** Sometimes what looks like a fixed anchor resisting a reference is actually perfect tracking of a different, stale reference. Diaspora communities do this with language. Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin. Quebec French keeps features that metropolitan French has dropped, and you can hear the same pattern informally in many diaspora communities' speech. A person raised on that preserved form isn't holding out against assimilation into the host country's norm out of principle. Their real reference is a third thing entirely: the origin country's norm at the moment their family left it, frozen the day they emigrated, while the living language back home kept moving. The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze. Apparent principle, real conformity to the wrong clock."
+    }
+   ]
+  },
+  {
+   "id": "7.3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The real reference is the origin country's norm at the moment the family left, frozen the day they emigrated, while the living language kept moving.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "**Reference lag.** Sometimes what looks like a fixed anchor resisting a reference is actually perfect tracking of a different, stale reference. Diaspora communities do this with language. Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin. Quebec French keeps features that metropolitan French has dropped, and you can hear the same pattern informally in many diaspora communities' speech. A person raised on that preserved form isn't holding out against assimilation into the host country's norm out of principle. Their real reference is a third thing entirely: the origin country's norm at the moment their family left it, frozen the day they emigrated, while the living language back home kept moving. The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze. Apparent principle, real conformity to the wrong clock."
+    }
+   ]
+  },
+  {
+   "id": "7.3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "**Reference lag.** Sometimes what looks like a fixed anchor resisting a reference is actually perfect tracking of a different, stale reference. Diaspora communities do this with language. Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin. Quebec French keeps features that metropolitan French has dropped, and you can hear the same pattern informally in many diaspora communities' speech. A person raised on that preserved form isn't holding out against assimilation into the host country's norm out of principle. Their real reference is a third thing entirely: the origin country's norm at the moment their family left it, frozen the day they emigrated, while the living language back home kept moving. The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze. Apparent principle, real conformity to the wrong clock."
+    }
+   ]
+  },
+  {
+   "id": "7.3.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Apparent principle, real conformity to the wrong clock.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "**Reference lag.** Sometimes what looks like a fixed anchor resisting a reference is actually perfect tracking of a different, stale reference. Diaspora communities do this with language. Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin. Quebec French keeps features that metropolitan French has dropped, and you can hear the same pattern informally in many diaspora communities' speech. A person raised on that preserved form isn't holding out against assimilation into the host country's norm out of principle. Their real reference is a third thing entirely: the origin country's norm at the moment their family left it, frozen the day they emigrated, while the living language back home kept moving. The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze. Apparent principle, real conformity to the wrong clock."
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Nearly every pair above produces identical behavior and identical retrospective self-report.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "## The prior prediction test\nStep back and notice the pattern. Nearly every pair above produces identical behavior and identical retrospective self-report: rational revision versus preference laundering, revealed preference versus contaminated drift, rational caution versus hysteresis. \"I've always believed this\" and \"I used to be naive\" are available to both the legitimate and illegitimate version, every time. That's what makes the problem hard, rather than merely a matter of introspecting harder."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "I have always believed this and I used to be naive are available to both the legitimate and illegitimate version, every time.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "## The prior prediction test\nStep back and notice the pattern. Nearly every pair above produces identical behavior and identical retrospective self-report: rational revision versus preference laundering, revealed preference versus contaminated drift, rational caution versus hysteresis. \"I've always believed this\" and \"I used to be naive\" are available to both the legitimate and illegitimate version, every time. That's what makes the problem hard, rather than merely a matter of introspecting harder."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That is what makes the problem hard, rather than merely a matter of introspecting harder.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "## The prior prediction test\nStep back and notice the pattern. Nearly every pair above produces identical behavior and identical retrospective self-report: rational revision versus preference laundering, revealed preference versus contaminated drift, rational caution versus hysteresis. \"I've always believed this\" and \"I used to be naive\" are available to both the legitimate and illegitimate version, every time. That's what makes the problem hard, rather than merely a matter of introspecting harder."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "One thing separates the twins: what the person predicted, before the circumstance changed, that they would do once it did, and on what grounds.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "One thing separates the twins: what the person predicted, before the circumstance changed, that they would do once it did, and on what grounds. A prediction made under the old regime, with reasons attached, is much harder to fake retroactively than a story assembled after the fact."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A prediction made under the old regime, with reasons attached, is much harder to fake retroactively than a story assembled after the fact.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "One thing separates the twins: what the person predicted, before the circumstance changed, that they would do once it did, and on what grounds. A prediction made under the old regime, with reasons attached, is much harder to fake retroactively than a story assembled after the fact."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "example",
+   "attribution": "author",
+   "text": "I will understand incentives better by 40 is a falsifiable claim about future evidence, checkable against what actually changed in the person's reasoning.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "\"I'll understand incentives better by 40\" is a falsifiable claim about future evidence, checkable against what actually changed in the person's reasoning. \"I'll have more to protect by 40\" is a claim about future incentives wearing the vocabulary of insight. \"I'd wear this if society let me\" is a testable prediction about an anchor, not a post-hoc alibi for wherever behavior ended up."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "example",
+   "attribution": "author",
+   "text": "I will have more to protect by 40 is a claim about future incentives wearing the vocabulary of insight.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "\"I'll understand incentives better by 40\" is a falsifiable claim about future evidence, checkable against what actually changed in the person's reasoning. \"I'll have more to protect by 40\" is a claim about future incentives wearing the vocabulary of insight. \"I'd wear this if society let me\" is a testable prediction about an anchor, not a post-hoc alibi for wherever behavior ended up."
+    }
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "example",
+   "attribution": "author",
+   "text": "I would wear this if society let me is a testable prediction about an anchor, not a post-hoc alibi for wherever behavior ended up.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "\"I'll understand incentives better by 40\" is a falsifiable claim about future evidence, checkable against what actually changed in the person's reasoning. \"I'll have more to protect by 40\" is a claim about future incentives wearing the vocabulary of insight. \"I'd wear this if society let me\" is a testable prediction about an anchor, not a post-hoc alibi for wherever behavior ended up."
+    }
+   ]
+  },
+  {
+   "id": "8.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Where no such prior prediction exists, the case is underdetermined, and the default should not be the more flattering interpretation.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "Where no such prior prediction exists, the answer is that the case is underdetermined. The default should not be to assume the more flattering interpretation."
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Back at the mom's story: the word split into three, and the three came apart completely.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "## So what is consistency?\nBack to my mom's story. The word I started with split into three, and the three came apart completely. The woman who swung with the revolution may have been running one unchanging rule the whole time, and the investor who never changes strategy may be the one failing."
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The woman who swung with the revolution may have been running one unchanging rule; the investor who never changes may be the one failing.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "## So what is consistency?\nBack to my mom's story. The word I started with split into three, and the three came apart completely. The woman who swung with the revolution may have been running one unchanging rule the whole time, and the investor who never changes strategy may be the one failing."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Consistency of behavior was never the thing the author admired or condemned; it was a proxy, and a bad one.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "What I've landed on is that consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost. The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable. Which is why the only question I really trust is the one asked in advance: before anything changes, what do you think you'll do when it does, and why?\n---"
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "What is actually evaluated is the process, not the consistency of behavior.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "What I've landed on is that consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost. The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable. Which is why the only question I really trust is the one asked in advance: before anything changes, what do you think you'll do when it does, and why?\n---"
+    }
+   ]
+  },
+  {
+   "id": "9.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The process questions are what the anchor is, what the person is responsive to, and whether the movement came from evidence or cost.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "What I've landed on is that consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost. The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable. Which is why the only question I really trust is the one asked in advance: before anything changes, what do you think you'll do when it does, and why?\n---"
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "What I've landed on is that consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost. The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable. Which is why the only question I really trust is the one asked in advance: before anything changes, what do you think you'll do when it does, and why?\n---"
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The only question the author really trusts is the one asked in advance.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "What I've landed on is that consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost. The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable. Which is why the only question I really trust is the one asked in advance: before anything changes, what do you think you'll do when it does, and why?\n---"
+    }
+   ]
+  },
+  {
+   "id": "9.5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Before anything changes: what do you think you will do when it does, and why?",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "What I've landed on is that consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost. The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable. Which is why the only question I really trust is the one asked in advance: before anything changes, what do you think you'll do when it does, and why?\n---"
+    }
+   ]
+  }
+ ]
+}

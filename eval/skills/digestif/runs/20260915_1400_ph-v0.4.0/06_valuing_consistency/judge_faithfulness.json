@@ -1,0 +1,1508 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "06_valuing_consistency",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "claim_text": "Consistency of behavior is a bad proxy; what matters is whether the anchor moves on evidence or cost, which only a prior prediction can reveal.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "It was a proxy, and a bad one... the only question I really trust is the one asked in advance",
+      "reasoning": "Source states behavior consistency was a bad proxy and identifies evidence/cost and advance prediction as the trusted test."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "claim_text": "The post asks what consistency actually means, since it carries moral weight but no structure.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "it doesn't let me build any structure around it. Worse, I attach a moral value to it... I want to pin down what this concept actually means: consistency.",
+      "reasoning": "Source says the word lacks structure yet carries moral value, and he wants to pin down its meaning."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "claim_text": "The author keeps reaching for consistency, a word vaguer than he would like, attaching moral value to it: sometimes a compliment, sometimes an accusation.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "a word I keep reaching for... vaguer than I'd like... sometimes it's a compliment, sometimes an accusation",
+      "reasoning": "Source matches the reach, the vagueness, and both moral valences verbatim."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "claim_text": "Before the 1979 revolution in Iran, someone the author's mom knew wore mini skirts; right after it she switched to chador and niqab.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Before the 1979 revolution in Iran, someone she knew wore mini skirts all the time. Right after the revolution she switched to chador and niqab.",
+      "reasoning": "All entities, date, and clothing details match the source exactly."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "claim_text": "Others in the same circle dressed modestly before the revolution and modestly after, changing only slightly how much they covered.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Others in the same circle dressed modestly before the revolution and dressed modestly after it, changing only slightly how much they covered.",
+      "reasoning": "Near-verbatim restatement with no changed qualifiers."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "claim_text": "The instinct reads the swing as a moral failing and the steadiness as integrity.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "My instinct reads the first woman's swing as a moral failing and the others' steadiness as integrity.",
+      "reasoning": "Direct match of the author's stated instinct."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.4.1"
+      ],
+      "claim_text": "A more cynical observer might call the first woman cunning, quick to adapt, and the others slow to catch up.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "A more cynical observer might call the first woman cunning, quick to adapt to the new situation, and call the others slow to catch up.",
+      "reasoning": "Hedge 'might' preserved and content matches exactly."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "claim_text": "Even those who judge her harshly tend to agree that updating beliefs on certain topics is a virtue and that nobody should be stoneheaded.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "even those of us who'd judge her harshly tend to agree that being able to 'update' your beliefs on certain topics is a virtue, that nobody should be stoneheaded.",
+      "reasoning": "Both conjuncts and the 'certain topics' qualifier match the source."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "claim_text": "So the swing itself cannot be what we are judging, and plain behavioral consistency is not carrying the moral weight the author assumed.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "the swing itself can't be what we're judging. Consistency, in the plain sense of 'did the behavior stay the same', is not carrying the moral weight I assumed it did.",
+      "reasoning": "Both negations are preserved with identical meaning."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "1.7"
+      ],
+      "claim_text": "The post is an attempt to find the something underneath consistency.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Something underneath it is. This post is my attempt to find that something.",
+      "reasoning": "Direct restatement of the source's stated aim."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2"
+      ],
+      "claim_text": "A small model puts numbers on the clothing story to find what consistency is really measuring.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "so let's put numbers on the clothing story",
+      "reasoning": "Source introduces the concrete model on the clothing story for the stated inquiry."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "claim_text": "Clothing openness is measured from -1 (fully closed) to 1 (fully open), with society's average at -0.5 closed and 0.5 open.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "a scale from $-1$ (fully closed) to $1$ (fully open). Say society's average sits at $-0.5$ in the closed state and $0.5$ in the open state.",
+      "reasoning": "Scale endpoints and both reference averages match exactly."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "claim_text": "The modest woman is observed at -0.1 in the closed state and 0.1 in the open state: a slight change, but not zero.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "we observe her at $-0.1$ in the closed state and $0.1$ in the open state. A slight change, but not zero.",
+      "reasoning": "Values and the qualifier match verbatim."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "claim_text": "Hypothesis: her behavior blends her own fixed point and the social reference, Behavior = w x Reference + (1 - w) x Anchor.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Behavior = w \\times \\text{Reference} + (1 - w) \\times \\text{Anchor}",
+      "reasoning": "Equation reproduced exactly with the stated blend of fixed point and reference."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "claim_text": "The Anchor is what she would do if the reference had no pull; w, the Responsiveness, is how much weight the reference actually carries.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "the Anchor is what she'd do if the reference had no pull on her, and $w$, the Responsiveness, is how much weight the reference actually carries.",
+      "reasoning": "Both definitions match the source wording."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "claim_text": "Two observations give two equations: -0.5w + (1-w)a = -0.1 and 0.5w + (1-w)a = 0.1.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "$-0.5w + (1-w)a = -0.1$ ... $0.5w + (1-w)a = 0.1$",
+      "reasoning": "Both equations match sign and coefficients exactly."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "claim_text": "Adding them gives 2(1-w)a = 0, so the anchor is a = 0; subtracting gives w = 0.2.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Adding them gives $2(1-w)a = 0$, so the anchor is $a = 0$. Subtracting gives $w = 0.2$.",
+      "reasoning": "Intermediate result and both solved values match exactly."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "claim_text": "Her behavior is exactly 0.2 x Reference both times: a fixed anchor at neutral, yielding a fixed twenty percent of the distance toward society.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Her behavior is exactly $0.2 \\times \\text{Reference}$, both times... fixed anchor at neutral... fixed twenty percent of the distance",
+      "reasoning": "Number and verbal gloss match the source."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "2.8"
+      ],
+      "claim_text": "Her output moved, -0.1 then 0.1, no fixed value; her rule never did: same anchor, same responsiveness, both times.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Her *output* moved: $-0.1$ then $0.1$, no fixed value. Her *rule* never did: same anchor, same responsiveness, both times.",
+      "reasoning": "Output/rule distinction and values match verbatim, negation preserved."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "2.9"
+      ],
+      "claim_text": "An unusually stable person, conceding a fixed fraction of ground under pressure.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "An unusually stable person, conceding a fixed fraction of ground under pressure.",
+      "reasoning": "Verbatim quotation from the source."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "2.10"
+      ],
+      "claim_text": "The chameleon woman is at 0.9 when society is 0.5, and at -0.9 when society is -0.5.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "she is at $0.9$ when society is $0.5$, and at $-0.9$ when society is $-0.5$",
+      "reasoning": "All four values match; 'chameleon' is the source's own later label for her."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "2.11"
+      ],
+      "claim_text": "Her anchor comes out to 0 again, and her responsiveness comes out to 1.8: she does not just follow the reference, she amplifies it.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The anchor comes out to $0$ again, and $w$ comes out to $1.8$. She doesn't just follow the reference, she amplifies it",
+      "reasoning": "Both values and the amplification claim match exactly."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "2.12"
+      ],
+      "claim_text": "Her rule is exactly as consistent as the modest woman's: one anchor, one responsiveness, both times.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Her rule is exactly as consistent as the modest woman's. One anchor, one responsiveness, both times.",
+      "reasoning": "Direct quotation with no drift."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "2.13"
+      ],
+      "claim_text": "Judging only her output would call her a fashion-following chameleon, and that output judgment is fair.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Someone judging only her output would call her a fashion-following chameleon, and the output judgment is fair.",
+      "reasoning": "Matches the source's concession about the output judgment."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "2.14"
+      ],
+      "claim_text": "But the inference that comes with it, that she has no fixed point and stands for nothing, is wrong.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "the inference that comes with it, that she has no fixed point, that she stands for nothing, is wrong.",
+      "reasoning": "Negation and both components of the inference preserved."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "2.15"
+      ],
+      "claim_text": "The difference between the two women is what the rule says: concede a fifth of the distance to society, or overshoot it by eighty percent.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "concede a fifth of the distance to society, or overshoot it by eighty percent.",
+      "reasoning": "Both fractional characterizations match the source."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "2.16"
+      ],
+      "claim_text": "Consistency can be asked of output, policy, and anchor independently: did the behavior, the rule, or the fixed point itself stay fixed?",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "asked of three different things, and it can pass or fail on each one independently... **output**... **policy**... **anchor**",
+      "reasoning": "All three layers and the independence claim match the source."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "2.17"
+      ],
+      "claim_text": "The two women fail the first in opposite amounts, one barely and one spectacularly, and pass the second and third completely.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The two women fail the first in opposite amounts, one barely, one spectacularly, and pass the second and third completely.",
+      "reasoning": "Verbatim restatement with no changed qualifiers."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "2.18"
+      ],
+      "claim_text": "An observer watching only output would see a consistency gap between them that does not exist at either deeper layer.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "would see a consistency gap between them that doesn't exist at either deeper layer.",
+      "reasoning": "Negation and both-layer claim preserved exactly."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "2.19"
+      ],
+      "claim_text": "The third layer is where the real action is: policy can stay fixed while the anchor drifts underneath, invisibly, in undramatic steps.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The third layer is where the real action is. Policy can stay fixed while the anchor drifts underneath it, invisibly",
+      "reasoning": "Meaning matches; 'undramatic' fairly renders steps too small to feel like a change of mind."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "2.20"
+      ],
+      "claim_text": "No single moment of that drift feels like a change of mind, and that invisible drift is where the moral weight lives.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "in steps small enough that no single moment feels like a change of mind. That drift is where the moral weight lives",
+      "reasoning": "Both clauses match the source exactly."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "2.21"
+      ],
+      "claim_text": "A deliberate omission: cases where the anchor is closer to or farther from the reference, unexplored for lack of meaningful examples to study or interpret.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "I deliberately haven't explored the cases where the anchor is closer or farther from the reference. Mainly because I couldn't come up with meaningful examples",
+      "reasoning": "The deliberation and stated reason both match PS1."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "2.22"
+      ],
+      "claim_text": "An economist might call the anchor an endogenous variable and the reference an exogenous one; the author prefers words he can relate to.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "An economists perhaps would call the anchor an indogenous variable, and the reference an exogenous variable... I rather use words that I can relate to.",
+      "reasoning": "Hedge and roles match; respelling the source's typo 'indogenous' as endogenous keeps meaning."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "2.23"
+      ],
+      "claim_text": "The model is the simplest the author could think of: a linear convex combination whose coefficient need not lie between 0 and 1.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "the most simple model I could think of, a linear convex combination of the two variables but the combining coefficient doesn't need to be between 0 and 1",
+      "reasoning": "Superlative, model form, and coefficient condition all match."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "3"
+      ],
+      "claim_text": "The contrarian next door runs the same model with the sign flipped and the magnitude doubled.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "She runs the same model as the modest woman, with the sign flipped and the magnitude doubled",
+      "reasoning": "SOURCE states this verbatim in ¶20, and w=-0.4 vs 0.2 confirms flipped sign and doubled magnitude."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "claim_text": "A third woman is observed at 0.2 when the average is -0.5, and at -0.2 when the average is 0.5.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "She is observed at $0.2$ when the average is $-0.5$, and at $-0.2$ when the average is $0.5$.",
+      "reasoning": "Exact numbers and values match SOURCE ¶17 unchanged."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "claim_text": "Her anchor comes out to 0 again, and her responsiveness comes out to -0.4.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The anchor comes out to $0$ again. The responsiveness comes out to $-0.4$.",
+      "reasoning": "SOURCE ¶19 states both computed values exactly as claimed."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "claim_text": "She has a fixed neutral point and a fixed reaction coefficient, pushing away from the reference instead of toward it.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "a fixed neutral point, a fixed reaction coefficient, pushing away from the reference instead of toward it",
+      "reasoning": "Copies SOURCE ¶20 nearly verbatim, preserving the away-from-reference direction."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "claim_text": "We usually file contrarians under independent-minded, but the arithmetic disagrees.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "We usually file contrarians under \"independent-minded\". The arithmetic disagrees.",
+      "reasoning": "Matches SOURCE ¶21; the contrast is preserved."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "claim_text": "She is more dependent on the social reference than the modest woman in absolute terms, because reliably doing the opposite requires tracking it closely.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "She is more dependent on the social reference than the modest woman, in absolute terms, because reliably doing the opposite of something requires tracking that thing closely.",
+      "reasoning": "Same comparison and causal reason as SOURCE ¶21, with the absolute-terms qualifier kept."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "3.6"
+      ],
+      "claim_text": "Contrarianism is dependency with a minus sign, not independence.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Contrarianism is dependency with a minus sign, not independence.",
+      "reasoning": "Verbatim from SOURCE ¶21, negation preserved."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "4"
+      ],
+      "claim_text": "The values of w carve out a named family of postures, all instances of the same equation.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The values of $w$ carve out a named family of postures, all instances of the same equation",
+      "reasoning": "Matches SOURCE ¶22 exactly."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "claim_text": "Above 1 is the Amplifier, overshooting the reference in whichever direction it moves: the chameleon from the story.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "above $1$ | Amplifier | Overshoots the reference in whichever direction it moves. The chameleon from the story.",
+      "reasoning": "Matches the SOURCE table row for above 1."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "claim_text": "At exactly 1 is the Absolute conformist: the anchor drops out of the formula.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "$1$ | Absolute conformist | The anchor drops out of the formula.",
+      "reasoning": "Matches the SOURCE table row for w=1."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "4.2.1"
+      ],
+      "claim_text": "Behavior equals the reference exactly, always, with no fixed point to reconstruct a belief from.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Behavior equals the reference, exactly, always. No fixed point to reconstruct a belief from.",
+      "reasoning": "Preserves the exact, always, and no-fixed-point elements from the table."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "claim_text": "Between 0 and 1 is the Partial conformist: a real anchor and a real pull toward the reference, the modest woman.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "between $0$ and $1$ | Partial conformist | A real anchor and a real pull toward the reference. The modest woman.",
+      "reasoning": "Matches the SOURCE table row for between 0 and 1."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "claim_text": "At 0 is the Independent: behavior ignores the reference entirely, the only posture requiring no information about it.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "$0$ | Independent | Behavior ignores the reference entirely. The only posture that requires no information about the reference to act.",
+      "reasoning": "Matches the SOURCE table row for w=0, including the only-posture claim."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "claim_text": "Between -1 and 0 is the Partial contrarian: a real anchor and a real push away from the reference, the contrarian.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "between $-1$ and $0$ | Partial contrarian | A real anchor and a real push away from the reference. The contrarian.",
+      "reasoning": "Matches the SOURCE table row for between -1 and 0."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "claim_text": "At -1 is the Absolute contrarian: maximal dependence inverted, needing to track the reference more precisely than the conformist to oppose it reliably.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "$-1$ | Absolute contrarian | Maximal dependence on the reference, inverted. Needs to track the reference with more precision than the conformist to reliably oppose it.",
+      "reasoning": "Matches the SOURCE table row for w=-1, preserving inversion and precision comparison."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "claim_text": "The independent is the only posture that does not need to know what the reference is doing; every other is a reference-tracking system.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The independent is the only entry that doesn't need to know what the reference is doing. Every other posture... is a reference-tracking system.",
+      "reasoning": "Matches SOURCE ¶24, preserving the negation and the universality of every other."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "4.8"
+      ],
+      "claim_text": "In that narrow sense the absolute conformist and the absolute contrarian sit closer to each other than either sits to the independent.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "In this narrow sense the absolute conformist and the absolute contrarian sit closer to each other than either sits to the independent.",
+      "reasoning": "Matches SOURCE ¶24 with the narrow-sense qualifier intact."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "4.9"
+      ],
+      "claim_text": "Below -1 sits the mirror image of the chameleon, a contrarian who overshoots: an extremist rebel?",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "below $-1$ sits the mirror image of the chameleon, a contrarian who overshoots, an extremist rebel?",
+      "reasoning": "Matches SOURCE ¶24, keeping the question mark and mirror-image framing."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "5"
+      ],
+      "claim_text": "The model is morally neutral until you ask what kind of reference is in play.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "So far the model is morally neutral, and that's the point. High or low responsiveness is neither good nor bad until you ask what kind of reference is in play.",
+      "reasoning": "Faithful compression of SOURCE ¶25, preserving the conditional dependency on reference type."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "claim_text": "A normative reference, such as peer pressure, fashion, or social approval, is something your anchor is supposed to resist.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "A normative reference (peer pressure, fashion, social approval) is something your anchor is supposed to resist.",
+      "reasoning": "Matches SOURCE ¶26 including all three example items."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "claim_text": "High responsiveness to a normative reference is suspect by default.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "High responsiveness there is suspect by default.",
+      "reasoning": "Matches SOURCE ¶26, preserving the by-default qualifier."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "claim_text": "A structural reference, such as a deadline, a budget, a body, or a risk exposure, is something your anchor is supposed to track.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "A structural reference (a deadline, a budget, a body, a risk exposure) is something your anchor is supposed to track.",
+      "reasoning": "Matches SOURCE ¶27 including all four examples."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "claim_text": "Zero responsiveness to a structural reference is not principle; it is malfunction.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Zero responsiveness there isn't principle. It's malfunction.",
+      "reasoning": "Matches SOURCE ¶27, preserving the negation and malfunction contrast."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "claim_text": "In an ideal world, the author says, |w| should generally be small and everyone should have an educated Anchor.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "However in an ideal world, IMHO the $|w|$ should be generally small, and everyone should have an educated Anchor.",
+      "reasoning": "Matches SOURCE ¶28 and preserves the ideal-world and generally qualifiers."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "5.5.1"
+      ],
+      "claim_text": "But this is not an ideal world, and not everyone can get educated about everything.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "But this is not an ideal world and not everyone can get educated about everything.",
+      "reasoning": "Verbatim from SOURCE ¶28, both negations preserved."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "claim_text": "A common rule of thumb sets equity allocation at roughly 110 minus your age.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "A common rule of thumb sets equity allocation at roughly $110$ minus your age",
+      "reasoning": "Number 110 and the roughly qualifier match SOURCE ¶29."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "5.6.1"
+      ],
+      "claim_text": "That puts about 85% in stocks at 25 and about 50% at 60, tapering further as retirement nears.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "about $85\\%$ stocks at 25, about $50\\%$ at 60, tapering further as retirement nears",
+      "reasoning": "All percentages and ages match SOURCE ¶29 exactly."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "5.7"
+      ],
+      "claim_text": "Someone following it, aggressive at 25 and cautious at 60, is not inconsistent: their reference is the years until the money is needed.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "aggressive at 25, cautious at 60, is not \"inconsistent\". Their reference point is the years until the money is needed",
+      "reasoning": "Matches SOURCE ¶29, preserving the not-inconsistent negation and reference explanation."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "5.8"
+      ],
+      "claim_text": "The right exposure to market swings genuinely is a function of that horizon.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "the right exposure to market swings genuinely is a function of that horizon",
+      "reasoning": "Verbatim from SOURCE ¶29."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "5.8.1"
+      ],
+      "claim_text": "A 25-year-old can ride out a crash over decades; a retiree drawing down savings cannot.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "A 25-year-old can ride out a crash over decades. A retiree drawing down savings cannot.",
+      "reasoning": "Matches SOURCE ¶29 including the cannot negation."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "5.9"
+      ],
+      "claim_text": "Here, holding behavior fixed across a life would be the failure, not the virtue.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Here, holding behavior fixed across a life would be the failure, not the virtue.",
+      "reasoning": "Verbatim from SOURCE ¶29, preserving the failure-not-virtue contrast."
+    },
+    {
+      "claim_id": "C066",
+      "loglog_ids": [
+        "5.10"
+      ],
+      "claim_text": "An investor who stays at 85% equities at 65 because he has always been aggressive refuses to let a correctly varying function vary.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "An investor who stays at $85\\%$ equities at 65 because \"I've always been aggressive\" ... They're refusing to let a correctly varying function vary.",
+      "reasoning": "Same number, age, rationale, and refusal as SOURCE ¶29; the added he does not alter meaning."
+    },
+    {
+      "claim_id": "C067",
+      "loglog_ids": [
+        "5.11"
+      ],
+      "claim_text": "The clothing conformist and the lifecycle investor look superficially alike, behavior moving as a reference moves, but morally they are opposites.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The clothing conformist and the lifecycle investor look superficially alike: behavior that moves as a reference moves. Morally they are opposites.",
+      "reasoning": "Matches SOURCE ¶30, preserving the superficial-alike versus morally-opposite contrast."
+    },
+    {
+      "claim_id": "C068",
+      "loglog_ids": [
+        "5.12"
+      ],
+      "claim_text": "Holding output fixed against a moving reference reads as integrity in the clothing case and as ossification in the investing case.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "holding output fixed against a moving reference reads as integrity in the clothing case and as ossification in the investing case",
+      "reasoning": "Verbatim from SOURCE ¶30, preserving both attributions."
+    },
+    {
+      "claim_id": "C069",
+      "loglog_ids": [
+        "5.13"
+      ],
+      "claim_text": "Same form, opposite verdict: the verdict depends entirely on which kind of reference is being held fixed against.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Same form, opposite verdict. The verdict depends entirely on which kind of reference is being held fixed against.",
+      "reasoning": "Verbatim from SOURCE ¶30, including the entirely qualifier."
+    },
+    {
+      "claim_id": "C070",
+      "loglog_ids": [
+        "6"
+      ],
+      "claim_text": "The harder question is why the anchor moves, because that is where the moral weight actually lives.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The harder question is why the *anchor* moves, because that's where the moral weight actually lives.",
+      "reasoning": "Source states this verbatim in the ¶31 heading section."
+    },
+    {
+      "claim_id": "C071",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "claim_text": "The world's facts can change, or your grasp of them can, giving you new evidence.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The world's facts can change, or your grasp of them can, giving you new evidence.",
+      "reasoning": "Exact restatement of the first force in ¶32."
+    },
+    {
+      "claim_id": "C072",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "claim_text": "Or the cost of expressing a given position can change, with no new evidence at all.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Or the cost of expressing a given position can change, with no new evidence at all.",
+      "reasoning": "Exact restatement of the second force in ¶32."
+    },
+    {
+      "claim_id": "C073",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "claim_text": "Crossing those forces with whether the anchor actually moved gives four cells.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Cross those forces with whether the anchor actually moved and you get four cells:",
+      "reasoning": "Source makes the same statement and supplies a four-cell table."
+    },
+    {
+      "claim_id": "C074",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "claim_text": "Rational revision: the world showed you something true and you believed it.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "**Rational revision.** The world showed you something true and you believed it.",
+      "reasoning": "Exact match to the ¶34 bullet."
+    },
+    {
+      "claim_id": "C075",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "claim_text": "Ossification: the evidence moved and the anchor refused; not swinging is stubbornness in the costume of principle.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "**Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.",
+      "reasoning": "Faithful compression of the ossification bullet, negation preserved."
+    },
+    {
+      "claim_id": "C076",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "claim_text": "Preference laundering: everyone is doing it now, so I guess it is fine.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "**Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\"",
+      "reasoning": "Direct quote from the ¶34 bullet."
+    },
+    {
+      "claim_id": "C077",
+      "loglog_ids": [
+        "6.6.1"
+      ],
+      "claim_text": "Social proof gets laundered into belief that was never actually re-examined; the anchor moved, but on cost, not evidence.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.",
+      "reasoning": "Reproduces source wording; negation 'not evidence' kept."
+    },
+    {
+      "claim_id": "C078",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "claim_text": "Anchor held: when cost changes but the anchor genuinely does not move, behavior still needs sorting.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "**Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:",
+      "reasoning": "Exact match to the anchor-held bullet."
+    },
+    {
+      "claim_id": "C079",
+      "loglog_ids": [
+        "6.7.1"
+      ],
+      "claim_text": "Revealed preference: behavior snaps to the anchor once the cost of expressing it drops; the swing was suppression seen from outside.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Behavior snaps to the anchor once the cost of expressing it drops. The swing is what suppression looked like from outside.",
+      "reasoning": "Faithful compression; meaning preserved."
+    },
+    {
+      "claim_id": "C080",
+      "loglog_ids": [
+        "6.7.2"
+      ],
+      "claim_text": "A charitable reading of the clothing story: not a shift in belief, just a cost that finally lifted.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.",
+      "reasoning": "Near-verbatim restatement; negation intact."
+    },
+    {
+      "claim_id": "C081",
+      "loglog_ids": [
+        "6.7.3"
+      ],
+      "claim_text": "Hysteresis: behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "**Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own.",
+      "reasoning": "Exact match to the hysteresis bullet."
+    },
+    {
+      "claim_id": "C082",
+      "loglog_ids": [
+        "6.7.4"
+      ],
+      "claim_text": "Still flinching at a threat that no longer exists.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Still flinching at a threat that no longer exists.",
+      "reasoning": "Verbatim closing line of the hysteresis bullet."
+    },
+    {
+      "claim_id": "C083",
+      "loglog_ids": [
+        "6.8"
+      ],
+      "claim_text": "Perspective gain: the evidence column does not require the reference itself to have moved, as when static tax law meets a growing grasp of it.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The evidence column doesn't require the reference itself to have moved. Tax law can sit perfectly still while your grasp of it moves from nothing to something.",
+      "reasoning": "Accurate paraphrase of the ¶35 footnote."
+    },
+    {
+      "claim_id": "C084",
+      "loglog_ids": [
+        "6.8.1"
+      ],
+      "claim_text": "What was gained is a belief rather than a settled fact, so a second pass at the same unchanged reference can overturn it again.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "since what you gained is a belief rather than a settled fact, a second pass at the very same unchanged reference can overturn it again.",
+      "reasoning": "Reproduces source causal claim with hedge 'can' preserved."
+    },
+    {
+      "claim_id": "C085",
+      "loglog_ids": [
+        "6.9"
+      ],
+      "claim_text": "Rational revision and preference laundering can produce an identical new anchor from an identical old one: same destination, opposite process.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Rational revision and preference laundering can produce an identical new anchor from an identical old one. Same destination, opposite process.",
+      "reasoning": "Verbatim restatement of ¶36."
+    },
+    {
+      "claim_id": "C086",
+      "loglog_ids": [
+        "6.9.1"
+      ],
+      "claim_text": "From outside they are indistinguishable, and often from inside too.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "From outside they are indistinguishable. Often from inside too.",
+      "reasoning": "Matches source, hedge 'Often' retained."
+    },
+    {
+      "claim_id": "C087",
+      "loglog_ids": [
+        "6.10"
+      ],
+      "claim_text": "The aphorism: no heart if you are not a socialist at 20, no head if you still are at 40.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "\"If you're not a socialist at 20, you have no heart. If you're still a socialist at 40, you have no head.\"",
+      "reasoning": "Both negations and ages preserved accurately."
+    },
+    {
+      "claim_id": "C088",
+      "loglog_ids": [
+        "6.10.1"
+      ],
+      "claim_text": "It gets offered as an evidence-based claim: with age comes direct experience of taxes, hiring, saving, and incentives.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "It gets offered as an evidence-based claim. With age comes direct experience of taxes, hiring, saving, and incentives",
+      "reasoning": "List and framing match the source exactly."
+    },
+    {
+      "claim_id": "C089",
+      "loglog_ids": [
+        "6.10.2"
+      ],
+      "claim_text": "Structurally that is the lifecycle investing story: rational revision, tracking new information about how the world works.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Structurally that's the lifecycle investing story: rational revision, tracking new information about how the world works.",
+      "reasoning": "Verbatim restatement."
+    },
+    {
+      "claim_id": "C090",
+      "loglog_ids": [
+        "6.11"
+      ],
+      "claim_text": "But the same trajectory falls out of a much less flattering process: aging brings assets, income, and things to lose from redistribution.",
+      "claim_type": "causal_link",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "As people age they typically acquire assets, income, and things to lose from redistribution.",
+      "reasoning": "Source hedges with 'typically'; loglog states 'aging brings' as absolute, dropping the qualifier."
+    },
+    {
+      "claim_id": "C091",
+      "loglog_ids": [
+        "6.11.1"
+      ],
+      "claim_text": "So views can drift to track self-interest rather than evidence: preference laundering with extra steps.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Views can drift to track self-interest rather than evidence. Preference laundering with extra steps.",
+      "reasoning": "Matches source wording, hedge 'can' preserved."
+    },
+    {
+      "claim_id": "C092",
+      "loglog_ids": [
+        "6.12"
+      ],
+      "claim_text": "Both processes produce the same trajectory and the same retrospective story, I used to be naive, so the shift itself tells you nothing.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Both processes produce the same trajectory and the same retrospective story: \"I used to be naive.\" Nothing about the shift itself tells you which one occurred.",
+      "reasoning": "'Tells you nothing' faithfully conveys that the shift cannot identify which process occurred."
+    },
+    {
+      "claim_id": "C093",
+      "loglog_ids": [
+        "7"
+      ],
+      "claim_text": "Real cases add three complications the toy model does not capture.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Real cases add complications the toy model doesn't capture. Three seem unavoidable.",
+      "reasoning": "Source states complications and that three seem unavoidable; claim preserves the count."
+    },
+    {
+      "claim_id": "C094",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "claim_text": "Confounded attribution: circumstances rarely change as pure evidence or pure cost; usually both move together.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Circumstances rarely change as pure evidence or pure cost. Usually both move together.",
+      "reasoning": "Direct paraphrase with identical qualifiers rarely and usually preserved."
+    },
+    {
+      "claim_id": "C095",
+      "loglog_ids": [
+        "7.1.1"
+      ],
+      "claim_text": "A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C096",
+      "loglog_ids": [
+        "7.1.2"
+      ],
+      "claim_text": "A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C097",
+      "loglog_ids": [
+        "7.1.3"
+      ],
+      "claim_text": "The flaw stays invisible until cost and evidence next point in opposite directions, when the process follows cost again and gets it wrong.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "at which point the process, having never been evidence-driven, follows cost again and gets it wrong that time.",
+      "reasoning": "Meaning preserved; dropped clause about never being evidence-driven does not alter outcome."
+    },
+    {
+      "claim_id": "C098",
+      "loglog_ids": [
+        "7.1.4"
+      ],
+      "claim_text": "A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one.",
+      "reasoning": "Verbatim match, negation intact."
+    },
+    {
+      "claim_id": "C099",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "claim_text": "Misperceived reference: everything so far assumes the person correctly perceives where the reference sits, and they might not.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Everything so far assumes the person correctly perceives where the reference sits. They might not",
+      "reasoning": "Hedge might is preserved, so no overstatement."
+    },
+    {
+      "claim_id": "C100",
+      "loglog_ids": [
+        "7.2.1"
+      ],
+      "claim_text": "They may think a norm still forbids something it no longer does, or that a market is still risk-off when it has turned.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "thinking a norm still forbids something it no longer does, or a market is still risk-off when it has turned",
+      "reasoning": "Rephrase with same examples and same hedging."
+    },
+    {
+      "claim_id": "C101",
+      "loglog_ids": [
+        "7.2.2"
+      ],
+      "claim_text": "This error is upstream of anchor, responsiveness, and policy entirely, corrupting every downstream judgment without any of the three being flawed.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This is an error upstream of anchor, responsiveness, and policy entirely. It corrupts every downstream judgment without any of those three being flawed.",
+      "reasoning": "Two source sentences merged with identical meaning and scope."
+    },
+    {
+      "claim_id": "C102",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "claim_text": "Reference lag: what looks like a fixed anchor resisting a reference may be perfect tracking of a different, stale reference.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Sometimes what looks like a fixed anchor resisting a reference is actually perfect tracking of a different, stale reference.",
+      "reasoning": "Hedge sometimes replaced by may, keeping the same modal force."
+    },
+    {
+      "claim_id": "C103",
+      "loglog_ids": [
+        "7.3.1"
+      ],
+      "claim_text": "Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin.",
+      "reasoning": "Verbatim match, including the hedge sometimes."
+    },
+    {
+      "claim_id": "C104",
+      "loglog_ids": [
+        "7.3.2"
+      ],
+      "claim_text": "Quebec French keeps features that metropolitan French has dropped.",
+      "claim_type": "name_or_entity",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Quebec French keeps features that metropolitan French has dropped",
+      "reasoning": "Verbatim match with same entities Quebec French and metropolitan French."
+    },
+    {
+      "claim_id": "C105",
+      "loglog_ids": [
+        "7.3.3"
+      ],
+      "claim_text": "The real reference is the origin country's norm at the moment the family left, frozen the day they emigrated, while the living language kept moving.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Their real reference is a third thing entirely: the origin country's norm at the moment their family left it, frozen the day they emigrated, while the living language back home kept moving.",
+      "reasoning": "Rephrase preserves all content, entities, and the frozen-at-emigration timing."
+    },
+    {
+      "claim_id": "C106",
+      "loglog_ids": [
+        "7.3.4"
+      ],
+      "claim_text": "The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C107",
+      "loglog_ids": [
+        "7.3.5"
+      ],
+      "claim_text": "Apparent principle, real conformity to the wrong clock.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Apparent principle, real conformity to the wrong clock.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C108",
+      "loglog_ids": [
+        "8"
+      ],
+      "claim_text": "Nearly every pair above produces identical behavior and identical retrospective self-report.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Nearly every pair above produces identical behavior and identical retrospective self-report",
+      "reasoning": "Verbatim match, hedge nearly preserved."
+    },
+    {
+      "claim_id": "C109",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "claim_text": "I have always believed this and I used to be naive are available to both the legitimate and illegitimate version, every time.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "\"I've always believed this\" and \"I used to be naive\" are available to both the legitimate and illegitimate version, every time.",
+      "reasoning": "Verbatim match with source, both quoted phrases preserved."
+    },
+    {
+      "claim_id": "C110",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "claim_text": "That is what makes the problem hard, rather than merely a matter of introspecting harder.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "That's what makes the problem hard, rather than merely a matter of introspecting harder.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C111",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "claim_text": "One thing separates the twins: what the person predicted, before the circumstance changed, that they would do once it did, and on what grounds.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "One thing separates the twins: what the person predicted, before the circumstance changed, that they would do once it did, and on what grounds.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C112",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "claim_text": "A prediction made under the old regime, with reasons attached, is much harder to fake retroactively than a story assembled after the fact.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "A prediction made under the old regime, with reasons attached, is much harder to fake retroactively than a story assembled after the fact.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C113",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "claim_text": "I will understand incentives better by 40 is a falsifiable claim about future evidence, checkable against what actually changed in the person's reasoning.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "\"I'll understand incentives better by 40\" is a falsifiable claim about future evidence, checkable against what actually changed in the person's reasoning.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C114",
+      "loglog_ids": [
+        "8.6"
+      ],
+      "claim_text": "I will have more to protect by 40 is a claim about future incentives wearing the vocabulary of insight.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "\"I'll have more to protect by 40\" is a claim about future incentives wearing the vocabulary of insight.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C115",
+      "loglog_ids": [
+        "8.7"
+      ],
+      "claim_text": "I would wear this if society let me is a testable prediction about an anchor, not a post-hoc alibi for wherever behavior ended up.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "\"I'd wear this if society let me\" is a testable prediction about an anchor, not a post-hoc alibi for wherever behavior ended up.",
+      "reasoning": "Verbatim match; negation not preserved in the not-clause."
+    },
+    {
+      "claim_id": "C116",
+      "loglog_ids": [
+        "8.8"
+      ],
+      "claim_text": "Where no such prior prediction exists, the case is underdetermined, and the default should not be the more flattering interpretation.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Where no such prior prediction exists, the answer is that the case is underdetermined. The default should not be to assume the more flattering interpretation.",
+      "reasoning": "Merged sentences with same meaning; negative default preserved."
+    },
+    {
+      "claim_id": "C117",
+      "loglog_ids": [
+        "9"
+      ],
+      "claim_text": "Back at the mom's story: the word split into three, and the three came apart completely.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Back to my mom's story. The word I started with split into three, and the three came apart completely.",
+      "reasoning": "Rephrase preserves meaning; dropping I started with is harmless compression."
+    },
+    {
+      "claim_id": "C118",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "claim_text": "The woman who swung with the revolution may have been running one unchanging rule; the investor who never changes may be the one failing.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The woman who swung with the revolution may have been running one unchanging rule the whole time, and the investor who never changes strategy may be the one failing.",
+      "reasoning": "Both hedges may preserved; meaning intact."
+    },
+    {
+      "claim_id": "C119",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "claim_text": "Consistency of behavior was never the thing the author admired or condemned; it was a proxy, and a bad one.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one.",
+      "reasoning": "First-person shifted to author; negation never and proxy judgment preserved."
+    },
+    {
+      "claim_id": "C120",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "claim_text": "What is actually evaluated is the process, not the consistency of behavior.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "What I'm actually trying to evaluate is the process",
+      "reasoning": "Passive rephrase of what I'm trying to evaluate; same meaning and contrast."
+    },
+    {
+      "claim_id": "C121",
+      "loglog_ids": [
+        "9.3.1"
+      ],
+      "claim_text": "The process questions are what the anchor is, what the person is responsive to, and whether the movement came from evidence or cost.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost.",
+      "reasoning": "All three process questions preserved with same content."
+    },
+    {
+      "claim_id": "C122",
+      "loglog_ids": [
+        "9.4"
+      ],
+      "claim_text": "The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable.",
+      "reasoning": "Verbatim match with source."
+    },
+    {
+      "claim_id": "C123",
+      "loglog_ids": [
+        "9.5"
+      ],
+      "claim_text": "The only question the author really trusts is the one asked in advance.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the only question I really trust is the one asked in advance",
+      "reasoning": "First-person shifted to author; only and really trust preserved."
+    },
+    {
+      "claim_id": "C124",
+      "loglog_ids": [
+        "9.5.1"
+      ],
+      "claim_text": "Before anything changes: what do you think you will do when it does, and why?",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "before anything changes, what do you think you'll do when it does, and why?",
+      "reasoning": "Verbatim question restated with same wording."
+    }
+  ],
+  "metrics": {
+    "total_claims": 124,
+    "supported": 123,
+    "partially_supported": 1,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9919
+  },
+  "fail_list": [
+    "C090"
+  ]
+}

@@ -1,0 +1,348 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "07_intentionalism",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "L002"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C002",
+   "reasoning": "Summary restates C002's core hook; adds no new information."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "L003"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States thesis with not-talent-or-luck framing; first substantive body claim."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "L004"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Dated historical evidence; numbers never trivia and not repeated."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "L005"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Deferred-acceptance asymmetry is distinct technical fact."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "L006"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Nuance with negation about magnitude; caveats are never trivia."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "L007"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Distinct bridge claim linking model to real situations."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "L008"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concrete example set adds domains not stated elsewhere."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "L009"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Quantified receiver-majority claim adds information."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "L010"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Core good-enough outcome claim, distinct from later uses."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "L011"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Nuance separating decent from best-serving; adds causal detail."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "L012"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Stability-trap mechanism is distinct causal content."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "L013"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Chicken-and-egg framing is the central novel tension."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "L014"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Negation about revealed preference; not repeated, never trivia."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "L015"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concrete examples of reactive wants add specificity."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "L016"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Progressive-muscle principle distinct from practice chain."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "L017"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical tonight exercise; concrete four-want list is unique."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "L018"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Practice-to-values chain distinct despite later recap."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "L019"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds illusion-of-agency framing not stated elsewhere."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "L020"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Names structural domains of proposer advantage; adds specificity."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "L021"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Platform extraction point distinct from generic receiver claim."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "L022"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Nuance defining stability as resistance; negative framing."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "L023"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contrasts understanding with switching positions; distinct pivot."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "L024"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specific proactive tactics including openings and friction."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "L025"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Scope qualifier every-major/most-minor is a substantive caveat."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "L026"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concession about refusal adds caveat; caveats never trivia."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "L027"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Meta transition to action plan; low information, maps to no point."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "L028"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Umbrella action-plan sequencing distinct from individual drills."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "L029"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Morning before-phone detail adds trigger not in other steps."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "L030"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Week-long logging plus decision domains adds distinct action."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "L031"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C019",
+   "reasoning": "Closing recap repeats proposer-win thesis and C017 practice chain."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "L032"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C016",
+   "reasoning": "Cross-link L042 confirms drill repeats the tonight exercise C016."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "L033"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Shopping drill numbers and 24-hour rule are unique."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "L034"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Jobs drill criteria distinct from other domains."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "L035"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Relationships drill with must-align values is unique."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "L036"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Micro-practice timings are unique numeric content."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "L037"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Three-column journal method distinct from other drills."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 36,
+  "unique": 32,
+  "duplicates": 3,
+  "trivia": 1,
+  "redundancy_rate": 0.083,
+  "trivia_rate": 0.028,
+  "structured_tokens": 388,
+  "tokens_per_unique_claim": 12.13
+ },
+ "prune_list": [
+  "C001 duplicates C002, safe to merge",
+  "C030 duplicates C019, safe to merge",
+  "C031 duplicates C016, safe to merge",
+  "C026 is filler transition, safe to cut"
+ ]
+}

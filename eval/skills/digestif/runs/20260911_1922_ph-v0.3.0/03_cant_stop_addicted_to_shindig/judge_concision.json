@@ -1,0 +1,345 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "03_cant_stop_addicted_to_shindig",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C009",
+      "reasoning": "Summary recaps body points (flatten odds, dominance, consistency, playability); adds no new claim beyond C009 and peers."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Core game mechanics rule, not restated elsewhere."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Column lengths and win condition numbers appear only here."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Forced-move definition distinct from its later design-role use."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete forced-move instance; adds worked detail to C004."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Two-dice peak value and sixfold ratio are baseline numbers."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Full sum distribution and ordered-way evidence new here."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Length-ratio correction (4.33 not 6) is a distinct caveat."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical four-dice flatten claim; adds three pairings."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Probability of making 2 computed, new quantitative result."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Probability of making 7 with inclusion-exclusion detail."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Probability-to-length ratio comparison adds new relation despite restated endpoints."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Three-column combination dominance differs from single-column odds."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Expected-roll figures for two columns appear only here."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "{6,7,8} success rate and Q are distinct quantitative facts."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "{2,3,12} success rate and bust note distinct from C015."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ranking distribution adds combo count and median."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Clean-move caveat is a distinct qualifier on C015/C016."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Generic stopping principle, not restated verbatim later."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Quantitative continuation rule with figures new."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Stop-advice instance for {2,3,12} adds numbers."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Switching comparison and open-question caveat distinct."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Tournament headline with strategy and family counts."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds trials-per-strategy and games-per-matchup detail."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Speed statistics for GreedyUntil1Col new here."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Champion win rate and runner-up numbers distinct."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Champion stopping formula is a distinct definition."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Speed-versus-ranking paradox adds rank and rate."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "First-player advantage figures appear only here."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Negative result plus artifact release is new information."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Board design context and compensation role distinct from C004."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Deviation bound for integer lengths new."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Perfect-balance step counts and game length distinct."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Optimal board deviation figure and factor new."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Under-20 board and integer-design bounds new."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "7.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Practical 50% advice on columns 5-9 is new."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 36,
+    "unique": 35,
+    "duplicates": 1,
+    "trivia": 0,
+    "redundancy_rate": 0.0278,
+    "trivia_rate": 0.0,
+    "structured_tokens": 604,
+    "tokens_per_unique_claim": 17.26
+  },
+  "prune_list": [
+    "C001 duplicates C009/C013/C026/C031; summary is a recap, safe to compress or drop"
+  ]
+}

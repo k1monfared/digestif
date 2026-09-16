@@ -1,0 +1,507 @@
+{
+ "sample": "07_intentionalism",
+ "part": 1,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Life structurally favors proposers over receivers, so practice intending before choosing.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "---\ntags: math, philosophy\n---\n# On Intentionalism"
+    },
+    {
+     "ref": "¶2",
+     "text": "There's a mathematical insight that explains why some people consistently end up with better outcomes than others, and it has nothing to do with talent, luck, or even the quality of their choices."
+    },
+    {
+     "ref": "¶3",
+     "text": "It's about whether they propose or receive."
+    },
+    {
+     "ref": "¶66",
+     "text": "Not because they're special. Because they're on the other side of the equation."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Gale-Shapley 1962 stable-matching work revealed proposer-receiver asymmetry.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "## The Setup"
+    },
+    {
+     "ref": "¶5",
+     "text": "In 1962, mathematician-economists David Gale and Lloyd Shapley were working on a problem about how to create stable pairings between two groups of people. Their goal was to prove whether you could always match everyone in a way where no two unmatched people would prefer each other over their assigned partners."
+    },
+    {
+     "ref": "¶6",
+     "text": "They proved you could, and presented an algorithm to find such matchings. But in analyzing their algorithm, they discovered something remarkable about the structure of who proposes and who responds."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Deferred acceptance: one side proposes in order, other tentatively accepts or rejects.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "In their \"deferred acceptance\" algorithm, one side makes proposals in order of preference, and the other side accepts or tentatively rejects based on their preferences. When they analyzed what this produces, they found that proposers get their best possible partner among all stable (mutually acceptable) matchings, while receivers get their worst possible partner among all stable matchings."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Proposers get best stable partner; receivers get worst; extremes are provable.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "This isn't just slightly better or worse—it's systematically, provably, mathematically extreme. In the specific algorithm they designed, each individual proposer ends up with the best stable partner they could possibly get, and each individual receiver ends up with the worst stable partner they could possibly have."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Better outcomes come from proposing versus receiving, not talent or luck.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "There's a mathematical insight that explains why some people consistently end up with better outcomes than others, and it has nothing to do with talent, luck, or even the quality of their choices."
+    },
+    {
+     "ref": "¶3",
+     "text": "It's about whether they propose or receive."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Most real situations share proposer-receiver structure without running exact algorithm.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "## Why This Matters Beyond Mathematics"
+    },
+    {
+     "ref": "¶10",
+     "text": "Now, most real-world situations don't follow the exact Gale-Shapley algorithm. But they share the fundamental structure: one side proposes or initiates, and the other side responds or selects from what's offered."
+    },
+    {
+     "ref": "¶11",
+     "text": "And when systems have this structure, even roughly, we should expect to see the same pattern—proposers systematically getting better outcomes than receivers."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Receiver quiz: Netflix scroll, displayed phones, posted jobs, proximity friendships.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Think about how most of your choices actually happen:"
+    },
+    {
+     "ref": "¶13",
+     "text": "Before you opened Netflix tonight, did you decide what kind of experience you wanted? Or did you scroll through recommendations until something looked good enough?"
+    },
+    {
+     "ref": "¶14",
+     "text": "When you bought your last phone, did you research what features you actually needed? Or did you choose among what was prominently displayed at the store?"
+    },
+    {
+     "ref": "¶15",
+     "text": "That job you have—did you identify companies doing work you cared about and pursue them? Or did you apply to positions that happened to be posted?"
+    },
+    {
+     "ref": "¶16",
+     "text": "The friend you're meeting for coffee—did you seek out someone with qualities you value? Or did you accept a connection that formed through proximity or circumstance?"
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Most of us mostly receive, choosing from presented rather than pursuing wanted.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "For most of these, most of us are receivers. We're choosing from what's presented, not pursuing what we want intentionally. And while these situations aren't running the Gale-Shapley algorithm exactly, they have the same basic structure—one side initiates (proposes), the other responds (receives)."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Receiving yields acceptable outcomes that quietly fall short of best.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "## The Pattern in Practice"
+    },
+    {
+     "ref": "¶19",
+     "text": "The insidious thing about being a receiver isn't that you get terrible outcomes. You don't. You get acceptable ones. Good enough ones. You watch a decent show, buy a functional phone, work a reasonable job, have pleasant friendships."
+    },
+    {
+     "ref": "¶20",
+     "text": "But \"decent\" isn't the same as \"what would actually serve you best.\""
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Informal proposer-receiver structures systematically favor whoever proposes.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "When systems operate on a proposer-receiver structure, even informally, the outcomes tend to favor whoever's doing the proposing. Not because of some conspiracy, but because of the mathematical properties that Gale and Shapley identified in their algorithm. The structure itself creates the advantage."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Comfortable outcomes block revolt; system stays stable by never screwing badly.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Here's what makes it worse: because your outcomes feel fine, you never develop the dissatisfaction that would push you to become a proposer. The system is stable (self-sustaining) precisely because it doesn't screw you badly enough to make you revolt. It just quietly, consistently ensures you get less than you could have if you were on the other side of the equation."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Without practicing specific wanting, people cannot know what they miss.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "You don't even know what you're missing, because you've never practiced wanting something specific enough to pursue it."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proposing needs intention, but intention develops through proposing.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "## The Chicken and Egg"
+    },
+    {
+     "ref": "¶25",
+     "text": "To be a proposer, you need to know what you want—you need intention. But if you've spent your whole life as a receiver, how would you know?"
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Presented choices reveal least-disliked option, not what anyone would pursue freely.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "You can't develop clear, intentional preferences by choosing among presented options. Those choices just reveal which option you dislike least among what's available. They don't tell you what you'd pursue if you could pursue anything."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The trap: intention is prerequisite and product of proposing.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "This is the trap. You need intention to propose, but you develop intention through proposing."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Algorithm-fed songs and swiped partners may be reactions mistaken for preferences.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "The music you listen to: are those actually your favorite songs, or just the best matches from what the algorithm served you? Would you even know the difference anymore?"
+    },
+    {
+     "ref": "¶29",
+     "text": "The person you're dating: did you decide what kind of relationship you wanted and seek someone compatible? Or did you swipe through available profiles and pick the most appealing match?"
+    },
+    {
+     "ref": "¶30",
+     "text": "After years of receiver mode, most people's \"preferences\" are just reactions to what gets put in front of them. They've lost—or never developed—the capacity to want something independent of what's being offered."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Intention muscle builds progressively from small exercises upward.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "## The Training Ground"
+    },
+    {
+     "ref": "¶32",
+     "text": "You can't jump straight from \"I pick from what Netflix recommends\" to \"I have a clear vision for my life's work.\" The muscle of intention and initiative builds progressively."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Tonight decide the feeling wanted, then seek it without scrolling recommendations.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "Start small. Tonight, before opening any app, decide intentionally what you actually want from the next hour. Not \"something entertaining\" but specifically: do you want to laugh? Learn something? Feel calm? Be challenged?"
+    },
+    {
+     "ref": "¶34",
+     "text": "Then pursue that intentionally. Don't open Netflix and see what it suggests. Don't scroll TikTok until something catches you. Actively seek what you decided you wanted."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Repeated practice surfaces patterns that become preferences then values.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "The practice isn't about that one evening's entertainment. It's about rebuilding the capacity to intend and then act on that intention. Do this enough times, and you start to notice patterns in what satisfies you. Those patterns become preferences. Those preferences become values."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Values come from practice, not from thought alone.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "You can't think your way into values. You have to practice your way into them."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Major decisions mostly evaluate presented options, mistaking receipt for agency.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "## Where This Shows Up"
+    },
+    {
+     "ref": "¶38",
+     "text": "Think about the last time you made a major life decision. Getting married, taking a job, moving to a city, choosing what to study."
+    },
+    {
+     "ref": "¶39",
+     "text": "Did you decide what you wanted first and then pursue it? Or did you evaluate among options that presented themselves—people who expressed interest, positions that were posted, cities where you happened to get offers, majors that seemed practical?"
+    },
+    {
+     "ref": "¶40",
+     "text": "Most people, most of the time, are evaluating presented options. This feels like agency because you're choosing. But you're choosing as a receiver, which means you're operating in a structure that systematically favors the other side."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Intentional seekers of work, partners, cities gain systematically better outcomes.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "The proposers—the people who decided intentionally what kind of work they wanted to do and pursued those specific opportunities, who identified what they valued in a partner and sought those people out, who picked cities based on how they wanted to live rather than where they got offers—those people end up with systematically better outcomes."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Advantage comes from structural side, not superior smarts or luck.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "Not because they're smarter or luckier. Because they're on the other side of a structure that mathematically favors proposers."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Receiver majorities let systems optimize for proposers instead of users.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "## The Collective Effect"
+    },
+    {
+     "ref": "¶44",
+     "text": "This isn't just about individual outcomes. When most people are receivers, entire systems shift to optimize for whoever's doing the proposing."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Products, dating apps, feeds maximize engagement over genuine need or compatibility.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "Companies don't build products for what people need—they build for what they can convince people to want among presented options. Dating apps don't facilitate people finding compatible partners—they optimize for engagement among available profiles. Content platforms don't serve what would genuinely satisfy you—they test what keeps you scrolling among suggested posts."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Platforms take optimal outcomes while users get participation-sustaining good-enough.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "The proposers in these systems aren't the users. They're the platforms. And the structure suggests exactly what we see: the platforms get optimal outcomes (your attention, your data, your money), and you get outcomes that are good enough to keep you participating, but not actually serving your best interests."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Leaving feels harder than accepting; stability means resistance to change.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "You stay because leaving feels harder than accepting \"good enough.\" That's stability (resistance to change). That's why the system persists."
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Understanding disadvantage changes nothing without switching to proposing.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "## Breaking Out"
+    },
+    {
+     "ref": "¶49",
+     "text": "The structural disadvantage of being a receiver doesn't go away because you understand it. You have to actually switch positions."
+    },
+    {
+     "ref": "¶50",
+     "text": "This is harder than it sounds, because our entire environment is designed to keep us receiving. Every interface, every recommendation system, every application process, every social script is built around presenting options and waiting for you to choose."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Proposing means deciding first, pursuing specifics, creating chances, accepting friction.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "Proposing means:\n- Deciding intentionally what you want before seeing what's available\n- Pursuing specific things rather than evaluating presented options  \n- Being willing to create opportunities rather than waiting for them\n- Accepting the friction of going against default flows"
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Ask what is wanted before every decision, then act despite inconvenience.",
+   "evidence": [
+    {
+     "ref": "¶52",
+     "text": "It means asking \"what do I actually want?\" before every major decision and most minor ones. Then acting on that answer intentionally, even when it's inconvenient."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Most refuse the effort; comfort plus atrophied wanting keeps receivers receiving.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "Most people won't do this. It's effortful. The receiver position is comfortable enough to not motivate change. And after years of receiver mode, most people have lost the capacity to even know what they'd want to propose."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Shifters gain structurally better outcomes even outside exact mathematics.",
+   "evidence": [
+    {
+     "ref": "¶54",
+     "text": "But for those who do make the shift: while real life doesn't follow the exact mathematics of the Gale-Shapley algorithm, it shares enough of the structure that the outcomes follow the same pattern. Systematically better. Not just incrementally—structurally."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Dynamic existence is settled; only willingness to act remains open.",
+   "evidence": [
+    {
+     "ref": "¶55",
+     "text": "The question isn't whether this dynamic exists. The mathematics and the patterns we see around us both point to it."
+    },
+    {
+     "ref": "¶56",
+     "text": "The question is whether you're willing to do something about it."
+    }
+   ]
+  }
+ ]
+}

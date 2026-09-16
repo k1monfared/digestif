@@ -1,0 +1,733 @@
+{
+  "edges": [
+    {
+      "from": "0",
+      "to": "1",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "2",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "3",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "4",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "5",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "6",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "7",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "8",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "9",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "10",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.1",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.2",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.1",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.2",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.3",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.4",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.5",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.6",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.7",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.8",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.1",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.2",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.1",
+      "type": "contains"
+    },
+    {
+      "from": "5",
+      "to": "5.1",
+      "type": "contains"
+    },
+    {
+      "from": "5",
+      "to": "5.2",
+      "type": "contains"
+    },
+    {
+      "from": "5",
+      "to": "5.3",
+      "type": "contains"
+    },
+    {
+      "from": "5",
+      "to": "5.4",
+      "type": "contains"
+    },
+    {
+      "from": "6",
+      "to": "6.1",
+      "type": "contains"
+    },
+    {
+      "from": "6",
+      "to": "6.2",
+      "type": "contains"
+    },
+    {
+      "from": "6",
+      "to": "6.3",
+      "type": "contains"
+    },
+    {
+      "from": "6",
+      "to": "6.4",
+      "type": "contains"
+    },
+    {
+      "from": "7",
+      "to": "7.1",
+      "type": "contains"
+    },
+    {
+      "from": "7",
+      "to": "7.2",
+      "type": "contains"
+    },
+    {
+      "from": "8",
+      "to": "8.1",
+      "type": "contains"
+    },
+    {
+      "from": "8",
+      "to": "8.2",
+      "type": "contains"
+    },
+    {
+      "from": "8",
+      "to": "8.3",
+      "type": "contains"
+    },
+    {
+      "from": "9",
+      "to": "9.1",
+      "type": "contains"
+    },
+    {
+      "from": "9",
+      "to": "9.2",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.1",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.2",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.3",
+      "type": "contains"
+    },
+    {
+      "from": "2.7",
+      "note": "three-layer split grounds process-not-output verdict",
+      "source": [
+        "¶16"
+      ],
+      "to": "10.1",
+      "type": "supports"
+    },
+    {
+      "from": "3.2",
+      "note": "contrarian dependence backs conformist-contrarian neighbor claim",
+      "source": [
+        "¶23"
+      ],
+      "to": "4.1",
+      "type": "supports"
+    },
+    {
+      "from": "5.4",
+      "note": "clothing versus investing contrast illustrates three-layer consistency",
+      "source": [
+        "¶34"
+      ],
+      "to": "2.7",
+      "type": "exemplifies"
+    },
+    {
+      "from": "6.4",
+      "note": "indistinguishable twins motivate prior-prediction test",
+      "source": [
+        "¶41"
+      ],
+      "to": "9",
+      "type": "supports"
+    },
+    {
+      "from": "7.2",
+      "note": "aphorism trajectory illustrates laundering cell",
+      "source": [
+        "¶45"
+      ],
+      "to": "6.1",
+      "type": "exemplifies"
+    },
+    {
+      "from": "8.1",
+      "note": "confounded attribution limits two-force table",
+      "source": [
+        "¶48"
+      ],
+      "to": "6",
+      "type": "qualifies"
+    }
+  ],
+  "meta": {
+    "source": "source.txt",
+    "title": "What Do We Value When We Value Consistency",
+    "passages": {
+      "¶1": "---\ntags: philosophy, observation, personal-finance, immigration\ntitle: What Do We Value When We Value Consistency?\n---",
+      "¶2": "I'm often interested in understanding why people believe the things they believe and why they behave the way they behave. Usually the former is a reason for the latter. Pondering these, I've realized there is a word I keep reaching for when describing people's behavior that is vaguer than I'd like, and it doesn't let me build any structure around it. Worse, I attach a moral value to it: sometimes it's a compliment, sometimes an accusation. So I want to pin down what this concept actually means: consistency.",
+      "¶3": "The story that made me notice the problem is one my mom tells. Before the 1979 revolution in Iran, someone she knew wore mini skirts all the time. Right after the revolution she switched to chador and niqab. Others in the same circle dressed modestly before the revolution and dressed modestly after it, changing only slightly how much they covered.",
+      "¶4": "My instinct reads the first woman's swing as a moral failing and the others' steadiness as integrity. But that's not the only reading on offer. A more cynical observer might call the first woman cunning, quick to adapt to the new situation, and call the others slow to catch up. And even those of us who'd judge her harshly tend to agree that being able to \"update\" your beliefs on certain topics is a virtue, that nobody should be stoneheaded. So the swing itself can't be what we're judging. Consistency, in the plain sense of \"did the behavior stay the same\", is not carrying the moral weight I assumed it did. Something underneath it is. This post is my attempt to find that something.",
+      "¶5": "## A small model",
+      "¶6": "To think clearly I need something concrete to push against, so let's put numbers on the clothing story. Measure clothing openness on a scale from $-1$ (fully closed) to $1$ (fully open). Say society's average sits at $-0.5$ in the closed state and $0.5$ in the open state. Start with one of the modest women from the story: say we observe her at $-0.1$ in the closed state and $0.1$ in the open state. A slight change, but not zero.",
+      "¶7": "Hypothesis: her behavior is a blend of her own fixed point and the social reference,",
+      "¶8": "$$\\text{Behavior} = w \\times \\text{Reference} + (1 - w) \\times \\text{Anchor}$$",
+      "¶9": "where the Anchor is what she'd do if the reference had no pull on her, and $w$, the Responsiveness, is how much weight the reference actually carries. Two observations give two equations:",
+      "¶10": "$$-0.5w + (1-w)a = -0.1$$\n$$0.5w + (1-w)a = 0.1$$",
+      "¶11": "Adding them gives $2(1-w)a = 0$, so the anchor is $a = 0$. Subtracting gives $w = 0.2$. Her behavior is exactly $0.2 \\times \\text{Reference}$, both times. She has a fixed anchor at neutral and yields a fixed twenty percent of the distance toward whatever society is doing.",
+      "¶12": "This is the first place the vague word cracks open. Her *output* moved: $-0.1$ then $0.1$, no fixed value. Her *rule* never did: same anchor, same responsiveness, both times. An unusually stable person, conceding a fixed fraction of ground under pressure.",
+      "¶13": "Now the other woman from the story, the one who wore mini skirts before the revolution and chador after. In numbers she is at $0.9$ when society is $0.5$, and at $-0.9$ when society is $-0.5$. Same solving:",
+      "¶14": "$$0.5w + (1-w)a = 0.9$$\n$$-0.5w + (1-w)a = -0.9$$",
+      "¶15": "The anchor comes out to $0$ again, and $w$ comes out to $1.8$. She doesn't just follow the reference, she amplifies it: more open than the open society, more closed than the closed society. And here is the uncomfortable part. Her rule is exactly as consistent as the modest woman's. One anchor, one responsiveness, both times. Someone judging only her output would call her a fashion-following chameleon, and the output judgment is fair. But the inference that comes with it, that she has no fixed point, that she stands for nothing, is wrong. The difference between the two women is not that one has a stable rule and the other doesn't. Both do. The difference is what the rule says: concede a fifth of the distance to society, or overshoot it by eighty percent.",
+      "¶16": "Step back and notice that \"consistency\" has now been asked of three different things, and it can pass or fail on each one independently. Consistency of **output**: did the behavior stay the same. Consistency of **policy**: did the rule stay the same, same anchor, same responsiveness. Consistency of **anchor**: did the fixed point itself stay fixed. The two women fail the first in opposite amounts, one barely, one spectacularly, and pass the second and third completely. An observer watching only output would see a consistency gap between them that doesn't exist at either deeper layer.",
+      "¶17": "The third layer is where the real action is. Policy can stay fixed while the anchor drifts underneath it, invisibly, in steps small enough that no single moment feels like a change of mind. That drift is where the moral weight lives, and it's what the rest of this post is about.",
+      "¶18": "## The contrarian next door",
+      "¶19": "Now picture a third woman in the same two societies. She is observed at $0.2$ when the average is $-0.5$, and at $-0.2$ when the average is $0.5$. Same method:",
+      "¶20": "$$-0.5w + (1-w)a = 0.2$$\n$$0.5w + (1-w)a = -0.2$$",
+      "¶21": "The anchor comes out to $0$ again. The responsiveness comes out to $-0.4$.",
+      "¶22": "She runs the same model as the modest woman, with the sign flipped and the magnitude doubled: a fixed neutral point, a fixed reaction coefficient, pushing away from the reference instead of toward it.",
+      "¶23": "We usually file contrarians under \"independent-minded\". The arithmetic disagrees. She is more dependent on the social reference than the modest woman, in absolute terms, because reliably doing the opposite of something requires tracking that thing closely. Contrarianism is dependency with a minus sign, not independence.",
+      "¶24": "## The spectrum",
+      "¶25": "The values of $w$ carve out a named family of postures, all instances of the same equation:",
+      "¶26": "| $w$ | Posture | Behavior |\n|---|---|---|\n| above $1$ | Amplifier | Overshoots the reference in whichever direction it moves. The chameleon from the story. |\n| $1$ | Absolute conformist | The anchor drops out of the formula. Behavior equals the reference, exactly, always. No fixed point to reconstruct a belief from. |\n| between $0$ and $1$ | Partial conformist | A real anchor and a real pull toward the reference. The modest woman. |\n| $0$ | Independent | Behavior ignores the reference entirely. The only posture that requires no information about the reference to act. |\n| between $-1$ and $0$ | Partial contrarian | A real anchor and a real push away from the reference. The contrarian. |\n| $-1$ | Absolute contrarian | Maximal dependence on the reference, inverted. Needs to track the reference with more precision than the conformist to reliably oppose it. |",
+      "¶27": "The independent is the only entry that doesn't need to know what the reference is doing. Every other posture, the amplifier and both contrarian rows included, is a reference-tracking system. In this narrow sense the absolute conformist and the absolute contrarian sit closer to each other than either sits to the independent. And the spectrum doesn't stop at the table's ends: below $-1$ sits the mirror image of the chameleon, a contrarian who overshoots, an extremist rebel?",
+      "¶28": "## When moving is right",
+      "¶29": "So far the model is morally neutral, and that's the point. High or low responsiveness is neither good nor bad until you ask what kind of reference is in play.",
+      "¶30": "A normative reference (peer pressure, fashion, social approval) is something your anchor is supposed to resist. High responsiveness there is suspect by default.",
+      "¶31": "A structural reference (a deadline, a budget, a body, a risk exposure) is something your anchor is supposed to track. Zero responsiveness there isn't principle. It's malfunction.",
+      "¶32": "However in an ideal world, IMHO the $|w|$ should be generally small, and everyone should have an educated Anchor. But this is not an ideal world and not everyone can get educated about everything. So, let's stick to our less-than-ideal world.",
+      "¶33": "Retirement investing makes this concrete. A common rule of thumb sets equity allocation at roughly $110$ minus your age: about $85\\%$ stocks at 25, about $50\\%$ at 60, tapering further as retirement nears. Someone who follows this, aggressive at 25, cautious at 60, is not \"inconsistent\". Their reference point is the years until the money is needed, and the right exposure to market swings genuinely is a function of that horizon. A 25-year-old can ride out a crash over decades. A retiree drawing down savings cannot. Here, holding behavior fixed across a life would be the failure, not the virtue. An investor who stays at $85\\%$ equities at 65 because \"I've always been aggressive\" isn't showing conviction. They're refusing to let a correctly varying function vary.",
+      "¶34": "The clothing conformist and the lifecycle investor look superficially alike: behavior that moves as a reference moves. Morally they are opposites. The flip side is just as clean: holding output fixed against a moving reference reads as integrity in the clothing case and as ossification in the investing case. Same form, opposite verdict. The verdict depends entirely on which kind of reference is being held fixed against.",
+      "¶35": "## Why anchors move",
+      "¶36": "That settles when *behavior* should move. The harder question is why the *anchor* moves, because that's where the moral weight actually lives.",
+      "¶37": "Two forces can move a person. The world's facts can change, or your grasp of them can, giving you new evidence. Or the cost of expressing a given position can change, with no new evidence at all. Cross those forces with whether the anchor actually moved and you get four cells:",
+      "¶38": "|  | Anchor updates | Anchor stays fixed |\n|---|---|---|\n| **Driven by evidence** | Rational revision: the good case | Ossification: the bad case |\n| **Driven by cost** | Preference laundering: the bad case | Anchor held, two sub-cases below |",
+      "¶39": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists.",
+      "¶40": "One cell deserves a footnote. The evidence column doesn't require the reference itself to have moved. Tax law can sit perfectly still while your grasp of it moves from nothing to something. That still counts as evidence-driven anchor movement, just happening inside your model of a static reference. And since what you gained is a belief rather than a settled fact, a second pass at the very same unchanged reference can overturn it again. Call it perspective gain.",
+      "¶41": "Now the uncomfortable part. Rational revision and preference laundering can produce an identical new anchor from an identical old one. Same destination, opposite process. From outside they are indistinguishable. Often from inside too.",
+      "¶42": "## A parable in one aphorism",
+      "¶43": "You've heard this one: \"If you're not a socialist at 20, you have no heart. If you're still a socialist at 40, you have no head.\"",
+      "¶44": "It gets offered as an evidence-based claim. With age comes direct experience of taxes, hiring, saving, and incentives, and views update accordingly. Structurally that's the lifecycle investing story: rational revision, tracking new information about how the world works.",
+      "¶45": "But the same trajectory falls out of a much less flattering process. As people age they typically acquire assets, income, and things to lose from redistribution. Views can drift to track self-interest rather than evidence. Preference laundering with extra steps. Both processes produce the same trajectory and the same retrospective story: \"I used to be naive.\" Nothing about the shift itself tells you which one occurred.",
+      "¶46": "## Three ways the clean model gets dirty",
+      "¶47": "Real cases add complications the toy model doesn't capture. Three seem unavoidable.",
+      "¶48": "**Confounded attribution.** Circumstances rarely change as pure evidence or pure cost. Usually both move together. A society opening up removes punishment and publicly stress-tests the reasons the old rule was defended on, which is genuine evidence. A person can land on the objectively correct new anchor for the wrong reason, carried by cost while evidence happened to agree. The flaw stays invisible until cost and evidence next point in opposite directions, at which point the process, having never been evidence-driven, follows cost again and gets it wrong that time. A correct belief reached by an unreliable process is not the same asset as a correct belief reached by a reliable one.",
+      "¶49": "**Misperceived reference.** Everything so far assumes the person correctly perceives where the reference sits. They might not: thinking a norm still forbids something it no longer does, or a market is still risk-off when it has turned. This is an error upstream of anchor, responsiveness, and policy entirely. It corrupts every downstream judgment without any of those three being flawed.",
+      "¶50": "**Reference lag.** Sometimes what looks like a fixed anchor resisting a reference is actually perfect tracking of a different, stale reference. Diaspora communities do this with language. Second-generation immigrant communities sometimes preserve older forms of a language than the one currently spoken in the country of origin. Quebec French keeps features that metropolitan French has dropped, and you can hear the same pattern informally in many diaspora communities' speech. A person raised on that preserved form isn't holding out against assimilation into the host country's norm out of principle. Their real reference is a third thing entirely: the origin country's norm at the moment their family left it, frozen the day they emigrated, while the living language back home kept moving. The behavior looks like resistance to one reference and is actually perfect conformity to another that nobody ever intended to freeze. Apparent principle, real conformity to the wrong clock.",
+      "¶51": "## The prior prediction test",
+      "¶52": "Step back and notice the pattern. Nearly every pair above produces identical behavior and identical retrospective self-report: rational revision versus preference laundering, revealed preference versus contaminated drift, rational caution versus hysteresis. \"I've always believed this\" and \"I used to be naive\" are available to both the legitimate and illegitimate version, every time. That's what makes the problem hard, rather than merely a matter of introspecting harder.",
+      "¶53": "One thing separates the twins: what the person predicted, before the circumstance changed, that they would do once it did, and on what grounds. A prediction made under the old regime, with reasons attached, is much harder to fake retroactively than a story assembled after the fact.",
+      "¶54": "\"I'll understand incentives better by 40\" is a falsifiable claim about future evidence, checkable against what actually changed in the person's reasoning. \"I'll have more to protect by 40\" is a claim about future incentives wearing the vocabulary of insight. \"I'd wear this if society let me\" is a testable prediction about an anchor, not a post-hoc alibi for wherever behavior ended up.",
+      "¶55": "Where no such prior prediction exists, the answer is that the case is underdetermined. The default should not be to assume the more flattering interpretation.",
+      "¶56": "## So what is consistency?",
+      "¶57": "Back to my mom's story. The word I started with split into three, and the three came apart completely. The woman who swung with the revolution may have been running one unchanging rule the whole time, and the investor who never changes strategy may be the one failing.",
+      "¶58": "What I've landed on is that consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost. The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable. Which is why the only question I really trust is the one asked in advance: before anything changes, what do you think you'll do when it does, and why?",
+      "¶59": "---",
+      "¶60": "PS1: Note that I deliberately haven't explored the cases where the anchor is closer or farther from the reference. Mainly because I couldn't come up with meaningful examples to study, and hence can't put an interpretation on it.",
+      "¶61": "PS2: An economists perhaps would call the anchor an indogenous variable, and the reference an exogenous variable. I've always struggled with those terms, so I rather use words that I can relate to. And the model here is the most simple model I could think of, a linear convex combination of the two variables but the combining coefficient doesn't need to be between 0 and 1, allowing to explore the region outside of the two and hence the existence of the amplifier personality."
+    }
+  },
+  "nodes": [
+    {
+      "attribution": "author",
+      "id": "0",
+      "source": [
+        "¶1",
+        "¶2",
+        "¶4",
+        "¶58"
+      ],
+      "text": "Behavioral consistency is a bad proxy; judge anchor, responsiveness, and whether evidence or cost moved it.",
+      "type": "summary"
+    },
+    {
+      "attribution": "author",
+      "id": "1",
+      "source": [
+        "¶2"
+      ],
+      "text": "Consistency is vague, structureless, and inconsistently moralized as compliment or accusation.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "1.1",
+      "source": [
+        "¶3"
+      ],
+      "text": "Mother story: miniskirts to chador after 1979 versus steady modest dressers.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "1.2",
+      "source": [
+        "¶4"
+      ],
+      "text": "Swing alone cannot be judged since updating beliefs is virtuous; something deeper carries weight.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2",
+      "source": [
+        "¶5",
+        "¶6",
+        "¶7"
+      ],
+      "text": "Clothing model blends fixed anchor with social reference via responsiveness weight.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.1",
+      "source": [
+        "¶8"
+      ],
+      "text": "Equation: Behavior equals w times Reference plus (1 minus w) times Anchor.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "2.2",
+      "source": [
+        "¶9",
+        "¶10"
+      ],
+      "text": "Anchor defined absent pull; w is reference weight; two observations solve both.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "2.3",
+      "source": [
+        "¶11"
+      ],
+      "text": "Modest woman: anchor 0, responsiveness 0.2; behavior tracks reference slightly.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "2.4",
+      "source": [
+        "¶12"
+      ],
+      "text": "Output moved while rule stayed fixed; stable person conceding ground under pressure.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "2.5",
+      "source": [
+        "¶13",
+        "¶14",
+        "¶15"
+      ],
+      "text": "Swinging woman at 0.9 and minus 0.9: anchor 0, responsiveness 1.8, overshooting both.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "2.6",
+      "source": [
+        "¶15"
+      ],
+      "text": "Chameleon rule equally consistent; difference is content, not stability of rule.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "2.7",
+      "source": [
+        "¶16"
+      ],
+      "text": "Consistency splits into output, policy, and anchor layers, independently passable.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.8",
+      "source": [
+        "¶17"
+      ],
+      "text": "Moral weight lives in anchor drift, often invisible in small steps.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "3",
+      "source": [
+        "¶18",
+        "¶19"
+      ],
+      "text": "Contrarian runs same model with flipped sign and doubled magnitude.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "3.1",
+      "source": [
+        "¶20",
+        "¶21",
+        "¶22"
+      ],
+      "text": "Observed 0.2 against minus 0.5 and minus 0.2 against 0.5; responsiveness minus 0.4.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "3.2",
+      "source": [
+        "¶23"
+      ],
+      "text": "Contrarianism is dependency with minus sign, tracking reference more than conformist.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "4",
+      "source": [
+        "¶24",
+        "¶25",
+        "¶26"
+      ],
+      "text": "Responsiveness values form named postures from amplifier to extremist rebel.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "4.1",
+      "source": [
+        "¶27"
+      ],
+      "text": "Only the independent acts without reference information; extremes mirror each other.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "5",
+      "source": [
+        "¶28",
+        "¶29"
+      ],
+      "text": "Model is morally neutral until the reference kind is specified.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "5.1",
+      "source": [
+        "¶30",
+        "¶31"
+      ],
+      "text": "Normative references should be resisted; structural references should be tracked.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "5.2",
+      "source": [
+        "¶32"
+      ],
+      "text": "Author prefers small responsiveness and educated anchors, conceding non-ideal world.",
+      "type": "concession"
+    },
+    {
+      "attribution": "reported",
+      "id": "5.3",
+      "source": [
+        "¶33"
+      ],
+      "text": "Lifecycle investing: 110-minus-age equities; moving allocation with horizon is consistency.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "5.4",
+      "source": [
+        "¶34"
+      ],
+      "text": "Clothing conformist and lifecycle investor share form but opposite verdicts.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "6",
+      "source": [
+        "¶35",
+        "¶36",
+        "¶37"
+      ],
+      "text": "Anchor movement comes from evidence or cost, crossed with update or hold.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "6.1",
+      "source": [
+        "¶38"
+      ],
+      "text": "Four cells: rational revision, ossification, preference laundering, held anchor.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "6.2",
+      "source": [
+        "¶39"
+      ],
+      "text": "Held anchor splits into revealed preference versus hysteresis after cost lifts.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "6.3",
+      "source": [
+        "¶40"
+      ],
+      "text": "Evidence can arrive without reference moving; beliefs about static facts still update.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "6.4",
+      "source": [
+        "¶41"
+      ],
+      "text": "Revision and laundering can reach identical anchors, indistinguishable inside and out.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "7",
+      "source": [
+        "¶42",
+        "¶43"
+      ],
+      "text": "Socialist-at-20 aphorism fits both evidence and self-interest processes.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "7.1",
+      "source": [
+        "¶44"
+      ],
+      "text": "Age-brings-taxes story reads as lifecycle-like rational revision.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "7.2",
+      "source": [
+        "¶45"
+      ],
+      "text": "Asset-acquiring drift reads as preference laundering with extra steps.",
+      "type": "counterpoint"
+    },
+    {
+      "attribution": "author",
+      "id": "8",
+      "source": [
+        "¶46",
+        "¶47"
+      ],
+      "text": "Toy model breaks on three unavoidable complications.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "8.1",
+      "source": [
+        "¶48"
+      ],
+      "text": "Confounded attribution: cost and evidence move together; reliable process matters beyond correct belief.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "8.2",
+      "source": [
+        "¶49"
+      ],
+      "text": "Misperceived reference corrupts all downstream judgments without anchor or policy flaws.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "reported",
+      "id": "8.3",
+      "source": [
+        "¶50"
+      ],
+      "text": "Reference lag: diaspora preserves frozen origin norm, appearing principled while conforming.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "9",
+      "source": [
+        "¶51",
+        "¶52",
+        "¶53"
+      ],
+      "text": "Retrospective stories cannot separate twins; prior prediction with reasons can.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "9.1",
+      "source": [
+        "¶54"
+      ],
+      "text": "Old-regime predictions with reasons resist retroactive faking, unlike post-hoc alibis.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "9.2",
+      "source": [
+        "¶55"
+      ],
+      "text": "Without prior prediction the case is underdetermined; reject the flattering default.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "10",
+      "source": [
+        "¶56",
+        "¶57"
+      ],
+      "text": "Swinging woman may run one rule throughout; never-changing investor may be failing.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "10.1",
+      "source": [
+        "¶58"
+      ],
+      "text": "Evaluate process not output, though process stays mostly invisible and unfalsifiable.",
+      "type": "claim"
+    },
+    {
+      "attribution": "conceded",
+      "id": "10.2",
+      "source": [
+        "¶59",
+        "¶60"
+      ],
+      "text": "Anchor-distance cases deliberately unexplored for lack of interpretable examples.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "10.3",
+      "source": [
+        "¶61"
+      ],
+      "text": "Anchor resembles endogenous variable, reference exogenous; linear model extends beyond zero-one.",
+      "type": "nuance"
+    }
+  ]
+}

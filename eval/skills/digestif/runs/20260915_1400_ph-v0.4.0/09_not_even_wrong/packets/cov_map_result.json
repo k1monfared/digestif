@@ -1,0 +1,195 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "09_not_even_wrong",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: we believe we evaluate ideas on evidence and reasoned analysis, but subconscious psychological forces (financial and emotional investment, identity, belonging) shape what we find persuasive.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002"
+   ],
+   "evidence_quote": "Unverifiable not-even-wrong claims persuade through investment, identity, and social proof rather than evidence and reasoning.",
+   "reasoning": "The summary line states the thesis directly: persuasion runs through investment, identity, and social proof rather than evidence and reasoning."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The 'not even wrong' concept, popularized by physicist Wolfgang Pauli, describes ideas so fundamentally flawed they cannot be meaningfully evaluated as correct or incorrect.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L003",
+    "L004"
+   ],
+   "evidence_quote": "Not-even-wrong ideas are so fundamentally flawed or ill-constructed they cannot be meaningfully evaluated as either correct or incorrect. ... Wolfgang Pauli popularized the phrase 'not even wrong'.",
+   "reasoning": "Both the definition and the Pauli attribution are captured in L003 and L004."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Sir Michael Atiyah, at age 89 and already holding both the Fields Medal and Abel Prize, claimed to have solved the Riemann hypothesis, a problem open since 1859.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005"
+   ],
+   "evidence_quote": "At 89, having earned both the Fields Medal and Abel Prize, Atiyah claimed to solve the Riemann hypothesis, open since 1859.",
+   "reasoning": "Age, both prizes, the claim, and the 1859 date are all retained."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "The mathematical community rejected Atiyah's proposed proof as 'not even wrong' because it lacked the rigor and coherence to be assessed under mathematical standards, operating outside the bounds of traditional evaluation.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L006"
+   ],
+   "evidence_quote": "Many called the proof 'not even wrong': lacking necessary rigor and coherence, it wasn't just incorrect but outside traditional evaluation.",
+   "reasoning": "The rejection, the missing rigor and coherence, and the outside-evaluation framing are all present."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "The 'not even wrong' pattern extends far beyond mathematics: politicians, business leaders, and celebrities use compelling rhetoric that sounds credible but operates outside the boundaries where traditional evaluation is possible.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L007"
+   ],
+   "evidence_quote": "Many powerful figures' rhetoric sounds compelling but functions outside traditional evaluation, extending the concept beyond math.",
+   "reasoning": "The generalization beyond math to powerful figures' rhetoric is captured, though the specific categories (politicians, celebrities) are generalized rather than named. Meaning is intact."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Financial (or social/ethical) investment creates an incentive to believe a leader's vision, driven by resolving cognitive dissonance rather than merely protecting the investment, making investors more receptive to the leader's claims beyond their demonstrated expertise.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L009",
+    "L010",
+    "L011"
+   ],
+   "evidence_quote": "The financial stake creates a powerful incentive to believe in the leader's vision and competence. ... it's about resolving cognitive dissonance. ... Committed investors become more receptive to claims even outside the leader's areas of demonstrated expertise.",
+   "reasoning": "All three components (incentive, cognitive dissonance mechanism, receptivity beyond expertise) are captured."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "A self-reinforcing loop runs financial investment to emotional investment to greater receptivity to future claims to further financial investment, and it is especially powerful because being a supporter becomes part of a person's identity.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L013",
+    "L014"
+   ],
+   "evidence_quote": "Self-reinforcing cycle: financial investment to emotional investment to receptivity, which can lead to further financial investment. ... being a supporter becomes part of who someone is.",
+   "reasoning": "The cycle and the identity-formation component are both present."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "When a founder's concrete, verifiable promises about current products are fulfilled, it lends undue credibility to their grandiose, unfalsifiable claims, even though the two operate on completely different evidentiary standards.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L015",
+    "L016"
+   ],
+   "evidence_quote": "Fulfilled concrete promises lend credibility to the grandiose ones, though they rest on completely different evidentiary standards.",
+   "reasoning": "The pairing and the different-evidentiary-standards caveat are intact."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Social proof: seeing thousands or millions praise a leader's genius makes their visions seem credible, because humans naturally look to others for cues about what to believe.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L018",
+    "L019"
+   ],
+   "evidence_quote": "Thousands or millions praising a leader's genius provides social proof that their visions are credible. ... Humans naturally look to others for cues about what to believe.",
+   "reasoning": "Both the social proof effect and its human basis are captured."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Tribal identity: influential figures frame themselves as outsiders fighting entrenched interests, so questioning any of their claims feels like betraying the tribe or siding with the opposition.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L020"
+   ],
+   "evidence_quote": "Influential figures often position themselves as outsiders; questioning claims can feel like betraying the tribe or siding with the opposition.",
+   "reasoning": "Outsider framing and the betrayal/opposition dynamic are captured. The 'entrenched interests' specific is omitted but the core meaning survives."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Social media amplifies both effects: algorithms create echo chambers showing supporters mostly positive content, while frequent unfiltered posts create a sense of personal connection and authenticity that deepens emotional investment.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L021",
+    "L022"
+   ],
+   "evidence_quote": "Algorithms tend to reinforce existing beliefs via echo chambers where supporters mainly see positive content. ... Frequent, seemingly unfiltered posts create a sense of personal connection and authenticity that strengthens emotional investment.",
+   "reasoning": "Both amplification mechanisms are captured with the emotional investment consequence."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Humans are not purely rational evaluators; assessments are swayed by four factors: financial interests and commitments, desire for consistency in beliefs, need for social belonging and identity, and attraction to compelling narratives and personalities.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L023",
+    "L024"
+   ],
+   "evidence_quote": "We are not purely rational beings who evaluate each claim independently on evidence. ... Evaluations are deeply influenced by financial interests, desire for consistency, need for belonging, and attraction to narratives.",
+   "reasoning": "The anti-rationalist thesis and all four factors are enumerated."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Unlike Atiyah's claim, which peers ultimately rejected, 'not even wrong' statements by powerful business and political leaders often escape rigorous evaluation, because society lacks standards comparable to the mathematical community's proof standards.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L026"
+   ],
+   "evidence_quote": "Atiyah's claim was rejected by peers; business and political leaders' statements often escape rigorous evaluation; society lacks comparable frameworks.",
+   "reasoning": "The contrast and the missing-frameworks cause are both captured."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Individual recommendations: separate financial from epistemic decisions, practice domain-specific evaluation, deliberately seek credible counter-narratives, and adopt investment detachment (ask whether you would believe the claim absent your investment).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L028",
+    "L029",
+    "L030",
+    "L031"
+   ],
+   "evidence_quote": "separate finance from belief ... practice domain-specific evaluation ... expose yourself to thoughtful criticism from credible sources ... adopt investment detachment; ask whether you'd believe the claim without the investment.",
+   "reasoning": "All four individual recommendations are listed."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Societal recommendations: improve technological literacy on realistic timelines and limits, strengthen domain-expert visibility, build frameworks for assessing innovation that balance optimism with technical and regulatory realities, and foster discourse norms where skepticism is not treated as opposition.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L032"
+   ],
+   "evidence_quote": "Society: teach technological literacy, elevate domain experts, build assessment frameworks, normalize skepticism without animosity.",
+   "reasoning": "All four societal measures are captured at compressed but meaning-preserving detail."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 15,
+  "must_have_present": 15,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 15,
+  "must_recall": 1.0,
+  "overall_recall": 1.0
+ },
+ "missing_list": []
+}

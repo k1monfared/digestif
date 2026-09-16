@@ -1,0 +1,174 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "02_case_for_transparent_government part 5 of 6",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Transparency is the measuring stick, not one value among many.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Transparency is not a value to be balanced. It's the measuring stick.",
+   "reasoning": "Source rejects treating transparency as one value among many and names it the measuring stick."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Reject balancing transparency against efficiency, security, privacy, or speed.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "to \"balance\" it against efficiency, security, privacy, and speed ... Reject this framing.",
+   "reasoning": "Source lists the same four values and explicitly rejects the balancing framing."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Speed and accountability are byproducts; document everything, then improve.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Speed and accountability are *byproducts*. Whatever speed your government operates at, document everything ... iteratively improve the processes",
+   "reasoning": "Source states byproducts and instructs documenting everything then improving revealed processes."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "The record pressures consistency, reasoning, accountability, and prosecution.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "pressure for consistency, pressure for sound reasoning, pressure for accountability ... easier to prosecute.",
+   "reasoning": "Source lists exactly these pressures plus easier prosecution of corruption."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "Reviewable officials reason better; documented decisions grow careful.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Officials who know their reasoning will be reviewed will produce better reasoning. Decisions that must be documented will be more carefully considered.",
+   "reasoning": "Direct paraphrase of the two source sentences with identical meaning."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "Reaching 100% transparency solves speed and accountability as consequences.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In order to reach 100% transparency, you'll have to solve speed and accountability along the way ... they're consequences of it.",
+   "reasoning": "Source says solving speed and accountability is required and labels them consequences, matching the claim."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "Linux: thousands worldwide, every commit, issue, and pull request visible.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Linux ... built by thousands of people across the world ... Every commit is visible. Every issue is tracked. Every pull request is discussed.",
+   "reasoning": "Source attributes these exact features to Linux and its worldwide contributors."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "claim_text": "Disagreeing users can fork the project.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If you disagree with a decision, you can fork the project.",
+   "reasoning": "Near-verbatim restatement of the source sentence about forking."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "claim_text": "Complex collaborative systems can be built and maintained publicly.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "complex systems can be built and maintained in public",
+   "reasoning": "Source asserts this general principle about complex systems built in public."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "8.9"
+   ],
+   "claim_text": "Government is involuntary: you cannot fork your country.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In government, you're subject to decisions whether you participated or not. You can't fork your country.",
+   "reasoning": "Source states both the involuntary subjection and the inability to fork one's country."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8.10"
+   ],
+   "claim_text": "Open source is voluntary exit; government binds non-participants.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in open source, participation is voluntary. You can leave. In government, you're subject to decisions whether you participated or not.",
+   "reasoning": "Claim matches the source contrast between voluntary exit and binding government decisions."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.11"
+   ],
+   "claim_text": "Less choice about affectedness means more right to see.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The less choice you have about being affected by decisions, the more right you have to see how those decisions are made.",
+   "reasoning": "Direct rephrasing of the source's proportional statement with same meaning."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.12"
+   ],
+   "claim_text": "You pay, live with consequences, and are CEO: act like it.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You pay for this government. You live with its consequences. You are the CEO. Act like it.",
+   "reasoning": "Compression of the four source sentences into one, preserving all propositions."
+  }
+ ],
+ "metrics": {
+  "total_claims": 13,
+  "supported": 13,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

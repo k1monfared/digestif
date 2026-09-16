@@ -1,0 +1,51 @@
+- Manufacturing Taste: canons made by patronage and luck (source: 05_manufacturing_taste/source.txt)
+    Summary: Cultural canons are manufactured by money and luck amplifying exposure, with quality only a loose filter. (¶2, ¶17, ¶22)
+        - 1 We remember fewer than 20 of 200 to 500 Viennese contemporaries and 3,400 catalogued composers. (¶2)
+            - 1.1 Nuance: The question is patronage and access, not only merit. (¶2)
+            - 1.2 History cannot rerun, but a model of cultural markets can run thousands of times. (¶3)
+            - 1.3 Opening question: was Bach his era's Bieber, and will Bieber be our era's Bach? (¶1)
+        - 2 Three hypotheses compete: cream rises, money writes, floors and ceilings. (¶5, ¶6, ¶7)
+            - 2.1 Cream Rises: over long horizons quality wins; replayed history keeps roughly the same canon. (¶5)
+            - 2.2 Money Writes History: who gets heard first wins; quality is almost irrelevant. (¶6) [reported]
+            - 2.3 Floors and Ceilings: extremes are predictable, but the vast middle depends on luck and money. (¶7)
+            - 2.4 Example: Job analogy: among twenty pretty-good candidates, hiring turns on luck and timing. (¶8)
+        - 3 Three documented mechanisms combine: mere exposure, social influence, cumulative advantage. (¶9)
+            - 3.1 Evidence: Mere exposure (Zajonc 1968; Bornstein 1989, 208 experiments, r = 0.26) peaks then reverses. (¶10)
+            - 3.2 Extra airtime creates artificial quality advantage; money-driven exposure contaminates judging. (¶11)
+            - 3.3 Evidence: Salganik MusicLab (2006): 14,341 listeners, 48 songs; same song ranked 1st or 40th. (¶12)
+            - 3.4 Matthew effect magnifies small differences; court at 20 beats missing by one year. (¶13)
+        - 4 Producers get uncorrelated quality and capital; consumers add exposure and social signals; success feeds back. (¶14)
+            - 4.1 Evidence: Runs of 1,000 producers and 10,000 consumers, about 2 minutes each, 360+ per condition. (¶15)
+            - 4.2 Evidence: Author built a simulation; formal paper linked, post is the informal version. (¶4)
+        - 5 Results: influence weakens quality link; canons reshuffle; capital dominates. (¶16, ¶17, ¶19, ¶20)
+            - 5.1 Evidence: With social influence visible, quality-success correlation drops (p < 0.0001, 360 runs). (¶16)
+                - 5.1.1 Nuance: Charts and view counts push away from independent judgment via proxy optimization. (¶16)
+            - 5.2 Evidence: Talent constant over 200 runs; reshuffled resources yield counterfactual distance 0.88 of 1. (¶17)
+            - 5.3 Evidence: Only top 10% have a shot regardless of funding, even then only about 1 in 4; 50th to 90th faces lottery. (¶18)
+            - 5.4 Evidence: Full model 0.32; no social influence 0.35; equal capital 0.46; quality only 0.46: equalizing adds 44%. (¶19)
+            - 5.5 Evidence: Stylized 1750 Vienna, 300 composers: distance 0.97, only 2.5 percent shared between histories. (¶20)
+            - 5.6 Evidence: Varying parameters ±50%: steep money-to-attention conversion sidelines quality. (¶21)
+                - 5.6.1 Example: Major-label placement reaching 50 million versus independent self-promotion reaching 500. (¶21)
+        - 6 Quality sets a floor and a ceiling; the middle is capital and luck. (¶22)
+            - 6.1 Nuance: Bach may be greatest only among those resourced to be heard, published, preserved. (¶22)
+            - 6.2 Mechanisms run stronger today: patronage took decades, playlist placement takes hours. (¶22)
+            - 6.3 Evidence: Leverage is wider exposure; 1970s-80s blind auditions lifted women hires from 5% to 25%. (¶23)
+            - 6.4 Nuance: Canon survival proxies bestness; curricula get built on the forgotten proxy. (¶23)
+        - 7 Counterpoint: Quality as stable property is debatable; calibration leaps decades; genre and politics excluded. (¶24)
+        - 8 Bach was excellent AND positioned; reshuffled patronage yields an almost entirely different canon. (¶25)
+            - 8.1 Example: Surgeon analogy: one of fifty equally skilled becomes the best via profile, talks, book. (¶25)
+            - 8.2 Probably 20 to 50 equally great contemporaries stay unknown for missing the Leipzig-type job. (¶25)
+            - 8.3 Nuance: If the mechanisms in this simulation are right, future canons track distribution and algorithms. (¶26)
+            - 8.4 Taste itself was manufactured: surviving canon sets what counts as beautiful. (¶26)
+            - 8.5 Concession: Author honestly does not know whether Bieber survives 300 years hence. (¶26) [conceded]
+    - Cross-links
+        - 2.4 exemplifies 2.3 (¶8) note: job market illustrates floors-and-ceilings
+        - 3.3 supports 5.1 (¶12) note: MusicLab mechanism underpins the influence result
+        - 5.2 supports 8 (¶17) note: replay result underpins the verdict on patronage
+        - 5.4 supports 6 (¶19) note: capital-equalization numbers support Story 3
+        - 5.5 supports 8 (¶20) note: Vienna run supports the Leipzig counterfactual
+        - 5.6.1 exemplifies 5.6 (¶21) note: playlist reach gap illustrates steep conversion
+        - 7 qualifies 6 (¶24) note: caveats limit the implications
+        - 7 qualifies 8 (¶24) note: caveats also scope the final verdict
+        - 8.3 qualifies 8 (¶26) note: conditional scopes the verdict on future canons
+    - Coverage: 26 of 26 passages cited

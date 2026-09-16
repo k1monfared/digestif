@@ -1,0 +1,393 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "08_empathy_sympathy_compassion_matrix",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "claim_text": "Matrix contrasts cognitive/affective empathy, sympathy, compassion across five profiles from psychopath to integrated ideal.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "The four component columns (cognitive and affective empathy, sympathy, compassion) ... The five to the right are whole-person profiles ... psychopath, sociopath, empath, altruist, and the integrated ideal.",
+      "reasoning": "Source ¶2 names the four components and five ordered profiles exactly as summarized."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "claim_text": "Cold-control block: modeling, boundary, manipulators, control across components and dark profiles.",
+      "claim_type": "interpretation",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither.",
+      "reasoning": "Source puts modeling/boundary/manipulators in 'present in both' but control in 'psychopath only'; node merges across that block boundary."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "claim_text": "Accurate modeling: cog ✓, aff ~, sym ~, comp ✓; psy ✓, soc ~, emp ~, alt ✓, int ✓.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Accurately modeling the other's mental state | ✓ | ~ | ~ | ✓ | ✓ | ~ | ~ | ✓ | ✓ |",
+      "reasoning": "Every mark matches the source table row exactly."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "claim_text": "Boundary kept: cog ✓, aff blank, sym ✓, comp ✓; psy ✓, soc ~, emp blank, alt ✓, int ✓.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Maintains self/other boundary | ✓ |   | ✓ | ✓ | ✓ | ~ |   | ✓ | ✓ |",
+      "reasoning": "All marks and blanks match the source row."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "claim_text": "Manipulators possible: cog ✓ only; psy ✓, soc ~, all others blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Can exist in manipulators / con artists | ✓ |   |   |   | ✓ | ~ |   |   |   |",
+      "reasoning": "Marks match: cog and psy full, soc partial, rest blank."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "claim_text": "Controlled not reactive: cog ✓, sym ~, comp ✓; psy ✓, alt ✓, int ✓, others blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Controlled / instrumental rather than reactive / impulsive | ✓ |   | ~ | ✓ | ✓ |   |   | ✓ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2"
+      ],
+      "claim_text": "Affective-care block belongs to sociopath not psychopath, with partial marks throughout.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "a whole cluster of affective and caring rows belongs to the sociopath and not the psychopath",
+      "reasoning": "Source ¶24 states the affective/caring rows belong to sociopath not psychopath; rows show partial marks."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "claim_text": "Sharing emotion: aff ✓; soc ~, emp ✓, alt ~, int ✓; rest blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Actually sharing / mirroring the emotion |   | ✓ |   |   |   | ~ | ✓ | ~ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "claim_text": "Capacity to care at all: aff ~, sym ✓, comp ✓; soc ✓, emp ✓, alt ✓, int ✓; psy blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Capacity to genuinely care about the person *at all* |   | ~ | ✓ | ✓ |   | ✓ | ✓ | ✓ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "claim_text": "Motivation to help: aff ~, sym ~, comp ✓; soc ~, emp ~, alt ✓, int ✓; psy blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Motivation to help or act |   | ~ | ~ | ✓ |   | ~ | ~ | ✓ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "claim_text": "Guilt after harm: emp ✓; aff ~, sym ~, comp ~, soc ~, alt ~, int ~; cog blank, psy blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Produces guilt / remorse after causing harm |   | ~ | ~ | ~ |   | ~ | ✓ | ~ | ~ |",
+      "reasoning": "Only emp is full, others partial, matching source row."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "claim_text": "Contagion-burnout risk: aff ✓, emp ✓; sym ~, soc ~, int ~; rest blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Risk of emotional contagion and burnout |   | ✓ | ~ |   |   | ~ | ✓ |   | ~ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "claim_text": "Vivid-similar bias: aff ✓, soc ✓, emp ✓; cog ~, sym ~, int ~; rest blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Biased toward vivid, similar individuals | ~ | ✓ | ~ |   |   | ✓ | ✓ |   | ~ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "claim_text": "Ends-not-means: comp ✓, emp ✓, alt ✓, int ✓; aff ~, sym ~, soc ~; cog blank, psy blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Treats people as ends, not means (Kantianism) |   | ~ | ~ | ✓ |   | ~ | ✓ | ✓ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.8"
+      ],
+      "claim_text": "Dignity-worth: sym ✓, comp ✓, emp ✓, alt ✓, int ✓; aff ~, soc ~; cog blank, psy blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Values each person's dignity and worth (Humanism) |   | ~ | ✓ | ✓ |   | ~ | ✓ | ✓ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "3"
+      ],
+      "claim_text": "Beyond-in-group scope, faith, and scalability belong to neither dark profile.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither.",
+      "reasoning": "Rows 13-15 are in the 'in neither' block, so they belong to neither dark profile."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "claim_text": "Beyond vivid in-group: sym ~, comp ✓, alt ✓, int ✓; all others blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Concern reaches *beyond* a vivid / similar in-group |   |   | ~ | ✓ |   |   |   | ✓ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "claim_text": "Fundamentally good: sym ~, comp ~, emp ✓, alt ✓, int ✓; dark both blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Believes people are fundamentally good (Faith in Humanity) |   |   | ~ | ~ |   |   | ✓ | ✓ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "claim_text": "Sustainable scalable guide: cog ~, sym ~, comp ✓, alt ✓, int ✓; rest blank.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| Sustainable and scalable as a moral guide | ~ |   | ~ | ✓ |   |   |   | ✓ | ✓ |",
+      "reasoning": "Marks match source row exactly."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "4"
+      ],
+      "claim_text": "Notes interpret the matrix and limit its scope to ideal types.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Treat these two columns as ideal types, not categories.",
+      "reasoning": "Notes provide interpretation, and ¶26 explicitly restricts the two profiles to ideal types."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "claim_text": "Sympathy models minds only ~: pity can misread; understanding helps but not constitutive.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "you can pity someone while badly misreading them. Accurate understanding helps sympathy but isn't constitutive of it",
+      "reasoning": "Matches note 1, including partial mark and non-constitutive qualifier."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "claim_text": "Affective empathy cares only ~: contagion is involuntary, can merely prompt escape.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "emotional contagion can happen involuntarily, without any real concern for the person: you can catch someone's anxiety and simply want to get away from them.",
+      "reasoning": "Matches note 2, retaining involuntariness and escape impulse."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "claim_text": "Manipulators row diagnoses cog/aff split; cog alone fits cruelty and psychopath signature.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "The \"manipulators\" row is the sharpest diagnostic for the cognitive/affective split, and it is essentially the psychopath's signature. Cognitive empathy alone is compatible with cruelty",
+      "reasoning": "Matches note 3's diagnostic and cruelty claims."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "claim_text": "Sustainability reflects Bloom/Singer position, not consensus; critics warn of abstract paternalism.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "reflects the Bloom/Singer argument ... which is a position, not a consensus. Critics reply that compassion without empathic grounding risks becoming abstract or paternalistic.",
+      "reasoning": "Matches note 4, correctly attributing the position to Bloom/Singer as reported."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "claim_text": "Boundary is structural: affective merging drives motivation plus burnout and bias.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Boundary maintenance is the structural difference ... partially merging with the other's state, which is what drives both its motivational power and its burnout and bias problems.",
+      "reasoning": "Matches note 5's structural and causal claims."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "claim_text": "Psychopath is cog alone; sociopath is clamped affect-sympathy minus regulation.",
+      "claim_type": "interpretation",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "the psychopath is close to the *cognitive-empathy column standing alone*",
+      "reasoning": "Source hedges with 'close to', the node states these mappings as absolute, dropping the approximation qualifier."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "claim_text": "Etiology excluded: psychopathy often innate, sociopathy acquired; causes would muddy shape logic.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "psychopathy is often theorized as innate and temperamental, sociopathy as environmentally acquired. That is a claim about *causes* ... would muddy that logic.",
+      "reasoning": "Matches note 7, retaining the 'often' hedge."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "4.8"
+      ],
+      "claim_text": "Psychopath/sociopath are contested ideal types under ASPD, not formal diagnoses.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "\"psychopath\" and \"sociopath\" are not formal diagnoses. Both fall under Antisocial Personality Disorder ... a contested, largely theoretical convention. Treat these two columns as ideal types, not categories.",
+      "reasoning": "Matches note 8 including negation and ideal-type framing."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "4.9"
+      ],
+      "claim_text": "Table uses neutral research sympathy, not Brown-style distancing; empathic concern differs.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "Some authors use \"empathic concern\" roughly where this table uses \"compassion,\" and pop-psych usage (e.g. Brené Brown) treats \"sympathy\" as inherently distancing. This table uses the more neutral research sense.",
+      "reasoning": "Matches note 9's terminology claims."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "4.10"
+      ],
+      "claim_text": "Spectrum: empath is maxed unregulated affect, altruist embodies compassion Light Triad Kaufman 2019, integrated scores everywhere.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "The empath is the affective column maxed out and unregulated ... The altruist is the compassion column embodied, matching the research \"Light Triad\" ... (Kaufman et al., 2019). The integrated ideal is the only column that scores well across every block",
+      "reasoning": "Matches note 10, including the Kaufman 2019 attribution and integrated scoring claim."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "4.11"
+      ],
+      "claim_text": "Triad rows partly restate: Kantianism inverts manipulators; Humanism overlaps care; only Faith adds new attitude.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Minor",
+      "evidence_quote": "The three Light Triad rows partly restate earlier rows ... (Kantianism) is essentially the inverse of the \"manipulators\" row ... (Humanism) overlaps with the caring and beyond-the-in-group rows. Only ... (Faith in Humanity) adds a genuinely new dimension, an attitude",
+      "reasoning": "Matches note 11's overlap and novelty claims."
+    }
+  ],
+  "metrics": {
+    "total_claims": 31,
+    "supported": 29,
+    "partially_supported": 2,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9355
+  },
+  "fail_list": [
+    "C002",
+    "C026"
+  ]
+}

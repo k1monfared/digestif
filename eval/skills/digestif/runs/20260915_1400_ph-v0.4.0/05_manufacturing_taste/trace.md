@@ -1,0 +1,7512 @@
+# Judge trace (scripted pipeline, opencode-go/deepseek-v4.1-flash)
+
+## Judge F (faithfulness), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "claims": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "A simulation finds quality only loosely filters canon success, exposure and capital dominate, and the canon and our taste are more contingent than they feel.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Quality acts as a loose filter... the vast middle ground... is dominated by capital and luck... your taste was manufactured along with it",
+   "reasoning": "SOURCE states quality is a loose filter, the middle is dominated by capital and luck, and taste is more contingent than it feels."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "The canon's winners may be the best or merely the best positioned, and history cannot tell us which.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "were they the best? Or were they the ones who happened to have the right patron... We literally cannot answer that question empirically.",
+   "reasoning": "SOURCE poses both alternatives and says the empirical question cannot be answered, matching the hedge."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "The question began half-jokingly: was Bach the Justin Bieber of his time?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time.",
+   "reasoning": "SOURCE says exactly this, preserving both the joke framing and the question."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time",
+   "reasoning": "Range, place, and time all match SOURCE exactly."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred, and many more left no trace; we remember fewer than 20.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "IMSLP catalogs over 3,400 composers... Wikipedia's curated list names several hundred. We remember fewer than 20.",
+   "reasoning": "All figures and entities (IMSLP, Wikipedia list, under 20) match SOURCE without drift."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "The standard explanation says we remember the best, but the winners may be those with the right patron, court position, orchestra, and publisher.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?",
+   "reasoning": "SOURCE states the standard explanation and the four alternative factors in the same hedged form."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "claim_text": "If the Esterházys had hired a different Kapellmeister instead of Haydn, would we still know his name?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name?",
+   "reasoning": "SOURCE asks the identical counterfactual about Haydn and the Esterházy family."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "claim_text": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run that thousands of times.",
+   "reasoning": "SOURCE states the empirical impossibility and the modeling workaround in the same terms."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "claim_text": "The author built a simulation and wrote this less formal version of the full technical paper.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I built a simulation to find out. The full technical paper is here. This post is the less formal version.",
+   "reasoning": "SOURCE confirms the simulation and that the post is the informal version of the paper."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Three competing hypotheses were set up to explain how canons form.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I set up the project to test three competing hypotheses.",
+   "reasoning": "SOURCE says three competing hypotheses were set up, under a heading about how canons form."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Story 1 (The Cream Rises): the works we remember are the best works, and over long horizons genuine quality wins.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The works we remember are the best works... over long enough time horizons, genuine quality wins.",
+   "reasoning": "SOURCE's Story 1 states both the best-works claim and long-horizon quality victory."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "2.1.1"
+   ],
+   "claim_text": "Money might buy a head start, but replaying history with different patrons would end with roughly the same canon.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Money might help someone get a head start... If you replayed history with different patrons, you'd end up with roughly the same canon.",
+   "reasoning": "SOURCE preserves the hedge (might) and the roughly-same-canon counterfactual."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Story 2 (Money Writes History): success is mostly about who gets heard first, and quality is almost irrelevant.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Success is mostly about who gets heard first... Quality is almost irrelevant.",
+   "reasoning": "SOURCE's Story 2 states both the who-gets-heard-first emphasis and quality's near irrelevance."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "2.2.1"
+   ],
+   "claim_text": "A wealthy patron gets a composer performed, audiences like what they hear, and the familiarity gets read as quality.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A composer with a wealthy patron gets performed; audiences grow to like what they hear... that familiarity gets retroactively interpreted as quality",
+   "reasoning": "SOURCE describes the same causal chain from patron to performance to familiarity-as-quality."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "2.2.2"
+   ],
+   "claim_text": "Institutions lock that advantage in for future generations.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "institutions lock it in for future generations",
+   "reasoning": "SOURCE states this verbatim as the final link in Story 2's chain."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Story 3 (Floors and Ceilings): both stories are partly right.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "**Story 3: Floors and Ceilings.** Both are partly right.",
+   "reasoning": "SOURCE states both prior stories are partly right in Story 3's opening."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "2.3.1"
+   ],
+   "claim_text": "The truly terrible never succeed no matter how much money backs them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly terrible never succeed no matter how much money backs them.",
+   "reasoning": "SOURCE states this sentence verbatim, including the negation never."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "2.3.2"
+   ],
+   "claim_text": "The truly transcendent sometimes break through despite everything.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly transcendent sometimes break through despite everything.",
+   "reasoning": "SOURCE states this verbatim, preserving the hedge sometimes."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "2.3.3"
+   ],
+   "claim_text": "For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'.",
+   "reasoning": "SOURCE states the same three factors and the same negation of peer talent differences."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "The canon is like a job market: the very best and the very worst candidates are easy to rank.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Think of it like a job market. The very best candidate and the very worst are easy to rank.",
+   "reasoning": "SOURCE uses the job-market analogy and says best and worst are easy to rank."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "2.4.1"
+   ],
+   "claim_text": "Among twenty pretty good candidates, who gets hired often comes down to who knew someone, a good interview day, or resume order.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile.",
+   "reasoning": "SOURCE gives the same count (twenty), hedge (often), and three factors as the analogy."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "2.4.2"
+   ],
+   "claim_text": "The classical music canon is the same problem at civilizational scale.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The classical music canon is the same problem at civilizational scale.",
+   "reasoning": "SOURCE states this sentence verbatim."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "three phenomena that are individually well-documented in psychology and economics, but whose combined effect on cultural canons hasn't been quantified",
+   "reasoning": "Source states exactly this framing of the three well-documented phenomena and the unquantified combined effect."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Mere exposure: we tend to like things we have encountered before.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We tend to like things we've encountered before.",
+   "reasoning": "Identical meaning to source definition of the mere exposure effect."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "3.1.1"
+   ],
+   "claim_text": "A song played on the radio ten times starts to feel catchy even if it did not grab you the first time.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time.",
+   "reasoning": "Near-verbatim restatement with identical number and negation preserved."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "3.1.2"
+   ],
+   "claim_text": "This is not about learning to appreciate complexity; it happens with nonsense syllables, abstract shapes, and strangers' faces.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers.",
+   "reasoning": "Negation and the three listed stimulus types are all retained faithfully."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "3.1.3"
+   ],
+   "claim_text": "Zajonc demonstrated the effect in 1968.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Zajonc demonstrated this in 1968",
+   "reasoning": "Name and year match source exactly."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "3.1.4"
+   ],
+   "claim_text": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26",
+   "reasoning": "All numbers (1989, 208, r = 0.26) and the name match source exactly."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "3.1.5"
+   ],
+   "claim_text": "The effect peaks at moderate exposure and reverses with overexposure.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The effect peaks at moderate exposure and reverses with overexposure",
+   "reasoning": "Identical to the source sentence about the exposure curve."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "3.1.6"
+   ],
+   "claim_text": "Artists who get more initial airtime develop an artificial quality advantage, because audiences genuinely perceive funded work as better.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better ... the exposure was determined by money",
+   "reasoning": "Source links initial airtime to artificial advantage and ties exposure to money, so \"funded work\" is a faithful compression."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "3.1.7"
+   ],
+   "claim_text": "The problem is not that people are bad judges; the judging is contaminated by exposure, and the exposure was determined by money.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money.",
+   "reasoning": "Negation and causal chain match source verbatim in meaning."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Social influence: we use what others consume as a shortcut for what is good.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We look at what others consume and use it as a shortcut for what's good.",
+   "reasoning": "Direct restatement of the social influence definition."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "3.2.1"
+   ],
+   "claim_text": "Bestseller lists, download counts, trending labels, and view counts nudge us toward what is already popular, creating snowball effects.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects.",
+   "reasoning": "All four signal types and the snowball-effect consequence are preserved."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "3.2.2"
+   ],
+   "claim_text": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Salganik MusicLab experiment (2006) ... 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't.",
+   "reasoning": "Year, participant count, song count, and the split condition all match; \"choose among\" tracks the market task."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "3.2.3"
+   ],
+   "claim_text": "The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads.",
+   "claim_type": "number_or_date",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first",
+   "reasoning": "Numbers 1 and 40 match, but source hedges with \"could\"; loglog states \"ranked\" as certain fact."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The rich get richer. ... The sociologist Robert Merton called this the Matthew Effect.",
+   "reasoning": "Entity name Robert Merton and the Matthew Effect attribution match source exactly."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "claim_text": "A first album that sells well buys a bigger marketing budget, better tour slots, more press, and prominent playlist placement.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement",
+   "reasoning": "All four listed benefits are retained; wording compression preserves meaning."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "claim_text": "Small initial differences, whether from luck, timing, or money, get magnified into enormous gaps over time.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time.",
+   "reasoning": "The three possible sources and the magnification effect match; \"whether from\" remains a list of possibilities."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "claim_text": "A composer who secures a court position at 20 accumulates decades of performances and reputation that a one-year miss never builds.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build.",
+   "reasoning": "Age, decades, one-year miss, and the negation \"never\" all match; only publications is omitted, not contradicted."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Each mechanism is well-understood alone; the open question is what happens when all three interact over many generations.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Each of these alone is well-understood. What I wanted to know is: when you put all three together ... over many generations, what happens?",
+   "reasoning": "Reflects the source's contrast between individual understanding and the combined multi-generation question."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "The model was run thousands of times to test how social signals, money, and patronage shape the canon.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "I ran this thousands of times under different conditions.",
+   "reasoning": "Source confirms thousands of runs and the combined-effect aim; money/patronage are the tested resource factors."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "three types of agents: producers ... consumers ... and gatekeepers",
+   "reasoning": "Source states all three agent types and independent quality/capital draws."
+  },
+  {
+   "claim_id": "C043",
+   "loglog_ids": [
+    "4.1.1"
+   ],
+   "claim_text": "Each producer gets a random quality score and an independently drawn capital score, so being wealthy does not make you talented.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Being wealthy doesn't make you talented.",
+   "reasoning": "Directly restates source's random quality, independent capital, and uncorrelated wealth/talent."
+  },
+  {
+   "claim_id": "C044",
+   "loglog_ids": [
+    "4.1.2"
+   ],
+   "claim_text": "Producers with more capital get more exposure, and consumers form opinions from quality, mere exposure, and social signals.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Consumers form opinions based on actual quality plus the mere exposure effect plus social signals.",
+   "reasoning": "Matches source sentence on capital-driven exposure and the three opinion inputs."
+  },
+  {
+   "claim_id": "C045",
+   "loglog_ids": [
+    "4.1.3"
+   ],
+   "claim_text": "Success feeds back into more exposure, and after many rounds some producers achieve canonical status.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Success feeds back into more exposure (cumulative advantage).",
+   "reasoning": "Source states the feedback loop and that some producers reach canonical status after many rounds."
+  },
+  {
+   "claim_id": "C046",
+   "loglog_ids": [
+    "4.1.4"
+   ],
+   "claim_text": "Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "about two minutes with 1,000 producers and 10,000 consumers",
+   "reasoning": "All quantities and the parallelization detail match source exactly."
+  },
+  {
+   "claim_id": "C047",
+   "loglog_ids": [
+    "4.1.5"
+   ],
+   "claim_text": "The author ran 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "ran 360+ per condition for the main experiments, with formal power analysis",
+   "reasoning": "Source states 360+ per condition and formal power analysis verbatim."
+  },
+  {
+   "claim_id": "C048",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Experiment 1: visible social influence weakens the quality-success link.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Does social influence weaken the quality-success link? Yes.",
+   "reasoning": "Source answers yes to this exact question."
+  },
+  {
+   "claim_id": "C049",
+   "loglog_ids": [
+    "4.2.1"
+   ],
+   "claim_text": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "drops significantly (p < 0.0001 across 360 runs per condition)",
+   "reasoning": "p-value, direction, and run count all match source."
+  },
+  {
+   "claim_id": "C050",
+   "loglog_ids": [
+    "4.2.2"
+   ],
+   "claim_text": "In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "quality would be a moderately good predictor of success.",
+   "reasoning": "Verbatim restatement of the source's counterfactual claim."
+  },
+  {
+   "claim_id": "C051",
+   "loglog_ids": [
+    "4.2.3"
+   ],
+   "claim_text": "In our world of charts, recommendations, and trending labels, the link gets weaker.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker.",
+   "reasoning": "Direct paraphrase preserving the 'our world' scope and weakening of the link."
+  },
+  {
+   "claim_id": "C052",
+   "loglog_ids": [
+    "4.2.3.1"
+   ],
+   "claim_text": "A mediocre work that gets lucky early can ride social proof to stardom.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "A mediocre work that gets lucky early can ride social proof to stardom",
+   "reasoning": "Verbatim restatement with the hedge 'can' preserved."
+  },
+  {
+   "claim_id": "C053",
+   "loglog_ids": [
+    "4.2.3.2"
+   ],
+   "claim_text": "An equally good work that starts slow may never recover.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "may never recover",
+   "reasoning": "Verbatim restatement preserving the modal 'may never'."
+  },
+  {
+   "claim_id": "C054",
+   "loglog_ids": [
+    "4.2.4"
+   ],
+   "claim_text": "Every Top 40 chart, Customers Also Bought widget, and view count is a form of social influence pushing us away from independent judgment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "systematically pushes us away from independent judgment",
+   "reasoning": "Matches source's 'every' enumeration and push away from independent judgment."
+  },
+  {
+   "claim_id": "C055",
+   "loglog_ids": [
+    "4.2.5"
+   ],
+   "claim_text": "The measurement trap: popularity is used as a proxy for quality, then optimized for, then forgotten as a proxy.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "use popularity as a proxy for quality, then optimize for the proxy, then forget it was a proxy.",
+   "reasoning": "Exact restatement of the source's proxy sequence."
+  },
+  {
+   "claim_id": "C056",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Experiment 2: holding talent constant and reshuffling only resources produces almost entirely different canons.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Almost entirely different canons from just reshuffling money.",
+   "reasoning": "Source holds talent constant, reshuffles resources, and reports almost entirely different canons."
+  },
+  {
+   "claim_id": "C057",
+   "loglog_ids": [
+    "4.3.1"
+   ],
+   "claim_text": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "counterfactual distance was 0.88 on a 0-to-1 scale",
+   "reasoning": "Value 0.88 and both scale endpoints match source."
+  },
+  {
+   "claim_id": "C058",
+   "loglog_ids": [
+    "4.3.2"
+   ],
+   "claim_text": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "top 10% of talent ... about 1 in 4",
+   "reasoning": "Both the 10% and one-in-four figures match source exactly."
+  },
+  {
+   "claim_id": "C059",
+   "loglog_ids": [
+    "4.3.3"
+   ],
+   "claim_text": "For everyone in the 50th to 90th percentile of quality, canonical status was effectively a lottery.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "50th to 90th percentile of quality ... effectively a lottery",
+   "reasoning": "Percentile range and lottery characterization match source."
+  },
+  {
+   "claim_id": "C060",
+   "loglog_ids": [
+    "4.3.4"
+   ],
+   "claim_text": "This is the simulation equivalent of the Haydn question: excellence alone is not enough when the exposure pipeline is narrow.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "excellence alone isn't enough when the exposure pipeline is this narrow",
+   "reasoning": "Matches source's Haydn-question framing and the 'narrow pipeline' conclusion."
+  },
+  {
+   "claim_id": "C061",
+   "loglog_ids": [
+    "4.3.5"
+   ],
+   "claim_text": "Had the Esterházys hired someone else, Haydn would very likely be one of the hundreds of forgotten composers.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "If the Esterházys had hired someone else, Haydn would very likely be one of the hundreds of forgotten",
+   "reasoning": "Names, hedge 'very likely', and 'hundreds of forgotten' all preserved."
+  },
+  {
+   "claim_id": "C062",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "Experiment 3: unequal money distorts the canon more than herd behavior.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Turning off social influence barely helps. But equalizing starting resources jumps ...",
+   "reasoning": "Source's comparison concludes capital inequality matters more than social influence."
+  },
+  {
+   "claim_id": "C063",
+   "loglog_ids": [
+    "4.4.1"
+   ],
+   "claim_text": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Full model ... 0.32 ... No social influence ... 0.35 ... Equal capital ... 0.46 ... Quality only ... 0.46",
+   "reasoning": "All four correlations and their condition labels match source exactly."
+  },
+  {
+   "claim_id": "C064",
+   "loglog_ids": [
+    "4.4.2"
+   ],
+   "claim_text": "Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "equalizing starting resources jumps the quality-canon correlation by 44%",
+   "reasoning": "The 44% figure and both effect directions match source."
+  },
+  {
+   "claim_id": "C065",
+   "loglog_ids": [
+    "4.4.3"
+   ],
+   "claim_text": "The biggest distortion is not that audiences follow trends; it is that some artists never get heard in the first place.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The biggest distortion isn't that audiences follow trends. It's that some artists never get heard",
+   "reasoning": "Preserves both the negation and the contrasted cause exactly."
+  },
+  {
+   "claim_id": "C066",
+   "loglog_ids": [
+    "4.4.4"
+   ],
+   "claim_text": "Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.",
+   "reasoning": "Verbatim restatement of the source causal claim."
+  },
+  {
+   "claim_id": "C067",
+   "loglog_ids": [
+    "4.4.5"
+   ],
+   "claim_text": "The modern mapping: the problem is not that people blindly follow Spotify playlists, but that only major-label artists get on them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "only major-label artists get on those playlists to begin with",
+   "reasoning": "Both the negation and the 'only major-label' scope are preserved."
+  },
+  {
+   "claim_id": "C068",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "Experiment 4: a stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "300 composers, a handful of very wealthy patrons, strong word-of-mouth, no recording technology",
+   "reasoning": "The 300 count and all four setup features match source."
+  },
+  {
+   "claim_id": "C069",
+   "loglog_ids": [
+    "4.5.1"
+   ],
+   "claim_text": "Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "distance was 0.97, near maximum. Only 2.5% of canonical composers were shared",
+   "reasoning": "Both 0.97 and 2.5% figures match source exactly."
+  },
+  {
+   "claim_id": "C070",
+   "loglog_ids": [
+    "4.5.2"
+   ],
+   "claim_text": "Rewinding to 1750 and randomly reassigning court positions would make the names we teach almost entirely different.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "rewind to 1750 and randomly reassign which composers got which court positions",
+   "reasoning": "Year 1750, court positions, and 'almost entirely different' all match source."
+  },
+  {
+   "claim_id": "C071",
+   "loglog_ids": [
+    "4.5.3"
+   ],
+   "claim_text": "The winners were very likely excellent, since you had to be good to compete for a court position.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The winners in our timeline were very likely excellent. You had to be good to compete",
+   "reasoning": "Both the 'very likely excellent' hedge and the competition reason match."
+  },
+  {
+   "claim_id": "C072",
+   "loglog_ids": [
+    "4.5.4"
+   ],
+   "claim_text": "Dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "dozens of equally excellent composers were lost to history because they drew the short straw",
+   "reasoning": "Verbatim restatement preserving quantity 'dozens' and the lottery cause."
+  },
+  {
+   "claim_id": "C073",
+   "loglog_ids": [
+    "4.5.5"
+   ],
+   "claim_text": "Manufacturing taste means the winners were not bad, but the losers were not meaningfully worse.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Not that the winners were bad. That the losers weren't meaningfully worse.",
+   "reasoning": "Both negations preserved exactly from the source definition."
+  },
+  {
+   "claim_id": "C074",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "claim_text": "Robustness: the results held with every parameter varied by ±50%.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "I varied every parameter by ±50%",
+   "reasoning": "±50% matches; robustness framing is confirmed by the source's later robust-direction statement."
+  },
+  {
+   "claim_id": "C075",
+   "loglog_ids": [
+    "4.6.1"
+   ],
+   "claim_text": "The single most important factor is how steeply money converts into attention.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "single most important factor is how steeply money converts into attention",
+   "reasoning": "Verbatim restatement of the source's key-factor claim."
+  },
+  {
+   "claim_id": "C076",
+   "loglog_ids": [
+    "4.6.2"
+   ],
+   "claim_text": "If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "the rich get richer very fast and quality barely matters",
+   "reasoning": "Convex condition and both consequences match source."
+  },
+  {
+   "claim_id": "C077",
+   "loglog_ids": [
+    "4.6.3"
+   ],
+   "claim_text": "If doubling a budget less than doubles the audience, quality has more room to breathe.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "quality has more room to breathe",
+   "reasoning": "Concave condition and outcome restated directly from source."
+  },
+  {
+   "claim_id": "C078",
+   "loglog_ids": [
+    "4.6.4"
+   ],
+   "claim_text": "In the industry, a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500",
+   "reasoning": "Both figures, 50 million and 500, match source exactly."
+  },
+  {
+   "claim_id": "C079",
+   "loglog_ids": [
+    "4.6.5"
+   ],
+   "claim_text": "Under such an extremely steep capital-to-exposure curve, quality has very little to do with who becomes famous.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Our model predicts that under those conditions, quality has very little to do with who becomes famous.",
+   "reasoning": "Preserves the model-prediction framing and the steep-curve condition."
+  },
+  {
+   "claim_id": "C080",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Story 3 wins: quality is a loose filter setting a floor and ceiling, and the vast middle is dominated by capital and luck.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Story 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will.",
+   "reasoning": "Source states this nearly verbatim, including the middle dominated by capital and luck."
+  },
+  {
+   "claim_id": "C081",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "The greatest composer who ever lived, made precise, is the greatest among those with resources to be heard, published, and preserved.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\"",
+   "reasoning": "Faithful generalization of the source's Bach-specific restatement, same meaning and qualifier."
+  },
+  {
+   "claim_id": "C082",
+   "loglog_ids": [
+    "5.1.1"
+   ],
+   "claim_text": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "reasoning": "Node reproduces the source sentence exactly, hedge included."
+  },
+  {
+   "claim_id": "C083",
+   "loglog_ids": [
+    "5.1.2"
+   ],
+   "claim_text": "We cannot know, but the simulation says it is very likely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We don't know. We can't know. But the simulation says it's very likely.",
+   "reasoning": "Node preserves both the epistemic hedge and the simulation's likelihood claim."
+  },
+  {
+   "claim_id": "C084",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "The mechanisms are stronger today, not weaker.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The mechanisms are stronger today, not weaker.",
+   "reasoning": "Exact restatement of the source heading."
+  },
+  {
+   "claim_id": "C085",
+   "loglog_ids": [
+    "5.2.1"
+   ],
+   "claim_text": "An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours.",
+   "reasoning": "Same two timeframes joined by a semicolon, meaning unchanged."
+  },
+  {
+   "claim_id": "C086",
+   "loglog_ids": [
+    "5.2.2"
+   ],
+   "claim_text": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "reasoning": "Verbatim source sentence."
+  },
+  {
+   "claim_id": "C087",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "The highest-leverage intervention is not better judgment, it is wider exposure.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The highest-leverage intervention isn't better judgment, it's wider exposure.",
+   "reasoning": "Exact match, negation preserved."
+  },
+  {
+   "claim_id": "C088",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "claim_text": "Audiences are already decent judges within the limits of what they are exposed to; the bottleneck is exposure itself.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself.",
+   "reasoning": "Same claim; only dropped the framing phrase \"Our model says\"."
+  },
+  {
+   "claim_id": "C089",
+   "loglog_ids": [
+    "5.3.2"
+   ],
+   "claim_text": "Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "widely adopted in the 1970s-80s... the proportion of women hired by major US orchestras went from 5% to 25%.",
+   "reasoning": "All figures, date range, and entities match the source exactly."
+  },
+  {
+   "claim_id": "C090",
+   "loglog_ids": [
+    "5.3.3"
+   ],
+   "claim_text": "The talent was always there; the barrier was exposure.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The talent was always there. The barrier was exposure.",
+   "reasoning": "Verbatim source statement."
+  },
+  {
+   "claim_id": "C091",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "The deeper pattern is the gap between the metric and what we care about: canon survival is a proxy for being the best.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the gap between the metric and the thing we actually care about. We use \"survived into the canon\" as a proxy for \"was the best,\"",
+   "reasoning": "Faithful compression of the source's proxy point."
+  },
+  {
+   "claim_id": "C092",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "claim_text": "The simulation does not say what the canon should look like, only that the one we got is far more contingent than we assume.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The simulation doesn't tell us what the canon *should* look like. It just tells us that the one we got is far more contingent than we assume.",
+   "reasoning": "Same two-part claim, negation and emphasis preserved."
+  },
+  {
+   "claim_id": "C093",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Three caveats bound what the model can tell us.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "## The Caveats\nI want to be honest about what this can and can't tell us.",
+   "reasoning": "Source presents three distinct caveat topics (quality assumption, calibration, omitted factors), supporting the count."
+  },
+  {
+   "claim_id": "C094",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The model assumes quality is a real, stable property that exists independently of who hears it. That's philosophically debatable.",
+   "reasoning": "Node matches the source sentence and its debatable qualifier."
+  },
+  {
+   "claim_id": "C095",
+   "loglog_ids": [
+    "6.1.1"
+   ],
+   "claim_text": "If quality is partly constituted by social processes, the whole decomposition may be ill-posed.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If \"quality\" is partly constituted by social processes... then the whole decomposition may be ill-posed.",
+   "reasoning": "Node keeps the conditional and the \"may be\" hedge intact."
+  },
+  {
+   "claim_id": "C096",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "studied American teenagers evaluating pop songs over weeks. Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith.",
+   "reasoning": "Same claim; only the phrase \"evaluating orchestral music\" is compressed out."
+  },
+  {
+   "claim_id": "C097",
+   "loglog_ids": [
+    "6.2.1"
+   ],
+   "claim_text": "The mechanisms are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the mechanisms... are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "reasoning": "Verbatim source statement aside from the parenthetical mechanism list."
+  },
+  {
+   "claim_id": "C098",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "The model omits genre formation, critical discourse, technological change, and cultural politics.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics.",
+   "reasoning": "All four omitted items match the source list."
+  },
+  {
+   "claim_id": "C099",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "claim_text": "Any model is a simplification; the direction of the effects is robust across parameter values, even if the magnitudes are uncertain.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Any model is a simplification... The direction of the effects is robust across a wide range of parameter values, even if the precise magnitudes are uncertain.",
+   "reasoning": "Same claim; \"wide range of\" is compressed to \"across\" with no meaning change."
+  },
+  {
+   "claim_id": "C100",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Bach was excellent AND well-positioned, and the second half matters more than the first.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He was excellent AND well-positioned. But the simulation tells us the \"AND\" is doing most of the work, and the second half matters more than the first.",
+   "reasoning": "Source states the exact conjunction and that the second half matters more."
+  },
+  {
+   "claim_id": "C101",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "reasoning": "Direct restatement of the source sentence with identical meaning."
+  },
+  {
+   "claim_id": "C102",
+   "loglog_ids": [
+    "7.1.1"
+   ],
+   "claim_text": "The pop pipeline can manufacture a global phenomenon from someone good enough to carry a tune and look good on camera, a bar millions meet.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion.",
+   "reasoning": "Preserves the criteria and the millions-meet-the-bar qualifier."
+  },
+  {
+   "claim_id": "C103",
+   "loglog_ids": [
+    "7.1.2"
+   ],
+   "claim_text": "A court position required writing for liturgical services, entertaining aristocrats, training choirs, and improvising fugues on demand.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand.",
+   "reasoning": "All four requirements listed match the source exactly."
+  },
+  {
+   "claim_id": "C104",
+   "loglog_ids": [
+    "7.1.3"
+   ],
+   "claim_text": "The quality floor of that world was genuinely high.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The quality floor was genuinely high.",
+   "reasoning": "Verbatim restatement of the source claim."
+  },
+  {
+   "claim_id": "C105",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Reshuffling patronage gives an almost entirely different canon, with only 2.5% overlap between alternate histories.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Reshuffle patronage and you get an almost entirely different canon. Only 2.5% overlap between alternate histories.",
+   "reasoning": "The 2.5% figure and the near-total difference are stated identically."
+  },
+  {
+   "claim_id": "C106",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Bach is like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "reasoning": "The analogy and the number fifty are preserved exactly."
+  },
+  {
+   "claim_id": "C107",
+   "loglog_ids": [
+    "7.3.1"
+   ],
+   "claim_text": "A New York Times profile led to speaking invitations, a book deal, and a reputation as the best surgeon in the country.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\"",
+   "reasoning": "The causal chain and outlet name match the source."
+  },
+  {
+   "claim_id": "C108",
+   "loglog_ids": [
+    "7.3.2"
+   ],
+   "claim_text": "The other 49 are just as good, and you have never heard of them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The other 49 are just as good. You've never heard of them.",
+   "reasoning": "Both the count 49 and the negation are preserved."
+  },
+  {
+   "claim_id": "C109",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "The question was never whether Bach was great; he almost certainly was.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question was never whether Bach was great. He almost certainly was.",
+   "reasoning": "The negation and the almost-certainly hedge are both kept."
+  },
+  {
+   "claim_id": "C110",
+   "loglog_ids": [
+    "7.4.1"
+   ],
+   "claim_text": "The question is whether we listen because he was the greatest, or because he was great AND landed the right church job in Leipzig.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig.",
+   "reasoning": "The dichotomy and the Leipzig detail match exactly."
+  },
+  {
+   "claim_id": "C111",
+   "loglog_ids": [
+    "7.4.2"
+   ],
+   "claim_text": "The simulation says it is the second.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The simulation says it's the second.",
+   "reasoning": "Direct restatement of the source's attribution to the simulation."
+  },
+  {
+   "claim_id": "C112",
+   "loglog_ids": [
+    "7.4.3"
+   ],
+   "claim_text": "There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "reasoning": "The range 20 to 50 and the probably hedge are preserved."
+  },
+  {
+   "claim_id": "C113",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "The canon is one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as inevitable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it's one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as if it were inevitable.",
+   "reasoning": "Meaning identical; only the 'as if' wording is compressed."
+  },
+  {
+   "claim_id": "C114",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "claim_text": "Bach's harmonic language, his structures, and his aesthetic sensibility are the foundations of how we hear and judge music today.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today.",
+   "reasoning": "Direct restatement of all three elements and their role."
+  },
+  {
+   "claim_id": "C115",
+   "loglog_ids": [
+    "7.6.1"
+   ],
+   "claim_text": "With a different set of composers surviving into the canon, we would have inherited different foundations and would hear and judge differently.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently.",
+   "reasoning": "The conditional and its consequences match the source."
+  },
+  {
+   "claim_id": "C116",
+   "loglog_ids": [
+    "7.6.2"
+   ],
+   "claim_text": "What we call good taste would be a different taste entirely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "What we call \"good taste\" would be a different taste entirely.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C117",
+   "loglog_ids": [
+    "7.7"
+   ],
+   "claim_text": "Our taste was manufactured along with the canon: we like what we were taught to like.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's that our taste was manufactured along with it. We like what we were taught to like.",
+   "reasoning": "Both halves are stated directly in the source."
+  },
+  {
+   "claim_id": "C118",
+   "loglog_ids": [
+    "7.7.1"
+   ],
+   "claim_text": "The survivors were selected by money and luck as much as by merit.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the survivors were selected by money and luck as much as by merit.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C119",
+   "loglog_ids": [
+    "7.7.2"
+   ],
+   "claim_text": "The whole chain from who got funded to what counts as beautiful is more contingent than it feels from the inside.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C120",
+   "loglog_ids": [
+    "7.8"
+   ],
+   "claim_text": "Whether people 300 years from now will listen to Bieber and call it the peak of our era is unknown.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know.",
+   "reasoning": "The unknown status and the 300-year frame are preserved."
+  },
+  {
+   "claim_id": "C121",
+   "loglog_ids": [
+    "7.8.1"
+   ],
+   "claim_text": "If the mechanisms are right, the 2000s canon will track distribution deals and the most favorable algorithms more than the best music.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music.",
+   "reasoning": "The conditional and the comparison are preserved exactly."
+  },
+  {
+   "claim_id": "C122",
+   "loglog_ids": [
+    "7.8.2"
+   ],
+   "claim_text": "And we will not be around to correct them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "And we won't be around to correct them.",
+   "reasoning": "The negation and meaning are identical."
+  }
+ ],
+ "metrics": {
+  "total_claims": 122,
+  "supported": 121,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9918
+ },
+ "fail_list": [
+  "C035"
+ ]
+}
+```
+
+## Judge Cov (coverage), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: the classical music canon is manufactured by money, luck, and exposure rather than pure quality, and our very sense of 'good taste' was manufactured along with it (the canon is one of many equally valid possible canons).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002",
+    "L114",
+    "L118",
+    "L120"
+   ],
+   "evidence_quote": "Our taste was manufactured along with the canon: we like what we were taught to like. (L118)",
+   "reasoning": "The summary (L002) states quality only loosely filters canon success and taste is contingent; L114 states the canon is one of hundreds of equally valid ones; L118-L120 state taste was manufactured and the chain from funding to beauty is contingent. Thesis fully captured with qualifiers intact."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The scale of forgotten composers: 200 to 500 active composers in 18th-century Vienna alone; IMSLP catalogs over 3,400 Classical-era composers who survived in some form; Wikipedia lists several hundred; we remember fewer than 20.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005",
+    "L006"
+   ],
+   "evidence_quote": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time. (L005) ... IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred ... we remember fewer than 20. (L006)",
+   "reasoning": "All four numbers (200-500, 3,400, several hundred, fewer than 20) preserved exactly with no dropped qualifiers."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Since history cannot be replayed with different initial conditions, the author built a simulation of how cultural markets work and ran it thousands of times to test whether the remembered composers were actually the best or merely well-positioned.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L003",
+    "L009",
+    "L010",
+    "L042"
+   ],
+   "evidence_quote": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times. (L009)",
+   "reasoning": "L003 frames best vs best-positioned, L009 gives the counterfactual-replay rationale and thousands of runs, L010 notes the simulation and write-up, L042 confirms thousands of runs. Fully captured."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Three competing hypotheses: Story 1 'The Cream Rises' (quality wins over time), Story 2 'Money Writes History' (success is mostly who gets heard first, quality nearly irrelevant), Story 3 'Floors and Ceilings' (quality sets a floor and ceiling, but the vast middle is dominated by luck, money, and timing). Story 3 is the conclusion.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L011",
+    "L012",
+    "L014",
+    "L017",
+    "L020",
+    "L081"
+   ],
+   "evidence_quote": "Story 3 (Floors and Ceilings): both stories are partly right. (L017) ... For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers. (L020) ... Story 3 wins. (L081)",
+   "reasoning": "All three hypotheses are stated with their labels and defining content, and L081 explicitly declares Story 3 the conclusion. Numbers/qualifiers intact."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Three well-documented mechanisms are combined: the mere exposure effect, social influence, and cumulative advantage (the Matthew Effect, named by sociologist Robert Merton).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L024",
+    "L025",
+    "L033",
+    "L037"
+   ],
+   "evidence_quote": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified. (L024) ... Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect. (L037)",
+   "reasoning": "All three mechanisms are named and Merton's attribution is preserved. The novel-combination framing (L024, L041) matches the point."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Mere exposure effect details: demonstrated by Zajonc in 1968 and confirmed by Bornstein's 1989 meta-analysis of 208 experiments with average effect size r = 0.26; peaks at moderate exposure and reverses with overexposure.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L028",
+    "L029",
+    "L030"
+   ],
+   "evidence_quote": "Zajonc demonstrated the effect in 1968. (L028) ... Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. (L029) ... The effect peaks at moderate exposure and reverses with overexposure. (L030)",
+   "reasoning": "Names, years, 208 experiments, r = 0.26, and the moderate/overexposure qualifier are all present verbatim."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Salganik MusicLab experiment (2006): 14,341 participants judged 48 unknown songs; some saw download counts and others did not, and the same song could rank 1st or 40th in different worlds purely from random early download differences.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L035",
+    "L036"
+   ],
+   "evidence_quote": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not. (L035) ... The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads. (L036)",
+   "reasoning": "Year, participant count, song count, condition, and the rank-1-vs-40 result are all intact."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Model setup: three agent types (producers, consumers, gatekeepers); each producer gets a quality score and an independently drawn capital score (quality and capital uncorrelated); 1,000 producers and 10,000 consumers per run, about two minutes each, parallelized with 360+ runs per condition and formal power analysis.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L043",
+    "L044",
+    "L047",
+    "L048"
+   ],
+   "evidence_quote": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently. (L043) ... Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores. (L047) ... 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes. (L048)",
+   "reasoning": "Agent types, independent draw, 1,000/10,000, two minutes, parallelization, 360+ runs, and power analysis all present."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Social influence weakens the quality-success link: with visible consumption the quality-commercial-success correlation drops significantly (p < 0.0001 across 360 runs per condition); a mediocre work lucky early can ride social proof to stardom.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L049",
+    "L050",
+    "L051",
+    "L053"
+   ],
+   "evidence_quote": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition). (L050) ... A mediocre work that gets lucky early can ride social proof to stardom. (L053)",
+   "reasoning": "Direction, p-value, run count, and the lucky-mediocre-work mechanism are all captured, including the no-visibility contrast at L051."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Counterfactual experiment: holding every composer's talent constant and reshuffling only resources over 200 runs produced a counterfactual distance of 0.88 on a 0-to-1 scale; only the top 10% of talent had a meaningful shot (~1 in 4), and the 50th to 90th percentile faced fame as essentially a lottery.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L057",
+    "L058",
+    "L059",
+    "L060"
+   ],
+   "evidence_quote": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones. (L058) ... Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four. (L059) ... 50th to 90th percentile of quality, canonical status was effectively a lottery. (L060)",
+   "reasoning": "The core numbers (0.88, top 10%, ~1 in 4, 50th-90th lottery) and the talent-constant/reshuffle setup are fully present. However, the stated run count of 200 for this specific experiment is omitted; L047-L048 give run counts only for the main experiments generally. Because this is a Must have point with a dropped number, per the strict rule it is capped at Partial even though the substance is intact."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Four-condition comparison of quality-canon correlation: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46; equalizing resources raises the correlation 44%, showing unequal initial exposure (capital gating access) is the bigger distortion than herd behavior.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L064",
+    "L065",
+    "L066"
+   ],
+   "evidence_quote": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46. (L064) ... Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%. (L065)",
+   "reasoning": "All four correlation values and the 44% figure are exact; the conclusion that limited exposure dominates herd behavior is stated at L066."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "18th-century Vienna stylized model (300 composers, few wealthy patrons, strong word-of-mouth, no recording): counterfactual distance 0.97, near maximum, with only 2.5% of canonical composers shared between alternate histories.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L069",
+    "L070"
+   ],
+   "evidence_quote": "A stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology. (L069) ... Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories. (L070)",
+   "reasoning": "All setup parameters (300 composers, patrons, word-of-mouth, no recording) and both outcome numbers (0.97, 2.5%) preserved with the 'near maximum' qualifier."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Robustness: varying every parameter by ±50% shows the single most important factor is how steeply money converts into attention (convex relationship makes the rich get richer and quality barely matter, concave leaves more room for quality).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L075",
+    "L076",
+    "L077",
+    "L078"
+   ],
+   "evidence_quote": "The results held with every parameter varied by ±50%. (L075) ... The single most important factor is how steeply money converts into attention. (L076) ... If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters. (L077) ... If doubling a budget less than doubles the audience, quality has more room to breathe. (L078)",
+   "reasoning": "The ±50% robustness, the key factor, and both the convex and concave branches are captured with correct meaning."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Highest-leverage intervention is wider exposure, not better judgment: blind auditions in major US orchestras (adopted 1970s-80s) raised the proportion of women hired from 5% to 25%, proving the talent was there and the barrier was exposure.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L088",
+    "L089",
+    "L090",
+    "L091"
+   ],
+   "evidence_quote": "The highest-leverage intervention is not better judgment, it is wider exposure. (L088) ... Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%. (L090) ... The talent was always there; the barrier was exposure. (L091)",
+   "reasoning": "Recommendation, decade of adoption, 5% to 25%, and the interpretation are all intact."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Caveats: the model assumes quality is a real, stable property independent of who hears it (philosophically debatable); calibration comes from the Salganik study of American teenagers judging pop songs over weeks, so generalizing to 18th-century aristocrats over decades is a leap; and the model omits genre formation, critical discourse, technological change, and cultural politics.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L095",
+    "L096",
+    "L097",
+    "L099",
+    "L100"
+   ],
+   "evidence_quote": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable. (L095) ... The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith. (L097) ... The model omits genre formation, critical discourse, technological change, and cultural politics. (L099)",
+   "reasoning": "All three caveats are present with the debatable assumption, the calibration leap (teenagers/weeks vs aristocrats/decades), and the full list of omitted factors."
+  },
+  {
+   "point_id": "K16",
+   "point_text": "Answer to the Bach-Bieber question: the Bieber analogy gets the mechanism right but the quality floor wrong; Bach was both excellent and well-positioned, the 'AND' does most of the work, and there were probably 20 to 50 equally great contemporaries whose names we will never know. The mechanisms are stronger today because algorithmic feedback loops operate in hours rather than decades.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L101",
+    "L102",
+    "L104",
+    "L105",
+    "L113",
+    "L085",
+    "L086"
+   ],
+   "evidence_quote": "Bach was excellent AND well-positioned, and the second half of that conjunction matters more than the first. (L101) ... The Bieber analogy gets the mechanism right but the quality floor wrong. (L102) ... There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know. (L113) ... An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours. (L086)",
+   "reasoning": "All components present: the analogy's correctness/error, the excellent-AND-positioned framing, the 20-50 contemporaries, and the stronger-today argument with the hours-vs-decades contrast."
+  }
+ ],
+ "metrics": {
+  "total_points": 16,
+  "must_have_total": 16,
+  "must_have_present": 15,
+  "must_have_partial": 1,
+  "must_have_missing": 0,
+  "overall_present": 15,
+  "must_recall": 0.9688,
+  "overall_recall": 0.9688
+ },
+ "missing_list": []
+}
+```
+
+## Judge F (faithfulness), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "claims": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "A simulation finds quality only loosely filters canon success, exposure and capital dominate, and the canon and our taste are more contingent than they feel.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Quality acts as a loose filter... the vast middle ground... is dominated by capital and luck... your taste was manufactured along with it",
+   "reasoning": "SOURCE states quality is a loose filter, the middle is dominated by capital and luck, and taste is more contingent than it feels."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "The canon's winners may be the best or merely the best positioned, and history cannot tell us which.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "were they the best? Or were they the ones who happened to have the right patron... We literally cannot answer that question empirically.",
+   "reasoning": "SOURCE poses both alternatives and says the empirical question cannot be answered, matching the hedge."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "The question began half-jokingly: was Bach the Justin Bieber of his time?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time.",
+   "reasoning": "SOURCE says exactly this, preserving both the joke framing and the question."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time",
+   "reasoning": "Range, place, and time all match SOURCE exactly."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred, and many more left no trace; we remember fewer than 20.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "IMSLP catalogs over 3,400 composers... Wikipedia's curated list names several hundred. We remember fewer than 20.",
+   "reasoning": "All figures and entities (IMSLP, Wikipedia list, under 20) match SOURCE without drift."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "The standard explanation says we remember the best, but the winners may be those with the right patron, court position, orchestra, and publisher.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?",
+   "reasoning": "SOURCE states the standard explanation and the four alternative factors in the same hedged form."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "claim_text": "If the Esterházys had hired a different Kapellmeister instead of Haydn, would we still know his name?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name?",
+   "reasoning": "SOURCE asks the identical counterfactual about Haydn and the Esterházy family."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "claim_text": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run that thousands of times.",
+   "reasoning": "SOURCE states the empirical impossibility and the modeling workaround in the same terms."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "claim_text": "The author built a simulation and wrote this less formal version of the full technical paper.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I built a simulation to find out. The full technical paper is here. This post is the less formal version.",
+   "reasoning": "SOURCE confirms the simulation and that the post is the informal version of the paper."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Three competing hypotheses were set up to explain how canons form.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I set up the project to test three competing hypotheses.",
+   "reasoning": "SOURCE says three competing hypotheses were set up, under a heading about how canons form."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Story 1 (The Cream Rises): the works we remember are the best works, and over long horizons genuine quality wins.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The works we remember are the best works... over long enough time horizons, genuine quality wins.",
+   "reasoning": "SOURCE's Story 1 states both the best-works claim and long-horizon quality victory."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "2.1.1"
+   ],
+   "claim_text": "Money might buy a head start, but replaying history with different patrons would end with roughly the same canon.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Money might help someone get a head start... If you replayed history with different patrons, you'd end up with roughly the same canon.",
+   "reasoning": "SOURCE preserves the hedge (might) and the roughly-same-canon counterfactual."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Story 2 (Money Writes History): success is mostly about who gets heard first, and quality is almost irrelevant.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Success is mostly about who gets heard first... Quality is almost irrelevant.",
+   "reasoning": "SOURCE's Story 2 states both the who-gets-heard-first emphasis and quality's near irrelevance."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "2.2.1"
+   ],
+   "claim_text": "A wealthy patron gets a composer performed, audiences like what they hear, and the familiarity gets read as quality.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A composer with a wealthy patron gets performed; audiences grow to like what they hear... that familiarity gets retroactively interpreted as quality",
+   "reasoning": "SOURCE describes the same causal chain from patron to performance to familiarity-as-quality."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "2.2.2"
+   ],
+   "claim_text": "Institutions lock that advantage in for future generations.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "institutions lock it in for future generations",
+   "reasoning": "SOURCE states this verbatim as the final link in Story 2's chain."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Story 3 (Floors and Ceilings): both stories are partly right.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "**Story 3: Floors and Ceilings.** Both are partly right.",
+   "reasoning": "SOURCE states both prior stories are partly right in Story 3's opening."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "2.3.1"
+   ],
+   "claim_text": "The truly terrible never succeed no matter how much money backs them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly terrible never succeed no matter how much money backs them.",
+   "reasoning": "SOURCE states this sentence verbatim, including the negation never."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "2.3.2"
+   ],
+   "claim_text": "The truly transcendent sometimes break through despite everything.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly transcendent sometimes break through despite everything.",
+   "reasoning": "SOURCE states this verbatim, preserving the hedge sometimes."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "2.3.3"
+   ],
+   "claim_text": "For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'.",
+   "reasoning": "SOURCE states the same three factors and the same negation of peer talent differences."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "The canon is like a job market: the very best and the very worst candidates are easy to rank.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Think of it like a job market. The very best candidate and the very worst are easy to rank.",
+   "reasoning": "SOURCE uses the job-market analogy and says best and worst are easy to rank."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "2.4.1"
+   ],
+   "claim_text": "Among twenty pretty good candidates, who gets hired often comes down to who knew someone, a good interview day, or resume order.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile.",
+   "reasoning": "SOURCE gives the same count (twenty), hedge (often), and three factors as the analogy."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "2.4.2"
+   ],
+   "claim_text": "The classical music canon is the same problem at civilizational scale.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The classical music canon is the same problem at civilizational scale.",
+   "reasoning": "SOURCE states this sentence verbatim."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "three phenomena that are individually well-documented in psychology and economics, but whose combined effect on cultural canons hasn't been quantified",
+   "reasoning": "Source states exactly this framing of the three well-documented phenomena and the unquantified combined effect."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Mere exposure: we tend to like things we have encountered before.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We tend to like things we've encountered before.",
+   "reasoning": "Identical meaning to source definition of the mere exposure effect."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "3.1.1"
+   ],
+   "claim_text": "A song played on the radio ten times starts to feel catchy even if it did not grab you the first time.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time.",
+   "reasoning": "Near-verbatim restatement with identical number and negation preserved."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "3.1.2"
+   ],
+   "claim_text": "This is not about learning to appreciate complexity; it happens with nonsense syllables, abstract shapes, and strangers' faces.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers.",
+   "reasoning": "Negation and the three listed stimulus types are all retained faithfully."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "3.1.3"
+   ],
+   "claim_text": "Zajonc demonstrated the effect in 1968.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Zajonc demonstrated this in 1968",
+   "reasoning": "Name and year match source exactly."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "3.1.4"
+   ],
+   "claim_text": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26",
+   "reasoning": "All numbers (1989, 208, r = 0.26) and the name match source exactly."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "3.1.5"
+   ],
+   "claim_text": "The effect peaks at moderate exposure and reverses with overexposure.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The effect peaks at moderate exposure and reverses with overexposure",
+   "reasoning": "Identical to the source sentence about the exposure curve."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "3.1.6"
+   ],
+   "claim_text": "Artists who get more initial airtime develop an artificial quality advantage, because audiences genuinely perceive funded work as better.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better ... the exposure was determined by money",
+   "reasoning": "Source links initial airtime to artificial advantage and ties exposure to money, so \"funded work\" is a faithful compression."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "3.1.7"
+   ],
+   "claim_text": "The problem is not that people are bad judges; the judging is contaminated by exposure, and the exposure was determined by money.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money.",
+   "reasoning": "Negation and causal chain match source verbatim in meaning."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Social influence: we use what others consume as a shortcut for what is good.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We look at what others consume and use it as a shortcut for what's good.",
+   "reasoning": "Direct restatement of the social influence definition."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "3.2.1"
+   ],
+   "claim_text": "Bestseller lists, download counts, trending labels, and view counts nudge us toward what is already popular, creating snowball effects.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects.",
+   "reasoning": "All four signal types and the snowball-effect consequence are preserved."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "3.2.2"
+   ],
+   "claim_text": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Salganik MusicLab experiment (2006) ... 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't.",
+   "reasoning": "Year, participant count, song count, and the split condition all match; \"choose among\" tracks the market task."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "3.2.3"
+   ],
+   "claim_text": "The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads.",
+   "claim_type": "number_or_date",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first",
+   "reasoning": "Numbers 1 and 40 match, but source hedges with \"could\"; loglog states \"ranked\" as certain fact."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The rich get richer. ... The sociologist Robert Merton called this the Matthew Effect.",
+   "reasoning": "Entity name Robert Merton and the Matthew Effect attribution match source exactly."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "claim_text": "A first album that sells well buys a bigger marketing budget, better tour slots, more press, and prominent playlist placement.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement",
+   "reasoning": "All four listed benefits are retained; wording compression preserves meaning."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "claim_text": "Small initial differences, whether from luck, timing, or money, get magnified into enormous gaps over time.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time.",
+   "reasoning": "The three possible sources and the magnification effect match; \"whether from\" remains a list of possibilities."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "claim_text": "A composer who secures a court position at 20 accumulates decades of performances and reputation that a one-year miss never builds.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build.",
+   "reasoning": "Age, decades, one-year miss, and the negation \"never\" all match; only publications is omitted, not contradicted."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Each mechanism is well-understood alone; the open question is what happens when all three interact over many generations.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Each of these alone is well-understood. What I wanted to know is: when you put all three together ... over many generations, what happens?",
+   "reasoning": "Reflects the source's contrast between individual understanding and the combined multi-generation question."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "The model was run thousands of times to test how social signals, money, and patronage shape the canon.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "I ran this thousands of times under different conditions.",
+   "reasoning": "Source confirms thousands of runs and the combined-effect aim; money/patronage are the tested resource factors."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "three types of agents: producers ... consumers ... and gatekeepers",
+   "reasoning": "Source states all three agent types and independent quality/capital draws."
+  },
+  {
+   "claim_id": "C043",
+   "loglog_ids": [
+    "4.1.1"
+   ],
+   "claim_text": "Each producer gets a random quality score and an independently drawn capital score, so being wealthy does not make you talented.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Being wealthy doesn't make you talented.",
+   "reasoning": "Directly restates source's random quality, independent capital, and uncorrelated wealth/talent."
+  },
+  {
+   "claim_id": "C044",
+   "loglog_ids": [
+    "4.1.2"
+   ],
+   "claim_text": "Producers with more capital get more exposure, and consumers form opinions from quality, mere exposure, and social signals.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Consumers form opinions based on actual quality plus the mere exposure effect plus social signals.",
+   "reasoning": "Matches source sentence on capital-driven exposure and the three opinion inputs."
+  },
+  {
+   "claim_id": "C045",
+   "loglog_ids": [
+    "4.1.3"
+   ],
+   "claim_text": "Success feeds back into more exposure, and after many rounds some producers achieve canonical status.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Success feeds back into more exposure (cumulative advantage).",
+   "reasoning": "Source states the feedback loop and that some producers reach canonical status after many rounds."
+  },
+  {
+   "claim_id": "C046",
+   "loglog_ids": [
+    "4.1.4"
+   ],
+   "claim_text": "Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "about two minutes with 1,000 producers and 10,000 consumers",
+   "reasoning": "All quantities and the parallelization detail match source exactly."
+  },
+  {
+   "claim_id": "C047",
+   "loglog_ids": [
+    "4.1.5"
+   ],
+   "claim_text": "The author ran 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "ran 360+ per condition for the main experiments, with formal power analysis",
+   "reasoning": "Source states 360+ per condition and formal power analysis verbatim."
+  },
+  {
+   "claim_id": "C048",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Experiment 1: visible social influence weakens the quality-success link.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Does social influence weaken the quality-success link? Yes.",
+   "reasoning": "Source answers yes to this exact question."
+  },
+  {
+   "claim_id": "C049",
+   "loglog_ids": [
+    "4.2.1"
+   ],
+   "claim_text": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "drops significantly (p < 0.0001 across 360 runs per condition)",
+   "reasoning": "p-value, direction, and run count all match source."
+  },
+  {
+   "claim_id": "C050",
+   "loglog_ids": [
+    "4.2.2"
+   ],
+   "claim_text": "In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "quality would be a moderately good predictor of success.",
+   "reasoning": "Verbatim restatement of the source's counterfactual claim."
+  },
+  {
+   "claim_id": "C051",
+   "loglog_ids": [
+    "4.2.3"
+   ],
+   "claim_text": "In our world of charts, recommendations, and trending labels, the link gets weaker.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker.",
+   "reasoning": "Direct paraphrase preserving the 'our world' scope and weakening of the link."
+  },
+  {
+   "claim_id": "C052",
+   "loglog_ids": [
+    "4.2.3.1"
+   ],
+   "claim_text": "A mediocre work that gets lucky early can ride social proof to stardom.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "A mediocre work that gets lucky early can ride social proof to stardom",
+   "reasoning": "Verbatim restatement with the hedge 'can' preserved."
+  },
+  {
+   "claim_id": "C053",
+   "loglog_ids": [
+    "4.2.3.2"
+   ],
+   "claim_text": "An equally good work that starts slow may never recover.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "may never recover",
+   "reasoning": "Verbatim restatement preserving the modal 'may never'."
+  },
+  {
+   "claim_id": "C054",
+   "loglog_ids": [
+    "4.2.4"
+   ],
+   "claim_text": "Every Top 40 chart, Customers Also Bought widget, and view count is a form of social influence pushing us away from independent judgment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "systematically pushes us away from independent judgment",
+   "reasoning": "Matches source's 'every' enumeration and push away from independent judgment."
+  },
+  {
+   "claim_id": "C055",
+   "loglog_ids": [
+    "4.2.5"
+   ],
+   "claim_text": "The measurement trap: popularity is used as a proxy for quality, then optimized for, then forgotten as a proxy.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "use popularity as a proxy for quality, then optimize for the proxy, then forget it was a proxy.",
+   "reasoning": "Exact restatement of the source's proxy sequence."
+  },
+  {
+   "claim_id": "C056",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Experiment 2: holding talent constant and reshuffling only resources produces almost entirely different canons.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Almost entirely different canons from just reshuffling money.",
+   "reasoning": "Source holds talent constant, reshuffles resources, and reports almost entirely different canons."
+  },
+  {
+   "claim_id": "C057",
+   "loglog_ids": [
+    "4.3.1"
+   ],
+   "claim_text": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "counterfactual distance was 0.88 on a 0-to-1 scale",
+   "reasoning": "Value 0.88 and both scale endpoints match source."
+  },
+  {
+   "claim_id": "C058",
+   "loglog_ids": [
+    "4.3.2"
+   ],
+   "claim_text": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "top 10% of talent ... about 1 in 4",
+   "reasoning": "Both the 10% and one-in-four figures match source exactly."
+  },
+  {
+   "claim_id": "C059",
+   "loglog_ids": [
+    "4.3.3"
+   ],
+   "claim_text": "For everyone in the 50th to 90th percentile of quality, canonical status was effectively a lottery.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "50th to 90th percentile of quality ... effectively a lottery",
+   "reasoning": "Percentile range and lottery characterization match source."
+  },
+  {
+   "claim_id": "C060",
+   "loglog_ids": [
+    "4.3.4"
+   ],
+   "claim_text": "This is the simulation equivalent of the Haydn question: excellence alone is not enough when the exposure pipeline is narrow.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "excellence alone isn't enough when the exposure pipeline is this narrow",
+   "reasoning": "Matches source's Haydn-question framing and the 'narrow pipeline' conclusion."
+  },
+  {
+   "claim_id": "C061",
+   "loglog_ids": [
+    "4.3.5"
+   ],
+   "claim_text": "Had the Esterházys hired someone else, Haydn would very likely be one of the hundreds of forgotten composers.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "If the Esterházys had hired someone else, Haydn would very likely be one of the hundreds of forgotten",
+   "reasoning": "Names, hedge 'very likely', and 'hundreds of forgotten' all preserved."
+  },
+  {
+   "claim_id": "C062",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "Experiment 3: unequal money distorts the canon more than herd behavior.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Turning off social influence barely helps. But equalizing starting resources jumps ...",
+   "reasoning": "Source's comparison concludes capital inequality matters more than social influence."
+  },
+  {
+   "claim_id": "C063",
+   "loglog_ids": [
+    "4.4.1"
+   ],
+   "claim_text": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Full model ... 0.32 ... No social influence ... 0.35 ... Equal capital ... 0.46 ... Quality only ... 0.46",
+   "reasoning": "All four correlations and their condition labels match source exactly."
+  },
+  {
+   "claim_id": "C064",
+   "loglog_ids": [
+    "4.4.2"
+   ],
+   "claim_text": "Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "equalizing starting resources jumps the quality-canon correlation by 44%",
+   "reasoning": "The 44% figure and both effect directions match source."
+  },
+  {
+   "claim_id": "C065",
+   "loglog_ids": [
+    "4.4.3"
+   ],
+   "claim_text": "The biggest distortion is not that audiences follow trends; it is that some artists never get heard in the first place.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The biggest distortion isn't that audiences follow trends. It's that some artists never get heard",
+   "reasoning": "Preserves both the negation and the contrasted cause exactly."
+  },
+  {
+   "claim_id": "C066",
+   "loglog_ids": [
+    "4.4.4"
+   ],
+   "claim_text": "Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.",
+   "reasoning": "Verbatim restatement of the source causal claim."
+  },
+  {
+   "claim_id": "C067",
+   "loglog_ids": [
+    "4.4.5"
+   ],
+   "claim_text": "The modern mapping: the problem is not that people blindly follow Spotify playlists, but that only major-label artists get on them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "only major-label artists get on those playlists to begin with",
+   "reasoning": "Both the negation and the 'only major-label' scope are preserved."
+  },
+  {
+   "claim_id": "C068",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "Experiment 4: a stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "300 composers, a handful of very wealthy patrons, strong word-of-mouth, no recording technology",
+   "reasoning": "The 300 count and all four setup features match source."
+  },
+  {
+   "claim_id": "C069",
+   "loglog_ids": [
+    "4.5.1"
+   ],
+   "claim_text": "Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "distance was 0.97, near maximum. Only 2.5% of canonical composers were shared",
+   "reasoning": "Both 0.97 and 2.5% figures match source exactly."
+  },
+  {
+   "claim_id": "C070",
+   "loglog_ids": [
+    "4.5.2"
+   ],
+   "claim_text": "Rewinding to 1750 and randomly reassigning court positions would make the names we teach almost entirely different.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "rewind to 1750 and randomly reassign which composers got which court positions",
+   "reasoning": "Year 1750, court positions, and 'almost entirely different' all match source."
+  },
+  {
+   "claim_id": "C071",
+   "loglog_ids": [
+    "4.5.3"
+   ],
+   "claim_text": "The winners were very likely excellent, since you had to be good to compete for a court position.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The winners in our timeline were very likely excellent. You had to be good to compete",
+   "reasoning": "Both the 'very likely excellent' hedge and the competition reason match."
+  },
+  {
+   "claim_id": "C072",
+   "loglog_ids": [
+    "4.5.4"
+   ],
+   "claim_text": "Dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "dozens of equally excellent composers were lost to history because they drew the short straw",
+   "reasoning": "Verbatim restatement preserving quantity 'dozens' and the lottery cause."
+  },
+  {
+   "claim_id": "C073",
+   "loglog_ids": [
+    "4.5.5"
+   ],
+   "claim_text": "Manufacturing taste means the winners were not bad, but the losers were not meaningfully worse.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Not that the winners were bad. That the losers weren't meaningfully worse.",
+   "reasoning": "Both negations preserved exactly from the source definition."
+  },
+  {
+   "claim_id": "C074",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "claim_text": "Robustness: the results held with every parameter varied by ±50%.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "I varied every parameter by ±50%",
+   "reasoning": "±50% matches; robustness framing is confirmed by the source's later robust-direction statement."
+  },
+  {
+   "claim_id": "C075",
+   "loglog_ids": [
+    "4.6.1"
+   ],
+   "claim_text": "The single most important factor is how steeply money converts into attention.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "single most important factor is how steeply money converts into attention",
+   "reasoning": "Verbatim restatement of the source's key-factor claim."
+  },
+  {
+   "claim_id": "C076",
+   "loglog_ids": [
+    "4.6.2"
+   ],
+   "claim_text": "If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "the rich get richer very fast and quality barely matters",
+   "reasoning": "Convex condition and both consequences match source."
+  },
+  {
+   "claim_id": "C077",
+   "loglog_ids": [
+    "4.6.3"
+   ],
+   "claim_text": "If doubling a budget less than doubles the audience, quality has more room to breathe.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "quality has more room to breathe",
+   "reasoning": "Concave condition and outcome restated directly from source."
+  },
+  {
+   "claim_id": "C078",
+   "loglog_ids": [
+    "4.6.4"
+   ],
+   "claim_text": "In the industry, a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500",
+   "reasoning": "Both figures, 50 million and 500, match source exactly."
+  },
+  {
+   "claim_id": "C079",
+   "loglog_ids": [
+    "4.6.5"
+   ],
+   "claim_text": "Under such an extremely steep capital-to-exposure curve, quality has very little to do with who becomes famous.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Our model predicts that under those conditions, quality has very little to do with who becomes famous.",
+   "reasoning": "Preserves the model-prediction framing and the steep-curve condition."
+  },
+  {
+   "claim_id": "C080",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Story 3 wins: quality is a loose filter setting a floor and ceiling, and the vast middle is dominated by capital and luck.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Story 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will.",
+   "reasoning": "Source states this nearly verbatim, including the middle dominated by capital and luck."
+  },
+  {
+   "claim_id": "C081",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "The greatest composer who ever lived, made precise, is the greatest among those with resources to be heard, published, and preserved.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\"",
+   "reasoning": "Faithful generalization of the source's Bach-specific restatement, same meaning and qualifier."
+  },
+  {
+   "claim_id": "C082",
+   "loglog_ids": [
+    "5.1.1"
+   ],
+   "claim_text": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "reasoning": "Node reproduces the source sentence exactly, hedge included."
+  },
+  {
+   "claim_id": "C083",
+   "loglog_ids": [
+    "5.1.2"
+   ],
+   "claim_text": "We cannot know, but the simulation says it is very likely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We don't know. We can't know. But the simulation says it's very likely.",
+   "reasoning": "Node preserves both the epistemic hedge and the simulation's likelihood claim."
+  },
+  {
+   "claim_id": "C084",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "The mechanisms are stronger today, not weaker.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The mechanisms are stronger today, not weaker.",
+   "reasoning": "Exact restatement of the source heading."
+  },
+  {
+   "claim_id": "C085",
+   "loglog_ids": [
+    "5.2.1"
+   ],
+   "claim_text": "An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours.",
+   "reasoning": "Same two timeframes joined by a semicolon, meaning unchanged."
+  },
+  {
+   "claim_id": "C086",
+   "loglog_ids": [
+    "5.2.2"
+   ],
+   "claim_text": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "reasoning": "Verbatim source sentence."
+  },
+  {
+   "claim_id": "C087",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "The highest-leverage intervention is not better judgment, it is wider exposure.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The highest-leverage intervention isn't better judgment, it's wider exposure.",
+   "reasoning": "Exact match, negation preserved."
+  },
+  {
+   "claim_id": "C088",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "claim_text": "Audiences are already decent judges within the limits of what they are exposed to; the bottleneck is exposure itself.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself.",
+   "reasoning": "Same claim; only dropped the framing phrase \"Our model says\"."
+  },
+  {
+   "claim_id": "C089",
+   "loglog_ids": [
+    "5.3.2"
+   ],
+   "claim_text": "Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "widely adopted in the 1970s-80s... the proportion of women hired by major US orchestras went from 5% to 25%.",
+   "reasoning": "All figures, date range, and entities match the source exactly."
+  },
+  {
+   "claim_id": "C090",
+   "loglog_ids": [
+    "5.3.3"
+   ],
+   "claim_text": "The talent was always there; the barrier was exposure.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The talent was always there. The barrier was exposure.",
+   "reasoning": "Verbatim source statement."
+  },
+  {
+   "claim_id": "C091",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "The deeper pattern is the gap between the metric and what we care about: canon survival is a proxy for being the best.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the gap between the metric and the thing we actually care about. We use \"survived into the canon\" as a proxy for \"was the best,\"",
+   "reasoning": "Faithful compression of the source's proxy point."
+  },
+  {
+   "claim_id": "C092",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "claim_text": "The simulation does not say what the canon should look like, only that the one we got is far more contingent than we assume.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The simulation doesn't tell us what the canon *should* look like. It just tells us that the one we got is far more contingent than we assume.",
+   "reasoning": "Same two-part claim, negation and emphasis preserved."
+  },
+  {
+   "claim_id": "C093",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Three caveats bound what the model can tell us.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "## The Caveats\nI want to be honest about what this can and can't tell us.",
+   "reasoning": "Source presents three distinct caveat topics (quality assumption, calibration, omitted factors), supporting the count."
+  },
+  {
+   "claim_id": "C094",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The model assumes quality is a real, stable property that exists independently of who hears it. That's philosophically debatable.",
+   "reasoning": "Node matches the source sentence and its debatable qualifier."
+  },
+  {
+   "claim_id": "C095",
+   "loglog_ids": [
+    "6.1.1"
+   ],
+   "claim_text": "If quality is partly constituted by social processes, the whole decomposition may be ill-posed.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If \"quality\" is partly constituted by social processes... then the whole decomposition may be ill-posed.",
+   "reasoning": "Node keeps the conditional and the \"may be\" hedge intact."
+  },
+  {
+   "claim_id": "C096",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "studied American teenagers evaluating pop songs over weeks. Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith.",
+   "reasoning": "Same claim; only the phrase \"evaluating orchestral music\" is compressed out."
+  },
+  {
+   "claim_id": "C097",
+   "loglog_ids": [
+    "6.2.1"
+   ],
+   "claim_text": "The mechanisms are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the mechanisms... are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "reasoning": "Verbatim source statement aside from the parenthetical mechanism list."
+  },
+  {
+   "claim_id": "C098",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "The model omits genre formation, critical discourse, technological change, and cultural politics.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics.",
+   "reasoning": "All four omitted items match the source list."
+  },
+  {
+   "claim_id": "C099",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "claim_text": "Any model is a simplification; the direction of the effects is robust across parameter values, even if the magnitudes are uncertain.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Any model is a simplification... The direction of the effects is robust across a wide range of parameter values, even if the precise magnitudes are uncertain.",
+   "reasoning": "Same claim; \"wide range of\" is compressed to \"across\" with no meaning change."
+  },
+  {
+   "claim_id": "C100",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Bach was excellent AND well-positioned, and the second half matters more than the first.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He was excellent AND well-positioned. But the simulation tells us the \"AND\" is doing most of the work, and the second half matters more than the first.",
+   "reasoning": "Source states the exact conjunction and that the second half matters more."
+  },
+  {
+   "claim_id": "C101",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "reasoning": "Direct restatement of the source sentence with identical meaning."
+  },
+  {
+   "claim_id": "C102",
+   "loglog_ids": [
+    "7.1.1"
+   ],
+   "claim_text": "The pop pipeline can manufacture a global phenomenon from someone good enough to carry a tune and look good on camera, a bar millions meet.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion.",
+   "reasoning": "Preserves the criteria and the millions-meet-the-bar qualifier."
+  },
+  {
+   "claim_id": "C103",
+   "loglog_ids": [
+    "7.1.2"
+   ],
+   "claim_text": "A court position required writing for liturgical services, entertaining aristocrats, training choirs, and improvising fugues on demand.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand.",
+   "reasoning": "All four requirements listed match the source exactly."
+  },
+  {
+   "claim_id": "C104",
+   "loglog_ids": [
+    "7.1.3"
+   ],
+   "claim_text": "The quality floor of that world was genuinely high.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The quality floor was genuinely high.",
+   "reasoning": "Verbatim restatement of the source claim."
+  },
+  {
+   "claim_id": "C105",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Reshuffling patronage gives an almost entirely different canon, with only 2.5% overlap between alternate histories.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Reshuffle patronage and you get an almost entirely different canon. Only 2.5% overlap between alternate histories.",
+   "reasoning": "The 2.5% figure and the near-total difference are stated identically."
+  },
+  {
+   "claim_id": "C106",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Bach is like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "reasoning": "The analogy and the number fifty are preserved exactly."
+  },
+  {
+   "claim_id": "C107",
+   "loglog_ids": [
+    "7.3.1"
+   ],
+   "claim_text": "A New York Times profile led to speaking invitations, a book deal, and a reputation as the best surgeon in the country.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\"",
+   "reasoning": "The causal chain and outlet name match the source."
+  },
+  {
+   "claim_id": "C108",
+   "loglog_ids": [
+    "7.3.2"
+   ],
+   "claim_text": "The other 49 are just as good, and you have never heard of them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The other 49 are just as good. You've never heard of them.",
+   "reasoning": "Both the count 49 and the negation are preserved."
+  },
+  {
+   "claim_id": "C109",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "The question was never whether Bach was great; he almost certainly was.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question was never whether Bach was great. He almost certainly was.",
+   "reasoning": "The negation and the almost-certainly hedge are both kept."
+  },
+  {
+   "claim_id": "C110",
+   "loglog_ids": [
+    "7.4.1"
+   ],
+   "claim_text": "The question is whether we listen because he was the greatest, or because he was great AND landed the right church job in Leipzig.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig.",
+   "reasoning": "The dichotomy and the Leipzig detail match exactly."
+  },
+  {
+   "claim_id": "C111",
+   "loglog_ids": [
+    "7.4.2"
+   ],
+   "claim_text": "The simulation says it is the second.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The simulation says it's the second.",
+   "reasoning": "Direct restatement of the source's attribution to the simulation."
+  },
+  {
+   "claim_id": "C112",
+   "loglog_ids": [
+    "7.4.3"
+   ],
+   "claim_text": "There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "reasoning": "The range 20 to 50 and the probably hedge are preserved."
+  },
+  {
+   "claim_id": "C113",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "The canon is one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as inevitable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it's one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as if it were inevitable.",
+   "reasoning": "Meaning identical; only the 'as if' wording is compressed."
+  },
+  {
+   "claim_id": "C114",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "claim_text": "Bach's harmonic language, his structures, and his aesthetic sensibility are the foundations of how we hear and judge music today.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today.",
+   "reasoning": "Direct restatement of all three elements and their role."
+  },
+  {
+   "claim_id": "C115",
+   "loglog_ids": [
+    "7.6.1"
+   ],
+   "claim_text": "With a different set of composers surviving into the canon, we would have inherited different foundations and would hear and judge differently.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently.",
+   "reasoning": "The conditional and its consequences match the source."
+  },
+  {
+   "claim_id": "C116",
+   "loglog_ids": [
+    "7.6.2"
+   ],
+   "claim_text": "What we call good taste would be a different taste entirely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "What we call \"good taste\" would be a different taste entirely.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C117",
+   "loglog_ids": [
+    "7.7"
+   ],
+   "claim_text": "Our taste was manufactured along with the canon: we like what we were taught to like.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's that our taste was manufactured along with it. We like what we were taught to like.",
+   "reasoning": "Both halves are stated directly in the source."
+  },
+  {
+   "claim_id": "C118",
+   "loglog_ids": [
+    "7.7.1"
+   ],
+   "claim_text": "The survivors were selected by money and luck as much as by merit.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the survivors were selected by money and luck as much as by merit.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C119",
+   "loglog_ids": [
+    "7.7.2"
+   ],
+   "claim_text": "The whole chain from who got funded to what counts as beautiful is more contingent than it feels from the inside.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C120",
+   "loglog_ids": [
+    "7.8"
+   ],
+   "claim_text": "Whether people 300 years from now will listen to Bieber and call it the peak of our era is unknown.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know.",
+   "reasoning": "The unknown status and the 300-year frame are preserved."
+  },
+  {
+   "claim_id": "C121",
+   "loglog_ids": [
+    "7.8.1"
+   ],
+   "claim_text": "If the mechanisms are right, the 2000s canon will track distribution deals and the most favorable algorithms more than the best music.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music.",
+   "reasoning": "The conditional and the comparison are preserved exactly."
+  },
+  {
+   "claim_id": "C122",
+   "loglog_ids": [
+    "7.8.2"
+   ],
+   "claim_text": "And we will not be around to correct them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "And we won't be around to correct them.",
+   "reasoning": "The negation and meaning are identical."
+  }
+ ],
+ "metrics": {
+  "total_claims": 122,
+  "supported": 121,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9918
+ },
+ "fail_list": [
+  "C035"
+ ]
+}
+```
+
+## Judge Cov (coverage), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: the classical music canon is manufactured by money, luck, and exposure rather than pure quality, and our very sense of 'good taste' was manufactured along with it (the canon is one of many equally valid possible canons).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002",
+    "L114",
+    "L118",
+    "L120"
+   ],
+   "evidence_quote": "Our taste was manufactured along with the canon: we like what we were taught to like. (L118)",
+   "reasoning": "The summary (L002) states quality only loosely filters canon success and taste is contingent; L114 states the canon is one of hundreds of equally valid ones; L118-L120 state taste was manufactured and the chain from funding to beauty is contingent. Thesis fully captured with qualifiers intact."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The scale of forgotten composers: 200 to 500 active composers in 18th-century Vienna alone; IMSLP catalogs over 3,400 Classical-era composers who survived in some form; Wikipedia lists several hundred; we remember fewer than 20.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005",
+    "L006"
+   ],
+   "evidence_quote": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time. (L005) ... IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred ... we remember fewer than 20. (L006)",
+   "reasoning": "All four numbers (200-500, 3,400, several hundred, fewer than 20) preserved exactly with no dropped qualifiers."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Since history cannot be replayed with different initial conditions, the author built a simulation of how cultural markets work and ran it thousands of times to test whether the remembered composers were actually the best or merely well-positioned.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L003",
+    "L009",
+    "L010",
+    "L042"
+   ],
+   "evidence_quote": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times. (L009)",
+   "reasoning": "L003 frames best vs best-positioned, L009 gives the counterfactual-replay rationale and thousands of runs, L010 notes the simulation and write-up, L042 confirms thousands of runs. Fully captured."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Three competing hypotheses: Story 1 'The Cream Rises' (quality wins over time), Story 2 'Money Writes History' (success is mostly who gets heard first, quality nearly irrelevant), Story 3 'Floors and Ceilings' (quality sets a floor and ceiling, but the vast middle is dominated by luck, money, and timing). Story 3 is the conclusion.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L011",
+    "L012",
+    "L014",
+    "L017",
+    "L020",
+    "L081"
+   ],
+   "evidence_quote": "Story 3 (Floors and Ceilings): both stories are partly right. (L017) ... For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers. (L020) ... Story 3 wins. (L081)",
+   "reasoning": "All three hypotheses are stated with their labels and defining content, and L081 explicitly declares Story 3 the conclusion. Numbers/qualifiers intact."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Three well-documented mechanisms are combined: the mere exposure effect, social influence, and cumulative advantage (the Matthew Effect, named by sociologist Robert Merton).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L024",
+    "L025",
+    "L033",
+    "L037"
+   ],
+   "evidence_quote": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified. (L024) ... Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect. (L037)",
+   "reasoning": "All three mechanisms are named and Merton's attribution is preserved. The novel-combination framing (L024, L041) matches the point."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Mere exposure effect details: demonstrated by Zajonc in 1968 and confirmed by Bornstein's 1989 meta-analysis of 208 experiments with average effect size r = 0.26; peaks at moderate exposure and reverses with overexposure.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L028",
+    "L029",
+    "L030"
+   ],
+   "evidence_quote": "Zajonc demonstrated the effect in 1968. (L028) ... Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. (L029) ... The effect peaks at moderate exposure and reverses with overexposure. (L030)",
+   "reasoning": "Names, years, 208 experiments, r = 0.26, and the moderate/overexposure qualifier are all present verbatim."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Salganik MusicLab experiment (2006): 14,341 participants judged 48 unknown songs; some saw download counts and others did not, and the same song could rank 1st or 40th in different worlds purely from random early download differences.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L035",
+    "L036"
+   ],
+   "evidence_quote": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not. (L035) ... The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads. (L036)",
+   "reasoning": "Year, participant count, song count, condition, and the rank-1-vs-40 result are all intact."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Model setup: three agent types (producers, consumers, gatekeepers); each producer gets a quality score and an independently drawn capital score (quality and capital uncorrelated); 1,000 producers and 10,000 consumers per run, about two minutes each, parallelized with 360+ runs per condition and formal power analysis.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L043",
+    "L044",
+    "L047",
+    "L048"
+   ],
+   "evidence_quote": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently. (L043) ... Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores. (L047) ... 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes. (L048)",
+   "reasoning": "Agent types, independent draw, 1,000/10,000, two minutes, parallelization, 360+ runs, and power analysis all present."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Social influence weakens the quality-success link: with visible consumption the quality-commercial-success correlation drops significantly (p < 0.0001 across 360 runs per condition); a mediocre work lucky early can ride social proof to stardom.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L049",
+    "L050",
+    "L051",
+    "L053"
+   ],
+   "evidence_quote": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition). (L050) ... A mediocre work that gets lucky early can ride social proof to stardom. (L053)",
+   "reasoning": "Direction, p-value, run count, and the lucky-mediocre-work mechanism are all captured, including the no-visibility contrast at L051."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Counterfactual experiment: holding every composer's talent constant and reshuffling only resources over 200 runs produced a counterfactual distance of 0.88 on a 0-to-1 scale; only the top 10% of talent had a meaningful shot (~1 in 4), and the 50th to 90th percentile faced fame as essentially a lottery.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L057",
+    "L058",
+    "L059",
+    "L060"
+   ],
+   "evidence_quote": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones. (L058) ... Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four. (L059) ... 50th to 90th percentile of quality, canonical status was effectively a lottery. (L060)",
+   "reasoning": "The core numbers (0.88, top 10%, ~1 in 4, 50th-90th lottery) and the talent-constant/reshuffle setup are fully present. However, the stated run count of 200 for this specific experiment is omitted; L047-L048 give run counts only for the main experiments generally. Because this is a Must have point with a dropped number, per the strict rule it is capped at Partial even though the substance is intact."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Four-condition comparison of quality-canon correlation: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46; equalizing resources raises the correlation 44%, showing unequal initial exposure (capital gating access) is the bigger distortion than herd behavior.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L064",
+    "L065",
+    "L066"
+   ],
+   "evidence_quote": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46. (L064) ... Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%. (L065)",
+   "reasoning": "All four correlation values and the 44% figure are exact; the conclusion that limited exposure dominates herd behavior is stated at L066."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "18th-century Vienna stylized model (300 composers, few wealthy patrons, strong word-of-mouth, no recording): counterfactual distance 0.97, near maximum, with only 2.5% of canonical composers shared between alternate histories.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L069",
+    "L070"
+   ],
+   "evidence_quote": "A stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology. (L069) ... Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories. (L070)",
+   "reasoning": "All setup parameters (300 composers, patrons, word-of-mouth, no recording) and both outcome numbers (0.97, 2.5%) preserved with the 'near maximum' qualifier."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Robustness: varying every parameter by ±50% shows the single most important factor is how steeply money converts into attention (convex relationship makes the rich get richer and quality barely matter, concave leaves more room for quality).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L075",
+    "L076",
+    "L077",
+    "L078"
+   ],
+   "evidence_quote": "The results held with every parameter varied by ±50%. (L075) ... The single most important factor is how steeply money converts into attention. (L076) ... If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters. (L077) ... If doubling a budget less than doubles the audience, quality has more room to breathe. (L078)",
+   "reasoning": "The ±50% robustness, the key factor, and both the convex and concave branches are captured with correct meaning."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Highest-leverage intervention is wider exposure, not better judgment: blind auditions in major US orchestras (adopted 1970s-80s) raised the proportion of women hired from 5% to 25%, proving the talent was there and the barrier was exposure.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L088",
+    "L089",
+    "L090",
+    "L091"
+   ],
+   "evidence_quote": "The highest-leverage intervention is not better judgment, it is wider exposure. (L088) ... Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%. (L090) ... The talent was always there; the barrier was exposure. (L091)",
+   "reasoning": "Recommendation, decade of adoption, 5% to 25%, and the interpretation are all intact."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Caveats: the model assumes quality is a real, stable property independent of who hears it (philosophically debatable); calibration comes from the Salganik study of American teenagers judging pop songs over weeks, so generalizing to 18th-century aristocrats over decades is a leap; and the model omits genre formation, critical discourse, technological change, and cultural politics.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L095",
+    "L096",
+    "L097",
+    "L099",
+    "L100"
+   ],
+   "evidence_quote": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable. (L095) ... The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith. (L097) ... The model omits genre formation, critical discourse, technological change, and cultural politics. (L099)",
+   "reasoning": "All three caveats are present with the debatable assumption, the calibration leap (teenagers/weeks vs aristocrats/decades), and the full list of omitted factors."
+  },
+  {
+   "point_id": "K16",
+   "point_text": "Answer to the Bach-Bieber question: the Bieber analogy gets the mechanism right but the quality floor wrong; Bach was both excellent and well-positioned, the 'AND' does most of the work, and there were probably 20 to 50 equally great contemporaries whose names we will never know. The mechanisms are stronger today because algorithmic feedback loops operate in hours rather than decades.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L101",
+    "L102",
+    "L104",
+    "L105",
+    "L113",
+    "L085",
+    "L086"
+   ],
+   "evidence_quote": "Bach was excellent AND well-positioned, and the second half of that conjunction matters more than the first. (L101) ... The Bieber analogy gets the mechanism right but the quality floor wrong. (L102) ... There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know. (L113) ... An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours. (L086)",
+   "reasoning": "All components present: the analogy's correctness/error, the excellent-AND-positioned framing, the 20-50 contemporaries, and the stronger-today argument with the hours-vs-decades contrast."
+  }
+ ],
+ "metrics": {
+  "total_points": 16,
+  "must_have_total": 16,
+  "must_have_present": 15,
+  "must_have_partial": 1,
+  "must_have_missing": 0,
+  "overall_present": 15,
+  "must_recall": 0.9688,
+  "overall_recall": 0.9688
+ },
+ "missing_list": []
+}
+```
+
+## Judge Con (concision), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Top summary; first statement of the thesis, nothing earlier to repeat."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Opening framing question; sets up the whole argument."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bieber framing hook; specific and new."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specific counts for Vienna composers."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Catalog numbers give the scale of loss."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States standard explanation and the alternative."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical Haydn counterfactual; C060 and C061 restate it."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Justifies modeling; needed method setup."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Housekeeping meta about this being a less formal paper; no substantive point."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section header introducing the three hypotheses."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Story 1 definition; new."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "2.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Story 1 implication about patrons; distinct."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Story 2 definition; new."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "2.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mechanism of familiarity read as quality."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "2.2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Institutional lock-in; short but new."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Story 3 definition; new."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "2.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Floor claim; new."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "2.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ceiling-breakthrough claim; new."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "2.3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical middle-is-luck claim; C059 restates it."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Job-market analogy introduced."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "2.4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Interview example adds concrete color."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "2.4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Extends analogy to civilizational scale; marginal but new."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section header naming the three mechanisms."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mere-exposure definition; new."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "3.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Radio example; new."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "3.1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Scope clarification; not mere complexity."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "3.1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Zajonc 1968 citation; dated evidence."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "3.1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bornstein effect size; quantitative evidence."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "3.1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Inverted-U caveat; not trivia."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "3.1.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Links exposure to artificial quality advantage."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "3.1.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Distinguishes contamination from bad judges."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Social-influence definition; new."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "3.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Lists ranking signals creating snowballs."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "3.2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Salganik experiment numbers; distinct evidence."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "3.2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ranking flip result; new numbers despite partial verdict."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Cumulative-advantage definition and Merton attribution."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Album-to-budget feedback; new."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Magnification claim; new."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Court-position example; new."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Transition restating section 3 theme and previewing interaction."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 4 header; introduces actual model runs."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Model design definition; new."
+  },
+  {
+   "claim_id": "C043",
+   "loglog_ids": [
+    "4.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Independent quality and capital draws; new."
+  },
+  {
+   "claim_id": "C044",
+   "loglog_ids": [
+    "4.1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Exposure and opinion-formation rule; new."
+  },
+  {
+   "claim_id": "C045",
+   "loglog_ids": [
+    "4.1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Feedback to canonical status; new."
+  },
+  {
+   "claim_id": "C046",
+   "loglog_ids": [
+    "4.1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Runtime and scale numbers; new."
+  },
+  {
+   "claim_id": "C047",
+   "loglog_ids": [
+    "4.1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Run count and power analysis; new."
+  },
+  {
+   "claim_id": "C048",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Experiment 1 finding; new."
+  },
+  {
+   "claim_id": "C049",
+   "loglog_ids": [
+    "4.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Statistical result with p-value; not trivia."
+  },
+  {
+   "claim_id": "C050",
+   "loglog_ids": [
+    "4.2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterfactual no-visibility world."
+  },
+  {
+   "claim_id": "C051",
+   "loglog_ids": [
+    "4.2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Applies result to our world; new."
+  },
+  {
+   "claim_id": "C052",
+   "loglog_ids": [
+    "4.2.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Lucky mediocre work rises; new."
+  },
+  {
+   "claim_id": "C053",
+   "loglog_ids": [
+    "4.2.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Slow starter never recovers; new."
+  },
+  {
+   "claim_id": "C054",
+   "loglog_ids": [
+    "4.2.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Enumerates everyday social-influence widgets."
+  },
+  {
+   "claim_id": "C055",
+   "loglog_ids": [
+    "4.2.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Measurement-trap definition; new."
+  },
+  {
+   "claim_id": "C056",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Experiment 2 finding; new."
+  },
+  {
+   "claim_id": "C057",
+   "loglog_ids": [
+    "4.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterfactual distance number; new."
+  },
+  {
+   "claim_id": "C058",
+   "loglog_ids": [
+    "4.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Top-10% and one-in-four numbers; new."
+  },
+  {
+   "claim_id": "C059",
+   "loglog_ids": [
+    "4.3.3"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C019",
+   "reasoning": "Restates middle-is-luck as a lottery; cross-linked to 2.3.3."
+  },
+  {
+   "claim_id": "C060",
+   "loglog_ids": [
+    "4.3.4"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C007",
+   "reasoning": "Cross-linked restatement of the Haydn question from 1.5."
+  },
+  {
+   "claim_id": "C061",
+   "loglog_ids": [
+    "4.3.5"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C007",
+   "reasoning": "Same Esterházy counterfactual as 1.5, restated with its answer."
+  },
+  {
+   "claim_id": "C062",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Experiment 3 headline; new."
+  },
+  {
+   "claim_id": "C063",
+   "loglog_ids": [
+    "4.4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Correlation-by-condition numbers; not trivia."
+  },
+  {
+   "claim_id": "C064",
+   "loglog_ids": [
+    "4.4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "44% jump number; new."
+  },
+  {
+   "claim_id": "C065",
+   "loglog_ids": [
+    "4.4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Locates distortion in access, not trends."
+  },
+  {
+   "claim_id": "C066",
+   "loglog_ids": [
+    "4.4.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Capital-gates-exposure causal claim; new."
+  },
+  {
+   "claim_id": "C067",
+   "loglog_ids": [
+    "4.4.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Modern Spotify mapping; new framing."
+  },
+  {
+   "claim_id": "C068",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Experiment 4 setup numbers; new."
+  },
+  {
+   "claim_id": "C069",
+   "loglog_ids": [
+    "4.5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical 0.97 and 2.5% figures; C105 restates."
+  },
+  {
+   "claim_id": "C070",
+   "loglog_ids": [
+    "4.5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "1750 reassignment consequence; new framing."
+  },
+  {
+   "claim_id": "C071",
+   "loglog_ids": [
+    "4.5.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Winners were excellent; distinct from floor claim."
+  },
+  {
+   "claim_id": "C072",
+   "loglog_ids": [
+    "4.5.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical lost-equals claim; C082 restates it."
+  },
+  {
+   "claim_id": "C073",
+   "loglog_ids": [
+    "4.5.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Manufactured-taste definition; new."
+  },
+  {
+   "claim_id": "C074",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Robustness result; new."
+  },
+  {
+   "claim_id": "C075",
+   "loglog_ids": [
+    "4.6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Names the key parameter; new."
+  },
+  {
+   "claim_id": "C076",
+   "loglog_ids": [
+    "4.6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Convex-conversion consequence; new."
+  },
+  {
+   "claim_id": "C077",
+   "loglog_ids": [
+    "4.6.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concave-conversion contrast; new."
+  },
+  {
+   "claim_id": "C078",
+   "loglog_ids": [
+    "4.6.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "50 million vs 500 example quantifies steepness."
+  },
+  {
+   "claim_id": "C079",
+   "loglog_ids": [
+    "4.6.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Steep-curve conclusion; new."
+  },
+  {
+   "claim_id": "C080",
+   "loglog_ids": [
+    "5"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C001",
+   "reasoning": "Conclusion restates the opening summary thesis with little added."
+  },
+  {
+   "claim_id": "C081",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical precise claim; C110 restates it."
+  },
+  {
+   "claim_id": "C082",
+   "loglog_ids": [
+    "5.1.1"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C072",
+   "reasoning": "Repeats lost equally-gifted composers from 4.5.4."
+  },
+  {
+   "claim_id": "C083",
+   "loglog_ids": [
+    "5.1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Caveat about unknowability; caveats are never trivia."
+  },
+  {
+   "claim_id": "C084",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mechanisms are stronger today; new turn."
+  },
+  {
+   "claim_id": "C085",
+   "loglog_ids": [
+    "5.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Decades vs hours example; new."
+  },
+  {
+   "claim_id": "C086",
+   "loglog_ids": [
+    "5.2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Scale-of-winner-take-all claim; new."
+  },
+  {
+   "claim_id": "C087",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Recommendation for wider exposure; new."
+  },
+  {
+   "claim_id": "C088",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical bottleneck claim; C090 restates it."
+  },
+  {
+   "claim_id": "C089",
+   "loglog_ids": [
+    "5.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Blind-audition numbers; not trivia."
+  },
+  {
+   "claim_id": "C090",
+   "loglog_ids": [
+    "5.3.3"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C088",
+   "reasoning": "Punchline repeats the exposure-bottleneck claim from 5.3.1."
+  },
+  {
+   "claim_id": "C091",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Metric-vs-value gap; new framing."
+  },
+  {
+   "claim_id": "C092",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical contingency claim; C113 and C119 restate."
+  },
+  {
+   "claim_id": "C093",
+   "loglog_ids": [
+    "6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section header for caveats; structural and needed."
+  },
+  {
+   "claim_id": "C094",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Quality-as-stable-property caveat; new."
+  },
+  {
+   "claim_id": "C095",
+   "loglog_ids": [
+    "6.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ill-posed decomposition caveat; new."
+  },
+  {
+   "claim_id": "C096",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Calibration-generalization caveat; new."
+  },
+  {
+   "claim_id": "C097",
+   "loglog_ids": [
+    "6.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Parameter-uncertainty fact; new."
+  },
+  {
+   "claim_id": "C098",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Omitted-factors caveat; new."
+  },
+  {
+   "claim_id": "C099",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Direction-robust caveat; new."
+  },
+  {
+   "claim_id": "C100",
+   "loglog_ids": [
+    "7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bach stands as excellent and positioned; specific to closing."
+  },
+  {
+   "claim_id": "C101",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Judges the Bieber analogy; new synthesis."
+  },
+  {
+   "claim_id": "C102",
+   "loglog_ids": [
+    "7.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Pop pipeline bar; new."
+  },
+  {
+   "claim_id": "C103",
+   "loglog_ids": [
+    "7.1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Court-position duties list; new."
+  },
+  {
+   "claim_id": "C104",
+   "loglog_ids": [
+    "7.1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "High quality-floor claim; new."
+  },
+  {
+   "claim_id": "C105",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C069",
+   "reasoning": "Cross-linked restatement of the 2.5% overlap from 4.5.1."
+  },
+  {
+   "claim_id": "C106",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Surgeon analogy introduced; new."
+  },
+  {
+   "claim_id": "C107",
+   "loglog_ids": [
+    "7.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "NYT-profile example; new."
+  },
+  {
+   "claim_id": "C108",
+   "loglog_ids": [
+    "7.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Punchline of surgeon analogy; new."
+  },
+  {
+   "claim_id": "C109",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Reframes the question away from Bach's greatness."
+  },
+  {
+   "claim_id": "C110",
+   "loglog_ids": [
+    "7.4.1"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C081",
+   "reasoning": "Cross-linked restatement of the qualified-greatest claim from 5.1."
+  },
+  {
+   "claim_id": "C111",
+   "loglog_ids": [
+    "7.4.2"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Bare pointer to the simulation verdict already conveyed; adds nothing."
+  },
+  {
+   "claim_id": "C112",
+   "loglog_ids": [
+    "7.4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "20 to 50 contemporaries number; not trivia."
+  },
+  {
+   "claim_id": "C113",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C092",
+   "reasoning": "Repeats canon contingency and inevitability already stated in 5.4.1."
+  },
+  {
+   "claim_id": "C114",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bach as foundation of hearing; new."
+  },
+  {
+   "claim_id": "C115",
+   "loglog_ids": [
+    "7.6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterfactual inherited foundations; new."
+  },
+  {
+   "claim_id": "C116",
+   "loglog_ids": [
+    "7.6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Different taste counterfactual; distinct."
+  },
+  {
+   "claim_id": "C117",
+   "loglog_ids": [
+    "7.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Manufactured-taste thesis stated directly; new."
+  },
+  {
+   "claim_id": "C118",
+   "loglog_ids": [
+    "7.7.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Selection by money and luck; new within closing."
+  },
+  {
+   "claim_id": "C119",
+   "loglog_ids": [
+    "7.7.2"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C092",
+   "reasoning": "Third restatement of contingency claim from 5.4.1."
+  },
+  {
+   "claim_id": "C120",
+   "loglog_ids": [
+    "7.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Future-canon unknowability; new twist."
+  },
+  {
+   "claim_id": "C121",
+   "loglog_ids": [
+    "7.8.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Future tracks distribution deals; new."
+  },
+  {
+   "claim_id": "C122",
+   "loglog_ids": [
+    "7.8.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Closing punchline; short but new."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 122,
+  "unique": 109,
+  "duplicates": 10,
+  "trivia": 3,
+  "redundancy_rate": 0.082,
+  "trivia_rate": 0.0246,
+  "structured_tokens": 2018,
+  "tokens_per_unique_claim": 18.5
+ },
+ "prune_list": [
+  "C059 duplicates C019, safe to merge",
+  "C060 duplicates C007, safe to merge",
+  "C061 duplicates C007, safe to merge",
+  "C080 duplicates C001, safe to merge",
+  "C082 duplicates C072, safe to merge",
+  "C090 duplicates C088, safe to merge",
+  "C105 duplicates C069, safe to merge",
+  "C110 duplicates C081, safe to merge",
+  "C113 duplicates C092, safe to merge",
+  "C119 duplicates C092, safe to merge",
+  "C009 trivia, drop housekeeping meta",
+  "C040 trivia, drop theme transition",
+  "C111 trivia, drop bare simulation pointer"
+ ]
+}
+```
+
+## Judge F (faithfulness), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "claims": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "A simulation finds quality only loosely filters canon success, exposure and capital dominate, and the canon and our taste are more contingent than they feel.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Quality acts as a loose filter... the vast middle ground... is dominated by capital and luck... your taste was manufactured along with it",
+   "reasoning": "SOURCE states quality is a loose filter, the middle is dominated by capital and luck, and taste is more contingent than it feels."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "The canon's winners may be the best or merely the best positioned, and history cannot tell us which.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "were they the best? Or were they the ones who happened to have the right patron... We literally cannot answer that question empirically.",
+   "reasoning": "SOURCE poses both alternatives and says the empirical question cannot be answered, matching the hedge."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "The question began half-jokingly: was Bach the Justin Bieber of his time?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time.",
+   "reasoning": "SOURCE says exactly this, preserving both the joke framing and the question."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time",
+   "reasoning": "Range, place, and time all match SOURCE exactly."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred, and many more left no trace; we remember fewer than 20.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "IMSLP catalogs over 3,400 composers... Wikipedia's curated list names several hundred. We remember fewer than 20.",
+   "reasoning": "All figures and entities (IMSLP, Wikipedia list, under 20) match SOURCE without drift."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "The standard explanation says we remember the best, but the winners may be those with the right patron, court position, orchestra, and publisher.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?",
+   "reasoning": "SOURCE states the standard explanation and the four alternative factors in the same hedged form."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "claim_text": "If the Esterházys had hired a different Kapellmeister instead of Haydn, would we still know his name?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name?",
+   "reasoning": "SOURCE asks the identical counterfactual about Haydn and the Esterházy family."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "claim_text": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run that thousands of times.",
+   "reasoning": "SOURCE states the empirical impossibility and the modeling workaround in the same terms."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "claim_text": "The author built a simulation and wrote this less formal version of the full technical paper.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I built a simulation to find out. The full technical paper is here. This post is the less formal version.",
+   "reasoning": "SOURCE confirms the simulation and that the post is the informal version of the paper."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Three competing hypotheses were set up to explain how canons form.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I set up the project to test three competing hypotheses.",
+   "reasoning": "SOURCE says three competing hypotheses were set up, under a heading about how canons form."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Story 1 (The Cream Rises): the works we remember are the best works, and over long horizons genuine quality wins.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The works we remember are the best works... over long enough time horizons, genuine quality wins.",
+   "reasoning": "SOURCE's Story 1 states both the best-works claim and long-horizon quality victory."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "2.1.1"
+   ],
+   "claim_text": "Money might buy a head start, but replaying history with different patrons would end with roughly the same canon.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Money might help someone get a head start... If you replayed history with different patrons, you'd end up with roughly the same canon.",
+   "reasoning": "SOURCE preserves the hedge (might) and the roughly-same-canon counterfactual."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Story 2 (Money Writes History): success is mostly about who gets heard first, and quality is almost irrelevant.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Success is mostly about who gets heard first... Quality is almost irrelevant.",
+   "reasoning": "SOURCE's Story 2 states both the who-gets-heard-first emphasis and quality's near irrelevance."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "2.2.1"
+   ],
+   "claim_text": "A wealthy patron gets a composer performed, audiences like what they hear, and the familiarity gets read as quality.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A composer with a wealthy patron gets performed; audiences grow to like what they hear... that familiarity gets retroactively interpreted as quality",
+   "reasoning": "SOURCE describes the same causal chain from patron to performance to familiarity-as-quality."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "2.2.2"
+   ],
+   "claim_text": "Institutions lock that advantage in for future generations.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "institutions lock it in for future generations",
+   "reasoning": "SOURCE states this verbatim as the final link in Story 2's chain."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Story 3 (Floors and Ceilings): both stories are partly right.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "**Story 3: Floors and Ceilings.** Both are partly right.",
+   "reasoning": "SOURCE states both prior stories are partly right in Story 3's opening."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "2.3.1"
+   ],
+   "claim_text": "The truly terrible never succeed no matter how much money backs them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly terrible never succeed no matter how much money backs them.",
+   "reasoning": "SOURCE states this sentence verbatim, including the negation never."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "2.3.2"
+   ],
+   "claim_text": "The truly transcendent sometimes break through despite everything.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly transcendent sometimes break through despite everything.",
+   "reasoning": "SOURCE states this verbatim, preserving the hedge sometimes."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "2.3.3"
+   ],
+   "claim_text": "For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'.",
+   "reasoning": "SOURCE states the same three factors and the same negation of peer talent differences."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "The canon is like a job market: the very best and the very worst candidates are easy to rank.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Think of it like a job market. The very best candidate and the very worst are easy to rank.",
+   "reasoning": "SOURCE uses the job-market analogy and says best and worst are easy to rank."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "2.4.1"
+   ],
+   "claim_text": "Among twenty pretty good candidates, who gets hired often comes down to who knew someone, a good interview day, or resume order.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile.",
+   "reasoning": "SOURCE gives the same count (twenty), hedge (often), and three factors as the analogy."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "2.4.2"
+   ],
+   "claim_text": "The classical music canon is the same problem at civilizational scale.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The classical music canon is the same problem at civilizational scale.",
+   "reasoning": "SOURCE states this sentence verbatim."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "three phenomena that are individually well-documented in psychology and economics, but whose combined effect on cultural canons hasn't been quantified",
+   "reasoning": "Source states exactly this framing of the three well-documented phenomena and the unquantified combined effect."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Mere exposure: we tend to like things we have encountered before.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We tend to like things we've encountered before.",
+   "reasoning": "Identical meaning to source definition of the mere exposure effect."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "3.1.1"
+   ],
+   "claim_text": "A song played on the radio ten times starts to feel catchy even if it did not grab you the first time.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time.",
+   "reasoning": "Near-verbatim restatement with identical number and negation preserved."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "3.1.2"
+   ],
+   "claim_text": "This is not about learning to appreciate complexity; it happens with nonsense syllables, abstract shapes, and strangers' faces.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers.",
+   "reasoning": "Negation and the three listed stimulus types are all retained faithfully."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "3.1.3"
+   ],
+   "claim_text": "Zajonc demonstrated the effect in 1968.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Zajonc demonstrated this in 1968",
+   "reasoning": "Name and year match source exactly."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "3.1.4"
+   ],
+   "claim_text": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26",
+   "reasoning": "All numbers (1989, 208, r = 0.26) and the name match source exactly."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "3.1.5"
+   ],
+   "claim_text": "The effect peaks at moderate exposure and reverses with overexposure.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The effect peaks at moderate exposure and reverses with overexposure",
+   "reasoning": "Identical to the source sentence about the exposure curve."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "3.1.6"
+   ],
+   "claim_text": "Artists who get more initial airtime develop an artificial quality advantage, because audiences genuinely perceive funded work as better.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better ... the exposure was determined by money",
+   "reasoning": "Source links initial airtime to artificial advantage and ties exposure to money, so \"funded work\" is a faithful compression."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "3.1.7"
+   ],
+   "claim_text": "The problem is not that people are bad judges; the judging is contaminated by exposure, and the exposure was determined by money.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money.",
+   "reasoning": "Negation and causal chain match source verbatim in meaning."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Social influence: we use what others consume as a shortcut for what is good.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We look at what others consume and use it as a shortcut for what's good.",
+   "reasoning": "Direct restatement of the social influence definition."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "3.2.1"
+   ],
+   "claim_text": "Bestseller lists, download counts, trending labels, and view counts nudge us toward what is already popular, creating snowball effects.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects.",
+   "reasoning": "All four signal types and the snowball-effect consequence are preserved."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "3.2.2"
+   ],
+   "claim_text": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Salganik MusicLab experiment (2006) ... 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't.",
+   "reasoning": "Year, participant count, song count, and the split condition all match; \"choose among\" tracks the market task."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "3.2.3"
+   ],
+   "claim_text": "The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads.",
+   "claim_type": "number_or_date",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first",
+   "reasoning": "Numbers 1 and 40 match, but source hedges with \"could\"; loglog states \"ranked\" as certain fact."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The rich get richer. ... The sociologist Robert Merton called this the Matthew Effect.",
+   "reasoning": "Entity name Robert Merton and the Matthew Effect attribution match source exactly."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "claim_text": "A first album that sells well buys a bigger marketing budget, better tour slots, more press, and prominent playlist placement.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement",
+   "reasoning": "All four listed benefits are retained; wording compression preserves meaning."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "claim_text": "Small initial differences, whether from luck, timing, or money, get magnified into enormous gaps over time.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time.",
+   "reasoning": "The three possible sources and the magnification effect match; \"whether from\" remains a list of possibilities."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "claim_text": "A composer who secures a court position at 20 accumulates decades of performances and reputation that a one-year miss never builds.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build.",
+   "reasoning": "Age, decades, one-year miss, and the negation \"never\" all match; only publications is omitted, not contradicted."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Each mechanism is well-understood alone; the open question is what happens when all three interact over many generations.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Each of these alone is well-understood. What I wanted to know is: when you put all three together ... over many generations, what happens?",
+   "reasoning": "Reflects the source's contrast between individual understanding and the combined multi-generation question."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "The model was run thousands of times to test how social signals, money, and patronage shape the canon.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "I ran this thousands of times under different conditions.",
+   "reasoning": "Source confirms thousands of runs and the combined-effect aim; money/patronage are the tested resource factors."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "three types of agents: producers ... consumers ... and gatekeepers",
+   "reasoning": "Source states all three agent types and independent quality/capital draws."
+  },
+  {
+   "claim_id": "C043",
+   "loglog_ids": [
+    "4.1.1"
+   ],
+   "claim_text": "Each producer gets a random quality score and an independently drawn capital score, so being wealthy does not make you talented.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Being wealthy doesn't make you talented.",
+   "reasoning": "Directly restates source's random quality, independent capital, and uncorrelated wealth/talent."
+  },
+  {
+   "claim_id": "C044",
+   "loglog_ids": [
+    "4.1.2"
+   ],
+   "claim_text": "Producers with more capital get more exposure, and consumers form opinions from quality, mere exposure, and social signals.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Consumers form opinions based on actual quality plus the mere exposure effect plus social signals.",
+   "reasoning": "Matches source sentence on capital-driven exposure and the three opinion inputs."
+  },
+  {
+   "claim_id": "C045",
+   "loglog_ids": [
+    "4.1.3"
+   ],
+   "claim_text": "Success feeds back into more exposure, and after many rounds some producers achieve canonical status.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Success feeds back into more exposure (cumulative advantage).",
+   "reasoning": "Source states the feedback loop and that some producers reach canonical status after many rounds."
+  },
+  {
+   "claim_id": "C046",
+   "loglog_ids": [
+    "4.1.4"
+   ],
+   "claim_text": "Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "about two minutes with 1,000 producers and 10,000 consumers",
+   "reasoning": "All quantities and the parallelization detail match source exactly."
+  },
+  {
+   "claim_id": "C047",
+   "loglog_ids": [
+    "4.1.5"
+   ],
+   "claim_text": "The author ran 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "ran 360+ per condition for the main experiments, with formal power analysis",
+   "reasoning": "Source states 360+ per condition and formal power analysis verbatim."
+  },
+  {
+   "claim_id": "C048",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Experiment 1: visible social influence weakens the quality-success link.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Does social influence weaken the quality-success link? Yes.",
+   "reasoning": "Source answers yes to this exact question."
+  },
+  {
+   "claim_id": "C049",
+   "loglog_ids": [
+    "4.2.1"
+   ],
+   "claim_text": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "drops significantly (p < 0.0001 across 360 runs per condition)",
+   "reasoning": "p-value, direction, and run count all match source."
+  },
+  {
+   "claim_id": "C050",
+   "loglog_ids": [
+    "4.2.2"
+   ],
+   "claim_text": "In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "quality would be a moderately good predictor of success.",
+   "reasoning": "Verbatim restatement of the source's counterfactual claim."
+  },
+  {
+   "claim_id": "C051",
+   "loglog_ids": [
+    "4.2.3"
+   ],
+   "claim_text": "In our world of charts, recommendations, and trending labels, the link gets weaker.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker.",
+   "reasoning": "Direct paraphrase preserving the 'our world' scope and weakening of the link."
+  },
+  {
+   "claim_id": "C052",
+   "loglog_ids": [
+    "4.2.3.1"
+   ],
+   "claim_text": "A mediocre work that gets lucky early can ride social proof to stardom.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "A mediocre work that gets lucky early can ride social proof to stardom",
+   "reasoning": "Verbatim restatement with the hedge 'can' preserved."
+  },
+  {
+   "claim_id": "C053",
+   "loglog_ids": [
+    "4.2.3.2"
+   ],
+   "claim_text": "An equally good work that starts slow may never recover.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "may never recover",
+   "reasoning": "Verbatim restatement preserving the modal 'may never'."
+  },
+  {
+   "claim_id": "C054",
+   "loglog_ids": [
+    "4.2.4"
+   ],
+   "claim_text": "Every Top 40 chart, Customers Also Bought widget, and view count is a form of social influence pushing us away from independent judgment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "systematically pushes us away from independent judgment",
+   "reasoning": "Matches source's 'every' enumeration and push away from independent judgment."
+  },
+  {
+   "claim_id": "C055",
+   "loglog_ids": [
+    "4.2.5"
+   ],
+   "claim_text": "The measurement trap: popularity is used as a proxy for quality, then optimized for, then forgotten as a proxy.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "use popularity as a proxy for quality, then optimize for the proxy, then forget it was a proxy.",
+   "reasoning": "Exact restatement of the source's proxy sequence."
+  },
+  {
+   "claim_id": "C056",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Experiment 2: holding talent constant and reshuffling only resources produces almost entirely different canons.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Almost entirely different canons from just reshuffling money.",
+   "reasoning": "Source holds talent constant, reshuffles resources, and reports almost entirely different canons."
+  },
+  {
+   "claim_id": "C057",
+   "loglog_ids": [
+    "4.3.1"
+   ],
+   "claim_text": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "counterfactual distance was 0.88 on a 0-to-1 scale",
+   "reasoning": "Value 0.88 and both scale endpoints match source."
+  },
+  {
+   "claim_id": "C058",
+   "loglog_ids": [
+    "4.3.2"
+   ],
+   "claim_text": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "top 10% of talent ... about 1 in 4",
+   "reasoning": "Both the 10% and one-in-four figures match source exactly."
+  },
+  {
+   "claim_id": "C059",
+   "loglog_ids": [
+    "4.3.3"
+   ],
+   "claim_text": "For everyone in the 50th to 90th percentile of quality, canonical status was effectively a lottery.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "50th to 90th percentile of quality ... effectively a lottery",
+   "reasoning": "Percentile range and lottery characterization match source."
+  },
+  {
+   "claim_id": "C060",
+   "loglog_ids": [
+    "4.3.4"
+   ],
+   "claim_text": "This is the simulation equivalent of the Haydn question: excellence alone is not enough when the exposure pipeline is narrow.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "excellence alone isn't enough when the exposure pipeline is this narrow",
+   "reasoning": "Matches source's Haydn-question framing and the 'narrow pipeline' conclusion."
+  },
+  {
+   "claim_id": "C061",
+   "loglog_ids": [
+    "4.3.5"
+   ],
+   "claim_text": "Had the Esterházys hired someone else, Haydn would very likely be one of the hundreds of forgotten composers.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "If the Esterházys had hired someone else, Haydn would very likely be one of the hundreds of forgotten",
+   "reasoning": "Names, hedge 'very likely', and 'hundreds of forgotten' all preserved."
+  },
+  {
+   "claim_id": "C062",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "Experiment 3: unequal money distorts the canon more than herd behavior.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Turning off social influence barely helps. But equalizing starting resources jumps ...",
+   "reasoning": "Source's comparison concludes capital inequality matters more than social influence."
+  },
+  {
+   "claim_id": "C063",
+   "loglog_ids": [
+    "4.4.1"
+   ],
+   "claim_text": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Full model ... 0.32 ... No social influence ... 0.35 ... Equal capital ... 0.46 ... Quality only ... 0.46",
+   "reasoning": "All four correlations and their condition labels match source exactly."
+  },
+  {
+   "claim_id": "C064",
+   "loglog_ids": [
+    "4.4.2"
+   ],
+   "claim_text": "Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "equalizing starting resources jumps the quality-canon correlation by 44%",
+   "reasoning": "The 44% figure and both effect directions match source."
+  },
+  {
+   "claim_id": "C065",
+   "loglog_ids": [
+    "4.4.3"
+   ],
+   "claim_text": "The biggest distortion is not that audiences follow trends; it is that some artists never get heard in the first place.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The biggest distortion isn't that audiences follow trends. It's that some artists never get heard",
+   "reasoning": "Preserves both the negation and the contrasted cause exactly."
+  },
+  {
+   "claim_id": "C066",
+   "loglog_ids": [
+    "4.4.4"
+   ],
+   "claim_text": "Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.",
+   "reasoning": "Verbatim restatement of the source causal claim."
+  },
+  {
+   "claim_id": "C067",
+   "loglog_ids": [
+    "4.4.5"
+   ],
+   "claim_text": "The modern mapping: the problem is not that people blindly follow Spotify playlists, but that only major-label artists get on them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "only major-label artists get on those playlists to begin with",
+   "reasoning": "Both the negation and the 'only major-label' scope are preserved."
+  },
+  {
+   "claim_id": "C068",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "Experiment 4: a stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "300 composers, a handful of very wealthy patrons, strong word-of-mouth, no recording technology",
+   "reasoning": "The 300 count and all four setup features match source."
+  },
+  {
+   "claim_id": "C069",
+   "loglog_ids": [
+    "4.5.1"
+   ],
+   "claim_text": "Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "distance was 0.97, near maximum. Only 2.5% of canonical composers were shared",
+   "reasoning": "Both 0.97 and 2.5% figures match source exactly."
+  },
+  {
+   "claim_id": "C070",
+   "loglog_ids": [
+    "4.5.2"
+   ],
+   "claim_text": "Rewinding to 1750 and randomly reassigning court positions would make the names we teach almost entirely different.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "rewind to 1750 and randomly reassign which composers got which court positions",
+   "reasoning": "Year 1750, court positions, and 'almost entirely different' all match source."
+  },
+  {
+   "claim_id": "C071",
+   "loglog_ids": [
+    "4.5.3"
+   ],
+   "claim_text": "The winners were very likely excellent, since you had to be good to compete for a court position.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The winners in our timeline were very likely excellent. You had to be good to compete",
+   "reasoning": "Both the 'very likely excellent' hedge and the competition reason match."
+  },
+  {
+   "claim_id": "C072",
+   "loglog_ids": [
+    "4.5.4"
+   ],
+   "claim_text": "Dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "dozens of equally excellent composers were lost to history because they drew the short straw",
+   "reasoning": "Verbatim restatement preserving quantity 'dozens' and the lottery cause."
+  },
+  {
+   "claim_id": "C073",
+   "loglog_ids": [
+    "4.5.5"
+   ],
+   "claim_text": "Manufacturing taste means the winners were not bad, but the losers were not meaningfully worse.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Not that the winners were bad. That the losers weren't meaningfully worse.",
+   "reasoning": "Both negations preserved exactly from the source definition."
+  },
+  {
+   "claim_id": "C074",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "claim_text": "Robustness: the results held with every parameter varied by ±50%.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "I varied every parameter by ±50%",
+   "reasoning": "±50% matches; robustness framing is confirmed by the source's later robust-direction statement."
+  },
+  {
+   "claim_id": "C075",
+   "loglog_ids": [
+    "4.6.1"
+   ],
+   "claim_text": "The single most important factor is how steeply money converts into attention.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "single most important factor is how steeply money converts into attention",
+   "reasoning": "Verbatim restatement of the source's key-factor claim."
+  },
+  {
+   "claim_id": "C076",
+   "loglog_ids": [
+    "4.6.2"
+   ],
+   "claim_text": "If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "the rich get richer very fast and quality barely matters",
+   "reasoning": "Convex condition and both consequences match source."
+  },
+  {
+   "claim_id": "C077",
+   "loglog_ids": [
+    "4.6.3"
+   ],
+   "claim_text": "If doubling a budget less than doubles the audience, quality has more room to breathe.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "quality has more room to breathe",
+   "reasoning": "Concave condition and outcome restated directly from source."
+  },
+  {
+   "claim_id": "C078",
+   "loglog_ids": [
+    "4.6.4"
+   ],
+   "claim_text": "In the industry, a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500",
+   "reasoning": "Both figures, 50 million and 500, match source exactly."
+  },
+  {
+   "claim_id": "C079",
+   "loglog_ids": [
+    "4.6.5"
+   ],
+   "claim_text": "Under such an extremely steep capital-to-exposure curve, quality has very little to do with who becomes famous.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Our model predicts that under those conditions, quality has very little to do with who becomes famous.",
+   "reasoning": "Preserves the model-prediction framing and the steep-curve condition."
+  },
+  {
+   "claim_id": "C080",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Story 3 wins: quality is a loose filter setting a floor and ceiling, and the vast middle is dominated by capital and luck.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Story 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will.",
+   "reasoning": "Source states this nearly verbatim, including the middle dominated by capital and luck."
+  },
+  {
+   "claim_id": "C081",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "The greatest composer who ever lived, made precise, is the greatest among those with resources to be heard, published, and preserved.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\"",
+   "reasoning": "Faithful generalization of the source's Bach-specific restatement, same meaning and qualifier."
+  },
+  {
+   "claim_id": "C082",
+   "loglog_ids": [
+    "5.1.1"
+   ],
+   "claim_text": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "reasoning": "Node reproduces the source sentence exactly, hedge included."
+  },
+  {
+   "claim_id": "C083",
+   "loglog_ids": [
+    "5.1.2"
+   ],
+   "claim_text": "We cannot know, but the simulation says it is very likely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We don't know. We can't know. But the simulation says it's very likely.",
+   "reasoning": "Node preserves both the epistemic hedge and the simulation's likelihood claim."
+  },
+  {
+   "claim_id": "C084",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "The mechanisms are stronger today, not weaker.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The mechanisms are stronger today, not weaker.",
+   "reasoning": "Exact restatement of the source heading."
+  },
+  {
+   "claim_id": "C085",
+   "loglog_ids": [
+    "5.2.1"
+   ],
+   "claim_text": "An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours.",
+   "reasoning": "Same two timeframes joined by a semicolon, meaning unchanged."
+  },
+  {
+   "claim_id": "C086",
+   "loglog_ids": [
+    "5.2.2"
+   ],
+   "claim_text": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "reasoning": "Verbatim source sentence."
+  },
+  {
+   "claim_id": "C087",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "The highest-leverage intervention is not better judgment, it is wider exposure.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The highest-leverage intervention isn't better judgment, it's wider exposure.",
+   "reasoning": "Exact match, negation preserved."
+  },
+  {
+   "claim_id": "C088",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "claim_text": "Audiences are already decent judges within the limits of what they are exposed to; the bottleneck is exposure itself.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself.",
+   "reasoning": "Same claim; only dropped the framing phrase \"Our model says\"."
+  },
+  {
+   "claim_id": "C089",
+   "loglog_ids": [
+    "5.3.2"
+   ],
+   "claim_text": "Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "widely adopted in the 1970s-80s... the proportion of women hired by major US orchestras went from 5% to 25%.",
+   "reasoning": "All figures, date range, and entities match the source exactly."
+  },
+  {
+   "claim_id": "C090",
+   "loglog_ids": [
+    "5.3.3"
+   ],
+   "claim_text": "The talent was always there; the barrier was exposure.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The talent was always there. The barrier was exposure.",
+   "reasoning": "Verbatim source statement."
+  },
+  {
+   "claim_id": "C091",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "The deeper pattern is the gap between the metric and what we care about: canon survival is a proxy for being the best.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the gap between the metric and the thing we actually care about. We use \"survived into the canon\" as a proxy for \"was the best,\"",
+   "reasoning": "Faithful compression of the source's proxy point."
+  },
+  {
+   "claim_id": "C092",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "claim_text": "The simulation does not say what the canon should look like, only that the one we got is far more contingent than we assume.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The simulation doesn't tell us what the canon *should* look like. It just tells us that the one we got is far more contingent than we assume.",
+   "reasoning": "Same two-part claim, negation and emphasis preserved."
+  },
+  {
+   "claim_id": "C093",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Three caveats bound what the model can tell us.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "## The Caveats\nI want to be honest about what this can and can't tell us.",
+   "reasoning": "Source presents three distinct caveat topics (quality assumption, calibration, omitted factors), supporting the count."
+  },
+  {
+   "claim_id": "C094",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The model assumes quality is a real, stable property that exists independently of who hears it. That's philosophically debatable.",
+   "reasoning": "Node matches the source sentence and its debatable qualifier."
+  },
+  {
+   "claim_id": "C095",
+   "loglog_ids": [
+    "6.1.1"
+   ],
+   "claim_text": "If quality is partly constituted by social processes, the whole decomposition may be ill-posed.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If \"quality\" is partly constituted by social processes... then the whole decomposition may be ill-posed.",
+   "reasoning": "Node keeps the conditional and the \"may be\" hedge intact."
+  },
+  {
+   "claim_id": "C096",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "studied American teenagers evaluating pop songs over weeks. Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith.",
+   "reasoning": "Same claim; only the phrase \"evaluating orchestral music\" is compressed out."
+  },
+  {
+   "claim_id": "C097",
+   "loglog_ids": [
+    "6.2.1"
+   ],
+   "claim_text": "The mechanisms are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the mechanisms... are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "reasoning": "Verbatim source statement aside from the parenthetical mechanism list."
+  },
+  {
+   "claim_id": "C098",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "The model omits genre formation, critical discourse, technological change, and cultural politics.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics.",
+   "reasoning": "All four omitted items match the source list."
+  },
+  {
+   "claim_id": "C099",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "claim_text": "Any model is a simplification; the direction of the effects is robust across parameter values, even if the magnitudes are uncertain.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Any model is a simplification... The direction of the effects is robust across a wide range of parameter values, even if the precise magnitudes are uncertain.",
+   "reasoning": "Same claim; \"wide range of\" is compressed to \"across\" with no meaning change."
+  },
+  {
+   "claim_id": "C100",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Bach was excellent AND well-positioned, and the second half matters more than the first.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He was excellent AND well-positioned. But the simulation tells us the \"AND\" is doing most of the work, and the second half matters more than the first.",
+   "reasoning": "Source states the exact conjunction and that the second half matters more."
+  },
+  {
+   "claim_id": "C101",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "reasoning": "Direct restatement of the source sentence with identical meaning."
+  },
+  {
+   "claim_id": "C102",
+   "loglog_ids": [
+    "7.1.1"
+   ],
+   "claim_text": "The pop pipeline can manufacture a global phenomenon from someone good enough to carry a tune and look good on camera, a bar millions meet.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion.",
+   "reasoning": "Preserves the criteria and the millions-meet-the-bar qualifier."
+  },
+  {
+   "claim_id": "C103",
+   "loglog_ids": [
+    "7.1.2"
+   ],
+   "claim_text": "A court position required writing for liturgical services, entertaining aristocrats, training choirs, and improvising fugues on demand.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand.",
+   "reasoning": "All four requirements listed match the source exactly."
+  },
+  {
+   "claim_id": "C104",
+   "loglog_ids": [
+    "7.1.3"
+   ],
+   "claim_text": "The quality floor of that world was genuinely high.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The quality floor was genuinely high.",
+   "reasoning": "Verbatim restatement of the source claim."
+  },
+  {
+   "claim_id": "C105",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Reshuffling patronage gives an almost entirely different canon, with only 2.5% overlap between alternate histories.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Reshuffle patronage and you get an almost entirely different canon. Only 2.5% overlap between alternate histories.",
+   "reasoning": "The 2.5% figure and the near-total difference are stated identically."
+  },
+  {
+   "claim_id": "C106",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Bach is like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "reasoning": "The analogy and the number fifty are preserved exactly."
+  },
+  {
+   "claim_id": "C107",
+   "loglog_ids": [
+    "7.3.1"
+   ],
+   "claim_text": "A New York Times profile led to speaking invitations, a book deal, and a reputation as the best surgeon in the country.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\"",
+   "reasoning": "The causal chain and outlet name match the source."
+  },
+  {
+   "claim_id": "C108",
+   "loglog_ids": [
+    "7.3.2"
+   ],
+   "claim_text": "The other 49 are just as good, and you have never heard of them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The other 49 are just as good. You've never heard of them.",
+   "reasoning": "Both the count 49 and the negation are preserved."
+  },
+  {
+   "claim_id": "C109",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "The question was never whether Bach was great; he almost certainly was.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question was never whether Bach was great. He almost certainly was.",
+   "reasoning": "The negation and the almost-certainly hedge are both kept."
+  },
+  {
+   "claim_id": "C110",
+   "loglog_ids": [
+    "7.4.1"
+   ],
+   "claim_text": "The question is whether we listen because he was the greatest, or because he was great AND landed the right church job in Leipzig.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig.",
+   "reasoning": "The dichotomy and the Leipzig detail match exactly."
+  },
+  {
+   "claim_id": "C111",
+   "loglog_ids": [
+    "7.4.2"
+   ],
+   "claim_text": "The simulation says it is the second.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The simulation says it's the second.",
+   "reasoning": "Direct restatement of the source's attribution to the simulation."
+  },
+  {
+   "claim_id": "C112",
+   "loglog_ids": [
+    "7.4.3"
+   ],
+   "claim_text": "There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "reasoning": "The range 20 to 50 and the probably hedge are preserved."
+  },
+  {
+   "claim_id": "C113",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "The canon is one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as inevitable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it's one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as if it were inevitable.",
+   "reasoning": "Meaning identical; only the 'as if' wording is compressed."
+  },
+  {
+   "claim_id": "C114",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "claim_text": "Bach's harmonic language, his structures, and his aesthetic sensibility are the foundations of how we hear and judge music today.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today.",
+   "reasoning": "Direct restatement of all three elements and their role."
+  },
+  {
+   "claim_id": "C115",
+   "loglog_ids": [
+    "7.6.1"
+   ],
+   "claim_text": "With a different set of composers surviving into the canon, we would have inherited different foundations and would hear and judge differently.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently.",
+   "reasoning": "The conditional and its consequences match the source."
+  },
+  {
+   "claim_id": "C116",
+   "loglog_ids": [
+    "7.6.2"
+   ],
+   "claim_text": "What we call good taste would be a different taste entirely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "What we call \"good taste\" would be a different taste entirely.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C117",
+   "loglog_ids": [
+    "7.7"
+   ],
+   "claim_text": "Our taste was manufactured along with the canon: we like what we were taught to like.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's that our taste was manufactured along with it. We like what we were taught to like.",
+   "reasoning": "Both halves are stated directly in the source."
+  },
+  {
+   "claim_id": "C118",
+   "loglog_ids": [
+    "7.7.1"
+   ],
+   "claim_text": "The survivors were selected by money and luck as much as by merit.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the survivors were selected by money and luck as much as by merit.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C119",
+   "loglog_ids": [
+    "7.7.2"
+   ],
+   "claim_text": "The whole chain from who got funded to what counts as beautiful is more contingent than it feels from the inside.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C120",
+   "loglog_ids": [
+    "7.8"
+   ],
+   "claim_text": "Whether people 300 years from now will listen to Bieber and call it the peak of our era is unknown.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know.",
+   "reasoning": "The unknown status and the 300-year frame are preserved."
+  },
+  {
+   "claim_id": "C121",
+   "loglog_ids": [
+    "7.8.1"
+   ],
+   "claim_text": "If the mechanisms are right, the 2000s canon will track distribution deals and the most favorable algorithms more than the best music.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music.",
+   "reasoning": "The conditional and the comparison are preserved exactly."
+  },
+  {
+   "claim_id": "C122",
+   "loglog_ids": [
+    "7.8.2"
+   ],
+   "claim_text": "And we will not be around to correct them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "And we won't be around to correct them.",
+   "reasoning": "The negation and meaning are identical."
+  }
+ ],
+ "metrics": {
+  "total_claims": 122,
+  "supported": 121,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9918
+ },
+ "fail_list": [
+  "C035"
+ ]
+}
+```
+
+## Judge Cov (coverage), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: the classical music canon is manufactured by money, luck, and exposure rather than pure quality, and our very sense of 'good taste' was manufactured along with it (the canon is one of many equally valid possible canons).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002",
+    "L114",
+    "L118",
+    "L120"
+   ],
+   "evidence_quote": "Our taste was manufactured along with the canon: we like what we were taught to like. (L118)",
+   "reasoning": "The summary (L002) states quality only loosely filters canon success and taste is contingent; L114 states the canon is one of hundreds of equally valid ones; L118-L120 state taste was manufactured and the chain from funding to beauty is contingent. Thesis fully captured with qualifiers intact."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The scale of forgotten composers: 200 to 500 active composers in 18th-century Vienna alone; IMSLP catalogs over 3,400 Classical-era composers who survived in some form; Wikipedia lists several hundred; we remember fewer than 20.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005",
+    "L006"
+   ],
+   "evidence_quote": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time. (L005) ... IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred ... we remember fewer than 20. (L006)",
+   "reasoning": "All four numbers (200-500, 3,400, several hundred, fewer than 20) preserved exactly with no dropped qualifiers."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Since history cannot be replayed with different initial conditions, the author built a simulation of how cultural markets work and ran it thousands of times to test whether the remembered composers were actually the best or merely well-positioned.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L003",
+    "L009",
+    "L010",
+    "L042"
+   ],
+   "evidence_quote": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times. (L009)",
+   "reasoning": "L003 frames best vs best-positioned, L009 gives the counterfactual-replay rationale and thousands of runs, L010 notes the simulation and write-up, L042 confirms thousands of runs. Fully captured."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Three competing hypotheses: Story 1 'The Cream Rises' (quality wins over time), Story 2 'Money Writes History' (success is mostly who gets heard first, quality nearly irrelevant), Story 3 'Floors and Ceilings' (quality sets a floor and ceiling, but the vast middle is dominated by luck, money, and timing). Story 3 is the conclusion.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L011",
+    "L012",
+    "L014",
+    "L017",
+    "L020",
+    "L081"
+   ],
+   "evidence_quote": "Story 3 (Floors and Ceilings): both stories are partly right. (L017) ... For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers. (L020) ... Story 3 wins. (L081)",
+   "reasoning": "All three hypotheses are stated with their labels and defining content, and L081 explicitly declares Story 3 the conclusion. Numbers/qualifiers intact."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Three well-documented mechanisms are combined: the mere exposure effect, social influence, and cumulative advantage (the Matthew Effect, named by sociologist Robert Merton).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L024",
+    "L025",
+    "L033",
+    "L037"
+   ],
+   "evidence_quote": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified. (L024) ... Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect. (L037)",
+   "reasoning": "All three mechanisms are named and Merton's attribution is preserved. The novel-combination framing (L024, L041) matches the point."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Mere exposure effect details: demonstrated by Zajonc in 1968 and confirmed by Bornstein's 1989 meta-analysis of 208 experiments with average effect size r = 0.26; peaks at moderate exposure and reverses with overexposure.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L028",
+    "L029",
+    "L030"
+   ],
+   "evidence_quote": "Zajonc demonstrated the effect in 1968. (L028) ... Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. (L029) ... The effect peaks at moderate exposure and reverses with overexposure. (L030)",
+   "reasoning": "Names, years, 208 experiments, r = 0.26, and the moderate/overexposure qualifier are all present verbatim."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Salganik MusicLab experiment (2006): 14,341 participants judged 48 unknown songs; some saw download counts and others did not, and the same song could rank 1st or 40th in different worlds purely from random early download differences.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L035",
+    "L036"
+   ],
+   "evidence_quote": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not. (L035) ... The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads. (L036)",
+   "reasoning": "Year, participant count, song count, condition, and the rank-1-vs-40 result are all intact."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Model setup: three agent types (producers, consumers, gatekeepers); each producer gets a quality score and an independently drawn capital score (quality and capital uncorrelated); 1,000 producers and 10,000 consumers per run, about two minutes each, parallelized with 360+ runs per condition and formal power analysis.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L043",
+    "L044",
+    "L047",
+    "L048"
+   ],
+   "evidence_quote": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently. (L043) ... Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores. (L047) ... 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes. (L048)",
+   "reasoning": "Agent types, independent draw, 1,000/10,000, two minutes, parallelization, 360+ runs, and power analysis all present."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Social influence weakens the quality-success link: with visible consumption the quality-commercial-success correlation drops significantly (p < 0.0001 across 360 runs per condition); a mediocre work lucky early can ride social proof to stardom.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L049",
+    "L050",
+    "L051",
+    "L053"
+   ],
+   "evidence_quote": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition). (L050) ... A mediocre work that gets lucky early can ride social proof to stardom. (L053)",
+   "reasoning": "Direction, p-value, run count, and the lucky-mediocre-work mechanism are all captured, including the no-visibility contrast at L051."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Counterfactual experiment: holding every composer's talent constant and reshuffling only resources over 200 runs produced a counterfactual distance of 0.88 on a 0-to-1 scale; only the top 10% of talent had a meaningful shot (~1 in 4), and the 50th to 90th percentile faced fame as essentially a lottery.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L057",
+    "L058",
+    "L059",
+    "L060"
+   ],
+   "evidence_quote": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones. (L058) ... Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four. (L059) ... 50th to 90th percentile of quality, canonical status was effectively a lottery. (L060)",
+   "reasoning": "The core numbers (0.88, top 10%, ~1 in 4, 50th-90th lottery) and the talent-constant/reshuffle setup are fully present. However, the stated run count of 200 for this specific experiment is omitted; L047-L048 give run counts only for the main experiments generally. Because this is a Must have point with a dropped number, per the strict rule it is capped at Partial even though the substance is intact."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Four-condition comparison of quality-canon correlation: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46; equalizing resources raises the correlation 44%, showing unequal initial exposure (capital gating access) is the bigger distortion than herd behavior.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L064",
+    "L065",
+    "L066"
+   ],
+   "evidence_quote": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46. (L064) ... Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%. (L065)",
+   "reasoning": "All four correlation values and the 44% figure are exact; the conclusion that limited exposure dominates herd behavior is stated at L066."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "18th-century Vienna stylized model (300 composers, few wealthy patrons, strong word-of-mouth, no recording): counterfactual distance 0.97, near maximum, with only 2.5% of canonical composers shared between alternate histories.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L069",
+    "L070"
+   ],
+   "evidence_quote": "A stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology. (L069) ... Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories. (L070)",
+   "reasoning": "All setup parameters (300 composers, patrons, word-of-mouth, no recording) and both outcome numbers (0.97, 2.5%) preserved with the 'near maximum' qualifier."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Robustness: varying every parameter by ±50% shows the single most important factor is how steeply money converts into attention (convex relationship makes the rich get richer and quality barely matter, concave leaves more room for quality).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L075",
+    "L076",
+    "L077",
+    "L078"
+   ],
+   "evidence_quote": "The results held with every parameter varied by ±50%. (L075) ... The single most important factor is how steeply money converts into attention. (L076) ... If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters. (L077) ... If doubling a budget less than doubles the audience, quality has more room to breathe. (L078)",
+   "reasoning": "The ±50% robustness, the key factor, and both the convex and concave branches are captured with correct meaning."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Highest-leverage intervention is wider exposure, not better judgment: blind auditions in major US orchestras (adopted 1970s-80s) raised the proportion of women hired from 5% to 25%, proving the talent was there and the barrier was exposure.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L088",
+    "L089",
+    "L090",
+    "L091"
+   ],
+   "evidence_quote": "The highest-leverage intervention is not better judgment, it is wider exposure. (L088) ... Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%. (L090) ... The talent was always there; the barrier was exposure. (L091)",
+   "reasoning": "Recommendation, decade of adoption, 5% to 25%, and the interpretation are all intact."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Caveats: the model assumes quality is a real, stable property independent of who hears it (philosophically debatable); calibration comes from the Salganik study of American teenagers judging pop songs over weeks, so generalizing to 18th-century aristocrats over decades is a leap; and the model omits genre formation, critical discourse, technological change, and cultural politics.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L095",
+    "L096",
+    "L097",
+    "L099",
+    "L100"
+   ],
+   "evidence_quote": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable. (L095) ... The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith. (L097) ... The model omits genre formation, critical discourse, technological change, and cultural politics. (L099)",
+   "reasoning": "All three caveats are present with the debatable assumption, the calibration leap (teenagers/weeks vs aristocrats/decades), and the full list of omitted factors."
+  },
+  {
+   "point_id": "K16",
+   "point_text": "Answer to the Bach-Bieber question: the Bieber analogy gets the mechanism right but the quality floor wrong; Bach was both excellent and well-positioned, the 'AND' does most of the work, and there were probably 20 to 50 equally great contemporaries whose names we will never know. The mechanisms are stronger today because algorithmic feedback loops operate in hours rather than decades.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L101",
+    "L102",
+    "L104",
+    "L105",
+    "L113",
+    "L085",
+    "L086"
+   ],
+   "evidence_quote": "Bach was excellent AND well-positioned, and the second half of that conjunction matters more than the first. (L101) ... The Bieber analogy gets the mechanism right but the quality floor wrong. (L102) ... There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know. (L113) ... An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours. (L086)",
+   "reasoning": "All components present: the analogy's correctness/error, the excellent-AND-positioned framing, the 20-50 contemporaries, and the stronger-today argument with the hours-vs-decades contrast."
+  }
+ ],
+ "metrics": {
+  "total_points": 16,
+  "must_have_total": 16,
+  "must_have_present": 15,
+  "must_have_partial": 1,
+  "must_have_missing": 0,
+  "overall_present": 15,
+  "must_recall": 0.9688,
+  "overall_recall": 0.9688
+ },
+ "missing_list": []
+}
+```
+
+## Judge Con (concision), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Top summary; first statement of the thesis, nothing earlier to repeat."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Opening framing question; sets up the whole argument."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bieber framing hook; specific and new."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specific counts for Vienna composers."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Catalog numbers give the scale of loss."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States standard explanation and the alternative."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical Haydn counterfactual; C060 and C061 restate it."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Justifies modeling; needed method setup."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Housekeeping meta about this being a less formal paper; no substantive point."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section header introducing the three hypotheses."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Story 1 definition; new."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "2.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Story 1 implication about patrons; distinct."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Story 2 definition; new."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "2.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mechanism of familiarity read as quality."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "2.2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Institutional lock-in; short but new."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Story 3 definition; new."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "2.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Floor claim; new."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "2.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ceiling-breakthrough claim; new."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "2.3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical middle-is-luck claim; C059 restates it."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Job-market analogy introduced."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "2.4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Interview example adds concrete color."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "2.4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Extends analogy to civilizational scale; marginal but new."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section header naming the three mechanisms."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mere-exposure definition; new."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "3.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Radio example; new."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "3.1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Scope clarification; not mere complexity."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "3.1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Zajonc 1968 citation; dated evidence."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "3.1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bornstein effect size; quantitative evidence."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "3.1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Inverted-U caveat; not trivia."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "3.1.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Links exposure to artificial quality advantage."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "3.1.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Distinguishes contamination from bad judges."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Social-influence definition; new."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "3.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Lists ranking signals creating snowballs."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "3.2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Salganik experiment numbers; distinct evidence."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "3.2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ranking flip result; new numbers despite partial verdict."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Cumulative-advantage definition and Merton attribution."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Album-to-budget feedback; new."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Magnification claim; new."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Court-position example; new."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Transition restating section 3 theme and previewing interaction."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 4 header; introduces actual model runs."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Model design definition; new."
+  },
+  {
+   "claim_id": "C043",
+   "loglog_ids": [
+    "4.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Independent quality and capital draws; new."
+  },
+  {
+   "claim_id": "C044",
+   "loglog_ids": [
+    "4.1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Exposure and opinion-formation rule; new."
+  },
+  {
+   "claim_id": "C045",
+   "loglog_ids": [
+    "4.1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Feedback to canonical status; new."
+  },
+  {
+   "claim_id": "C046",
+   "loglog_ids": [
+    "4.1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Runtime and scale numbers; new."
+  },
+  {
+   "claim_id": "C047",
+   "loglog_ids": [
+    "4.1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Run count and power analysis; new."
+  },
+  {
+   "claim_id": "C048",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Experiment 1 finding; new."
+  },
+  {
+   "claim_id": "C049",
+   "loglog_ids": [
+    "4.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Statistical result with p-value; not trivia."
+  },
+  {
+   "claim_id": "C050",
+   "loglog_ids": [
+    "4.2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterfactual no-visibility world."
+  },
+  {
+   "claim_id": "C051",
+   "loglog_ids": [
+    "4.2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Applies result to our world; new."
+  },
+  {
+   "claim_id": "C052",
+   "loglog_ids": [
+    "4.2.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Lucky mediocre work rises; new."
+  },
+  {
+   "claim_id": "C053",
+   "loglog_ids": [
+    "4.2.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Slow starter never recovers; new."
+  },
+  {
+   "claim_id": "C054",
+   "loglog_ids": [
+    "4.2.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Enumerates everyday social-influence widgets."
+  },
+  {
+   "claim_id": "C055",
+   "loglog_ids": [
+    "4.2.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Measurement-trap definition; new."
+  },
+  {
+   "claim_id": "C056",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Experiment 2 finding; new."
+  },
+  {
+   "claim_id": "C057",
+   "loglog_ids": [
+    "4.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterfactual distance number; new."
+  },
+  {
+   "claim_id": "C058",
+   "loglog_ids": [
+    "4.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Top-10% and one-in-four numbers; new."
+  },
+  {
+   "claim_id": "C059",
+   "loglog_ids": [
+    "4.3.3"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C019",
+   "reasoning": "Restates middle-is-luck as a lottery; cross-linked to 2.3.3."
+  },
+  {
+   "claim_id": "C060",
+   "loglog_ids": [
+    "4.3.4"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C007",
+   "reasoning": "Cross-linked restatement of the Haydn question from 1.5."
+  },
+  {
+   "claim_id": "C061",
+   "loglog_ids": [
+    "4.3.5"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C007",
+   "reasoning": "Same Esterházy counterfactual as 1.5, restated with its answer."
+  },
+  {
+   "claim_id": "C062",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Experiment 3 headline; new."
+  },
+  {
+   "claim_id": "C063",
+   "loglog_ids": [
+    "4.4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Correlation-by-condition numbers; not trivia."
+  },
+  {
+   "claim_id": "C064",
+   "loglog_ids": [
+    "4.4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "44% jump number; new."
+  },
+  {
+   "claim_id": "C065",
+   "loglog_ids": [
+    "4.4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Locates distortion in access, not trends."
+  },
+  {
+   "claim_id": "C066",
+   "loglog_ids": [
+    "4.4.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Capital-gates-exposure causal claim; new."
+  },
+  {
+   "claim_id": "C067",
+   "loglog_ids": [
+    "4.4.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Modern Spotify mapping; new framing."
+  },
+  {
+   "claim_id": "C068",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Experiment 4 setup numbers; new."
+  },
+  {
+   "claim_id": "C069",
+   "loglog_ids": [
+    "4.5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical 0.97 and 2.5% figures; C105 restates."
+  },
+  {
+   "claim_id": "C070",
+   "loglog_ids": [
+    "4.5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "1750 reassignment consequence; new framing."
+  },
+  {
+   "claim_id": "C071",
+   "loglog_ids": [
+    "4.5.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Winners were excellent; distinct from floor claim."
+  },
+  {
+   "claim_id": "C072",
+   "loglog_ids": [
+    "4.5.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical lost-equals claim; C082 restates it."
+  },
+  {
+   "claim_id": "C073",
+   "loglog_ids": [
+    "4.5.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Manufactured-taste definition; new."
+  },
+  {
+   "claim_id": "C074",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Robustness result; new."
+  },
+  {
+   "claim_id": "C075",
+   "loglog_ids": [
+    "4.6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Names the key parameter; new."
+  },
+  {
+   "claim_id": "C076",
+   "loglog_ids": [
+    "4.6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Convex-conversion consequence; new."
+  },
+  {
+   "claim_id": "C077",
+   "loglog_ids": [
+    "4.6.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concave-conversion contrast; new."
+  },
+  {
+   "claim_id": "C078",
+   "loglog_ids": [
+    "4.6.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "50 million vs 500 example quantifies steepness."
+  },
+  {
+   "claim_id": "C079",
+   "loglog_ids": [
+    "4.6.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Steep-curve conclusion; new."
+  },
+  {
+   "claim_id": "C080",
+   "loglog_ids": [
+    "5"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C001",
+   "reasoning": "Conclusion restates the opening summary thesis with little added."
+  },
+  {
+   "claim_id": "C081",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical precise claim; C110 restates it."
+  },
+  {
+   "claim_id": "C082",
+   "loglog_ids": [
+    "5.1.1"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C072",
+   "reasoning": "Repeats lost equally-gifted composers from 4.5.4."
+  },
+  {
+   "claim_id": "C083",
+   "loglog_ids": [
+    "5.1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Caveat about unknowability; caveats are never trivia."
+  },
+  {
+   "claim_id": "C084",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mechanisms are stronger today; new turn."
+  },
+  {
+   "claim_id": "C085",
+   "loglog_ids": [
+    "5.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Decades vs hours example; new."
+  },
+  {
+   "claim_id": "C086",
+   "loglog_ids": [
+    "5.2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Scale-of-winner-take-all claim; new."
+  },
+  {
+   "claim_id": "C087",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Recommendation for wider exposure; new."
+  },
+  {
+   "claim_id": "C088",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical bottleneck claim; C090 restates it."
+  },
+  {
+   "claim_id": "C089",
+   "loglog_ids": [
+    "5.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Blind-audition numbers; not trivia."
+  },
+  {
+   "claim_id": "C090",
+   "loglog_ids": [
+    "5.3.3"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C088",
+   "reasoning": "Punchline repeats the exposure-bottleneck claim from 5.3.1."
+  },
+  {
+   "claim_id": "C091",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Metric-vs-value gap; new framing."
+  },
+  {
+   "claim_id": "C092",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical contingency claim; C113 and C119 restate."
+  },
+  {
+   "claim_id": "C093",
+   "loglog_ids": [
+    "6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section header for caveats; structural and needed."
+  },
+  {
+   "claim_id": "C094",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Quality-as-stable-property caveat; new."
+  },
+  {
+   "claim_id": "C095",
+   "loglog_ids": [
+    "6.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ill-posed decomposition caveat; new."
+  },
+  {
+   "claim_id": "C096",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Calibration-generalization caveat; new."
+  },
+  {
+   "claim_id": "C097",
+   "loglog_ids": [
+    "6.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Parameter-uncertainty fact; new."
+  },
+  {
+   "claim_id": "C098",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Omitted-factors caveat; new."
+  },
+  {
+   "claim_id": "C099",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Direction-robust caveat; new."
+  },
+  {
+   "claim_id": "C100",
+   "loglog_ids": [
+    "7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bach stands as excellent and positioned; specific to closing."
+  },
+  {
+   "claim_id": "C101",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Judges the Bieber analogy; new synthesis."
+  },
+  {
+   "claim_id": "C102",
+   "loglog_ids": [
+    "7.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Pop pipeline bar; new."
+  },
+  {
+   "claim_id": "C103",
+   "loglog_ids": [
+    "7.1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Court-position duties list; new."
+  },
+  {
+   "claim_id": "C104",
+   "loglog_ids": [
+    "7.1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "High quality-floor claim; new."
+  },
+  {
+   "claim_id": "C105",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C069",
+   "reasoning": "Cross-linked restatement of the 2.5% overlap from 4.5.1."
+  },
+  {
+   "claim_id": "C106",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Surgeon analogy introduced; new."
+  },
+  {
+   "claim_id": "C107",
+   "loglog_ids": [
+    "7.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "NYT-profile example; new."
+  },
+  {
+   "claim_id": "C108",
+   "loglog_ids": [
+    "7.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Punchline of surgeon analogy; new."
+  },
+  {
+   "claim_id": "C109",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Reframes the question away from Bach's greatness."
+  },
+  {
+   "claim_id": "C110",
+   "loglog_ids": [
+    "7.4.1"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C081",
+   "reasoning": "Cross-linked restatement of the qualified-greatest claim from 5.1."
+  },
+  {
+   "claim_id": "C111",
+   "loglog_ids": [
+    "7.4.2"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Bare pointer to the simulation verdict already conveyed; adds nothing."
+  },
+  {
+   "claim_id": "C112",
+   "loglog_ids": [
+    "7.4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "20 to 50 contemporaries number; not trivia."
+  },
+  {
+   "claim_id": "C113",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C092",
+   "reasoning": "Repeats canon contingency and inevitability already stated in 5.4.1."
+  },
+  {
+   "claim_id": "C114",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bach as foundation of hearing; new."
+  },
+  {
+   "claim_id": "C115",
+   "loglog_ids": [
+    "7.6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterfactual inherited foundations; new."
+  },
+  {
+   "claim_id": "C116",
+   "loglog_ids": [
+    "7.6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Different taste counterfactual; distinct."
+  },
+  {
+   "claim_id": "C117",
+   "loglog_ids": [
+    "7.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Manufactured-taste thesis stated directly; new."
+  },
+  {
+   "claim_id": "C118",
+   "loglog_ids": [
+    "7.7.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Selection by money and luck; new within closing."
+  },
+  {
+   "claim_id": "C119",
+   "loglog_ids": [
+    "7.7.2"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C092",
+   "reasoning": "Third restatement of contingency claim from 5.4.1."
+  },
+  {
+   "claim_id": "C120",
+   "loglog_ids": [
+    "7.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Future-canon unknowability; new twist."
+  },
+  {
+   "claim_id": "C121",
+   "loglog_ids": [
+    "7.8.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Future tracks distribution deals; new."
+  },
+  {
+   "claim_id": "C122",
+   "loglog_ids": [
+    "7.8.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Closing punchline; short but new."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 122,
+  "unique": 109,
+  "duplicates": 10,
+  "trivia": 3,
+  "redundancy_rate": 0.082,
+  "trivia_rate": 0.0246,
+  "structured_tokens": 2018,
+  "tokens_per_unique_claim": 18.5
+ },
+ "prune_list": [
+  "C059 duplicates C019, safe to merge",
+  "C060 duplicates C007, safe to merge",
+  "C061 duplicates C007, safe to merge",
+  "C080 duplicates C001, safe to merge",
+  "C082 duplicates C072, safe to merge",
+  "C090 duplicates C088, safe to merge",
+  "C105 duplicates C069, safe to merge",
+  "C110 duplicates C081, safe to merge",
+  "C113 duplicates C092, safe to merge",
+  "C119 duplicates C092, safe to merge",
+  "C009 trivia, drop housekeeping meta",
+  "C040 trivia, drop theme transition",
+  "C111 trivia, drop bare simulation pointer"
+ ]
+}
+```
+
+## Judge Top (overall), opencode-go/deepseek-v4.1-flash
+
+```json
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "point-hierarchy",
+ "inputs": {
+  "faithfulness_precision": 0.9918,
+  "critical_errors": 0,
+  "must_recall": 0.9688,
+  "overall_recall": 0.9688,
+  "redundancy_rate": 0.082,
+  "trivia_rate": 0.0246
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score = 0.4 * 0.9918 + 0.4 * 0.9688 - 0.2 * 0.082 = 0.39672 + 0.38752 - 0.0164 = 0.76784",
+ "weighted_score": 0.76784,
+ "verdict": "Borderline",
+ "tradeoff_note": "All numeric gates pass with length well under the redundancy ceiling, so concision neither rescues nor harms anything here. Human review is advised because Must have point K10 is only Partial (dropped run count of 200) and Minor partial claim C035 asserts a fact the source hedges.",
+ "fix_list": [
+  "K10 (L057-L060): restore the explicit run count of 200 for the counterfactual experiment so the Must have point is fully supported and must_recall rises toward 1.0",
+  "C035 (3.2.3): reinstate the source hedge, change 'ranked 1st ... and 40th' to 'could rank 1st ... and 40th', to clear the sole non-supported claim",
+  "Prune the 10 duplicate claims per the concision list (e.g. C059/C019, C060/C061/C007, C090/C088) to lower redundancy without touching coverage"
+ ],
+ "reasoning": "Hard gates checked first. critical_errors = 0, at or below critical_contradicted_max = 0, so no Critical fail. faithfulness_precision = 0.9918 (121 supported + 0.5 credit for the 1 partial of 122) is above faithfulness_precision_min = 0.95. must_recall = 0.9688 (15 present of 16 must have, with 1 partial) is above must_recall_min = 0.9. redundancy_rate = 0.082 is below redundancy_max = 0.15. All gates pass, so I computed the weighted score with the configured aspect_weights: 0.4 * 0.9918 = 0.39672; 0.4 * 0.9688 = 0.38752; 0.2 * 0.082 = 0.0164; weighted_score = 0.76784. On tradeoffs, the redundancy penalty is small and the coverage loss is confined to one Must have point, so no coverage-for-length trade needs adjudication. Concision does not enter as a rescue because there is no faithfulness or coverage failure. The verdict is Borderline rather than Pass because the decision policy's borderline rule fires: K10 is a Must have point whose presence is Partial, driven by dropped number '200' for the counterfactual experiment while L058-L060 supply 0.88, top 10%, ~1 in 4, and the 50th-90th lottery. Claim C035 is also only Partially supported, a Minor number_or_date claim where the source says 'could rank 1st ... and 40th' but the summary states it as certain. Neither is a Critical error, so the sample does not Fail, but the partial Must have point warrants human review, hence Borderline. The highest leverage fix is regaining full support on K10, which would lift must_recall and remove the borderline trigger; second is hedging C035, which would take faithfulness_precision to 1.0."
+}
+```

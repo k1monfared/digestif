@@ -1,0 +1,443 @@
+{
+ "sample": "12_lets_talk_privacy",
+ "part": 1,
+ "of": 1,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Encrypted chats still trust providers; only client-held keys minimize that trust.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "E2EE definition: encrypted on sender device, decrypted on receiver device, never decrypted in transit. Against men-in-the-middle most implementations suffice; but users usually want no outsider, especially the provider, reading content. WhatsApp metadata (network, frequency, volume, timing) still aids interpretation."
+    },
+    {
+     "ref": "¶18",
+     "text": "Core lesson: trust rests on reputation, jurisdiction, business model, behavior, not verifiable guarantees. Attack surface shrinks WhatsApp to Proton to Signal recovery keys (device or key compromise only)."
+    },
+    {
+     "ref": "¶27",
+     "text": "Bottom line: prefer client-side encryption, open-source everything, decentralized minimal-trust systems, and hardware keys like YubiKey that never expose secrets."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "E2EE means device-to-device secrecy, but users need provider exclusion, not just transit safety.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Framing: from a conversation with Omid; author is not a security expert; an end-user attempt to understand."
+    },
+    {
+     "ref": "¶2",
+     "text": "E2EE definition: encrypted on sender device, decrypted on receiver device, never decrypted in transit. Against men-in-the-middle most implementations suffice; but users usually want no outsider, especially the provider, reading content. WhatsApp metadata (network, frequency, volume, timing) still aids interpretation."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Non-expert end-user inquiry from a conversation with Omid.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Framing: from a conversation with Omid; author is not a security expert; an end-user attempt to understand."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Metadata (network, frequency, volume, timing) still aids interpretation.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "E2EE definition: encrypted on sender device, decrypted on receiver device, never decrypted in transit. Against men-in-the-middle most implementations suffice; but users usually want no outsider, especially the provider, reading content. WhatsApp metadata (network, frequency, volume, timing) still aids interpretation."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If claims hold with no backdoors, Meta cannot read; closed source blocks certainty.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "WhatsApp answer: unclear. If implementation matches claims with no secret backdoors, Meta cannot read content; but closed source blocks negative certainty. Given its business, the 2021 policy sharing data for ads across Meta, and the 2019 plaintext-password failure, near-certain access is the reasonable read."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Business model, 2021 ad-sharing policy, and 2019 plaintext failure imply near-certain access.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "WhatsApp answer: unclear. If implementation matches claims with no secret backdoors, Meta cannot read content; but closed source blocks negative certainty. Given its business, the 2021 policy sharing data for ads across Meta, and the 2019 plaintext-password failure, near-certain access is the reasonable read."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Smoking gun: history on a new device with no manual key transfer.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Smoking gun: can history move across devices without manual key transfer? Encryption means a public locker plus a receiver-only master key; a second device should not magically hold it. Signal forces key copying; any Facebook touch of the key equals a door-key copy on a public billboard."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Locker plus receiver-only master key; server key touch equals public billboard copy.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Smoking gun: can history move across devices without manual key transfer? Encryption means a public locker plus a receiver-only master key; a second device should not magically hold it. Signal forces key copying; any Facebook touch of the key equals a door-key copy on a public billboard."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "WhatsApp server stores encrypted history and hands keys to devices it authenticates.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "WhatsApp: server stores encrypted history plus account-to-device mappings; new devices are authenticated by the server and handed decryption keys. Safeguards (device lists, security codes) rely on honest server reporting, which could hide a rogue device."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Device lists and codes rely on honest reporting; a rogue device could hide.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "WhatsApp: server stores encrypted history plus account-to-device mappings; new devices are authenticated by the server and handed decryption keys. Safeguards (device lists, security codes) rely on honest server reporting, which could hide a rogue device."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proton generates the private key in-browser, wrapping it with bcrypt and AES-256.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "Proton: private key is generated in the browser, then encrypted with the user password using bcrypt and AES-256 before server storage. The encrypted private key lives on Proton servers, not only the original device."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Six-step login: type, bcrypt with server salt, authenticate, fetch key, decrypt locally, read.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "Proton login in six steps: type password; browser bcrypt-hashes it with server-provided salt; hash goes to Proton for authentication; server returns the encrypted private key; browser decrypts it locally with the original password; mail becomes readable."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Hashing authenticates one-way; encryption protects two-way under the actual password.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Hashing (authentication) is one-way and irreversible; encryption (private-key protection) is two-way and reversible with the key. The key wraps in the actual password, not its hash."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "In theory the seen hash cannot decrypt the password-wrapped key.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Theory: Proton sees only the hash for login, which should not decrypt the password-wrapped key."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "counterpoint",
+   "attribution": "author",
+   "text": "Malicious client code could capture the typed password before hashing.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Proton residual risk: malicious client code (web app or update) could capture the typed password before hashing; with the stored encrypted key, that decrypts everything. Trust requires matching open-source code, no compelled future injection, uncompromised infrastructure."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Trust needs matching code, no compelled injection, uncompromised infrastructure.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Proton residual risk: malicious client code (web app or update) could capture the typed password before hashing; with the stored encrypted key, that decrypts everything. Trust requires matching open-source code, no compelled future injection, uncompromised infrastructure."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proton must steal the password first; WhatsApp grants keys directly.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Crucial difference: Proton lacks directly usable keys and must compromise the client first; WhatsApp's server can directly grant key access to any device it authenticates."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Signal: 30-digit passphrase file, device-to-device transfer, or unseen 64-character key.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Signal options: (1) Android manual local backup, an encrypted file guarded by a 30-digit passphrase, physically transferred; (2) direct device-to-device transfer with both present; (3) newer Secure Backups encrypted with a 64-character recovery key Signal never sees."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Android backup needs physical transfer; direct transfer needs both devices present.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Signal options: (1) Android manual local backup, an encrypted file guarded by a 30-digit passphrase, physically transferred; (2) direct device-to-device transfer with both present; (3) newer Secure Backups encrypted with a 64-character recovery key Signal never sees."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Zero-knowledge: no decryption, no recovery help after a lost key.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Signal servers can never grant history access; even cloud backups open only to the on-device recovery key. Genuinely zero-knowledge: no decryption, no recovery help if the key is lost."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Plaintext password storage cannot be ruled out with certainty.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "Password layer: even trusted encryption leaves the plaintext-password question; with password plus encrypted key, everything decrypts."
+    },
+    {
+     "ref": "¶20",
+     "text": "Password section, short answer: we don't know for certain whether companies avoid plaintext storage."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Open clients prove sending behavior, never the server's later handling.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Client behavior is checkable if open source, but server-side fate after arrival is not: code closed, audits only cover the audited deployment, rogue employees and breaches remain possible."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Facebook logged hundreds of millions plaintext for years; Adobe leaked hints; MD5 persists.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Precedents: Facebook logged hundreds of millions of passwords in plaintext for years (2019); Adobe's 2013 breach exposed plaintext hints; smaller services use plaintext or unsalted MD5."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Proton reset destroys old mail, suggesting genuine inability, but proves nothing.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Proton reset evidence: email/SMS password reset destroys old-email access, suggesting genuine inability without the password; still not proof, possibly image-preserving refusal."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Trust rests on reputation, jurisdiction, model, behavior, not verifiable guarantees.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Core lesson: trust rests on reputation, jurisdiction, business model, behavior, not verifiable guarantees. Attack surface shrinks WhatsApp to Proton to Signal recovery keys (device or key compromise only)."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Escrow (WhatsApp) versus password-wrapped (Proton) versus client-controlled (Signal).",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Comparison table. Keys generated on-device for all three. Private keys: WhatsApp encrypted on servers with server-grantable keys (server-mediated escrow); Proton encrypted on servers by user password (password-encrypted storage); Signal on-device or under unseen recovery key (client-controlled). New device: WhatsApp server grants keys; Proton ships encrypted key for local decryption; Signal needs physical transfer or unseen 64-char key. Rogue device: YES for WhatsApp, NO for Proton (short of malicious client) and Signal. Trust and models as in ¶18."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Rogue device: YES for WhatsApp; NO for Proton and Signal (client caveat).",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Comparison table. Keys generated on-device for all three. Private keys: WhatsApp encrypted on servers with server-grantable keys (server-mediated escrow); Proton encrypted on servers by user password (password-encrypted storage); Signal on-device or under unseen recovery key (client-controlled). New device: WhatsApp server grants keys; Proton ships encrypted key for local decryption; Signal needs physical transfer or unseen 64-char key. Rogue device: YES for WhatsApp, NO for Proton (short of malicious client) and Signal. Trust and models as in ¶18."
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Checkable: open clients, Wireshark traffic, audits of deployed code.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "Verifiable: open-source clients (hashing before sending, though silent on servers); Wireshark traffic inspection (plaintext over the wire is a flag, HTTPS hides server fate); audits (trusted auditor, trusted deployment)."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Uncheckable: running code, later updates, rogue staff, breaches.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Unverifiable: closed server code (even shown code may not be running); later updates can add logging; rogue employees or breaches can inject it."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Good: open servers, audits, clean breaches; bad: reset-proof data, obscurity, violations.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Signals: good (open-source servers, published audits, clean breaches); bad (password reset preserving old data, security through obscurity, past privacy violations)."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Facebook 2019: 200-600 million passwords, 20,000+ searchers, archives from 2012.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Cases: Adobe 2013 (plaintext hints aided brute force); Facebook 2019 (200-600 million plaintext passwords searchable by 20,000+ employees, some archives from 2012; claimed unintentional, no abuse found); small services (plaintext or unsalted MD5, discovered at breach)."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Trust ends only with client-side crypto, zero-knowledge servers, verifiable builds.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "Trust becomes unnecessary only if: all crypto is client-side (Signal-style recovery keys); the server sees nothing decryptable (zero-knowledge proofs); code is open, reproducibly built, and verifiably running."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "WhatsApp needs whole-infrastructure trust; Proton hashing honesty; Signal key custody.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "Applied: WhatsApp demands trusting Meta's infrastructure, password handling, government-response, and breach security; Proton demands proper hashing, no pre-hash logging, uncompromised infra, plus honest clients; Signal demands little beyond secure implementation and keeping the recovery key."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Prefer client-side encryption, open source, decentralization, hardware keys like YubiKey.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "Bottom line: prefer client-side encryption, open-source everything, decentralized minimal-trust systems, and hardware keys like YubiKey that never expose secrets."
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Sources: Meta 2021 engineering, Proton key docs, Signal September 2024 backups.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "Sources: Meta multi-device engineering (July 2021); Proton key-storage and zero-access docs; Signal Secure Backups blog (September 2024) and support page."
+    }
+   ]
+  }
+ ]
+}

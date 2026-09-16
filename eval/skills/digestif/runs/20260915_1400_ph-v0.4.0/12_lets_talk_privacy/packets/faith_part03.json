@@ -1,0 +1,315 @@
+{
+ "sample": "12_lets_talk_privacy",
+ "part": 3,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Even trusting the encryption architecture, plaintext password storage on servers cannot be ruled out.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "### The Password Storage Question\nBut there's another layer to this. Even if we trust the encryption architecture, how do we know companies don't store your password in plaintext on their servers? After all, if they have your password and your encrypted private key, they can decrypt everything."
+    },
+    {
+     "ref": "¶21",
+     "text": "The short answer: we don't know for certain. You can verify what the client does (if it's open source) - you can confirm that passwords are hashed before transmission. But you cannot verify what happens on the server after your password (or password hash) arrives. The server code is almost always closed source, and even with security audits, you're trusting that:"
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If they have your password and your encrypted private key, they can decrypt everything.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "### The Password Storage Question\nBut there's another layer to this. Even if we trust the encryption architecture, how do we know companies don't store your password in plaintext on their servers? After all, if they have your password and your encrypted private key, they can decrypt everything."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The short answer is that we do not know for certain.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The short answer: we don't know for certain. You can verify what the client does (if it's open source) - you can confirm that passwords are hashed before transmission. But you cannot verify what happens on the server after your password (or password hash) arrives. The server code is almost always closed source, and even with security audits, you're trusting that:"
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You can verify what the client does if it is open source: that passwords are hashed before transmission.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The short answer: we don't know for certain. You can verify what the client does (if it's open source) - you can confirm that passwords are hashed before transmission. But you cannot verify what happens on the server after your password (or password hash) arrives. The server code is almost always closed source, and even with security audits, you're trusting that:"
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "But you cannot verify what happens on the server after your password or password hash arrives; the server code is almost always closed source.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The short answer: we don't know for certain. You can verify what the client does (if it's open source) - you can confirm that passwords are hashed before transmission. But you cannot verify what happens on the server after your password (or password hash) arrives. The server code is almost always closed source, and even with security audits, you're trusting that:"
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Even with security audits, you are trusting the server operator.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The short answer: we don't know for certain. You can verify what the client does (if it's open source) - you can confirm that passwords are hashed before transmission. But you cannot verify what happens on the server after your password (or password hash) arrives. The server code is almost always closed source, and even with security audits, you're trusting that:"
+    }
+   ]
+  },
+  {
+   "id": "5.5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That the audited code is what is actually running.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "- The audited code is what's actually running\n- They haven't changed it since the audit\n- No rogue employee has modified it\n- Their infrastructure hasn't been breached"
+    }
+   ]
+  },
+  {
+   "id": "5.5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That they have not changed it since the audit.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "- The audited code is what's actually running\n- They haven't changed it since the audit\n- No rogue employee has modified it\n- Their infrastructure hasn't been breached"
+    }
+   ]
+  },
+  {
+   "id": "5.5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That no rogue employee has modified it.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "- The audited code is what's actually running\n- They haven't changed it since the audit\n- No rogue employee has modified it\n- Their infrastructure hasn't been breached"
+    }
+   ]
+  },
+  {
+   "id": "5.5.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That their infrastructure has not been breached.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "- The audited code is what's actually running\n- They haven't changed it since the audit\n- No rogue employee has modified it\n- Their infrastructure hasn't been breached"
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Real-world examples show this is not just paranoia.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Real-world examples show this isn't just paranoia. Facebook disclosed in 2019 that they'd been \"accidentally\" logging hundreds of millions of passwords in plaintext in internal logs for years. Adobe's 2013 breach revealed they stored password hints in plaintext. Many smaller services store passwords in plaintext or use weak hashing like MD5 without salting."
+    }
+   ]
+  },
+  {
+   "id": "5.6.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Facebook disclosed in 2019 that they had been accidentally logging hundreds of millions of passwords in plaintext in internal logs for years.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Real-world examples show this isn't just paranoia. Facebook disclosed in 2019 that they'd been \"accidentally\" logging hundreds of millions of passwords in plaintext in internal logs for years. Adobe's 2013 breach revealed they stored password hints in plaintext. Many smaller services store passwords in plaintext or use weak hashing like MD5 without salting."
+    }
+   ]
+  },
+  {
+   "id": "5.6.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Adobe's 2013 breach revealed they stored password hints in plaintext.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Real-world examples show this isn't just paranoia. Facebook disclosed in 2019 that they'd been \"accidentally\" logging hundreds of millions of passwords in plaintext in internal logs for years. Adobe's 2013 breach revealed they stored password hints in plaintext. Many smaller services store passwords in plaintext or use weak hashing like MD5 without salting."
+    }
+   ]
+  },
+  {
+   "id": "5.6.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Many smaller services store passwords in plaintext or use weak hashing like MD5 without salting.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Real-world examples show this isn't just paranoia. Facebook disclosed in 2019 that they'd been \"accidentally\" logging hundreds of millions of passwords in plaintext in internal logs for years. Adobe's 2013 breach revealed they stored password hints in plaintext. Many smaller services store passwords in plaintext or use weak hashing like MD5 without salting."
+    }
+   ]
+  },
+  {
+   "id": "5.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For Proton specifically: resetting your password via email or SMS recovery loses access to all your old encrypted emails.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "For Proton Mail specifically, there's additional evidence: if you reset your password via email/SMS recovery, you lose access to all your old encrypted emails. This suggests they genuinely can't decrypt your data without your password. But even this isn't proof - they could be deliberately not providing access to maintain their privacy-focused image, even if they technically could."
+    }
+   ]
+  },
+  {
+   "id": "5.7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That suggests they genuinely cannot decrypt your data without your password.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "For Proton Mail specifically, there's additional evidence: if you reset your password via email/SMS recovery, you lose access to all your old encrypted emails. This suggests they genuinely can't decrypt your data without your password. But even this isn't proof - they could be deliberately not providing access to maintain their privacy-focused image, even if they technically could."
+    }
+   ]
+  },
+  {
+   "id": "5.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "But even this is not proof: they could deliberately withhold access to maintain their privacy-focused image, even if they technically could decrypt.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "For Proton Mail specifically, there's additional evidence: if you reset your password via email/SMS recovery, you lose access to all your old encrypted emails. This suggests they genuinely can't decrypt your data without your password. But even this isn't proof - they could be deliberately not providing access to maintain their privacy-focused image, even if they technically could."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The fundamental problem: you are trusting reputation, jurisdiction, business model, and past behavior rather than cryptographically verifiable guarantees.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "The fundamental problem remains: **you're trusting the company's reputation, jurisdiction, business model, and past behavior rather than having cryptographically verifiable guarantees.**"
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Architecture matters: with WhatsApp, you are trusting Meta's entire server infrastructure.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "This is why the architecture matters so much. With WhatsApp, you're trusting Meta's entire server infrastructure. With Proton, you're trusting they won't serve malicious code. With Signal using recovery keys, the attack surface is much smaller - they'd need to compromise your device or steal your recovery key, which they never see.\n---"
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "With Proton, you are trusting that they will not serve malicious code.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "This is why the architecture matters so much. With WhatsApp, you're trusting Meta's entire server infrastructure. With Proton, you're trusting they won't serve malicious code. With Signal using recovery keys, the attack surface is much smaller - they'd need to compromise your device or steal your recovery key, which they never see.\n---"
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "With Signal and recovery keys, the attack surface is much smaller: they would need to compromise your device or steal your recovery key.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "This is why the architecture matters so much. With WhatsApp, you're trusting Meta's entire server infrastructure. With Proton, you're trusting they won't serve malicious code. With Signal using recovery keys, the attack surface is much smaller - they'd need to compromise your device or steal your recovery key, which they never see.\n---"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "theme",
+   "attribution": "author",
+   "text": "The comparison tables contrast key generation, key storage, new-device behavior, provider device injection, server storage, required trust, and security model.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "## Detailed Comparison\n| Aspect | WhatsApp | Proton Mail | Signal |\n|--------|----------|-------------|--------|\n| **Where encryption keys are generated** | On your device | On your device (in browser) | On your device |\n| **Where private keys are stored** | Encrypted on WhatsApp's servers, encrypted with keys that the server can provide to authenticated devices | Encrypted on Proton's servers, encrypted with your password (server has encrypted version only) | Only on your device(s), OR encrypted with your recovery key that Signal never sees |\n| **What happens when you add a new device** | Server authenticates your device → server provides it with keys to decrypt message history stored on server | You enter password → server sends encrypted private key → your browser decrypts it locally with your password | You either:<br>1. Physically transfer backup file + 30-digit passphrase, OR<br>2. Use 64-char recovery key that Signal never has access to, OR<br>3. Direct device-to-device transfer |\n| **Can the service provider add a device without your knowledge?** | **YES** - WhatsApp controls device authentication and can silently add a device to your account and give it decryption keys | **NO** - but they could serve malicious client code to capture your password when you type it, then use that to decrypt your stored private key | **NO** - they cannot authenticate a device without either your recovery key or physical access to an existing device |\n| **What the server stores** | 1. Encrypted message history<br>2. Encrypted encryption keys<br>3. Device-to-key mappings | 1. All your encrypted emails<br>2. Your encrypted private key | 1. Nothing by default (messages deleted after delivery)<br>2. With Secure Backups enabled: encrypted backup that only your recovery key can decrypt |\n| **What you must trust** | 1. Meta won't abuse server control to add rogue devices<br>2. Meta's implementation is secure<br>3. Meta won't comply with government demands to add devices<br>4. Users will actually check their device list | 1. Proton won't serve malicious client code to steal your password<br>2. Open-source code matches what they actually serve<br>3. Swiss jurisdiction protects them from compelled backdoors | 1. You won't lose your recovery key/passphrase<br>2. Signal's implementation is secure<br>3. (Much less trust required overall) |\n| **Security model name** | **Server-mediated key escrow** | **Password-encrypted server-side key storage** | **Client-controlled keys** (with optional encrypted cloud backup) |\n| **The critical architectural difference** | Server is a trusted intermediary that controls access to your encryption keys | Server stores your encrypted key but theoretically can't decrypt it without compromising the client to steal your password | Server is minimally involved; you control keys directly |\n---"
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Can the provider add a device without your knowledge? WhatsApp yes; Proton no, but could serve malicious client code; Signal no.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "## Detailed Comparison\n| Aspect | WhatsApp | Proton Mail | Signal |\n|--------|----------|-------------|--------|\n| **Where encryption keys are generated** | On your device | On your device (in browser) | On your device |\n| **Where private keys are stored** | Encrypted on WhatsApp's servers, encrypted with keys that the server can provide to authenticated devices | Encrypted on Proton's servers, encrypted with your password (server has encrypted version only) | Only on your device(s), OR encrypted with your recovery key that Signal never sees |\n| **What happens when you add a new device** | Server authenticates your device → server provides it with keys to decrypt message history stored on server | You enter password → server sends encrypted private key → your browser decrypts it locally with your password | You either:<br>1. Physically transfer backup file + 30-digit passphrase, OR<br>2. Use 64-char recovery key that Signal never has access to, OR<br>3. Direct device-to-device transfer |\n| **Can the service provider add a device without your knowledge?** | **YES** - WhatsApp controls device authentication and can silently add a device to your account and give it decryption keys | **NO** - but they could serve malicious client code to capture your password when you type it, then use that to decrypt your stored private key | **NO** - they cannot authenticate a device without either your recovery key or physical access to an existing device |\n| **What the server stores** | 1. Encrypted message history<br>2. Encrypted encryption keys<br>3. Device-to-key mappings | 1. All your encrypted emails<br>2. Your encrypted private key | 1. Nothing by default (messages deleted after delivery)<br>2. With Secure Backups enabled: encrypted backup that only your recovery key can decrypt |\n| **What you must trust** | 1. Meta won't abuse server control to add rogue devices<br>2. Meta's implementation is secure<br>3. Meta won't comply with government demands to add devices<br>4. Users will actually check their device list | 1. Proton won't serve malicious client code to steal your password<br>2. Open-source code matches what they actually serve<br>3. Swiss jurisdiction protects them from compelled backdoors | 1. You won't lose your recovery key/passphrase<br>2. Signal's implementation is secure<br>3. (Much less trust required overall) |\n| **Security model name** | **Server-mediated key escrow** | **Password-encrypted server-side key storage** | **Client-controlled keys** (with optional encrypted cloud backup) |\n| **The critical architectural difference** | Server is a trusted intermediary that controls access to your encryption keys | Server stores your encrypted key but theoretically can't decrypt it without compromising the client to steal your password | Server is minimally involved; you control keys directly |\n---"
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "What the server stores: WhatsApp keeps encrypted history, keys, and device-to-key mappings; Proton keeps emails and the encrypted private key; Signal keeps nothing by default.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "## Detailed Comparison\n| Aspect | WhatsApp | Proton Mail | Signal |\n|--------|----------|-------------|--------|\n| **Where encryption keys are generated** | On your device | On your device (in browser) | On your device |\n| **Where private keys are stored** | Encrypted on WhatsApp's servers, encrypted with keys that the server can provide to authenticated devices | Encrypted on Proton's servers, encrypted with your password (server has encrypted version only) | Only on your device(s), OR encrypted with your recovery key that Signal never sees |\n| **What happens when you add a new device** | Server authenticates your device → server provides it with keys to decrypt message history stored on server | You enter password → server sends encrypted private key → your browser decrypts it locally with your password | You either:<br>1. Physically transfer backup file + 30-digit passphrase, OR<br>2. Use 64-char recovery key that Signal never has access to, OR<br>3. Direct device-to-device transfer |\n| **Can the service provider add a device without your knowledge?** | **YES** - WhatsApp controls device authentication and can silently add a device to your account and give it decryption keys | **NO** - but they could serve malicious client code to capture your password when you type it, then use that to decrypt your stored private key | **NO** - they cannot authenticate a device without either your recovery key or physical access to an existing device |\n| **What the server stores** | 1. Encrypted message history<br>2. Encrypted encryption keys<br>3. Device-to-key mappings | 1. All your encrypted emails<br>2. Your encrypted private key | 1. Nothing by default (messages deleted after delivery)<br>2. With Secure Backups enabled: encrypted backup that only your recovery key can decrypt |\n| **What you must trust** | 1. Meta won't abuse server control to add rogue devices<br>2. Meta's implementation is secure<br>3. Meta won't comply with government demands to add devices<br>4. Users will actually check their device list | 1. Proton won't serve malicious client code to steal your password<br>2. Open-source code matches what they actually serve<br>3. Swiss jurisdiction protects them from compelled backdoors | 1. You won't lose your recovery key/passphrase<br>2. Signal's implementation is secure<br>3. (Much less trust required overall) |\n| **Security model name** | **Server-mediated key escrow** | **Password-encrypted server-side key storage** | **Client-controlled keys** (with optional encrypted cloud backup) |\n| **The critical architectural difference** | Server is a trusted intermediary that controls access to your encryption keys | Server stores your encrypted key but theoretically can't decrypt it without compromising the client to steal your password | Server is minimally involved; you control keys directly |\n---"
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Security model names: server-mediated key escrow for WhatsApp, password-encrypted server-side key storage for Proton, client-controlled keys for Signal.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "## Detailed Comparison\n| Aspect | WhatsApp | Proton Mail | Signal |\n|--------|----------|-------------|--------|\n| **Where encryption keys are generated** | On your device | On your device (in browser) | On your device |\n| **Where private keys are stored** | Encrypted on WhatsApp's servers, encrypted with keys that the server can provide to authenticated devices | Encrypted on Proton's servers, encrypted with your password (server has encrypted version only) | Only on your device(s), OR encrypted with your recovery key that Signal never sees |\n| **What happens when you add a new device** | Server authenticates your device → server provides it with keys to decrypt message history stored on server | You enter password → server sends encrypted private key → your browser decrypts it locally with your password | You either:<br>1. Physically transfer backup file + 30-digit passphrase, OR<br>2. Use 64-char recovery key that Signal never has access to, OR<br>3. Direct device-to-device transfer |\n| **Can the service provider add a device without your knowledge?** | **YES** - WhatsApp controls device authentication and can silently add a device to your account and give it decryption keys | **NO** - but they could serve malicious client code to capture your password when you type it, then use that to decrypt your stored private key | **NO** - they cannot authenticate a device without either your recovery key or physical access to an existing device |\n| **What the server stores** | 1. Encrypted message history<br>2. Encrypted encryption keys<br>3. Device-to-key mappings | 1. All your encrypted emails<br>2. Your encrypted private key | 1. Nothing by default (messages deleted after delivery)<br>2. With Secure Backups enabled: encrypted backup that only your recovery key can decrypt |\n| **What you must trust** | 1. Meta won't abuse server control to add rogue devices<br>2. Meta's implementation is secure<br>3. Meta won't comply with government demands to add devices<br>4. Users will actually check their device list | 1. Proton won't serve malicious client code to steal your password<br>2. Open-source code matches what they actually serve<br>3. Swiss jurisdiction protects them from compelled backdoors | 1. You won't lose your recovery key/passphrase<br>2. Signal's implementation is secure<br>3. (Much less trust required overall) |\n| **Security model name** | **Server-mediated key escrow** | **Password-encrypted server-side key storage** | **Client-controlled keys** (with optional encrypted cloud backup) |\n| **The critical architectural difference** | Server is a trusted intermediary that controls access to your encryption keys | Server stores your encrypted key but theoretically can't decrypt it without compromising the client to steal your password | Server is minimally involved; you control keys directly |\n---"
+    },
+    {
+     "ref": "¶42",
+     "text": "### Applied to Our Three Services:\n| Service | What You Must Trust |\n|---------|---------------------|\n| **WhatsApp** | Meta's entire server infrastructure, their password handling, their response to government requests, their security against breaches |\n| **Proton Mail** | They hash your password properly before checking it, they don't log it before hashing, their infrastructure isn't compromised. However, they could theoretically serve malicious client code to capture your password when you type it. |\n| **Signal** | Much less trust required. With recovery keys, Signal never has access to decrypt your backups. You must trust their implementation is secure and you won't lose your recovery key. |\n---"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,402 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "02_case_for_transparent_government part 5 of 5",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Transparency is not a value to balance against efficiency, security, privacy, and speed; it is the measuring stick.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Transparency is not a value to be balanced. It's the measuring stick.",
+   "reasoning": "SOURCE states this verbatim including the list and the measuring-stick metaphor."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Reject the framing of finding an optimal tradeoff point.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Reject this framing.",
+   "reasoning": "SOURCE directly commands rejecting the balance/tradeoff framing."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Speed and accountability are byproducts: document everything at whatever speed, then improve processes transparency reveals as broken.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Speed and accountability are *byproducts*. Whatever speed your government operates at, document everything.",
+   "reasoning": "SOURCE states byproducts, document-everything, and iterative improvement of revealed broken processes."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Availability of the record creates pressure for consistency, sound reasoning, and accountability.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the availability of that record will create pressure: pressure for consistency, pressure for sound reasoning, pressure for accountability.",
+   "reasoning": "SOURCE lists exactly these three pressures from record availability."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "Officials who know their reasoning will be reviewed produce better reasoning; documented decisions are more carefully considered.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Officials who know their reasoning will be reviewed will produce better reasoning. Decisions that must be documented will be more carefully considered.",
+   "reasoning": "SOURCE states both causal claims in nearly identical wording."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "Corruption that leaves a trail is easier to prosecute.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Corruption that leaves a trail will be easier to prosecute.",
+   "reasoning": "Verbatim match in SOURCE."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "claim_text": "Transparency is the measuring stick for whether government works; reaching 100% requires solving speed and accountability along the way.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In order to reach 100% transparency, you'll have to solve speed and accountability along the way.",
+   "reasoning": "SOURCE gives the measuring-stick role and the 100% requirement in the same passage."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Open source shows complex collaborative work can be built and maintained in public, enabling accountability.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "complex systems can be built and maintained in public. Transparency doesn't prevent sophisticated work. It enables accountability for that work.",
+   "reasoning": "SOURCE states complex systems built in public and transparency enabling accountability."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Linux runs most of the internet, built by thousands in public view: every commit visible, issues tracked, pull requests discussed.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Linux, the operating system running most of the internet, is built by thousands of people across the world, working in full public view.",
+   "reasoning": "SOURCE states all listed Linux details verbatim."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Maintainers are accountable to users, and if you disagree with a decision you can fork the project.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Maintainers are accountable to users. If you disagree with a decision, you can fork the project.",
+   "reasoning": "Both clauses match SOURCE exactly."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Government is more complex, but the principle is the same.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The complexity of a government is greater, but the principle is the same",
+   "reasoning": "Near-verbatim restatement of the SOURCE sentence."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "In open source participation is voluntary and you can leave; in government you cannot fork your country.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in open source, participation is voluntary. You can leave... You can't fork your country.",
+   "reasoning": "SOURCE states voluntary participation, ability to leave, and inability to fork one's country."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "That makes the case for government transparency stronger: less choice means more right to see how decisions are made.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That makes the case for government transparency *stronger*, not weaker. The less choice you have about being affected by decisions, the more right you have to see how those decisions are made.",
+   "reasoning": "SOURCE explicitly states stronger, not weaker, and the less-choice/more-right link."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "You pay for this government, you live with its consequences, you are the CEO. Act like it.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You pay for this government. You live with its consequences. You are the CEO.\n\nAct like it.",
+   "reasoning": "Verbatim closing lines of the SOURCE."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Appendix: 49 sourced references with summaries, grouped by topic.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "## Appendix: Sources with Summaries ... 49. **[Finnish Ministry of Justice - Act on Openness of Government Activities]",
+   "reasoning": "SOURCE appendix is titled so, grouped by topic, and numbered 1 through 49."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "Historical foundations: three sources on the 1766 act, UNESCO's world's-first recognition, and its 250th anniversary.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "UNESCO recognition of the 1766 act as world's first legislation ... documenting the 250th anniversary of the world's first FOI act",
+   "reasoning": "SOURCE items 1-3 cover exactly three sources with those descriptors."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "Digital infrastructure: X-Road history (started 1998, launched 2001), a 1996 leak behind distributed design, Estonia 16th to 2nd, 100% digitalization 2024.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "history (started 1998, launched 2001) ... 1996 data leak that motivated distributed design ... rise from 16th to 2nd ... 100% digitalization milestone in 2024",
+   "reasoning": "All numbers and details match SOURCE appendix items 5 and 6."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "claim_text": "Government spending: Brazil's portal created 2004 by CGU with five data categories; 20+ million yearly accesses; 2018 integration of 17 sources.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "creation of Brazil's portal in 2004 by CGU; details five data categories ... accessed 20+ million times yearly; describes 2018 data warehouse integration of 17 sources",
+   "reasoning": "Every figure matches SOURCE appendix items 7 and 8."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "9.3.1"
+   ],
+   "claim_text": "Fiquem Sabendo used LAI to uncover 60GB of hidden pension data spanning 27 years of former presidents.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Fiquem Sabendo used LAI to uncover 60GB of hidden pension payment data spanning 27 years of former presidents",
+   "reasoning": "Verbatim match to SOURCE appendix item 9."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "9.4"
+   ],
+   "claim_text": "Process transparency: OPEN launched April 1999 (70 tasks), anti-corruption study, NZ's 30 business day release from January 2019 and exceptions.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "OPEN system launched April 1999 ... covers 70 municipal tasks ... 30 business day requirement from January 2019; covers exceptions",
+   "reasoning": "All details match SOURCE appendix items 10, 11, and 13."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "9.5"
+   ],
+   "claim_text": "Participatory democracy: Pol.is details (Uber first test, 2014 Sunflower origins, Audrey Tang, g0v), Iceland's rejection, deliberative-quality assessment.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Uber regulation as first test case ... traces origins to 2014 Sunflower Movement; analyzes Audrey Tang's role and g0v community ... parliament rejected the crowdsourced draft",
+   "reasoning": "Each element corresponds to SOURCE appendix items 14-17."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "9.6"
+   ],
+   "claim_text": "Snowden sources: 10-year reform retrospective, GDPR acceleration, the 2020 ruling, and the ACLU calling it a privacy-rights victory.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "10-year retrospective on reforms ... notes GDPR acceleration ... Reports on 2020 court ruling ... ACLU attorney calls ruling \"a victory for privacy rights\"",
+   "reasoning": "All four descriptors match SOURCE appendix items 18-21."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "9.7"
+   ],
+   "claim_text": "Privacy sources: Pew 2019 (66% concerned about government data collection) and Roper's opinion history from the 1950s onward.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "66% concerned about government data collection ... American public opinion on government transparency from 1950s to present",
+   "reasoning": "Numbers and time span match SOURCE appendix items 22 and 23."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "9.8"
+   ],
+   "claim_text": "Efficiency sources: IMF fortress and Robodebt, Cambridge's EU Council perception study, World Bank's mixed findings and incumbent rollback.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it's a fortress ... uses Australia's Robodebt as cautionary tale ... Empirical study of EU Council ... mixed findings on effectiveness; notes incumbents can undo positive effects",
+   "reasoning": "Fortress and Robodebt appear in body and appendix item 24; other elements match items 25-26."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "9.9"
+   ],
+   "claim_text": "Diplomacy sources: the Harvard explainer on the Oman backchannel and Oxford's democratic-dilemma overview.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "secret backchannel in Oman ... frames the \"democratic dilemma\"",
+   "reasoning": "Matches SOURCE appendix items 27 and 28."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "9.10"
+   ],
+   "claim_text": "Special-interest sources: Notre Dame's 50-state study, the Cambridge book, Springer's 569-participant Irish experiment.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "multi-decade study of 50 states ... Cambridge University Press ... 2024 experimental study with 569 participants in Ireland",
+   "reasoning": "All descriptors match SOURCE appendix items 29-31."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "9.11"
+   ],
+   "claim_text": "Safety sources: Brennan's 735-official survey (38% threatened, ±3%), NAAG analysis, Issue One's 22-state tracking since 2022.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "survey of 735 officials ... 38% report threats; margin of error ±3% ... legislative responses across 22 states since 2022",
+   "reasoning": "Numbers and entities match SOURCE appendix items 32-34."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "9.12"
+   ],
+   "claim_text": "National-security sources: Chicago Council (about 60% support; 12% to 17% liberties concern), Brennan, and SIPRI.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "general support (~60%) but increasing civil liberties concerns (12% to 17% 2021-2022)",
+   "reasoning": "Figures and sources match SOURCE appendix items 35-37."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "9.13"
+   ],
+   "claim_text": "Populism sources: the 43-country 1990-2018 study (4x, average 5 places), Stanford, and the Sweden Democrats case study.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "study of 43 countries (1990-2018) ... 4x more likely to damage democratic institutions; countries fall average 5 places",
+   "reasoning": "All figures and sources match SOURCE appendix items 38-40."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "9.14"
+   ],
+   "claim_text": "Misinformation sources: HKS review on false beliefs reducing perceived transparency and the latent-transparency study.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "false beliefs causally reduce perceived transparency ... identifies \"latent transparency\" concept",
+   "reasoning": "Matches SOURCE appendix items 41 and 42."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "9.15"
+   ],
+   "claim_text": "Structural-barrier sources: OGP (75 countries), Hong 2024, Ruijer et al. 2020, and a study on workarounds and non-compliance.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "across 75 member countries ... Hong (2024) ... Ruijer et al. (2020) ... strategic non-compliance",
+   "reasoning": "All entities and years match SOURCE appendix items 43-46."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "9.16"
+   ],
+   "claim_text": "Nordic sources: nordics.info (250+ years), Nordicom's five-country comparison, Finland's 1999 openness act.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "250+ years of FOI practice ... across five Nordic countries ... Finland's transparency law (1999 amendment)",
+   "reasoning": "All descriptors match SOURCE appendix items 47-49."
+  }
+ ],
+ "metrics": {
+  "total_claims": 32,
+  "supported": 32,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

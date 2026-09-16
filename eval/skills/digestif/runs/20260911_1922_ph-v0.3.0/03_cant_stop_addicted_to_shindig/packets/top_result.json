@@ -1,0 +1,30 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "unspecified",
+ "inputs": {
+  "faithfulness_precision": 1.0,
+  "critical_errors": 0,
+  "must_recall": 0.8929,
+  "overall_recall": 0.9,
+  "redundancy_rate": 0.0278,
+  "trivia_rate": 0.0
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score = 0.4 * 1.0 + 0.4 * 0.8929 - 0.2 * 0.0278 = 0.4 + 0.35716 - 0.00556 = 0.7516",
+ "weighted_score": 0.7516,
+ "verdict": "Fail",
+ "tradeoff_note": "Hard gate missed: must_recall 0.8929 falls below the 0.9 minimum, so the sample fails regardless of perfect faithfulness and low redundancy. The shortfall traces to three Must-have points (K11, K12, K15) each capped at Partial by dropped numbers, not to any contradiction.",
+ "fix_list": [
+  "Restore the dropped champion turn count in K11: state that FiftyPercentSurvival wins in 11.3 turns (loglog L026/L029), so the consistency-beats-speed contrast is complete.",
+  "Restore the comparative anchors in K12: chess (~5%) and Go (~7%) first-player edges (loglog L030), so the 'larger than' framing is not lost.",
+  "Restore the avoided-activation condition in K15: explicitly warn against forcing activation of columns 2-3 and 11-12 (loglog L037).",
+  "Prune C001, which duplicates C009/C013/C026/C031; pure recap with no unique content (redundancy only 0.0278, so low leverage but harmless to compress)."
+ ],
+ "reasoning": "Gate checks against config pass_gates. (1) critical_contradicted_max = 0: faithfulness critical_errors = 0 and contradicted = 0, so this gate passes. (2) faithfulness_precision_min = 0.95: precision = 36/36 = 1.0, passes. (3) must_recall_min = 0.9: must_have_total = 14, must_have_present = 11, must_have_partial = 3, must_have_missing = 0; with partials at half credit, must_recall = (11 + 0.5*3)/14 = 12.5/14 = 0.8929, which is below 0.9. This is a hard gate miss and forces a Fail verdict before any weighting. (4) redundancy_max = 0.15: redundancy_rate = 1/36 = 0.0278, passes, and trivia_rate = 0.0. Because a hard gate failed, the weighted score is computed for audit only, not for ranking: 0.4*1.0 (faithfulness) + 0.4*0.8929 (must recall) - 0.2*0.0278 (redundancy penalty) = 0.4 + 0.35716 - 0.00556 = 0.7516. All three Partial Must-have points in the coverage JSON are the direct cause: K11 (loglog L026, L029) drops FiftyPercentSurvival's 11.3-turn figure, K12 (loglog L030) drops the chess ~5% and Go ~7% anchors, K15 (loglog L037) drops the avoid-forced-activation-of-columns-2-3-and-11-12 condition. Each is Partial strictly because a specific number or condition was omitted, not because the spine is wrong. No fact conflict between the aspect judges arose, so SOURCE was not reread. Concision cannot rescue this fail per the top policy, and the sole duplicate C001 offers only marginal benefit since redundancy already sits well under the max. The single highest-leverage repair is adding the 11.3-turn figure to K11, which moves must_recall from 0.8929 toward the 0.9 threshold; closing all three partials returns must_recall to 1.0 and would clear the gate assuming faithfulness holds at 1.0."
+}

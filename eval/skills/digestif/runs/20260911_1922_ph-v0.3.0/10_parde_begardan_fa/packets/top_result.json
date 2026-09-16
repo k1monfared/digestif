@@ -1,0 +1,29 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "unspecified",
+ "inputs": {
+  "faithfulness_precision": 0.9167,
+  "critical_errors": 0,
+  "must_recall": 0.9375,
+  "overall_recall": 0.9667,
+  "redundancy_rate": 0.0,
+  "trivia_rate": 0.2083
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score = 0.4*0.9167 + 0.4*0.9375 - 0.2*0.0 = 0.36668 + 0.37500 - 0.00000 = 0.74168",
+ "weighted_score": 0.7417,
+ "verdict": "Fail",
+ "tradeoff_note": "All quality gates pass except faithfulness_precision, which at 0.9167 falls below the 0.95 minimum, so the sample fails regardless of the solid must_recall (0.9375) and zero redundancy. Coverage and concision cannot rescue a faithfulness gate miss.",
+ "fix_list": [
+  "Repair claim C006: source says the family bought the santur (بالاخره برام یه سنتور خریدن) but the draft states 'I bought it' (با تخفیف سنتور خریدم), shifting agency. Correcting this one claim raises supported to 23/24 = 0.9583, clearing the 0.95 precision gate.",
+  "Repair claim C008: source says the room was 'colder than the other rooms' (سردتر از بقیه اتاقها) but the draft flattens it to merely 'cold' (سرد بود). Restore the comparative to convert this from Partially supported to supported.",
+  "Fix point K08: the loglog says the harp-inspired keys make notes زیرتر (higher), inverting the source's 'lowered by a quarter or half step' direction. This directional inversion is a meaning change on a Must have point and must be corrected to preserve both recall and factual accuracy."
+ ],
+ "reasoning": "Gate checks in order. (1) Hard fail on critical errors: faithfulness critical_errors = 0, equals critical_contradicted_max of 0, so this gate passes. (2) Hard fail on must recall: must_recall = 0.9375 from coverage (7 present + 1 partial of 8 must-have points), and 0.9375 >= must_recall_min of 0.90, so this gate passes. The single partial, K08, is under the minimum threshold. (3) Hard fail on faithfulness precision: faithfulness_precision = 0.9167 (22 supported of 24 total claims), which is below faithfulness_precision_min of 0.95. This gate is missed, so per policy the sample fails. The two non-supported claims driving this are C006 (agency shift: 'I bought' versus source's family purchase, Minor) and C008 (comparative 'colder' flattened to 'cold', Harmless). Either one lifted to supported yields 23/24 = 0.9583 and clears the gate, making C006 the highest-leverage fix since it also removes a semantic misattribution. For completeness the weighted score is computed: 0.4*0.9167 = 0.36668, 0.4*0.9375 = 0.37500, minus 0.2*0.0 = 0.00000, totaling 0.74168. Concision contributes nothing here since redundancy_rate = 0.0 sits below redundancy_max of 0.15, and trivia_rate of 0.2083 with the five header-restatement entries (C002, C006, C011, C016, C020) is a polish issue only, not a gate. Borderline is not applicable: a numerical gate was missed, so the verdict is a hard Fail, not a borderline pass. The failure is narrow and cheap to reverse, but per policy concision and coverage gains never compensate for a faithfulness precision miss."
+}

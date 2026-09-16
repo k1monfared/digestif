@@ -1,0 +1,91 @@
+{
+ "sample": "06_valuing_consistency",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Confounded attribution: correct belief via unreliable process fails when cost opposes evidence.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Confounded attribution: evidence and cost usually move together; a society opening removes punishment and stress-tests old reasons, so one can land on the correct anchor for the wrong reason. A correct belief via unreliable process fails when cost and evidence next oppose."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Misperceived reference corrupts everything downstream with no layer flawed.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Misperceived reference: thinking a norm still forbids what it allows, or a market is risk-off when it turned. Error upstream of anchor, responsiveness, and policy; corrupts every downstream judgment with none of the three flawed."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Reference lag: diaspora freezes the origin norm at emigration; Quebec keeps dropped features.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "Reference lag: apparent principle is conformity to a stale clock. Diaspora communities preserve older language forms; Quebec French keeps features metropolitan French dropped. The real reference is the origin norm frozen at emigration day."
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Prior prediction under the old regime, with reasons, is the trustworthy test.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The prior prediction test: what was predicted, before the change, with reasons attached. 'I'll understand incentives better by 40' is falsifiable; 'more to protect' is incentives wearing insight; 'I'd wear this if society let me' tests the anchor. With no prior prediction the case is underdetermined; never default to the flattering interpretation."
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Understand-incentives-by-40 is falsifiable; more-to-protect is incentives as insight.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The prior prediction test: what was predicted, before the change, with reasons attached. 'I'll understand incentives better by 40' is falsifiable; 'more to protect' is incentives wearing insight; 'I'd wear this if society let me' tests the anchor. With no prior prediction the case is underdetermined; never default to the flattering interpretation."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Without prior prediction the case is underdetermined; never default to flattering.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The prior prediction test: what was predicted, before the change, with reasons attached. 'I'll understand incentives better by 40' is falsifiable; 'more to protect' is incentives wearing insight; 'I'd wear this if society let me' tests the anchor. With no prior prediction the case is underdetermined; never default to the flattering interpretation."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Behavioral consistency was a bad proxy; the trusted question is asked in advance.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Verdict: consistency of behavior was never the admired thing, only a bad proxy for process (anchor, responsiveness, evidence vs cost). Stories afterward are mostly unfalsifiable; the only trusted question is asked in advance: what will you do when it changes, and why?"
+    }
+   ]
+  }
+ ]
+}

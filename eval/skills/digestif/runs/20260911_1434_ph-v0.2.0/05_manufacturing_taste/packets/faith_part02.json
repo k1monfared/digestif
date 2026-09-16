@@ -1,0 +1,239 @@
+{
+ "sample": "05_manufacturing_taste",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Story 3 wins: quality sets floor and ceiling; capital and luck rule middle.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "## What This Means"
+    },
+    {
+     "ref": "¶45",
+     "text": "Story 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will. But the vast middle ground, where most artists live, is dominated by capital and luck."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Implications worth spelling out below.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "There are a few implications worth spelling out."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Bach greatest only among heard, published, preserved; equals may never have survived.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "**When someone says \"Bach is the greatest composer who ever lived,\"** a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\" There may have been equally gifted composers whose music was never performed, never published, and never survived. We don't know. We can't know. But the simulation says it's very likely."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Feedback loops run faster today; playlists decide in hours, patronage took decades.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "**The mechanisms are stronger today, not weaker.** The feedback loops we model (exposure bias, social influence, cumulative advantage) operate faster in the age of algorithmic recommendations. An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours. The scale of winner-take-all dynamics is vastly larger than anything in the historical record."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Leverage is wider exposure; blind auditions lifted women hires 5 to 25 percent.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "**The highest-leverage intervention isn't better judgment, it's wider exposure.** Our model says audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself. Blind auditions for orchestras, widely adopted in the 1970s-80s, are the proof of concept: when the screen went up, the proportion of women hired by major US orchestras went from 5% to 25%. The talent was always there. The barrier was exposure."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Canon-as-best confuses metric with thing; curricula built on forgotten proxy.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "This connects to something I keep coming back to in these posts: the gap between the metric and the thing we actually care about. We use \"survived into the canon\" as a proxy for \"was the best,\" then build entire curricula and cultural narratives on that proxy, forgetting it was ever a proxy at all. The simulation doesn't tell us what the canon *should* look like. It just tells us that the one we got is far more contingent than we assume."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Caveats bound what the model can and cannot tell us.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "## The Caveats"
+    },
+    {
+     "ref": "¶52",
+     "text": "I want to be honest about what this can and can't tell us."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "concession",
+   "attribution": "author",
+   "text": "Quality may be partly constituted socially, making decomposition ill-posed.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "The model assumes quality is a real, stable property that exists independently of who hears it. That's philosophically debatable. If \"quality\" is partly constituted by social processes, if great art is partly art that has been widely shared and discussed, then the whole decomposition may be ill-posed. I don't have a satisfying answer to this. I just think it's worth noting."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "concession",
+   "attribution": "author",
+   "text": "Calibration leaps from teens judging pop over weeks to aristocrats over decades.",
+   "evidence": [
+    {
+     "ref": "¶54",
+     "text": "The calibration data comes from the Salganik MusicLab experiment, which studied American teenagers evaluating pop songs over weeks. Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith. The mechanisms (mere exposure, social influence, cumulative advantage) are well-documented across many contexts, but the specific parameter values are uncertain."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "concession",
+   "attribution": "author",
+   "text": "Model omits genre, discourse, technology, politics; direction robust, magnitudes uncertain.",
+   "evidence": [
+    {
+     "ref": "¶55",
+     "text": "There are important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics. Any model is a simplification. The question is whether it's a useful simplification, and I think it is. The direction of the effects is robust across a wide range of parameter values, even if the precise magnitudes are uncertain."
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Bach was not Bieber, but closer than expected.",
+   "evidence": [
+    {
+     "ref": "¶56",
+     "text": "## So, Was Bach the Justin Bieber of His Time?"
+    },
+    {
+     "ref": "¶57",
+     "text": "After all of this, I have an answer to the question I asked Hadi. Not exactly, but closer than I expected."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Bieber analogy gets mechanism right but quality floor wrong; court posts demanded skill.",
+   "evidence": [
+    {
+     "ref": "¶58",
+     "text": "The Bieber analogy gets the mechanism right but the quality floor wrong. The pop music pipeline can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion. Bach's world was different: to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand. The quality floor was genuinely high."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Bach was excellent and well-positioned; positioning matters more than merit gap.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "So Bach wasn't just popular. He was excellent AND well-positioned. But the simulation tells us the \"AND\" is doing most of the work, and the second half matters more than the first. Reshuffle patronage and you get an almost entirely different canon. Only 2.5% overlap between alternate histories."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Famous surgeon among fifty equals: profile led to talks, book, best reputation.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "I think Bach was less like Justin Bieber and more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals. All fifty are excellent. All fifty could do the job. But one happened to get a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\" The other 49 are just as good. You've never heard of them."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Leipzig job decided it; 20 to 50 equals forgotten for missing that post.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "The question was never whether Bach was great. He almost certainly was. The question is whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig. The simulation says it's the second. And it says there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know, because they didn't get that job."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Canon is one of hundreds of valid possible canons, treated as inevitable.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "That's what sits with me. Not that the canon is wrong. But that it's one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as if it were inevitable."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Taste itself was manufactured: survivors set harmonic foundations we judge by.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "And there's a deeper question here that I haven't been able to shake. We think of Bach's music as what \"great music\" sounds like. His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today. But if someone else had gotten the Leipzig job, if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently. What we call \"good taste\" would be a different taste entirely."
+    },
+    {
+     "ref": "¶64",
+     "text": "That's the real meaning of the title. It's not just that the canon was manufactured. It's that our taste was manufactured along with it. We like what we were taught to like, and we were taught to like the survivors, and the survivors were selected by money and luck as much as by merit. The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside."
+    }
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Future canons will reward distribution and algorithms over musical merit.",
+   "evidence": [
+    {
+     "ref": "¶65",
+     "text": "As for the other half of the question, whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know. But if the mechanisms in this simulation are right, then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music. And we won't be around to correct them."
+    }
+   ]
+  }
+ ]
+}

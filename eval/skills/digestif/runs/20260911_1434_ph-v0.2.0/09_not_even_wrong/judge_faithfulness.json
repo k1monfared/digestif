@@ -1,0 +1,405 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "09_not_even_wrong",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "claim_text": "Unfalsifiable not even wrong rhetoric escapes scrutiny because stakes, tribe, and proof bias belief, so we need skepticism and shared standards.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the not even wrong statements of powerful business and political leaders often escape rigorous evaluation",
+      "reasoning": "Source ties escape from scrutiny to stakes, tribe, and shared standards; summary faithfully compresses these elements."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "claim_text": "Not even wrong ideas are too ill-constructed to be judged correct or incorrect.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "ideas so fundamentally flawed or ill-constructed that they cannot be meaningfully evaluated as either correct or incorrect",
+      "reasoning": "Direct restatement of the source definition with matching scope and negation."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "claim_text": "Atiyah's late Riemann claim lacked the rigor to be assessed as proof.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "His proof lacked the necessary mathematical rigor and coherence to be properly assessed",
+      "reasoning": "Source states the proof lacked rigor and coherence to be properly assessed; claim preserves this."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "claim_text": "It was not simply incorrect; it sat outside traditional evaluation boundaries.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "It wasn't simply incorrect, it operated outside the boundaries where traditional evaluation was possible",
+      "reasoning": "Both the negation and the outside-boundaries framing match the source exactly."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "claim_text": "Powerful figures use compelling rhetoric that works like Atiyah's flawed proof.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "employ rhetoric that functions similarly to Atiyah's flawed proof",
+      "reasoning": "Source says their rhetoric functions similarly; compelling quality also stated."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "2"
+      ],
+      "claim_text": "Financial stakes create incentives to believe a visionary leader's vision.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The financial stake creates a powerful incentive to believe in that leader's vision",
+      "reasoning": "Direct match including the incentive causal direction."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "claim_text": "This is not just protecting the investment; it resolves cognitive dissonance.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This isn't just about mentally protecting the investment - it's about resolving cognitive dissonance",
+      "reasoning": "Preserves both the negation and the cognitive-dissonance resolution."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "claim_text": "Commitment spills over: investors accept claims outside demonstrated expertise.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "more receptive to the leader's other claims and predictions, even those outside their areas of demonstrated expertise",
+      "reasoning": "Source states increased receptivity to claims outside demonstrated expertise."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "claim_text": "Investment, emotion, receptivity, and reinvestment form a self-reinforcing cycle.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This creates a self-reinforcing cycle: financial investment leads to emotional investment, which leads to greater receptivity... which can lead to further financial investment",
+      "reasoning": "Claim reproduces the exact cycle chain described."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "claim_text": "Fulfilled concrete promises back grandiose ones despite different evidentiary standards.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "When the concrete promises are fulfilled, it lends credibility to the grandiose ones, even though they operate on completely different evidentiary standards",
+      "reasoning": "Matches both the credibility transfer and the different-standards qualifier."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "3"
+      ],
+      "claim_text": "Popularity, tribal outsider framing, and algorithms entrench belief.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Social media amplifies both effects. Algorithms tend to show people content that reinforces existing beliefs, creating echo chambers",
+      "reasoning": "Source links social proof, outsider framing, and algorithmic reinforcement of beliefs."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "claim_text": "Seeing thousands praise a leader provides social proof of credibility.",
+      "claim_type": "evidence",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "When someone sees thousands or millions of people praising a business leader's genius, it provides social proof that their visions are credible",
+      "reasoning": "Preserves the social-proof mechanism and the thousands/millions scale."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "claim_text": "Outsider-against-establishment framing makes questioning feel like tribal betrayal.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This creates a tribal dynamic where questioning any of their claims can feel like betraying the tribe",
+      "reasoning": "Matches the outsider framing and betrayal feeling, retaining the hedged can feel."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "claim_text": "Algorithms build echo chambers while frequent posts fake personal authenticity.",
+      "claim_type": "claim",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "frequent, seemingly unfiltered posts from these figures create a sense of personal connection and authenticity",
+      "reasoning": "Echo chambers supported, but source says posts create authenticity and 'seemingly unfiltered', not that they fake it."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "4"
+      ],
+      "claim_text": "We are not purely rational evaluators; interests, consistency, belonging, and narrative steer us.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "We are not purely rational beings who evaluate each claim independently based on evidence",
+      "reasoning": "Preserves the negation and the four influencing factors listed."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "claim_text": "Money, consistency desires, belonging needs, and personalities bias our evaluations.",
+      "claim_type": "evidence",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "our financial interests and commitments; our desire for consistency in our beliefs; our need for social belonging and identity; our attraction to compelling narratives and personalities",
+      "reasoning": "All four factors match the source list."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "claim_text": "Unlike rejected Atiyah, leaders often escape evaluation because society lacks frameworks.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "which was ultimately rejected by his peers, the not even wrong statements of powerful business and political leaders often escape rigorous evaluation... our broader society lacks comparable frameworks",
+      "reasoning": "Preserves the contrast, the often hedge, and the missing-frameworks cause."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "5"
+      ],
+      "claim_text": "Individuals should separate money from belief, check domains, seek critics, and detach.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Separate financial from epistemic decisions... Practice domain-specific evaluation... Seek counter-narratives deliberately... Adopt investment detachment",
+      "reasoning": "Summarizes the four individual recommendations in the source."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "claim_text": "Investing can be sound without accepting the leader's broader pronouncements.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "You can believe in a company's market potential while maintaining healthy skepticism about its founder's broader pronouncements",
+      "reasoning": "Matches the separation of financial soundness from accepting broader claims."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "claim_text": "Expertise does not automatically transfer across fields.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "expertise doesn't automatically transfer across fields",
+      "reasoning": "Near-verbatim restatement."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "claim_text": "Deliberately seek credible critics, not criticism for its own sake.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This isn't about finding critics for critics' sake but about seeking subject-matter experts",
+      "reasoning": "Preserves the deliberate seeking and the not-for-its-own-sake negation."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "claim_text": "Ask whether you would believe the claim without the investment.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Would I believe this claim if I hadn't invested in this company?",
+      "reasoning": "Direct restatement of the source's reflective question."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "6"
+      ],
+      "claim_text": "Society needs literacy, expert visibility, assessment frameworks, and healthier norms.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Develop better technological literacy... Strengthen domain expert visibility... Create better frameworks... Foster healthier discourse norms",
+      "reasoning": "Summarizes the four societal recommendations faithfully."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "claim_text": "Teach realistic timelines and limits of emerging technologies.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "helping people understand the realistic timelines, challenges, and limitations of emerging technologies",
+      "reasoning": "Matches the literacy recommendation's content."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "claim_text": "Give subject-matter experts platforms for nuanced evaluation.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Give more platforms and prominence to subject-matter experts",
+      "reasoning": "Direct match on platforms and experts."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "claim_text": "Popularize frameworks balancing optimism with realistic assessment.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Develop and popularize frameworks... that balance innovation optimism with realistic assessment",
+      "reasoning": "Preserves popularize and the optimism-realism balance."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "claim_text": "Skepticism need not mean opposition, nor criticism animosity.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "dialogue that doesn't immediately frame skepticism as opposition or criticism as animosity",
+      "reasoning": "Preserves the negation, though drops the hedging 'immediately'; meaning intact."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "7"
+      ],
+      "claim_text": "Judge claims independently of investments, between blind acceptance and reflexive rejection.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "evaluate claims independently of our investments and affiliations... navigate between blind acceptance and reflexive rejection",
+      "reasoning": "Both the independence and the two-poles navigation are stated."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "claim_text": "The issue is not being for or against any figure, but building critical tools.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The challenge isn't about being for or against any particular business leader... Rather, it's about developing the intellectual tools",
+      "reasoning": "Preserves the negation and the tools-over-sides reframing."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "claim_text": "Healthy societies need shared evaluative standards, as science does.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "healthy societies, like healthy scientific fields, need shared standards for evaluating claims",
+      "reasoning": "Direct match of the society-science parallel."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "claim_text": "The author sympathizes with Atiyah while endorsing rigorous proof standards.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "While we might sympathize with Michael Atiyah's final ambitious attempt... we can also appreciate the importance of the mathematical community's commitment to rigorous standards of proof",
+      "reasoning": "Both the sympathy and the endorsement of rigorous standards are present."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "claim_text": "The author discloses Claude Sonnet 3.5 help and recommends two skepticism books.",
+      "claim_type": "meta",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "[disclaimenr: the content below is written with the help of Claude-sonnet-3.5] ... Calling Bullshit ... The Age of Surveillance Capitalism",
+      "reasoning": "Disclosure supported, but only Calling Bullshit is a skepticism book; Zuboff's book is said not to address this topic directly."
+    }
+  ],
+  "metrics": {
+    "total_claims": 32,
+    "supported": 30,
+    "partially_supported": 2,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9375
+  },
+  "fail_list": [
+    "C014",
+    "C032"
+  ]
+}

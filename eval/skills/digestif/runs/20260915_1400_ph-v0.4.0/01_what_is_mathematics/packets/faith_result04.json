@@ -1,0 +1,416 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Tao's pipeline: proof abundance threatens to break the correlation of the community's goals, and the bottleneck shifts to digestion, the work treated as low prestige.",
+   "claim_type": "causal_link",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "AI optimization threatens to break the correlation. ... The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige.",
+   "reasoning": "Bottleneck-low-prestige part is exact, but source attributes the correlation break to AI optimization, not proof abundance itself."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Tao keeps going where neither document does: once the struggle stops being scarce, what is the community optimizing for?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tao reaches this point and then keeps going in a direction neither document takes. Once the struggle stops being scarce, he asks, what is the community actually optimizing for?",
+   "reasoning": "Near-verbatim restatement of the source sentence."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Working Hypothesis: AI tools will reasonably soon perform a reasonable fraction of research-level mathematics, with reasonable success, quality, supervision, and cost.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He states a \"Working Hypothesis\": AI tools will, reasonably soon, become capable of performing a reasonable fraction of research-level mathematics, with reasonable success, quality, supervision, and cost.",
+   "reasoning": "Exact match to the stated Working Hypothesis."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "3.2.1"
+   ],
+   "claim_text": "Tao asks you not to believe it, only assume it, then asks which goals and values the community actually pursues, explicit and implicit.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He asks you not to believe it, only to assume it, and then he asks the orthogonal question: what are the goals and values of the mathematical community, the explicit ones and the implicit ones we actually pursue in practice?",
+   "reasoning": "Faithful compression preserving the believe/assume distinction."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "3.2.2"
+   ],
+   "claim_text": "That question was historically delegated to the humanities.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is the question math has historically delegated to the humanities.",
+   "reasoning": "Direct restatement with identical meaning."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Goodhart's law: when a measure becomes a target, it ceases to be a good measure.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "[Goodhart's law](...), that when a measure becomes a target, it ceases to be a good measure",
+   "reasoning": "Verbatim law statement."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "claim_text": "The community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Historically the community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works",
+   "reasoning": "Exact list and correlation preserved."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "claim_text": "Any one or two goals could proxy for the rest, and the rest could stay implicit.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "so any one or two of them could proxy for the rest, and the rest could stay implicit",
+   "reasoning": "Direct restatement, no qualifier drift."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "claim_text": "AI optimization threatens to break the correlation; generative AI is ungrounded by nature and AI companies have financial incentives.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "AI optimization threatens to break the correlation. Generative AI is ungrounded by nature, and AI companies have financial incentives",
+   "reasoning": "Both causal clauses match the source exactly."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.3.4"
+   ],
+   "claim_text": "So AI use is particularly vulnerable to Goodhart, and the goals can diverge.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "so the use of AI is particularly vulnerable to Goodhart. The goals can diverge.",
+   "reasoning": "Verbatim conclusion."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Case study: start with the goal solve as many unsolved problems as possible.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Start with the goal \"solve as many unsolved problems as possible.\"",
+   "reasoning": "Exact quoted goal."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.4.1"
+   ],
+   "claim_text": "Refine once: add verification, or you get a pile of incorrect solutions.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Refine it once, add verification, or you get a pile of incorrect solutions.",
+   "reasoning": "Verbatim refinement step."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.4.2"
+   ],
+   "claim_text": "Refine again: add exposition, because correct but unreadable solutions are not progress either.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Refine it again, add exposition, because a pile of correct but unreadable solutions isn't progress either.",
+   "reasoning": "Meaning identical, negation (not progress) preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.4.3"
+   ],
+   "claim_text": "On erdosproblems.com, dozens of AI-generated proofs, many likely correct, await an expert volunteer to verify and vouch for them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "there are already dozens of AI-generated proofs, many likely correct, that no human expert has volunteered to verify and vouch for",
+   "reasoning": "Count and hedging 'likely correct' preserved."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.4.4"
+   ],
+   "claim_text": "In several cases the human submitters declared themselves unqualified to verify.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in several cases the human submitters declared themselves unqualified to do it",
+   "reasoning": "'do it' refers to verify, so the paraphrase is faithful."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "claim_text": "Refine again: add community acceptance, since a proof no one has digested contributes nothing to the field.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Refine again, add community acceptance, because a proof no one has digested contributes nothing to the field",
+   "reasoning": "Verbatim refinement and rationale."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "3.5.1"
+   ],
+   "claim_text": "Acceptance is slow, human, and external; authors and their AI tools cannot optimize it directly.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "acceptance is slow, human, and external, something the authors and their AI tools cannot optimize directly",
+   "reasoning": "Exact restatement including the negation."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "3.5.2"
+   ],
+   "claim_text": "Volunteer editors and referees produce it, work less prestigious than generating proofs, yet it turns individual achievements into collective progress.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It is currently produced by volunteer editors and referees, work regarded as less prestigious than generating proofs, though it is how individual achievements become collective progress.",
+   "reasoning": "All clauses match, contrast preserved."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "3.6"
+   ],
+   "claim_text": "Refine once more: add canonicalization, incorporation into the definitive theory, textbooks, and reference material taught to the next generation.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Refine one more time, add canonicalization, incorporation into the definitive theory of the field, the textbooks and reference material taught to the next generation.",
+   "reasoning": "Verbatim final refinement."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "3.6.1"
+   ],
+   "claim_text": "This is the slowest stage, the least amenable to optimization, and the most valuable.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This, he says, is the slowest stage of all, the least amenable to optimization, and the most valuable.",
+   "reasoning": "All three superlatives preserved."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "3.7"
+   ],
+   "claim_text": "Tao's pipeline runs open problems through generation, verification, publication, exposition, digestion, and canonicalization into definitive solutions.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "open problems flow through generation, verification, publication, exposition, digestion, and canonicalization into definitive solutions",
+   "reasoning": "Stage list copied from the caption, order intact."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "3.8"
+   ],
+   "claim_text": "Punchline: mathematics is moving from proof scarcity to proof abundance.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "His punchline: we are moving from proof scarcity to proof abundance.",
+   "reasoning": "Verbatim punchline."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "3.8.1"
+   ],
+   "claim_text": "Under the Working Hypothesis, mismatches appear at every stage: AI proofs accumulate unverified, verified proofs await readable writeups.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Under the Working Hypothesis, mismatches appear at every stage. AI proofs accumulate, unverified. Verified proofs await readable writeups.",
+   "reasoning": "Exact restatement of both examples."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "3.8.2"
+   ],
+   "claim_text": "Correct and well-written proofs overwhelm peer review; published proofs are too numerous to ever digest.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest.",
+   "reasoning": "Verbatim pair of statements."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "3.8.3"
+   ],
+   "claim_text": "The bottleneck shifts to proof digestion, the work currently treated as low prestige.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige.",
+   "reasoning": "Direct restatement."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "3.9"
+   ],
+   "claim_text": "Paul Halmos, a top mathematician, wanted to be known for exposition rather than cutting-edge research.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Paul Halmos ... he was a top mathematician, but he wanted to be known for exposition ... rather than for doing cutting edge research",
+   "reasoning": "Name and contrast preserved correctly."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "3.10"
+   ],
+   "claim_text": "Tao's recommendations: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first",
+   "reasoning": "Verbatim recommendation."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "3.10.1"
+   ],
+   "claim_text": "Increase the emphasis on exposition, publication, and canonicalization.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "increase the emphasis on exposition, publication, and canonicalization",
+   "reasoning": "Verbatim list."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "3.10.2"
+   ],
+   "claim_text": "He points to the Leiden Declaration, a community statement on AI in mathematics endorsed by the International Mathematical Union.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He points to the [Leiden Declaration](...), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union.",
+   "reasoning": "Title and endorser correct, minor compression 'on AI in mathematics'."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "3.10.3"
+   ],
+   "claim_text": "Rule of thumb: if authors cannot convincingly give a clear, expert-level talk on their correct, properly attributed result, do not publish it.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published",
+   "reasoning": "Condition and prohibition preserved."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "3.11"
+   ],
+   "claim_text": "The LinkedIn professor is the human version: his reward for succeeding is demotion to checking others' work.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The professor in that LinkedIn post is the human version of this. ... His reward for succeeding is to be demoted to the thing he hated, checking other people's work.",
+   "reasoning": "Faithful compression of the irony."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "3.11.1"
+   ],
+   "claim_text": "Experimental science saw the same inversion when measurement got cheap: prestige moved from measuring to designing experiments.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Experimental science ran the same inversion when instrumentation made routine measurement cheap, and prestige moved from the measuring to the designing of experiments.",
+   "reasoning": "Exact parallel, direction of prestige shift preserved."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "3.11.2"
+   ],
+   "claim_text": "That prestige inversion is already happening.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That is the prestige inversion Tao is pointing at, and it is already happening.",
+   "reasoning": "Direct restatement."
+  }
+ ],
+ "metrics": {
+  "total_claims": 33,
+  "supported": 32,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9697
+ },
+ "fail_list": [
+  "C01 with reason: attributes the goal-correlation break to proof abundance rather than AI optimization, a minor causal drift"
+ ]
+}

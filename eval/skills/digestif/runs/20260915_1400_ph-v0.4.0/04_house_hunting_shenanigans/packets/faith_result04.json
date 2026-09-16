@@ -1,0 +1,246 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "04_house_hunting_shenanigans",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Reported AI take: a Claude 3.5 haiku debrief, analysis, and recommendations on the transaction.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I couldn't share the conversation with Claude (3.5 haiku) but here are the key takeaways ... An analysis of what worked and what didn't using Claude 3.5 haiku ... Recommendations:",
+   "reasoning": "SOURCE contains all three sections from Claude 3.5 haiku: debrief, analysis, recommendations."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "The author shares key takeaways from a Claude 3.5 haiku transaction debrief.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "here are the key takeaways",
+   "reasoning": "SOURCE states the author is sharing key takeaways from the Claude 3.5 haiku content."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Debrief overview: February 2025, residential house, 3 days (Friday-Sunday), outcome: walked away.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Date of Experience: February 2025 - Property Type: Residential House - Negotiation Duration: 3 Days (Friday-Sunday) - Final Outcome: Walked away",
+   "reasoning": "All four details match SOURCE exactly."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "First offer was the full asking price with comprehensive favorable conditions, not immediately accepted.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "First Offer: Full asking price with comprehensive favorable conditions ... Outcome: Offer not immediately accepted",
+   "reasoning": "SOURCE states the same offer description and outcome."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "Pivots: Friday extended the deadline, Saturday reduced the offer by $20,000, Sunday slightly increased it (10K) with minimal conditions.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Friday Evening: Extended offer deadline ... Saturday Afternoon: Deliberately reduced offer by $20,000 - Sunday Morning: Slightly increased (10K) offer with minimal conditions",
+   "reasoning": "Numbers and days match SOURCE debrief exactly."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "Emotional state moved from cautiously optimistic to skeptical to detached, managed partly by strategic price adjustments.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Initial Stage: Cautiously optimistic - Mid-Negotiation: Increasing skepticism ... Late Stage: Emotionally detached ... Used strategic price adjustments as emotional buffer",
+   "reasoning": "SOURCE describes the same emotional progression and price-adjustment buffer."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "Strategic moves: written disclosure requests, limited information sharing, rapid modifications, short windows, no bidding war.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Requested written disclosure of competing offers - Limited information sharing ... Rapid offer modifications - Setting strict, short-duration offer windows ... Avoiding bidding war engagement",
+   "reasoning": "Each listed tactic appears in the SOURCE strategic moves section."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "claim_text": "Lessons: realtors may use competing-offer narratives to manipulate pricing, and written documentation of claims should be requested.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Realtors may use competing offer narratives to manipulate pricing - Important to request written documentation of claims",
+   "reasoning": "SOURCE states both lessons with the same hedge 'may'."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "8.7.1"
+   ],
+   "claim_text": "First offers are rarely accepted in competitive markets.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "First offers are rarely accepted in competitive markets",
+   "reasoning": "Verbatim match to SOURCE."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "8.7.2"
+   ],
+   "claim_text": "Emotional detachment is a significant negotiation advantage; information asymmetry can be mitigated through strategic questioning.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Emotional detachment is a significant negotiation advantage - Market information asymmetry can be mitigated through strategic questioning",
+   "reasoning": "Both statements match SOURCE verbatim."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "claim_text": "Improvements: offer guidelines, response templates, escalation process, market research, a walk-away threshold, emotional regulation.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "explicit initial offer guidelines - standardized response template ... escalation process ... pre-offer market research ... \"walk away\" price threshold ... emotional regulation techniques",
+   "reasoning": "All listed improvements correspond to SOURCE Potential Improvements items."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.9"
+   ],
+   "claim_text": "Market context: manipulation potential, systemic information asymmetry, and psychological pressure tactics were identified.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Observed manipulation potential ... Identified systemic information asymmetry - Recognized psychological pressure tactics used in negotiations",
+   "reasoning": "SOURCE lists exactly these three market context observations."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.10"
+   ],
+   "claim_text": "Personal growth: adaptability, real-time adjustment, critical thinking; recommended: negotiation skills, market dynamics, emotional intelligence.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Demonstrated adaptability ... learn and adjust strategy in real-time ... Maintained critical thinking ... Continue developing negotiation skills - Study real estate market dynamics - Practice emotional intelligence",
+   "reasoning": "SOURCE contains both the demonstrated traits and recommended development items."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "8.11"
+   ],
+   "claim_text": "Reflection: the value was understanding negotiation mechanisms, not securing the property; information and emotional control beat transactional success.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The primary value was not in securing a specific property, but in understanding the intricate negotiation mechanisms ... information, emotional control, and strategic flexibility are more valuable than immediate transactional success",
+   "reasoning": "Same reflection and takeaway as SOURCE."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "8.12"
+   ],
+   "claim_text": "The post then includes a Claude 3.5 haiku analysis of what worked and what didn't.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An analysis of what worked and what didn't using Claude 3.5 haiku",
+   "reasoning": "Verbatim header match in SOURCE."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "8.13"
+   ],
+   "claim_text": "Successes: identified likely bluffs, predicted market behavior, avoided overpaying, and kept price discipline.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Successfully identified when competing offers were likely bluffs - Accurately predicted market behavior ... Avoided overpaying due to FOMO or pressure ... Maintained discipline on maximum price point",
+   "reasoning": "All successes match SOURCE Successes list."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "8.14"
+   ],
+   "claim_text": "Failures: no house purchased, multiple failed negotiations, time spent, and tension with selling agents.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "No house purchased - Multiple failed negotiations - Time spent without achieving primary goal ... Created tension with selling agents",
+   "reasoning": "Matches SOURCE Failures list."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "8.15"
+   ],
+   "claim_text": "Neutral: time-pressure tactics and the price reduction worked situation-dependently, long-term effect unknown.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Sometimes created leverage - Sometimes backfired - Effectiveness appears situation-dependent ... Unknown if this helped or hurt long-term",
+   "reasoning": "SOURCE hedges match the neutral category content."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "8.16"
+   ],
+   "claim_text": "Recommendations: keep market analysis and price discipline; modify timeline flexibility and relationships; add success metrics and alternative paths.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Keep: Market analysis approach - Price discipline ... Modify: Timeline flexibility ... Relationship management ... Add: Clear success metrics beyond just price ... Alternative paths to deal completion",
+   "reasoning": "All keep/modify/add items correspond to SOURCE Recommendations."
+  }
+ ],
+ "metrics": {
+  "total_claims": 19,
+  "supported": 19,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

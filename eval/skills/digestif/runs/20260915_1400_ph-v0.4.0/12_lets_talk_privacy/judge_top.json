@@ -1,0 +1,29 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash 2026-09-15",
+  "source_id": "unspecified",
+  "inputs": {
+    "faithfulness_precision": 0.9818,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.0636,
+    "trivia_rate": 0.0455
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted score = 0.4 * faithfulness_precision + 0.4 * must_recall - 0.2 * redundancy_rate = 0.4 * 0.9818 + 0.4 * 1.0 - 0.2 * 0.0636 = 0.39272 + 0.4 - 0.01272 = 0.78",
+  "weighted_score": 0.78,
+  "verdict": "Borderline",
+  "tradeoff_note": "Coverage is maximal (must_recall 1.0, overall_recall 1.0) and redundancy (0.0636) sits well below the 0.15 max, so the extra length is justified by coverage with no concision penalty. The numbers pass every gate, but two Partial claims sit on core definitional/interpretive points, so human review is advised.",
+  "fix_list": [
+    "Fix C005 (loglog 1.3): restore the source hedge, change 'defeat a man-in-the-middle attack' back to 'will not likely compromise your data' and drop 'only', so the probabilistic qualifier survives.",
+    "Fix C018 (loglog 2.8): frame the encryption statement as the author's model with the source hedge 'usually a pair of keys' instead of asserting it as a flat definition.",
+    "Prune the seven duplication pairs (C023/C022, C075/C052, C088/C027, C101/C077, C103/C078, C104/C079, C109/C083) and the five trivia signposts/headers (C035, C049, C076, C087, C091) to push redundancy (0.0636) and trivia (0.0455) further down."
+  ],
+  "reasoning": "Gate checks per config pass_gates. Hard fail 1: critical_contradicted_max is 0 and faithfulness reports contradicted = 0 and critical_errors = 0, so no Critical error and no hard fail. Hard fail 2: must_recall_min is 0.9 and coverage reports must_recall = 1.0 (12 of 12 must-have points present, must_have_missing = 0), so this gate passes. Hard fail 3: faithfulness_precision_min is 0.95 and faithfulness_precision = 0.9818 (108 fully supported of 110 claims, 2 partially supported, 0 contradicted, 0 unverifiable), so this gate passes. Concision gate: redundancy_max is 0.15 and redundancy_rate = 0.0636, well under the cap, so length is not penalized beyond the weighted term. All three hard gates pass, so the sample is not a Fail. Weighted score: 0.4 * 0.9818 = 0.39272 for faithfulness, 0.4 * 1.0 = 0.4 for coverage, minus 0.2 * 0.0636 = 0.01272 for redundancy, giving 0.39272 + 0.4 - 0.01272 = 0.78. Applying the Borderline rule: gates are met on numbers, but two Partial claims, C005 (loglog 1.3, MITM threat model strengthened from 'not likely compromise' to 'defeat' with an added 'only') and C018 (loglog 2.8, encryption key model asserted as a flat definition instead of the author's hedged model with 'usually a pair of keys'), both concern core conceptual points that plausibly belong to the must-have set. Because a Partial claim touches must-have substance, I mark Borderline and name C005 and C018 rather than a clean Pass. On tradeoff, concision neither rescues nor undermines anything here: coverage is saturated (1.0/1.0) and redundancy is below max, so the length cost is justified purely by coverage gain. Highest-leverage fixes are the two Partial rewrites, since they are the only obstacles between this sample and an unambiguous Pass."
+}

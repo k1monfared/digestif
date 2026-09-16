@@ -1,0 +1,32 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "point-hierarchy run config v1.0.0",
+  "inputs": {
+    "faithfulness_precision": 0.9375,
+    "critical_errors": 0,
+    "must_recall": 0.9333,
+    "overall_recall": 0.9333,
+    "redundancy_rate": 0.0625,
+    "trivia_rate": 0.0
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted score equals 0.4 times faithfulness plus 0.4 times must recall minus 0.2 times redundancy = (0.4 * 0.9375) + (0.4 * 0.9333) - (0.2 * 0.0625) = 0.375 + 0.37332 - 0.0125 = 0.73582, rounded 0.7358",
+  "weighted_score": 0.7358,
+  "verdict": "Fail",
+  "tradeoff_note": "Concision is strong (redundancy 0.0625, well under max 0.15) but cannot rescue the sample: faithfulness precision 0.9375 misses the 0.95 gate, so no coverage or length tradeoff applies.",
+  "fix_list": [
+    "Raise faithfulness precision above 0.95 by tightening C014 (3.3): source says posts 'create a sense of personal connection and authenticity' and are 'seemingly unfiltered', not that they 'fake personal authenticity'. Drop or reword 'fake' to the sourced framing.",
+    "Fix C032 (7.4): only 'Calling Bullshit' is a skepticism book. Zuboff's 'The Age of Surveillance Capitalism' is noted as not addressing this topic directly, so the 'two skepticism books' bundling overstates the source. Restate as one skepticism book plus one related critique.",
+    "Recover key point K02 (L003): it is Partial because the Wolfgang Pauli attribution is absent. Add the Pauli origin so the Must-have point is fully anchored.",
+    "Recover key point K03 (L004): it is Partial because age 89, Fields Medal, Abel Prize, and 'open since 1859' were all dropped. Restore the concrete numbers/dates to promote it from Partial to Present.",
+    "Merge duplicates C016 into C015 and C030 into C001 to trim redundancy further (already below max, low priority)."
+  ],
+  "reasoning": "Gate checks in policy order. (1) Hard fails first: critical_errors = 0 passes the critical_contradicted_max of 0. must_recall = 0.9333 passes the must_recall_min of 0.9. faithfulness_precision = 0.9375 FAILS the faithfulness_precision_min of 0.95. Because a hard gate is missed, the sample is a Fail regardless of the weighted score. (2) Coverage: 13/15 Must-have points Present, 2 Partial (K02, K03), 0 Missing. coverage judge marked both partials as dropped qualifiers/details rather than absent concepts, hence must_recall 0.9333 which clears its gate but is not the failing dimension. (3) Faithfulness: the single failing gate is precision. The two non-supported claims are C014 and C032, both Minor Partially-supported, neither Critical and neither Contradicted, so critical_errors stays 0. However 30 supported of 32 total gives 0.9375, which is 0.0125 below the 0.95 floor, and that is decisive. (4) Tradeoff among passes does not apply since a gate failed; nonetheless the weighted score is computed for audit: 0.4*0.9375 + 0.4*0.9333 - 0.2*0.0625 = 0.7358. (5) Concision role: redundancy_rate 0.0625 is below redundancy_max 0.15 and trivia_rate is 0.0, so concision is healthy but per policy concision never rescues a faithfulness fail. (6) Borderline does not apply because Borderline requires gates met on numbers; here the precision gate is missed, so the verdict is Fail, not Borderline. The highest-leverage fixes are C014 (overstated 'fake authenticity' beyond the 3.3 source framing) and C032 (mischaracterizing Zuboff's book as skepticism content), which together account for the precision shortfall, followed by restoring the dropped anchors in K02 and K03 to protect the two Partial Must-have points.",
+  "borderline_claims": []
+}

@@ -1,0 +1,92 @@
+L001: - What is mathematics, point graph (source: source.txt)
+L002:     Summary: Mathematics was never the production of proofs but the judgment of which patterns deserve proving. (¶4, ¶15, ¶53)
+L003:         - 1 Mathematics was the discipline of finding provable patterns with expert-settled ground truth. (¶3)
+L004:             - 1.1 Nuance: Unlike art, politics, or physics, math offered ground truth instead of opinions. (¶3)
+L005:             - 1.2 Example: A professor's viral post likened AI-era research to grading a lying grade-grubber. (¶1, ¶2)
+L006:         - 2 In 2026 AI produced publication-quality proofs of novel problems for hundreds of dollars. (¶5, ¶6, ¶7)
+L007:             - 2.1 Evidence: Four systems solved seven of ten unpublished problems; choosing problems resisted automation. (¶6, ¶56)
+L008:             - 2.2 Evidence: AI proved Erdos 728 in Lean and disproved the 1946 unit-distance conjecture; humans digested both. (¶7, ¶57)
+L009:             - 2.3 Nuance: Models prove what humans choose; which patterns matter stays human, with handholding. (¶8)
+L010:             - 2.4 Nuance: Conjecture generators propose patterns but never decide which ones matter. (¶8)
+L011:             - 2.5 Nuance: Proving may have been the chore all along; the finding was always the real thing. (¶9)
+L012:             - 2.6 Implicit: The argument assumes mathematics is what humans do, like a self-justifying faith. (¶9)
+L013:             - 2.7 Proof verification, the process's second half, is being automated too. (¶10)
+L014:             - 2.8 Evidence: Davies-style intuition pumps and AlphaTensor show AI proposing, humans formalizing. (¶27) [reported]
+L015:             - 2.9 Nuance: Understanding shifts from reconstructing proofs to interpreting opaque machine results. (¶28) [reported]
+L016:         - 3 Tao's hypothesis covers verification too; the question is tolerated error level. (¶11)
+L017:             - 3.1 Evidence: Deligne found Voevodsky's key lemma wrong years later; a main theorem failed unchallenged for years. (¶12)
+L018:             - 3.2 Frightened Voevodsky spent his career pushing computer verification over human trust. (¶13)
+L019:             - 3.3 Human verification is unreliable, so comparable AI error rates look like business as usual. (¶14)
+L020:             - 3.4 Nuance: The AI-side error rate is assumed, not measured, and machine volume compounds mistakes. (¶14)
+L021:         - 4 Mathematics was never theorem production; the thinking process was the product. (¶15)
+L022:             - 4.1 Teaching math builds judgment through struggle; fluency must not be confused with understanding. (¶16) [reported]
+L023:             - 4.2 Evidence: Cognitive offloading and confident AI tone worsen the illusion of explanatory depth. (¶16) [reported]
+L024:             - 4.3 Thinking is constitutive, not instrumental like laundry or car repair. (¶17)
+L025:             - 4.4 Concession: Arithmetic, poetry, and navigation losses were survivable; the chore-thinking boundary is blurry. (¶18) [conceded]
+L026:             - 4.5 Evidence: GPS atrophies spatial memory, but framing and attention look load-bearing; proving trains finding. (¶18)
+L027:             - 4.6 Over-polished AI proofs dwell on trivia, rush novelty, and remove the friction readers need. (¶19) [reported]
+L028:             - 4.7 Evidence: Thurston: success is enabling clearer thought, not meeting quotas of theorems. (¶19) [reported]
+L029:             - 4.8 Nuance: Once struggle stops being scarce, the community must ask what it optimizes for. (¶20)
+L030:         - 5 Tao assumes capable AI and asks what goals and values the community actually pursues. (¶21) [reported]
+L031:             - 5.1 Evidence: The Working Hypothesis asks belief be suspended; the values question belongs to the humanities. (¶21) [reported]
+L032:             - 5.2 Goodhart's law threatens correlated goals: AI optimization breaks their old proxies. (¶22) [reported]
+L033:             - 5.3 Evidence: Solving needs verifying, exposition, acceptance, canonicalization; AI piles stall at each stage. (¶23, ¶24) [reported]
+L034:             - 5.4 Under proof abundance the bottleneck is digestion, today's lowest-prestige work. (¶25) [reported]
+L035:             - 5.5 Nuance: Tao urges disclosure norms, less first-past-posting, and a clear-talk rule for publication. (¶25) [reported]
+L036:             - 5.6 Example: The research-loving professor demoted to grading embodies Tao's prestige inversion. (¶26)
+L037:         - 6 Importance was never stable human judgment; AI removes the cover story. (¶29, ¶30)
+L038:             - 6.1 Evidence: Applicability steered work through funding for results wanted elsewhere. (¶30)
+L039:             - 6.2 Evidence: Big-name taste compounded fame, genuine interest, and network favoritism. (¶31)
+L040:             - 6.3 Concession: The author leans on Tao and Moradifam, the very authorities he says to interrogate. (¶32) [conceded]
+L041:             - 6.4 Cheap generation makes attention scarce, and scarce attention grows influencer structure. (¶33)
+L042:             - 6.5 Example: Writing gave way to clips and podcasts; supplements beat world affairs by relatability. (¶34)
+L043:             - 6.6 Nuance: Compute budgets and self-solving applications will set the agenda; the shift takes decades. (¶35)
+L044:             - 6.7 Canonizing attention is a private act with public consequences that nobody audits. (¶36)
+L045:             - 6.8 Rebuttal: Old gatekeepers earned structural trust through decades of checkable work and slow feedback. (¶37)
+L046:             - 6.9 Measurable influence gets optimized, diverging from the judgment it once proxied. (¶38)
+L047:             - 6.10 Evidence: Simulated canons turn on exposure pipelines; unread results are inert, so gates control existence. (¶39)
+L048:             - 6.11 Nuance: Checkability floors and structural value ceilings claims; the social middle decides careers. (¶40)
+L049:             - 6.12 Attention-optimized AI picks viral results, feeding back into problem selection and frozen canons. (¶41)
+L050:             - 6.13 Concession: Open collaboration and expert checkable audiences expanded judgment; AI changes that audience. (¶42) [conceded]
+L051:         - 7 Agreement without shared reasoning is coincidence wearing confirmation's costume. (¶46, ¶47)
+L052:             - 7.1 Evidence: Different paths to one conclusion give corroboration or expose broken reasoning needing rechecks. (¶47)
+L053:             - 7.2 Example: Atiyah's authority failed against scrutiny on Riemann; imagine a million daily AI claims. (¶48)
+L054:             - 7.3 Attention strips reasoning in transit; fluent AI answers are conclusions without process. (¶49)
+L055:             - 7.4 Nuance: Like the unheard falling tree, unexamined consensus leaves meaning unresolved. (¶49)
+L056:         - 8 Mathematics is finding plus proving; automation shifts weight to deciding what matters. (¶53)
+L057:             - 8.1 Nuance: Correctness was the floor; importance, a social judgment, was always the constraint. (¶51)
+L058:             - 8.2 Evidence: Grant-funded detours get published while the big promised problem stays quietly unsolved. (¶52)
+L059:             - 8.3 Example: Engineers already turned deciders; open source runs on love, frameworks on attention. (¶53)
+L060:             - 8.4 The deciding has no professional home: fun hobby, influencer economy, or compute owners. (¶54)
+L061:             - 8.5 Example: Statistics survived cheap calculation by becoming the design of questions. (¶55)
+L062:             - 8.6 Evidence: Halmos won fame for exposition, proving the middle can be revalued. (¶55)
+L063:             - 8.7 Example: CNC and Ikea emptied furniture's middle; creative carpenters cannot earn creativity. (¶43)
+L064:             - 8.8 Evidence: AI software multiplies starts but kills finishes; the craft middle is the desert. (¶44)
+L065:             - 8.9 Digestion work must not empty like furniture's middle, or results lose legibility. (¶45)
+L066:             - 8.10 Thinking is what we are for; a coach-only sport loses performance when lifters stop lifting. (¶50)
+L067:     - Cross-links
+L068:         - 1.2 supports 2 (¶1) note: shared cross-field feeling motivates the break
+L069:         - 2.3 supports 8 (¶8) note: problem choice is the deciding that finding requires
+L070:         - 2.4 qualifies 2.3 (¶8) note: generators propose but do not replace choice
+L071:         - 2.5 restates 8 (¶9) note: chore-versus-finding recurs as the finding-plus-proving answer
+L072:         - 2.8 supports 2 (¶27) note: research-side pattern confirms the production claim
+L073:         - 2.9 supports 4 (¶28) note: hermeneutic shift backs process-as-product
+L074:         - 3.1 supports 3.3 (¶12) note: Voevodsky case grounds the unreliability claim
+L075:         - 4.2 supports 4.1 (¶16) note: offloading evidence backs the struggle claim
+L076:         - 4.4 qualifies 4.3 (¶18) note: blurry boundary limits the chore split
+L077:         - 4.5 supports 4.3 (¶18) note: load-bearing framing backs constitutive thinking
+L078:         - 4.5 supports 8.10 (¶18) note: proving-as-training grounds the gym metaphor
+L079:         - 4.6 supports 5.4 (¶19) note: friction loss motivates digest-first values
+L080:         - 5.4 supports 8.9 (¶45) note: Tao's bottleneck claim supports the warning
+L081:         - 5.6 exemplifies 5.4 (¶26) note: professor is the human case of inversion
+L082:         - 6.3 concedes 6.7 (¶32) note: author admits sharing the authority dependence
+L083:         - 6.8 qualifies 6.7 (¶37) note: structural trust explains why the faith worked
+L084:         - 6.9 supports 6.12 (¶41) note: optimization pressure feeds the recursion
+L085:         - 6.10 supports 6.4 (¶39) note: canon lottery evidence for the attention rule
+L086:         - 6.11 qualifies 6.4 (¶40) note: floor and ceiling bound the dramatic claim
+L087:         - 6.13 qualifies 6.4 (¶42) note: participation counterexamples bound the doom
+L088:         - 7.1 supports 7 (¶47) note: delta-information evidence backs the costume claim
+L089:         - 7.3 supports 6.7 (¶48) note: amputated reasoning explains unaudited deference
+L090:         - 8.6 supports 5.4 (¶55) note: Halmos precedent for revaluing the middle
+L091:         - 8.7 exemplifies 8.9 (¶43) note: furniture's emptied middle illustrates the risk
+L092:     - Coverage: 57 of 57 passages cited

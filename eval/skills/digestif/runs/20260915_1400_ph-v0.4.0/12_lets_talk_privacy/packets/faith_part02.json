@@ -1,0 +1,439 @@
+{
+ "sample": "12_lets_talk_privacy",
+ "part": 2,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proton stores your encrypted private key on its servers, so the trust shifts to the client.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "### How Proton Mail Handles This\nProton Mail takes a different approach, though it still requires some trust. When you create a Proton account, your private key is generated in your browser, then encrypted with your password using bcrypt and AES-256 before being sent to their servers for storage. This is a crucial point: **your encrypted private key lives on Proton's servers**, not just on your original device."
+    },
+    {
+     "ref": "¶14",
+     "text": "**However**, there's still a critical vulnerability: Proton could serve you malicious client code (either in the web app or through an app update) that captures your actual password when you type it - before it gets hashed. Since they already store your encrypted private key on their servers, if they capture your password, they can decrypt it."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "When you create a Proton account, your private key is generated in your browser and encrypted with your password.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "### How Proton Mail Handles This\nProton Mail takes a different approach, though it still requires some trust. When you create a Proton account, your private key is generated in your browser, then encrypted with your password using bcrypt and AES-256 before being sent to their servers for storage. This is a crucial point: **your encrypted private key lives on Proton's servers**, not just on your original device."
+    }
+   ]
+  },
+  {
+   "id": "3.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The encryption uses bcrypt and AES-256 before the key is sent to Proton's servers for storage.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "### How Proton Mail Handles This\nProton Mail takes a different approach, though it still requires some trust. When you create a Proton account, your private key is generated in your browser, then encrypted with your password using bcrypt and AES-256 before being sent to their servers for storage. This is a crucial point: **your encrypted private key lives on Proton's servers**, not just on your original device."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The crucial point: your encrypted private key lives on Proton's servers, not just on your original device.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "### How Proton Mail Handles This\nProton Mail takes a different approach, though it still requires some trust. When you create a Proton account, your private key is generated in your browser, then encrypted with your password using bcrypt and AES-256 before being sent to their servers for storage. This is a crucial point: **your encrypted private key lives on Proton's servers**, not just on your original device."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "On a new device or browser, the login sequence runs as follows.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "When you log in on a new device or browser, here's what happens:"
+    }
+   ]
+  },
+  {
+   "id": "3.3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "You type your password, and your browser hashes it with bcrypt using a salt provided by Proton's server.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "1. You type your password\n2. Your browser hashes the password using bcrypt (with a salt provided by Proton's server)\n3. This hashed password is sent to Proton to authenticate you (prove you know the password)\n4. The server sends your **encrypted private key** back to your browser\n5. Your browser uses your original password to decrypt this private key locally\n6. Now you can read your emails"
+    }
+   ]
+  },
+  {
+   "id": "3.3.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The hashed password is sent to Proton to prove you know the password.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "1. You type your password\n2. Your browser hashes the password using bcrypt (with a salt provided by Proton's server)\n3. This hashed password is sent to Proton to authenticate you (prove you know the password)\n4. The server sends your **encrypted private key** back to your browser\n5. Your browser uses your original password to decrypt this private key locally\n6. Now you can read your emails"
+    }
+   ]
+  },
+  {
+   "id": "3.3.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The server sends your encrypted private key back to your browser.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "1. You type your password\n2. Your browser hashes the password using bcrypt (with a salt provided by Proton's server)\n3. This hashed password is sent to Proton to authenticate you (prove you know the password)\n4. The server sends your **encrypted private key** back to your browser\n5. Your browser uses your original password to decrypt this private key locally\n6. Now you can read your emails"
+    }
+   ]
+  },
+  {
+   "id": "3.3.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Your browser uses your original password to decrypt the private key locally, and now you can read your emails.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "1. You type your password\n2. Your browser hashes the password using bcrypt (with a salt provided by Proton's server)\n3. This hashed password is sent to Proton to authenticate you (prove you know the password)\n4. The server sends your **encrypted private key** back to your browser\n5. Your browser uses your original password to decrypt this private key locally\n6. Now you can read your emails"
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Hashing is one-way: you can turn a password into a hash, but you theoretically cannot reverse a hash back into the password.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "It's important to understand that hashing and encryption are different operations:"
+    },
+    {
+     "ref": "¶11",
+     "text": "- **Hashing** (used for authentication): A one-way function. You can turn a password into a hash, but you theoretically cannot reverse a hash back into the password. Proton receives your hashed password to verify you are who you claim to be, but this hash alone shouldn't let them figure out your actual password."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proton receives your hashed password to verify you are who you claim to be, but this hash alone should not reveal your password.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "- **Hashing** (used for authentication): A one-way function. You can turn a password into a hash, but you theoretically cannot reverse a hash back into the password. Proton receives your hashed password to verify you are who you claim to be, but this hash alone shouldn't let them figure out your actual password."
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Encryption is two-way: you encrypt data with a key and decrypt it with that same key or a paired one.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "- **Encryption** (used for your private key): A two-way function. You encrypt data with a key, and you can decrypt it back using that same key (or a paired key). Your private key is encrypted with your actual password (not the hash), so it can be decrypted when you provide the password again."
+    }
+   ]
+  },
+  {
+   "id": "3.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Your private key is encrypted with your actual password, not the hash, so it can be decrypted when you provide the password again.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "- **Encryption** (used for your private key): A two-way function. You encrypt data with a key, and you can decrypt it back using that same key (or a paired key). Your private key is encrypted with your actual password (not the hash), so it can be decrypted when you provide the password again."
+    }
+   ]
+  },
+  {
+   "id": "3.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The security model: Proton receives your hashed password, but the private key is encrypted with your actual password, so the hash cannot decrypt it.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "The security model here is: Proton receives your *hashed* password for authentication, but your private key is encrypted with your *actual* password. So in theory, even though they see your hashed password, they can't use that hash to decrypt your encrypted private key."
+    }
+   ]
+  },
+  {
+   "id": "3.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "There is a critical vulnerability: Proton could serve malicious client code, in the web app or through an app update.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "**However**, there's still a critical vulnerability: Proton could serve you malicious client code (either in the web app or through an app update) that captures your actual password when you type it - before it gets hashed. Since they already store your encrypted private key on their servers, if they capture your password, they can decrypt it."
+    }
+   ]
+  },
+  {
+   "id": "3.9.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That code could capture your actual password when you type it, before it gets hashed.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "**However**, there's still a critical vulnerability: Proton could serve you malicious client code (either in the web app or through an app update) that captures your actual password when you type it - before it gets hashed. Since they already store your encrypted private key on their servers, if they capture your password, they can decrypt it."
+    }
+   ]
+  },
+  {
+   "id": "3.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Since they already store your encrypted private key on their servers, if they capture your password they can decrypt it.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "**However**, there's still a critical vulnerability: Proton could serve you malicious client code (either in the web app or through an app update) that captures your actual password when you type it - before it gets hashed. Since they already store your encrypted private key on their servers, if they capture your password, they can decrypt it."
+    }
+   ]
+  },
+  {
+   "id": "3.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This is why having open-source clients matters: the community can verify that the client is not doing anything malicious.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "This is why having open-source clients matters - the community can verify that the client isn't doing anything malicious. But you still have to trust that:\n- The code they're actually serving matches the open-source code\n- They won't be compelled to inject malicious code in the future\n- Their infrastructure hasn't been compromised by someone else who could serve malicious code"
+    }
+   ]
+  },
+  {
+   "id": "3.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "But you still have to trust several things.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "This is why having open-source clients matters - the community can verify that the client isn't doing anything malicious. But you still have to trust that:\n- The code they're actually serving matches the open-source code\n- They won't be compelled to inject malicious code in the future\n- Their infrastructure hasn't been compromised by someone else who could serve malicious code"
+    }
+   ]
+  },
+  {
+   "id": "3.12.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That the code they are actually serving matches the open-source code.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "This is why having open-source clients matters - the community can verify that the client isn't doing anything malicious. But you still have to trust that:\n- The code they're actually serving matches the open-source code\n- They won't be compelled to inject malicious code in the future\n- Their infrastructure hasn't been compromised by someone else who could serve malicious code"
+    }
+   ]
+  },
+  {
+   "id": "3.12.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That they will not be compelled to inject malicious code in the future.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "This is why having open-source clients matters - the community can verify that the client isn't doing anything malicious. But you still have to trust that:\n- The code they're actually serving matches the open-source code\n- They won't be compelled to inject malicious code in the future\n- Their infrastructure hasn't been compromised by someone else who could serve malicious code"
+    }
+   ]
+  },
+  {
+   "id": "3.12.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That their infrastructure has not been compromised by someone else who could serve malicious code.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "This is why having open-source clients matters - the community can verify that the client isn't doing anything malicious. But you still have to trust that:\n- The code they're actually serving matches the open-source code\n- They won't be compelled to inject malicious code in the future\n- Their infrastructure hasn't been compromised by someone else who could serve malicious code"
+    }
+   ]
+  },
+  {
+   "id": "3.13",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The crucial difference from WhatsApp is that Proton does not have direct access to your keys in a usable form.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "The crucial difference from WhatsApp is that Proton doesn't have direct access to your encryption keys in a form they can use - they'd need to actively compromise the client to steal your password first. WhatsApp's architecture doesn't even require that step; the server can directly grant key access to any device it authenticates."
+    }
+   ]
+  },
+  {
+   "id": "3.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "They would need to actively compromise the client to steal your password first, while WhatsApp's server can directly grant key access.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "The crucial difference from WhatsApp is that Proton doesn't have direct access to your encryption keys in a form they can use - they'd need to actively compromise the client to steal your password first. WhatsApp's architecture doesn't even require that step; the server can directly grant key access to any device it authenticates."
+    }
+   ]
+  },
+  {
+   "id": "3.15",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Proton documents key storage and zero-access encryption in its support and security pages.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "### Proton Mail\n- [How is the private key stored?](https://proton.me/support/how-is-the-private-key-stored) (Proton Support)\n- [Protect your data with zero-access encryption](https://proton.me/security/zero-access-encryption) (Proton Security)"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Signal never holds your keys: its servers are never in a position to grant access to your message history.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "### The Signal Difference\nSignal takes the most privacy-preserving approach. By default, message history is stored only on your device and deleted from Signal's servers after delivery. When you want to switch devices, you have three options:"
+    },
+    {
+     "ref": "¶19",
+     "text": "The critical architectural difference is that Signal's servers are never in a position to grant access to your message history. Even with the newer cloud backup feature, the recovery key stays on your device - Signal literally cannot decrypt your backups even if they wanted to, and they cannot help you recover them if you lose your recovery key. This is genuinely zero-knowledge architecture, not just marketing claims."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "By default, message history is stored only on your device and deleted from Signal's servers after delivery.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "### The Signal Difference\nSignal takes the most privacy-preserving approach. By default, message history is stored only on your device and deleted from Signal's servers after delivery. When you want to switch devices, you have three options:"
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Switching devices leaves you three options.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "### The Signal Difference\nSignal takes the most privacy-preserving approach. By default, message history is stored only on your device and deleted from Signal's servers after delivery. When you want to switch devices, you have three options:"
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Manual local backup on Android: create an encrypted backup file protected by a 30-digit passphrase, then physically transfer it to your new device.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "1. **Manual local backup (Android):** You create an encrypted backup file protected by a 30-digit passphrase, then physically transfer it to your new device\n2. **Direct device-to-device transfer:** Both devices must be physically present and you transfer everything locally over your network\n3. **Signal Secure Backups (newer):** Your messages are encrypted with a 64-character recovery key that Signal never sees or has access to"
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Direct device-to-device transfer: both devices must be physically present and you transfer everything locally over your network.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "1. **Manual local backup (Android):** You create an encrypted backup file protected by a 30-digit passphrase, then physically transfer it to your new device\n2. **Direct device-to-device transfer:** Both devices must be physically present and you transfer everything locally over your network\n3. **Signal Secure Backups (newer):** Your messages are encrypted with a 64-character recovery key that Signal never sees or has access to"
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Signal Secure Backups: messages are encrypted with a 64-character recovery key that Signal never sees or has access to.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "1. **Manual local backup (Android):** You create an encrypted backup file protected by a 30-digit passphrase, then physically transfer it to your new device\n2. **Direct device-to-device transfer:** Both devices must be physically present and you transfer everything locally over your network\n3. **Signal Secure Backups (newer):** Your messages are encrypted with a 64-character recovery key that Signal never sees or has access to"
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Even with the newer cloud backup feature, the recovery key stays on your device.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "The critical architectural difference is that Signal's servers are never in a position to grant access to your message history. Even with the newer cloud backup feature, the recovery key stays on your device - Signal literally cannot decrypt your backups even if they wanted to, and they cannot help you recover them if you lose your recovery key. This is genuinely zero-knowledge architecture, not just marketing claims."
+    }
+   ]
+  },
+  {
+   "id": "4.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Signal literally cannot decrypt your backups even if they wanted to, and cannot help you recover them if you lose the key.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "The critical architectural difference is that Signal's servers are never in a position to grant access to your message history. Even with the newer cloud backup feature, the recovery key stays on your device - Signal literally cannot decrypt your backups even if they wanted to, and they cannot help you recover them if you lose your recovery key. This is genuinely zero-knowledge architecture, not just marketing claims."
+    }
+   ]
+  },
+  {
+   "id": "4.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This is genuinely zero-knowledge architecture, not just marketing claims.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "The critical architectural difference is that Signal's servers are never in a position to grant access to your message history. Even with the newer cloud backup feature, the recovery key stays on your device - Signal literally cannot decrypt your backups even if they wanted to, and they cannot help you recover them if you lose your recovery key. This is genuinely zero-knowledge architecture, not just marketing claims."
+    }
+   ]
+  },
+  {
+   "id": "4.8",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Signal documents Secure Backups in a September 2024 blog post and support article.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "### Signal\n- [Introducing Signal Secure Backups](https://signal.org/blog/introducing-secure-backups/) (Signal Blog, September 2024)\n- [Signal Secure Backups](https://support.signal.org/hc/en-us/articles/9708267671322-Signal-Secure-Backups) (Signal Support)"
+    }
+   ]
+  }
+ ]
+}

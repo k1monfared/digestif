@@ -1,0 +1,284 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "10_parde_begardan_fa",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Top-level thesis of the whole arc; no single branch claim carries the full trajectory."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section-1 topic sentence; adds the love realization absent from its subpoints."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concrete first-night detail (aunt learning, corner); not repeated elsewhere."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "New explanatory fact that Zard-e-Melije is a standard first teaching piece."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specific sensory memory (forced off the instrument); distinct from C006."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Narrower memory claim (only away at dinner); adds information beyond C005."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contains number/date (six months); never trivia per rules."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contradicted in Judge F; out of scope for concision credit, kept visible."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contains prices and dates; distinct six-month-after timeline."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "New facts (teacher home visits, cold room); not duplicated elsewhere."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "New facts (guest furniture, Ershad classes); distinct from C010."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contains number (72 strings); unique instrument detail."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section-3 topic sentence; introduces the limited-game framing."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contains qualifier linking tuner to the limitation; never trivia per rules."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Definitional content (diatonic, one dastgah, slow modulation) is unique."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Introduces the party/one-game metaphor; not stated by subpoints."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Distinct scenario (packing up toys); adds detail beyond C016."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Distinct scenario (others switch, I watch quietly); new information."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section-4 topic sentence; carries the harp idea absent from subpoints."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mechanism detail (quarter/half-step lowering per note) is specific."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C020",
+   "reasoning": "Rapid key retuning restated; reader learns nothing new beyond C020."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contains number (two years); never trivia per rules."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Names specific helpers (family, friends, officials, imams); new content."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section-5 topic sentence; frames delight plus upcoming-trip longing."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concrete dastgah sequence; adds specifics not present in C020 or C021."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Vivid simile plus physical detail (no lunch, back ache)."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C002",
+   "reasoning": "Recaps the first-night scene (C002/C003) and kid metaphor (C016); adds no information."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States the upcoming one-week trip; new time-bound fact."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C028",
+   "reasoning": "Same travel-longing as C028; only a rhetorical inversion is added."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 28,
+  "unique": 25,
+  "duplicates": 3,
+  "trivia": 0,
+  "redundancy_rate": 0.107,
+  "trivia_rate": 0.0,
+  "structured_tokens": 768,
+  "tokens_per_unique_claim": 30.7
+ },
+ "prune_list": [
+  "C021 duplicates C020, safe to merge",
+  "C027 duplicates C002 and echoes C016, safe to drop as recap",
+  "C029 duplicates C028, safe to merge"
+ ]
+}

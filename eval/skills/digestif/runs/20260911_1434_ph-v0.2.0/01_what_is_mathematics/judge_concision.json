@@ -1,0 +1,609 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "01_what_is_mathematics",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Summary states the canonical thesis; first occurrence, nothing earlier to duplicate."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines math as finding provable patterns; distinct from summary's judgment framing."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds contrast with art, politics, physics; new nuance."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete viral-post example; introduces the grading motif used later."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Dated 2026 cost and quality claim; distinct numeric evidence."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specific seven-of-ten result and resistance detail; new numeric evidence."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Erdos 728 and unit-distance examples; distinct named evidence."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States models prove human-chosen patterns; canonical for the proposal versus decision point."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C008",
+      "reasoning": "Conjecture generators only restate that machines propose, never decide importance."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Finding-as-real-thing restates the summary thesis; proving/chore split already in C001."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Meta assumption of the argument; distinct self-justifying-faith framing."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Verification being automated; distinct second-half point."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Davies and AlphaTensor examples; new named evidence."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Hermeneutic shift from rebuilding proofs to interpreting outputs; new."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Tao's verification hypothesis and error tolerance; distinct."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Deligne and Voevodsky historical error; new named evidence."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Voevodsky's response; distinct biographical fact."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Human verification unreliability; distinct causal link."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Assumed versus measured error caveat; caveats are never trivia."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Section 4 opener repeats the math-is-not-proof-production thesis already in C001."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Teaching builds judgment; distinct pedagogical point."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cognitive offloading and explanatory depth; distinct causal claim."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Thinking is constitutive; distinct definition."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concession on survivable losses; distinct concession."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "GPS atrophy but load-bearing framing; distinct evidence."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Over-polished proofs lose friction; distinct claim."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Thurston on success as clearer thought; distinct interpretation."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "4.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "What the community optimizes; distinct interpretation."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Tao on goals and values; distinct interpretation."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Working Hypothesis and humanities; distinct interpretation."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Goodhart's law as general claim; distinct causal link."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pipeline stages of solving; distinct interpretation."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Digestion bottleneck and prestige; distinct interpretation."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Tao's disclosure norms; distinct recommendation."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Professor example embodies prestige inversion; same anecdote, new point."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Importance never stable judgment; distinct interpretation."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Applicability via funding; distinct causal link."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Big-name taste compounds favoritism; distinct fact."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Author's authority dependence; distinct meta concession."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cheap generation makes attention scarce; distinct causal link."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Clips versus podcasts relatability; distinct example."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Compute budgets set agenda; distinct interpretation."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Private canonizing act with public consequences; distinct."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "6.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Old gatekeepers earned structural trust; distinct interpretation."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "6.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Measurable influence diverges from judgment; adds the influence target beyond C031."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "6.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Simulated canons and exposure gates; distinct causal link."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "6.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Checkability floors and structural ceilings; distinct definition."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "6.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Attention-optimized AI feedback loop; distinct causal link."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "6.13"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Open collaboration audiences expanded judgment; distinct interpretation."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Agreement without shared reasoning; distinct definition."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Divergent paths corroborate or expose errors; distinct causal link."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Atiyah's authority failed scrutiny; distinct named example."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Attention strips reasoning in transit; distinct causal link."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Falling-tree analogy for unexamined consensus; adds framing, not filler."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "8"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Section 8 recap restates the summary thesis; automation nuance appears elsewhere."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Correctness floor, importance social constraint; distinct definition."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Grant-funded detours; distinct example."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Engineers already turned deciders; distinct fact."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Deciding has no professional home; distinct interpretation."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Statistics survived via question design; distinct example."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "8.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Halmos won fame for exposition; distinct evidence."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "8.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "CNC and Ikea emptied furniture's middle; distinct example."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "8.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "AI software kills finishes; distinct causal link."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "8.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Digestion must not empty; distinct recommendation, not a repeat of C033."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "8.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Coach-only sport metaphor; distinct interpretation."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 65,
+    "unique": 61,
+    "duplicates": 4,
+    "trivia": 0,
+    "redundancy_rate": 0.0615,
+    "trivia_rate": 0.0,
+    "structured_tokens": 92,
+    "tokens_per_unique_claim": 1.51
+  },
+  "prune_list": [
+    "C009 duplicates C008, safe to merge",
+    "C010 duplicates C001, safe to merge",
+    "C020 duplicates C001, safe to merge",
+    "C055 duplicates C001, safe to merge"
+  ]
+}

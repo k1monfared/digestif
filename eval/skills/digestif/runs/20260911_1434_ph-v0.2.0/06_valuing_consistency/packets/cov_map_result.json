@@ -1,0 +1,201 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "source.txt",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: the word consistency is vague and carries unearned moral weight. Plain behavioral consistency (did the behavior stay the same) is not what we actually admire or condemn, so the post sets out to find what lies underneath it.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002",
+    "L003"
+   ],
+   "evidence_quote": "Consistency is vague, structureless, and inconsistently moralized as compliment or accusation.",
+   "reasoning": "L003 states the thesis verbatim; L002 summary reinforces that behavioral consistency is a bad proxy and the real target is anchor and responsiveness."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The motivating story: before the 1979 Iranian revolution a woman the author's mother knew wore mini skirts constantly, then switched to chador and niqab right after the revolution, while others in the same circle dressed modestly both before and after, changing only slightly.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L004"
+   ],
+   "evidence_quote": "Example: Mother story: miniskirts to chador after 1979 versus steady modest dressers.",
+   "reasoning": "All essential elements (miniskirts, chador, 1979, steady modest dressers) are captured. Niqab and 'changing only slightly' are omitted but not meaning-bearing."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "The swing itself cannot be the thing being judged, because updating beliefs on some topics is widely considered a virtue and nobody should be stoneheaded. So behavioral sameness does not carry the moral weight the author assumed, something underneath it does.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005"
+   ],
+   "evidence_quote": "Swing alone cannot be judged since updating beliefs is virtuous; something deeper carries weight.",
+   "reasoning": "The loglog line states both the updater-virtue point and the conclusion that something deeper carries the moral weight."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "The formal model: Behavior = w times Reference plus (1 minus w) times Anchor, where w (Responsiveness) is how much weight the social reference carries and the Anchor is what the person would do if the reference had no pull.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L007",
+    "L008"
+   ],
+   "evidence_quote": "Equation: Behavior equals w times Reference plus (1 minus w) times Anchor.",
+   "reasoning": "L007 gives the equation and L008 defines anchor as absent pull and w as reference weight, matching the point fully."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Modest woman solved: anchor a = 0 and responsiveness w = 0.2. Her output moved (from -0.1 to 0.1) but her rule never did, a fixed anchor at neutral conceding a fixed twenty percent of the distance toward society.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L009",
+    "L010"
+   ],
+   "evidence_quote": "Modest woman: anchor 0, responsiveness 0.2; behavior tracks reference slightly.",
+   "reasoning": "Anchor 0, w 0.2, and the fixed-rule observation are all present, but the illustrative output values (-0.1 to 0.1) are dropped. Per the strict rule, a Must have with a dropped number is at most Partial."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Mini-skirt/chador woman solved: anchor a = 0 and w = 1.8. She amplifies the reference (more open than open society, more closed than closed society), yet her rule is exactly as consistent as the modest woman's. The difference is not stability, it is what the rule says (concede a fifth versus overshoot by eighty percent).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L011",
+    "L012"
+   ],
+   "evidence_quote": "Swinging woman at 0.9 and minus 0.9: anchor 0, responsiveness 1.8, overshooting both.",
+   "reasoning": "L011 supplies anchor 0, w 1.8, and observed +/-0.9 with overshoot. L012 supplies the equal-consistency and content-not-stability conclusion."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Consistency can be asked of three independent layers: consistency of output (behavior stayed the same), consistency of policy (same anchor and same responsiveness), and consistency of anchor (the fixed point itself stayed fixed). The two women fail the first in opposite amounts but pass the second and third completely.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L013"
+   ],
+   "evidence_quote": "Consistency splits into output, policy, and anchor layers, independently passable.",
+   "reasoning": "The three-layer split is stated exactly. The specific pass/fail pattern for the two women is not spelled out, but the core analytical structure is intact."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "The contrarian woman (observed at 0.2 when society is -0.5 and -0.2 when society is 0.5) has anchor 0 and w = -0.4. Contrarianism is dependency with a minus sign, not independence, because reliably doing the opposite requires tracking the reference closely.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L016",
+    "L017"
+   ],
+   "evidence_quote": "Observed 0.2 against minus 0.5 and minus 0.2 against 0.5; responsiveness minus 0.4.",
+   "reasoning": "L016 supplies all numbers and L017 states contrarianism as dependency with a minus sign tracking the reference more than the conformist. Anchor 0 is implied by the solved values."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "The spectrum of w postures: above 1 amplifier, exactly 1 absolute conformist, between 0 and 1 partial conformist, exactly 0 independent, between -1 and 0 partial contrarian, exactly -1 absolute contrarian. The independent is the only posture that needs no information about the reference, so absolute conformist and absolute contrarian are closer to each other than either is to the independent.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L018",
+    "L019"
+   ],
+   "evidence_quote": "Responsiveness values form named postures from amplifier to extremist rebel.",
+   "reasoning": "The existence of a posture spectrum and the independence/mirroring claim are present, but the six named values and threshold boundaries are not enumerated (only 'amplifier to extremist rebel'). A reader cannot recover the full taxonomy from the loglog, so Partial."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Whether moving is right depends on the reference type: a normative reference (peer pressure, fashion, social approval) should be resisted, so high responsiveness is suspect by default, while a structural reference (deadline, budget, a body, risk exposure) should be tracked, so zero responsiveness is malfunction, not principle.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L020",
+    "L021"
+   ],
+   "evidence_quote": "Normative references should be resisted; structural references should be tracked.",
+   "reasoning": "L021 states both prescriptions and L020 frames the model as morally neutral until the reference kind is specified, capturing the conditional structure."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Retirement investing example: the 110-minus-age equity rule (about 85 percent stocks at 25, about 50 percent at 60) shows that behavior moving with a reference need not be inconsistency. Holding 85 percent equities at 65 because you have always been aggressive is refusal to let a correctly varying function vary, not conviction. Same form as the clothing conformist, opposite moral verdict.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L023",
+    "L024"
+   ],
+   "evidence_quote": "Lifecycle investing: 110-minus-age equities; moving allocation with horizon is consistency.",
+   "reasoning": "The 110-minus-age rule and the same-form/opposite-verdict contrast survive, but the 85/50 percent figures, the ages 25/60, and the 65-year-old refusal scenario are dropped. A Must have with dropped numbers is at most Partial."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Why anchors move: cross evidence-driven versus cost-driven with anchor-updates versus anchor-fixed to get four cells: rational revision (good), ossification (bad), preference laundering (bad), and anchor held (revealed preference versus hysteresis). Rational revision and preference laundering can yield an identical new anchor from an identical old one and are indistinguishable from outside, often from inside too.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L025",
+    "L026",
+    "L027",
+    "L029"
+   ],
+   "evidence_quote": "Four cells: rational revision, ossification, preference laundering, held anchor.",
+   "reasoning": "L026 names all four cells, L027 covers revealed preference versus hysteresis, and L029 covers the indistinguishable-twins claim (inside and out). Complete."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Three ways the clean model gets dirty: confounded attribution (cost and evidence move together, so a correct belief can be reached by an unreliable process), misperceived reference (an upstream error corrupting every downstream judgment), and reference lag (perfect tracking of a stale reference, as when diaspora or second-generation communities and Quebec French preserve older language forms, conformity to the wrong clock).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L034",
+    "L035",
+    "L036"
+   ],
+   "evidence_quote": "Confounded attribution: cost and evidence move together; reliable process matters beyond correct belief.",
+   "reasoning": "All three complications are named with correct mechanisms. L035 captures corrupted downstream judgments and L036 captures reference lag with the diaspora example (Quebec French omitted but non-essential)."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "The prior prediction test and conclusion: what separates the legitimate from illegitimate twins is what the person predicted in advance they would do once circumstances changed, and on what grounds. Where no prior prediction exists the case is underdetermined and the default should not be the flattering reading. So behavioral consistency was only a proxy, and the only trustworthy question is the one asked before anything changes: what will you do when it does, and why?",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L037",
+    "L038",
+    "L039",
+    "L041"
+   ],
+   "evidence_quote": "Without prior prediction the case is underdetermined; reject the flattering default.",
+   "reasoning": "L037 frames the prior-prediction test, L038 explains why it resists retroactive faking, L039 gives the underdetermined default, and L041 gives the process-not-output conclusion. The forward-looking framing is slightly implicit but the argument is complete."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Background asides: PS1 notes the author deliberately did not explore cases where the anchor is closer to or farther from the reference, having no meaningful examples. PS2 notes an economist might call the anchor endogenous and the reference exogenous, and that the model is the simplest linear convex combination whose coefficient is not restricted to between 0 and 1, permitting the amplifier region.",
+   "weight": "Nice to have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L042",
+    "L043"
+   ],
+   "evidence_quote": "Anchor resembles endogenous variable, reference exogenous; linear model extends beyond zero-one.",
+   "reasoning": "L042 records the deliberately unexplored anchor-distance cases and L043 records the endogenous/exogenous framing and the extension beyond zero-one. Both asides preserved."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 14,
+  "must_have_present": 11,
+  "must_have_partial": 3,
+  "must_have_missing": 0,
+  "overall_present": 12,
+  "must_recall": 0.893,
+  "overall_recall": 0.9
+ },
+ "missing_list": []
+}

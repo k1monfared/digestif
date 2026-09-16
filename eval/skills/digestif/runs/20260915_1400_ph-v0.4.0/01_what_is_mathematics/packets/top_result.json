@@ -1,0 +1,31 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "unspecified",
+ "inputs": {
+  "faithfulness_precision": 0.9854,
+  "critical_errors": 0,
+  "must_recall": 1.0,
+  "overall_recall": 1.0,
+  "redundancy_rate": 0.0803,
+  "trivia_rate": 0.0146
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score equals 0.4 times 0.9854 plus 0.4 times 1.0 minus 0.2 times 0.0803 equals 0.39416 plus 0.4 minus 0.01606 equals 0.7781",
+ "weighted_score": 0.7781,
+ "verdict": "Borderline",
+ "tradeoff_note": "Coverage is perfect (must_recall 1.0, 15/15 points) and redundancy 0.0803 sits well under the 0.15 max, so the length is fully justified by coverage; the only risk is four Minor Partials that drop source hedges and quantifiers, at least one of which touches a Must have point.",
+ "fix_list": [
+  "Restore causal attribution in C077 (loglog 3): source says AI optimization threatens to break the correlation, not proof abundance itself; this sits on the Tao-pipeline Must have point.",
+  "Re-add the speculation qualifier in C003 (loglog 0): change the asserted shift to 'I am speculating that the mix is shifting' so the deciding-which-patterns point is not stated as fact.",
+  "Restore the conditional in C179 (loglog 6.12.3): keep 'If citation networks already made the canon path-dependent' rather than asserting it as established.",
+  "Downgrade the quantifier in C241 (loglog 9.2): 'Many mathematicians' should read 'mathematicians I know of' per the existence claim in source.",
+  "Prune redundancy to push below current 0.0803: C026/C027 restatements, C113, C211, C239, C262, C268, C269 are the cheapest single-line drops; C003 also duplicates C246."
+ ],
+ "reasoning": "Hard gates checked first. Critical contradicted: faithfulness reports contradicted 0 and critical_errors 0, gate max 0, passes. Must recall: coverage reports 14/14 must-have present, must_recall 1.0, gate min 0.9, passes. Faithfulness precision: 270 supported + 4 partially supported over 274 total, precision 0.9854, gate min 0.95, passes. No hard fail triggers. All gates pass, so compute the weighted score with config aspect_weights (faithfulness 0.4, coverage_must_recall 0.4, redundancy_penalty 0.2): 0.4*0.9854 = 0.39416, 0.4*1.0 = 0.4, 0.2*0.0803 = 0.01606, giving 0.7781. Concision check: redundancy_rate 0.0803 is below redundancy_max 0.15, so the coverage win is legitimate and no length penalty beyond the formula term is warranted; concision does not rescue anything here because nothing failed. Borderline is chosen over Pass because the four Partials (C003, C077, C179, C241), though all Minor, affect Must have territory: C077 is the Tao-pipeline bottleneck point (proof abundance vs AI-optimization cause, loglog 3), C003 is the shift-toward-deciding-patterns point (loglog 0), and C179 is the canon/path-dependence point (loglog 6.12.3). Each is a dropped hedge, condition, or quantifier rather than a fabricated fact, which is why this is human-review Borderline rather than Fail, but the pattern means a reader could take a conditional or speculative claim as settled. Highest leverage is C077 because it is a causal link on a central thesis point; the rest are qualifier restorations. The 22 duplicates and 4 trivia items are secondary: dropping the listed restatements would lower redundancy further and improve the weighted score toward ~0.79, but they do not change the verdict."
+}

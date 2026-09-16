@@ -1,0 +1,378 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "03_cant_stop_addicted_to_shindig",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Can't Stop analysis: four dice flatten odds, middle columns dominate, consistent probabilistic strategies win, design favors playability.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Four-dice probabilities flatten the distribution ... Probabilistic strategies dominate ... Perfect balance isn't necessary",
+   "reasoning": "All summary strands (flattened odds, middle-column dominance, probabilistic winners, playability) appear in source conclusion."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Roll four dice, pair freely, advance three active markers; bust loses the turn's progress.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "roll four dice, pair them up however you want ... if you can't move any of your three active markers, you lose everything you've gained that turn",
+   "reasoning": "Source states exactly this rule set."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Columns 2-12 have lengths 3-5-7-9-11-13-11-9-7-5-3; complete three columns to win.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "2 and 12: 3 steps ... 7: 13 steps. You need to complete three columns to win",
+   "reasoning": "Sequence matches the source column lengths and win condition."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "Forced-move rule: chosen pairing forces ALL its legal moves, even unwanted ones.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you must take all available moves ... you must make ALL legal moves from that pairing, even if you don't want them",
+   "reasoning": "Direct restatement of the forced-move rule."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "(1,1,3,4) as 2+7 on {6,7,8} forces taking both 2 and 7.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you roll (1,1,3,4) ... pairing (1,1)+(3,4) = 2+7 ... forced to take BOTH the 2 and the 7",
+   "reasoning": "Source example matches numbers and forced outcome."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Two-dice baseline peaks at 7 with 16.67%, exactly 6x likelier than 2 at 2.78%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Sum 7 is the most likely at 16.67%, and it's exactly 6× more likely than sum 2 at 2.78%",
+   "reasoning": "Peak, values, and 6x ratio all match source exactly."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Sums 2-12 have 1-2-3-4-5-6-5-4-3-2-1 ways of 36; 1 way versus 6 ordered ways.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "For sum 2, there's only one way ... sum 7 ... order matters, so that's 6 ways total out of 36",
+   "reasoning": "Way counts mirror the source table and proof."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Column 7 is only about 4.3x longer (13/3) than column 2, not 6x.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it's only 13/3 ≈ 4.3× longer",
+   "reasoning": "Source states the 4.3x figure via 13/3."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Four-dice pairing offers three pairings and sharply flattens the distribution.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That's it, just three possible pairings ... Did the distribution get flatter?",
+   "reasoning": "Source confirms three pairings and a flatter distribution."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "P(can make 2) = 171/1296 approx 13.2%, up from two-dice 2.78%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "P(can make a 2) = 1 - 625/1296 - 500/1296 = 171/1296 ≈ 13.2%",
+   "reasoning": "Fraction and percentage match source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "P(can make 7) = 834/1296 approx 64.4% via inclusion-exclusion; overlaps 24/1296, triple 0.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "P(A cap B) = ... 24/1296 ... P(A cap B cap C) = 0 ... P(can make a 7) = 834/1296 ≈ 64.4%",
+   "reasoning": "All four numbers match source inclusion-exclusion result."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Full range 13.2% to 64.4%; probability ratio 4.88 nearly matches length ratio 4.33.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The probability ratio from 2 to 7 is 4.88. The length ratio is 4.33",
+   "reasoning": "Both ratios and endpoints match source table."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Three-column combination choice dominates single-column odds.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "column combination choice dominates individual column balance",
+   "reasoning": "Source states combination choice dominates individual columns."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Expected rolls L/P: column 2 needs 22.73, column 7 needs 20.18 rolls.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "For column 2: 3/0.132 = 22.73 rolls. For column 7: 13/0.644 = 20.18 rolls",
+   "reasoning": "Expected-roll values match source table."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "{6,7,8} succeeds 1193/1296 = 92.0% with Q 1.43 markers per roll.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "1193/1296 = 92.0% success rate ... {6,7,8} | 92.0% ... 1.43",
+   "reasoning": "Success fraction and Q value match source."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "{2,3,12} succeeds only 568/1296 = 43.8% with Q 1.05; bust likelier.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "568/1296 = 43.8% success rate ... {2,3,12} | 43.8% | 56.2% ... 1.05",
+   "reasoning": "Success, bust, and Q figures match source."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "All 165 combos ranked; 37 excellent at 85%+, median 79.6%, worst 43.8%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "37 combinations are \"excellent\" (≥85% success rate) ... median combination still succeeds 79.6% ... worst ... 43.8%",
+   "reasoning": "Counts and percentages match source distribution summary."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "Clean moves only: 39.8% for {6,7,8} and 2.3% for {2,3,12}.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "{6,7,8} only has 39.8% clean moves ... For {2,3,12}: Only 2.3% of rolls are clean",
+   "reasoning": "Both clean-move percentages match source."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Keep rolling while expected gain exceeds expected loss.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Keep rolling if: (P_success × Q) > (P_bust × U)",
+   "reasoning": "Source states the same expected-gain heuristic."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Rule: continue if (P_success x Q) > (P_bust x U); {6,7,8} gives 1.32 > 0.4.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "0.08 × 5 = 0.4 steps ... 0.92 × 1.43 = 1.32 steps ... 1.32 > 0.4",
+   "reasoning": "Formula and worked values match source."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "{2,3,12} with 2 steps gives 1.12 > 0.46 loss, so stop.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Risk: 0.562 × 2 = 1.12 steps ... Expected gain: 0.438 × 1.05 = 0.46 steps ... you should STOP",
+   "reasoning": "Source computes the same figures and conclusion."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Continuation usually beats switching, but full quantitative comparison remains open future work.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The mathematics favor continuation in most cases ... I haven't fully analyzed this aspect quantitatively ... open question for future work",
+   "reasoning": "Mirrors source continuation claim and open-question hedge."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Tournament of 38 strategies across 14 families over 3.6M games crowns FiftyPercentSurvival.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I implemented 38 different strategies ... 14 different strategic families ... 3.6 million total games",
+   "reasoning": "Strategy count, family count, and game total match source."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Scale: 1,000 trials per strategy, 2,500 games per matchup, 3.6M games total.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "1,000 single-player trials per strategy, 2,500 head-to-head games per matchup, 3.6 million total games",
+   "reasoning": "All three simulation scale figures match source."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Fastest GreedyUntil1Col 10.5 turns (median 9, sd 5.73, 7.50 busts); top 15 span 10.5-12.8.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "GreedyUntil1Col | 10.5 | 9 | 5.73 | 7.50 ... The top 15 all complete games in 10.5-12.8 turns",
+   "reasoning": "Means, median, std, busts, and span all match source."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Champion FiftyPercentSurvival 69.84% (132,696/190,000); Heuristic(1.5) 66.46% second.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "FiftyPercentSurvival | 69.84% | 132,696/190,000 ... Heuristic(1.5) | 66.46%",
+   "reasoning": "Win share and runner-up value match source table."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Champion stops when cumulative survival drops below 50%: n = log(0.5)/log(P_success).",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Roll until cumulative survival probability drops below 50%, calculated as n = log(0.5) / log(P_success)",
+   "reasoning": "Formula and threshold match source exactly."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Paradox: GreedyUntil1Col #1 speed but #11 at 58.90%; consistency beats speed.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "GreedyUntil1Col | #1 | 10.5 | #11 | 58.90% ... consistency beats raw speed",
+   "reasoning": "Ranks, win rate, and lesson all match source."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "First-player advantage +11.18% overall (P1 wins 55.59%); GreedyUntil1Col bias +31.24%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "First-player advantage: +11.18% ... Player 1 win rate: 55.59% ... GreedyUntil1Col | +31.24%",
+   "reasoning": "All three advantage figures match source."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "Opponent-aware tweaks did not help; web game plus full code and data released.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Being \"opponent aware\" didn't help ... I've implemented a fully interactive web version ... All analysis code and simulation results are available",
+   "reasoning": "Source confirms opponent-aware failure and public web game, code, and data."
+  }
+ ],
+ "metrics": {
+  "total_claims": 30,
+  "supported": 30,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

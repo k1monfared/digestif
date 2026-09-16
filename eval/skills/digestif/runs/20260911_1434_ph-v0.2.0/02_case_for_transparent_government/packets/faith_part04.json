@@ -1,0 +1,71 @@
+{
+ "sample": "02_case_for_transparent_government",
+ "part": 4,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Transparency is the measuring stick, not one value to balance against others.",
+   "evidence": [
+    {
+     "ref": "¶78",
+     "text": "## The Measuring Stick\n\nThere's a temptation to see transparency as one value among many - to \"balance\" it against efficiency, security, privacy, and speed. To find the optimal tradeoff point.\n\nReject this framing."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Document current speed, publish it, and let the record pressure consistency and reasoning.",
+   "evidence": [
+    {
+     "ref": "¶79",
+     "text": "Transparency is not a value to be balanced. It's the measuring stick. Speed and accountability are *byproducts*. Whatever speed your government operates at, document everything. Make it available. Then iteratively improve the processes that transparency reveals as broken.\n\nYou don't need to change how fast things move. You just need the record to exist. Slowly, over time, the availability of that record will create pressure: pressure for consistency, pressure for sound reasoning, pressure for accountability. Officials who know their reasoning will be reviewed will produce better reasoning. Decisions that must be documented will be more carefully considered. Corruption that leaves a trail will be easier to prosecute."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Reaching full transparency forces solving speed and accountability along the way.",
+   "evidence": [
+    {
+     "ref": "¶80",
+     "text": "Transparency is the measuring stick by which you evaluate whether your government is working. In order to reach 100% transparency, you'll have to solve speed and accountability along the way. They're not obstacles to transparency - they're consequences of it."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Linux proves complex global collaboration works in full public view.",
+   "evidence": [
+    {
+     "ref": "¶81",
+     "text": "## Open Source as Vision\n\nHere's a final thought. Consider open source software. Linux, the operating system running most of the internet, is built by thousands of people across the world, working in full public view. Every commit is visible. Every issue is tracked. Every pull request is discussed. Maintainers are accountable to users. If you disagree with a decision, you can fork the project.\n\nThis is complex, collaborative work happening transparently. The complexity of a government is greater, but the principle is the same: complex systems can be built and maintained in public. Transparency doesn't prevent sophisticated work. It enables accountability for that work."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You cannot fork a country, so coerced citizens deserve oversight most.",
+   "evidence": [
+    {
+     "ref": "¶82",
+     "text": "The difference between open source and government is that in open source, participation is voluntary. You can leave. In government, you're subject to decisions whether you participated or not. You can't fork your country.\n\nThat makes the case for government transparency *stronger*, not weaker. The less choice you have about being affected by decisions, the more right you have to see how those decisions are made."
+    },
+    {
+     "ref": "¶83",
+     "text": "You pay for this government. You live with its consequences. You are the CEO.\n\nAct like it.\n\n---\n\n## Appendix: Sources with Summaries"
+    }
+   ]
+  }
+ ]
+}

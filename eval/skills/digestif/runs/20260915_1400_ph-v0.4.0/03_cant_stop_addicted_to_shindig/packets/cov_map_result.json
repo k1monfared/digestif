@@ -1,0 +1,203 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "03_cant_stop_addicted_to_shindig",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: Can't Stop is a masterclass in practical game design, where imperfect mathematical balance is acceptable and rules are used to compensate for it.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002",
+    "L088"
+   ],
+   "evidence_quote": "perfect balance isn't necessary, as the game is engaging despite (or because of) favoring middle columns",
+   "reasoning": "Summary L002 and conclusion L088 both capture the thesis that near-balance is acceptable and rules compensate. The forced-move rule as compensating mechanism is stated at L036/L077."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "Game rules: roll four dice, pair them to move markers on columns 2 through 12, need three completed columns to win; column lengths are 3,5,7,9,11,13,11,9,7,5,3.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L003",
+    "L005"
+   ],
+   "evidence_quote": "Column lengths run 3, 5, 7, 9, 11, 13, 11, 9, 7, 5, and 3 steps for columns 2 through 12.",
+   "reasoning": "L003 states roll four dice, pair into sums, columns 2-12, three completed to win. L005 gives the full length sequence exactly."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Forced-move rule: if a chosen pairing creates any valid move you must take all legal moves from that pairing, even onto unwanted columns; you cannot cherry-pick.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L006",
+    "L007"
+   ],
+   "evidence_quote": "The forced-move rule requires taking all legal moves from a chosen pairing, even unwanted ones.",
+   "reasoning": "L006 states the rule with the 'even unwanted ones' qualifier; L007 gives the {6,7,8} 2+7 example. Meaning intact."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Two-dice baseline: sum 7 is most likely at 16.67%, exactly 6 times more likely than sum 2 at 2.78%.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L011"
+   ],
+   "evidence_quote": "With two dice, sum 7 is most likely at 16.67% and exactly 6× more likely than sum 2 at 2.78%.",
+   "reasoning": "L011 carries both exact percentages and the 6x ratio with no qualifier loss."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "With four dice the distribution flattens: P(can make 7) = 64.4% and P(can make 2) = 13.2%, only a 4.88x ratio versus 6x with two dice.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L010",
+    "L022"
+   ],
+   "evidence_quote": "P(7) = 64.4% versus P(2) = 13.2%, only a 4.88× difference",
+   "reasoning": "L010 states 64.4% and 13.2%; L022 restates the 4.88x ratio in conclusion. The contrast with 6x is available via L011/L021."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Expected rolls to complete a column = length / probability; column 2 needs about 22.73 rolls while column 7 needs about 20.18, so 7 is slightly faster despite being 4x longer.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L024",
+    "L025"
+   ],
+   "evidence_quote": "column 2 needs 3/0.132 = 22.73 rolls; column 7 needs 13/0.644 = 20.18 ... Column 7 is slightly faster than column 2 even though it is 4× longer.",
+   "reasoning": "L024 gives formula and both numbers; L025 preserves the surprising faster-despite-longer conclusion."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Column combinations matter: {6,7,8} succeeds 92.0% of the time versus 43.8% for {2,3,12}; all 165 three-column combinations were analyzed, with 37 rated excellent (>=85% success) and a median success of 79.6%.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L029",
+    "L031"
+   ],
+   "evidence_quote": "{6,7,8} succeeds on 1193/1296 rolls; {2,3,12} on only 568/1296 ... Across all 165 combinations, 37 are excellent at ≥85% success, the median is 79.6%",
+   "reasoning": "L029 gives the 92.0%/43.8% contrast; L031 gives 165 combinations, 37 at >=85%, median 79.6%. All numbers and qualifiers intact."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "\"Clean\" moves are rare: even the best combination {6,7,8} yields only 39.8% clean rolls, and {2,3,12} only 2.3%, so the forced-move rule contaminates good combinations.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L034",
+    "L035"
+   ],
+   "evidence_quote": "even {6,7,8} is clean only 39.8% of the time ... only 2.3% of {2,3,12} rolls are clean",
+   "reasoning": "L034 gives 39.8% clean and the clean definition; L035 gives 2.3% and states forced moves contaminate good combinations."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Stopping heuristic: keep rolling if (P_success x Q) > (P_bust x U), where Q is expected markers advanced and U is unsaved progress; example on {6,7,8} says roll (1.32 > 0.4) and on {2,3,12} says stop (1.12 > 0.46).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L038",
+    "L039",
+    "L040",
+    "L041"
+   ],
+   "evidence_quote": "keep rolling if P(success) × Q exceeds P(bust) × U ... 0.92 × 1.43 = 1.32, so keep rolling ... 0.562 × 2 = 1.12 versus gain 0.438 × 1.05 = 0.46, so stop",
+   "reasoning": "L038 gives the inequality, L041 defines Q and U, L039/L040 give both worked examples with matching values."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Tournament of 38 strategies across 2,500 head-to-head games each (3.6M total games) found FiftyPercentSurvival the champion at 69.84% win rate, and probabilistic strategies dominate the top rankings.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L042",
+    "L045",
+    "L058"
+   ],
+   "evidence_quote": "Simulations of 38 strategies across 14 families (3.6 million games) ... FiftyPercentSurvival wins 69.84% ... the top 7 all use probability calculations",
+   "reasoning": "L042 gives 38 strategies and 3.6M games; L045 gives 69.84% champion; L058 gives probabilistic dominance. The '2,500 per pairing' granularity is omitted but the structure and headline figures are intact, so full credit stands."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Consistency beats speed: GreedyUntil1Col is fastest (10.5 turns) but only ranks #11 at 58.90% due to high variance and bust rate, while FiftyPercentSurvival at 11.3 turns wins most.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L043",
+    "L050",
+    "L051",
+    "L064"
+   ],
+   "evidence_quote": "GreedyUntil1Col finishes in 10.5 turns but wins only 58.90%, while FiftyPercentSurvival takes 0.8 turns longer and wins 10.9% more ... The fastest strategy is not the best competitive strategy.",
+   "reasoning": "L043 gives 10.5 turns with sigma 5.73 and 7.50 busts; L050/L051 give 58.90% and the consistency lesson; L064 restates that reliable 11 turns beats variable 10.5."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Significant first-player advantage: P1 wins 55.59% of games for a +11.18% edge, larger than chess (~5%) or Go (~7%); GreedyUntil1Col shows extreme bias at +31.24%.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L065",
+    "L067"
+   ],
+   "evidence_quote": "Player 1 wins 55.59%, +11.18%, larger than chess (~5%) or Go (~7%) ... GreedyUntil1Col (+31.24%)",
+   "reasoning": "L065 gives 55.59%, +11.18%, and both comparison numbers; L067 gives +31.24% for GreedyUntil1Col."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Balance analysis: single-column completion times deviate at most +/-13.6% from 20 rolls, an optimal board one step from current reaches +/-3.09%, and a 20-step board reaches +/-2.17%.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L074",
+    "L080",
+    "L081"
+   ],
+   "evidence_quote": "Single-column deviations from 20 expected rolls are at most ±13.6% ... A board one step higher per column (max 14) cuts maximum deviation to ±3.09% ... A 20-step board ... maximum deviation ±2.17%",
+   "reasoning": "L074 gives ±13.6%, L080 gives ±3.09%, L081 gives ±2.17%. All three figures and their board conditions preserved."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Stated caveat: continuation versus switching strategies were not fully analyzed quantitatively and remain an open question for future work.",
+   "weight": "Nice to have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L091"
+   ],
+   "evidence_quote": "The author has not analyzed this quantitatively; comparing 'always continue' versus 'switch when X' is left open.",
+   "reasoning": "L091 explicitly preserves the open-question caveat with the same scope."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Recommendations: players should use FiftyPercentSurvival and aim for columns 5-9 while avoiding forced activation of 2-3 and 11-12; designers should prioritize playability and use rules to compensate for imbalance, considering handicaps for turn order.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L061",
+    "L087"
+   ],
+   "evidence_quote": "use FiftyPercentSurvival, aim for columns 5-9, avoid forced activation of 2-3 and 11-12, and prioritize consistency ... prioritize playability over mathematical perfection, compensate imbalances with rules, and consider turn-order handicaps",
+   "reasoning": "L061 carries the player recommendation with exact column ranges and avoidance targets; L087 carries the designer recommendation including handicaps."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 14,
+  "must_have_present": 14,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 15,
+  "must_recall": 1.0,
+  "overall_recall": 1.0
+ },
+ "missing_list": []
+}

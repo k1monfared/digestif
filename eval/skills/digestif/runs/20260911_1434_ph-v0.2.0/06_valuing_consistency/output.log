@@ -1,0 +1,51 @@
+- What Do We Value When We Value Consistency (source: source.txt)
+    Summary: Behavioral consistency is a bad proxy; judge anchor, responsiveness, and whether evidence or cost moved it. (¶1, ¶2, ¶4, ¶58)
+        - 1 Consistency is vague, structureless, and inconsistently moralized as compliment or accusation. (¶2)
+            - 1.1 Example: Mother story: miniskirts to chador after 1979 versus steady modest dressers. (¶3)
+            - 1.2 Swing alone cannot be judged since updating beliefs is virtuous; something deeper carries weight. (¶4)
+        - 2 Clothing model blends fixed anchor with social reference via responsiveness weight. (¶5, ¶6, ¶7)
+            - 2.1 Evidence: Equation: Behavior equals w times Reference plus (1 minus w) times Anchor. (¶8)
+            - 2.2 Evidence: Anchor defined absent pull; w is reference weight; two observations solve both. (¶9, ¶10)
+            - 2.3 Evidence: Modest woman: anchor 0, responsiveness 0.2; behavior tracks reference slightly. (¶11)
+            - 2.4 Nuance: Output moved while rule stayed fixed; stable person conceding ground under pressure. (¶12)
+            - 2.5 Evidence: Swinging woman at 0.9 and minus 0.9: anchor 0, responsiveness 1.8, overshooting both. (¶13, ¶14, ¶15)
+            - 2.6 Nuance: Chameleon rule equally consistent; difference is content, not stability of rule. (¶15)
+            - 2.7 Consistency splits into output, policy, and anchor layers, independently passable. (¶16)
+            - 2.8 Moral weight lives in anchor drift, often invisible in small steps. (¶17)
+        - 3 Contrarian runs same model with flipped sign and doubled magnitude. (¶18, ¶19)
+            - 3.1 Evidence: Observed 0.2 against minus 0.5 and minus 0.2 against 0.5; responsiveness minus 0.4. (¶20, ¶21, ¶22)
+            - 3.2 Contrarianism is dependency with minus sign, tracking reference more than conformist. (¶23)
+        - 4 Responsiveness values form named postures from amplifier to extremist rebel. (¶24, ¶25, ¶26)
+            - 4.1 Nuance: Only the independent acts without reference information; extremes mirror each other. (¶27)
+        - 5 Model is morally neutral until the reference kind is specified. (¶28, ¶29)
+            - 5.1 Normative references should be resisted; structural references should be tracked. (¶30, ¶31)
+            - 5.2 Concession: Author prefers small responsiveness and educated anchors, conceding non-ideal world. (¶32)
+            - 5.3 Example: Lifecycle investing: 110-minus-age equities; moving allocation with horizon is consistency. (¶33) [reported]
+            - 5.4 Clothing conformist and lifecycle investor share form but opposite verdicts. (¶34)
+        - 6 Anchor movement comes from evidence or cost, crossed with update or hold. (¶35, ¶36, ¶37)
+            - 6.1 Evidence: Four cells: rational revision, ossification, preference laundering, held anchor. (¶38)
+            - 6.2 Nuance: Held anchor splits into revealed preference versus hysteresis after cost lifts. (¶39)
+            - 6.3 Nuance: Evidence can arrive without reference moving; beliefs about static facts still update. (¶40)
+            - 6.4 Revision and laundering can reach identical anchors, indistinguishable inside and out. (¶41)
+        - 7 Socialist-at-20 aphorism fits both evidence and self-interest processes. (¶42, ¶43)
+            - 7.1 Nuance: Age-brings-taxes story reads as lifecycle-like rational revision. (¶44)
+            - 7.2 Counterpoint: Asset-acquiring drift reads as preference laundering with extra steps. (¶45)
+        - 8 Toy model breaks on three unavoidable complications. (¶46, ¶47)
+            - 8.1 Nuance: Confounded attribution: cost and evidence move together; reliable process matters beyond correct belief. (¶48)
+            - 8.2 Nuance: Misperceived reference corrupts all downstream judgments without anchor or policy flaws. (¶49)
+            - 8.3 Example: Reference lag: diaspora preserves frozen origin norm, appearing principled while conforming. (¶50) [reported]
+        - 9 Retrospective stories cannot separate twins; prior prediction with reasons can. (¶51, ¶52, ¶53)
+            - 9.1 Evidence: Old-regime predictions with reasons resist retroactive faking, unlike post-hoc alibis. (¶54)
+            - 9.2 Without prior prediction the case is underdetermined; reject the flattering default. (¶55)
+        - 10 Swinging woman may run one rule throughout; never-changing investor may be failing. (¶56, ¶57)
+            - 10.1 Evaluate process not output, though process stays mostly invisible and unfalsifiable. (¶58)
+            - 10.2 Nuance: Anchor-distance cases deliberately unexplored for lack of interpretable examples. (¶59, ¶60) [conceded]
+            - 10.3 Nuance: Anchor resembles endogenous variable, reference exogenous; linear model extends beyond zero-one. (¶61)
+    - Cross-links
+        - 2.7 supports 10.1 (¶16) note: three-layer split grounds process-not-output verdict
+        - 3.2 supports 4.1 (¶23) note: contrarian dependence backs conformist-contrarian neighbor claim
+        - 5.4 exemplifies 2.7 (¶34) note: clothing versus investing contrast illustrates three-layer consistency
+        - 6.4 supports 9 (¶41) note: indistinguishable twins motivate prior-prediction test
+        - 7.2 exemplifies 6.1 (¶45) note: aphorism trajectory illustrates laundering cell
+        - 8.1 qualifies 6 (¶48) note: confounded attribution limits two-force table
+    - Coverage: 61 of 61 passages cited

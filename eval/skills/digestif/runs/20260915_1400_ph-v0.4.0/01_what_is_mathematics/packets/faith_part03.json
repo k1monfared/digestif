@@ -1,0 +1,359 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 3,
+ "of": 9,
+ "nodes": [
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Mathematics was never theorem production: it was a process of thinking, and the process was the product.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "## The process was the product"
+    },
+    {
+     "ref": "¶21",
+     "text": "The old definition was wrong, and both authors know it. The sentence underneath everything they wrote is that mathematics was never the production of theorems. It was a process of thinking, and the process was the product."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The old definition was wrong, and both authors know it.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The old definition was wrong, and both authors know it. The sentence underneath everything they wrote is that mathematics was never the production of theorems. It was a process of thinking, and the process was the product."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Moradifam: we teach math for the struggle, not the facts; the student discovers what matters and what does not.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Moradifam opens with the reason we teach math at all: not the facts, the struggle. A student sits with a problem, tries an idea, hits a wall, tries again, and slowly discovers what matters and what does not. That process builds the habit of tracking assumptions, the ability to move between concrete examples and general principles, the confidence to keep thinking when the answer is not immediate."
+    }
+   ]
+  },
+  {
+   "id": "2.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That process builds the habit of tracking assumptions, moving between examples and principles, and the confidence to keep thinking.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Moradifam opens with the reason we teach math at all: not the facts, the struggle. A student sits with a problem, tries an idea, hits a wall, tries again, and slowly discovers what matters and what does not. That process builds the habit of tracking assumptions, the ability to move between concrete examples and general principles, the confidence to keep thinking when the answer is not immediate."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Cognitive offloading delegates mental effort to a tool; the illusion of explanatory depth confuses fluency with ownership.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "He brings in the cognitive science. [Cognitive offloading](https://en.wikipedia.org/wiki/Cognitive_offloading) is the tendency to delegate mental effort to an external tool. The [illusion of explanatory depth](https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth) is the way fluency gets confused with ownership. A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it. They are not the same. A calculator does not undermine arithmetic for a student who already understands place value. It becomes harmful when it arrives before the understanding. AI is that, with one new twist: it produces plausible explanations in a confident tone, so both student and instructor can mistake the output for the learning."
+    }
+   ]
+  },
+  {
+   "id": "2.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "He brings in the cognitive science. [Cognitive offloading](https://en.wikipedia.org/wiki/Cognitive_offloading) is the tendency to delegate mental effort to an external tool. The [illusion of explanatory depth](https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth) is the way fluency gets confused with ownership. A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it. They are not the same. A calculator does not undermine arithmetic for a student who already understands place value. It becomes harmful when it arrives before the understanding. AI is that, with one new twist: it produces plausible explanations in a confident tone, so both student and instructor can mistake the output for the learning."
+    }
+   ]
+  },
+  {
+   "id": "2.3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "A calculator does not undermine arithmetic for a student who already understands place value; it becomes harmful when it arrives before the understanding.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "He brings in the cognitive science. [Cognitive offloading](https://en.wikipedia.org/wiki/Cognitive_offloading) is the tendency to delegate mental effort to an external tool. The [illusion of explanatory depth](https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth) is the way fluency gets confused with ownership. A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it. They are not the same. A calculator does not undermine arithmetic for a student who already understands place value. It becomes harmful when it arrives before the understanding. AI is that, with one new twist: it produces plausible explanations in a confident tone, so both student and instructor can mistake the output for the learning."
+    }
+   ]
+  },
+  {
+   "id": "2.3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "AI adds a twist: it produces plausible explanations in a confident tone, so student and instructor can mistake output for learning.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "He brings in the cognitive science. [Cognitive offloading](https://en.wikipedia.org/wiki/Cognitive_offloading) is the tendency to delegate mental effort to an external tool. The [illusion of explanatory depth](https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth) is the way fluency gets confused with ownership. A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it. They are not the same. A calculator does not undermine arithmetic for a student who already understands place value. It becomes harmful when it arrives before the understanding. AI is that, with one new twist: it produces plausible explanations in a confident tone, so both student and instructor can mistake the output for the learning."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "example",
+   "attribution": "reported",
+   "text": "An airport ad from an early AI company: let the AI do the thinking for you.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "I keep coming back to an ad I saw in the San Francisco airport, from an early AI company: \"let the AI do the thinking for you.\" The marketing treats thinking the way earlier automation treated laundry, as toil to be eliminated. The ad glosses over a real distinction between automating chores and automating thinking. Fixing a car is instrumental. You want the fixed car, not the experience of fixing it. Thinking is constitutive. The process of working through a problem is what builds judgment, and there is no shortcut that gives you the judgment without the process. Offload the chore and you keep the car. Offload the thinking and you keep an answer with an unchanged mind."
+    }
+   ]
+  },
+  {
+   "id": "2.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The ad treats thinking the way earlier automation treated laundry, as toil to be eliminated.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "I keep coming back to an ad I saw in the San Francisco airport, from an early AI company: \"let the AI do the thinking for you.\" The marketing treats thinking the way earlier automation treated laundry, as toil to be eliminated. The ad glosses over a real distinction between automating chores and automating thinking. Fixing a car is instrumental. You want the fixed car, not the experience of fixing it. Thinking is constitutive. The process of working through a problem is what builds judgment, and there is no shortcut that gives you the judgment without the process. Offload the chore and you keep the car. Offload the thinking and you keep an answer with an unchanged mind."
+    }
+   ]
+  },
+  {
+   "id": "2.4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Fixing a car is instrumental; thinking is constitutive, since working through a problem is what builds judgment.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "I keep coming back to an ad I saw in the San Francisco airport, from an early AI company: \"let the AI do the thinking for you.\" The marketing treats thinking the way earlier automation treated laundry, as toil to be eliminated. The ad glosses over a real distinction between automating chores and automating thinking. Fixing a car is instrumental. You want the fixed car, not the experience of fixing it. Thinking is constitutive. The process of working through a problem is what builds judgment, and there is no shortcut that gives you the judgment without the process. Offload the chore and you keep the car. Offload the thinking and you keep an answer with an unchanged mind."
+    }
+   ]
+  },
+  {
+   "id": "2.4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Offload the chore and you keep the car; offload the thinking and you keep an answer with an unchanged mind.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "I keep coming back to an ad I saw in the San Francisco airport, from an early AI company: \"let the AI do the thinking for you.\" The marketing treats thinking the way earlier automation treated laundry, as toil to be eliminated. The ad glosses over a real distinction between automating chores and automating thinking. Fixing a car is instrumental. You want the fixed car, not the experience of fixing it. Thinking is constitutive. The process of working through a problem is what builds judgment, and there is no shortcut that gives you the judgment without the process. Offload the chore and you keep the car. Offload the thinking and you keep an answer with an unchanged mind."
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The boundary is blurry: the same was said about mental arithmetic, memorizing poetry, and navigation.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "The fair version of my own argument has to admit the boundary is blurry. We said the same things about mental arithmetic, memorizing poetry, navigation. Some of those losses turned out fine. Some cost us something real, and the atrophying of spatial reasoning under GPS is decently documented: longitudinal work finds that more GPS use predicts a steeper decline in hippocampal-dependent spatial memory ([Dahmani & Bohbot, 2020](https://www.nature.com/articles/s41598-020-62877-0)), and long-term GPS use is associated with worse mental rotation and perspective-taking, which in turn hurts environmental learning ([Ruginski et al., 2019](https://www.sciencedirect.com/science/article/abs/pii/S0272494418308211))."
+    }
+   ]
+  },
+  {
+   "id": "2.5.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Some of those losses turned out fine; some cost something real.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "The fair version of my own argument has to admit the boundary is blurry. We said the same things about mental arithmetic, memorizing poetry, navigation. Some of those losses turned out fine. Some cost us something real, and the atrophying of spatial reasoning under GPS is decently documented: longitudinal work finds that more GPS use predicts a steeper decline in hippocampal-dependent spatial memory ([Dahmani & Bohbot, 2020](https://www.nature.com/articles/s41598-020-62877-0)), and long-term GPS use is associated with worse mental rotation and perspective-taking, which in turn hurts environmental learning ([Ruginski et al., 2019](https://www.sciencedirect.com/science/article/abs/pii/S0272494418308211))."
+    }
+   ]
+  },
+  {
+   "id": "2.5.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Longitudinal work: more GPS use predicts a steeper decline in hippocampal-dependent spatial memory (Dahmani & Bohbot, 2020).",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "The fair version of my own argument has to admit the boundary is blurry. We said the same things about mental arithmetic, memorizing poetry, navigation. Some of those losses turned out fine. Some cost us something real, and the atrophying of spatial reasoning under GPS is decently documented: longitudinal work finds that more GPS use predicts a steeper decline in hippocampal-dependent spatial memory ([Dahmani & Bohbot, 2020](https://www.nature.com/articles/s41598-020-62877-0)), and long-term GPS use is associated with worse mental rotation and perspective-taking, which in turn hurts environmental learning ([Ruginski et al., 2019](https://www.sciencedirect.com/science/article/abs/pii/S0272494418308211))."
+    }
+   ]
+  },
+  {
+   "id": "2.5.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Long-term GPS use is associated with worse mental rotation and perspective-taking, which hurts environmental learning (Ruginski et al., 2019).",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "The fair version of my own argument has to admit the boundary is blurry. We said the same things about mental arithmetic, memorizing poetry, navigation. Some of those losses turned out fine. Some cost us something real, and the atrophying of spatial reasoning under GPS is decently documented: longitudinal work finds that more GPS use predicts a steeper decline in hippocampal-dependent spatial memory ([Dahmani & Bohbot, 2020](https://www.nature.com/articles/s41598-020-62877-0)), and long-term GPS use is associated with worse mental rotation and perspective-taking, which in turn hurts environmental learning ([Ruginski et al., 2019](https://www.sciencedirect.com/science/article/abs/pii/S0272494418308211))."
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question is which cognitive activities are load-bearing for everything else.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "So the question was never chores versus thinking as fixed categories. It is which cognitive activities are load-bearing for everything else. Calculation turned out not to be. Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing, and those are precisely the things the ad proposes to outsource. And proving is the gym where the finding is trained. The slog of writing a rigorous proof is what builds the muscle for spotting patterns, and the chore and the training are the same act. Even when proofs go wrong and don't work, there are a slew of ideas that comes to the mathematician's mind and learning occurs."
+    }
+   ]
+  },
+  {
+   "id": "2.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Calculation turned out not to be.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "So the question was never chores versus thinking as fixed categories. It is which cognitive activities are load-bearing for everything else. Calculation turned out not to be. Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing, and those are precisely the things the ad proposes to outsource. And proving is the gym where the finding is trained. The slog of writing a rigorous proof is what builds the muscle for spotting patterns, and the chore and the training are the same act. Even when proofs go wrong and don't work, there are a slew of ideas that comes to the mathematician's mind and learning occurs."
+    }
+   ]
+  },
+  {
+   "id": "2.6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Problem framing, noticing what is missing, deciding what is worth attention look load-bearing, precisely what the ad proposes to outsource.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "So the question was never chores versus thinking as fixed categories. It is which cognitive activities are load-bearing for everything else. Calculation turned out not to be. Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing, and those are precisely the things the ad proposes to outsource. And proving is the gym where the finding is trained. The slog of writing a rigorous proof is what builds the muscle for spotting patterns, and the chore and the training are the same act. Even when proofs go wrong and don't work, there are a slew of ideas that comes to the mathematician's mind and learning occurs."
+    }
+   ]
+  },
+  {
+   "id": "2.6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proving is the gym where the finding is trained: the slog of a rigorous proof builds the muscle for spotting patterns.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "So the question was never chores versus thinking as fixed categories. It is which cognitive activities are load-bearing for everything else. Calculation turned out not to be. Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing, and those are precisely the things the ad proposes to outsource. And proving is the gym where the finding is trained. The slog of writing a rigorous proof is what builds the muscle for spotting patterns, and the chore and the training are the same act. Even when proofs go wrong and don't work, there are a slew of ideas that comes to the mathematician's mind and learning occurs."
+    }
+   ]
+  },
+  {
+   "id": "2.6.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The chore and the training are the same act; even failed proofs bring a slew of ideas and learning.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "So the question was never chores versus thinking as fixed categories. It is which cognitive activities are load-bearing for everything else. Calculation turned out not to be. Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing, and those are precisely the things the ad proposes to outsource. And proving is the gym where the finding is trained. The slog of writing a rigorous proof is what builds the muscle for spotting patterns, and the chore and the training are the same act. Even when proofs go wrong and don't work, there are a slew of ideas that comes to the mathematician's mind and learning occurs."
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Tao reaches the same place through exposition: AI-polished proofs are close to flawless in spelling, grammar, and formatting, almost too flawless.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "Tao reaches the same place from the other end, through exposition. AI-polished proofs, he says, are close to flawless in spelling, grammar, and formatting, almost too flawless in a way. They dwell on trivialities and rush past the novel parts of an argument. They fail to connect to prior literature."
+    }
+   ]
+  },
+  {
+   "id": "2.7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "They dwell on trivialities, rush past the novel parts, and fail to connect to prior literature.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "Tao reaches the same place from the other end, through exposition. AI-polished proofs, he says, are close to flawless in spelling, grammar, and formatting, almost too flawless in a way. They dwell on trivialities and rush past the novel parts of an argument. They fail to connect to prior literature."
+    }
+   ]
+  },
+  {
+   "id": "2.7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "They remove friction: in human proofs the difficult parts keep a natural friction that makes the reader slow down.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "And they remove friction. In a human-written proof, the parts the author found difficult keep a natural friction that makes the reader slow down and pay attention. An over-polished proof removes both natural and artificial friction, and the reader sails through without learning the key ideas. Paradoxically, mistakes in human exposition can be helpful. They mark where the work is. He quotes [Thurston](https://arxiv.org/abs/math/9404236): \"We are not trying to meet some abstract production quota of definitions, theorems and proofs. The measure of our success is whether what we do enables people to understand and think more clearly and effectively about math.\""
+    }
+   ]
+  },
+  {
+   "id": "2.7.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "An over-polished proof removes natural and artificial friction; the reader sails through without learning the key ideas.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "And they remove friction. In a human-written proof, the parts the author found difficult keep a natural friction that makes the reader slow down and pay attention. An over-polished proof removes both natural and artificial friction, and the reader sails through without learning the key ideas. Paradoxically, mistakes in human exposition can be helpful. They mark where the work is. He quotes [Thurston](https://arxiv.org/abs/math/9404236): \"We are not trying to meet some abstract production quota of definitions, theorems and proofs. The measure of our success is whether what we do enables people to understand and think more clearly and effectively about math.\""
+    }
+   ]
+  },
+  {
+   "id": "2.7.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Paradoxically, mistakes in human exposition can be helpful: they mark where the work is.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "And they remove friction. In a human-written proof, the parts the author found difficult keep a natural friction that makes the reader slow down and pay attention. An over-polished proof removes both natural and artificial friction, and the reader sails through without learning the key ideas. Paradoxically, mistakes in human exposition can be helpful. They mark where the work is. He quotes [Thurston](https://arxiv.org/abs/math/9404236): \"We are not trying to meet some abstract production quota of definitions, theorems and proofs. The measure of our success is whether what we do enables people to understand and think more clearly and effectively about math.\""
+    }
+   ]
+  },
+  {
+   "id": "2.7.5",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Thurston: success is whether what we do enables people to understand and think more clearly and effectively about math, not production quotas.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "And they remove friction. In a human-written proof, the parts the author found difficult keep a natural friction that makes the reader slow down and pay attention. An over-polished proof removes both natural and artificial friction, and the reader sails through without learning the key ideas. Paradoxically, mistakes in human exposition can be helpful. They mark where the work is. He quotes [Thurston](https://arxiv.org/abs/math/9404236): \"We are not trying to meet some abstract production quota of definitions, theorems and proofs. The measure of our success is whether what we do enables people to understand and think more clearly and effectively about math.\""
+    }
+   ]
+  },
+  {
+   "id": "2.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The struggle, the friction, the process point at the same thing, the thing the pipeline optimizes away.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "The struggle, the friction, the process. All three point at the same thing, and it is the thing the pipeline optimizes away. The whole set of slides is a delight to go through, and it is completely non-technical ([files/20260806/Tao_slides.pdf](files/20260806/Tao_slides.pdf))."
+    }
+   ]
+  },
+  {
+   "id": "2.8.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The slides are a delight to go through and completely non-technical.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "The struggle, the friction, the process. All three point at the same thing, and it is the thing the pipeline optimizes away. The whole set of slides is a delight to go through, and it is completely non-technical ([files/20260806/Tao_slides.pdf](files/20260806/Tao_slides.pdf))."
+    }
+   ]
+  }
+ ]
+}

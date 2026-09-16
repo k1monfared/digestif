@@ -1,0 +1,31 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode/deepseek-v4.1-flash 2026-09-15",
+  "source_id": "point-hierarchy",
+  "inputs": {
+    "faithfulness_precision": 0.9796,
+    "critical_errors": 0,
+    "must_recall": 0.9583,
+    "overall_recall": 0.9333,
+    "redundancy_rate": 0.102,
+    "trivia_rate": 0.0
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted score = 0.4*0.9796 + 0.4*0.9583 - 0.2*0.102 = 0.39184 + 0.38332 - 0.0204 = 0.75476",
+  "weighted_score": 0.75476,
+  "verdict": "Borderline",
+  "tradeoff_note": "All numeric gates pass cleanly (precision 0.9796 >= 0.95, must recall 0.9583 >= 0.9, redundancy 0.102 <= 0.15) with zero critical errors, but Must-have point K02 is only Partial (lost the existence proof and stability definition) and C010 is a Minor partial hedge, so human review is advised.",
+  "fix_list": [
+    "K02 (Must have, L003): restore the guarantee that a stable matching always exists and the stability definition (no blocking pair preferring each other); this is the only Must-have recall loss and the top lever.",
+    "C010 (Minor, 3.1): hedge the absolute claim 'systematically favor whoever proposes' back to SOURCE's 'tend to favor' to clear the last partial support.",
+    "K15 (Nice to have, L041/L043/L045/L048/L049): reinsert the dropped numeric thresholds, the $100 bar for the 24-hour shopping rule and the 4-of-5 career match rule, to convert a Partial to Present.",
+    "Merge duplicate claims C015/C013, C023/C005, C038/C019, C039/C004, C049/C030 to push redundancy further below the 0.15 cap."
+  ],
+  "reasoning": "Hard gates first. critical_errors = 0, which equals critical_contradicted_max = 0, so no Critical fail. faithfulness_precision = 0.9796 >= faithfulness_precision_min = 0.95, pass. must_recall = 0.9583 >= must_recall_min = 0.9, pass. redundancy_rate = 0.102 <= redundancy_max = 0.15, pass. No hard gate is missed and no Critical error exists, so the sample cannot be a Fail. Tradeoff among passes: weighted score = 0.4*(0.9796) + 0.4*(0.9583) - 0.2*(0.102) = 0.39184 + 0.38332 - 0.0204 = 0.75476. Concision plays no rescue role here because there is no faithfulness or coverage fail; it only contributes a 0.0204 penalty, and its low redundancy (0.102) is well under cap so no coverage-driven length needs trimming. Borderline trigger applies: gates pass on numbers, but Must-have K02 is Partial. Judge Cov marks K02 Partial because the 1962 date, Gale-Shapley names, and stable-matching subject survive while two substantive claims are dropped, the existence proof ('a stable matching always exists') and the stability definition ('no unmatched pair preferring each other'), evidence quote L003 'Gale-Shapley 1962 stable-matching work revealed proposer-receiver asymmetry.' A Partial on a Must have point is exactly the Borderline condition, so I name K02. The faithfulness side has one non-critical partial: C010 (loglog 3.1), where SOURCE hedges 'the outcomes tend to favor whoever's doing the proposing' but the loglog states the systematic absolute; severity Minor, so it does not force a Fail but reinforces Borderline. Coverage loss is concentrated in two points (K02 Must have Partial; K15 Nice-to-have Partial missing the $100 and 4-of-5 thresholds), with 11/12 Must-haves fully Present and 0 Must-haves Missing, so the loss is a completeness gap, not a hole. Faithfulness precision 48/49 supported with 0 contradicted and 0 unverifiable is strong. Verdict: Borderline, human review on K02 and C010 before shipping.",
+  "verdict_reasoning_summary": "Gates pass numerically (no critical, precision 0.9796>=0.95, must_recall 0.9583>=0.9, redundancy 0.102<=0.15); weighted_score 0.75476; Borderline due to Partial Must-have K02 and Minor partial C010."
+}

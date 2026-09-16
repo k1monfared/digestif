@@ -1,0 +1,274 @@
+- What is mathematics in the age of AI (source: source.txt)
+    Summary: AI has automated proof production and verification, revealing mathematics was never about correct statements but about deciding which patterns matter, a social judgment at risk. (¶44, ¶205, ¶212, ¶214, ¶219)
+        - 1 Proof production has been automated, so the old definition of mathematics as producing correct statements has stopped working. (¶14, ¶16, ¶17, ¶21, ¶24)
+            - 1.1 The old answer: mathematics is finding patterns where claims can be proven, with ground truth other fields lack. (¶6, ¶7, ¶8, ¶9)
+                - 1.1.1 Mathematics is the discipline of finding patterns where claims can be proven. (¶7)
+                - 1.1.2 An idea can be right or wrong, and a community of experts can settle which, for good, well, most of the time. (¶8)
+                - 1.1.3 That made math different: everything else had opinions, but math had ground truth. (¶9)
+                - 1.1.4 Under the old definition, mathematics was the production of correct statements, though mathematicians are really building intuition and finding patterns. (¶20)
+            - 1.2 A professor's post: research now feels like grading a clever student's proofs, a feeling many shared. (¶1, ¶3)
+                - 1.2.1 Last night Ehssan sent the author a post from a math professor that has been making the rounds. (¶1)
+                - 1.2.2 The professor loves research and hates grading. (¶2)
+                - 1.2.3 His research has begun to feel like grading the proofs of a clever student desperate to get an A who doesn't mind lying. (¶3)
+                - 1.2.4 Many shared that feeling, in mathematics, open source software, creative writing, and other areas. (¶4)
+                - 1.2.5 Example: Image: the professor's post that started all this. (¶5)
+            - 1.3 Summer 2026: Tao's ICM lecture and Moradifam's essay re-ask what mathematics is when proof production stops being scarce. (¶10, ¶11, ¶12, ¶13)
+            - 1.4 The facts that broke the old answer into two. (¶15, ¶234)
+                - 1.4.1 Evidence: First Proof's late May 2026 test: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars each. (¶16)
+                    - 1.4.1.1 Evidence: First Proof is an independent group of mathematicians testing how good AI systems are at research mathematics. (¶235)
+                    - 1.4.1.2 Evidence: Their method: collect unpublished problems, pick ten per batch, one attempt each, human referees grade blind. (¶236)
+                    - 1.4.1.3 Evidence: The second batch, late May 2026, ran four leading systems; seven of ten solved at publication quality, ten to a thousand dollars of compute each. (¶237)
+                    - 1.4.1.4 Evidence: Choosing which ten problems deserve the batch's compute is the step they could not automate. (¶238)
+                - 1.4.2 Evidence: AI produced a machine-checked Lean proof of Erdős Problem #728, and an OpenAI model disproved the planar unit distance conjecture posed in 1946. (¶17)
+                    - 1.4.2.1 Evidence: OpenAI's GPT-5.2 Pro combined with Harmonic's Aristotle produced a formal Lean proof of Erdős Problem #728; Lean checks proofs mechanically. (¶239)
+                    - 1.4.2.2 Evidence: Nat Sothanaphan translated it into a conventional argument; the proof is machine-checked and the problem marked proved. (¶240)
+                    - 1.4.2.3 Evidence: In May 2026, an OpenAI reasoning model disproved the planar unit distance conjecture posed by Erdős in 1946. (¶241)
+                    - 1.4.2.4 Evidence: The conjecture said the maximum number of unit distances among n points in the plane grows like n^(1+o(1)). (¶242)
+                    - 1.4.2.5 Evidence: The model constructed infinite families of point sets with at least n^(1+epsilon) unit distances, using algebraic number theory. (¶243)
+                    - 1.4.2.6 Evidence: A paper with Alon, Bloom, Gowers and others then digested the result for the community. (¶244)
+                - 1.4.3 Evidence: In all cases human mathematicians verified the proofs and wrote human-readable versions of them. (¶18)
+            - 1.5 The split: the model produced the result, and the humans checked, digested, and presented it. (¶19)
+            - 1.6 Proof production is automated or will be under Tao's assumption: seven of ten problems for a few hundred to a few thousand dollars of compute. (¶21)
+            - 1.7 What was not automated: choosing which patterns to chase is still human; conjecture generators propose patterns but don't decide which matter. (¶22, ¶23)
+            - 1.8 So either mathematics is over, or the old definition was wrong. (¶24)
+                - 1.8.1 It's so over baby. (¶25)
+                - 1.8.2 It isn't over; if anything it has just started, and maybe proving was the chore while finding was always the real thing. (¶26, ¶27)
+                - 1.8.3 Nuance: The author is implicitly assuming mathematics is what we humans do, like a religion that assumes the god is right. (¶28)
+        - 2 Verification, the second half of the proof process, is being automated too, so the question is what error level we tolerate. (¶30, ¶29, ¶31, ¶32)
+            - 2.1 The proof process has a second half: verifying, often implicitly part of proof, and that is being automated too. (¶29)
+            - 2.2 Tao's Working Hypothesis covers performing mathematical tasks, and verifying is one, so it covers verification too. (¶31) [reported]
+            - 2.3 The question is what level of error we tolerate in AI verification. (¶32)
+            - 2.4 The calibration: Voevodsky, Fields Medal in 2002, had to retract work years later. (¶33)
+                - 2.4.1 Evidence: In the late nineties, Deligne went through Voevodsky's foundational paper line by line and found a key lemma wrong and unsalvageable as stated. (¶34)
+                - 2.4.2 Evidence: The earlier Kapranov paper on infinity-groupoids had a main theorem eventually shown false, which Voevodsky did not accept until years later. (¶35)
+                - 2.4.3 Evidence: Multiple groups had studied, used, and taught those papers, and nobody noticed for years. (¶36)
+            - 2.5 Voevodsky was scared, asked who would ensure he made no mistake, and spent his career pushing computer proof verification. (¶37, ¶38)
+            - 2.6 Human verification is not reliable: a Fields medalist's foundational paper carried a wrong lemma for years, and a main theorem stood unchallenged for decades. (¶39)
+            - 2.7 When AI verification arrives with a comparable error rate, it will look like business as usual, not unacceptable. (¶40)
+            - 2.8 Premise: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. (¶41)
+                - 2.8.1 Nuance: The AI-side rate is assumed, not measured, and volume compounds: years to surface a mistake by hand, a million checks a day by machine. (¶42)
+        - 3 Mathematics was never the production of theorems; it was thinking, and the struggle, friction, and process were the product. (¶43, ¶44, ¶67)
+            - 3.1 Moradifam: we teach math for the struggle, not the facts. (¶45, ¶46) [reported]
+                - 3.1.1 A student sits with a problem, hits a wall, tries again, and slowly discovers what matters and what does not. (¶45) [reported]
+                - 3.1.2 That process builds habits: tracking assumptions, moving between examples and principles, and confidence to keep thinking. (¶46) [reported]
+            - 3.2 Moradifam's cognitive science: offloading and the illusion of explanatory depth. (¶47) [reported]
+                - 3.2.1 Cognitive offloading is the tendency to delegate mental effort to an external tool. (¶47) [reported]
+                - 3.2.2 The illusion of explanatory depth is the way fluency gets confused with ownership. (¶47) [reported]
+                - 3.2.3 A student who can summon a fluent solution in seconds risks equating exposure to an idea with understanding it. (¶48) [reported]
+                - 3.2.4 A calculator does not undermine arithmetic for a student who understands place value; it harms when it arrives before understanding. (¶49) [reported]
+                - 3.2.5 AI is that, with a twist: plausible, confident explanations that student and instructor mistake for learning. (¶50) [reported]
+            - 3.3 The airport ad and the distinction between automating chores and thinking. (¶51, ¶52)
+                - 3.3.1 An early AI company's ad: let the AI do the thinking for you. (¶51)
+                - 3.3.2 The ad treats thinking as toil to eliminate and glosses over the distinction between automating chores and automating thinking. (¶52)
+            - 3.4 Fixing a car is instrumental; thinking is constitutive. (¶53, ¶54)
+                - 3.4.1 You want the fixed car, not the experience of fixing it. (¶53)
+                - 3.4.2 Working through a problem builds judgment, and there is no shortcut to judgment without the process. (¶54)
+                - 3.4.3 Offload the chore and you keep the car; offload the thinking and you keep an answer with an unchanged mind. (¶55)
+            - 3.5 The boundary is blurry: some past losses were fine, some cost something real. (¶56)
+                - 3.5.1 We said the same things about mental arithmetic, memorizing poetry, and navigation. (¶56)
+                - 3.5.2 Evidence: GPS use predicts steeper decline in hippocampal spatial memory (Dahmani & Bohbot, 2020) and worse mental rotation (Ruginski et al., 2019). (¶57)
+            - 3.6 The question is which cognitive activities are load-bearing for everything else. (¶58)
+                - 3.6.1 Calculation turned out not load-bearing; problem framing, noticing what's missing, and deciding what's worth attention look load-bearing. (¶59)
+            - 3.7 Proving is the gym where the finding is trained. (¶60)
+                - 3.7.1 The slog of writing a rigorous proof builds the muscle for spotting patterns; the chore and the training are the same act. (¶60)
+                - 3.7.2 Even when proofs go wrong, a slew of ideas comes to the mathematician's mind and learning occurs. (¶61)
+            - 3.8 Tao reaches the same place through exposition. (¶62) [reported]
+                - 3.8.1 AI-polished proofs are close to flawless in spelling, grammar, and formatting, almost too flawless. (¶62) [reported]
+                - 3.8.2 They dwell on trivialities, rush past novel parts, fail to connect to prior literature, and remove friction. (¶63) [reported]
+                - 3.8.3 In human proofs, difficult parts keep a natural friction that makes readers slow down; over-polishing removes it. (¶64) [reported]
+                - 3.8.4 Mistakes in human exposition can be helpful; they mark where the work is. (¶65) [reported]
+                - 3.8.5 Tao quotes Thurston: the measure of success is enabling people to understand and think more clearly about math. (¶66) [reported]
+                - 3.8.6 The slides are a delight to go through and completely non-technical. (¶68) [reported]
+        - 4 Tao's pipeline: assuming the Working Hypothesis, proof abundance shifts the bottleneck to digestion and canonicalization. (¶70, ¶69, ¶72, ¶84, ¶86)
+            - 4.1 Tao's talk is conditional: assume, don't believe, the Working Hypothesis. (¶71) [reported]
+                - 4.1.1 Working Hypothesis: AI tools will, reasonably soon, perform a reasonable fraction of research-level mathematics with reasonable success, quality, supervision, and cost. (¶72) [reported]
+                - 4.1.2 Tao asks the orthogonal question of the community's explicit and implicit goals and values, a question math delegated to the humanities. (¶73) [reported]
+            - 4.2 Goodhart's law: when a measure becomes a target, it ceases to be a good measure. (¶74) [reported]
+                - 4.2.1 Historically the community's goals were positively correlated: solving problems, building theory, training, and aesthetic works moved together. (¶75) [reported]
+                - 4.2.2 AI optimization threatens to break the correlation; generative AI is ungrounded and AI companies have financial incentives, so goals can diverge. (¶76) [reported]
+            - 4.3 The case study: refining the goal 'solve as many unsolved problems as possible.' (¶77) [reported]
+                - 4.3.1 Refine once with verification, or you get a pile of incorrect solutions. (¶78) [reported]
+                - 4.3.2 Refine with exposition, because correct but unreadable solutions aren't progress either. (¶79) [reported]
+                - 4.3.3 On erdosproblems.com there are dozens of AI-generated proofs, many likely correct, with no human expert volunteering to verify. (¶80) [reported]
+                - 4.3.4 Refine with community acceptance, because an undigested proof contributes nothing; acceptance is slow, human, and external. (¶81) [reported]
+                - 4.3.5 Acceptance is produced by volunteer editors and referees, work less prestigious than generating proofs. (¶81) [reported]
+                - 4.3.6 Refine with canonicalization: textbooks and reference material taught to the next generation, the slowest and most valuable stage. (¶82) [reported]
+            - 4.4 Punchline: we are moving from proof scarcity to proof abundance. (¶84) [reported]
+                - 4.4.1 Under the Working Hypothesis, mismatches appear at every stage. (¶84) [reported]
+                - 4.4.2 AI proofs accumulate unverified; verified proofs await writeups; correct proofs overwhelm peer review; published proofs are too numerous to digest. (¶85) [reported]
+                - 4.4.3 The bottleneck shifts to proof digestion, the work currently treated as low prestige. (¶86) [reported]
+                - 4.4.4 Halmos: a top mathematician who wanted to be known for exposition, not cutting-edge research. (¶87) [reported]
+            - 4.5 Tao's recommendations: normalize disclosure, emphasize exposition and canonicalization over being first. (¶88) [reported]
+                - 4.5.1 He points to the Leiden Declaration, a community statement endorsed by the International Mathematical Union. (¶89) [reported]
+                - 4.5.2 Rule of thumb: if authors cannot convincingly give a clear, expert-level, correctly attributed talk, the result should not be published. (¶90) [reported]
+            - 4.6 The professor in the LinkedIn post is the human version of this prestige inversion. (¶91)
+                - 4.6.1 He loved producing and hated grading; his reward is demotion to checking other people's work. (¶91)
+                - 4.6.2 Experimental science ran the same inversion: prestige moved from measuring to designing experiments. (¶92)
+                - 4.6.3 That prestige inversion is already happening. (¶93)
+            - 4.7 Example: Diagram: open problems flow through generation, verification, publication, exposition, digestion, and canonicalization into definitive solutions. (¶83)
+        - 5 What remains human: AI proposes and humans check, digest, and present, so understanding shifts from constructive to hermeneutic. (¶94, ¶95, ¶96, ¶100)
+            - 5.1 Davies results used machine learning as an intuition pump, and AlphaTensor found algorithms humans had not. (¶95) [reported]
+            - 5.2 The pattern is always the same: AI proposes, humans check, digest, and present, and AI takes on most of discovery. (¶96) [reported]
+            - 5.3 Precedents for accepted-but-opaque results: the four-color theorem and the classification of finite simple groups. (¶97) [reported]
+            - 5.4 We use them because they survived extensive communal verification, though no single person holds the whole proof. (¶98) [reported]
+            - 5.5 As AI produces longer, more complex proofs, we may accept truths whose full deductive structure lies beyond any individual. (¶99) [reported]
+            - 5.6 Understanding shifts from constructive to hermeneutic. (¶100) [reported]
+                - 5.6.1 Historically understanding was constructive: you deepen it by reconstructing the proof. (¶100) [reported]
+                - 5.6.2 The mathematician becomes less a builder, more an interpreter, extracting meaning from a proof by something that cannot explain itself. (¶100) [reported]
+            - 5.7 Moradifam's thesis: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. (¶101) [reported]
+                - 5.7.1 The author thinks that is right as far as it goes. (¶101)
+        - 6 Both authors stop at the same edge: importance is a social judgment, never purely mathematical, decided by applicability and the taste of big names. (¶102, ¶103, ¶106, ¶119)
+            - 6.1 Both documents stop at the same edge, the edge the author wants to step past. (¶103)
+            - 6.2 Moradifam and Tao locate importance in a stable, human ground. (¶104, ¶105, ¶106) [reported]
+                - 6.2.1 Moradifam: AI does not itself determine what the community should regard as interesting, deep, or worth understanding. (¶104) [reported]
+                - 6.2.2 Tao: community acceptance is an external process that authors and their AI tools cannot optimize. (¶105) [reported]
+                - 6.2.3 Both locate importance in stable human ground, and neither looks underneath it. (¶106)
+            - 6.3 This blog post is a different genre: it builds on their ground and speculates, rather than correcting them. (¶107)
+            - 6.4 The process of thinking is the product, so what matters most is what a piece of math was worth thinking about. (¶108)
+            - 6.5 Importance was never a stable, purely human judgment. (¶109)
+            - 6.6 Before AI, the field chose what to work on via two levers. (¶110)
+                - 6.6.1 Applicability: did a problem solve something real elsewhere, measured fairly directly and driven by where funding lived. (¶111, ¶112)
+                - 6.6.2 The taste of the big names: what the field's influencers thought important. (¶113)
+                    - 6.6.2.1 That taste was a compound: fame, genuine interest, and network favoritism. (¶114)
+                    - 6.6.2.2 Evidence: Nash, allegedly but not verified, was infamous for working only on problems that could get him famous. (¶115)
+                    - 6.6.2.3 Partly genuine interest. (¶116)
+                    - 6.6.2.4 Partly network favoritism: knowing someone makes their problem interesting to you, so you both rise socially. (¶117)
+                    - 6.6.2.5 That kind of thinking was always there, quietly. (¶118)
+            - 6.7 Neither lever is pure mathematical judgment; both are social, and the AI era removes the cover story. (¶119, ¶120)
+            - 6.8 The author owns the irony of leaning on Tao and Moradifam, leaning on checkable reasoning, not big names. (¶121, ¶122)
+        - 7 When attention becomes the scarce resource, mathematics develops an influencer economy that optimizes for engagement rather than judgment. (¶123, ¶126, ¶146, ¶151, ¶161)
+            - 7.1 Production got cheap, so distribution and attention became the constraint, as the internet showed with writing. (¶124, ¶126, ¶127)
+                - 7.1.1 Whatever you create, you must do more work to sell it than you did to make it. (¶124)
+                - 7.1.2 Globalization: competition went from across town to everyone; production got cheap, so distribution became the constraint. (¶125)
+                - 7.1.3 Under the Working Hypothesis, generating and verifying math become cheap; what stays scarce is attention, and scarce attention develops influencer structure. (¶126)
+                - 7.1.4 The internet did this to writing, and social media did it to the internet. (¶127)
+                - 7.1.5 Blogs grew in volume, people read fewer books, and important topics lost to popular ones. (¶128)
+                - 7.1.6 Social media moved the conversation toward video and voice, short-form clips and podcasts. (¶129)
+                - 7.1.7 People listen to random dudes more than read experts; food supplements beat world affairs because dudes get paid. (¶130, ¶131)
+                - 7.1.8 It's easier to digest, relatable, urgent, and supports rather than challenges your current understanding. (¶132)
+            - 7.2 The same shift will hit mathematics, and the gatekeeping will get worse. (¶133)
+                - 7.2.1 Timing might take years, probably decades, not months. (¶133)
+                - 7.2.2 Current influencers are still highly qualified, having earned standing where the canon was set slowly by journals and seminars. (¶134)
+                - 7.2.3 The old gatekeeping wasn't good, but what is about to happen is definitely worse. (¶135)
+                - 7.2.4 Nuance: Levitsky, in 'How democracies die,' talks nostalgically about old political gatekeeping; the author disagrees, but gatekeeping has a function and should be more merit-based. (¶135)
+                - 7.2.5 The problem is not them; it is the mechanism that selects the next generation. (¶136)
+                - 7.2.6 When compute becomes the budget, a problem is worth its compute cost, allocated by impact on other fields first and influencers second. (¶137)
+                - 7.2.7 A long tail of application problems will be solved internally by fields with their own compute budgets. (¶138)
+            - 7.3 A naive faith treats figures like Tao as disinterested. (¶139, ¶140)
+                - 7.3.1 We treat Tao as if canonization flowed from pure judgment, not careers, incentives, aesthetic biases, and finite attention. (¶140)
+                - 7.3.2 The assumption isn't corruption but that attention allocation is a public good when it is a private act with public consequences. (¶141)
+                - 7.3.3 A Tao blog post can redirect years of effort; nobody audits whether the redirection was optimal, and prestige becomes the justification. (¶142)
+                - 7.3.4 So far private acts likely align with public interest, but an influencer economy gives no guarantee they will. (¶143)
+            - 7.4 The old faith worked for structural reasons that are now eroding. (¶144)
+                - 7.4.1 Old gatekeepers earned trust structurally: decades of checkable work, open judgment, and wrong calls costing standing. (¶145)
+                - 7.4.2 The influencer economy replaces that with standing earned by engagement, answerable to nothing but more engagement. (¶146)
+                - 7.4.3 Old gatekeepers operated in a low-velocity, low-visibility economy where attention did not convert to much. (¶147)
+                - 7.4.4 They were influencers too, just slow ones: editors, program officers, referees. (¶148)
+            - 7.5 The measurement trap and the canon lottery, bounded by checkability and structural value. (¶149, ¶156)
+                - 7.5.1 When visibility converts into grants, positions, media, and AI training data, 'being seen judging well' competes with 'judging well.' (¶150)
+                - 7.5.2 Once influence is measurable and monetizable, it gets optimized, and the target diverges from what it proxied. (¶151)
+                - 7.5.3 Evidence: His classical-music canon simulation: reshuffle who has access to the exposure pipeline and you get almost entirely different canons. (¶152)
+                - 7.5.4 Quality sets a floor and a ceiling; the vast middle is a lottery, decided by the social layer where almost every career lives. (¶153, ¶159)
+                - 7.5.5 An attention-mediated canon is worse than a path-dependent one, selecting for legibility and brand alignment over usefulness. (¶154)
+                - 7.5.6 It applies harder to theorems: a result nobody reads is inert, so whoever controls the gate controls what exists. (¶155)
+                - 7.5.7 The floor is checkability: a result that fails to check does not survive, and machine-checked proofs are the world pushing back. (¶157)
+                - 7.5.8 The ceiling is structural value: a result nothing can build on cannot be talked into importance. (¶158)
+            - 7.6 A Goodhart recursion Tao doesn't reach, and why it isn't all doom. (¶160, ¶166)
+                - 7.6.1 Once attention becomes the metric, AI tools optimize for attention, framing results for virality, and winners feed back into which problems are posed next. (¶161, ¶162)
+                - 7.6.2 If models become the primary readers and rankers, today's canon biases get frozen in and amplified; influencers become the training distribution. (¶163)
+                - 7.6.3 The collective culture Moradifam treats as a stable arbiter is precisely what is up for grabs. (¶164)
+                - 7.6.4 Counterpoint: One might argue this is exactly the best thing for the community and science. (¶165) [counter]
+                - 7.6.5 Rebuttal: Judging from how social media turned out, the author highly doubts it. (¶165)
+                - 7.6.6 Not doom: Polymath, blogging proofs in progress, and arXiv culture expanded who can participate in judgment. (¶166)
+                - 7.6.7 The failure mode is shifting amplification from 'trusted by peers over decades' to 'performs on engagement metrics.' (¶167)
+                - 7.6.8 Math is protected by a small expert audience who can check proofs; the danger with AI is that it changes the audience. (¶168, ¶169)
+        - 8 As the middle empties, mathematics keeps producing results while losing the people who make them legible, and agreement loses its reasoning. (¶170, ¶181, ¶179, ¶180, ¶192, ¶197)
+            - 8.1 What happens to people who love doing math: the woodworking story. (¶171)
+                - 8.1.1 Woodworking went through this in the last century, and the shape is instructive. (¶171)
+                - 8.1.2 CNC machines and high-throughput manufacturing changed furniture; most furniture is now Ikea, mass produced, cheap, replaceable. (¶172)
+                - 8.1.3 A smaller chunk is built at scale with variety and local taste, and custom pieces still cost thousands of dollars. (¶173)
+                - 8.1.4 Woodworking did not disappear, and some things cost less made by humans; but in volume we have the simplest functional things. (¶174)
+                - 8.1.5 Little room for creativity: not every neighborhood has a carpenter, and the creative carpenter can't make a living. (¶175, ¶176)
+                - 8.1.6 At best they fix Ikea furniture, but Ikea is so cheap nobody fixes it; they buy a new one. (¶177)
+            - 8.2 AI-built software shows the same shape: starts go up, finishes go down, and the middle is the desert. (¶178)
+            - 8.3 This is the middle Tao was trying to protect: digestion, the creative carpenter's shop. (¶179, ¶180)
+                - 8.3.1 Tao's bottleneck shifts to digestion: exposition, verification, canonicalization, the low-prestige work first to empty out. (¶179)
+                - 8.3.2 If the middle empties, mathematics keeps producing results while losing the people who make them legible, checkable, and taught. (¶180)
+            - 8.4 The desert in the middle is also about who you can trust to tell you what a result means. (¶182, ¶183)
+            - 8.5 Agreement is interrogated as skeptically as disagreement. (¶184)
+                - 8.5.1 When someone agrees, the author asks why; different reasoning can give perspective or make him disregard the agreement. (¶184, ¶185)
+                - 8.5.2 The decision was never the end goal; the process of reaching it was. (¶186)
+            - 8.6 Conclusion-matching is the default, but reasoning matters more than the conclusion. (¶187)
+                - 8.6.1 The default social epistemology is conclusion-matching: you say X, I believe X, we are allies. (¶188)
+                - 8.6.2 Two people at the same conclusion via different reasoning are not in the same epistemic state; the information lives in the delta. (¶189)
+                - 8.6.3 If their path is sound and different, you have two independent lines of support, genuine corroboration. (¶190)
+                - 8.6.4 If their path is broken, their agreement is evidence against your confidence: the conclusion is reachable by bad reasoning. (¶191)
+                - 8.6.5 Agreement without shared reasoning is coincidence wearing the costume of confirmation. (¶192)
+            - 8.7 Deference to a Tao-tier figure is conclusion-adoption with the reasoning amputated. (¶193)
+                - 8.7.1 You inherit the belief without the justification, so you cannot detect when it wouldn't survive your scrutiny. (¶193)
+                - 8.7.2 Scaled up, beliefs are correlated because everyone copied from the same node; it looks like consensus, but the effective sample size is one. (¶194)
+                - 8.7.3 Atiyah's Riemann Hypothesis claim: all the authority, but harsh scrutiny showed it didn't stand up; one might say he wasn't even wrong. (¶195)
+                - 8.7.4 Now imagine a million of these every day, on less important topics, forming mathematics done by AI with human help. (¶196)
+            - 8.8 The attention economy manufactures hollow agreement, and AI answers are its limit case. (¶197, ¶198)
+                - 8.8.1 It propagates conclusions at high velocity while reasoning, expensive to transmit and verify, gets stripped in transit. (¶197)
+                - 8.8.2 An AI answer is the limit case of conclusion without process. (¶198)
+                - 8.8.3 Asking a person why can reveal different reasoning, the perspective-gaining moment; fluent AI feels like that without being it. (¶199, ¶200)
+                - 8.8.4 The danger is not only students confusing exposure with ownership, but everyone losing the practice of treating 'why' as the real question. (¶201, ¶202)
+                - 8.8.5 This also reminds the author of the tree-falling-in-a-forest thought experiment. (¶203)
+        - 9 Correctness was only the floor; the constraint was always importance, and as proving is automated the weight shifts to deciding which patterns matter. (¶204, ¶205, ¶206, ¶214)
+            - 9.1 Correctness was never the binding constraint; importance was, and some mathematicians publish anything provable. (¶205, ¶206, ¶209)
+                - 9.1.1 Correctness was never the binding constraint on what mathematicians do; it was the floor. (¶205)
+                - 9.1.2 The constraint was importance: deciding what is worth attention, what is deep, what should be taught next. (¶206)
+                - 9.1.3 Importance is partly social: checkability and structural value set floor and ceiling; the social layer decides the middle. (¶207)
+                - 9.1.4 Confession: as a practicing mathematician, the author always thought math was pure correctness and beautiful patterns. (¶208)
+                - 9.1.5 Some mathematicians publish anything they can prove; much of science works that way. (¶209, ¶210)
+                - 9.1.6 A scientist publishes whatever detour they ended up on; the big problem quietly stays unsolved. (¶211)
+            - 9.2 The answer: mathematics was always both finding patterns and proving them. (¶212, ¶213)
+                - 9.2.1 The answer is not 'the production of correct statements of found patterns.' (¶212)
+                - 9.2.2 Proving is the chore, now cheap; finding is the deciding, which patterns are worth proving, still human. (¶213)
+            - 9.3 The mix is shifting toward deciding which patterns matter, as software engineering already showed. (¶214, ¶215)
+                - 9.3.1 The author is not claiming math was mostly finding; he speculates the mix shifts as proving and verification get automated. (¶214)
+                - 9.3.2 Engineers now spend more time deciding what to build than writing code; some became product managers or architects. (¶215)
+                - 9.3.3 It landed both ways: open source runs on love, framework wars on attention; software is already the two futures. (¶216)
+            - 9.4 Mathematics is heading the same way, but the deciding was never counted as work. (¶217)
+                - 9.4.1 The deciding has no established home in the profession; it was a personal measure like 'how much my work directs the field.' (¶217)
+                - 9.4.2 The AI era does not replace the practice; it reveals it, making finding, judgment, and taste visible. (¶218)
+            - 9.5 What is revealed must land somewhere, and it is not decided yet. (¶219, ¶220)
+                - 9.5.1 Either theoretical math becomes a fun activity for those who can afford it, or the deciding is made by whoever holds attention or compute. (¶219)
+                - 9.5.2 The field was steered from outside by physics and usefulness; that answered to results, while what replaces it answers to engagement. (¶220)
+                - 9.5.3 The author does not know which way it lands, and that is the point. (¶220)
+            - 9.6 There are precedents for landing well: statistics and the Halmos lesson. (¶221, ¶222)
+                - 9.6.1 Statistics made the same turn when arithmetic got cheap: identity shifted from computing to designing the questions. (¶221)
+                - 9.6.2 Prestige is assignable: the community made a man famous for exposition, so the middle can be revalued. (¶222)
+            - 9.7 The woodworking story: the craft doesn't die, but it stops being how people make a living. (¶223, ¶224)
+                - 9.7.1 The craft doesn't die; it stops being how people make a living, and the neighborhood carpenter disappears. (¶224)
+                - 9.7.2 The question is whether the craft still has a middle, whether the creative carpenter can be paid for being creative. (¶225)
+            - 9.8 The thing that outlasts all of it, the thing the airport ad got backwards: thinking is what we are for. (¶226, ¶227)
+                - 9.8.1 Thinking is what we are for; if we outsource it, there is little else we are good for. (¶227)
+                - 9.8.2 Mathematics is one of the main places we practice thinking in public, with stakes visible and errors checkable. (¶228)
+                - 9.8.3 The question was never whether machines can do math, but whether we keep framing problems, judging what matters, and understanding. (¶229)
+                - 9.8.4 The struggle is the product. (¶230)
+                - 9.8.5 The proof is the gym: lifting weights is not the sport, but the athlete who stops lifting cannot perform. (¶231)
+                - 9.8.6 Finding patterns is trained by proving, so automating proving risks stopping the training that produces pattern-finders. (¶232)
+                - 9.8.7 If athletes are robots with extreme powers, the human coach keeps taste but loses performance; judgment floats free of doing. (¶233)
+    - Cross-links
+        - 1.2 restates 4.6 (¶91) note: the opening post is the human version of the prestige inversion
+        - 1.4.1 restates 1.4.1.3 (¶237) note: the appendix states the First Proof result in full
+        - 1.4.2 restates 1.4.2.3 (¶241) note: the appendix states the unit distance result in full
+        - 1.5 restates 5.2 (¶96) note: the split (AI proposes, humans check and digest) recurs
+        - 1.7 supports 6.5 (¶109) note: choosing which patterns matter is the importance judgment
+        - 2.6 supports 2.7 (¶40) note: the Voevodsky calibration licenses tolerating AI error
+        - 3.7 restates 9.8.5 (¶231) note: the gym metaphor recurs in the conclusion
+        - 3.7.1 supports 9.8.6 (¶232) note: the slog of proving is the training that the gym metaphor generalizes
+        - 4.2 supports 7.6 (¶160) note: the attention recursion extends Goodhart's law
+        - 4.4.3 restates 8.3.1 (¶179) note: Tao's digestion bottleneck is the middle the craft section protects
+        - 4.4.4 restates 9.6.2 (¶222) note: the Halmos lesson recurs
+        - 5.7 restates 9.4.2 (¶218) note: Moradifam's thesis recurs as what becomes visible
+        - 6.5 supports 7.3 (¶139) note: importance being social underwrites the naive-faith critique
+        - 7.5.2 supports 4.2 (¶151) note: the measurement trap is Goodhart applied to influence
+        - 7.6.4 contradicts 7.6.5 (¶165) note: the rebuttal rejects the counterpoint
+        - 8.1 restates 9.7 (¶223) note: the woodworking story is retold in the conclusion
+        - 8.6 supports 8.7 (¶193) note: conclusion-matching is the mechanism that breaks in influencer dynamics
+        - 8.8.2 supports 3.4 (¶198) note: conclusion without process is the limit of offloading thinking
+        - 9.3 supports 1.8 (¶214) note: the shifting mix is the resolution of 'mathematics is over'
+    - Coverage: 244 of 244 passages cited

@@ -1,0 +1,282 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "02_case_for_transparent_government_part1",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Every government decision should be fully documented and publicly available by default, because citizens are principals, secret oversight fails, and objections are answerable.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "every government decision should be fully documented and publicly available",
+   "reasoning": "Summary synthesizes the essay's stated thesis, principal framing, secret-oversight failure, and objection engagement present in the source."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Every government decision should be fully documented and publicly available, not just the final policy.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "every government decision should be fully documented and publicly available. Not just the final policy, but the entire chain:",
+   "reasoning": "Direct restatement of the proposition, including the 'not just the final policy' qualifier."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Full chain: data used, considerations, participants, alternatives, arguments for and against, implementation, evaluation, course-correction, reconsideration.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "What data was used... Who was involved... What alternatives were considered... arguments for and against... implemented... evaluated... course-correction... reconsidered",
+   "reasoning": "All nine listed elements match the source's bulleted chain without omission or change."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "This is not radical; it is what any competent board of directors or CEO expects, basic accountability.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "This isn't radical. This is what any competent board of directors expects from the executives they hire. It's what any CEO expects from their management chain.",
+   "reasoning": "Direct restatement of the source sentence preserving the negation and both board/CEO references."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "It only sounds radical because the opposite has been normalized.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The only thing that makes it sound radical is that we've normalized the opposite.",
+   "reasoning": "Paraphrase preserving the 'only' qualifier and the normalized-opposite explanation."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "An owner refused an explanation of a million dollars of spending would sue, force disclosure, fire the manager.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "ask a senior manager how they decided to spend a million dollars... You'd take them to court. You'd force disclosure. You'd fire them.",
+   "reasoning": "Compression of the opening hypothetical preserves the million figure and the three consequences."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "claim_text": "Citizens asking how decisions were made are told classified, national security, ongoing operations, or slowdown.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "you're told it's classified. It's a matter of national security. It would compromise ongoing operations. It would slow things down.",
+   "reasoning": "All four justifications match the source list exactly."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "claim_text": "Citizens fund government with taxes, live with its consequences, and their children inherit what it builds or breaks.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "You fund it with your taxes. You live with the consequences of its decisions. Your children inherit whatever it builds or breaks.",
+   "reasoning": "Direct restatement of all three clauses in order."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "claim_text": "Draft under construction, to be updated frequently; feedback and criticism welcome.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "this is a thought very much under construction and will be updated frequently! Feedback and criticism are mor than welcome",
+   "reasoning": "Faithful to the note; only the source's typo 'mor' is silently corrected."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "1.8"
+   ],
+   "claim_text": "The author questions whether citizens should accept these secrecy justifications.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "You accept this. But should you?",
+   "reasoning": "The rhetorical question is accurately rendered as the author questioning acceptance."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "In a democracy citizens are the principals and every public servant, from clerk to president, is their agent.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "You are the principal in a principal-agent relationship. Every public servant, from the clerk at your local licensing office to the president, is an agent working on your behalf.",
+   "reasoning": "Preserves the principal-agent framing and the clerk-to-president range without alteration."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "In a company the CEO cannot read every email but could, and that possibility shapes behavior.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The CEO doesn't read every email. But they *could*. And that knowledge... shapes behavior.",
+   "reasoning": "Matches the source's contrast between actual reading and possible review, plus behavioral effect."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Accountability exists because the trail exists: when something goes wrong, the full chain can be traced.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "you can trace back through the full chain. Accountability exists because the trail exists.",
+   "reasoning": "Direct restatement preserving the causal 'because' and the tracing claim."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "A company where managers could classify emails or declare meetings corporate security would be bankrupt within a year.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "That company would be bankrupt within a year, eaten alive by internal corruption and incompetence",
+   "reasoning": "Retains the classify/declare conditions and the one-year bankruptcy consequence."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "The author says that is how your government operates.",
+   "claim_type": "attribution",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "That's how your government operates.",
+   "reasoning": "Direct attributed restatement of the source line."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "claim_text": "Availability differs from consumption: citizens need not read everything but must be able to trace what affects them.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The distinction between \"availability\" and \"consumption\" is crucial... you don't need to read every email... you *can* trace it back.",
+   "reasoning": "Preserves the availability/consumption distinction and the need-not-read but can-trace contrast."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Transparency means government decisions, data, and processes flow to citizens, not citizens' data flowing out.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the government's decisions, data, and processes flow *to* citizens. Not the other way around.",
+   "reasoning": "Directionality and the negation 'not the other way around' are preserved exactly."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "About: decisions visible to citizens, processes traceable by citizens, officials accountable to citizens.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Government decisions being visible to citizens. Government processes being traceable by citizens. Government officials being accountable to citizens.",
+   "reasoning": "Verbatim restatement of the three 'this is about' items."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Not about: tax returns visible to neighbors, medical records public, or citizens surveilling each other.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "This is NOT about: Your tax returns being visible to your neighbor. Your medical records being public. Citizens surveilling each other.",
+   "reasoning": "All three exclusions match, preserving the negation."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Direction matters: the CEO sees employee work product but does not publish employees' medical records.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The CEO sees employee work product. The CEO does not publish employees' medical records to angry customers.",
+   "reasoning": "Preserves both the seeing and the not-publishing clauses accurately."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Spending totals by category are public, an individual's $47,000 tax payment is not.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "It does *not* mean: \"John Smith paid $47,000 in taxes last year.\"",
+   "reasoning": "The $47,000 figure and the not-public framing are preserved correctly."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "claim_text": "Aggregate data, anonymization, and differential privacy make this technically straightforward.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "aggregate data, anonymization, differential privacy - make this technically straightforward.",
+   "reasoning": "Exact restatement of the three techniques and the straightforwardness claim."
+  }
+ ],
+ "metrics": {
+  "total_claims": 22,
+  "supported": 22,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

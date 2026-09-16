@@ -1,0 +1,13 @@
+# Trace: 12_lets_talk_privacy (judged 2026-09-12, muse-spark-1.3-contributor-free)
+
+## Judge F (faithfulness): full reasoning transcript
+Source is a long English privacy essay with comparison tables (~175 lines). I atomized output.log into 39 atomic claims (C01-C39), treating Summary, nine section headers, and sub-points as claims and the Cross-links plus Coverage footer as boilerplate. Strict checks: numbers and names (bcrypt, AES-256, six-step flow, 30-digit passphrase, 64-char key, hundreds of millions, 200-600M, 20,000-plus, 2012, Adobe 2013, Meta July 2021, Signal September 2024, YubiKey, Omid), negations (can't access, can't prove negative, can't decrypt, cannot verify server, cannot recover, password-wrapped not hash). All 39 verdict Supported, including C09 (near-certain access preserves the almost-be-certain hedge), C17 (in-theory scope), C28 (suggestive-not-proof limit), and C35 (all three breach figures exact). No Partial, Unverifiable, or Contradicted claims. Precision 39/39 = 1.0, critical_errors 0, fail_list empty.
+
+## Judge Cov (coverage): full reasoning transcript
+Blind from source I extracted 13 key points (11 Must-have K01-K11, 2 Nice-to-have K12-K13): E2EE purpose plus metadata, conditional access plus suspicion legs, smoking-gun test, WhatsApp escrow, Proton mechanism, Proton counterpoint, Signal options, password-plaintext question, reset evidence plus trust problem plus model comparison, checkable/uncheckable plus signs plus breach figures, escape conditions plus applied table plus recommendation, Omid framing (Nice), sources (Nice). Mapping: all 13 Present. must_recall 11/11 = 1.0, overall 13/13 = 1.0, missing_list empty.
+
+## Judge Con (concision): full reasoning transcript
+Labeled all 39 claims against the Judge F table. Duplicates: none. The outline's self-noted restatements each add new information (C35 adds exact figures over C26; C37 adds per-service mapping over C29; C30 labels compress the table rather than repeating it), so per the reader-learns-nothing-new definition they stay Unique. Trivia: none; every claim maps to a Must-have or Nice-to-have point, and numbers, caveats, negations, recommendations are never trivia. Metrics: scored 39, unique 39, duplicates 0, trivia 0, redundancy 0.0, trivia 0.0, 636 tokens, 16.3077 tokens per unique claim. Prune list empty.
+
+## Judge Top (overall): full reasoning transcript
+Inputs: precision 1.0, critical 0, must_recall 1.0, overall 1.0, redundancy 0.0, trivia 0.0. All config gates pass with no Borderline trigger. Weighted 0.4*1.0+0.4*1.0-0.2*0.0 = 0.8. Fix list holds only optional polish. Verdict: Pass.

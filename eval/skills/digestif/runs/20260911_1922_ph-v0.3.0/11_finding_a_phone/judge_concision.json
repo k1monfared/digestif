@@ -1,0 +1,232 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "11_finding_a_phone",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "L002"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "First claim and thesis: purpose framing added here and nowhere else."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "L003"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header; condenses C003 and C005 before the detail lines."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "L004"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds specifics: J100 no-frills, Droid day-one centerpiece."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "L005"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct causal claim on notifications and feeling like a consumer."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "L006"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds smartwatch trigger and dial-pad switch not stated earlier."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "L007"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header summarizing C007 and C008 without new information."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "L008"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete requirement list; the header only gestures at it."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "L009"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Negated preferences and offline independence are new specifics."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "L010"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Causal vendor-intent claim, appears only here."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "L011"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header recapping C011 through C014."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "L012"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specific Ulefone feature set, no earlier claim lists these."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "L013"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Number claim: one model, week-long charge, not repeated."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "L014"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Price ratio number; never trivia, unique to this line."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "L015"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Durability evidence, distinct from the feature claim in C011."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "L016"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header summarizing C016 through C019."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "L017"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Partially supported but not contradicted; adds lock-in and O1 detail."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "L018"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Number and caveat claim: retries, sleeps, parsing step."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "L019"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Count and named duplicate; distinct from other scraper claims."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "L020"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines cleaner output fields, no earlier overlap."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "L021"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header recapping C021 through C023."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "L022"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Partially supported, not contradicted; adds matching results detail."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "L023"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct defect list on the returned TCL device."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "L024"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the G85 versus G75 availability outcome, not stated before."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 23,
+    "unique": 18,
+    "duplicates": 0,
+    "trivia": 5,
+    "redundancy_rate": 0.0,
+    "trivia_rate": 0.2174,
+    "structured_tokens": 251,
+    "tokens_per_unique_claim": 13.94
+  },
+  "prune_list": [
+    "C002 is a restated Theme 1 header, duplicates C003/C005 substance, safe to drop as a bullet",
+    "C006 is a restated Theme 2 header, duplicates C007/C008 substance, safe to drop as a bullet",
+    "C010 is a restated Theme 3 header, duplicates C011-C014 substance, safe to drop as a bullet",
+    "C015 is a restated Theme 4 header, duplicates C016-C019 substance, safe to drop as a bullet",
+    "C020 is a restated Theme 5 header, duplicates C021-C023 substance, safe to drop as a bullet"
+  ]
+}

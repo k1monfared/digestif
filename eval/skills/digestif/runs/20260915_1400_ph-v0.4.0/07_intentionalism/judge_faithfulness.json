@@ -1,0 +1,1628 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "07_intentionalism",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "claim_text": "The Gale-Shapley structure gives proposers systematically better outcomes, so most people stay receivers by default, and intention must be practiced to switch sides.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "proposers systematically getting better outcomes than receivers",
+      "reasoning": "Summary aggregates supported claims: better proposer outcomes, most are receivers, practiced intention builds the proposer position."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "claim_text": "Some people consistently end up with better outcomes for reasons having nothing to do with talent, luck, or even the quality of their choices.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "has nothing to do with talent, luck, or even the quality of their choices",
+      "reasoning": "Verbatim match to source paragraph 2."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "claim_text": "It is about whether they propose or receive.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "It's about whether they propose or receive.",
+      "reasoning": "Exact reproduction of source."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "claim_text": "In 1962, David Gale and Lloyd Shapley worked on creating stable pairings, where no two unmatched people would prefer each other over their assigned partners.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "In 1962, mathematician-economists David Gale and Lloyd Shapley were working on a problem about how to create stable pairings",
+      "reasoning": "Year, names, and definition of stable pairing all match source."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "claim_text": "They proved you could always match everyone this way, and presented an algorithm to find such matchings.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "They proved you could, and presented an algorithm to find such matchings.",
+      "reasoning": "Direct restatement of source paragraph 5."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "claim_text": "In their deferred acceptance algorithm, one side makes proposals in order of preference, and the other accepts or tentatively rejects.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "one side makes proposals in order of preference, and the other side accepts or tentatively rejects based on their preferences",
+      "reasoning": "Matches algorithm description; dropped qualifier 'based on their preferences' is harmless compression."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "claim_text": "Proposers get their best possible partner among all stable matchings, while receivers get their worst possible partner.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "proposers get their best possible partner among all stable (mutually acceptable) matchings, while receivers get their worst possible partner among all stable matchings",
+      "reasoning": "Verbatim meaning preserved, including both sides' extremes."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "claim_text": "This is not slightly better or worse: it is systematically, provably, mathematically extreme for each individual.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "it's systematically, provably, mathematically extreme. In the specific algorithm they designed, each individual proposer...",
+      "reasoning": "Preserves negation and per-individual framing from source."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2"
+      ],
+      "claim_text": "Real-world situations share the proposer-receiver structure, even roughly, so the same pattern should appear.",
+      "claim_type": "theme",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "even roughly, we should expect to see the same pattern",
+      "reasoning": "Combines paragraphs 8 and 9 faithfully, retaining the 'roughly' hedge."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "claim_text": "When systems have this structure, proposers systematically get better outcomes than receivers.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "proposers systematically getting better outcomes than receivers",
+      "reasoning": "Exact phrasing from source."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "claim_text": "The situations are not running the exact Gale-Shapley algorithm, but they share the structure: one side initiates, the other responds.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "most real-world situations don't follow the exact Gale-Shapley algorithm. But they share the fundamental structure",
+      "reasoning": "Negation and structural claim both preserved."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "3"
+      ],
+      "claim_text": "Four everyday choices show the default: deciding what you want versus choosing among what is offered.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Think about how most of your choices actually happen:",
+      "reasoning": "Source gives four examples (Netflix, phone, job, friend) contrasting intention with selection."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "claim_text": "Netflix: scrolling through recommendations until something looks good enough, rather than deciding what kind of experience you wanted.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "did you scroll through recommendations until something looked good enough?",
+      "reasoning": "Faithful to the Netflix question in paragraph 11."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "claim_text": "Phone: choosing among what was prominently displayed, rather than researching what features you actually needed.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "did you choose among what was prominently displayed at the store?",
+      "reasoning": "Matches phone example in paragraph 12."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "claim_text": "Job: applying to positions that happened to be posted, rather than pursuing companies doing work you cared about.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "did you apply to positions that happened to be posted?",
+      "reasoning": "Matches job example in paragraph 13."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "claim_text": "Friendship: accepting a connection that formed through proximity or circumstance, rather than seeking out someone with qualities you value.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "did you accept a connection that formed through proximity or circumstance?",
+      "reasoning": "Matches friendship example in paragraph 14."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "claim_text": "For most of these, most of us are receivers: choosing from what is presented, not pursuing what we want intentionally.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "most of us are receivers. We're choosing from what's presented, not pursuing what we want intentionally.",
+      "reasoning": "Exact match including the negation."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.6"
+      ],
+      "claim_text": "The insidious thing is not terrible outcomes; receivers get acceptable, good enough ones: a decent show, a functional phone, a reasonable job, pleasant friendships.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "isn't that you get terrible outcomes. You don't. You get acceptable ones. Good enough ones... a decent show, buy a functional phone, work a reasonable job, have pleasant friendships.",
+      "reasoning": "All four examples and the negation preserved faithfully."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.7"
+      ],
+      "claim_text": "But decent is not the same as what would actually serve you best.",
+      "claim_type": "nuance",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "But \"decent\" isn't the same as \"what would actually serve you best.\"",
+      "reasoning": "Verbatim reproduction."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "3.8"
+      ],
+      "claim_text": "Outcomes tend to favor whoever is doing the proposing, not because of a conspiracy but because the structure itself creates the advantage.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Not because of some conspiracy... The structure itself creates the advantage.",
+      "reasoning": "Preserves the hedge 'tend to' and both causal elements."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "3.9"
+      ],
+      "claim_text": "The system is self-sustaining precisely because it does not screw you badly enough to make you revolt.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The system is stable (self-sustaining) precisely because it doesn't screw you badly enough to make you revolt.",
+      "reasoning": "Exact match, including parenthetical gloss and negation."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "3.9.1"
+      ],
+      "claim_text": "It just quietly, consistently ensures you get less than you could have if you were on the other side of the equation.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "It just quietly, consistently ensures you get less than you could have if you were on the other side of the equation.",
+      "reasoning": "Verbatim reproduction."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "3.10"
+      ],
+      "claim_text": "You do not even know what you are missing, because you have never practiced wanting something specific enough to pursue it.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "You don't even know what you're missing, because you've never practiced wanting something specific enough to pursue it.",
+      "reasoning": "Exact match including negations."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4"
+      ],
+      "claim_text": "You need intention to propose, but you develop intention through proposing.",
+      "claim_type": "theme",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "You need intention to propose, but you develop intention through proposing.",
+      "reasoning": "Verbatim reproduction of source paragraph 23."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "claim_text": "To be a proposer you need to know what you want, and someone who has spent a whole life as a receiver would not know.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "if you've spent your whole life as a receiver, how would you know?",
+      "reasoning": "Rhetorical question directly implies the stated claim; meaning preserved."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "claim_text": "You cannot develop clear, intentional preferences by choosing among presented options; those choices reveal which option you dislike least.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "You can't develop clear, intentional preferences by choosing among presented options. Those choices just reveal which option you dislike least",
+      "reasoning": "Both sentences faithfully preserved with negation intact."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "claim_text": "This is the trap: you need intention to propose, but you develop intention through proposing.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This is the trap. You need intention to propose, but you develop intention through proposing.",
+      "reasoning": "Verbatim reproduction."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "claim_text": "The music you listen to: are those your favorite songs, or just the best matches from what the algorithm served you?",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "are those actually your favorite songs, or just the best matches from what the algorithm served you?",
+      "reasoning": "Matches music example; dropped 'actually' and trailing question is harmless."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "claim_text": "The person you are dating: did you seek someone compatible, or swipe through available profiles and pick the most appealing match?",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "did you decide what kind of relationship you wanted and seek someone compatible? Or did you swipe through available profiles",
+      "reasoning": "Faithful compression of the dating example in paragraph 25."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "claim_text": "After years of receiver mode, most people's preferences are just reactions to what gets put in front of them.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "After years of receiver mode, most people's \"preferences\" are just reactions to what gets put in front of them.",
+      "reasoning": "Exact match including 'most' quantifier."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "claim_text": "They have lost, or never developed, the capacity to want something independent of what is being offered.",
+      "claim_type": "nuance",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "They've lost—or never developed—the capacity to want something independent of what's being offered.",
+      "reasoning": "Verbatim reproduction including both alternatives."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "5"
+      ],
+      "claim_text": "Intention and initiative build progressively, like a muscle.",
+      "claim_type": "theme",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The muscle of intention and initiative builds progressively.",
+      "reasoning": "SOURCE states this directly, including the muscle metaphor."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "claim_text": "You cannot jump straight from picking from Netflix recommendations to a clear vision for your life's work.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "You can't jump straight from \"I pick from what Netflix recommends\" to \"I have a clear vision for my life's work.\"",
+      "reasoning": "Negation and content preserved with identical meaning."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "claim_text": "Start tonight: before opening any app, decide what you actually want from the next hour, specifically whether to laugh, learn, feel calm, or be challenged.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Tonight, before opening any app, decide intentionally what you actually want from the next hour... do you want to laugh? Learn something? Feel calm? Be challenged?",
+      "reasoning": "All four options and the timing match the source."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "claim_text": "Then pursue that intentionally: do not open Netflix and see what it suggests, do not scroll TikTok until something catches you.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Don't open Netflix and see what it suggests. Don't scroll TikTok until something catches you.",
+      "reasoning": "Both negations preserved exactly."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "claim_text": "The practice is not about one evening; it rebuilds the capacity to intend and then act on that intention.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The practice isn't about that one evening's entertainment. It's about rebuilding the capacity to intend and then act on that intention.",
+      "reasoning": "Meaning and negation preserved."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "claim_text": "Do it enough times and patterns in what satisfies you become preferences, and preferences become values.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Do this enough times, and you start to notice patterns in what satisfies you. Those patterns become preferences. Those preferences become values.",
+      "reasoning": "Direct restatement of the source chain."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "claim_text": "You cannot think your way into values; you have to practice your way into them.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "You can't think your way into values. You have to practice your way into them.",
+      "reasoning": "Exact match."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "6"
+      ],
+      "claim_text": "The same receiver default shows up in major life decisions.",
+      "claim_type": "theme",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Most people, most of the time, are evaluating presented options... you're choosing as a receiver.",
+      "reasoning": "Fair summary of the section's receiver framing for major decisions."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "claim_text": "A last major life decision: getting married, taking a job, moving to a city, or choosing what to study.",
+      "claim_type": "example",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Getting married, taking a job, moving to a city, choosing what to study.",
+      "reasoning": "All four examples listed identically."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "claim_text": "The question is whether you decided what you wanted first and then pursued it, or evaluated options that presented themselves.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Did you decide what you wanted first and then pursue it? Or did you evaluate among options that presented themselves",
+      "reasoning": "Both alternatives preserved as posed."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "claim_text": "Most people, most of the time, are evaluating presented options.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Most people, most of the time, are evaluating presented options.",
+      "reasoning": "Verbatim match including the hedge qualifiers."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "6.3.1"
+      ],
+      "claim_text": "This feels like agency because you are choosing, but you are choosing as a receiver, in a structure that systematically favors the other side.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This feels like agency because you're choosing. But you're choosing as a receiver, which means you're operating in a structure that systematically favors the other side.",
+      "reasoning": "Faithful restatement of the same claim."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "claim_text": "Proposers decide intentionally what kind of work they want and pursue those specific opportunities.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the people who decided intentionally what kind of work they wanted to do and pursued those specific opportunities",
+      "reasoning": "Matches the source description of proposers."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "claim_text": "They identify what they value in a partner and seek those people out.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "who identified what they valued in a partner and sought those people out",
+      "reasoning": "Direct match."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "6.5.1"
+      ],
+      "claim_text": "They pick cities based on how they want to live rather than where they got offers.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "who picked cities based on how they wanted to live rather than where they got offers",
+      "reasoning": "Direct match with contrast preserved."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "claim_text": "Those people end up with systematically better outcomes.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "those people end up with systematically better outcomes",
+      "reasoning": "Verbatim match."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "claim_text": "Not because they are smarter or luckier, but because they are on the other side of a structure that mathematically favors proposers.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Not because they're smarter or luckier. Because they're on the other side of a structure that mathematically favors proposers.",
+      "reasoning": "Cause and negation preserved exactly."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "7"
+      ],
+      "claim_text": "When most people are receivers, entire systems shift to optimize for whoever is doing the proposing.",
+      "claim_type": "theme",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "When most people are receivers, entire systems shift to optimize for whoever's doing the proposing.",
+      "reasoning": "Verbatim match."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "claim_text": "Companies build for what they can convince people to want among presented options, not for what people need.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Companies don't build products for what people need—they build for what they can convince people to want among presented options.",
+      "reasoning": "Contrast preserved with same meaning."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "claim_text": "Dating apps optimize for engagement among available profiles, not for people finding compatible partners.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Dating apps don't facilitate people finding compatible partners—they optimize for engagement among available profiles.",
+      "reasoning": "Both halves and the contrast match."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "claim_text": "Content platforms test what keeps you scrolling among suggested posts, not what would genuinely satisfy you.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Content platforms don't serve what would genuinely satisfy you—they test what keeps you scrolling among suggested posts.",
+      "reasoning": "Contrast and content preserved."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "claim_text": "The proposers in these systems are not the users; they are the platforms.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The proposers in these systems aren't the users. They're the platforms.",
+      "reasoning": "Negation preserved exactly."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "7.5"
+      ],
+      "claim_text": "The platforms get your attention, data, and money, while you get outcomes good enough to keep participating but not serving your best interests.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the platforms get optimal outcomes (your attention, your data, your money), and you get outcomes that are good enough to keep you participating, but not actually serving your best interests",
+      "reasoning": "All three items and the contrast preserved."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "7.6"
+      ],
+      "claim_text": "You stay because leaving feels harder than accepting good enough; that stability, resistance to change, is why the system persists.",
+      "claim_type": "claim",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "You stay because leaving feels harder than accepting \"good enough.\" That's stability (resistance to change). That's why the system persists.",
+      "reasoning": "Cause and the stability gloss match the source."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "8"
+      ],
+      "claim_text": "Understanding the disadvantage does not remove it; you have to actually switch positions.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The structural disadvantage of being a receiver doesn't go away because you understand it. You have to actually switch positions.",
+      "reasoning": "Source states identical meaning, negation preserved."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "claim_text": "This is harder than it sounds, because the environment is designed to keep us receiving.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This is harder than it sounds, because our entire environment is designed to keep us receiving.",
+      "reasoning": "Loglog compresses 'entire environment' to 'environment'; meaning unchanged."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "8.1.1"
+      ],
+      "claim_text": "Every interface, recommendation system, application process, and social script presents options and waits for you to choose.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "every interface, every recommendation system, every application process, every social script is built around presenting options and waiting for you to choose",
+      "reasoning": "All four items and the universal 'every' preserved with same meaning."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "claim_text": "Proposing means deciding intentionally what you want before seeing what is available.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Deciding intentionally what you want before seeing what's available",
+      "reasoning": "Direct match to source bullet."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "claim_text": "It means pursuing specific things rather than evaluating presented options.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Pursuing specific things rather than evaluating presented options",
+      "reasoning": "Direct match to source bullet."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "claim_text": "It means being willing to create opportunities rather than waiting for them.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Being willing to create opportunities rather than waiting for them",
+      "reasoning": "Direct match to source bullet."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "claim_text": "It means accepting the friction of going against default flows.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Accepting the friction of going against default flows",
+      "reasoning": "Direct match to source bullet."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "8.6"
+      ],
+      "claim_text": "It means asking what do I actually want before every major decision and most minor ones.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "asking \"what do I actually want?\" before every major decision and most minor ones",
+      "reasoning": "Quantifiers 'every major' and 'most minor' preserved exactly."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "8.6.1"
+      ],
+      "claim_text": "Then acting on that answer intentionally, even when it is inconvenient.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Then acting on that answer intentionally, even when it's inconvenient.",
+      "reasoning": "Identical meaning, only contraction expanded."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "8.7"
+      ],
+      "claim_text": "Most people will not do this: it is effortful, and the receiver position is comfortable enough not to motivate change.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Most people won't do this. It's effortful. The receiver position is comfortable enough to not motivate change.",
+      "reasoning": "Both negations and hedge 'most' preserved."
+    },
+    {
+      "claim_id": "C066",
+      "loglog_ids": [
+        "8.8"
+      ],
+      "claim_text": "After years of receiver mode, most people have lost the capacity to even know what they would want to propose.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "after years of receiver mode, most people have lost the capacity to even know what they'd want to propose",
+      "reasoning": "Exact match of scope and meaning."
+    },
+    {
+      "claim_id": "C067",
+      "loglog_ids": [
+        "8.9"
+      ],
+      "claim_text": "For those who do shift, real life does not follow the exact mathematics but shares enough of the structure.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "while real life doesn't follow the exact mathematics of the Gale-Shapley algorithm, it shares enough of the structure",
+      "reasoning": "Negation and qualifier preserved; entity reference intact."
+    },
+    {
+      "claim_id": "C068",
+      "loglog_ids": [
+        "8.10"
+      ],
+      "claim_text": "Systematically better, not just incrementally: structurally.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Systematically better. Not just incrementally—structurally.",
+      "reasoning": "Near verbatim, meaning identical."
+    },
+    {
+      "claim_id": "C069",
+      "loglog_ids": [
+        "8.11"
+      ],
+      "claim_text": "The question is not whether this dynamic exists; the mathematics and the patterns we see around us both point to it.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The question isn't whether this dynamic exists. The mathematics and the patterns we see around us both point to it.",
+      "reasoning": "Negation structure and both sources of evidence preserved."
+    },
+    {
+      "claim_id": "C070",
+      "loglog_ids": [
+        "8.12"
+      ],
+      "claim_text": "The question is whether you are willing to do something about it.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The question is whether you're willing to do something about it.",
+      "reasoning": "Identical meaning."
+    },
+    {
+      "claim_id": "C071",
+      "loglog_ids": [
+        "9"
+      ],
+      "claim_text": "Start with tomorrow morning, not your career or life partner.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Don't start with your career or life partner. Start with tomorrow morning.",
+      "reasoning": "Order swapped but both exclusion and prescription preserved."
+    },
+    {
+      "claim_id": "C072",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "claim_text": "Before you check your phone, decide intentionally what you actually want from the first hour: calm, energy, connection, or solitude.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Before you check your phone, decide intentionally: what do you actually want from the first hour of your day? ... do you want calm? Energy? Connection? Solitude?",
+      "reasoning": "All four options and timing match source."
+    },
+    {
+      "claim_id": "C073",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "claim_text": "If you want calm, do not open apps that will agitate you; if connection, reach out to someone specific; if energy, do something physical.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "If you want calm, don't open apps that will agitate you. If you want connection, reach out to someone specific. If you want energy, do something physical.",
+      "reasoning": "All three conditionals and the negation preserved."
+    },
+    {
+      "claim_id": "C074",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "claim_text": "Notice how different this feels from scrolling until something grabs you.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Notice how different this feels from scrolling until something grabs you.",
+      "reasoning": "Verbatim match."
+    },
+    {
+      "claim_id": "C075",
+      "loglog_ids": [
+        "9.4"
+      ],
+      "claim_text": "Do this for a week with small things, breakfast, evening activities, weekend plans, noticing what actually satisfies you versus what just filled time.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Do this for a week with small things—breakfast, evening activities, weekend plans. Notice what actually satisfies you versus what just filled time.",
+      "reasoning": "Duration, examples, and contrast all preserved."
+    },
+    {
+      "claim_id": "C076",
+      "loglog_ids": [
+        "9.5"
+      ],
+      "claim_text": "Those patterns are the beginning of intention.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Those patterns are the beginning of intention.",
+      "reasoning": "Verbatim match."
+    },
+    {
+      "claim_id": "C077",
+      "loglog_ids": [
+        "9.6"
+      ],
+      "claim_text": "Then scale up: before looking at job postings, decide what kind of work you want to do.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Before looking at job postings, decide what kind of work you want to do.",
+      "reasoning": "Direct match, scaling context preserved."
+    },
+    {
+      "claim_id": "C078",
+      "loglog_ids": [
+        "9.7"
+      ],
+      "claim_text": "Before swiping on dating apps, decide what kind of relationship you are looking for, and before browsing products, what problem you are solving.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Before swiping on dating apps, decide what kind of relationship you're looking for. Before browsing products, decide what problem you're trying to solve.",
+      "reasoning": "Both recommendations match source meaning."
+    },
+    {
+      "claim_id": "C079",
+      "loglog_ids": [
+        "9.8"
+      ],
+      "claim_text": "The practice builds the muscle, the muscle enables larger intentions, larger intentions become values, and values make you a proposer.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The practice builds the muscle. The muscle enables larger intentions. Larger intentions become values. Values make you a proposer.",
+      "reasoning": "Chain of four links all preserved in order."
+    },
+    {
+      "claim_id": "C080",
+      "loglog_ids": [
+        "9.9"
+      ],
+      "claim_text": "Proposers, whether in the pure mathematics of matching algorithms or the messy approximations of real life, end up with better outcomes.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "proposers—whether in the pure mathematics of matching algorithms or in the messy approximations of real life—end up with better outcomes",
+      "reasoning": "Exact match of both scopes and the outcome claim."
+    },
+    {
+      "claim_id": "C081",
+      "loglog_ids": [
+        "9.10"
+      ],
+      "claim_text": "Not because they are special, but because they are on the other side of the equation.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Not because they're special. Because they're on the other side of the equation.",
+      "reasoning": "Negation of the cause and alternative cause preserved."
+    },
+    {
+      "claim_id": "C082",
+      "loglog_ids": [
+        "10"
+      ],
+      "claim_text": "The appendix gives concrete exercises for practicing intention in progressively larger domains.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "requires practicing intention in progressively larger domains. Here are specific exercises",
+      "reasoning": "Source appendix explicitly frames exercises as practicing intention in progressively larger domains."
+    },
+    {
+      "claim_id": "C083",
+      "loglog_ids": [
+        "10.1"
+      ],
+      "claim_text": "Entertainment: name, seek, and protect your intention over three weeks.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Week 1: Name your intention ... Week 2: Seek intentionally ... Week 3: Protect your intention",
+      "reasoning": "Three entertainment weeks map exactly to source headings."
+    },
+    {
+      "claim_id": "C084",
+      "loglog_ids": [
+        "10.1.1"
+      ],
+      "claim_text": "Week 1: before opening any entertainment app, write down or say aloud what you want to feel.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Before opening any entertainment app, write down (or say aloud) what you want to feel",
+      "reasoning": "Direct match to Week 1 instruction."
+    },
+    {
+      "claim_id": "C085",
+      "loglog_ids": [
+        "10.1.1.3"
+      ],
+      "claim_text": "I want to laugh, or learn about X, or feel inspired, or relax completely.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "\"I want to laugh,\" \"I want to learn about X,\" \"I want to feel inspired,\" \"I want to relax completely\"",
+      "reasoning": "Exact reproduction of the four example feelings."
+    },
+    {
+      "claim_id": "C086",
+      "loglog_ids": [
+        "10.1.1.1"
+      ],
+      "claim_text": "If you cannot name it, close the app and try again later.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "If you can't name it, close the app and try again later",
+      "reasoning": "Identical instruction, negation preserved."
+    },
+    {
+      "claim_id": "C087",
+      "loglog_ids": [
+        "10.1.1.2"
+      ],
+      "claim_text": "Keep a simple log: intention, what you watched, and whether it delivered.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Keep a simple log: intention → what you watched → did it deliver?",
+      "reasoning": "Same three log fields."
+    },
+    {
+      "claim_id": "C088",
+      "loglog_ids": [
+        "10.1.2"
+      ],
+      "claim_text": "Week 2: based on your named intention, search for specific content rather than scrolling recommendations.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Based on your named intention, search for specific content rather than scrolling recommendations",
+      "reasoning": "Direct match to Week 2 instruction."
+    },
+    {
+      "claim_id": "C089",
+      "loglog_ids": [
+        "10.1.2.1"
+      ],
+      "claim_text": "If the goal is to laugh, search for specific comedians you know make you laugh.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "If \"laugh\" → search for specific comedians you know make you laugh",
+      "reasoning": "Exact match to the laugh example."
+    },
+    {
+      "claim_id": "C090",
+      "loglog_ids": [
+        "10.1.2.3"
+      ],
+      "claim_text": "If the goal is to learn, search specific topics, not just what is trending.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "If \"learn\" → search for specific topics, not just what's trending",
+      "reasoning": "Exact match, negation preserved."
+    },
+    {
+      "claim_id": "C091",
+      "loglog_ids": [
+        "10.1.2.2"
+      ],
+      "claim_text": "Notice how much faster you find satisfaction.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Notice how much faster you find satisfaction",
+      "reasoning": "Verbatim source bullet."
+    },
+    {
+      "claim_id": "C092",
+      "loglog_ids": [
+        "10.1.3"
+      ],
+      "claim_text": "Week 3: set a timer for how long you intended to spend.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Set a timer for how long you intended to spend",
+      "reasoning": "Direct match to Week 3 instruction."
+    },
+    {
+      "claim_id": "C093",
+      "loglog_ids": [
+        "10.1.3.1"
+      ],
+      "claim_text": "When autoplay starts, ask whether this serves your original intention.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "When autoplay starts, ask: \"Does this serve my original intention?\"",
+      "reasoning": "Direct match, meaning preserved."
+    },
+    {
+      "claim_id": "C094",
+      "loglog_ids": [
+        "10.1.3.2"
+      ],
+      "claim_text": "Practice closing the app when your intention is fulfilled, not when you are exhausted.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Practice closing the app when your intention is fulfilled, not when you're exhausted",
+      "reasoning": "Identical, contrast preserved."
+    },
+    {
+      "claim_id": "C095",
+      "loglog_ids": [
+        "10.2"
+      ],
+      "claim_text": "Shopping: define the problem, list must-haves, research intentionally, ignore the store layout, and wait a day over $100.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Define the problem ... 24-hour rule: For anything over $100, wait a day after deciding",
+      "reasoning": "All five source steps represented, including $100 threshold."
+    },
+    {
+      "claim_id": "C096",
+      "loglog_ids": [
+        "10.2.1"
+      ],
+      "claim_text": "Define the problem specifically: not I need a phone, but reliable video calls with family.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Not \"I need a phone\" but \"I need reliable video calls with family\"",
+      "reasoning": "Contrast and example match source."
+    },
+    {
+      "claim_id": "C097",
+      "loglog_ids": [
+        "10.2.1.1"
+      ],
+      "claim_text": "A good camera for travel, and battery that lasts full days.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "good camera for travel, battery that lasts full days",
+      "reasoning": "Direct reproduction of remaining criteria."
+    },
+    {
+      "claim_id": "C098",
+      "loglog_ids": [
+        "10.2.2"
+      ],
+      "claim_text": "List the 3-5 features that actually matter, being clear about what you will use versus what sounds cool.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool",
+      "reasoning": "Count 3-5 and contrast preserved."
+    },
+    {
+      "claim_id": "C099",
+      "loglog_ids": [
+        "10.2.3"
+      ],
+      "claim_text": "Research those specific features, not best phones 2025.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Look up those specific features, not \"best phones 2025\"",
+      "reasoning": "Exact, negation preserved."
+    },
+    {
+      "claim_id": "C100",
+      "loglog_ids": [
+        "10.2.4"
+      ],
+      "claim_text": "In person, go directly to compare items that meet your criteria; do not browse the store layout.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "go directly to compare items that meet your criteria. Don't browse.",
+      "reasoning": "Instruction and prohibition match source."
+    },
+    {
+      "claim_id": "C101",
+      "loglog_ids": [
+        "10.2.5"
+      ],
+      "claim_text": "For anything over $100, wait a day after deciding; if you still want that specific item, buy it.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "For anything over $100, wait a day after deciding. If you still want that specific item, buy it.",
+      "reasoning": "Number and condition identical."
+    },
+    {
+      "claim_id": "C102",
+      "loglog_ids": [
+        "10.2.6"
+      ],
+      "claim_text": "Toothpaste run: define what you actually need, sensitive teeth, whitening, or just clean teeth.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "What do you actually need? (sensitive teeth? whitening? just clean teeth?)",
+      "reasoning": "Exact options reproduced."
+    },
+    {
+      "claim_id": "C103",
+      "loglog_ids": [
+        "10.2.6.1"
+      ],
+      "claim_text": "Research which ingredient addresses that need, buy it, and notice the difference from comparing packaging.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Research which ingredient addresses that need ... buy it ... Notice how different this feels from standing in the aisle comparing packaging",
+      "reasoning": "All four source bullets captured faithfully."
+    },
+    {
+      "claim_id": "C104",
+      "loglog_ids": [
+        "10.3"
+      ],
+      "claim_text": "Jobs and career: quarterly intention-setting, even if you are not job hunting.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Quarterly intention-setting (do this even if you're not job hunting)",
+      "reasoning": "Header and conditional match source."
+    },
+    {
+      "claim_id": "C105",
+      "loglog_ids": [
+        "10.3.1"
+      ],
+      "claim_text": "Map your energy for two weeks, noting which tasks give you energy and which drain you.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "For two weeks, note what tasks give you energy vs. drain you",
+      "reasoning": "Two-week duration and contrast preserved."
+    },
+    {
+      "claim_id": "C106",
+      "loglog_ids": [
+        "10.3.2"
+      ],
+      "claim_text": "Identify patterns: what type of problems do you enjoy solving, and what environments let you thrive?",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "What type of problems do you enjoy solving? What environments let you thrive?",
+      "reasoning": "Verbatim questions."
+    },
+    {
+      "claim_id": "C107",
+      "loglog_ids": [
+        "10.3.3"
+      ],
+      "claim_text": "Write 5 non-negotiables for your next role, specific ones about problem type, people, and environment, not good pay.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Write 5 non-negotiables for your next role (not \"good pay\" but \"solving X type of problem, with Y type of people, in Z type of environment\")",
+      "reasoning": "Count, contrast, and X/Y/Z dimensions match."
+    },
+    {
+      "claim_id": "C108",
+      "loglog_ids": [
+        "10.3.4"
+      ],
+      "claim_text": "Research companies doing that work regardless of whether they have postings, contact people there, and ask about their experience.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Research companies doing that work, regardless of whether they have postings - Contact people at those companies ... ask about their experience",
+      "reasoning": "Steps 4 and 5 faithfully combined."
+    },
+    {
+      "claim_id": "C109",
+      "loglog_ids": [
+        "10.3.5"
+      ],
+      "claim_text": "If you must apply to postings, apply only to roles that match at least 4 of your 5 criteria, and customize every application.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Only apply to roles that match at least 4 of your 5 criteria - Customize every application",
+      "reasoning": "Threshold 4 of 5 and customization preserved."
+    },
+    {
+      "claim_id": "C110",
+      "loglog_ids": [
+        "10.3.6"
+      ],
+      "claim_text": "Track whether you are submitting many applications as a receiver or carefully selecting few as a proposer.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "are you just submitting many applications (receiver) or carefully selecting few (proposer)?",
+      "reasoning": "Both modes and contrast preserved."
+    },
+    {
+      "claim_id": "C111",
+      "loglog_ids": [
+        "10.4"
+      ],
+      "claim_text": "Relationships: write your intention, identify values, and seek people who demonstrate them.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Write your relationship intention ... Identify values alignment ... Seek intentionally",
+      "reasoning": "Summary matches the dating steps."
+    },
+    {
+      "claim_id": "C112",
+      "loglog_ids": [
+        "10.4.1"
+      ],
+      "claim_text": "Write what kind of relationship you want to build: what daily life looks like, how conflict is handled, what you build together.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "What does daily life look like? How do you handle conflict? What do you build together?",
+      "reasoning": "All three prompts reproduced."
+    },
+    {
+      "claim_id": "C113",
+      "loglog_ids": [
+        "10.4.2"
+      ],
+      "claim_text": "Identify the 3-5 values that absolutely must align, specific things like prioritizing growth or wanting intellectual partnership.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "What 3-5 values absolutely must align? ... \"prioritizes growth,\" ... \"wants intellectual partnership\"",
+      "reasoning": "Count and examples match source."
+    },
+    {
+      "claim_id": "C114",
+      "loglog_ids": [
+        "10.4.3"
+      ],
+      "claim_text": "Seek people who demonstrate those values, not just attractive profiles.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Look for people who demonstrate those values, not just attractive profiles",
+      "reasoning": "Exact, negation preserved."
+    },
+    {
+      "claim_id": "C115",
+      "loglog_ids": [
+        "10.4.4"
+      ],
+      "claim_text": "Use the first date to ask questions that reveal value alignment, not surface chat.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Ask questions that reveal value alignment, not just \"getting to know you\" surface chat",
+      "reasoning": "First-date filter and contrast preserved."
+    },
+    {
+      "claim_id": "C116",
+      "loglog_ids": [
+        "10.4.5"
+      ],
+      "claim_text": "For friendships, name what you need: friends who push you intellectually, friends you can be quiet with, friends who share this specific hobby.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "\"I want friends who push me intellectually,\" \"I want friends I can be quiet with,\" \"I want friends who share this specific hobby\"",
+      "reasoning": "All three friendship examples reproduced."
+    },
+    {
+      "claim_id": "C117",
+      "loglog_ids": [
+        "10.4.6"
+      ],
+      "claim_text": "Go where those people are: join specific communities, not just networking events.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Join specific communities, not just \"networking events\"",
+      "reasoning": "Exact, contrast preserved."
+    },
+    {
+      "claim_id": "C118",
+      "loglog_ids": [
+        "10.4.7"
+      ],
+      "claim_text": "Initiate based on intention: invite people to specific things you actually want to do, not a generic let us hang out sometime.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Invite people to do specific things you actually want to do, not generic \"let's hang out sometime\"",
+      "reasoning": "Instruction and contrast match."
+    },
+    {
+      "claim_id": "C119",
+      "loglog_ids": [
+        "10.5"
+      ],
+      "claim_text": "Daily micro-practices: a morning routine, an evening review, and the pause practice.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Morning routine ... Evening review ... The pause practice",
+      "reasoning": "Three sub-headings match source."
+    },
+    {
+      "claim_id": "C120",
+      "loglog_ids": [
+        "10.5.1"
+      ],
+      "claim_text": "Before checking your phone, write down your three intentions for today.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Before checking phone: \"What are my three intentions for today?\" (Write them down)",
+      "reasoning": "Count three and timing preserved."
+    },
+    {
+      "claim_id": "C121",
+      "loglog_ids": [
+        "10.5.1.1"
+      ],
+      "claim_text": "Not be productive but specific: have a meaningful conversation with X, make progress on Y, spend 30 minutes on Z.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Not \"be productive\" but specific: \"have meaningful conversation with X,\" \"make progress on Y,\" \"spend 30 minutes on Z\"",
+      "reasoning": "Contrast and 30-minute detail match."
+    },
+    {
+      "claim_id": "C122",
+      "loglog_ids": [
+        "10.5.2"
+      ],
+      "claim_text": "Evening review: did you act as proposer or receiver today, and what would you propose instead tomorrow?",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Did you act as proposer or receiver today? - When you were a receiver, what would you propose instead tomorrow?",
+      "reasoning": "Both review questions match."
+    },
+    {
+      "claim_id": "C123",
+      "loglog_ids": [
+        "10.5.2.1"
+      ],
+      "claim_text": "Note one small thing you will do intentionally tomorrow.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Note one small thing you'll do intentionally tomorrow",
+      "reasoning": "Verbatim source bullet."
+    },
+    {
+      "claim_id": "C124",
+      "loglog_ids": [
+        "10.5.3"
+      ],
+      "claim_text": "The pause practice: before any significant choice today, pause for 10 seconds.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Before any significant choice today, pause for 10 seconds",
+      "reasoning": "10-second duration and scope preserved."
+    },
+    {
+      "claim_id": "C125",
+      "loglog_ids": [
+        "10.5.3.2"
+      ],
+      "claim_text": "Ask: am I choosing this intentionally, or just selecting from what is in front of me?",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Ask: \"Am I choosing this intentionally, or just selecting from what's in front of me?\"",
+      "reasoning": "Exact question reproduced."
+    },
+    {
+      "claim_id": "C126",
+      "loglog_ids": [
+        "10.5.3.1"
+      ],
+      "claim_text": "This builds awareness, which is the first step.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This builds awareness, which is the first step",
+      "reasoning": "Verbatim causal claim."
+    },
+    {
+      "claim_id": "C127",
+      "loglog_ids": [
+        "10.6"
+      ],
+      "claim_text": "Tracking progress: keep a journal with three columns, situation, mode, and outcome.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Keep a simple journal with three columns: Situation ... Mode ... Outcome",
+      "reasoning": "Three columns match source."
+    },
+    {
+      "claim_id": "C128",
+      "loglog_ids": [
+        "10.6.1"
+      ],
+      "claim_text": "Situation: what was the choice?",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Situation: What was the choice?",
+      "reasoning": "Verbatim column definition."
+    },
+    {
+      "claim_id": "C129",
+      "loglog_ids": [
+        "10.6.2"
+      ],
+      "claim_text": "Mode: did I propose, deciding what I want and then pursuing it, or receive, choosing from what was offered?",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Did I propose (decide what I want, then pursue it) or receive (choose from what was offered)?",
+      "reasoning": "Parenthetical definitions preserved."
+    },
+    {
+      "claim_id": "C130",
+      "loglog_ids": [
+        "10.6.3"
+      ],
+      "claim_text": "Outcome: how satisfied am I with the result?",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Outcome: How satisfied am I with the result?",
+      "reasoning": "Verbatim column definition."
+    },
+    {
+      "claim_id": "C131",
+      "loglog_ids": [
+        "10.6.4"
+      ],
+      "claim_text": "After 30 days the pattern is clear: proposer entries show higher satisfaction, and this evidence motivates continued practice.",
+      "claim_type": "interpretation",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "After 30 days, you'll see the pattern clearly. Proposer entries will show higher satisfaction.",
+      "reasoning": "Source presents future prediction ('you'll see', 'will show'); node asserts it as present fact."
+    },
+    {
+      "claim_id": "C132",
+      "loglog_ids": [
+        "10.7"
+      ],
+      "claim_text": "The key insight: intention is not about always knowing exactly what you want for your entire life.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Intention isn't about always knowing exactly what you want for your entire life.",
+      "reasoning": "Negation and scope preserved."
+    },
+    {
+      "claim_id": "C133",
+      "loglog_ids": [
+        "10.8"
+      ],
+      "claim_text": "It is about practicing the question what do I want before someone else provides the answer.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "It's about practicing the question \"what do I want?\" before someone else provides the answer.",
+      "reasoning": "Exact definition reproduced."
+    },
+    {
+      "claim_id": "C134",
+      "loglog_ids": [
+        "10.9"
+      ],
+      "claim_text": "Start small: the muscle builds, the capacity grows, and eventually the intentional approach becomes natural.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Start small. The muscle builds. The capacity grows. Eventually, the intentional approach becomes natural",
+      "reasoning": "All clauses match source."
+    }
+  ],
+  "metrics": {
+    "total_claims": 134,
+    "supported": 133,
+    "partially_supported": 1,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9925
+  },
+  "fail_list": [
+    "C131"
+  ]
+}

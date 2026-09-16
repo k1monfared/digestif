@@ -26,11 +26,16 @@ Output: `graph.json`, the only file you may write.
 Workflow:
 
 1. Follow the skill's passes to build `graph.json` with full citations and full coverage.
-2. Run `python3 skill/scripts/graph.py validate graph.json` and fix every error.
-3. Run `python3 skill/scripts/graph.py locate graph.json source.txt -i` to add the source
+2. Run the skill's distillation loop before you finish. Shape is part of correctness: the
+   root carries three to nine main points, no other node carries more than eight direct
+   children, and groups of details become intermediate claim nodes instead of long flat
+   sibling lists. A three level tree with dozens of siblings under each main point is a
+   failed distillation.
+3. Run `python3 skill/scripts/graph.py validate graph.json` and fix every error.
+4. Run `python3 skill/scripts/graph.py locate graph.json source.txt -i` to add the source
    text and passage offsets. If a passage is reported as not found, your copied passage
    drifted from the source: fix the copy until locate succeeds. Never edit `source.txt`.
-4. Do not create or edit `outline.log` or `graph.html`; the command line tool renders those
+5. Do not create or edit `outline.log` or `graph.html`; the command line tool renders those
    afterwards. Do not write any other files.
 """
 
@@ -86,6 +91,7 @@ def run_agent(argv, run_dir, log_path, timeout):
         except subprocess.TimeoutExpired:
             log.write("\n[digestif] agent timed out after %s seconds\n" % timeout)
             return 124
+        log.write("\n[digestif] agent exit code: %d\n" % proc.returncode)
     return proc.returncode
 
 
@@ -101,7 +107,18 @@ def invoke(run_dir, agent=None, agent_cmd=None, model=None, timeout=1800, prompt
         agent=agent, agent_cmd=agent_cmd, prompt=prompt,
         prompt_file=prompt_file, cwd=run_dir, model=model,
     )
-    return run_agent(argv, run_dir, run_dir / "run.log", timeout)
+    code = run_agent(argv, run_dir, run_dir / "run.log", timeout)
+    if code != 0 and code != 124:
+        print("warning: agent exited with code %d, see %s" % (code, run_dir / "run.log"))
+    return code
+
+
+def log_tail(run_dir, lines=12):
+    log = run_dir / "run.log"
+    if not log.is_file():
+        return ""
+    text = log.read_text(encoding="utf-8", errors="replace").rstrip().splitlines()
+    return "\n".join(text[-lines:])
 
 
 def validate_and_locate(run_dir, repair=None, retries=2, timeout=1800):
@@ -171,7 +188,10 @@ def build(args):
     announce(2, total, "agent finished, validating")
     graph = run_dir / "graph.json"
     if not graph.is_file():
-        print("error: the agent did not produce graph.json, see %s" % (run_dir / "run.log"))
+        print("error: the agent did not produce graph.json")
+        print("last lines of run.log:")
+        print(log_tail(run_dir))
+        print("workspace kept at %s" % run_dir)
         return 1
 
     ok, out = validate_and_locate(run_dir, repair=repair, retries=args.retries,

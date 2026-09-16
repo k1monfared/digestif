@@ -1,0 +1,368 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "09_not_even_wrong",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Abstract stating the whole thesis; apex claim with no prior statement."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Foundational definition of not-even-wrong; distinct from the summary."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pauli etymology; a named fact, not filler."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Atiyah example with dates and prizes; numbers are never trivia."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contemporaneous rejection of the proof; distinct from definition and example."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Extends concept beyond math to powerful figures; distinct scope claim."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Section thesis on investment triggering belief; distinct mechanism."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Financial stake incentive; specific causal premise not stated elsewhere."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cognitive dissonance framing with negation; distinct from stake incentive."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Receptivity beyond demonstrated expertise; distinct scope claim."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Milestones reinforce trust; mechanism not stated elsewhere."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Closes the feedback loop; self-reinforcement not in the theme line."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Identity formation; new element beyond material self-interest."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Founder pairing verifiable and grandiose claims; concrete distinct claim."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Evidentiary-standards caveat; new nuance, not a duplicate of C011."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Section thesis on social proof and platforms; distinct."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Magnitude of praise; numeric social-proof instance."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "General conformity premise; foundation for social proof."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Outsider framing and betrayal; distinct tribal mechanism."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Algorithmic echo chambers; platform mechanism, distinct."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Authenticity from unfiltered posts; distinct emotional mechanism."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Section thesis on irrationality; framing distinct from the abstract."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Consolidates influencing factors; synthesis with new grouping."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Restates summary thesis that factors override scrutiny; no new proposition."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds society-lacks-frameworks point; new beyond C005 and C006."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Roadmap header restating section structure; low information value."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Separate finance from belief; canonical recommendation."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Domain-specific evaluation; expertise-transfer point is new."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Seek credible criticism; distinct recommendation."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C027",
+      "reasoning": "Same advice as C027 with a heuristic question; no new proposition."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Societal measures list; distinct level of intervention."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Meta description of the closing; restated header, low value."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Not for-or-against plus appreciating innovations; new nuance."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C027",
+      "reasoning": "Repeats separating evaluation from support, already stated in C027."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C033",
+      "reasoning": "Repeats independent evaluation and not-for/against from C033."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Shared standards for societies; new normative claim."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sympathy with Atiyah plus community standards; new synthesis."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Two named books as evidence; named entities, distinct."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 38,
+    "unique": 32,
+    "duplicates": 4,
+    "trivia": 2,
+    "redundancy_rate": 0.1053,
+    "trivia_rate": 0.0526,
+    "structured_tokens": 804,
+    "tokens_per_unique_claim": 25.1
+  },
+  "prune_list": [
+    "C024 duplicates C001, safe to merge",
+    "C030 duplicates C027, safe to merge",
+    "C034 duplicates C027, safe to merge",
+    "C035 duplicates C033, safe to merge",
+    "C026 is a restated header, prune from scored body",
+    "C032 is a restated header, prune from scored body"
+  ]
+}

@@ -1,0 +1,459 @@
+{
+ "sample": "03_cant_stop_addicted_to_shindig",
+ "part": 1,
+ "of": 1,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Can't Stop analysis shows four-dice odds flatten the distribution, middle columns dominate, probabilistic stopping wins, and forced moves balance design.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "I recently got introduced to this game called Can't Stop and it got me thinking about probabilities."
+    },
+    {
+     "ref": "¶2",
+     "text": "In this post, I'll take you through: The probability foundations (2-dice vs 4-dice); Which columns to choose and why; When to stop rolling; Whether to continue your current columns or switch; How different strategies perform head-to-head; Whether the game designers nailed the balance."
+    },
+    {
+     "ref": "¶12",
+     "text": "The probability ratio from 2 to 7 is 4.88. The length ratio is 4.33. Pretty close! The game designers were definitely thinking about this."
+    },
+    {
+     "ref": "¶22",
+     "text": "FiftyPercentSurvival dominates with 69.84% overall win rate. The strategy: Roll until cumulative survival probability drops below 50%. Probabilistic strategies dominate the top rankings."
+    },
+    {
+     "ref": "¶28",
+     "text": "This is elegant game design: accept imperfect balance in the core mechanics, then add rules that turn that imbalance into interesting strategic choices. The forced-move rule compensates for the mathematical imbalance."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Push-your-luck rules: roll four dice, pair freely, bust loses turn progress.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "The rules are straightforward: roll four dice, pair them up however you want, move your markers on a board. You can keep rolling as long as you want, but if you can't move any of your three active markers, you lose everything you've gained that turn."
+    },
+    {
+     "ref": "¶4",
+     "text": "The board has columns numbered 2 through 12: Columns 2 and 12: 3 steps; Columns 3 and 11: 5 steps; Columns 4 and 10: 7 steps; Columns 5 and 9: 9 steps; Columns 6 and 8: 11 steps; Column 7: 13 steps. You need to complete three columns to win."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Board columns 2 to 12 vary 3 to 13 steps; complete three to win.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The board has columns numbered 2 through 12: Columns 2 and 12: 3 steps; Columns 3 and 11: 5 steps; Columns 4 and 10: 7 steps; Columns 5 and 9: 9 steps; Columns 6 and 8: 11 steps; Column 7: 13 steps. You need to complete three columns to win."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Forced-move rule requires taking every legal move from the chosen pairing.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Here's a critical rule that shapes the entire strategy: you must take all available moves. If you roll the dice and choose a pairing that creates any valid move, you must make ALL legal moves from that pairing, even if you don't want them."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Chasing 7 on {6,7,8} can force an unwanted 2 onto the board.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "For example, if you're working on columns {6, 7, 8} and you roll (1,1,3,4), you could choose pairing (1,1)+(3,4) = 2+7. But if you do, you're forced to take BOTH the 2 and the 7, even though column 2 isn't in your plan."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Four-dice pairing flattens the probability distribution versus two dice.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "With two dice, sum 7 is the most likely at 16.67%, and it's exactly 6x more likely than sum 2 at 2.78%."
+    },
+    {
+     "ref": "¶8",
+     "text": "Now if Can't Stop used two dice, column 7 would need to be 6x longer than column 2 to be equally hard. Instead it's only 13/3 approx 4.3x longer. So something interesting must be happening with four dice."
+    },
+    {
+     "ref": "¶9",
+     "text": "In Can't Stop, you roll FOUR dice and then pair them up. Say you roll 2, 3, 4, 5: (2,3)+(4,5) = 5 and 9; (2,4)+(3,5) = 6 and 8; (2,5)+(3,4) = 7 and 7. That's it, just three possible pairings."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Two-dice baseline: 7 hits 16.67%, six times more likely than 2.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "With two dice, sum 7 is the most likely at 16.67%, and it's exactly 6x more likely than sum 2 at 2.78%."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Four dice yield exactly three possible pairings per roll.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "In Can't Stop, you roll FOUR dice and then pair them up. Say you roll 2, 3, 4, 5: (2,3)+(4,5) = 5 and 9; (2,4)+(3,5) = 6 and 8; (2,5)+(3,4) = 7 and 7. That's it, just three possible pairings."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Making a 2 needs two 1s: 171/1296, about 13.2%.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "To make a 2, I need at least two 1's among my four dice. P(can make a 2) = 1 - 625/1296 - 500/1296 = 171/1296 approx 13.2%. That's way higher than the 2.78% we had with two dice."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Making a 7 via inclusion-exclusion: 834/1296, about 64.4%.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "P(can make a 7) = P(A union B union C) = 302 + 302 + 302 - 24 - 24 - 24 + 0 = 834/1296 approx 64.4%. With two dice, P(7) was 16.67%. With four dice, it jumped to 64.4%."
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Probability ratio 4.88 nearly matches length ratio 4.33; designers thought carefully.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "The probability ratio from 2 to 7 is 4.88. The length ratio is 4.33. Pretty close! The game designers were definitely thinking about this."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Column combinations matter more than individual column odds.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Expected number of rolls to complete column n: E[rolls] = length/probability. For column 2: 3/0.132 = 22.73 rolls. For column 7: 13/0.644 = 20.18 rolls. Column 7 is slightly faster, even though it's 4x longer."
+    },
+    {
+     "ref": "¶14",
+     "text": "Columns 2 and 12 require the most rolls. Columns 6, 7, and 8 are all close to each other around 20 rolls."
+    },
+    {
+     "ref": "¶15",
+     "text": "You don't play Can't Stop one column at a time. You have THREE active columns, and you bust if you can't hit ANY of them. If you're on {6,7,8}, you have a 92% chance of not busting (1193/1296). {2,3,12}: 568/1296 = 43.8% success rate."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Expected rolls cluster near 20; long column 7 completes slightly faster than 2.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Expected number of rolls to complete column n: E[rolls] = length/probability. For column 2: 3/0.132 = 22.73 rolls. For column 7: 13/0.644 = 20.18 rolls. Column 7 is slightly faster, even though it's 4x longer."
+    },
+    {
+     "ref": "¶14",
+     "text": "Columns 2 and 12 require the most rolls. Columns 6, 7, and 8 are all close to each other around 20 rolls."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "{6,7,8} succeeds 92% per roll; {2,3,12} only 43.8%.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "You don't play Can't Stop one column at a time. You have THREE active columns, and you bust if you can't hit ANY of them. If you're on {6,7,8}, you have a 92% chance of not busting (1193/1296). {2,3,12}: 568/1296 = 43.8% success rate."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "37 combos rate excellent; median succeeds 79.6%, worst collapse to 43.8%.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "37 combinations are excellent (>=85% success rate), mostly centered around columns 5-9. The median combination still succeeds 79.6% of the time, but the worst combinations drop dramatically to just 43.8%."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Stopping rule weighs expected gain against bust-weighted unsaved progress.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Keep rolling if: (P_success x Q) > (P_bust x U), where Q = expected markers advanced, U = unsaved progress. On {6,7,8} with 5 unsaved steps: 1.32 > 0.4, keep rolling. On {2,3,12} with 2 unsaved steps: 1.12 > 0.46, STOP."
+    },
+    {
+     "ref": "¶18",
+     "text": "A roll is clean if at least one pairing gives you ONLY sums in your columns. Only 39.8% of rolls give a clean move on {6,7,8}. For {2,3,12}: Only 2.3% of rolls are clean! The forced-move rule is a balancing mechanism."
+    },
+    {
+     "ref": "¶19",
+     "text": "Should you continue your current columns or switch to new ones? The mathematics favor continuation in most cases: wasting accumulated progress hurts more than the marginal benefit of a slightly better combination. I haven't fully analyzed this aspect quantitatively."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Roll on {6,7,8} with five steps banked; stop on {2,3,12} with two.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Keep rolling if: (P_success x Q) > (P_bust x U), where Q = expected markers advanced, U = unsaved progress. On {6,7,8} with 5 unsaved steps: 1.32 > 0.4, keep rolling. On {2,3,12} with 2 unsaved steps: 1.12 > 0.46, STOP."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Only 39.8% of {6,7,8} rolls are clean; {2,3,12} just 2.3%.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "A roll is clean if at least one pairing gives you ONLY sums in your columns. Only 39.8% of rolls give a clean move on {6,7,8}. For {2,3,12}: Only 2.3% of rolls are clean! The forced-move rule is a balancing mechanism."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "concession",
+   "attribution": "author",
+   "text": "Continuing current columns usually beats switching, but author hedges: switching unanalyzed quantitatively.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Should you continue your current columns or switch to new ones? The mathematics favor continuation in most cases: wasting accumulated progress hurts more than the marginal benefit of a slightly better combination. I haven't fully analyzed this aspect quantitatively."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "3.6M-game simulations crown probabilistic, consistent strategies over fast ones.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "I implemented 38 different strategies and ran them against each other in a comprehensive simulation (1,000 single-player trials per strategy, 2,500 head-to-head games per matchup, 3.6 million total games)."
+    },
+    {
+     "ref": "¶22",
+     "text": "FiftyPercentSurvival dominates with 69.84% overall win rate. The strategy: Roll until cumulative survival probability drops below 50%. Probabilistic strategies dominate the top rankings."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "38 strategy families tested across single-player and head-to-head simulations.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "I implemented 38 different strategies and ran them against each other in a comprehensive simulation (1,000 single-player trials per strategy, 2,500 head-to-head games per matchup, 3.6 million total games)."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "GreedyUntil1Col fastest at 10.5 turns but busts 7.5 times per game.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "GreedyUntil1Col is fastest (10.5 turns) but has high variance (sigma=5.73) and bust rate (7.5 per game). FiftyPercentSurvival balances speed with remarkable consistency (sigma=2.86, only 2.67 busts)."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "FiftyPercentSurvival wins 69.84% by stopping below 50% cumulative survival.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "FiftyPercentSurvival dominates with 69.84% overall win rate. The strategy: Roll until cumulative survival probability drops below 50%. Probabilistic strategies dominate the top rankings."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Consistency beats raw speed; pure greedy loses nearly everything.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "The fastest strategy is not the best competitive strategy. In Can't Stop, consistency beats raw speed. It's better to reliably finish in 11 turns than to average 10.5 with high variance."
+    },
+    {
+     "ref": "¶25",
+     "text": "Probabilistic strategies dominate. Never going full greedy: the pure Greedy strategy lost essentially every game. Consistency > Speed. Being opponent aware didn't help."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "First player wins 55.59%, an 11.18% edge exceeding chess and Go.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Overall first-player advantage: +11.18% (Player 1 wins 55.59% across all games). This is substantial - larger than chess (~5%) or Go (~7%). GreedyUntil1Col has extreme position bias (+31.24%)."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Board is nearly balanced singly; forced moves compensate combination imbalance.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "The deviations are +-13.6% at most. That's pretty good given that lengths must be integers! In realistic multi-column play, column combination choice dominates individual column balance."
+    },
+    {
+     "ref": "¶27",
+     "text": "Optimal board (+-1 step from current): Lengths [3, 5, 8, 10, 12, 14, 12, 10, 8, 5, 3], max deviation +-3.09%, 4x more balanced with just +1 step! Best balance under 20 steps: +-2.17%."
+    },
+    {
+     "ref": "¶28",
+     "text": "This is elegant game design: accept imperfect balance in the core mechanics, then add rules that turn that imbalance into interesting strategic choices. The forced-move rule compensates for the mathematical imbalance."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Single-column completion deviates at most 13.6% from 20 rolls.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "The deviations are +-13.6% at most. That's pretty good given that lengths must be integers! In realistic multi-column play, column combination choice dominates individual column balance."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Adding one step per middle column would quadruple balance precision.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "Optimal board (+-1 step from current): Lengths [3, 5, 8, 10, 12, 14, 12, 10, 8, 5, 3], max deviation +-3.09%, 4x more balanced with just +1 step! Best balance under 20 steps: +-2.17%."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Forced moves contaminate strong combos, keeping strategy choices interesting.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "This is elegant game design: accept imperfect balance in the core mechanics, then add rules that turn that imbalance into interesting strategic choices. The forced-move rule compensates for the mathematical imbalance."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Play middle columns consistently; designers should favor playability over perfection.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "For players: Use the FiftyPercentSurvival strategy. Aim for columns 5-9, avoid forcing activation of columns 2-3 and 11-12, and prioritize consistency over aggressive play. For game designers: Prioritize playability over mathematical perfection."
+    },
+    {
+     "ref": "¶30",
+     "text": "All analysis code and simulation results are available: probability_calculations.py, column_combinations.py, strategies_correct_implementation.py, comprehensive_benchmark_enhanced.py, COMPREHENSIVE_RESULTS.md, column_combinations_all.csv."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Aim for columns 5-9, avoid edge columns, prioritize consistency over aggression.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "For players: Use the FiftyPercentSurvival strategy. Aim for columns 5-9, avoid forcing activation of columns 2-3 and 11-12, and prioritize consistency over aggressive play. For game designers: Prioritize playability over mathematical perfection."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "All code, simulations, and datasets are published for reuse.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "All analysis code and simulation results are available: probability_calculations.py, column_combinations.py, strategies_correct_implementation.py, comprehensive_benchmark_enhanced.py, COMPREHENSIVE_RESULTS.md, column_combinations_all.csv."
+    }
+   ]
+  }
+ ]
+}

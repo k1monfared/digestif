@@ -1,0 +1,40 @@
+- Let's Talk Privacy: who can read encrypted messages (source: source.txt)
+    Summary: Encryption excludes providers only when clients hold keys; WhatsApp escrows, Proton needs trust, Signal minimizes. (¶1, ¶2, ¶4, ¶62)
+        - 1 End-to-end encryption can mean several practical things beyond device-to-device ciphertext. (¶3, ¶4)
+            - 1.1 Nuance: Real goal is excluding the provider, though metadata like contacts and timing still leaks. (¶4)
+            - 1.2 Meta likely accesses WhatsApp content given closed source, ad-data sharing, past plaintext failures. (¶5)
+        - 2 Smoking gun: history portability without manual key transfer betrays server key access. (¶6, ¶7)
+            - 2.1 Nuance: Signal forces manual key copy; any server-touchable key is like public copies. (¶7)
+        - 3 WhatsApp server stores encrypted history and maps accounts to device identities. (¶8, ¶9)
+            - 3.1 Counterpoint: Server-authenticated new devices receive decryption keys; rogue devices could hide from lists. (¶9)
+        - 4 Proton generates browser-side keys, then stores them server-side encrypted under user password. (¶10, ¶11)
+            - 4.1 Evidence: Login: bcrypt-hash authenticates, server returns encrypted key, browser decrypts locally. (¶12, ¶13) [reported]
+            - 4.2 Nuance: Hashing authenticates one-way while encryption reversibly protects the private key. (¶14, ¶15, ¶16, ¶17)
+            - 4.3 Counterpoint: Proton could serve malicious client code capturing passwords, then decrypt stored keys. (¶18)
+            - 4.4 Nuance: Open source helps only if served code matches, stays honest, infrastructure stays clean. (¶19)
+            - 4.5 Unlike WhatsApp, Proton must first compromise the client to steal passwords. (¶20)
+        - 5 Signal stores history on-device, deleting server copies after delivery. (¶21, ¶22)
+            - 5.1 Example: Migration needs physical backup plus passphrase, device transfer, or unseen recovery key. (¶23)
+            - 5.2 Signal servers cannot grant history access; recovery keys stay client-side and unrecoverable. (¶24)
+        - 6 Password handling adds another unverifiable layer beneath encryption architecture. (¶25, ¶26)
+            - 6.1 Nuance: Client hashing is verifiable in open source; server behavior after arrival is not. (¶27, ¶28)
+            - 6.2 Evidence: Facebook logged hundreds of millions of plaintext passwords; Adobe hints leaked; small services worse. (¶29) [reported]
+            - 6.3 Nuance: Proton password-reset data loss suggests honest design but proves nothing about capability. (¶30)
+            - 6.4 Without client crypto guarantees, users trust reputation, jurisdiction, model, history. (¶31)
+            - 6.5 Architecture sets trust surface: Meta infrastructure, Proton client integrity, Signal key custody. (¶32)
+        - 7 Comparison names WhatsApp escrow, Proton password-encrypted storage, Signal client control. (¶33, ¶34, ¶35, ¶36)
+        - 8 Nobody can verify that companies avoid plaintext password storage. (¶37, ¶38)
+            - 8.1 Evidence: Verifiable: open clients, traffic checks, audits with published results. (¶39, ¶40, ¶41, ¶42)
+            - 8.2 Nuance: Unverifiable: closed server code, later changes, rogue staff, breaches. (¶43, ¶44, ¶45, ¶46)
+            - 8.3 Nuance: Look for open servers, audits, breach behavior; beware resets, obscurity, violation history. (¶47, ¶48, ¶49, ¶50, ¶51)
+            - 8.4 Evidence: Adobe 2013 hints, Facebook 2019 plaintext logging, small services with weak unsalted storage. (¶52, ¶53, ¶54, ¶55)
+            - 8.5 Trust-minimizing needs client-side crypto, zero-knowledge servers, reproducible audited builds. (¶56, ¶57, ¶58)
+            - 8.6 Evidence: Applied trust: WhatsApp everything, Proton hashing plus client, Signal implementation plus custody. (¶59, ¶60, ¶61)
+        - 9 Prefer client-side encryption, open everything, decentralization, hardware security keys. (¶62, ¶63)
+            - 9.1 Theme: Sources document WhatsApp multi-device, Proton key storage, Signal secure backups. (¶64, ¶65, ¶66, ¶67, ¶68)
+    - Cross-links
+        - 2 supports 1.2 (¶7) note: smoking-gun test backs verdict of likely Meta access
+        - 3.1 contradicts 4.5 (¶9) note: server key power contrasts with password-first compromise requirement
+        - 5.2 supports 8.5 (¶24) note: zero-knowledge recovery backs trust-minimizing conditions
+        - 6.2 supports 8 (¶29) note: plaintext failures evidence backs unverifiability verdict
+    - Coverage: 68 of 68 passages cited

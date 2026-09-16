@@ -1,0 +1,865 @@
+{
+  "edges": [
+    {
+      "from": "0",
+      "to": "1",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "2",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "3",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "4",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "5",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "6",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "7",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "8",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "9",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "10",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.1",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.2",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.3",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.1",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.2",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.1",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.2",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.3",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.1",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.2",
+      "type": "contains"
+    },
+    {
+      "from": "4",
+      "to": "4.3",
+      "type": "contains"
+    },
+    {
+      "from": "5",
+      "to": "5.1",
+      "type": "contains"
+    },
+    {
+      "from": "5",
+      "to": "5.2",
+      "type": "contains"
+    },
+    {
+      "from": "5",
+      "to": "5.3",
+      "type": "contains"
+    },
+    {
+      "from": "6",
+      "to": "6.1",
+      "type": "contains"
+    },
+    {
+      "from": "6",
+      "to": "6.2",
+      "type": "contains"
+    },
+    {
+      "from": "7",
+      "to": "7.1",
+      "type": "contains"
+    },
+    {
+      "from": "7",
+      "to": "7.2",
+      "type": "contains"
+    },
+    {
+      "from": "7",
+      "to": "7.3",
+      "type": "contains"
+    },
+    {
+      "from": "8",
+      "to": "8.1",
+      "type": "contains"
+    },
+    {
+      "from": "8",
+      "to": "8.2",
+      "type": "contains"
+    },
+    {
+      "from": "8",
+      "to": "8.3",
+      "type": "contains"
+    },
+    {
+      "from": "8",
+      "to": "8.4",
+      "type": "contains"
+    },
+    {
+      "from": "8",
+      "to": "8.5",
+      "type": "contains"
+    },
+    {
+      "from": "9",
+      "to": "9.1",
+      "type": "contains"
+    },
+    {
+      "from": "9",
+      "to": "9.2",
+      "type": "contains"
+    },
+    {
+      "from": "9",
+      "to": "9.3",
+      "type": "contains"
+    },
+    {
+      "from": "9",
+      "to": "9.4",
+      "type": "contains"
+    },
+    {
+      "from": "9",
+      "to": "9.5",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.1",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.2",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.3",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.4",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.5",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.6",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.7",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.8",
+      "type": "contains"
+    },
+    {
+      "from": "10",
+      "to": "10.9",
+      "type": "contains"
+    },
+    {
+      "from": "1.2",
+      "note": "closing proposer verdict restates mathematical extreme",
+      "source": [
+        "¶66"
+      ],
+      "to": "9.5",
+      "type": "restates"
+    },
+    {
+      "from": "5.2",
+      "note": "training pattern-to-values claim returns as scaling ladder",
+      "source": [
+        "¶35"
+      ],
+      "to": "9.4",
+      "type": "restates"
+    },
+    {
+      "from": "5.3",
+      "note": "practice-over-thought claim returns as key insight",
+      "source": [
+        "¶36"
+      ],
+      "to": "10.9",
+      "type": "restates"
+    },
+    {
+      "from": "7.2",
+      "note": "platform good-enough supports receiver shortfall claim",
+      "source": [
+        "¶46"
+      ],
+      "to": "3",
+      "type": "supports"
+    }
+  ],
+  "meta": {
+    "source": "source.txt",
+    "title": "On Intentionalism: propose rather than receive",
+    "passages": {
+      "¶1": "---\ntags: math, philosophy\n---\n# On Intentionalism",
+      "¶2": "There's a mathematical insight that explains why some people consistently end up with better outcomes than others, and it has nothing to do with talent, luck, or even the quality of their choices.",
+      "¶3": "It's about whether they propose or receive.",
+      "¶4": "## The Setup",
+      "¶5": "In 1962, mathematician-economists David Gale and Lloyd Shapley were working on a problem about how to create stable pairings between two groups of people. Their goal was to prove whether you could always match everyone in a way where no two unmatched people would prefer each other over their assigned partners.",
+      "¶6": "They proved you could, and presented an algorithm to find such matchings. But in analyzing their algorithm, they discovered something remarkable about the structure of who proposes and who responds.",
+      "¶7": "In their \"deferred acceptance\" algorithm, one side makes proposals in order of preference, and the other side accepts or tentatively rejects based on their preferences. When they analyzed what this produces, they found that proposers get their best possible partner among all stable (mutually acceptable) matchings, while receivers get their worst possible partner among all stable matchings.",
+      "¶8": "This isn't just slightly better or worse—it's systematically, provably, mathematically extreme. In the specific algorithm they designed, each individual proposer ends up with the best stable partner they could possibly get, and each individual receiver ends up with the worst stable partner they could possibly have.",
+      "¶9": "## Why This Matters Beyond Mathematics",
+      "¶10": "Now, most real-world situations don't follow the exact Gale-Shapley algorithm. But they share the fundamental structure: one side proposes or initiates, and the other side responds or selects from what's offered.",
+      "¶11": "And when systems have this structure, even roughly, we should expect to see the same pattern—proposers systematically getting better outcomes than receivers.",
+      "¶12": "Think about how most of your choices actually happen:",
+      "¶13": "Before you opened Netflix tonight, did you decide what kind of experience you wanted? Or did you scroll through recommendations until something looked good enough?",
+      "¶14": "When you bought your last phone, did you research what features you actually needed? Or did you choose among what was prominently displayed at the store?",
+      "¶15": "That job you have—did you identify companies doing work you cared about and pursue them? Or did you apply to positions that happened to be posted?",
+      "¶16": "The friend you're meeting for coffee—did you seek out someone with qualities you value? Or did you accept a connection that formed through proximity or circumstance?",
+      "¶17": "For most of these, most of us are receivers. We're choosing from what's presented, not pursuing what we want intentionally. And while these situations aren't running the Gale-Shapley algorithm exactly, they have the same basic structure—one side initiates (proposes), the other responds (receives).",
+      "¶18": "## The Pattern in Practice",
+      "¶19": "The insidious thing about being a receiver isn't that you get terrible outcomes. You don't. You get acceptable ones. Good enough ones. You watch a decent show, buy a functional phone, work a reasonable job, have pleasant friendships.",
+      "¶20": "But \"decent\" isn't the same as \"what would actually serve you best.\"",
+      "¶21": "When systems operate on a proposer-receiver structure, even informally, the outcomes tend to favor whoever's doing the proposing. Not because of some conspiracy, but because of the mathematical properties that Gale and Shapley identified in their algorithm. The structure itself creates the advantage.",
+      "¶22": "Here's what makes it worse: because your outcomes feel fine, you never develop the dissatisfaction that would push you to become a proposer. The system is stable (self-sustaining) precisely because it doesn't screw you badly enough to make you revolt. It just quietly, consistently ensures you get less than you could have if you were on the other side of the equation.",
+      "¶23": "You don't even know what you're missing, because you've never practiced wanting something specific enough to pursue it.",
+      "¶24": "## The Chicken and Egg",
+      "¶25": "To be a proposer, you need to know what you want—you need intention. But if you've spent your whole life as a receiver, how would you know?",
+      "¶26": "You can't develop clear, intentional preferences by choosing among presented options. Those choices just reveal which option you dislike least among what's available. They don't tell you what you'd pursue if you could pursue anything.",
+      "¶27": "This is the trap. You need intention to propose, but you develop intention through proposing.",
+      "¶28": "The music you listen to: are those actually your favorite songs, or just the best matches from what the algorithm served you? Would you even know the difference anymore?",
+      "¶29": "The person you're dating: did you decide what kind of relationship you wanted and seek someone compatible? Or did you swipe through available profiles and pick the most appealing match?",
+      "¶30": "After years of receiver mode, most people's \"preferences\" are just reactions to what gets put in front of them. They've lost—or never developed—the capacity to want something independent of what's being offered.",
+      "¶31": "## The Training Ground",
+      "¶32": "You can't jump straight from \"I pick from what Netflix recommends\" to \"I have a clear vision for my life's work.\" The muscle of intention and initiative builds progressively.",
+      "¶33": "Start small. Tonight, before opening any app, decide intentionally what you actually want from the next hour. Not \"something entertaining\" but specifically: do you want to laugh? Learn something? Feel calm? Be challenged?",
+      "¶34": "Then pursue that intentionally. Don't open Netflix and see what it suggests. Don't scroll TikTok until something catches you. Actively seek what you decided you wanted.",
+      "¶35": "The practice isn't about that one evening's entertainment. It's about rebuilding the capacity to intend and then act on that intention. Do this enough times, and you start to notice patterns in what satisfies you. Those patterns become preferences. Those preferences become values.",
+      "¶36": "You can't think your way into values. You have to practice your way into them.",
+      "¶37": "## Where This Shows Up",
+      "¶38": "Think about the last time you made a major life decision. Getting married, taking a job, moving to a city, choosing what to study.",
+      "¶39": "Did you decide what you wanted first and then pursue it? Or did you evaluate among options that presented themselves—people who expressed interest, positions that were posted, cities where you happened to get offers, majors that seemed practical?",
+      "¶40": "Most people, most of the time, are evaluating presented options. This feels like agency because you're choosing. But you're choosing as a receiver, which means you're operating in a structure that systematically favors the other side.",
+      "¶41": "The proposers—the people who decided intentionally what kind of work they wanted to do and pursued those specific opportunities, who identified what they valued in a partner and sought those people out, who picked cities based on how they wanted to live rather than where they got offers—those people end up with systematically better outcomes.",
+      "¶42": "Not because they're smarter or luckier. Because they're on the other side of a structure that mathematically favors proposers.",
+      "¶43": "## The Collective Effect",
+      "¶44": "This isn't just about individual outcomes. When most people are receivers, entire systems shift to optimize for whoever's doing the proposing.",
+      "¶45": "Companies don't build products for what people need—they build for what they can convince people to want among presented options. Dating apps don't facilitate people finding compatible partners—they optimize for engagement among available profiles. Content platforms don't serve what would genuinely satisfy you—they test what keeps you scrolling among suggested posts.",
+      "¶46": "The proposers in these systems aren't the users. They're the platforms. And the structure suggests exactly what we see: the platforms get optimal outcomes (your attention, your data, your money), and you get outcomes that are good enough to keep you participating, but not actually serving your best interests.",
+      "¶47": "You stay because leaving feels harder than accepting \"good enough.\" That's stability (resistance to change). That's why the system persists.",
+      "¶48": "## Breaking Out",
+      "¶49": "The structural disadvantage of being a receiver doesn't go away because you understand it. You have to actually switch positions.",
+      "¶50": "This is harder than it sounds, because our entire environment is designed to keep us receiving. Every interface, every recommendation system, every application process, every social script is built around presenting options and waiting for you to choose.",
+      "¶51": "Proposing means:\n- Deciding intentionally what you want before seeing what's available\n- Pursuing specific things rather than evaluating presented options  \n- Being willing to create opportunities rather than waiting for them\n- Accepting the friction of going against default flows",
+      "¶52": "It means asking \"what do I actually want?\" before every major decision and most minor ones. Then acting on that answer intentionally, even when it's inconvenient.",
+      "¶53": "Most people won't do this. It's effortful. The receiver position is comfortable enough to not motivate change. And after years of receiver mode, most people have lost the capacity to even know what they'd want to propose.",
+      "¶54": "But for those who do make the shift: while real life doesn't follow the exact mathematics of the Gale-Shapley algorithm, it shares enough of the structure that the outcomes follow the same pattern. Systematically better. Not just incrementally—structurally.",
+      "¶55": "The question isn't whether this dynamic exists. The mathematics and the patterns we see around us both point to it.",
+      "¶56": "The question is whether you're willing to do something about it.",
+      "¶57": "## What You Can Do Tomorrow",
+      "¶58": "Don't start with your career or life partner. Start with tomorrow morning.",
+      "¶59": "Before you check your phone, decide intentionally: what do you actually want from the first hour of your day? Not \"I'll see what notifications I have\" but specifically: do you want calm? Energy? Connection? Solitude?",
+      "¶60": "Then pursue that. If you want calm, don't open apps that will agitate you. If you want connection, reach out to someone specific. If you want energy, do something physical.",
+      "¶61": "Notice how different this feels from scrolling until something grabs you.",
+      "¶62": "Do this for a week with small things—breakfast, evening activities, weekend plans. Notice what actually satisfies you versus what just filled time. Those patterns are the beginning of intention.",
+      "¶63": "Then scale up. Apply it to bigger decisions. Before looking at job postings, decide what kind of work you want to do. Before swiping on dating apps, decide what kind of relationship you're looking for. Before browsing products, decide what problem you're trying to solve.",
+      "¶64": "The practice builds the muscle. The muscle enables larger intentions. Larger intentions become values. Values make you a proposer.",
+      "¶65": "And proposers—whether in the pure mathematics of matching algorithms or in the messy approximations of real life—end up with better outcomes.",
+      "¶66": "Not because they're special. Because they're on the other side of the equation.",
+      "¶67": "---",
+      "¶68": "## Appendix: Building Intention - Concrete Steps",
+      "¶69": "The shift from receiver to proposer requires practicing intention in progressively larger domains. Here are specific exercises for the scenarios mentioned throughout this post.",
+      "¶70": "### Entertainment (Netflix, YouTube, TikTok)",
+      "¶71": "**Week 1: Name your intention**\n- Before opening any entertainment app, write down (or say aloud) what you want to feel: \"I want to laugh,\" \"I want to learn about X,\" \"I want to feel inspired,\" \"I want to relax completely\"\n- If you can't name it, close the app and try again later\n- Keep a simple log: intention → what you watched → did it deliver?",
+      "¶72": "**Week 2: Seek intentionally**\n- Based on your named intention, search for specific content rather than scrolling recommendations\n- If \"laugh\" → search for specific comedians you know make you laugh\n- If \"learn\" → search for specific topics, not just what's trending\n- Notice how much faster you find satisfaction",
+      "¶73": "**Week 3: Protect your intention**\n- Set a timer for how long you intended to spend\n- When autoplay starts, ask: \"Does this serve my original intention?\"\n- Practice closing the app when your intention is fulfilled, not when you're exhausted",
+      "¶74": "### Shopping (Phones, Products, Toothpaste)",
+      "¶75": "**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it.",
+      "¶76": "**Practice run**: Next time you need toothpaste\n- Before going to store: What do you actually need? (sensitive teeth? whitening? just clean teeth?)\n- Research which ingredient addresses that need\n- Go to store, find that ingredient, buy it\n- Notice how different this feels from standing in the aisle comparing packaging",
+      "¶77": "### Jobs and Career",
+      "¶78": "**Quarterly intention-setting** (do this even if you're not job hunting):\n1. **Map your energy**: For two weeks, note what tasks give you energy vs. drain you\n2. **Identify patterns**: What type of problems do you enjoy solving? What environments let you thrive?\n3. **Define your criteria**: Write 5 non-negotiables for your next role (not \"good pay\" but \"solving X type of problem, with Y type of people, in Z type of environment\")\n4. **Find the companies**: Research companies doing that work, regardless of whether they have postings\n5. **Reach out intentionally**: Contact people at those companies, explain what you're looking for, ask about their experience",
+      "¶79": "**If you must apply to postings:**\n- Only apply to roles that match at least 4 of your 5 criteria\n- Customize every application to explain why this specific role matches your intentions\n- Track: are you just submitting many applications (receiver) or carefully selecting few (proposer)?",
+      "¶80": "### Relationships (Dating, Friendships)",
+      "¶81": "**Before dating:**\n1. **Write your relationship intention**: Not \"find someone\" but specifically what kind of relationship you want to build. What does daily life look like? How do you handle conflict? What do you build together?\n2. **Identify values alignment**: What 3-5 values absolutely must align? (not \"nice person\" but specific things like \"prioritizes growth,\" \"values deep conversation,\" \"wants intellectual partnership\")\n3. **Seek intentionally**: Look for people who demonstrate those values, not just attractive profiles\n4. **First date filter**: Ask questions that reveal value alignment, not just \"getting to know you\" surface chat",
+      "¶82": "**For friendships:**\n1. **Name what you need**: \"I want friends who push me intellectually,\" \"I want friends I can be quiet with,\" \"I want friends who share this specific hobby\"\n2. **Go where those people are**: Join specific communities, not just \"networking events\"\n3. **Initiate based on intention**: Invite people to do specific things you actually want to do, not generic \"let's hang out sometime\"",
+      "¶83": "### Daily Micro-Practices",
+      "¶84": "**Morning routine** (5 minutes):\n- Before checking phone: \"What are my three intentions for today?\" (Write them down)\n- Not \"be productive\" but specific: \"have meaningful conversation with X,\" \"make progress on Y,\" \"spend 30 minutes on Z\"",
+      "¶85": "**Evening review** (5 minutes):\n- Did you act as proposer or receiver today?\n- When you were a receiver, what would you propose instead tomorrow?\n- Note one small thing you'll do intentionally tomorrow",
+      "¶86": "**The pause practice**:\n- Before any significant choice today, pause for 10 seconds\n- Ask: \"Am I choosing this intentionally, or just selecting from what's in front of me?\"\n- This builds awareness, which is the first step",
+      "¶87": "### Tracking Progress",
+      "¶88": "Keep a simple journal with three columns:\n- **Situation**: What was the choice?\n- **Mode**: Did I propose (decide what I want, then pursue it) or receive (choose from what was offered)?\n- **Outcome**: How satisfied am I with the result?",
+      "¶89": "After 30 days, you'll see the pattern clearly. Proposer entries will show higher satisfaction. This evidence will motivate continued practice.",
+      "¶90": "### The Key Insight",
+      "¶91": "Intention isn't about always knowing exactly what you want for your entire life. It's about practicing the question \"what do I want?\" before someone else provides the answer. Start small. The muscle builds. The capacity grows. Eventually, the intentional approach becomes natural—and that's when you've truly shifted from receiver to proposer."
+    }
+  },
+  "nodes": [
+    {
+      "attribution": "author",
+      "id": "0",
+      "source": [
+        "¶1",
+        "¶2",
+        "¶3",
+        "¶66"
+      ],
+      "text": "Life structurally favors proposers over receivers, so practice intending before choosing.",
+      "type": "summary"
+    },
+    {
+      "attribution": "reported",
+      "id": "1",
+      "source": [
+        "¶4",
+        "¶5",
+        "¶6"
+      ],
+      "text": "Gale-Shapley 1962 stable-matching work revealed proposer-receiver asymmetry.",
+      "type": "claim"
+    },
+    {
+      "attribution": "reported",
+      "id": "1.1",
+      "source": [
+        "¶7"
+      ],
+      "text": "Deferred acceptance: one side proposes in order, other tentatively accepts or rejects.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "reported",
+      "id": "1.2",
+      "source": [
+        "¶8"
+      ],
+      "text": "Proposers get best stable partner; receivers get worst; extremes are provable.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "1.3",
+      "source": [
+        "¶2",
+        "¶3"
+      ],
+      "text": "Better outcomes come from proposing versus receiving, not talent or luck.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "2",
+      "source": [
+        "¶9",
+        "¶10",
+        "¶11"
+      ],
+      "text": "Most real situations share proposer-receiver structure without running exact algorithm.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "2.1",
+      "source": [
+        "¶12",
+        "¶13",
+        "¶14",
+        "¶15",
+        "¶16"
+      ],
+      "text": "Receiver quiz: Netflix scroll, displayed phones, posted jobs, proximity friendships.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "2.2",
+      "source": [
+        "¶17"
+      ],
+      "text": "Most of us mostly receive, choosing from presented rather than pursuing wanted.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "3",
+      "source": [
+        "¶18",
+        "¶19",
+        "¶20"
+      ],
+      "text": "Receiving yields acceptable outcomes that quietly fall short of best.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "3.1",
+      "source": [
+        "¶21"
+      ],
+      "text": "Informal proposer-receiver structures systematically favor whoever proposes.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "3.2",
+      "source": [
+        "¶22"
+      ],
+      "text": "Comfortable outcomes block revolt; system stays stable by never screwing badly.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "3.3",
+      "source": [
+        "¶23"
+      ],
+      "text": "Without practicing specific wanting, people cannot know what they miss.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "4",
+      "source": [
+        "¶24",
+        "¶25"
+      ],
+      "text": "Proposing needs intention, but intention develops through proposing.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "4.1",
+      "source": [
+        "¶26"
+      ],
+      "text": "Presented choices reveal least-disliked option, not what anyone would pursue freely.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "4.2",
+      "source": [
+        "¶27"
+      ],
+      "text": "The trap: intention is prerequisite and product of proposing.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "4.3",
+      "source": [
+        "¶28",
+        "¶29",
+        "¶30"
+      ],
+      "text": "Algorithm-fed songs and swiped partners may be reactions mistaken for preferences.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "5",
+      "source": [
+        "¶31",
+        "¶32"
+      ],
+      "text": "Intention muscle builds progressively from small exercises upward.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "5.1",
+      "source": [
+        "¶33",
+        "¶34"
+      ],
+      "text": "Tonight decide the feeling wanted, then seek it without scrolling recommendations.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "5.2",
+      "source": [
+        "¶35"
+      ],
+      "text": "Repeated practice surfaces patterns that become preferences then values.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "5.3",
+      "source": [
+        "¶36"
+      ],
+      "text": "Values come from practice, not from thought alone.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "6",
+      "source": [
+        "¶37",
+        "¶38",
+        "¶39",
+        "¶40"
+      ],
+      "text": "Major decisions mostly evaluate presented options, mistaking receipt for agency.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "6.1",
+      "source": [
+        "¶41"
+      ],
+      "text": "Intentional seekers of work, partners, cities gain systematically better outcomes.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "6.2",
+      "source": [
+        "¶42"
+      ],
+      "text": "Advantage comes from structural side, not superior smarts or luck.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "7",
+      "source": [
+        "¶43",
+        "¶44"
+      ],
+      "text": "Receiver majorities let systems optimize for proposers instead of users.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "7.1",
+      "source": [
+        "¶45"
+      ],
+      "text": "Products, dating apps, feeds maximize engagement over genuine need or compatibility.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "7.2",
+      "source": [
+        "¶46"
+      ],
+      "text": "Platforms take optimal outcomes while users get participation-sustaining good-enough.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "7.3",
+      "source": [
+        "¶47"
+      ],
+      "text": "Leaving feels harder than accepting; stability means resistance to change.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "8",
+      "source": [
+        "¶48",
+        "¶49",
+        "¶50"
+      ],
+      "text": "Understanding disadvantage changes nothing without switching to proposing.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "8.1",
+      "source": [
+        "¶51"
+      ],
+      "text": "Proposing means deciding first, pursuing specifics, creating chances, accepting friction.",
+      "type": "evidence"
+    },
+    {
+      "attribution": "author",
+      "id": "8.2",
+      "source": [
+        "¶52"
+      ],
+      "text": "Ask what is wanted before every decision, then act despite inconvenience.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "8.3",
+      "source": [
+        "¶53"
+      ],
+      "text": "Most refuse the effort; comfort plus atrophied wanting keeps receivers receiving.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "8.4",
+      "source": [
+        "¶54"
+      ],
+      "text": "Shifters gain structurally better outcomes even outside exact mathematics.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "8.5",
+      "source": [
+        "¶55",
+        "¶56"
+      ],
+      "text": "Dynamic existence is settled; only willingness to act remains open.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "9",
+      "source": [
+        "¶57",
+        "¶58"
+      ],
+      "text": "Start tomorrow morning with the first hour, then scale practice upward.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "9.1",
+      "source": [
+        "¶59",
+        "¶60"
+      ],
+      "text": "Name calm, energy, connection, or solitude; pursue it instead of notifications.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "9.2",
+      "source": [
+        "¶61",
+        "¶62"
+      ],
+      "text": "Notice scrolling versus intending; log satisfaction across small choices for a week.",
+      "type": "nuance"
+    },
+    {
+      "attribution": "author",
+      "id": "9.3",
+      "source": [
+        "¶63"
+      ],
+      "text": "Scale to jobs, dating, purchases by deciding criteria before browsing options.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "9.4",
+      "source": [
+        "¶64"
+      ],
+      "text": "Muscle enables intentions, intentions become values, values make proposers.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "9.5",
+      "source": [
+        "¶65",
+        "¶66"
+      ],
+      "text": "Proposers end better across math and mess, not from specialness but position.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "10",
+      "source": [
+        "¶67",
+        "¶68",
+        "¶69"
+      ],
+      "text": "Appendix gives progressive exercises for entertainment, shopping, jobs, relationships, days.",
+      "type": "claim"
+    },
+    {
+      "attribution": "author",
+      "id": "10.1",
+      "source": [
+        "¶70",
+        "¶71",
+        "¶72",
+        "¶73"
+      ],
+      "text": "Entertainment: name intention week one, seek week two, protect with timers week three.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "10.2",
+      "source": [
+        "¶74",
+        "¶75"
+      ],
+      "text": "Shopping: define problem, list must-haves, research features, ignore layout, 24-hour rule.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "10.3",
+      "source": [
+        "¶76"
+      ],
+      "text": "Toothpaste drill: identify need, find ingredient, buy it, notice packaging-free choosing.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "10.4",
+      "source": [
+        "¶77",
+        "¶78",
+        "¶79"
+      ],
+      "text": "Career: set five non-negotiables, approach firms directly, apply only to strong matches.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "10.5",
+      "source": [
+        "¶80",
+        "¶81"
+      ],
+      "text": "Dating: write relationship vision, require value alignment, filter first dates intentionally.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "10.6",
+      "source": [
+        "¶82"
+      ],
+      "text": "Friendship: name needed qualities, join matching communities, initiate specific activities.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "10.7",
+      "source": [
+        "¶83",
+        "¶84",
+        "¶85",
+        "¶86"
+      ],
+      "text": "Daily: three morning intentions, evening proposer review, ten-second pause before choices.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "10.8",
+      "source": [
+        "¶87",
+        "¶88",
+        "¶89"
+      ],
+      "text": "Journal situation, mode, outcome; thirty days reveal proposer satisfaction pattern.",
+      "type": "example"
+    },
+    {
+      "attribution": "author",
+      "id": "10.9",
+      "source": [
+        "¶90",
+        "¶91"
+      ],
+      "text": "Intention means asking what is wanted before others answer; small reps grow capacity.",
+      "type": "claim"
+    }
+  ]
+}

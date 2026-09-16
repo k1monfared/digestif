@@ -1,0 +1,31 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "point-hierarchy",
+ "inputs": {
+  "faithfulness_precision": 0.913,
+  "critical_errors": 0,
+  "must_recall": 0.7273,
+  "overall_recall": 0.7333,
+  "redundancy_rate": 0.0,
+  "trivia_rate": 0.2174
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "Hard gates first: critical_errors=0 (gate critical_contradicted_max=0 => PASS); faithfulness_precision=0.913 < faithfulness_precision_min=0.95 => FAIL; must_recall=0.7273 < must_recall_min=0.9 => FAIL; redundancy_rate=0.0 <= redundancy_max=0.15 => PASS. Weighted score (for audit only, not used to override fails) = 0.4*0.913 + 0.4*0.7273 - 0.2*0.0 = 0.3652 + 0.29092 - 0.0 = 0.65612 ~= 0.6561.",
+ "weighted_score": 0.6561,
+ "verdict": "Fail",
+ "tradeoff_note": "Two hard gates missed: faithfulness precision 0.913 is below the 0.95 minimum (C016, C021 drop source hedges) and must-have recall 0.7273 is far below the 0.9 minimum, with 6 of 11 must-haves only partial. Concision is clean (redundancy 0.0) but per policy it cannot rescue faithfulness or coverage fails.",
+ "fix_list": [
+  "Raise must-have recall: K01, K05, K11, K12, K14, K15 are all Partial; each must state its defining content, not just the headline. Prioritize K01 (tools-not-status-symbols thesis), K05 (phones not built for people like him, sell unwanted features, push ads, lock in ecosystems), and K11 (Black Friday deal, being fooled, remaining-payments anxiety, device limiting his choices).",
+  "K12/K13: add the concrete model names and requested feature set (gpt-4o-mini scraping code, claude-3.5 sonnet cleaning, 5G/eSIM/SD/battery/waterproof/camera, smaller companies) to move Partial to Present.",
+  "K14/K15: restore dropped specifics (Moto G Power 2024 model year, camera and oversized-screen complaints, TCL 50 XE NXTPAPER name, 2025-01-05 date, two-week trial, average camera, G75 IP68 waterproofness, Motorola cameras generally weak) to clear the recall gate.",
+  "C016 and C021: preserve source hedges ('generally wrong specs', Edge 40 SD uncertainty) so the claims do not overstate; this lifts faithfulness_precision above 0.95.",
+  "C002/C006/C010/C015/C020: drop the five restated theme-header bullets to cut trivia_rate 0.2174 without any coverage loss."
+ ],
+ "reasoning": "Gate check in order. (1) critical_errors=0 against critical_contradicted_max=0: PASS, no Critical or Contradicted claims; both non-supported claims C016 and C021 are Partially supported, Minor severity, hedging losses only. (2) faithfulness_precision=0.913 vs minimum 0.95: FAIL by 0.037. The two partials (C016 at loglog 4.1 dropping 'generally', C021 at loglog 5.1 stating Edge 40 SD as fact) are Minor individually but they are the entire precision loss, so the gate is missed narrowly and is fully fixable by restoring source hedges. (3) must_recall=0.7273 vs minimum 0.9: FAIL decisively. Coverage shows 11 must-haves with 5 Present, 6 Partial, 0 Missing; partial credit yields 0.7273. The six partials (K01, K05, K11, K12, K14, K15) each preserve the headline but lose the defining substance, e.g. K05 loses the indictment that phones 'were not built for people like him, but to sell unwanted features, push ads, and lock users into ecosystems' (loglog L006, L002, L028), and K11 loses the Black Friday fooling context and choice-limiting concern (L017). (4) redundancy_rate=0.0 <= redundancy_max=0.15: PASS, so concision provides no rescue and no penalty. trivia_rate=0.2174 is high (5 restated theme headers) but trivia is not a configured hard gate, so it only informs the tie-break/fix list. Weighted score computed for audit = 0.6561, but policy states hard-gate misses fail the sample outright and concision never rescues a faithfulness or coverage fail, so verdict is Fail on two independent gates. No aspect-judge fact conflict required rereading SOURCE."
+}

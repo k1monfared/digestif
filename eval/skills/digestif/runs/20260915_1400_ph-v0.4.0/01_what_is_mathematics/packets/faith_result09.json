@@ -1,0 +1,476 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Correctness was only the floor: importance is the real constraint, and the deciding was never paid work with a home in the profession.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Correctness was never the binding constraint... It was the floor. The constraint was always importance",
+   "reasoning": "Source states correctness was the floor, importance the constraint, and deciding never counted or paid as work with no home."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The constraint was always importance: deciding what is worth attention, what is deep, what should be taught to the next generation.",
+   "reasoning": "Verbatim match to source; no qualifier or scope change."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "9.1.1"
+   ],
+   "claim_text": "Importance is partly social: checkability and structural value set floor and ceiling, the social layer decides the middle, shaped by careers, incentives, taste, and luck.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle",
+   "reasoning": "Drops 'vast' only, a stylistic compression with identical meaning."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "9.1.2"
+   ],
+   "claim_text": "Confession: the author, a practicing mathematician, always thought math was pure correctness and the art of finding beautiful patterns.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Confession: this is very hard to say for me, as a practicing mathematician, I always thought of math as that science of pure correctness and the art of finding beautiful patterns.",
+   "reasoning": "Directly restates the author's confessed prior view."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "Many mathematicians publish anything they can prove, and much of science works that way.",
+   "claim_type": "fact",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "I know of mathematicians who will publish anything they can prove. In fact much of science works that way.",
+   "reasoning": "Source says 'I know of mathematicians', an existence claim; loglog strengthens it to 'Many', an unsupported quantifier upgrade."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "9.2.1"
+   ],
+   "claim_text": "A scientist proposes a big problem, gets funded, works for years, publishes a detour, and the big problem quietly stays unsolved.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A scientist writes a grant proposal for a big important problem, gets funded, works for years, has nothing to show, then publishes whatever detour",
+   "reasoning": "Accurate paraphrase; only omits 'has nothing to show', leaving meaning intact."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "claim_text": "The answer is not the production of correct statements of found patterns; mathematics was always both finding and proving.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them.",
+   "reasoning": "Matches source negation and the 'both' formulation exactly."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "9.3.1"
+   ],
+   "claim_text": "The proving is the chore, the checking, now cheap; the finding is deciding which patterns are worth proving, still human.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human.",
+   "reasoning": "Near-verbatim restatement with no change in meaning."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "9.3.2"
+   ],
+   "claim_text": "The author is not claiming mathematics was always mostly the finding.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I am not claiming mathematics was always mostly the finding.",
+   "reasoning": "Verbatim match preserving the negation."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "9.4"
+   ],
+   "claim_text": "Speculation: the mix is shifting, as proving and verification get automated the weight moves to deciding which patterns matter, where the field's values will live.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live.",
+   "reasoning": "Preserves the speculative hedging and content."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "9.4.1"
+   ],
+   "claim_text": "Software engineering already made this turn: engineers spend more time deciding what to build than writing code.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A lot of engineers today spend more of their time deciding what to build and why than writing the code.",
+   "reasoning": "Accurate paraphrase, retains the 'a lot of' scope."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "9.4.2"
+   ],
+   "claim_text": "Some became product managers, some architects; the coding got cheap and the deciding got loud.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Some became product managers, some became architects. The coding got cheap, and the deciding got loud.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "9.4.3"
+   ],
+   "claim_text": "Did the turn land well? Both ways: open source runs on love, the framework wars run on attention, software is both futures at once.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "open source runs on love, the framework wars run on attention, and software is already the two futures at once.",
+   "reasoning": "Matches source's 'both ways' answer and the two examples."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "9.5"
+   ],
+   "claim_text": "Mathematics is heading the same way, with one difference: the deciding was never counted or paid as work, so it has no established home.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the deciding was never counted or paid as work, so it has no established home in the profession.",
+   "reasoning": "Verbatim content, negation preserved."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "9.5.1"
+   ],
+   "claim_text": "It was a personal measure of someone great: how much my work is directing the field.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It was a personal measure of someone great: \"how much my work is directing the field\" kind of thing.",
+   "reasoning": "Direct quote of the source phrase."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "9.5.2"
+   ],
+   "claim_text": "The AI era does not replace the practice; it reveals it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The AI era does not replace the practice. It reveals it.",
+   "reasoning": "Verbatim, negation intact."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "9.6"
+   ],
+   "claim_text": "When proving is automated, finding, judgment, and taste become visible as the only parts that cannot be generated on demand.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they are now the only parts that can't be generated on demand.",
+   "reasoning": "Accurately preserves the 'only parts' and 'can't be generated' claims."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "9.6.1"
+   ],
+   "claim_text": "What is revealed has to land somewhere: either a fun activity for those who can afford it, or an influencer economy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Either theoretical mathematics becomes a fun activity, done by people who can afford to do it for the love of it, or it becomes part of an influencer economy",
+   "reasoning": "Faithful to the either/or framing."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "9.6.2"
+   ],
+   "claim_text": "Then the deciding gets made by whoever holds attention, or whoever owns the compute it runs on.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the deciding gets made by whoever holds attention, or whoever owns the compute it runs on.",
+   "reasoning": "Exact restatement."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "9.7"
+   ],
+   "claim_text": "The community can try to keep hold of the deciding, but it was never fully theirs: physics and usefulness steered it from outside.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it was never fully theirs to begin with: a lot of what the field chose to work on was steered from outside, by physics and by what was useful elsewhere",
+   "reasoning": "Preserves negation and the external-steering claim."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "9.7.1"
+   ],
+   "claim_text": "That steering at least answered to results, while what replaces it answers to engagement.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "that steering at least answered to results, while what replaces it answers to engagement.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "9.7.2"
+   ],
+   "claim_text": "The author does not know which way it lands; that is the point: it is not decided yet.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I do not know which way it lands, and that is the point: it is not decided yet.",
+   "reasoning": "Verbatim, both negations preserved."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "9.8"
+   ],
+   "claim_text": "Statistics landed well when arithmetic got cheap: calculation became a tool and the field shifted from computing to designing the questions.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Statistics went through the same turn when arithmetic got cheap: the calculation became a tool, the field's identity shifted from computing to designing the questions",
+   "reasoning": "Faithful paraphrase, retains the 'landing well' precedent."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "9.8.1"
+   ],
+   "claim_text": "Deciding which questions matter became the discipline itself.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "deciding which questions matter became the discipline itself.",
+   "reasoning": "Exact restatement."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "9.8.2"
+   ],
+   "claim_text": "Prestige is assignable: the community made a man famous for exposition, so the middle can be revalued if it wants to be.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "prestige is assignable, the Halmos lesson: the community made a man famous for exposition, so the middle can be revalued if it wants to be.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "9.9"
+   ],
+   "claim_text": "The woodworking story is the same story told in furniture: the craft does not die, it stops being how people make a living.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The woodworking story is the same story told in furniture. The craft doesn't die. It stops being how people make a living",
+   "reasoning": "Accurate, preserves the negation."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "9.9.1"
+   ],
+   "claim_text": "The question is whether the craft still has a middle, whether the creative carpenter can still be paid for being creative.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question is whether the craft still has a middle, whether the creative carpenter still has a way to be paid for being creative.",
+   "reasoning": "Near-verbatim."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "9.10"
+   ],
+   "claim_text": "Thinking is what we are for; if we outsource it, there is little else we are good for.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Thinking is what we are for. If we outsource it, there is little else we are good for.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "9.10.1"
+   ],
+   "claim_text": "Mathematics has been for centuries one of the main places we practice thinking in public, with the stakes visible and the errors checkable.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Mathematics has been, for centuries, one of the main places we practice thinking in public, with the stakes visible and the errors checkable.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "9.11"
+   ],
+   "claim_text": "The question was never whether machines can do math; they can, and they will do more of it.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question was never whether machines can do math. They can, and they will do more of it.",
+   "reasoning": "Verbatim, negation preserved."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "9.11.1"
+   ],
+   "claim_text": "The question is whether we keep doing the point: framing the problem, judging what matters, and actually coming to understand.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question is whether we keep doing the part that was always the point: framing the problem, judging what matters, and actually coming to understand.",
+   "reasoning": "Faithful paraphrase."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "9.11.2"
+   ],
+   "claim_text": "The struggle is the product.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The struggle is the product.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "9.12"
+   ],
+   "claim_text": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun",
+   "reasoning": "Verbatim, negation preserved."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "9.12.1"
+   ],
+   "claim_text": "The athlete who stops lifting cannot perform at that level: that is the difference between the coach and the pro athlete.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the athlete who stops lifting cannot perform at that level. That is the difference between the coach and the pro athlete.",
+   "reasoning": "Verbatim match."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "9.12.2"
+   ],
+   "claim_text": "The coach has the ideas, taste, and judgment, can tell you what to do and why, but cannot do it anymore, maybe never could.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The coach has the ideas, the taste, the judgment, can tell you exactly what to do and why, but cannot do it anymore, maybe never could.",
+   "reasoning": "Verbatim, retains 'maybe' hedge and negation."
+  },
+  {
+   "claim_id": "C36",
+   "loglog_ids": [
+    "9.12.3"
+   ],
+   "claim_text": "Automating proving does not merely cheapen a chore: it risks stopping the training that produces people who can find patterns.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you do not merely cheapen a chore, you risk stopping the training that produces people who can find patterns at all.",
+   "reasoning": "Faithful, preserves the not-merely construction and risk framing."
+  },
+  {
+   "claim_id": "C37",
+   "loglog_ids": [
+    "9.12.4"
+   ],
+   "claim_text": "Imagine the athletes are robots with extreme powers: the coach still decides which patterns to chase, but the gym belongs to the robot.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Now imagine the athletes are robots with extreme powers. The coach is still human and still decides which patterns to chase, but the gym belongs to the robot.",
+   "reasoning": "Faithful, drops only 'still human'."
+  },
+  {
+   "claim_id": "C38",
+   "loglog_ids": [
+    "9.12.5"
+   ],
+   "claim_text": "A coach who only ever coaches robots keeps the taste and loses the performance; judgment floats free of any act of doing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A coach who only ever coaches robots, who never lifts again, keeps the taste and loses the performance, and a sport full of such coaches is a sport where judgment floats free of any act of doing.",
+   "reasoning": "Accurate compression retaining the core claim."
+  }
+ ],
+ "metrics": {
+  "total_claims": 38,
+  "supported": 37,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9737
+ },
+ "fail_list": [
+  "C05: loglog's 'Many mathematicians' strengthens source's 'I know of mathematicians', an unsupported quantifier upgrade (Minor)"
+ ]
+}

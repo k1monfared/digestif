@@ -1,0 +1,32 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "unknown",
+ "inputs": {
+  "faithfulness_precision": 0.9643,
+  "critical_errors": 0,
+  "must_recall": 0.7857,
+  "overall_recall": 0.8,
+  "redundancy_rate": 0.0,
+  "trivia_rate": 0.2143
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score = 0.4 * 0.9643 + 0.4 * 0.7857 - 0.2 * 0.0 = 0.38572 + 0.31428 - 0.0 = 0.7",
+ "weighted_score": 0.7,
+ "verdict": "Fail",
+ "tradeoff_note": "Concision is clean (redundancy 0.0, no duplicates) but can never rescue a coverage fail, and the missing Must-have K11 sinks the sample regardless of the otherwise strong faithfulness (0.9643) and low length cost.",
+ "fix_list": [
+  "Restore Must-have K11 (Sunday best-and-final: resubmit 10K below asking, strip all favorable terms, 11am deadline, reject N's counter): entirely absent from L017-L020, cite K11",
+  "Repair Must-have K03 partial: add the Thursday 6pm timing and that sellers moved to other offers, currently flattened to 'offer fails' at L005",
+  "Repair Must-have K07 partial: add the explicit request to disclose the other offer on Saturday, currently only the leverage suspicion at L012 (disclosure rule mis-sequenced to L022)",
+  "Repair Must-have K09 partial: add 'all four' listings and the author's anger-over-20K-loss reading at L015",
+  "Repair Must-have K12 partial: invert the framing so the author reads the N-L emails as unprofessional and scapegoating L, not merely L calling the deadline unprofessional at L018/L019"
+ ],
+ "reasoning": "Gate checks in policy order. (1) Hard fails: critical_errors = 0, so critical_contradicted_max (0) is met. faithfulness_precision = 0.9643 >= faithfulness_precision_min (0.95), met. must_recall = 0.7857 vs must_recall_min (0.9): 0.7857 < 0.9, MISSED. A missed must_recall gate is an immediate sample fail per the top_policy ('Must-have recall below minimum fails the sample'), so the verdict is Fail independent of the weighted score. (2) Weighted score recorded for audit: 0.4*0.9643 + 0.4*0.7857 - 0.2*0.0 = 0.38572 + 0.31428 = 0.7, comfortably below what a passing sample would imply given 5 of 14 Must-have points are not cleanly present. (3) Coverage breakdown: must_have_present 9, must_have_partial 4 (K03, K07, K09, K12), must_have_missing 1 (K11). K11 is the decisive loss: the Sunday operative numbers (10K below asking, strip every favorable term, 11am deadline, best-and-final framing) appear nowhere in L017-L020, so readers cannot reconstruct the offer's terms. The four partials each drop a load-bearing detail: K03 loses the Thu 6pm timing and sellers-move-on fact, K07 loses the explicit disclosure request (it is mis-sequenced to Monday at L022), K09 drops 'all four' listings and the anger-over-20K interpretation, and K12 inverts the framing (LOGLOG records L calling the deadline unprofessional instead of the author reading the N-L exchange as scapegoating L). Any single one of these is survivable, but four partials plus one full miss drives must_recall to 0.7857. (4) Faithfulness: only C003 is non-supported, a Minor partial where 'months' is inferred from a vague 'loooooong time' while the '1-2 days' half matches exactly. No Contradicted claims and no Critical errors, so faithfulness does not fail, but a Minor Partial touching the section-1 market-timing point is worth a note. (5) Concision: redundancy_rate 0.0 with 0 duplicates, so the redundancy_max gate (0.15) is met with room to spare, but the 6 trivia claims are all restated section headers (C002/C005/C010/C016/C020/C024), trivia_rate 0.2143. Concision never rescues a coverage fail per policy, and here it cannot: the length budget is not the constraint, missing content is. No Borderline consideration applies because the sample fails on a hard gate, not on numbers alone. Fixes prioritized by leverage: K11 first (biggest content vacuum), then the K12 framing inversion (meaning-changing), then K03/K07/K09 detail restorations, with header trivia pruning as a secondary length cleanup once the missing points are added.",
+ "judge_comparison_notes": "No fact conflicts between aspect judges, so SOURCE was not reread; no quote cited beyond the evidence already supplied."
+}

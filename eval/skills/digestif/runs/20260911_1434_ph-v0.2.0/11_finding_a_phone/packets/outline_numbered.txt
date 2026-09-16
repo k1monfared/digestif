@@ -1,0 +1,41 @@
+L001: - Finding a phone: rejecting flagships for rugged tools (source: 11_finding_a_phone/source.txt)
+L002:     Summary: The author seeks rugged offline phones over flagship ecosystems, tests Ulefone, then compares smaller brands with LLM-written scrapers. (¶1, ¶6, ¶9)
+L003:         - 1 Theme: Early phones: reliable Sony Ericsson, a phoneless spell, then day-one Motorola Droid. (¶2)
+L004:             - 1.1 Example: The Sony Ericsson J100 was reliable, durable, and never failed. (¶2)
+L005:             - 1.2 Example: The Motorola Droid quickly became the centerpiece of his life. (¶2)
+L006:         - 2 Theme: Smartphone disillusionment: attention traps made a consumer of him, so he retreated to dial-pad. (¶3)
+L007:             - 2.1 Evidence: Notifications and attention-stealing apps created problems instead of solving them. (¶3)
+L008:         - 3 Theme: Screens, keyboards, styluses, and watches all failed the same way. (¶4)
+L009:             - 3.1 Those phones sold unneeded features, pushed unwanted ads, and forced avoided ecosystems. (¶4)
+L010:         - 4 Theme: Requirements: battery, ruggedness, SD, jack, mic; no to cameras, AI, cloud. (¶5)
+L011:             - 4.1 Evidence: Wanted week-long battery, waterproofing, SD slot, jack, decent mic, and customization. (¶5)
+L012:             - 4.2 Evidence: Best camera, AI enhancements, and cloud storage were explicitly not wanted. (¶5)
+L013:             - 4.3 Apple and Google deliberately limit offline use to push cloud services. (¶5)
+L014:         - 5 Theme: Ulefone rugged phones solved real problems at a tenth of flagship prices. (¶6)
+L015:             - 5.1 Evidence: Waterproof, shockproof, dustproof, dual SIM, SD, jack, and week-long battery. (¶6)
+L016:             - 5.2 Example: Survived drops and swimming; a deep lake dive only made it act up. (¶6)
+L017:         - 6 Theme: Phones are tools, not status symbols; big brands serve profit, small ones serve needs. (¶7)
+L018:         - 7 Theme: A Black Friday Pixel deal triggered lock-in anxiety and collapsed on extra charges. (¶8)
+L019:             - 7.1 Evidence: He paid nothing, declined extra charges, and returned to the market. (¶8)
+L020:         - 8 Theme: LLM-assisted comparison: O1 named candidates, a scraper pulled specs, Claude cleaned them. (¶9, ¶10, ¶11)
+L021:             - 8.1 Evidence: O1 model names were correct though its specs were generally wrong. (¶9)
+L022:             - 8.2 Evidence: get_phone_specs scrapes gsmarena links into a pandas DataFrame and CSV. (¶9)
+L023:             - 8.3 Evidence: clean_phone_specs extracts brand, 5G, eSIM, battery, SD, cameras, and price. (¶11)
+L024:             - 8.4 Nuance: Unverified cleaning code is assumed faulty in places; a starting point only. (¶11)
+L025:         - 9 Theme: Only Fairphone 4 and Moto G Power met 5G plus eSIM plus SD; search continues. (¶12)
+L026:             - 9.1 Evidence: Both have weak cameras and oversized screens; Fairphone 4 is 2021-old. (¶12)
+L027:             - 9.2 Evidence: The Edge 40 comparison failed: it has no SD card slot. (¶12)
+L028:             - 9.3 BeautifulSoup misses details; pandas read_html with proxies is next. (¶12)
+L029:         - 10 Theme: The TCL trial failed on heat and screen; the Motorola G85 is next. (¶13)
+L030:             - 10.1 Evidence: TCL overheated on calls and its screen stayed unreadable in direct light. (¶13)
+L031:             - 10.2 Evidence: Paper and ink modes were poorly implemented with heavy restrictions. (¶13)
+L032:             - 10.3 Nuance: The IP68 G75 was unavailable, so the water-repellent G85 is the compromise. (¶13)
+L033:     - Cross-links
+L034:         - 2.1 supports 3.1 (¶3, ¶4) note: attention-trap harms explain the lock-in verdict
+L035:         - 4.3 supports 6 (¶5) note: offline-hostility critique backs the tools-not-status stance
+L036:         - 5.1 exemplifies 4.1 (¶6) note: Ulefone features exemplify the stated requirements
+L037:         - 7.1 supports 6 (¶8) note: walking away from Pixel backs refusing to settle
+L038:         - 9.2 supports 4.1 (¶12) note: Edge 40 lacking SD confirms the slot requirement
+L039:         - 9.3 qualifies 8 (¶12) note: scraping gaps limit what the comparison proves
+L040:         - 10.1 supports 4 (¶13) note: TCL failure confirms the ruggedness and readability demands
+L041:     - Coverage: 13 of 13 passages cited

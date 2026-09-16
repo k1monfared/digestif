@@ -1,0 +1,563 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 2,
+ "of": 9,
+ "nodes": [
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The old definition stopped working: proof production and verification are being automated, while choosing what to prove stayed human.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "## The answer that stopped working"
+    },
+    {
+     "ref": "¶7",
+     "text": "Let's start with the facts that broke the old answer into two."
+    },
+    {
+     "ref": "¶10",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption."
+    },
+    {
+     "ref": "¶14",
+     "text": "The proof process has a second half though. Verifying the proof is often implicitly part of the proof process, and that is being automated too."
+    },
+    {
+     "ref": "¶15",
+     "text": "## Verification is human work too"
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "A professor's post: research now feels like grading a clever student desperate for an A who does not mind lying.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Last night Ehssan sent me a post from a math professor that has been making the rounds. The professor loves research and hates grading. Who doesn't? But lately, he wrote, his research has started to feel like grading the proofs of a very clever student who is desperate to get an A and doesn't mind lying to do so. A lot of people shared that feeling. Not only in mathematics, but also in (open source) software, in creative writing, and other areas."
+    },
+    {
+     "ref": "¶2",
+     "text": "![The post that started all this](files/20260806/OBryant_post.jpg){: width=\"55%\" }"
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The old definition: mathematics is the discipline of finding patterns where claims can be proven.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "For a long time I had a confident answer to the question in the title, the kind you give outsiders and then stop thinking about. \n> Mathematics is the discipline of finding patterns where claims can be proven."
+    }
+   ]
+  },
+  {
+   "id": "1.2.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Under that definition mathematics was the production of correct statements, though mathematicians built intuition and found clues to patterns.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Experts could settle whether an idea was right, most of the time, which set math apart from fields with opinions, even physics.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "An idea can be right or wrong, and a community of experts can settle which, for good, well, most of the times. That was what made math different from art criticism, politics, business, psychology, biology, or even physics. Everything else had opinions. Math had ground truth."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "In summer 2026 Tao's ICM lecture and Moradifam's essay asked what mathematics is once proof production stops being scarce.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "The summer of 2026 things happened that warranted another take on this question. At the International Congress of Mathematicians, Terence Tao gave a public lecture called \"[Mathematics in the age of AI](files/20260806/Tao_slides.pdf)\". Around the same time, Amir Moradifam published an essay, \"[What Remains Human in Mathematics in the Age of AI](files/20260806/Moradifam_paper.pdf)\". Both are attempts to say what mathematics is when the production of proofs stops being scarce. I read them, argued with them, and I mostly agree with them. However, they stop at the edge of the question I want to push on: the next step is speculation, which they have to avoid and the do so perfectly."
+    }
+   ]
+  },
+  {
+   "id": "1.4.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The author mostly agrees, but they stop where he must speculate; he wants to push past that edge.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "The summer of 2026 things happened that warranted another take on this question. At the International Congress of Mathematicians, Terence Tao gave a public lecture called \"[Mathematics in the age of AI](files/20260806/Tao_slides.pdf)\". Around the same time, Amir Moradifam published an essay, \"[What Remains Human in Mathematics in the Age of AI](files/20260806/Moradifam_paper.pdf)\". Both are attempts to say what mathematics is when the production of proofs stops being scarce. I read them, argued with them, and I mostly agree with them. However, they stop at the edge of the question I want to push on: the next step is speculation, which they have to avoid and the do so perfectly."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "First Proof's late May 2026 test: four leading systems solved seven of ten unpublished research problems to publication quality.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "Let's start with the facts that broke the old answer into two."
+    },
+    {
+     "ref": "¶8",
+     "text": "First Proof, an independent group, ran a standardized test[*](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full) of AI at research mathematics in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each, and the one step they could not automate was choosing the problems, which is exactly the judgment this post is about."
+    },
+    {
+     "ref": "¶94",
+     "text": "\\* [First Proof](https://1stproof.org/) is an independent group of mathematicians trying to answer a concrete question: how good are AI systems at research mathematics? Their method is essentially a standardized test. They collect unpublished research problems from mathematicians across fields, pick ten for each batch, hand them to the leading AI systems to solve with one attempt each, then have human referees grade the solutions blind. The second batch ran in late May 2026, against four leading AI systems. Seven of the ten problems were solved at publication quality by at least one team, at a compute cost of ten to a thousand dollars per problem. The step they could not automate was the choosing, and it did its work before any model ran: which ten problems deserve the batch's compute is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "1.5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Compute cost ten to a thousand dollars per problem.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "First Proof, an independent group, ran a standardized test[*](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full) of AI at research mathematics in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each, and the one step they could not automate was choosing the problems, which is exactly the judgment this post is about."
+    },
+    {
+     "ref": "¶94",
+     "text": "\\* [First Proof](https://1stproof.org/) is an independent group of mathematicians trying to answer a concrete question: how good are AI systems at research mathematics? Their method is essentially a standardized test. They collect unpublished research problems from mathematicians across fields, pick ten for each batch, hand them to the leading AI systems to solve with one attempt each, then have human referees grade the solutions blind. The second batch ran in late May 2026, against four leading AI systems. Seven of the ten problems were solved at publication quality by at least one team, at a compute cost of ten to a thousand dollars per problem. The step they could not automate was the choosing, and it did its work before any model ran: which ten problems deserve the batch's compute is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "1.5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The one step they could not automate was choosing the problems, the judgment this post is about.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "First Proof, an independent group, ran a standardized test[*](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full) of AI at research mathematics in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each, and the one step they could not automate was choosing the problems, which is exactly the judgment this post is about."
+    },
+    {
+     "ref": "¶94",
+     "text": "\\* [First Proof](https://1stproof.org/) is an independent group of mathematicians trying to answer a concrete question: how good are AI systems at research mathematics? Their method is essentially a standardized test. They collect unpublished research problems from mathematicians across fields, pick ten for each batch, hand them to the leading AI systems to solve with one attempt each, then have human referees grade the solutions blind. The second batch ran in late May 2026, against four leading AI systems. Seven of the ten problems were solved at publication quality by at least one team, at a compute cost of ten to a thousand dollars per problem. The step they could not automate was the choosing, and it did its work before any model ran: which ten problems deserve the batch's compute is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "1.5.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Method: collect unpublished problems across fields, pick ten per batch, give one attempt each, grade blind with human referees.",
+   "evidence": [
+    {
+     "ref": "¶93",
+     "text": "## Appendix"
+    },
+    {
+     "ref": "¶94",
+     "text": "\\* [First Proof](https://1stproof.org/) is an independent group of mathematicians trying to answer a concrete question: how good are AI systems at research mathematics? Their method is essentially a standardized test. They collect unpublished research problems from mathematicians across fields, pick ten for each batch, hand them to the leading AI systems to solve with one attempt each, then have human referees grade the solutions blind. The second batch ran in late May 2026, against four leading AI systems. Seven of the ten problems were solved at publication quality by at least one team, at a compute cost of ten to a thousand dollars per problem. The step they could not automate was the choosing, and it did its work before any model ran: which ten problems deserve the batch's compute is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Early 2026: an AI system produced a machine-checked Lean proof of Erdős Problem #728.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "In early 2026, an AI system produced a machine-checked Lean proof of Erdős Problem #728, and in May 2026 an OpenAI model disproved the planar unit distance conjecture Erdős had posed in 1946[**](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full). In all cases human mathematicians verified the proofs and wrote human digestable versions of them."
+    }
+   ]
+  },
+  {
+   "id": "1.6.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The system combined OpenAI's GPT-5.2 Pro with Harmonic's Aristotle.",
+   "evidence": [
+    {
+     "ref": "¶95",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  },
+  {
+   "id": "1.6.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Nat Sothanaphan translated it into a conventional argument, and the problem is now marked proved on the Erdős problems list.",
+   "evidence": [
+    {
+     "ref": "¶95",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  },
+  {
+   "id": "1.7",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "May 2026: an OpenAI reasoning model disproved the planar unit distance conjecture Erdős posed in 1946.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "In early 2026, an AI system produced a machine-checked Lean proof of Erdős Problem #728, and in May 2026 an OpenAI model disproved the planar unit distance conjecture Erdős had posed in 1946[**](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full). In all cases human mathematicians verified the proofs and wrote human digestable versions of them."
+    }
+   ]
+  },
+  {
+   "id": "1.7.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$.",
+   "evidence": [
+    {
+     "ref": "¶95",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  },
+  {
+   "id": "1.7.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The model built infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using algebraic number theory.",
+   "evidence": [
+    {
+     "ref": "¶95",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  },
+  {
+   "id": "1.7.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "A paper with Alon, Bloom, Gowers and others digested the result for the community.",
+   "evidence": [
+    {
+     "ref": "¶95",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  },
+  {
+   "id": "1.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The split: the model produced the result, while humans checked, digested, and presented it.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "In early 2026, an AI system produced a machine-checked Lean proof of Erdős Problem #728, and in May 2026 an OpenAI model disproved the planar unit distance conjecture Erdős had posed in 1946[**](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full). In all cases human mathematicians verified the proofs and wrote human digestable versions of them."
+    },
+    {
+     "ref": "¶10",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption."
+    }
+   ]
+  },
+  {
+   "id": "1.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The production of proofs has been automated, or it will be, under Tao's working assumption.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption."
+    }
+   ]
+  },
+  {
+   "id": "1.10",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Seven of ten novel problems solved to publication quality for a few hundred to a few thousand dollars of compute.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "What was not automated: people still chose the problems and handed them to the models one at a time.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.11.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The models still might need a lot of handholding.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.11.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Conjecture generators propose patterns, but they do not decide which ones matter.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "So either mathematics is over, or the old definition was wrong.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "1.12.1",
+   "type": "rebuttal",
+   "attribution": "author",
+   "text": "It is not over: the author thinks it has just started, and wants to explore how the definition was wrong.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "It's so over baby."
+    },
+    {
+     "ref": "¶13",
+     "text": "lol jk, it isn't. I don't think it is, if anything, I think it has just started. But I want to explore how my old definition was wrong. Or maybe the proving was the chore and the finding was always the real thing?! And meanwhile in all of this I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing, so anything that goes wrong is not part of that religion."
+    }
+   ]
+  },
+  {
+   "id": "1.12.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Maybe the proving was the chore and the finding was always the real thing.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "lol jk, it isn't. I don't think it is, if anything, I think it has just started. But I want to explore how my old definition was wrong. Or maybe the proving was the chore and the finding was always the real thing?! And meanwhile in all of this I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing, so anything that goes wrong is not part of that religion."
+    }
+   ]
+  },
+  {
+   "id": "1.12.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The author assumes mathematics is what we humans do, like a religion assuming its god.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "lol jk, it isn't. I don't think it is, if anything, I think it has just started. But I want to explore how my old definition was wrong. Or maybe the proving was the chore and the finding was always the real thing?! And meanwhile in all of this I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing, so anything that goes wrong is not part of that religion."
+    }
+   ]
+  },
+  {
+   "id": "1.13",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The proof process has a second half: verification, often implicitly part of it, and that is being automated too.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "The proof process has a second half though. Verifying the proof is often implicitly part of the proof process, and that is being automated too."
+    },
+    {
+     "ref": "¶15",
+     "text": "## Verification is human work too"
+    }
+   ]
+  },
+  {
+   "id": "1.13.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Tao's Working Hypothesis covers verification as a mathematical task; the open question is what level of error we tolerate.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Tao's Working Hypothesis covers performing mathematical tasks, and verifying is one. So taken seriously, the hypothesis covers verification too. The question is what level of error we tolerate in it."
+    }
+   ]
+  },
+  {
+   "id": "1.13.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The calibration story: Vladimir Voevodsky had to retract foundational work years later.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "1.13.2.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Voevodsky won the Fields Medal in 2002.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "1.13.2.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "In the late nineties Pierre Deligne went through the foundational paper line by line and found a key lemma's proof wrong, unsalvageable as stated.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "1.13.2.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The earlier Kapranov paper on ∞-groupoids had a main theorem eventually shown false, which Voevodsky accepted only years later.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "1.13.2.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Multiple groups studied, used, and taught those papers; nobody noticed for years.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "1.13.2.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Voevodsky asked who would ensure he forgot nothing and made no mistake, if mistakes in simpler arguments take years to uncover.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "[Voevodsky was scared by this](https://www.ias.edu/ideas/2014/voevodsky-origins). He asked: who would ensure that I did not forget something and did not make a mistake, if even the mistakes in much simpler arguments take years to uncover. He spent the rest of his career pushing for computer proof verification, because he no longer trusted the human process."
+    }
+   ]
+  },
+  {
+   "id": "1.13.2.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "He spent the rest of his career pushing computer proof verification because he no longer trusted the human process.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "[Voevodsky was scared by this](https://www.ias.edu/ideas/2014/voevodsky-origins). He asked: who would ensure that I did not forget something and did not make a mistake, if even the mistakes in much simpler arguments take years to uncover. He spent the rest of his career pushing for computer proof verification, because he no longer trusted the human process."
+    }
+   ]
+  },
+  {
+   "id": "1.13.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Human verification is not reliable: a Fields medalist's foundational paper carried a wrong key lemma for years and an unchallenged false theorem for decades.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "1.13.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "AI verification with a comparable error rate will not look unacceptable; it will look like business as usual.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "1.13.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Premise: generation and verification are both automated and both imperfect, roughly as imperfect as the people they replace.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "1.13.3.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The AI-side error rate is assumed, not measured.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "1.13.3.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The volume compounds: years to surface a mistake by hand, a million checks a day by machine.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  }
+ ]
+}

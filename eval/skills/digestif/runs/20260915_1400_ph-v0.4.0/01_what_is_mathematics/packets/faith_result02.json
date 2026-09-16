@@ -1,0 +1,522 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (opencode), 2026-09-15",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "The old definition stopped working: proof production and verification are being automated, while choosing what to prove stayed human.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The production of proofs has been automated, or it will be, under Tao's working assumption. (¶10) ... that is being automated too. (¶14)",
+   "reasoning": "Source states both production and verification are automated or will be, and problem choosing stays human."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "A professor's post: research now feels like grading a clever student desperate for an A who does not mind lying.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "his research has started to feel like grading the proofs of a very clever student who is desperate to get an A and doesn't mind lying to do so (¶1)",
+   "reasoning": "Matches the quoted professor's post verbatim in meaning."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "The old definition: mathematics is the discipline of finding patterns where claims can be proven.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Mathematics is the discipline of finding patterns where claims can be proven. (¶3)",
+   "reasoning": "Direct quote of the author's old definition."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2.1"
+   ],
+   "claim_text": "Under that definition mathematics was the production of correct statements, though mathematicians built intuition and found clues to patterns.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Under the old definition, mathematics was the production of correct statements ... they're building intuitioin and finding clues to find patterns (¶10)",
+   "reasoning": "Source makes both points, the production framing and the intuition/clue-finding caveat."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "Experts could settle whether an idea was right, most of the time, which set math apart from fields with opinions, even physics.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a community of experts can settle which, for good, well, most of the times ... different from art criticism, politics, business, psychology, biology, or even physics (¶4)",
+   "reasoning": "Preserves the 'most of the times' hedge and the physics contrast."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "In summer 2026 Tao's ICM lecture and Moradifam's essay asked what mathematics is once proof production stops being scarce.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The summer of 2026 ... Terence Tao gave a public lecture ... Amir Moradifam published an essay ... when the production of proofs stops being scarce (¶5)",
+   "reasoning": "Names, venue, date, and framing all match the source."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "1.4.1"
+   ],
+   "claim_text": "The author mostly agrees, but they stop where he must speculate; he wants to push past that edge.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I ... mostly agree with them. However, they stop at the edge of the question I want to push on: the next step is speculation (¶5)",
+   "reasoning": "Matches the author's stated agreement and desire to push past the edge."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "claim_text": "First Proof's late May 2026 test: four leading systems solved seven of ten unpublished research problems to publication quality.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "ran a standardized test ... in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality (¶8)",
+   "reasoning": "All numbers (four, seven, ten) and date match source."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "1.5.1"
+   ],
+   "claim_text": "Compute cost ten to a thousand dollars per problem.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "for ten to a thousand dollars of compute each (¶8); at a compute cost of ten to a thousand dollars per problem (¶94)",
+   "reasoning": "Exact range matches both source passages."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "1.5.2"
+   ],
+   "claim_text": "The one step they could not automate was choosing the problems, the judgment this post is about.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the one step they could not automate was choosing the problems, which is exactly the judgment this post is about (¶8)",
+   "reasoning": "Directly restates the source sentence."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "1.5.3"
+   ],
+   "claim_text": "Method: collect unpublished problems across fields, pick ten per batch, give one attempt each, grade blind with human referees.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They collect unpublished research problems from mathematicians across fields, pick ten for each batch ... one attempt each ... human referees grade the solutions blind (¶94)",
+   "reasoning": "All four method steps match the appendix description."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "claim_text": "Early 2026: an AI system produced a machine-checked Lean proof of Erdős Problem #728.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In early 2026, an AI system produced a machine-checked Lean proof of Erdős Problem #728 (¶9)",
+   "reasoning": "Date, system type, Lean, and problem number all match."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "1.6.1"
+   ],
+   "claim_text": "The system combined OpenAI's GPT-5.2 Pro with Harmonic's Aristotle.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a system combining OpenAI's GPT-5.2 Pro with Harmonic's Aristotle (¶95)",
+   "reasoning": "Entities and product names match exactly."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "1.6.2"
+   ],
+   "claim_text": "Nat Sothanaphan translated it into a conventional argument, and the problem is now marked proved on the Erdős problems list.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Nat Sothanaphan, translated it into a conventional argument ... now marked proved on the Erdős problems list (¶95)",
+   "reasoning": "Name and the proved-marking status match source."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "claim_text": "May 2026: an OpenAI reasoning model disproved the planar unit distance conjecture Erdős posed in 1946.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in May 2026 an OpenAI model disproved the planar unit distance conjecture Erdős had posed in 1946 (¶9)",
+   "reasoning": "Date, entity, conjecture, and 1946 all match."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "1.7.1"
+   ],
+   "claim_text": "The conjecture said the maximum number of unit distances among n points in the plane grows like n^{1+o(1)}.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. (¶95)",
+   "reasoning": "Mathematical statement restated identically."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "1.7.2"
+   ],
+   "claim_text": "The model built infinite families of point sets with at least n^{1+\\varepsilon} unit distances, using algebraic number theory.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. (¶95)",
+   "reasoning": "Bound and method match the appendix."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "1.7.3"
+   ],
+   "claim_text": "A paper with Alon, Bloom, Gowers and others digested the result for the community.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A paper with Alon, Bloom, Gowers and others then digested the result for the community. (¶95)",
+   "reasoning": "Names and action match exactly."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "1.8"
+   ],
+   "claim_text": "The split: the model produced the result, while humans checked, digested, and presented it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The model produced the result, the humans checked it, digested it, and presented it. (¶10)",
+   "reasoning": "Directly restates the source's split."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "1.9"
+   ],
+   "claim_text": "The production of proofs has been automated, or it will be, under Tao's working assumption.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The production of proofs has been automated, or it will be, under Tao's working assumption. (¶10)",
+   "reasoning": "Verbatim restatement including the working-assumption qualifier."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "1.10"
+   ],
+   "claim_text": "Seven of ten novel problems solved to publication quality for a few hundred to a few thousand dollars of compute.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. (¶11)",
+   "reasoning": "All figures match the source exactly."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "1.11"
+   ],
+   "claim_text": "What was not automated: people still chose the problems and handed them to the models one at a time.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The problems were still chosen by people and handed to the models one at a time. (¶11)",
+   "reasoning": "Matches the source's negation and process description."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "1.11.1"
+   ],
+   "claim_text": "The models still might need a lot of handholding.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Although they still might need a lot of handholding to do so. (¶11)",
+   "reasoning": "Hedge 'might' preserved."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "1.11.2"
+   ],
+   "claim_text": "Conjecture generators propose patterns, but they do not decide which ones matter.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they propose patterns, they do not decide which ones matter (¶11)",
+   "reasoning": "Negation and content match."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "1.12"
+   ],
+   "claim_text": "So either mathematics is over, or the old definition was wrong.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "So either mathematics is over, or the old definition was wrong. (¶11)",
+   "reasoning": "Verbatim."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "1.12.1"
+   ],
+   "claim_text": "It is not over: the author thinks it has just started, and wants to explore how the definition was wrong.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "lol jk, it isn't. ... I think it has just started. But I want to explore how my old definition was wrong. (¶13)",
+   "reasoning": "Matches the author's reversal and stated intent."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "1.12.2"
+   ],
+   "claim_text": "Maybe the proving was the chore and the finding was always the real thing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Or maybe the proving was the chore and the finding was always the real thing?! (¶13)",
+   "reasoning": "Hedge 'maybe' preserved."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "1.12.3"
+   ],
+   "claim_text": "The author assumes mathematics is what we humans do, like a religion assuming its god.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing (¶13)",
+   "reasoning": "Analogy and assumption match."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "1.13"
+   ],
+   "claim_text": "The proof process has a second half: verification, often implicitly part of it, and that is being automated too.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Verifying the proof is often implicitly part of the proof process, and that is being automated too. (¶14)",
+   "reasoning": "Includes the 'often implicitly' qualifier correctly."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "1.13.1"
+   ],
+   "claim_text": "Tao's Working Hypothesis covers verification as a mathematical task; the open question is what level of error we tolerate.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tao's Working Hypothesis covers performing mathematical tasks, and verifying is one ... The question is what level of error we tolerate in it. (¶16)",
+   "reasoning": "Both the coverage and the open question match."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "1.13.2"
+   ],
+   "claim_text": "The calibration story: Vladimir Voevodsky had to retract foundational work years later.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a Fields medalist who had to retract work years later. That was Vladimir Voevodsky (¶17)",
+   "reasoning": "Name and retraction claim match."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "1.13.2.1"
+   ],
+   "claim_text": "Voevodsky won the Fields Medal in 2002.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Vladimir Voevodsky, Fields Medal in 2002 (¶17)",
+   "reasoning": "Date matches."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "1.13.2.2"
+   ],
+   "claim_text": "In the late nineties Pierre Deligne went through the foundational paper line by line and found a key lemma's proof wrong, unsalvageable as stated.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In the late nineties, Pierre Deligne went through his foundational paper line by line ... the proof of a key lemma was wrong and could not be salvaged as stated (¶17)",
+   "reasoning": "Person, period, and finding all match."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "1.13.2.3"
+   ],
+   "claim_text": "The earlier Kapranov paper on ∞-groupoids had a main theorem eventually shown false, which Voevodsky accepted only years later.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which Voevodsky did not accept until years later (¶17)",
+   "reasoning": "Collaborator, subject, and delayed acceptance match."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "1.13.2.4"
+   ],
+   "claim_text": "Multiple groups studied, used, and taught those papers; nobody noticed for years.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Multiple groups had studied those papers, used them, taught them, and nobody noticed for years. (¶17)",
+   "reasoning": "All verbs and the negation match."
+  },
+  {
+   "claim_id": "C36",
+   "loglog_ids": [
+    "1.13.2.5"
+   ],
+   "claim_text": "Voevodsky asked who would ensure he forgot nothing and made no mistake, if mistakes in simpler arguments take years to uncover.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "who would ensure that I did not forget something and did not make a mistake, if even the mistakes in much simpler arguments take years to uncover (¶18)",
+   "reasoning": "Question restated with negations intact."
+  },
+  {
+   "claim_id": "C37",
+   "loglog_ids": [
+    "1.13.2.6"
+   ],
+   "claim_text": "He spent the rest of his career pushing computer proof verification because he no longer trusted the human process.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He spent the rest of his career pushing for computer proof verification, because he no longer trusted the human process. (¶18)",
+   "reasoning": "Cause and action match."
+  },
+  {
+   "claim_id": "C38",
+   "loglog_ids": [
+    "1.13.3"
+   ],
+   "claim_text": "Human verification is not reliable: a Fields medalist's foundational paper carried a wrong key lemma for years and an unchallenged false theorem for decades.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. (¶19)",
+   "reasoning": "Negation and the years/decades timeline match."
+  },
+  {
+   "claim_id": "C39",
+   "loglog_ids": [
+    "1.13.3.1"
+   ],
+   "claim_text": "AI verification with a comparable error rate will not look unacceptable; it will look like business as usual.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. (¶19)",
+   "reasoning": "Restates the source's prediction with negations intact."
+  },
+  {
+   "claim_id": "C40",
+   "loglog_ids": [
+    "1.13.3.2"
+   ],
+   "claim_text": "Premise: generation and verification are both automated and both imperfect, roughly as imperfect as the people they replace.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace (¶19)",
+   "reasoning": "Verbatim premise."
+  },
+  {
+   "claim_id": "C41",
+   "loglog_ids": [
+    "1.13.3.3"
+   ],
+   "claim_text": "The AI-side error rate is assumed, not measured.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The AI-side rate is assumed, not measured (¶19)",
+   "reasoning": "Negation and distinction match."
+  },
+  {
+   "claim_id": "C42",
+   "loglog_ids": [
+    "1.13.3.4"
+   ],
+   "claim_text": "The volume compounds: years to surface a mistake by hand, a million checks a day by machine.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "years to surface a mistake by hand, a million checks a day by machine (¶19)",
+   "reasoning": "Both time and rate figures match."
+  }
+ ],
+ "metrics": {
+  "total_claims": 42,
+  "supported": 42,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

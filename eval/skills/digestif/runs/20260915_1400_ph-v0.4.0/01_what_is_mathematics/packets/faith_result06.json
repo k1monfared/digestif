@@ -1,0 +1,752 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "The influencer economy replaces standing earned over decades of checkable work with engagement, and the canon becomes whatever holds attention.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The influencer economy replaces that with a standing earned by engagement and answerable to nothing but more engagement",
+   "reasoning": "Source states the replacement directly and frames canon as attention-mediated, so the compression is faithful."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Everything is sales: you work more to sell what you create than to make it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Everything these days is sales, in a way. Whatever you create, you need to do more work to sell it than you did to make it.",
+   "reasoning": "Near-verbatim restatement, only the hedge 'in a way' dropped, which is stylistic."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "6.1.1"
+   ],
+   "claim_text": "Partly globalization: competition used to be across town, now it is everyone with an internet connection.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "I think that's partly globalization ... the competition used to be across town, now it's everyone with an internet connection",
+   "reasoning": "Direct paraphrase preserving the hedge 'partly' and both halves of the comparison."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "6.1.2"
+   ],
+   "claim_text": "Production got cheap everywhere, so distribution became the constraint.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Production got cheap everywhere, so distribution became the constraint.",
+   "reasoning": "Exact quotation from source."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "The same is about to happen to mathematics: generating and verifying become cheap, while attention stays scarce.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The same is about to happen to mathematics. Under the Working Hypothesis, generating a result and verifying it both become cheap. What stays scarce is attention",
+   "reasoning": "Faithful compression; conditional framing 'about to happen' preserved."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "6.2.1"
+   ],
+   "claim_text": "Markets for scarce attention develop influencer structure.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "markets for scarce attention develop influencer structure",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "The internet did this to writing: blogs in vastly greater volume, fewer books read, important topics deprioritized relative to popular ones.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Blogs were written in vastly greater volume, and people read fewer books. Topics that were important got deprioritized relative to topics that were popular.",
+   "reasoning": "Three source statements compressed without changing meaning."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Social media pushed it further: toward video and voice, short-form clips and podcasts everywhere.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Then social media pushed it further, and the conversation moved away from writing toward video and voice, short-form clips and podcasts everywhere.",
+   "reasoning": "Direct quotation of source."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "6.4.1"
+   ],
+   "claim_text": "People now listen to random dudes who may not be qualified rather than read a book by an expert.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Now people spend more time listening to random dudes ... than reading a book by an expert on the topic",
+   "reasoning": "Faithful restatement; the 'may or may not be qualified' qualifier retained."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "6.4.2"
+   ],
+   "claim_text": "More interest in food supplements than world affairs: paid podcasters make topics easier to digest, more relatable, and urgent for your life.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "more people are interested in food supplemants than they are in world affairs, simple because the random dudes get paid ... It's easier to digest. It's more relatable, it creates a sense of urgency",
+   "reasoning": "All three listed properties and the causal 'because' match source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "6.4.3"
+   ],
+   "claim_text": "It often supports your current understanding rather than challenging it.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "And often it supports your current understanding, far better than it challenges it.",
+   "reasoning": "Hedge 'often' retained, meaning unchanged."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Something similar will happen to mathematics; timing is unsure, it might take years, probably decades, not months.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "I'm not sure about timing, it might take years, probably decades, not months though.",
+   "reasoning": "Hedges and the negation 'not months' preserved exactly."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "6.5.1"
+   ],
+   "claim_text": "The current influencers are still highly qualified: Tao, Gowers, and slightly lower ranked mathematicians with successful social media presence.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The current influencers are still highly qualified. Tao, Gowers, even the slightly lower ranked mathematicians with a successful social media presence",
+   "reasoning": "Names and qualifier match source."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "6.5.2"
+   ],
+   "claim_text": "They earned their standing when the canon was set slowly, by journals and seminars.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "earned their standing in a world where the canon was set slowly, by journals and seminars",
+   "reasoning": "Direct quotation, semantics preserved."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "The old gatekeeping mechanism was not good, but what is coming is definitely worse.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Not that the old gatekeeping mechanism was good, but what is about to happens is defintiely worse.",
+   "reasoning": "Negation and comparison identical to source despite typo in original."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6.6.1"
+   ],
+   "claim_text": "Levitsky, in How Democracies Die, talks nostalgically about old gatekeeping in politics; the author is not saying that.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "In \"How democracies die\" Levitsky talks at length and somewhat nostalgically ... I'm not saying that",
+   "reasoning": "Attribution and the disavowal both match source."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.6.2"
+   ],
+   "claim_text": "Gatekeeping has a function and needs to be more merit based, but the field is moving the opposite direction.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "there is a function for gatekeeping and we need that to be more merit based, but we are moving in the opposite direction",
+   "reasoning": "Faithful restatement of source recommendation."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "The problem is not the current influencers; it is the mechanism that selects the next generation.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The problem is not them. The problem is the mechanism that selects the next generation.",
+   "reasoning": "Both clauses match, negation preserved."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.8"
+   ],
+   "claim_text": "When compute becomes the budget, a research problem is worth what it costs in compute time.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "When compute becomes the budget, a research problem is worth what it costs in compute time",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.8.1"
+   ],
+   "claim_text": "Allocation will follow direct impact on other fields first and what the influencers of mathematics advertise second.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "that allocation will be based on direct impact on other fields first, and on what the influencers of mathematics advertise second",
+   "reasoning": "Ordering (first/second) preserved exactly."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6.8.2"
+   ],
+   "claim_text": "A long tail of problems would no longer flow to theory from applications, which solve them themselves.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "a long tail of problems that \"applications\" would not contribute to theory anymore because they could solve it themselves",
+   "reasoning": "Negation 'not ... anymore' and self-solving are retained."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.8.3"
+   ],
+   "claim_text": "Physics once developed the math it needed; now problems get solved internally, with each field's own compute budget.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "like how physics worked in the past, a physicist would just develop the math they needed ... solved internally ... with their own compute budget",
+   "reasoning": "Both the historical physics analogy and the present prediction match."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.9"
+   ],
+   "claim_text": "A naive faith treats figures like Tao as disinterested, as if canonization flowed from pure mathematical judgment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "There is a naive faith underneath the current system ... We treat figures like Tao as disinterested, as if canonization decisions flowed from pure mathematical judgment",
+   "reasoning": "Direct quotation with meaning intact."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6.9.1"
+   ],
+   "claim_text": "The assumption is subtler than corruption: that their attention allocation is a public good, when it is a private act with public consequences.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The assumption is not that they are corrupt. It is subtler. It is that their attention allocation is a public good when it is actually a private act with public consequences.",
+   "reasoning": "Negation and the public/private contrast preserved."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "6.9.2"
+   ],
+   "claim_text": "A Tao blog post can redirect years of collective effort, and nobody audits whether the redirection was optimal.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "A blog post by Tao can redirect years of collective effort. Nobody audits whether the redirection was optimal.",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "6.9.3"
+   ],
+   "claim_text": "The prestige itself becomes the justification; so far private acts likely align with the public interest, but an influencer economy guarantees nothing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The prestige itself becomes the justification. And so far we are lucky that private acts (likely) align with the public interest, but in an influencer economy there is no guarantee",
+   "reasoning": "Hedge 'likely' and negation 'no guarantee' both retained."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "6.10"
+   ],
+   "claim_text": "Historically the faith sort of worked for structural reasons that are eroding, not because mathematicians are unusually virtuous.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Historically the faith sort of worked, but for structural reasons that are eroding, not because mathematicians are unusually virtuous.",
+   "reasoning": "Word-for-word preservation including the negation."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "6.10.1"
+   ],
+   "claim_text": "Old gatekeepers were trustable structurally: standing built over decades of checkable work, judgments open to community checking, wrong calls costly.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "their standing was built over decades of checkable work, their judgments were open to being checked by the community, and a wrong call could cost them their standing",
+   "reasoning": "All three structural reasons reproduced faithfully."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "6.10.2"
+   ],
+   "claim_text": "The influencer economy replaces that with standing earned by engagement, answerable to nothing but more engagement.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The influencer economy replaces that with a standing earned by engagement and answerable to nothing but more engagement.",
+   "reasoning": "Near-verbatim."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "6.10.3"
+   ],
+   "claim_text": "Old gatekeepers were slow influencers in a low-velocity, low-visibility attention economy of journals, seminars, and letters.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "low-velocity, low-visibility attention economy: journals, seminars, letters ... They were influencers too, just slow ones",
+   "reasoning": "Combines two source statements with identical meaning."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "6.10.4"
+   ],
+   "claim_text": "Attention did not convert to much, so there was little to gain from attention-maximizing behavior.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "there was little to gain from attention-maximizing behavior, because attention did not convert to much",
+   "reasoning": "Clause order reversed, causality and negation preserved."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "6.10.5"
+   ],
+   "claim_text": "They were editors, program officers, and referees, the institutional names the non-elite mathematician's fate already flowed through.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "editors, program officers, referees, the institutional names the non-elite mathematician's fate already flowed through",
+   "reasoning": "Exact list and phrasing."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "6.11"
+   ],
+   "claim_text": "The conversion rate changed: visibility now converts into grants, positions, media presence, and prominence in AI training data.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The influencer economy changes the conversion rate. When visibility converts into grants, positions, media presence, and now prominence in AI training data",
+   "reasoning": "All four conversion targets match source."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "6.11.1"
+   ],
+   "claim_text": "The incentive to be seen judging well now competes with judging well.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the incentive to \"be seen judging well\" starts competing with \"judging well\"",
+   "reasoning": "Direct quotation."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "6.11.2"
+   ],
+   "claim_text": "Once influence is measurable and monetizable it gets optimized for, and the target diverges from what it proxied.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The moment influence becomes measurable and monetizable, it gets optimized for, and the optimization target diverges from the thing it proxied.",
+   "reasoning": "Exact restatement."
+  },
+  {
+   "claim_id": "C36",
+   "loglog_ids": [
+    "6.11.3"
+   ],
+   "claim_text": "This is the measurement trap, applied to the field itself.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "This is the [measurement trap] I keep writing about, applied to the field itself.",
+   "reasoning": "Source self-reference preserved."
+  },
+  {
+   "claim_id": "C37",
+   "loglog_ids": [
+    "6.12"
+   ],
+   "claim_text": "The author's simulation of classical music canon formation applies almost directly.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "I built a simulation of how canons form, in the context of classical music, and it applies here almost directly",
+   "reasoning": "Attribution and hedge 'almost' retained."
+  },
+  {
+   "claim_id": "C38",
+   "loglog_ids": [
+    "6.12.1"
+   ],
+   "claim_text": "Reshuffle access to the exposure pipeline and you get almost entirely different canons.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Reshuffle who has access to the exposure pipeline and you get almost entirely different canons.",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C39",
+   "loglog_ids": [
+    "6.12.2"
+   ],
+   "claim_text": "Quality sets a floor and a ceiling; the vast middle is a lottery.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Quality sets a floor and a ceiling. The vast middle is a lottery.",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C40",
+   "loglog_ids": [
+    "6.12.3"
+   ],
+   "claim_text": "Citation networks already made the pre-AI canon path-dependent, so an attention-mediated canon would be worse.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "If citation networks already made the pre-AI mathematical canon path-dependent, an attention-mediated canon would be worse",
+   "reasoning": "Source frames the antecedent conditionally with 'If'; node asserts it as established fact, dropping the condition."
+  },
+  {
+   "claim_id": "C41",
+   "loglog_ids": [
+    "6.12.4"
+   ],
+   "claim_text": "Selection pressure shifts from what nearby researchers found useful to what is legible, narratable, and aligned with a curator's brand.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the selection pressure shifts from \"what did nearby researchers find useful\" to \"what is legible, narratable, and aligned with a curator's brand\"",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C42",
+   "loglog_ids": [
+    "6.12.5"
+   ],
+   "claim_text": "It applies harder to theorems: a result nobody reads is inert, so reputation and readership are the same gate.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "It applies harder to theorems, because a result that nobody reads is inert: reputation and readership are the same gate",
+   "reasoning": "Meaning and causal link preserved."
+  },
+  {
+   "claim_id": "C43",
+   "loglog_ids": [
+    "6.12.6"
+   ],
+   "claim_text": "Whoever controls the gate controls what exists.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "whoever controls the gate controls what exists",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C44",
+   "loglog_ids": [
+    "6.13"
+   ],
+   "claim_text": "The floor is checkability: a result that fails to check does not survive, no matter who wants it to.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The floor is checkability: a result that fails to check does not survive, no matter who wants it to",
+   "reasoning": "Exact quotation including the negation."
+  },
+  {
+   "claim_id": "C45",
+   "loglog_ids": [
+    "6.13.1"
+   ],
+   "claim_text": "Machine-checked proofs are the clearest case of the world pushing back.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the machine-checked proofs are the clearest case of the world pushing back",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C46",
+   "loglog_ids": [
+    "6.14"
+   ],
+   "claim_text": "The ceiling is structural value: a result nothing can build on cannot be talked into importance.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The ceiling is structural value: a result that nothing can build on cannot be talked into importance.",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C47",
+   "loglog_ids": [
+    "6.14.1"
+   ],
+   "claim_text": "The social layer decides the vast middle, still decisive because almost every career lives there.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "What the social layer decides is the vast middle between the two, and that is still the decisive part ... because the middle is where almost every career lives.",
+   "reasoning": "Faithful compression of both clauses."
+  },
+  {
+   "claim_id": "C48",
+   "loglog_ids": [
+    "6.15"
+   ],
+   "claim_text": "A Goodhart recursion Tao does not reach: once attention is the metric, AI tools optimize for attention.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "there is a Goodhart recursion that Tao doesn't reach. Once attention becomes the metric, the AI tools optimize for attention",
+   "reasoning": "Negation and attribution match source."
+  },
+  {
+   "claim_id": "C49",
+   "loglog_ids": [
+    "6.15.1"
+   ],
+   "claim_text": "Results get chosen and framed for virality among mathematicians, proofs of statements that make good talks.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "results get chosen and framed for virality among mathematicians, proofs of statements that make good talks",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C50",
+   "loglog_ids": [
+    "6.15.2"
+   ],
+   "claim_text": "The pipeline is a loop: which results win attention feeds back into which problems are posed next.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "And the pipeline is a loop, not a line: which results win attention feeds back into which problems are posed next",
+   "reasoning": "Exact quotation including loop/line contrast."
+  },
+  {
+   "claim_id": "C51",
+   "loglog_ids": [
+    "6.15.3"
+   ],
+   "claim_text": "So the attention economy reaches all the way back to problem selection.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the attention economy reaches all the way back to problem selection",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C52",
+   "loglog_ids": [
+    "6.16"
+   ],
+   "claim_text": "The community's last non-automatable function becomes the new proxy target.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The community's last non-automatable function becomes the new proxy target.",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C53",
+   "loglog_ids": [
+    "6.16.1"
+   ],
+   "claim_text": "If models become the primary readers and rankers, today's canon biases get frozen in and amplified.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "if models become the primary readers and rankers of mathematics, whatever biases exist in today's canon get frozen in and amplified",
+   "reasoning": "Conditional framing preserved, meaning unchanged."
+  },
+  {
+   "claim_id": "C54",
+   "loglog_ids": [
+    "6.16.2"
+   ],
+   "claim_text": "The influencers of today become the training distribution of tomorrow.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The influencers of today become the training distribution of tomorrow.",
+   "reasoning": "Exact quotation."
+  },
+  {
+   "claim_id": "C55",
+   "loglog_ids": [
+    "6.16.3"
+   ],
+   "claim_text": "Moradifam's stable arbiter, the collective culture, is precisely what is up for grabs.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The collective culture that Moradifam treats as a stable arbiter is precisely what is up for grabs.",
+   "reasoning": "Attribution and phrasing match source."
+  },
+  {
+   "claim_id": "C56",
+   "loglog_ids": [
+    "6.16.4"
+   ],
+   "claim_text": "One might argue this is exactly the best thing for the community and the science.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "One might argue this is exactly the best thing for the community and the science.",
+   "reasoning": "Exact quotation, hedge 'might' retained and marked as counterpoint."
+  },
+  {
+   "claim_id": "C57",
+   "loglog_ids": [
+    "6.16.4.1"
+   ],
+   "claim_text": "Judging from how social media turned out, the author highly doubts it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Judging from how social media turned out, I highly doubt it.",
+   "reasoning": "Exact quotation with author attribution."
+  },
+  {
+   "claim_id": "C58",
+   "loglog_ids": [
+    "6.17"
+   ],
+   "claim_text": "It is not all doom: Polymath-style collaboration, bloggers posting proofs in progress, and arXiv culture expanded who could participate in judgment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Is this all doom? No, I don't think so. [Polymath]-style open collaboration, working mathematicians blogging proofs in progress, arXiv culture generally: all of these expanded who could participate in judgment",
+   "reasoning": "Negation and all three examples preserved."
+  },
+  {
+   "claim_id": "C59",
+   "loglog_ids": [
+    "6.17.1"
+   ],
+   "claim_text": "The failure mode is not visibility but a selection mechanism shifting from trusted by peers to performing on engagement metrics.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The failure mode is not visibility itself. It's when the selection mechanism for who gets amplified shifts from \"trusted by peers over decades\" to \"performs well on engagement metrics.\"",
+   "reasoning": "Negation and both poles of the shift preserved."
+  },
+  {
+   "claim_id": "C60",
+   "loglog_ids": [
+    "6.17.2"
+   ],
+   "claim_text": "Mathematics was partly protected because its audience is small and expert: engagement farming fails when readers can check your proofs.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Mathematics has been partly protected because its audience is small and expert. Engagement farming does not work well when your readers can check your proofs.",
+   "reasoning": "Cause and negation of engagement farming success retained."
+  },
+  {
+   "claim_id": "C61",
+   "loglog_ids": [
+    "6.17.3"
+   ],
+   "claim_text": "The danger with AI is that it changes the audience.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The danger with AI is that it changes the audience.",
+   "reasoning": "Exact quotation."
+  }
+ ],
+ "metrics": {
+  "total_claims": 61,
+  "supported": 60,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9836
+ },
+ "fail_list": [
+  "C40 with reason: node states the citation-network path-dependence as established fact, while SOURCE frames it conditionally with 'If'; condition dropped, severity Minor"
+ ]
+}

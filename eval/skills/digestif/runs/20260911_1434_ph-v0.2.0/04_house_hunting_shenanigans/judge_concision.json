@@ -1,0 +1,278 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "04_house_hunting_shenanigans",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "L002"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Opening summary frames the whole arc, thesis stated nowhere else."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "L003"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header, market content fully carried by C003 and C004."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "L004"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Split-market evidence, facts about linger and vanish absent elsewhere."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "L005"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "First failed offer and resolve to move faster, distinct beat."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "L006"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated header previewing Friday section, detail held in C006-C009."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "L007"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specific offer terms and midnight deadline, new concrete detail."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "L008"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Realtor recommendation to bid 10K below, unique counterpoint."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "L009"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Unreachable agents plus extension request, distinct fact."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "L010"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Buyer suspicion and shortened extension, new nuance."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "L011"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated header summarizing Saturday duel covered by C013 and C015."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "L012"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Leverage reading of silence adds interpretation beyond C009."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "L013"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Nap and detachment detail, human side point."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "L014"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "20K drop and stripped terms, distinct action against advice."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "L015"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Seller reaction and listing switch, new fact."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "L016"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Disclosure letter and 5K counteroffer, number claim kept."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "L017"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated header for Sunday spat, detail held in C017-C019."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "L018"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Assistant's unprofessionalism charge, distinct counterpoint."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "L019"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "N rebuttal defending Friday offer handling, adds rebuttal content."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "L020"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Buyer in-person-only stance, distinct recommendation."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "L021"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated header, aftermath content carried by C021-C023."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "L022"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New written-disclosure rules, distinct recommendation."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "L023"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Below-asking sale plus coffee, number and flavor kept."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "L024"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Earlier listing 5% over refused top-up, distinct numeric example."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "L025"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated header, reflections carried by C025-C028."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "L026"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Realtor levers causing 5-10% overpay, causal claim."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "L027"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "System-serves-realtors critique, distinct interpretation."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "L028"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Debrief adds flexibility lesson beyond earlier beats."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "L029"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Discipline plus costs, negation caveat kept."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 28,
+    "unique": 22,
+    "duplicates": 0,
+    "trivia": 6,
+    "redundancy_rate": 0.0,
+    "trivia_rate": 0.2143,
+    "structured_tokens": 501,
+    "tokens_per_unique_claim": 22.77
+  },
+  "prune_list": [
+    "C002 restated header, drop and let L004-L005 carry section 1",
+    "C005 restated header, drop and let L007-L010 carry section 2",
+    "C010 restated header, drop and let L014/L016 carry section 3",
+    "C016 restated header, drop and let L018-L020 carry section 4",
+    "C020 restated header, drop and let L022-L024 carry section 5",
+    "C024 restated header, drop and let L026-L029 carry section 6"
+  ]
+}

@@ -1,0 +1,440 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "The middle where craft lives risks emptying like furniture and software middles.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "the middle, where the craft lives, is the desert. If we let it empty out the way furniture's middle emptied",
+   "reasoning": "Source states software and furniture middles emptied and warns mathematics may follow, matching the claim."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "CNC made most furniture cheap Ikea, some mid-scale local, some custom costing thousands.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "Most furniture is now the Ikea kind... A good chunk is still built at scale... And there are still custom built pieces that cost thousands of dollars.",
+   "reasoning": "All three tiers and the 'thousands' figure match the source exactly."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Neighborhood creative carpenter vanished; fixing cheap Ikea beats nobody buying new.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "the carpenter who wants to be creative can't make a living at it anymore. At best they spend their time fixing Ikea furniture. But Ikea furniture became so cheap that nobody fixes it.",
+   "reasoning": "Vanished-carpenter part is supported, but the second clause is garbled and adds a 'beats' comparison absent from the source."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "AI apps generate in minutes, stall in details, get abandoned; starts rise, finishes fall.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "someone generates an app in minutes, discovers the real work is in the details, abandons it... The volume of starts goes up, the number of finishes goes down",
+   "reasoning": "Directly restates the source's software parallel."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "Digestion work is the carpenter shop; empty it and results lose legibility and teaching.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "That is the creative carpenter's shop. If we let it empty out... mathematics keeps producing results while losing the people who make them legible, checkable, and taught.",
+   "reasoning": "Matches source equation of digestion with the carpenter shop and its consequences."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Agreement without shared reasoning is coincidence, not evidence.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "Agreement without shared reasoning is coincidence wearing the costume of confirmation.",
+   "reasoning": "Source states it is coincidence and the section title says agreement is not evidence."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Middle desert is also whom to trust on what results mean.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "The desert in the middle is not only about making a living. It is also about who you can trust to tell you what a result means.",
+   "reasoning": "Near-verbatim restatement."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Author asks why agreers agree; divergent paths sometimes enlighten, sometimes void agreement.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "I ask why... sometimes that difference gives me a new perspective, and sometimes it makes me disregard the agreement entirely.",
+   "reasoning": "Preserves the ask-why practice and both divergent outcomes."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Same conclusion by different reasoning differs epistemically; delta holds the information.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta.",
+   "reasoning": "Directly matches the source's epistemic-state and delta formulation."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "Sound distinct path corroborates doubly; broken path warns your arrival needs recheck.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "If their path is sound... two independent lines of support, genuine corroboration. If their path is broken... your own arrival at it needs at least a recheck",
+   "reasoning": "Both branches of the source's conditional are accurately preserved."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "Tao-tier deference amputates reasoning; copies correlate, mimicking consensus with sample size one.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "conclusion-adoption with the reasoning step amputated... beliefs are correlated not because reasoning independently converged... The effective sample size is one.",
+   "reasoning": "Captures amputation, correlation by copying, and sample size one accurately."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "Atiyah Riemann claim failed harsh scrutiny despite authority; imagine a million daily lesser claims.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "Atiyah's last claim about proving the Riemann Hypothesis. He had all the authority... it didn't stand up... imagine a million of these every day, on far less important topics",
+   "reasoning": "Name, claim, failure, and the million-a-day extrapolation all match."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "claim_text": "Attention economy spreads conclusions fast while expensive reasoning is stripped in transit.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "it propagates conclusions at high velocity while reasoning, which is expensive to transmit and verify, gets stripped in transit.",
+   "reasoning": "Near-verbatim restatement of the source sentence."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "claim_text": "AI answers are conclusions without process; fluent feel need not be perspective gain.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "an AI answer is the limit case of conclusion without process... The fluent AI explanation is engineered to feel like that moment without necessarily being one.",
+   "reasoning": "Both the conclusion-without-process framing and the hedge are preserved."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "8.9"
+   ],
+   "claim_text": "Risk is losing why as the question, keeping conclusions as mere byproducts.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "everyone loses the practice of treating \"why\" as the real question, and the conclusion as merely its byproduct.",
+   "reasoning": "Accurate restatement of the danger clause."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "8.10"
+   ],
+   "claim_text": "Related thought experiment: tree falling unheard in a jungle.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "this also reminds me of the the thought experiment of a [tree falling in a jungle]",
+   "reasoning": "Matches the source's passing reference to the thought experiment."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Math was finding plus proving; automation shifts weight to deciding what matters.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "It was always both: finding patterns, and proving them... as proving and verification get automated, the weight moves to deciding which patterns matter",
+   "reasoning": "Preserves both thesis halves and the shift."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "Correctness was the floor; importance deciding attention, depth, teaching was the constraint.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "Correctness was never the binding constraint... It was the floor. The constraint was always importance: deciding what is worth attention, what is deep, what should be taught",
+   "reasoning": "Direct match on floor, constraint, and the three objects of importance."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "Importance is partly social within checkability floor and structural ceiling; confession hard for a mathematician.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "importance is a partly social judgment: checkability and structural value set the floor and the ceiling... Confession: this is very hard to say for me, as a practicing mathematician",
+   "reasoning": "Preserves the social layer, floor/ceiling, and the confession."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "claim_text": "Some publish anything provable; grants chase big problems, then publish detours.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "mathematicians who will publish anything they can prove... writes a grant proposal for a big important problem... then publishes whatever detour they ended up on",
+   "reasoning": "Both the publish-anything remark and the grant-detour pattern match."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "9.4"
+   ],
+   "claim_text": "Proving, the checking chore, got cheap; finding, deciding worth, stays human.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding... that part is still human.",
+   "reasoning": "Direct match of both clauses."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "9.5"
+   ],
+   "claim_text": "Mix is speculatively shifting toward deciding values; software already split love versus attention.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "I am speculating that the mix is shifting... open source runs on love, the framework wars run on attention",
+   "reasoning": "Preserves the speculative hedge and software's love/attention split."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "9.6"
+   ],
+   "claim_text": "Deciding was never counted or paid, holding no professional home.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "the deciding was never counted or paid as work, so it has no established home in the profession.",
+   "reasoning": "Negation and consequence preserved."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "9.7"
+   ],
+   "claim_text": "AI reveals rather than replaces practice; judgment becomes visible as the ungeneratable remainder.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "The AI era does not replace the practice. It reveals it... the finding, the judgment, the taste become visible... they are now the only parts that can't be generated on demand.",
+   "reasoning": "Reveal-not-replace and the ungeneratable remainder both match."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "9.8"
+   ],
+   "claim_text": "Fate undecided: loved fun, influencer attention, or compute ownership; outside physics steering answered to results.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "Either theoretical mathematics becomes a fun activity... or it becomes part of an influencer economy... I do not know which way it lands... steered from outside, by physics... answered to results",
+   "reasoning": "All three outcomes, the undecided state, and outside steering match."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "9.9"
+   ],
+   "claim_text": "Statistics precedent: cheap arithmetic moved identity to question design; Halmos made exposition prestigious.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "Statistics went through the same turn when arithmetic got cheap... identity shifted from computing to designing the questions... the Halmos lesson: the community made a man famous for exposition",
+   "reasoning": "Both the statistics precedent and Halmos lesson match."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "9.10"
+   ],
+   "claim_text": "Craft need not die yet loses living; question is whether paid creative middle survives.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "The craft doesn't die. It stops being how people make a living... whether the creative carpenter still has a way to be paid for being creative.",
+   "reasoning": "Preserves both the persistence of craft and the payment question."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "9.11"
+   ],
+   "claim_text": "Thinking is what we are for; math practices it publicly with checkable stakes.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "Thinking is what we are for... Mathematics has been, for centuries, one of the main places we practice thinking in public, with the stakes visible and the errors checkable.",
+   "reasoning": "Near-verbatim restatement."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "9.12"
+   ],
+   "claim_text": "Proof is the gym: unlike the sport, unloved, yet quitting ends performance.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "The proof is the gym: lifting weights is not the sport and barely resembles it, and almost nobody lifts for fun, but the athlete who stops lifting cannot perform at that level.",
+   "reasoning": "Gym analogy, unloved status, and quitting consequence all preserved."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "9.13"
+   ],
+   "claim_text": "Coach keeps taste without lifting; robot athletes plus human coach risk judgment floating free.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "The coach is still human and still decides which patterns to chase, but the gym belongs to the robot. A coach who... never lifts again, keeps the taste and loses the performance... judgment floats free",
+   "reasoning": "Robot-athlete scenario and floating-free judgment both match."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "9.14"
+   ],
+   "claim_text": "First Proof collects unpublished problems, picks ten, allows one attempt each, grades blind.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "They collect unpublished research problems... pick ten for each batch, hand them to the leading AI systems to solve with one attempt each, then have human referees grade the solutions blind.",
+   "reasoning": "Method details and counts preserved."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "9.15"
+   ],
+   "claim_text": "Second batch late May 2026: four systems, seven of ten at publication quality, ten to thousand dollars each.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "The second batch ran in late May 2026, against four leading AI systems. Seven of the ten problems were solved at publication quality... ten to a thousand dollars per problem.",
+   "reasoning": "All numbers and the date match the source."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "9.16"
+   ],
+   "claim_text": "GPT-5.2 Pro plus Aristotle gave machine-checked Lean #728, translated by Sothanaphan, marked proved.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "a system combining OpenAI's GPT-5.2 Pro with Harmonic's Aristotle produced a formal Lean proof... of Erdős Problem #728. A human mathematician, Nat Sothanaphan, translated it... now marked proved",
+   "reasoning": "All entities, translator name, and proved status match."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "9.17"
+   ],
+   "claim_text": "May 2026 model built infinite families with at least n^1+eps versus n^1+o(1), via algebraic number theory.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "The conjecture said... grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory.",
+   "reasoning": "Exponents, infinite families, and method match exactly."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "9.18"
+   ],
+   "claim_text": "Alon, Bloom, Gowers and others digested that disproof for the community.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "N/A",
+   "evidence_quote": "A paper with Alon, Bloom, Gowers and others then digested the result for the community.",
+   "reasoning": "Names and the digestion action match."
+  }
+ ],
+ "metrics": {
+  "total_claims": 35,
+  "supported": 34,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9714285714285714
+ },
+ "fail_list": [
+  "C03 (node 7.2): second clause garbled, adds an unsupported 'beats' comparison; Minor, not Critical"
+ ]
+}

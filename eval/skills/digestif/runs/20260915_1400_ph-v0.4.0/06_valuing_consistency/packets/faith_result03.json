@@ -1,0 +1,296 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "06_valuing_consistency",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "The harder question is why the anchor moves, because that is where the moral weight actually lives.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The harder question is why the *anchor* moves, because that's where the moral weight actually lives.",
+   "reasoning": "Source states this verbatim in the ¶31 heading section."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "The world's facts can change, or your grasp of them can, giving you new evidence.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The world's facts can change, or your grasp of them can, giving you new evidence.",
+   "reasoning": "Exact restatement of the first force in ¶32."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Or the cost of expressing a given position can change, with no new evidence at all.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Or the cost of expressing a given position can change, with no new evidence at all.",
+   "reasoning": "Exact restatement of the second force in ¶32."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Crossing those forces with whether the anchor actually moved gives four cells.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Cross those forces with whether the anchor actually moved and you get four cells:",
+   "reasoning": "Source makes the same statement and supplies a four-cell table."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Rational revision: the world showed you something true and you believed it.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Rational revision.** The world showed you something true and you believed it.",
+   "reasoning": "Exact match to the ¶34 bullet."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Ossification: the evidence moved and the anchor refused; not swinging is stubbornness in the costume of principle.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.",
+   "reasoning": "Faithful compression of the ossification bullet, negation preserved."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "Preference laundering: everyone is doing it now, so I guess it is fine.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\"",
+   "reasoning": "Direct quote from the ¶34 bullet."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "6.6.1"
+   ],
+   "claim_text": "Social proof gets laundered into belief that was never actually re-examined; the anchor moved, but on cost, not evidence.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.",
+   "reasoning": "Reproduces source wording; negation 'not evidence' kept."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "Anchor held: when cost changes but the anchor genuinely does not move, behavior still needs sorting.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:",
+   "reasoning": "Exact match to the anchor-held bullet."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "6.7.1"
+   ],
+   "claim_text": "Revealed preference: behavior snaps to the anchor once the cost of expressing it drops; the swing was suppression seen from outside.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Behavior snaps to the anchor once the cost of expressing it drops. The swing is what suppression looked like from outside.",
+   "reasoning": "Faithful compression; meaning preserved."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "6.7.2"
+   ],
+   "claim_text": "A charitable reading of the clothing story: not a shift in belief, just a cost that finally lifted.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.",
+   "reasoning": "Near-verbatim restatement; negation intact."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "6.7.3"
+   ],
+   "claim_text": "Hysteresis: behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own.",
+   "reasoning": "Exact match to the hysteresis bullet."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "6.7.4"
+   ],
+   "claim_text": "Still flinching at a threat that no longer exists.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Still flinching at a threat that no longer exists.",
+   "reasoning": "Verbatim closing line of the hysteresis bullet."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "6.8"
+   ],
+   "claim_text": "Perspective gain: the evidence column does not require the reference itself to have moved, as when static tax law meets a growing grasp of it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The evidence column doesn't require the reference itself to have moved. Tax law can sit perfectly still while your grasp of it moves from nothing to something.",
+   "reasoning": "Accurate paraphrase of the ¶35 footnote."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "6.8.1"
+   ],
+   "claim_text": "What was gained is a belief rather than a settled fact, so a second pass at the same unchanged reference can overturn it again.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "since what you gained is a belief rather than a settled fact, a second pass at the very same unchanged reference can overturn it again.",
+   "reasoning": "Reproduces source causal claim with hedge 'can' preserved."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6.9"
+   ],
+   "claim_text": "Rational revision and preference laundering can produce an identical new anchor from an identical old one: same destination, opposite process.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Rational revision and preference laundering can produce an identical new anchor from an identical old one. Same destination, opposite process.",
+   "reasoning": "Verbatim restatement of ¶36."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.9.1"
+   ],
+   "claim_text": "From outside they are indistinguishable, and often from inside too.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "From outside they are indistinguishable. Often from inside too.",
+   "reasoning": "Matches source, hedge 'Often' retained."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6.10"
+   ],
+   "claim_text": "The aphorism: no heart if you are not a socialist at 20, no head if you still are at 40.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "\"If you're not a socialist at 20, you have no heart. If you're still a socialist at 40, you have no head.\"",
+   "reasoning": "Both negations and ages preserved accurately."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.10.1"
+   ],
+   "claim_text": "It gets offered as an evidence-based claim: with age comes direct experience of taxes, hiring, saving, and incentives.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "It gets offered as an evidence-based claim. With age comes direct experience of taxes, hiring, saving, and incentives",
+   "reasoning": "List and framing match the source exactly."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.10.2"
+   ],
+   "claim_text": "Structurally that is the lifecycle investing story: rational revision, tracking new information about how the world works.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Structurally that's the lifecycle investing story: rational revision, tracking new information about how the world works.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6.11"
+   ],
+   "claim_text": "But the same trajectory falls out of a much less flattering process: aging brings assets, income, and things to lose from redistribution.",
+   "claim_type": "causal_link",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "As people age they typically acquire assets, income, and things to lose from redistribution.",
+   "reasoning": "Source hedges with 'typically'; loglog states 'aging brings' as absolute, dropping the qualifier."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.11.1"
+   ],
+   "claim_text": "So views can drift to track self-interest rather than evidence: preference laundering with extra steps.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Views can drift to track self-interest rather than evidence. Preference laundering with extra steps.",
+   "reasoning": "Matches source wording, hedge 'can' preserved."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.12"
+   ],
+   "claim_text": "Both processes produce the same trajectory and the same retrospective story, I used to be naive, so the shift itself tells you nothing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Both processes produce the same trajectory and the same retrospective story: \"I used to be naive.\" Nothing about the shift itself tells you which one occurred.",
+   "reasoning": "'Tells you nothing' faithfully conveys that the shift cannot identify which process occurred."
+  }
+ ],
+ "metrics": {
+  "total_claims": 23,
+  "supported": 22,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9565
+ },
+ "fail_list": [
+  "C21 partially supported: dropped hedge 'typically', rendering 'aging brings assets...' as an absolute causal statement"
+ ]
+}

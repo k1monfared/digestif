@@ -1,0 +1,210 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (opencode-go), 2026-09-15",
+ "source_id": "07_intentionalism",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Start tomorrow morning with the first hour, then scale practice upward.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Start with tomorrow morning. ... Then scale up. Apply it to bigger decisions.",
+   "reasoning": "Source explicitly advises starting tomorrow morning and then scaling to larger decisions."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "Name calm, energy, connection, or solitude; pursue it instead of notifications.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "do you want calm? Energy? Connection? Solitude? ... Then pursue that.",
+   "reasoning": "Source lists exactly these four options and advises pursuing the chosen one over notifications."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "Notice scrolling versus intending; log satisfaction across small choices for a week.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Notice how different this feels from scrolling ... Do this for a week with small things ... Notice what actually satisfies you",
+   "reasoning": "Source prescribes noticing the contrast and tracking satisfaction over a week of small choices."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "claim_text": "Scale to jobs, dating, purchases by deciding criteria before browsing options.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Before looking at job postings, decide what kind of work you want ... Before swiping on dating apps ... Before browsing products",
+   "reasoning": "Source gives exactly these three domains and the decide-first ordering."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "9.4"
+   ],
+   "claim_text": "Muscle enables intentions, intentions become values, values make proposers.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The muscle enables larger intentions. Larger intentions become values. Values make you a proposer.",
+   "reasoning": "Nearly verbatim restatement of the source's causal chain."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "9.5"
+   ],
+   "claim_text": "Proposers end better across math and mess, not from specialness but position.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "proposers—whether in the pure mathematics ... or in the messy approximations of real life—end up with better outcomes. Not because they're special.",
+   "reasoning": "Source states the same outcome across both settings and attributes it to position, not specialness."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "10"
+   ],
+   "claim_text": "Appendix gives progressive exercises for entertainment, shopping, jobs, relationships, days.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "practicing intention in progressively larger domains. Here are specific exercises for the scenarios mentioned throughout this post.",
+   "reasoning": "Appendix covers entertainment, shopping, jobs, relationships, and daily micro-practices as listed."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "10.1"
+   ],
+   "claim_text": "Entertainment: name intention week one, seek week two, protect with timers week three.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Week 1: Name your intention ... Week 2: Seek intentionally ... Week 3: Protect your intention ... Set a timer",
+   "reasoning": "Source lays out the same three weekly stages including timers in week three."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "10.2"
+   ],
+   "claim_text": "Shopping: define problem, list must-haves, research features, ignore layout, 24-hour rule.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Define the problem ... List must-haves ... Research intentionally ... Ignore the store layout ... 24-hour rule",
+   "reasoning": "All five listed steps appear in the source's numbered shopping list."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "10.3"
+   ],
+   "claim_text": "Toothpaste drill: identify need, find ingredient, buy it, notice packaging-free choosing.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Research which ingredient addresses that need ... find that ingredient, buy it ... comparing packaging",
+   "reasoning": "Source's toothpaste practice run matches each step."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "10.4"
+   ],
+   "claim_text": "Career: set five non-negotiables, approach firms directly, apply only to strong matches.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Write 5 non-negotiables ... Contact people at those companies ... Only apply to roles that match at least 4 of your 5 criteria",
+   "reasoning": "Source specifies five criteria, direct outreach, and applying only to sufficiently matching roles."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "10.5"
+   ],
+   "claim_text": "Dating: write relationship vision, require value alignment, filter first dates intentionally.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Write your relationship intention ... Identify values alignment ... First date filter: Ask questions that reveal value alignment",
+   "reasoning": "Source lists these dating steps in the same order and intent."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "10.6"
+   ],
+   "claim_text": "Friendship: name needed qualities, join matching communities, initiate specific activities.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Name what you need ... Join specific communities ... Initiate based on intention: Invite people to do specific things",
+   "reasoning": "Source's friendship steps match the node."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "10.7"
+   ],
+   "claim_text": "Daily: three morning intentions, evening proposer review, ten-second pause before choices.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "What are my three intentions for today? ... Evening review ... pause for 10 seconds",
+   "reasoning": "Source contains each of the three daily micro-practices at the stated quantities."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "10.8"
+   ],
+   "claim_text": "Journal situation, mode, outcome; thirty days reveal proposer satisfaction pattern.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "three columns: Situation ... Mode ... Outcome ... After 30 days ... Proposer entries will show higher satisfaction.",
+   "reasoning": "Source specifies the three columns and the 30-day proposer-satisfaction pattern."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "10.9"
+   ],
+   "claim_text": "Intention means asking what is wanted before others answer; small reps grow capacity.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's about practicing the question \"what do I want?\" before someone else provides the answer. Start small. The muscle builds. The capacity grows.",
+   "reasoning": "Source defines intention the same way and describes small starts growing capacity."
+  }
+ ],
+ "metrics": {
+  "total_claims": 16,
+  "supported": 16,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

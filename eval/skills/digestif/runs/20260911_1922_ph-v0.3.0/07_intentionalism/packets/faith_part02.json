@@ -1,0 +1,135 @@
+{
+ "sample": "07_intentionalism",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Start tomorrow morning small, practice a week, then scale to big decisions.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Tomorrow morning: before checking the phone, decide specifically what the first hour should deliver (calm, energy, connection, solitude), then pursue it; notice how unlike grabbing scrolling this feels."
+    },
+    {
+     "ref": "¶24",
+     "text": "Practice a week on small things (breakfast, evenings, weekends), noting satisfaction versus time-filling; then scale up: decide desired work before postings, desired relationship before swiping, problem before products."
+    },
+    {
+     "ref": "¶25",
+     "text": "The muscle enables larger intentions, intentions become values, values make a proposer. Proposers end better in matching math and messy life alike, not from specialness but from the equation's other side."
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Morning: decide the first hour's want before the phone, then pursue it.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Tomorrow morning: before checking the phone, decide specifically what the first hour should deliver (calm, energy, connection, solitude), then pursue it; notice how unlike grabbing scrolling this feels."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Log small satisfactions a week, then decide work, love, and problems first.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Practice a week on small things (breakfast, evenings, weekends), noting satisfaction versus time-filling; then scale up: decide desired work before postings, desired relationship before swiping, problem before products."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Muscle enables intentions, intentions values; proposers win from the other side.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "The muscle enables larger intentions, intentions become values, values make a proposer. Proposers end better in matching math and messy life alike, not from specialness but from the equation's other side."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "type": "example",
+   "attribution": "author",
+   "text": "Entertainment drill: three weeks of naming, seeking, and protecting intention with timers.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "Appendix entertainment: Week 1 name the intended feeling and log intention-to-delivery; Week 2 search specific content by intention; Week 3 set a timer, challenge autoplay against the intention, close when fulfilled."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "type": "example",
+   "attribution": "author",
+   "text": "Shopping drill: exact problem, 3-5 must-haves, 24-hour rule over $100.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "Appendix shopping: define the exact problem, list 3-5 must-haves, research those features (not best-of-2025 lists), ignore store layout, apply the 24-hour rule over $100. Toothpaste drill: need, ingredient, buy, compare the feeling."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "type": "example",
+   "attribution": "author",
+   "text": "Jobs drill: two-week energy map, five non-negotiables, apply only at 4-of-5 matches.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "Appendix jobs: quarterly energy mapping over two weeks, pattern finding, five non-negotiables, researching companies without postings, intentional outreach; if applying, match at least 4 of 5 criteria and track proposer versus receiver applications."
+    }
+   ]
+  },
+  {
+   "id": "9.7",
+   "type": "example",
+   "attribution": "author",
+   "text": "Relationships drill: specific intention plus 3-5 must-align values, seek and filter.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "Appendix relationships: write the specific relationship intention and 3-5 must-align values, seek demonstrators, filter first dates on values; friendships: name the need, go where those people are, invite specifically."
+    }
+   ]
+  },
+  {
+   "id": "9.8",
+   "type": "example",
+   "attribution": "author",
+   "text": "Micro-practices: 5-minute morning trio, 5-minute review, 10-second pause.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "Appendix micro-practices: 5-minute morning (three specific intentions before the phone), 5-minute evening review (proposer or receiver today), 10-second pause practice (intentional or merely selecting) building awareness first."
+    }
+   ]
+  },
+  {
+   "id": "9.9",
+   "type": "example",
+   "attribution": "author",
+   "text": "Three-column journal for 30 days: situation, mode, outcome; start small.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "Appendix tracking: a three-column journal (situation, mode, outcome) for 30 days; proposer entries will show higher satisfaction. Intention is asking what one wants before others answer; start small and the capacity grows."
+    }
+   ]
+  }
+ ]
+}

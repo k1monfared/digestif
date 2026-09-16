@@ -1,0 +1,1147 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "06_valuing_consistency",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Top summary aggregates full thesis, including prior-prediction test absent from any single earlier claim."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Frames the central question about consistency and its missing structure."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Notes the word's vagueness and its double moral charge, compliment and accusation."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Dated 1979 case of mini skirts to chador, concrete opening evidence."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contrasting modest-before-and-after case, needed to set up the comparison."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States the instinctual moral read: swing as failing, steadiness as integrity."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the contrary cynical reading, sharpening that the instinct is contested."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Everyone accepts updating is sometimes a virtue, which forces the puzzle."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical statement that behavioral consistency is not the real moral object."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "1.7"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated purpose line, no claim beyond C002 and C009."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the quantitative model as the method for the inquiry."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines the openness scale and social reference values."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Gives the modest woman's two observed values, the input data."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States the behavioral equation, the model's core."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Anchor and Responsiveness, needed to read the equations."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Two equations from two observations, the setup for solving."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Numeric solution a=0, w=0.2, irreplaceable arithmetic."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Interprets the solved parameters as fixed anchor plus fixed twenty percent pull."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "2.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the output-versus-rule distinction, the argument's pivot."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "2.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Characterizes her as unusually stable, adds interpretive color with content."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "2.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Chameleon woman's observed values, new input data."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "2.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Numeric result a=0, w=1.8, showing amplification."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "2.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Applies rule-consistency to the chameleon, completing the comparison."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "2.13"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concedes the output judgment of chameleon is fair, preserving nuance."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "2.14"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Denies the deeper inference of no fixed point, key correction."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "2.15"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States the real difference is the rule's content, the section's conclusion."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "2.16"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines the three layers of consistency, a load-bearing framework."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "2.17"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical statement of how the two women fare across the three layers."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "2.18"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C028",
+      "reasoning": "Restates C028 that the output-observed gap vanishes at deeper layers."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "2.19"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical point that anchor drift hides beneath fixed policy."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "2.20"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C030",
+      "reasoning": "Repeats C030's invisible drift and moral-weight location."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "2.21"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "A scope caveat about unexplored anchor-reference distances, carries real limitation."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "2.22"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Economist vocabulary aside, no argumentative contribution."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "2.23"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Notes the coefficient need not lie in [0,1], enabling w>1."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sets up the contrarian case, sign flipped and magnitude doubled."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contrarian woman's observed values, new input data."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Numeric result a=0, w=-0.4, irreplaceable arithmetic."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds direction of push, away rather than toward reference."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical claim that contrarians are mislabeled independent."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Gives the causal reason contrarians depend more on the reference."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "3.6"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C039",
+      "reasoning": "Restates C039 as a formula, adding no new claim."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the named posture family across w values."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Amplifier row and links it to the chameleon."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Absolute conformist row at w equals one."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "4.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds that no fixed point remains to reconstruct belief from."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Partial conformist row, the modest woman's cell."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical definition of the Independent posture."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Partial contrarian row, the contrarian's cell."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Absolute contrarian row and its maximal inverted dependence."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C047",
+      "reasoning": "Restates C047 that only the Independent needs no reference information."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "4.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New relational claim about the two absolute postures sitting close."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "4.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the below-negative-one overshooting contrarian row."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the normative-versus-structural reference distinction."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines normative reference as something the anchor should resist."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States high responsiveness to normative reference is suspect."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines structural reference as something the anchor should track."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States zero responsiveness to structural reference is malfunction."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States the ideal of small responsiveness and educated anchors."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "5.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Caveat that the world is not ideal, a limitation not filler."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Gives the 110-minus-age rule, concrete numeric example."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "5.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Applies the rule to ages 25 and 60, concrete figures."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "5.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Argues the taper is not inconsistency, reference is the horizon."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "5.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Claims right exposure genuinely depends on the horizon."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "5.8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Gives the differing crash-recovery capacities of young and retired."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "5.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States holding behavior fixed across life would be the failure."
+    },
+    {
+      "claim_id": "C066",
+      "loglog_ids": [
+        "5.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete ossification example, staying aggressive at 65."
+    },
+    {
+      "claim_id": "C067",
+      "loglog_ids": [
+        "5.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical contrast of clothing conformist and lifecycle investor as moral opposites."
+    },
+    {
+      "claim_id": "C068",
+      "loglog_ids": [
+        "5.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces integrity-versus-ossification contrast for held output."
+    },
+    {
+      "claim_id": "C069",
+      "loglog_ids": [
+        "5.13"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C067",
+      "reasoning": "Restates C067's same-form opposite-verdict conclusion."
+    },
+    {
+      "claim_id": "C070",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pivots to why the anchor moves, locating moral weight there."
+    },
+    {
+      "claim_id": "C071",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "First force: new evidence from changed facts or grasp."
+    },
+    {
+      "claim_id": "C072",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Second force: changed cost with no new evidence."
+    },
+    {
+      "claim_id": "C073",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines the four-cell cross of forces and anchor movement."
+    },
+    {
+      "claim_id": "C074",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Rational revision cell."
+    },
+    {
+      "claim_id": "C075",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Ossification cell with its moral sting."
+    },
+    {
+      "claim_id": "C076",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Preference laundering cell via the slogan."
+    },
+    {
+      "claim_id": "C077",
+      "loglog_ids": [
+        "6.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Gives the mechanism: cost-driven move unexamined as belief."
+    },
+    {
+      "claim_id": "C078",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Anchor held cell where behavior still needs sorting."
+    },
+    {
+      "claim_id": "C079",
+      "loglog_ids": [
+        "6.7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines Revealed preference, swing as lifted suppression."
+    },
+    {
+      "claim_id": "C080",
+      "loglog_ids": [
+        "6.7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Applies revealed preference to the clothing story charitably."
+    },
+    {
+      "claim_id": "C081",
+      "loglog_ids": [
+        "6.7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical definition of Hysteresis, installed fear running on."
+    },
+    {
+      "claim_id": "C082",
+      "loglog_ids": [
+        "6.7.4"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C081",
+      "reasoning": "Image restating C081's hysteresis with no new claim."
+    },
+    {
+      "claim_id": "C083",
+      "loglog_ids": [
+        "6.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds Perspective gain, evidence can change without the reference moving."
+    },
+    {
+      "claim_id": "C084",
+      "loglog_ids": [
+        "6.8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Notes the gained belief is revisable at the same reference."
+    },
+    {
+      "claim_id": "C085",
+      "loglog_ids": [
+        "6.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical claim of identical destination from opposite processes."
+    },
+    {
+      "claim_id": "C086",
+      "loglog_ids": [
+        "6.9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds that the twins are indistinguishable from outside and inside."
+    },
+    {
+      "claim_id": "C087",
+      "loglog_ids": [
+        "6.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces the socialist aphorism as the test case."
+    },
+    {
+      "claim_id": "C088",
+      "loglog_ids": [
+        "6.10.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States the evidence-based reading of the aphorism."
+    },
+    {
+      "claim_id": "C089",
+      "loglog_ids": [
+        "6.10.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Maps it to rational revision, the lifecycle story."
+    },
+    {
+      "claim_id": "C090",
+      "loglog_ids": [
+        "6.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Offers the less flattering self-interest reading, a distinct competing process."
+    },
+    {
+      "claim_id": "C091",
+      "loglog_ids": [
+        "6.11.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Names self-interest drift preference laundering with extra steps."
+    },
+    {
+      "claim_id": "C092",
+      "loglog_ids": [
+        "6.12"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C085",
+      "reasoning": "Restates C085's identical-outcome point plus retrospective story already implied."
+    },
+    {
+      "claim_id": "C093",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces three real-world complications to the model."
+    },
+    {
+      "claim_id": "C094",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States confounded attribution, evidence and cost usually move together."
+    },
+    {
+      "claim_id": "C095",
+      "loglog_ids": [
+        "7.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Gives the opening-society case where cost removal also supplies evidence."
+    },
+    {
+      "claim_id": "C096",
+      "loglog_ids": [
+        "7.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States one can land correctly for the wrong cost-driven reason."
+    },
+    {
+      "claim_id": "C097",
+      "loglog_ids": [
+        "7.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Explains the flaw only surfaces when cost and evidence diverge."
+    },
+    {
+      "claim_id": "C098",
+      "loglog_ids": [
+        "7.1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Key claim that process reliability changes the value of a correct belief."
+    },
+    {
+      "claim_id": "C099",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States misperceived reference as a distinct complication."
+    },
+    {
+      "claim_id": "C100",
+      "loglog_ids": [
+        "7.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Gives norm and market examples of misperception."
+    },
+    {
+      "claim_id": "C101",
+      "loglog_ids": [
+        "7.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Locates the error upstream, corrupting all downstream judgments."
+    },
+    {
+      "claim_id": "C102",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States reference lag, apparent fixity tracking a stale reference."
+    },
+    {
+      "claim_id": "C103",
+      "loglog_ids": [
+        "7.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Immigrant-language example supporting reference lag."
+    },
+    {
+      "claim_id": "C104",
+      "loglog_ids": [
+        "7.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Quebec French example, second concrete instance of the lag."
+    },
+    {
+      "claim_id": "C105",
+      "loglog_ids": [
+        "7.3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Explains the frozen origin norm as the real reference."
+    },
+    {
+      "claim_id": "C106",
+      "loglog_ids": [
+        "7.3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical statement that resistance is conformity to another reference."
+    },
+    {
+      "claim_id": "C107",
+      "loglog_ids": [
+        "7.3.5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C106",
+      "reasoning": "Pithy restatement of C106, no new claim."
+    },
+    {
+      "claim_id": "C108",
+      "loglog_ids": [
+        "8"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C085",
+      "reasoning": "Restates the identical-behavior and identical-retrospection already asserted."
+    },
+    {
+      "claim_id": "C109",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Names both retrospective phrases available to either version."
+    },
+    {
+      "claim_id": "C110",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Rhetorical transition, no claim beyond the surrounding lines."
+    },
+    {
+      "claim_id": "C111",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical claim that prior prediction is the one separator."
+    },
+    {
+      "claim_id": "C112",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds that reason-attached prior predictions resist retroactive faking."
+    },
+    {
+      "claim_id": "C113",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Falsifiable-claim example about understanding incentives by 40."
+    },
+    {
+      "claim_id": "C114",
+      "loglog_ids": [
+        "8.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contrasting example of self-interest disguised as insight."
+    },
+    {
+      "claim_id": "C115",
+      "loglog_ids": [
+        "8.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Anchor-prediction example about wearing the dress."
+    },
+    {
+      "claim_id": "C116",
+      "loglog_ids": [
+        "8.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Recommends defaulting away from flattery when no prediction exists."
+    },
+    {
+      "claim_id": "C117",
+      "loglog_ids": [
+        "9"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Recap header about the word splitting, no new claim."
+    },
+    {
+      "claim_id": "C118",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Applies the framework to both original cases as payoff."
+    },
+    {
+      "claim_id": "C119",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C009",
+      "reasoning": "Restates C009 that behavioral consistency was only a bad proxy."
+    },
+    {
+      "claim_id": "C120",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the positive statement that the process is what is evaluated."
+    },
+    {
+      "claim_id": "C121",
+      "loglog_ids": [
+        "9.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lists the three process questions, the actionable takeaway."
+    },
+    {
+      "claim_id": "C122",
+      "loglog_ids": [
+        "9.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States process invisibility and post-hoc story unfalsifiability."
+    },
+    {
+      "claim_id": "C123",
+      "loglog_ids": [
+        "9.5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C111",
+      "reasoning": "Restates C111 that only the advance question is trusted."
+    },
+    {
+      "claim_id": "C124",
+      "loglog_ids": [
+        "9.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical concrete formulation of the advance prediction question."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 124,
+    "unique": 109,
+    "duplicates": 11,
+    "trivia": 4,
+    "redundancy_rate": 0.0887,
+    "trivia_rate": 0.0323,
+    "structured_tokens": 136,
+    "tokens_per_unique_claim": 1.2477
+  },
+  "prune_list": [
+    "C029 duplicates C028, safe to merge",
+    "C031 duplicates C030, safe to merge",
+    "C041 duplicates C039, safe to merge",
+    "C050 duplicates C047, safe to merge",
+    "C069 duplicates C067, safe to merge",
+    "C082 duplicates C081, safe to merge",
+    "C092 duplicates C085, safe to merge",
+    "C107 duplicates C106, safe to merge",
+    "C108 duplicates C085, safe to merge",
+    "C119 duplicates C009, safe to merge",
+    "C123 duplicates C111, safe to merge"
+  ]
+}

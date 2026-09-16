@@ -1,0 +1,442 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (opencode-go), 2026-09-15",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Mathematics was never the production of proofs but the judgment of which patterns deserve proving.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "mathematics was never the production of theorems. It was a process of thinking, and the process was the product. ... It was always both: finding patterns, and proving them.",
+   "reasoning": "Source says the process of thinking was the product and math was always both finding and proving; node narrows the product to judgment alone."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Mathematics was the discipline of finding provable patterns with expert-settled ground truth.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Mathematics is the discipline of finding patterns where claims can be proven. ... a community of experts can settle which ... Math had ground truth.",
+   "reasoning": "Directly paraphrases the source's quoted old definition and its ground-truth characterization."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Unlike art, politics, or physics, math offered ground truth instead of opinions.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That was what made math different from art criticism, politics, business, psychology, biology, or even physics. Everything else had opinions. Math had ground truth.",
+   "reasoning": "Source explicitly contrasts math with those fields and assigns opinions to everything else."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "A professor's viral post likened AI-era research to grading a lying grade-grubber.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a post from a math professor that has been making the rounds ... his research has started to feel like grading the proofs of a very clever student who is desperate to get an A and doesn't mind lying to do so",
+   "reasoning": "Node restates the post's likening; 'viral' matches 'making the rounds' and the student matches."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "In 2026 AI produced publication-quality proofs of novel problems for hundreds of dollars.",
+   "claim_type": "number_or_date",
+   "verdict": "Partially supported",
+   "severity": "Harmless",
+   "evidence_quote": "solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each ... for a few hundred to a few thousand dollars of compute",
+   "reasoning": "Source gives ten to a thousand dollars (or a few hundred to a few thousand); 'hundreds' narrows the band but matches the looser quote."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Four systems solved seven of ten unpublished problems; choosing problems resisted automation.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "four leading systems solved seven of ten unpublished problems ... The step they could not automate was the choosing",
+   "reasoning": "Numbers and the automation failure match the source exactly."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "AI proved Erdos 728 in Lean and disproved the 1946 unit-distance conjecture; humans digested both.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "produced a formal Lean proof ... of Erdős Problem #728 ... In May 2026, an OpenAI reasoning model disproved the planar unit distance conjecture, posed by Erdős in 1946",
+   "reasoning": "Names, dates, and the human digestion detail all match the source and appendix."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Models prove what humans choose; which patterns matter stays human, with handholding.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the models prove what we want them to prove. Although they still might need a lot of handholding ... That which patterns were worth chasing, is still human",
+   "reasoning": "Node preserves the choice/proving split and the handholding qualifier."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "Conjecture generators propose patterns but never decide which ones matter.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they propose patterns, they do not decide which ones matter",
+   "reasoning": "Near-verbatim restatement of the source negation."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "claim_text": "Proving may have been the chore all along; the finding was always the real thing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Or maybe the proving was the chore and the finding was always the real thing?!",
+   "reasoning": "Node retains the source's tentative 'maybe' hedge as 'may have been'."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2.6"
+   ],
+   "claim_text": "The argument assumes mathematics is what humans do, like a self-justifying faith.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing",
+   "reasoning": "Matches the source's stated implicit assumption and religion analogy."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "2.7"
+   ],
+   "claim_text": "Proof verification, the process's second half, is being automated too.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The proof process has a second half though. Verifying the proof ... is being automated too.",
+   "reasoning": "Direct restatement of the source claim."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "2.8"
+   ],
+   "claim_text": "Davies-style intuition pumps and AlphaTensor show AI proposing, humans formalizing.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Davies results used machine learning as an intuition pump ... AlphaTensor ... The pattern is the same every time: the AI proposes, humans check, digest, and present.",
+   "reasoning": "Examples and the general pattern match the source."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "2.9"
+   ],
+   "claim_text": "Understanding shifts from reconstructing proofs to interpreting opaque machine results.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "understanding shifts from constructive to hermeneutic ... trying to extract meaning from a proof produced by something that cannot explain itself",
+   "reasoning": "Node accurately restates the constructive-to-hermeneutic shift."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Tao's hypothesis covers verification too; the question is tolerated error level.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tao's Working Hypothesis covers performing mathematical tasks, and verifying is one ... The question is what level of error we tolerate in it.",
+   "reasoning": "Both parts are stated directly in the source."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Deligne found Voevodsky's key lemma wrong years later; a main theorem failed unchallenged for years.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Pierre Deligne went through his foundational paper line by line ... the proof of a key lemma was wrong ... a main theorem that was eventually shown to be false ... nobody noticed for years.",
+   "reasoning": "Names and the two failure details match the source."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Frightened Voevodsky spent his career pushing computer verification over human trust.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Voevodsky was scared by this ... He spent the rest of his career pushing for computer proof verification, because he no longer trusted the human process.",
+   "reasoning": "Node's fear and career shift mirror the source closely."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Human verification is unreliable, so comparable AI error rates look like business as usual.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Human verification is not reliable ... So when AI verification arrives with an error rate comparable to that ... It will look like business as usual.",
+   "reasoning": "Node preserves the negation and the causal inference exactly."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "The AI-side error rate is assumed, not measured, and machine volume compounds mistakes.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine.",
+   "reasoning": "Direct restatement including the 'assumed, not measured' negation."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Mathematics was never theorem production; the thinking process was the product.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "mathematics was never the production of theorems. It was a process of thinking, and the process was the product.",
+   "reasoning": "Near-verbatim restatement of the source sentence."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Teaching math builds judgment through struggle; fluency must not be confused with understanding.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "not the facts, the struggle ... That process builds the habit ... the way fluency gets confused with ownership ... They are not the same.",
+   "reasoning": "Node captures the struggle-builds-judgment and fluency-not-understanding claims."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Cognitive offloading and confident AI tone worsen the illusion of explanatory depth.",
+   "claim_type": "causal_link",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "Cognitive offloading is the tendency to delegate mental effort ... AI ... produces plausible explanations in a confident tone, so both student and instructor can mistake the output for the learning.",
+   "reasoning": "Source defines offloading and the illusion separately; it attributes the mistaken learning to confident AI tone, not to offloading worsening the illusion."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Thinking is constitutive, not instrumental like laundry or car repair.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Fixing a car is instrumental ... Thinking is constitutive. ... marketing treats thinking the way earlier automation treated laundry",
+   "reasoning": "The constitutive/instrumental contrast and the laundry and car examples all appear in the source."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "Arithmetic, poetry, and navigation losses were survivable; the chore-thinking boundary is blurry.",
+   "claim_type": "concession",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the boundary is blurry. We said the same things about mental arithmetic, memorizing poetry, navigation. Some of those losses turned out fine.",
+   "reasoning": "Node preserves both the blurry-boundary concession and the mixed-loss framing."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "GPS atrophies spatial memory, but framing and attention look load-bearing; proving trains finding.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the atrophying of spatial reasoning under GPS ... Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing ... proving is the gym where the finding is trained",
+   "reasoning": "All three sub-claims correspond to the source's wording."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "claim_text": "Over-polished AI proofs dwell on trivia, rush novelty, and remove the friction readers need.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They dwell on trivialities and rush past the novel parts ... An over-polished proof removes both natural and artificial friction",
+   "reasoning": "Node restates the source's three exposition criticisms."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "4.7"
+   ],
+   "claim_text": "Thurston: success is enabling clearer thought, not meeting quotas of theorems.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We are not trying to meet some abstract production quota of definitions, theorems and proofs. The measure of our success is whether what we do enables people to understand and think more clearly",
+   "reasoning": "Node accurately compresses the quoted Thurston passage."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "4.8"
+   ],
+   "claim_text": "Once struggle stops being scarce, the community must ask what it optimizes for.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Once the struggle stops being scarce, he asks, what is the community actually optimizing for?",
+   "reasoning": "Direct restatement of Tao's question."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Tao assumes capable AI and asks what goals and values the community actually pursues.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He asks you not to believe it, only to assume it ... what are the goals and values of the mathematical community, the explicit ones and the implicit ones we actually pursue in practice?",
+   "reasoning": "Node preserves the assume-don't-believe stance and the values question."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "The Working Hypothesis asks belief be suspended; the values question belongs to the humanities.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He asks you not to believe it, only to assume it ... This is the question math has historically delegated to the humanities.",
+   "reasoning": "Both components are stated explicitly in the source."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Goodhart's law threatens correlated goals: AI optimization breaks their old proxies.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "when a measure becomes a target, it ceases to be a good measure ... the community's goals were positively correlated ... AI optimization threatens to break the correlation.",
+   "reasoning": "Node matches the Goodhart definition and the correlation-breaking claim."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Solving needs verifying, exposition, acceptance, canonicalization; AI piles stall at each stage.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Refine it once, add verification ... add exposition ... add community acceptance ... add canonicalization ... mismatches appear at every stage.",
+   "reasoning": "The staged refinements and the every-stage mismatch both come from the source."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Under proof abundance the bottleneck is digestion, today's lowest-prestige work.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "moving from proof scarcity to proof abundance ... The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige.",
+   "reasoning": "Node restates the punchline and the low-prestige characterization."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Tao urges disclosure norms, less first-past-posting, and a clear-talk rule for publication.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first ... if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk ... then the result should not be published.",
+   "reasoning": "All three recommendations map to the source's stated recommendations."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "The research-loving professor demoted to grading embodies Tao's prestige inversion.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He got into research because he loved producing and hated grading. His reward for succeeding is to be demoted to the thing he hated ... That is the prestige inversion Tao is pointing at",
+   "reasoning": "Node restates the source's own connection between the professor and the prestige inversion."
+  }
+ ],
+ "metrics": {
+  "total_claims": 35,
+  "supported": 32,
+  "partially_supported": 3,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.914
+ },
+ "fail_list": [
+  "C01 Partially supported: narrows 'process of thinking was the product' to judgment, dropping the 'always both finding and proving' framing",
+  "C05 Partially supported: 'hundreds of dollars' understates source cost band of ten to a thousand dollars",
+  "C22 Partially supported: links cognitive offloading to worsening the illusion of explanatory depth, which the source does not state"
+ ]
+}

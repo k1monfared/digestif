@@ -1,0 +1,1131 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "05_manufacturing_taste",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Top summary; first statement of the thesis, nothing earlier to repeat."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Opening framing question; sets up the whole argument."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bieber framing hook; specific and new."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specific counts for Vienna composers."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Catalog numbers give the scale of loss."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States standard explanation and the alternative."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical Haydn counterfactual; C060 and C061 restate it."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Justifies modeling; needed method setup."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "1.7"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Housekeeping meta about this being a less formal paper; no substantive point."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Section header introducing the three hypotheses."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Story 1 definition; new."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Story 1 implication about patrons; distinct."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Story 2 definition; new."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Mechanism of familiarity read as quality."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Institutional lock-in; short but new."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Story 3 definition; new."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "2.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Floor claim; new."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "2.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ceiling-breakthrough claim; new."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "2.3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical middle-is-luck claim; C059 restates it."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Job-market analogy introduced."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "2.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Interview example adds concrete color."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "2.4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Extends analogy to civilizational scale; marginal but new."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Section header naming the three mechanisms."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Mere-exposure definition; new."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "3.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Radio example; new."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "3.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Scope clarification; not mere complexity."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "3.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Zajonc 1968 citation; dated evidence."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "3.1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bornstein effect size; quantitative evidence."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "3.1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Inverted-U caveat; not trivia."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "3.1.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Links exposure to artificial quality advantage."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "3.1.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinguishes contamination from bad judges."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Social-influence definition; new."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "3.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lists ranking signals creating snowballs."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "3.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Salganik experiment numbers; distinct evidence."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "3.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ranking flip result; new numbers despite partial verdict."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cumulative-advantage definition and Merton attribution."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "3.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Album-to-budget feedback; new."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "3.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Magnification claim; new."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "3.3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Court-position example; new."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Transition restating section 3 theme and previewing interaction."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Section 4 header; introduces actual model runs."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Model design definition; new."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "4.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Independent quality and capital draws; new."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "4.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Exposure and opinion-formation rule; new."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "4.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Feedback to canonical status; new."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "4.1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Runtime and scale numbers; new."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "4.1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Run count and power analysis; new."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Experiment 1 finding; new."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "4.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Statistical result with p-value; not trivia."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "4.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Counterfactual no-visibility world."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "4.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Applies result to our world; new."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "4.2.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lucky mediocre work rises; new."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "4.2.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Slow starter never recovers; new."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "4.2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Enumerates everyday social-influence widgets."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "4.2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Measurement-trap definition; new."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Experiment 2 finding; new."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "4.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Counterfactual distance number; new."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "4.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Top-10% and one-in-four numbers; new."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "4.3.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C019",
+      "reasoning": "Restates middle-is-luck as a lottery; cross-linked to 2.3.3."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "4.3.4"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C007",
+      "reasoning": "Cross-linked restatement of the Haydn question from 1.5."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "4.3.5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C007",
+      "reasoning": "Same Esterházy counterfactual as 1.5, restated with its answer."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Experiment 3 headline; new."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "4.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Correlation-by-condition numbers; not trivia."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "4.4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "44% jump number; new."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "4.4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Locates distortion in access, not trends."
+    },
+    {
+      "claim_id": "C066",
+      "loglog_ids": [
+        "4.4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Capital-gates-exposure causal claim; new."
+    },
+    {
+      "claim_id": "C067",
+      "loglog_ids": [
+        "4.4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Modern Spotify mapping; new framing."
+    },
+    {
+      "claim_id": "C068",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Experiment 4 setup numbers; new."
+    },
+    {
+      "claim_id": "C069",
+      "loglog_ids": [
+        "4.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical 0.97 and 2.5% figures; C105 restates."
+    },
+    {
+      "claim_id": "C070",
+      "loglog_ids": [
+        "4.5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "1750 reassignment consequence; new framing."
+    },
+    {
+      "claim_id": "C071",
+      "loglog_ids": [
+        "4.5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Winners were excellent; distinct from floor claim."
+    },
+    {
+      "claim_id": "C072",
+      "loglog_ids": [
+        "4.5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical lost-equals claim; C082 restates it."
+    },
+    {
+      "claim_id": "C073",
+      "loglog_ids": [
+        "4.5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Manufactured-taste definition; new."
+    },
+    {
+      "claim_id": "C074",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Robustness result; new."
+    },
+    {
+      "claim_id": "C075",
+      "loglog_ids": [
+        "4.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Names the key parameter; new."
+    },
+    {
+      "claim_id": "C076",
+      "loglog_ids": [
+        "4.6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Convex-conversion consequence; new."
+    },
+    {
+      "claim_id": "C077",
+      "loglog_ids": [
+        "4.6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concave-conversion contrast; new."
+    },
+    {
+      "claim_id": "C078",
+      "loglog_ids": [
+        "4.6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "50 million vs 500 example quantifies steepness."
+    },
+    {
+      "claim_id": "C079",
+      "loglog_ids": [
+        "4.6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Steep-curve conclusion; new."
+    },
+    {
+      "claim_id": "C080",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Conclusion restates the opening summary thesis with little added."
+    },
+    {
+      "claim_id": "C081",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical precise claim; C110 restates it."
+    },
+    {
+      "claim_id": "C082",
+      "loglog_ids": [
+        "5.1.1"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C072",
+      "reasoning": "Repeats lost equally-gifted composers from 4.5.4."
+    },
+    {
+      "claim_id": "C083",
+      "loglog_ids": [
+        "5.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Caveat about unknowability; caveats are never trivia."
+    },
+    {
+      "claim_id": "C084",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Mechanisms are stronger today; new turn."
+    },
+    {
+      "claim_id": "C085",
+      "loglog_ids": [
+        "5.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Decades vs hours example; new."
+    },
+    {
+      "claim_id": "C086",
+      "loglog_ids": [
+        "5.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Scale-of-winner-take-all claim; new."
+    },
+    {
+      "claim_id": "C087",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Recommendation for wider exposure; new."
+    },
+    {
+      "claim_id": "C088",
+      "loglog_ids": [
+        "5.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical bottleneck claim; C090 restates it."
+    },
+    {
+      "claim_id": "C089",
+      "loglog_ids": [
+        "5.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Blind-audition numbers; not trivia."
+    },
+    {
+      "claim_id": "C090",
+      "loglog_ids": [
+        "5.3.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C088",
+      "reasoning": "Punchline repeats the exposure-bottleneck claim from 5.3.1."
+    },
+    {
+      "claim_id": "C091",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Metric-vs-value gap; new framing."
+    },
+    {
+      "claim_id": "C092",
+      "loglog_ids": [
+        "5.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical contingency claim; C113 and C119 restate."
+    },
+    {
+      "claim_id": "C093",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Section header for caveats; structural and needed."
+    },
+    {
+      "claim_id": "C094",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Quality-as-stable-property caveat; new."
+    },
+    {
+      "claim_id": "C095",
+      "loglog_ids": [
+        "6.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ill-posed decomposition caveat; new."
+    },
+    {
+      "claim_id": "C096",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Calibration-generalization caveat; new."
+    },
+    {
+      "claim_id": "C097",
+      "loglog_ids": [
+        "6.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Parameter-uncertainty fact; new."
+    },
+    {
+      "claim_id": "C098",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Omitted-factors caveat; new."
+    },
+    {
+      "claim_id": "C099",
+      "loglog_ids": [
+        "6.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Direction-robust caveat; new."
+    },
+    {
+      "claim_id": "C100",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bach stands as excellent and positioned; specific to closing."
+    },
+    {
+      "claim_id": "C101",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Judges the Bieber analogy; new synthesis."
+    },
+    {
+      "claim_id": "C102",
+      "loglog_ids": [
+        "7.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pop pipeline bar; new."
+    },
+    {
+      "claim_id": "C103",
+      "loglog_ids": [
+        "7.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Court-position duties list; new."
+    },
+    {
+      "claim_id": "C104",
+      "loglog_ids": [
+        "7.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "High quality-floor claim; new."
+    },
+    {
+      "claim_id": "C105",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C069",
+      "reasoning": "Cross-linked restatement of the 2.5% overlap from 4.5.1."
+    },
+    {
+      "claim_id": "C106",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Surgeon analogy introduced; new."
+    },
+    {
+      "claim_id": "C107",
+      "loglog_ids": [
+        "7.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "NYT-profile example; new."
+    },
+    {
+      "claim_id": "C108",
+      "loglog_ids": [
+        "7.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Punchline of surgeon analogy; new."
+    },
+    {
+      "claim_id": "C109",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Reframes the question away from Bach's greatness."
+    },
+    {
+      "claim_id": "C110",
+      "loglog_ids": [
+        "7.4.1"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C081",
+      "reasoning": "Cross-linked restatement of the qualified-greatest claim from 5.1."
+    },
+    {
+      "claim_id": "C111",
+      "loglog_ids": [
+        "7.4.2"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Bare pointer to the simulation verdict already conveyed; adds nothing."
+    },
+    {
+      "claim_id": "C112",
+      "loglog_ids": [
+        "7.4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "20 to 50 contemporaries number; not trivia."
+    },
+    {
+      "claim_id": "C113",
+      "loglog_ids": [
+        "7.5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C092",
+      "reasoning": "Repeats canon contingency and inevitability already stated in 5.4.1."
+    },
+    {
+      "claim_id": "C114",
+      "loglog_ids": [
+        "7.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bach as foundation of hearing; new."
+    },
+    {
+      "claim_id": "C115",
+      "loglog_ids": [
+        "7.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Counterfactual inherited foundations; new."
+    },
+    {
+      "claim_id": "C116",
+      "loglog_ids": [
+        "7.6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Different taste counterfactual; distinct."
+    },
+    {
+      "claim_id": "C117",
+      "loglog_ids": [
+        "7.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Manufactured-taste thesis stated directly; new."
+    },
+    {
+      "claim_id": "C118",
+      "loglog_ids": [
+        "7.7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Selection by money and luck; new within closing."
+    },
+    {
+      "claim_id": "C119",
+      "loglog_ids": [
+        "7.7.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C092",
+      "reasoning": "Third restatement of contingency claim from 5.4.1."
+    },
+    {
+      "claim_id": "C120",
+      "loglog_ids": [
+        "7.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Future-canon unknowability; new twist."
+    },
+    {
+      "claim_id": "C121",
+      "loglog_ids": [
+        "7.8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Future tracks distribution deals; new."
+    },
+    {
+      "claim_id": "C122",
+      "loglog_ids": [
+        "7.8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Closing punchline; short but new."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 122,
+    "unique": 109,
+    "duplicates": 10,
+    "trivia": 3,
+    "redundancy_rate": 0.082,
+    "trivia_rate": 0.0246,
+    "structured_tokens": 2018,
+    "tokens_per_unique_claim": 18.5
+  },
+  "prune_list": [
+    "C059 duplicates C019, safe to merge",
+    "C060 duplicates C007, safe to merge",
+    "C061 duplicates C007, safe to merge",
+    "C080 duplicates C001, safe to merge",
+    "C082 duplicates C072, safe to merge",
+    "C090 duplicates C088, safe to merge",
+    "C105 duplicates C069, safe to merge",
+    "C110 duplicates C081, safe to merge",
+    "C113 duplicates C092, safe to merge",
+    "C119 duplicates C092, safe to merge",
+    "C009 trivia, drop housekeeping meta",
+    "C040 trivia, drop theme transition",
+    "C111 trivia, drop bare simulation pointer"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash 2026-09-15",
+  "source_id": "point-hierarchy sample",
+  "inputs": {
+    "faithfulness_precision": 1.0,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.1053,
+    "trivia_rate": 0.0526
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "Hard gates: critical_errors 0 <= 0 PASS; must_recall 1.0 >= 0.9 PASS; faithfulness_precision 1.0 >= 0.95 PASS; redundancy_rate 0.1053 <= 0.15 PASS. Weighted score = 0.4*1.0 + 0.4*1.0 - 0.2*0.1053 = 0.4 + 0.4 - 0.02106 = 0.77894.",
+  "weighted_score": 0.7789,
+  "verdict": "Pass",
+  "tradeoff_note": "All hard gates clear with perfect faithfulness (38/38 supported, 0 contradicted) and full must-have recall (15/15). Redundancy at 0.1053 stays under the 0.15 max, so no length penalty is triggered beyond the small weighted deduction; concision loss is not at issue here.",
+  "fix_list": [
+    "Merge C024 into C001 to remove the one body-level duplicate (no factual impact).",
+    "Merge C030 and C034 into C027, and C035 into C033, to cut the remaining 3 duplicate claims and lower redundancy_rate further.",
+    "Prune restated headers C026 and C032 from the scored body to reduce trivia_rate from 0.0526 and improve tokens_per_unique_claim (currently 25.1)."
+  ],
+  "reasoning": "Gate check in order per config top_policy. (1) Critical contradicted: faithfulness reports contradicted 0 and critical_errors 0, so critical_contradicted_max 0 is met with no Critical errors. (2) Must-have recall: coverage reports must_have_total 15, must_have_present 15, must_have_partial 0, must_have_missing 0, must_recall 1.0, comfortably above must_recall_min 0.9, and non-present key points list is empty. (3) Faithfulness precision: 38 supported of 38 total, partially_supported 0, unverifiable 0, precision 1.0, above faithfulness_precision_min 0.95. All hard gates pass, so no automatic Fail. Tradeoff among passes: weighted score uses config aspect_weights, 0.4*faithfulness_precision 1.0 = 0.4, 0.4*must_recall 1.0 = 0.4, minus 0.2*redundancy_rate 0.1053 = 0.02106, giving 0.77894 rounded to 0.7789. Concision role: redundancy_rate 0.1053 is below redundancy_max 0.15, so the coverage gain (full 15/15 must-have) is justified and concision does not need to rescue or penalize meaningfully; concision is also not rescuing any faithfulness or coverage issue since none exists. Borderline test: no Partial or Unverifiable claims exist (partially_supported 0, unverifiable 0) and no must-have point is partial or missing, so there is no claim to name and Borderline is not warranted. Verdict is Pass: all gates met on numbers with zero Critical errors, and no human-review trigger condition applies. Highest-leverage fixes are purely redundancy/trivia cleanups from the concision prune list (claim IDs C024, C030, C034, C035 duplicates and C026, C032 restated headers), which affect no coverage point IDs and therefore carry zero risk to the passed gates."
+}

@@ -1,0 +1,435 @@
+{
+ "sample": "06_valuing_consistency",
+ "part": 1,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Consistency of behavior is a bad proxy: what matters is whether the anchor moves on evidence or cost, which only a prior prediction can reveal.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "---\ntags: philosophy, observation, personal-finance, immigration\ntitle: What Do We Value When We Value Consistency?\n---"
+    },
+    {
+     "ref": "¶2",
+     "text": "I'm often interested in understanding why people believe the things they believe and why they behave the way they behave. Usually the former is a reason for the latter. Pondering these, I've realized there is a word I keep reaching for when describing people's behavior that is vaguer than I'd like, and it doesn't let me build any structure around it. Worse, I attach a moral value to it: sometimes it's a compliment, sometimes an accusation. So I want to pin down what this concept actually means: consistency."
+    },
+    {
+     "ref": "¶4",
+     "text": "My instinct reads the first woman's swing as a moral failing and the others' steadiness as integrity. But that's not the only reading on offer. A more cynical observer might call the first woman cunning, quick to adapt to the new situation, and call the others slow to catch up. And even those of us who'd judge her harshly tend to agree that being able to \"update\" your beliefs on certain topics is a virtue, that nobody should be stoneheaded. So the swing itself can't be what we're judging. Consistency, in the plain sense of \"did the behavior stay the same\", is not carrying the moral weight I assumed it did. Something underneath it is. This post is my attempt to find that something."
+    },
+    {
+     "ref": "¶49",
+     "text": "What I've landed on is that consistency of behavior was never the thing I admired or condemned. It was a proxy, and a bad one. What I'm actually trying to evaluate is the process: what the person's anchor is, what they're responsive to, and whether the movement I observe came from evidence or from cost. The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable. Which is why the only question I really trust is the one asked in advance: before anything changes, what do you think you'll do when it does, and why?\n---"
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "The post asks what consistency actually means, since it carries moral weight but no structure.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "I'm often interested in understanding why people believe the things they believe and why they behave the way they behave. Usually the former is a reason for the latter. Pondering these, I've realized there is a word I keep reaching for when describing people's behavior that is vaguer than I'd like, and it doesn't let me build any structure around it. Worse, I attach a moral value to it: sometimes it's a compliment, sometimes an accusation. So I want to pin down what this concept actually means: consistency."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The author keeps reaching for consistency, a word vaguer than he would like, attaching moral value to it: sometimes a compliment, sometimes an accusation.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "I'm often interested in understanding why people believe the things they believe and why they behave the way they behave. Usually the former is a reason for the latter. Pondering these, I've realized there is a word I keep reaching for when describing people's behavior that is vaguer than I'd like, and it doesn't let me build any structure around it. Worse, I attach a moral value to it: sometimes it's a compliment, sometimes an accusation. So I want to pin down what this concept actually means: consistency."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "Before the 1979 revolution in Iran, someone the author's mom knew wore mini skirts; right after it she switched to chador and niqab.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "The story that made me notice the problem is one my mom tells. Before the 1979 revolution in Iran, someone she knew wore mini skirts all the time. Right after the revolution she switched to chador and niqab. Others in the same circle dressed modestly before the revolution and dressed modestly after it, changing only slightly how much they covered."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Others in the same circle dressed modestly before the revolution and modestly after, changing only slightly how much they covered.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "The story that made me notice the problem is one my mom tells. Before the 1979 revolution in Iran, someone she knew wore mini skirts all the time. Right after the revolution she switched to chador and niqab. Others in the same circle dressed modestly before the revolution and dressed modestly after it, changing only slightly how much they covered."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The instinct reads the swing as a moral failing and the steadiness as integrity.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "My instinct reads the first woman's swing as a moral failing and the others' steadiness as integrity. But that's not the only reading on offer. A more cynical observer might call the first woman cunning, quick to adapt to the new situation, and call the others slow to catch up. And even those of us who'd judge her harshly tend to agree that being able to \"update\" your beliefs on certain topics is a virtue, that nobody should be stoneheaded. So the swing itself can't be what we're judging. Consistency, in the plain sense of \"did the behavior stay the same\", is not carrying the moral weight I assumed it did. Something underneath it is. This post is my attempt to find that something."
+    }
+   ]
+  },
+  {
+   "id": "1.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A more cynical observer might call the first woman cunning, quick to adapt, and the others slow to catch up.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "My instinct reads the first woman's swing as a moral failing and the others' steadiness as integrity. But that's not the only reading on offer. A more cynical observer might call the first woman cunning, quick to adapt to the new situation, and call the others slow to catch up. And even those of us who'd judge her harshly tend to agree that being able to \"update\" your beliefs on certain topics is a virtue, that nobody should be stoneheaded. So the swing itself can't be what we're judging. Consistency, in the plain sense of \"did the behavior stay the same\", is not carrying the moral weight I assumed it did. Something underneath it is. This post is my attempt to find that something."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Even those who judge her harshly tend to agree that updating beliefs on certain topics is a virtue and that nobody should be stoneheaded.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "My instinct reads the first woman's swing as a moral failing and the others' steadiness as integrity. But that's not the only reading on offer. A more cynical observer might call the first woman cunning, quick to adapt to the new situation, and call the others slow to catch up. And even those of us who'd judge her harshly tend to agree that being able to \"update\" your beliefs on certain topics is a virtue, that nobody should be stoneheaded. So the swing itself can't be what we're judging. Consistency, in the plain sense of \"did the behavior stay the same\", is not carrying the moral weight I assumed it did. Something underneath it is. This post is my attempt to find that something."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "So the swing itself cannot be what we are judging, and plain behavioral consistency is not carrying the moral weight the author assumed.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "My instinct reads the first woman's swing as a moral failing and the others' steadiness as integrity. But that's not the only reading on offer. A more cynical observer might call the first woman cunning, quick to adapt to the new situation, and call the others slow to catch up. And even those of us who'd judge her harshly tend to agree that being able to \"update\" your beliefs on certain topics is a virtue, that nobody should be stoneheaded. So the swing itself can't be what we're judging. Consistency, in the plain sense of \"did the behavior stay the same\", is not carrying the moral weight I assumed it did. Something underneath it is. This post is my attempt to find that something."
+    }
+   ]
+  },
+  {
+   "id": "1.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The post is an attempt to find the something underneath consistency.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "My instinct reads the first woman's swing as a moral failing and the others' steadiness as integrity. But that's not the only reading on offer. A more cynical observer might call the first woman cunning, quick to adapt to the new situation, and call the others slow to catch up. And even those of us who'd judge her harshly tend to agree that being able to \"update\" your beliefs on certain topics is a virtue, that nobody should be stoneheaded. So the swing itself can't be what we're judging. Consistency, in the plain sense of \"did the behavior stay the same\", is not carrying the moral weight I assumed it did. Something underneath it is. This post is my attempt to find that something."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "A small model puts numbers on the clothing story to find what consistency is really measuring.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "## A small model\nTo think clearly I need something concrete to push against, so let's put numbers on the clothing story. Measure clothing openness on a scale from $-1$ (fully closed) to $1$ (fully open). Say society's average sits at $-0.5$ in the closed state and $0.5$ in the open state. Start with one of the modest women from the story: say we observe her at $-0.1$ in the closed state and $0.1$ in the open state. A slight change, but not zero."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Clothing openness is measured from -1 (fully closed) to 1 (fully open), with society's average at -0.5 closed and 0.5 open.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "## A small model\nTo think clearly I need something concrete to push against, so let's put numbers on the clothing story. Measure clothing openness on a scale from $-1$ (fully closed) to $1$ (fully open). Say society's average sits at $-0.5$ in the closed state and $0.5$ in the open state. Start with one of the modest women from the story: say we observe her at $-0.1$ in the closed state and $0.1$ in the open state. A slight change, but not zero."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The modest woman is observed at -0.1 in the closed state and 0.1 in the open state: a slight change, but not zero.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "## A small model\nTo think clearly I need something concrete to push against, so let's put numbers on the clothing story. Measure clothing openness on a scale from $-1$ (fully closed) to $1$ (fully open). Say society's average sits at $-0.5$ in the closed state and $0.5$ in the open state. Start with one of the modest women from the story: say we observe her at $-0.1$ in the closed state and $0.1$ in the open state. A slight change, but not zero."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Hypothesis: her behavior blends her own fixed point and the social reference, Behavior = w x Reference + (1 - w) x Anchor.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "Hypothesis: her behavior is a blend of her own fixed point and the social reference,"
+    },
+    {
+     "ref": "¶7",
+     "text": "$$\\text{Behavior} = w \\times \\text{Reference} + (1 - w) \\times \\text{Anchor}$$"
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The Anchor is what she would do if the reference had no pull; w, the Responsiveness, is how much weight the reference actually carries.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "where the Anchor is what she'd do if the reference had no pull on her, and $w$, the Responsiveness, is how much weight the reference actually carries. Two observations give two equations:"
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Two observations give two equations: -0.5w + (1-w)a = -0.1 and 0.5w + (1-w)a = 0.1.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "$$-0.5w + (1-w)a = -0.1$$\n$$0.5w + (1-w)a = 0.1$$"
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Adding them gives 2(1-w)a = 0, so the anchor is a = 0; subtracting gives w = 0.2.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Adding them gives $2(1-w)a = 0$, so the anchor is $a = 0$. Subtracting gives $w = 0.2$. Her behavior is exactly $0.2 \\times \\text{Reference}$, both times. She has a fixed anchor at neutral and yields a fixed twenty percent of the distance toward whatever society is doing."
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Her behavior is exactly 0.2 x Reference both times: a fixed anchor at neutral, yielding a fixed twenty percent of the distance toward society.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Adding them gives $2(1-w)a = 0$, so the anchor is $a = 0$. Subtracting gives $w = 0.2$. Her behavior is exactly $0.2 \\times \\text{Reference}$, both times. She has a fixed anchor at neutral and yields a fixed twenty percent of the distance toward whatever society is doing."
+    }
+   ]
+  },
+  {
+   "id": "2.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Her output moved, -0.1 then 0.1, no fixed value; her rule never did: same anchor, same responsiveness, both times.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "This is the first place the vague word cracks open. Her *output* moved: $-0.1$ then $0.1$, no fixed value. Her *rule* never did: same anchor, same responsiveness, both times. An unusually stable person, conceding a fixed fraction of ground under pressure."
+    }
+   ]
+  },
+  {
+   "id": "2.9",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "An unusually stable person, conceding a fixed fraction of ground under pressure.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "This is the first place the vague word cracks open. Her *output* moved: $-0.1$ then $0.1$, no fixed value. Her *rule* never did: same anchor, same responsiveness, both times. An unusually stable person, conceding a fixed fraction of ground under pressure."
+    }
+   ]
+  },
+  {
+   "id": "2.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The chameleon woman is at 0.9 when society is 0.5, and at -0.9 when society is -0.5.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Now the other woman from the story, the one who wore mini skirts before the revolution and chador after. In numbers she is at $0.9$ when society is $0.5$, and at $-0.9$ when society is $-0.5$. Same solving:"
+    }
+   ]
+  },
+  {
+   "id": "2.11",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Her anchor comes out to 0 again, and her responsiveness comes out to 1.8: she does not just follow the reference, she amplifies it.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "$$0.5w + (1-w)a = 0.9$$\n$$-0.5w + (1-w)a = -0.9$$"
+    },
+    {
+     "ref": "¶14",
+     "text": "The anchor comes out to $0$ again, and $w$ comes out to $1.8$. She doesn't just follow the reference, she amplifies it: more open than the open society, more closed than the closed society. And here is the uncomfortable part. Her rule is exactly as consistent as the modest woman's. One anchor, one responsiveness, both times. Someone judging only her output would call her a fashion-following chameleon, and the output judgment is fair. But the inference that comes with it, that she has no fixed point, that she stands for nothing, is wrong. The difference between the two women is not that one has a stable rule and the other doesn't. Both do. The difference is what the rule says: concede a fifth of the distance to society, or overshoot it by eighty percent."
+    }
+   ]
+  },
+  {
+   "id": "2.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Her rule is exactly as consistent as the modest woman's: one anchor, one responsiveness, both times.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "The anchor comes out to $0$ again, and $w$ comes out to $1.8$. She doesn't just follow the reference, she amplifies it: more open than the open society, more closed than the closed society. And here is the uncomfortable part. Her rule is exactly as consistent as the modest woman's. One anchor, one responsiveness, both times. Someone judging only her output would call her a fashion-following chameleon, and the output judgment is fair. But the inference that comes with it, that she has no fixed point, that she stands for nothing, is wrong. The difference between the two women is not that one has a stable rule and the other doesn't. Both do. The difference is what the rule says: concede a fifth of the distance to society, or overshoot it by eighty percent."
+    }
+   ]
+  },
+  {
+   "id": "2.13",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Judging only her output would call her a fashion-following chameleon, and that output judgment is fair.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "The anchor comes out to $0$ again, and $w$ comes out to $1.8$. She doesn't just follow the reference, she amplifies it: more open than the open society, more closed than the closed society. And here is the uncomfortable part. Her rule is exactly as consistent as the modest woman's. One anchor, one responsiveness, both times. Someone judging only her output would call her a fashion-following chameleon, and the output judgment is fair. But the inference that comes with it, that she has no fixed point, that she stands for nothing, is wrong. The difference between the two women is not that one has a stable rule and the other doesn't. Both do. The difference is what the rule says: concede a fifth of the distance to society, or overshoot it by eighty percent."
+    }
+   ]
+  },
+  {
+   "id": "2.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "But the inference that comes with it, that she has no fixed point and stands for nothing, is wrong.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "The anchor comes out to $0$ again, and $w$ comes out to $1.8$. She doesn't just follow the reference, she amplifies it: more open than the open society, more closed than the closed society. And here is the uncomfortable part. Her rule is exactly as consistent as the modest woman's. One anchor, one responsiveness, both times. Someone judging only her output would call her a fashion-following chameleon, and the output judgment is fair. But the inference that comes with it, that she has no fixed point, that she stands for nothing, is wrong. The difference between the two women is not that one has a stable rule and the other doesn't. Both do. The difference is what the rule says: concede a fifth of the distance to society, or overshoot it by eighty percent."
+    }
+   ]
+  },
+  {
+   "id": "2.15",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The difference between the two women is what the rule says: concede a fifth of the distance to society, or overshoot it by eighty percent.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "The anchor comes out to $0$ again, and $w$ comes out to $1.8$. She doesn't just follow the reference, she amplifies it: more open than the open society, more closed than the closed society. And here is the uncomfortable part. Her rule is exactly as consistent as the modest woman's. One anchor, one responsiveness, both times. Someone judging only her output would call her a fashion-following chameleon, and the output judgment is fair. But the inference that comes with it, that she has no fixed point, that she stands for nothing, is wrong. The difference between the two women is not that one has a stable rule and the other doesn't. Both do. The difference is what the rule says: concede a fifth of the distance to society, or overshoot it by eighty percent."
+    }
+   ]
+  },
+  {
+   "id": "2.16",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Consistency can be asked of output, policy, and anchor independently: did the behavior, the rule, or the fixed point itself stay fixed?",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Step back and notice that \"consistency\" has now been asked of three different things, and it can pass or fail on each one independently. Consistency of **output**: did the behavior stay the same. Consistency of **policy**: did the rule stay the same, same anchor, same responsiveness. Consistency of **anchor**: did the fixed point itself stay fixed. The two women fail the first in opposite amounts, one barely, one spectacularly, and pass the second and third completely. An observer watching only output would see a consistency gap between them that doesn't exist at either deeper layer."
+    }
+   ]
+  },
+  {
+   "id": "2.17",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The two women fail the first in opposite amounts, one barely and one spectacularly, and pass the second and third completely.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Step back and notice that \"consistency\" has now been asked of three different things, and it can pass or fail on each one independently. Consistency of **output**: did the behavior stay the same. Consistency of **policy**: did the rule stay the same, same anchor, same responsiveness. Consistency of **anchor**: did the fixed point itself stay fixed. The two women fail the first in opposite amounts, one barely, one spectacularly, and pass the second and third completely. An observer watching only output would see a consistency gap between them that doesn't exist at either deeper layer."
+    }
+   ]
+  },
+  {
+   "id": "2.18",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "An observer watching only output would see a consistency gap between them that does not exist at either deeper layer.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Step back and notice that \"consistency\" has now been asked of three different things, and it can pass or fail on each one independently. Consistency of **output**: did the behavior stay the same. Consistency of **policy**: did the rule stay the same, same anchor, same responsiveness. Consistency of **anchor**: did the fixed point itself stay fixed. The two women fail the first in opposite amounts, one barely, one spectacularly, and pass the second and third completely. An observer watching only output would see a consistency gap between them that doesn't exist at either deeper layer."
+    }
+   ]
+  },
+  {
+   "id": "2.19",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The third layer is where the real action is: policy can stay fixed while the anchor drifts underneath, invisibly, in undramatic steps.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "The third layer is where the real action is. Policy can stay fixed while the anchor drifts underneath it, invisibly, in steps small enough that no single moment feels like a change of mind. That drift is where the moral weight lives, and it's what the rest of this post is about."
+    }
+   ]
+  },
+  {
+   "id": "2.20",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "No single moment of that drift feels like a change of mind, and that invisible drift is where the moral weight lives.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "The third layer is where the real action is. Policy can stay fixed while the anchor drifts underneath it, invisibly, in steps small enough that no single moment feels like a change of mind. That drift is where the moral weight lives, and it's what the rest of this post is about."
+    }
+   ]
+  },
+  {
+   "id": "2.21",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "A deliberate omission: cases where the anchor is closer to or farther from the reference, unexplored for lack of meaningful examples to study or interpret.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "PS1: Note that I deliberately haven't explored the cases where the anchor is closer or farther from the reference. Mainly because I couldn't come up with meaningful examples to study, and hence can't put an interpretation on it."
+    }
+   ]
+  },
+  {
+   "id": "2.22",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "An economist might call the anchor an endogenous variable and the reference an exogenous one; the author prefers words he can relate to.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "PS2: An economists perhaps would call the anchor an indogenous variable, and the reference an exogenous variable. I've always struggled with those terms, so I rather use words that I can relate to. And the model here is the most simple model I could think of, a linear convex combination of the two variables but the combining coefficient doesn't need to be between 0 and 1, allowing to explore the region outside of the two and hence the existence of the amplifier personality."
+    }
+   ]
+  },
+  {
+   "id": "2.23",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The model is the simplest the author could think of: a linear convex combination whose coefficient need not lie between 0 and 1.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "PS2: An economists perhaps would call the anchor an indogenous variable, and the reference an exogenous variable. I've always struggled with those terms, so I rather use words that I can relate to. And the model here is the most simple model I could think of, a linear convex combination of the two variables but the combining coefficient doesn't need to be between 0 and 1, allowing to explore the region outside of the two and hence the existence of the amplifier personality."
+    }
+   ]
+  }
+ ]
+}

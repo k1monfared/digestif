@@ -1,0 +1,238 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "10_parde_begardan_fa",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Thesis states the full childhood-to-keyed-santur arc; frames piece, not restated as one claim."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme adds age seven and initial-fascination framing absent from subpoints."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete scene plus named piece «زرد ملیجه» carry detail found nowhere else."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical late-night scene; earliest occurrence, later branch restates it."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Carries numbers: six months insistence and eighteen-thousand-toman price."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme adds cold reception room detail absent from its subpoints."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Explains why teacher came home; unique causal fact."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Carries 72-string tuning detail and instrument-child size comparison."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Tuner removing need to carry instrument is a new causal fact."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme states one-dastgah-per-tuning and unfinished play-range limitation."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Retuning-time mechanism is distinct from the theme statement."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Party-game analogy illustrates limitation; no earlier equivalent claim."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds corner-watching behavior image, distinct from C012's inner feeling."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme adds harp inspiration absent from its evidence lines."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Quarter/half-step instant retuning detail is unique evidence."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Few-clicks switching is the concrete solution claim."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Carries two-year wait and Langarud/Loughborough place names."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Family, friends, and officials help detail is unique."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Names four dastgahs traversed; unique example."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Disbelief and dream-like reaction is a distinct interpretation."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Theme header restates 6.1 and 6.3 with no number, caveat, or new detail."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Skipped lunch and back-pain evidence is concrete and unique."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C004",
+      "reasoning": "Restates C004's late-night scene; cross-link confirms the repeat."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "One-week trip and unplayed-instrument longing add specifics."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 24,
+    "unique": 22,
+    "duplicates": 1,
+    "trivia": 1,
+    "redundancy_rate": 0.0417,
+    "trivia_rate": 0.0417,
+    "structured_tokens": 429,
+    "tokens_per_unique_claim": 19.5
+  },
+  "prune_list": [
+    "C023 duplicates C004, safe to merge",
+    "C021 header restates C022 and C024, candidate to drop"
+  ]
+}

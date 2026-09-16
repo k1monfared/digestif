@@ -1,0 +1,414 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "05_manufacturing_taste part 1",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Simulated cultural markets show patronage and feedback manufacture canons: quality filters but capital decides.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Story 3 wins. Quality acts as a loose filter. ... But the vast middle ground ... is dominated by capital and luck.",
+   "reasoning": "Source states quality is a loose filter and the middle is dominated by capital and luck, matching the summary."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Canon question: we remember under 20 of thousands; patrons, not merit, may have chosen.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "We remember fewer than 20. ... Or were they the ones who happened to have the right patron ...?",
+   "reasoning": "Source gives fewer than 20 remembered and frames patronage versus merit as an open question, as the node hedges."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Vienna had 200 to 500 active composers; IMSLP catalogs over 3,400 survivors.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers ... IMSLP catalogs over 3,400 composers",
+   "reasoning": "Both numeric ranges match the source exactly; 3,400 refers to Europe-wide survivors."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "History cannot rerun; Haydn without Esterhazy patronage is empirically unanswerable.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "We can't rewind history ... We literally cannot answer that question empirically.",
+   "reasoning": "Source directly states history cannot be rerun and the question is empirically unanswerable."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Project tests three competing stories of canon formation.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "I set up the project to test three competing hypotheses.",
+   "reasoning": "Source says the project tests three competing hypotheses, matching the node."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Story 1 Cream Rises: quality wins over time; replayed history yields same canon.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "over long enough time horizons, genuine quality wins. If you replayed history with different patrons, you'd end up with roughly the same canon.",
+   "reasoning": "Node paraphrases Story 1 accurately, including the replay yielding the same canon."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Story 2 Money Writes History: early exposure becomes familiarity, then canon; quality nearly irrelevant.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "that familiarity gets retroactively interpreted as quality ... Quality is almost irrelevant.",
+   "reasoning": "Source's Story 2 chain and near-irrelevance of quality match the node."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Story 3 Floors and Ceilings: extremes decided by quality, middle by luck and money.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The truly terrible never succeed ... The truly transcendent sometimes break through ... depends on luck, money, and timing",
+   "reasoning": "Extremes-versus-middle structure matches; node compresses timing into luck and money without changing meaning."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "Job-market analogy: top and bottom rank easily; middle hires depend on luck.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "who gets hired often comes down to who knew someone, who happened to interview on a good day",
+   "reasoning": "Node accurately restates the job-market analogy from the source."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Model combines three documented mechanisms to quantify their joint canon effect.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "three phenomena that are individually well-documented ... whose combined effect on cultural canons hasn't been quantified.",
+   "reasoning": "Source states three documented mechanisms and an unquantified combined effect, matching the node."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Mere exposure: liking grows with familiarity; Zajonc 1968, Bornstein 1989 r equals 0.26.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis ... average effect size of r = 0.26.",
+   "reasoning": "Names, years, and the r = 0.26 effect size all match the source exactly."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Exposure advantage contaminates sincere judgment; money set the exposure.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "the judging is contaminated by the exposure, and the exposure was determined by money.",
+   "reasoning": "Source states exactly that judging is contaminated by exposure determined by money."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Social influence snowballs popularity; Salganik MusicLab 2006 ranked same song 1st or 40th.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the same song could rank 1st in one version of the world and 40th in another",
+   "reasoning": "Study year 2006 and the 1st-versus-40th ranks match the source exactly."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Cumulative advantage magnifies small starts; Merton Matthew Effect compounds court posts.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The sociologist Robert Merton called this the Matthew Effect.",
+   "reasoning": "Merton and the Matthew Effect attribution match; the court-post compounding is drawn directly from the source."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "claim_text": "Open question: what happens when all three interact over generations.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "when you put all three together in a system and let them interact over many generations, what happens?",
+   "reasoning": "Source poses the identical open question about the three interacting over generations."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Simulation uses producers, consumers, gatekeepers with independent quality and capital scores.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "three types of agents: producers ... consumers ... and gatekeepers ... a quality score drawn randomly ... and a capital score drawn independently",
+   "reasoning": "Agent types and independent quality/capital scores match the source description."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Quality and capital are uncorrelated; wealth does not make talent.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Quality and capital are uncorrelated. Being wealthy doesn't make you talented.",
+   "reasoning": "Node restates the source's uncorrelated quality and capital claim verbatim in meaning."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Capital buys exposure; consumers add quality, exposure, social signals; success feeds exposure.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Success feeds back into more exposure (cumulative advantage).",
+   "reasoning": "All three described links match the source's account of the simulation loop."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Thousands of runs; 1,000 producers, 10,000 consumers; 360 plus per condition with power analysis.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "1,000 producers and 10,000 consumers ... ran 360+ per condition ... with formal power analysis",
+   "reasoning": "All counts and the power-analysis detail match the source exactly."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Results favor capital-plus-feedback over pure quality across experiments.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Story 3 wins. ... the vast middle ground ... is dominated by capital and luck.",
+   "reasoning": "Source's conclusion that capital and luck dominate the middle supports this results summary."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Visible social influence significantly weakens quality-success link, p below 0.0001.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "drops significantly (p < 0.0001 across 360 runs per condition)",
+   "reasoning": "The significance and p < 0.0001 figure match the source exactly."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Charts push us from independent judgment toward optimizing a popularity proxy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "pushes us away from independent judgment ... We use popularity as a proxy for quality, then optimize for the proxy",
+   "reasoning": "Node accurately captures the source's measurement-trap argument."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Talent held fixed across 200 runs; only patronage reshuffled.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "I held talent constant ... I only reshuffled their resources ... Then I ran it 200 times.",
+   "reasoning": "Holding talent constant, reshuffling resources, and 200 runs all match the source."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Counterfactual distance 0.88; top-decile talent has 1-in-4 fame chance; middle is lottery.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The counterfactual distance was 0.88 ... Only the top 10% of talent had a meaningful shot ... it was only about 1 in 4 ... canonical status was effectively a lottery.",
+   "reasoning": "Distance 0.88, top 10%, roughly 1 in 4, and the mid-range lottery all match the source."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Without Esterhazy hire, Haydn likely joins forgotten hundreds despite excellence.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Haydn would very likely be one of the hundreds of forgotten 18th-century composers ... Not because he wasn't excellent",
+   "reasoning": "Node retains the source's hedged likelihood and the excellence-not-enough framing."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "Ablation: full 0.32, no-social 0.35, equal-capital 0.46, quality-only 0.46.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Full model ... = 0.32 ... No social influence ... 0.35 ... Equal capital ... 0.46 ... Quality only ... 0.46",
+   "reasoning": "All four correlation values match the source list exactly."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "5.7"
+   ],
+   "claim_text": "Equalizing resources raises quality link 44 percent; exclusion distorts most.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "equalizing starting resources jumps the quality-canon correlation by 44%. The biggest distortion ... some artists never get heard",
+   "reasoning": "The 44% figure and the exclusion-as-biggest-distortion claim match the source."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "5.8"
+   ],
+   "claim_text": "Modern gate: major labels reach playlists first; downstream is noise amplification.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "only major-label artists get on those playlists to begin with ... everything downstream of that is noise amplification.",
+   "reasoning": "Node restates the major-label gate and noise-amplification claim from the source."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "5.9"
+   ],
+   "claim_text": "Stylized Vienna: 300 composers, distance 0.97, only 2.5 percent shared.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "300 composers ... The counterfactual distance was 0.97 ... Only 2.5% of canonical composers were shared",
+   "reasoning": "All three numeric values match the source exactly."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "5.10"
+   ],
+   "claim_text": "Winners likely excellent, but dozens of equals lost the patronage lottery.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The winners in our timeline were very likely excellent ... dozens of equally excellent composers were lost to history because they drew the short straw",
+   "reasoning": "Node preserves the source's hedged excellence claim and the lost-equals point."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "5.11"
+   ],
+   "claim_text": "Manufacturing taste means losers were not meaningfully worse.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "That's what \"manufacturing taste\" means. Not that the winners were bad. That the losers weren't meaningfully worse.",
+   "reasoning": "Node restates the source's definition including the preserved negation about winners."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "5.12"
+   ],
+   "claim_text": "Robustness plus-minus 50 percent: steep capital-to-exposure conversion erases quality fastest.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "I varied every parameter by ±50%. The single most important factor is how steeply money converts into attention.",
+   "reasoning": "The ±50% parameter variation and steepest-conversion finding match the source."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "5.13"
+   ],
+   "claim_text": "Steep playlist reach gaps predict fame decoupled from quality.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "the capital-to-exposure curve is extremely steep. Our model predicts that under those conditions, quality has very little to do with who becomes famous.",
+   "reasoning": "Node captures the source's steep-curve prediction that quality barely determines fame."
+  }
+ ],
+ "metrics": {
+  "total_claims": 33,
+  "supported": 33,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

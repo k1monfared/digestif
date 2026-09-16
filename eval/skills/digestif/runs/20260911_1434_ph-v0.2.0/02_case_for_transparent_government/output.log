@@ -1,0 +1,98 @@
+- The case for complete government transparency, point graph (source: source.txt)
+    Summary: Citizens are the CEO principals of government, so every decision should be public by default. (¶4, ¶6, ¶8)
+        - 1 A manager hiding million-dollar reasoning would be fired, yet governments do it routinely. (¶2)
+            - 1.1 Nuance: Taxpayers fund decisions, live consequences, and inherit results, but accept secrecy. (¶3)
+        - 2 Every government decision needs a full public chain from data to course-correction plans. (¶4)
+            - 2.1 Evidence: The chain covers data, people, alternatives, arguments, implementation, evaluation, and reconsideration. (¶4)
+            - 2.2 This is basic board-level accountability; only normalized opacity makes it sound radical. (¶5)
+        - 3 In a democracy citizens are principals and every official is their employee-agent. (¶6)
+            - 3.1 Evidence: CEOs need not read every email, but reviewability shapes behavior and enables tracebacks. (¶7)
+            - 3.2 A company with classified emails would die of unseen corruption; governments operate that way. (¶7, ¶8)
+            - 3.3 Nuance: Availability matters, not consumption: CEOs value the traceable record, not reading everything. (¶8)
+        - 4 Transparency means government visible to citizens, never citizens exposed to each other. (¶9)
+            - 4.1 Evidence: Aggregate fiscal reporting shows spending fully without exposing any citizen's payments. (¶10)
+            - 4.2 Nuance: Anonymization and differential privacy make the separation technically straightforward. (¶10)
+        - 5 Pieces of the system already exist worldwide and prove that transparency works. (¶11)
+            - 5.1 Evidence: Sweden's 1766 press act made documents public by default; Nordics rank least corrupt. (¶12, ¶13)
+                - 5.1.1 Evidence: UNESCO, GWU, and Britannica document the 1766 act, the Hats-Caps conflict, and Chydenius. (¶84)
+                - 5.1.2 Evidence: Nordics.info, Nordicom, and Finland's ministry compare five countries' access rules. (¶99)
+                - 5.1.3 Nuance: Born of Hats-Caps conflict, Chydenius drove it as anti-corruption, not idealism. (¶13)
+            - 5.2 Evidence: Seoul's 1999 OPEN tracked 70 corruption-prone tasks live, removing bribery leverage. (¶14, ¶15)
+                - 5.2.1 Evidence: Seoul, ScienceDirect, and NZ sources cover OPEN, its study, and cabinet release rules. (¶87)
+            - 5.3 Evidence: Estonia's X-Road links thousands of services with signed, logged, breach-free exchange. (¶16, ¶17)
+                - 5.3.1 Evidence: e-Estonia, Wikipedia, and Frost document X-Road's design, leak motive, and rankings climb. (¶85)
+            - 5.4 Evidence: Brazil's portal draws 20 million yearly visits; journalists surfaced 27 hidden pension years. (¶18, ¶19)
+                - 5.4.1 Evidence: Impact, OECD, and GIJN cases cover the portal's data, visits, and hidden pensions. (¶86)
+            - 5.5 Evidence: New Zealand publishes cabinet papers by default within 30 days without halting government. (¶21, ¶22)
+            - 5.6 Evidence: Taiwan's vTaiwan processed 26 issues with 80 percent leading to government action. (¶23, ¶24)
+                - 5.6.1 Evidence: Tech Review, RadicalxChange, and Iceland analyses cover vTaiwan wins and constitutional failure. (¶88)
+            - 5.7 Given CEO tools, citizens find the fraud. (¶20)
+        - 6 Secret programs recur; internal oversight fails inside the same secrecy bubble. (¶25)
+            - 6.1 Evidence: Pentagon Papers, COINTELPRO, and Snowden each exposed illegal or deceptive secret programs. (¶26)
+            - 6.2 Nuance: Each disclosure was predicted catastrophic; each program proved illegal or deceptive. (¶27)
+            - 6.3 Evidence: Courts ruled bulk collection illegal; its own reviewers found it stopped no attacks. (¶28)
+                - 6.3.1 Evidence: EFF, IAPP, TechCrunch, and ACLU document reforms, GDPR effects, and court rulings. (¶89)
+            - 6.4 Secret courts and committees failed because secrecy captured the overseers themselves. (¶29)
+            - 6.5 Evidence: Disclosure brought the FREEDOM Act, tech transparency reports, HTTPS, and faster GDPR. (¶30)
+            - 6.6 Concession: Whether disclosures harmed operations is genuinely uncertain; their illegality is not. (¶31) [conceded]
+            - 6.7 Leaks are the symptom of no designed transparency, not the model for it. (¶32)
+        - 7 Citizens raise genuine objections that deserve honest engagement, not dismissal. (¶33)
+            - 7.1 Counterpoint: Objection: full transparency will expose citizens' private data. (¶34) [counter]
+                - 7.1.1 Rebuttal: Polls fear citizen-data exposure, not visible decisions; aggregate reporting separates them. (¶35, ¶36, ¶37)
+                - 7.1.2 Evidence: Pew and Roper surveys record citizen-data fears and six decades of opinion. (¶90)
+            - 7.2 Counterpoint: Objection: public deliberation will paralyze government. (¶38) [counter]
+                - 7.2.1 Rebuttal: Documentation is not slower work; New Zealand deliberates openly and opacity drifts randomly. (¶39, ¶40)
+                - 7.2.2 Evidence: IMF, Cambridge, and World Bank weigh deliberation friction, Robodebt, and mixed effects. (¶91)
+            - 7.3 Counterpoint: Objection: diplomacy needs secrecy, from backchannels to Cold War hotlines. (¶41, ¶42) [counter]
+                - 7.3.1 Rebuttal: Concede temporary negotiation secrecy, then publish everything within 30 to 90 days. (¶43)
+                - 7.3.2 Nuance: Others won't deal with us justifies any secrecy and surrenders principals' authority. (¶44)
+                - 7.3.3 Evidence: Harvard and Oxford sources record backchannel breakthroughs and the democratic dilemma. (¶92)
+            - 7.4 Counterpoint: Objection: transparency helps lobbyists more than citizens. (¶45) [counter]
+                - 7.4.1 Rebuttal: Harden and Kirkland show open meetings aid organized interests without improving representation. (¶46, ¶47)
+                - 7.4.2 Nuance: Asymmetry is the problem, so build citizen capacity: auditors, watchdogs, civic tech. (¶48, ¶49)
+                - 7.4.3 Evidence: Notre Dame, Cambridge UP, and Irish experiments show lobbyists gain without trust gains. (¶93)
+            - 7.5 Counterpoint: Objection: public officials face threats, doxxing, and harassment. (¶50, ¶101) [counter]
+                - 7.5.1 Evidence: 38 percent of surveyed US election officials faced threats; a third know resignations. (¶51)
+                - 7.5.2 Rebuttal: Publish decisions, protect personal data; opacity breeds the conspiracies driving harassment. (¶52, ¶53, ¶54)
+                - 7.5.3 Evidence: Brennan, NAAG, and Issue One track threats, doxxing tech, and 22-state protections. (¶94)
+                - 7.5.4 Evidence: Doxxing and swatting intensified with AI scraping; 22 states passed protections. (¶100)
+            - 7.6 Counterpoint: Objection: national security requires secrecy. (¶55) [counter]
+                - 7.6.1 Rebuttal: Majorities back intelligence but want openness; overclassification hides illegality, so flip the burden. (¶56, ¶57, ¶58)
+                - 7.6.2 Nuance: Allow temporary operational secrecy, then document strategy, budgets, and rules openly. (¶59)
+                - 7.6.3 Evidence: Chicago Council, Brennan, and SIPRI poll support, decry overclassification, urge openness. (¶95)
+            - 7.7 Counterpoint: Objection: populists will weaponize transparency. (¶60, ¶62) [counter]
+                - 7.7.1 Rebuttal: Populists damage democracy by reducing transparency; full records defeat cherry-picking. (¶61, ¶63)
+                - 7.7.2 Nuance: Documented long-term reasoning protects wise unpopular decisions and exposes pandering. (¶64, ¶102)
+                - 7.7.3 Evidence: Blair Institute, Stanford, and Swedish studies quantify populist damage and transparency abuse. (¶96)
+            - 7.8 Counterpoint: Objection: misinformation makes transparency pointless. (¶65) [counter]
+                - 7.8.1 Rebuttal: False beliefs lower perceived transparency, but only real records let claims be checked. (¶65, ¶67)
+                - 7.8.2 Nuance: Citizens value available-but-unread records; persistent disclosure builds trust over time. (¶66, ¶68, ¶69)
+                - 7.8.3 Evidence: HKS and ScienceDirect studies link false beliefs to perceived opacity and latent transparency. (¶97)
+            - 7.9 Counterpoint: Objection: markets will front-run published negotiations and policy. (¶70) [counter]
+                - 7.9.1 Rebuttal: Delay monetary and procurement releases, then publish all; secrecy enables contract fraud. (¶71, ¶72)
+            - 7.10 Counterpoint: Objection: those in power will never allow this. (¶73) [counter]
+                - 7.10.1 Rebuttal: Iceland's blocked draft and abandoned OGP pledges describe resistance, not refutation. (¶74, ¶75)
+                - 7.10.2 Ask not permission but design: principals assert authority through governance, as Sweden did. (¶76, ¶77)
+                - 7.10.3 Evidence: OGP, Wiley, SAGE, and ScienceDirect studies map funding gaps and bureaucratic resistance. (¶98)
+            - 7.11 Nuance: This case is under construction and requests feedback and criticism. (¶1)
+        - 8 Transparency is the measuring stick, not one value to balance against others. (¶78)
+            - 8.1 Nuance: Document current speed, publish it, and let the record pressure consistency and reasoning. (¶79)
+            - 8.2 Nuance: Reaching full transparency forces solving speed and accountability along the way. (¶80)
+            - 8.3 Example: Linux proves complex global collaboration works in full public view. (¶81)
+            - 8.4 You cannot fork a country, so coerced citizens deserve oversight most. (¶82, ¶83)
+    - Cross-links
+        - 1 supports 3 (¶2) note: employee story motivates principal framing
+        - 2.2 supports 8 (¶5) note: board accountability grounds the measuring stick
+        - 4.1 supports 7.1.1 (¶10) note: fiscal example backs the privacy answer
+        - 5.1 supports 7.10.2 (¶13) note: Sweden 1766 shows design beats permission
+        - 5.2 supports 5.7 (¶15) note: OPEN shows CEO-tools finding fraud
+        - 5.5 supports 7.2.1 (¶22) note: NZ precedent backs the halt answer
+        - 5.6.1 supports 7.10.1 (¶88) note: Iceland analysis links participation appendix to power answer
+        - 6.1 supports 6 (¶26) note: cases back the pattern claim
+        - 6.3 supports 7.6.1 (¶28) note: illegality ruling backs the burden flip
+        - 6.5 supports 8 (¶30) note: disclosure gains back transparency-first design
+        - 6.6 concedes 7.6.2 (¶31) note: uncertain harm concedes room for temporary secrecy
+        - 7.3.1 restates 7.6.2 (¶43) note: temporary secrecy recurs across diplomacy and security
+        - 7.3.1 restates 7.9.1 (¶71) note: delay-then-publish recurs in the markets answer
+        - 8.4 supports 4 (¶83) note: no-fork coercion strengthens the direction claim
+    - Coverage: 102 of 102 passages cited

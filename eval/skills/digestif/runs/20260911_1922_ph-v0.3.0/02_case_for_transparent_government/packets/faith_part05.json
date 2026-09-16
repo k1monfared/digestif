@@ -1,0 +1,163 @@
+{
+ "sample": "02_case_for_transparent_government",
+ "part": 5,
+ "of": 6,
+ "nodes": [
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Transparency is the measuring stick, not one value among many.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "## The Measuring Stick\n\nThere's a temptation to see transparency as one value among many - to \"balance\" it against efficiency, security, privacy, and speed. To find the optimal tradeoff point.\n\nReject this framing.\n\nTransparency is not a value to be balanced. It's the measuring stick. Speed and accountability are *byproducts*. Whatever speed your government operates at, document everything. Make it available. Then iteratively improve the processes that transparency reveals as broken."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Reject balancing transparency against efficiency, security, privacy, or speed.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "## The Measuring Stick\n\nThere's a temptation to see transparency as one value among many - to \"balance\" it against efficiency, security, privacy, and speed. To find the optimal tradeoff point.\n\nReject this framing.\n\nTransparency is not a value to be balanced. It's the measuring stick. Speed and accountability are *byproducts*. Whatever speed your government operates at, document everything. Make it available. Then iteratively improve the processes that transparency reveals as broken."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Speed and accountability are byproducts; document everything, then improve.",
+   "evidence": [
+    {
+     "ref": "¶60",
+     "text": "## The Measuring Stick\n\nThere's a temptation to see transparency as one value among many - to \"balance\" it against efficiency, security, privacy, and speed. To find the optimal tradeoff point.\n\nReject this framing.\n\nTransparency is not a value to be balanced. It's the measuring stick. Speed and accountability are *byproducts*. Whatever speed your government operates at, document everything. Make it available. Then iteratively improve the processes that transparency reveals as broken."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The record pressures consistency, reasoning, accountability, and prosecution.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "You don't need to change how fast things move. You just need the record to exist. Slowly, over time, the availability of that record will create pressure: pressure for consistency, pressure for sound reasoning, pressure for accountability. Officials who know their reasoning will be reviewed will produce better reasoning. Decisions that must be documented will be more carefully considered. Corruption that leaves a trail will be easier to prosecute."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Reviewable officials reason better; documented decisions grow careful.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "You don't need to change how fast things move. You just need the record to exist. Slowly, over time, the availability of that record will create pressure: pressure for consistency, pressure for sound reasoning, pressure for accountability. Officials who know their reasoning will be reviewed will produce better reasoning. Decisions that must be documented will be more carefully considered. Corruption that leaves a trail will be easier to prosecute."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Reaching 100% transparency solves speed and accountability as consequences.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "Transparency is the measuring stick by which you evaluate whether your government is working. In order to reach 100% transparency, you'll have to solve speed and accountability along the way. They're not obstacles to transparency - they're consequences of it.\n\n## Open Source as Vision\n\nHere's a final thought. Consider open source software. Linux, the operating system running most of the internet, is built by thousands of people across the world, working in full public view. Every commit is visible. Every issue is tracked. Every pull request is discussed. Maintainers are accountable to users. If you disagree with a decision, you can fork the project."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "example",
+   "attribution": "author",
+   "text": "Linux: thousands worldwide, every commit, issue, and pull request visible.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "Transparency is the measuring stick by which you evaluate whether your government is working. In order to reach 100% transparency, you'll have to solve speed and accountability along the way. They're not obstacles to transparency - they're consequences of it.\n\n## Open Source as Vision\n\nHere's a final thought. Consider open source software. Linux, the operating system running most of the internet, is built by thousands of people across the world, working in full public view. Every commit is visible. Every issue is tracked. Every pull request is discussed. Maintainers are accountable to users. If you disagree with a decision, you can fork the project."
+    }
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "example",
+   "attribution": "author",
+   "text": "Disagreeing users can fork the project.",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "Transparency is the measuring stick by which you evaluate whether your government is working. In order to reach 100% transparency, you'll have to solve speed and accountability along the way. They're not obstacles to transparency - they're consequences of it.\n\n## Open Source as Vision\n\nHere's a final thought. Consider open source software. Linux, the operating system running most of the internet, is built by thousands of people across the world, working in full public view. Every commit is visible. Every issue is tracked. Every pull request is discussed. Maintainers are accountable to users. If you disagree with a decision, you can fork the project."
+    }
+   ]
+  },
+  {
+   "id": "8.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Complex collaborative systems can be built and maintained publicly.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "This is complex, collaborative work happening transparently. The complexity of a government is greater, but the principle is the same: complex systems can be built and maintained in public. Transparency doesn't prevent sophisticated work. It enables accountability for that work.\n\nThe difference between open source and government is that in open source, participation is voluntary. You can leave. In government, you're subject to decisions whether you participated or not. You can't fork your country."
+    }
+   ]
+  },
+  {
+   "id": "8.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Government is involuntary: you cannot fork your country.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "This is complex, collaborative work happening transparently. The complexity of a government is greater, but the principle is the same: complex systems can be built and maintained in public. Transparency doesn't prevent sophisticated work. It enables accountability for that work.\n\nThe difference between open source and government is that in open source, participation is voluntary. You can leave. In government, you're subject to decisions whether you participated or not. You can't fork your country."
+    }
+   ]
+  },
+  {
+   "id": "8.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Open source is voluntary exit; government binds non-participants.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "This is complex, collaborative work happening transparently. The complexity of a government is greater, but the principle is the same: complex systems can be built and maintained in public. Transparency doesn't prevent sophisticated work. It enables accountability for that work.\n\nThe difference between open source and government is that in open source, participation is voluntary. You can leave. In government, you're subject to decisions whether you participated or not. You can't fork your country."
+    }
+   ]
+  },
+  {
+   "id": "8.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Less choice about affectedness means more right to see.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "That makes the case for government transparency *stronger*, not weaker. The less choice you have about being affected by decisions, the more right you have to see how those decisions are made.\n\nYou pay for this government. You live with its consequences. You are the CEO.\n\nAct like it.\n\n---\n\n## Appendix: Sources with Summaries\n\n### Historical Foundations\n\n1. **[UNESCO Memory of the World - Swedish Freedom of the Press Ordinance 1766](https://www.unesco.org/en/memory-world/swedish-freedom-press-ordinance-1766-worlds-first-legislation-guaranteeing-free-communication)**\n   - UNESCO recognition of the 1766 act as world's first legislation guaranteeing free communication of information; part of Memory of the World register"
+    }
+   ]
+  },
+  {
+   "id": "8.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You pay, live with consequences, and are CEO: act like it.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "That makes the case for government transparency *stronger*, not weaker. The less choice you have about being affected by decisions, the more right you have to see how those decisions are made.\n\nYou pay for this government. You live with its consequences. You are the CEO.\n\nAct like it.\n\n---\n\n## Appendix: Sources with Summaries\n\n### Historical Foundations\n\n1. **[UNESCO Memory of the World - Swedish Freedom of the Press Ordinance 1766](https://www.unesco.org/en/memory-world/swedish-freedom-press-ordinance-1766-worlds-first-legislation-guaranteeing-free-communication)**\n   - UNESCO recognition of the 1766 act as world's first legislation guaranteeing free communication of information; part of Memory of the World register"
+    }
+   ]
+  }
+ ]
+}

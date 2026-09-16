@@ -1,0 +1,193 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "10_parde_begardan_fa",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "At age 7, at his aunt's house, the author first encountered the santur his cousin had just bought; the cousin let him sit at it and taught him how to hold the mizrab, and he had to be dragged away from it at night's end.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L004",
+        "L005"
+      ],
+      "evidence_quote": "هفت سالم بود، سنتور خاله کنج اتاق بود ... مضراب یاد گرفتم و به‌زور از پای ساز بلندم کردند.",
+      "reasoning": "Age 7, the aunt's santur at her house, the first encounter, learning the mizrab, and being forcibly lifted from the instrument are all captured. The 'cousin' attribution is compressed to 'aunt', a harmless simplification that does not change the origin-story meaning."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "The first tune he heard on that santur was likely 'Zard Maliheh' (زرد ملیجه), one of the first songs taught to santur beginners.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L004"
+      ],
+      "evidence_quote": "زرد ملیجه زد، فکر کنم.",
+      "reasoning": "The tune name is preserved along with the hedging 'I think', matching the source's uncertainty."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "After six months of nagging and sulking, his family finally bought him a santur for 20,000 toman, discounted to 18,000 toman.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L008"
+      ],
+      "evidence_quote": "۲۰هزار تومن با تخفیف ۱۸هزار شد؛ شیش ماه بعدتر رفتم کلاس.",
+      "reasoning": "Both numbers (20,000 and discounted 18,000) are intact, and the six-month wait/sulking is captured at L006-L008, so the acquisition milestone holds."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "He started lessons six months later; the teacher initially came to his home because their city had no school, and only later did the Ershad office open a class where the teacher taught.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L008",
+        "L009",
+        "L010"
+      ],
+      "evidence_quote": "شیش ماه بعدتر رفتم کلاس ... اول استاد به خانه می‌آمد ... بعد اداره ارشاد کلاس گذاشت.",
+      "reasoning": "All three beats (six months later, teacher at home, later Ershad office class) are present in the correct sequence."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "The santur has 72 strings and is hard for an ordinary person to tune, so he had to haul the oversized instrument to class to be tuned, until electronic tuners reached the market and he could tune it himself.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L011",
+        "L013"
+      ],
+      "evidence_quote": "۷۲ سیم داشت و کوکش کار هرکسی نبود ... با تیونر دیگر لازم نبود ساز را برای کوک به کلاس ببرم.",
+      "reasoning": "The 72-string number, the tuning difficulty, the hauling to class, and the electronic tuner resolution are all preserved."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "The santur is a diatonic instrument: only one dastgah/scale can be played at a time, and modulation requires retuning, which is time-consuming.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L014"
+      ],
+      "evidence_quote": "سنتور دیاتونیک است؛ یک دستگاه در آن واحد، مدولاسیون زمان‌بر است.",
+      "reasoning": "Diatonic nature, single-dastgah-at-a-time constraint, and time-consuming modulation are all captured verbatim."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "This limitation made him feel like a child at a party allowed only one game: to switch he would have to pack up all his toys first, by which time the mood is gone, or else sit silently aside while the other children move to a game he loves.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L015",
+        "L016"
+      ],
+      "evidence_quote": "مثل بچه‌ای بودم که فقط یک بازی مجاز است ... اگه بچه‌ها بازی عوض می‌کردند، حتی با علاقه گوشه می‌نشستم و نگاه می‌کردم.",
+      "reasoning": "The one-game-at-a-party analogy and the sitting-aside-while-others-switch image are both preserved, though the 'packing up toys' clause is implied rather than explicit."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "Recently a santur was built inspired by the harp, with a set of keys allowing any note to be lowered by a quarter or half step in a fraction of a second.",
+      "weight": "Must have",
+      "presence": "Partial",
+      "loglog_ids": [
+        "L017",
+        "L018"
+      ],
+      "evidence_quote": "سنتور کلیددار با ایده چنگ ... کلیدها ربع یا نیم پرده را در کسری از ثانیه زیرتر می‌کنند.",
+      "reasoning": "The harp-inspired keyed santur, the quarter/half-step change, and the fraction-of-a-second speed are all present. But the loglog says the keys make notes 'زیرتر' (higher), reversing the source's 'lowered' direction. This directional inversion is a meaning change on a Must have point, so at most Partial."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "This makes it possible to move quickly from any dastgah to any other with a few clicks, in just seconds.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L018",
+        "L029"
+      ],
+      "evidence_quote": "مدولاسیون چندثانیه‌ای شد.",
+      "reasoning": "The fast, few-seconds modulation across dastgahs is captured, and the cross-link L029 ties the played sequence to this capability."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "He had been thinking about such an instrument for two years but did not know how to bring it safely from Langroud to Langford.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L019"
+      ],
+      "evidence_quote": "دو سالی به آن فکر می‌کردم؛ سالم از لنگرود به لنگفورد آوردنش را نمی‌دانستم.",
+      "reasoning": "Both the two-year rumination and the Langroud-to-Langford transport problem are preserved."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "With the unstinting help of family, friends, officials, and clerics/community leaders, the instrument finally reached him today.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L020"
+      ],
+      "evidence_quote": "با کمک خانواده و دوستان و مسئولین و ائمه امروز به دستم رسید.",
+      "reasoning": "The arrival today and the full list of helpers (family, friends, officials, imams/leaders) are all captured."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "He tuned it and played, moving from dastgah to dastgah: Isfahan to Segah, Segah to Nava, Nava to Shur, Shur to Homayoun.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L022"
+      ],
+      "evidence_quote": "از اصفهان به سه‌گاه، نوا، شور، همایون رفتم.",
+      "reasoning": "The exact modulation sequence Isfahan, Segah, Nava, Shur, Homayoun is preserved."
+    },
+    {
+      "point_id": "K13",
+      "point_text": "He felt like a penned fattened sheep set loose, running without pause: he skipped lunch and played so long his back ached.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L023"
+      ],
+      "evidence_quote": "مثل گوسفند پرواری دویدم، نهار نخوردم، پشتم درد گرفت.",
+      "reasoning": "The fattened-sheep image, the skipped lunch, and the aching back are all captured."
+    },
+    {
+      "point_id": "K14",
+      "point_text": "He felt like the first night his aunt put the mizrabs in his hand, like a child allowed to play any game he wants, like a person free to say anything he wishes.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L023",
+        "L024"
+      ],
+      "evidence_quote": "حس شب اول بود ... مثل بچه‌ای با هر بازی و کسی با هر حرف.",
+      "reasoning": "The callback to the first night, the any-game child, and the free-to-say-anything person are all represented."
+    },
+    {
+      "point_id": "K15",
+      "point_text": "He leaves tomorrow on a week of travel and is unhappy at not being home to play, already waiting to return and sit at the instrument.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L024",
+        "L025"
+      ],
+      "evidence_quote": "از فردا یک هفته‌ای مسافرم ... نرفته منتظر برگشتن و نشستن پای سازم.",
+      "reasoning": "The week of travel starting tomorrow and his preemptive longing to return and sit at the instrument are both preserved."
+    }
+  ],
+  "metrics": {
+    "total_points": 15,
+    "must_have_total": 8,
+    "must_have_present": 7,
+    "must_have_partial": 1,
+    "must_have_missing": 0,
+    "overall_present": 14,
+    "must_recall": 0.9375,
+    "overall_recall": 0.9667
+  },
+  "missing_list": []
+}

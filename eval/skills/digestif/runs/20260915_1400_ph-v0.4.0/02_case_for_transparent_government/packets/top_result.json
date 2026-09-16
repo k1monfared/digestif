@@ -1,0 +1,29 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "point-hierarchy sample (source_id not provided in inputs)",
+ "inputs": {
+  "faithfulness_precision": 1.0,
+  "critical_errors": 0,
+  "must_recall": 1.0,
+  "overall_recall": 1.0,
+  "redundancy_rate": 0.1168,
+  "trivia_rate": 0.0327
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "Hard gates first: critical_errors 0 <= max 0 (pass); must_recall 1.0 >= min 0.9 (pass); faithfulness_precision 1.0 >= min 0.95 (pass); redundancy_rate 0.1168 <= max 0.15 (pass). All gates pass. Weighted score = 0.4 * faithfulness_precision + 0.4 * must_recall - 0.2 * redundancy_rate = 0.4*1.0 + 0.4*1.0 - 0.2*0.1168 = 0.4 + 0.4 - 0.02336 = 0.77664.",
+ "weighted_score": 0.77664,
+ "verdict": "Pass",
+ "tradeoff_note": "All three aspects clear their gates: full faithfulness (214/214 supported, 0 contradicted) and full must-have recall (15/15) at a redundancy rate (0.1168) below the 0.15 max, so the coverage is earned without an over-length penalty. The 25 duplicates are concentrated in an explicit appendix recap, meaning they inflate length without adding coverage.",
+ "fix_list": [
+  "Collapse the appendix recap duplicates flagged by Judge Con (C198-C213 mapping to C024/C030/C034/C040/C043/C055/C063/C074/C082/C092/C099/C112/C120/C124/C138/C153/C176), since they add length with zero coverage gain and are the largest single block of the 25 duplicates.",
+  "Merge the near-verbatim and same-idea inline duplicates before the appendix: C201/C043 (60GB pension data), C079/C022, C088/C045, C108/C089, C109/C105, C130/C055, C133/C095, C134/C096, C158/C120, C167/C096, C189/C183.",
+  "Trim or drop the 7 trivia claims (trivia_rate 0.0327) identified by the concision judge to push redundancy further under the 0.15 gate ahead of future edits."
+ ],
+ "reasoning": "Gate check in policy order. (1) Critical errors: Judge F reports 214 total claims, 214 supported, 0 partially_supported, 0 unverifiable, 0 contradicted, critical_errors = 0. Against critical_contradicted_max = 0 this passes; there is nothing to cite. (2) Must-have recall: Judge Cov reports must_have_total = 15, must_have_present = 15, must_have_partial = 0, must_have_missing = 0, so must_recall = 1.0, at or above must_recall_min = 0.9. Every must-have point ID (all 15) is present, and Non-Present key points is empty, so no missing-point penalty applies. (3) Faithfulness precision: 1.0, at or above faithfulness_precision_min = 0.95. (4) Redundancy: Judge Con reports redundancy_rate = 0.1168 against redundancy_max = 0.15, so the length is within budget. Tradeoff step: since all gates pass, compute the config-weighted score with inputs and weights shown: 0.4*1.0 (faithfulness) + 0.4*1.0 (coverage must recall) - 0.2*0.1168 (redundancy penalty) = 0.77664. Note the score is bounded by the redundancy penalty only because faithfulness and recall are both saturated at 1.0, so the only lever left on the weighted score is duplication reduction. Concision role check: concision cannot rescue a faithfulness or coverage fail, but here neither failed, so it acts only as the 0.2-weighted term and as the tie-break lever. A coverage gain justifying extra length does not arise because coverage is already 15/15; therefore the 25 duplicates produce no compensating benefit. The duplicates cluster heavily in the appendix recap (C198-C213 duplicating earlier body claims C024/C030/C034/C040/C043/C055/C063/C074/C082/C092/C099/C112/C120/C124/C138/C153/C176) plus inline repeats (C079/C022, C088/C045, C108/C089, C109/C105, C130/C055, C133/C095, C134/C096, C158/C120, C167/C096, C189/C183), and C201 is flagged near-verbatim to C043, which is the strongest single merge candidate. Borderline check: Borderline is reserved for gates passing while a Partial or Unverifiable claim affects a Must-have point. Judge F reports zero partially_supported and zero unverifiable claims, and Judge Cov reports zero must_have_partial and zero must_have_missing, so there is no claim to name and no basis for Borderline. No aspect judges conflict on any fact, so SOURCE was not reread and no quote is cited. Verdict: Pass. The verdict is auditable as Pass rather than Borderline because the numbers clear every gate and the only advisory finding, duplication concentrated in the appendix recap, is a quality improvement rather than a gate miss; the highest-leverage fix list items point at the C198-C213 appendix block and the C201/C043 near-verbatim pair."
+}

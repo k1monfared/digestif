@@ -1,0 +1,419 @@
+{
+ "sample": "11_finding_a_phone",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "5",
+   "type": "theme",
+   "attribution": "author",
+   "text": "An abandoned Pixel deal led to an LLM-assisted search and comparison pipeline.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Pixel detour: ordering on a deal, anxiety, then walking away.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    }
+   ]
+  },
+  {
+   "id": "5.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Ordered a latest Google Pixel on a Black Friday deal, thinking to maybe try the always-connected life; people generally said good things.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    }
+   ]
+  },
+  {
+   "id": "5.1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "While waiting he grew anxious: multi-year lock-in then remainder payment, for a phone he wouldn't enjoy and that would limit his choices.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    }
+   ]
+  },
+  {
+   "id": "5.1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He hadn't paid; after extra charges for random things appeared, he declined them and got back on the market.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Pipeline: O1 suggestions, GSMArena specs, scraper and cleaner code.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    },
+    {
+     "ref": "¶21",
+     "text": "Here is a modified version of the code (there are a bunch of unused code there too):"
+    },
+    {
+     "ref": "¶28",
+     "text": "and the results is something I can play with. Let me first clean it a bit. Asking claude-3.5 sonnet: \"I am only interested in these specs:\n- brand\n- model\n- does it have 5g?\n- does it have e-sim\n- year released\n- screen size in inches to 1 decimal place\n-  does it have dual sim or not\n- battery capacity in mAh\n- does it have sd card slot?\n- the largest back camera mpx\n- the selfie camera mpx\n- charing speed\n- price in USD\nwrite a python code that cleans df to show only those imformation, do necessary string manipulation\"\nit didn't consider what is in df rows. Then I prompted it as \"the columns are not clean info, consider the output of the df.head() cell and adjust the code based on that input\", then a few more prompts and it made it mostly work. I haven't checked any of this and I assume it has made several errors, but it gives a good starting point."
+    }
+   ]
+  },
+  {
+   "id": "5.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Friends' recommendations weren't enough; asked OpenAI's O1 for smaller-company phones matching his 5G, eSIM, SD, battery, waterproof, and camera wants.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    }
+   ]
+  },
+  {
+   "id": "5.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "O1 gave a bunch of phones with generally wrong specs but correct model names.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    }
+   ]
+  },
+  {
+   "id": "5.2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He found specs on gsmarena.com, but comparing was hard, so asked gpt-4o-mini to write scraping code.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "But just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel, people had generally good things to say about it, and I was thinking to maybe go back to the always connected life for a while to see what I was missing, but while I was waiting for the phone to arrive I was getting anxious that I knew I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount to buy the phone while I knew I am not going to enjoy it because they are going to limit my choices as much as they can. Fortunately, I hadn't paid for anything yet and when the phone arrived they started to bring up some extra charges for random things which I declined and got back on the market to see what else is there to explore. I got a couple of recommendations from friends but that wasn't enough. So I went searching. Recently LLM models are getting better, so I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera. It gave me a bunch of them with generally wrong specs, but the model names where correct. So, I searched for them and found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that when I provide a list of links, scrapes the phone specs from those websites and put them in a table that I can then use to compare."
+    }
+   ]
+  },
+  {
+   "id": "5.2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The scraper rotates user agents, retries 3 times with backoff, sleeps 2 to 5 seconds, and parses GSMArena specs into a DataFrame.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "```python\nimport time\nfrom random import uniform\nfrom requests.adapters import HTTPAdapter\nfrom requests.packages.urllib3.util.retry import Retry\nimport requests\nfrom bs4 import BeautifulSoup\nimport pandas as pd\nimport random\n\n# List of common user agents to rotate through\nUSER_AGENTS = [\n    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',\n    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/89.0',\n    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',\n    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15',\n    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/91.0.864.59'\n]\n\n# List of proxy servers (you would need to add your own proxy servers here)\nPROXY_LIST = [\n    # Add your proxy servers here in the format:\n    # 'http://proxy1.example.com:8080',\n    # 'http://proxy2.example.com:8080',\n]"
+    },
+    {
+     "ref": "¶23",
+     "text": "def get_random_headers():\n    \"\"\"Generate random headers for each request\"\"\"\n    return {\n        'User-Agent': random.choice(USER_AGENTS),\n        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',\n        'Accept-Language': 'en-US,en;q=0.5',\n        'Accept-Encoding': 'gzip, deflate, br',\n        'Connection': 'keep-alive',\n        'Upgrade-Insecure-Requests': '1',\n        'Cache-Control': 'max-age=0'\n    }\n\ndef get_phone_specs(urls):\n    # Create a session with retry strategy\n    session = requests.Session()\n    retry_strategy = Retry(\n        total=3,  # number of retries\n        backoff_factor=1,  # wait 1, 2, 4 seconds between retries\n        status_forcelist=[429, 500, 502, 503, 504]  # status codes to retry on\n    )\n    adapter = HTTPAdapter(max_retries=retry_strategy)\n    session.mount(\"http://\", adapter)\n    session.mount(\"https://\", adapter)\n\n    all_phones = []\n    headers = {\n        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',\n        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',\n        'Accept-Language': 'en-US,en;q=0.5',\n        'Connection': 'keep-alive',\n    }"
+    },
+    {
+     "ref": "¶24",
+     "text": "    for url in urls:\n        # Add random delay between requests (2-5 seconds)\n        time.sleep(uniform(2, 5))\n\n        try:\n            # Use session instead of requests directly\n            response = session.get(url, headers=headers, timeout=10)\n\n            if response.status_code != 200:\n                print(f\"Failed to fetch {url}\")\n                print(f\"Status code: {response.status_code}\")\n                print(f\"Response content: {response.text[:200]}...\")\n                continue\n\n            soup = BeautifulSoup(response.content, 'html.parser')\n\n            # Extract the phone's title\n            title = soup.find('h1', class_='specs-phone-name-title').text.strip()\n\n            # Initialize dict for this phone's specs\n            phone_specs = {'Phone Name': title}\n\n            # Extract the specifications table\n            specs = soup.find('div', id='specs-list')\n            if specs:\n                for category in specs.find_all('table'):\n                    for row in category.find_all('tr'):\n                        spec_name = row.find('td', class_='ttl').text.strip() if row.find('td', class_='ttl') else \"N/A\"\n                        spec_value = row.find('td', class_='nfo').text.strip() if row.find('td', class_='nfo') else \"N/A\"\n                        phone_specs[spec_name] = spec_value\n                        phone_specs['url'] = url\n\n            all_phones.append(phone_specs)\n        except:\n            pass\n    # Convert list of dicts to DataFrame\n    phones_df = pd.DataFrame(all_phones)\n\n    return phones_df"
+    }
+   ]
+  },
+  {
+   "id": "5.2.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Gave it 18 GSMArena URLs, including a duplicated realme Narzo 60 entry, and saved the table to CSV.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "Then I gave it the list of URLs for the phone I'm interested in"
+    },
+    {
+     "ref": "¶26",
+     "text": "```python\n\nurls = [\n    \"https://www.gsmarena.com/vivo_iqoo_z7-12163.php\",\n    \"https://www.gsmarena.com/realme_narzo_60-12395.php\",\n    \"https://www.gsmarena.com/xiaomi_poco_f5_pro-12257.php\",\n    \"https://www.gsmarena.com/oneplus_nord_n30-12220.php\",\n    \"https://www.gsmarena.com/asus_zenfone_10-12380.php\",\n    \"https://www.gsmarena.com/motorola_edge_40-12204.php\",\n    \"https://www.gsmarena.com/xiaomi_redmi_note_12_pro-11955.php\",\n    \"https://www.gsmarena.com/nothing_phone_(2)-12386.php\",\n    \"https://www.gsmarena.com/fairphone_4-11136.php\",\n    \"https://www.gsmarena.com/realme_11_pro+-12246.php\",\n    \"https://www.gsmarena.com/infinix_zero_ultra-11922.php\",\n    \"https://www.gsmarena.com/oppo_a78-12073.php\",\n    \"https://www.gsmarena.com/vivo_v27e-12118.php\",\n    \"https://www.gsmarena.com/vivo_v27_pro-12117.php\",\n    \"https://www.gsmarena.com/tecno_phantom_x2-12009.php\",\n    \"https://www.gsmarena.com/xiaomi_poco_x5_pro-12094.php\",\n    \"https://www.gsmarena.com/motorola_moto_g_power_(2024)-12867.php\",\n    \"https://www.gsmarena.com/realme_narzo_60-12395.php\",\n]\ndf = get_phone_specs(urls)\ndf.to_csv(\"smartphone_specs.csv\", index=False)\n```"
+    }
+   ]
+  },
+  {
+   "id": "5.2.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Wished websites existed to do this analysis simply without scraping them.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "I wish there were websites that would allow me to do these analysis simply without scraping them."
+    }
+   ]
+  },
+  {
+   "id": "5.2.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Asked Claude 3.5 Sonnet to clean the table; it first ignored the actual columns, then mostly worked after more prompts.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "and the results is something I can play with. Let me first clean it a bit. Asking claude-3.5 sonnet: \"I am only interested in these specs:\n- brand\n- model\n- does it have 5g?\n- does it have e-sim\n- year released\n- screen size in inches to 1 decimal place\n-  does it have dual sim or not\n- battery capacity in mAh\n- does it have sd card slot?\n- the largest back camera mpx\n- the selfie camera mpx\n- charing speed\n- price in USD\nwrite a python code that cleans df to show only those imformation, do necessary string manipulation\"\nit didn't consider what is in df rows. Then I prompted it as \"the columns are not clean info, consider the output of the df.head() cell and adjust the code based on that input\", then a few more prompts and it made it mostly work. I haven't checked any of this and I assume it has made several errors, but it gives a good starting point."
+    }
+   ]
+  },
+  {
+   "id": "5.2.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Caveat: unchecked; he assumes it made several errors but calls it a good starting point.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "and the results is something I can play with. Let me first clean it a bit. Asking claude-3.5 sonnet: \"I am only interested in these specs:\n- brand\n- model\n- does it have 5g?\n- does it have e-sim\n- year released\n- screen size in inches to 1 decimal place\n-  does it have dual sim or not\n- battery capacity in mAh\n- does it have sd card slot?\n- the largest back camera mpx\n- the selfie camera mpx\n- charing speed\n- price in USD\nwrite a python code that cleans df to show only those imformation, do necessary string manipulation\"\nit didn't consider what is in df rows. Then I prompted it as \"the columns are not clean info, consider the output of the df.head() cell and adjust the code based on that input\", then a few more prompts and it made it mostly work. I haven't checked any of this and I assume it has made several errors, but it gives a good starting point."
+    }
+   ]
+  },
+  {
+   "id": "5.2.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The cleaner extracts brand, model, 5G, eSIM, release year, screen size, dual SIM, battery mAh, charging speed, SD slot, cameras, and price.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "```python\ndef clean_phone_specs(df):\n    \"\"\"Clean and extract specific smartphone specifications\"\"\"\n\n    cleaned_df = pd.DataFrame()\n\n    # Extract brand and model from Phone Name\n    cleaned_df['brand'] = df['Phone Name'].apply(lambda x: x.split()[0].lower())\n    cleaned_df['model'] = df['Phone Name'].apply(lambda x: ' '.join(x.split()[1:]))\n\n    # Check for 5G support\n    cleaned_df['has_5g'] = df['Technology'].str.contains('5G', case=False, na=False)\n\n    # Check for eSIM support\n    cleaned_df['has_esim'] = df['SIM'].str.contains('eSIM', case=False, na=False)\n\n    # Extract release year from Announced\n    cleaned_df['release_year'] = df['Announced'].str.extract(r'(\\d{4})')\n\n    # Extract screen size in inches\n    cleaned_df['screen_size'] = df['Size'].str.extract(r'(\\d+\\.?\\d*)').astype(float).round(1)\n\n    # Check for dual SIM\n    cleaned_df['has_dual_sim'] = df['SIM'].str.contains('Dual', case=False, na=False)\n"
+    },
+    {
+     "ref": "¶30",
+     "text": "    # Extract battery capacity (checking both old and new battery columns)\n    def get_battery_capacity(row):\n        if pd.notna(row.get('Type')):\n            match = re.search(r'(\\d+)\\s*mAh', str(row['Type']), re.IGNORECASE)\n            if match:\n                try:\n                    capacity = float(match.group(1))\n                    # Sanity check: battery capacity should be between 1000 and 10000 mAh\n                    if 1000 <= capacity <= 10000:\n                        return capacity\n                except ValueError:\n                    pass\n        return None\n\n    cleaned_df['battery_mah'] = df.apply(get_battery_capacity, axis=1)\n\n\n\n    # Extract charging speed (checking Features and Charging columns)\n    def get_charging_speed(row):\n        # Check Features first\n        if pd.notna(row.get('Features')):\n            match = re.search(r'(\\d+)W?\\s*(?:fast\\s*charging|charging|wired)', str(row['Features']), re.IGNORECASE)\n            if match:\n                return float(match.group(1))\n        # Check Charging column as fallback\n        if pd.notna(row.get('Charging')):\n            match = re.search(r'(\\d+)W', str(row['Charging']))\n            if match:\n                return float(match.group(1))\n        return None\n\n    cleaned_df['charging_speed'] = df.apply(get_charging_speed, axis=1)\n\n    # Check for SD card slot\n    cleaned_df['has_sd_slot'] = df['Card slot'].notna() & ~df['Card slot'].str.contains('No', case=False, na=False)\n\n    # Extract main camera MPX"
+    },
+    {
+     "ref": "¶31",
+     "text": "    def get_max_camera_mpx(row):\n        cameras = []\n        if pd.notna(row['Triple']):\n            mpx = re.findall(r'(\\d+)(?:\\.?\\d*)?MP', row['Triple'])\n            cameras.extend([float(x) for x in mpx])\n        return max(cameras) if cameras else None\n\n    def get_max_camera_mpx(row):\n        cameras = []\n        # Check Triple column first\n        if pd.notna(row.get('Triple')):\n            mpx = re.findall(r'(\\d+)(?:\\.?\\d*)?(?:\\s*MP|\\s*megapixels)', str(row['Triple']))\n            cameras.extend([float(x) for x in mpx if x])\n        # Check Single column if no Triple\n        elif pd.notna(row.get('Single')):\n            mpx = re.findall(r'(\\d+)(?:\\.?\\d*)?(?:\\s*MP|\\s*megapixels)', str(row['Single']))\n            cameras.extend([float(x) for x in mpx if x])\n        return max(cameras) if cameras else None\n\n    cleaned_df['main_camera_mpx'] = df.apply(get_max_camera_mpx, axis=1)\n"
+    },
+    {
+     "ref": "¶32",
+     "text": "    # Extract selfie camera MPX (from Single column which contains front camera info)\n    def get_selfie_mpx(row):\n        if pd.notna(row.get('Single')):\n            mpx = re.findall(r'(\\d+)(?:\\.?\\d*)?(?:\\s*MP|\\s*megapixels)', str(row['Single']))\n            return float(mpx[0]) if mpx else None\n        return None\n\n    cleaned_df['selfie_camera_mpx'] = df.apply(get_selfie_mpx, axis=1)\n\n    # Extract price in USD (looking for patterns like \"$199.99\" or \"$1,199.99\")\n    def extract_price(price_str):\n        if pd.isna(price_str):\n            return None\n        match = re.search(r'\\$\\s*(\\d+(?:,\\d+)?(?:\\.\\d+)?)', str(price_str))\n        if match:\n            return float(match.group(1).replace(',', ''))\n        return None\n\n    cleaned_df['price_usd'] = df['Price'].apply(extract_price)\n\n    return cleaned_df\n\n# Add necessary import\nimport re\n\n# Clean the dataframe\ncdf = clean_phone_specs(df)"
+    }
+   ]
+  },
+  {
+   "id": "5.2.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "BeautifulSoup misses a lot of details; pandas read_html reads this site well; request volume and proxies need managing next.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "The BeautifulSoup approach is not great, it misses a lot of details, pandas has this `read_html` functionality which reads very well from this website. I also need to manage how many requests I'm sending to the webpage and change the proxy so that it doesn't block me. Will do that next."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Filter outcomes: two matches, a returned trial, and the next candidate.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "The results are:"
+    },
+    {
+     "ref": "¶39",
+     "text": "OK, only fairphone 4 and Moto G Power have 5g, esim, and sdcard slot. Their cameras are not great, but I can live with that and screen sizes are too big. Also fairphone 4 seems a bit too old (2021). I might have to expand my search a little bit."
+    },
+    {
+     "ref": "¶42",
+     "text": "### Update 2025-01-05\nI've tried the [TCL 50 XE NXTPAPER](https://www.gsmarena.com/tcl_50_xe_nxtpaper-13302.php) for a couple of weeks. It is pretty weak in terms of performance. It got pretty hot while on a video call to the point it was uncomfortable. And worst of all, the screen wasn't at all readable in direct light, even lamp light. It definitely is less glossy, but that not only it doesn't make it easier to read the screen, it makes it much much worse. I compared it in various conditions with my old phone that has a simple screen, and also with other phones that have no claim of more readability. It is almost impossible to see the content of the screen when there is direct light shining on it. With regular screens you can turn the screen slightly and it will be resolved, with this phone, even that is not possible! The camera is so so, nothing exciting, nothing particularly bad. Also, the paper color and ink color modes are good ideas, but not best implemented, there's lots of restrictions and not much customizable. Even going to dark mode, or changing the background in those modes seems to need tricks! If they continue improving it, it might become a good option. Initially, they had advertised it so that I thought the ink color mode is actually e-ink screen under a regular screen that when activated the regular screen turns off and the e-ink will be used, but that's not the case, it is just a blakc and while mode. So, I've returned it."
+    },
+    {
+     "ref": "¶43",
+     "text": "Next I'm going to try a motorolla [Motorola G85](https://www.gsmarena.com/motorola_moto_g85-13144.php). I wanted a [G75](https://www.gsmarena.com/motorola_moto_g75-13372.php) model since it is more waterproof (IP68), but I couldn't find it in any stores. G85 only has a water repellent design, but still similar in other aspects. Motorla generally is not supposed to have good camera, so I'm not going to expect much there."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Results and gaps: two matches, Fairphone too old, Edge 40 missing.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "|    | brand     | model               | has_5g   | has_esim   |   release_year |   screen_size | has_dual_sim   |   battery_mah |   charging_speed | has_sd_slot   |   main_camera_mpx |   selfie_camera_mpx |   price_usd |\n|---:|:----------|:--------------------|:---------|:-----------|---------------:|--------------:|:---------------|--------------:|-----------------:|:--------------|------------------:|--------------------:|------------:|\n|  0 | vivo      | iQOO Z7             | True     | False      |           2023 |           6.4 | True           |          4500 |               44 | True          |                16 |                  16 |      nan    |\n|  1 | realme    | Narzo 60            | True     | False      |           2023 |           6.4 | True           |          5000 |               33 | True          |                16 |                  16 |      nan    |\n|  2 | xiaomi    | Poco F5 Pro         | True     | False      |           2023 |           6.7 | True           |          5160 |               67 | False         |                64 |                  16 |      438.96 |\n|  3 | oneplus   | Nord N30            | True     | False      |           2023 |           6.7 | True           |          5000 |               50 | True          |               108 |                  16 |      279.99 |"
+    },
+    {
+     "ref": "¶39",
+     "text": "OK, only fairphone 4 and Moto G Power have 5g, esim, and sdcard slot. Their cameras are not great, but I can live with that and screen sizes are too big. Also fairphone 4 seems a bit too old (2021). I might have to expand my search a little bit."
+    },
+    {
+     "ref": "¶40",
+     "text": "It's interesting, I wanted to compare motorola edge 40 but it didn't show up. it seems like it doesn't have sd card slot!"
+    }
+   ]
+  },
+  {
+   "id": "6.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The results table has 18 rows (duplicated Narzo 60), release years 2021 to 2024, and many missing prices.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "The results are:"
+    },
+    {
+     "ref": "¶34",
+     "text": "|    | brand     | model               | has_5g   | has_esim   |   release_year |   screen_size | has_dual_sim   |   battery_mah |   charging_speed | has_sd_slot   |   main_camera_mpx |   selfie_camera_mpx |   price_usd |\n|---:|:----------|:--------------------|:---------|:-----------|---------------:|--------------:|:---------------|--------------:|-----------------:|:--------------|------------------:|--------------------:|------------:|\n|  0 | vivo      | iQOO Z7             | True     | False      |           2023 |           6.4 | True           |          4500 |               44 | True          |                16 |                  16 |      nan    |\n|  1 | realme    | Narzo 60            | True     | False      |           2023 |           6.4 | True           |          5000 |               33 | True          |                16 |                  16 |      nan    |\n|  2 | xiaomi    | Poco F5 Pro         | True     | False      |           2023 |           6.7 | True           |          5160 |               67 | False         |                64 |                  16 |      438.96 |\n|  3 | oneplus   | Nord N30            | True     | False      |           2023 |           6.7 | True           |          5000 |               50 | True          |               108 |                  16 |      279.99 |"
+    },
+    {
+     "ref": "¶35",
+     "text": "|  4 | asus      | Zenfone 10          | True     | False      |           2023 |           5.9 | True           |          4300 |               30 | False         |                32 |                  32 |     1199    |\n|  5 | motorola  | Edge 40             | True     | True       |           2023 |           6.6 | True           |          4400 |               68 | False         |                32 |                  32 |      389.99 |\n|  6 | xiaomi    | Redmi Note 12 Pro   | True     | False      |           2022 |           6.7 | True           |          5000 |               67 | False         |                50 |                  16 |      170    |\n|  7 | nothing   | Phone (2)           | True     | False      |           2023 |           6.7 | True           |          4700 |               45 | False         |                32 |                  32 |      529.99 |\n|  8 | fairphone | 4                   | True     | True       |           2021 |           6.3 | False          |          3905 |               20 | True          |                25 |                  25 |      nan    |"
+    },
+    {
+     "ref": "¶36",
+     "text": "|  9 | realme    | 11 Pro+             | True     | False      |           2023 |           6.7 | True           |          5000 |              100 | False         |               200 |                  32 |      nan    |\n| 10 | infinix   | Zero Ultra          | True     | False      |           2022 |           6.8 | True           |          4500 |              180 | False         |               200 |                  32 |      nan    |\n| 11 | oppo      | A78                 | True     | False      |           2023 |           6.6 | True           |          5000 |               33 | True          |                 8 |                   8 |      nan    |\n| 12 | vivo      | V27e                | False    | False      |           2023 |           6.6 | True           |          4600 |               66 | True          |                64 |                  32 |      nan    |\n| 13 | vivo      | V27 Pro             | True     | False      |           2023 |           6.8 | True           |          4600 |               66 | False         |                50 |                  50 |      nan    |"
+    },
+    {
+     "ref": "¶37",
+     "text": "| 14 | tecno     | Phantom X2          | True     | False      |           2022 |           6.8 | True           |          5160 |               45 | False         |                64 |                  32 |      nan    |\n| 15 | xiaomi    | Poco X5 Pro         | True     | False      |           2023 |           6.7 | True           |          5000 |               67 | False         |               108 |                  16 |      241.19 |\n| 16 | motorola  | Moto G Power (2024) | True     | True       |           2024 |           6.7 | False          |          5000 |               30 | True          |                16 |                  16 |      169.98 |\n| 17 | realme    | Narzo 60            | True     | False      |           2023 |           6.4 | True           |          5000 |               33 | True          |                16 |                  16 |      nan    |"
+    }
+   ]
+  },
+  {
+   "id": "6.1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Only Fairphone 4 (2021) and Moto G Power (2024) have 5G, eSIM, and an SD slot; cameras aren't great, screens too big.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "now let's see which ones have what I need\n```python\ncdf.loc[\n    (cdf['has_5g'] == True) &\n    (cdf['has_esim'] == True) &\n    (cdf['has_sd_slot'] == True),\n    ['brand', 'model', 'release_year', 'screen_size', 'battery_mah', 'charging_speed', 'main_camera_mpx', 'selfie_camera_mpx','price_usd']\n]\n```"
+    },
+    {
+     "ref": "¶39",
+     "text": "OK, only fairphone 4 and Moto G Power have 5g, esim, and sdcard slot. Their cameras are not great, but I can live with that and screen sizes are too big. Also fairphone 4 seems a bit too old (2021). I might have to expand my search a little bit."
+    }
+   ]
+  },
+  {
+   "id": "6.1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Fairphone 4 seems a bit too old (2021); he might have to expand the search a little.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "OK, only fairphone 4 and Moto G Power have 5g, esim, and sdcard slot. Their cameras are not great, but I can live with that and screen sizes are too big. Also fairphone 4 seems a bit too old (2021). I might have to expand my search a little bit."
+    }
+   ]
+  },
+  {
+   "id": "6.1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Wanted to compare the Motorola Edge 40 but it didn't show up; it seems to lack an SD card slot.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "It's interesting, I wanted to compare motorola edge 40 but it didn't show up. it seems like it doesn't have sd card slot!"
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "TCL 50 XE trial failed; Motorola G85 next.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "### Update 2025-01-05\nI've tried the [TCL 50 XE NXTPAPER](https://www.gsmarena.com/tcl_50_xe_nxtpaper-13302.php) for a couple of weeks. It is pretty weak in terms of performance. It got pretty hot while on a video call to the point it was uncomfortable. And worst of all, the screen wasn't at all readable in direct light, even lamp light. It definitely is less glossy, but that not only it doesn't make it easier to read the screen, it makes it much much worse. I compared it in various conditions with my old phone that has a simple screen, and also with other phones that have no claim of more readability. It is almost impossible to see the content of the screen when there is direct light shining on it. With regular screens you can turn the screen slightly and it will be resolved, with this phone, even that is not possible! The camera is so so, nothing exciting, nothing particularly bad. Also, the paper color and ink color modes are good ideas, but not best implemented, there's lots of restrictions and not much customizable. Even going to dark mode, or changing the background in those modes seems to need tricks! If they continue improving it, it might become a good option. Initially, they had advertised it so that I thought the ink color mode is actually e-ink screen under a regular screen that when activated the regular screen turns off and the e-ink will be used, but that's not the case, it is just a blakc and while mode. So, I've returned it."
+    },
+    {
+     "ref": "¶43",
+     "text": "Next I'm going to try a motorolla [Motorola G85](https://www.gsmarena.com/motorola_moto_g85-13144.php). I wanted a [G75](https://www.gsmarena.com/motorola_moto_g75-13372.php) model since it is more waterproof (IP68), but I couldn't find it in any stores. G85 only has a water repellent design, but still similar in other aspects. Motorla generally is not supposed to have good camera, so I'm not going to expect much there."
+    }
+   ]
+  },
+  {
+   "id": "6.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "TCL 50 XE NXTPAPER returned after a couple of weeks: weak performance, uncomfortably hot video calls, so-so camera.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "### Update 2025-01-05\nI've tried the [TCL 50 XE NXTPAPER](https://www.gsmarena.com/tcl_50_xe_nxtpaper-13302.php) for a couple of weeks. It is pretty weak in terms of performance. It got pretty hot while on a video call to the point it was uncomfortable. And worst of all, the screen wasn't at all readable in direct light, even lamp light. It definitely is less glossy, but that not only it doesn't make it easier to read the screen, it makes it much much worse. I compared it in various conditions with my old phone that has a simple screen, and also with other phones that have no claim of more readability. It is almost impossible to see the content of the screen when there is direct light shining on it. With regular screens you can turn the screen slightly and it will be resolved, with this phone, even that is not possible! The camera is so so, nothing exciting, nothing particularly bad. Also, the paper color and ink color modes are good ideas, but not best implemented, there's lots of restrictions and not much customizable. Even going to dark mode, or changing the background in those modes seems to need tricks! If they continue improving it, it might become a good option. Initially, they had advertised it so that I thought the ink color mode is actually e-ink screen under a regular screen that when activated the regular screen turns off and the e-ink will be used, but that's not the case, it is just a blakc and while mode. So, I've returned it."
+    }
+   ]
+  },
+  {
+   "id": "6.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The TCL screen was not at all readable in direct light, even lamp light, worse than regular screens where tilting helps.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "### Update 2025-01-05\nI've tried the [TCL 50 XE NXTPAPER](https://www.gsmarena.com/tcl_50_xe_nxtpaper-13302.php) for a couple of weeks. It is pretty weak in terms of performance. It got pretty hot while on a video call to the point it was uncomfortable. And worst of all, the screen wasn't at all readable in direct light, even lamp light. It definitely is less glossy, but that not only it doesn't make it easier to read the screen, it makes it much much worse. I compared it in various conditions with my old phone that has a simple screen, and also with other phones that have no claim of more readability. It is almost impossible to see the content of the screen when there is direct light shining on it. With regular screens you can turn the screen slightly and it will be resolved, with this phone, even that is not possible! The camera is so so, nothing exciting, nothing particularly bad. Also, the paper color and ink color modes are good ideas, but not best implemented, there's lots of restrictions and not much customizable. Even going to dark mode, or changing the background in those modes seems to need tricks! If they continue improving it, it might become a good option. Initially, they had advertised it so that I thought the ink color mode is actually e-ink screen under a regular screen that when activated the regular screen turns off and the e-ink will be used, but that's not the case, it is just a blakc and while mode. So, I've returned it."
+    }
+   ]
+  },
+  {
+   "id": "6.2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Paper and ink color modes were good ideas but restricted and not customizable; the ink mode was just black-and-white, not e-ink as advertised.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "### Update 2025-01-05\nI've tried the [TCL 50 XE NXTPAPER](https://www.gsmarena.com/tcl_50_xe_nxtpaper-13302.php) for a couple of weeks. It is pretty weak in terms of performance. It got pretty hot while on a video call to the point it was uncomfortable. And worst of all, the screen wasn't at all readable in direct light, even lamp light. It definitely is less glossy, but that not only it doesn't make it easier to read the screen, it makes it much much worse. I compared it in various conditions with my old phone that has a simple screen, and also with other phones that have no claim of more readability. It is almost impossible to see the content of the screen when there is direct light shining on it. With regular screens you can turn the screen slightly and it will be resolved, with this phone, even that is not possible! The camera is so so, nothing exciting, nothing particularly bad. Also, the paper color and ink color modes are good ideas, but not best implemented, there's lots of restrictions and not much customizable. Even going to dark mode, or changing the background in those modes seems to need tricks! If they continue improving it, it might become a good option. Initially, they had advertised it so that I thought the ink color mode is actually e-ink screen under a regular screen that when activated the regular screen turns off and the e-ink will be used, but that's not the case, it is just a blakc and while mode. So, I've returned it."
+    }
+   ]
+  },
+  {
+   "id": "6.2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Next: Motorola G85, water repellent design only; wanted the more waterproof IP68 G75 but couldn't find it in stores.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "Next I'm going to try a motorolla [Motorola G85](https://www.gsmarena.com/motorola_moto_g85-13144.php). I wanted a [G75](https://www.gsmarena.com/motorola_moto_g75-13372.php) model since it is more waterproof (IP68), but I couldn't find it in any stores. G85 only has a water repellent design, but still similar in other aspects. Motorla generally is not supposed to have good camera, so I'm not going to expect much there."
+    }
+   ]
+  },
+  {
+   "id": "6.2.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Motorola generally isn't supposed to have a good camera, so he won't expect much there.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "Next I'm going to try a motorolla [Motorola G85](https://www.gsmarena.com/motorola_moto_g85-13144.php). I wanted a [G75](https://www.gsmarena.com/motorola_moto_g75-13372.php) model since it is more waterproof (IP68), but I couldn't find it in any stores. G85 only has a water repellent design, but still similar in other aspects. Motorla generally is not supposed to have good camera, so I'm not going to expect much there."
+    }
+   ]
+  }
+ ]
+}

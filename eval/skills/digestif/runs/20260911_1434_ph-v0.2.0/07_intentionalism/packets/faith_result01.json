@@ -1,0 +1,416 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "07_intentionalism",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Life structurally favors proposers over receivers, so practice intending before choosing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "It's about whether they propose or receive.",
+   "reasoning": "SOURCE's thesis and closing call to practice intention match the summary."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Gale-Shapley 1962 stable-matching work revealed proposer-receiver asymmetry.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "In 1962, mathematician-economists David Gale and Lloyd Shapley",
+   "reasoning": "Date, names, and the proposer-receiver discovery all appear in SOURCE."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Deferred acceptance: one side proposes in order, other tentatively accepts or rejects.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "one side makes proposals in order of preference, and the other side accepts or tentatively rejects",
+   "reasoning": "Definition matches SOURCE almost verbatim."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "Proposers get best stable partner; receivers get worst; extremes are provable.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "each individual proposer ends up with the best stable partner",
+   "reasoning": "SOURCE states best for proposers, worst for receivers, provably extreme."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "Better outcomes come from proposing versus receiving, not talent or luck.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "nothing to do with talent, luck",
+   "reasoning": "SOURCE explicitly excludes talent and luck."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Most real situations share proposer-receiver structure without running exact algorithm.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "most real-world situations don't follow the exact Gale-Shapley algorithm",
+   "reasoning": "SOURCE states real cases share the structure but not the exact algorithm."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Receiver quiz: Netflix scroll, displayed phones, posted jobs, proximity friendships.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "scroll through recommendations until something looked good enough",
+   "reasoning": "All four examples appear in SOURCE with the same receiver framing."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Most of us mostly receive, choosing from presented rather than pursuing wanted.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "For most of these, most of us are receivers.",
+   "reasoning": "SOURCE states most of us are receivers choosing from presented options."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Receiving yields acceptable outcomes that quietly fall short of best.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "You get acceptable ones. Good enough ones.",
+   "reasoning": "SOURCE contrasts acceptable outcomes with what would serve you best."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Informal proposer-receiver structures systematically favor whoever proposes.",
+   "claim_type": "causal_link",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "the outcomes tend to favor whoever's doing the proposing",
+   "reasoning": "SOURCE hedges with 'tend to'; loglog states it as absolute systematic fact."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Comfortable outcomes block revolt; system stays stable by never screwing badly.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "doesn't screw you badly enough to make you revolt",
+   "reasoning": "SOURCE says stability arises because outcomes are not bad enough to revolt."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Without practicing specific wanting, people cannot know what they miss.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "You don't even know what you're missing, because you've never practiced wanting something specific",
+   "reasoning": "SOURCE directly states the causal link."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Proposing needs intention, but intention develops through proposing.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "You need intention to propose, but you develop intention through proposing.",
+   "reasoning": "Matches SOURCE's chicken-and-egg statement."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Presented choices reveal least-disliked option, not what anyone would pursue freely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "reveal which option you dislike least among what's available",
+   "reasoning": "SOURCE states choices reveal least-disliked, not freely pursued wants."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "The trap: intention is prerequisite and product of proposing.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "This is the trap. You need intention to propose, but you develop intention through proposing.",
+   "reasoning": "SOURCE labels this the trap with both directions."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Algorithm-fed songs and swiped partners may be reactions mistaken for preferences.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "preferences\" are just reactions to what gets put in front of them",
+   "reasoning": "SOURCE makes the same point using music and dating examples."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Intention muscle builds progressively from small exercises upward.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The muscle of intention and initiative builds progressively.",
+   "reasoning": "Matches SOURCE's progression claim."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Tonight decide the feeling wanted, then seek it without scrolling recommendations.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Don't open Netflix and see what it suggests.",
+   "reasoning": "SOURCE gives the same tonight exercise and warnings."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Repeated practice surfaces patterns that become preferences then values.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Those patterns become preferences. Those preferences become values.",
+   "reasoning": "SOURCE states the exact chain."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Values come from practice, not from thought alone.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "You can't think your way into values. You have to practice your way into them.",
+   "reasoning": "Matches SOURCE verbatim in meaning."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Major decisions mostly evaluate presented options, mistaking receipt for agency.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "This feels like agency because you're choosing. But you're choosing as a receiver",
+   "reasoning": "SOURCE says most evaluate presented options while feeling agency."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Intentional seekers of work, partners, cities gain systematically better outcomes.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "those people end up with systematically better outcomes",
+   "reasoning": "SOURCE lists the same three domains and outcome."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Advantage comes from structural side, not superior smarts or luck.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Not because they're smarter or luckier.",
+   "reasoning": "SOURCE explicitly denies smarter or luckier."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Receiver majorities let systems optimize for proposers instead of users.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "When most people are receivers, entire systems shift to optimize for whoever's doing the proposing.",
+   "reasoning": "Matches SOURCE's collective effect claim."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Products, dating apps, feeds maximize engagement over genuine need or compatibility.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "they optimize for engagement among available profiles",
+   "reasoning": "All three platform examples match SOURCE."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Platforms take optimal outcomes while users get participation-sustaining good-enough.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "good enough to keep you participating, but not actually serving your best interests",
+   "reasoning": "Matches SOURCE's platform versus user outcome split."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Leaving feels harder than accepting; stability means resistance to change.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "That's stability (resistance to change). That's why the system persists.",
+   "reasoning": "Matches SOURCE verbatim."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Understanding disadvantage changes nothing without switching to proposing.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "doesn't go away because you understand it. You have to actually switch positions.",
+   "reasoning": "Matches SOURCE's breaking-out claim."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Proposing means deciding first, pursuing specifics, creating chances, accepting friction.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Being willing to create opportunities rather than waiting for them",
+   "reasoning": "All four bullet points derive from SOURCE's list."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Ask what is wanted before every decision, then act despite inconvenience.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "before every major decision and most minor ones",
+   "reasoning": "Matches SOURCE including the inconvenience clause."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Most refuse the effort; comfort plus atrophied wanting keeps receivers receiving.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Most people won't do this. It's effortful.",
+   "reasoning": "SOURCE states most won't, comfort suffices, and capacity is lost."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "Shifters gain structurally better outcomes even outside exact mathematics.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Systematically better. Not just incrementally—structurally.",
+   "reasoning": "Matches SOURCE's claim for those who shift."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "Dynamic existence is settled; only willingness to act remains open.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The question is whether you're willing to do something about it.",
+   "reasoning": "SOURCE frames existence as settled and willingness as the open question."
+  }
+ ],
+ "metrics": {
+  "total_claims": 33,
+  "supported": 32,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9697
+ },
+ "fail_list": [
+  "C10 Partially supported: SOURCE hedges 'tend to favor' but loglog asserts absolute systematic favoring"
+ ]
+}

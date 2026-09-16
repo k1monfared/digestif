@@ -1,0 +1,91 @@
+{
+ "sample": "09_not_even_wrong",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Beyond tribal thinking: the closing case for critical tools and shared standards.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "## Beyond Tribal Thinking\nThe challenge isn't about being \"for\" or \"against\" any particular business leader, politician, or public figure. Rather, it's about developing the intellectual tools to engage critically with their claims while still appreciating genuine innovations or valuable ideas they may offer."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Not for or against any figure: the challenge is developing tools to engage critically while appreciating innovations they may offer.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "## Beyond Tribal Thinking\nThe challenge isn't about being \"for\" or \"against\" any particular business leader, politician, or public figure. Rather, it's about developing the intellectual tools to engage critically with their claims while still appreciating genuine innovations or valuable ideas they may offer."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Recognize that financial and emotional investment can cloud judgment and consciously separate claim evaluation from support or opposition.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "This means recognizing how financial and emotional investment can cloud judgment, and consciously working to separate the evaluation of specific claims from overall support or opposition to a person or organization."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Evaluating claims independently of investments and affiliations may be one of the most important skills, navigating between blind acceptance and reflexive rejection.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "In a world increasingly divided into tribal identities, the ability to evaluate claims independently of our investments and affiliations may be one of the most important skills we can cultivate. It allows us to navigate between blind acceptance and reflexive rejection, finding a path that honors both innovation and intellectual integrity."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Healthy societies, like scientific fields, need shared standards; balancing openness with evidence is perhaps the central challenge.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "The parallel between mathematical rigor and public discourse highlights that healthy societies, like healthy scientific fields, need shared standards for evaluating claims. Finding the balance between openness to new ideas and demanding appropriate evidence is perhaps the central challenge of our current information age."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "We might sympathize with Atiyah's attempt while valuing the community's commitment to rigorous standards, our best hope across domains.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "While we might sympathize with Michael Atiyah's final ambitious attempt to solve a famous mathematical problem, we can also appreciate the importance of the mathematical community's commitment to rigorous standards of proof. This same commitment to intellectual integrity, adapted to different domains, offers our best hope for navigating a world full of compelling but unverifiable claims."
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Calling Bullshit addresses statements directly, narrow in focus but broadly applicable; Surveillance Capitalism covers narrative-steering and belief formation indirectly.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Two books come to mind:\n1. [Calling Bullshit](https://www.callingbullshit.org/): The Art of Skepticism in a Data-Driven World, by Carl Bergstrom and Jevin West.\n   - this is directly about how to understand statements that people make. While the focus of the book is somewhat narrow, it does apply to a very broad range of situations.\n2. [The Age of Surveillance Capitalism](https://www.harvard.com/book/9781541758001): The Fight for a Human Future at the New Frontier of Power, by Shoshana Zuboff\n   - This one doesn't directly talk to this topic, but goes very deep in how certain companies are strealing the narrative and forming our believes."
+    }
+   ]
+  }
+ ]
+}

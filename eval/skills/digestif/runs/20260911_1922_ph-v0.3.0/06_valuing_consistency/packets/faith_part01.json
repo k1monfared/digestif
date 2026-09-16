@@ -1,0 +1,411 @@
+{
+ "sample": "06_valuing_consistency",
+ "part": 1,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Valuing consistency means judging hidden anchor processes, not surface behavior.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "The author keeps reaching for the word consistency to describe behavior, finds it vaguer than liked, and attaches moral value to it: sometimes a compliment, sometimes an accusation. The post pins down what the concept actually means."
+    },
+    {
+     "ref": "¶22",
+     "text": "Verdict: consistency of behavior was never the admired thing, only a bad proxy for process (anchor, responsiveness, evidence vs cost). Stories afterward are mostly unfalsifiable; the only trusted question is asked in advance: what will you do when it changes, and why?"
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Consistency is vague yet morally loaded: compliment and accusation at once.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "The author keeps reaching for the word consistency to describe behavior, finds it vaguer than liked, and attaches moral value to it: sometimes a compliment, sometimes an accusation. The post pins down what the concept actually means."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Mini skirts to chador after 1979 versus steady modesty across the revolution.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "The mom's story: before the 1979 revolution in Iran, someone she knew wore mini skirts all the time, then switched to chador and niqab right after. Others dressed modestly before and after, changing only slightly."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Updating beliefs is a virtue, so the swing itself cannot carry the moral weight.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Instinct reads the first woman's swing as moral failure and steadiness as integrity; yet a cynic calls her cunning and the others slow. Updating beliefs is agreed a virtue, nobody should be stoneheaded. So the swing itself can't carry the judgment."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Openness from -1 to 1; society at -0.5 and 0.5; modest woman at -0.1 and 0.1.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Toy model: clothing openness on a scale from -1 (fully closed) to 1 (fully open); society's average at -0.5 closed and 0.5 open; the modest woman observed at -0.1 and 0.1, a slight but nonzero change."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Behavior is w times Reference plus (1-w) times Anchor; modest anchor 0, w 0.2.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Behavior = w x Reference + (1-w) x Anchor. Two observations, two equations; adding gives anchor a = 0, subtracting gives responsiveness w = 0.2. Her behavior is exactly 0.2 x Reference: neutral anchor, fixed twenty percent concession."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Output moved (-0.1, 0.1) while the rule never did: fixed twenty percent concession.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "Her output moved (-0.1 then 0.1, no fixed value) while her rule never did: same anchor, same responsiveness. An unusually stable person conceding a fixed fraction under pressure."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Model is a linear combination; economists might call anchor endogenous, reference exogenous.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "PS1: anchor closer to or farther from the reference deliberately unexplored for lack of meaningful examples. PS2: economists might call the anchor endogenous and the reference exogenous; the model is a linear convex combination, with coefficient allowed outside 0 to 1, enabling the amplifier."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Chameleon at 0.9 and -0.9 yields anchor 0, w 1.8: overshoot by eighty percent.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "The chameleon: 0.9 when society is 0.5, -0.9 when society is -0.5. Anchor again 0, responsiveness w = 1.8: she amplifies, overshooting by eighty percent. Her rule is exactly as consistent as the modest woman's; the difference is what the rule says."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Her rule is exactly as consistent as the modest woman's; only content differs.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "The chameleon: 0.9 when society is 0.5, -0.9 when society is -0.5. Anchor again 0, responsiveness w = 1.8: she amplifies, overshooting by eighty percent. Her rule is exactly as consistent as the modest woman's; the difference is what the rule says."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Consistency splits three ways: output, policy (anchor plus responsiveness), anchor itself.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Consistency splits three ways: output (did behavior stay same), policy (did the rule stay same), anchor (did the fixed point stay fixed). Policy can hold while the anchor drifts invisibly in small steps; that drift is where the moral weight lives."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Policy can hold while the anchor drifts invisibly; drift carries the moral weight.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Consistency splits three ways: output (did behavior stay same), policy (did the rule stay same), anchor (did the fixed point stay fixed). Policy can hold while the anchor drifts invisibly in small steps; that drift is where the moral weight lives."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Contrarian at 0.2 and -0.2 yields anchor 0, w -0.4: same model, flipped sign.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "The contrarian: 0.2 when the average is -0.5, -0.2 when it is 0.5. Anchor 0, responsiveness -0.4: same model, sign flipped, magnitude doubled. Contrarianism is dependency with a minus sign, more dependent in absolute terms than the modest woman."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Contrarianism is dependency with a minus sign, tracking the reference closely.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "The contrarian: 0.2 when the average is -0.5, -0.2 when it is 0.5. Anchor 0, responsiveness -0.4: same model, sign flipped, magnitude doubled. Contrarianism is dependency with a minus sign, more dependent in absolute terms than the modest woman."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Spectrum: above 1 amplifier; 1 absolute conformist; 0 to 1 partial; 0 independent.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Spectrum of responsiveness w: above 1 amplifier (overshoots, the chameleon); 1 absolute conformist (anchor drops out); between 0 and 1 partial conformist (the modest woman); 0 independent (ignores reference); between -1 and 0 partial contrarian; -1 absolute contrarian (maximal dependence, inverted). Below -1 sits a contrarian overshooter, an extremist rebel?"
+    }
+   ]
+  },
+  {
+   "id": "4.2.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "-1 to 0 partial contrarian; -1 absolute contrarian; below -1 overshooting rebel, perhaps.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Spectrum of responsiveness w: above 1 amplifier (overshoots, the chameleon); 1 absolute conformist (anchor drops out); between 0 and 1 partial conformist (the modest woman); 0 independent (ignores reference); between -1 and 0 partial contrarian; -1 absolute contrarian (maximal dependence, inverted). Below -1 sits a contrarian overshooter, an extremist rebel?"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "High or low responsiveness is neutral until the reference kind is asked.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "High or low responsiveness is morally neutral until the reference kind is asked. A normative reference (peer pressure, fashion, approval) is something the anchor should resist. A structural reference (deadline, budget, body, risk) is something it should track. IMHO the |w| should be generally small with an educated anchor, but this is not an ideal world."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Normative references (fashion, approval) merit resistance; structural ones (budget, body) tracking.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "High or low responsiveness is morally neutral until the reference kind is asked. A normative reference (peer pressure, fashion, approval) is something the anchor should resist. A structural reference (deadline, budget, body, risk) is something it should track. IMHO the |w| should be generally small with an educated anchor, but this is not an ideal world."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "IMHO |w| should be generally small with an educated anchor; this world is less than ideal.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "High or low responsiveness is morally neutral until the reference kind is asked. A normative reference (peer pressure, fashion, approval) is something the anchor should resist. A structural reference (deadline, budget, body, risk) is something it should track. IMHO the |w| should be generally small with an educated anchor, but this is not an ideal world."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Equity rule 110 minus age: about 85% stocks at 25, about 50% at 60.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Retirement rule of thumb: equity allocation roughly 110 minus age, about 85% stocks at 25, about 50% at 60. An investor staying at 85% equities at 65 because 'I've always been aggressive' shows refusal, not conviction."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Staying 85% equities at 65 from lifelong aggression is refusal, not conviction.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Retirement rule of thumb: equity allocation roughly 110 minus age, about 85% stocks at 25, about 50% at 60. An investor staying at 85% equities at 65 because 'I've always been aggressive' shows refusal, not conviction."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Same moving form, opposite verdicts: the verdict depends entirely on reference kind.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "The clothing conformist and the lifecycle investor look alike but are morally opposite; holding fixed reads as integrity in clothing and ossification in investing. Same form, opposite verdict: the verdict depends entirely on the reference kind."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Evidence versus cost crossed with anchor moved or held yields four cells.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "Two forces (evidence vs cost of expression) crossed with anchor moved vs held give four cells: evidence+moved is rational revision (good); evidence+held is ossification (bad); cost+moved is preference laundering (bad); cost+held splits into two sub-cases."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Rational revision (evidence, moved) is good; ossification (evidence, held) is stubbornness as principle.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "Two forces (evidence vs cost of expression) crossed with anchor moved vs held give four cells: evidence+moved is rational revision (good); evidence+held is ossification (bad); cost+moved is preference laundering (bad); cost+held splits into two sub-cases."
+    },
+    {
+     "ref": "¶15",
+     "text": "Rational revision: the world showed something true. Ossification: evidence moved, anchor refused, stubbornness as principle. Preference laundering: social proof laundered into unexamined belief. Anchor held: revealed preference (behavior snaps to anchor once cost drops; swing was suppression) vs hysteresis (behavior never snaps back; installed fear runs on)."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Preference laundering dresses social proof as re-examined belief.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Rational revision: the world showed something true. Ossification: evidence moved, anchor refused, stubbornness as principle. Preference laundering: social proof laundered into unexamined belief. Anchor held: revealed preference (behavior snaps to anchor once cost drops; swing was suppression) vs hysteresis (behavior never snaps back; installed fear runs on)."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Anchor held under cost change splits into revealed preference versus hysteresis.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Rational revision: the world showed something true. Ossification: evidence moved, anchor refused, stubbornness as principle. Preference laundering: social proof laundered into unexamined belief. Anchor held: revealed preference (behavior snaps to anchor once cost drops; swing was suppression) vs hysteresis (behavior never snaps back; installed fear runs on)."
+    }
+   ]
+  },
+  {
+   "id": "6.3.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Revealed preference: behavior snaps to anchor once cost drops; swing was suppression.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Rational revision: the world showed something true. Ossification: evidence moved, anchor refused, stubbornness as principle. Preference laundering: social proof laundered into unexamined belief. Anchor held: revealed preference (behavior snaps to anchor once cost drops; swing was suppression) vs hysteresis (behavior never snaps back; installed fear runs on)."
+    }
+   ]
+  },
+  {
+   "id": "6.3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Hysteresis: behavior never snaps back; installed fear runs on its own.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Rational revision: the world showed something true. Ossification: evidence moved, anchor refused, stubbornness as principle. Preference laundering: social proof laundered into unexamined belief. Anchor held: revealed preference (behavior snaps to anchor once cost drops; swing was suppression) vs hysteresis (behavior never snaps back; installed fear runs on)."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Anchor nearer or farther from reference deliberately unexplored for lack of examples.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "PS1: anchor closer to or farther from the reference deliberately unexplored for lack of meaningful examples. PS2: economists might call the anchor endogenous and the reference exogenous; the model is a linear convex combination, with coefficient allowed outside 0 to 1, enabling the amplifier."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Perspective gain: grasp of a static reference can move, then overturn again.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Evidence-driven movement needs no moving reference: grasp of static tax law can grow, then overturn again on second pass (perspective gain). Rational revision and preference laundering can produce an identical new anchor. From outside they are indistinguishable. Often from inside too."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Revision and laundering can reach an identical anchor; Often indistinguishable even inside.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Evidence-driven movement needs no moving reference: grasp of static tax law can grow, then overturn again on second pass (perspective gain). Rational revision and preference laundering can produce an identical new anchor. From outside they are indistinguishable. Often from inside too."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Socialist at 20, still socialist at 40: revision and laundering share one trajectory.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Aphorism: no heart if not socialist at 20, no head if still socialist at 40. Offered as evidence (taxes, hiring, saving), structurally lifecycle investing. But aging also adds assets to protect: preference laundering with extra steps. Both yield 'I used to be naive'; nothing about the shift tells which occurred."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "I used to be naive fits both; nothing about the shift reveals which occurred.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Aphorism: no heart if not socialist at 20, no head if still socialist at 40. Offered as evidence (taxes, hiring, saving), structurally lifecycle investing. But aging also adds assets to protect: preference laundering with extra steps. Both yield 'I used to be naive'; nothing about the shift tells which occurred."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3865 @@
+{
+ "meta": {
+  "title": "The Case for Complete Government Transparency",
+  "source": "02_case_for_transparent_government/source.txt",
+  "passages": {
+   "¶1": "---\ntags: politics, philosophy\n---\n# The Case for Complete Government Transparency\n\n[ Note: this is a thought very much under construction and will be updated frequently! Feedback and criticism are mor than welcome :) ]\n\n## The Employee Who Refused to Report\n\nImagine you own a company. One day, you ask a senior manager how they decided to spend a million dollars of the company's budget. They look you in the eye and say: \"I'm not going to tell you. If you know how I make these decisions, I lose my leverage.\"",
+   "¶2": "What would you do?\n\nYou'd take them to court. You'd force disclosure. You'd fire them.\n\nNow think about your government. You fund it with your taxes. You live with the consequences of its decisions. Your children inherit whatever it builds or breaks. And when you ask how a decision was made - what data was used, who was involved, what alternatives were considered - you're told it's classified. It's a matter of national security. It would compromise ongoing operations. It would slow things down.",
+   "¶3": "You accept this. But should you?\n\n## The Proposition\n\nHere's a radical-sounding idea that is actually just logic: every government decision should be fully documented and publicly available. Not just the final policy, but the entire chain:\n\n- What data was used\n- What considerations were made\n- Who was involved\n- What alternatives were considered\n- What were the arguments for and against\n- How it will be implemented\n- How it will be evaluated\n- What the course-correction plans are\n- When and how it will be reconsidered, and what it takes to change it",
+   "¶4": "This isn't radical. This is what any competent board of directors expects from the executives they hire. It's what any CEO expects from their management chain. It's basic accountability.\n\nThe only thing that makes it sound radical is that we've normalized the opposite.\n\n## You Are the CEO\n\nIn a democracy, you are not a subject being governed. You are the principal in a principal-agent relationship. Every public servant, from the clerk at your local licensing office to the president, is an agent working on your behalf. They spend your money. They make decisions that shape your life. They are your employees.",
+   "¶5": "Think about how a company works. Information flows upward through the chain of command. The CEO doesn't read every email. But they *could*. And that knowledge - that anything could be reviewed at any time - shapes behavior. When something goes wrong, you can trace back through the full chain. Accountability exists because the trail exists.\n\nNow imagine a company where middle managers could classify their emails. Where department heads could declare their meetings \"a matter of corporate security.\" Where any employee could refuse to explain a decision by saying \"it would compromise our competitive position.\" That company would be bankrupt within a year, eaten alive by internal corruption and incompetence that nobody could see, let alone fix.",
+   "¶6": "That's how your government operates.\n\nThe distinction between \"availability\" and \"consumption\" is crucial here. You, as CEO of your country, don't need to read every email. You don't need to attend every meeting. But you need to know that if something matters to you - if a decision affects your community, your livelihood, your children's future - you *can* trace it back. You can see who decided what, and why.\n\n## What This Is Not\n\nBefore going further, let's be precise about what \"government transparency\" means here, because there's a confusion that derails this conversation every time.",
+   "¶7": "**This is about**: Government decisions being visible to citizens. Government processes being traceable by citizens. Government officials being accountable to citizens.\n\n**This is NOT about**: Your tax returns being visible to your neighbor. Your medical records being public. Citizens surveilling each other.\n\nThe direction matters. The CEO sees employee work product. The CEO does not publish employees' medical records to angry customers. When we say \"transparent government,\" we mean the government's decisions, data, and processes flow *to* citizens. Not the other way around.",
+   "¶8": "Here's a concrete example. Fiscal transparency means: \"The government collected $X billion in taxes and spent it as follows: $Y on healthcare, $Z on defense, $W on infrastructure.\" It does *not* mean: \"John Smith paid $47,000 in taxes last year.\" You can have complete government spending transparency without exposing a single citizen's personal financial data. Privacy-preserving approaches - aggregate data, anonymization, differential privacy - make this technically straightforward.",
+   "¶9": "## The World Already Has Pieces of This\n\nYou might think this is pure theory. It isn't. Pieces of this system already exist around the world. No country has achieved anything close to complete transparency, but several have gone far enough to prove it works.\n\n### Sweden: 260 Years and Counting\n\nIn 1766, Sweden passed the [Freedom of the Press Act](https://www.britannica.com/topic/Freedom-of-the-Press-Act-of-1766) - the world's first freedom of information law. It abolished censorship and granted citizens the right to access government documents. It's now part of the Swedish constitution.",
+   "¶10": "This wasn't born from idealism. It was born from political conflict. The aristocratic \"Hats\" party had held power for decades, and the opposition \"Caps\" saw that accountability required visibility. Anders Chydenius, a Finnish-Swedish priest and politician, drove the legislation through parliament. The motivation was explicitly anti-corruption.\n\nTwo hundred and sixty years later, Sweden still operates under this principle. It's called *offentlighetsprincipen* - the principle of public access. Government documents are public by default. The country has not collapsed. Its government functions. In fact, Nordic countries [consistently rank](https://nordics.info/show/artikel/open-government) among the least corrupt and most effective democracies in the world.",
+   "¶11": "### South Korea: Making Bribery Impossible (1999)\n\nIn 1999, Seoul launched the [OPEN system](https://seoulsolution.kr/en/content/e-government-seoul-opens-new-chapter-transparency-efficiency-and-public-participation) (Online Procedures Enhancement for civil applications). It tracks 70 municipal tasks most prone to corruption - construction permits, environmental regulation, urban planning - and shows citizens exactly who made what decision, at which point in the process, in real time.",
+   "¶12": "Before OPEN, applicants for government permits couldn't see how their applications were processed. This opacity enabled bribery: officials could demand payments to \"move things along\" and nobody could prove it. Making the process visible eliminated that leverage entirely.\n\n[Research confirmed](https://www.sciencedirect.com/science/article/abs/pii/S0740624X08001172) what common sense suggests: \"corruption decreases as e-participation increases.\" The system was recognized by the UN, OECD, and World Bank.",
+   "¶13": "### Estonia: The Infrastructure Proof (2001)\n\nIf your objection is \"this can't scale,\" look at [Estonia's X-Road](https://e-estonia.com/solutions/interoperability-services/x-road/). It's a distributed data exchange layer connecting 929+ institutions, 1,887 information systems, and 3,000+ digital services. Every transaction is timestamped and cryptographically signed. All data access is logged. Citizens can see who accessed their data and why.\n\nEstonia now ranks [2nd in the UN E-Government Development Index](https://frostandsullivaninstitute.org/why-estonia-is-europes-digital-powerhouse-a-study-in-e-governance-transformation/). The system has had no major security breaches in over 20 years, despite constant cyber attacks. It's open source (MIT license) and deployed in 20+ countries.",
+   "¶14": "X-Road proves the \"every email available up the chain\" infrastructure is technically feasible. The technology is not the bottleneck. The will is.\n\n### Brazil: Following the Money (2004)\n\nBrazil's [Transparency Portal](https://odimpact.org/case-brazils-open-budget-transparency-portal.html) publishes all federal spending: contracts, transfers, salaries, travel expenses, and government credit card transactions. It receives over [20 million accesses per year](https://oecd-opsi.org/innovations/brazilian-transparency-policy-and-the-transparency-portal/).",
+   "¶15": "More recently, the [Transparency Card](https://gijn.org/stories/60-gb-of-data-27-years-of-hidden-payments-how-brazils-journalists-used-foia-to-reveal-pension-payments/) sends real-time notifications to citizens about political spending - over 430,000 active cards, 20+ million notifications sent. When journalists used Brazil's Access to Information Law to investigate, they uncovered 60GB of hidden pension payment data going back 27 years.\n\nThis is what happens when you give citizens the tools to be CEOs: they find the fraud.",
+   "¶16": "### New Zealand: Cabinet Papers by Default (2019)\n\nSince 2019, New Zealand has [proactively published](https://www.publicservice.govt.nz/guidance/official-information/proactive-release) all Cabinet papers and minutes online within 30 business days of decisions being made. This is significant because cabinet deliberations are typically the most protected category of government information anywhere in the world. New Zealand publishes them by [default](https://www.dpmc.govt.nz/publications/proactive-release-cabinet-material).",
+   "¶17": "The government has not ground to a halt. Ministers have not stopped deliberating. What has changed is that citizens can see *why* their government made the decisions it made.\n\n### Taiwan: What Happens When Citizens Can See\n\nTaiwan's [vTaiwan platform](https://www.technologyreview.com/2018/08/21/240284/the-simple-but-ingenious-system-taiwan-uses-to-crowdsource-its-laws/) uses Pol.is to let citizens participate in policy deliberation. People submit statements on issues, others vote agree or disagree (no replies allowed - this prevents flame wars), and an algorithm [surfaces statements that find cross-group consensus](https://www.radicalxchange.org/updates/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf) rather than divisive ones.",
+   "¶18": "By 2018, 26 issues had been processed, and 80% led to government action. This isn't core transparency - it's what becomes possible *downstream* of transparency. When citizens can see decisions being made, they can meaningfully participate in making them.\n\n## When Secret Oversight Fails: The Pattern\n\nThis is not a one-time occurrence. There is a recurring pattern in which government programs, shielded by secrecy, are later revealed to be illegal or built on lies - and the internal oversight mechanisms that were supposed to catch them failed because they operated inside the same secrecy bubble.",
+   "¶19": "In 1971, the Pentagon Papers revealed that the US government knew the Vietnam War was unwinnable while publicly claiming progress. In the same year, activists broke into an FBI office in Media, Pennsylvania, and exposed [COINTELPRO](https://www.britannica.com/topic/COINTELPRO) - a program of illegal surveillance, infiltration, and disruption targeting civil rights leaders and political dissidents. In 2013, Edward Snowden leaked classified documents revealing the NSA was bulk-collecting phone metadata from millions of Americans, accessing data from major tech companies through PRISM, and surveilling foreign leaders.",
+   "¶20": "In each case, the government predicted catastrophe from disclosure. In each case, the programs turned out to be illegal, unconstitutional, or based on deliberate deception of the public.\n\n**The legality question is settled:**\n\nIn September 2020, the [US Ninth Circuit Court of Appeals ruled](https://techcrunch.com/2020/09/03/nsa-bulk-records-appeals-illegal/) that the NSA's bulk phone record collection was illegal and possibly unconstitutional. The court held the government failed to satisfy FISA's requirement to show \"relevance to a particular authorized investigation.\" The government's own review panel member, Geoffrey R. Stone, found \"no evidence that the bulk collection of phone data had stopped any terror attacks.\" The NSA itself reportedly abandoned the program in 2018, telling the White House it \"no longer made sense.\"",
+   "¶21": "**The oversight question is more important:**\n\nWhy didn't internal mechanisms catch these programs? The FISA court, congressional intelligence committees, and inspectors general all existed. They failed because they operated inside the secrecy structure they were supposed to oversee. Oversight that is itself secret is oversight that can be captured, co-opted, or simply worn down by institutional pressure. This is the structural argument for transparency: not that any single disclosure was costless, but that secret oversight reliably fails to prevent illegal secret programs.",
+   "¶22": "**What citizens gained from disclosure:**\n\nThe [USA FREEDOM Act](https://www.eff.org/deeplinks/2023/05/10-years-after-snowden-some-things-are-better-some-were-still-fighting) (2015) became the first legislation to rein in NSA spying in over 30 years. It ended bulk collection of phone metadata and required the Foreign Intelligence Surveillance Court to release significant opinions. The tech sector adopted transparency reporting on government data requests. HTTPS encryption became the default on most websites. The EU's [GDPR](https://iapp.org/news/a/the-snowden-disclosures-10-years-on) was accelerated by the revelations.",
+   "¶23": "Whether these disclosures caused operational harm is genuinely uncertain - the full impact on intelligence sources and methods cannot be publicly assessed. But the legality question is not uncertain. The programs were illegal. The internal oversight failed. The only correction came from outside the secrecy bubble.\n\nThe CEO framing lesson is not that whistleblower leaks are the model. It's that they are what happens *in the absence of* a model. Snowden is not the solution. Snowden is the symptom of a system where the only alternative to permanent secrecy is uncontrolled disclosure. Designed-in transparency - where citizens can trace decisions by default - would have made the illegal programs visible before they scaled, without the collateral damage of a bulk leak.",
+   "¶24": "## \"But What About...\"\n\nEvery time you propose complete government transparency, you hear objections. Some come from officials protecting their power. But some come from citizens with genuine concerns. These deserve honest engagement.\n\n### \"My Privacy Will Be Violated\"\n\nThis is the most common objection, and it's based on a confusion about direction.\n\nA [2019 Pew Research survey](https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/) found that 66% of Americans are concerned about government data collection, and 64% are concerned about how the government uses their data. Only 6% are \"very confident\" that government agencies can keep their records private. In an earlier [2000 ABC News poll](https://ropercenter.cornell.edu/blog/public-and-its-right-know), 86% said government agencies should *not* make public records like driving records, marriage records, and court cases available online.",
+   "¶25": "But notice what these polls are measuring: fear about *citizen data* held by government. Not fear about *government decisions* being visible to citizens. These are completely different things.\n\nWhen you demand that your government explain how it spent your tax money, you're not asking for your neighbor's medical records. You're asking what your employees did with your money. The CEO reviewing quarterly reports is not the same as the CEO publishing employee health records.",
+   "¶26": "Government transparency means: \"Here is how we decided to allocate $50 million in infrastructure spending.\" It does not mean: \"Here is the personal information of every citizen who lives near the proposed highway.\" Privacy-preserving approaches - aggregate reporting, anonymization, differential privacy - make this distinction technically trivial.\n\nThe confusion is understandable because governments have historically bundled citizen data with government data in the same records systems. But the solution is to separate them, not to keep everything secret.",
+   "¶27": "### \"The Government Will Grind to a Halt\"\n\nThe fear here is that if every action is public, deliberation becomes impossible. Officials will be afraid to propose ideas. Processes will be paralyzed.\n\nThere's some academic grounding for this concern. A [Cambridge study of EU Council negotiations](https://www.cambridge.org/core/journals/european-political-science-review/article/abs/transparency-actually-how-transparency-affects-public-perceptions-of-political-decisionmaking/F613E34D34427A44EF6EF57C42B6EE2B) found tension between transparent deliberation and efficient decision-making. An [IMF analysis](https://blog-pfm.imf.org/en/pfmblog/2025/05/the-hidden-strength-of-government-inefficiency) even argued that government \"is not a sports car - it's a fortress\" and that \"friction forces accountability\" and \"catches errors before they cause harm.\" (The IMF cites Australia's Robodebt scheme as a cautionary tale of what happens when you remove checks in the name of efficiency: 470,000 incorrect debt notices and a $1.8 billion settlement.)",
+   "¶28": "But this concern confuses two things: the speed of decision-making and the documentation of decision-making.\n\nTransparency does not require changing the speed at which government operates. It requires documenting what happens at the current speed. The CEO doesn't demand employees work slower. The CEO demands employees document their work. If documentation is burdensome, you improve the documentation systems - you don't abandon accountability.\n\nNew Zealand publishes cabinet papers within 30 days. Their government hasn't ground to a halt. The deliberation still happens. The decisions still get made. What changes is that citizens can verify whether the reasoning was sound.",
+   "¶29": "Moreover, opacity doesn't make decisions *better* - it just makes them *unaccountable*. Without transparency, decisions can drift without coherent direction. Nobody notices the random walk because nobody can see the path. Transparency creates pressure for logical consistency, which in the long run actually *improves* decision-making speed by preventing costly reversals and the accumulation of contradictory policies.\n\n### \"Diplomacy Requires Secrecy\"\n\nThis is the most legitimate concern, and it deserves nuance.",
+   "¶30": "The [Iran Nuclear Deal](https://www.hks.harvard.edu/faculty-research/policy-topics/international-relations-security/explainer-how-united-states-has) (JCPOA) negotiations began in 2012 with a secret backchannel. Jake Sullivan secretly traveled to Oman for undercover meetings between the US and Iran. Only after the secret negotiations established a framework did they transition into public negotiations. The Camp David Accords (1978) similarly required private space for compromise. Cold War backchannels between the US and Soviet Union helped manage rivalry and avoid direct confrontation.",
+   "¶31": "Academic [research in international relations](https://www.oxfordbibliographies.com/display/document/obo-9780199743292/obo-9780199743292-0313.xml) captures what's called the \"democratic dilemma\": \"negotiations can be flexible and successful only if they are kept secret, but they will be barren without popular consent.\"\n\nBut the CEO framing still applies, with modification. A CEO may authorize a negotiation team to keep details confidential *during* the negotiation. But the CEO expects full disclosure once it concludes. The CEO expects to know: what was offered, what was conceded, why, what alternatives were considered.",
+   "¶32": "The same logic applies to citizens. *Temporary operational secrecy during active negotiations* may be acceptable. *Permanent secrecy about what was decided and why* is not. The key principle is time-delayed transparency:\n\n- Negotiations kept confidential during active phase\n- Full documentation released after conclusion (e.g., 30-90 days)\n- Citizens can evaluate whether negotiators served their interests\n- Future negotiators are accountable for their decisions",
+   "¶33": "The \"other countries won't deal with us\" argument proves too much. It could justify any level of secrecy. It makes citizens' oversight contingent on foreign governments' preferences. But foreign governments are not the principals here. You are.\n\n### \"Special Interests Will Benefit More Than Ordinary Citizens\"\n\nThis is an empirically grounded concern that you should take seriously.\n\n[Research by Jeff Harden (University of Notre Dame) and Justin Kirkland (University of Virginia)](https://news.nd.edu/news/research-shows-government-transparency-benefits-special-interest-groups-not-citizenry/), published in their book [*The Illusion of Accountability*](https://www.cambridge.org/core/books/illusion-of-accountability/B0501020388952B14FBF56A0D28EB12D) (Cambridge University Press), studied all 50 US state legislatures over multiple decades. They compared states with open versus closed legislative meetings, using survey data on policy preferences versus actual policy outcomes.",
+   "¶34": "Their findings are uncomfortable: more lobbying groups register in states with open meetings. Lobbyists donate more to incumbents. And public policy's correlation with public opinion is *the same* whether meetings are open or closed. As Harden put it: \"The laws don't make citizen representation better, they make it better for interest groups, which aren't representative of the general public.\"\n\nPrinceton's Douglas Arnold (1990) observed the same dynamic: \"Open markup sessions often give organized interests a powerful advantage over inattentive citizens.\"",
+   "¶35": "A [2024 survey experiment in Ireland](https://link.springer.com/article/10.1057/s41309-024-00201-1) with 569 participants found that citizens exposed to lobbying information don't develop more positive evaluations of trust in the political process.\n\nSo is transparency counterproductive? No. But the finding is crucial: the *asymmetry* is the problem. Lobbyists are paid to monitor government. They have professional staff, legal expertise, and organizational capacity. Citizens have jobs, families, and finite attention.",
+   "¶36": "But the answer is not less information - it's building citizen capacity to use information. If the CEO can't monitor everything personally, they hire auditors, create oversight committees, delegate monitoring to trusted intermediaries. Citizens can do the same: fund watchdog organizations, support investigative journalism, build civic technology. Brazil's Fiquem Sabendo files 2,000-3,000 FOI requests per year on behalf of citizens. That's the model: professional citizen-interest monitoring.",
+   "¶37": "Harden and Kirkland themselves concluded: \"the real key to quality representation is a robust and competitive electoral environment.\" Transparency alone is insufficient. But it's a necessary condition. Opacity *guarantees* no accountability. Transparency at least makes accountability *possible*.\n\nThe problem isn't that information is available. The problem is that citizens lack capacity to use it. The answer is to build capacity, not reduce information.",
+   "¶38": "### \"Public Officials Will Be Harassed\"\n\nThis concern is real, documented, and growing.\n\nThe [Brennan Center for Justice surveyed 735 local election officials](https://www.brennancenter.org/our-work/research-reports/local-election-officials-survey-may-2024) between February and March 2024 (weighted by region and jurisdiction size, margin of error ±3%). They found:\n\n- 38% experienced threats, harassment, or abuse\n- More than half are concerned about the safety of colleagues or staff\n- More than 1 in 4 worry about being assaulted at home or work\n- 34% know someone who resigned due to safety concerns (up from 22% in 2023)\n- 61% of those threatened received threats in person or by phone",
+   "¶39": "The [National Association of Attorneys General](https://www.naag.org/attorney-general-journal/the-escalating-threats-of-doxxing-and-swatting-an-analysis-of-recent-developments-and-legal-responses/) reported in 2024 that doxxing and swatting have \"evolved into sophisticated, technology-enabled tools of harassment,\" with AI and automated data scraping intensifying \"the scale, precision, and anonymity\" of attacks. Since 2022, [22 states have passed protections](https://issueone.org/solutions/protecting-americas-election-workers/) for election officials.",
+   "¶40": "This is not a trivial concern. But it requires a distinction that the numbers above actually illuminate:\n\n**Transparency of decisions** (who decided what, based on what reasoning) should be public. **Personal information of officials** (home addresses, family members, daily schedules) should be protected.\n\nIn a company, the CEO reviews what decisions employees made and why. The CEO does not publish employees' home addresses to angry customers. Accountability for work product is not the same as personal vulnerability.",
+   "¶41": "And here's the important paradox: much of the *current* harassment stems from *lack* of transparency. Election officials are harassed because of conspiracy theories about fraud. If election processes were comprehensively transparent - every audit, every chain of custody decision, every counting procedure documented and available - the conspiracy theories would have less room to grow. Judges are harassed for decisions people misunderstand. More transparency about the reasoning might reduce, not increase, the rage.",
+   "¶42": "The solution is not less transparency about decisions. It's better protection for individuals, combined with *more* transparency about processes.\n\n### \"National Security!\"\n\nThis is the objection that gets used most often and scrutinized least.\n\nThe [Chicago Council on Global Affairs](https://globalaffairs.org/research/public-opinion-survey/2022-public-attitudes-us-intelligence) surveyed Americans in 2020 and 2022 and found that roughly 60% agree the intelligence community \"plays a vital role in warning against foreign threats.\" But - crucially - a majority also agreed the IC \"could share more information with the American people without compromising effectiveness.\" And the proportion who believe the IC threatens civil liberties has been rising (from 12% in 2021 to 17% in 2022).",
+   "¶43": "The [Brennan Center for Justice](https://www.brennancenter.org/topics/government-power/transparency-oversight) states it plainly: \"federal officials and outside experts agree that far too much information is classified.\" And: \"excessive secrecy in national security policy undermines the basic functions of democratic self-government.\"\n\nThe [Stockholm International Peace Research Institute](https://www.sipri.org/node/405) (SIPRI) notes that \"transparency in military matters is generally considered essential for building trust between states\" and \"can help prevent wasteful spending.\"",
+   "¶44": "The Snowden case (detailed above) is the strongest evidence. The government predicted catastrophe. Independent research found minimal impact. The court found the programs *illegal*. The reforms improved civil liberties. The country didn't collapse.\n\nThe current system has the burden of proof backwards. Almost everything is classified by default, and citizens must prove their need for access. A citizen-CEO model would flip this: almost everything is transparent by default, and officials must prove their need for secrecy.",
+   "¶45": "For genuinely necessary operational secrecy - active military operations, ongoing intelligence operations - the CEO framing still works. The CEO may authorize temporary classification during an operation. But after it concludes, full documentation should be available. Strategy, doctrine, budget, procurement, rules of engagement should always be transparent.\n\nThe \"national security\" label is overused to hide embarrassing decisions, illegal activities (as Snowden revealed), bureaucratic incompetence, and corruption. And who decides what qualifies as \"national security\"? Currently, the officials whose decisions might be scrutinized. That's a conflict of interest. The CEO should set the criteria, not the employees.",
+   "¶46": "### \"Populists Will Weaponize Transparency\"\n\nThis is a sophisticated concern backed by real research.\n\nA [dataset by Kyle and Gultchin](https://institute.global/insights/geopolitics-and-security/populist-harm-democracy-empirical-assessment), studying populist governments in 43 democratic countries between 1990 and 2018 (leaders classified through academic journal screening, countries coded as democratic using Polity IV score ≥6), found that:\n\n- Populist governments are 4x more likely to damage democratic institutions (23% vs 6% of non-populists)\n- Countries fall an average of 5 places on Transparency International's Corruption Perceptions Index under populist rule\n- Countries starting in the top half fall an average of 11 places (Venezuela dropped 83 under Chávez)\n- Over 50% of populist leaders amended or rewrote constitutions, often extending term limits or weakening checks on power\n- Populists hold office twice as long as non-populists on average (6.5 vs 3 years)",
+   "¶47": "A [Stanford analysis](https://webapp-new.itlab.stanford.edu/transparency-hinders-politics) argues that \"when re-election hinges on immediate visibility rather than long-term strategy, leaders may opt for populist policies that garner short-term applause at the expense of policy robustness.\"\n\nIn Sweden, [research documents](https://www.researchgate.net/publication/393575451_Transparency_Against_Democracy_The_Sweden_Democrats_Radical-Right_Populism_and_Political_Trust) how the Sweden Democrats (a populist radical-right party) have \"strategically repurposed\" transparency mechanisms, using freedom of information to expose scandals and erode trust in traditional elites, while leveraging alternative media to amplify anti-elite narratives.",
+   "¶48": "These findings are real. But the causal story is backwards.\n\nThe research shows populists *damage* democracy - and they do so by *reducing* transparency, not increasing it. Countries fall on the Corruption Perceptions Index under populists. Populists weaken checks and balances. That's *opacity*, not transparency.\n\nThe Sweden Democrats case is instructive: they exploit *selective* transparency to attack opponents. They cherry-pick information. This works precisely because *not everything* is visible. In a fully transparent system, selective leaking loses its power. You can't cherry-pick when the full record is available to everyone.",
+   "¶49": "And the \"short-term thinking\" problem exists with or without transparency. Electoral cycles create short-term incentives regardless. But transparency of *reasoning* can actually counter this. If officials must document their long-term rationale, they're more likely to develop it. An unpopular decision with documented reasoning is defensible. An unpopular decision made in secret is just suspicious.\n\nThe CEO doesn't want employees to make only *popular* decisions. The CEO wants employees to make *documented* decisions with clear reasoning. If an employee makes an unpopular but wise decision with documented long-term analysis, the documentation protects them. If an employee makes a crowd-pleasing decision with bad reasoning, documentation exposes this.",
+   "¶50": "Transparency enables evaluation of *reasoning*, not just outcomes. And that's the antidote to populism, not its enabler.\n\n### \"Misinformation Makes Transparency Pointless\"\n\nA [study published in the Harvard Kennedy School Misinformation Review](https://misinforeview.hks.harvard.edu/article/hide-and-seek-the-connection-between-false-beliefs-and-perceptions-of-government-transparency/) (2023, based on a Canadian panel survey) found that people who endorse false beliefs (specifically COVID-19 related) perceive government as *less* transparent, regardless of actual transparency levels. This holds even when controlling for real transparency. And negative transparency perceptions are associated with decline in voting intentions, trust, and satisfaction with democracy.",
+   "¶51": "A [separate experimental study](https://www.sciencedirect.com/science/article/abs/pii/S0740624X20302768) found that citizens value the *idea* of transparency but may react negatively to the *content* of actual disclosures. People prefer the concept of openness to its messy reality.\n\nThese findings are real. But the conclusion drawn from them - \"so why bother?\" - doesn't follow.\n\nThe research shows: false beliefs lead to perceived non-transparency. It does *not* show: actual transparency leads to more false beliefs.",
+   "¶52": "In fact, opacity *enables* false beliefs. Conspiracy theories thrive on gaps in information. \"They must be hiding something\" reasoning fills the vacuum of secrecy. Speculation flourishes where documentation doesn't exist. Election conspiracy theories grow precisely because *some* processes remain opaque.\n\nTransparency provides ground truth. If full documentation exists, false claims can be checked against reality. Without documentation, there's no way to verify or refute anything.",
+   "¶53": "The \"latent transparency\" finding - that citizens value the *availability* of information even without consuming it - actually supports the CEO framing perfectly. The CEO doesn't read every email but values that they *could*. Availability changes behavior even without consumption. The knowledge that the record exists deters misconduct.\n\nTrust-building requires consistency over time. One-time disclosures don't build trust instantly. Persistent, comprehensive transparency creates a verifiable track record. Trust emerges when the disclosed information consistently matches reality.",
+   "¶54": "The answer isn't less transparency. It's better transparency - accompanied by accessibility, explanation, and intermediaries (journalists, civic tech, educators) who translate raw data into understanding.\n\n### \"Markets Will Be Manipulated\"\n\nIf the government is negotiating a trade deal, doesn't publishing its positions undermine the negotiation? If monetary policy is being decided, couldn't traders exploit advance knowledge?\n\nThis concern is valid but narrow. The solution isn't permanent secrecy. It's time-delayed transparency.",
+   "¶55": "This already exists. The US Federal Reserve releases FOMC minutes with a three-week delay and full transcripts with a five-year delay. The EU's failed TTIP trade negotiations actually suffered from *too much* secrecy - public backlash grew partly because citizens felt excluded from decisions that would affect their lives.\n\nThe principle is simple: all information eventually becomes public. Timing may be managed for specific categories - monetary policy (delay until implementation), trade negotiations (delay until conclusion), procurement (delay until contract award). But nothing stays secret forever.",
+   "¶56": "And consider the flip side: secrecy in procurement *enables* corruption. If bidding processes are opaque, officials can favor connected contractors with impunity. Brazil's Transparency Portal includes contract information specifically because sunlight in procurement prevents fraud.\n\n### \"Those in Power Will Never Allow This\"\n\nThis is the concern that isn't really an objection. It's a description of the political challenge.\n\n[Iceland tried](https://constitutionnet.org/news/why-making-crowd-sourced-constitution-iceland-failed). After the 2008 financial crisis, 950 randomly selected citizens identified constitutional values. A 25-person council (explicitly excluding politicians) drafted a new constitution through an open process with 3,600 public comments via social media. The draft was approved unanimously by the council and by a two-thirds majority in a national referendum.",
+   "¶57": "And then the existing parliament refused to ratify it.\n\nThe [Open Government Partnership](https://www.opengovpartnership.org/documents/why-ogp-commitments-fall-behind/) (75 countries, 4,500+ commitments since 2011) found that one-third of delayed commitments fail due to \"lack of funding and technical capacity.\" But the other causes are more revealing: \"poor institutional coordination, lack of political support, and discontinuity from one administration to another during political transitions.\" Translation: new governments abandon their predecessors' transparency promises.",
+   "¶58": "This is real. Those who benefit from opacity - corrupt officials, connected special interests, entrenched power holders - will resist transparency. They will always resist.\n\nBut this describes the political challenge, not a principled objection. \"Those in power won't allow it\" is not an argument that transparency is bad. It's a statement that transparency threatens the powerful. Which is exactly the point.\n\nHistorical precedents show it can be overcome:\n- Sweden 1766: aristocratic power was declining; a rising political faction saw benefit in accountability\n- Post-Watergate US: scandal created a window for reform\n- Post-2008 Iceland: financial crisis created demand for accountability (even though the existing parliament ultimately blocked implementation)",
+   "¶59": "The CEO framing reframes the question entirely. The current framing asks: \"Will politicians allow this?\" That's the wrong question. It treats politicians as principals who grant or withhold permission. The CEO framing asks: \"Who works for whom?\" If citizens are the principals, the question isn't whether employees will allow oversight. It's how the principal asserts authority.\n\nThis is a governance design problem, not a permission-seeking problem.",
+   "¶60": "## The Measuring Stick\n\nThere's a temptation to see transparency as one value among many - to \"balance\" it against efficiency, security, privacy, and speed. To find the optimal tradeoff point.\n\nReject this framing.\n\nTransparency is not a value to be balanced. It's the measuring stick. Speed and accountability are *byproducts*. Whatever speed your government operates at, document everything. Make it available. Then iteratively improve the processes that transparency reveals as broken.",
+   "¶61": "You don't need to change how fast things move. You just need the record to exist. Slowly, over time, the availability of that record will create pressure: pressure for consistency, pressure for sound reasoning, pressure for accountability. Officials who know their reasoning will be reviewed will produce better reasoning. Decisions that must be documented will be more carefully considered. Corruption that leaves a trail will be easier to prosecute.",
+   "¶62": "Transparency is the measuring stick by which you evaluate whether your government is working. In order to reach 100% transparency, you'll have to solve speed and accountability along the way. They're not obstacles to transparency - they're consequences of it.\n\n## Open Source as Vision\n\nHere's a final thought. Consider open source software. Linux, the operating system running most of the internet, is built by thousands of people across the world, working in full public view. Every commit is visible. Every issue is tracked. Every pull request is discussed. Maintainers are accountable to users. If you disagree with a decision, you can fork the project.",
+   "¶63": "This is complex, collaborative work happening transparently. The complexity of a government is greater, but the principle is the same: complex systems can be built and maintained in public. Transparency doesn't prevent sophisticated work. It enables accountability for that work.\n\nThe difference between open source and government is that in open source, participation is voluntary. You can leave. In government, you're subject to decisions whether you participated or not. You can't fork your country.",
+   "¶64": "That makes the case for government transparency *stronger*, not weaker. The less choice you have about being affected by decisions, the more right you have to see how those decisions are made.\n\nYou pay for this government. You live with its consequences. You are the CEO.\n\nAct like it.\n\n---\n\n## Appendix: Sources with Summaries\n\n### Historical Foundations\n\n1. **[UNESCO Memory of the World - Swedish Freedom of the Press Ordinance 1766](https://www.unesco.org/en/memory-world/swedish-freedom-press-ordinance-1766-worlds-first-legislation-guaranteeing-free-communication)**\n   - UNESCO recognition of the 1766 act as world's first legislation guaranteeing free communication of information; part of Memory of the World register",
+   "¶65": "2. **[National Security Archive - FOIA at 250](https://nsarchive.gwu.edu/briefing-book/foia/2016-12-02/foia250-worlds-first-freedom-information-act-dates-1766)**\n   - George Washington University archive documenting the 250th anniversary of the world's first FOI act; provides historical context and global influence\n\n3. **[Britannica - Freedom of the Press Act of 1766](https://www.britannica.com/topic/Freedom-of-the-Press-Act-of-1766)**\n   - Encyclopedic overview of the act's origins in the political conflict between Hats and Caps parties; role of Anders Chydenius",
+   "¶66": "### Digital Infrastructure\n\n4. **[e-Estonia - X-Road](https://e-estonia.com/solutions/interoperability-services/x-road/)**\n   - Official government page describing X-Road architecture, security model, and interoperability services; includes technical specifications\n\n5. **[Wikipedia - X-Road](https://en.wikipedia.org/wiki/X-Road)**\n   - Comprehensive overview including history (started 1998, launched 2001), architecture decisions, 1996 data leak that motivated distributed design, international adoption",
+   "¶67": "6. **[Frost & Sullivan Institute - Estonia's Digital Transformation](https://frostandsullivaninstitute.org/why-estonia-is-europes-digital-powerhouse-a-study-in-e-governance-transformation/)**\n   - Analysis of Estonia's 30-year digital transformation journey; documents rise from 16th to 2nd in UN E-Government Development Index; 100% digitalization milestone in 2024\n\n### Government Spending Transparency\n\n7. **[Open Data Impact - Brazil's Transparency Portal](https://odimpact.org/case-brazils-open-budget-transparency-portal.html)**\n   - Case study documenting creation of Brazil's portal in 2004 by CGU; details five data categories published; describes impact on anti-corruption",
+   "¶68": "8. **[OECD - Brazilian Transparency Portal](https://oecd-opsi.org/innovations/brazilian-transparency-policy-and-the-transparency-portal/)**\n   - OECD Observatory of Public Sector Innovation profile; notes portal accessed 20+ million times yearly; describes 2018 data warehouse integration of 17 sources\n\n9. **[GIJN - Brazil FOI Investigation](https://gijn.org/stories/60-gb-of-data-27-years-of-hidden-payments-how-brazils-journalists-used-foia-to-reveal-pension-payments/)**\n   - Investigative journalism case study; Fiquem Sabendo used LAI to uncover 60GB of hidden pension payment data spanning 27 years of former presidents",
+   "¶69": "### Process Transparency\n\n10. **[Seoul Solution - OPEN System](https://seoulsolution.kr/en/content/e-government-seoul-opens-new-chapter-transparency-efficiency-and-public-participation)**\n    - Seoul Metropolitan Government's policy archive; documents how OPEN system launched April 1999 under Mayor Goh's anti-corruption campaign; covers 70 municipal tasks\n\n11. **[ScienceDirect - OPEN Anti-Corruption Analysis](https://www.sciencedirect.com/science/article/abs/pii/S0740624X08001172)**\n    - Peer-reviewed study \"An institutional analysis of an e-government system for anti-corruption: The case of OPEN\"; confirms corruption decreases with e-participation",
+   "¶70": "12. **[NZ Public Service Commission - Proactive Release](https://www.publicservice.govt.nz/guidance/official-information/proactive-release)**\n    - Official guidance on proactive release policy; explains difference from OIA requests; describes what should be released and when\n\n13. **[DPMC - Cabinet Material Release](https://www.dpmc.govt.nz/publications/proactive-release-cabinet-material)**\n    - Department of Prime Minister and Cabinet policy document; details 30 business day requirement from January 2019; covers exceptions and legal considerations",
+   "¶71": "### Participatory Democracy\n\n14. **[MIT Technology Review - Taiwan's Pol.is System](https://www.technologyreview.com/2018/08/21/240284/the-simple-but-ingenious-system-taiwan-uses-to-crowdsource-its-laws/)**\n    - Describes how Taiwan uses Pol.is platform to crowdsource policy; details Uber regulation as first test case; explains clustering algorithm design\n\n15. **[RadicalxChange - Taiwan Digital Democracy](https://www.radicalxchange.org/updates/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf)**\n    - Academic paper documenting Taiwan's grassroots digital democracy movement; traces origins to 2014 Sunflower Movement; analyzes Audrey Tang's role and g0v community",
+   "¶72": "16. **[ConstitutionNet - Iceland's Failed Constitution](https://constitutionnet.org/news/why-making-crowd-sourced-constitution-iceland-failed)**\n    - International IDEA analysis of why parliament rejected the crowdsourced draft despite referendum approval; examines procedural and political obstacles\n\n17. **[Journal of Deliberative Democracy - Iceland Assessment](https://delibdemjournal.org/article/id/974/)**\n    - Peer-reviewed assessment of the deliberative quality of Iceland's process; evaluates crowdsourcing methodology and democratic legitimacy claims",
+   "¶73": "### Snowden and Surveillance\n\n18. **[Electronic Frontier Foundation - 10 Years After Snowden](https://www.eff.org/deeplinks/2023/05/10-years-after-snowden-some-things-are-better-some-were-still-fighting)**\n    - 10-year retrospective on reforms and ongoing challenges; details USA FREEDOM Act passage and limitations\n\n19. **[IAPP - Snowden Disclosures 10 Years On](https://iapp.org/news/a/the-snowden-disclosures-10-years-on)**\n    - Comprehensive analysis of legal and policy changes triggered by disclosures; notes GDPR acceleration",
+   "¶74": "20. **[TechCrunch - Ninth Circuit Ruling](https://techcrunch.com/2020/09/03/nsa-bulk-records-appeals-illegal/)**\n    - Reports on 2020 court ruling that NSA program was illegal; includes Snowden's response\n\n21. **[ACLU - Federal Court Strikes Down Surveillance](https://www.aclu.org/press-releases/federal-court-strikes-down-nsa-warrantless-surveillance-program)**\n    - ACLU attorney calls ruling \"a victory for privacy rights\"; notes constitutional implications",
+   "¶75": "### Citizen Privacy and Public Opinion\n\n22. **[Pew Research - Americans and Privacy 2019](https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/)**\n    - Comprehensive survey on American attitudes toward privacy; reveals widespread concern and confusion about data practices; 66% concerned about government data collection\n\n23. **[Roper Center, Cornell - The Public and Its Right to Know](https://ropercenter.cornell.edu/blog/public-and-its-right-know)**\n    - Historical overview of American public opinion on government transparency from 1950s to present; includes ABC News and Freedom Forum poll data",
+   "¶76": "### Government Efficiency and Deliberation\n\n24. **[IMF - The Hidden Strength of Government Inefficiency](https://blog-pfm.imf.org/en/pfmblog/2025/05/the-hidden-strength-of-government-inefficiency)**\n    - IMF analysis arguing that some government \"inefficiency\" is actually intentional accountability design; uses Australia's Robodebt as cautionary tale of removing checks\n\n25. **[Cambridge - Transparency and Political Decision-Making](https://www.cambridge.org/core/journals/european-political-science-review/article/abs/transparency-actually-how-transparency-affects-public-perceptions-of-political-decisionmaking/F613E34D34427A44EF6EF57C42B6EE2B)**\n    - Empirical study of EU Council finding transparency affects how public perceives decision-making legitimacy",
+   "¶77": "26. **[World Bank - Evidence on the Impact of Transparency](https://thedocs.worldbank.org/en/doc/492041464199876576-0050022016/original/Chapter6Evidenceontheimpactoftransparency.pdf)**\n    - Comprehensive literature review on transparency's measured impacts; mixed findings on effectiveness; notes incumbents can undo positive effects of information\n\n### Diplomatic Secrecy\n\n27. **[Harvard Kennedy School - Explainer on Iran Negotiations](https://www.hks.harvard.edu/faculty-research/policy-topics/international-relations-security/explainer-how-united-states-has)**\n    - Explains history of US-Iran nuclear negotiations; documents role of secret backchannel in Oman in achieving framework before public talks",
+   "¶78": "28. **[Oxford Bibliographies - Secrecy and Diplomacy](https://www.oxfordbibliographies.com/display/document/obo-9780199743292/obo-9780199743292-0313.xml)**\n    - Academic overview of secrecy in international relations; traces historical evolution from ancient diplomacy to modern era; frames the \"democratic dilemma\"\n\n### Special Interests and Lobbying\n\n29. **[Notre Dame News - Transparency and Special Interests](https://news.nd.edu/news/research-shows-government-transparency-benefits-special-interest-groups-not-citizenry/)**\n    - Notre Dame news release on research finding transparency benefits lobbyists more than citizens in US state legislatures; summarizes multi-decade study of 50 states",
+   "¶79": "30. **[Cambridge UP - The Illusion of Accountability](https://www.cambridge.org/core/books/illusion-of-accountability/B0501020388952B14FBF56A0D28EB12D)**\n    - Full academic book by Harden & Kirkland examining how transparency laws fail to improve democratic representation; proposes electoral competition as the key variable\n\n31. **[Springer - Irish Lobbying Transparency Experiment](https://link.springer.com/article/10.1057/s41309-024-00201-1)**\n    - 2024 experimental study with 569 participants in Ireland finding lobbying transparency does not improve citizen trust in political process",
+   "¶80": "### Official Safety and Harassment\n\n32. **[Brennan Center - Election Officials Survey 2024](https://www.brennancenter.org/our-work/research-reports/local-election-officials-survey-may-2024)**\n    - Annual survey of 735 officials documenting rising threats and harassment against US election officials since 2020; 38% report threats; margin of error ±3%\n\n33. **[NAAG - Doxxing and Swatting Analysis](https://www.naag.org/attorney-general-journal/the-escalating-threats-of-doxxing-and-swatting-an-analysis-of-recent-developments-and-legal-responses/)**\n    - Legal analysis of doxxing/swatting trends; documents evolution from fringe behavior to systematic harassment; notes AI intensification",
+   "¶81": "34. **[Issue One - Protecting Election Workers](https://issueone.org/solutions/protecting-americas-election-workers/)**\n    - Advocacy organization tracking threats to election workers and legislative responses across 22 states since 2022\n\n### National Security\n\n35. **[Chicago Council on Global Affairs - Public Attitudes on Intelligence](https://globalaffairs.org/research/public-opinion-survey/2022-public-attitudes-us-intelligence)**\n    - Tracking survey on American attitudes toward intelligence community; shows general support (~60%) but increasing civil liberties concerns (12% to 17% 2021-2022)",
+   "¶82": "36. **[Brennan Center - Transparency and Oversight](https://www.brennancenter.org/topics/government-power/transparency-oversight)**\n    - Analysis arguing current classification levels far exceed genuine security needs; calls excessive secrecy a threat to democratic self-government\n\n37. **[SIPRI - Military Transparency](https://www.sipri.org/node/405)**\n    - Stockholm International Peace Research Institute arguing military budget transparency benefits democracy, prevents wasteful spending, and builds inter-state trust",
+   "¶83": "### Populism and Democratic Damage\n\n38. **[Tony Blair Institute - Populist Harm to Democracy](https://institute.global/insights/geopolitics-and-security/populist-harm-democracy-empirical-assessment)**\n    - Empirical study of 43 countries (1990-2018) finding populist governments 4x more likely to damage democratic institutions; countries fall average 5 places on corruption index\n\n39. **[Stanford - Transparency Hinders Politics](https://webapp-new.itlab.stanford.edu/transparency-hinders-politics)**\n    - Analysis arguing transparency can create perverse incentives for short-term populist policies when re-election depends on immediate visibility",
+   "¶84": "40. **[ResearchGate - Sweden Democrats and Transparency](https://www.researchgate.net/publication/393575451_Transparency_Against_Democracy_The_Sweden_Democrats_Radical-Right_Populism_and_Political_Trust)**\n    - Case study of how Swedish populist party exploits transparency norms (FOI requests, alternative media) to undermine trust in democratic institutions\n\n### Misinformation and Trust\n\n41. **[Harvard KS Misinformation Review - False Beliefs and Transparency](https://misinforeview.hks.harvard.edu/article/hide-and-seek-the-connection-between-false-beliefs-and-perceptions-of-government-transparency/)**\n    - Canadian panel survey research showing false beliefs causally reduce perceived transparency regardless of actual transparency levels; creates feedback loop with declining democratic participation",
+   "¶85": "42. **[ScienceDirect - Latent Transparency and Trust](https://www.sciencedirect.com/science/article/abs/pii/S0740624X20302768)**\n    - Experimental study finding citizens respond positively to the idea of transparency but sometimes negatively to actual disclosed information; identifies \"latent transparency\" concept\n\n### Structural Barriers and Resistance\n\n43. **[OGP - Why Commitments Fall Behind](https://www.opengovpartnership.org/documents/why-ogp-commitments-fall-behind/)**\n    - OGP's own analysis identifying lack of funding, poor coordination, and political transitions as primary causes of failed commitments across 75 member countries",
+   "¶86": "44. **[Wiley - Political Determinants of Transparency](https://onlinelibrary.wiley.com/doi/full/10.1111/polp.12607)**\n    - Hong (2024) study finding higher electoral competition improves open government data quality only when administrative capacity is also high; studies political motivations behind adoption\n\n45. **[SAGE - Organizational Responses to Transparency](https://journals.sagepub.com/doi/10.1177/0275074019888065)**\n    - Ruijer et al. (2020) study documenting organizational strategic responses to open data demands ranging from conformity to active resistance; identifies institutional antecedents",
+   "¶87": "46. **[ScienceDirect - Resisting Open Government Data](https://www.sciencedirect.com/science/article/abs/pii/S0740624X20302744)**\n    - Study on how public servants resist open government data policy through workarounds; finds perceived accountability risks explain strategic non-compliance\n\n### Nordic Model\n\n47. **[nordics.info - Open Government in the Nordics](https://nordics.info/show/artikel/open-government)**\n    - Overview of open government traditions across Nordic countries; traces 250+ years of FOI practice; notes variations among countries",
+   "¶88": "48. **[Nordicom - Access to Information in the Nordic Countries](https://www.nordicom.gu.se/en/publications/access-information-nordic-countries)**\n    - Academic publication comparing right-of-access rules across five Nordic countries; notes inconsistent patterns despite shared reputation for openness\n\n49. **[Finnish Ministry of Justice - Act on Openness of Government Activities](https://oikeusministerio.fi/en/act-on-the-openness-of-government-activities)**\n    - Official legal text of Finland's transparency law (1999 amendment); establishes principle that all government documents are public unless specifically exempted"
+  }
+ },
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "text": "Citizens are governments' CEO-principals, so every decision should be fully documented and traceable, with objections answered and precedents proving feasibility.",
+   "attribution": "author",
+   "source": [
+    "¶1",
+    "¶3",
+    "¶4",
+    "¶9",
+    "¶18",
+    "¶24",
+    "¶60",
+    "¶64"
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "text": "A manager hiding a million-dollar decision would be fired, yet governments do the same.",
+   "attribution": "author",
+   "source": [
+    "¶1",
+    "¶2"
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "example",
+   "text": "Manager refused to explain a million-dollar decision, citing lost leverage.",
+   "attribution": "author",
+   "source": [
+    "¶1"
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "text": "An owner would sue, force disclosure, and fire that manager.",
+   "attribution": "author",
+   "source": [
+    "¶2"
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "text": "Governments refuse with classified, security, operations, and speed excuses.",
+   "attribution": "author",
+   "source": [
+    "¶2"
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "text": "Every government decision should be fully documented and publicly available.",
+   "attribution": "author",
+   "source": [
+    "¶3"
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "text": "Document data used, considerations made, and who was involved.",
+   "attribution": "author",
+   "source": [
+    "¶3"
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "text": "Document alternatives considered, arguments for and against, implementation steps.",
+   "attribution": "author",
+   "source": [
+    "¶3"
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "text": "Document evaluation, course-correction plans, and reconsideration terms.",
+   "attribution": "author",
+   "source": [
+    "¶3"
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "claim",
+   "text": "Competent boards and CEOs already demand this basic accountability.",
+   "attribution": "author",
+   "source": [
+    "¶4"
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "claim",
+   "text": "It sounds radical only because the opposite was normalized.",
+   "attribution": "author",
+   "source": [
+    "¶4"
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "text": "In democracy citizens are principals; officials are their employee-agents.",
+   "attribution": "author",
+   "source": [
+    "¶4"
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "text": "Every servant from licensing clerk to president works for you.",
+   "attribution": "author",
+   "source": [
+    "¶4"
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "text": "CEOs need not read everything, but reviewability shapes behavior.",
+   "attribution": "author",
+   "source": [
+    "¶5"
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "text": "A company letting managers classify emails would go bankrupt within a year.",
+   "attribution": "author",
+   "source": [
+    "¶5"
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "nuance",
+   "text": "Availability matters, not consumption: trace decisions affecting your life.",
+   "attribution": "author",
+   "source": [
+    "¶6"
+   ]
+  },
+  {
+   "id": "4",
+   "type": "claim",
+   "text": "Transparency flows from government to citizens, never the reverse.",
+   "attribution": "author",
+   "source": [
+    "¶7"
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "claim",
+   "text": "Decisions visible, processes traceable, officials accountable to citizens.",
+   "attribution": "author",
+   "source": [
+    "¶7"
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "text": "Not tax returns, medical records, or citizens surveilling each other.",
+   "attribution": "author",
+   "source": [
+    "¶7"
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "claim",
+   "text": "CEOs see work product, not employees' medical records.",
+   "attribution": "author",
+   "source": [
+    "¶7"
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "example",
+   "text": "Publish $X/$Y/$Z/$W spending, not John Smith's $47,000 taxes.",
+   "attribution": "author",
+   "source": [
+    "¶8"
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "claim",
+   "text": "Aggregation, anonymization, and differential privacy make separation technically straightforward.",
+   "attribution": "author",
+   "source": [
+    "¶8"
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "text": "Pieces of this system already exist and prove it works.",
+   "attribution": "author",
+   "source": [
+    "¶9"
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "nuance",
+   "text": "No country nears complete transparency, but several prove feasibility.",
+   "attribution": "author",
+   "source": [
+    "¶9"
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "text": "Sweden's 260-year openness shows transparency endures without collapse.",
+   "attribution": "reported",
+   "source": [
+    "¶9",
+    "¶10"
+   ]
+  },
+  {
+   "id": "5.2.1",
+   "type": "evidence",
+   "text": "In 1766 Sweden passed the world's first freedom-of-information law.",
+   "attribution": "reported",
+   "source": [
+    "¶9"
+   ]
+  },
+  {
+   "id": "5.2.2",
+   "type": "evidence",
+   "text": "It abolished censorship and is now constitutional.",
+   "attribution": "reported",
+   "source": [
+    "¶9"
+   ]
+  },
+  {
+   "id": "5.2.3",
+   "type": "evidence",
+   "text": "Finnish-Swedish priest-politician Chydenius drove Hats-versus-Caps explicitly anti-corruption law.",
+   "attribution": "reported",
+   "source": [
+    "¶10"
+   ]
+  },
+  {
+   "id": "5.2.4",
+   "type": "evidence",
+   "text": "Offentlighetsprincipen keeps documents public by default 260 years on.",
+   "attribution": "reported",
+   "source": [
+    "¶10"
+   ]
+  },
+  {
+   "id": "5.2.5",
+   "type": "evidence",
+   "text": "Nordics consistently rank among least corrupt, most effective democracies.",
+   "attribution": "reported",
+   "source": [
+    "¶10"
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "text": "Seoul's 1999 OPEN system made bribery-prone permitting visible.",
+   "attribution": "reported",
+   "source": [
+    "¶11"
+   ]
+  },
+  {
+   "id": "5.3.1",
+   "type": "evidence",
+   "text": "OPEN tracks 70 corruption-prone tasks, including construction, environmental, and urban planning permits, in real time.",
+   "attribution": "reported",
+   "source": [
+    "¶11"
+   ]
+  },
+  {
+   "id": "5.3.2",
+   "type": "evidence",
+   "text": "Citizens see exactly who decided what at each process point.",
+   "attribution": "reported",
+   "source": [
+    "¶11"
+   ]
+  },
+  {
+   "id": "5.3.3",
+   "type": "evidence",
+   "text": "Previously invisible processing let officials demand speed-up bribes unprovably.",
+   "attribution": "reported",
+   "source": [
+    "¶12"
+   ]
+  },
+  {
+   "id": "5.3.4",
+   "type": "evidence",
+   "text": "Visibility eliminated that bribery leverage entirely.",
+   "attribution": "reported",
+   "source": [
+    "¶12"
+   ]
+  },
+  {
+   "id": "5.3.5",
+   "type": "evidence",
+   "text": "Corruption decreases as e-participation increases; UN, OECD, World Bank recognized it.",
+   "attribution": "reported",
+   "source": [
+    "¶12"
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "text": "Estonia's 2001 X-Road proves transparency infrastructure scales.",
+   "attribution": "reported",
+   "source": [
+    "¶13"
+   ]
+  },
+  {
+   "id": "5.4.1",
+   "type": "evidence",
+   "text": "X-Road links 929+ institutions, 1,887 systems, 3,000+ services, timestamped, signed, logged.",
+   "attribution": "reported",
+   "source": [
+    "¶13"
+   ]
+  },
+  {
+   "id": "5.4.2",
+   "type": "evidence",
+   "text": "Citizens can see who accessed their data and why.",
+   "attribution": "reported",
+   "source": [
+    "¶13"
+   ]
+  },
+  {
+   "id": "5.4.3",
+   "type": "evidence",
+   "text": "Estonia ranks 2nd on the UN E-Government Development Index.",
+   "attribution": "reported",
+   "source": [
+    "¶13"
+   ]
+  },
+  {
+   "id": "5.4.4",
+   "type": "evidence",
+   "text": "No major breaches in over 20 years despite constant cyber attacks.",
+   "attribution": "reported",
+   "source": [
+    "¶13"
+   ]
+  },
+  {
+   "id": "5.4.5",
+   "type": "evidence",
+   "text": "X-Road is MIT-licensed open source, deployed in 20+ countries.",
+   "attribution": "reported",
+   "source": [
+    "¶13"
+   ]
+  },
+  {
+   "id": "5.4.6",
+   "type": "claim",
+   "text": "X-Road proves every-email-available infrastructure is technically feasible.",
+   "attribution": "author",
+   "source": [
+    "¶14"
+   ]
+  },
+  {
+   "id": "5.4.7",
+   "type": "claim",
+   "text": "The technology is feasible; the bottleneck is will.",
+   "attribution": "author",
+   "source": [
+    "¶14"
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "text": "Brazil's 2004 Transparency Portal follows all federal money.",
+   "attribution": "reported",
+   "source": [
+    "¶14"
+   ]
+  },
+  {
+   "id": "5.5.1",
+   "type": "evidence",
+   "text": "It publishes contracts, transfers, salaries, travel, and credit-card transactions.",
+   "attribution": "reported",
+   "source": [
+    "¶14"
+   ]
+  },
+  {
+   "id": "5.5.2",
+   "type": "evidence",
+   "text": "The portal receives over 20 million accesses per year.",
+   "attribution": "reported",
+   "source": [
+    "¶14"
+   ]
+  },
+  {
+   "id": "5.5.3",
+   "type": "evidence",
+   "text": "Transparency Card sent 20+ million notifications via 430,000+ active cards.",
+   "attribution": "reported",
+   "source": [
+    "¶15"
+   ]
+  },
+  {
+   "id": "5.5.4",
+   "type": "evidence",
+   "text": "Journalists uncovered 60GB of hidden pension payments spanning 27 years.",
+   "attribution": "reported",
+   "source": [
+    "¶15"
+   ]
+  },
+  {
+   "id": "5.5.5",
+   "type": "claim",
+   "text": "Give citizens CEO tools and they find the fraud.",
+   "attribution": "author",
+   "source": [
+    "¶15"
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "claim",
+   "text": "New Zealand publishes cabinet papers by default since 2019.",
+   "attribution": "reported",
+   "source": [
+    "¶16"
+   ]
+  },
+  {
+   "id": "5.6.1",
+   "type": "evidence",
+   "text": "All papers and minutes appear online within 30 business days.",
+   "attribution": "reported",
+   "source": [
+    "¶16"
+   ]
+  },
+  {
+   "id": "5.6.2",
+   "type": "evidence",
+   "text": "Cabinet deliberations are typically the world's most protected government information.",
+   "attribution": "reported",
+   "source": [
+    "¶16"
+   ]
+  },
+  {
+   "id": "5.6.3",
+   "type": "evidence",
+   "text": "Government has not halted; ministers still deliberate; citizens see why.",
+   "attribution": "reported",
+   "source": [
+    "¶17"
+   ]
+  },
+  {
+   "id": "5.7",
+   "type": "claim",
+   "text": "Taiwan's vTaiwan crowdsources laws through consensus-finding deliberation.",
+   "attribution": "reported",
+   "source": [
+    "¶17"
+   ]
+  },
+  {
+   "id": "5.7.1",
+   "type": "evidence",
+   "text": "Pol.is takes agree-disagree votes with no replies, surfacing cross-group consensus.",
+   "attribution": "reported",
+   "source": [
+    "¶17"
+   ]
+  },
+  {
+   "id": "5.7.2",
+   "type": "evidence",
+   "text": "By 2018, 26 issues processed; 80% led to government action.",
+   "attribution": "reported",
+   "source": [
+    "¶18"
+   ]
+  },
+  {
+   "id": "5.7.3",
+   "type": "claim",
+   "text": "Participation is downstream of transparency, not core transparency itself.",
+   "attribution": "author",
+   "source": [
+    "¶18"
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "text": "Secret programs recur as illegal; secret oversight reliably fails to catch them.",
+   "attribution": "author",
+   "source": [
+    "¶18"
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "evidence",
+   "text": "In 1971 Pentagon Papers showed government knew Vietnam was unwinnable while publicly claiming progress.",
+   "attribution": "reported",
+   "source": [
+    "¶19"
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "evidence",
+   "text": "Media, Pennsylvania break-in exposed COINTELPRO's illegal surveillance and disruption.",
+   "attribution": "reported",
+   "source": [
+    "¶19"
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "evidence",
+   "text": "COINTELPRO targeted civil rights leaders and political dissidents.",
+   "attribution": "reported",
+   "source": [
+    "¶19"
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "evidence",
+   "text": "In 2013 Snowden revealed bulk metadata collection from millions of Americans, PRISM, and leader surveillance.",
+   "attribution": "reported",
+   "source": [
+    "¶19"
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "claim",
+   "text": "Each disclosure was predicted catastrophic yet revealed illegality, unconstitutionality, or deliberate deception.",
+   "attribution": "author",
+   "source": [
+    "¶20"
+   ]
+  },
+  {
+   "id": "6.6",
+   "type": "evidence",
+   "text": "In September 2020 the Ninth Circuit ruled bulk collection illegal, possibly unconstitutional.",
+   "attribution": "reported",
+   "source": [
+    "¶20"
+   ]
+  },
+  {
+   "id": "6.7",
+   "type": "evidence",
+   "text": "The court required FISA relevance to a particular authorized investigation.",
+   "attribution": "reported",
+   "source": [
+    "¶20"
+   ]
+  },
+  {
+   "id": "6.8",
+   "type": "evidence",
+   "text": "Stone found no evidence bulk collection stopped any terror attacks.",
+   "attribution": "reported",
+   "source": [
+    "¶20"
+   ]
+  },
+  {
+   "id": "6.9",
+   "type": "evidence",
+   "text": "The NSA abandoned the program in 2018: it no longer made sense.",
+   "attribution": "reported",
+   "source": [
+    "¶20"
+   ]
+  },
+  {
+   "id": "6.10",
+   "type": "claim",
+   "text": "FISA courts, committees, and inspectors general failed inside the secrecy structure.",
+   "attribution": "author",
+   "source": [
+    "¶21"
+   ]
+  },
+  {
+   "id": "6.11",
+   "type": "claim",
+   "text": "Secret oversight can be captured, co-opted, or worn down institutionally.",
+   "attribution": "author",
+   "source": [
+    "¶21"
+   ]
+  },
+  {
+   "id": "6.12",
+   "type": "evidence",
+   "text": "The 2015 USA FREEDOM Act first reined in NSA spying in over 30 years.",
+   "attribution": "reported",
+   "source": [
+    "¶22"
+   ]
+  },
+  {
+   "id": "6.13",
+   "type": "evidence",
+   "text": "It ended bulk metadata collection and required releasing significant FISC opinions.",
+   "attribution": "reported",
+   "source": [
+    "¶22"
+   ]
+  },
+  {
+   "id": "6.14",
+   "type": "evidence",
+   "text": "The tech sector adopted transparency reporting on data requests.",
+   "attribution": "reported",
+   "source": [
+    "¶22"
+   ]
+  },
+  {
+   "id": "6.15",
+   "type": "evidence",
+   "text": "HTTPS became default on most websites.",
+   "attribution": "reported",
+   "source": [
+    "¶22"
+   ]
+  },
+  {
+   "id": "6.16",
+   "type": "evidence",
+   "text": "The EU's GDPR was accelerated by the revelations.",
+   "attribution": "reported",
+   "source": [
+    "¶22"
+   ]
+  },
+  {
+   "id": "6.17",
+   "type": "nuance",
+   "text": "Operational harm is genuinely uncertain; illegality is not.",
+   "attribution": "author",
+   "source": [
+    "¶23"
+   ]
+  },
+  {
+   "id": "6.18",
+   "type": "claim",
+   "text": "Snowden is the symptom of absent designed-in transparency, not the solution.",
+   "attribution": "author",
+   "source": [
+    "¶23"
+   ]
+  },
+  {
+   "id": "6.19",
+   "type": "claim",
+   "text": "Designed-in traceability would surface illegality early without bulk-leak damage.",
+   "attribution": "author",
+   "source": [
+    "¶23"
+   ]
+  },
+  {
+   "id": "7",
+   "type": "claim",
+   "text": "Ten objections follow, some power-protecting, some genuinely concerned; each gets honest engagement.",
+   "attribution": "author",
+   "source": [
+    "¶24"
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "counterpoint",
+   "text": "Privacy objection: transparency will violate my privacy.",
+   "attribution": "counter",
+   "source": [
+    "¶24"
+   ]
+  },
+  {
+   "id": "7.1.1",
+   "type": "evidence",
+   "text": "2019 Pew: 66% fear collection, 64% fear use, 6% very confident.",
+   "attribution": "reported",
+   "source": [
+    "¶24"
+   ]
+  },
+  {
+   "id": "7.1.2",
+   "type": "evidence",
+   "text": "A 2000 ABC poll: 86% said agencies should not publish such records online.",
+   "attribution": "reported",
+   "source": [
+    "¶24"
+   ]
+  },
+  {
+   "id": "7.1.3",
+   "type": "rebuttal",
+   "text": "Polls fear citizen data held by government, not visible government decisions.",
+   "attribution": "author",
+   "source": [
+    "¶25"
+   ]
+  },
+  {
+   "id": "7.1.4",
+   "type": "rebuttal",
+   "text": "Quarterly-report review differs from publishing employee health records.",
+   "attribution": "author",
+   "source": [
+    "¶25"
+   ]
+  },
+  {
+   "id": "7.1.5",
+   "type": "rebuttal",
+   "text": "$50 million infrastructure-allocation transparency needs no neighbor's personal data.",
+   "attribution": "author",
+   "source": [
+    "¶26"
+   ]
+  },
+  {
+   "id": "7.1.6",
+   "type": "rebuttal",
+   "text": "Bundled record systems should be separated, not kept wholly secret.",
+   "attribution": "author",
+   "source": [
+    "¶26"
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "counterpoint",
+   "text": "Objection: if every action is public, deliberation dies and processes paralyze.",
+   "attribution": "counter",
+   "source": [
+    "¶27"
+   ]
+  },
+  {
+   "id": "7.2.1",
+   "type": "evidence",
+   "text": "Cambridge found EU transparency-deliberation tension; IMF called government a friction-forcing fortress.",
+   "attribution": "reported",
+   "source": [
+    "¶27"
+   ]
+  },
+  {
+   "id": "7.2.2",
+   "type": "evidence",
+   "text": "IMF: friction forces accountability and catches errors before harm.",
+   "attribution": "reported",
+   "source": [
+    "¶27"
+   ]
+  },
+  {
+   "id": "7.2.3",
+   "type": "evidence",
+   "text": "Robodebt: 470,000 incorrect notices and a $1.8 billion settlement.",
+   "attribution": "reported",
+   "source": [
+    "¶27"
+   ]
+  },
+  {
+   "id": "7.2.4",
+   "type": "rebuttal",
+   "text": "This confuses decision speed with decision documentation.",
+   "attribution": "author",
+   "source": [
+    "¶28"
+   ]
+  },
+  {
+   "id": "7.2.5",
+   "type": "rebuttal",
+   "text": "Document at current speed; fix burdensome systems, keep accountability.",
+   "attribution": "author",
+   "source": [
+    "¶28"
+   ]
+  },
+  {
+   "id": "7.2.6",
+   "type": "rebuttal",
+   "text": "CEOs demand documented work, not slower work.",
+   "attribution": "author",
+   "source": [
+    "¶28"
+   ]
+  },
+  {
+   "id": "7.2.7",
+   "type": "rebuttal",
+   "text": "New Zealand's 30-day cabinet papers halted nothing; reasoning stands verifiable.",
+   "attribution": "author",
+   "source": [
+    "¶28"
+   ]
+  },
+  {
+   "id": "7.2.8",
+   "type": "rebuttal",
+   "text": "Opacity makes decisions unaccountable random walks, not better ones.",
+   "attribution": "author",
+   "source": [
+    "¶29"
+   ]
+  },
+  {
+   "id": "7.2.9",
+   "type": "rebuttal",
+   "text": "Documented consistency pressure prevents reversals and speeds decisions long-term.",
+   "attribution": "author",
+   "source": [
+    "¶29"
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "counterpoint",
+   "text": "Objection: diplomacy requires secrecy.",
+   "attribution": "counter",
+   "source": [
+    "¶29"
+   ]
+  },
+  {
+   "id": "7.3.1",
+   "type": "concession",
+   "text": "Conceded: the most legitimate concern, deserving nuance.",
+   "attribution": "conceded",
+   "source": [
+    "¶29"
+   ]
+  },
+  {
+   "id": "7.3.2",
+   "type": "evidence",
+   "text": "JCPOA began in 2012 via Sullivan's secret Oman backchannel.",
+   "attribution": "reported",
+   "source": [
+    "¶30"
+   ]
+  },
+  {
+   "id": "7.3.3",
+   "type": "evidence",
+   "text": "Camp David 1978 and Cold War backchannels likewise needed private space.",
+   "attribution": "reported",
+   "source": [
+    "¶30"
+   ]
+  },
+  {
+   "id": "7.3.4",
+   "type": "evidence",
+   "text": "Democratic dilemma: secrecy enables flexibility, but barren without consent.",
+   "attribution": "reported",
+   "source": [
+    "¶31"
+   ]
+  },
+  {
+   "id": "7.3.5",
+   "type": "rebuttal",
+   "text": "CEOs allow confidential negotiation, then demand full disclosure afterward.",
+   "attribution": "author",
+   "source": [
+    "¶31"
+   ]
+  },
+  {
+   "id": "7.3.6",
+   "type": "rebuttal",
+   "text": "Disclose afterward what was offered, conceded, why, and alternatives.",
+   "attribution": "author",
+   "source": [
+    "¶31"
+   ]
+  },
+  {
+   "id": "7.3.7",
+   "type": "rebuttal",
+   "text": "Temporary secrecy during talks is acceptable; permanent secrecy is not.",
+   "attribution": "author",
+   "source": [
+    "¶32"
+   ]
+  },
+  {
+   "id": "7.3.8",
+   "type": "rebuttal",
+   "text": "Release full documentation 30-90 days after conclusion for evaluation.",
+   "attribution": "author",
+   "source": [
+    "¶32"
+   ]
+  },
+  {
+   "id": "7.3.9",
+   "type": "rebuttal",
+   "text": "Foreign-refusal arguments let non-principals veto citizens' oversight.",
+   "attribution": "author",
+   "source": [
+    "¶33"
+   ]
+  },
+  {
+   "id": "7.3.10",
+   "type": "rebuttal",
+   "text": "Foreign governments are not the principals; citizens are.",
+   "attribution": "author",
+   "source": [
+    "¶33"
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "counterpoint",
+   "text": "Objection: special interests benefit more than ordinary citizens.",
+   "attribution": "counter",
+   "source": [
+    "¶33"
+   ]
+  },
+  {
+   "id": "7.4.1",
+   "type": "concession",
+   "text": "Conceded: empirically grounded and worth taking seriously.",
+   "attribution": "conceded",
+   "source": [
+    "¶33"
+   ]
+  },
+  {
+   "id": "7.4.2",
+   "type": "evidence",
+   "text": "Harden and Kirkland studied all 50 legislatures over multiple decades.",
+   "attribution": "reported",
+   "source": [
+    "¶33"
+   ]
+  },
+  {
+   "id": "7.4.3",
+   "type": "evidence",
+   "text": "Notre Dame-Virginia scholars' Illusion of Accountability compares open versus closed meetings using surveys versus outcomes.",
+   "attribution": "reported",
+   "source": [
+    "¶33"
+   ]
+  },
+  {
+   "id": "7.4.4",
+   "type": "evidence",
+   "text": "More lobbyists register and donate, yet policy-opinion correlation stays same open or closed.",
+   "attribution": "reported",
+   "source": [
+    "¶34"
+   ]
+  },
+  {
+   "id": "7.4.5",
+   "type": "evidence",
+   "text": "Harden: the laws improve representation for unrepresentative interest groups, not citizens.",
+   "attribution": "reported",
+   "source": [
+    "¶34"
+   ]
+  },
+  {
+   "id": "7.4.6",
+   "type": "evidence",
+   "text": "Arnold (1990): open markups advantage organized interests over inattentive citizens.",
+   "attribution": "reported",
+   "source": [
+    "¶34"
+   ]
+  },
+  {
+   "id": "7.4.7",
+   "type": "evidence",
+   "text": "Ireland 2024: 569 participants; lobbying transparency did not raise trust.",
+   "attribution": "reported",
+   "source": [
+    "¶35"
+   ]
+  },
+  {
+   "id": "7.4.8",
+   "type": "rebuttal",
+   "text": "Asymmetry is the problem: paid monitors versus busy citizens.",
+   "attribution": "author",
+   "source": [
+    "¶35"
+   ]
+  },
+  {
+   "id": "7.4.9",
+   "type": "rebuttal",
+   "text": "Lobbyists wield staff, expertise, and capacity; citizens have jobs and families.",
+   "attribution": "author",
+   "source": [
+    "¶35"
+   ]
+  },
+  {
+   "id": "7.4.10",
+   "type": "rebuttal",
+   "text": "Build citizen capacity: auditors, watchdogs, journalism, civic tech.",
+   "attribution": "author",
+   "source": [
+    "¶36"
+   ]
+  },
+  {
+   "id": "7.4.11",
+   "type": "evidence",
+   "text": "Brazil's Fiquem Sabendo files 2,000-3,000 FOI requests yearly for citizens.",
+   "attribution": "reported",
+   "source": [
+    "¶36"
+   ]
+  },
+  {
+   "id": "7.4.12",
+   "type": "rebuttal",
+   "text": "A robust and competitive electoral environment is the real key.",
+   "attribution": "reported",
+   "source": [
+    "¶37"
+   ]
+  },
+  {
+   "id": "7.4.13",
+   "type": "rebuttal",
+   "text": "Opacity guarantees no accountability; transparency makes it possible.",
+   "attribution": "author",
+   "source": [
+    "¶37"
+   ]
+  },
+  {
+   "id": "7.4.14",
+   "type": "rebuttal",
+   "text": "Build usage capacity rather than reducing information.",
+   "attribution": "author",
+   "source": [
+    "¶37"
+   ]
+  },
+  {
+   "id": "7.5",
+   "type": "counterpoint",
+   "text": "Objection: public officials will face harassment.",
+   "attribution": "counter",
+   "source": [
+    "¶38"
+   ]
+  },
+  {
+   "id": "7.5.1",
+   "type": "concession",
+   "text": "Conceded: real, documented, and growing.",
+   "attribution": "conceded",
+   "source": [
+    "¶38"
+   ]
+  },
+  {
+   "id": "7.5.2",
+   "type": "evidence",
+   "text": "Brennan surveyed 735 local election officials, February-March 2024, weighted by region and jurisdiction size, margin ±3%.",
+   "attribution": "reported",
+   "source": [
+    "¶38"
+   ]
+  },
+  {
+   "id": "7.5.3",
+   "type": "evidence",
+   "text": "38% threatened; over half fear for colleagues; over 1 in 4 fear assault.",
+   "attribution": "reported",
+   "source": [
+    "¶38"
+   ]
+  },
+  {
+   "id": "7.5.4",
+   "type": "evidence",
+   "text": "34% know someone who resigned, up from 22% in 2023.",
+   "attribution": "reported",
+   "source": [
+    "¶38"
+   ]
+  },
+  {
+   "id": "7.5.5",
+   "type": "evidence",
+   "text": "61% of the threatened were threatened in person or by phone.",
+   "attribution": "reported",
+   "source": [
+    "¶38"
+   ]
+  },
+  {
+   "id": "7.5.6",
+   "type": "evidence",
+   "text": "2024: doxxing and swatting evolved into sophisticated technology-enabled harassment tools.",
+   "attribution": "reported",
+   "source": [
+    "¶39"
+   ]
+  },
+  {
+   "id": "7.5.7",
+   "type": "evidence",
+   "text": "AI and automated scraping intensify scale, precision, and anonymity.",
+   "attribution": "reported",
+   "source": [
+    "¶39"
+   ]
+  },
+  {
+   "id": "7.5.8",
+   "type": "evidence",
+   "text": "Since 2022, 22 states passed protections for election officials.",
+   "attribution": "reported",
+   "source": [
+    "¶39"
+   ]
+  },
+  {
+   "id": "7.5.9",
+   "type": "rebuttal",
+   "text": "Publish who decided what and why; protect addresses, families, schedules.",
+   "attribution": "author",
+   "source": [
+    "¶40"
+   ]
+  },
+  {
+   "id": "7.5.10",
+   "type": "rebuttal",
+   "text": "CEOs review work product, not employees' home addresses.",
+   "attribution": "author",
+   "source": [
+    "¶40"
+   ]
+  },
+  {
+   "id": "7.5.11",
+   "type": "rebuttal",
+   "text": "Current harassment feeds on opacity-bred fraud conspiracies.",
+   "attribution": "author",
+   "source": [
+    "¶41"
+   ]
+  },
+  {
+   "id": "7.5.12",
+   "type": "rebuttal",
+   "text": "Documented audits, custody chains, and counts would starve conspiracies.",
+   "attribution": "author",
+   "source": [
+    "¶41"
+   ]
+  },
+  {
+   "id": "7.5.13",
+   "type": "rebuttal",
+   "text": "Protect individuals more while making processes more transparent.",
+   "attribution": "author",
+   "source": [
+    "¶42"
+   ]
+  },
+  {
+   "id": "7.6",
+   "type": "counterpoint",
+   "text": "Objection: national security forbids transparency.",
+   "attribution": "counter",
+   "source": [
+    "¶42"
+   ]
+  },
+  {
+   "id": "7.6.1",
+   "type": "claim",
+   "text": "This objection is used most and scrutinized least.",
+   "attribution": "author",
+   "source": [
+    "¶42"
+   ]
+  },
+  {
+   "id": "7.6.2",
+   "type": "evidence",
+   "text": "Chicago 2020-2022: roughly 60% call intelligence vital.",
+   "attribution": "reported",
+   "source": [
+    "¶42"
+   ]
+  },
+  {
+   "id": "7.6.3",
+   "type": "evidence",
+   "text": "A majority say it could share more without harming effectiveness.",
+   "attribution": "reported",
+   "source": [
+    "¶42"
+   ]
+  },
+  {
+   "id": "7.6.4",
+   "type": "evidence",
+   "text": "Civil-liberties threat perception rose from 12% in 2021 to 17% in 2022.",
+   "attribution": "reported",
+   "source": [
+    "¶42"
+   ]
+  },
+  {
+   "id": "7.6.5",
+   "type": "evidence",
+   "text": "Brennan: far too much is classified; secrecy undermines democratic self-government.",
+   "attribution": "reported",
+   "source": [
+    "¶43"
+   ]
+  },
+  {
+   "id": "7.6.6",
+   "type": "evidence",
+   "text": "SIPRI: military transparency builds inter-state trust and prevents waste.",
+   "attribution": "reported",
+   "source": [
+    "¶43"
+   ]
+  },
+  {
+   "id": "7.6.7",
+   "type": "rebuttal",
+   "text": "Snowden proved catastrophe predictions wrong and programs illegal.",
+   "attribution": "author",
+   "source": [
+    "¶44"
+   ]
+  },
+  {
+   "id": "7.6.8",
+   "type": "rebuttal",
+   "text": "Independent research found minimal impact; reforms improved civil liberties.",
+   "attribution": "author",
+   "source": [
+    "¶44"
+   ]
+  },
+  {
+   "id": "7.6.9",
+   "type": "rebuttal",
+   "text": "Flip the burden: transparent by default, secrecy needs proof.",
+   "attribution": "author",
+   "source": [
+    "¶44"
+   ]
+  },
+  {
+   "id": "7.6.10",
+   "type": "rebuttal",
+   "text": "Temporary classification fits active operations; strategy, doctrine, budgets, procurement, and rules stay open.",
+   "attribution": "author",
+   "source": [
+    "¶45"
+   ]
+  },
+  {
+   "id": "7.6.11",
+   "type": "rebuttal",
+   "text": "The label hides embarrassment, illegality, incompetence, and corruption.",
+   "attribution": "author",
+   "source": [
+    "¶45"
+   ]
+  },
+  {
+   "id": "7.6.12",
+   "type": "rebuttal",
+   "text": "Officials under scrutiny set secrecy criteria: a conflict of interest.",
+   "attribution": "author",
+   "source": [
+    "¶45"
+   ]
+  },
+  {
+   "id": "7.7",
+   "type": "counterpoint",
+   "text": "Objection: populists will weaponize transparency.",
+   "attribution": "counter",
+   "source": [
+    "¶46"
+   ]
+  },
+  {
+   "id": "7.7.1",
+   "type": "concession",
+   "text": "Conceded: sophisticated and research-backed.",
+   "attribution": "conceded",
+   "source": [
+    "¶46"
+   ]
+  },
+  {
+   "id": "7.7.2",
+   "type": "evidence",
+   "text": "Kyle-Gultchin studied 43 democracies, 1990-2018, Polity IV at least 6, leaders journal-screened.",
+   "attribution": "reported",
+   "source": [
+    "¶46"
+   ]
+  },
+  {
+   "id": "7.7.3",
+   "type": "evidence",
+   "text": "Populists are 4x likelier to damage institutions: 23% versus 6%.",
+   "attribution": "reported",
+   "source": [
+    "¶46"
+   ]
+  },
+  {
+   "id": "7.7.4",
+   "type": "evidence",
+   "text": "Countries fall 5 places on corruption perceptions; top-half starters fall 11.",
+   "attribution": "reported",
+   "source": [
+    "¶46"
+   ]
+  },
+  {
+   "id": "7.7.5",
+   "type": "evidence",
+   "text": "Venezuela dropped 83 places under Chávez.",
+   "attribution": "reported",
+   "source": [
+    "¶46"
+   ]
+  },
+  {
+   "id": "7.7.6",
+   "type": "evidence",
+   "text": "Over 50% amended or rewrote constitutions; populists rule 6.5 versus 3 years.",
+   "attribution": "reported",
+   "source": [
+    "¶46"
+   ]
+  },
+  {
+   "id": "7.7.7",
+   "type": "evidence",
+   "text": "Stanford: visibility-driven re-election tempts short-term populist policies.",
+   "attribution": "reported",
+   "source": [
+    "¶47"
+   ]
+  },
+  {
+   "id": "7.7.8",
+   "type": "evidence",
+   "text": "Sweden Democrats repurposed FOI and alternative media against elites.",
+   "attribution": "reported",
+   "source": [
+    "¶47"
+   ]
+  },
+  {
+   "id": "7.7.9",
+   "type": "evidence",
+   "text": "They expose scandals to erode trust in traditional elites.",
+   "attribution": "reported",
+   "source": [
+    "¶47"
+   ]
+  },
+  {
+   "id": "7.7.10",
+   "type": "rebuttal",
+   "text": "Causality is backwards: populists damage democracy by reducing transparency.",
+   "attribution": "author",
+   "source": [
+    "¶48"
+   ]
+  },
+  {
+   "id": "7.7.11",
+   "type": "rebuttal",
+   "text": "Cherry-picking works only while the full record stays hidden.",
+   "attribution": "author",
+   "source": [
+    "¶48"
+   ]
+  },
+  {
+   "id": "7.7.12",
+   "type": "rebuttal",
+   "text": "Electoral cycles cause short-termism with or without transparency.",
+   "attribution": "author",
+   "source": [
+    "¶49"
+   ]
+  },
+  {
+   "id": "7.7.13",
+   "type": "rebuttal",
+   "text": "Documented long-term rationale makes unpopular-but-wise decisions defensible.",
+   "attribution": "author",
+   "source": [
+    "¶49"
+   ]
+  },
+  {
+   "id": "7.7.14",
+   "type": "rebuttal",
+   "text": "Evaluating reasoning, not just outcomes, is populism's antidote.",
+   "attribution": "author",
+   "source": [
+    "¶50"
+   ]
+  },
+  {
+   "id": "7.7.15",
+   "type": "rebuttal",
+   "text": "CEOs want documented reasoning, not merely popular decisions.",
+   "attribution": "author",
+   "source": [
+    "¶49"
+   ]
+  },
+  {
+   "id": "7.8",
+   "type": "counterpoint",
+   "text": "Objection: misinformation makes transparency pointless.",
+   "attribution": "counter",
+   "source": [
+    "¶50"
+   ]
+  },
+  {
+   "id": "7.8.1",
+   "type": "evidence",
+   "text": "Harvard 2023: Canadian panel; COVID-19 false beliefs lower perceived transparency.",
+   "attribution": "reported",
+   "source": [
+    "¶50"
+   ]
+  },
+  {
+   "id": "7.8.2",
+   "type": "evidence",
+   "text": "This holds controlling for real transparency levels.",
+   "attribution": "reported",
+   "source": [
+    "¶50"
+   ]
+  },
+  {
+   "id": "7.8.3",
+   "type": "evidence",
+   "text": "Negative transparency perceptions cut voting, trust, and democratic satisfaction.",
+   "attribution": "reported",
+   "source": [
+    "¶50"
+   ]
+  },
+  {
+   "id": "7.8.4",
+   "type": "evidence",
+   "text": "Citizens prize transparency's idea but dislike disclosures' messy content.",
+   "attribution": "reported",
+   "source": [
+    "¶51"
+   ]
+  },
+  {
+   "id": "7.8.5",
+   "type": "rebuttal",
+   "text": "So-why-bother does not follow from these findings.",
+   "attribution": "author",
+   "source": [
+    "¶51"
+   ]
+  },
+  {
+   "id": "7.8.6",
+   "type": "rebuttal",
+   "text": "False beliefs drive perceived opacity, not the reverse.",
+   "attribution": "author",
+   "source": [
+    "¶51"
+   ]
+  },
+  {
+   "id": "7.8.7",
+   "type": "rebuttal",
+   "text": "Opacity enables false beliefs; secrecy vacuums breed speculation.",
+   "attribution": "author",
+   "source": [
+    "¶52"
+   ]
+  },
+  {
+   "id": "7.8.8",
+   "type": "rebuttal",
+   "text": "Election conspiracies grow where processes stay opaque.",
+   "attribution": "author",
+   "source": [
+    "¶52"
+   ]
+  },
+  {
+   "id": "7.8.9",
+   "type": "rebuttal",
+   "text": "Full documentation gives checkable ground truth for false claims.",
+   "attribution": "author",
+   "source": [
+    "¶52"
+   ]
+  },
+  {
+   "id": "7.8.10",
+   "type": "rebuttal",
+   "text": "Latent availability deters misconduct even without consumption.",
+   "attribution": "author",
+   "source": [
+    "¶53"
+   ]
+  },
+  {
+   "id": "7.8.11",
+   "type": "rebuttal",
+   "text": "CEOs need not read every email to benefit from access.",
+   "attribution": "author",
+   "source": [
+    "¶53"
+   ]
+  },
+  {
+   "id": "7.8.12",
+   "type": "rebuttal",
+   "text": "Persistent transparency builds trust through consistently matching reality.",
+   "attribution": "author",
+   "source": [
+    "¶53"
+   ]
+  },
+  {
+   "id": "7.8.13",
+   "type": "rebuttal",
+   "text": "Pair transparency with accessibility, explanation, and intermediary translators.",
+   "attribution": "author",
+   "source": [
+    "¶54"
+   ]
+  },
+  {
+   "id": "7.9",
+   "type": "counterpoint",
+   "text": "Objection: markets will be manipulated by early disclosures.",
+   "attribution": "counter",
+   "source": [
+    "¶54"
+   ]
+  },
+  {
+   "id": "7.9.1",
+   "type": "counterpoint",
+   "text": "Trade positions and monetary deliberations invite trader exploitation.",
+   "attribution": "counter",
+   "source": [
+    "¶54"
+   ]
+  },
+  {
+   "id": "7.9.2",
+   "type": "concession",
+   "text": "Conceded: valid but narrow; answer is delayed, not permanent, secrecy.",
+   "attribution": "conceded",
+   "source": [
+    "¶54"
+   ]
+  },
+  {
+   "id": "7.9.3",
+   "type": "evidence",
+   "text": "The Fed releases minutes in three weeks, transcripts in five years.",
+   "attribution": "reported",
+   "source": [
+    "¶55"
+   ]
+  },
+  {
+   "id": "7.9.4",
+   "type": "evidence",
+   "text": "TTIP failed amid backlash from citizens feeling excluded by secrecy.",
+   "attribution": "reported",
+   "source": [
+    "¶55"
+   ]
+  },
+  {
+   "id": "7.9.5",
+   "type": "rebuttal",
+   "text": "All information goes public eventually; only timing is managed.",
+   "attribution": "author",
+   "source": [
+    "¶55"
+   ]
+  },
+  {
+   "id": "7.9.6",
+   "type": "rebuttal",
+   "text": "Monetary waits for implementation, trade for conclusion, procurement for award.",
+   "attribution": "author",
+   "source": [
+    "¶55"
+   ]
+  },
+  {
+   "id": "7.9.7",
+   "type": "rebuttal",
+   "text": "Procurement secrecy lets officials favor connected contractors.",
+   "attribution": "author",
+   "source": [
+    "¶56"
+   ]
+  },
+  {
+   "id": "7.9.8",
+   "type": "rebuttal",
+   "text": "Brazil's contract sunlight specifically prevents procurement fraud.",
+   "attribution": "author",
+   "source": [
+    "¶56"
+   ]
+  },
+  {
+   "id": "7.10",
+   "type": "counterpoint",
+   "text": "Objection: those in power will never allow this.",
+   "attribution": "counter",
+   "source": [
+    "¶56"
+   ]
+  },
+  {
+   "id": "7.10.1",
+   "type": "rebuttal",
+   "text": "That describes the political challenge, not a principled objection.",
+   "attribution": "author",
+   "source": [
+    "¶56"
+   ]
+  },
+  {
+   "id": "7.10.2",
+   "type": "evidence",
+   "text": "Iceland 2008: 950 citizens set values; 25-member politician-free council drafted.",
+   "attribution": "reported",
+   "source": [
+    "¶56"
+   ]
+  },
+  {
+   "id": "7.10.3",
+   "type": "evidence",
+   "text": "3,600 social-media comments; unanimous council; two-thirds referendum approval.",
+   "attribution": "reported",
+   "source": [
+    "¶56"
+   ]
+  },
+  {
+   "id": "7.10.4",
+   "type": "evidence",
+   "text": "Parliament refused to ratify the draft.",
+   "attribution": "reported",
+   "source": [
+    "¶57"
+   ]
+  },
+  {
+   "id": "7.10.5",
+   "type": "evidence",
+   "text": "OGP: 75 countries, 4,500+ commitments since 2011; one-third delayed for funding.",
+   "attribution": "reported",
+   "source": [
+    "¶57"
+   ]
+  },
+  {
+   "id": "7.10.6",
+   "type": "evidence",
+   "text": "Coordination failures, weak support, and transitions kill the rest.",
+   "attribution": "reported",
+   "source": [
+    "¶57"
+   ]
+  },
+  {
+   "id": "7.10.7",
+   "type": "evidence",
+   "text": "Successor governments abandon predecessors' transparency promises.",
+   "attribution": "reported",
+   "source": [
+    "¶57"
+   ]
+  },
+  {
+   "id": "7.10.8",
+   "type": "concession",
+   "text": "Conceded: opacity's beneficiaries will always resist.",
+   "attribution": "conceded",
+   "source": [
+    "¶58"
+   ]
+  },
+  {
+   "id": "7.10.9",
+   "type": "rebuttal",
+   "text": "Threatening the powerful is the point, not a flaw.",
+   "attribution": "author",
+   "source": [
+    "¶58"
+   ]
+  },
+  {
+   "id": "7.10.10",
+   "type": "evidence",
+   "text": "Sweden 1766, post-Watergate, and post-2008 Iceland opened reform windows.",
+   "attribution": "reported",
+   "source": [
+    "¶58"
+   ]
+  },
+  {
+   "id": "7.10.11",
+   "type": "evidence",
+   "text": "Iceland's parliament ultimately blocked implementation despite the crisis.",
+   "attribution": "reported",
+   "source": [
+    "¶58"
+   ]
+  },
+  {
+   "id": "7.10.12",
+   "type": "rebuttal",
+   "text": "Ask who works for whom, not whether politicians permit oversight.",
+   "attribution": "author",
+   "source": [
+    "¶59"
+   ]
+  },
+  {
+   "id": "7.10.13",
+   "type": "claim",
+   "text": "This is a governance-design problem, not permission-seeking.",
+   "attribution": "author",
+   "source": [
+    "¶59"
+   ]
+  },
+  {
+   "id": "8",
+   "type": "claim",
+   "text": "Transparency is the measuring stick, not one value among many.",
+   "attribution": "author",
+   "source": [
+    "¶60"
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "claim",
+   "text": "Reject balancing transparency against efficiency, security, privacy, or speed.",
+   "attribution": "author",
+   "source": [
+    "¶60"
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "text": "Speed and accountability are byproducts; document everything, then improve.",
+   "attribution": "author",
+   "source": [
+    "¶60"
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "claim",
+   "text": "The record pressures consistency, reasoning, accountability, and prosecution.",
+   "attribution": "author",
+   "source": [
+    "¶61"
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "text": "Reviewable officials reason better; documented decisions grow careful.",
+   "attribution": "author",
+   "source": [
+    "¶61"
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "claim",
+   "text": "Reaching 100% transparency solves speed and accountability as consequences.",
+   "attribution": "author",
+   "source": [
+    "¶62"
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "example",
+   "text": "Linux: thousands worldwide, every commit, issue, and pull request visible.",
+   "attribution": "author",
+   "source": [
+    "¶62"
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "example",
+   "text": "Disagreeing users can fork the project.",
+   "attribution": "author",
+   "source": [
+    "¶62"
+   ]
+  },
+  {
+   "id": "8.8",
+   "type": "claim",
+   "text": "Complex collaborative systems can be built and maintained publicly.",
+   "attribution": "author",
+   "source": [
+    "¶63"
+   ]
+  },
+  {
+   "id": "8.9",
+   "type": "claim",
+   "text": "Government is involuntary: you cannot fork your country.",
+   "attribution": "author",
+   "source": [
+    "¶63"
+   ]
+  },
+  {
+   "id": "8.10",
+   "type": "claim",
+   "text": "Open source is voluntary exit; government binds non-participants.",
+   "attribution": "author",
+   "source": [
+    "¶63"
+   ]
+  },
+  {
+   "id": "8.11",
+   "type": "claim",
+   "text": "Less choice about affectedness means more right to see.",
+   "attribution": "author",
+   "source": [
+    "¶64"
+   ]
+  },
+  {
+   "id": "8.12",
+   "type": "claim",
+   "text": "You pay, live with consequences, and are CEO: act like it.",
+   "attribution": "author",
+   "source": [
+    "¶64"
+   ]
+  },
+  {
+   "id": "9",
+   "type": "theme",
+   "text": "Appendix registers 49 sources backing the case.",
+   "attribution": "author",
+   "source": [
+    "¶64"
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "evidence",
+   "text": "UNESCO lists the 1766 ordinance as first free-communication legislation.",
+   "attribution": "reported",
+   "source": [
+    "¶64"
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "evidence",
+   "text": "GWU archive marks the FOI act's 250th anniversary; Britannica covers the 1766 act's Hats-Caps-Chydenius origins.",
+   "attribution": "reported",
+   "source": [
+    "¶65"
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "evidence",
+   "text": "X-Road official specs plus wiki history: 1998 start, 2001 launch, 1996 leak.",
+   "attribution": "reported",
+   "source": [
+    "¶66"
+   ]
+  },
+  {
+   "id": "9.4",
+   "type": "evidence",
+   "text": "Estonia's 30-year journey rose 16th to 2nd, hitting 100% digitalization in 2024; Brazil's 2004 CGU portal holds five categories.",
+   "attribution": "reported",
+   "source": [
+    "¶67"
+   ]
+  },
+  {
+   "id": "9.5",
+   "type": "evidence",
+   "text": "OECD logs 20+ million yearly portal visits and 17-source 2018 integration.",
+   "attribution": "reported",
+   "source": [
+    "¶68"
+   ]
+  },
+  {
+   "id": "9.6",
+   "type": "evidence",
+   "text": "Fiquem Sabendo's LAI probe surfaced 60GB over 27 years of former presidents.",
+   "attribution": "reported",
+   "source": [
+    "¶68"
+   ]
+  },
+  {
+   "id": "9.7",
+   "type": "evidence",
+   "text": "OPEN launched April 1999 under Mayor Goh, covering 70 tasks.",
+   "attribution": "reported",
+   "source": [
+    "¶69"
+   ]
+  },
+  {
+   "id": "9.8",
+   "type": "evidence",
+   "text": "Peer-reviewed OPEN study confirms corruption falls as e-participation rises.",
+   "attribution": "reported",
+   "source": [
+    "¶69"
+   ]
+  },
+  {
+   "id": "9.9",
+   "type": "evidence",
+   "text": "NZ guidance plus DPMC: 30-business-day cabinet releases from January 2019.",
+   "attribution": "reported",
+   "source": [
+    "¶70"
+   ]
+  },
+  {
+   "id": "9.10",
+   "type": "evidence",
+   "text": "Taiwan's Pol.is crowdsourced Uber rules; paper traces Sunflower 2014, Tang, g0v.",
+   "attribution": "reported",
+   "source": [
+    "¶71"
+   ]
+  },
+  {
+   "id": "9.11",
+   "type": "evidence",
+   "text": "Iceland analyses cover rejected crowdsourced draft and deliberative quality.",
+   "attribution": "reported",
+   "source": [
+    "¶72"
+   ]
+  },
+  {
+   "id": "9.12",
+   "type": "evidence",
+   "text": "EFF's 10-year Snowden review details FREEDOM Act gains and limits.",
+   "attribution": "reported",
+   "source": [
+    "¶73"
+   ]
+  },
+  {
+   "id": "9.13",
+   "type": "evidence",
+   "text": "IAPP review links disclosures to legal change and GDPR acceleration.",
+   "attribution": "reported",
+   "source": [
+    "¶73"
+   ]
+  },
+  {
+   "id": "9.14",
+   "type": "evidence",
+   "text": "TechCrunch and ACLU cover 2020 illegality rulings and privacy victory.",
+   "attribution": "reported",
+   "source": [
+    "¶74"
+   ]
+  },
+  {
+   "id": "9.15",
+   "type": "evidence",
+   "text": "Pew 2019: 66% concerned; Roper tracks 1950s-present transparency opinion.",
+   "attribution": "reported",
+   "source": [
+    "¶75"
+   ]
+  },
+  {
+   "id": "9.16",
+   "type": "evidence",
+   "text": "Roper adds ABC and Freedom Forum poll history on openness.",
+   "attribution": "reported",
+   "source": [
+    "¶75"
+   ]
+  },
+  {
+   "id": "9.17",
+   "type": "evidence",
+   "text": "IMF defends friction as accountability; Cambridge studies EU legitimacy perceptions.",
+   "attribution": "reported",
+   "source": [
+    "¶76"
+   ]
+  },
+  {
+   "id": "9.18",
+   "type": "evidence",
+   "text": "World Bank reviews mixed transparency impacts incumbents can undo.",
+   "attribution": "reported",
+   "source": [
+    "¶77"
+   ]
+  },
+  {
+   "id": "9.19",
+   "type": "evidence",
+   "text": "Harvard details Oman's Iran backchannel; Oxford frames the democratic dilemma.",
+   "attribution": "reported",
+   "source": [
+    "¶77"
+   ]
+  },
+  {
+   "id": "9.20",
+   "type": "evidence",
+   "text": "Notre Dame release: transparency aids lobbyists across 50 states, decades studied.",
+   "attribution": "reported",
+   "source": [
+    "¶78"
+   ]
+  },
+  {
+   "id": "9.21",
+   "type": "evidence",
+   "text": "Oxford surveys diplomacy's secrecy evolution from antiquity to modernity.",
+   "attribution": "reported",
+   "source": [
+    "¶78"
+   ]
+  },
+  {
+   "id": "9.22",
+   "type": "evidence",
+   "text": "Harden-Kirkland book blames electoral competition gaps; Irish 2024 trial had 569 subjects.",
+   "attribution": "reported",
+   "source": [
+    "¶79"
+   ]
+  },
+  {
+   "id": "9.23",
+   "type": "evidence",
+   "text": "Brennan 2024: 735 officials, threats rising since 2020, 38% threatened, ±3% margin.",
+   "attribution": "reported",
+   "source": [
+    "¶80"
+   ]
+  },
+  {
+   "id": "9.24",
+   "type": "evidence",
+   "text": "NAAG tracks doxxing-swatting systematization and AI intensification.",
+   "attribution": "reported",
+   "source": [
+    "¶80"
+   ]
+  },
+  {
+   "id": "9.25",
+   "type": "evidence",
+   "text": "Issue One counts 22 protective states since 2022; Chicago finds ~60% support, 12% to 17% wariness in 2021-2022.",
+   "attribution": "reported",
+   "source": [
+    "¶81"
+   ]
+  },
+  {
+   "id": "9.26",
+   "type": "evidence",
+   "text": "Brennan decries overclassification; SIPRI links military openness to trust.",
+   "attribution": "reported",
+   "source": [
+    "¶82"
+   ]
+  },
+  {
+   "id": "9.27",
+   "type": "evidence",
+   "text": "Blair Institute: 43 states 1990-2018, populists 4x damaging, 5-place corruption slide.",
+   "attribution": "reported",
+   "source": [
+    "¶83"
+   ]
+  },
+  {
+   "id": "9.28",
+   "type": "evidence",
+   "text": "Stanford warns visibility-driven re-election tempts short-term populism.",
+   "attribution": "reported",
+   "source": [
+    "¶83"
+   ]
+  },
+  {
+   "id": "9.29",
+   "type": "evidence",
+   "text": "Sweden-Democrats study plus Harvard misinformation panel on perceived transparency.",
+   "attribution": "reported",
+   "source": [
+    "¶84"
+   ]
+  },
+  {
+   "id": "9.30",
+   "type": "evidence",
+   "text": "Latent-transparency experiments plus OGP's 75-country commitment autopsy.",
+   "attribution": "reported",
+   "source": [
+    "¶85"
+   ]
+  },
+  {
+   "id": "9.31",
+   "type": "evidence",
+   "text": "Hong 2024 ties competition-data quality to capacity; Ruijer (2020) maps conformity-to-resistance.",
+   "attribution": "reported",
+   "source": [
+    "¶86"
+   ]
+  },
+  {
+   "id": "9.32",
+   "type": "evidence",
+   "text": "Workaround-resistance study plus Nordics' 250+ year openness overview.",
+   "attribution": "reported",
+   "source": [
+    "¶87"
+   ]
+  },
+  {
+   "id": "9.33",
+   "type": "evidence",
+   "text": "Nordicom compares five Nordic regimes with inconsistent openness patterns.",
+   "attribution": "reported",
+   "source": [
+    "¶88"
+   ]
+  },
+  {
+   "id": "9.34",
+   "type": "evidence",
+   "text": "Finland's 1999 law deems documents public unless specifically exempted.",
+   "attribution": "reported",
+   "source": [
+    "¶88"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "from": "0",
+   "to": "1",
+   "type": "contains"
+  },
+  {
+   "from": "1",
+   "to": "1.1",
+   "type": "contains"
+  },
+  {
+   "from": "1",
+   "to": "1.2",
+   "type": "contains"
+  },
+  {
+   "from": "1",
+   "to": "1.3",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "2",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.1",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.2",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.3",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.4",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.5",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "3",
+   "type": "contains"
+  },
+  {
+   "from": "3",
+   "to": "3.1",
+   "type": "contains"
+  },
+  {
+   "from": "3",
+   "to": "3.2",
+   "type": "contains"
+  },
+  {
+   "from": "3",
+   "to": "3.3",
+   "type": "contains"
+  },
+  {
+   "from": "3",
+   "to": "3.4",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "4",
+   "type": "contains"
+  },
+  {
+   "from": "4",
+   "to": "4.1",
+   "type": "contains"
+  },
+  {
+   "from": "4",
+   "to": "4.2",
+   "type": "contains"
+  },
+  {
+   "from": "4",
+   "to": "4.3",
+   "type": "contains"
+  },
+  {
+   "from": "4",
+   "to": "4.4",
+   "type": "contains"
+  },
+  {
+   "from": "4",
+   "to": "4.5",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "5",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.1",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.2",
+   "type": "contains"
+  },
+  {
+   "from": "5.2",
+   "to": "5.2.1",
+   "type": "contains"
+  },
+  {
+   "from": "5.2",
+   "to": "5.2.2",
+   "type": "contains"
+  },
+  {
+   "from": "5.2",
+   "to": "5.2.3",
+   "type": "contains"
+  },
+  {
+   "from": "5.2",
+   "to": "5.2.4",
+   "type": "contains"
+  },
+  {
+   "from": "5.2",
+   "to": "5.2.5",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.3",
+   "type": "contains"
+  },
+  {
+   "from": "5.3",
+   "to": "5.3.1",
+   "type": "contains"
+  },
+  {
+   "from": "5.3",
+   "to": "5.3.2",
+   "type": "contains"
+  },
+  {
+   "from": "5.3",
+   "to": "5.3.3",
+   "type": "contains"
+  },
+  {
+   "from": "5.3",
+   "to": "5.3.4",
+   "type": "contains"
+  },
+  {
+   "from": "5.3",
+   "to": "5.3.5",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.4",
+   "type": "contains"
+  },
+  {
+   "from": "5.4",
+   "to": "5.4.1",
+   "type": "contains"
+  },
+  {
+   "from": "5.4",
+   "to": "5.4.2",
+   "type": "contains"
+  },
+  {
+   "from": "5.4",
+   "to": "5.4.3",
+   "type": "contains"
+  },
+  {
+   "from": "5.4",
+   "to": "5.4.4",
+   "type": "contains"
+  },
+  {
+   "from": "5.4",
+   "to": "5.4.5",
+   "type": "contains"
+  },
+  {
+   "from": "5.4",
+   "to": "5.4.6",
+   "type": "contains"
+  },
+  {
+   "from": "5.4",
+   "to": "5.4.7",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.5",
+   "type": "contains"
+  },
+  {
+   "from": "5.5",
+   "to": "5.5.1",
+   "type": "contains"
+  },
+  {
+   "from": "5.5",
+   "to": "5.5.2",
+   "type": "contains"
+  },
+  {
+   "from": "5.5",
+   "to": "5.5.3",
+   "type": "contains"
+  },
+  {
+   "from": "5.5",
+   "to": "5.5.4",
+   "type": "contains"
+  },
+  {
+   "from": "5.5",
+   "to": "5.5.5",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.6",
+   "type": "contains"
+  },
+  {
+   "from": "5.6",
+   "to": "5.6.1",
+   "type": "contains"
+  },
+  {
+   "from": "5.6",
+   "to": "5.6.2",
+   "type": "contains"
+  },
+  {
+   "from": "5.6",
+   "to": "5.6.3",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.7",
+   "type": "contains"
+  },
+  {
+   "from": "5.7",
+   "to": "5.7.1",
+   "type": "contains"
+  },
+  {
+   "from": "5.7",
+   "to": "5.7.2",
+   "type": "contains"
+  },
+  {
+   "from": "5.7",
+   "to": "5.7.3",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "6",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.1",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.2",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.3",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.4",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.5",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.6",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.7",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.8",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.9",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.10",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.11",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.12",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.13",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.14",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.15",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.16",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.17",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.18",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.19",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "7",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.1",
+   "to": "7.1.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.1",
+   "to": "7.1.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.1",
+   "to": "7.1.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.1",
+   "to": "7.1.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.1",
+   "to": "7.1.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.1",
+   "to": "7.1.6",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.2",
+   "to": "7.2.9",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.9",
+   "type": "contains"
+  },
+  {
+   "from": "7.3",
+   "to": "7.3.10",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.9",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.10",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.11",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.12",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.13",
+   "type": "contains"
+  },
+  {
+   "from": "7.4",
+   "to": "7.4.14",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.9",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.10",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.11",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.12",
+   "type": "contains"
+  },
+  {
+   "from": "7.5",
+   "to": "7.5.13",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.9",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.10",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.11",
+   "type": "contains"
+  },
+  {
+   "from": "7.6",
+   "to": "7.6.12",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.9",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.10",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.11",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.12",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.13",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.14",
+   "type": "contains"
+  },
+  {
+   "from": "7.7",
+   "to": "7.7.15",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.9",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.10",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.11",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.12",
+   "type": "contains"
+  },
+  {
+   "from": "7.8",
+   "to": "7.8.13",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.9",
+   "type": "contains"
+  },
+  {
+   "from": "7.9",
+   "to": "7.9.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.9",
+   "to": "7.9.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.9",
+   "to": "7.9.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.9",
+   "to": "7.9.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.9",
+   "to": "7.9.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.9",
+   "to": "7.9.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.9",
+   "to": "7.9.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.9",
+   "to": "7.9.8",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "7.10",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.1",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.2",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.3",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.4",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.5",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.6",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.7",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.8",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.9",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.10",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.11",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.12",
+   "type": "contains"
+  },
+  {
+   "from": "7.10",
+   "to": "7.10.13",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "8",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.1",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.2",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.3",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.4",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.5",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.6",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.7",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.8",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.9",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.10",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.11",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.12",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "9",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.1",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.2",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.3",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.4",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.5",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.6",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.7",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.8",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.9",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.10",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.11",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.12",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.13",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.14",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.15",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.16",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.17",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.18",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.19",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.20",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.21",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.22",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.23",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.24",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.25",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.26",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.27",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.28",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.29",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.30",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.31",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.32",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.33",
+   "type": "contains"
+  },
+  {
+   "from": "9",
+   "to": "9.34",
+   "type": "contains"
+  },
+  {
+   "from": "1.3",
+   "to": "2",
+   "type": "supports",
+   "note": "company analogy motivates documentation mandate"
+  },
+  {
+   "from": "3.2",
+   "to": "2",
+   "type": "supports",
+   "note": "reviewability argument supports mandate"
+  },
+  {
+   "from": "5.2.5",
+   "to": "5",
+   "type": "supports",
+   "note": "Nordic outcomes support feasibility"
+  },
+  {
+   "from": "5.3.4",
+   "to": "2",
+   "type": "supports",
+   "note": "bribery-leverage elimination supports mandate"
+  },
+  {
+   "from": "5.4.6",
+   "to": "2",
+   "type": "supports",
+   "note": "proven infrastructure supports mandate"
+  },
+  {
+   "from": "5.5.1",
+   "to": "7.9.8",
+   "type": "supports",
+   "note": "Brazil contract data backs procurement rebuttal"
+  },
+  {
+   "from": "5.6.3",
+   "to": "7.2.7",
+   "type": "supports",
+   "source": [
+    "¶17"
+   ],
+   "note": "NZ case evidence behind halt rebuttal"
+  },
+  {
+   "from": "5.7.2",
+   "to": "5",
+   "type": "supports",
+   "note": "Taiwan results support feasibility"
+  },
+  {
+   "from": "6.6",
+   "to": "6.5",
+   "type": "supports",
+   "note": "court ruling backs illegality claim"
+  },
+  {
+   "from": "6.8",
+   "to": "6.5",
+   "type": "supports",
+   "note": "Stone finding backs illegality claim"
+  },
+  {
+   "from": "6.9",
+   "to": "6.5",
+   "type": "supports",
+   "note": "abandonment backs illegality claim"
+  },
+  {
+   "from": "6.6",
+   "to": "7.6.7",
+   "type": "supports",
+   "note": "ruling feeds security rebuttal"
+  },
+  {
+   "from": "6.12",
+   "to": "7.6.7",
+   "type": "supports",
+   "note": "reform act feeds security rebuttal"
+  },
+  {
+   "from": "6.10",
+   "to": "2",
+   "type": "supports",
+   "note": "oversight-failure structure supports mandate"
+  },
+  {
+   "from": "6.19",
+   "to": "2",
+   "type": "supports",
+   "note": "designed-in transparency supports mandate"
+  },
+  {
+   "from": "4.5",
+   "to": "7.1.5",
+   "type": "supports",
+   "note": "privacy tech backs allocation rebuttal"
+  },
+  {
+   "from": "7.10.10",
+   "to": "7.10.12",
+   "type": "supports",
+   "note": "reform windows back assert-authority"
+  },
+  {
+   "from": "3.4",
+   "to": "2",
+   "type": "qualifies",
+   "note": "availability scope-limits the mandate"
+  },
+  {
+   "from": "7.3.7",
+   "to": "2",
+   "type": "qualifies",
+   "note": "temporary negotiation secrecy exception"
+  },
+  {
+   "from": "7.5.9",
+   "to": "2",
+   "type": "qualifies",
+   "note": "personal-data protection scope limit"
+  },
+  {
+   "from": "7.6.10",
+   "to": "2",
+   "type": "qualifies",
+   "note": "operational secrecy exception"
+  },
+  {
+   "from": "7.9.5",
+   "to": "2",
+   "type": "qualifies",
+   "note": "timing management exception"
+  },
+  {
+   "from": "6.17",
+   "to": "6.5",
+   "type": "qualifies",
+   "note": "harm uncertainty hedges catastrophe claim"
+  },
+  {
+   "from": "8.6",
+   "to": "8.8",
+   "type": "exemplifies",
+   "note": "Linux illustrates public complex work"
+  },
+  {
+   "from": "4.4",
+   "to": "4",
+   "type": "exemplifies",
+   "note": "fiscal case illustrates direction claim"
+  },
+  {
+   "from": "5.5.4",
+   "to": "5.5.5",
+   "type": "exemplifies",
+   "note": "pension find illustrates fraud-finding"
+  },
+  {
+   "from": "5.2.1",
+   "to": "9.1",
+   "type": "restates",
+   "note": "body claim restated in source register"
+  },
+  {
+   "from": "5.2.3",
+   "to": "9.2",
+   "type": "restates",
+   "note": "Chydenius account restated in register"
+  },
+  {
+   "from": "5.4.1",
+   "to": "9.3",
+   "type": "restates",
+   "note": "X-Road stats restated in register"
+  },
+  {
+   "from": "5.5.2",
+   "to": "9.5",
+   "type": "restates",
+   "note": "portal traffic restated in register"
+  },
+  {
+   "from": "5.3.1",
+   "to": "9.7",
+   "type": "restates",
+   "note": "OPEN scope restated in register"
+  },
+  {
+   "from": "5.6.1",
+   "to": "9.9",
+   "type": "restates",
+   "note": "cabinet window restated in register"
+  },
+  {
+   "from": "5.7.1",
+   "to": "9.10",
+   "type": "restates",
+   "note": "Pol.is account restated in register"
+  },
+  {
+   "from": "6.6",
+   "to": "9.14",
+   "type": "restates",
+   "note": "ruling restated in register"
+  },
+  {
+   "from": "6.16",
+   "to": "9.13",
+   "type": "restates",
+   "note": "GDPR acceleration restated in register"
+  },
+  {
+   "from": "7.1.1",
+   "to": "9.15",
+   "type": "restates",
+   "note": "Pew numbers restated in register"
+  },
+  {
+   "from": "7.2.3",
+   "to": "9.17",
+   "type": "restates",
+   "note": "Robodebt case restated in register"
+  },
+  {
+   "from": "7.3.2",
+   "to": "9.19",
+   "type": "restates",
+   "note": "backchannel restated in register"
+  },
+  {
+   "from": "7.4.2",
+   "to": "9.20",
+   "type": "restates",
+   "note": "50-state study restated in register"
+  },
+  {
+   "from": "7.5.2",
+   "to": "9.23",
+   "type": "restates",
+   "note": "Brennan survey restated in register"
+  },
+  {
+   "from": "7.6.2",
+   "to": "9.25",
+   "type": "restates",
+   "note": "Chicago poll restated in register"
+  },
+  {
+   "from": "7.7.2",
+   "to": "9.27",
+   "type": "restates",
+   "note": "populism dataset restated in register"
+  },
+  {
+   "from": "7.8.1",
+   "to": "9.29",
+   "type": "restates",
+   "note": "misinformation panel restated in register"
+  }
+ ]
+}

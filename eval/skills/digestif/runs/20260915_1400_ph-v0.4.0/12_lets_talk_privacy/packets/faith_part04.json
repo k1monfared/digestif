@@ -1,0 +1,247 @@
+{
+ "sample": "12_lets_talk_privacy",
+ "part": 4,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "8",
+   "type": "theme",
+   "attribution": "author",
+   "text": "The verification question gets its own treatment: what can and cannot be checked.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "## How Do We Know Companies Don't Store Plaintext Passwords?\n**Short answer: We don't know for certain.**"
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "What you can verify: open-source clients hash or encrypt passwords before sending, though this proves only what the client does.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "### What We CAN Verify:\n- **Open-source clients:** If client code is open-source (like Signal, Proton), you can verify the client hashes/encrypts passwords before sending. But this only proves what the client does, not what the server does."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Network traffic inspection with tools like Wireshark shows what is transmitted; plaintext over the network is a red flag.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "- **Network traffic inspection:** Tools like Wireshark can show what's transmitted. If passwords are sent in plaintext over the network, that's a red flag. But even with HTTPS encryption, you can't see what the server does after decryption."
+    }
+   ]
+  },
+  {
+   "id": "8.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Even with HTTPS encryption, you cannot see what the server does after decryption.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "- **Network traffic inspection:** Tools like Wireshark can show what's transmitted. If passwords are sent in plaintext over the network, that's a red flag. But even with HTTPS encryption, you can't see what the server does after decryption."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Security audits: independent auditors can review server code if given access, but you trust the auditor and that the audited code was deployed.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "- **Security audits:** Independent auditors can review server code if given access. But you're trusting the auditor and trusting the company deployed the audited code."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "What you cannot verify: server-side code is almost always closed source, and even if shown to auditors you cannot verify it is what runs.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "### What We CANNOT Verify:\n- **Server-side code:** Almost always closed-source. Even if shown to auditors, you can't verify that's what's actually running."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Even if truthful during an audit, they could add password logging in a later update.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "- **Whether they changed it later:** Even if honest during an audit, they could add password logging in a later update."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "An employee with server access could modify the code, or someone who breaches their systems could inject logging.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rogue employees or breaches:** Even if official code doesn't log passwords, an employee with server access could modify it, or someone who breaches their systems could inject logging."
+    }
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Good signs: open-source server code, independent audits with published results, and breach disclosure where passwords were not compromised.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "### Evidence to Look For:\n#### Good Signs:\n- **Open-source server code:** Rare, but some services do this\n- **Independent security audits:** Third-party audits of password handling with published results\n- **Breach disclosure:** If breached and passwords weren't compromised, that's evidence of proper hashing"
+    }
+   ]
+  },
+  {
+   "id": "8.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Bad signs: being able to reset a password and access old data, security through obscurity, and a history of privacy violations.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "#### Bad Signs:\n- **Can reset password and access old data:** Suggests they have your encryption keys, which might mean they can store passwords too\n- **Security through obscurity:** Not publishing their security model\n- **History of privacy violations:** Past behavior predicting future behavior"
+    }
+   ]
+  },
+  {
+   "id": "8.9",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Facebook 2019: between 200-600 million passwords were logged in plaintext and searchable by over 20,000 Facebook employees.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "- **Facebook (2019):** Discovered they'd been logging [between 200-600 million passwords in plaintext](https://krebsonsecurity.com/2019/03/facebook-stored-hundreds-of-millions-of-user-passwords-in-plain-text-for-years/) in internal logs for years, searchable by over 20,000 Facebook employees, with some archives dating back to 2012. Facebook [claimed this was unintentional](https://about.fb.com/news/2019/03/keeping-passwords-secure/) and found no evidence of abuse."
+    }
+   ]
+  },
+  {
+   "id": "8.9.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Some archives dated back to 2012, and Facebook claimed the logging was unintentional.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "- **Facebook (2019):** Discovered they'd been logging [between 200-600 million passwords in plaintext](https://krebsonsecurity.com/2019/03/facebook-stored-hundreds-of-millions-of-user-passwords-in-plain-text-for-years/) in internal logs for years, searchable by over 20,000 Facebook employees, with some archives dating back to 2012. Facebook [claimed this was unintentional](https://about.fb.com/news/2019/03/keeping-passwords-secure/) and found no evidence of abuse."
+    }
+   ]
+  },
+  {
+   "id": "8.10",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Adobe 2013: the breach revealed stored password hints in plaintext, making brute-forcing easier, though at least passwords were hashed.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "### Real-World Examples:\n- **Adobe (2013):** Breach revealed they stored password hints in plaintext, making brute-forcing easier (but at least passwords were hashed) - [Source](https://en.wikipedia.org/wiki/2013_Adobe_Systems_data_breach)"
+    }
+   ]
+  },
+  {
+   "id": "8.11",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Many small services store passwords in plaintext or use MD5 without salt, and you find out when they get breached.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "- **Many small services:** Store passwords in plaintext or use weak hashing (MD5 without salt) - you find out when they get breached"
+    }
+   ]
+  },
+  {
+   "id": "8.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You are always trusting the server operator to some degree unless one of three conditions holds.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "### The Fundamental Problem:\nYou're always trusting the server operator to some degree unless:"
+    }
+   ]
+  },
+  {
+   "id": "8.12.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "All cryptography happens client-side, like Signal with recovery keys.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "1. All cryptography happens client-side (like Signal with recovery keys)\n2. The server never sees anything that could decrypt your data (zero-knowledge proof systems)\n3. Server code is open-source AND reproducibly built AND you can verify what's running"
+    }
+   ]
+  },
+  {
+   "id": "8.12.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The server never sees anything that could decrypt your data, as with zero-knowledge proof systems.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "1. All cryptography happens client-side (like Signal with recovery keys)\n2. The server never sees anything that could decrypt your data (zero-knowledge proof systems)\n3. Server code is open-source AND reproducibly built AND you can verify what's running"
+    }
+   ]
+  },
+  {
+   "id": "8.12.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Server code is open-source and reproducibly built, and you can verify what is running.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "1. All cryptography happens client-side (like Signal with recovery keys)\n2. The server never sees anything that could decrypt your data (zero-knowledge proof systems)\n3. Server code is open-source AND reproducibly built AND you can verify what's running"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The bottom line: for most commercial services you trust reputation, jurisdiction, business model, and past behavior rather than cryptographic guarantees.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "## Bottom Line\nFor most commercial services, you're trusting their reputation, jurisdiction, business model, and past behavior rather than cryptographically verifiable guarantees. Security-conscious people prefer client-side encryption, open-source everything, decentralized systems that minimize trust, and hardware security keys (like YubiKey) that never expose the secret.\n---"
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Security-conscious people prefer client-side encryption, open-source everything, decentralized systems that minimize trust, and hardware keys like YubiKey that never expose the secret.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "## Bottom Line\nFor most commercial services, you're trusting their reputation, jurisdiction, business model, and past behavior rather than cryptographically verifiable guarantees. Security-conscious people prefer client-side encryption, open-source everything, decentralized systems that minimize trust, and hardware security keys (like YubiKey) that never expose the secret.\n---"
+    }
+   ]
+  }
+ ]
+}

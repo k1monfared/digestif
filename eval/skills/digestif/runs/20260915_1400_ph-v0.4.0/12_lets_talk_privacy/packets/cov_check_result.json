@@ -1,0 +1,154 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (opencode-go), 2026-09-15",
+ "source_id": "lets-talk-privacy",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: 'end-to-end encryption' means the sender's device encrypts and the receiver's device decrypts with no decryption in between, but the real question is whether the provider (not just a man-in-the-middle) can access the content, and the answer is not completely clear.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "People usually want E2EE so that no one outside sender and receivers, particularly the provider, can access data. For WhatsApp this means Facebook should not access message content, but it still has metadata such as network, frequency, amount, and timing of communication.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "For WhatsApp the answer is unclear: if implemented as claimed and with no secret backdoors they cannot access data, but the app is not open source and not truly auditable, so external audits can never prove the negative (that access is impossible).",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Evidence against WhatsApp/Meta: the 2021 privacy policy changes allowing data sharing with Facebook for relevant offers and ads across Meta products, plus prior security failures such as storing hundreds of millions of passwords in plaintext, make it almost certain they can and do access message content.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Smoking gun test: whether a platform can back up or let you access history across devices without manually linking/transferring keys. If the provider ever holds the key, it is like leaving a copy of your door key on a public billboard and it can decrypt any messages at will.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "How WhatsApp actually works: the server stores encrypted message history and device-to-account identity mappings, authenticates new devices, and provides the keys needed to decrypt history. This makes the server a trusted intermediary that could silently authenticate a rogue device and hide it from your device list, unlike Signal's manual key transfer.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Proton Mail model: the private key is generated in the browser and encrypted with your password using bcrypt and AES-256, then stored encrypted on Proton's servers, so the server holds only an encrypted private key.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Proton login flow: type password, browser hashes it with bcrypt plus a server-provided salt, sends the hash to authenticate, server returns the encrypted private key, and the browser decrypts it locally with the actual password.",
+   "weight": "Nice to have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Distinction between hashing (one-way, used for authentication, cannot be reversed to the password) and encryption (two-way, used on the private key). Proton receives the hash for authentication while the key is encrypted with the actual password, so in theory the hash cannot decrypt the key.",
+   "weight": "Nice to have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Proton's critical residual vulnerability: Proton could serve malicious client code (web app or update) to capture the actual password before hashing and use it to decrypt the stored key. This is why open-source clients matter, yet you must still trust the served code matches the source, no future malicious injection, and no infrastructure compromise.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Signal's approach: by default history is stored only on your device and deleted from servers after delivery. Device switching offers three options: manual local backup protected by a 30-digit passphrase, direct device-to-device local transfer, or Secure Backups encrypted with a 64-character recovery key Signal never sees.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Signal is genuinely zero-knowledge: servers are never positioned to grant access to message history, and even with cloud backups Signal cannot decrypt backups and cannot help recover them if the recovery key is lost.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Password storage limits: you can verify what an open-source client does (hashing before transmission), inspect network traffic, and read audits, but you cannot verify server-side code, whether it changed after an audit, rogue employees, or breaches. There is no cryptographic guarantee about server password handling.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Real-world examples: Facebook in 2019 logged roughly 200-600 million passwords in plaintext in internal logs for years, searchable by over 20,000 employees with archives dating to 2012, claiming it was unintentional. Adobe's 2013 breach exposed plaintext password hints, and many small services use plaintext or unsalted MD5. Proton's loss of old emails after an email/SMS password reset suggests genuine inability to decrypt, though this is not proof.",
+   "weight": "Nice to have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Bottom line: for most commercial services you are trusting reputation, jurisdiction, business model, and past behavior rather than cryptographically verifiable guarantees. Security-conscious users prefer client-side encryption, open-source everything, decentralized systems that minimize trust, and hardware security keys such as YubiKey that never expose the secret.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, not yet mapped to LOGLOG."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 11,
+  "must_have_present": 0,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 0,
+  "must_recall": 0.0,
+  "overall_recall": 0.0
+ },
+ "missing_list": []
+}

@@ -1,0 +1,87 @@
+{
+ "sample": "03_cant_stop_addicted_to_shindig",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Board fits 1980 constraints; forced-move rule compensates residual imbalance.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Single-column deviations at most +/-13.6%. Perfect balance would need Column 2/12: 171 steps and Column 7: 834 steps, about an 8-hour game. Optimal +-1-step board [3,5,8,10,12,14,12,10,8,5,3] cuts deviation to +/-3.09%, 4x better with +1 step."
+    },
+    {
+     "ref": "¶23",
+     "text": "Best balance under 20 steps: [4,7,11,14,17,20,17,14,11,7,4], +/-2.17%, 6x improvement. Best linear step=2.25 keeps [3,5,8,10,12,14,...] at +/-3.09%; integer step base=5 step=4 gives +/-3.32%. Multi-column reality: Column 7 in {6,7,8} finishes in ~2 turns vs Column 2 in {2,3,12} in ~30 turns."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Single-column deviations stay within +/-13.6% given integer lengths.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Single-column deviations at most +/-13.6%. Perfect balance would need Column 2/12: 171 steps and Column 7: 834 steps, about an 8-hour game. Optimal +-1-step board [3,5,8,10,12,14,12,10,8,5,3] cuts deviation to +/-3.09%, 4x better with +1 step."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Perfect balance needs 171 vs 834 steps, about an 8-hour game.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Single-column deviations at most +/-13.6%. Perfect balance would need Column 2/12: 171 steps and Column 7: 834 steps, about an 8-hour game. Optimal +-1-step board [3,5,8,10,12,14,12,10,8,5,3] cuts deviation to +/-3.09%, 4x better with +1 step."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Optimal +-1-step board [3,5,8,10,12,14,12,10,8,5,3] cuts deviation to +/-3.09%, 4x better.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Single-column deviations at most +/-13.6%. Perfect balance would need Column 2/12: 171 steps and Column 7: 834 steps, about an 8-hour game. Optimal +-1-step board [3,5,8,10,12,14,12,10,8,5,3] cuts deviation to +/-3.09%, 4x better with +1 step."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Best under-20 board [4,7,11,14,17,20,17,14,11,7,4] hits +/-2.17%; integer linear design +/-3.32%.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Best balance under 20 steps: [4,7,11,14,17,20,17,14,11,7,4], +/-2.17%, 6x improvement. Best linear step=2.25 keeps [3,5,8,10,12,14,...] at +/-3.09%; integer step base=5 step=4 gives +/-3.32%. Multi-column reality: Column 7 in {6,7,8} finishes in ~2 turns vs Column 2 in {2,3,12} in ~30 turns."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Advice: play 50% rule on columns 5-9; designers prioritize playability plus handicaps.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Conclusion: four-dice flattens distribution (P7 64.4% vs P2 13.2%, 4.88x vs 6x); combos matter ({6,7,8} 92% vs {2,3,12} 44%); probabilistic strategies dominate; consistency beats speed; P1 advantage 55.59%; forced-move rule compensates imbalance; perfect balance unnecessary."
+    },
+    {
+     "ref": "¶25",
+     "text": "For players: use FiftyPercentSurvival, aim for columns 5-9, avoid columns 2-3 and 11-12, prioritize consistency. For designers: prioritize playability over perfection, consider handicaps. Open question: can any strategy break 75%, or is ~70% the limit?"
+    }
+   ]
+  }
+ ]
+}

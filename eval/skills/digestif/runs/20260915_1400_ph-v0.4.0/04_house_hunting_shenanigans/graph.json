@@ -1,0 +1,1646 @@
+{
+  "meta": {
+    "title": "House Hunting Shenanigans: A Weekend of Offers",
+    "source": "04_house_hunting_shenanigans/source.txt",
+    "passages": {
+      "¶1": "[This is not a typical blog post, hence the weird format, likely not good for reading on the phone. It is a representations of events happening and my thoughts on them.]",
+      "¶2": "So, I've been looking for a house for almost a year now. It's been way longer than I expected and the market has been weird, to say the least. But just for the context, there are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days. I've just had one of the most informative experiences of my life in the past two days. Here is what happend, and how I think about it.",
+      "¶3": "- N is my realtor\n- J is the seller's realtor\n- C is J's partner\n- L is J and C's assistant",
+      "¶4": "<table style=\"width:100%;\">\n  <tr>\n    <th style=\"width:10%;\">Time</th>\n    <th style=\"width:30%;\">Events</th>\n    <th style=\"width:30%;\">My Thoughts</th>\n    <th style=\"width:30%;\">Other Details</th>\n  </tr>",
+      "¶5": "  <tr>\n    <td>Wednesday Afternoon</td>\n    <td>I put the highest price I can afford on a house that I like, but that is still about 30K below the asking price.</td>\n    <td>The house is worth more than my offer but I'm hoping I might have a chance.</td>\n    <td></td>\n  </tr>",
+      "¶6": "  <tr>\n    <td>Thursday Noon</td>\n    <td>I send a couple of other houses to my realtor to book a showing for over the weekend.</td>\n    <td></td>\n    <td></td>\n  </tr>",
+      "¶7": "  <tr>\n    <td>Thursday 5pm</td>\n    <td>a new house comes on the market. I send it to my realtor to book a showing. He adds it to our weekend tour.</td>\n    <td></td>\n    <td></td>\n  </tr>",
+      "¶8": "  <tr>\n    <td>Thursday 6pm</td>\n    <td>I'm informed that my offer is not accepted and they are moving forward with other offers.</td>\n    <td>The house was worth that much but I couldn't afford anymore, this is fine, I've gotta move faster with the new ones. This last one is actually very exciting.</td>\n    <td></td>\n  </tr>",
+      "¶9": "  <tr>\n    <td>Thursday 7pm</td>\n    <td>Asked N to book the showing for the last house as soon as possible on Friday.</td>\n    <td></td>\n    <td></td>\n  </tr>",
+      "¶10": "  <tr>\n    <td>Friday 1pm</td>\n    <td>We see the house. I like it. I'm going to put an offer at the asking price.</td>\n    <td>I don't want to get into a bidding war with potential other offers. I'll make the offer as sweet as possible so that they accept it right away, but I don't give them time for other showings.</td>\n    <td>N says to write an offer 10K below and let them negotiate and then go up, because people always expect to negotiate. I'm not convinced since I'm offering their asking price, and they shouldn't want to negotiate on their asking price!</td>\n  </tr>",
+      "¶11": "  <tr>\n    <td>Friday 6pm</td>\n    <td>We send an offer with as much sweet things in it as possible at the asking price with the deadline of same day midnight.</td>\n    <td>They had other showings today, but it is unlikely that they'll get an offer at the asking price. So I should have a good chance.</td>\n    <td></td>\n  </tr>",
+      "¶12": "  <tr>\n    <td>Friday 9pm</td>\n    <td>N calls me, he can't get a hold of their realtor, and he hasn't heard anything from them. He says he'll keep trying.</td>\n    <td></td>\n    <td>N think it is a but unprofessional that they don't respond, but also hegets it, people might be busy with life.</td>\n  </tr>",
+      "¶13": "  <tr>\n    <td>Friday 10:30pm</td>\n    <td>N has got a hold of the seller's realtor, she is driving up island for a family thing and is busy. They are asking us to extend the offer until tomorrow midnight. They mention in passing that there's another offer on the house.</td>\n    <td>I don't buy this. They just want to buy time. I'm not even sure they have another offer. I don't want to get into a bidding war and my offer to be used for pushing others to put a higher price.</td>\n    <td>They have 4 more showings tomorrow. We don't want to let them get another competing offer while we are waiting for them.</td>\n  </tr>",
+      "¶14": "  <tr>\n    <td>Friday 11pm</td>\n    <td>I extend the offer until 10:30am Saturday.</td>\n    <td>People might be actually busy. But tomorrow morning should be enough to accept an offer that has met all their conditions.</td>\n    <td></td>\n  </tr>",
+      "¶15": "  <tr>\n    <td>Saturday Morning</td>\n    <td>Nothing happens.</td>\n    <td>Seems like they just wanted to keep my offer open so that they use it to compete with another offers if they come today, and also to tell potential buyers that there is an offer on the house.</td>\n    <td>N thinks the other offer was better. I don't even believe there was another offer. I ask them to disclose the other offer.</td>\n  </tr>",
+      "¶16": "  <tr>\n    <td>Saturday Afternoon</td>\n    <td>I take a nap.</td>\n    <td>They didn't even respond. I've moved on emotionally.</td>\n    <td>It is super rare for me to take a nap in the afternoon, like once every few years. And usually it happens when a big load is taken off of me.</td>\n  </tr>",
+      "¶17": "  <tr>\n    <td>Saturday 5pm</td>\n    <td>N calls, they say they have another offer which they're going to consider in an hour and if we are interested, we should provide ours in time.</td>\n    <td>They've had their shows, no other offer came in. My offer is much better than the other offer, they want to encourage me to rewrite the offer and then have the other one compete with me.</td>\n    <td>N thinks the other offer might be better, suggests if I want to increase the price. I don't think that's the case, I drop the offer by 20K from the asking price and remove most of those sweet things I'd put in the original offer. N strongly advises me against doing it. I do it anyways.</td>\n  </tr>",
+      "¶18": "  <tr>\n    <td>Saturday 6pm</td>\n    <td>We send the new offer and keep it open until 8:30pm the same day.</td>\n    <td></td>\n    <td></td>\n  </tr>",
+      "¶19": "  <tr>\n    <td>Saturday 7pm</td>\n    <td>N calls, the partner of the seller's realtor called N saying they've noticed the drop in price and wondering if he could \"fix\" that. He says if they want they can write a counteroffer.</td>\n    <td>The other offer apparently sucks and sucks real bad. They are trying to work with me.</td>\n    <td>In the mean time the name of the seller's realtor J on the REW website is changed to her partner's C, and in fact, her name is removed from all her listings (a total of 4)!. I'm guessing the seller is really pissed at the realtor that they've lost 20K just like that and they don't want to work with her anymore. But I'm not sure why her name would be removed from all other listings. In the meantime she was busy with showings of a $3.5M house too.</td>\n  </tr>",
+      "¶20": "  <tr>\n    <td>Saturday 9pm</td>\n    <td>I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K \"above\" the asking price.</td>\n    <td>Seems like they are \"defending forward\" as someone said once. They saw they lost 20K, now they want to recoup that by pretending the other offer is so much better, and C is going to make up whatever J has messed up with a simple strategy like this.</td>\n    <td>I ask N what kind of morons are these people? He thinks the other offer is actually at this price but there might be a condition in there that they don't like it and they want to work with me instead. I don't buy any of it. They want a response by 11pm. I ask it to be extended for 24 hours. N says let's just respond in the morning.</td>\n  </tr>",
+      "¶21": "  <tr>\n    <td>Saturday 9:30pm</td>\n    <td>N calls, he says he thinks I did the right thing and he thanks me for doing so.</td>\n    <td></td>\n    <td></td>\n  </tr>",
+      "¶22": "  <tr>\n    <td>Sunday 8am</td>\n    <td>N messages me that we should respond soon. I tell him to update it to 10K below the asking price, remove every single sweet thing in the offer, and give them until 11am to respond.</td>\n    <td>They have 3 more showings today and I don't want another offer open until they get more.</td>\n    <td>N thinks I should meet them at the asking price or even at the 5K higher counteroffer. I don't think so. I tell him I believe they could get an offer at 45K below and with competing they probably could have brought them up to 30K below, but I'm almost certain they don't have anything above that and I might want to actually reduce it even more. He gets angry and says I shouldn't. I then tell him that I'm ok with 10K below and that's best and final offer.</td>\n  </tr>",
+      "¶23": "  <tr>\n    <td>Sunday 3pm</td>\n    <td>N forwards me a series of back and forth with the assistant of J, L.</td>\n    <td></td>\n    <td>read them below:</td>\n  </tr>",
+      "¶24": "  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td> Here are the correspondences verbatim (pi removed):\n        <br><br>Sunday 9am, from N to JCL: Good morning, L, J and C, Please see the attached offer on [...]. The dates have adjusted to meet your client’s preference. This is my client’s best an final offer. Thank you, N\n        <br><br>Sunday 1pm, from L to N: I just realized that this Offer has expired. Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond?  That seems very unprofessional to me, and certainly not in the best interest of your Clients. ~L. Unlicensed Assistant to J-C\n        <br><br>Sunday 1pm, from N to L: Hello L, I informed C last night that we would be submitting an offer first thing in the morning. I sent the offer, a touch base and text messages first thing in the morning. The offer you sent us last night was submitted at 9:15 PM and open till 11 PM. The offer we sent you this morning was sent at 9:15 AM and open till 11 AM. You are free to accept the new offer and extend the time for signing. Cheer, N\n        <br><br>Sunday 1pm, from L to N: The Offer we sent to you last night was already fully signed, so much less response time required from your Clients. It just bothers me as a member of the Public, who has been working in real Estate Admin positions in V. for over 37 years, to see a Realtor not doing their best for their Clients. Your turn around time was not reasonable. L\n        <br><br>Sunday 1:30pm, from N to L: Hello L, Professional and to your client’s interest service would have been to work with our excellent Full Price offer on Friday night / Saturday morning. Instead your team stalled and ended up with a 2nd and 3rd offers your clients are not interested in. The offer you have from us is exactly as my client wants it presented. The timeline was tight because even with 3 realtors your team has shown that they are not able work with us in a timely manner. Instead of spending time lobbing insults how about getting the job done? All the best, N\n    </td>\n  </tr>",
+      "¶25": "  <tr>\n    <td>Sunday 5:30pm</td>\n    <td>I see the emails and respond to N: Lol. Sorry you had to deal with this. And now they're throwing the assistant under the bus. Of course! At least we got to know J and C and their level of competence. If we do hear from them I will only present my offer in person and would need a response right away. Likely Monday after 5:30, and if you don't mind in your office. Please let me know if that's possible. Cheers, K</td>\n    <td>I think this is also a game from them trying to play the game that oh it was the assistant that didn't actually see the offer. That's pathetic.</td>\n    <td>N thinks they are actually incompetent and they don't know what they're doing.</td>\n  </tr>",
+      "¶26": "  <tr>\n    <td>Sunday 6pm</td>\n    <td>N responds: Hello K, What would be positive is if they reach out to us this evening or tomorrow morning with an acceptance of your offer that only requires you initialing a new deadline time. In regards to presenting an offer in person this never happens. This is why both sellers and purchasers hire independent representation. It’s frustrating in this situation in that I don’t think this team is doing a solid job of representing their clients. The right hand maybe not knowing what the left hand is doing? They most certainly have the legal obligation to present your offer and the seller is ultimately responsible to make a decision on what to do with it. You can send them this offer again tonight open for a few hours if you want to? </td>\n    <td>I don't want to present another offer. They have had an offer from me each of the past 3 days they've had a showing. That's an accomplishment on their side. I'm not going to help them with that anymore.</td>\n    <td></td>\n  </tr>",
+      "¶27": "  <tr>\n    <td>Sunday 6pm</td>\n    <td>I respond: Hi N, I do not believe that they didn't see the offer. My understanding is that today's showings didn't produce a better offer, or any at all. And now they are saying they want to open the closed doors again by pretending the assistant didn't see it on time, sure. OK, I get it, they wanted to try the whole weekend, and lucky for them I didn't have another house in mind to write an offer on, because I totally would. Anyways, what has happened over the weekend gave me a ton of valuable information which I really appreciate, whether this transaction happens or not. I'm certainly not writing another offer, I will not have an open offer for any period of time, so it is either what you mentioned happening or what I asked as an in person thing, whether it has every happened before or not is none of my concerns. What I know is that I'm not giving them another chance to try to find another competing offer. I've done more than enough in that regard. K</td>\n    <td></td>\n    <td></td>\n  </tr>",
+      "¶28": "  <tr>\n    <td>Monday morning</td>\n    <td>I send this to my realtor: Hi N, What a weekend that was. Thank you very much for working so patiently with me, and I'm sorry you had to deal with those unprofessional behaviors. Anyways, this was a great experience for me and I learned a lot. Going forward I would like to make a couple of changes: please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it. Also, any time that a seller's agent mentions an existing or competing offer please ask them to provide that in writing in form of the disclosure letter. I think this will immensely help me make better decisions and have a smoother process. Cheers, K</td>\n    <td>Feels like there are a million levers that realtors have to push you to increase the price, even when everything is pointing the other way, which makes sense. They want the deal to close and as a buyer I have more chance of doing that if I increase the price, hence the push. But I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so. And it takes energy to distill all information and remove noise that influences my decision in the heat of back and forth in negotiations.</td>\n    <td></td>\n  </tr>",
+      "¶29": "  <tr>\n      <td>\n          one week later\n      </td>\n      <td>\n          N says he thinks the house had an offer of 5K above asking price. I said I think it is below the asking price. We bet if it is the asking price or higher, I'll buy him a coffee, if it is 10K below asking price or lower, he'll buy me a coffee.\n      </td>\n      <td>\n          I think N still believes in those seller's realtors way too much.\n      </td>\n      <td>\n      </td>\n  </tr>",
+      "¶30": "  <tr>\n      <td>\n          two weeks later\n      </td>\n      <td>\n          the house is sold for 10K below the asking price.\n      </td>\n      <td>\n          They were not only stupid but also had a very huge ego.\n      </td>\n      <td>\n          N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price.\n      </td>\n  </tr>",
+      "¶31": "Final thoughts:",
+      "¶32": "- There was this other house that I was interested in about 7 months ago. I wrote an offer at a price I was comfortable with and which I thought that house is worth. He again pushed me multiple times to go 5-10% more which I didn't. The house was just sold for 5% more than my price, but keep in mind it took 7 months. In this case I couldn't really afford it at that price.",
+      "¶33": "- I had to dig a bit and figured out the seller is a marketing and sales person who teaches car dealerships how to sell cars. Interpret that however you wish.",
+      "¶34": "- It feels like the realtors have created this system that works fine for them, and the buyers and sellers now have to obey by how they work and in this, they basically are playing with us as pawns in their chess game. I know I'm exaggerating quite a bit, but the feeling is there. Not sure what can be done about this situation. For most people they just want to buy/sell a house and don't want to engage with the situation that much. But I find that counterproductive. We as a society have given up on so many things, a phone holder bought from amazon is not worth fighting for, let amazon do what they are doing, a laptop bought from bestbuy is not worth fighting for, let them do whatever, a stock from stockexchange is not worth fighting for, we don't even know how the stock market works, let them be, a tax return is not worth fighting for, just pay whatever the app tells you, a car bought from a dealership is not worth fighting for, this is what's available in the market, and a house bought/sold is not worth fighting for, realtors know what they're doing. I feel as if we spend hours and hours of our lived \"negotiating\" on the smallest things from a phone holder to a house, but when it comes to fixing the processes we don't even want to talk about it. It is so wrong.",
+      "¶35": "----\n\nIf you are interested in reading a conversation with chatgpt around this, take a look [here](https://chatgpt.com/share/67a15e86-56f8-8004-93cd-845159f7a4fe).",
+      "¶36": "----\n\nI couldn't share the conversation with Claude (3.5 haiku) but here are the key takeaways:",
+      "¶37": "Transaction Debrief:\n1. Transaction Overview\n   - Date of Experience: February 2025\n   - Property Type: Residential House\n   - Negotiation Duration: 3 Days (Friday-Sunday)\n   - Final Outcome: Walked away\n2. Key Decision Points",
+      "¶38": "   - Initial Offer Strategy\n     - First Offer: Full asking price with comprehensive favorable conditions\n     - Rationale: Attempt to secure property quickly without prolonged negotiations\n     - Outcome: Offer not immediately accepted\n   - Strategic Pivot Points\n      - Friday Evening: Extended offer deadline after seller's request\n      - Saturday Afternoon: Deliberately reduced offer by $20,000\n      - Sunday Morning: Slightly increased (10K) offer with minimal conditions\n      - Maintained strict timeline control throughout negotiation",
+      "¶39": "3. Emotional State During Negotiation\n    - Psychological Observations\n        - Initial Stage: Cautiously optimistic\n        - Mid-Negotiation: Increasing skepticism about seller's tactics\n        - Late Stage: Emotionally detached, strategic focus\n    - Emotional Management Techniques\n        - Remained objective despite multiple offer rejections\n        - Used strategic price adjustments as emotional buffer\n        - Demonstrated ability to walk away without apparent frustration",
+      "¶40": "4. Strategic Moves Used\n    - Information Management\n        - Requested written disclosure of competing offers\n        - Limited information sharing with selling agent\n        - Maintained communication boundaries\n    - Negotiation Tactics\n        - Rapid offer modifications\n        - Setting strict, short-duration offer windows\n        - Removing favorable conditions progressively\n        - Avoiding bidding war engagement",
+      "¶41": "5. Lessons Learned\n    - Realtor Interaction Insights\n      - Realtors may use competing offer narratives to manipulate pricing\n      - Important to request written documentation of claims\n      - Maintain clear, firm communication boundaries\n    - Negotiation Dynamics\n      - First offers are rarely accepted in competitive markets\n      - Emotional detachment is a significant negotiation advantage\n      - Market information asymmetry can be mitigated through strategic questioning",
+      "¶42": "6. Potential Improvements\n    - Communication Protocol\n        - Develop more explicit initial offer guidelines\n        - Create a standardized response template for offer rejections\n        - Establish clear communication escalation process\n    - Negotiation Preparation\n        - Conduct more comprehensive pre-offer market research\n        - Develop a more structured offer modification strategy\n        - Create a personal \"walk away\" price threshold in advance\n    - Psychological Preparation\n        - Practice emotional regulation techniques\n        - Develop more sophisticated skepticism about market narratives\n        - Improve ability to distinguish between genuine and manipulative communication",
+      "¶43": "7. Market Context Observations\n   - Broader Real Estate Dynamics\n      - Observed manipulation potential in current real estate transaction models\n      - Identified systemic information asymmetry\n      - Recognized psychological pressure tactics used in negotiations",
+      "¶44": "8. Personal Growth Insights\n   - Strategic Thinking Development\n        - Demonstrated adaptability in complex negotiation environment\n        - Showed capacity to learn and adjust strategy in real-time\n        - Maintained critical thinking under negotiation pressure\n  - Recommended Personal Development\n        - Continue developing negotiation skills\n        - Study real estate market dynamics\n        - Practice emotional intelligence in high-stakes interactions",
+      "¶45": "9. Reflection Statement\n    - This experience revealed the complex psychological and strategic landscape of real estate transactions. The primary value was not in securing a specific property, but in understanding the intricate negotiation mechanisms and developing personal strategic capabilities.\n    - Key Takeaway: In negotiations, information, emotional control, and strategic flexibility are more valuable than immediate transactional success.",
+      "¶46": "An analysis of what worked and what didn't using Claude 3.5 haiku",
+      "¶47": "- SUCCESSES:\n    - Information Gathering Effectiveness\n        - Successfully identified when competing offers were likely bluffs\n        - Accurately predicted market behavior (reference to previous house that took 7 months to sell)\n        - Avoided overpaying due to FOMO or pressure\n    - Price Protection\n        - Maintained discipline on maximum price point\n        - Avoided emotional escalation in bidding\n        - Referenced past example validates this approach: previous house - they didn't overbid on took 7 months to sell at their original valuation\n    - Learning & Adaptation\n        - Developed concrete improvements (requesting written disclosure of competing offers)\n        - Identified specific process improvements\n        - Realtor validated some strategic choices (\"N calls, he says he thinks I did the right thing and he thanks me for doing so\")",
+      "¶48": "- FAILURES:\n    - Transaction Completion\n        - No house purchased\n        - Multiple failed negotiations\n        - Time spent without achieving primary goal\n    - Professional Relationships\n        - Created tension with selling agents\n        - Generated unprofessional responses\n        - May have damaged future negotiating positions",
+      "¶49": "- NEUTRAL/CONTEXT-DEPENDENT:\n    - Time Pressure Tactics\n        - Sometimes created leverage\n        - Sometimes backfired\n        - Effectiveness appears situation-dependent\n    - Price Reduction Strategy\n        - Created psychological impact\n        - But may have prevented deal completion\n        - Unknown if this helped or hurt long-term",
+      "¶50": "Recommendations:\n- Keep:\n    - Market analysis approach\n    - Price discipline\n    - Information verification requirements\n    - Learning system approach\n- Modify:\n    - Timeline flexibility (less rigid deadlines)\n    - Communication style (more professional)\n    - Relationship management (less adversarial)\n- Add:\n    - Clear success metrics beyond just price\n    - Relationship building strategies\n    - Alternative paths to deal completion"
+    },
+    "note": "Narrative post: the top layer uses theme nodes, and no claims are manufactured beyond the author's own statements. The final sections are AI-generated content presented by the author and are marked reported."
+  },
+  "nodes": [
+    {
+      "id": "0",
+      "type": "summary",
+      "text": "A weekend of offers and counteroffers led the buyer to suspect the sellers' realtors bluffed about competing offers and to change how he shares information.",
+      "attribution": "author",
+      "source": [
+        "¶2",
+        "¶27",
+        "¶28"
+      ]
+    },
+    {
+      "id": "1",
+      "type": "theme",
+      "text": "Context: almost a year of house hunting in a weird market, told through a table of events, thoughts, and details.",
+      "attribution": "author",
+      "source": [
+        "¶1",
+        "¶2",
+        "¶3"
+      ]
+    },
+    {
+      "id": "1.1",
+      "type": "evidence",
+      "text": "The post is not a typical blog post but a representation of events and the author's thoughts.",
+      "attribution": "author",
+      "source": [
+        "¶1"
+      ]
+    },
+    {
+      "id": "1.2",
+      "type": "claim",
+      "text": "He had been looking for a house for almost a year, longer than expected, in a weird market.",
+      "attribution": "author",
+      "source": [
+        "¶2"
+      ]
+    },
+    {
+      "id": "1.3",
+      "type": "claim",
+      "text": "Houses either stay on the market a long time or are gone in usually 1-2 days.",
+      "attribution": "author",
+      "source": [
+        "¶2"
+      ]
+    },
+    {
+      "id": "1.4",
+      "type": "evidence",
+      "text": "Cast: N his realtor, J the seller's realtor, C J's partner, L their assistant.",
+      "attribution": "author",
+      "source": [
+        "¶3"
+      ]
+    },
+    {
+      "id": "1.5",
+      "type": "evidence",
+      "text": "The events are laid out in a table with Time, Events, My Thoughts, and Other Details columns.",
+      "attribution": "author",
+      "source": [
+        "¶4"
+      ]
+    },
+    {
+      "id": "1.6",
+      "type": "evidence",
+      "text": "Thursday noon he sent other houses to N to book showings for the weekend.",
+      "attribution": "author",
+      "source": [
+        "¶6"
+      ]
+    },
+    {
+      "id": "2",
+      "type": "theme",
+      "text": "House A: the offer at his maximum affordable price, about 30K below asking, was rejected.",
+      "attribution": "author",
+      "source": [
+        "¶5",
+        "¶8",
+        "¶30"
+      ]
+    },
+    {
+      "id": "2.1",
+      "type": "claim",
+      "text": "Wednesday afternoon he put the highest price he could afford on a house he liked, about 30K below asking.",
+      "attribution": "author",
+      "source": [
+        "¶5"
+      ]
+    },
+    {
+      "id": "2.2",
+      "type": "claim",
+      "text": "He hoped he might have a chance since the house was worth more than his offer.",
+      "attribution": "author",
+      "source": [
+        "¶5"
+      ]
+    },
+    {
+      "id": "2.3",
+      "type": "claim",
+      "text": "Thursday 6pm the offer was not accepted; the sellers moved forward with other offers.",
+      "attribution": "author",
+      "source": [
+        "¶8"
+      ]
+    },
+    {
+      "id": "2.4",
+      "type": "claim",
+      "text": "He took it as fine but decided to move faster on the new houses.",
+      "attribution": "author",
+      "source": [
+        "¶8"
+      ]
+    },
+    {
+      "id": "2.5",
+      "type": "evidence",
+      "text": "The house he first offered on later sold for waaaaay higher than the asking price.",
+      "attribution": "author",
+      "source": [
+        "¶30"
+      ]
+    },
+    {
+      "id": "2.6",
+      "type": "evidence",
+      "text": "An earlier house he offered on sold 5% above his price after 7 months; N had pushed for 5-10% more.",
+      "attribution": "author",
+      "source": [
+        "¶32"
+      ]
+    },
+    {
+      "id": "2.7",
+      "type": "nuance",
+      "text": "He could not really afford that earlier house at the higher price.",
+      "attribution": "author",
+      "source": [
+        "¶32"
+      ]
+    },
+    {
+      "id": "3",
+      "type": "theme",
+      "text": "House B, Friday: an asking-price offer with sweeteners, a midnight deadline, then a first extension.",
+      "attribution": "author",
+      "source": [
+        "¶7",
+        "¶10",
+        "¶14"
+      ]
+    },
+    {
+      "id": "3.1",
+      "type": "evidence",
+      "text": "Thursday 5pm a new house came on the market and N added it to the weekend tour.",
+      "attribution": "author",
+      "source": [
+        "¶7"
+      ]
+    },
+    {
+      "id": "3.2",
+      "type": "evidence",
+      "text": "Thursday 7pm he asked N to book that showing as soon as possible on Friday.",
+      "attribution": "author",
+      "source": [
+        "¶9"
+      ]
+    },
+    {
+      "id": "3.3",
+      "type": "claim",
+      "text": "Friday 1pm he saw the house, liked it, and decided to offer the full asking price.",
+      "attribution": "author",
+      "source": [
+        "¶10"
+      ]
+    },
+    {
+      "id": "3.4",
+      "type": "claim",
+      "text": "He wanted to avoid a bidding war, so he made the offer as sweet as possible with no time for other showings.",
+      "attribution": "author",
+      "source": [
+        "¶10"
+      ]
+    },
+    {
+      "id": "3.5",
+      "type": "evidence",
+      "text": "N advised writing 10K below and letting them negotiate up; the buyer was not convinced.",
+      "attribution": "author",
+      "source": [
+        "¶10"
+      ]
+    },
+    {
+      "id": "3.6",
+      "type": "claim",
+      "text": "Friday 6pm they sent a sweetened offer at the asking price with a same-day midnight deadline.",
+      "attribution": "author",
+      "source": [
+        "¶11"
+      ]
+    },
+    {
+      "id": "3.7",
+      "type": "claim",
+      "text": "He judged other showings unlikely to yield an asking-price offer, so he had a good chance.",
+      "attribution": "author",
+      "source": [
+        "¶11"
+      ]
+    },
+    {
+      "id": "3.8",
+      "type": "claim",
+      "text": "Friday 9pm N could not reach the sellers' realtor and said he would keep trying.",
+      "attribution": "author",
+      "source": [
+        "¶12"
+      ]
+    },
+    {
+      "id": "3.9",
+      "type": "nuance",
+      "text": "N found the non-response a bit unprofessional but understood people might be busy with life.",
+      "attribution": "author",
+      "source": [
+        "¶12"
+      ]
+    },
+    {
+      "id": "3.10",
+      "type": "claim",
+      "text": "Friday 10:30pm J was driving up island for a family thing and asked to extend the offer to Saturday midnight.",
+      "attribution": "author",
+      "source": [
+        "¶13"
+      ]
+    },
+    {
+      "id": "3.11",
+      "type": "claim",
+      "text": "They mentioned in passing that there was another offer on the house.",
+      "attribution": "author",
+      "source": [
+        "¶13"
+      ]
+    },
+    {
+      "id": "3.12",
+      "type": "claim",
+      "text": "The buyer didn't buy it, didn't want a bidding war, and didn't want his offer used to push others higher.",
+      "attribution": "author",
+      "source": [
+        "¶13"
+      ]
+    },
+    {
+      "id": "3.13",
+      "type": "evidence",
+      "text": "They had 4 more showings the next day.",
+      "attribution": "author",
+      "source": [
+        "¶13"
+      ]
+    },
+    {
+      "id": "3.14",
+      "type": "claim",
+      "text": "Friday 11pm he extended the offer until 10:30am Saturday, reasoning a morning should be enough.",
+      "attribution": "author",
+      "source": [
+        "¶14"
+      ]
+    },
+    {
+      "id": "4",
+      "type": "theme",
+      "text": "The Saturday standoff: the buyer dropped the offer 20K, then refused to chase the counteroffer.",
+      "attribution": "author",
+      "source": [
+        "¶15",
+        "¶20",
+        "¶22"
+      ]
+    },
+    {
+      "id": "4.1",
+      "type": "claim",
+      "text": "Saturday morning nothing happened; he suspected they kept his offer open to compete and to advertise it.",
+      "attribution": "author",
+      "source": [
+        "¶15"
+      ]
+    },
+    {
+      "id": "4.2",
+      "type": "evidence",
+      "text": "N thought the other offer was better; the buyer asked them to disclose it.",
+      "attribution": "author",
+      "source": [
+        "¶15"
+      ]
+    },
+    {
+      "id": "4.3",
+      "type": "claim",
+      "text": "Saturday afternoon he took a nap and had moved on emotionally.",
+      "attribution": "author",
+      "source": [
+        "¶16"
+      ]
+    },
+    {
+      "id": "4.4",
+      "type": "nuance",
+      "text": "Naps are super rare for him, about once every few years, usually when a big load is lifted.",
+      "attribution": "author",
+      "source": [
+        "¶16"
+      ]
+    },
+    {
+      "id": "4.5",
+      "type": "claim",
+      "text": "Saturday 5pm N relayed that another offer would be considered in an hour and they should submit in time.",
+      "attribution": "author",
+      "source": [
+        "¶17"
+      ]
+    },
+    {
+      "id": "4.6",
+      "type": "claim",
+      "text": "The buyer concluded no other offer came in and the sellers wanted him to rewrite his offer.",
+      "attribution": "author",
+      "source": [
+        "¶17"
+      ]
+    },
+    {
+      "id": "4.7",
+      "type": "evidence",
+      "text": "He dropped the offer by 20K from asking and removed most sweeteners; N strongly advised against it.",
+      "attribution": "author",
+      "source": [
+        "¶17"
+      ]
+    },
+    {
+      "id": "4.8",
+      "type": "claim",
+      "text": "Saturday 6pm they sent the new offer, open until 8:30pm the same day.",
+      "attribution": "author",
+      "source": [
+        "¶18"
+      ]
+    },
+    {
+      "id": "4.9",
+      "type": "claim",
+      "text": "Saturday 7pm C called N noticing the price drop and wondering if he could 'fix' that; N offered a counteroffer route.",
+      "attribution": "author",
+      "source": [
+        "¶19"
+      ]
+    },
+    {
+      "id": "4.10",
+      "type": "claim",
+      "text": "The buyer thought the other offer sucked and that they were trying to work with him.",
+      "attribution": "author",
+      "source": [
+        "¶19"
+      ]
+    },
+    {
+      "id": "4.11",
+      "type": "evidence",
+      "text": "J's name was removed from all her 4 listings on REW and replaced by C's; the buyer guessed they were angry about the 20K loss.",
+      "attribution": "author",
+      "source": [
+        "¶19"
+      ]
+    },
+    {
+      "id": "4.12",
+      "type": "evidence",
+      "text": "She was meanwhile busy with showings of a $3.5M house.",
+      "attribution": "author",
+      "source": [
+        "¶19"
+      ]
+    },
+    {
+      "id": "4.13",
+      "type": "claim",
+      "text": "Saturday 9pm a disclosure of multiple offers arrived with a counteroffer 5K 'above' the asking price.",
+      "attribution": "author",
+      "source": [
+        "¶20"
+      ]
+    },
+    {
+      "id": "4.14",
+      "type": "claim",
+      "text": "He read it as 'defending forward': recouping 20K by pretending the other offer was much better.",
+      "attribution": "author",
+      "source": [
+        "¶20"
+      ]
+    },
+    {
+      "id": "4.15",
+      "type": "evidence",
+      "text": "N thought the other offer was at that price but had a condition they disliked; the buyer didn't buy any of it.",
+      "attribution": "author",
+      "source": [
+        "¶20"
+      ]
+    },
+    {
+      "id": "4.16",
+      "type": "evidence",
+      "text": "They wanted a response by 11pm; N said to respond in the morning.",
+      "attribution": "author",
+      "source": [
+        "¶20"
+      ]
+    },
+    {
+      "id": "4.17",
+      "type": "evidence",
+      "text": "Saturday 9:30pm N called to say he thought the buyer did the right thing and thanked him.",
+      "attribution": "author",
+      "source": [
+        "¶21"
+      ]
+    },
+    {
+      "id": "4.18",
+      "type": "claim",
+      "text": "Sunday 8am he told N to update to 10K below asking, remove every sweetener, and give until 11am.",
+      "attribution": "author",
+      "source": [
+        "¶22"
+      ]
+    },
+    {
+      "id": "4.19",
+      "type": "claim",
+      "text": "He believed they could get 45K below and that competing could have brought them up to 30K below.",
+      "attribution": "author",
+      "source": [
+        "¶22"
+      ]
+    },
+    {
+      "id": "4.19.1",
+      "type": "nuance",
+      "text": "He was almost certain no offer was above 30K below and might reduce his own offer even more.",
+      "attribution": "author",
+      "source": [
+        "¶22"
+      ]
+    },
+    {
+      "id": "4.20",
+      "type": "evidence",
+      "text": "N got angry and favored the 5K-higher counter; the buyer settled on 10K below as best and final.",
+      "attribution": "author",
+      "source": [
+        "¶22"
+      ]
+    },
+    {
+      "id": "4.21",
+      "type": "evidence",
+      "text": "They had 3 more showings that day and he didn't want another offer open while they collected more.",
+      "attribution": "author",
+      "source": [
+        "¶22"
+      ]
+    },
+    {
+      "id": "5",
+      "type": "theme",
+      "text": "Correspondence: the Sunday email exchange between N and J's assistant L over the revived offer.",
+      "attribution": "author",
+      "source": [
+        "¶23",
+        "¶24",
+        "¶27"
+      ]
+    },
+    {
+      "id": "5.1",
+      "type": "evidence",
+      "text": "Sunday 3pm N forwarded a series of back and forth with J's assistant L.",
+      "attribution": "author",
+      "source": [
+        "¶23"
+      ]
+    },
+    {
+      "id": "5.2",
+      "type": "claim",
+      "text": "Sunday 9am N sent the offer with dates adjusted to the sellers' preference, calling it his client's best and final.",
+      "attribution": "author",
+      "source": [
+        "¶24"
+      ]
+    },
+    {
+      "id": "5.3",
+      "type": "claim",
+      "text": "L replied that the offer had already expired, asking why they got a new Sunday-morning offer with less than 2 hours.",
+      "attribution": "author",
+      "source": [
+        "¶24"
+      ]
+    },
+    {
+      "id": "5.4",
+      "type": "claim",
+      "text": "N answered their offer came at 9:15 PM till 11 PM, his at 9:15 AM till 11 AM, and they could accept and extend.",
+      "attribution": "author",
+      "source": [
+        "¶24"
+      ]
+    },
+    {
+      "id": "5.5",
+      "type": "claim",
+      "text": "L cited over 37 years in real estate administration and said their fully-signed offer needed less response time.",
+      "attribution": "author",
+      "source": [
+        "¶24"
+      ]
+    },
+    {
+      "id": "5.6",
+      "type": "claim",
+      "text": "N replied their team stalled on the Friday full-price offer and ended up with 2nd and 3rd offers they don't want.",
+      "attribution": "author",
+      "source": [
+        "¶24"
+      ]
+    },
+    {
+      "id": "5.7",
+      "type": "claim",
+      "text": "Sunday 5:30pm the buyer replied thanking N and saying they're throwing the assistant under the bus.",
+      "attribution": "author",
+      "source": [
+        "¶25"
+      ]
+    },
+    {
+      "id": "5.8",
+      "type": "claim",
+      "text": "He proposed presenting his offer in person Monday after 5:30, in N's office.",
+      "attribution": "author",
+      "source": [
+        "¶25"
+      ]
+    },
+    {
+      "id": "5.9",
+      "type": "nuance",
+      "text": "He thought the claim that the assistant missed the offer was a game, and pathetic.",
+      "attribution": "author",
+      "source": [
+        "¶25"
+      ]
+    },
+    {
+      "id": "5.10",
+      "type": "evidence",
+      "text": "N thought they were actually incompetent and didn't know what they were doing.",
+      "attribution": "author",
+      "source": [
+        "¶25"
+      ]
+    },
+    {
+      "id": "5.11",
+      "type": "claim",
+      "text": "N replied the best outcome would be acceptance needing only an initialed deadline, and that in-person presentations never happen.",
+      "attribution": "author",
+      "source": [
+        "¶26"
+      ]
+    },
+    {
+      "id": "5.12",
+      "type": "evidence",
+      "text": "N doubted the team was representing their clients well, the right hand maybe not knowing the left.",
+      "attribution": "author",
+      "source": [
+        "¶26"
+      ]
+    },
+    {
+      "id": "5.13",
+      "type": "claim",
+      "text": "The buyer replied he didn't believe they missed the offer, figured the showings produced no better offer, and would not write another.",
+      "attribution": "author",
+      "source": [
+        "¶27"
+      ]
+    },
+    {
+      "id": "5.14",
+      "type": "claim",
+      "text": "He said the weekend gave him valuable information whether or not the transaction happens.",
+      "attribution": "author",
+      "source": [
+        "¶27"
+      ]
+    },
+    {
+      "id": "6",
+      "type": "theme",
+      "text": "Aftermath: process changes, the coffee bet, and the house selling 10K below asking.",
+      "attribution": "author",
+      "source": [
+        "¶28",
+        "¶29",
+        "¶30"
+      ]
+    },
+    {
+      "id": "6.1",
+      "type": "claim",
+      "text": "Monday morning he thanked N and asked that competing offers never be volunteered and that agents provide disclosure letters in writing.",
+      "attribution": "author",
+      "source": [
+        "¶28"
+      ]
+    },
+    {
+      "id": "6.2",
+      "type": "nuance",
+      "text": "His reasoning: realtors push buyers to raise prices even when evidence points the other way.",
+      "attribution": "author",
+      "source": [
+        "¶28"
+      ]
+    },
+    {
+      "id": "6.3",
+      "type": "nuance",
+      "text": "He didn't want to pay an extra 5-10% for a house just because others might.",
+      "attribution": "author",
+      "source": [
+        "¶28"
+      ]
+    },
+    {
+      "id": "6.4",
+      "type": "evidence",
+      "text": "One week later they bet a coffee: N thought the house sold 5K above asking, the buyer thought below.",
+      "attribution": "author",
+      "source": [
+        "¶29"
+      ]
+    },
+    {
+      "id": "6.5",
+      "type": "claim",
+      "text": "Two weeks later the house sold for 10K below the asking price, so N owes him a coffee.",
+      "attribution": "author",
+      "source": [
+        "¶30"
+      ]
+    },
+    {
+      "id": "6.6",
+      "type": "claim",
+      "text": "He judged them not only stupid but also having a very huge ego.",
+      "attribution": "author",
+      "source": [
+        "¶30"
+      ]
+    },
+    {
+      "id": "7",
+      "type": "theme",
+      "text": "Reflections: the seller was a marketer, the realtor-run system treats buyers as pawns, and people stop fighting processes.",
+      "attribution": "author",
+      "source": [
+        "¶31",
+        "¶34"
+      ]
+    },
+    {
+      "id": "7.1",
+      "type": "claim",
+      "text": "The seller was a marketing and sales person who teaches car dealerships how to sell cars.",
+      "attribution": "author",
+      "source": [
+        "¶33"
+      ]
+    },
+    {
+      "id": "7.2",
+      "type": "claim",
+      "text": "He feels realtors created a system that works fine for them, making buyers and sellers pawns in their chess game.",
+      "attribution": "author",
+      "source": [
+        "¶34"
+      ]
+    },
+    {
+      "id": "7.3",
+      "type": "nuance",
+      "text": "He acknowledges he is exaggerating quite a bit, but the feeling is there.",
+      "attribution": "author",
+      "source": [
+        "¶34"
+      ]
+    },
+    {
+      "id": "7.4",
+      "type": "claim",
+      "text": "He compares giving up on phone holders, laptops, stocks, tax returns, cars, and houses to not wanting to fix processes.",
+      "attribution": "author",
+      "source": [
+        "¶34"
+      ]
+    },
+    {
+      "id": "7.5",
+      "type": "nuance",
+      "text": "He finds it wrong that people negotiate hours over small things but won't talk about fixing processes.",
+      "attribution": "author",
+      "source": [
+        "¶34"
+      ]
+    },
+    {
+      "id": "7.6",
+      "type": "evidence",
+      "text": "He links a ChatGPT conversation about the situation.",
+      "attribution": "author",
+      "source": [
+        "¶35"
+      ]
+    },
+    {
+      "id": "8",
+      "type": "theme",
+      "text": "Reported AI take: a Claude 3.5 haiku debrief, analysis, and recommendations on the transaction.",
+      "attribution": "author",
+      "source": [
+        "¶36",
+        "¶37",
+        "¶50"
+      ]
+    },
+    {
+      "id": "8.1",
+      "type": "evidence",
+      "text": "The author shares key takeaways from a Claude 3.5 haiku transaction debrief.",
+      "attribution": "author",
+      "source": [
+        "¶36"
+      ]
+    },
+    {
+      "id": "8.2",
+      "type": "claim",
+      "text": "Debrief overview: February 2025, residential house, 3 days (Friday-Sunday), outcome: walked away.",
+      "attribution": "reported",
+      "source": [
+        "¶37"
+      ]
+    },
+    {
+      "id": "8.3",
+      "type": "evidence",
+      "text": "First offer was the full asking price with comprehensive favorable conditions, not immediately accepted.",
+      "attribution": "reported",
+      "source": [
+        "¶38"
+      ]
+    },
+    {
+      "id": "8.4",
+      "type": "evidence",
+      "text": "Pivots: Friday extended the deadline, Saturday reduced the offer by $20,000, Sunday slightly increased it (10K) with minimal conditions.",
+      "attribution": "reported",
+      "source": [
+        "¶38"
+      ]
+    },
+    {
+      "id": "8.5",
+      "type": "evidence",
+      "text": "Emotional state moved from cautiously optimistic to skeptical to detached, managed partly by strategic price adjustments.",
+      "attribution": "reported",
+      "source": [
+        "¶39"
+      ]
+    },
+    {
+      "id": "8.6",
+      "type": "evidence",
+      "text": "Strategic moves: written disclosure requests, limited information sharing, rapid modifications, short windows, no bidding war.",
+      "attribution": "reported",
+      "source": [
+        "¶40"
+      ]
+    },
+    {
+      "id": "8.7",
+      "type": "evidence",
+      "text": "Lessons: realtors may use competing-offer narratives to manipulate pricing, and written documentation of claims should be requested.",
+      "attribution": "reported",
+      "source": [
+        "¶41"
+      ]
+    },
+    {
+      "id": "8.7.1",
+      "type": "nuance",
+      "text": "First offers are rarely accepted in competitive markets.",
+      "attribution": "reported",
+      "source": [
+        "¶41"
+      ]
+    },
+    {
+      "id": "8.7.2",
+      "type": "nuance",
+      "text": "Emotional detachment is a significant negotiation advantage; information asymmetry can be mitigated through strategic questioning.",
+      "attribution": "reported",
+      "source": [
+        "¶41"
+      ]
+    },
+    {
+      "id": "8.8",
+      "type": "evidence",
+      "text": "Improvements: offer guidelines, response templates, escalation process, market research, a walk-away threshold, emotional regulation.",
+      "attribution": "reported",
+      "source": [
+        "¶42"
+      ]
+    },
+    {
+      "id": "8.9",
+      "type": "evidence",
+      "text": "Market context: manipulation potential, systemic information asymmetry, and psychological pressure tactics were identified.",
+      "attribution": "reported",
+      "source": [
+        "¶43"
+      ]
+    },
+    {
+      "id": "8.10",
+      "type": "evidence",
+      "text": "Personal growth: adaptability, real-time adjustment, critical thinking; recommended: negotiation skills, market dynamics, emotional intelligence.",
+      "attribution": "reported",
+      "source": [
+        "¶44"
+      ]
+    },
+    {
+      "id": "8.11",
+      "type": "claim",
+      "text": "Reflection: the value was understanding negotiation mechanisms, not securing the property; information and emotional control beat transactional success.",
+      "attribution": "reported",
+      "source": [
+        "¶45"
+      ]
+    },
+    {
+      "id": "8.12",
+      "type": "evidence",
+      "text": "The post then includes a Claude 3.5 haiku analysis of what worked and what didn't.",
+      "attribution": "author",
+      "source": [
+        "¶46"
+      ]
+    },
+    {
+      "id": "8.13",
+      "type": "evidence",
+      "text": "Successes: identified likely bluffs, predicted market behavior, avoided overpaying, and kept price discipline.",
+      "attribution": "reported",
+      "source": [
+        "¶47"
+      ]
+    },
+    {
+      "id": "8.14",
+      "type": "evidence",
+      "text": "Failures: no house purchased, multiple failed negotiations, time spent, and tension with selling agents.",
+      "attribution": "reported",
+      "source": [
+        "¶48"
+      ]
+    },
+    {
+      "id": "8.15",
+      "type": "evidence",
+      "text": "Neutral: time-pressure tactics and the price reduction worked situation-dependently, long-term effect unknown.",
+      "attribution": "reported",
+      "source": [
+        "¶49"
+      ]
+    },
+    {
+      "id": "8.16",
+      "type": "evidence",
+      "text": "Recommendations: keep market analysis and price discipline; modify timeline flexibility and relationships; add success metrics and alternative paths.",
+      "attribution": "reported",
+      "source": [
+        "¶50"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "0",
+      "to": "1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "1",
+      "to": "1.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2",
+      "to": "2.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.9",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.10",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.11",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.12",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.13",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "3",
+      "to": "3.14",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.9",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.10",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.11",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.12",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.13",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.14",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.15",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.16",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.17",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.18",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.19",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4.19",
+      "to": "4.19.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.20",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "4",
+      "to": "4.21",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.9",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.10",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.11",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.12",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.13",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "5",
+      "to": "5.14",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "6",
+      "to": "6.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "7",
+      "to": "7.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "0",
+      "to": "8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.3",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.4",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.5",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.6",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.7",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8.7",
+      "to": "8.7.1",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8.7",
+      "to": "8.7.2",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.8",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.9",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.10",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.11",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.12",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.13",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.14",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.15",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "8",
+      "to": "8.16",
+      "type": "contains",
+      "source": []
+    },
+    {
+      "from": "2.6",
+      "to": "6.2",
+      "type": "exemplifies",
+      "note": "N's 5-10% push on the earlier house illustrates realtor price pressure"
+    },
+    {
+      "from": "5.6",
+      "to": "4.1",
+      "type": "supports",
+      "note": "N's own reply documents the Friday stall he suspected"
+    },
+    {
+      "from": "4.13",
+      "to": "6.5",
+      "type": "contradicts",
+      "note": "the counteroffer claimed 5K above asking; the house sold 10K below"
+    },
+    {
+      "from": "4.7",
+      "to": "6.5",
+      "type": "supports",
+      "note": "the 20K cut proved closer to the market than the counter"
+    },
+    {
+      "from": "8.13",
+      "to": "4.10",
+      "type": "supports",
+      "note": "the reported analysis also judged the competing offers bluffs"
+    },
+    {
+      "from": "8.16",
+      "to": "6.1",
+      "type": "supports",
+      "note": "recommendations echo the buyer's process changes"
+    },
+    {
+      "from": "5.14",
+      "to": "8.11",
+      "type": "restates",
+      "note": "the weekend's value as information, stated by buyer and by the debrief"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "08_empathy_sympathy_compassion_matrix",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "Central purpose: a feature matrix comparing four components (cognitive empathy, affective empathy, sympathy, compassion) against five whole-person profiles (psychopath, sociopath, empath, altruist, integrated ideal), the profiles arranged darkest to lightest.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L001",
+        "L002"
+      ],
+      "evidence_quote": "Feature matrix contrasts cognitive and affective empathy, sympathy, and compassion across five profiles from psychopath to integrated ideal.",
+      "reasoning": "L002 names all four components and the five profiles from psychopath to integrated ideal, matching the organizing thesis. The darkest-to-lightest ordering is implicit in 'from psychopath to integrated ideal' and the source mapping at L001."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "Rows are ordered by the two dark profiles' contrast and split into four blocks separated by blank dividers: present in both, psychopath only, sociopath only, and neither.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L003",
+        "L008",
+        "L017"
+      ],
+      "evidence_quote": "Theme: Cold-control block: rows present in both dark profiles, plus the psychopath-only control row. ... Affective-care block: rows the sociopath has and the psychopath lacks ... Neither-dark block",
+      "reasoning": "The three explicit themes plus the interpretive notes block (L021) reproduce the block structure: present-in-both/psychopath-only (L003), sociopath-only (L008), and neither (L017)."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "Sympathy gets a partial (~) on modeling the other's mind because you can pity someone while badly misreading them; accurate understanding helps sympathy but is not constitutive of it, unlike cognitive empathy.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L022"
+      ],
+      "evidence_quote": "Sympathy is '~' on modeling minds: one can pity while badly misreading; understanding helps but isn't constitutive, unlike cognitive empathy.",
+      "reasoning": "L022 captures the partial mark, the pity-with-misreading reason, and the contrast with cognitive empathy."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "Affective empathy gets a partial (~) on capacity to care because emotional contagion can occur involuntarily without real concern, e.g., catching someone's anxiety and wanting to get away from them.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L023"
+      ],
+      "evidence_quote": "Affective empathy's care is '~': contagion can happen involuntarily, without real concern, and simply make one want to get away.",
+      "reasoning": "L023 preserves the partial mark, the involuntary-contagion rationale, and the get-away example."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "The manipulators/con-artist row is the sharpest diagnostic for the cognitive/affective split and is essentially the psychopath's signature: cognitive empathy alone is compatible with cruelty, since a con artist models minds precisely without resonating with or caring about them.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L006",
+        "L024",
+        "L040"
+      ],
+      "evidence_quote": "'Manipulators' row is the sharpest diagnostic and essentially the psychopath's signature: cognitive empathy alone is compatible with cruelty.",
+      "reasoning": "L024 states the diagnostic/signature claim and the cognitive-empathy-alone-compatible-with-cruelty point; L040 reasons it supports the split; L006 records the row's scores."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "The sustainable-and-scalable row reflects the Bloom/Singer argument (Paul Bloom's Against Empathy and Tania Singer's compassion-training research); it is a position, not a consensus, and critics reply that compassion without empathic grounding risks becoming abstract or paternalistic.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L025",
+        "L041"
+      ],
+      "evidence_quote": "Sustainability row reflects the Bloom/Singer argument (Paul Bloom's Against Empathy; Tania Singer's research), a position not a consensus; critics warn of abstract, paternalistic compassion.",
+      "reasoning": "L025 names both authors and works, flags it as a position not a consensus, and preserves the critics' abstract/paternalistic warning. The contested qualifier is intact."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "Boundary maintenance is the structural difference between affective empathy and everything else: affective empathy means partially merging with the other's state, which drives both its motivational power and its burnout and bias problems.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L026",
+        "L042",
+        "L043"
+      ],
+      "evidence_quote": "Boundary maintenance is the structural difference: partially merging with the other's state drives both motivational power and burnout/bias problems.",
+      "reasoning": "L026 preserves the structural-difference claim and both consequences; L042/L043 tie it to the motivation and burnout/bias rows."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "Reading the two dark profiles as columns: the psychopath is close to the cognitive-empathy column standing alone (accurate modeling with affective and caring machinery deleted), while the sociopath is close to affective empathy and sympathy clamped to a narrow in-group and stripped of regulation; the psychopath's one distinguishing possession is cold instrumental control, while a whole cluster of affective and caring rows belongs to the sociopath and not the psychopath.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L027",
+        "L028",
+        "L044"
+      ],
+      "evidence_quote": "psychopath is the cognitive column standing alone; sociopath is affect plus sympathy clamped to a narrow in-group, stripped of regulation. ... almost everything the psychopath has, the sociopath shares in degraded form; the psychopath's one distinguishing possession is cold instrumental control.",
+      "reasoning": "L027 and L028 together capture both column readings, the in-group clamping, stripping of regulation, and the asymmetry of cold instrumental control as the psychopath's one possession. The caring/affective cluster belonging to the sociopath is implicit in the block themes (L008) and degraded-form statement."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "Etiology is deliberately excluded as a row: psychopathy is often theorized as innate/temperamental and sociopathy as environmentally acquired, but that concerns causes rather than the shape of the response, so it does not belong in a feature table and would muddy the logic.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L029"
+      ],
+      "evidence_quote": "Etiology deliberately left out: psychopathy is often theorized as innate, sociopathy as environmentally acquired; causes don't describe the response's shape.",
+      "reasoning": "L029 preserves the deliberate exclusion, both etiological theories, and the cause-versus-shape justification."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "Clinical caveat: 'psychopath' and 'sociopath' are not formal diagnoses; both fall under Antisocial Personality Disorder, and the split between them is a contested, largely theoretical convention. Treat the two columns as ideal types, not categories.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L021",
+        "L030"
+      ],
+      "evidence_quote": "Clinical caveat: the two profiles aren't formal diagnoses; both fall under Antisocial Personality Disorder; the split is a contested, largely theoretical convention.",
+      "reasoning": "L030 preserves all three qualifiers; L021 frames the whole notes block as limiting scope to ideal types."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "Terminology caveat: usage varies across the literature, some authors use 'empathic concern' roughly where this table uses 'compassion', and pop-psych usage (e.g., Brené Brown) treats 'sympathy' as inherently distancing; this table uses the more neutral research sense.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L031"
+      ],
+      "evidence_quote": "Terminology varies: some authors use 'empathic concern' roughly where the table says compassion; this table uses the neutral research sense of sympathy.",
+      "reasoning": "L031 preserves the variation-in-usage claim, the empathic-concern/compassion overlap, and the neutral-research-sense resolution. The Brené Brown pop-psych example is omitted, but it is an illustrative aside rather than a load-bearing condition; the core caveat and its resolution survive intact."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "The empath column is the affective column maxed out and unregulated, which is why it lights up emotion-sharing, contagion, and vividness bias while failing on boundary, scope, and scalability; it is the opposite of the psychopath's coldness but inherits the sociopath's distortions, so it is not the moral ideal.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L032"
+      ],
+      "evidence_quote": "Empath profile: affective column maxed and unregulated, failing boundary, scope, and scalability; inherits the sociopath's distortions, so not the moral ideal.",
+      "reasoning": "L032 preserves the maxed/unregulated affective reading, the failures on boundary/scope/scalability, the inherited distortions, and the not-the-moral-ideal conclusion."
+    },
+    {
+      "point_id": "K13",
+      "point_text": "The altruist column is the compassion column embodied and matches the research 'Light Triad' (Kantianism, Humanism, and Faith in Humanity, from Kaufman et al., 2019).",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L033",
+        "L015",
+        "L016",
+        "L019"
+      ],
+      "evidence_quote": "Altruist profile: compassion column embodied, matching the research 'Light Triad' (Kaufman et al., 2019).",
+      "reasoning": "L033 preserves the compassion-embodied mapping, the Light Triad label, and the Kaufman attribution. The three Light Triad components are not enumerated there but appear as distinct rows (Kantianism L015, Humanism L016, Faith in Humanity L019), so the meaning is available."
+    },
+    {
+      "point_id": "K14",
+      "point_text": "The integrated ideal is the only column that scores well across every block, including the 'present in neither' rows, so it is the true opposite of both dark profiles at once.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L034"
+      ],
+      "evidence_quote": "Integrated ideal: the only column scoring well across every block, including the 'present in neither' rows; true opposite of both dark profiles.",
+      "reasoning": "L034 preserves the uniqueness claim, the inclusion of the neither-dark rows, and the true-opposite conclusion."
+    },
+    {
+      "point_id": "K15",
+      "point_text": "The three Light Triad rows partly restate earlier rows: Kantianism is essentially the inverse of the manipulators row, Humanism overlaps the caring and beyond-the-in-group rows, and only Faith in Humanity adds a genuinely new dimension (an attitude rather than an empathy component), which is why both dark profiles score blank on it.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L035",
+        "L036",
+        "L038",
+        "L039"
+      ],
+      "evidence_quote": "Kantianism row is essentially the inverse of the manipulators row; Humanism overlaps the caring and beyond-the-in-group rows. ... Only Faith in Humanity adds a genuinely new dimension, an attitude rather than an empathy component; both dark profiles score blank there.",
+      "reasoning": "L035/L036 preserve the redundancy claims and the novel-dimension point; L038/L039 cross-link the restatements to the manipulators and caring/in-group rows."
+    }
+  ],
+  "metrics": {
+    "total_points": 15,
+    "must_have_total": 12,
+    "must_have_present": 12,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+  },
+  "missing_list": []
+}

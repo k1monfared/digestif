@@ -1,0 +1,339 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "house-hunting-weekend-negotiation",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "L002"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Top-level summary restates whole narrative with no specifics, expendable at this length."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "L003"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Introduces cast and split-market frame not stated as a whole elsewhere."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "L004"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds split-market timing facts; numbers keep it non-trivial."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "L005"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Defines each actor's role beyond a bare name list."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "L006"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States failed first-offer point; evidence supplies distinct specifics."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "L007"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds 30K-below core negotiation number."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "L008"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds rejection timing and seller pivot, new facts."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "L009"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Frames Friday asking-price strategy; not repeated verbatim."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "L010"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds showing time and offer plan, distinct from actual bid."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "L011"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Records realtor advice and buyer dissent, not elsewhere stated."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "L012"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds 6pm submission and midnight deadline, new facts."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "L013"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Names seller stalling theme; evidence adds times and specifics."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "L014"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds 10:30pm call detail and requested extension."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "L015"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Buyer's suspicion reading, not stated elsewhere."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "L016"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds 10:30am counter-deadline, new fact."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "L017"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Frames retaliation and counter-above-asking theme."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "L018"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds 20K cut, stripped sweets, defiance specifics."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "L019"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds listing changes and 3.5M showing evidence."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "L020"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds 5K-above counter, disclosure, and 11pm reply window."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "L021"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds relief detail and N's later endorsement."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "L022"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Frames the Sunday email-fight theme."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "L023"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds unprofessionalism charge and 37-year credential."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "L024"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds N's Friday-stall rebuttal, distinct from L's charge."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "L025"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds 8am terms and rival-ceiling estimate, numeric."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "L026"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States walkaway stance and Monday in-person demand."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "L027"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Frames sale-below-asking theme; children add the amounts."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "L028"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds two-weeks-later 10K-below sale and coffee note."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "L029"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States disclosure-letter rule, a new recommendation."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "L030"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds earlier-house comparison with specific percentages."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "L031"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds seller background and realtor-pawn interpretation."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "L032"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds February 2025 date and three-day framing."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "L033"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds emotional-arc synthesis not stated in body."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "L034"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C017",
+   "reasoning": "Recaps tactics already given in C014, C017, C019, C028; no new fact."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "L035"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C025",
+   "reasoning": "Cross-link marks 6.4/8.3 restatement; debrief adds no new fact."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "L036"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds forward-looking recommendations, genuinely new content."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 35,
+  "unique": 32,
+  "duplicates": 2,
+  "trivia": 1,
+  "redundancy_rate": 0.057,
+  "trivia_rate": 0.029,
+  "structured_tokens": 351,
+  "tokens_per_unique_claim": 10.97
+ },
+ "prune_list": [
+  "C033 duplicates C017 (tactic cluster C014/C019/C028), safe to drop from debrief",
+  "C034 duplicates C025 per cross-link 6.4 restates 8.3, safe to merge",
+  "C001 restates the full body as a summary, shorten or drop",
+  "L037-L044 cross-links and L045 coverage are structural boilerplate, excluded from scoring"
+ ]
+}

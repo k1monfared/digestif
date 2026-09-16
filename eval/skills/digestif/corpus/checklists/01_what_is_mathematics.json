@@ -1,0 +1,154 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "20260806_what_is_mathematics",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Occasion and interlocutors: the post responds to a viral LinkedIn complaint from a math professor comparing research to grading a clever student willing to lie, and engages Terence Tao's ICM 2026 public lecture 'Mathematics in the age of AI' plus Amir Moradifam's essay 'What Remains Human in Mathematics in the Age of AI,' agreeing with them but pushing one speculative step further than they can.",
+   "weight": "Nice to have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The old definition of mathematics was 'the discipline of finding patterns where claims can be proven,' which gave math ground truth and separated it from art criticism, politics, business, psychology, biology, and even physics, where everything else was opinion.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "The 2026 results that broke the old answer: First Proof's standardized test in late May 2026 had four leading systems solve 7 of 10 unpublished problems to publication quality at $10-$1000 compute each, with problem choice as the one step not automated; and in early 2026 an AI system produced a machine-checked Lean proof of Erdos Problem #728, while in May 2026 an OpenAI model disproved Erdos's 1946 planar unit distance conjecture by constructing point sets with at least n^(1+epsilon) unit distances.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "A recurring split: the model produces the result, while humans verify, digest, and present it; problem selection (which patterns are worth chasing) remains human, and conjecture generators propose patterns but do not decide which matter.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Verification is human work too and is being automated; the Voevodsky case (Fields Medal 2002, Deligne finding a wrong key lemma, another main theorem false for years unnoticed) shows human verification is unreliable, so AI verification with a comparable error rate will look like business as usual. The AI-side error rate is assumed rather than measured, and the volume compounds (years to surface a mistake by hand versus a million checks a day by machine).",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "The process was the product: mathematics was never the production of theorems but a process of thinking. Moradifam argues we teach math for the struggle, which builds the habit of tracking assumptions and moving between examples and principles; cognitive offloading and the illusion of explanatory depth mean fluent access can be confused with ownership, and AI is dangerous because it gives plausible explanations in a confident tone.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "The airport ad 'let the AI do the thinking for you' conflates automating chores with automating thinking: fixing a car is instrumental, thinking is constitutive, so offloading the chore keeps the car while offloading the thinking keeps an answer with an unchanged mind. The boundary is blurry (mental arithmetic, poetry, GPS with documented spatial-memory decline), so the real question is which activities are load-bearing: problem framing, noticing what is missing, deciding what deserves attention. Proving is the gym that trains the finding.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Tao's exposition argument: AI-polished proofs are almost too flawless, dwell on trivialities, rush past novel parts, fail to connect to prior literature, and remove the friction that makes readers slow down and learn; even human mistakes can helpfully mark where the work is, as in Thurston's point that success is measured by whether work helps people understand and think more clearly.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Tao's conditional Working Hypothesis and pipeline: via Goodhart's law, historically correlated community goals (solving, theory, training, aesthetics) can diverge under AI optimization; the goal 'solve as many unsolved problems as possible' must be refined with verification, exposition, community acceptance, and canonicalization, with digestion now the bottleneck. On erdosproblems.com many likely-correct AI proofs await human verification. Recommendations: normalize responsible disclosure of AI assistance, reduce emphasis on generation and being first, increase emphasis on exposition, publication, and canonicalization, endorse the Leiden Declaration, and require authors to demonstrate an expert-level talk on the result.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Moradifam's research-side account and epistemology: Davies and AlphaTensor show ML as an intuition pump, again AI proposes and humans formalize and digest. Accepted-but-opaque results (four-color theorem, classification of finite simple groups) are used as tools despite no single person holding the proof, and understanding shifts from constructive to hermeneutic as the mathematician becomes an interpreter. His thesis: as routine tasks are automated, problem framing, judgment, and taste become more visible and valuable.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "The blind spot both authors share: they locate the judgment of importance in a stable, purely human ground. The author argues importance was never stable or purely human. Before AI, the field decided what was worth doing through two social levers: applicability (measurable, funding-driven) and the taste of big names (a compound of fame-seeking, genuine interest, and network favoritism). Neither is pure mathematical judgment, and slow local processes hid this.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "The influencer economy: with production cheap, attention becomes the scarce constraint and develops influencer structure, as the internet did to writing and social media to the internet. Mathematics will follow (decades, not months), with compute as the budget defining a problem's worth. The naive faith treats Tao-tier figures as disinterested when their attention is a private act with public consequences; influence becoming measurable and monetizable triggers the measurement trap and a Goodhart recursion that loops back to problem selection. The canon simulation shows checkability sets the floor and structural value the ceiling, while the social layer decides the vast middle where almost every career lives, and today's influencers become tomorrow's training distribution.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "The woodworking and software analogy for the middle emptying out: CNC and Ikea leave most furniture as cheap functional goods, the creative neighborhood carpenter can no longer make a living, and app generation in minutes leaves many starts but few finishes, so the middle where craft lives becomes a desert. This is the same digestible middle Tao wants to protect, and letting it empty means mathematics keeps producing results while losing the people who make them legible, checkable, and taught.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Agreement is not evidence: agreement should be interrogated as skeptically as disagreement, because the informative content lives in the difference of reasoning. Independent sound paths give genuine corroboration, a broken path makes the agreement evidence against your confidence, and conclusion-matching without shared reasoning is coincidence. Scaled up it yields a community whose effective sample size is one, illustrated by the Atiyah Riemann Hypothesis episode, and an AI answer is the limit case of conclusion without process.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Final answer: mathematics was always both finding patterns and proving them; proving is the chore that has become cheap, while the finding (deciding which patterns are worth proving) is still human, and the mix is shifting. Software engineering already made this turn, but in mathematics the deciding was never counted or paid as work and has no home. It can land as a hobby for those who can afford it or as part of an influencer economy; the statistics precedent and the Halmos lesson show prestige can be reassigned. Thinking is what we are for, and the struggle is the product: the proof is the gym that trains pattern-finders, so automating proving risks stopping the training, with the human as coach who keeps taste but loses performance while the gym belongs to the robot.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction only; no mapping performed."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 14,
+  "must_have_present": 0,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 0,
+  "must_recall": 0.0,
+  "overall_recall": 0.0
+ },
+ "missing_list": []
+}

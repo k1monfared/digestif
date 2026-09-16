@@ -1,0 +1,195 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "09_not_even_wrong/source.txt",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: we believe we evaluate ideas on evidence and reasoned analysis, but subconscious psychological forces (financial and emotional investment, identity, belonging) shape what we find persuasive.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002",
+    "L016",
+    "L017"
+   ],
+   "evidence_quote": "Unverifiable not-even-wrong claims persuade via investment, identity, and tribal proof, not evidence alone. (¶1, ¶2, ¶18)",
+   "reasoning": "Summary line explicitly states claims persuade via investment, identity, tribal proof rather than evidence alone, and Theme 4 restates we are not purely rational with interests, consistency, belonging, narratives shaping evaluations."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The 'not even wrong' concept, popularized by physicist Wolfgang Pauli, describes ideas so fundamentally flawed they cannot be meaningfully evaluated as correct or incorrect.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L003",
+    "L004"
+   ],
+   "evidence_quote": "Pauli popularized not-even-wrong for fundamentally flawed ill-constructed ideas. (¶2)",
+   "reasoning": "Both the definition (too ill-constructed for correct-or-incorrect evaluation) and Pauli as popularizer are captured."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Sir Michael Atiyah, at age 89 and already holding both the Fields Medal and Abel Prize, claimed to have solved the Riemann hypothesis, a problem open since 1859.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005"
+   ],
+   "evidence_quote": "Example: At age 89, Fields and Abel winner Atiyah claimed Riemann solution stumping math since 1859. (¶3)",
+   "reasoning": "All specifics preserved: age 89, Fields and Abel, Atiyah, Riemann, since 1859."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "The mathematical community rejected Atiyah's proposed proof as 'not even wrong' because it lacked the rigor and coherence to be assessed under mathematical standards, operating outside the bounds of traditional evaluation.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L006",
+    "L018"
+   ],
+   "evidence_quote": "Atiyah proof lacked rigor, sat outside evaluation; leaders rhetoric functions similarly. (¶4, ¶5)",
+   "reasoning": "L006 captures lack of rigor and sitting outside evaluation, L018 confirms peer rejection, matching the point's substance."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "The 'not even wrong' pattern extends far beyond mathematics: politicians, business leaders, and celebrities use compelling rhetoric that sounds credible but operates outside the boundaries where traditional evaluation is possible.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L006",
+    "L018",
+    "L019"
+   ],
+   "evidence_quote": "leaders rhetoric functions similarly. (¶4, ¶5)",
+   "reasoning": "Extension beyond math is captured generally as 'leaders' but the specific categories named in the source (politicians, business leaders, celebrities) are narrowed to a generic 'leaders', losing the breadth of the claim."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Financial (or social/ethical) investment creates an incentive to believe a leader's vision, driven by resolving cognitive dissonance rather than merely protecting the investment, making investors more receptive to the leader's claims beyond their demonstrated expertise.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L008",
+    "L009"
+   ],
+   "evidence_quote": "Financial stake incentivizes belief in vision; dissonance resolution, not just protection. (¶6)",
+   "reasoning": "L008 preserves the dissonance-resolution-not-just-protection qualifier and L009 captures investors accepting predictions beyond demonstrated expertise."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "A self-reinforcing loop runs financial investment to emotional investment to greater receptivity to future claims to further financial investment, and it is especially powerful because being a supporter becomes part of a person's identity.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L010"
+   ],
+   "evidence_quote": "Cycle: financial to emotional investment to receptivity to further investment plus identity. (¶8)",
+   "reasoning": "Full loop including the identity element is captured."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "When a founder's concrete, verifiable promises about current products are fulfilled, it lends undue credibility to their grandiose, unfalsifiable claims, even though the two operate on completely different evidentiary standards.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L011",
+    "L026",
+    "L009"
+   ],
+   "evidence_quote": "Founder might pair verifiable product promises with grandiose unfalsifiable civilization claims. (¶9)",
+   "reasoning": "L011 states the pairing and L026 cross-link notes concrete success lends credibility to grandiose claims; substance is retained though the 'different evidentiary standards' framing is implicit rather than explicit."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Social proof: seeing thousands or millions praise a leader's genius makes their visions seem credible, because humans naturally look to others for cues about what to believe.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L013"
+   ],
+   "evidence_quote": "Thousands or millions praising genius give social proof; humans follow others cues. (¶10)",
+   "reasoning": "Numbers and the social-cue mechanism both preserved."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Tribal identity: influential figures frame themselves as outsiders fighting entrenched interests, so questioning any of their claims feels like betraying the tribe or siding with the opposition.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L014"
+   ],
+   "evidence_quote": "Figures often pose as outsiders; questioning claims can feel like tribal betrayal. (¶11)",
+   "reasoning": "Outsider framing and betrayal-on-questioning are captured; the 'siding with opposition' nuance rides along with the betrayal idea."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Social media amplifies both effects: algorithms create echo chambers showing supporters mostly positive content, while frequent unfiltered posts create a sense of personal connection and authenticity that deepens emotional investment.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L015",
+    "L027"
+   ],
+   "evidence_quote": "Algorithms tend to reinforce beliefs via echo chambers; seemingly unfiltered posts build sense of authenticity. (¶12)",
+   "reasoning": "Both amplification mechanisms (algorithmic echo chambers and unfiltered-post authenticity) are captured, and L027 ties this to strengthening investment."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Humans are not purely rational evaluators; assessments are swayed by four factors: financial interests and commitments, desire for consistency in beliefs, need for social belonging and identity, and attraction to compelling narratives and personalities.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L016"
+   ],
+   "evidence_quote": "We are not purely rational; interests, consistency, belonging, narratives shape evaluations. (¶13)",
+   "reasoning": "All four factors are enumerated in the Theme 4 line."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Unlike Atiyah's claim, which peers ultimately rejected, 'not even wrong' statements by powerful business and political leaders often escape rigorous evaluation, because society lacks standards comparable to the mathematical community's proof standards.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L018",
+    "L028"
+   ],
+   "evidence_quote": "Atiyah was ultimately rejected; leaders often escape; society lacks comparable proof frameworks. (¶15)",
+   "reasoning": "Contrast between peer rejection and leader escape plus the missing-societal-standards cause are all explicit."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Individual recommendations: separate financial from epistemic decisions, practice domain-specific evaluation, deliberately seek credible counter-narratives, and adopt investment detachment (ask whether you would believe the claim absent your investment).",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L020"
+   ],
+   "evidence_quote": "Individuals: separate finance from belief, check domains, seek counter-narratives; if invested ask Would-I-believe test. (¶16)",
+   "reasoning": "All four individual recommendations including the Would-I-believe test are captured."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Societal recommendations: improve technological literacy on realistic timelines and limits, strengthen domain-expert visibility, build frameworks for assessing innovation that balance optimism with technical and regulatory realities, and foster discourse norms where skepticism is not treated as opposition.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L021"
+   ],
+   "evidence_quote": "Society: teach tech literacy, platform experts, build frameworks, normalize skepticism without animosity. (¶17)",
+   "reasoning": "All four societal recommendations are present; the 'realistic timelines' qualifier is compressed but the core balance-of-optimism-and-reality sense survives via 'build frameworks'."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 15,
+  "must_have_present": 14,
+  "must_have_partial": 1,
+  "must_have_missing": 0,
+  "overall_present": 14,
+  "must_recall": 0.9667,
+  "overall_recall": 0.9667
+ },
+ "missing_list": []
+}

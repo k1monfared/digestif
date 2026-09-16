@@ -1,0 +1,29 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash 2026-09-15",
+  "source_id": "unspecified",
+  "inputs": {
+    "faithfulness_precision": 1.0,
+    "critical_errors": 0,
+    "must_recall": 0.9167,
+    "overall_recall": 0.9333,
+    "redundancy_rate": 0.08,
+    "trivia_rate": 0.0
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4*1.0 + 0.4*0.9167 - 0.2*0.08 = 0.40000 + 0.36668 - 0.01600 = 0.75068",
+  "weighted_score": 0.7507,
+  "verdict": "Borderline",
+  "tradeoff_note": "All hard gates clear, but two Must-have points (K06, K15) are only Partial, so a human should judge whether the dropped qualifiers change the argument. Redundancy (0.08) is well under max, so no length penalty is warranted and no coverage gain needs trimming.",
+  "fix_list": [
+    "K06: add the critics' counterargument that compassion without empathic grounding risks becoming abstract or paternalistic, the single missing qualifier that caps this Must-have at Partial.",
+    "K15: restore the Humanism-overlap mapping and the explanation for why both dark profiles score blank on Faith in Humanity, both dropped justifying details.",
+    "Merge C012 into C011 and C015 into C014 to remove the only redundancy (rate 0.08, still below 0.15 max)."
+  ],
+  "reasoning": "Gate checks against config pass_gates. critical_contradicted_max=0: faithfulness critical_errors=0, so no critical fail. faithfulness_precision_min=0.95: measured 1.0 (25/25 supported, 0 partial, 0 unverifiable, 0 contradicted), passes with headroom. must_recall_min=0.9: measured 0.9167 (10 present + 2 partial*0.5 = 11 of 12 must-haves), passes by a 0.0167 margin. redundancy_max=0.15 is treated as the length-cost ceiling under top_policy: measured redundancy_rate=0.08, below max, so no coverage gain is disallowed on length grounds. No hard gate is missed and no Critical error exists, so the sample is not a Fail. Weighted score per aspect_weights: 0.4*faithfulness_precision(1.0)=0.40000, 0.4*must_recall(0.9167)=0.36668, minus 0.2*redundancy(0.08)=0.01600, giving 0.75068. Concision does not rescue or sink this: with 0.08 redundancy and 0 trivia, its only role is tie-breaking and neither Partial point is offset by concision. Borderline is triggered by policy item 4: gates pass on the numbers, but two Must-have points carry Partial status. K06 (loglog L013, L014) captures the sustainable-and-scalable row, the Bloom/Singer attribution, and the 'position not a consensus' caveat, yet drops the critics' reply about abstract or paternalistic compassion, a Must-have qualifier. K15 (loglog L022) captures the redundancy thesis and the novel Faith in Humanity row plus the Kantianism/manipulators mapping, but drops the Humanism overlap mapping and the reason both dark profiles go blank on Faith in Humanity. Both are named for human review, so the verdict is Borderline rather than Pass despite the clean faithfulness record and passing recall."
+}

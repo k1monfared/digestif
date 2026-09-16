@@ -1,0 +1,318 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "08_empathy_sympathy_compassion_matrix",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "The matrix separates cognitive and affective empathy, sympathy, and compassion, then profiles psychopath, sociopath, empath, altruist, and integrated ideal.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles ... psychopath, sociopath, empath, altruist, and the integrated ideal.",
+   "reasoning": "Source names the same four components and five profiles in the same order."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Four components sit left of the double rule; five dark-to-light profiles sit right.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The four component columns ... sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest",
+   "reasoning": "Direct restatement of source layout and darkest-to-lightest ordering."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Rows fall in four blocks: present in both, psychopath only, sociopath only, neither.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither.",
+   "reasoning": "Exact parallel to the source's four block names."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Cognitive empathy means accurate modeling, boundary, and control; it survives in manipulators.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Can exist in manipulators / con artists: cognitive check only ... Controlled / instrumental rather than reactive / impulsive: cognitive check",
+   "reasoning": "Table gives cognitive checks on modeling, boundary, manipulators, and control as stated."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "The psychopath column is essentially the cognitive-empathy column standing alone.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the psychopath is close to the cognitive-empathy column standing alone",
+   "reasoning": "Note 6 and Note 10 both state this; 'essentially' matches 'standing alone'."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Sympathy earns only partial on modeling: pity can badly misread people.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Sympathy gets \"~\" on modeling the other's mind because you can pity someone while badly misreading them.",
+   "reasoning": "Source explicitly gives sympathy a tilde for misreading while pitying."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Affective empathy means sharing emotion, with contagion, burnout, and vividness bias.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Actually sharing / mirroring the emotion ... Risk of emotional contagion and burnout: affective check ... Biased toward vivid, similar individuals: ... affective check",
+   "reasoning": "Table assigns affective checks to sharing, contagion/burnout, and vividness bias."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Affective empathy lacks boundary maintenance, unlike everything else in the table.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Boundary maintenance is the structural difference between affective empathy and everything else in the table",
+   "reasoning": "Note 5 states boundary is the structural difference for affective empathy."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Affective empathy earns only partial on caring: contagion can occur without concern.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Affective empathy gets \"~\" on \"capacity to care\": emotional contagion can happen involuntarily, without any real concern for the person",
+   "reasoning": "Note 2 states the tilde and the without-concern condition exactly."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "The sociopath resembles affective empathy plus sympathy clamped to an in-group, unregulated.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the sociopath is close to the affective-empathy and sympathy columns clamped to a narrow in-group and stripped of regulation",
+   "reasoning": "Note 6 matches the affective/sympathy clamp and loss of regulation."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Compassion alone combines caring, motivation to help, wide scope, and sustainability.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Motivation to help or act: ... compassion check ... Concern reaches beyond a vivid / similar in-group: ... compassion check ... Sustainable and scalable as a moral guide: ... compassion check",
+   "reasoning": "Among the four components only compassion is checked on all listed rows."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Only compassion scores full marks on helping motivation and sustainable scalable guidance.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Motivation to help or act: affective partial, sympathy partial, compassion check ... Sustainable and scalable as a moral guide: cognitive partial, sympathy partial, compassion check",
+   "reasoning": "Only compassion carries a check on both rows among components."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "The Bloom and Singer pro-compassion case is a position, not a consensus.",
+   "claim_type": "reported",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the Bloom/Singer argument ... which is a position, not a consensus",
+   "reasoning": "Note 4 states the position-not-consensus framing verbatim."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "The psychopath keeps only cold instrumental control; the sociopath holds the affective cluster.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "cold instrumental control is the psychopath's one distinguishing possession, while a whole cluster of affective and caring rows belongs to the sociopath and not the psychopath",
+   "reasoning": "Note 6 states both halves of the asymmetry."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Almost all psychopath traits recur degraded in sociopath; only control is psychopath-only.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "almost everything the psychopath has, the sociopath also has in degraded form, so the psychopath's one distinguishing possession is cold instrumental control",
+   "reasoning": "Direct paraphrase preserving the quantifier 'almost' and the single distinguishing trait."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Emotion-sharing, caring, helping, guilt, and contagion rows belong to sociopath, not psychopath.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Block sociopath-only rows. Actually sharing / mirroring the emotion ... Capacity to genuinely care ... Motivation to help or act ... Produces guilt / remorse ... Risk of emotional contagion and burnout",
+   "reasoning": "These rows are listed in the sociopath-only block, absent for psychopath."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "The empath maximizes affect unregulated, so it is not the moral ideal.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The empath is the affective column maxed out and unregulated ... it is not the moral ideal",
+   "reasoning": "Note 10 states maxed-out/unregulated and not-the-moral-ideal."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "The empath lights up sharing, contagion, and bias but fails boundary, scope, and scalability.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it lights up emotion-sharing, contagion, and vividness bias while failing on boundary, scope, and scalability",
+   "reasoning": "Note 10 lists exactly these successes and failures."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "The altruist embodies compassion and the Light Triad: Kantianism, Humanism, Faith in Humanity.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The altruist is the compassion column embodied, matching the research \"Light Triad\" (Kantianism, Humanism, and Faith in Humanity, from Kaufman et al., 2019)",
+   "reasoning": "Note 10 names the same three Light Triad components for the altruist."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "The integrated ideal alone scores well across every block, opposing both dark profiles.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The integrated ideal is the only column that scores well across every block ... so it is the true opposite of both dark profiles at once",
+   "reasoning": "Note 10 states only-column and true-opposite claims."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Kantianism inverts the manipulators row; only Faith in Humanity adds a new dimension.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "'Treats people as ends, not means' (Kantianism) is essentially the inverse of the 'manipulators' row ... Only 'Believes people are fundamentally good' (Faith in Humanity) adds a genuinely new dimension",
+   "reasoning": "Note 11 states both the inversion and the sole new dimension."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "The table limits its scope deliberately and treats dark columns as ideal types.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Etiology is deliberately left out as a row ... Treat these two columns as ideal types, not categories.",
+   "reasoning": "Notes 7 and 8 support the deliberate scope limit and ideal-types framing."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Etiology stays out: causal origin is not a response shape.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That is a claim about causes, not about the shape of the response, so it does not belong in a feature table.",
+   "reasoning": "Note 7 gives the same causes-versus-response rationale."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Psychopath and sociopath are not formal diagnoses; both fall under antisocial personality disorder.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "\"psychopath\" and \"sociopath\" are not formal diagnoses. Both fall under Antisocial Personality Disorder",
+   "reasoning": "Note 8 states both the non-diagnosis and APD inclusion."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Terminology varies; empathic concern and pop-psych sympathy differ from table usage.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "usage varies across the literature. Some authors use \"empathic concern\" roughly where this table uses \"compassion,\" and pop-psych usage (e.g. Brené Brown) treats \"sympathy\" as inherently distancing.",
+   "reasoning": "Note 9 states both terminology variants and the neutral research sense used."
+  }
+ ],
+ "metrics": {
+  "total_claims": 25,
+  "supported": 25,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

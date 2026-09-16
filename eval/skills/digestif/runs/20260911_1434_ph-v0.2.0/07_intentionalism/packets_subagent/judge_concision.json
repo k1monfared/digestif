@@ -1,0 +1,491 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "labels": [
+    {
+      "canonical_id": null,
+      "claim_id": "C01",
+      "label": "Unique",
+      "loglog_ids": [
+        "L01"
+      ],
+      "reasoning": "Title states the thesis; first occurrence."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C02",
+      "label": "Unique",
+      "loglog_ids": [
+        "L02"
+      ],
+      "reasoning": "Summary adds the structural-favoring proposition beyond the title."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C03",
+      "label": "Unique",
+      "loglog_ids": [
+        "L02"
+      ],
+      "reasoning": "The intend-before-choosing prescription is new information."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C04",
+      "label": "Unique",
+      "loglog_ids": [
+        "L03"
+      ],
+      "reasoning": "1962/name/topic facts are new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C05",
+      "label": "Unique",
+      "loglog_ids": [
+        "L03"
+      ],
+      "reasoning": "The asymmetry finding is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C06",
+      "label": "Unique",
+      "loglog_ids": [
+        "L04"
+      ],
+      "reasoning": "Algorithm mechanics are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C07",
+      "label": "Unique",
+      "loglog_ids": [
+        "L05"
+      ],
+      "reasoning": "Best/worst finding is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C08",
+      "label": "Unique",
+      "loglog_ids": [
+        "L06"
+      ],
+      "reasoning": "First statement of the not-talent-or-luck negation."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C09",
+      "label": "Unique",
+      "loglog_ids": [
+        "L07"
+      ],
+      "reasoning": "Real-world generalization with its limit is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C10",
+      "label": "Unique",
+      "loglog_ids": [
+        "L08"
+      ],
+      "reasoning": "Four concrete examples are new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C11",
+      "label": "Unique",
+      "loglog_ids": [
+        "L09"
+      ],
+      "reasoning": "Mostly-receiver diagnosis is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C12",
+      "label": "Unique",
+      "loglog_ids": [
+        "L10"
+      ],
+      "reasoning": "Acceptable-but-shortfall proposition is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C13",
+      "label": "Unique",
+      "loglog_ids": [
+        "L11"
+      ],
+      "reasoning": "Informal-structure causal claim is new (mathematical version was C07; scope differs)."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C14",
+      "label": "Unique",
+      "loglog_ids": [
+        "L12"
+      ],
+      "reasoning": "Stability-without-revolt mechanism is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C15",
+      "label": "Unique",
+      "loglog_ids": [
+        "L13"
+      ],
+      "reasoning": "Unpracticed-wanting point is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C16",
+      "label": "Unique",
+      "loglog_ids": [
+        "L14"
+      ],
+      "reasoning": "Chicken-and-egg thesis, first occurrence."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C17",
+      "label": "Unique",
+      "loglog_ids": [
+        "L15"
+      ],
+      "reasoning": "Least-disliked mechanism is new detail."
+    },
+    {
+      "canonical_id": "C16",
+      "claim_id": "C18",
+      "label": "Duplicate",
+      "loglog_ids": [
+        "L16"
+      ],
+      "reasoning": "Restates C16 (intention as prerequisite and product of proposing) with no new proposition."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C19",
+      "label": "Unique",
+      "loglog_ids": [
+        "L17"
+      ],
+      "reasoning": "Song/partner examples are new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C20",
+      "label": "Unique",
+      "loglog_ids": [
+        "L18"
+      ],
+      "reasoning": "Progressive-training principle is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C21",
+      "label": "Unique",
+      "loglog_ids": [
+        "L19"
+      ],
+      "reasoning": "Tonight exercise is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C22",
+      "label": "Unique",
+      "loglog_ids": [
+        "L20"
+      ],
+      "reasoning": "Patterns-to-values chain is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C23",
+      "label": "Unique",
+      "loglog_ids": [
+        "L21"
+      ],
+      "reasoning": "Practice-over-thought negation is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C24",
+      "label": "Unique",
+      "loglog_ids": [
+        "L22"
+      ],
+      "reasoning": "Major-decisions diagnosis is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C25",
+      "label": "Unique",
+      "loglog_ids": [
+        "L23"
+      ],
+      "reasoning": "Intentional-seeker examples are new."
+    },
+    {
+      "canonical_id": "C08",
+      "claim_id": "C26",
+      "label": "Duplicate",
+      "loglog_ids": [
+        "L24"
+      ],
+      "reasoning": "Restates C08 (advantage from side, not smarts/luck) with no new proposition."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C27",
+      "label": "Unique",
+      "loglog_ids": [
+        "L25"
+      ],
+      "reasoning": "Collective-optimization claim moves to the system level; new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C28",
+      "label": "Unique",
+      "loglog_ids": [
+        "L26"
+      ],
+      "reasoning": "Platform engagement examples are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C29",
+      "label": "Unique",
+      "loglog_ids": [
+        "L27"
+      ],
+      "reasoning": "Optimal-versus-good-enough split is new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C30",
+      "label": "Unique",
+      "loglog_ids": [
+        "L28"
+      ],
+      "reasoning": "Leaving-harder stability gloss is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C31",
+      "label": "Unique",
+      "loglog_ids": [
+        "L29"
+      ],
+      "reasoning": "Switch-imperative is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C32",
+      "label": "Unique",
+      "loglog_ids": [
+        "L30"
+      ],
+      "reasoning": "Four proposing behaviors are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C33",
+      "label": "Unique",
+      "loglog_ids": [
+        "L31"
+      ],
+      "reasoning": "The ask-before-deciding prescription is new (Partial verdict in F, but concision counts information, and it is not Contradicted)."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C34",
+      "label": "Unique",
+      "loglog_ids": [
+        "L32"
+      ],
+      "reasoning": "Most-refuse diagnosis is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C35",
+      "label": "Unique",
+      "loglog_ids": [
+        "L33"
+      ],
+      "reasoning": "Shifter-outcomes claim is new; first occurrence of the real-life payoff."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C36",
+      "label": "Unique",
+      "loglog_ids": [
+        "L34"
+      ],
+      "reasoning": "Settled-dynamic framing is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C37",
+      "label": "Unique",
+      "loglog_ids": [
+        "L35"
+      ],
+      "reasoning": "Tomorrow-morning entry point is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C38",
+      "label": "Unique",
+      "loglog_ids": [
+        "L36"
+      ],
+      "reasoning": "Four named states are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C39",
+      "label": "Unique",
+      "loglog_ids": [
+        "L37"
+      ],
+      "reasoning": "Week-log instruction is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C40",
+      "label": "Unique",
+      "loglog_ids": [
+        "L38"
+      ],
+      "reasoning": "Scale-up domains are new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C41",
+      "label": "Unique",
+      "loglog_ids": [
+        "L39"
+      ],
+      "reasoning": "Muscle-to-proposer ladder is new (consequence 'values make proposers' not stated before)."
+    },
+    {
+      "canonical_id": "C35",
+      "claim_id": "C42",
+      "label": "Duplicate",
+      "loglog_ids": [
+        "L40"
+      ],
+      "reasoning": "Propositional content fully entailed by C35 (better outcomes outside exact math) plus C26/C08 (not specialness but position); the math-versus-mess scope adds nothing C35 lacked."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C43",
+      "label": "Unique",
+      "loglog_ids": [
+        "L41"
+      ],
+      "reasoning": "Appendix scope statement is new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C44",
+      "label": "Unique",
+      "loglog_ids": [
+        "L42"
+      ],
+      "reasoning": "Entertainment phases are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C45",
+      "label": "Unique",
+      "loglog_ids": [
+        "L43"
+      ],
+      "reasoning": "Shopping steps are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C46",
+      "label": "Unique",
+      "loglog_ids": [
+        "L44"
+      ],
+      "reasoning": "Toothpaste drill is new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C47",
+      "label": "Unique",
+      "loglog_ids": [
+        "L45"
+      ],
+      "reasoning": "Career criteria are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C48",
+      "label": "Unique",
+      "loglog_ids": [
+        "L46"
+      ],
+      "reasoning": "Dating steps are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C49",
+      "label": "Unique",
+      "loglog_ids": [
+        "L47"
+      ],
+      "reasoning": "Friendship steps are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C50",
+      "label": "Unique",
+      "loglog_ids": [
+        "L48"
+      ],
+      "reasoning": "Daily practices are new detail."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C51",
+      "label": "Unique",
+      "loglog_ids": [
+        "L49"
+      ],
+      "reasoning": "Journal schema and 30-day finding are new."
+    },
+    {
+      "canonical_id": null,
+      "claim_id": "C52",
+      "label": "Unique",
+      "loglog_ids": [
+        "L50"
+      ],
+      "reasoning": "The 'before someone else provides the answer' operationalization adds a new framing beyond C23, so not a pure restatement."
+    }
+  ],
+  "metrics": {
+    "duplicates": 3,
+    "redundancy_rate": 0.0577,
+    "scored_claims": 52,
+    "structured_tokens": 791,
+    "tokens_per_unique_claim": 16.14,
+    "trivia": 0,
+    "trivia_rate": 0.0,
+    "unique": 49
+  },
+  "model": "muse-spark-1.3-contributor-free 2026-09-11",
+  "prune_list": [
+    "C18 duplicates C16, safe to merge into the section thesis",
+    "C26 duplicates C08, safe to fold into the talent/luck negation",
+    "C42 duplicates C35, safe to merge into the shifter-payoff claim"
+  ],
+  "source_id": "07_intentionalism"
+}

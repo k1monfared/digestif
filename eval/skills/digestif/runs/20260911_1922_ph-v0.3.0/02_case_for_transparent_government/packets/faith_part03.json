@@ -1,0 +1,247 @@
+{
+ "sample": "02_case_for_transparent_government",
+ "part": 3,
+ "of": 6,
+ "nodes": [
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Secret programs recur as illegal; secret oversight reliably fails to catch them.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "By 2018, 26 issues had been processed, and 80% led to government action. This isn't core transparency - it's what becomes possible *downstream* of transparency. When citizens can see decisions being made, they can meaningfully participate in making them.\n\n## When Secret Oversight Fails: The Pattern\n\nThis is not a one-time occurrence. There is a recurring pattern in which government programs, shielded by secrecy, are later revealed to be illegal or built on lies - and the internal oversight mechanisms that were supposed to catch them failed because they operated inside the same secrecy bubble."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "In 1971 Pentagon Papers showed government knew Vietnam was unwinnable while publicly claiming progress.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "In 1971, the Pentagon Papers revealed that the US government knew the Vietnam War was unwinnable while publicly claiming progress. In the same year, activists broke into an FBI office in Media, Pennsylvania, and exposed [COINTELPRO](https://www.britannica.com/topic/COINTELPRO) - a program of illegal surveillance, infiltration, and disruption targeting civil rights leaders and political dissidents. In 2013, Edward Snowden leaked classified documents revealing the NSA was bulk-collecting phone metadata from millions of Americans, accessing data from major tech companies through PRISM, and surveilling foreign leaders."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Media, Pennsylvania break-in exposed COINTELPRO's illegal surveillance and disruption.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "In 1971, the Pentagon Papers revealed that the US government knew the Vietnam War was unwinnable while publicly claiming progress. In the same year, activists broke into an FBI office in Media, Pennsylvania, and exposed [COINTELPRO](https://www.britannica.com/topic/COINTELPRO) - a program of illegal surveillance, infiltration, and disruption targeting civil rights leaders and political dissidents. In 2013, Edward Snowden leaked classified documents revealing the NSA was bulk-collecting phone metadata from millions of Americans, accessing data from major tech companies through PRISM, and surveilling foreign leaders."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "COINTELPRO targeted civil rights leaders and political dissidents.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "In 1971, the Pentagon Papers revealed that the US government knew the Vietnam War was unwinnable while publicly claiming progress. In the same year, activists broke into an FBI office in Media, Pennsylvania, and exposed [COINTELPRO](https://www.britannica.com/topic/COINTELPRO) - a program of illegal surveillance, infiltration, and disruption targeting civil rights leaders and political dissidents. In 2013, Edward Snowden leaked classified documents revealing the NSA was bulk-collecting phone metadata from millions of Americans, accessing data from major tech companies through PRISM, and surveilling foreign leaders."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "In 2013 Snowden revealed bulk metadata collection from millions of Americans, PRISM, and leader surveillance.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "In 1971, the Pentagon Papers revealed that the US government knew the Vietnam War was unwinnable while publicly claiming progress. In the same year, activists broke into an FBI office in Media, Pennsylvania, and exposed [COINTELPRO](https://www.britannica.com/topic/COINTELPRO) - a program of illegal surveillance, infiltration, and disruption targeting civil rights leaders and political dissidents. In 2013, Edward Snowden leaked classified documents revealing the NSA was bulk-collecting phone metadata from millions of Americans, accessing data from major tech companies through PRISM, and surveilling foreign leaders."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Each disclosure was predicted catastrophic yet revealed illegality, unconstitutionality, or deliberate deception.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "In each case, the government predicted catastrophe from disclosure. In each case, the programs turned out to be illegal, unconstitutional, or based on deliberate deception of the public.\n\n**The legality question is settled:**\n\nIn September 2020, the [US Ninth Circuit Court of Appeals ruled](https://techcrunch.com/2020/09/03/nsa-bulk-records-appeals-illegal/) that the NSA's bulk phone record collection was illegal and possibly unconstitutional. The court held the government failed to satisfy FISA's requirement to show \"relevance to a particular authorized investigation.\" The government's own review panel member, Geoffrey R. Stone, found \"no evidence that the bulk collection of phone data had stopped any terror attacks.\" The NSA itself reportedly abandoned the program in 2018, telling the White House it \"no longer made sense.\""
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "In September 2020 the Ninth Circuit ruled bulk collection illegal, possibly unconstitutional.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "In each case, the government predicted catastrophe from disclosure. In each case, the programs turned out to be illegal, unconstitutional, or based on deliberate deception of the public.\n\n**The legality question is settled:**\n\nIn September 2020, the [US Ninth Circuit Court of Appeals ruled](https://techcrunch.com/2020/09/03/nsa-bulk-records-appeals-illegal/) that the NSA's bulk phone record collection was illegal and possibly unconstitutional. The court held the government failed to satisfy FISA's requirement to show \"relevance to a particular authorized investigation.\" The government's own review panel member, Geoffrey R. Stone, found \"no evidence that the bulk collection of phone data had stopped any terror attacks.\" The NSA itself reportedly abandoned the program in 2018, telling the White House it \"no longer made sense.\""
+    }
+   ]
+  },
+  {
+   "id": "6.7",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The court required FISA relevance to a particular authorized investigation.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "In each case, the government predicted catastrophe from disclosure. In each case, the programs turned out to be illegal, unconstitutional, or based on deliberate deception of the public.\n\n**The legality question is settled:**\n\nIn September 2020, the [US Ninth Circuit Court of Appeals ruled](https://techcrunch.com/2020/09/03/nsa-bulk-records-appeals-illegal/) that the NSA's bulk phone record collection was illegal and possibly unconstitutional. The court held the government failed to satisfy FISA's requirement to show \"relevance to a particular authorized investigation.\" The government's own review panel member, Geoffrey R. Stone, found \"no evidence that the bulk collection of phone data had stopped any terror attacks.\" The NSA itself reportedly abandoned the program in 2018, telling the White House it \"no longer made sense.\""
+    }
+   ]
+  },
+  {
+   "id": "6.8",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Stone found no evidence bulk collection stopped any terror attacks.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "In each case, the government predicted catastrophe from disclosure. In each case, the programs turned out to be illegal, unconstitutional, or based on deliberate deception of the public.\n\n**The legality question is settled:**\n\nIn September 2020, the [US Ninth Circuit Court of Appeals ruled](https://techcrunch.com/2020/09/03/nsa-bulk-records-appeals-illegal/) that the NSA's bulk phone record collection was illegal and possibly unconstitutional. The court held the government failed to satisfy FISA's requirement to show \"relevance to a particular authorized investigation.\" The government's own review panel member, Geoffrey R. Stone, found \"no evidence that the bulk collection of phone data had stopped any terror attacks.\" The NSA itself reportedly abandoned the program in 2018, telling the White House it \"no longer made sense.\""
+    }
+   ]
+  },
+  {
+   "id": "6.9",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The NSA abandoned the program in 2018: it no longer made sense.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "In each case, the government predicted catastrophe from disclosure. In each case, the programs turned out to be illegal, unconstitutional, or based on deliberate deception of the public.\n\n**The legality question is settled:**\n\nIn September 2020, the [US Ninth Circuit Court of Appeals ruled](https://techcrunch.com/2020/09/03/nsa-bulk-records-appeals-illegal/) that the NSA's bulk phone record collection was illegal and possibly unconstitutional. The court held the government failed to satisfy FISA's requirement to show \"relevance to a particular authorized investigation.\" The government's own review panel member, Geoffrey R. Stone, found \"no evidence that the bulk collection of phone data had stopped any terror attacks.\" The NSA itself reportedly abandoned the program in 2018, telling the White House it \"no longer made sense.\""
+    }
+   ]
+  },
+  {
+   "id": "6.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "FISA courts, committees, and inspectors general failed inside the secrecy structure.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "**The oversight question is more important:**\n\nWhy didn't internal mechanisms catch these programs? The FISA court, congressional intelligence committees, and inspectors general all existed. They failed because they operated inside the secrecy structure they were supposed to oversee. Oversight that is itself secret is oversight that can be captured, co-opted, or simply worn down by institutional pressure. This is the structural argument for transparency: not that any single disclosure was costless, but that secret oversight reliably fails to prevent illegal secret programs."
+    }
+   ]
+  },
+  {
+   "id": "6.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Secret oversight can be captured, co-opted, or worn down institutionally.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "**The oversight question is more important:**\n\nWhy didn't internal mechanisms catch these programs? The FISA court, congressional intelligence committees, and inspectors general all existed. They failed because they operated inside the secrecy structure they were supposed to oversee. Oversight that is itself secret is oversight that can be captured, co-opted, or simply worn down by institutional pressure. This is the structural argument for transparency: not that any single disclosure was costless, but that secret oversight reliably fails to prevent illegal secret programs."
+    }
+   ]
+  },
+  {
+   "id": "6.12",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The 2015 USA FREEDOM Act first reined in NSA spying in over 30 years.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "**What citizens gained from disclosure:**\n\nThe [USA FREEDOM Act](https://www.eff.org/deeplinks/2023/05/10-years-after-snowden-some-things-are-better-some-were-still-fighting) (2015) became the first legislation to rein in NSA spying in over 30 years. It ended bulk collection of phone metadata and required the Foreign Intelligence Surveillance Court to release significant opinions. The tech sector adopted transparency reporting on government data requests. HTTPS encryption became the default on most websites. The EU's [GDPR](https://iapp.org/news/a/the-snowden-disclosures-10-years-on) was accelerated by the revelations."
+    }
+   ]
+  },
+  {
+   "id": "6.13",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "It ended bulk metadata collection and required releasing significant FISC opinions.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "**What citizens gained from disclosure:**\n\nThe [USA FREEDOM Act](https://www.eff.org/deeplinks/2023/05/10-years-after-snowden-some-things-are-better-some-were-still-fighting) (2015) became the first legislation to rein in NSA spying in over 30 years. It ended bulk collection of phone metadata and required the Foreign Intelligence Surveillance Court to release significant opinions. The tech sector adopted transparency reporting on government data requests. HTTPS encryption became the default on most websites. The EU's [GDPR](https://iapp.org/news/a/the-snowden-disclosures-10-years-on) was accelerated by the revelations."
+    }
+   ]
+  },
+  {
+   "id": "6.14",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The tech sector adopted transparency reporting on data requests.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "**What citizens gained from disclosure:**\n\nThe [USA FREEDOM Act](https://www.eff.org/deeplinks/2023/05/10-years-after-snowden-some-things-are-better-some-were-still-fighting) (2015) became the first legislation to rein in NSA spying in over 30 years. It ended bulk collection of phone metadata and required the Foreign Intelligence Surveillance Court to release significant opinions. The tech sector adopted transparency reporting on government data requests. HTTPS encryption became the default on most websites. The EU's [GDPR](https://iapp.org/news/a/the-snowden-disclosures-10-years-on) was accelerated by the revelations."
+    }
+   ]
+  },
+  {
+   "id": "6.15",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "HTTPS became default on most websites.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "**What citizens gained from disclosure:**\n\nThe [USA FREEDOM Act](https://www.eff.org/deeplinks/2023/05/10-years-after-snowden-some-things-are-better-some-were-still-fighting) (2015) became the first legislation to rein in NSA spying in over 30 years. It ended bulk collection of phone metadata and required the Foreign Intelligence Surveillance Court to release significant opinions. The tech sector adopted transparency reporting on government data requests. HTTPS encryption became the default on most websites. The EU's [GDPR](https://iapp.org/news/a/the-snowden-disclosures-10-years-on) was accelerated by the revelations."
+    }
+   ]
+  },
+  {
+   "id": "6.16",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The EU's GDPR was accelerated by the revelations.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "**What citizens gained from disclosure:**\n\nThe [USA FREEDOM Act](https://www.eff.org/deeplinks/2023/05/10-years-after-snowden-some-things-are-better-some-were-still-fighting) (2015) became the first legislation to rein in NSA spying in over 30 years. It ended bulk collection of phone metadata and required the Foreign Intelligence Surveillance Court to release significant opinions. The tech sector adopted transparency reporting on government data requests. HTTPS encryption became the default on most websites. The EU's [GDPR](https://iapp.org/news/a/the-snowden-disclosures-10-years-on) was accelerated by the revelations."
+    }
+   ]
+  },
+  {
+   "id": "6.17",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Operational harm is genuinely uncertain; illegality is not.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Whether these disclosures caused operational harm is genuinely uncertain - the full impact on intelligence sources and methods cannot be publicly assessed. But the legality question is not uncertain. The programs were illegal. The internal oversight failed. The only correction came from outside the secrecy bubble.\n\nThe CEO framing lesson is not that whistleblower leaks are the model. It's that they are what happens *in the absence of* a model. Snowden is not the solution. Snowden is the symptom of a system where the only alternative to permanent secrecy is uncontrolled disclosure. Designed-in transparency - where citizens can trace decisions by default - would have made the illegal programs visible before they scaled, without the collateral damage of a bulk leak."
+    }
+   ]
+  },
+  {
+   "id": "6.18",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Snowden is the symptom of absent designed-in transparency, not the solution.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Whether these disclosures caused operational harm is genuinely uncertain - the full impact on intelligence sources and methods cannot be publicly assessed. But the legality question is not uncertain. The programs were illegal. The internal oversight failed. The only correction came from outside the secrecy bubble.\n\nThe CEO framing lesson is not that whistleblower leaks are the model. It's that they are what happens *in the absence of* a model. Snowden is not the solution. Snowden is the symptom of a system where the only alternative to permanent secrecy is uncontrolled disclosure. Designed-in transparency - where citizens can trace decisions by default - would have made the illegal programs visible before they scaled, without the collateral damage of a bulk leak."
+    }
+   ]
+  },
+  {
+   "id": "6.19",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Designed-in traceability would surface illegality early without bulk-leak damage.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Whether these disclosures caused operational harm is genuinely uncertain - the full impact on intelligence sources and methods cannot be publicly assessed. But the legality question is not uncertain. The programs were illegal. The internal oversight failed. The only correction came from outside the secrecy bubble.\n\nThe CEO framing lesson is not that whistleblower leaks are the model. It's that they are what happens *in the absence of* a model. Snowden is not the solution. Snowden is the symptom of a system where the only alternative to permanent secrecy is uncontrolled disclosure. Designed-in transparency - where citizens can trace decisions by default - would have made the illegal programs visible before they scaled, without the collateral damage of a bulk leak."
+    }
+   ]
+  }
+ ]
+}

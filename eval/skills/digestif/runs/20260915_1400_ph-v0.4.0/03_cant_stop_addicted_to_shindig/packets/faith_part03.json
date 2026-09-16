@@ -1,0 +1,443 @@
+{
+ "sample": "03_cant_stop_addicted_to_shindig",
+ "part": 3,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Simulations of 38 strategies across 14 families (3.6 million games) show probabilistic play winning and consistency beating speed.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "## Strategy Performance\n\nNow let's see how different strategies actually perform. I implemented 38 different strategies and ran them against each other in a comprehensive simulation (1,000 single-player trials per strategy, 2,500 head-to-head games per matchup, 3.6 million total games)."
+    },
+    {
+     "ref": "¶48",
+     "text": "### The Strategies\n\nI tested 38 strategies across 14 different strategic families:"
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Single-player, GreedyUntil1Col is fastest at 10.5 turns but has σ = 5.73 and 7.50 busts per game.",
+   "evidence": [
+    {
+     "ref": "¶52",
+     "text": "Full strategy details: [strategy_analysis_updated.md](files/20251201/strategy_analysis_updated.md)\n\n### Single-Player Performance\n\nFirst, let's see how fast each strategy completes 3 columns when playing alone (1,000 trials each):"
+    },
+    {
+     "ref": "¶53",
+     "text": "| Rank | Strategy | Avg Turns | Median | StdDev | Avg Busts |\n|------|----------|-----------|--------|--------|-----------|\n| 1 | **GreedyUntil1Col** | **10.5** | 9 | 5.73 | 7.50 |\n| 2 | **FiftyPercentSurvival** | **11.3** | 11 | 2.86 | 2.67 |\n| 3 | OpponentAware(0.5,1,2) | 11.4 | 11 | 3.02 | 2.86 |\n| 4 | OpponentAware(0.3,1,2) | 11.6 | 11 | 3.15 | 2.95 |\n| 5 | OpponentAware(0.7,1,1.5) | 11.8 | 11 | 3.63 | 3.59 |\n| 6 | Heuristic(1.5) | 11.9 | 12 | 2.78 | 2.03 |\n| 7 | Heuristic(2.0) | 12.3 | 12 | 2.14 | 0.92 |\n| 8 | Heuristic(1.0) | 12.3 | 12 | 4.26 | 4.87 |\n| 9 | ExpectedValueMax | 12.3 | 12 | 5.01 | 4.98 |\n| 10 | MonteCarloLookahead | 12.4 | 12 | 2.14 | 0.97 |\n| 11 | WeightedColumnValue | 12.4 | 12 | 3.82 | 2.86 |\n| 12 | AdaptiveThreshold | 12.5 | 12 | 2.37 | 1.63 |\n| 13 | GreedyImproved2 | 12.6 | 12 | 2.50 | 2.35 |\n| 14 | MiddleColumnsOnly | 12.8 | 13 | 1.70 | 0.25 |\n| 15 | OpportunisticActivation | 12.8 | 11 | 6.08 | 6.42 |"
+    },
+    {
+     "ref": "¶54",
+     "text": "Full results (all 38 strategies): [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md)\n\n**Key insights:**\n- **GreedyUntil1Col** is fastest (10.5 turns) but has high variance (σ=5.73) and bust rate (7.5 per game)\n- **FiftyPercentSurvival** balances speed with remarkable consistency (σ=2.86, only 2.67 busts)\n- Conservative strategies like **Heuristic(2.0)** and **MonteCarloLookahead** average <1 bust per game\n- The top 15 all complete games in 10.5-12.8 turns - a narrow performance band"
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "FiftyPercentSurvival is second at 11.3 turns with σ = 2.86 and only 2.67 busts per game.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "| Rank | Strategy | Avg Turns | Median | StdDev | Avg Busts |\n|------|----------|-----------|--------|--------|-----------|\n| 1 | **GreedyUntil1Col** | **10.5** | 9 | 5.73 | 7.50 |\n| 2 | **FiftyPercentSurvival** | **11.3** | 11 | 2.86 | 2.67 |\n| 3 | OpponentAware(0.5,1,2) | 11.4 | 11 | 3.02 | 2.86 |\n| 4 | OpponentAware(0.3,1,2) | 11.6 | 11 | 3.15 | 2.95 |\n| 5 | OpponentAware(0.7,1,1.5) | 11.8 | 11 | 3.63 | 3.59 |\n| 6 | Heuristic(1.5) | 11.9 | 12 | 2.78 | 2.03 |\n| 7 | Heuristic(2.0) | 12.3 | 12 | 2.14 | 0.92 |\n| 8 | Heuristic(1.0) | 12.3 | 12 | 4.26 | 4.87 |\n| 9 | ExpectedValueMax | 12.3 | 12 | 5.01 | 4.98 |\n| 10 | MonteCarloLookahead | 12.4 | 12 | 2.14 | 0.97 |\n| 11 | WeightedColumnValue | 12.4 | 12 | 3.82 | 2.86 |\n| 12 | AdaptiveThreshold | 12.5 | 12 | 2.37 | 1.63 |\n| 13 | GreedyImproved2 | 12.6 | 12 | 2.50 | 2.35 |\n| 14 | MiddleColumnsOnly | 12.8 | 13 | 1.70 | 0.25 |\n| 15 | OpportunisticActivation | 12.8 | 11 | 6.08 | 6.42 |"
+    },
+    {
+     "ref": "¶54",
+     "text": "Full results (all 38 strategies): [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md)\n\n**Key insights:**\n- **GreedyUntil1Col** is fastest (10.5 turns) but has high variance (σ=5.73) and bust rate (7.5 per game)\n- **FiftyPercentSurvival** balances speed with remarkable consistency (σ=2.86, only 2.67 busts)\n- Conservative strategies like **Heuristic(2.0)** and **MonteCarloLookahead** average <1 bust per game\n- The top 15 all complete games in 10.5-12.8 turns - a narrow performance band"
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Head-to-head, FiftyPercentSurvival wins 69.84% (132,696/190,000), then Heuristic(1.5) 66.46% and Heuristic(2.0) 63.26%.",
+   "evidence": [
+    {
+     "ref": "¶55",
+     "text": "![Single-Player Performance](files/20251201/single_player_performance.png)\n\n### Head-to-Head Tournament Results"
+    },
+    {
+     "ref": "¶56",
+     "text": "Now the real test: 38 strategies, each playing 2,500 games against every other strategy (3.6 million total games). Here are the overall win rates:"
+    },
+    {
+     "ref": "¶57",
+     "text": "| Rank | Strategy | Win Rate | Total Wins | First-Player Advantage |\n|------|----------|----------|------------|------------------------|\n| **1** | **FiftyPercentSurvival** | **69.84%** | **132,696/190,000** | **+9.42%** |\n| 2 | Heuristic(1.5) | 66.46% | 126,274/190,000 | +10.15% |\n| 3 | Heuristic(2.0) | 63.26% | 120,194/190,000 | +11.73% |\n| 4 | MonteCarloLookahead | 63.09% | 119,871/190,000 | +11.38% |\n| 5 | AdaptiveThreshold | 62.21% | 118,199/190,000 | +11.14% |\n| 6 | ExpectedValueMax | 62.08% | 117,952/190,000 | +8.40% |\n| 7 | Heuristic(1.0) | 61.87% | 117,553/190,000 | +8.49% |\n| 8 | OpportunisticActivation | 61.43% | 116,717/190,000 | +7.28% |\n| 9 | GreedyImproved2 | 60.23% | 114,437/190,000 | +11.06% |\n| 10 | OpponentAware(0.7,1,1.5) | 59.92% | 113,848/190,000 | +12.58% |\n| 11 | GreedyUntil1Col | 58.90% | 111,910/190,000 | +31.24% ⚠️ |\n| 12 | WeightedColumnValue | 58.42% | 111,002/190,000 | +10.26% |\n| 13 | MiddleColumnsOnly | 58.33% | 110,834/190,000 | +12.65% |\n| 14 | TwoRunnerSweet | 56.97% | 108,251/190,000 | +12.51% |\n| 15 | Conservative(4) | 56.82% | 107,965/190,000 | +11.99% |"
+    },
+    {
+     "ref": "¶58",
+     "text": "Full results (all 38 strategies): [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md) | [Comprehensive analysis](files/20251201/COMPREHENSIVE_RESULTS.md)\n\n**Major findings:**\n- **Overall first-player advantage: +11.18%** (Player 1 wins 55.59% across all games)\n- 4 strategies show **unfair self-play** (>10% P1 bias in mirror matchups)\n- **Probabilistic strategies dominate** the top rankings\n- **GreedyUntil1Col** has extreme position bias (+31.24%) despite being fastest"
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The champion rolls until cumulative survival probability drops below 50%, with n = log(0.5)/log(P_success).",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "![Strategy Tournament Rankings](files/20251201/strategy_tournament_rankings.png)\n\n### The Champion: FiftyPercentSurvival\n\n**FiftyPercentSurvival dominates with 69.84% overall win rate**, establishing a new performance benchmark for Can't Stop strategy."
+    },
+    {
+     "ref": "¶60",
+     "text": "**The strategy:** Roll until cumulative survival probability drops below 50%, calculated as $n = \\log(0.5) / \\log(P_{\\text{success}})$ where $P_{\\text{success}}$ accounts for active runners and blocked columns.\n\n**Why it dominates:**"
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "It wins through sound probability math, balanced risk, speed and consistency (σ = 2.86), and only +9.42% position bias.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "1. **Mathematically sound** - Uses actual probability calculations rather than heuristics or thresholds. Adapts automatically as columns get blocked and board state changes.\n\n2. **Optimal risk tolerance** - The 50% threshold is aggressive enough to make meaningful progress but conservative enough to avoid frequent busts (only 2.67 busts per game vs 7.50 for GreedyUntil1Col).\n\n3. **Balanced performance** - #2 in single-player speed (11.3 turns) while #1 in competitive play. Achieves the best of both worlds: fast AND consistent.\n\n4. **Low variance** - Standard deviation of only 2.86 turns (vs 5.73 for GreedyUntil1Col). Consistency matters in competitive play.\n\n5. **Moderate position bias** - First-player advantage of +9.42% is below the overall average (+11.18%), making it more robust across positions."
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Its favorite columns are middle ones: most completed 8 (42.0%), 7 (38.4%), 6 (37.7%).",
+   "evidence": [
+    {
+     "ref": "¶62",
+     "text": "**Column preferences** (from 1,000 trials):\n- Most completed: Column 8 (42.0%), Column 7 (38.4%), Column 6 (37.7%)\n- Most used: Column 8 (3.14×), Column 6 (3.09×), Column 7 (3.08×)\n- Pattern: Strong middle column preference with balanced usage"
+    }
+   ]
+  },
+  {
+   "id": "6.7",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Key matchups: 55.22% vs GreedyUntil1Col, 54.38% vs Heuristic(1.5), 63.09% vs MonteCarloLookahead, 50.00% in self-play.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "**Key matchups:**\n- vs GreedyUntil1Col (#1 speed): 55.22% win rate\n- vs Heuristic(1.5) (#2 overall): 54.38% win rate\n- vs MonteCarloLookahead (perfect play baseline): 63.09% total wins\n- vs itself (self-play): 50.00% (perfectly fair)"
+    }
+   ]
+  },
+  {
+   "id": "6.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "GreedyUntil1Col finishes in 10.5 turns but wins only 58.90%, while FiftyPercentSurvival takes 0.8 turns longer and wins 10.9% more.",
+   "evidence": [
+    {
+     "ref": "¶66",
+     "text": "### The Speed vs Competition Paradox\n\nSomething fascinating emerges from the data: **the fastest strategy is not the best competitive strategy**."
+    },
+    {
+     "ref": "¶67",
+     "text": "| Strategy | Speed Rank | Avg Turns | Competition Rank | Win Rate | Trade-off |\n|----------|------------|-----------|------------------|----------|-----------|\n| GreedyUntil1Col | #1 | 10.5 | #11 | 58.90% | Speed > Power |\n| FiftyPercentSurvival | #2 | 11.3 | #1 | 69.84% | ✅ Optimal Balance |\n| OpponentAware(0.5,1,2) | #3 | 11.4 | #15 | 56.20% | Speed > Power |\n| Heuristic(1.5) | #6 | 11.9 | #2 | 66.46% | Power > Speed |\n| Heuristic(2.0) | #7 | 12.3 | #3 | 63.26% | Power > Speed |"
+    },
+    {
+     "ref": "¶68",
+     "text": "![Speed vs Win Rate Analysis](files/20251201/speed_vs_winrate_analysis.png)\n\n**GreedyUntil1Col** wins in 10.5 turns but only achieves 58.90% competitive win rate. Why?\n\n1. **High variance** (σ=5.73) - Sometimes finishes in 5 turns, sometimes 22. Inconsistent.\n2. **Extreme bust rate** (7.5 per game) - Frequently loses all progress.\n3. **Massive position bias** (+31.24% first-player advantage) - Wins 73% as P1, only 42% as P2."
+    },
+    {
+     "ref": "¶69",
+     "text": "**FiftyPercentSurvival** takes 0.8 turns longer but wins 10.9% more games because:\n\n1. **Low variance** (σ=2.86) - Consistently finishes in 11-12 turns.\n2. **Low bust rate** (2.67 per game) - Rarely loses progress.\n3. **Balanced position** (+9.42% advantage) - Performs well from either position."
+    },
+    {
+     "ref": "¶70",
+     "text": "**The lesson:** In Can't Stop, **consistency beats raw speed**. It's better to reliably finish in 11 turns than to average 10.5 with high variance.\n\nThe aggressive strategies complete fast WHEN they succeed, but they bust more often. In single-player, you can retry forever and those busts get averaged in. In competitive play, busts lose you the game. Consistency matters more than raw speed."
+    }
+   ]
+  },
+  {
+   "id": "6.8.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The fastest strategy is not the best competitive strategy.",
+   "evidence": [
+    {
+     "ref": "¶66",
+     "text": "### The Speed vs Competition Paradox\n\nSomething fascinating emerges from the data: **the fastest strategy is not the best competitive strategy**."
+    }
+   ]
+  },
+  {
+   "id": "6.9",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Core families: Greedy and Random (30% stop), Conservative(k) with k ∈ {1,2,3,4}, Heuristic(α) with α ∈ {0.3,0.5,1.0,1.5,2.0}, and OpponentAware variants.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "**Core Strategy Types:**\n\n**1. Baseline** - Greedy (always rolls) and Random (30% stop probability) establish performance bounds.\n\n**2. Conservative(k)** - Stops after accumulating k unsaved steps, with k ∈ {1, 2, 3, 4}. Critically updated to respect the \"can't bust with <3 active runners\" rule.\n\n**3. Heuristic(α)** - Mathematical stopping rule: Keep rolling if $(P_{\\text{success}} \\times Q) > (\\alpha \\times P_{\\text{bust}} \\times U)$ with α ∈ {0.3, 0.5, 1.0, 1.5, 2.0}. Pure EV at α = 1.0, aggressive when α < 1, conservative when α > 1.\n\n**4. OpponentAware** - Dynamic risk adjustment based on game state with four variants: (0.3,1,2), (0.5,1,2), (0.7,1,1.5) [aggressive when behind], and (2,1,0.3) [conservative when behind - the opposite approach]."
+    }
+   ]
+  },
+  {
+   "id": "6.10",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Other core types: Greedy-Improved, Adaptive, Proportional, progressive milestones, probabilistic, and column-count strategies.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "**5. Greedy-Improved** - Simple threshold improvements: GreedyImproved1 (progress on all 3 active columns) and GreedyImproved2 (exactly 5 unsaved steps).\n\n**6. Adaptive** - AdaptiveThreshold dynamically adjusts stopping threshold based on current success probability.\n\n**7. Proportional** - ProportionalThreshold(f) with f ∈ {0.33, 0.5}, stops based on fraction of remaining distance.\n\n**8. Progressive Milestones** - GreedyFraction(f) with f ∈ {0.33, 0.5}, stops when reaching next progressive milestone (1/3 → 2/3 → complete).\n\n**9. Probabilistic** - FiftyPercentSurvival (stops when cumulative survival < 50%) and ExpectedValueMax (stops when EV ≤ 0).\n\n**10. Column-Count** - GreedyUntil1Col (stops after 1 column complete) and GreedyUntil3Col (never stops)."
+    }
+   ]
+  },
+  {
+   "id": "6.11",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Newer groups 11-14 cover outside/middle preference, runner-aware, column-quality, and hybrid/advanced strategies.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "**New Strategy Types (Groups 11-14):**\n\n**11. Outside/Middle Preference** - OutsideFirst, MiddleFirst, MinimumRunnerActivation explore column selection biases.\n\n**12. Runner-Aware** - TwoRunnerSweet and DynamicRunnerThreshold optimize based on active runner count.\n\n**13. Column-Quality** - MiddleColumnsOnly, WeightedColumnValue, WeightedColumnValueOuter, OpportunisticActivation prioritize column quality over quantity.\n\n**14. Hybrid/Advanced** - TwoPhase (evolves strategy as game progresses), RiskBudget (20% cumulative bust limit per turn), and MonteCarloLookahead (simulates 100 future rolls for \"perfect play\")."
+    }
+   ]
+  },
+  {
+   "id": "6.12",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "RiskBudget caps cumulative bust risk at 20% per turn; MonteCarloLookahead simulates 100 future rolls.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "**New Strategy Types (Groups 11-14):**\n\n**11. Outside/Middle Preference** - OutsideFirst, MiddleFirst, MinimumRunnerActivation explore column selection biases.\n\n**12. Runner-Aware** - TwoRunnerSweet and DynamicRunnerThreshold optimize based on active runner count.\n\n**13. Column-Quality** - MiddleColumnsOnly, WeightedColumnValue, WeightedColumnValueOuter, OpportunisticActivation prioritize column quality over quantity.\n\n**14. Hybrid/Advanced** - TwoPhase (evolves strategy as game progresses), RiskBudget (20% cumulative bust limit per turn), and MonteCarloLookahead (simulates 100 future rolls for \"perfect play\")."
+    }
+   ]
+  },
+  {
+   "id": "6.13",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The top 15 all finish in 10.5 to 12.8 turns; conservative strategies like Heuristic(2.0) average under 1 bust per game.",
+   "evidence": [
+    {
+     "ref": "¶54",
+     "text": "Full results (all 38 strategies): [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md)\n\n**Key insights:**\n- **GreedyUntil1Col** is fastest (10.5 turns) but has high variance (σ=5.73) and bust rate (7.5 per game)\n- **FiftyPercentSurvival** balances speed with remarkable consistency (σ=2.86, only 2.67 busts)\n- Conservative strategies like **Heuristic(2.0)** and **MonteCarloLookahead** average <1 bust per game\n- The top 15 all complete games in 10.5-12.8 turns - a narrow performance band"
+    }
+   ]
+  },
+  {
+   "id": "6.14",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "A full head-to-head win-rate matrix and a downloadable CSV accompany the rankings.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "### Full Tournament Matrix\n\nHere's the complete head-to-head win-rate matrix (row vs column, percentage shown is row's win rate):\n\n![Tournament Heatmap](files/20251201/tournament_heatmap_full.png)\n\n[Download full CSV](files/20251201/tournament_results_full.csv)"
+    },
+    {
+     "ref": "¶65",
+     "text": "| Strategy | vs Greedy | vs Cons(3) | vs Heur(1.0) | vs GreedyImp2 | vs GreedyU1Col |\n|:---------|:---------:|:----------:|:------------:|:-------------:|:--------------:|\n| GreedyUntil1Col | 100.0% | 79.1% | 76.7% | 65.1% | -- |\n| GreedyImproved2 | 100.0% | 76.9% | 68.8% | -- | 34.9% |\n| GreedyFraction(0.33) | 99.9% | 74.5% | 69.8% | 45.6% | 35.4% |\n| GreedyImproved1 | 99.9% | 71.2% | 66.0% | 52.4% | 30.5% |\n| AdaptiveThreshold | 99.9% | 67.4% | 61.7% | 34.8% | 29.6% |\n| Conservative(4) | 100.0% | 59.4% | 64.9% | 32.8% | 26.4% |\n| Heuristic(1.0) | 100.0% | 42.6% | -- | 31.2% | 23.3% |\n| ExpectedValueMax | 100.0% | 39.7% | 45.6% | 23.6% | 23.6% |\n| Random(0.3) | 100.0% | 31.6% | 40.8% | 21.2% | 20.6% |\n| Conservative(3) | 100.0% | -- | 57.4% | 23.1% | 20.9% |\n| GreedyUntil3Col | 99.9% | 44.6% | 41.2% | 36.4% | 27.6% |\n| Greedy | -- | 0.0% | 0.0% | 0.0% | 0.0% |\n\n(Full 25×25 matrix available in CSV)"
+    }
+   ]
+  },
+  {
+   "id": "6.15",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Probabilistic strategies dominate: the top 7 all use probability calculations, and pure Greedy lost essentially every game.",
+   "evidence": [
+    {
+     "ref": "¶58",
+     "text": "Full results (all 38 strategies): [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md) | [Comprehensive analysis](files/20251201/COMPREHENSIVE_RESULTS.md)\n\n**Major findings:**\n- **Overall first-player advantage: +11.18%** (Player 1 wins 55.59% across all games)\n- 4 strategies show **unfair self-play** (>10% P1 bias in mirror matchups)\n- **Probabilistic strategies dominate** the top rankings\n- **GreedyUntil1Col** has extreme position bias (+31.24%) despite being fastest"
+    },
+    {
+     "ref": "¶76",
+     "text": "### What Actually Works (And What Doesn't)\n\nSo what did we learn from 3.6 million simulated games?"
+    },
+    {
+     "ref": "¶77",
+     "text": "**Probabilistic strategies dominate.** The top 7 strategies ALL use mathematical probability calculations. FiftyPercentSurvival (#1, 69.84%), Heuristic variants (#2-3, 63-66%), and MonteCarloLookahead (#4, 63.09%) all base decisions on P(success) and P(bust). Simple threshold strategies lag behind.\n\n**Never going full greedy.** The pure Greedy strategy (never stop voluntarily) lost essentially every game. Being too aggressive is catastrophic. But GreedyUntil1Col (stop after 1 column) also underperforms (#11) despite being fastest, showing that even moderate aggression has downsides.\n\n**Consistency > Speed.** The top strategy (FiftyPercentSurvival) is only #2 in speed but has the lowest variance among top performers. In competitive play, finishing in 11 turns consistently beats averaging 10.5 with high variance.\n\n**But also, don't be too scared.** Being overly conservative doesn't work either. You need to take calculated risks. The sweet spot is the 50% survival threshold used by the champion strategy."
+    }
+   ]
+  },
+  {
+   "id": "6.16",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "MonteCarloLookahead, simulating 100 future rolls, only places 4th at 63.09%, so simpler rules are near-optimal.",
+   "evidence": [
+    {
+     "ref": "¶78",
+     "text": "**Position matters tremendously.** The +11.18% overall first-player advantage is huge. Some strategies exploit this better than others, while position-independent strategies like FiftyPercentSurvival perform consistently from either seat.\n\n**Monte Carlo isn't perfect.** Despite simulating 100 future rolls per decision (our \"perfect play\" baseline), MonteCarloLookahead only places 4th (63.09%). The top 3 strategies all use simpler probability-based rules, suggesting we've found near-optimal play without expensive computation.\n\n**Being \"opponent aware\" didn't help.** I tried three variants that adjusted risk based on whether you're ahead or behind. All three performed worse than simple threshold strategies. The problem? They only looked at completed columns, not partial progress. A better implementation might track \"estimated turns until opponent wins\" - but that's a problem for future me."
+    }
+   ]
+  },
+  {
+   "id": "6.17",
+   "type": "concession",
+   "attribution": "author",
+   "text": "Opponent-aware variants all underperformed simple thresholds because they only looked at completed columns, not partial progress.",
+   "evidence": [
+    {
+     "ref": "¶78",
+     "text": "**Position matters tremendously.** The +11.18% overall first-player advantage is huge. Some strategies exploit this better than others, while position-independent strategies like FiftyPercentSurvival perform consistently from either seat.\n\n**Monte Carlo isn't perfect.** Despite simulating 100 future rolls per decision (our \"perfect play\" baseline), MonteCarloLookahead only places 4th (63.09%). The top 3 strategies all use simpler probability-based rules, suggesting we've found near-optimal play without expensive computation.\n\n**Being \"opponent aware\" didn't help.** I tried three variants that adjusted risk based on whether you're ahead or behind. All three performed worse than simple threshold strategies. The problem? They only looked at completed columns, not partial progress. A better implementation might track \"estimated turns until opponent wins\" - but that's a problem for future me."
+    }
+   ]
+  },
+  {
+   "id": "6.18",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For players: use FiftyPercentSurvival, aim for columns 5-9, avoid forced activation of 2-3 and 11-12, and prioritize consistency.",
+   "evidence": [
+    {
+     "ref": "¶100",
+     "text": "**For players:** Use the FiftyPercentSurvival strategy - roll until cumulative survival probability drops below 50%. Aim for columns 5-9, avoid forcing activation of columns 2-3 and 11-12, and prioritize consistency over aggressive play.\n\n**For game designers:** Prioritize playability over mathematical perfection, then use rules to compensate for inevitable imbalances. Be aware that turn order can create significant advantages - consider handicap systems for competitive play."
+    }
+   ]
+  },
+  {
+   "id": "6.19",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "For probability nerds: near-optimal play sits near 70% win rate; breaking the 75% barrier remains an open question.",
+   "evidence": [
+    {
+     "ref": "¶101",
+     "text": "**For probability nerds:** The data suggests we've found near-optimal play at ~70% win rate. The question is whether any strategy can break the 75% barrier, or if we've hit fundamental game limits."
+    }
+   ]
+  },
+  {
+   "id": "6.20",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The conclusion restates this: probabilistic strategies dominate, with FiftyPercentSurvival's 69.84% win rate beating even Monte Carlo 'perfect play'.",
+   "evidence": [
+    {
+     "ref": "¶97",
+     "text": "3. **Probabilistic strategies dominate** - The champion strategy (FiftyPercentSurvival, 69.84% win rate) uses mathematically sound probability calculations with a 50% survival threshold, beating even \"perfect play\" Monte Carlo simulation\n\n4. **Consistency beats speed** - Finishing in 11 turns reliably outperforms averaging 10.5 turns with high variance. Low bust rate and low standard deviation matter more than raw speed in competitive play"
+    }
+   ]
+  },
+  {
+   "id": "6.21",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The conclusion restates this: consistency beats speed, since finishing in 11 turns reliably outperforms averaging 10.5 with high variance.",
+   "evidence": [
+    {
+     "ref": "¶97",
+     "text": "3. **Probabilistic strategies dominate** - The champion strategy (FiftyPercentSurvival, 69.84% win rate) uses mathematically sound probability calculations with a 50% survival threshold, beating even \"perfect play\" Monte Carlo simulation\n\n4. **Consistency beats speed** - Finishing in 11 turns reliably outperforms averaging 10.5 turns with high variance. Low bust rate and low standard deviation matter more than raw speed in competitive play"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Simulations revealed a significant first-player advantage: Player 1 wins 55.59%, +11.18%, larger than chess (~5%) or Go (~7%).",
+   "evidence": [
+    {
+     "ref": "¶71",
+     "text": "### First-Player Advantage: A Major Discovery\n\nThe simulation revealed a **significant first-player advantage** in Can't Stop:\n\n**Overall Statistics (3.6M games):**\n- Player 1 win rate: **55.59%**\n- Player 2 win rate: 44.41%\n- **First-player advantage: +11.18%**"
+    },
+    {
+     "ref": "¶72",
+     "text": "This is substantial - larger than chess (~5%) or Go (~7%). Going first provides consistent advantage, likely due to:\n1. First access to middle columns (6-8)\n2. Setting the pace and forcing opponent to play catch-up\n3. Initiative in column selection"
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Going first likely helps via first access to middle columns 6-8, setting the pace, and initiative in column selection.",
+   "evidence": [
+    {
+     "ref": "¶72",
+     "text": "This is substantial - larger than chess (~5%) or Go (~7%). Going first provides consistent advantage, likely due to:\n1. First access to middle columns (6-8)\n2. Setting the pace and forcing opponent to play catch-up\n3. Initiative in column selection"
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "GreedyUntil1Col (+31.24%) and GreedyFraction(0.5) (+31.00%) show severe position bias; OpponentAware(0.3,1,2) is high at +18.94%.",
+   "evidence": [
+    {
+     "ref": "¶73",
+     "text": "**Strategies with Extreme Position Bias:**\n\n| Strategy | P1 Advantage | Self-Play P1 Rate | Issue |\n|----------|--------------|-------------------|-------|\n| GreedyUntil1Col | +31.24% | 73.28% | ⚠️ SEVERE bias |\n| GreedyFraction(0.5) | +31.00% | 70.16% | ⚠️ SEVERE bias |\n| GreedyFraction(0.33) | +11.44% | 61.44% | Moderate bias |\n| OpponentAware(0.3,1,2) | +18.94% | N/A | High bias |"
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Fairest: OpponentAware(2,1,0.3) at -4.14% favors P2, Greedy -0.03%, Heuristic(0.3) +0.65%, Heuristic(0.5) +3.30%.",
+   "evidence": [
+    {
+     "ref": "¶74",
+     "text": "**Fairest Strategies (Lowest P1 Advantage):**\n\n| Strategy | P1 Advantage | Interpretation |\n|----------|--------------|----------------|\n| OpponentAware(2,1,0.3) | -4.14% | Actually favors P2! |\n| Greedy | -0.03% | Perfectly balanced |\n| Heuristic(0.3) | +0.65% | Nearly balanced |\n| Heuristic(0.5) | +3.30% | Fair |"
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "High position bias may overrate strategies like GreedyUntil1Col in aggregate statistics.",
+   "evidence": [
+    {
+     "ref": "¶75",
+     "text": "The \"opposite\" OpponentAware strategy (conservative when behind, aggressive when ahead) actually performs better as Player 2, suggesting that **catching up rewards patience** in Can't Stop.\n\n**Impact on Rankings:** Strategies with high position bias (like GreedyUntil1Col) may be overrated in aggregate statistics. Their overall win rate includes massive advantages as P1 that don't reflect true strategic strength."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The 'opposite' OpponentAware, conservative when behind, performs better as Player 2, suggesting catching up rewards patience.",
+   "evidence": [
+    {
+     "ref": "¶75",
+     "text": "The \"opposite\" OpponentAware strategy (conservative when behind, aggressive when ahead) actually performs better as Player 2, suggesting that **catching up rewards patience** in Can't Stop.\n\n**Impact on Rankings:** Strategies with high position bias (like GreedyUntil1Col) may be overrated in aggregate statistics. Their overall win rate includes massive advantages as P1 that don't reflect true strategic strength."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "GreedyUntil1Col wins 73% as P1 but only 42% as P2, with σ = 5.73 and 7.5 busts per game.",
+   "evidence": [
+    {
+     "ref": "¶68",
+     "text": "![Speed vs Win Rate Analysis](files/20251201/speed_vs_winrate_analysis.png)\n\n**GreedyUntil1Col** wins in 10.5 turns but only achieves 58.90% competitive win rate. Why?\n\n1. **High variance** (σ=5.73) - Sometimes finishes in 5 turns, sometimes 22. Inconsistent.\n2. **Extreme bust rate** (7.5 per game) - Frequently loses all progress.\n3. **Massive position bias** (+31.24% first-player advantage) - Wins 73% as P1, only 42% as P2."
+    }
+   ]
+  },
+  {
+   "id": "7.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The conclusion restates this: the first-player advantage is significant, Player 1 winning 55.59% (+11.18%), larger than chess or Go.",
+   "evidence": [
+    {
+     "ref": "¶98",
+     "text": "5. **First-player advantage is significant** - Player 1 wins 55.59% of games (+11.18% advantage), larger than chess or Go. Some strategies amplify this (GreedyUntil1Col: +31.24%), while others minimize it (FiftyPercentSurvival: +9.42%)\n\n6. **The forced-move rule is brilliant** - It compensates for mathematical imbalances by forcing contamination of good column combinations"
+    }
+   ]
+  }
+ ]
+}

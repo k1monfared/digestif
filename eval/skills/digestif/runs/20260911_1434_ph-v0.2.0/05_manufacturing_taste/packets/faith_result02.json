@@ -1,0 +1,238 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Story 3 wins: quality sets floor and ceiling; capital and luck rule middle.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Story 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will. But the vast middle ground, where most artists live, is dominated by capital and luck.",
+   "reasoning": "Source states exactly this conclusion, matching floor/ceiling and middle dominance."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Implications worth spelling out below.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "There are a few implications worth spelling out.",
+   "reasoning": "Direct paraphrase of source's framing sentence introducing implications."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Bach greatest only among heard, published, preserved; equals may never have survived.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.",
+   "reasoning": "Preserves qualifier and the possibility of equally gifted lost composers."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Feedback loops run faster today; playlists decide in hours, patronage took decades.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours.",
+   "reasoning": "Both the faster-loops assertion and the hours/decades contrast are directly stated."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Leverage is wider exposure; blind auditions lifted women hires 5 to 25 percent.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the proportion of women hired by major US orchestras went from 5% to 25%.",
+   "reasoning": "Numbers 5% and 25% match source exactly; exposure-leverage point also stated."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Canon-as-best confuses metric with thing; curricula built on forgotten proxy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "We use \"survived into the canon\" as a proxy for \"was the best,\" then build entire curricula and cultural narratives on that proxy, forgetting it was ever a proxy at all.",
+   "reasoning": "Matches source's metric-versus-thing and forgotten-proxy framing."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Caveats bound what the model can and cannot tell us.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I want to be honest about what this can and can't tell us.",
+   "reasoning": "Direct paraphrase of the caveats header sentence, same meaning."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Quality may be partly constituted socially, making decomposition ill-posed.",
+   "claim_type": "definition",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "then the whole decomposition may be ill-posed",
+   "reasoning": "Source hedges ill-posed with 'may'; node states the consequence as fact, dropping the hedge."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Calibration leaps from teens judging pop over weeks to aristocrats over decades.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith.",
+   "reasoning": "Node accurately summarizes the calibration leap the source describes."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Model omits genre, discourse, technology, politics; direction robust, magnitudes uncertain.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "There are important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics.",
+   "reasoning": "All four omissions and the robust-direction/uncertain-magnitude framing match source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Bach was not Bieber, but closer than expected.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Not exactly, but closer than I expected.",
+   "reasoning": "Same meaning: answer is not exactly yes but nearer than the author expected."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Bieber analogy gets mechanism right but quality floor wrong; court posts demanded skill.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "reasoning": "Matches source, including the high quality floor of court positions."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Bach was excellent and well-positioned; positioning matters more than merit gap.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the second half matters more than the first",
+   "reasoning": "Source says positioning (second half) matters more than excellence (first half); node mirrors this."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Famous surgeon among fifty equals: profile led to talks, book, best reputation.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the one surgeon who gets famous out of fifty equally skilled surgeons... got a profile in the New York Times, which led to speaking invitations, which led to a book deal",
+   "reasoning": "The surgeon example and its causal chain are reproduced without drift."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "Leipzig job decided it; 20 to 50 equals forgotten for missing that post.",
+   "claim_type": "number_or_date",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "there were probably 20 to 50 of his contemporaries who were equally great",
+   "reasoning": "Range 20 to 50 matches, but source hedges with 'probably'; node states it as fact."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "Canon is one of hundreds of valid possible canons, treated as inevitable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "it's one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as if it were inevitable.",
+   "reasoning": "Node preserves the hundreds-of-valid-canons and inevitability-treatment points."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "Taste itself was manufactured: survivors set harmonic foundations we judge by.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "if a different set of composers had survived into the canon, we would have inherited a different set of foundations.",
+   "reasoning": "Source ties inherited foundations to which composers survived, matching the node."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "claim_text": "Future canons will reward distribution and algorithms over musical merit.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "if the mechanisms in this simulation are right, then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music.",
+   "reasoning": "Source conditions this on the mechanisms being right; node drops the conditional and states it as fact."
+  }
+ ],
+ "metrics": {
+  "total_claims": 18,
+  "supported": 15,
+  "partially_supported": 3,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.8333
+ },
+ "fail_list": [
+  "C08: source says decomposition 'may be ill-posed'; node drops the hedge and states it as fact",
+  "C15: source says 'probably 20 to 50'; node drops 'probably' and asserts the count as fact",
+  "C18: source conditions the prediction on 'if the mechanisms ... are right'; node states it unconditionally"
+ ]
+}

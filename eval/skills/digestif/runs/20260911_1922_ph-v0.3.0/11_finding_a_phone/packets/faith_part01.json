@@ -1,0 +1,307 @@
+{
+ "sample": "11_finding_a_phone",
+ "part": 1,
+ "of": 1,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Seeking problem-solving rugged phones over ecosystems, from Droid obsession to Ulefone and data-driven search.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "For years, I've been particular about the cellphones I use. It's not just about having a phone—it's about finding one that genuinely solves my problems without forcing me into unnecessary ecosystems or gimmicks. Here's a look at how my relationship with cellphones evolved over time, from the early days of indestructible feature phones to my current obsession with rugged, no-nonsense devices."
+    },
+    {
+     "ref": "¶10",
+     "text": "For me, phones are tools, not status symbols. I don't want a device that decides what's important for me or forces me to conform to its limitations. I want a phone that fits into my life, solves my problems, and respects my choices. The big players—Apple, Google, Samsung—don't cater to people like me. Smaller companies like Ulefone fill that gap. My journey has been about rejecting trends and seeking solutions; while the world chases megapixels and AI gimmicks, I'll keep my rugged reliable phone."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "From reliable J100 and day-one Droid centerpiece to disillusioned dial-pad switch.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "My first cellphone was a Sony Ericsson J100: no-frills, reliable, durable, hardy, never let me down. For a while I didn't even own a phone and felt no need. That changed with the Motorola Droid, one of the first Android smartphones widely available in the U.S.; I bought it on day one and it became a centerpiece of my life."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "J100 was no-frills reliable; Droid bought day one became life centerpiece.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "My first cellphone was a Sony Ericsson J100: no-frills, reliable, durable, hardy, never let me down. For a while I didn't even own a phone and felt no need. That changed with the Motorola Droid, one of the first Android smartphones widely available in the U.S.; I bought it on day one and it became a centerpiece of my life."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Smartphones created notifications and attention traps; felt consumer, not user.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "The Droid ushered in exploration, even one of the world's first smartwatches; for a while I was captivated. But the honeymoon didn't last: smartphones created new problems—notifications, endless customization, attention-stealing apps—making me feel more consumer than user. So I switched to a dial-pad phone."
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Honeymoon ended after smartwatch experiments; switched to dial-pad phone.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "The Droid ushered in exploration, even one of the world's first smartwatches; for a while I was captivated. But the honeymoon didn't last: smartphones created new problems—notifications, endless customization, attention-stealing apps—making me feel more consumer than user. So I switched to a dial-pad phone."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Wanted offline functionality: battery, toughness, SD, jack, mic, customization.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "After a break I ventured back, testing small and large screens, physical keyboards, stylus phones, latest smartwatches. Result was the same: phones built to sell unneeded features, push unwanted ads, lock me into avoided ecosystems. Focus shifted to functionality over flashiness."
+    },
+    {
+     "ref": "¶5",
+     "text": "Priorities: long battery life; waterproofing and shockproofing; SD card slots and headphone jacks; decent mic and speaker; customization. Didn't care: best camera (simple fine); AI photo enhancements (unnecessary); cloud storage (preferred offline independence)."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Needed long battery, waterproof shockproof, SD plus jack, decent mic speaker.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Priorities: long battery life; waterproofing and shockproofing; SD card slots and headphone jacks; decent mic and speaker; customization. Didn't care: best camera (simple fine); AI photo enhancements (unnecessary); cloud storage (preferred offline independence)."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Dismissed best camera, AI enhancements, cloud; preferred simple offline independence.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Priorities: long battery life; waterproofing and shockproofing; SD card slots and headphone jacks; decent mic and speaker; customization. Didn't care: best camera (simple fine); AI photo enhancements (unnecessary); cloud storage (preferred offline independence)."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Apple and Google deliberately cut SD and storage to push cloud.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "The industry's connectivity obsession frustrated me: Apple and Google deliberately limited offline options, removing SD slots and minimizing onboard storage to push cloud services. I wanted mountains trips with music, reading, notes, without connectivity worries."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Ulefone rugged value: durable, practical, week-long single model, 1/10th price.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "This led to Ulefone, a small Chinese company specializing in rugged phones. They don't compete with Apple or Samsung; they solve real problems for people needing tough reliable devices. Loved: durability (waterproof, shockproof, dustproof); practical features (dual SIM, SD slots, headphone jacks)."
+    },
+    {
+     "ref": "¶8",
+     "text": "Battery life: one model lasted an entire week on a single charge. Affordability: these phones cost about 1/10th the price of flagship devices from major brands."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Small Chinese Ulefone: waterproof shockproof dustproof, dual SIM, SD, jack.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "This led to Ulefone, a small Chinese company specializing in rugged phones. They don't compete with Apple or Samsung; they solve real problems for people needing tough reliable devices. Loved: durability (waterproof, shockproof, dustproof); practical features (dual SIM, SD slots, headphone jacks)."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "One Ulefone model lasted an entire week on a single charge.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Battery life: one model lasted an entire week on a single charge. Affordability: these phones cost about 1/10th the price of flagship devices from major brands."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Ulefone costs about 1/10th the price of major-brand flagships.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Battery life: one model lasted an entire week on a single charge. Affordability: these phones cost about 1/10th the price of flagship devices from major brands."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Survived countless drops and swims; deep lake dive hurt but still works.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "I've dropped them countless times, taken them swimming, abused them beyond most devices, yet they held up remarkably. This summer I dived too deep in a lake with my current Ulefone; it started acting up but still works."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Pixel deal declined; LLM-assisted GSMArena scraping and cleaning began.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Just as Black Friday approached I got fooled by a provider deal and ordered a latest Google Pixel to try the always-connected life. While waiting I grew anxious: paying a hefty amount to lock myself in for a couple of years, then pay the remainder, for a phone I knew would limit my choices. I hadn't paid anything yet; when it arrived they added extra charges for random things, which I declined. Friend recommendations weren't enough, so I searched: I asked OpenAI's O1 for smaller-company phones with 5G, e-sim, SD card, good battery, waterproof, decent camera. It gave generally wrong specs, but the model names were correct; I found specs on gsmarena.com, asked gpt-4o-mini for a Python scraper tabulating them."
+    },
+    {
+     "ref": "¶12",
+     "text": "Scraper code (get_phone_specs): rotates common user agents, uses a requests session with Retry total=3 backoff_factor=1 on 429/500/502/503/504, sleeps a random uniform 2-5 seconds between requests, GETs each GSMArena URL with 10s timeout, parses h1.specs-phone-name-title plus div#specs-list tables (td.ttl to td.nfo), stores url per row, returns a pandas DataFrame; failures print and continue, bare except passes."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Declined Pixel over lock-in years and extra charges; O1 gave names, wrong specs.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Just as Black Friday approached I got fooled by a provider deal and ordered a latest Google Pixel to try the always-connected life. While waiting I grew anxious: paying a hefty amount to lock myself in for a couple of years, then pay the remainder, for a phone I knew would limit my choices. I hadn't paid anything yet; when it arrived they added extra charges for random things, which I declined. Friend recommendations weren't enough, so I searched: I asked OpenAI's O1 for smaller-company phones with 5G, e-sim, SD card, good battery, waterproof, decent camera. It gave generally wrong specs, but the model names were correct; I found specs on gsmarena.com, asked gpt-4o-mini for a Python scraper tabulating them."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Scraper retries 3 times, sleeps 2 to 5 seconds, parses GSMArena into DataFrame.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Scraper code (get_phone_specs): rotates common user agents, uses a requests session with Retry total=3 backoff_factor=1 on 429/500/502/503/504, sleeps a random uniform 2-5 seconds between requests, GETs each GSMArena URL with 10s timeout, parses h1.specs-phone-name-title plus div#specs-list tables (td.ttl to td.nfo), stores url per row, returns a pandas DataFrame; failures print and continue, bare except passes."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Listed 18 GSMArena URLs with duplicated Narzo; refined Claude prompts iteratively.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Cleaning prompts and caveat: gave 18 GSMArena URLs (vivo iQOO Z7, realme Narzo 60 twice, Xiaomi Poco F5 Pro, OnePlus Nord N30, Asus Zenfone 10, Motorola Edge 40, Xiaomi Redmi Note 12 Pro, Nothing Phone 2, Fairphone 4, realme 11 Pro+, Infinix Zero Ultra, Oppo A78, vivo V27e, V27 Pro, Tecno Phantom X2, Xiaomi Poco X5 Pro, Motorola Moto G Power 2024). Asked Claude 3.5 Sonnet for brand, model, 5G, e-sim, release year, screen inches to 1 decimal, dual SIM, battery mAh, SD slot, back/selfie MP, charging speed, USD price; iterated after it ignored df contents. Author states: I haven't checked any of this and I assume it has made several errors, but it gives a good starting point."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Cleaner extracts 5G, eSIM, year, screen, battery, SD, cameras, price.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "Cleaner code (clean_phone_specs): brand from first word of Phone Name, model from rest; has_5g via Technology contains 5G; has_esim via SIM contains eSIM; release_year via 4-digit regex on Announced; screen_size via numeric regex rounded to 1 decimal; dual SIM via SIM contains Dual; battery mAh via (\\d+) mAh regex with 1000-10000 sanity check; charging watts via Features/Charging regex; SD slot via Card slot not containing No; main/selfie MP via MP regex on Triple/Single; price via $ regex; returns cleaned DataFrame cdf."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Only two matches disappointed; TCL returned; G85 next after G75 unavailable.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Results table (18 rows incl. duplicated Narzo 60) spans release years 2021-2024 with mixed missing prices; filter has_5g and has_esim and has_sd_slot leaves only Fairphone 4 (2021, considered too old) and Moto G Power 2024, both with unexciting cameras and too-big screens. Motorola Edge 40 didn't show up because it seems to lack an SD slot. Author notes the BeautifulSoup approach misses details, plans pandas read_html with better request management and proxies; wishes sites allowed simple analysis without scraping."
+    },
+    {
+     "ref": "¶16",
+     "text": "Update 2025-01-05: tried the TCL 50 XE NXTPAPER for a couple of weeks and returned it: weak performance, got uncomfortably hot on video calls, screen unreadable in direct or lamp light despite less gloss (worse than regular screens where tilting helps), so-so camera, restricted paper/ink modes with tricky dark mode; ink mode is just black-and-white, not e-ink under LCD as advertised. Next will try Motorola G85 (wanted G75 for IP68 waterproofing but unavailable in stores; G85 only water-repellent, otherwise similar); expects no great Motorola camera."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Only Fairphone 4 from 2021 and Moto G Power matched; Edge 40 lacks SD.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Results table (18 rows incl. duplicated Narzo 60) spans release years 2021-2024 with mixed missing prices; filter has_5g and has_esim and has_sd_slot leaves only Fairphone 4 (2021, considered too old) and Moto G Power 2024, both with unexciting cameras and too-big screens. Motorola Edge 40 didn't show up because it seems to lack an SD slot. Author notes the BeautifulSoup approach misses details, plans pandas read_html with better request management and proxies; wishes sites allowed simple analysis without scraping."
+    },
+    {
+     "ref": "¶13",
+     "text": "Cleaning prompts and caveat: gave 18 GSMArena URLs (vivo iQOO Z7, realme Narzo 60 twice, Xiaomi Poco F5 Pro, OnePlus Nord N30, Asus Zenfone 10, Motorola Edge 40, Xiaomi Redmi Note 12 Pro, Nothing Phone 2, Fairphone 4, realme 11 Pro+, Infinix Zero Ultra, Oppo A78, vivo V27e, V27 Pro, Tecno Phantom X2, Xiaomi Poco X5 Pro, Motorola Moto G Power 2024). Asked Claude 3.5 Sonnet for brand, model, 5G, e-sim, release year, screen inches to 1 decimal, dual SIM, battery mAh, SD slot, back/selfie MP, charging speed, USD price; iterated after it ignored df contents. Author states: I haven't checked any of this and I assume it has made several errors, but it gives a good starting point."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "TCL returned: weak, hot calls, unreadable light screen, fake ink mode.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Update 2025-01-05: tried the TCL 50 XE NXTPAPER for a couple of weeks and returned it: weak performance, got uncomfortably hot on video calls, screen unreadable in direct or lamp light despite less gloss (worse than regular screens where tilting helps), so-so camera, restricted paper/ink modes with tricky dark mode; ink mode is just black-and-white, not e-ink under LCD as advertised. Next will try Motorola G85 (wanted G75 for IP68 waterproofing but unavailable in stores; G85 only water-repellent, otherwise similar); expects no great Motorola camera."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Next Motorola G85 water-repellent only; wanted IP68 G75, unavailable in stores.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Update 2025-01-05: tried the TCL 50 XE NXTPAPER for a couple of weeks and returned it: weak performance, got uncomfortably hot on video calls, screen unreadable in direct or lamp light despite less gloss (worse than regular screens where tilting helps), so-so camera, restricted paper/ink modes with tricky dark mode; ink mode is just black-and-white, not e-ink under LCD as advertised. Next will try Motorola G85 (wanted G75 for IP68 waterproofing but unavailable in stores; G85 only water-repellent, otherwise similar); expects no great Motorola camera."
+    }
+   ]
+  }
+ ]
+}

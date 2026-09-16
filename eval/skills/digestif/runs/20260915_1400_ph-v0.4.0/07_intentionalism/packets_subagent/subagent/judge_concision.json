@@ -1,0 +1,1229 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "07_intentionalism",
+  "labels": [
+    {
+      "claim_id": "C01",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Root synthesis required by the skill contract; combines claims from several branches, no single earlier claim carries the combination."
+    },
+    {
+      "claim_id": "C02",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Opening thesis; first source claim in the file."
+    },
+    {
+      "claim_id": "C03",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States what the thesis is about; the propose/receive distinction is not stated earlier."
+    },
+    {
+      "claim_id": "C04",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the 1962 date, both names, and the stable-pairing condition."
+    },
+    {
+      "claim_id": "C05",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the existence proof and the algorithm."
+    },
+    {
+      "claim_id": "C06",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the deferred acceptance mechanics."
+    },
+    {
+      "claim_id": "C07",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the best/worst partner result."
+    },
+    {
+      "claim_id": "C08",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the extremity emphasis and per-individual scope."
+    },
+    {
+      "claim_id": "C09",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme adding the rough-structure scope and the expectation."
+    },
+    {
+      "claim_id": "C10",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States the real-world prediction; not yet asserted in branch 1."
+    },
+    {
+      "claim_id": "C11",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the not-the-exact-algorithm caveat and the shared-structure detail."
+    },
+    {
+      "claim_id": "C12",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme framing the four examples."
+    },
+    {
+      "claim_id": "C13",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the Netflix example."
+    },
+    {
+      "claim_id": "C14",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the phone example."
+    },
+    {
+      "claim_id": "C15",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the job example."
+    },
+    {
+      "claim_id": "C16",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the friendship example."
+    },
+    {
+      "claim_id": "C17",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the receiver self-placement with both \"most\" hedges."
+    },
+    {
+      "claim_id": "C18",
+      "loglog_ids": [
+        "3.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the acceptable-outcomes negation and the four good-enough examples."
+    },
+    {
+      "claim_id": "C19",
+      "loglog_ids": [
+        "3.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the decent-vs-best distinction."
+    },
+    {
+      "claim_id": "C20",
+      "loglog_ids": [
+        "3.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the no-conspiracy causal explanation."
+    },
+    {
+      "claim_id": "C21",
+      "loglog_ids": [
+        "3.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the self-sustaining/revolt mechanism."
+    },
+    {
+      "claim_id": "C22",
+      "loglog_ids": [
+        "3.9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds what the quiet under-service ensures; distinct clause from parent."
+    },
+    {
+      "claim_id": "C23",
+      "loglog_ids": [
+        "3.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the not-knowing-what-you-are-missing consequence."
+    },
+    {
+      "claim_id": "C24",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme stating the intention paradox first."
+    },
+    {
+      "claim_id": "C25",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the receiver-never-knows premise."
+    },
+    {
+      "claim_id": "C26",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the least-disliked mechanism of presented choices."
+    },
+    {
+      "claim_id": "C27",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C24",
+      "reasoning": "Restates theme 4 word for word: \"you need intention to propose, but you develop intention through proposing.\" Reader learns nothing new; safe to fold theme 4 or node 4.3."
+    },
+    {
+      "claim_id": "C28",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the music example."
+    },
+    {
+      "claim_id": "C29",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the dating example."
+    },
+    {
+      "claim_id": "C30",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds preferences-as-reactions, with both hedges."
+    },
+    {
+      "claim_id": "C31",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the lost-or-never-developed capacity."
+    },
+    {
+      "claim_id": "C32",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme introducing the muscle metaphor."
+    },
+    {
+      "claim_id": "C33",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the no-shortcut claim with its examples."
+    },
+    {
+      "claim_id": "C34",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds tonight's hour drill and the four wants."
+    },
+    {
+      "claim_id": "C35",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the two negated instructions for pursuing."
+    },
+    {
+      "claim_id": "C36",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the not-one-evening framing and rebuild purpose."
+    },
+    {
+      "claim_id": "C37",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the patterns-to-preferences-to-values chain."
+    },
+    {
+      "claim_id": "C38",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the think-vs-practice contrast."
+    },
+    {
+      "claim_id": "C39",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme generalizing the default to major decisions."
+    },
+    {
+      "claim_id": "C40",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the four major-decision examples."
+    },
+    {
+      "claim_id": "C41",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the decide-first-versus-evaluate question form."
+    },
+    {
+      "claim_id": "C42",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the most-people-most-of-the-time quantifier."
+    },
+    {
+      "claim_id": "C43",
+      "loglog_ids": [
+        "6.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the feels-like-agency nuance."
+    },
+    {
+      "claim_id": "C44",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds proposers' work behavior."
+    },
+    {
+      "claim_id": "C45",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds proposers' partner behavior."
+    },
+    {
+      "claim_id": "C46",
+      "loglog_ids": [
+        "6.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the city-selection behavior."
+    },
+    {
+      "claim_id": "C47",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the systematically-better outcome for these proposers."
+    },
+    {
+      "claim_id": "C48",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the not-smarter-or-luckier causal reading."
+    },
+    {
+      "claim_id": "C49",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme introducing the collective/systemic effect."
+    },
+    {
+      "claim_id": "C50",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the companies-as-proposers example."
+    },
+    {
+      "claim_id": "C51",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the dating-apps example."
+    },
+    {
+      "claim_id": "C52",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the content-platforms example."
+    },
+    {
+      "claim_id": "C53",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the platform-as-proposer identification."
+    },
+    {
+      "claim_id": "C54",
+      "loglog_ids": [
+        "7.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the attention/data/money extraction and user-side good-enough outcome."
+    },
+    {
+      "claim_id": "C55",
+      "loglog_ids": [
+        "7.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the leaving-is-harder explanation for persistence."
+    },
+    {
+      "claim_id": "C56",
+      "loglog_ids": [
+        "8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme stating the understanding-does-not-remove negation."
+    },
+    {
+      "claim_id": "C57",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the designed-environment reason."
+    },
+    {
+      "claim_id": "C58",
+      "loglog_ids": [
+        "8.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the interface/process list."
+    },
+    {
+      "claim_id": "C59",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the first definitional bullet of proposing."
+    },
+    {
+      "claim_id": "C60",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the second bullet."
+    },
+    {
+      "claim_id": "C61",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the third bullet."
+    },
+    {
+      "claim_id": "C62",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the fourth bullet."
+    },
+    {
+      "claim_id": "C63",
+      "loglog_ids": [
+        "8.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the ask-what-you-want scope (every major, most minor)."
+    },
+    {
+      "claim_id": "C64",
+      "loglog_ids": [
+        "8.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the act-despite-inconvenience clause."
+    },
+    {
+      "claim_id": "C65",
+      "loglog_ids": [
+        "8.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the refusal prediction and its reasons."
+    },
+    {
+      "claim_id": "C66",
+      "loglog_ids": [
+        "8.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the lost-capacity-to-know claim."
+    },
+    {
+      "claim_id": "C67",
+      "loglog_ids": [
+        "8.9"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C11",
+      "reasoning": "Restates the not-exact-mathematics caveat already stated in 2.2; only the carryover \"enough of the structure\" qualifies, and 2.2 already scopes the caveat to real-world situations. Merge into 2.2."
+    },
+    {
+      "claim_id": "C68",
+      "loglog_ids": [
+        "8.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the not-just-incrementally contrast."
+    },
+    {
+      "claim_id": "C69",
+      "loglog_ids": [
+        "8.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the two-witnesses framing of the dynamic."
+    },
+    {
+      "claim_id": "C70",
+      "loglog_ids": [
+        "8.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the willingness-to-act question."
+    },
+    {
+      "claim_id": "C71",
+      "loglog_ids": [
+        "9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme introducing the tomorrow-morning start."
+    },
+    {
+      "claim_id": "C72",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the first-hour drill and its four wants, distinct from 5.2's next-hour list."
+    },
+    {
+      "claim_id": "C73",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the if-want prescriptions for calm/connection/energy."
+    },
+    {
+      "claim_id": "C74",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the how-different-it-feels note."
+    },
+    {
+      "claim_id": "C75",
+      "loglog_ids": [
+        "9.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the one-week small-things practice."
+    },
+    {
+      "claim_id": "C76",
+      "loglog_ids": [
+        "9.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the beginning-of-intention claim."
+    },
+    {
+      "claim_id": "C77",
+      "loglog_ids": [
+        "9.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the scale-up job instruction."
+    },
+    {
+      "claim_id": "C78",
+      "loglog_ids": [
+        "9.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the dating and product scale-up instructions."
+    },
+    {
+      "claim_id": "C79",
+      "loglog_ids": [
+        "9.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the full muscle-to-proposer chain."
+    },
+    {
+      "claim_id": "C80",
+      "loglog_ids": [
+        "9.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the pure-math-and-real-life unification."
+    },
+    {
+      "claim_id": "C81",
+      "loglog_ids": [
+        "9.10"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C48",
+      "reasoning": "Restates 6.7's closing negation: not personal qualities but structural position. \"Special\" is an abstraction of \"smarter or luckier\"; reader learns nothing new. Merge into 6.7."
+    },
+    {
+      "claim_id": "C82",
+      "loglog_ids": [
+        "10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme framing the appendix's progressive domains."
+    },
+    {
+      "claim_id": "C83",
+      "loglog_ids": [
+        "10.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the three-week name/seek/protect structure."
+    },
+    {
+      "claim_id": "C84",
+      "loglog_ids": [
+        "10.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds week 1's naming instruction."
+    },
+    {
+      "claim_id": "C85",
+      "loglog_ids": [
+        "10.1.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the cannot-name fallback."
+    },
+    {
+      "claim_id": "C86",
+      "loglog_ids": [
+        "10.1.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the three-column log."
+    },
+    {
+      "claim_id": "C87",
+      "loglog_ids": [
+        "10.1.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the four example feelings."
+    },
+    {
+      "claim_id": "C88",
+      "loglog_ids": [
+        "10.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds week 2's search instruction."
+    },
+    {
+      "claim_id": "C89",
+      "loglog_ids": [
+        "10.1.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the comedian example."
+    },
+    {
+      "claim_id": "C90",
+      "loglog_ids": [
+        "10.1.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the faster-satisfaction claim."
+    },
+    {
+      "claim_id": "C91",
+      "loglog_ids": [
+        "10.1.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the learning/topics example."
+    },
+    {
+      "claim_id": "C92",
+      "loglog_ids": [
+        "10.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds week 3's timer instruction."
+    },
+    {
+      "claim_id": "C93",
+      "loglog_ids": [
+        "10.1.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the autoplay question."
+    },
+    {
+      "claim_id": "C94",
+      "loglog_ids": [
+        "10.1.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the fulfilled-not-exhausted closing rule."
+    },
+    {
+      "claim_id": "C95",
+      "loglog_ids": [
+        "10.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Header listing the five shopping steps, no child repeats the list."
+    },
+    {
+      "claim_id": "C96",
+      "loglog_ids": [
+        "10.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the video-calls problem definition."
+    },
+    {
+      "claim_id": "C97",
+      "loglog_ids": [
+        "10.2.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the camera and battery criteria."
+    },
+    {
+      "claim_id": "C98",
+      "loglog_ids": [
+        "10.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the 3-5 features rule and use-vs-cool test."
+    },
+    {
+      "claim_id": "C99",
+      "loglog_ids": [
+        "10.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the not-best-phones-2025 research rule."
+    },
+    {
+      "claim_id": "C100",
+      "loglog_ids": [
+        "10.2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the in-person comparison instruction."
+    },
+    {
+      "claim_id": "C101",
+      "loglog_ids": [
+        "10.2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the $100/one-day rule with its buy condition."
+    },
+    {
+      "claim_id": "C102",
+      "loglog_ids": [
+        "10.2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the toothpaste practice run."
+    },
+    {
+      "claim_id": "C103",
+      "loglog_ids": [
+        "10.2.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the ingredient research steps."
+    },
+    {
+      "claim_id": "C104",
+      "loglog_ids": [
+        "10.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Header for quarterly intention-setting."
+    },
+    {
+      "claim_id": "C105",
+      "loglog_ids": [
+        "10.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the two-week energy map."
+    },
+    {
+      "claim_id": "C106",
+      "loglog_ids": [
+        "10.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the patterns questions."
+    },
+    {
+      "claim_id": "C107",
+      "loglog_ids": [
+        "10.3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the 5 non-negotiables rule."
+    },
+    {
+      "claim_id": "C108",
+      "loglog_ids": [
+        "10.3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds research-and-contact companies."
+    },
+    {
+      "claim_id": "C109",
+      "loglog_ids": [
+        "10.3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the 4-of-5 posting filter and customization."
+    },
+    {
+      "claim_id": "C110",
+      "loglog_ids": [
+        "10.3.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the many-vs-few tracking test."
+    },
+    {
+      "claim_id": "C111",
+      "loglog_ids": [
+        "10.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Header for the relationship steps."
+    },
+    {
+      "claim_id": "C112",
+      "loglog_ids": [
+        "10.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the relationship intention questions."
+    },
+    {
+      "claim_id": "C113",
+      "loglog_ids": [
+        "10.4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the 3-5 values rule with examples."
+    },
+    {
+      "claim_id": "C114",
+      "loglog_ids": [
+        "10.4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds value-demonstration seeking."
+    },
+    {
+      "claim_id": "C115",
+      "loglog_ids": [
+        "10.4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the first-date filter."
+    },
+    {
+      "claim_id": "C116",
+      "loglog_ids": [
+        "10.4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the three friendship needs."
+    },
+    {
+      "claim_id": "C117",
+      "loglog_ids": [
+        "10.4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds go-where-they-are communities."
+    },
+    {
+      "claim_id": "C118",
+      "loglog_ids": [
+        "10.4.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds intention-based invitations."
+    },
+    {
+      "claim_id": "C119",
+      "loglog_ids": [
+        "10.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Header naming the three micro-practices."
+    },
+    {
+      "claim_id": "C120",
+      "loglog_ids": [
+        "10.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the three-intentions morning rule."
+    },
+    {
+      "claim_id": "C121",
+      "loglog_ids": [
+        "10.5.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the specific-not-productive examples."
+    },
+    {
+      "claim_id": "C122",
+      "loglog_ids": [
+        "10.5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the evening review questions."
+    },
+    {
+      "claim_id": "C123",
+      "loglog_ids": [
+        "10.5.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the one-small-thing note."
+    },
+    {
+      "claim_id": "C124",
+      "loglog_ids": [
+        "10.5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the 10-second pause rule."
+    },
+    {
+      "claim_id": "C125",
+      "loglog_ids": [
+        "10.5.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the awareness-is-first-step claim."
+    },
+    {
+      "claim_id": "C126",
+      "loglog_ids": [
+        "10.5.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the self-check question."
+    },
+    {
+      "claim_id": "C127",
+      "loglog_ids": [
+        "10.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Header for the three-column journal."
+    },
+    {
+      "claim_id": "C128",
+      "loglog_ids": [
+        "10.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the Situation column."
+    },
+    {
+      "claim_id": "C129",
+      "loglog_ids": [
+        "10.6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the Mode column with both definitions."
+    },
+    {
+      "claim_id": "C130",
+      "loglog_ids": [
+        "10.6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the Outcome column."
+    },
+    {
+      "claim_id": "C131",
+      "loglog_ids": [
+        "10.6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the 30-day higher-satisfaction prediction."
+    },
+    {
+      "claim_id": "C132",
+      "loglog_ids": [
+        "10.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the not-always-knowing negation."
+    },
+    {
+      "claim_id": "C133",
+      "loglog_ids": [
+        "10.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the practice-the-question framing."
+    },
+    {
+      "claim_id": "C134",
+      "loglog_ids": [
+        "10.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds the start-small/becomes-natural close."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 134,
+    "unique": 131,
+    "duplicates": 3,
+    "trivia": 0,
+    "redundancy_rate": 0.0224,
+    "trivia_rate": 0.0,
+    "structured_tokens": 2738,
+    "tokens_per_unique_claim": 20.9
+  },
+  "prune_list": [
+    "C27 Duplicate (canonical C24): Restates theme 4 word for word: \"you need intention to propose, but you develop intention through proposing.\" Reader learns nothing new; safe to fold theme 4 or node 4.3.",
+    "C67 Duplicate (canonical C11): Restates the not-exact-mathematics caveat already stated in 2.2; only the carryover \"enough of the structure\" qualifies, and 2.2 already scopes the caveat to real-world situations. Merge into 2.2.",
+    "C81 Duplicate (canonical C48): Restates 6.7's closing negation: not personal qualities but structural position. \"Special\" is an abstraction of \"smarter or luckier\"; reader learns nothing new. Merge into 6.7."
+  ]
+}

@@ -1,0 +1,303 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 8,
+ "of": 9,
+ "nodes": [
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Agreement is not evidence: shared conclusions without shared reasoning are hollow, and the attention economy manufactures exactly that.",
+   "evidence": [
+    {
+     "ref": "¶71",
+     "text": "## Agreement is not evidence"
+    },
+    {
+     "ref": "¶74",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    },
+    {
+     "ref": "¶77",
+     "text": "That is the epistemically hollow version of agreement, and it is precisely what the attention economy manufactures: it propagates conclusions at high velocity while reasoning, which is expensive to transmit and verify, gets stripped in transit."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The desert in the middle is also about who you can trust to tell you what a result means.",
+   "evidence": [
+    {
+     "ref": "¶72",
+     "text": "There is an epistemology to all of this, and it is the part I think matters most, so let me slow down. The desert in the middle is not only about making a living. It is also about who you can trust to tell you what a result means."
+    }
+   ]
+  },
+  {
+   "id": "8.1.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The author says the epistemology is the part that matters most.",
+   "evidence": [
+    {
+     "ref": "¶72",
+     "text": "There is an epistemology to all of this, and it is the part I think matters most, so let me slow down. The desert in the middle is not only about making a living. It is also about who you can trust to tell you what a result means."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "When someone agrees, the author asks why; sometimes the different reasoning gives a new perspective, sometimes he disregards the agreement entirely.",
+   "evidence": [
+    {
+     "ref": "¶73",
+     "text": "When someone agrees with me on a topic, I don't immediately buy their idea. I ask why. There have been plenty of times when their reasoning was very different from mine, and sometimes that difference gives me a new perspective, and sometimes it makes me disregard the agreement entirely. The decision was never the end goal, the way it is sometimes portrayed. The process of reaching it was."
+    }
+   ]
+  },
+  {
+   "id": "8.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The decision was never the end goal, the way it is sometimes portrayed; the process of reaching it was.",
+   "evidence": [
+    {
+     "ref": "¶73",
+     "text": "When someone agrees with me on a topic, I don't immediately buy their idea. I ask why. There have been plenty of times when their reasoning was very different from mine, and sometimes that difference gives me a new perspective, and sometimes it makes me disregard the agreement entirely. The decision was never the end goal, the way it is sometimes portrayed. The process of reaching it was."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine.",
+   "evidence": [
+    {
+     "ref": "¶74",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    }
+   ]
+  },
+  {
+   "id": "8.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Two people at the same conclusion via different reasoning are not in the same epistemic state; the interesting information lives in the delta.",
+   "evidence": [
+    {
+     "ref": "¶74",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    }
+   ]
+  },
+  {
+   "id": "8.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If their path is sound and different, you now have two independent lines of support: genuine corroboration.",
+   "evidence": [
+    {
+     "ref": "¶74",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    }
+   ]
+  },
+  {
+   "id": "8.3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If their path is broken, their agreement is evidence against your confidence in a strange way: the conclusion is reachable by bad reasoning.",
+   "evidence": [
+    {
+     "ref": "¶74",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    }
+   ]
+  },
+  {
+   "id": "8.3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It also means your own arrival needs at least a recheck, and the person sharing your conclusion is not necessarily your ally.",
+   "evidence": [
+    {
+     "ref": "¶74",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    }
+   ]
+  },
+  {
+   "id": "8.3.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Agreement without shared reasoning is coincidence wearing the costume of confirmation.",
+   "evidence": [
+    {
+     "ref": "¶74",
+     "text": "Interrogating agreement as skeptically as disagreement cuts against the default. The default social epistemology is conclusion-matching: you say X, I believe X, we are allies, and your belief strengthens mine. But two people at the same conclusion via different reasoning are not in the same epistemic state, and the interesting information lives entirely in the delta. If their path is sound and different from yours, you now have two independent lines of support, genuine corroboration. If their path is broken, their agreement is evidence against your confidence in a strange way: it shows that the conclusion is reachable by bad reasoning, which means your own arrival at it needs at least a recheck, and that the person who shares the same conclusion is not necessarily your ally! Agreement without shared reasoning is coincidence wearing the costume of confirmation."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This breaks in influencer dynamics: deference to a Tao-tier figure is conclusion-adoption with the reasoning step amputated.",
+   "evidence": [
+    {
+     "ref": "¶75",
+     "text": "This is exactly the mechanism that breaks in influencer dynamics. Deference to a Tao-tier figure is conclusion-adoption with the reasoning step amputated. You inherit the belief without the justification, so you cannot detect when the justification would not survive your own scrutiny. Scale it up and you get a community whose beliefs are correlated not because reasoning independently converged, but because everyone copied from the same node."
+    }
+   ]
+  },
+  {
+   "id": "8.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You inherit the belief without the justification and cannot detect when it would not survive your own scrutiny.",
+   "evidence": [
+    {
+     "ref": "¶75",
+     "text": "This is exactly the mechanism that breaks in influencer dynamics. Deference to a Tao-tier figure is conclusion-adoption with the reasoning step amputated. You inherit the belief without the justification, so you cannot detect when the justification would not survive your own scrutiny. Scale it up and you get a community whose beliefs are correlated not because reasoning independently converged, but because everyone copied from the same node."
+    }
+   ]
+  },
+  {
+   "id": "8.4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Scaled up, a community's beliefs correlate because everyone copied from the same node, not because reasoning converged.",
+   "evidence": [
+    {
+     "ref": "¶75",
+     "text": "This is exactly the mechanism that breaks in influencer dynamics. Deference to a Tao-tier figure is conclusion-adoption with the reasoning step amputated. You inherit the belief without the justification, so you cannot detect when the justification would not survive your own scrutiny. Scale it up and you get a community whose beliefs are correlated not because reasoning independently converged, but because everyone copied from the same node."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It looks like consensus, which we treat as strong evidence, but the effective sample size is one.",
+   "evidence": [
+    {
+     "ref": "¶76",
+     "text": "It looks like consensus, which we treat as strong evidence. The effective sample size is one. This also reminds me of Atiyah's last claim about proving the Riemann Hypothesis. He had all the authority in the mathematical community, but the consequences of the claim were so big that it was put under harsh scrutiny, and it didn't stand up. One might say he [wasn't even wrong](https://k1monfared.com/notes/blog/20250312-not-even-wrong/). Now imagine a million of these every day, on far less important topics, stacked on top of each other to form the body of mathematics done by AI with the help of humans."
+    }
+   ]
+  },
+  {
+   "id": "8.5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Atiyah's last claim about proving the Riemann Hypothesis had all the authority yet did not stand up under harsh scrutiny.",
+   "evidence": [
+    {
+     "ref": "¶76",
+     "text": "It looks like consensus, which we treat as strong evidence. The effective sample size is one. This also reminds me of Atiyah's last claim about proving the Riemann Hypothesis. He had all the authority in the mathematical community, but the consequences of the claim were so big that it was put under harsh scrutiny, and it didn't stand up. One might say he [wasn't even wrong](https://k1monfared.com/notes/blog/20250312-not-even-wrong/). Now imagine a million of these every day, on far less important topics, stacked on top of each other to form the body of mathematics done by AI with the help of humans."
+    }
+   ]
+  },
+  {
+   "id": "8.5.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "One might say he wasn't even wrong.",
+   "evidence": [
+    {
+     "ref": "¶76",
+     "text": "It looks like consensus, which we treat as strong evidence. The effective sample size is one. This also reminds me of Atiyah's last claim about proving the Riemann Hypothesis. He had all the authority in the mathematical community, but the consequences of the claim were so big that it was put under harsh scrutiny, and it didn't stand up. One might say he [wasn't even wrong](https://k1monfared.com/notes/blog/20250312-not-even-wrong/). Now imagine a million of these every day, on far less important topics, stacked on top of each other to form the body of mathematics done by AI with the help of humans."
+    }
+   ]
+  },
+  {
+   "id": "8.5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Imagine a million of these every day, on far less important topics, stacked into the body of AI-assisted mathematics.",
+   "evidence": [
+    {
+     "ref": "¶76",
+     "text": "It looks like consensus, which we treat as strong evidence. The effective sample size is one. This also reminds me of Atiyah's last claim about proving the Riemann Hypothesis. He had all the authority in the mathematical community, but the consequences of the claim were so big that it was put under harsh scrutiny, and it didn't stand up. One might say he [wasn't even wrong](https://k1monfared.com/notes/blog/20250312-not-even-wrong/). Now imagine a million of these every day, on far less important topics, stacked on top of each other to form the body of mathematics done by AI with the help of humans."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The attention economy manufactures hollow agreement: it propagates conclusions at high velocity while reasoning gets stripped in transit.",
+   "evidence": [
+    {
+     "ref": "¶77",
+     "text": "That is the epistemically hollow version of agreement, and it is precisely what the attention economy manufactures: it propagates conclusions at high velocity while reasoning, which is expensive to transmit and verify, gets stripped in transit."
+    }
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "An AI answer is the limit case of conclusion without process.",
+   "evidence": [
+    {
+     "ref": "¶78",
+     "text": "And an AI answer is the limit case of conclusion without process. When you ask a person why, sometimes the answer reveals their reasoning was different from yours, and that is the perspective-gaining moment. The fluent AI explanation is engineered to feel like that moment without necessarily being one. The danger is not only that students confuse exposure with ownership, though that is real. It is that everyone loses the practice of treating \"why\" as the real question, and the conclusion as merely its byproduct."
+    }
+   ]
+  },
+  {
+   "id": "8.7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The fluent AI explanation is engineered to feel like the perspective-gaining moment without necessarily being one.",
+   "evidence": [
+    {
+     "ref": "¶78",
+     "text": "And an AI answer is the limit case of conclusion without process. When you ask a person why, sometimes the answer reveals their reasoning was different from yours, and that is the perspective-gaining moment. The fluent AI explanation is engineered to feel like that moment without necessarily being one. The danger is not only that students confuse exposure with ownership, though that is real. It is that everyone loses the practice of treating \"why\" as the real question, and the conclusion as merely its byproduct."
+    }
+   ]
+  },
+  {
+   "id": "8.7.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The danger is not only students confusing exposure with ownership, though that is real.",
+   "evidence": [
+    {
+     "ref": "¶78",
+     "text": "And an AI answer is the limit case of conclusion without process. When you ask a person why, sometimes the answer reveals their reasoning was different from yours, and that is the perspective-gaining moment. The fluent AI explanation is engineered to feel like that moment without necessarily being one. The danger is not only that students confuse exposure with ownership, though that is real. It is that everyone loses the practice of treating \"why\" as the real question, and the conclusion as merely its byproduct."
+    }
+   ]
+  },
+  {
+   "id": "8.7.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It is that everyone loses the practice of treating why as the real question and the conclusion as merely its byproduct.",
+   "evidence": [
+    {
+     "ref": "¶78",
+     "text": "And an AI answer is the limit case of conclusion without process. When you ask a person why, sometimes the answer reveals their reasoning was different from yours, and that is the perspective-gaining moment. The fluent AI explanation is engineered to feel like that moment without necessarily being one. The danger is not only that students confuse exposure with ownership, though that is real. It is that everyone loses the practice of treating \"why\" as the real question, and the conclusion as merely its byproduct."
+    }
+   ]
+  },
+  {
+   "id": "8.8",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The author connects this to the tree falling in a jungle thought experiment.",
+   "evidence": [
+    {
+     "ref": "¶79",
+     "text": "Somewhat relatedly, this also reminds me of the the thought experiment of a [tree falling in a jungle](https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest_and_no_one_is_around_to_hear_it%2C_does_it_make_a_sound%3F)"
+    }
+   ]
+  }
+ ]
+}

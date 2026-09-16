@@ -1,0 +1,378 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Moradifam: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable.",
+   "reasoning": "Source states this thesis verbatim and attributes it to Moradifam via the surrounding passage."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "The Davies results used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Davies results used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized.",
+   "reasoning": "Source sentence matches the claim exactly with no changed detail."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "AlphaTensor framed matrix multiplication search as a game and found algorithms humans had not.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "AlphaTensor framed matrix multiplication search as a game and found algorithms humans had not.",
+   "reasoning": "Verbatim match with the source passage."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "The pattern repeats: AI proposes, humans check, digest, and present.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The pattern is the same every time: the AI proposes, humans check, digest, and present.",
+   "reasoning": "Claim preserves the same sequence and meaning as the source."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "4.3.1"
+   ],
+   "claim_text": "Then the line of work speeds up into the 2026 results, where AI takes on most of the discovery process.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process.",
+   "reasoning": "Source states the same 2026 acceleration and AI role in discovery."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "Mathematics already accepts opaque results: the four-color theorem and the classification of finite simple groups.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Mathematics already has precedents for accepted-but-opaque results: the four-color theorem, the classification of finite simple groups.",
+   "reasoning": "Both named theorems match; 'accepts' paraphrases 'has precedents for accepted-but-opaque results'."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "4.4.1"
+   ],
+   "claim_text": "We use them because they survived extensive communal verification, though no single person holds the whole proof in mind.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind.",
+   "reasoning": "Meaning identical; dropping 'as tools' is harmless compression."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "4.4.2"
+   ],
+   "claim_text": "As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual.",
+   "reasoning": "Verbatim match including the hedge 'may'."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "Understanding was historically constructive: you deepen it by reconstructing the proof.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof.",
+   "reasoning": "Verbatim match with the source sentence."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "4.5.1"
+   ],
+   "claim_text": "When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic.",
+   "reasoning": "Exact match with the source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "4.5.2"
+   ],
+   "claim_text": "The mathematician becomes less a builder and more an interpreter, extracting meaning from a proof that cannot explain itself.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself.",
+   "reasoning": "Same relation and sense; slight compression preserves meaning."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "4.5.3"
+   ],
+   "claim_text": "The author thinks Moradifam's thesis is right as far as it goes.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I think that is right as far as it goes.",
+   "reasoning": "Direct restatement of the author's own assessment in ¶43."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Both documents leave importance on stable human ground, and the author argues importance was always a partly social judgment.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Both locate the judgment of importance in a stable, human ground... I think importance was never a stable, purely human judgment... Both are social.",
+   "reasoning": "Both halves match: the shared stopping point and the author's social-judgment thesis."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Moradifam: what the community regards as interesting, deep, or worth understanding remains human, shaped by taste, experience, and collective culture.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Those judgments remain human, shaped by taste, experience, and the collective culture of the field.",
+   "reasoning": "Accurate rendering of the quoted Moradifam passage."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Tao's equivalent: community acceptance is ultimately external and cannot be optimized purely by authors and their AI tools.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\"",
+   "reasoning": "Faithful paraphrase of Tao's quoted claim with negations intact."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Both locate the judgment of importance in a stable human ground, and neither looks underneath it.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it.",
+   "reasoning": "Near-verbatim match; meaning unchanged."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "claim_text": "The author's genre is a blog post: building on their ground, not correcting it; the next step is speculation, not scholarship.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Mine is a blog post... I am building on their ground, not correcting it, and the next step is speculation, not scholarship.",
+   "reasoning": "Both negations and the blog-post framing are preserved exactly."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "The two threads meet: if the process of thinking is the product, what matters most is what the math was worth thinking about.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "And here is where the two threads of this piece finally meet. The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about in the first place.",
+   "reasoning": "Reorders the same conditional without changing its content."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "claim_text": "The author suspects importance was never a stable, purely human judgment.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I think importance was never a stable, purely human judgment.",
+   "reasoning": "Preserves both the negation and the author's hedged stance."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "The first lever of importance was applicability: did a problem solve something real in science, engineering, or society?",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The first was applicability. Did a problem solve something real elsewhere, in science, engineering, society?",
+   "reasoning": "Same lever and same listed domains."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.5.1"
+   ],
+   "claim_text": "It was measurable fairly directly and partly driven by where research funding lived: money went where results were wanted.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You could measure that fairly directly, and it was partly driven by where research funding lived. Money went to areas where results were wanted.",
+   "reasoning": "All qualifiers and clauses match the source."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "The second lever was the taste of the big names: what the field's influencers thought was important.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The second was the taste of the big names. What the field's influencers thought was important.",
+   "reasoning": "Direct match with the source sentences."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "5.6.1"
+   ],
+   "claim_text": "That taste was a compound: partly fame, partly genuine interest, partly network favoritism.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That taste was itself a compound. Partly fame... Partly genuine interest. And partly network favoritism.",
+   "reasoning": "All three components listed exactly as in the source."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "5.6.2"
+   ],
+   "claim_text": "Nash, allegedly but not verified, was infamous for working only on problems that could get him famous.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Nash, allegedly but not verified, was infamous for working only on problems that could get him famous.",
+   "reasoning": "Verbatim match with name and both hedges preserved."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "5.6.3"
+   ],
+   "claim_text": "Network favoritism: I know you, so your problem interests me, we both work on it, and both grow in social position.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I know you, so if you work on a problem I become interested in it, so I work on it too, and as a result we both grow in our social position.",
+   "reasoning": "Condensed but preserves the same causal chain and outcome."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "5.7"
+   ],
+   "claim_text": "Neither lever is pure mathematical judgment; both are social.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Neither lever is pure mathematical judgment. Both are social.",
+   "reasoning": "Exact match with the source."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "5.7.1"
+   ],
+   "claim_text": "The field could pretend otherwise while the process was slow, local, and invisible; the AI era removes the cover story.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The field could pretend otherwise as long as the process was slow, local, and invisible. The AI era removes the cover story.",
+   "reasoning": "All qualifiers and both clauses preserved."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "5.8"
+   ],
+   "claim_text": "The author owns the irony: he leans on Tao and Moradifam, exactly the kind of authority he says to interrogate.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I should own the irony of saying this while leaning on Tao and Moradifam... They are exactly the kind of authority I am saying we should interrogate.",
+   "reasoning": "Both names and the ironic framing match the source."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "5.8.1"
+   ],
+   "claim_text": "He leans on them because their reasoning is checkable, not because their names are big.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I lean on them because their reasoning is checkable, not because their names are big.",
+   "reasoning": "Verbatim match; the negation is preserved."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "5.8.2"
+   ],
+   "claim_text": "He is trying to show his work and is not sure he fully lives up to it.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I am trying to show my work the whole way... and I am not sure I fully live up to it.",
+   "reasoning": "Both clauses match; the author's uncertainty is retained."
+  }
+ ],
+ "metrics": {
+  "total_claims": 30,
+  "supported": 30,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

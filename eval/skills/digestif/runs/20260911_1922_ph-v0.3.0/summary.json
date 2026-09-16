@@ -1,0 +1,794 @@
+{
+  "summary": {
+    "total_samples": 12,
+    "scored_samples": 12,
+    "pass": 1,
+    "borderline": 4,
+    "fail": 7,
+    "avg_faithfulness_precision": 0.9667833333333333,
+    "avg_must_recall": 0.921175,
+    "avg_redundancy": 0.06309166666666667,
+    "avg_weighted_score": 0.7425733333333334
+  },
+  "rows": [
+    {
+      "id": "01_what_is_mathematics",
+      "words": 6618,
+      "faithfulness": {
+        "total_claims": 129,
+        "supported": 125,
+        "partially_supported": 4,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 0.969
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 14,
+        "must_have_present": 14,
+        "must_have_partial": 0,
+        "must_have_missing": 0,
+        "overall_present": 15,
+        "must_recall": 1.0,
+        "overall_recall": 1.0
+      },
+      "concision": {
+        "scored_claims": 129,
+        "unique": 119,
+        "duplicates": 8,
+        "trivia": 2,
+        "redundancy_rate": 0.062,
+        "trivia_rate": 0.0155,
+        "structured_tokens": 129,
+        "tokens_per_unique_claim": 1.084
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "deepseek-v4.1-flash, 2026-09-15",
+        "source_id": "point-hierarchy",
+        "inputs": {
+          "faithfulness_precision": 0.969,
+          "critical_errors": 0,
+          "must_recall": 1.0,
+          "overall_recall": 1.0,
+          "redundancy_rate": 0.062,
+          "trivia_rate": 0.0155
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "weighted_score = 0.4 * 0.969 + 0.4 * 1.0 - 0.2 * 0.062 = 0.3876 + 0.4 - 0.0124 = 0.7752",
+        "weighted_score": 0.7752,
+        "verdict": "Borderline",
+        "tradeoff_note": "All hard gates pass cleanly (0 critical errors, must_recall 1.0, precision 0.969 above 0.95, redundancy 0.062 well under 0.15), so length is fully justified and no concision penalty applies; however four Minor Partially-supported claims drop SOURCE hedges on thesis-level must-have points (C041 load-bearing activities, C051 Goodhart), which warrants human review despite passing numbers.",
+        "fix_list": [
+          "Restore the dropped hedges on the two thesis-level partials that affect Must-have points: C041 (3.10, SOURCE says 'look load-bearing', node asserts definite 'are') and C051 (4.3, SOURCE says AI 'threatens to' break the correlation, node asserts it as accomplished). This is the highest-leverage fix because these drive the Borderline call.",
+          "Restore the 'often' hedge on C078 (6.3) where the node states prior-support as an absolute fact.",
+          "Repair the garbled clause and remove the unsupported 'beats nobody buying new' comparison in C097 (7.2).",
+          "Merge the 8 duplicate claims (C009/C014 -> C126, C019 -> C115, C041 -> C123, C059 -> C003, C062 -> C013, C068 -> C031, C090 -> C112) and drop the 2 trivia (C021 image reference, C110 thought-experiment reference) to drive redundancy 0.062 toward 0.0; note C041 also appears in the faithfulness partial list, so fixing the hedge and the duplicate together is efficient."
+        ],
+        "reasoning": "Gate checks in order per policy. (1) Hard fail on critical errors: critical_errors = 0, gate critical_contradicted_max = 0, PASS. (2) Hard fail on recall: must_recall = 1.0, gate must_recall_min = 0.9, PASS by 0.1. (3) Hard fail on precision: faithfulness_precision = 0.969, gate faithfulness_precision_min = 0.95, PASS by 0.019. (4) Redundancy ceiling for coverage-justified length: redundancy_rate = 0.062, gate redundancy_max = 0.15, PASS by 0.088, so the extra length is not merely allowed, it is comfortably within budget. No hard gate is missed and no Critical error exists, so Fail is excluded. Weighted score: 0.4 * 0.969 = 0.3876; 0.4 * 1.0 = 0.4; 0.2 * 0.062 = 0.0124; 0.3876 + 0.4 - 0.0124 = 0.7752. On the Pass-vs-Borderline split, the coverage artifact reports must_have_present 14/14 and must_have_partial 0, which alone would support Pass. However decision-policy item 4 compels Borderline when a Partial claim affects a Must-have point. Four claims are Partially supported (C041 at 3.10, C051 at 4.3, C078 at 6.3, C097 at 7.2), all Minor severity and all the same defect mode: SOURCE hedges ('look load-bearing', 'threatens to break the correlation', 'often it supports', 'at best they spend their time fixing Ikea furniture') while the node asserts the claim as definite or adds a comparison absent from SOURCE. C041 (section 3.10, the load-bearing framing/noticing/deciding insight versus proving as gym training) and C051 (section 4.3, Goodhart correlation breaking) map to the kind of central thesis points that a 14-point must-have set would contain, so per item 4 they affect Must-have points and force Borderline with the claims named. Neither is a contradiction, so no Critical error and no Fail. Tradeoff: coverage is maximal (must_recall 1.0, overall_recall 1.0) with zero missing points, redundancy is 0.062 (far below 0.15) and trivia 0.0155, so the trade of added length for coverage is sound and concision imposes no offsetting cost; the only reservation is fidelity of hedge strength on C041/C051, which is a polish/accuracy issue, not a coverage or contradiction issue. Redundancy is therefore not used to break a tie downward, it merely confirms the length is licensed. Human review is advised specifically to decide whether the dropped hedges alter the meaning of those two must-have points."
+      },
+      "verdict": "Borderline",
+      "weighted_score": 0.7752
+    },
+    {
+      "id": "02_case_for_transparent_government",
+      "words": 6741,
+      "faithfulness": {
+        "total_claims": 250,
+        "supported": 245,
+        "partially_supported": 5,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 0.98
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 15,
+        "must_have_present": 15,
+        "must_have_partial": 0,
+        "must_have_missing": 0,
+        "overall_present": 15,
+        "must_recall": 1.0,
+        "overall_recall": 1.0
+      },
+      "concision": {
+        "scored_claims": 250,
+        "unique": 212,
+        "duplicates": 36,
+        "trivia": 2,
+        "redundancy_rate": 0.144,
+        "trivia_rate": 0.008,
+        "structured_tokens": 296,
+        "tokens_per_unique_claim": 1.396
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "deepseek-v4.1-flash (opencode-go/deepseek-v4.1-flash), 2026-09-15",
+        "source_id": "unspecified",
+        "inputs": {
+          "faithfulness_precision": 0.98,
+          "critical_errors": 0,
+          "must_recall": 1.0,
+          "overall_recall": 1.0,
+          "redundancy_rate": 0.144,
+          "trivia_rate": 0.008
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "weighted = 0.4*0.98 + 0.4*1.0 - 0.2*0.144 = 0.392 + 0.4 - 0.0288 = 0.7632",
+        "weighted_score": 0.7632,
+        "verdict": "Pass",
+        "tradeoff_note": "Coverage is complete (must_recall 1.0) and faithfulness is clean (0.98, zero critical), so the length cost is justified. Redundancy at 0.144 sits just under the 0.15 max, leaving almost no margin, so it is the main risk to watch but does not fail the sample.",
+        "fix_list": [
+          "Merge the register recap duplicates C217-C246 (30 entries) plus C006/C084/C122/C133/C144/C174/C176/C177/C208/C215 to pull redundancy well below the 0.15 cap.",
+          "Fix C032: say environmental regulation and urban planning (not 'permits'), and tie 'real time' to showing citizens, matching 5.3.1.",
+          "Fix C068: restore the 'reportedly' hedge for the NSA's 2018 abandonment per 6.9.",
+          "Soften absolute framings to match hedged sources: C135 ('starve' vs 'less room to grow', 7.5.12), C143 (SIPRI 'can help prevent'/'generally considered', 7.6.6), C170 (citizens 'may react negatively', 7.8.4)."
+        ],
+        "reasoning": "Gate checks in order. (1) critical_errors = 0 against critical_contradicted_max = 0: pass. (2) must_recall = 1.0 against must_recall_min = 0.90: pass, all 15 must-have points present with zero partial or missing. (3) faithfulness_precision = 0.98 against faithfulness_precision_min = 0.95: pass, 245/250 supported and 0 contradicted. (4) redundancy_rate = 0.144 against redundancy_max = 0.15: pass, though only by 0.006. No hard gate is missed, so the sample cannot Fail. The remaining non-supported items are five Partially supported claims, all severity Minor: C032 (number correct but 'permits' mislabels environmental/urban items in 5.3.1), C068 (drops source's 'reportedly' from 6.9), C135 ('starve' strengthens 'less room to grow' from 7.5.12), C143 (absolutes where source hedges 'generally considered', 'can help prevent' in 7.6.6), C170 (settled dislike vs 'may react negatively' in 7.8.4). These are hedging/attribution slips rather than factual contradictions, none is Critical, and coverage marks no must-have as partial or missing, so no Partial claim is shown to sit on an unmet Must-have point. That fails to trigger the Borderline condition as specified, so the label is Pass rather than Borderline. Weighted score: 0.4*0.98=0.392, 0.4*1.0=0.4, 0.2*0.144=0.0288, total 0.7632. Concision played no rescue role; its only effect is the -0.0288 penalty, and the coverage gain (1.0 recall) justifies the current length only because redundancy stayed under the cap. Highest-leverage improvement is trimming the 36 duplicates, dominated by the C217-C246 register recap block, since that both lowers redundancy and raises tokens-per-unique-claim efficiency without touching coverage."
+      },
+      "verdict": "Pass",
+      "weighted_score": 0.7632
+    },
+    {
+      "id": "03_cant_stop_addicted_to_shindig",
+      "words": 5799,
+      "faithfulness": {
+        "total_claims": 36,
+        "supported": 36,
+        "partially_supported": 0,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 1.0
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 14,
+        "must_have_present": 11,
+        "must_have_partial": 3,
+        "must_have_missing": 0,
+        "overall_present": 12,
+        "must_recall": 0.8929,
+        "overall_recall": 0.9
+      },
+      "concision": {
+        "scored_claims": 36,
+        "unique": 35,
+        "duplicates": 1,
+        "trivia": 0,
+        "redundancy_rate": 0.0278,
+        "trivia_rate": 0.0,
+        "structured_tokens": 604,
+        "tokens_per_unique_claim": 17.26
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+        "source_id": "unspecified",
+        "inputs": {
+          "faithfulness_precision": 1.0,
+          "critical_errors": 0,
+          "must_recall": 0.8929,
+          "overall_recall": 0.9,
+          "redundancy_rate": 0.0278,
+          "trivia_rate": 0.0
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "weighted score = 0.4 * 1.0 + 0.4 * 0.8929 - 0.2 * 0.0278 = 0.4 + 0.35716 - 0.00556 = 0.7516",
+        "weighted_score": 0.7516,
+        "verdict": "Fail",
+        "tradeoff_note": "Hard gate missed: must_recall 0.8929 falls below the 0.9 minimum, so the sample fails regardless of perfect faithfulness and low redundancy. The shortfall traces to three Must-have points (K11, K12, K15) each capped at Partial by dropped numbers, not to any contradiction.",
+        "fix_list": [
+          "Restore the dropped champion turn count in K11: state that FiftyPercentSurvival wins in 11.3 turns (loglog L026/L029), so the consistency-beats-speed contrast is complete.",
+          "Restore the comparative anchors in K12: chess (~5%) and Go (~7%) first-player edges (loglog L030), so the 'larger than' framing is not lost.",
+          "Restore the avoided-activation condition in K15: explicitly warn against forcing activation of columns 2-3 and 11-12 (loglog L037).",
+          "Prune C001, which duplicates C009/C013/C026/C031; pure recap with no unique content (redundancy only 0.0278, so low leverage but harmless to compress)."
+        ],
+        "reasoning": "Gate checks against config pass_gates. (1) critical_contradicted_max = 0: faithfulness critical_errors = 0 and contradicted = 0, so this gate passes. (2) faithfulness_precision_min = 0.95: precision = 36/36 = 1.0, passes. (3) must_recall_min = 0.9: must_have_total = 14, must_have_present = 11, must_have_partial = 3, must_have_missing = 0; with partials at half credit, must_recall = (11 + 0.5*3)/14 = 12.5/14 = 0.8929, which is below 0.9. This is a hard gate miss and forces a Fail verdict before any weighting. (4) redundancy_max = 0.15: redundancy_rate = 1/36 = 0.0278, passes, and trivia_rate = 0.0. Because a hard gate failed, the weighted score is computed for audit only, not for ranking: 0.4*1.0 (faithfulness) + 0.4*0.8929 (must recall) - 0.2*0.0278 (redundancy penalty) = 0.4 + 0.35716 - 0.00556 = 0.7516. All three Partial Must-have points in the coverage JSON are the direct cause: K11 (loglog L026, L029) drops FiftyPercentSurvival's 11.3-turn figure, K12 (loglog L030) drops the chess ~5% and Go ~7% anchors, K15 (loglog L037) drops the avoid-forced-activation-of-columns-2-3-and-11-12 condition. Each is Partial strictly because a specific number or condition was omitted, not because the spine is wrong. No fact conflict between the aspect judges arose, so SOURCE was not reread. Concision cannot rescue this fail per the top policy, and the sole duplicate C001 offers only marginal benefit since redundancy already sits well under the max. The single highest-leverage repair is adding the 11.3-turn figure to K11, which moves must_recall from 0.8929 toward the 0.9 threshold; closing all three partials returns must_recall to 1.0 and would clear the gate assuming faithfulness holds at 1.0."
+      },
+      "verdict": "Fail",
+      "weighted_score": 0.7516
+    },
+    {
+      "id": "04_house_hunting_shenanigans",
+      "words": 3801,
+      "faithfulness": {
+        "total_claims": 35,
+        "supported": 34,
+        "partially_supported": 1,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 0.9714
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 14,
+        "must_have_present": 10,
+        "must_have_partial": 4,
+        "must_have_missing": 0,
+        "overall_present": 11,
+        "must_recall": 0.8571,
+        "overall_recall": 0.8667
+      },
+      "concision": {
+        "scored_claims": 35,
+        "unique": 32,
+        "duplicates": 2,
+        "trivia": 1,
+        "redundancy_rate": 0.0571,
+        "trivia_rate": 0.0286,
+        "structured_tokens": 351,
+        "tokens_per_unique_claim": 10.97
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+        "source_id": "unspecified",
+        "inputs": {
+          "faithfulness_precision": 0.9714,
+          "critical_errors": 0,
+          "must_recall": 0.8571,
+          "overall_recall": 0.8667,
+          "redundancy_rate": 0.0571,
+          "trivia_rate": 0.0286
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "weighted_score = 0.4*0.9714 + 0.4*0.8571 - 0.2*0.0571 = 0.38856 + 0.34284 - 0.01142 = 0.71998 ~= 0.72. Gates: critical_errors 0 <= 0 (pass); faithfulness_precision 0.9714 >= 0.95 (pass); must_recall 0.8571 >= 0.9 (FAIL by 0.0429); redundancy_rate 0.0571 <= 0.15 (pass).",
+        "weighted_score": 0.72,
+        "verdict": "Fail",
+        "tradeoff_note": "The sample fails the must_recall hard gate: 4 of 14 Must-have points are only Partial (K07, K09, K12, K15), leaving must_recall at 0.8571 versus the 0.90 minimum. Concision is comfortably inside max (redundancy 0.0571, trivia 0.0286), and no Critical or Contradicted claim exists, but concision never rescues a coverage fail.",
+        "fix_list": [
+          "K12: restore the author's evaluative core, that the forwarded N-L emails scapegoated L and threw the assistant under the bus (L023/L024); this is the largest single Must-have content gap.",
+          "K15: extend the closing thesis beyond the pawn metaphor to the societal give-up argument (phone holders, laptops, stocks, taxes, cars, houses) per L031, so the conclusion is not narrowed.",
+          "K09: add C's demand that N 'fix' the price drop on Saturday 7pm (L019), keeping the existing REW name-swap and $20K seller-anger reading.",
+          "K07: include the explicit request that the rival offer be disclosed, not just the leverage suspicion and silent Saturday (L015/L021).",
+          "C003: retain the source qualifier 'usually' on the 1-2 day house turnover (1.1) to remove the only Partially supported claim."
+        ],
+        "reasoning": "Gate order per config.top_policy. Hard fail check first: critical_errors = 0 and contradicted = 0, so the Critical Contradicted gate passes. faithfulness_precision = 34/35 = 0.9714, above the 0.95 minimum, so the faithfulness gate passes; the lone non-supported claim is C003 (Partially supported, Harmless), a dropped 'usually' qualifier on 1-2 day turnover from loglog 1.1, which does not touch a Must-have point and is severity Harmless. Coverage gate: must_recall = 10 present / 14 Must-have total = 0.8571 after crediting the 4 Partial points as no credit, which is below the 0.90 minimum by 0.0429; this is the decisive hard fail. The four Partial Must-haves are K07 (leverage suspicion and silent Saturday present but the disclosure request dropped, L015/L021), K09 (listing/name swap and seller-anger reading present but C's 'fix the price drop' demand absent, L019/L040), K12 (email content present but the scapegoat / throw-under-the-bus interpretation absent, L023/L024), and K15 (self-serving realtor system and pawn metaphor present but the broader societal give-up thesis absent, L031). Overall recall 0.8667 and redundancy_rate 0.0571 (below the 0.15 max) and trivia_rate 0.0286 show the draft is concise, but concision is explicitly non-compensatory for a coverage miss, so no rescue applies. Because a hard gate was missed, I do not reduce to the weighted rank and the verdict is Fail rather than Borderline; the numbers-only Borderline condition is moot. For audit completeness the weighted score is shown: 0.4*0.9714 + 0.4*0.8571 - 0.2*0.0571 = 0.71998 ~= 0.72. No aspect-judge factual conflicts arose, so SOURCE was not reread. Note that must_have_present + must_have_partial = 14 with must_have_missing = 0, so the failure is entirely due to truncated Must-have points, and the fix list prioritizes the two partials with the deepest missing evaluative content (K12, K15)."
+      },
+      "verdict": "Fail",
+      "weighted_score": 0.72
+    },
+    {
+      "id": "05_manufacturing_taste",
+      "words": 2918,
+      "faithfulness": {
+        "total_claims": 39,
+        "supported": 39,
+        "partially_supported": 0,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 1.0
+      },
+      "coverage": {
+        "total_points": 16,
+        "must_have_total": 16,
+        "must_have_present": 12,
+        "must_have_partial": 4,
+        "must_have_missing": 0,
+        "overall_present": 12,
+        "must_recall": 0.875,
+        "overall_recall": 0.875
+      },
+      "concision": {
+        "scored_claims": 39,
+        "unique": 33,
+        "duplicates": 4,
+        "trivia": 2,
+        "redundancy_rate": 0.1026,
+        "trivia_rate": 0.0513,
+        "structured_tokens": 788,
+        "tokens_per_unique_claim": 23.88
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+        "source_id": "point-hierarchy assessment run",
+        "inputs": {
+          "faithfulness_precision": 1.0,
+          "critical_errors": 0,
+          "must_recall": 0.875,
+          "overall_recall": 0.875,
+          "redundancy_rate": 0.1026,
+          "trivia_rate": 0.0513
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "Hard gates first: critical_errors = 0 <= critical_contradicted_max (0) PASS; faithfulness_precision = 1.0 >= faithfulness_precision_min (0.95) PASS; must_recall = 0.875 < must_recall_min (0.9) FAIL; redundancy_rate = 0.1026 <= redundancy_max (0.15) PASS. Weighted score for audit only: 0.4 * 1.0 + 0.4 * 0.875 - 0.2 * 0.1026 = 0.4 + 0.35 - 0.02052 = 0.72948.",
+        "weighted_score": 0.72948,
+        "verdict": "Fail",
+        "tradeoff_note": "Faithfulness is perfect and redundancy is well within budget, so length cost is not the problem. The single blocking issue is a coverage shortfall: must_recall sits at 0.875 against a 0.9 minimum because four Must-have points (K02, K08, K12, K15) are only Partial, each from dropped numbers or conditions rather than absent ideas.",
+        "fix_list": [
+          "Restore the dropped numbers on the four Partial Must-have points: K02 add the 'Wikipedia lists several hundred' count; K12 add the defining conditions (few wealthy patrons, strong word-of-mouth, no recording). These are the cheapest recall gains and alone would lift must_recall to 1.0.",
+          "K08: add the gatekeeper agent type and the formal power analysis to complete the model-setup description.",
+          "K15: re-add the Salganik teenagers-over-weeks calibration detail plus the omitted critical discourse and technological change caveats.",
+          "Optional after recall is fixed: fold the four duplicates (C003/C019 into C001, C028 into C009, C034 into C029) and drop the two section-header trivia restatements (C006, C011) to push redundancy_rate down further, though it is already under the gate."
+        ],
+        "reasoning": "Gate checks, in priority order per config.top_policy. (1) Critical contradicted: faithfulness judge reports critical_errors = 0 (39 supported, 0 partial, 0 unverifiable, 0 contradicted), so the critical_contradicted_max = 0 gate passes with no Critical errors to fail on. (2) Faithfulness precision: 1.0 >= 0.95 minimum, passes cleanly. (3) Must recall: coverage reports must_recall = 0.875 (12 present + 4 partial out of 16 Must-have points), which is below the must_recall_min of 0.9. Per decision policy step 1, a must_recall below config minimum fails the sample regardless of the other gates. This is the sole hard failure and it is definitive: 14/16 = 0.875, short by 0.025, i.e. roughly two of the four Partial points need to move to Present. (4) Redundancy: 0.1026 <= 0.15 max, passes, and trivia_rate 0.0513 is a quality signal but not a hard gate. Because a hard gate is missed, concision cannot rescue the verdict, and no weighted ranking is applied; the weighted score 0.72948 is shown for audit as 0.4*1.0 + 0.4*0.875 - 0.2*0.1026. The four Partial Must-have points all fail for the same structural reason, a summarizing line that keeps headline numbers but drops qualifiers. K02 (L003) keeps Viennese 200-500 and the 3,400 catalogue but drops the Wikipedia 'several hundred'. K08 (L017-L019) keeps producer/consumer counts, ~2 min runtime, and 360+ runs but drops the gatekeeper agent type and the power analysis. K12 (L026) keeps 300 composers, distance 0.97, and 2.5 percent shared but drops the defining conditions (few wealthy patrons, strong word-of-mouth, no recording). K15 (L034) keeps the core caveats but drops the Salganik teenagers-over-weeks calibration detail and the omitted critical discourse and technological change. No conflict between the faithfulness and coverage judges on any fact, so SOURCE was not reread. Borderline is not used because the miss is a hard gate, not a numeric pass with a lingering Partial. Fixing K02 and K12 alone (adding one number and three conditions) reaches must_recall 0.9375 and flips the verdict, which is why they head the fix list."
+      },
+      "verdict": "Fail",
+      "weighted_score": 0.72948
+    },
+    {
+      "id": "06_valuing_consistency",
+      "words": 2920,
+      "faithfulness": {
+        "total_claims": 40,
+        "supported": 40,
+        "partially_supported": 0,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 1.0
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 14,
+        "must_have_present": 13,
+        "must_have_partial": 1,
+        "must_have_missing": 0,
+        "overall_present": 13,
+        "must_recall": 0.9643,
+        "overall_recall": 0.9333
+      },
+      "concision": {
+        "scored_claims": 40,
+        "unique": 36,
+        "duplicates": 4,
+        "trivia": 0,
+        "redundancy_rate": 0.1,
+        "trivia_rate": 0.0,
+        "structured_tokens": 489,
+        "tokens_per_unique_claim": 13.58
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "deepseek-v4.1-flash, 2026-09-15",
+        "source_id": "point-hierarchy",
+        "inputs": {
+          "faithfulness_precision": 1.0,
+          "critical_errors": 0,
+          "must_recall": 0.9643,
+          "overall_recall": 0.9333,
+          "redundancy_rate": 0.1,
+          "trivia_rate": 0.0
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "Hard gates: critical_errors=0 <= critical_contradicted_max=0 (pass); must_recall=0.9643 >= must_recall_min=0.9 (pass); faithfulness_precision=1.0 >= faithfulness_precision_min=0.95 (pass). All gates pass, so weighted score applies: 0.4*1.0 + 0.4*0.9643 - 0.2*0.1 = 0.4 + 0.38572 - 0.02 = 0.76572.",
+        "weighted_score": 0.76572,
+        "verdict": "Borderline",
+        "tradeoff_note": "Coverage is strong at 0.9643 must recall and concision is healthy at 0.1 redundancy, so no tradeoff pressure, but the Partial on Must-have point K09 drops the verdict to Borderline because the structural insight is absent even though the taxonomy survives.",
+        "fix_list": [
+          "K09 (Must have, Partial): restore the missing structural claim that the independent posture is the only one needing no information about the reference, and therefore the two absolutes are closer to each other than to the independent. The L016/L017 spectrum enumeration alone leaves this payoff unstated.",
+          "K15 (Nice to have, Partial): add the dropped half of PS2, that the model coefficient is unconstrained (not restricted to 0 to 1), which is what permits the amplifier region (L009).",
+          "Merge redundancy without losing content: C012 duplicates C001, C022 duplicates C017, C033 duplicates C031, C040 duplicates C001. This can lower redundancy_rate from 0.1 toward 0 with no coverage cost."
+        ],
+        "reasoning": "Gate check in policy order. (1) Hard fail on Critical errors: Judge F reports critical_errors=0, so no fail; all 40 claims supported, 0 contradicted, 0 unverifiable, 0 partial. (2) Hard fail on must recall: 13 of 14 Must-have points present, 1 partial, 0 missing, giving 0.9643, above the 0.9 gate. (3) Hard fail on faithfulness precision: 1.0, above the 0.95 gate. All numeric gates pass, so the weighted formula is applied: 0.4*1.0 (faithfulness) + 0.4*0.9643 (must recall) - 0.2*0.1 (redundancy) = 0.76572. Concision plays only a tiebreak and penalty role here; redundancy_rate 0.1 is below the 0.15 max, so no length penalty beyond the standard weight, and the four duplicate claims (C012/C001, C022/C017, C033/C031, C040/C001) do not damage faithfulness or coverage, so they cannot force a fail. Coverage gain justifies length since redundancy stays under max. The verdict is Borderline rather than Pass because policy 4 applies: gates pass but a Partial affects a Must-have point. The specific claim is K09, where L016/L017 enumerate the full w-posture spectrum correctly yet omit the structural point that the independent is the only posture needing no reference information, so the two absolutes are nearer each other than to the independent. K15 is also Partial but is only Nice to have, so it does not drive the Borderline label; it is recorded as a secondary fix. No source reread was needed since the two aspect judges do not conflict on any fact."
+      },
+      "verdict": "Borderline",
+      "weighted_score": 0.76572
+    },
+    {
+      "id": "07_intentionalism",
+      "words": 2643,
+      "faithfulness": {
+        "total_claims": 36,
+        "supported": 34,
+        "partially_supported": 2,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 0.9444
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 12,
+        "must_have_present": 10,
+        "must_have_partial": 2,
+        "must_have_missing": 0,
+        "overall_present": 13,
+        "must_recall": 0.9167,
+        "overall_recall": 0.9333
+      },
+      "concision": {
+        "scored_claims": 36,
+        "unique": 32,
+        "duplicates": 3,
+        "trivia": 1,
+        "redundancy_rate": 0.0833,
+        "trivia_rate": 0.0278,
+        "structured_tokens": 388,
+        "tokens_per_unique_claim": 12.13
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+        "source_id": "gale-shapley-point-hierarchy",
+        "inputs": {
+          "faithfulness_precision": 0.9444,
+          "critical_errors": 0,
+          "must_recall": 0.9167,
+          "overall_recall": 0.9333,
+          "redundancy_rate": 0.0833,
+          "trivia_rate": 0.0278
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "weighted score = 0.4*0.9444 + 0.4*0.9167 - 0.2*0.0833 = 0.37776 + 0.36668 - 0.01666 = 0.72778. Gate check: critical_errors 0 <= 0 pass; must_recall 0.9167 >= 0.90 pass; faithfulness_precision 0.9444 < 0.95 FAIL; redundancy 0.0833 <= 0.15 pass.",
+        "weighted_score": 0.72778,
+        "verdict": "Fail",
+        "tradeoff_note": "Faithfulness precision lands at 0.9444, just under the 0.95 gate, so the sample fails on a hard gate before any tradeoff applies. Concision is healthy at 0.0833 redundancy and must_recall is above its floor, so the failure is narrow and driven by two softened-hedge claims rather than coverage loss.",
+        "fix_list": [
+          "Restore source hedging in C006 (loglog 3): the node universalizes 'most real-world situations' into 'Real situations', which drops the quantifier and pushes precision below the 0.95 gate.",
+          "Restore source hedging in C010 (loglog 4.1): change the absolute 'structure favors proposers' back to 'outcomes tend to favor whoever is proposing'.",
+          "Add the mechanism to K03 (loglog L005): state that proposers move down their preference list while receivers tentatively accept or reject, so readers learn how deferred acceptance runs, not only its outcome.",
+          "State the existence guarantee in K02 (loglog L004): deferred acceptance always yields a stable matching when one exists, closing the dropped-condition gap."
+        ],
+        "reasoning": "Gate sweep per top_policy: critical_errors is 0 and critical_contradicted_max is 0, so no Critical failure. must_recall is 0.9167 against must_recall_min 0.90, so coverage clears (10 of 12 Must haves fully present, 2 partial as K02 and K03, 0 missing). redundancy_rate is 0.0833 against redundancy_max 0.15, so concision clears. The failing gate is faithfulness_precision: 34 supported + 2 partial over 36 claims gives 34/36 = 0.9444, which is 0.0056 below the 0.95 minimum. Under the policy, faithfulness_precision below config minimum is a hard fail, so the verdict is Fail regardless of the weighted score. The weighted score is 0.4*0.9444 + 0.4*0.9167 - 0.2*0.0833 = 0.72778, reported for audit but not used to override the gate. The two partial claims are both Minor and both the same defect: C006 (loglog 3) drops 'most' and C010 (loglog 4.1) drops 'tend to', turning hedged source statements into absolutes. Neither is contradicted and neither touches a Must-have point directly, so if the hedging were restored the sample would move to Pass or Borderline. Because gates fail on numbers with no Critical error, the boundary between Fail and Borderline hinges on the precision miss alone, and the fix list targets the two hedge drops first since each is a single-token restoration with the highest leverage toward the 0.95 gate. No aspect judges conflict on a fact, so SOURCE was not reread."
+      },
+      "verdict": "Fail",
+      "weighted_score": 0.72778
+    },
+    {
+      "id": "08_empathy_sympathy_compassion_matrix",
+      "words": 1321,
+      "faithfulness": {
+        "total_claims": 31,
+        "supported": 29,
+        "partially_supported": 2,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 0.9355
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 12,
+        "must_have_present": 11,
+        "must_have_partial": 1,
+        "must_have_missing": 0,
+        "overall_present": 14,
+        "must_recall": 0.9583,
+        "overall_recall": 0.9667
+      },
+      "concision": {
+        "scored_claims": 31,
+        "unique": 29,
+        "duplicates": 1,
+        "trivia": 1,
+        "redundancy_rate": 0.0323,
+        "trivia_rate": 0.0323,
+        "structured_tokens": 511,
+        "tokens_per_unique_claim": 17.62
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+        "source_id": "point-hierarchy sample (as provided in inputs)",
+        "inputs": {
+          "faithfulness_precision": 0.9355,
+          "critical_errors": 0,
+          "must_recall": 0.9583,
+          "overall_recall": 0.9667,
+          "redundancy_rate": 0.0323,
+          "trivia_rate": 0.0323
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "Gate check: critical_errors 0 <= 0 pass; must_recall 0.9583 >= 0.9 pass; faithfulness_precision 0.9355 < 0.95 FAIL. Weighted score (for audit only, does not override the fail): 0.4*0.9355 + 0.4*0.9583 - 0.2*0.0323 = 0.37420 + 0.38332 - 0.00646 = 0.75106 rounded to 0.7511.",
+        "weighted_score": 0.7511,
+        "verdict": "Fail",
+        "tradeoff_note": "The sample fails on the faithfulness_precision hard gate alone (0.9355 vs 0.95 min) despite clean coverage, zero critical errors, and low redundancy. Concision quality here cannot rescue the shortfall, and no coverage gain justifies it since the issue is precision, not length.",
+        "fix_list": [
+          "Raise faithfulness_precision above 0.95 by resolving C002: honor the four-block divider and stop merging 'control' (psychopath-only) into the 'present in both' modeling/boundary/manipulators block (loglog 1).",
+          "Fix C026: restore the approximation qualifier 'close to' for the psychopath-as-cognition-alone mapping instead of stating it as absolute (loglog 4.6), and merge it into C007 to remove the duplicate.",
+          "Recover the dropped nuance in must-have K12: re-add the empath failure modes (boundary, scope, scalability) and the correction that the empath is not the moral ideal because it inherits the sociopath's distortions (L031, L009, L013, L014).",
+          "Prune C020 (generic header trivia) and merge C026 into C007 to keep redundancy below the 0.15 max after edits."
+        ],
+        "reasoning": "Hard-gate-first per top_policy. Gate 1: critical_errors = 0, at the critical_contradicted_max of 0, pass, so no Critical-contradiction fail. Gate 2: must_recall = 11 present + 0.5 partial / 12 = 0.9583 (K12 is a Must have scored Partial), which is >= must_recall_min 0.9, pass. Gate 3: faithfulness_precision = 29/31 = 0.9355, which is below faithfulness_precision_min 0.95, so the hard gate is missed and the sample Fails regardless of the weighted score. The two Partially supported claims are C002 (interpretation, Minor, loglog 1) and C026 (interpretation, Minor, loglog 4.6). C002 over-merges across the source's block divider, moving 'control' from the psychopath-only block into the present-in-both node, which is a block-boundary fidelity error. C026 drops the source hedge 'close to' and states the psychopath mapping as absolute. Both are the leverage points needed to lift precision from 0.9355 to at least 0.95 (resolving both yields 31/31 = 1.0, resolving one yields 30/31 = 0.9677, which clears the gate). The weighted score of 0.7511 uses aspect_weights 0.4/0.4/0.2 and is reported only for audit; per top_policy it cannot overturn a missed hard gate, and concision (redundancy 0.0323, well under 0.15) never compensates for the faithfulness loss. Borderline does not apply because the fail is a numeric hard-gate miss, not merely a Partial or Unverifiable claim affecting a Must have point, though K12's Partial Must-have and C026's partial status are noted as secondary risk. If C002 or C026 were downgraded to Supported with justification, precision would clear 0.95 (0.9677) and the verdict would become Pass with concatenated coverage above the minimum; absent that, the verdict is Fail."
+      },
+      "verdict": "Fail",
+      "weighted_score": 0.7511
+    },
+    {
+      "id": "09_not_even_wrong",
+      "words": 1345,
+      "faithfulness": {
+        "total_claims": 22,
+        "supported": 22,
+        "partially_supported": 0,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 1.0
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 15,
+        "must_have_present": 14,
+        "must_have_partial": 1,
+        "must_have_missing": 0,
+        "overall_present": 14,
+        "must_recall": 0.9667,
+        "overall_recall": 0.9667
+      },
+      "concision": {
+        "scored_claims": 22,
+        "unique": 19,
+        "duplicates": 2,
+        "trivia": 1,
+        "redundancy_rate": 0.0909,
+        "trivia_rate": 0.0455,
+        "structured_tokens": 328,
+        "tokens_per_unique_claim": 17.26
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+        "source_id": "point-hierarchy-unspecified",
+        "inputs": {
+          "faithfulness_precision": 1.0,
+          "critical_errors": 0,
+          "must_recall": 0.9667,
+          "overall_recall": 0.9667,
+          "redundancy_rate": 0.0909,
+          "trivia_rate": 0.0455
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "0.4 * 1.0 = 0.4; 0.4 * 0.9667 = 0.38668; 0.2 * 0.0909 = 0.01818; weighted_score = 0.4 + 0.38668 - 0.01818 = 0.7685",
+        "weighted_score": 0.7685,
+        "verdict": "Borderline",
+        "tradeoff_note": "Coverage is near complete and redundancy (0.0909) sits below the 0.15 max, so the length cost is justified and no concision gain should be traded against recall. The verdict is Borderline rather than Pass only because the single non-full Must have point K05 is Partial, which warrants human review of the narrowed phrasing.",
+        "fix_list": [
+          "Expand K05 from generic 'leaders' back to the source's named categories (politicians, business leaders, celebrities) at L006/L018/L019 to convert the Partial into Present.",
+          "Demote or drop C001, which recaps C002-C018, to raise uniqueness without losing content.",
+          "Merge duplicate pairs C016/C015 and C021/C018 to remove the two duplicates and lower redundancy below 0.0909."
+        ],
+        "reasoning": "Gate checks. Hard fails first per top_policy. (1) critical_contradicted_max = 0: faithfulness reports critical_errors = 0, so no contradiction hard fail. (2) must_recall_min = 0.9: must_recall = 0.9667 (must_have_present 14, must_have_partial 1 counted at 0.5, must_have_missing 0 across 15 Must have points), 0.9667 >= 0.9, so it clears. (3) faithfulness_precision_min = 0.95: faithfulness_precision = 1.0 (22 supported, 0 partial, 0 unverifiable, 0 contradicted), so it clears. No hard gate is missed. Tradeoff step. All gates pass, so compute the config-weighted score: 0.4 * 1.0 (faithfulness_precision) + 0.4 * 0.9667 (coverage_must_recall) - 0.2 * 0.0909 (redundancy_penalty) = 0.4 + 0.38668 - 0.01818 = 0.7685. Concision role check. Redundancy_rate = 0.0909 is below redundancy_max = 0.15 and concision never rescues a faithfulness or coverage fail, so it is used only as a penalty term, not as a corrective. There is no coverage gain to weigh against length here because overall_recall already equals must_recall (0.9667) with zero missing points, so the current length is not buying recall at a redundancy overage. Borderline determination. Numbers meet every gate, which alone would read Pass, but the Borderline clause applies: coverage reports K05 as Partial (must_have_partial = 1) and K05 is weighted Must have. Per the Partial/Unverifiable rule, a Partial claim affecting a Must have point forces Borderline. The affecting claim is K05, 'not even wrong extends beyond mathematics', whose evidence quote narrows the source's explicit politicians/business leaders/celebrities (loglog L006, L018, L019) to a generic 'leaders', losing breadth. Fixing that wording flips the sample to a clean Pass without touching faithfulness or concision, so it is the highest-leverage fix. The prune list (C001 recap, C016/C015 duplicate, C021/C018 duplicate) is secondary because redundancy is already under the max, but merging them still improves uniqueness at no content cost."
+      },
+      "verdict": "Borderline",
+      "weighted_score": 0.7685
+    },
+    {
+      "id": "10_parde_begardan_fa",
+      "words": 639,
+      "faithfulness": {
+        "total_claims": 24,
+        "supported": 22,
+        "partially_supported": 2,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 0.9167
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 8,
+        "must_have_present": 7,
+        "must_have_partial": 1,
+        "must_have_missing": 0,
+        "overall_present": 14,
+        "must_recall": 0.9375,
+        "overall_recall": 0.9667
+      },
+      "concision": {
+        "scored_claims": 24,
+        "unique": 19,
+        "duplicates": 0,
+        "trivia": 5,
+        "redundancy_rate": 0.0,
+        "trivia_rate": 0.2083,
+        "structured_tokens": 24,
+        "tokens_per_unique_claim": 1.26
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+        "source_id": "unspecified",
+        "inputs": {
+          "faithfulness_precision": 0.9167,
+          "critical_errors": 0,
+          "must_recall": 0.9375,
+          "overall_recall": 0.9667,
+          "redundancy_rate": 0.0,
+          "trivia_rate": 0.2083
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "weighted score = 0.4*0.9167 + 0.4*0.9375 - 0.2*0.0 = 0.36668 + 0.37500 - 0.00000 = 0.74168",
+        "weighted_score": 0.7417,
+        "verdict": "Fail",
+        "tradeoff_note": "All quality gates pass except faithfulness_precision, which at 0.9167 falls below the 0.95 minimum, so the sample fails regardless of the solid must_recall (0.9375) and zero redundancy. Coverage and concision cannot rescue a faithfulness gate miss.",
+        "fix_list": [
+          "Repair claim C006: source says the family bought the santur (بالاخره برام یه سنتور خریدن) but the draft states 'I bought it' (با تخفیف سنتور خریدم), shifting agency. Correcting this one claim raises supported to 23/24 = 0.9583, clearing the 0.95 precision gate.",
+          "Repair claim C008: source says the room was 'colder than the other rooms' (سردتر از بقیه اتاقها) but the draft flattens it to merely 'cold' (سرد بود). Restore the comparative to convert this from Partially supported to supported.",
+          "Fix point K08: the loglog says the harp-inspired keys make notes زیرتر (higher), inverting the source's 'lowered by a quarter or half step' direction. This directional inversion is a meaning change on a Must have point and must be corrected to preserve both recall and factual accuracy."
+        ],
+        "reasoning": "Gate checks in order. (1) Hard fail on critical errors: faithfulness critical_errors = 0, equals critical_contradicted_max of 0, so this gate passes. (2) Hard fail on must recall: must_recall = 0.9375 from coverage (7 present + 1 partial of 8 must-have points), and 0.9375 >= must_recall_min of 0.90, so this gate passes. The single partial, K08, is under the minimum threshold. (3) Hard fail on faithfulness precision: faithfulness_precision = 0.9167 (22 supported of 24 total claims), which is below faithfulness_precision_min of 0.95. This gate is missed, so per policy the sample fails. The two non-supported claims driving this are C006 (agency shift: 'I bought' versus source's family purchase, Minor) and C008 (comparative 'colder' flattened to 'cold', Harmless). Either one lifted to supported yields 23/24 = 0.9583 and clears the gate, making C006 the highest-leverage fix since it also removes a semantic misattribution. For completeness the weighted score is computed: 0.4*0.9167 = 0.36668, 0.4*0.9375 = 0.37500, minus 0.2*0.0 = 0.00000, totaling 0.74168. Concision contributes nothing here since redundancy_rate = 0.0 sits below redundancy_max of 0.15, and trivia_rate of 0.2083 with the five header-restatement entries (C002, C006, C011, C016, C020) is a polish issue only, not a gate. Borderline is not applicable: a numerical gate was missed, so the verdict is a hard Fail, not a borderline pass. The failure is narrow and cheap to reverse, but per policy concision and coverage gains never compensate for a faithfulness precision miss."
+      },
+      "verdict": "Fail",
+      "weighted_score": 0.7417
+    },
+    {
+      "id": "11_finding_a_phone",
+      "words": 3120,
+      "faithfulness": {
+        "total_claims": 23,
+        "supported": 21,
+        "partially_supported": 2,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 0.913
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 11,
+        "must_have_present": 5,
+        "must_have_partial": 6,
+        "must_have_missing": 0,
+        "overall_present": 7,
+        "must_recall": 0.7273,
+        "overall_recall": 0.7333
+      },
+      "concision": {
+        "scored_claims": 23,
+        "unique": 18,
+        "duplicates": 0,
+        "trivia": 5,
+        "redundancy_rate": 0.0,
+        "trivia_rate": 0.2174,
+        "structured_tokens": 251,
+        "tokens_per_unique_claim": 13.94
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+        "source_id": "point-hierarchy",
+        "inputs": {
+          "faithfulness_precision": 0.913,
+          "critical_errors": 0,
+          "must_recall": 0.7273,
+          "overall_recall": 0.7333,
+          "redundancy_rate": 0.0,
+          "trivia_rate": 0.2174
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "Hard gates first: critical_errors=0 (gate critical_contradicted_max=0 => PASS); faithfulness_precision=0.913 < faithfulness_precision_min=0.95 => FAIL; must_recall=0.7273 < must_recall_min=0.9 => FAIL; redundancy_rate=0.0 <= redundancy_max=0.15 => PASS. Weighted score (for audit only, not used to override fails) = 0.4*0.913 + 0.4*0.7273 - 0.2*0.0 = 0.3652 + 0.29092 - 0.0 = 0.65612 ~= 0.6561.",
+        "weighted_score": 0.6561,
+        "verdict": "Fail",
+        "tradeoff_note": "Two hard gates missed: faithfulness precision 0.913 is below the 0.95 minimum (C016, C021 drop source hedges) and must-have recall 0.7273 is far below the 0.9 minimum, with 6 of 11 must-haves only partial. Concision is clean (redundancy 0.0) but per policy it cannot rescue faithfulness or coverage fails.",
+        "fix_list": [
+          "Raise must-have recall: K01, K05, K11, K12, K14, K15 are all Partial; each must state its defining content, not just the headline. Prioritize K01 (tools-not-status-symbols thesis), K05 (phones not built for people like him, sell unwanted features, push ads, lock in ecosystems), and K11 (Black Friday deal, being fooled, remaining-payments anxiety, device limiting his choices).",
+          "K12/K13: add the concrete model names and requested feature set (gpt-4o-mini scraping code, claude-3.5 sonnet cleaning, 5G/eSIM/SD/battery/waterproof/camera, smaller companies) to move Partial to Present.",
+          "K14/K15: restore dropped specifics (Moto G Power 2024 model year, camera and oversized-screen complaints, TCL 50 XE NXTPAPER name, 2025-01-05 date, two-week trial, average camera, G75 IP68 waterproofness, Motorola cameras generally weak) to clear the recall gate.",
+          "C016 and C021: preserve source hedges ('generally wrong specs', Edge 40 SD uncertainty) so the claims do not overstate; this lifts faithfulness_precision above 0.95.",
+          "C002/C006/C010/C015/C020: drop the five restated theme-header bullets to cut trivia_rate 0.2174 without any coverage loss."
+        ],
+        "reasoning": "Gate check in order. (1) critical_errors=0 against critical_contradicted_max=0: PASS, no Critical or Contradicted claims; both non-supported claims C016 and C021 are Partially supported, Minor severity, hedging losses only. (2) faithfulness_precision=0.913 vs minimum 0.95: FAIL by 0.037. The two partials (C016 at loglog 4.1 dropping 'generally', C021 at loglog 5.1 stating Edge 40 SD as fact) are Minor individually but they are the entire precision loss, so the gate is missed narrowly and is fully fixable by restoring source hedges. (3) must_recall=0.7273 vs minimum 0.9: FAIL decisively. Coverage shows 11 must-haves with 5 Present, 6 Partial, 0 Missing; partial credit yields 0.7273. The six partials (K01, K05, K11, K12, K14, K15) each preserve the headline but lose the defining substance, e.g. K05 loses the indictment that phones 'were not built for people like him, but to sell unwanted features, push ads, and lock users into ecosystems' (loglog L006, L002, L028), and K11 loses the Black Friday fooling context and choice-limiting concern (L017). (4) redundancy_rate=0.0 <= redundancy_max=0.15: PASS, so concision provides no rescue and no penalty. trivia_rate=0.2174 is high (5 restated theme headers) but trivia is not a configured hard gate, so it only informs the tie-break/fix list. Weighted score computed for audit = 0.6561, but policy states hard-gate misses fail the sample outright and concision never rescues a faithfulness or coverage fail, so verdict is Fail on two independent gates. No aspect-judge fact conflict required rereading SOURCE."
+      },
+      "verdict": "Fail",
+      "weighted_score": 0.6561
+    },
+    {
+      "id": "12_lets_talk_privacy",
+      "words": 2803,
+      "faithfulness": {
+        "total_claims": 35,
+        "supported": 34,
+        "partially_supported": 1,
+        "unverifiable": 0,
+        "contradicted": 0,
+        "critical_errors": 0,
+        "faithfulness_precision": 0.9714
+      },
+      "coverage": {
+        "total_points": 15,
+        "must_have_total": 12,
+        "must_have_present": 11,
+        "must_have_partial": 1,
+        "must_have_missing": 0,
+        "overall_present": 14,
+        "must_recall": 0.9583,
+        "overall_recall": 0.9667
+      },
+      "concision": {
+        "scored_claims": 35,
+        "unique": 32,
+        "duplicates": 2,
+        "trivia": 1,
+        "redundancy_rate": 0.0571,
+        "trivia_rate": 0.0286,
+        "structured_tokens": 592,
+        "tokens_per_unique_claim": 18.5
+      },
+      "top": {
+        "judge": "overall",
+        "judge_version": "1.0.0",
+        "model": "deepseek-v4.1-flash (2026-09-15)",
+        "source_id": "point-hierarchy sample (source_id not provided in inputs)",
+        "inputs": {
+          "faithfulness_precision": 0.9714,
+          "critical_errors": 0,
+          "must_recall": 0.9583,
+          "overall_recall": 0.9667,
+          "redundancy_rate": 0.0571,
+          "trivia_rate": 0.0286
+        },
+        "weights_used": {
+          "faithfulness_precision": 0.4,
+          "coverage_must_recall": 0.4,
+          "redundancy_penalty": 0.2
+        },
+        "computation": "weighted_score = 0.4*0.9714 + 0.4*0.9583 - 0.2*0.0571 = 0.38856 + 0.38332 - 0.01142 = 0.76046",
+        "weighted_score": 0.7605,
+        "verdict": "Borderline",
+        "tradeoff_note": "All numeric gates pass and concision is comfortably under the redundancy max, so the 18.5 tokens per unique claim is justified by near-complete must-have coverage. However a Must-have point (K11) is only partially covered and one Partial claim (C001) sits near a Must-have trust point, so human review is advised before ship.",
+        "fix_list": [
+          "Restore the dropped scope qualifier in K11: state that history is stored only on your device and deleted from servers after delivery, in addition to the three device-switching options (L019/L020).",
+          "Narrow C001 to match the source: Signal's client-controlled keys yield a smaller attack surface, rather than asserting that only client-held keys minimize provider trust (source quote: 'With Signal using recovery keys, the attack surface is much smaller').",
+          "Merge duplicate pair C023/C031 and C033/C026 to lift the unique-claim ratio, and drop the trivia claim C003.",
+          "If any slack remains after K11, spend it on the C001 nuance rather than new material, since redundancy headroom (0.0571 vs 0.15) is still ample and coverage is the binding constraint."
+        ],
+        "reasoning": "Gate checks in order: (1) critical_errors = 0, at the config max of 0, so no hard fail and no Critical error is present. (2) must_recall = 0.9583, computed as (11 present + 0.5 partial)/(12 must-have) from coverage metrics (must_have_total 12, present 11, partial 1, missing 0), which clears the 0.9 minimum. (3) faithfulness_precision = 0.9714 = 34 supported / 35 total claims, which clears the 0.95 minimum; there are 0 contradicted and 0 unverifiable claims. (4) redundancy_rate = 0.0571 = 2 duplicates/35 scored claims, under the 0.15 max, with trivia_rate 0.0286 from the single trivia claim C003. Because all gates pass, the weighted score applies per the config aspect_weights: 0.4 faithfulness (0.9714) gives 0.38856, 0.4 must_recall (0.9583) gives 0.38332, minus 0.2 redundancy (0.0571) = 0.01142, for 0.76046, reported as 0.7605. Verdict is Borderline rather than Pass because, although the numbers clear every gate, the one Partial faith-fulness claim C001 (Minor severity) is an overstated-scope interpretation ('only client-held keys minimize that trust') that the source does not assert, and the coverage partial K11 is a Must-have whose dropped qualifier is the default local-only storage plus server-side deletion. Under the policy's borderline rule (gates met but a Partial claim affects a Must-have point), this warrants human review, so I name C001 and K11. Concision does not affect the verdict downgrade: redundancy is low and no concision metric rescues or harms a faithfulness or coverage concern, it only serves as a tie-breaker, which is moot here."
+      },
+      "verdict": "Borderline",
+      "weighted_score": 0.7605
+    }
+  ]
+}

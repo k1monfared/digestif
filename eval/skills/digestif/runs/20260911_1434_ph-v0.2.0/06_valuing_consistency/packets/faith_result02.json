@@ -1,0 +1,104 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "06_valuing_consistency (part 2 of 2)",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Retrospective stories cannot separate twins; prior prediction with reasons can.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "One thing separates the twins: what the person predicted, before the circumstance changed, that they would do once it did, and on what grounds.",
+   "reasoning": "Source states retrospective self-report is available to both twins while prior prediction separates them, matching the claim."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "Old-regime predictions with reasons resist retroactive faking, unlike post-hoc alibis.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A prediction made under the old regime, with reasons attached, is much harder to fake retroactively than a story assembled after the fact.",
+   "reasoning": "Claim restates the source's comparison of prior reason-attached predictions against post-hoc stories with identical meaning."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "Without prior prediction the case is underdetermined; reject the flattering default.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Where no such prior prediction exists, the answer is that the case is underdetermined. The default should not be to assume the more flattering interpretation.",
+   "reasoning": "Both the underdetermination and the anti-flattering-default instruction are stated verbatim in the source."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "10"
+   ],
+   "claim_text": "Swinging woman may run one rule throughout; never-changing investor may be failing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The woman who swung with the revolution may have been running one unchanging rule the whole time, and the investor who never changes strategy may be the one failing.",
+   "reasoning": "Claim preserves the source's hedged 'may' and mirrors both clauses exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "10.1"
+   ],
+   "claim_text": "Evaluate process not output, though process stays mostly invisible and unfalsifiable.",
+   "claim_type": "recommendation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "The process is mostly invisible, and the stories people tell about it afterward are mostly unfalsifiable.",
+   "reasoning": "Source calls the process invisible but attributes unfalsifiability to the stories told about it, not to the process itself."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "10.2"
+   ],
+   "claim_text": "Anchor-distance cases deliberately unexplored for lack of interpretable examples.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I deliberately haven't explored the cases where the anchor is closer or farther from the reference. Mainly because I couldn't come up with meaningful examples to study.",
+   "reasoning": "Both deliberate omission and the lack of meaningful examples are directly stated in PS1."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "10.3"
+   ],
+   "claim_text": "Anchor resembles endogenous variable, reference exogenous; linear model extends beyond zero-one.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An economists perhaps would call the anchor an indogenous variable, and the reference an exogenous variable. ... the combining coefficient doesn't need to be between 0 and 1",
+   "reasoning": "Claim keeps the hedged 'resembles' and correctly reports the coefficient extending outside the 0 to 1 range."
+  }
+ ],
+ "metrics": {
+  "total_claims": 7,
+  "supported": 6,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.857
+ },
+ "fail_list": [
+  "C05 partially supported: source makes retrospective stories unfalsifiable, not the process itself"
+ ]
+}

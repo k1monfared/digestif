@@ -1,0 +1,383 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 5,
+ "of": 9,
+ "nodes": [
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Moradifam: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "## What remains human"
+    },
+    {
+     "ref": "¶43",
+     "text": "And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "The Davies results used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "Moradifam walks the research side faster. The [Davies results](https://www.nature.com/articles/s41586-021-04086-x) used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4) framed matrix multiplication search as a game and found algorithms humans had not. The pattern is the same every time: the AI proposes, humans check, digest, and present. Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "AlphaTensor framed matrix multiplication search as a game and found algorithms humans had not.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "Moradifam walks the research side faster. The [Davies results](https://www.nature.com/articles/s41586-021-04086-x) used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4) framed matrix multiplication search as a game and found algorithms humans had not. The pattern is the same every time: the AI proposes, humans check, digest, and present. Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The pattern repeats: AI proposes, humans check, digest, and present.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "Moradifam walks the research side faster. The [Davies results](https://www.nature.com/articles/s41586-021-04086-x) used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4) framed matrix multiplication search as a game and found algorithms humans had not. The pattern is the same every time: the AI proposes, humans check, digest, and present. Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process."
+    }
+   ]
+  },
+  {
+   "id": "4.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Then the line of work speeds up into the 2026 results, where AI takes on most of the discovery process.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "Moradifam walks the research side faster. The [Davies results](https://www.nature.com/articles/s41586-021-04086-x) used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4) framed matrix multiplication search as a game and found algorithms humans had not. The pattern is the same every time: the AI proposes, humans check, digest, and present. Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Mathematics already accepts opaque results: the four-color theorem and the classification of finite simple groups.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "His epistemology section is the interesting one. Mathematics already has precedents for accepted-but-opaque results: the [four-color theorem](https://en.wikipedia.org/wiki/Four_color_theorem), the [classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups). We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind. As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual."
+    }
+   ]
+  },
+  {
+   "id": "4.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "We use them because they survived extensive communal verification, though no single person holds the whole proof in mind.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "His epistemology section is the interesting one. Mathematics already has precedents for accepted-but-opaque results: the [four-color theorem](https://en.wikipedia.org/wiki/Four_color_theorem), the [classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups). We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind. As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual."
+    }
+   ]
+  },
+  {
+   "id": "4.4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "His epistemology section is the interesting one. Mathematics already has precedents for accepted-but-opaque results: the [four-color theorem](https://en.wikipedia.org/wiki/Four_color_theorem), the [classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups). We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind. As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Understanding was historically constructive: you deepen it by reconstructing the proof.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "4.5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "4.5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The mathematician becomes less a builder and more an interpreter, extracting meaning from a proof that cannot explain itself.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "4.5.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The author thinks Moradifam's thesis is right as far as it goes.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Both documents leave importance on stable human ground, and the author argues importance was always a partly social judgment.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "## The blind spot they share"
+    },
+    {
+     "ref": "¶45",
+     "text": "Both documents stop at the same edge, and it is the edge I want to step past. Moradifam writes that AI \"does not by itself determine what the mathematical community should regard as interesting, deep, or worth understanding. Those judgments remain human, shaped by taste, experience, and the collective culture of the field.\" Tao's equivalent is the claim that community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\" Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it. That is the right place for their documents to stop. Mine is a blog post, and it is a different genre: I am building on their ground, not correcting it, and the next step is speculation, not scholarship."
+    },
+    {
+     "ref": "¶46",
+     "text": "And here is where the two threads of this piece finally meet. The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about in the first place. That is importance, and I think importance was never a stable, purely human judgment. This is also, I suspect, why Hadi and I were worried. Consider how the field actually decided what was worth working on before AI. There were two levers."
+    },
+    {
+     "ref": "¶49",
+     "text": "Neither lever is pure mathematical judgment. Both are social. The field could pretend otherwise as long as the process was slow, local, and invisible. The AI era removes the cover story."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Moradifam: what the community regards as interesting, deep, or worth understanding remains human, shaped by taste, experience, and collective culture.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "Both documents stop at the same edge, and it is the edge I want to step past. Moradifam writes that AI \"does not by itself determine what the mathematical community should regard as interesting, deep, or worth understanding. Those judgments remain human, shaped by taste, experience, and the collective culture of the field.\" Tao's equivalent is the claim that community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\" Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it. That is the right place for their documents to stop. Mine is a blog post, and it is a different genre: I am building on their ground, not correcting it, and the next step is speculation, not scholarship."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Tao's equivalent: community acceptance is ultimately external and cannot be optimized purely by authors and their AI tools.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "Both documents stop at the same edge, and it is the edge I want to step past. Moradifam writes that AI \"does not by itself determine what the mathematical community should regard as interesting, deep, or worth understanding. Those judgments remain human, shaped by taste, experience, and the collective culture of the field.\" Tao's equivalent is the claim that community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\" Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it. That is the right place for their documents to stop. Mine is a blog post, and it is a different genre: I am building on their ground, not correcting it, and the next step is speculation, not scholarship."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Both locate the judgment of importance in a stable human ground, and neither looks underneath it.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "Both documents stop at the same edge, and it is the edge I want to step past. Moradifam writes that AI \"does not by itself determine what the mathematical community should regard as interesting, deep, or worth understanding. Those judgments remain human, shaped by taste, experience, and the collective culture of the field.\" Tao's equivalent is the claim that community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\" Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it. That is the right place for their documents to stop. Mine is a blog post, and it is a different genre: I am building on their ground, not correcting it, and the next step is speculation, not scholarship."
+    }
+   ]
+  },
+  {
+   "id": "5.3.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The author's genre is a blog post: building on their ground, not correcting it; the next step is speculation, not scholarship.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "Both documents stop at the same edge, and it is the edge I want to step past. Moradifam writes that AI \"does not by itself determine what the mathematical community should regard as interesting, deep, or worth understanding. Those judgments remain human, shaped by taste, experience, and the collective culture of the field.\" Tao's equivalent is the claim that community acceptance is \"ultimately an external process that cannot be optimized purely by the authors and their AI tools.\" Both locate the judgment of importance in a stable, human ground, and neither tries to look underneath it. That is the right place for their documents to stop. Mine is a blog post, and it is a different genre: I am building on their ground, not correcting it, and the next step is speculation, not scholarship."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The two threads meet: if the process of thinking is the product, what matters most is what the math was worth thinking about.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "And here is where the two threads of this piece finally meet. The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about in the first place. That is importance, and I think importance was never a stable, purely human judgment. This is also, I suspect, why Hadi and I were worried. Consider how the field actually decided what was worth working on before AI. There were two levers."
+    }
+   ]
+  },
+  {
+   "id": "5.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The author suspects importance was never a stable, purely human judgment.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "And here is where the two threads of this piece finally meet. The process of thinking is the product, which means the thing that matters most about a piece of mathematics is what it was worth thinking about in the first place. That is importance, and I think importance was never a stable, purely human judgment. This is also, I suspect, why Hadi and I were worried. Consider how the field actually decided what was worth working on before AI. There were two levers."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The first lever of importance was applicability: did a problem solve something real in science, engineering, or society?",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "The first was applicability. Did a problem solve something real elsewhere, in science, engineering, society? You could measure that fairly directly, and it was partly driven by where research funding lived. Money went to areas where results were wanted."
+    }
+   ]
+  },
+  {
+   "id": "5.5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It was measurable fairly directly and partly driven by where research funding lived: money went where results were wanted.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "The first was applicability. Did a problem solve something real elsewhere, in science, engineering, society? You could measure that fairly directly, and it was partly driven by where research funding lived. Money went to areas where results were wanted."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The second lever was the taste of the big names: what the field's influencers thought was important.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "The second was the taste of the big names. What the field's influencers thought was important. That taste was itself a compound. Partly fame: [Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.), allegedly but not verified, was infamous for working only on problems that could get him famous. Partly genuine interest. And partly network favoritism: I know you, so if you work on a problem I become interested in it, so I work on it too, and as a result we both grow in our social position. That kind of thinking was always there, quietly."
+    }
+   ]
+  },
+  {
+   "id": "5.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That taste was a compound: partly fame, partly genuine interest, partly network favoritism.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "The second was the taste of the big names. What the field's influencers thought was important. That taste was itself a compound. Partly fame: [Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.), allegedly but not verified, was infamous for working only on problems that could get him famous. Partly genuine interest. And partly network favoritism: I know you, so if you work on a problem I become interested in it, so I work on it too, and as a result we both grow in our social position. That kind of thinking was always there, quietly."
+    }
+   ]
+  },
+  {
+   "id": "5.6.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Nash, allegedly but not verified, was infamous for working only on problems that could get him famous.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "The second was the taste of the big names. What the field's influencers thought was important. That taste was itself a compound. Partly fame: [Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.), allegedly but not verified, was infamous for working only on problems that could get him famous. Partly genuine interest. And partly network favoritism: I know you, so if you work on a problem I become interested in it, so I work on it too, and as a result we both grow in our social position. That kind of thinking was always there, quietly."
+    }
+   ]
+  },
+  {
+   "id": "5.6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Network favoritism: I know you, so your problem interests me, we both work on it, and both grow in social position.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "The second was the taste of the big names. What the field's influencers thought was important. That taste was itself a compound. Partly fame: [Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr.), allegedly but not verified, was infamous for working only on problems that could get him famous. Partly genuine interest. And partly network favoritism: I know you, so if you work on a problem I become interested in it, so I work on it too, and as a result we both grow in our social position. That kind of thinking was always there, quietly."
+    }
+   ]
+  },
+  {
+   "id": "5.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Neither lever is pure mathematical judgment; both are social.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "Neither lever is pure mathematical judgment. Both are social. The field could pretend otherwise as long as the process was slow, local, and invisible. The AI era removes the cover story."
+    }
+   ]
+  },
+  {
+   "id": "5.7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The field could pretend otherwise while the process was slow, local, and invisible; the AI era removes the cover story.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "Neither lever is pure mathematical judgment. Both are social. The field could pretend otherwise as long as the process was slow, local, and invisible. The AI era removes the cover story."
+    }
+   ]
+  },
+  {
+   "id": "5.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The author owns the irony: he leans on Tao and Moradifam, exactly the kind of authority he says to interrogate.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "I should own the irony of saying this while leaning on Tao and Moradifam for most of the argument so far. They are exactly the kind of authority I am saying we should interrogate. I lean on them because their reasoning is checkable, not because their names are big, and I am trying to show my work the whole way. That is the difference I am pointing at, and I am not sure I fully live up to it."
+    }
+   ]
+  },
+  {
+   "id": "5.8.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "He leans on them because their reasoning is checkable, not because their names are big.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "I should own the irony of saying this while leaning on Tao and Moradifam for most of the argument so far. They are exactly the kind of authority I am saying we should interrogate. I lean on them because their reasoning is checkable, not because their names are big, and I am trying to show my work the whole way. That is the difference I am pointing at, and I am not sure I fully live up to it."
+    }
+   ]
+  },
+  {
+   "id": "5.8.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "He is trying to show his work and is not sure he fully lives up to it.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "I should own the irony of saying this while leaning on Tao and Moradifam for most of the argument so far. They are exactly the kind of authority I am saying we should interrogate. I lean on them because their reasoning is checkable, not because their names are big, and I am trying to show my work the whole way. That is the difference I am pointing at, and I am not sure I fully live up to it."
+    }
+   ]
+  }
+ ]
+}

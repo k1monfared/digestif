@@ -1,0 +1,309 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "10_parde_begardan_fa",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "claim_text": "کودکی که عاشق سنتور شد، سال‌ها با محدودیت کوک دیاتونیک ساخت و با سنتور کلیددار به آزادی مدولاسیون رسید.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "سنتور یه ساز دیاتونیک هست... اگه بخوای مدلاسیون انجام بدی باید کوک عوض بشه... یه سنتوری درست کردن که... کلید تعبیه کردن",
+      "reasoning": "Summary faithfully combines the childhood love, the diatonic tuning constraint, and the keyed santur's modulation freedom."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "claim_text": "شبی در هفت‌سالگی با سنتور خاله و زرد ملیجه عاشق ساز شدم.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "۷ سالم که بود یه شب شام خونه خاله‌م بودیم... یه آهنگ هم برامون زد، «زرد ملیجه» بود فکر کنم",
+      "reasoning": "Age seven, the aunt's santur, and Zard Malijeh are stated; falling for the instrument is directly implied by the night's account."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "claim_text": "هفت سالم بود، سنتور خاله کنج اتاق بود، زرد ملیجه زد، فکر کنم.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "۷ سالم که بود... سنتوری که تازه خریده بود... تو کنج اتاق بود. یه آهنگ هم برامون زد، «زرد ملیجه» بود فکر کنم",
+      "reasoning": "All details align, including the preserved hedge 'فکر کنم'."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "claim_text": "از اولین درس‌ها بود؛ مضراب یاد گرفتم و به‌زور از پای ساز بلندم کردند.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "از اولین آهنگهاییه که تو آموزش سنتور یاد میدن... مضراب دست گرفتن رو بهم نشون داد... آخر شب به زور من رو از پای ساز بلند کردن",
+      "reasoning": "Song-first is rephrased as lesson-first with unchanged meaning; mezrab instruction and forced removal are stated."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "claim_text": "احتمالا فقط شام پای ساز نبودم؛ تمام راه زر زدم و شیش ماه لج کردم.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "احتمالا فقط موقع شام پای ساز نبودم. تمام طول راه رو زر زدم... شیش ماه که این زر زدن‌ها و لج‌کردن‌ها ادامه داشت",
+      "reasoning": "Probability hedge, whole-route nagging, and six months of persistence all match the source."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "2"
+      ],
+      "claim_text": "با تخفیف سنتور خریدم و با سازی گنده‌تر از خودم کلاس رفتم.",
+      "claim_type": "interpretation",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "بالاخره برام یه سنتور خریدن... با تخفیف شد ۱۸هزار تومن... سازم از خودم گنده‌تر بود",
+      "reasoning": "Source says family bought it for him; claim states 'I bought', shifting agency. Discount and oversized santur are supported."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "claim_text": "۲۰هزار تومن با تخفیف ۱۸هزار شد؛ شیش ماه بعدتر رفتم کلاس.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "۲۰هزار تومن، با تخفیف شد ۱۸هزار تومن. شیش ماه بعدتر هم رفتم کلاس",
+      "reasoning": "Both figures and the six-month interval match exactly."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "claim_text": "اول استاد به خانه می‌آمد؛ اتاق پذیرایی سرد بود، حداقل اینطور یادم مانده.",
+      "claim_type": "fact",
+      "verdict": "Partially supported",
+      "severity": "Harmless",
+      "evidence_quote": "استادم میومد خونه... سنتورم تو اتاق پذیرایی بود... سردتر از بقیه اتاقها. حداقل اینطور تو ذهن من مونده",
+      "reasoning": "Comparative 'colder than other rooms' is flattened to 'cold', though the memory hedge is retained."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "claim_text": "بعد اداره ارشاد کلاس گذاشت؛ مبل‌ها فقط برای مهمان بود.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "مبل‌ها هم تو اون اتاق بودن و فقط وقتی مهمون داشتیم استفاده میشدن. بعدترها اداره ارشاد کلاس دایر کرد",
+      "reasoning": "Both the student-only sofa use and the Ershad office classes are stated."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "claim_text": "ساز از خودم گنده‌تر بود؛ ۷۲ سیم داشت و کوکش کار هرکسی نبود.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "سازم از خودم گنده‌تر بود... ۷۲ تا سیم داره و کار هرکسی نیست کوک کردنش",
+      "reasoning": "Oversized instrument, 72 strings, and non-trivial tuning are all directly stated."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "3"
+      ],
+      "claim_text": "کوک زمان‌بر، سنتور دیاتونیک را به یک بازی در مهمانی محدود می‌کرد.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "مدلاسیون انجام بدی باید کوک عوض بشه که خب زمانبره... حس بچه‌ای... بهش فقط اجازه یه بازی رو داده باشن",
+      "reasoning": "The time-consuming tuning and the one-game-at-a-party metaphor match the source."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "claim_text": "با تیونر دیگر لازم نبود ساز را برای کوک به کلاس ببرم.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "بعدترها که تیونر اومد بازار دیگه نیاز نبود ساز رو ببرم سر کلاس چون دیگه خودم میتونستم کوکش کنم",
+      "reasoning": "Negation and condition match exactly."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "claim_text": "سنتور دیاتونیک است؛ یک دستگاه در آن واحد، مدولاسیون زمان‌بر است.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "سنتور یه ساز دیاتونیک هست، ینی در آن واحد فقط میشه یک دستگاه/گام رو روش نواخت... باید کوک عوض بشه که خب زمانبره",
+      "reasoning": "The definition and its consequence are stated verbatim in meaning."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "claim_text": "مثل بچه‌ای بودم که فقط یک بازی مجاز است؛ اگه خسته می‌شدم نمی‌صرفید.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "حس بچه‌ای... بهش فقط اجازه یه بازی رو داده باشن... نمیصرفید، تا اون موقع حس بازی میرفت",
+      "reasoning": "Both the single-game limitation and the 'not worth it' conclusion are present."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "claim_text": "اگه بچه‌ها بازی عوض می‌کردند، حتی با علاقه گوشه می‌نشستم و نگاه می‌کردم.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "من مجبور بودم ساکت بشینم یه گوشه‌ای و نگاهشون کنم. حتی اگه اون بازی‌ رو خیلی دوست داشتم",
+      "reasoning": "Sitting silently in a corner and watching, even when fond of the game, is stated."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "4"
+      ],
+      "claim_text": "سنتور کلیددار با ایده چنگ، تغییر ربع‌پرده را به ثانیه رساند.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "از چنگ ایده گرفتن و یه سری کلید تعبیه کردن که ربع یا نیم پرده زیرتر کردن هر نتی رو در کسری از ثانیه میشه انجام داد",
+      "reasoning": "Harp-derived idea, keys, quarter-tone shifts, and sub-second speed are all present."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "claim_text": "کلیدها ربع یا نیم پرده را در کسری از ثانیه زیرتر می‌کنند؛ مدولاسیون چندثانیه‌ای شد.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "ربع یا نیم پرده زیرتر کردن هر نتی رو در کسری از ثانیه... فقط با چند کلیک، فقط در چند ثانیه",
+      "reasoning": "Quarter/half-tone shifts and multi-second modulation are stated precisely."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "claim_text": "دو سالی به آن فکر می‌کردم؛ سالم از لنگرود به لنگفورد آوردنش را نمی‌دانستم.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "دو سالی بود که بهش فکر میکردم ولی نمیدونستم چطور میتونم سالم از لنگرود بیارمش لنگفورد",
+      "reasoning": "Two years of thinking, the negation, the route, and 'safely' all match."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "claim_text": "با کمک خانواده و دوستان و مسئولین و ائمه امروز به دستم رسید.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "با کمکهای بی دریغ خانواده و دوستان و مسئولین و ائمه امروز رسید به دستم",
+      "reasoning": "All four helper groups and the timing are stated verbatim in meaning."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "5"
+      ],
+      "claim_text": "از اصفهان تا همایون بی‌وقفه نواختم؛ حالا یک هفته سفر، چشم‌انتظار بازگشتم.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "از اصفهان به سه‌گاه... از شور به همایون... نهار نخوردم، هی ساز زدم... حالا از فردا یک هفته‌ای مسافرتم... منتظرم برگردم",
+      "reasoning": "Nonstop playing across the modes, the one-week trip, and longing to return are all present."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "claim_text": "از اصفهان به سه‌گاه، نوا، شور، همایون رفتم؛ انگار خواب می‌دیدم.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "از اصفهان به سه‌گاه، از سه‌گاه به نوا، از نوا به شور، از شور به همایون... انگار داشتم خواب میدیدم",
+      "reasoning": "Mode sequence and dream simile match exactly."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "claim_text": "مثل گوسفند پرواری دویدم، نهار نخوردم، پشتم درد گرفت؛ حس شب اول بود.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "حکم گوسفند پرواری‌ای... بدون وقفه داشت میدوید، نهار نخوردم... پشتم درد گرفت. حس شب اولی رو داشتم",
+      "reasoning": "The sheep metaphor, skipped lunch, back pain, and first-night feeling are all stated."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "claim_text": "مثل بچه‌ای با هر بازی و کسی با هر حرف؛ از فردا یک هفته‌ای مسافرم.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "حس بچه‌ای... هر بازی‌ای که دوست داشت... حس کسی... هر حرفی رو میخواست... حالا از فردا یک هفته‌ای مسافرتم",
+      "reasoning": "Both similes and the one-week trip are directly stated."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "claim_text": "نرفته منتظر برگشتن و نشستن پای سازم.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "نرفته منتظرم برگردم و بشینم پای ساز",
+      "reasoning": "The negation and both awaited actions match exactly."
+    }
+  ],
+  "metrics": {
+    "total_claims": 24,
+    "supported": 22,
+    "partially_supported": 2,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9167
+  },
+  "fail_list": [
+    "C006",
+    "C008"
+  ]
+}

@@ -1,0 +1,401 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "source.txt",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "L002"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Summary thesis introducing anchor, responsiveness, and evidence-or-cost frame not stated earlier."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "L003"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Consistency vague and inconsistently moralized; distinct problem statement."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "L004"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mother example supplies concrete factual support absent elsewhere."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "L005"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Updating beliefs is virtuous and something deeper carries weight; new point."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "L006"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Introduces clothing model blending anchor and reference; definitional content."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "L007"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Formal behavior equation; unique formal statement."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "L008"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Defines anchor, weight, and two-observation solvability; new definitions."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "L009"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Modest woman numeric parameters; numbers never trivia."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "L010"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Output moved while rule fixed; distinct interpretation of pressure."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "L011"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Swinging woman numeric anchor and responsiveness; unique numbers."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "L012"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Chameleon rule equally consistent; difference is content; adds new angle."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "L013"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Splits consistency into output, policy, anchor layers; new framework."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "L014"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Moral weight in anchor drift, invisible in small steps; specifies earlier vague depth."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "L015"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contrarian definition flipping sign and magnitude; new definition."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "L016"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contrarian observed numbers and negative responsiveness; unique numbers."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "L017"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contrarianism as dependency with minus sign; distinct interpretation."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "L018"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Named posture taxonomy by responsiveness; new categorization."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "L019"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Only the independent ignores reference; extremes mirror; new nuance."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "L020"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Model morally neutral until reference kind named; substantive pivot."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "L021"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Resist normative, track structural references; distinct recommendation."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "L022"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Author preference for small responsiveness and educated anchors; distinct concession."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "L023"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Lifecycle investing formula; unique numbers and example."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "L024"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Conformist and investor share form but opposite verdicts; synthesis adds comparison."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "L025"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Evidence or cost crossed with update or hold; new axes."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "L026"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Enumerates four cells; distinct content."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "L027"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Held anchor splits revealed preference versus hysteresis; new nuance."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "L028"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Evidence without reference moving; beliefs about static facts update; new caveat."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "L029"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Revision and laundering reach identical anchors; distinct indistinguishability point."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "L030"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Aphorism fits both evidence and self-interest processes; new dual framing."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "L031"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Age-brings-taxes as lifecycle rational revision; distinct application."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "L032"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Asset-acquiring drift as preference laundering; distinct second reading."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "L033"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Previews three complications; structural preview not restated verbatim."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "L034"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Confounded attribution of cost and evidence; distinct complication."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "L035"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Misperceived reference corrupts judgments; distinct complication."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "L036"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Reference lag freezing diaspora norms; distinct third complication."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "L037"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Prior prediction separates twins; distinct test proposal."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "L038"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Old-regime reasoned predictions resist faking; distinct supporting point."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "L039"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C036",
+   "reasoning": "Restates underdetermination without prior prediction; only flattering-default rejection is new."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "L040"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C001",
+   "reasoning": "Section 10 recap restating thesis and swinging-woman one-rule point already made."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "L041"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Evaluate process not output recommendation; distinct closing prescription."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "L042"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Meta scope note on unexplored cases; no main point, low information value."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "L043"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Endogenous anchor, exogenous reference, linear extension; distinct modeling note."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 42,
+  "unique": 39,
+  "duplicates": 2,
+  "trivia": 1,
+  "redundancy_rate": 0.0476,
+  "trivia_rate": 0.0238,
+  "structured_tokens": 705,
+  "tokens_per_unique_claim": 18.08
+ },
+ "prune_list": [
+  "C038 duplicates C036, safe to merge",
+  "C039 duplicates C001, safe to merge",
+  "C041 trivia, safe to drop"
+ ]
+}

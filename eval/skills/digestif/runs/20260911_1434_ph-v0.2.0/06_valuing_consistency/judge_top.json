@@ -1,0 +1,31 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "unspecified",
+  "inputs": {
+    "faithfulness_precision": 0.9524,
+    "critical_errors": 0,
+    "must_recall": 0.8929,
+    "overall_recall": 0.9,
+    "redundancy_rate": 0.0476,
+    "trivia_rate": 0.0238
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4*faithfulness_precision + 0.4*must_recall - 0.2*redundancy_rate = 0.4*0.9524 + 0.4*0.8929 - 0.2*0.0476 = 0.380960 + 0.357160 - 0.009520 = 0.728600",
+  "weighted_score": 0.7286,
+  "verdict": "Fail",
+  "tradeoff_note": "Concision is comfortably below the 0.15 max (0.0476) and faithfulness clears its 0.95 gate, but must-have recall of 0.8929 falls short of the 0.9 minimum, so the sample fails on a hard coverage gate and no length or concision trade can rescue it.",
+  "fix_list": [
+    "K09: enumerate the six named w postures with their threshold boundaries (amplifier >1, absolute conformist =1, partial conformist 0<w<1, independent =0, partial contrarian -1<w<0, absolute contrarian =-1) instead of the single paraphrase 'amplifier to extremist rebel'",
+    "K11: restore the dropped numbers 85 percent at 25 and 50 percent at 60 plus the 65-year-old refusal scenario to upgrade this Must have from Partial to Present",
+    "K05: restore the illustrative output values (-0.1 to 0.1) for the modest-woman case so the fixed-rule demonstration carries its full evidence",
+    "C028: soften the absolute 'indistinguishable inside and out' to match the source hedge 'often from inside too'",
+    "C040: attribute unfalsifiability to the stories told about the process, not the process itself, per loglog 10.1"
+  ],
+  "reasoning": "Gate checks in policy order. (1) Hard fails first: critical_errors = 0, at or below critical_contradicted_max 0, so no critical failure. faithfulness_precision = 0.9524 vs min 0.95: 0.9524 >= 0.95, passes (margin only 0.0024, so this is fragile, driven by the two Partially supported Minor claims C028 and C040, both of which are single-word overstatements rather than factual errors). must_recall = 0.8929 vs min 0.9: 0.8929 < 0.9, so the sample misses a hard coverage gate. Only one eleventh of a Must have point short (11 present + 3 partial out of 14; treating the 3 partials as non-full, 11/14 = 0.7857 full-present, and the reported 0.8929 reflects partial credit). This alone is dispositive: Fail. (2) Because a hard gate is missed, the weighted score is computed for audit only and does not change the verdict. weighted_score = 0.4*0.9524 + 0.4*0.8929 - 0.2*0.0476 = 0.7286. (3) Concision role: redundancy_rate 0.0476 is well under redundancy_max 0.15 and trivia_rate 0.0238 is negligible (C041 trivia, C038/C039 mergeable duplicates), so concision is healthy but per top_policy never compensates for a faithfulness or coverage loss, and it does not here. The coverage deficit is not a length problem either: the missing material is specificity inside already-present points, so adding the enumerated values would raise recall without pushing redundancy near the 0.15 ceiling. (4) Borderline check: not applicable since the verdict is Fail, not a passing-number case. The Partial Must haves K05, K09, K11 are exactly what pulled must_recall to 0.8929; K09 (six posture values/thresholds) and K11 (85/50 percent, ages 25/60, age-65 scenario) are the highest-leverage restorations since each converts a Partial Must have to Present and would lift must_recall back above 0.9. Verdict: Fail on must_recall_min."
+}

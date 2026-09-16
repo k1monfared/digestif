@@ -1,0 +1,443 @@
+{
+ "sample": "02_case_for_transparent_government",
+ "part": 2,
+ "of": 6,
+ "nodes": [
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Pieces of this system already exist and prove it works.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "## The World Already Has Pieces of This\n\nYou might think this is pure theory. It isn't. Pieces of this system already exist around the world. No country has achieved anything close to complete transparency, but several have gone far enough to prove it works.\n\n### Sweden: 260 Years and Counting\n\nIn 1766, Sweden passed the [Freedom of the Press Act](https://www.britannica.com/topic/Freedom-of-the-Press-Act-of-1766) - the world's first freedom of information law. It abolished censorship and granted citizens the right to access government documents. It's now part of the Swedish constitution."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "No country nears complete transparency, but several prove feasibility.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "## The World Already Has Pieces of This\n\nYou might think this is pure theory. It isn't. Pieces of this system already exist around the world. No country has achieved anything close to complete transparency, but several have gone far enough to prove it works.\n\n### Sweden: 260 Years and Counting\n\nIn 1766, Sweden passed the [Freedom of the Press Act](https://www.britannica.com/topic/Freedom-of-the-Press-Act-of-1766) - the world's first freedom of information law. It abolished censorship and granted citizens the right to access government documents. It's now part of the Swedish constitution."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Sweden's 260-year openness shows transparency endures without collapse.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "## The World Already Has Pieces of This\n\nYou might think this is pure theory. It isn't. Pieces of this system already exist around the world. No country has achieved anything close to complete transparency, but several have gone far enough to prove it works.\n\n### Sweden: 260 Years and Counting\n\nIn 1766, Sweden passed the [Freedom of the Press Act](https://www.britannica.com/topic/Freedom-of-the-Press-Act-of-1766) - the world's first freedom of information law. It abolished censorship and granted citizens the right to access government documents. It's now part of the Swedish constitution."
+    },
+    {
+     "ref": "¶10",
+     "text": "This wasn't born from idealism. It was born from political conflict. The aristocratic \"Hats\" party had held power for decades, and the opposition \"Caps\" saw that accountability required visibility. Anders Chydenius, a Finnish-Swedish priest and politician, drove the legislation through parliament. The motivation was explicitly anti-corruption.\n\nTwo hundred and sixty years later, Sweden still operates under this principle. It's called *offentlighetsprincipen* - the principle of public access. Government documents are public by default. The country has not collapsed. Its government functions. In fact, Nordic countries [consistently rank](https://nordics.info/show/artikel/open-government) among the least corrupt and most effective democracies in the world."
+    }
+   ]
+  },
+  {
+   "id": "5.2.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "In 1766 Sweden passed the world's first freedom-of-information law.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "## The World Already Has Pieces of This\n\nYou might think this is pure theory. It isn't. Pieces of this system already exist around the world. No country has achieved anything close to complete transparency, but several have gone far enough to prove it works.\n\n### Sweden: 260 Years and Counting\n\nIn 1766, Sweden passed the [Freedom of the Press Act](https://www.britannica.com/topic/Freedom-of-the-Press-Act-of-1766) - the world's first freedom of information law. It abolished censorship and granted citizens the right to access government documents. It's now part of the Swedish constitution."
+    }
+   ]
+  },
+  {
+   "id": "5.2.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "It abolished censorship and is now constitutional.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "## The World Already Has Pieces of This\n\nYou might think this is pure theory. It isn't. Pieces of this system already exist around the world. No country has achieved anything close to complete transparency, but several have gone far enough to prove it works.\n\n### Sweden: 260 Years and Counting\n\nIn 1766, Sweden passed the [Freedom of the Press Act](https://www.britannica.com/topic/Freedom-of-the-Press-Act-of-1766) - the world's first freedom of information law. It abolished censorship and granted citizens the right to access government documents. It's now part of the Swedish constitution."
+    }
+   ]
+  },
+  {
+   "id": "5.2.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Finnish-Swedish priest-politician Chydenius drove Hats-versus-Caps explicitly anti-corruption law.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "This wasn't born from idealism. It was born from political conflict. The aristocratic \"Hats\" party had held power for decades, and the opposition \"Caps\" saw that accountability required visibility. Anders Chydenius, a Finnish-Swedish priest and politician, drove the legislation through parliament. The motivation was explicitly anti-corruption.\n\nTwo hundred and sixty years later, Sweden still operates under this principle. It's called *offentlighetsprincipen* - the principle of public access. Government documents are public by default. The country has not collapsed. Its government functions. In fact, Nordic countries [consistently rank](https://nordics.info/show/artikel/open-government) among the least corrupt and most effective democracies in the world."
+    }
+   ]
+  },
+  {
+   "id": "5.2.4",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Offentlighetsprincipen keeps documents public by default 260 years on.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "This wasn't born from idealism. It was born from political conflict. The aristocratic \"Hats\" party had held power for decades, and the opposition \"Caps\" saw that accountability required visibility. Anders Chydenius, a Finnish-Swedish priest and politician, drove the legislation through parliament. The motivation was explicitly anti-corruption.\n\nTwo hundred and sixty years later, Sweden still operates under this principle. It's called *offentlighetsprincipen* - the principle of public access. Government documents are public by default. The country has not collapsed. Its government functions. In fact, Nordic countries [consistently rank](https://nordics.info/show/artikel/open-government) among the least corrupt and most effective democracies in the world."
+    }
+   ]
+  },
+  {
+   "id": "5.2.5",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Nordics consistently rank among least corrupt, most effective democracies.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "This wasn't born from idealism. It was born from political conflict. The aristocratic \"Hats\" party had held power for decades, and the opposition \"Caps\" saw that accountability required visibility. Anders Chydenius, a Finnish-Swedish priest and politician, drove the legislation through parliament. The motivation was explicitly anti-corruption.\n\nTwo hundred and sixty years later, Sweden still operates under this principle. It's called *offentlighetsprincipen* - the principle of public access. Government documents are public by default. The country has not collapsed. Its government functions. In fact, Nordic countries [consistently rank](https://nordics.info/show/artikel/open-government) among the least corrupt and most effective democracies in the world."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Seoul's 1999 OPEN system made bribery-prone permitting visible.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "### South Korea: Making Bribery Impossible (1999)\n\nIn 1999, Seoul launched the [OPEN system](https://seoulsolution.kr/en/content/e-government-seoul-opens-new-chapter-transparency-efficiency-and-public-participation) (Online Procedures Enhancement for civil applications). It tracks 70 municipal tasks most prone to corruption - construction permits, environmental regulation, urban planning - and shows citizens exactly who made what decision, at which point in the process, in real time."
+    }
+   ]
+  },
+  {
+   "id": "5.3.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "OPEN tracks 70 corruption-prone tasks, including construction, environmental, and urban planning permits, in real time.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "### South Korea: Making Bribery Impossible (1999)\n\nIn 1999, Seoul launched the [OPEN system](https://seoulsolution.kr/en/content/e-government-seoul-opens-new-chapter-transparency-efficiency-and-public-participation) (Online Procedures Enhancement for civil applications). It tracks 70 municipal tasks most prone to corruption - construction permits, environmental regulation, urban planning - and shows citizens exactly who made what decision, at which point in the process, in real time."
+    }
+   ]
+  },
+  {
+   "id": "5.3.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Citizens see exactly who decided what at each process point.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "### South Korea: Making Bribery Impossible (1999)\n\nIn 1999, Seoul launched the [OPEN system](https://seoulsolution.kr/en/content/e-government-seoul-opens-new-chapter-transparency-efficiency-and-public-participation) (Online Procedures Enhancement for civil applications). It tracks 70 municipal tasks most prone to corruption - construction permits, environmental regulation, urban planning - and shows citizens exactly who made what decision, at which point in the process, in real time."
+    }
+   ]
+  },
+  {
+   "id": "5.3.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Previously invisible processing let officials demand speed-up bribes unprovably.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Before OPEN, applicants for government permits couldn't see how their applications were processed. This opacity enabled bribery: officials could demand payments to \"move things along\" and nobody could prove it. Making the process visible eliminated that leverage entirely.\n\n[Research confirmed](https://www.sciencedirect.com/science/article/abs/pii/S0740624X08001172) what common sense suggests: \"corruption decreases as e-participation increases.\" The system was recognized by the UN, OECD, and World Bank."
+    }
+   ]
+  },
+  {
+   "id": "5.3.4",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Visibility eliminated that bribery leverage entirely.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Before OPEN, applicants for government permits couldn't see how their applications were processed. This opacity enabled bribery: officials could demand payments to \"move things along\" and nobody could prove it. Making the process visible eliminated that leverage entirely.\n\n[Research confirmed](https://www.sciencedirect.com/science/article/abs/pii/S0740624X08001172) what common sense suggests: \"corruption decreases as e-participation increases.\" The system was recognized by the UN, OECD, and World Bank."
+    }
+   ]
+  },
+  {
+   "id": "5.3.5",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Corruption decreases as e-participation increases; UN, OECD, World Bank recognized it.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Before OPEN, applicants for government permits couldn't see how their applications were processed. This opacity enabled bribery: officials could demand payments to \"move things along\" and nobody could prove it. Making the process visible eliminated that leverage entirely.\n\n[Research confirmed](https://www.sciencedirect.com/science/article/abs/pii/S0740624X08001172) what common sense suggests: \"corruption decreases as e-participation increases.\" The system was recognized by the UN, OECD, and World Bank."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Estonia's 2001 X-Road proves transparency infrastructure scales.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "### Estonia: The Infrastructure Proof (2001)\n\nIf your objection is \"this can't scale,\" look at [Estonia's X-Road](https://e-estonia.com/solutions/interoperability-services/x-road/). It's a distributed data exchange layer connecting 929+ institutions, 1,887 information systems, and 3,000+ digital services. Every transaction is timestamped and cryptographically signed. All data access is logged. Citizens can see who accessed their data and why.\n\nEstonia now ranks [2nd in the UN E-Government Development Index](https://frostandsullivaninstitute.org/why-estonia-is-europes-digital-powerhouse-a-study-in-e-governance-transformation/). The system has had no major security breaches in over 20 years, despite constant cyber attacks. It's open source (MIT license) and deployed in 20+ countries."
+    }
+   ]
+  },
+  {
+   "id": "5.4.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "X-Road links 929+ institutions, 1,887 systems, 3,000+ services, timestamped, signed, logged.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "### Estonia: The Infrastructure Proof (2001)\n\nIf your objection is \"this can't scale,\" look at [Estonia's X-Road](https://e-estonia.com/solutions/interoperability-services/x-road/). It's a distributed data exchange layer connecting 929+ institutions, 1,887 information systems, and 3,000+ digital services. Every transaction is timestamped and cryptographically signed. All data access is logged. Citizens can see who accessed their data and why.\n\nEstonia now ranks [2nd in the UN E-Government Development Index](https://frostandsullivaninstitute.org/why-estonia-is-europes-digital-powerhouse-a-study-in-e-governance-transformation/). The system has had no major security breaches in over 20 years, despite constant cyber attacks. It's open source (MIT license) and deployed in 20+ countries."
+    }
+   ]
+  },
+  {
+   "id": "5.4.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Citizens can see who accessed their data and why.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "### Estonia: The Infrastructure Proof (2001)\n\nIf your objection is \"this can't scale,\" look at [Estonia's X-Road](https://e-estonia.com/solutions/interoperability-services/x-road/). It's a distributed data exchange layer connecting 929+ institutions, 1,887 information systems, and 3,000+ digital services. Every transaction is timestamped and cryptographically signed. All data access is logged. Citizens can see who accessed their data and why.\n\nEstonia now ranks [2nd in the UN E-Government Development Index](https://frostandsullivaninstitute.org/why-estonia-is-europes-digital-powerhouse-a-study-in-e-governance-transformation/). The system has had no major security breaches in over 20 years, despite constant cyber attacks. It's open source (MIT license) and deployed in 20+ countries."
+    }
+   ]
+  },
+  {
+   "id": "5.4.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Estonia ranks 2nd on the UN E-Government Development Index.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "### Estonia: The Infrastructure Proof (2001)\n\nIf your objection is \"this can't scale,\" look at [Estonia's X-Road](https://e-estonia.com/solutions/interoperability-services/x-road/). It's a distributed data exchange layer connecting 929+ institutions, 1,887 information systems, and 3,000+ digital services. Every transaction is timestamped and cryptographically signed. All data access is logged. Citizens can see who accessed their data and why.\n\nEstonia now ranks [2nd in the UN E-Government Development Index](https://frostandsullivaninstitute.org/why-estonia-is-europes-digital-powerhouse-a-study-in-e-governance-transformation/). The system has had no major security breaches in over 20 years, despite constant cyber attacks. It's open source (MIT license) and deployed in 20+ countries."
+    }
+   ]
+  },
+  {
+   "id": "5.4.4",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "No major breaches in over 20 years despite constant cyber attacks.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "### Estonia: The Infrastructure Proof (2001)\n\nIf your objection is \"this can't scale,\" look at [Estonia's X-Road](https://e-estonia.com/solutions/interoperability-services/x-road/). It's a distributed data exchange layer connecting 929+ institutions, 1,887 information systems, and 3,000+ digital services. Every transaction is timestamped and cryptographically signed. All data access is logged. Citizens can see who accessed their data and why.\n\nEstonia now ranks [2nd in the UN E-Government Development Index](https://frostandsullivaninstitute.org/why-estonia-is-europes-digital-powerhouse-a-study-in-e-governance-transformation/). The system has had no major security breaches in over 20 years, despite constant cyber attacks. It's open source (MIT license) and deployed in 20+ countries."
+    }
+   ]
+  },
+  {
+   "id": "5.4.5",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "X-Road is MIT-licensed open source, deployed in 20+ countries.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "### Estonia: The Infrastructure Proof (2001)\n\nIf your objection is \"this can't scale,\" look at [Estonia's X-Road](https://e-estonia.com/solutions/interoperability-services/x-road/). It's a distributed data exchange layer connecting 929+ institutions, 1,887 information systems, and 3,000+ digital services. Every transaction is timestamped and cryptographically signed. All data access is logged. Citizens can see who accessed their data and why.\n\nEstonia now ranks [2nd in the UN E-Government Development Index](https://frostandsullivaninstitute.org/why-estonia-is-europes-digital-powerhouse-a-study-in-e-governance-transformation/). The system has had no major security breaches in over 20 years, despite constant cyber attacks. It's open source (MIT license) and deployed in 20+ countries."
+    }
+   ]
+  },
+  {
+   "id": "5.4.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "X-Road proves every-email-available infrastructure is technically feasible.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "X-Road proves the \"every email available up the chain\" infrastructure is technically feasible. The technology is not the bottleneck. The will is.\n\n### Brazil: Following the Money (2004)\n\nBrazil's [Transparency Portal](https://odimpact.org/case-brazils-open-budget-transparency-portal.html) publishes all federal spending: contracts, transfers, salaries, travel expenses, and government credit card transactions. It receives over [20 million accesses per year](https://oecd-opsi.org/innovations/brazilian-transparency-policy-and-the-transparency-portal/)."
+    }
+   ]
+  },
+  {
+   "id": "5.4.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The technology is feasible; the bottleneck is will.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "X-Road proves the \"every email available up the chain\" infrastructure is technically feasible. The technology is not the bottleneck. The will is.\n\n### Brazil: Following the Money (2004)\n\nBrazil's [Transparency Portal](https://odimpact.org/case-brazils-open-budget-transparency-portal.html) publishes all federal spending: contracts, transfers, salaries, travel expenses, and government credit card transactions. It receives over [20 million accesses per year](https://oecd-opsi.org/innovations/brazilian-transparency-policy-and-the-transparency-portal/)."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Brazil's 2004 Transparency Portal follows all federal money.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "X-Road proves the \"every email available up the chain\" infrastructure is technically feasible. The technology is not the bottleneck. The will is.\n\n### Brazil: Following the Money (2004)\n\nBrazil's [Transparency Portal](https://odimpact.org/case-brazils-open-budget-transparency-portal.html) publishes all federal spending: contracts, transfers, salaries, travel expenses, and government credit card transactions. It receives over [20 million accesses per year](https://oecd-opsi.org/innovations/brazilian-transparency-policy-and-the-transparency-portal/)."
+    }
+   ]
+  },
+  {
+   "id": "5.5.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "It publishes contracts, transfers, salaries, travel, and credit-card transactions.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "X-Road proves the \"every email available up the chain\" infrastructure is technically feasible. The technology is not the bottleneck. The will is.\n\n### Brazil: Following the Money (2004)\n\nBrazil's [Transparency Portal](https://odimpact.org/case-brazils-open-budget-transparency-portal.html) publishes all federal spending: contracts, transfers, salaries, travel expenses, and government credit card transactions. It receives over [20 million accesses per year](https://oecd-opsi.org/innovations/brazilian-transparency-policy-and-the-transparency-portal/)."
+    }
+   ]
+  },
+  {
+   "id": "5.5.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The portal receives over 20 million accesses per year.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "X-Road proves the \"every email available up the chain\" infrastructure is technically feasible. The technology is not the bottleneck. The will is.\n\n### Brazil: Following the Money (2004)\n\nBrazil's [Transparency Portal](https://odimpact.org/case-brazils-open-budget-transparency-portal.html) publishes all federal spending: contracts, transfers, salaries, travel expenses, and government credit card transactions. It receives over [20 million accesses per year](https://oecd-opsi.org/innovations/brazilian-transparency-policy-and-the-transparency-portal/)."
+    }
+   ]
+  },
+  {
+   "id": "5.5.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Transparency Card sent 20+ million notifications via 430,000+ active cards.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "More recently, the [Transparency Card](https://gijn.org/stories/60-gb-of-data-27-years-of-hidden-payments-how-brazils-journalists-used-foia-to-reveal-pension-payments/) sends real-time notifications to citizens about political spending - over 430,000 active cards, 20+ million notifications sent. When journalists used Brazil's Access to Information Law to investigate, they uncovered 60GB of hidden pension payment data going back 27 years.\n\nThis is what happens when you give citizens the tools to be CEOs: they find the fraud."
+    }
+   ]
+  },
+  {
+   "id": "5.5.4",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Journalists uncovered 60GB of hidden pension payments spanning 27 years.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "More recently, the [Transparency Card](https://gijn.org/stories/60-gb-of-data-27-years-of-hidden-payments-how-brazils-journalists-used-foia-to-reveal-pension-payments/) sends real-time notifications to citizens about political spending - over 430,000 active cards, 20+ million notifications sent. When journalists used Brazil's Access to Information Law to investigate, they uncovered 60GB of hidden pension payment data going back 27 years.\n\nThis is what happens when you give citizens the tools to be CEOs: they find the fraud."
+    }
+   ]
+  },
+  {
+   "id": "5.5.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Give citizens CEO tools and they find the fraud.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "More recently, the [Transparency Card](https://gijn.org/stories/60-gb-of-data-27-years-of-hidden-payments-how-brazils-journalists-used-foia-to-reveal-pension-payments/) sends real-time notifications to citizens about political spending - over 430,000 active cards, 20+ million notifications sent. When journalists used Brazil's Access to Information Law to investigate, they uncovered 60GB of hidden pension payment data going back 27 years.\n\nThis is what happens when you give citizens the tools to be CEOs: they find the fraud."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "New Zealand publishes cabinet papers by default since 2019.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "### New Zealand: Cabinet Papers by Default (2019)\n\nSince 2019, New Zealand has [proactively published](https://www.publicservice.govt.nz/guidance/official-information/proactive-release) all Cabinet papers and minutes online within 30 business days of decisions being made. This is significant because cabinet deliberations are typically the most protected category of government information anywhere in the world. New Zealand publishes them by [default](https://www.dpmc.govt.nz/publications/proactive-release-cabinet-material)."
+    }
+   ]
+  },
+  {
+   "id": "5.6.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "All papers and minutes appear online within 30 business days.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "### New Zealand: Cabinet Papers by Default (2019)\n\nSince 2019, New Zealand has [proactively published](https://www.publicservice.govt.nz/guidance/official-information/proactive-release) all Cabinet papers and minutes online within 30 business days of decisions being made. This is significant because cabinet deliberations are typically the most protected category of government information anywhere in the world. New Zealand publishes them by [default](https://www.dpmc.govt.nz/publications/proactive-release-cabinet-material)."
+    }
+   ]
+  },
+  {
+   "id": "5.6.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Cabinet deliberations are typically the world's most protected government information.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "### New Zealand: Cabinet Papers by Default (2019)\n\nSince 2019, New Zealand has [proactively published](https://www.publicservice.govt.nz/guidance/official-information/proactive-release) all Cabinet papers and minutes online within 30 business days of decisions being made. This is significant because cabinet deliberations are typically the most protected category of government information anywhere in the world. New Zealand publishes them by [default](https://www.dpmc.govt.nz/publications/proactive-release-cabinet-material)."
+    }
+   ]
+  },
+  {
+   "id": "5.6.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Government has not halted; ministers still deliberate; citizens see why.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "The government has not ground to a halt. Ministers have not stopped deliberating. What has changed is that citizens can see *why* their government made the decisions it made.\n\n### Taiwan: What Happens When Citizens Can See\n\nTaiwan's [vTaiwan platform](https://www.technologyreview.com/2018/08/21/240284/the-simple-but-ingenious-system-taiwan-uses-to-crowdsource-its-laws/) uses Pol.is to let citizens participate in policy deliberation. People submit statements on issues, others vote agree or disagree (no replies allowed - this prevents flame wars), and an algorithm [surfaces statements that find cross-group consensus](https://www.radicalxchange.org/updates/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf) rather than divisive ones."
+    }
+   ]
+  },
+  {
+   "id": "5.7",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Taiwan's vTaiwan crowdsources laws through consensus-finding deliberation.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "The government has not ground to a halt. Ministers have not stopped deliberating. What has changed is that citizens can see *why* their government made the decisions it made.\n\n### Taiwan: What Happens When Citizens Can See\n\nTaiwan's [vTaiwan platform](https://www.technologyreview.com/2018/08/21/240284/the-simple-but-ingenious-system-taiwan-uses-to-crowdsource-its-laws/) uses Pol.is to let citizens participate in policy deliberation. People submit statements on issues, others vote agree or disagree (no replies allowed - this prevents flame wars), and an algorithm [surfaces statements that find cross-group consensus](https://www.radicalxchange.org/updates/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf) rather than divisive ones."
+    }
+   ]
+  },
+  {
+   "id": "5.7.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Pol.is takes agree-disagree votes with no replies, surfacing cross-group consensus.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "The government has not ground to a halt. Ministers have not stopped deliberating. What has changed is that citizens can see *why* their government made the decisions it made.\n\n### Taiwan: What Happens When Citizens Can See\n\nTaiwan's [vTaiwan platform](https://www.technologyreview.com/2018/08/21/240284/the-simple-but-ingenious-system-taiwan-uses-to-crowdsource-its-laws/) uses Pol.is to let citizens participate in policy deliberation. People submit statements on issues, others vote agree or disagree (no replies allowed - this prevents flame wars), and an algorithm [surfaces statements that find cross-group consensus](https://www.radicalxchange.org/updates/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf) rather than divisive ones."
+    }
+   ]
+  },
+  {
+   "id": "5.7.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "By 2018, 26 issues processed; 80% led to government action.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "By 2018, 26 issues had been processed, and 80% led to government action. This isn't core transparency - it's what becomes possible *downstream* of transparency. When citizens can see decisions being made, they can meaningfully participate in making them.\n\n## When Secret Oversight Fails: The Pattern\n\nThis is not a one-time occurrence. There is a recurring pattern in which government programs, shielded by secrecy, are later revealed to be illegal or built on lies - and the internal oversight mechanisms that were supposed to catch them failed because they operated inside the same secrecy bubble."
+    }
+   ]
+  },
+  {
+   "id": "5.7.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Participation is downstream of transparency, not core transparency itself.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "By 2018, 26 issues had been processed, and 80% led to government action. This isn't core transparency - it's what becomes possible *downstream* of transparency. When citizens can see decisions being made, they can meaningfully participate in making them.\n\n## When Secret Oversight Fails: The Pattern\n\nThis is not a one-time occurrence. There is a recurring pattern in which government programs, shielded by secrecy, are later revealed to be illegal or built on lies - and the internal oversight mechanisms that were supposed to catch them failed because they operated inside the same secrecy bubble."
+    }
+   ]
+  }
+ ]
+}

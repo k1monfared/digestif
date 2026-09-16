@@ -1,0 +1,203 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "11_finding_a_phone",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "Central thesis: phones are tools, not status symbols. The author wants a device that fits his life, solves his problems, and respects his choices, rather than one that decides what is important for him or forces him to conform to its limitations.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L017",
+        "L035",
+        "L037"
+      ],
+      "evidence_quote": "Phones are tools, not status symbols; big brands serve profit, small ones serve needs.",
+      "reasoning": "L017 states the thesis verbatim in the title-like theme line, and cross-links L035/L037 reinforce the tools-not-status stance via the offline-hostility critique and walking away from the Pixel."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "His first cellphone was a Sony Ericsson J100, a no-frills device that was reliable, durable, and hardy.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L004"
+      ],
+      "evidence_quote": "The Sony Ericsson J100 was reliable, durable, and never failed.",
+      "reasoning": "L004 names the model and preserves reliable/durable attributes; 'never failed' covers hardy."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "After a period with no phone, he bought the Motorola Droid on day one. It was one of the first Android smartphones widely available in the U.S. and became a centerpiece of his life.",
+      "weight": "Nice to have",
+      "presence": "Partial",
+      "loglog_ids": [
+        "L003",
+        "L005"
+      ],
+      "evidence_quote": "day-one Motorola Droid ... The Motorola Droid quickly became the centerpiece of his life.",
+      "reasoning": "Day-one purchase and centerpiece role are captured, but the qualifier that it was one of the first Android smartphones widely available in the U.S. is dropped, narrowing the significance."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "He grew disillusioned with smartphones because notifications, endless customization, and attention-stealing apps made him feel like a consumer rather than a user, so he switched to a dial-pad phone.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L006",
+        "L007"
+      ],
+      "evidence_quote": "Smartphone disillusionment: attention traps made a consumer of him, so he retreated to dial-pad.",
+      "reasoning": "L006 preserves the consumer-vs-user contrast and the dial-pad retreat; L007 preserves the notification and attention-stealing app cause."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "He experimented with many device types (small and large screens, physical keyboards, stylus-equipped phones, smartwatches) but concluded these phones were not built for people like him, but to sell unwanted features, push ads, and lock users into ecosystems he avoided, shifting his focus to functionality over flashiness.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L008",
+        "L009"
+      ],
+      "evidence_quote": "Screens, keyboards, styluses, and watches all failed the same way. ... sold unneeded features, pushed unwanted ads, and forced avoided ecosystems.",
+      "reasoning": "L008 enumerates the device categories and L009 captures the sell-features, ads, and ecosystem-lock conclusion. The functionality-over-flashiness shift is carried by the thesis and requirement themes."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "His must-have phone features: long battery life, waterproofing and shockproofing, SD card slots and headphone jacks, decent mic and speaker quality, and customization options.",
+      "weight": "Must have",
+      "presence": "Partial",
+      "loglog_ids": [
+        "L011",
+        "L015"
+      ],
+      "evidence_quote": "Wanted week-long battery, waterproofing, SD slot, jack, decent mic, and customization.",
+      "reasoning": "Most requirements are captured, but the stated list drops shockproofing and speaker quality. Shockproofing reappears only as a Ulefone feature (L015), not as a stated requirement, so the enumerated must-have list is incomplete."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "He did not care about the best camera, AI photo enhancements (which he found unnecessary), or cloud storage, preferring offline independence.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L012",
+        "L001",
+        "L013"
+      ],
+      "evidence_quote": "Best camera, AI enhancements, and cloud storage were explicitly not wanted.",
+      "reasoning": "L012 preserves all three negations with the correct 'not wanted' force; offline independence is carried by L001 ('rugged offline phones') and L013."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "He criticizes Apple and Google for deliberately limiting offline use by removing SD card slots and offering minimal onboard storage to push cloud services.",
+      "weight": "Must have",
+      "presence": "Partial",
+      "loglog_ids": [
+        "L013"
+      ],
+      "evidence_quote": "Apple and Google deliberately limit offline use to push cloud services.",
+      "reasoning": "The accusation and intent (deliberate, to push cloud) are captured, but the specific mechanism that gives it substance, removing SD card slots and minimal onboard storage, is dropped, so the claim is narrowed."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "He discovered Ulefone, a small Chinese company specializing in rugged phones: waterproof, shockproof, dustproof, with dual SIM, SD card slots and headphone jacks, one model lasting an entire week on a charge, at roughly 1/10th the price of flagship devices.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L014",
+        "L015"
+      ],
+      "evidence_quote": "Ulefone rugged phones solved real problems at a tenth of flagship prices. ... Waterproof, shockproof, dustproof, dual SIM, SD, jack, and week-long battery.",
+      "reasoning": "L014 preserves the one-tenth price and rugged-phone identity; L015 preserves all listed features and the week-long battery."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "He has abused his Ulefones (dropped countless times, taken swimming); this summer he dived too deep into a lake and the phone started acting up but still works.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L016"
+      ],
+      "evidence_quote": "Survived drops and swimming; a deep lake dive only made it act up.",
+      "reasoning": "L016 preserves drops, swimming, the deep lake dive, and the acting-up-but-surviving outcome ('only made it act up')."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "Near Black Friday he was fooled by a network provider deal and ordered the latest Google Pixel, but grew anxious about a multi-year lock-in and the remaining payments while knowing the device would limit his choices; extra charges appeared and he declined them and returned to the market.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L018",
+        "L019"
+      ],
+      "evidence_quote": "A Black Friday Pixel deal triggered lock-in anxiety and collapsed on extra charges. ... He paid nothing, declined extra charges, and returned to the market.",
+      "reasoning": "L018 preserves Black Friday, Pixel, lock-in anxiety, and the extra-charge collapse; L019 preserves declining the charges and returning to the market."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "He asked OpenAI's O1 model for a list of phones from smaller companies meeting his desired features (5G, e-sim, SD card, good battery, waterproof, decent camera). The specs it gave were generally wrong but the model names were correct, so he found specs on gsmarena.com.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L020",
+        "L021",
+        "L022"
+      ],
+      "evidence_quote": "O1 model names were correct though its specs were generally wrong. ... get_phone_specs scrapes gsmarena links",
+      "reasoning": "L021 preserves the crucial asymmetry (model names right, specs wrong) and L020/L022 preserve the O1-assisted comparison and gsmarena spec sourcing. The prompt feature list is background already covered by K06/K14."
+    },
+    {
+      "point_id": "K13",
+      "point_text": "He used gpt-4o-mini to write Python scraping code and claude-3.5 sonnet (after several prompts) to clean the dataframe into the wanted columns; the result mostly works but he has not checked it and assumes several errors.",
+      "weight": "Nice to have",
+      "presence": "Partial",
+      "loglog_ids": [
+        "L022",
+        "L023",
+        "L024"
+      ],
+      "evidence_quote": "clean_phone_specs extracts brand, 5G, eSIM, battery, SD, cameras, and price. ... Unverified cleaning code is assumed faulty in places",
+      "reasoning": "The pipeline roles (scraping DataFrame/CSV, cleaning to wanted columns) and the unverified/assumed-faulty caveat are captured, but the specific model names gpt-4o-mini and claude-3.5 sonnet are dropped."
+    },
+    {
+      "point_id": "K14",
+      "point_text": "Filtering for 5G + eSIM + SD card slot left only the Fairphone 4 and Moto G Power (2024); their cameras are not great, screen sizes too big, and the Fairphone 4 seems too old (2021), so he may expand the search. He noticed the Motorola Edge 40 did not appear because it lacks an SD card slot.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L025",
+        "L026",
+        "L027"
+      ],
+      "evidence_quote": "Only Fairphone 4 and Moto G Power met 5G plus eSIM plus SD; search continues. ... Both have weak cameras and oversized screens; Fairphone 4 is 2021-old. ... The Edge 40 ... has no SD card slot.",
+      "reasoning": "L025-L027 preserve the shortlist, the weak cameras/oversized screens, the 2021 age of the Fairphone 4, the continuing search, and the Edge 40 exclusion due to missing SD slot. Only the '(2024)' year on the Moto G Power is dropped, immaterial to the point."
+    },
+    {
+      "point_id": "K15",
+      "point_text": "Update 2025-01-05: he tried the TCL 50 XE NXTPAPER for a couple of weeks. It was weak on performance, ran uncomfortably hot on a video call, and its screen was much worse, almost unreadable in direct or lamp light compared with regular screens; the camera was average; the paper and ink color modes were good ideas but poorly implemented with many restrictions, and it was not true e-ink as he had expected. He returned it and next plans to try the Motorola G85, having wanted the more waterproof IP68 G75 but being unable to find it in stores; the G85 is only water repellent and Motorola cameras are generally not expected to be good.",
+      "weight": "Must have",
+      "presence": "Partial",
+      "loglog_ids": [
+        "L029",
+        "L030",
+        "L031",
+        "L032"
+      ],
+      "evidence_quote": "TCL overheated on calls and its screen stayed unreadable in direct light. ... Paper and ink modes were poorly implemented with heavy restrictions. ... The IP68 G75 was unavailable, so the water-repellent G85 is the compromise.",
+      "reasoning": "Core verdicts are captured: heat on calls, unreadable screen in direct light, paper/ink modes poorly implemented with restrictions, return of the TCL, and the G85 as the water-repellent fallback after the IP68 G75 proved unavailable. Dropped details weaken it: the model name 'TCL 50 XE NXTPAPER', weak performance, average camera, the 'not true e-ink as expected' expectation, the video-call (vs call) qualifier, and the general warning that Motorola cameras are not good."
+    }
+  ],
+  "metrics": {
+    "total_points": 15,
+    "must_have_total": 11,
+    "must_have_present": 8,
+    "must_have_partial": 3,
+    "must_have_missing": 0,
+    "overall_present": 10,
+    "must_recall": 0.8636,
+    "overall_recall": 0.8333
+  },
+  "missing_list": []
+}

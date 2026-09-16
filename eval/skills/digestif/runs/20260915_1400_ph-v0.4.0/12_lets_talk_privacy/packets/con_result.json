@@ -1,0 +1,1022 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "LetsTalkPrivacy-point-graph",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Top-level summary carries the whole document thesis, not repeated elsewhere as one claim."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 1 thesis on provider access; not restated by a later single claim."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Author disclaimer; informational context, not a filler transition or restated header."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Core E2EE definition, stated once."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Caveated MITM point; contradiction-adjacent, kept visible and distinct."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specifies usual purpose; adds beyond C002."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concrete WhatsApp/Facebook metadata example, not repeated."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Narrows the question to practice and theory; distinct from C002."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "WhatsApp section conclusion, distinct from its supporting points."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Conditional claim about implementation, not duplicated."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Closed-source auditability causal point, unique."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Audit certainty-in-negative claim; distinct from section 8 audit points."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Dated 2021 policy fact, single mention."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "First preview of plaintext password failures; distinct framing from later examples."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "2.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Business-model inference, unique."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "2.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Backup capability as smoking gun, unique."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "2.7.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Cross-device history access detail, distinct from C016."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "2.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Lock-and-key definition; partially supported, kept visible."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "2.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Key creation/storage fact, unique."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "2.10"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Simple-implementation key isolation claim, unique."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "2.10.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Signal key-copy example, distinct from C020."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "2.11"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Causal key-access claim; canonical for its analogy."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "2.11.1"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C022",
+   "reasoning": "Billboard analogy restates C022 with no new proposition."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "2.12"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "WhatsApp server-storage documentation fact, unique."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "2.13"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "New-device key provisioning fact, distinct from C024."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "2.14"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Signal contrast and trusted-intermediary framing, unique."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "2.15"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Rogue-device possibility, canonical for the table row C088."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "2.15.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Safeguard dependence on server reporting, unique."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "2.15.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Hidden rogue device consequence, distinct from C028."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "2.16"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Sourced multi-device engineering post, unique."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Proton section lead and trust-shift conclusion, unique."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Key generation/encryption fact, unique."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "3.1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "bcrypt/AES-256 detail, distinct from C032."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds not-just-original-device insight beyond the section lead C031."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Pure signpost introducing the login sequence; no independent content."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bcrypt salt login step, unique."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Hashed password transmission step, unique."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Server returns encrypted key step, unique."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "3.3.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Local decryption step, unique."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "One-way hashing definition, unique."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Hash-verification claim, distinct from C039."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "3.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Two-way encryption definition, unique."
+  },
+  {
+   "claim_id": "C043",
+   "loglog_ids": [
+    "3.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Key encrypted with actual password, unique."
+  },
+  {
+   "claim_id": "C044",
+   "loglog_ids": [
+    "3.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Security-model synthesis, distinct from C041/C043."
+  },
+  {
+   "claim_id": "C045",
+   "loglog_ids": [
+    "3.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Malicious client-code vulnerability, unique."
+  },
+  {
+   "claim_id": "C046",
+   "loglog_ids": [
+    "3.9.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Password capture mechanism, distinct from C045."
+  },
+  {
+   "claim_id": "C047",
+   "loglog_ids": [
+    "3.10"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Capture-plus-stored-key causal chain, unique."
+  },
+  {
+   "claim_id": "C048",
+   "loglog_ids": [
+    "3.11"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Open-source client rationale, unique."
+  },
+  {
+   "claim_id": "C049",
+   "loglog_ids": [
+    "3.12"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Signpost to the trust list; supplies no facts itself."
+  },
+  {
+   "claim_id": "C050",
+   "loglog_ids": [
+    "3.12.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Served-code matches open source, unique."
+  },
+  {
+   "claim_id": "C051",
+   "loglog_ids": [
+    "3.12.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "No future compelled injection, distinct from later trust items."
+  },
+  {
+   "claim_id": "C052",
+   "loglog_ids": [
+    "3.12.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Infrastructure not compromised; canonical for C075."
+  },
+  {
+   "claim_id": "C053",
+   "loglog_ids": [
+    "3.13"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "No usable-key access contrast, unique."
+  },
+  {
+   "claim_id": "C054",
+   "loglog_ids": [
+    "3.14"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mechanism behind the Proton/WhatsApp difference, unique."
+  },
+  {
+   "claim_id": "C055",
+   "loglog_ids": [
+    "3.15"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Sourced zero-access documentation, unique."
+  },
+  {
+   "claim_id": "C056",
+   "loglog_ids": [
+    "4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Signal section lead on key non-custody, unique."
+  },
+  {
+   "claim_id": "C057",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Default storage/deletion fact, distinct from C056."
+  },
+  {
+   "claim_id": "C058",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States three options; numeric content, not trivia."
+  },
+  {
+   "claim_id": "C059",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Android backup option with 30-digit passphrase, unique."
+  },
+  {
+   "claim_id": "C060",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Device-to-device transfer option, unique."
+  },
+  {
+   "claim_id": "C061",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Secure Backup 64-character key fact, unique."
+  },
+  {
+   "claim_id": "C062",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Recovery key stays on device, distinct from C061."
+  },
+  {
+   "claim_id": "C063",
+   "loglog_ids": [
+    "4.6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "No-decrypt/no-recovery consequence, unique."
+  },
+  {
+   "claim_id": "C064",
+   "loglog_ids": [
+    "4.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Zero-knowledge conclusion beyond marketing, unique."
+  },
+  {
+   "claim_id": "C065",
+   "loglog_ids": [
+    "4.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Dated Secure Backup source, unique."
+  },
+  {
+   "claim_id": "C066",
+   "loglog_ids": [
+    "5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 5 lead on plaintext storage risk, unique."
+  },
+  {
+   "claim_id": "C067",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Password-plus-key decrypt chain, unique."
+  },
+  {
+   "claim_id": "C068",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Uncertainty conclusion, unique."
+  },
+  {
+   "claim_id": "C069",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Client verifiability claim; related to C092 but not restated verbatim."
+  },
+  {
+   "claim_id": "C070",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Server unverifiability claim; distinct from C096's audit caveat."
+  },
+  {
+   "claim_id": "C071",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Audit-era trust claim, introduces its own four-item list."
+  },
+  {
+   "claim_id": "C072",
+   "loglog_ids": [
+    "5.5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Audited code is running, distinct from C096."
+  },
+  {
+   "claim_id": "C073",
+   "loglog_ids": [
+    "5.5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "No change since audit, distinct from C097."
+  },
+  {
+   "claim_id": "C074",
+   "loglog_ids": [
+    "5.5.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "No rogue employee, distinct from C098's combined claim."
+  },
+  {
+   "claim_id": "C075",
+   "loglog_ids": [
+    "5.5.4"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C052",
+   "reasoning": "Infrastructure not breached restates item 3.12.3 with no new content."
+  },
+  {
+   "claim_id": "C076",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Lead-in to the examples; filler framing with no fact."
+  },
+  {
+   "claim_id": "C077",
+   "loglog_ids": [
+    "5.6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Facebook plaintext logging; canonical for the section 8 restatement."
+  },
+  {
+   "claim_id": "C078",
+   "loglog_ids": [
+    "5.6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adobe 2013 hint example; canonical for C103."
+  },
+  {
+   "claim_id": "C079",
+   "loglog_ids": [
+    "5.6.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Small-services weak hashing; canonical for C104."
+  },
+  {
+   "claim_id": "C080",
+   "loglog_ids": [
+    "5.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Proton reset-loses-data fact, unique."
+  },
+  {
+   "claim_id": "C081",
+   "loglog_ids": [
+    "5.7.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Inference from reset behavior, unique."
+  },
+  {
+   "claim_id": "C082",
+   "loglog_ids": [
+    "5.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counter-caveat that withholding is possible, unique."
+  },
+  {
+   "claim_id": "C083",
+   "loglog_ids": [
+    "6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 6 trust basis; canonical for the section 9 restatement."
+  },
+  {
+   "claim_id": "C084",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "WhatsApp infrastructure trust, unique."
+  },
+  {
+   "claim_id": "C085",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Proton malicious-code trust, unique."
+  },
+  {
+   "claim_id": "C086",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Signal smaller attack surface, unique."
+  },
+  {
+   "claim_id": "C087",
+   "loglog_ids": [
+    "7"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Restated header describing the comparison tables; no new claim."
+  },
+  {
+   "claim_id": "C088",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C027",
+   "reasoning": "Table row recaps the provider rogue-device point from 2.15."
+  },
+  {
+   "claim_id": "C089",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Server-storage comparison across services, unique summary content."
+  },
+  {
+   "claim_id": "C090",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Security-model naming, unique."
+  },
+  {
+   "claim_id": "C091",
+   "loglog_ids": [
+    "8"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Restated header for the verification theme; no independent claim."
+  },
+  {
+   "claim_id": "C092",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds client-only-proof caveat beyond C069."
+  },
+  {
+   "claim_id": "C093",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Wireshark traffic inspection method, unique."
+  },
+  {
+   "claim_id": "C094",
+   "loglog_ids": [
+    "8.2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "HTTPS post-decryption blind spot, unique."
+  },
+  {
+   "claim_id": "C095",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Audit trust caveats, unique."
+  },
+  {
+   "claim_id": "C096",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Unverifiable server code with auditor caveat, distinct."
+  },
+  {
+   "claim_id": "C097",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Later-update logging risk, unique."
+  },
+  {
+   "claim_id": "C098",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Employee or breach injection, combines distinct actors."
+  },
+  {
+   "claim_id": "C099",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Good-sign indicators, unique."
+  },
+  {
+   "claim_id": "C100",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bad-sign indicators, unique."
+  },
+  {
+   "claim_id": "C101",
+   "loglog_ids": [
+    "8.9"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C077",
+   "reasoning": "Facebook plaintext logging recap; only adds figures to the same fact."
+  },
+  {
+   "claim_id": "C102",
+   "loglog_ids": [
+    "8.9.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "2012 archive and unintentional claim, new detail beyond C101."
+  },
+  {
+   "claim_id": "C103",
+   "loglog_ids": [
+    "8.10"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C078",
+   "reasoning": "Adobe 2013 plaintext hints restated with brute-force note."
+  },
+  {
+   "claim_id": "C104",
+   "loglog_ids": [
+    "8.11"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C079",
+   "reasoning": "Small-services plaintext/MD5 restated with breach discovery."
+  },
+  {
+   "claim_id": "C105",
+   "loglog_ids": [
+    "8.12"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Frames the three-condition escape; content differs from C071."
+  },
+  {
+   "claim_id": "C106",
+   "loglog_ids": [
+    "8.12.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Client-side crypto condition, unique."
+  },
+  {
+   "claim_id": "C107",
+   "loglog_ids": [
+    "8.12.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Server-never-sees condition, unique."
+  },
+  {
+   "claim_id": "C108",
+   "loglog_ids": [
+    "8.12.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Reproducible open-source build condition, unique."
+  },
+  {
+   "claim_id": "C109",
+   "loglog_ids": [
+    "9"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C083",
+   "reasoning": "Bottom line restates the section 6 trust-basis claim nearly verbatim."
+  },
+  {
+   "claim_id": "C110",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Recommendation list for security-conscious users, unique."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 110,
+  "unique": 98,
+  "duplicates": 7,
+  "trivia": 5,
+  "redundancy_rate": 0.064,
+  "trivia_rate": 0.045,
+  "structured_tokens": 1900,
+  "tokens_per_unique_claim": 19.4
+ },
+ "prune_list": [
+  "C023 duplicates C022 (billboard analogy adds no proposition), safe to merge",
+  "C075 duplicates C052 (infrastructure-not-breached item repeated), safe to merge",
+  "C088 duplicates C027 (table row recaps rogue-device point), safe to merge",
+  "C101 duplicates C077 (Facebook plaintext logging restated), safe to merge",
+  "C103 duplicates C078 (Adobe 2013 hints restated), safe to merge",
+  "C104 duplicates C079 (small-services MD5 restated), safe to merge",
+  "C109 duplicates C083 (bottom line restates fundamental problem), safe to merge",
+  "C035 trivia (login-sequence signpost), cut",
+  "C049 trivia (you-must-trust signpost), cut",
+  "C076 trivia (lead-in to real-world examples), cut",
+  "C087 trivia (restated header for comparison tables), cut",
+  "C091 trivia (restated header for verification section), cut"
+ ]
+}

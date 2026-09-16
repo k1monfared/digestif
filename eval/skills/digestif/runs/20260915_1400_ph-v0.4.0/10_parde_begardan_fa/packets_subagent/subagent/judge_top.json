@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "10_parde_begardan_fa",
+  "inputs": {
+    "faithfulness_precision": 1.0,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.0,
+    "trivia_rate": 0.0
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4 * faithfulness_precision (1.0) + 0.4 * must_recall (1.0) - 0.2 * redundancy_rate (0.0) = 0.4 + 0.4 - 0.0 = 0.8",
+  "weighted_score": 0.8,
+  "verdict": "Pass",
+  "tradeoff_note": "Full fidelity and full Must-have recall came at zero measured redundancy, so no tradeoff was needed; the additional length buys the analogy halves, all numbers, and the dastgah chain without repeating any claim.",
+  "fix_list": [
+    "No required fixes: 42 of 42 claims Supported, 10 of 10 Must-have points Present, redundancy 0.0, and the v0.3.0 residual fault for this sample (فکر کنم dropped in the Theme 1 header) is repaired at L03 and still held at L04.",
+    "Optional polish, highest leverage first: node 5.1 (L26) drops اصلا نمیتونستم تصورش رو هم بکنم که اینقدر راحته; restoring it beside انگار خواب میدیدم would keep the surprise-at-ease nuance.",
+    "Optional polish: node 3.1 (L15) drops چون دیگه خودم میتونستم کوکش کنم; restoring the reason would make the tuner resolution self-contained.",
+    "Watch item, not scored: cross-link notes L32 (restates L08) and L34 (restates Theme 4 L20) repeat earlier propositions; harmless as graph edge metadata under the current claim-table convention, but they are the only near-duplicates a future review should tighten first."
+  ],
+  "reasoning": "Gate checks against config.json: critical_errors 0 <= critical_contradicted_max 0, pass. faithfulness_precision 1.0 >= faithfulness_precision_min 0.95, pass. must_recall 1.0 >= must_recall_min 0.9, pass. redundancy_rate 0.0 <= redundancy_max 0.15, pass. No hard fail. Negation and scope audit drove the Judge F pass on this negation-light but qualifier-heavy Farsi text: فقط موقع شام (L07), کار هرکسی نبود (L13), دیگه لازم نبود ساز را برای کوک به کلاس ببرم (L15), در آن واحد فقط یک دستگاه (L16), فقط اجازه یک بازی (L17), فقط وقتی مهمان (L12), فقط با چند کلیک (L22), نه محدودیت دیاتونیک را (L32 note). No polarity was flipped or dropped. Numbers verified exact: age ۷, شیش ماه twice with the two intervals kept distinct (L08 nagging, L10 class start), ۲۰هزار to ۱۸هزار (L10), ۷۲ سیم (L13), ربع یا نیم پرده (L21), کسری از ثانیه (L21), دو سالی (L23). Names and entities verified: زرد ملیجه, خاله, اداره ارشاد, تیونر, چنگ, لنگرود, لنگفورد, اصفهان/سهگاه/نوا/شور/همایون in source order, خانواده/دوستان/مسئولین/ائمه. Hedges survived in both header and sub-point: فکر کنم (L03 and L04), احتمالا (L07), حداقل اینطور در ذهنم مانده (L11). The one reviewed compression, Theme 2's first-person خریدم for برام ... خریدن, was judged Supported because the header is a first-person memoir synthesis, node 1.5 keeps the correct third-person agency, and 2.1 keeps the figures; this matches the v0.3.0 judge's treatment of the same construction. Coverage: 12 key points built blind, 10 Must-have and 2 Nice-to-have, all Present; must_recall = 10/10 = 1.0, overall_recall = 12/12 = 1.0. The K10 cluster keeps the full dastgah chain and the dream simile (the compressed couldn't-imagine clause is noted as polish, not a recall loss); K05 keeps the 72-string negation and the tuner resolution. Concision: 42 scored claims, all Unique, no duplicates and no trivia; theme nodes were pair-checked against their children and each adds a synthesis the child does not state, so the v0.3.0 duplicates (Theme 2 restating the bigger-than-self image, the merged trip timing at 5.3) are both gone. Cross-link note lines and the title/Cross-links/Coverage furniture are excluded from the claim table as graph edge metadata and document furniture, consistent with the run convention; their content was still audited and the L32/L34 note restatements are logged in the fix list as a watch item. Borderline test: no Partial and no Unverifiable claim exists anywhere in the table, so the trigger cannot fire; the only exclusion-adjacent items are optional polish. Verdict Pass, weighted_score 0.8."
+}

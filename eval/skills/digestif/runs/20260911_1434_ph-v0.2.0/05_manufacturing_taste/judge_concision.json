@@ -1,0 +1,484 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "05_manufacturing_taste",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "L002"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Headline thesis summary; no earlier claim exists, carries core finding."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "L003"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Framing question on lost composers; distinct setup claim."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "L004"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Historical numbers and IMSLP count; numbers never trivia."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "L005"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Methodological premise that history cannot rerun; distinct."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "L006"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Announces three competing stories; structural setup adding count."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "L007"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Story 1 hypothesis stated once; distinct competing account."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "L008"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Story 2 hypothesis; distinct mechanism account."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "L009"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Story 3 hypothesis; canonical statement later recapped by verdict."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "L010"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Job-market analogy adds external illustration, not pure repeat."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "L011"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Names three documented mechanisms; structural setup claim."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "L012"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Mere exposure evidence with effect size r equals 0.26."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "L013"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Nuance on exposure contaminating judgment; distinct point."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "L014"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "MusicLab evidence, same song 1st or 40th; distinct."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "L015"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Merton cumulative advantage evidence; distinct."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "L016"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Genuine open research question motivating the simulation."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "L017"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Simulation design actors; distinct from mechanisms."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "L018"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "States quality-capital independence; distinct premise."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "L019"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Operationalizes model mechanics; adds capital-buys-exposure structure."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "L020"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Simulation scale numbers; numbers never trivia."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "L021"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Results section thesis; distinct from setup."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "L022"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Significance result p below 0.0001; numbers never trivia."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "L023"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Proxy complaint; canonical, later restated by C039."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "L024"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Fixed-talent 200-run result; distinct manipulation."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "L025"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Counterfactual distance and fame-chance numbers; distinct."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "L026"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Haydn patronage counterfactual; canonical for C048."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "L027"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ablation numbers; numbers never trivia."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "L028"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "44 percent quality-link result; distinct numbers."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "L029"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Modern gatekeeping observation; distinct from Vienna results."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "L030"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Stylized Vienna simulation numbers; distinct from historical numbers."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "L031"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Winners excellent versus equal losers; distinct verdict component."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "L032"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Losers not meaningfully worse; distinct conclusion."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "L033"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Robustness sensitivity numbers; numbers never trivia."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "L034"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Playlist reach prediction; distinct from robustness metric."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "L035"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C008",
+      "reasoning": "Verdict restates Story 3 mechanism already in C008; only wins is new."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "L036"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Pure filler transition announcing below; no informational content."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "L037"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bach greatest among survivors; distinct nuance."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "L038"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Speed contrast, hours versus decades; distinct."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "L039"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Blind audition numbers 5 to 25 percent; numbers never trivia."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "L040"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C022",
+      "reasoning": "Restates popularity-proxy point already made by C022 per cross-link."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "L041"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Generic restated header; adds no specifics beyond section title."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "L042"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Caveat on social constitution of quality; distinct."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "L043"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Calibration caveat contrasting teens and aristocrats; distinct."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "L044"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Omitted-factors caveat; distinct limitations claim."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "L045"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bach/Bieber framing claim; distinct setup."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "L046"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bieber analogy nuance about quality floor; distinct."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "L047"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Positioning beats merit gap; distinct application claim."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "L048"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Surgeon illustration; adds concrete example."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "L049"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C025",
+      "reasoning": "Restates single-post-decides-fame pattern already in C025 per cross-link."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "L050"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canon contingency claim; distinct from metric confusion."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "L051"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Survivors set judging standards; distinct claim."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "L052"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Future canon prediction; distinct forward claim."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 51,
+    "unique": 46,
+    "duplicates": 3,
+    "trivia": 2,
+    "redundancy_rate": 0.0588,
+    "trivia_rate": 0.0392,
+    "structured_tokens": 581,
+    "tokens_per_unique_claim": 12.63
+  },
+  "prune_list": [
+    "C034 duplicates C008, verdict recaps Story 3 mechanism, safe to merge",
+    "C039 duplicates C022, cross-link already flags the restatement",
+    "C048 duplicates C025, cross-link already flags the restatement",
+    "C035 trivia filler transition, safe to drop",
+    "C040 trivia generic header, collapse into section title"
+  ]
+}

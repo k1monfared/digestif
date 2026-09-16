@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "07_intentionalism",
+  "inputs": {
+    "faithfulness_precision": 1.0,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.0224,
+    "trivia_rate": 0.0
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4 * faithfulness_precision (1.0) + 0.4 * must_recall (1.0) - 0.2 * redundancy_rate (0.0224) = 0.4 + 0.4 - 0.00448 = 0.79552, reported 0.7955",
+  "weighted_score": 0.7955,
+  "verdict": "Pass",
+  "tradeoff_note": "Full faithfulness and full Must-have coverage with only three redundant restatements keeps length fully justified; the 134-node expansion over v0.3.0 costs one fifth of a redundancy point and no accuracy.",
+  "fix_list": [
+    "C27 (node 4.3) duplicates theme 4 word for word: fold node 4.3 into theme 4, highest-leverage redundancy fix.",
+    "C81 (node 9.10) duplicates C48 (node 6.7): keep the 6.7 phrasing (smarter/luckier detail) and drop the special-version restatement.",
+    "C67 (node 8.9) restates C11 (node 2.2): merge the not-exact-algorithm caveat into one node, keeping the 'enough' approximator.",
+    "No faithfulness or coverage fixes needed; 5.2 and 9.1 are parallel drills from distinct source passages and should stay separate."
+  ],
+  "reasoning": "Gate checks against config.json: critical_errors 0 <= critical_contradicted_max 0, pass. faithfulness_precision 1.0 >= 0.95, pass. must_recall 1.0 >= 0.9, pass. redundancy_rate 0.0224 <= 0.15, pass. All 134 atomized node claims are Supported; numbers and dates (1962, $100/one day, 3-5 features, 4-of-5 criteria, 3-5 values, 10 seconds, 30 days, 30 minutes) match the source exactly, and every negation and hedge checked (not terrible outcomes, does not screw you badly enough, never practiced, not smarter or luckier, not special, most, tend to, even roughly, should appear) keeps its polarity and strength. Coverage: 14 Must-have points all Present, including the exact-algorithm caveat, the good-enough stability mechanism, and the appendix numeric drills, so must_recall = 14/14 = 1.0 and overall_recall = 15/15 = 1.0. Concision: three duplicates (C27, C67, C81) out of 134 scored claims give 0.0224, well inside the gate; no trivia. Borderline was considered and rejected: no Partial or Unverifiable Judge F claim exists and no coverage point is Partial or Missing, so there is nothing touching a Must-have point to flag. Verdict is Pass; fix list is redundancy-only and ordered by leverage."
+}

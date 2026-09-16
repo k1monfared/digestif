@@ -4,7 +4,7 @@ description: Extract a rooted, fully cited idea graph from any text. The graph.j
 allowed-tools: Read, Write, Edit, Bash
 argument-hint: [path-to-text or pasted text]
 tags: [analysis, loglog, knowledge-graph]
-version: 0.4.0
+version: 0.4.1
 ---
 
 # Digestif
@@ -107,6 +107,8 @@ Find recurrences and circles. Merge repeats into the strongest node plus `restat
 ## Distillation loop
 
 The first assembly is rarely clean. Iterate on `graph.json`: split fused nodes, merge repeats, re-parent misplacements, sharpen the summary, add missing cross edges. After every round run `validate` and `stats`. Watch `tree ratio` (share of edges that are structural), `hub nodes` (the load-bearing ideas), and `cyclic cross-edges`. Stop when validation is clean, coverage is full, and the stats are stable across a round.
+
+Shape matters as much as content. After distillation, no node except the root should carry more than eight direct children, and the root carries three to nine main points. When a node collects more than eight details, do not leave them as a flat list: introduce one or more intermediate claim nodes that summarize a group of details, so the tree grows deeper instead of wider. Depth should mirror the text, a main point with sub-arguments gets sub-claims, a sub-claim with evidence gets an evidence layer. A graph that is three levels deep with dozens of siblings under every main point has failed the distillation, even when every citation is correct.
 
 ## Verification
 

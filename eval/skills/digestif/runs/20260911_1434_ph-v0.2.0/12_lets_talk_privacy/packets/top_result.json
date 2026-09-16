@@ -1,0 +1,29 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "unknown",
+ "inputs": {
+  "faithfulness_precision": 0.9697,
+  "critical_errors": 0,
+  "must_recall": 0.8333,
+  "overall_recall": 0.8333,
+  "redundancy_rate": 0.1212,
+  "trivia_rate": 0.0303
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score equals 0.4 times faithfulness_precision plus 0.4 times must_recall minus 0.2 times redundancy_rate = 0.4*0.9697 + 0.4*0.8333 - 0.2*0.1212 = 0.38788 + 0.33332 - 0.02424 = 0.69696 (reported for audit only, non-decisive because a hard gate is missed)",
+ "weighted_score": 0.697,
+ "verdict": "Fail",
+ "tradeoff_note": "The binding constraint is coverage, not concision: four Must have points (K03, K04, K07, K11) are only Partial because key numbers and framing were dropped, so must_recall 0.8333 falls below the 0.9 gate. Concision is healthy at 0.1212 under the 0.15 max, but concision never rescues a coverage fail.",
+ "fix_list": [
+  "Restore the dropped specifics in the four Partial Must have points to lift must_recall above 0.9: add AES-256 to K07 (L010/L011), add the 30-digit passphrase and 64-character recovery key to K11 (L016/L017), add the 2021 date to K04 (L005/L021), and restore K03's original unanswered framing ('the answer is unclear' and cannot prove a negative) instead of the hardened 'likely accesses' verdict (L005/L028).",
+  "Merge duplicates to free length budget while keeping redundancy under 0.15: C024 into C001, C025 into C018, C029 into C020, C031 into C001, and cut trivia C033 (meta sources line).",
+  "Soften C030 'reproducible audited builds' to 'reproducibly built and verifiable' to clear the sole Partially supported Minor claim and keep faithfulness_precision above the 0.95 gate."
+ ],
+ "reasoning": "Gate checks in policy order. (1) critical_errors = 0, so the Critical hard gate passes; no Critical contradicted claim appears in the faithfulness input, and the only non-supported claim C030 is Minor/Partially supported, not Critical. (2) must_recall = 0.8333 versus config must_recall_min = 0.9: 0.8333 < 0.9, so the Must have recall hard gate FAILS. This is driven by coverage showing must_have_present = 8 of 12 with 4 Partial and 0 Missing; the four Partial Must haves K03, K04, K07, K11 each lose recall credit for dropped content (K03 hardening of an open question, K04 missing the 2021 date, K07 missing AES-256, K11 missing the 30-digit passphrase and 64-character recovery key). (3) faithfulness_precision = 0.9697 versus min 0.95: passes, with margin from 32 supported of 33 claims and one Minor partial C030 that slightly alters the third trust-minimizing condition ('audited' vs 'reproducibly built and verifiable'). (4) redundancy_rate = 0.1212 versus redundancy_max 0.15: passes, leaving only ~0.029 of headroom, so restoring the missing Must have detail must be paid for by merging the four duplicate claims C024/C025/C029/C031 and cutting trivia C033. Because the must_recall hard gate is missed, the weighted score (0.697) is informational only and cannot change the outcome; concision at 0.1212 is a pass but is explicitly barred from rescuing a coverage fail. Borderline is not available because the numbers do not meet gates, and the failure is a genuine recall shortfall rather than a benign pass with a flagged Partial. Verdict: Fail on the must_recall gate."
+}

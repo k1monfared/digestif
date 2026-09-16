@@ -1,0 +1,47 @@
+L001: - On Intentionalism: propose, don't just receive (source: 07_intentionalism/source.txt)
+L002:     Summary: Life systematically favors proposers over receivers, so build intention by proposing. (¶1, ¶25)
+L003:         - 1 Better outcomes come from whether one proposes or receives, not talent or luck. (¶1)
+L004:         - 2 Evidence: In 1962 Gale and Shapley sought pairings no unmatched pair would break. (¶2)
+L005:             - 2.1 Deferred acceptance gives each proposer their best stable partner, each receiver their worst. (¶3)
+L006:             - 2.2 Nuance: The gap is systematically, provably, mathematically extreme, not slight. (¶3)
+L007:         - 3 Real situations skip the exact algorithm but share the propose-respond structure. (¶4)
+L008:             - 3.1 Example: Netflix, phones, jobs, friendships: pre-decided pursuit versus presented selection. (¶5)
+L009:             - 3.2 For most of these, most of us are receivers choosing from presentations. (¶6)
+L010:         - 4 Receivers get acceptable, good-enough outcomes, never terrible ones. (¶7)
+L011:             - 4.1 Nuance: Decent differs from best-serving; structure favors proposers without conspiracy. (¶8)
+L012:             - 4.2 Fine feelings block revolt-driving dissatisfaction; quiet under-service stays stable. (¶9)
+L013:         - 5 Intention is needed to propose, yet intention develops only through proposing. (¶10)
+L014:             - 5.1 Nuance: Receiver choices reveal the least-disliked option, never freely pursued desire. (¶10)
+L015:             - 5.2 Example: Algorithmic songs and swiped partners leave wants as reactions to offerings. (¶11)
+L016:         - 6 The intention muscle builds progressively; no jump from Netflix to life vision. (¶12)
+L017:             - 6.1 Evidence: Tonight: name the hour's want (laugh, learn, calm, challenge), then seek it. (¶13)
+L018:             - 6.2 Patterns become preferences, preferences values; values are practiced into, not thought into. (¶14)
+L019:         - 7 Major decisions usually evaluate presented options; receiving feels like agency. (¶15)
+L020:             - 7.1 Proposers of work, partners, and cities win systematically from structural position. (¶16)
+L021:             - 7.2 Platforms take optimal outcomes (attention, data, money); users keep good-enough engagement. (¶17)
+L022:             - 7.3 Nuance: Staying wins because leaving feels harder; stability is resistance to change. (¶18)
+L023:         - 8 Understanding changes nothing; one must actually switch positions against designed defaults. (¶19)
+L024:             - 8.1 Evidence: Propose: decide before seeing options, pursue specifics, create openings, accept friction. (¶20)
+L025:             - 8.2 Ask what one wants before every major decision and most minor ones, then act. (¶20)
+L026:             - 8.3 Concession: Most will refuse: effortful, comfortable, and forgetful of what to propose. (¶21)
+L027:             - 8.4 The dynamic is confirmed; the open question is whether the reader acts. (¶22)
+L028:         - 9 Start tomorrow morning small, practice a week, then scale to big decisions. (¶23, ¶24, ¶25)
+L029:             - 9.1 Evidence: Morning: decide the first hour's want before the phone, then pursue it. (¶23)
+L030:             - 9.2 Evidence: Log small satisfactions a week, then decide work, love, and problems first. (¶24)
+L031:             - 9.3 Muscle enables intentions, intentions values; proposers win from the other side. (¶25)
+L032:             - 9.4 Example: Entertainment drill: three weeks of naming, seeking, and protecting intention with timers. (¶26)
+L033:             - 9.5 Example: Shopping drill: exact problem, 3-5 must-haves, 24-hour rule over $100. (¶27)
+L034:             - 9.6 Example: Jobs drill: two-week energy map, five non-negotiables, apply only at 4-of-5 matches. (¶28)
+L035:             - 9.7 Example: Relationships drill: specific intention plus 3-5 must-align values, seek and filter. (¶29)
+L036:             - 9.8 Example: Micro-practices: 5-minute morning trio, 5-minute review, 10-second pause. (¶30)
+L037:             - 9.9 Example: Three-column journal for 30 days: situation, mode, outcome; start small. (¶31)
+L038:     - Cross-links
+L039:         - 2.1 supports 1 (¶3) note: math result grounds the hook
+L040:         - 3.1 exemplifies 3 (¶5) note: four questions illustrate receiver life
+L041:         - 4.2 qualifies 4 (¶9) note: stability trap scopes the decent-outcomes claim
+L042:         - 6.1 restates 9.4 (¶26) note: appendix entertainment repeats the tonight exercise
+L043:         - 6.2 supports 5 (¶14) note: practice chain answers the chicken-egg trap
+L044:         - 7.2 supports 7.1 (¶17) note: platform extraction evidences proposer advantage
+L045:         - 8.2 qualifies 8 (¶20) note: every-major/most-minor scope limits the prescription
+L046:         - 9.2 exemplifies 9 (¶24) note: week-then-scale illustrates progressive practice
+L047:     - Coverage: 31 of 31 passages cited

@@ -1,0 +1,356 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "02_case_for_transparent_government",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Citizens are the CEO principals of government, so every decision should be public by default.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "every government decision should be fully documented and publicly available ... They are your employees.",
+   "reasoning": "Source names citizens principals/employees and demands every decision be publicly available; 'by default' appears elsewhere in source."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "A manager hiding million-dollar reasoning would be fired, yet governments do it routinely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You'd take them to court. You'd force disclosure. You'd fire them.",
+   "reasoning": "Source gives the firing response to the manager and frames government secrecy as normalized, supporting 'routinely'."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Taxpayers fund decisions, live consequences, and inherit results, but accept secrecy.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You fund it with your taxes. You live with the consequences ... Your children inherit ... You accept this.",
+   "reasoning": "Every element listed maps directly to the source's sequence of clauses."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Every government decision needs a full public chain from data to course-correction plans.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "every government decision should be fully documented and publicly available ... the entire chain",
+   "reasoning": "Source states the proposition in the same scope, end to end."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "The chain covers data, people, alternatives, arguments, implementation, evaluation, and reconsideration.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "What data was used ... Who was involved ... What alternatives were considered ... How it will be evaluated",
+   "reasoning": "The enumerated categories faithfully summarize the source bullet chain."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "This is basic board-level accountability; only normalized opacity makes it sound radical.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's basic accountability. The only thing that makes it sound radical is that we've normalized the opposite.",
+   "reasoning": "Near-verbatim restatement of the source's two claims."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "In a democracy citizens are principals and every official is their employee-agent.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You are the principal in a principal-agent relationship. Every public servant ... is an agent ... They are your employees.",
+   "reasoning": "Direct match to the principal-agent framing."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "CEOs need not read every email, but reviewability shapes behavior and enables tracebacks.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The CEO doesn't read every email. But they *could*. And that knowledge ... shapes behavior.",
+   "reasoning": "Both the non-reading and the behavior/trace effects are stated in source."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "A company with classified emails would die of unseen corruption; governments operate that way.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "That company would be bankrupt within a year ... That's how your government operates.",
+   "reasoning": "Source states the bankruptcy consequence and then asserts governments operate this way."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Availability matters, not consumption: CEOs value the traceable record, not reading everything.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The distinction between \"availability\" and \"consumption\" is crucial here.",
+   "reasoning": "Source explicitly foregrounds availability over consumption and the ability to trace."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Transparency means government visible to citizens, never citizens exposed to each other.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is NOT about ... Citizens surveilling each other. ... flow *to* citizens. Not the other way around.",
+   "reasoning": "The definition and its directional restriction are stated directly."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Aggregate fiscal reporting shows spending fully without exposing any citizen's payments.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "complete government spending transparency without exposing a single citizen's personal financial data",
+   "reasoning": "Source asserts the same compatibility of full spending transparency and citizen privacy."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Anonymization and differential privacy make the separation technically straightforward.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "aggregate data, anonymization, differential privacy - make this technically straightforward",
+   "reasoning": "Direct restatement of the source's privacy-preserving claim."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Pieces of the system already exist worldwide and prove that transparency works.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "several have gone far enough to prove it works",
+   "reasoning": "Source states both the existence of pieces and the proof claim."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Sweden's 1766 press act made documents public by default; Nordics rank least corrupt.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In 1766, Sweden passed the Freedom of the Press Act ... Government documents are public by default. ... Nordic countries [consistently rank] among the least corrupt",
+   "reasoning": "Date, public-by-default principle, and Nordic corruption ranking all match."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "5.1.1"
+   ],
+   "claim_text": "UNESCO, GWU, and Britannica document the 1766 act, the Hats-Caps conflict, and Chydenius.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "UNESCO recognition of the 1766 act ... George Washington University archive ... role of Anders Chydenius",
+   "reasoning": "All three appendix sources and their described contents match."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "5.1.2"
+   ],
+   "claim_text": "Nordics.info, Nordicom, and Finland's ministry compare five countries' access rules.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "comparing right-of-access rules across five Nordic countries",
+   "reasoning": "Appendix lists these sources, with Nordicom covering the five-country comparison."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5.1.3"
+   ],
+   "claim_text": "Born of Hats-Caps conflict, Chydenius drove it as anti-corruption, not idealism.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This wasn't born from idealism ... Anders Chydenius ... drove the legislation ... The motivation was explicitly anti-corruption.",
+   "reasoning": "Source states the non-idealist origin and anti-corruption motive directly."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Seoul's 1999 OPEN tracked 70 corruption-prone tasks live, removing bribery leverage.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In 1999, Seoul launched the OPEN system ... tracks 70 municipal tasks ... in real time ... eliminated that leverage entirely.",
+   "reasoning": "Year, count of 70, real-time feature, and eliminated leverage all match."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.2.1"
+   ],
+   "claim_text": "Seoul, ScienceDirect, and NZ sources cover OPEN, its study, and cabinet release rules.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "documents how OPEN system launched ... confirms corruption decreases with e-participation ... details 30 business day requirement",
+   "reasoning": "Appendix sources and their subject matter match the summary."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Estonia's X-Road links thousands of services with signed, logged, breach-free exchange.",
+   "claim_type": "fact",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "no major security breaches in over 20 years",
+   "reasoning": "Source says no major breaches; 'breach-free' drops the qualifier 'major', overstating the claim."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "claim_text": "e-Estonia, Wikipedia, and Frost document X-Road's design, leak motive, and rankings climb.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "1996 data leak that motivated distributed design ... rise from 16th to 2nd in UN E-Government Development Index",
+   "reasoning": "Appendix sources and the described design, leak, and ranking details all match."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Brazil's portal draws 20 million yearly visits; journalists surfaced 27 hidden pension years.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "over 20 million accesses per year ... hidden pension payment data going back 27 years",
+   "reasoning": "Both numbers and the journalist investigation match the source."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "claim_text": "Impact, OECD, and GIJN cases cover the portal's data, visits, and hidden pensions.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "aunched in 2004 by CGU; details five data categories ... accessed 20+ million times yearly ... 60GB of hidden pension payment data",
+   "reasoning": "Appendix case studies and their contents match the summary."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "New Zealand publishes cabinet papers by default within 30 days without halting government.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "New Zealand publishes cabinet papers within 30 days. Their government hasn't ground to a halt.",
+   "reasoning": "Source uses both '30 business days' and 'within 30 days', and states no halt; claim is faithful."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "Taiwan's vTaiwan processed 26 issues with 80 percent leading to government action.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "By 2018, 26 issues had been processed, and 80% led to government action.",
+   "reasoning": "Count and percentage match exactly."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "5.6.1"
+   ],
+   "claim_text": "Tech Review, RadicalxChange, and Iceland analyses cover vTaiwan wins and constitutional failure.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "why parliament rejected the crowdsourced draft despite referendum approval ... crowdsource policy",
+   "reasoning": "Appendix sources and the described Taiwan and Iceland content match."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "5.7"
+   ],
+   "claim_text": "Given CEO tools, citizens find the fraud.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "when you give citizens the tools to be CEOs: they find the fraud",
+   "reasoning": "Near-verbatim restatement of the source sentence."
+  }
+ ],
+ "metrics": {
+  "total_claims": 28,
+  "supported": 27,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.964
+ },
+ "fail_list": [
+  "C21 with reason: 'breach-free' drops the source's 'major' qualifier, overstating no breaches"
+ ]
+}

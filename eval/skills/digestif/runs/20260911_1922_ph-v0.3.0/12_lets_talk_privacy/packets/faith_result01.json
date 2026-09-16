@@ -1,0 +1,440 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "12_lets_talk_privacy part 1 of 1",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Encrypted chats still trust providers; only client-held keys minimize that trust.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "With Signal using recovery keys, the attack surface is much smaller",
+   "reasoning": "Source ranks Signal's client-controlled keys as smaller attack surface but never asserts exclusivity of 'only client-held keys', so scope is overstated."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "E2EE means device-to-device secrecy, but users need provider exclusion, not just transit safety.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\"",
+   "reasoning": "Source defines device-to-device encryption and states the real goal is excluding the provider, matching the claim."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Non-expert end-user inquiry from a conversation with Omid.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This came out of a conversation with Omid. DISCLAIMER: I'm not a security expert",
+   "reasoning": "Source explicitly frames the piece as an end-user attempt from an Omid conversation by a non-expert."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "Metadata (network, frequency, volume, timing) still aids interpretation.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they know your network, the frequency and amount of communication, times of communication etc",
+   "reasoning": "Source lists exactly network, frequency, amount, and timing as interpretable metadata."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "If claims hold with no backdoors, Meta cannot read; closed source blocks certainty.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if they haven't implemented other backdoors that they have kept secret, then yes, they \"can't\" access that data. But we won't really know because the app is not open source",
+   "reasoning": "Source states conditional inaccessibility plus closed-source blocking negative certainty, matching the claim."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "Business model, 2021 ad-sharing policy, and 2019 plaintext failure imply near-certain access.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you can almost be certain that they can, and they do access them",
+   "reasoning": "Source cites business model, 2021 policy, and plaintext failures to conclude near-certain access."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Smoking gun: history on a new device with no manual key transfer.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a smoking gun is whether the platform/app is able to \"backup\" your data",
+   "reasoning": "Source names cross-device access without manual linking as the smoking gun criterion."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Locker plus receiver-only master key; server key touch equals public billboard copy.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if at any time, Facebook has access to it, it is as if you've locked your door and left a copy at the local farmers market billboard",
+   "reasoning": "Source's key analogy and billboard comparison are faithfully restated."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "WhatsApp server stores encrypted history and hands keys to devices it authenticates.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the server authenticates it and provides it with the keys needed to decrypt your message history",
+   "reasoning": "Matches source description of server-stored history and key provisioning to authenticated devices."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Device lists and codes rely on honest reporting; a rogue device could hide.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they could simply hide a rogue device from your device list entirely",
+   "reasoning": "Source states safeguards depend on honest server reporting and a rogue device could be hidden."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Proton generates the private key in-browser, wrapping it with bcrypt and AES-256.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "your private key is generated in your browser, then encrypted with your password using bcrypt and AES-256",
+   "reasoning": "Exact match on in-browser generation and bcrypt/AES-256 encryption."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Six-step login: type, bcrypt with server salt, authenticate, fetch key, decrypt locally, read.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Your browser hashes the password using bcrypt (with a salt provided by Proton's server)",
+   "reasoning": "All six source steps are preserved in order with correct actions."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Hashing authenticates one-way; encryption protects two-way under the actual password.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Your private key is encrypted with your actual password (not the hash)",
+   "reasoning": "Source's one-way hashing versus two-way encryption distinction and actual-password wrapping are preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "In theory the seen hash cannot decrypt the password-wrapped key.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they can't use that hash to decrypt your encrypted private key",
+   "reasoning": "Directly matches source's theoretical statement about the hash not decrypting the key."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Malicious client code could capture the typed password before hashing.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "captures your actual password when you type it - before it gets hashed",
+   "reasoning": "Source states the identical residual risk of malicious client code capturing the pre-hash password."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Trust needs matching code, no compelled injection, uncompromised infrastructure.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They won't be compelled to inject malicious code in the future",
+   "reasoning": "All three trust conditions mirror the source bullet list exactly."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Proton must steal the password first; WhatsApp grants keys directly.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "WhatsApp's architecture doesn't even require that step; the server can directly grant key access",
+   "reasoning": "Source contrasts Proton's need to compromise the client with WhatsApp's direct key grant."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Signal: 30-digit passphrase file, device-to-device transfer, or unseen 64-character key.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a 64-character recovery key that Signal never sees or has access to",
+   "reasoning": "All three Signal options and the exact 30-digit and 64-character figures match."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Android backup needs physical transfer; direct transfer needs both devices present.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Both devices must be physically present",
+   "reasoning": "Source states physical transfer for backups and both devices present for direct transfer."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Zero-knowledge: no decryption, no recovery help after a lost key.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they cannot help you recover them if you lose your recovery key. This is genuinely zero-knowledge architecture",
+   "reasoning": "Source states Signal cannot decrypt backups or help recover after key loss, calling it zero-knowledge."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Plaintext password storage cannot be ruled out with certainty.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "we don't know for certain",
+   "reasoning": "Source's short answer is explicitly that certainty about plaintext storage is unavailable."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Open clients prove sending behavior, never the server's later handling.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you can confirm that passwords are hashed before transmission. But you cannot verify what happens on the server",
+   "reasoning": "Matches source's distinction between verifiable client behavior and unverifiable server handling."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Facebook logged hundreds of millions plaintext for years; Adobe leaked hints; MD5 persists.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "logging hundreds of millions of passwords in plaintext in internal logs for years",
+   "reasoning": "All three source precedents, including unsalted MD5 at smaller services, are accurately summarized."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Proton reset destroys old mail, suggesting genuine inability, but proves nothing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you lose access to all your old encrypted emails. This suggests they genuinely can't decrypt your data",
+   "reasoning": "Source notes reset loses old mail, suggests genuine inability, and explicitly denies it is proof."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Trust rests on reputation, jurisdiction, model, behavior, not verifiable guarantees.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "trusting the company's reputation, jurisdiction, business model, and past behavior rather than having cryptographically verifiable guarantees",
+   "reasoning": "Direct paraphrase preserving all listed trust factors and the guarantee contrast."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Escrow (WhatsApp) versus password-wrapped (Proton) versus client-controlled (Signal).",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Server-mediated key escrow",
+   "reasoning": "Matches the table's three security model names for the three services."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Rogue device: YES for WhatsApp; NO for Proton and Signal (client caveat).",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "NO - but they could serve malicious client code to capture your password",
+   "reasoning": "Table's YES for WhatsApp and NO for Proton/Signal, including the Proton client caveat, are preserved."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Checkable: open clients, Wireshark traffic, audits of deployed code.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Tools like Wireshark can show what's transmitted",
+   "reasoning": "All three verifiable checks match source's open clients, network inspection, and audits."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Uncheckable: running code, later updates, rogue staff, breaches.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "an employee with server access could modify it, or someone who breaches their systems could inject logging",
+   "reasoning": "Matches source's unverifiable items: running code, later changes, rogue employees, breaches."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Good: open servers, audits, clean breaches; bad: reset-proof data, obscurity, violations.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Can reset password and access old data",
+   "reasoning": "Good and bad signs map to source lists, with 'reset-proof data' reflecting the reset-access sign."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Facebook 2019: 200-600 million passwords, 20,000+ searchers, archives from 2012.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "between 200-600 million passwords in plaintext",
+   "reasoning": "The range, 20,000 employees, and 2012 archive date all match the source exactly."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "Trust ends only with client-side crypto, zero-knowledge servers, verifiable builds.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "All cryptography happens client-side",
+   "reasoning": "Source's three 'unless' conditions of client-side crypto, non-decryptable server, and reproducible builds are preserved."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "WhatsApp needs whole-infrastructure trust; Proton hashing honesty; Signal key custody.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Meta's entire server infrastructure",
+   "reasoning": "The applied trust table entries for all three services are accurately condensed."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "Prefer client-side encryption, open source, decentralization, hardware keys like YubiKey.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "hardware security keys (like YubiKey) that never expose the secret",
+   "reasoning": "All four bottom-line preferences match the source recommendation."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Sources: Meta 2021 engineering, Proton key docs, Signal September 2024 backups.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Introducing Signal Secure Backups ... (Signal Blog, September 2024)",
+   "reasoning": "Source list cites Meta's July 2021 engineering post, Proton key docs, and Signal September 2024 backups."
+  }
+ ],
+ "metrics": {
+  "total_claims": 35,
+  "supported": 34,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.971
+ },
+ "fail_list": [
+  "C01 Partially supported: 'only client-held keys minimize that trust' adds exclusivity the source does not state, which merely ranks Signal's attack surface as smaller"
+ ]
+}

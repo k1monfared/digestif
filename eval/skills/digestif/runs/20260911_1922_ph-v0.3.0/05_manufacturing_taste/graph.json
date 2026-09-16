@@ -1,0 +1,667 @@
+{
+ "meta": {
+  "passages": {
+   "¶1": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time. Are we just listening to the most \"popular\" artists of the 1700s and calling it high culture? And the flip side: will people 300 years from now be listening to Bieber and think that was the best we had to offer? He strongly disagreed, but the question stuck with me.",
+   "¶10": "Mere exposure: Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\").",
+   "¶11": "What this means for canons: artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better. The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money.",
+   "¶12": "Social influence: the Salganik MusicLab experiment (2006) created an online music market where 14,341 participants could listen to 48 unknown songs. Some saw download counts; others didn't. The same song could rank 1st in one version of the world and 40th in another, purely from random early differences.",
+   "¶13": "Cumulative advantage: the rich get richer. Merton called this the Matthew Effect. Small initial differences get magnified into enormous gaps. A composer who secures a court position at age 20 accumulates decades of performances that one who missed that appointment by one year never builds.",
+   "¶14": "The model has three agent types: producers, consumers, gatekeepers. Each producer gets a quality score drawn randomly and a capital score drawn independently. Quality and capital are uncorrelated. Being wealthy doesn't make you talented.",
+   "¶15": "Each run takes about two minutes with 1,000 producers and 10,000 consumers; the author parallelized across CPU cores and ran 360+ per condition for the main experiments, with formal power analysis.",
+   "¶16": "When simulated listeners can see what others consume, the quality-success correlation drops significantly (p < 0.0001 across 360 runs per condition). Every Top 40 chart, Customers Also Bought widget, and view count pushes us away from independent judgment; we optimize for the proxy, then forget it was a proxy.",
+   "¶17": "Replay experiment: talent held constant, only resources reshuffled, 200 runs. Counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canon every time and 1 means completely different canons. Almost entirely different canons from just reshuffling money.",
+   "¶18": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about 1 in 4. For the 50th to 90th percentile, the solidly good but not transcendent, canonical status was effectively a lottery.",
+   "¶19": "Four conditions: full model quality-canon correlation 0.32; no social influence 0.35; equal capital 0.46; quality only 0.46. Turning off social influence barely helps, but equalizing starting resources jumps the correlation by 44%. Capital gates access to the exposure pipeline.",
+   "¶2": "In 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time. Across Europe, IMSLP catalogs over 3,400 composers whose work survived, and many more left no trace. We remember fewer than 20. Were they the best, or the ones with the right patron, court position, and access?",
+   "¶20": "Stylized 18th-century Vienna: 300 composers, a handful of wealthy patrons, strong word-of-mouth, no recording. Counterfactual distance 0.97; only 2.5% of canonical composers shared between any two alternate histories. The losers weren't meaningfully worse.",
+   "¶21": "Varying every parameter by ±50%: the most important factor is how steeply money converts into attention. A major label buying front-page placement reaching 50 million listeners versus an independent reaching 500 is an extremely steep capital-to-exposure curve, where quality has little to do with fame.",
+   "¶22": "Story 3 wins: quality is a loose filter with a floor and a ceiling. Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved. The mechanisms are stronger today, not weaker: patronage played out over decades, playlist placement plays out in hours.",
+   "¶23": "The highest-leverage intervention is wider exposure, not better judgment. Blind auditions in the 1970s-80s moved women hires by major US orchestras from 5% to 25%. We use 'survived into the canon' as a proxy for 'was the best,' then forget it was ever a proxy.",
+   "¶24": "Caveats: the model assumes quality is a real, stable property, which is philosophically debatable. Calibration comes from Salganik's study of American teenagers evaluating pop songs over weeks, generalized to 18th-century aristocrats over decades. The model excludes genre formation, critical discourse, technological change, cultural politics.",
+   "¶25": "Bach wasn't just popular: he was excellent AND well-positioned. The surgeon analogy: one of fifty equally skilled surgeons becomes 'the best' via a profile, talks, and a book deal. There were probably 20 to 50 equally great contemporaries whose names we will never know because they didn't get the Leipzig job.",
+   "¶26": "One canon out of hundreds of equally valid ones is treated as inevitable; our taste was manufactured along with it. The author honestly doesn't know whether Bieber will survive 300 years. But if the mechanisms in this simulation are right, survivors will owe more to distribution deals and algorithms than to best music.",
+   "¶3": "We can't rewind history and run it again with different initial conditions. If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name? We cannot answer empirically. But we can build a model of cultural markets and run that thousands of times.",
+   "¶4": "The author built a simulation to find out, with code and a full technical paper linked; the post is the less formal version.",
+   "¶5": "Story 1, The Cream Rises: the works we remember are the best works, period. Money might help early, but over long horizons quality wins. Replayed history with different patrons would end with roughly the same canon.",
+   "¶6": "Story 2, Money Writes History: success is mostly about who gets heard first. A wealthy patron gets performances; familiarity gets retroactively interpreted as quality; institutions lock it in. Quality is almost irrelevant.",
+   "¶7": "Story 3, Floors and Ceilings: both partly right. The truly terrible never succeed; the truly transcendent sometimes break through. For the vast middle, the very good but not once-in-a-generation, fame depends on luck, money, timing.",
+   "¶8": "Job-market analogy: the very best and worst candidates are easy to rank, but among twenty 'pretty good' candidates, hiring comes down to connections, luck, or pile order. The canon is the same problem at civilizational scale.",
+   "¶9": "The model incorporates three phenomena individually well-documented in psychology and economics, whose combined effect on cultural canons hasn't been quantified."
+  },
+  "source": "05_manufacturing_taste/source.txt",
+  "title": "Manufacturing Taste: canons made by patronage and luck"
+ },
+ "nodes": [
+  {
+   "attribution": "author",
+   "id": "0",
+   "source": [
+    "¶2",
+    "¶17",
+    "¶22"
+   ],
+   "text": "Cultural canons are manufactured by money and luck amplifying exposure, with quality only a loose filter.",
+   "type": "summary"
+  },
+  {
+   "attribution": "author",
+   "id": "1",
+   "source": [
+    "¶2"
+   ],
+   "text": "We remember fewer than 20 of 200 to 500 Viennese contemporaries and 3,400 catalogued composers.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "1.1",
+   "source": [
+    "¶2"
+   ],
+   "text": "The question is patronage and access, not only merit.",
+   "type": "nuance"
+  },
+  {
+   "attribution": "author",
+   "id": "1.2",
+   "source": [
+    "¶3"
+   ],
+   "text": "History cannot rerun, but a model of cultural markets can run thousands of times.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "1.3",
+   "source": [
+    "¶1"
+   ],
+   "text": "Opening question: was Bach his era's Bieber, and will Bieber be our era's Bach?",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "2",
+   "source": [
+    "¶5",
+    "¶6",
+    "¶7"
+   ],
+   "text": "Three hypotheses compete: cream rises, money writes, floors and ceilings.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "2.1",
+   "source": [
+    "¶5"
+   ],
+   "text": "Cream Rises: over long horizons quality wins; replayed history keeps roughly the same canon.",
+   "type": "claim"
+  },
+  {
+   "attribution": "reported",
+   "id": "2.2",
+   "source": [
+    "¶6"
+   ],
+   "text": "Money Writes History: who gets heard first wins; quality is almost irrelevant.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "2.3",
+   "source": [
+    "¶7"
+   ],
+   "text": "Floors and Ceilings: extremes are predictable, but the vast middle depends on luck and money.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "2.4",
+   "source": [
+    "¶8"
+   ],
+   "text": "Job analogy: among twenty pretty-good candidates, hiring turns on luck and timing.",
+   "type": "example"
+  },
+  {
+   "attribution": "author",
+   "id": "3",
+   "source": [
+    "¶9"
+   ],
+   "text": "Three documented mechanisms combine: mere exposure, social influence, cumulative advantage.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "3.1",
+   "source": [
+    "¶10"
+   ],
+   "text": "Mere exposure (Zajonc 1968; Bornstein 1989, 208 experiments, r = 0.26) peaks then reverses.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "3.2",
+   "source": [
+    "¶11"
+   ],
+   "text": "Extra airtime creates artificial quality advantage; money-driven exposure contaminates judging.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "3.3",
+   "source": [
+    "¶12"
+   ],
+   "text": "Salganik MusicLab (2006): 14,341 listeners, 48 songs; same song ranked 1st or 40th.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "3.4",
+   "source": [
+    "¶13"
+   ],
+   "text": "Matthew effect magnifies small differences; court at 20 beats missing by one year.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "4",
+   "source": [
+    "¶14"
+   ],
+   "text": "Producers get uncorrelated quality and capital; consumers add exposure and social signals; success feeds back.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "4.1",
+   "source": [
+    "¶15"
+   ],
+   "text": "Runs of 1,000 producers and 10,000 consumers, about 2 minutes each, 360+ per condition.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "4.2",
+   "source": [
+    "¶4"
+   ],
+   "text": "Author built a simulation; formal paper linked, post is the informal version.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "5",
+   "source": [
+    "¶16",
+    "¶17",
+    "¶19",
+    "¶20"
+   ],
+   "text": "Results: influence weakens quality link; canons reshuffle; capital dominates.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "5.1",
+   "source": [
+    "¶16"
+   ],
+   "text": "With social influence visible, quality-success correlation drops (p < 0.0001, 360 runs).",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "5.1.1",
+   "source": [
+    "¶16"
+   ],
+   "text": "Charts and view counts push away from independent judgment via proxy optimization.",
+   "type": "nuance"
+  },
+  {
+   "attribution": "author",
+   "id": "5.2",
+   "source": [
+    "¶17"
+   ],
+   "text": "Talent constant over 200 runs; reshuffled resources yield counterfactual distance 0.88 of 1.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "5.3",
+   "source": [
+    "¶18"
+   ],
+   "text": "Only top 10% have a shot regardless of funding, even then only about 1 in 4; 50th to 90th faces lottery.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "5.4",
+   "source": [
+    "¶19"
+   ],
+   "text": "Full model 0.32; no social influence 0.35; equal capital 0.46; quality only 0.46: equalizing adds 44%.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "5.5",
+   "source": [
+    "¶20"
+   ],
+   "text": "Stylized 1750 Vienna, 300 composers: distance 0.97, only 2.5 percent shared between histories.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "5.6",
+   "source": [
+    "¶21"
+   ],
+   "text": "Varying parameters ±50%: steep money-to-attention conversion sidelines quality.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "5.6.1",
+   "source": [
+    "¶21"
+   ],
+   "text": "Major-label placement reaching 50 million versus independent self-promotion reaching 500.",
+   "type": "example"
+  },
+  {
+   "attribution": "author",
+   "id": "6",
+   "source": [
+    "¶22"
+   ],
+   "text": "Quality sets a floor and a ceiling; the middle is capital and luck.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "6.1",
+   "source": [
+    "¶22"
+   ],
+   "text": "Bach may be greatest only among those resourced to be heard, published, preserved.",
+   "type": "nuance"
+  },
+  {
+   "attribution": "author",
+   "id": "6.2",
+   "source": [
+    "¶22"
+   ],
+   "text": "Mechanisms run stronger today: patronage took decades, playlist placement takes hours.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "6.3",
+   "source": [
+    "¶23"
+   ],
+   "text": "Leverage is wider exposure; 1970s-80s blind auditions lifted women hires from 5% to 25%.",
+   "type": "evidence"
+  },
+  {
+   "attribution": "author",
+   "id": "6.4",
+   "source": [
+    "¶23"
+   ],
+   "text": "Canon survival proxies bestness; curricula get built on the forgotten proxy.",
+   "type": "nuance"
+  },
+  {
+   "attribution": "author",
+   "id": "7",
+   "source": [
+    "¶24"
+   ],
+   "text": "Quality as stable property is debatable; calibration leaps decades; genre and politics excluded.",
+   "type": "counterpoint"
+  },
+  {
+   "attribution": "author",
+   "id": "8",
+   "source": [
+    "¶25"
+   ],
+   "text": "Bach was excellent AND positioned; reshuffled patronage yields an almost entirely different canon.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "8.1",
+   "source": [
+    "¶25"
+   ],
+   "text": "Surgeon analogy: one of fifty equally skilled becomes the best via profile, talks, book.",
+   "type": "example"
+  },
+  {
+   "attribution": "author",
+   "id": "8.2",
+   "source": [
+    "¶25"
+   ],
+   "text": "Probably 20 to 50 equally great contemporaries stay unknown for missing the Leipzig-type job.",
+   "type": "claim"
+  },
+  {
+   "attribution": "author",
+   "id": "8.3",
+   "source": [
+    "¶26"
+   ],
+   "text": "If the mechanisms in this simulation are right, future canons track distribution and algorithms.",
+   "type": "nuance"
+  },
+  {
+   "attribution": "author",
+   "id": "8.4",
+   "source": [
+    "¶26"
+   ],
+   "text": "Taste itself was manufactured: surviving canon sets what counts as beautiful.",
+   "type": "claim"
+  },
+  {
+   "attribution": "conceded",
+   "id": "8.5",
+   "source": [
+    "¶26"
+   ],
+   "text": "Author honestly does not know whether Bieber survives 300 years hence.",
+   "type": "concession"
+  }
+ ],
+ "edges": [
+  {
+   "from": "0",
+   "to": "1",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "2",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "3",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "4",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "5",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "6",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "7",
+   "type": "contains"
+  },
+  {
+   "from": "0",
+   "to": "8",
+   "type": "contains"
+  },
+  {
+   "from": "1",
+   "to": "1.1",
+   "type": "contains"
+  },
+  {
+   "from": "1",
+   "to": "1.2",
+   "type": "contains"
+  },
+  {
+   "from": "1",
+   "to": "1.3",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.1",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.2",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.3",
+   "type": "contains"
+  },
+  {
+   "from": "2",
+   "to": "2.4",
+   "type": "contains"
+  },
+  {
+   "from": "3",
+   "to": "3.1",
+   "type": "contains"
+  },
+  {
+   "from": "3",
+   "to": "3.2",
+   "type": "contains"
+  },
+  {
+   "from": "3",
+   "to": "3.3",
+   "type": "contains"
+  },
+  {
+   "from": "3",
+   "to": "3.4",
+   "type": "contains"
+  },
+  {
+   "from": "4",
+   "to": "4.1",
+   "type": "contains"
+  },
+  {
+   "from": "4",
+   "to": "4.2",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.1",
+   "type": "contains"
+  },
+  {
+   "from": "5.1",
+   "to": "5.1.1",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.2",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.3",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.4",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.5",
+   "type": "contains"
+  },
+  {
+   "from": "5",
+   "to": "5.6",
+   "type": "contains"
+  },
+  {
+   "from": "5.6",
+   "to": "5.6.1",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.1",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.2",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.3",
+   "type": "contains"
+  },
+  {
+   "from": "6",
+   "to": "6.4",
+   "type": "contains"
+  },
+  {
+   "from": "7",
+   "to": "8",
+   "type": "qualifies",
+   "source": [
+    "¶24"
+   ],
+   "note": "caveats also scope the final verdict"
+  },
+  {
+   "from": "8",
+   "to": "8.1",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.2",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.3",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.4",
+   "type": "contains"
+  },
+  {
+   "from": "8",
+   "to": "8.5",
+   "type": "contains"
+  },
+  {
+   "from": "5.2",
+   "to": "8",
+   "type": "supports",
+   "source": [
+    "¶17"
+   ],
+   "note": "replay result underpins the verdict on patronage"
+  },
+  {
+   "from": "5.5",
+   "to": "8",
+   "type": "supports",
+   "source": [
+    "¶20"
+   ],
+   "note": "Vienna run supports the Leipzig counterfactual"
+  },
+  {
+   "from": "5.4",
+   "to": "6",
+   "type": "supports",
+   "source": [
+    "¶19"
+   ],
+   "note": "capital-equalization numbers support Story 3"
+  },
+  {
+   "from": "2.4",
+   "to": "2.3",
+   "type": "exemplifies",
+   "source": [
+    "¶8"
+   ],
+   "note": "job market illustrates floors-and-ceilings"
+  },
+  {
+   "from": "3.3",
+   "to": "5.1",
+   "type": "supports",
+   "source": [
+    "¶12"
+   ],
+   "note": "MusicLab mechanism underpins the influence result"
+  },
+  {
+   "from": "5.6.1",
+   "to": "5.6",
+   "type": "exemplifies",
+   "source": [
+    "¶21"
+   ],
+   "note": "playlist reach gap illustrates steep conversion"
+  },
+  {
+   "from": "7",
+   "to": "6",
+   "type": "qualifies",
+   "source": [
+    "¶24"
+   ],
+   "note": "caveats limit the implications"
+  },
+  {
+   "from": "8.3",
+   "to": "8",
+   "type": "qualifies",
+   "source": [
+    "¶26"
+   ],
+   "note": "conditional scopes the verdict on future canons"
+  }
+ ]
+}

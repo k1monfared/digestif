@@ -1,0 +1,155 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "opencode deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "empathy-vs-sympathy-vs-compassion-feature-matrix",
+ "phase": "1_blind_checklist",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central purpose: a feature matrix comparing four components (cognitive empathy, affective empathy, sympathy, compassion) against five whole-person profiles (psychopath, sociopath, empath, altruist, integrated ideal), the profiles arranged darkest to lightest.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "This is the piece's organizing thesis; without it the table has no frame."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "Rows are ordered by the two dark profiles' contrast and split into four blocks separated by blank dividers: present in both, psychopath only, sociopath only, and neither.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "The block structure is the interpretive key to reading which traits distinguish the two dark profiles."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Sympathy gets a partial (~) on modeling the other's mind because you can pity someone while badly misreading them; accurate understanding helps sympathy but is not constitutive of it, unlike cognitive empathy.",
+   "weight": "Nice to have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Explains one specific cell; useful context but not load-bearing for the whole argument."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Affective empathy gets a partial (~) on capacity to care because emotional contagion can occur involuntarily without real concern, e.g., catching someone's anxiety and wanting to get away from them.",
+   "weight": "Nice to have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Clarifies one cell with an example; adds understanding but not essential to the thesis."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "The manipulators/con-artist row is the sharpest diagnostic for the cognitive/affective split and is essentially the psychopath's signature: cognitive empathy alone is compatible with cruelty, since a con artist models minds precisely without resonating with or caring about them.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "This is the core claim that cognitive empathy is separable from caring, and it anchors the psychopath column."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "The sustainable-and-scalable row reflects the Bloom/Singer argument (Paul Bloom's Against Empathy and Tania Singer's compassion-training research); it is a position, not a consensus, and critics reply that compassion without empathic grounding risks becoming abstract or paternalistic.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Names the literature, flags it as contested, and states the counterargument; dropping the caveat would misrepresent the claim as settled."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Boundary maintenance is the structural difference between affective empathy and everything else: affective empathy means partially merging with the other's state, which drives both its motivational power and its burnout and bias problems.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Explains the mechanism tying together several rows and the empath's failure modes."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Reading the two dark profiles as columns: the psychopath is close to the cognitive-empathy column standing alone (accurate modeling with affective and caring machinery deleted), while the sociopath is close to affective empathy and sympathy clamped to a narrow in-group and stripped of regulation; the psychopath's one distinguishing possession is cold instrumental control, while a whole cluster of affective and caring rows belongs to the sociopath and not the psychopath.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "The central analytical payoff of the matrix's row-group design."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Etiology is deliberately excluded as a row: psychopathy is often theorized as innate/temperamental and sociopathy as environmentally acquired, but that concerns causes rather than the shape of the response, so it does not belong in a feature table and would muddy the logic.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "States and justifies a deliberate scope decision that a reader must know to interpret the table correctly."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Clinical caveat: 'psychopath' and 'sociopath' are not formal diagnoses; both fall under Antisocial Personality Disorder, and the split between them is a contested, largely theoretical convention. Treat the two columns as ideal types, not categories.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "A limiting qualifier that prevents the table from being read as clinical taxonomy."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Terminology caveat: usage varies across the literature, some authors use 'empathic concern' roughly where this table uses 'compassion', and pop-psych usage (e.g., Brené Brown) treats 'sympathy' as inherently distancing; this table uses the more neutral research sense.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Defines the table's word choices against competing conventions; without it terms are ambiguous."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "The empath column is the affective column maxed out and unregulated, which is why it lights up emotion-sharing, contagion, and vividness bias while failing on boundary, scope, and scalability; it is the opposite of the psychopath's coldness but inherits the sociopath's distortions, so it is not the moral ideal.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Explains a non-obvious profile and corrects the naive assumption that the empath is the ideal."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "The altruist column is the compassion column embodied and matches the research 'Light Triad' (Kantianism, Humanism, and Faith in Humanity, from Kaufman et al., 2019).",
+   "weight": "Nice to have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Names a source and label; helpful context but secondary to the core comparison."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "The integrated ideal is the only column that scores well across every block, including the 'present in neither' rows, so it is the true opposite of both dark profiles at once.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Identifies the table's implied normative endpoint and why it is unique."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "The three Light Triad rows partly restate earlier rows: Kantianism is essentially the inverse of the manipulators row, Humanism overlaps the caring and beyond-the-in-group rows, and only Faith in Humanity adds a genuinely new dimension (an attitude rather than an empathy component), which is why both dark profiles score blank on it.",
+   "weight": "Must have",
+   "presence": "",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Flags redundancy in the table and justifies the one novel row; a reader needs this to avoid double-counting traits."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 11,
+  "must_have_present": 0,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 0,
+  "must_recall": 0.0,
+  "overall_recall": 0.0
+ },
+ "missing_list": []
+}

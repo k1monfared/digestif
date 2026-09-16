@@ -1,0 +1,30 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "unspecified",
+ "inputs": {
+  "faithfulness_precision": 0.9925,
+  "critical_errors": 0,
+  "must_recall": 1.0,
+  "overall_recall": 1.0,
+  "redundancy_rate": 0.0821,
+  "trivia_rate": 0.0299
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score equals 0.4 times faithfulness plus 0.4 times must recall minus 0.2 times redundancy = 0.4*0.9925 + 0.4*1.0 - 0.2*0.0821 = 0.397 + 0.400 - 0.01642 = 0.78058",
+ "weighted_score": 0.78058,
+ "verdict": "Borderline",
+ "tradeoff_note": "All hard gates pass and the weighted score is healthy (0.781), with must-have recall full at 1.0 and redundancy well under the 0.15 cap, so no coverage-for-length tradeoff is needed; the only drag is the single partially supported interpretation C131, which warrants human review rather than a fail.",
+ "fix_list": [
+  "Re-tense C131 (loglog 10.6.4) to match the source's predictive framing: change 'proposer entries show higher satisfaction' to 'the source predicts proposer entries will show higher satisfaction after 30 days', since the quote is 'you'll see ... will show'.",
+  "Merge the 11 listed duplicates, starting with the verbatim trap restatements: C027 into C024 and C030 into C023, then C042/C047/C055/C066/C072/C080/C081/C133/C134.",
+  "Cut agenda-header restatements C082, C083, C111, C119, which only restate their children and add no unique claim.",
+  "Trim trivia (4 items, trivia_rate 0.0299) to push redundancy closer to zero and raise weighted score toward 0.8."
+ ],
+ "reasoning": "Gate check 1, hard fails: faithfulness produces critical_errors = 0, which is at the gate critical_contradicted_max = 0, so no hard fail. must_recall = 1.0 (12/12 must-have points present) versus must_recall_min = 0.9, so no hard fail. faithfulness_precision = 0.9925 (133/134 supported) versus faithfulness_precision_min = 0.95, so no hard fail. No Critical errors and no missing must-haves, therefore Fail is excluded by construction.\n\nGate check 2, tradeoff among passes: all three numeric gates clear, so compute the weighted score from config aspect_weights. Using faithfulness_precision = 0.9925, coverage_must_recall = 1.0, redundancy_rate = 0.0821: 0.4*0.9925 = 0.397; 0.4*1.0 = 0.400; 0.2*0.0821 = 0.01642; score = 0.397 + 0.400 - 0.01642 = 0.78058. This is the ranking value; there is no competing sample here, so ranking is informational only.\n\nGate check 3, concision role: redundancy_rate = 0.0821 is below redundancy_max = 0.15, so length is justified and concision does not need to modulate a coverage win. Full must-have recall (12/12) with room under the redundancy cap means the draft's length buys real coverage (overall_recall also 1.0) at acceptable cost. Concision cannot rescue anything here because there is no faithfulness or coverage failure, and there is none.\n\nGate check 4, borderline: gates pass on numbers, but C131 (loglog 10.6.4) is Partially supported and bears on a core, must-have 30-day finding: the node asserts 'proposer entries show higher satisfaction' as present fact, while the source quote hedges it as a prediction ('you'll see the pattern clearly', 'will show higher satisfaction'). This evidentiality/tense shift sits on a Must-have point, so per policy the sample is Borderline with C131 named for human review. Severity is Minor, so it does not rise to a Critical error and does not fail the sample. The supporting coverage recall of 1.0 means every must-have is present in substance; only this one claim's framing needs a human check. Hence verdict = Borderline rather than Pass, driven by C131, with redundancy and trivia (4 trivia items, trivia_rate 0.0299) as secondary polish in the fix_list."
+}

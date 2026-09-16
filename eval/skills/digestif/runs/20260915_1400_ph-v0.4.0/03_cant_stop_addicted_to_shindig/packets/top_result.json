@@ -1,0 +1,30 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "not provided in inputs",
+ "inputs": {
+  "faithfulness_precision": 0.989,
+  "critical_errors": 0,
+  "must_recall": 1.0,
+  "overall_recall": 1.0,
+  "redundancy_rate": 0.0769,
+  "trivia_rate": 0.033
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted_score = 0.4 * 0.989 + 0.4 * 1.0 - 0.2 * 0.0769 = 0.3956 + 0.4 - 0.01538 = 0.78022",
+ "weighted_score": 0.7802,
+ "verdict": "Borderline",
+ "tradeoff_note": "Full must-have coverage (14/14) and zero critical errors clear all hard gates, and length cost is justified because redundancy (0.0769) stays below the 0.15 max. The one Partially supported claim C001 is on a Must-have balance point, so human review is advised despite a strong weighted score.",
+ "fix_list": [
+  "Fix C001: source loglog line 0 says combination play is 'badly imbalanced' and 'heavily favors middle columns', so soften 'nearly balanced' on the Must-have balance point.",
+  "Fix C076: merge into C035, same balancing mechanism, redundant.",
+  "Fix C021/C036/C062/C063/C071/C087: merge section recaps into their originals C009/C029/C057/C050/C064/C072.",
+  "Cut low-value artifact claims C008, C056, C091, which add trivia without supporting a point."
+ ],
+ "reasoning": "Gate check in policy order. Hard fails: critical_errors = 0 <= critical_contradicted_max 0, pass. must_recall = 1.0 >= must_recall_min 0.9, pass. faithfulness_precision = 0.989 >= faithfulness_precision_min 0.95, pass. No hard gate missed, so the sample is not a Fail. Weighted score computed with configured aspect_weights 0.4/0.4/0.2 -> 0.78022, a comfortable numeric pass. Concision role: redundancy_rate 0.0769 < redundancy_max 0.15, so the length is not penalized beyond the small 0.01538 deduction, and coverage gain justifies the extra length under the top_policy. Borderline trigger: gates pass on numbers, but a Partial claim affects a Must-have point. C001 is 'Partially supported' (Minor) and cites loglog id 0, the balance point: it claims Can't Stop is 'nearly balanced' while the evidence_quote states 'The game heavily favors middle columns' and 'badly imbalanced'. Because must_have_total = 14 with 14 present and C001 maps to the balance Must-have, this is exactly the gates-pass-but-review case, so Borderline over Pass. The weighted score math uses the Coverage must_recall 1.0 (not overall_recall 1.0, which coincides) and the Concision redundancy_rate 0.0769, both from the aspect JSONs; trivia_rate 0.033 and tokens_per_unique_claim 1.38 are recorded for audit but carry no weight. Prune list items C021, C036, C062, C063, C071, C087 (recaps) and C076 (duplicate mechanism) are reflected in the 7 duplicates driving the 0.0769 rate and are the highest-leverage length fixes after the C001 accuracy fix."
+}

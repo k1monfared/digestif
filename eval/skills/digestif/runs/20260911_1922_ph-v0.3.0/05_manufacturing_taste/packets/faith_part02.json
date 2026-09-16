@@ -1,0 +1,79 @@
+{
+ "sample": "05_manufacturing_taste",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Bach was excellent AND positioned; reshuffled patronage yields an almost entirely different canon.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "Bach wasn't just popular: he was excellent AND well-positioned. The surgeon analogy: one of fifty equally skilled surgeons becomes 'the best' via a profile, talks, and a book deal. There were probably 20 to 50 equally great contemporaries whose names we will never know because they didn't get the Leipzig job."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Surgeon analogy: one of fifty equally skilled becomes the best via profile, talks, book.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "Bach wasn't just popular: he was excellent AND well-positioned. The surgeon analogy: one of fifty equally skilled surgeons becomes 'the best' via a profile, talks, and a book deal. There were probably 20 to 50 equally great contemporaries whose names we will never know because they didn't get the Leipzig job."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Probably 20 to 50 equally great contemporaries stay unknown for missing the Leipzig-type job.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "Bach wasn't just popular: he was excellent AND well-positioned. The surgeon analogy: one of fifty equally skilled surgeons becomes 'the best' via a profile, talks, and a book deal. There were probably 20 to 50 equally great contemporaries whose names we will never know because they didn't get the Leipzig job."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "If the mechanisms in this simulation are right, future canons track distribution and algorithms.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "One canon out of hundreds of equally valid ones is treated as inevitable; our taste was manufactured along with it. The author honestly doesn't know whether Bieber will survive 300 years. But if the mechanisms in this simulation are right, survivors will owe more to distribution deals and algorithms than to best music."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Taste itself was manufactured: surviving canon sets what counts as beautiful.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "One canon out of hundreds of equally valid ones is treated as inevitable; our taste was manufactured along with it. The author honestly doesn't know whether Bieber will survive 300 years. But if the mechanisms in this simulation are right, survivors will owe more to distribution deals and algorithms than to best music."
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "concession",
+   "attribution": "conceded",
+   "text": "Author honestly does not know whether Bieber survives 300 years hence.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "One canon out of hundreds of equally valid ones is treated as inevitable; our taste was manufactured along with it. The author honestly doesn't know whether Bieber will survive 300 years. But if the mechanisms in this simulation are right, survivors will owe more to distribution deals and algorithms than to best music."
+    }
+   ]
+  }
+ ]
+}

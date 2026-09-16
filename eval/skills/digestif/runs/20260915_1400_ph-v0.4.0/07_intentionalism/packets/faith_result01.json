@@ -1,0 +1,390 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "07_intentionalism",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "The Gale-Shapley structure gives proposers systematically better outcomes, so most people stay receivers by default, and intention must be practiced to switch sides.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "proposers systematically getting better outcomes than receivers",
+   "reasoning": "Summary aggregates supported claims: better proposer outcomes, most are receivers, practiced intention builds the proposer position."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Some people consistently end up with better outcomes for reasons having nothing to do with talent, luck, or even the quality of their choices.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "has nothing to do with talent, luck, or even the quality of their choices",
+   "reasoning": "Verbatim match to source paragraph 2."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "It is about whether they propose or receive.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's about whether they propose or receive.",
+   "reasoning": "Exact reproduction of source."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "In 1962, David Gale and Lloyd Shapley worked on creating stable pairings, where no two unmatched people would prefer each other over their assigned partners.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In 1962, mathematician-economists David Gale and Lloyd Shapley were working on a problem about how to create stable pairings",
+   "reasoning": "Year, names, and definition of stable pairing all match source."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "They proved you could always match everyone this way, and presented an algorithm to find such matchings.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They proved you could, and presented an algorithm to find such matchings.",
+   "reasoning": "Direct restatement of source paragraph 5."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "In their deferred acceptance algorithm, one side makes proposals in order of preference, and the other accepts or tentatively rejects.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "one side makes proposals in order of preference, and the other side accepts or tentatively rejects based on their preferences",
+   "reasoning": "Matches algorithm description; dropped qualifier 'based on their preferences' is harmless compression."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "claim_text": "Proposers get their best possible partner among all stable matchings, while receivers get their worst possible partner.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "proposers get their best possible partner among all stable (mutually acceptable) matchings, while receivers get their worst possible partner among all stable matchings",
+   "reasoning": "Verbatim meaning preserved, including both sides' extremes."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "claim_text": "This is not slightly better or worse: it is systematically, provably, mathematically extreme for each individual.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it's systematically, provably, mathematically extreme. In the specific algorithm they designed, each individual proposer...",
+   "reasoning": "Preserves negation and per-individual framing from source."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Real-world situations share the proposer-receiver structure, even roughly, so the same pattern should appear.",
+   "claim_type": "theme",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "even roughly, we should expect to see the same pattern",
+   "reasoning": "Combines paragraphs 8 and 9 faithfully, retaining the 'roughly' hedge."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "When systems have this structure, proposers systematically get better outcomes than receivers.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "proposers systematically getting better outcomes than receivers",
+   "reasoning": "Exact phrasing from source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "The situations are not running the exact Gale-Shapley algorithm, but they share the structure: one side initiates, the other responds.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "most real-world situations don't follow the exact Gale-Shapley algorithm. But they share the fundamental structure",
+   "reasoning": "Negation and structural claim both preserved."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Four everyday choices show the default: deciding what you want versus choosing among what is offered.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Think about how most of your choices actually happen:",
+   "reasoning": "Source gives four examples (Netflix, phone, job, friend) contrasting intention with selection."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Netflix: scrolling through recommendations until something looks good enough, rather than deciding what kind of experience you wanted.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "did you scroll through recommendations until something looked good enough?",
+   "reasoning": "Faithful to the Netflix question in paragraph 11."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Phone: choosing among what was prominently displayed, rather than researching what features you actually needed.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "did you choose among what was prominently displayed at the store?",
+   "reasoning": "Matches phone example in paragraph 12."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Job: applying to positions that happened to be posted, rather than pursuing companies doing work you cared about.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "did you apply to positions that happened to be posted?",
+   "reasoning": "Matches job example in paragraph 13."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Friendship: accepting a connection that formed through proximity or circumstance, rather than seeking out someone with qualities you value.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "did you accept a connection that formed through proximity or circumstance?",
+   "reasoning": "Matches friendship example in paragraph 14."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "claim_text": "For most of these, most of us are receivers: choosing from what is presented, not pursuing what we want intentionally.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "most of us are receivers. We're choosing from what's presented, not pursuing what we want intentionally.",
+   "reasoning": "Exact match including the negation."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "3.6"
+   ],
+   "claim_text": "The insidious thing is not terrible outcomes; receivers get acceptable, good enough ones: a decent show, a functional phone, a reasonable job, pleasant friendships.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "isn't that you get terrible outcomes. You don't. You get acceptable ones. Good enough ones... a decent show, buy a functional phone, work a reasonable job, have pleasant friendships.",
+   "reasoning": "All four examples and the negation preserved faithfully."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "3.7"
+   ],
+   "claim_text": "But decent is not the same as what would actually serve you best.",
+   "claim_type": "nuance",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "But \"decent\" isn't the same as \"what would actually serve you best.\"",
+   "reasoning": "Verbatim reproduction."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "3.8"
+   ],
+   "claim_text": "Outcomes tend to favor whoever is doing the proposing, not because of a conspiracy but because the structure itself creates the advantage.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Not because of some conspiracy... The structure itself creates the advantage.",
+   "reasoning": "Preserves the hedge 'tend to' and both causal elements."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "3.9"
+   ],
+   "claim_text": "The system is self-sustaining precisely because it does not screw you badly enough to make you revolt.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The system is stable (self-sustaining) precisely because it doesn't screw you badly enough to make you revolt.",
+   "reasoning": "Exact match, including parenthetical gloss and negation."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "3.9.1"
+   ],
+   "claim_text": "It just quietly, consistently ensures you get less than you could have if you were on the other side of the equation.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It just quietly, consistently ensures you get less than you could have if you were on the other side of the equation.",
+   "reasoning": "Verbatim reproduction."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "3.10"
+   ],
+   "claim_text": "You do not even know what you are missing, because you have never practiced wanting something specific enough to pursue it.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You don't even know what you're missing, because you've never practiced wanting something specific enough to pursue it.",
+   "reasoning": "Exact match including negations."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "You need intention to propose, but you develop intention through proposing.",
+   "claim_type": "theme",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You need intention to propose, but you develop intention through proposing.",
+   "reasoning": "Verbatim reproduction of source paragraph 23."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "To be a proposer you need to know what you want, and someone who has spent a whole life as a receiver would not know.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if you've spent your whole life as a receiver, how would you know?",
+   "reasoning": "Rhetorical question directly implies the stated claim; meaning preserved."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "You cannot develop clear, intentional preferences by choosing among presented options; those choices reveal which option you dislike least.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "You can't develop clear, intentional preferences by choosing among presented options. Those choices just reveal which option you dislike least",
+   "reasoning": "Both sentences faithfully preserved with negation intact."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "This is the trap: you need intention to propose, but you develop intention through proposing.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is the trap. You need intention to propose, but you develop intention through proposing.",
+   "reasoning": "Verbatim reproduction."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "The music you listen to: are those your favorite songs, or just the best matches from what the algorithm served you?",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "are those actually your favorite songs, or just the best matches from what the algorithm served you?",
+   "reasoning": "Matches music example; dropped 'actually' and trailing question is harmless."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "The person you are dating: did you seek someone compatible, or swipe through available profiles and pick the most appealing match?",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "did you decide what kind of relationship you wanted and seek someone compatible? Or did you swipe through available profiles",
+   "reasoning": "Faithful compression of the dating example in paragraph 25."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "claim_text": "After years of receiver mode, most people's preferences are just reactions to what gets put in front of them.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "After years of receiver mode, most people's \"preferences\" are just reactions to what gets put in front of them.",
+   "reasoning": "Exact match including 'most' quantifier."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "4.7"
+   ],
+   "claim_text": "They have lost, or never developed, the capacity to want something independent of what is being offered.",
+   "claim_type": "nuance",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They've lost—or never developed—the capacity to want something independent of what's being offered.",
+   "reasoning": "Verbatim reproduction including both alternatives."
+  }
+ ],
+ "metrics": {
+  "total_claims": 31,
+  "supported": 31,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

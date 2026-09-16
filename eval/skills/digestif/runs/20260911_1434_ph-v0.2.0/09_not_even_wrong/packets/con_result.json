@@ -1,0 +1,310 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "09_not_even_wrong",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "L002"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Thesis summary framing stakes, tribe, proof into the skepticism and standards demand."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "L003"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Central definition of not-even-wrong; new core concept."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "L004"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Atiyah example supplies concrete evidence for the definition."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "L005"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Nuance distinguishing merely incorrect from outside evaluation boundaries."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "L006"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Extends concept from mathematics to powerful figures' rhetoric."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "L007"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States financial-stakes incentive; new causal mechanism."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "L008"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Names cognitive dissonance behind the incentive; caveat, never trivia."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "L009"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Commitment spillover into out-of-domain claims; new."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "L010"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Self-reinforcing investment cycle; new structural claim."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "L011"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Credibility transfer between concrete and grandiose promises; new."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "L012"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Branch header naming three entrenching forces; organizes subpoints."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "L013"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Social proof mechanism; distinct evidence."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "L014"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Tribal betrayal framing; distinct evidence."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "L015"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Algorithmic echo chambers and fake authenticity; distinct evidence."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "L016"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Branch header listing four biasing factors; organizing claim."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "L017"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C015",
+   "reasoning": "Reruns the same four factors with synonyms; adds nothing new."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "L018"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contrasts leaders escaping evaluation with rejected Atiyah; new."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "L019"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Branch header of four individual practices; organizing claim."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "L020"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Investing sound without endorsing pronouncements; distinct action."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "L021"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Expertise does not transfer; distinct action."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "L022"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Seek credible critics deliberately; distinct action."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "L023"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterfactual detachment test; distinct action."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "L024"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Branch header of four societal needs; organizing claim."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "L025"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Teach realistic timelines; distinct societal action."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "L026"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Expert platforms; distinct societal action."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "L027"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Popularize balanced frameworks; distinct societal action."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "L028"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Skepticism is not opposition; negation, never trivia."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "L029"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds blind-acceptance versus reflexive-rejection spectrum; new framing."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "L030"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Not for/against figures but building tools; new framing."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "L031"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C001",
+   "reasoning": "Recaps the shared-standards thesis; science analogy is cosmetic."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "L032"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Author's sympathy for Atiyah with rigorous standards; new concession."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "L033"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Meta disclosure and book recommendations; new provenance."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 32,
+  "unique": 30,
+  "duplicates": 2,
+  "trivia": 0,
+  "redundancy_rate": 0.0625,
+  "trivia_rate": 0.0,
+  "structured_tokens": 503,
+  "tokens_per_unique_claim": 16.77
+ },
+ "prune_list": [
+  "C016 duplicates C015, safe to merge",
+  "C030 duplicates C001, safe to merge"
+ ]
+}

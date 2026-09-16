@@ -1,0 +1,338 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "12_lets_talk_privacy/source.txt",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "L002"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Summary framing but adds the client-held-keys prescription; recap of conclusion without verbatim repeat."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "L003"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Defines E2EE versus provider exclusion; framing distinct from summary."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "L004"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Setup context about Omid; maps to no must/nice point and carries low information value."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "L005"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Metadata still aids interpretation; distinct fact from section 1 body."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "L006"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Closed-source uncertainty specific to Meta; distinct from Proton doubt."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "L007"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Business model plus 2021 policy plus 2019 failure; causal evidence appears only here."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "L008"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Smoking-gun definition for no-transfer history; distinct observation."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "L009"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Locker and billboard analogy; distinct illustrative content."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "L010"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "WhatsApp server key handling; distinct fact."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "L011"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Rogue-device hiding in WhatsApp lists; distinct from later comparison table."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "L012"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Proton in-browser key generation and wrapping; distinct."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "L013"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Six-step login sequence; distinct detail."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "L014"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Hash versus encryption distinction; definition unique to section 3."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "L015"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Seen hash cannot decrypt wrapped key; distinct security conclusion."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "L016"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Malicious client capturing typed password; distinct counterpoint."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "L017"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Preconditions for trust in client code; distinct."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "L018"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Proton must steal password versus WhatsApp direct grant; distinct comparison."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "L019"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Signal backup methods; distinct fact."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "L020"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Physical-presence constraint adds new detail beyond C018 method list."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "L021"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Zero-knowledge no recovery after key loss; distinct."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "L022"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Plaintext storage doubt for Proton; distinct from Meta uncertainty."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "L023"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Open clients only prove sending behavior; distinct limiting caveat."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "L024"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C031",
+   "reasoning": "Restates 8.3 breach numbers; cross-link L043 marks 6.2 as restatement."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "L025"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Reset destroys old mail, suggestive not proof; distinct evidence."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "L026"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Trust rests on reputation and behavior, not guarantees; distinct."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "L027"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Three trust models; canonical for the section-7 comparison later restated."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "L028"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Rogue-device outcome per model; distinct applied result."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "L029"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Checkable item list; distinct survey content."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "L030"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Uncheckable list adds rogue staff and breaches beyond C022 caveat."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "L031"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Good and bad attributes add obscurity and violations; distinct criteria."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "L032"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Facebook 2019 figures with full detail; canonical instance."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "L033"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds zero-knowledge servers and verifiable builds beyond summary prescription."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "L034"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C026",
+   "reasoning": "Restates 7.2 three-model comparison; cross-link L045 confirms restatement."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "L035"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Recommendations add decentralization and hardware keys; distinct."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "L036"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Provenance list with dated sources; contains dates, so not trivia."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 35,
+  "unique": 32,
+  "duplicates": 2,
+  "trivia": 1,
+  "redundancy_rate": 0.06,
+  "trivia_rate": 0.03,
+  "structured_tokens": 592,
+  "tokens_per_unique_claim": 18.5
+ },
+ "prune_list": [
+  "C023 duplicates C031, safe to merge",
+  "C033 duplicates C026, safe to merge",
+  "C003 trivia, safe to drop"
+ ]
+}

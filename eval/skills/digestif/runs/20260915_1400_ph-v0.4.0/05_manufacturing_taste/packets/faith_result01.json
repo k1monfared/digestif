@@ -1,0 +1,282 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "A simulation finds quality only loosely filters canon success, exposure and capital dominate, and the canon and our taste are more contingent than they feel.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Quality acts as a loose filter... the vast middle ground... is dominated by capital and luck... your taste was manufactured along with it",
+   "reasoning": "SOURCE states quality is a loose filter, the middle is dominated by capital and luck, and taste is more contingent than it feels."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "The canon's winners may be the best or merely the best positioned, and history cannot tell us which.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "were they the best? Or were they the ones who happened to have the right patron... We literally cannot answer that question empirically.",
+   "reasoning": "SOURCE poses both alternatives and says the empirical question cannot be answered, matching the hedge."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "The question began half-jokingly: was Bach the Justin Bieber of his time?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time.",
+   "reasoning": "SOURCE says exactly this, preserving both the joke framing and the question."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time",
+   "reasoning": "Range, place, and time all match SOURCE exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred, and many more left no trace; we remember fewer than 20.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "IMSLP catalogs over 3,400 composers... Wikipedia's curated list names several hundred. We remember fewer than 20.",
+   "reasoning": "All figures and entities (IMSLP, Wikipedia list, under 20) match SOURCE without drift."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "The standard explanation says we remember the best, but the winners may be those with the right patron, court position, orchestra, and publisher.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?",
+   "reasoning": "SOURCE states the standard explanation and the four alternative factors in the same hedged form."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "claim_text": "If the Esterházys had hired a different Kapellmeister instead of Haydn, would we still know his name?",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name?",
+   "reasoning": "SOURCE asks the identical counterfactual about Haydn and the Esterházy family."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "claim_text": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run that thousands of times.",
+   "reasoning": "SOURCE states the empirical impossibility and the modeling workaround in the same terms."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "claim_text": "The author built a simulation and wrote this less formal version of the full technical paper.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I built a simulation to find out. The full technical paper is here. This post is the less formal version.",
+   "reasoning": "SOURCE confirms the simulation and that the post is the informal version of the paper."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Three competing hypotheses were set up to explain how canons form.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I set up the project to test three competing hypotheses.",
+   "reasoning": "SOURCE says three competing hypotheses were set up, under a heading about how canons form."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Story 1 (The Cream Rises): the works we remember are the best works, and over long horizons genuine quality wins.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The works we remember are the best works... over long enough time horizons, genuine quality wins.",
+   "reasoning": "SOURCE's Story 1 states both the best-works claim and long-horizon quality victory."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "2.1.1"
+   ],
+   "claim_text": "Money might buy a head start, but replaying history with different patrons would end with roughly the same canon.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Money might help someone get a head start... If you replayed history with different patrons, you'd end up with roughly the same canon.",
+   "reasoning": "SOURCE preserves the hedge (might) and the roughly-same-canon counterfactual."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Story 2 (Money Writes History): success is mostly about who gets heard first, and quality is almost irrelevant.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Success is mostly about who gets heard first... Quality is almost irrelevant.",
+   "reasoning": "SOURCE's Story 2 states both the who-gets-heard-first emphasis and quality's near irrelevance."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "2.2.1"
+   ],
+   "claim_text": "A wealthy patron gets a composer performed, audiences like what they hear, and the familiarity gets read as quality.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A composer with a wealthy patron gets performed; audiences grow to like what they hear... that familiarity gets retroactively interpreted as quality",
+   "reasoning": "SOURCE describes the same causal chain from patron to performance to familiarity-as-quality."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "2.2.2"
+   ],
+   "claim_text": "Institutions lock that advantage in for future generations.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "institutions lock it in for future generations",
+   "reasoning": "SOURCE states this verbatim as the final link in Story 2's chain."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Story 3 (Floors and Ceilings): both stories are partly right.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "**Story 3: Floors and Ceilings.** Both are partly right.",
+   "reasoning": "SOURCE states both prior stories are partly right in Story 3's opening."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "2.3.1"
+   ],
+   "claim_text": "The truly terrible never succeed no matter how much money backs them.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly terrible never succeed no matter how much money backs them.",
+   "reasoning": "SOURCE states this sentence verbatim, including the negation never."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "2.3.2"
+   ],
+   "claim_text": "The truly transcendent sometimes break through despite everything.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly transcendent sometimes break through despite everything.",
+   "reasoning": "SOURCE states this verbatim, preserving the hedge sometimes."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "2.3.3"
+   ],
+   "claim_text": "For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'.",
+   "reasoning": "SOURCE states the same three factors and the same negation of peer talent differences."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "The canon is like a job market: the very best and the very worst candidates are easy to rank.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Think of it like a job market. The very best candidate and the very worst are easy to rank.",
+   "reasoning": "SOURCE uses the job-market analogy and says best and worst are easy to rank."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "2.4.1"
+   ],
+   "claim_text": "Among twenty pretty good candidates, who gets hired often comes down to who knew someone, a good interview day, or resume order.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile.",
+   "reasoning": "SOURCE gives the same count (twenty), hedge (often), and three factors as the analogy."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "2.4.2"
+   ],
+   "claim_text": "The classical music canon is the same problem at civilizational scale.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The classical music canon is the same problem at civilizational scale.",
+   "reasoning": "SOURCE states this sentence verbatim."
+  }
+ ],
+ "metrics": {
+  "total_claims": 22,
+  "supported": 22,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

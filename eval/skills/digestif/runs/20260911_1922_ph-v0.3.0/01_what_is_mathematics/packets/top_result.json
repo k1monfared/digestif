@@ -1,0 +1,30 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "point-hierarchy",
+ "inputs": {
+  "faithfulness_precision": 0.969,
+  "critical_errors": 0,
+  "must_recall": 1.0,
+  "overall_recall": 1.0,
+  "redundancy_rate": 0.062,
+  "trivia_rate": 0.0155
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted_score = 0.4 * 0.969 + 0.4 * 1.0 - 0.2 * 0.062 = 0.3876 + 0.4 - 0.0124 = 0.7752",
+ "weighted_score": 0.7752,
+ "verdict": "Borderline",
+ "tradeoff_note": "All hard gates pass cleanly (0 critical errors, must_recall 1.0, precision 0.969 above 0.95, redundancy 0.062 well under 0.15), so length is fully justified and no concision penalty applies; however four Minor Partially-supported claims drop SOURCE hedges on thesis-level must-have points (C041 load-bearing activities, C051 Goodhart), which warrants human review despite passing numbers.",
+ "fix_list": [
+  "Restore the dropped hedges on the two thesis-level partials that affect Must-have points: C041 (3.10, SOURCE says 'look load-bearing', node asserts definite 'are') and C051 (4.3, SOURCE says AI 'threatens to' break the correlation, node asserts it as accomplished). This is the highest-leverage fix because these drive the Borderline call.",
+  "Restore the 'often' hedge on C078 (6.3) where the node states prior-support as an absolute fact.",
+  "Repair the garbled clause and remove the unsupported 'beats nobody buying new' comparison in C097 (7.2).",
+  "Merge the 8 duplicate claims (C009/C014 -> C126, C019 -> C115, C041 -> C123, C059 -> C003, C062 -> C013, C068 -> C031, C090 -> C112) and drop the 2 trivia (C021 image reference, C110 thought-experiment reference) to drive redundancy 0.062 toward 0.0; note C041 also appears in the faithfulness partial list, so fixing the hedge and the duplicate together is efficient."
+ ],
+ "reasoning": "Gate checks in order per policy. (1) Hard fail on critical errors: critical_errors = 0, gate critical_contradicted_max = 0, PASS. (2) Hard fail on recall: must_recall = 1.0, gate must_recall_min = 0.9, PASS by 0.1. (3) Hard fail on precision: faithfulness_precision = 0.969, gate faithfulness_precision_min = 0.95, PASS by 0.019. (4) Redundancy ceiling for coverage-justified length: redundancy_rate = 0.062, gate redundancy_max = 0.15, PASS by 0.088, so the extra length is not merely allowed, it is comfortably within budget. No hard gate is missed and no Critical error exists, so Fail is excluded. Weighted score: 0.4 * 0.969 = 0.3876; 0.4 * 1.0 = 0.4; 0.2 * 0.062 = 0.0124; 0.3876 + 0.4 - 0.0124 = 0.7752. On the Pass-vs-Borderline split, the coverage artifact reports must_have_present 14/14 and must_have_partial 0, which alone would support Pass. However decision-policy item 4 compels Borderline when a Partial claim affects a Must-have point. Four claims are Partially supported (C041 at 3.10, C051 at 4.3, C078 at 6.3, C097 at 7.2), all Minor severity and all the same defect mode: SOURCE hedges ('look load-bearing', 'threatens to break the correlation', 'often it supports', 'at best they spend their time fixing Ikea furniture') while the node asserts the claim as definite or adds a comparison absent from SOURCE. C041 (section 3.10, the load-bearing framing/noticing/deciding insight versus proving as gym training) and C051 (section 4.3, Goodhart correlation breaking) map to the kind of central thesis points that a 14-point must-have set would contain, so per item 4 they affect Must-have points and force Borderline with the claims named. Neither is a contradiction, so no Critical error and no Fail. Tradeoff: coverage is maximal (must_recall 1.0, overall_recall 1.0) with zero missing points, redundancy is 0.062 (far below 0.15) and trivia 0.0155, so the trade of added length for coverage is sound and concision imposes no offsetting cost; the only reservation is fidelity of hedge strength on C041/C051, which is a polish/accuracy issue, not a coverage or contradiction issue. Redundancy is therefore not used to break a tie downward, it merely confirms the length is licensed. Human review is advised specifically to decide whether the dropped hedges alter the meaning of those two must-have points."
+}

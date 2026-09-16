@@ -1,0 +1,246 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "12_lets_talk_privacy",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "Central thesis: E2EE means sender-device encryption and receiver-device decryption with nothing decrypting in between, but the real question is whether the provider (not merely a man-in-the-middle) can access content, and the answer is not completely clear.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L003",
+        "L005",
+        "L006",
+        "L009"
+      ],
+      "evidence_quote": "Encrypting on the sender's device and decrypting on the receiver's device without decryption along the way is the definition of E2EE. ... The real question is whether Facebook can access the content of your WhatsApp messages in theory and in practice.",
+      "reasoning": "L005 gives the definition, L006 notes MITM is a lesser concern, L009 states the real provider-access question, and L003 frames E2EE meaning several things. Thesis fully captured."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "People usually want E2EE so no one outside sender and receivers, especially the provider, can access data. For WhatsApp this means Facebook should not read message content, though it still holds metadata: network, frequency, amount, and timing of communication.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L007",
+        "L008"
+      ],
+      "evidence_quote": "Usually the purpose is that no one, and in particular the provider, can access the data. ... With WhatsApp, you do not want Facebook to access message content, though it still knows your network, communication frequency, amount, and times.",
+      "reasoning": "L007 gives the purpose and provider focus, L008 gives the WhatsApp example with all four metadata categories intact."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "WhatsApp's answer is unclear: if implemented as claimed with no secret backdoors, they cannot access data, but the app is not open source and not truly auditable, so external audits can never prove the negative.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L010",
+        "L011",
+        "L012",
+        "L013"
+      ],
+      "evidence_quote": "If they implemented things as claimed and added no secret backdoors, then yes, they cannot access the data. ... External audits and tests lack certainty in the negative direction: they can never claim it cannot access the data.",
+      "reasoning": "L010-L013 capture the conditional claim, the closed-source non-auditability, and the inability to prove the negative. Condition and negation preserved."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "Evidence against WhatsApp/Meta: 2021 privacy policy changes allowing data sharing with Facebook for relevant offers and ads across Meta products, plus prior security failures such as plaintext storage of hundreds of millions of passwords, making it almost certain they can and do access message content.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L014",
+        "L015",
+        "L016"
+      ],
+      "evidence_quote": "The 2021 privacy policy changes allow sharing data with Facebook for relevant offers and ads across Meta company products. ... Given the company's business, you can almost be certain that they can, and do, access the messages.",
+      "reasoning": "All three elements present: 2021 policy change, plaintext password failures, and the almost-certain conclusion with the qualifier preserved."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "Smoking-gun test: whether a platform can back up or let you access history across devices without manually linking/transferring keys. If the provider ever holds the key it is like leaving a copy of your door key on a public billboard, letting it decrypt at will.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L017",
+        "L018",
+        "L023",
+        "L024"
+      ],
+      "evidence_quote": "A smoking gun is whether the platform or app can back up your data. ... It is as if you locked your door and left a copy at the local farmers market billboard.",
+      "reasoning": "L017-L018 state the test, L023-L024 preserve the billboard analogy and the at-will compromise implication."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "How WhatsApp works: server stores encrypted message history and device-to-account identity mappings, authenticates new devices, and provides keys to decrypt history. This makes the server a trusted intermediary that could silently authenticate a rogue device and hide it from your device list, unlike Signal's manual key transfer.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L022",
+        "L025",
+        "L026",
+        "L027",
+        "L028",
+        "L029",
+        "L030"
+      ],
+      "evidence_quote": "the server stores encrypted message history and maintains mappings between your account and your device identities. ... they could simply hide a rogue device from your device list entirely.",
+      "reasoning": "L025-L030 fully capture server storage, mappings, new-device authentication and key provision, trusted-intermediary framing, rogue-device injection and hiding, and L022 gives the Signal contrast."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "Proton Mail model: private key generated in the browser and encrypted with your password using bcrypt and AES-256, then stored encrypted on Proton's servers, so the server holds only an encrypted private key.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L033",
+        "L034",
+        "L035"
+      ],
+      "evidence_quote": "your private key is generated in your browser and encrypted with your password. ... The encryption uses bcrypt and AES-256 before the key is sent to Proton's servers for storage.",
+      "reasoning": "L033-L035 capture browser key generation, bcrypt + AES-256, and encrypted server-side storage. Numbers and algorithm names intact."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "Proton login flow: type password, browser hashes it with bcrypt plus a server-provided salt, sends hash to authenticate, server returns the encrypted private key, and browser decrypts it locally with the actual password.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L036",
+        "L037",
+        "L038",
+        "L039",
+        "L040"
+      ],
+      "evidence_quote": "You type your password, and your browser hashes it with bcrypt using a salt provided by Proton's server. ... Your browser uses your original password to decrypt the private key locally.",
+      "reasoning": "L036-L040 give the complete four-step flow including the server-provided salt and local decryption with the original password."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "Distinction between hashing (one-way, used for authentication, cannot be reversed to the password) and encryption (two-way, used on the private key). Proton receives the hash for authentication while the key is encrypted with the actual password, so in theory the hash cannot decrypt the key.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L041",
+        "L042",
+        "L043",
+        "L044",
+        "L045"
+      ],
+      "evidence_quote": "Hashing is one-way ... Encryption is two-way ... the private key is encrypted with your actual password, so the hash cannot decrypt it.",
+      "reasoning": "L041-L045 capture both definitions and the concluding separation that the hash cannot decrypt the key."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "Proton's critical residual vulnerability: Proton could serve malicious client code (web app or update) to capture the actual password before hashing and use it to decrypt the stored key. This is why open-source clients matter, yet you must still trust the served code matches source, no future malicious injection, and no infrastructure compromise.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L046",
+        "L047",
+        "L048",
+        "L049",
+        "L050",
+        "L051",
+        "L052",
+        "L053"
+      ],
+      "evidence_quote": "Proton could serve malicious client code, in the web app or through an app update. ... That they will not be compelled to inject malicious code in the future. ... That their infrastructure has not been compromised.",
+      "reasoning": "All elements present: malicious code vector, password capture before hashing, decryption of stored key, value of open source, and the three residual trust assumptions."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "Signal's approach: by default history is stored only on your device and deleted from servers after delivery. Device switching offers three options: manual local backup protected by a 30-digit passphrase, direct device-to-device local transfer, or Secure Backups encrypted with a 64-character recovery key Signal never sees.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L058",
+        "L059",
+        "L060",
+        "L061",
+        "L062"
+      ],
+      "evidence_quote": "message history is stored only on your device and deleted from Signal's servers after delivery. ... a 30-digit passphrase ... a 64-character recovery key that Signal never sees",
+      "reasoning": "L058 gives device-only storage and server deletion, L059-L062 give all three device-switch options with both numbers intact."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "Signal is genuinely zero-knowledge: servers are never positioned to grant access to message history, and even with cloud backups Signal cannot decrypt backups and cannot help recover them if the recovery key is lost.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L057",
+        "L063",
+        "L064",
+        "L065"
+      ],
+      "evidence_quote": "Signal literally cannot decrypt your backups even if they wanted to, and cannot help you recover them if you lose the key. ... This is genuinely zero-knowledge architecture, not just marketing claims.",
+      "reasoning": "L057 states servers never positioned to grant access, L063-L064 give cloud backup non-decryptability and non-recoverability, L065 names it genuine zero-knowledge."
+    },
+    {
+      "point_id": "K13",
+      "point_text": "Password storage limits: you can verify what an open-source client does (hashing before transmission), inspect network traffic, and read audits, but you cannot verify server-side code, whether it changed after an audit, rogue employees, or breaches. There is no cryptographic guarantee about server password handling.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L069",
+        "L070",
+        "L071",
+        "L072",
+        "L073",
+        "L074",
+        "L075",
+        "L076",
+        "L094",
+        "L095",
+        "L096",
+        "L097"
+      ],
+      "evidence_quote": "you can verify what the client does if it is open source ... But you cannot verify what happens on the server ... No cryptographic guarantee about server password handling.",
+      "reasoning": "L070-L076 and L094-L097 cover both the verifiable client side and the four unverifiable server-side risks, matching the point's scope."
+    },
+    {
+      "point_id": "K14",
+      "point_text": "Real-world examples: Facebook in 2019 logged roughly 200-600 million passwords in plaintext for years, searchable by over 20,000 employees with archives dating to 2012, claiming it was unintentional. Adobe's 2013 breach exposed plaintext password hints, many small services use plaintext or unsalted MD5. Proton's loss of old emails after an email/SMS password reset suggests genuine inability to decrypt, though not proof.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L078",
+        "L079",
+        "L080",
+        "L081",
+        "L082",
+        "L102",
+        "L103",
+        "L104",
+        "L105"
+      ],
+      "evidence_quote": "between 200-600 million passwords were logged in plaintext and searchable by over 20,000 Facebook employees. ... Some archives dated back to 2012 ... Adobe's 2013 breach ... resetting your password via email or SMS recovery loses access to all your old encrypted emails.",
+      "reasoning": "All examples present with full numbers: Facebook 200-600M, 20,000 employees, 2012 archives, Adobe 2013, MD5, and the Proton reset example with the not-proof caveat in L083."
+    },
+    {
+      "point_id": "K15",
+      "point_text": "Bottom line: for most commercial services you trust reputation, jurisdiction, business model, and past behavior rather than cryptographically verifiable guarantees. Security-conscious users prefer client-side encryption, open-source everything, decentralized systems that minimize trust, and hardware security keys such as YubiKey that never expose the secret.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L110",
+        "L111"
+      ],
+      "evidence_quote": "for most commercial services you trust reputation, jurisdiction, business model, and past behavior rather than cryptographic guarantees. ... hardware keys like YubiKey that never expose the secret.",
+      "reasoning": "L110 and L111 together preserve the closing thesis and the full list of preferred practices including decentralized systems and YubiKey."
+    }
+  ],
+  "metrics": {
+    "total_points": 15,
+    "must_have_total": 12,
+    "must_have_present": 12,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+  },
+  "missing_list": []
+}

@@ -1,0 +1,414 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Cultural canons are manufactured by money and luck amplifying exposure, with quality only a loose filter.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Quality acts as a loose filter... the vast middle ground... is dominated by capital and luck.",
+   "reasoning": "SOURCE states quality is a loose filter and capital/luck dominate the middle, matching the summary."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "We remember fewer than 20 of 200 to 500 Viennese contemporaries and 3,400 catalogued composers.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "between 200 and 500 active composers... IMSLP catalogs over 3,400 composers... We remember fewer than 20.",
+   "reasoning": "All counts and the under-20 figure match SOURCE."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "The question is patronage and access, not only merit.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Or were they the ones who happened to have the right patron, the right court position, the right access...",
+   "reasoning": "Captures the author's open question about patronage versus merit."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "History cannot rerun, but a model of cultural markets can run thousands of times.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We can't rewind history... But we can build a model of cultural markets and run that thousands of times.",
+   "reasoning": "Near-verbatim restatement of the source sentence."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "Opening question: was Bach his era's Bieber, and will Bieber be our era's Bach?",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether Bach was the Justin Bieber of his time... will people 300 years from now be listening to Bieber and think that was the best we had to offer?",
+   "reasoning": "Rephrases both halves of the opening question with equivalent meaning."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Three hypotheses compete: cream rises, money writes, floors and ceilings.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I set up the project to test three competing hypotheses.",
+   "reasoning": "Matches the three named stories in SOURCE."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Cream Rises: over long horizons quality wins; replayed history keeps roughly the same canon.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "over long enough time horizons, genuine quality wins... you'd end up with roughly the same canon.",
+   "reasoning": "Direct restatement of Story 1."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Money Writes History: who gets heard first wins; quality is almost irrelevant.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "success is mostly about who gets heard first... Quality is almost irrelevant.",
+   "reasoning": "Matches Story 2 wording closely."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Floors and Ceilings: extremes are predictable, but the vast middle depends on luck and money.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The truly terrible never succeed... the truly transcendent sometimes break through. But for the vast majority in the middle... depends on luck, money, and timing.",
+   "reasoning": "Faithful compression of Story 3."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "Job analogy: among twenty pretty-good candidates, hiring turns on luck and timing.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "among the twenty 'pretty good' candidates, who gets hired often comes down to who knew someone...",
+   "reasoning": "Preserves the analogy and the twenty-candidate figure."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Three documented mechanisms combine: mere exposure, social influence, cumulative advantage.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The model incorporates three phenomena that are individually well-documented in psychology and economics...",
+   "reasoning": "Matches the three named mechanisms."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Mere exposure (Zajonc 1968; Bornstein 1989, 208 experiments, r = 0.26) peaks then reverses.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments... r = 0.26. The effect peaks at moderate exposure and reverses with overexposure.",
+   "reasoning": "All years, counts, effect size, and curve shape match SOURCE."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Extra airtime creates artificial quality advantage; money-driven exposure contaminates judging.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "artists who get more initial airtime develop an artificial quality advantage... the judging is contaminated by the exposure, and the exposure was determined by money.",
+   "reasoning": "Direct restatement of the causal claim."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Salganik MusicLab (2006): 14,341 listeners, 48 songs; same song ranked 1st or 40th.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Salganik MusicLab experiment (2006)... 14,341 participants could listen to 48 unknown songs... rank 1st... and 40th.",
+   "reasoning": "All figures and the ranking range match SOURCE."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Matthew effect magnifies small differences; court at 20 beats missing by one year.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Merton called this the Matthew Effect. Small initial differences... get magnified... a court position at age 20... missed that appointment by one year never gets to build.",
+   "reasoning": "Preserves attribution and the age-20 example."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Producers get uncorrelated quality and capital; consumers add exposure and social signals; success feeds back.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Quality and capital are uncorrelated... Consumers form opinions based on actual quality plus the mere exposure effect plus social signals. Success feeds back into more exposure.",
+   "reasoning": "Faithful summary of the model setup."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Runs of 1,000 producers and 10,000 consumers, about 2 minutes each, 360+ per condition.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Each run takes about two minutes with 1,000 producers and 10,000 consumers... ran 360+ per condition.",
+   "reasoning": "All numeric values match SOURCE exactly."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Author built a simulation; formal paper linked, post is the informal version.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I built a simulation to find out. The full technical paper is here... This post is the less formal version.",
+   "reasoning": "Matches the meta description of the project."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Results: influence weakens quality link; canons reshuffle; capital dominates.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the correlation between actual quality and commercial success drops... equalizing starting resources jumps the quality-canon correlation... Capital gates access.",
+   "reasoning": "Summarizes the three headline results accurately."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "With social influence visible, quality-success correlation drops (p < 0.0001, 360 runs).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the quality-success correlation drops significantly (p < 0.0001 across 360 runs per condition).",
+   "reasoning": "p-value and run count match SOURCE."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.1.1"
+   ],
+   "claim_text": "Charts and view counts push away from independent judgment via proxy optimization.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Every 'Top 40' chart... pushes us away from independent judgment. We use popularity as a proxy for quality, then optimize for the proxy.",
+   "reasoning": "Preserves the proxy-contamination argument."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Talent constant over 200 runs; reshuffled resources yield counterfactual distance 0.88 of 1.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I ran it 200 times. The counterfactual distance was 0.88 on a 0-to-1 scale.",
+   "reasoning": "Run count and distance value match SOURCE."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Only top 10% have a shot regardless of funding, even then only about 1 in 4; 50th to 90th faces lottery.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Only the top 10% of talent had a meaningful shot... only about 1 in 4. For everyone in the 50th to 90th percentile... effectively a lottery.",
+   "reasoning": "Percentages and 1-in-4 figure match; minor drop of 'meaningful' preserves sense."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Full model 0.32; no social influence 0.35; equal capital 0.46; quality only 0.46: equalizing adds 44%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Full model... 0.32; No social influence... 0.35; Equal capital... 0.46; Quality only... 0.46... jumps the quality-canon correlation by 44%.",
+   "reasoning": "Every correlation and the 44% figure match SOURCE."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Stylized 1750 Vienna, 300 composers: distance 0.97, only 2.5 percent shared between histories.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "rewind to 1750... 300 composers... counterfactual distance was 0.97... Only 2.5% of canonical composers were shared.",
+   "reasoning": "Year, count, distance, and 2.5% match SOURCE."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "claim_text": "Varying parameters ±50%: steep money-to-attention conversion sidelines quality.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I varied every parameter by ±50%. The single most important factor is how steeply money converts into attention... quality barely matters.",
+   "reasoning": "Preserves the ±50% range and convex-conversion conclusion."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "5.6.1"
+   ],
+   "claim_text": "Major-label placement reaching 50 million versus independent self-promotion reaching 500.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500.",
+   "reasoning": "Both figures and the comparison match SOURCE."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Quality sets a floor and a ceiling; the middle is capital and luck.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It sets a floor below which you can't succeed and a ceiling above which you probably will. But the vast middle ground... is dominated by capital and luck.",
+   "reasoning": "Direct restatement of the Story 3 conclusion."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Bach may be greatest only among those resourced to be heard, published, preserved.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.",
+   "reasoning": "Matches SOURCE's qualified restatement; 'may be' is a harmless hedge."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Mechanisms run stronger today: patronage took decades, playlist placement takes hours.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The mechanisms are stronger today, not weaker... patronage decision played out over decades. A Spotify playlist placement plays out in hours.",
+   "reasoning": "Preserves the stronger-today claim and the two timescales."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Leverage is wider exposure; 1970s-80s blind auditions lifted women hires from 5% to 25%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Blind auditions for orchestras, widely adopted in the 1970s-80s... the proportion of women hired by major US orchestras went from 5% to 25%.",
+   "reasoning": "Decade range and both percentages match SOURCE."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Canon survival proxies bestness; curricula get built on the forgotten proxy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We use 'survived into the canon' as a proxy for 'was the best,' then build entire curricula... forgetting it was ever a proxy at all.",
+   "reasoning": "Faithful restatement of the proxy argument."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Quality as stable property is debatable; calibration leaps decades; genre and politics excluded.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "assumes quality is a real, stable property... philosophically debatable... Generalizing to 18th-century European aristocrats... requires a leap of faith... doesn't include: genre formation... cultural politics.",
+   "reasoning": "Enumerates the same caveats SOURCE lists."
+  }
+ ],
+ "metrics": {
+  "total_claims": 33,
+  "supported": 33,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

@@ -1,0 +1,80 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "01_what_is_mathematics",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "AI automates proof production.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The production of proofs has been automated, or it will be, under Tao's working assumption.",
+   "reasoning": "Source states proofs are or will be automated, matching the node's claim."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "AI automates verification.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Verifying the proof is often implicitly part of the proof process, and that is being automated too.",
+   "reasoning": "Source explicitly says verification is being automated too."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Mathematics is shifting toward deciding which patterns matter.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter",
+   "reasoning": "Source hedges with \"I am speculating\"; the node states the shift as fact, dropping the qualifier."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Deciding which patterns matter is a partly social judgment.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "importance is a partly social judgment: checkability and structural value set the floor and the ceiling, and the social layer decides the vast middle",
+   "reasoning": "Source calls importance a partly social judgment, matching the node."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "The deciding has no established home in the profession.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the deciding was never counted or paid as work, so it has no established home in the profession",
+   "reasoning": "Source states directly the deciding has no established home in the profession."
+  }
+ ],
+ "metrics": {
+  "total_claims": 5,
+  "supported": 4,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.8
+ },
+ "fail_list": [
+  "C03 drops the source's speculation hedge ('I am speculating'), presenting the shift as established fact"
+ ]
+}

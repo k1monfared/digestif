@@ -1,0 +1,322 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "12_lets_talk_privacy",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "L002"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical summary; introduces thesis and triad, so cannot defer to earlier claim."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "L003"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Frames the E2E definitional problem, distinct from later service specifics."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "L004"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds provider-exclusion goal plus metadata leak caveat, new information."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "L005"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specific inference about Meta access with three supporting reasons."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "L006"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "The portability smoking-gun test is a distinct diagnostic argument."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "L007"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contrasts Signal manual key copy; adds key-equivalence reasoning."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "L008"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete WhatsApp server storage and identity-mapping facts."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "L009"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Device enrollment key delivery and hidden-rogue-device counterpoint, new detail."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "L010"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Proton key generation and password-encrypted server storage architecture."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "L011"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Login flow evidence with bcrypt and local decryption, supports C009."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "L012"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Definitional distinction between one-way hashing and reversible encryption, not restated."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "L013"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Malicious-client-code attack path is distinct threat reasoning."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "L014"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Open source caveats (code match, honesty, clean infrastructure) add new conditions."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "L015"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Explicit WhatsApp versus Proton compromise-order contrast, new comparison."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "L016"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Signal on-device history and post-delivery server deletion facts."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "L017"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Enumerates migration methods, concrete and not repeated elsewhere."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "L018"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Signal recovery-key custody and unrecoverability are distinct facts."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "L019"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical section-6 thesis on unverifiable password layer."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "L020"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Client-versus-server verifiability split, distinct from section 8 lists."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "L021"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical breach evidence (Facebook, Adobe, small services)."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "L022"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Proton reset data-loss caveat distinguishes design honesty from capability."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "L023"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lists trust substitutes (reputation, jurisdiction, model, history), new content."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "L024"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Introduces architecture-to-trust-surface causal framing, not just triad labels."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "L025"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Section 7 triad restates the summary's WhatsApp/Proton/Signal comparison."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "L026"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C018",
+      "reasoning": "Section 8 thesis restates section 6 unverifiable password-storage claim."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "L027"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds concrete verifiable mechanisms: traffic checks, audits, published results."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "L028"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds unverifiable vectors: later changes, rogue staff, breaches."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "L029"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Actionable look-for and beware list, distinct recommendation."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "L030"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C020",
+      "reasoning": "Same Adobe, Facebook, small-service breach examples already given in 6.2."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "L031"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Trust-minimizing requirements list, distinct from recommendation in 9."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "L032"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Applied-trust triad repeats the summary/comparison service mapping."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "L033"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds decentralization and hardware keys beyond C030 recommendations."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "L034"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Meta sources line, no argumentative value, restates header-level citations."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 33,
+    "unique": 28,
+    "duplicates": 4,
+    "trivia": 1,
+    "redundancy_rate": 0.1212,
+    "trivia_rate": 0.0303,
+    "structured_tokens": 679,
+    "tokens_per_unique_claim": 24.25
+  },
+  "prune_list": [
+    "C024 duplicates C001, safe to merge",
+    "C025 duplicates C018, safe to merge",
+    "C029 duplicates C020, safe to merge",
+    "C031 duplicates C001, safe to merge",
+    "C033 trivia meta sources line, safe to cut"
+  ]
+}

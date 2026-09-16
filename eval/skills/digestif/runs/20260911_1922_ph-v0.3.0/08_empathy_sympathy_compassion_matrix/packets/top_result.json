@@ -1,0 +1,30 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "point-hierarchy sample (as provided in inputs)",
+ "inputs": {
+  "faithfulness_precision": 0.9355,
+  "critical_errors": 0,
+  "must_recall": 0.9583,
+  "overall_recall": 0.9667,
+  "redundancy_rate": 0.0323,
+  "trivia_rate": 0.0323
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "Gate check: critical_errors 0 <= 0 pass; must_recall 0.9583 >= 0.9 pass; faithfulness_precision 0.9355 < 0.95 FAIL. Weighted score (for audit only, does not override the fail): 0.4*0.9355 + 0.4*0.9583 - 0.2*0.0323 = 0.37420 + 0.38332 - 0.00646 = 0.75106 rounded to 0.7511.",
+ "weighted_score": 0.7511,
+ "verdict": "Fail",
+ "tradeoff_note": "The sample fails on the faithfulness_precision hard gate alone (0.9355 vs 0.95 min) despite clean coverage, zero critical errors, and low redundancy. Concision quality here cannot rescue the shortfall, and no coverage gain justifies it since the issue is precision, not length.",
+ "fix_list": [
+  "Raise faithfulness_precision above 0.95 by resolving C002: honor the four-block divider and stop merging 'control' (psychopath-only) into the 'present in both' modeling/boundary/manipulators block (loglog 1).",
+  "Fix C026: restore the approximation qualifier 'close to' for the psychopath-as-cognition-alone mapping instead of stating it as absolute (loglog 4.6), and merge it into C007 to remove the duplicate.",
+  "Recover the dropped nuance in must-have K12: re-add the empath failure modes (boundary, scope, scalability) and the correction that the empath is not the moral ideal because it inherits the sociopath's distortions (L031, L009, L013, L014).",
+  "Prune C020 (generic header trivia) and merge C026 into C007 to keep redundancy below the 0.15 max after edits."
+ ],
+ "reasoning": "Hard-gate-first per top_policy. Gate 1: critical_errors = 0, at the critical_contradicted_max of 0, pass, so no Critical-contradiction fail. Gate 2: must_recall = 11 present + 0.5 partial / 12 = 0.9583 (K12 is a Must have scored Partial), which is >= must_recall_min 0.9, pass. Gate 3: faithfulness_precision = 29/31 = 0.9355, which is below faithfulness_precision_min 0.95, so the hard gate is missed and the sample Fails regardless of the weighted score. The two Partially supported claims are C002 (interpretation, Minor, loglog 1) and C026 (interpretation, Minor, loglog 4.6). C002 over-merges across the source's block divider, moving 'control' from the psychopath-only block into the present-in-both node, which is a block-boundary fidelity error. C026 drops the source hedge 'close to' and states the psychopath mapping as absolute. Both are the leverage points needed to lift precision from 0.9355 to at least 0.95 (resolving both yields 31/31 = 1.0, resolving one yields 30/31 = 0.9677, which clears the gate). The weighted score of 0.7511 uses aspect_weights 0.4/0.4/0.2 and is reported only for audit; per top_policy it cannot overturn a missed hard gate, and concision (redundancy 0.0323, well under 0.15) never compensates for the faithfulness loss. Borderline does not apply because the fail is a numeric hard-gate miss, not merely a Partial or Unverifiable claim affecting a Must have point, though K12's Partial Must-have and C026's partial status are noted as secondary risk. If C002 or C026 were downgraded to Supported with justification, precision would clear 0.95 (0.9677) and the verdict would become Pass with concatenated coverage above the minimum; absent that, the verdict is Fail."
+}

@@ -1,0 +1,221 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "09_not_even_wrong/source.txt",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "L002"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Recap that restates the five theme claims; adds no new information beyond the body."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "L003"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Definitional core point, not restated elsewhere."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "L004"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds Pauli attribution, a named entity not present earlier."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "L005"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concrete Atiyah example with date and age; new specifics."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "L006"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds rigor failure and leaders-rhetoric analogy; not stated before."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "L007"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Theme-level general claim anchoring the investment branch."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "L008"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds financial-stake and dissonance mechanics; new causal detail."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "L009"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds investor acceptance and milestone dynamics; new specifics."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "L010"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds cycle framing and identity feedback not in C007 or C008."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "L011"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds the verifiable-plus-grandiose pairing claim; new."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "L012"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Theme-level general claim anchoring the social-proof branch."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "L013"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds herd-cue mechanism explaining social proof; new."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "L014"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds outsider posing and betrayal feeling; new detail."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "L015"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds algorithmic echo chambers and authenticity signal; new."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "L016"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Theme-level general claim anchoring the rationality branch."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "L017"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C015",
+   "reasoning": "Restates C015's core: aligned factors shape evaluation and override scrutiny."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "L018"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds outcome asymmetry and missing societal proof frameworks; new."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "L019"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Theme-level recommendation anchoring the remedies branch."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "L020"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds individual-level actions and Would-I-believe test; new."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "L021"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds societal-level actions and skepticism norm; new."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "L022"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C018",
+   "reasoning": "Restates C018's core: judge claims independently of investment or opposition."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "L023"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds named evidence sources covering direct and indirect bullshit; new."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 22,
+  "unique": 19,
+  "duplicates": 2,
+  "trivia": 1,
+  "redundancy_rate": 0.09,
+  "trivia_rate": 0.05,
+  "structured_tokens": 328,
+  "tokens_per_unique_claim": 17.26
+ },
+ "prune_list": [
+  "C001 is a recap of C002-C018, safe to drop or demote",
+  "C016 duplicates C015, safe to merge",
+  "C021 duplicates C018, safe to merge"
+ ]
+}

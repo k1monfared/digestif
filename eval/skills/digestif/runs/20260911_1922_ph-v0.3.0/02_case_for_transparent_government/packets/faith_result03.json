@@ -1,0 +1,260 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "02_case_for_transparent_government",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Secret programs recur as illegal; secret oversight reliably fails to catch them.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a recurring pattern in which government programs, shielded by secrecy, are later revealed to be illegal or built on lies... secret oversight reliably fails to prevent illegal secret programs",
+   "reasoning": "Source asserts the recurring illegality pattern and reliable oversight failure. Dropped 'or built on lies' is harmless compression."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "In 1971 Pentagon Papers showed government knew Vietnam was unwinnable while publicly claiming progress.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In 1971, the Pentagon Papers revealed that the US government knew the Vietnam War was unwinnable while publicly claiming progress.",
+   "reasoning": "Loglog restates the source sentence with year, actor, and claim intact."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Media, Pennsylvania break-in exposed COINTELPRO's illegal surveillance and disruption.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "activists broke into an FBI office in Media, Pennsylvania, and exposed COINTELPRO - a program of illegal surveillance, infiltration, and disruption",
+   "reasoning": "Location, target, and program attributes match the source exactly."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "COINTELPRO targeted civil rights leaders and political dissidents.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "targeting civil rights leaders and political dissidents",
+   "reasoning": "Direct restatement of the source's target list."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "In 2013 Snowden revealed bulk metadata collection from millions of Americans, PRISM, and leader surveillance.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In 2013, Edward Snowden leaked classified documents revealing the NSA was bulk-collecting phone metadata from millions of Americans... through PRISM, and surveilling foreign leaders",
+   "reasoning": "Year, actor, bulk collection, PRISM, and foreign-leader surveillance match the source."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Each disclosure was predicted catastrophic yet revealed illegality, unconstitutionality, or deliberate deception.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In each case, the government predicted catastrophe from disclosure. In each case, the programs turned out to be illegal, unconstitutional, or based on deliberate deception",
+   "reasoning": "The paired source sentences directly assert both the catastrophe prediction and the revealed outcomes."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "In September 2020 the Ninth Circuit ruled bulk collection illegal, possibly unconstitutional.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In September 2020, the US Ninth Circuit Court of Appeals ruled that the NSA's bulk phone record collection was illegal and possibly unconstitutional.",
+   "reasoning": "Court, date, and both qualifiers match the source."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "The court required FISA relevance to a particular authorized investigation.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the government failed to satisfy FISA's requirement to show \"relevance to a particular authorized investigation.\"",
+   "reasoning": "Quoted FISA requirement is reproduced accurately."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "6.8"
+   ],
+   "claim_text": "Stone found no evidence bulk collection stopped any terror attacks.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Geoffrey R. Stone, found \"no evidence that the bulk collection of phone data had stopped any terror attacks.\"",
+   "reasoning": "The finding and attribution to Stone match the source quote."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "6.9"
+   ],
+   "claim_text": "The NSA abandoned the program in 2018: it no longer made sense.",
+   "claim_type": "number_or_date",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "The NSA itself reportedly abandoned the program in 2018, telling the White House it \"no longer made sense.\"",
+   "reasoning": "Node states as flat fact what source hedges with 'reportedly', dropping the attribution qualifier."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "6.10"
+   ],
+   "claim_text": "FISA courts, committees, and inspectors general failed inside the secrecy structure.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The FISA court, congressional intelligence committees, and inspectors general all existed. They failed because they operated inside the secrecy structure",
+   "reasoning": "All three oversight bodies and the failure cause match the source."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "6.11"
+   ],
+   "claim_text": "Secret oversight can be captured, co-opted, or worn down institutionally.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Oversight that is itself secret is oversight that can be captured, co-opted, or simply worn down by institutional pressure.",
+   "reasoning": "Node reproduces the source's three mechanisms and the 'can' hedge."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "6.12"
+   ],
+   "claim_text": "The 2015 USA FREEDOM Act first reined in NSA spying in over 30 years.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The USA FREEDOM Act (2015) became the first legislation to rein in NSA spying in over 30 years.",
+   "reasoning": "Year, statute, and the 30-year first characterize the source verbatim."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "6.13"
+   ],
+   "claim_text": "It ended bulk metadata collection and required releasing significant FISC opinions.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It ended bulk collection of phone metadata and required the Foreign Intelligence Surveillance Court to release significant opinions.",
+   "reasoning": "Both effects match the source; FISC is the source's named court."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "6.14"
+   ],
+   "claim_text": "The tech sector adopted transparency reporting on data requests.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The tech sector adopted transparency reporting on government data requests.",
+   "reasoning": "Direct restatement of the source claim."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6.15"
+   ],
+   "claim_text": "HTTPS became default on most websites.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "HTTPS encryption became the default on most websites.",
+   "reasoning": "Verbatim match including the 'most websites' scope."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.16"
+   ],
+   "claim_text": "The EU's GDPR was accelerated by the revelations.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The EU's GDPR was accelerated by the revelations.",
+   "reasoning": "Direct restatement of the causal claim."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6.17"
+   ],
+   "claim_text": "Operational harm is genuinely uncertain; illegality is not.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Whether these disclosures caused operational harm is genuinely uncertain... But the legality question is not uncertain. The programs were illegal.",
+   "reasoning": "Node preserves both the uncertainty and its contrast with settled illegality."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.18"
+   ],
+   "claim_text": "Snowden is the symptom of absent designed-in transparency, not the solution.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Snowden is not the solution. Snowden is the symptom of a system where the only alternative to permanent secrecy is uncontrolled disclosure.",
+   "reasoning": "Node keeps both negations and maps 'absence of a model' to designed-in transparency."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.19"
+   ],
+   "claim_text": "Designed-in traceability would surface illegality early without bulk-leak damage.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Designed-in transparency - where citizens can trace decisions by default - would have made the illegal programs visible before they scaled, without the collateral damage of a bulk leak.",
+   "reasoning": "Early visibility and avoided bulk-leak damage match the source claim closely."
+  }
+ ],
+ "metrics": {
+  "total_claims": 20,
+  "supported": 19,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.95
+ },
+ "fail_list": [
+  "C10 dropped source hedge 'reportedly', stated NSA 2018 abandonment as flat fact"
+ ]
+}

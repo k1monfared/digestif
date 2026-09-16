@@ -1,0 +1,48 @@
+- Let's Talk Privacy: who can read your messages (source: 12_lets_talk_privacy/source.txt)
+    Summary: Encrypted chats still trust providers; only client-held keys minimize that trust. (¶2, ¶18, ¶27)
+        - 1 E2EE means device-to-device secrecy, but users need provider exclusion, not just transit safety. (¶1, ¶2)
+            - 1.1 Nuance: Non-expert end-user inquiry from a conversation with Omid. (¶1)
+            - 1.2 Nuance: Metadata (network, frequency, volume, timing) still aids interpretation. (¶2)
+            - 1.3 If claims hold with no backdoors, Meta cannot read; closed source blocks certainty. (¶3)
+            - 1.4 Business model, 2021 ad-sharing policy, and 2019 plaintext failure imply near-certain access. (¶3)
+        - 2 Smoking gun: history on a new device with no manual key transfer. (¶4)
+            - 2.1 Example: Locker plus receiver-only master key; server key touch equals public billboard copy. (¶4)
+            - 2.2 WhatsApp server stores encrypted history and hands keys to devices it authenticates. (¶5)
+            - 2.3 Nuance: Device lists and codes rely on honest reporting; a rogue device could hide. (¶5)
+        - 3 Proton generates the private key in-browser, wrapping it with bcrypt and AES-256. (¶6)
+            - 3.1 Evidence: Six-step login: type, bcrypt with server salt, authenticate, fetch key, decrypt locally, read. (¶7)
+            - 3.2 Hashing authenticates one-way; encryption protects two-way under the actual password. (¶8)
+            - 3.3 Nuance: In theory the seen hash cannot decrypt the password-wrapped key. (¶9)
+        - 4 Counterpoint: Malicious client code could capture the typed password before hashing. (¶10)
+            - 4.1 Nuance: Trust needs matching code, no compelled injection, uncompromised infrastructure. (¶10)
+            - 4.2 Proton must steal the password first; WhatsApp grants keys directly. (¶11)
+        - 5 Signal: 30-digit passphrase file, device-to-device transfer, or unseen 64-character key. (¶12)
+            - 5.1 Evidence: Android backup needs physical transfer; direct transfer needs both devices present. (¶12)
+            - 5.2 Nuance: Zero-knowledge: no decryption, no recovery help after a lost key. (¶13)
+        - 6 Plaintext password storage cannot be ruled out with certainty. (¶14, ¶20)
+            - 6.1 Open clients prove sending behavior, never the server's later handling. (¶15)
+            - 6.2 Evidence: Facebook logged hundreds of millions plaintext for years; Adobe leaked hints; MD5 persists. (¶16)
+        - 7 Evidence: Proton reset destroys old mail, suggesting genuine inability, but proves nothing. (¶17)
+            - 7.1 Trust rests on reputation, jurisdiction, model, behavior, not verifiable guarantees. (¶18)
+            - 7.2 Escrow (WhatsApp) versus password-wrapped (Proton) versus client-controlled (Signal). (¶19)
+            - 7.3 Evidence: Rogue device: YES for WhatsApp; NO for Proton and Signal (client caveat). (¶19)
+        - 8 Checkable: open clients, Wireshark traffic, audits of deployed code. (¶21)
+            - 8.1 Uncheckable: running code, later updates, rogue staff, breaches. (¶22)
+            - 8.2 Evidence: Good: open servers, audits, clean breaches; bad: reset-proof data, obscurity, violations. (¶23)
+            - 8.3 Evidence: Facebook 2019: 200-600 million passwords, 20,000+ searchers, archives from 2012. (¶24)
+            - 8.4 Trust ends only with client-side crypto, zero-knowledge servers, verifiable builds. (¶25)
+            - 8.5 WhatsApp needs whole-infrastructure trust; Proton hashing honesty; Signal key custody. (¶26)
+            - 8.6 Prefer client-side encryption, open source, decentralization, hardware keys like YubiKey. (¶27)
+        - 9 Evidence: Sources: Meta 2021 engineering, Proton key docs, Signal September 2024 backups. (¶28)
+    - Cross-links
+        - 1.4 supports 1.3 (¶3) note: policy and breach history evidence the access claim
+        - 2.2 supports 2 (¶5) note: server key-granting evidences the smoking gun
+        - 2.2 contradicts 4.2 (¶11) note: trust models oppose: client compromise vs direct grant
+        - 5.2 supports 5 (¶13) note: no-recovery evidences zero-knowledge
+        - 6.2 supports 6 (¶16) note: breach precedents evidence the password doubt
+        - 6.2 restates 8.3 (¶24) note: breach numbers restated with full figures
+        - 7 qualifies 3.3 (¶17) note: reset evidence is suggestive, not proof
+        - 7 restates 8.5 (¶26) note: applied table restates the section-7 trust comparison
+        - 7.2 exemplifies 7.1 (¶19) note: three-model labels illustrate the trust gradient
+        - 8.6 supports 0 (¶27) note: recommendations support the minimize-trust summary
+    - Coverage: 28 of 28 passages cited

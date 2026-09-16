@@ -1,0 +1,319 @@
+{
+ "sample": "07_intentionalism",
+ "part": 3,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "8",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Understanding the disadvantage does not remove it; you have to actually switch positions.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "## Breaking Out\nThe structural disadvantage of being a receiver doesn't go away because you understand it. You have to actually switch positions."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This is harder than it sounds, because the environment is designed to keep us receiving.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "This is harder than it sounds, because our entire environment is designed to keep us receiving. Every interface, every recommendation system, every application process, every social script is built around presenting options and waiting for you to choose."
+    }
+   ]
+  },
+  {
+   "id": "8.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Every interface, recommendation system, application process, and social script presents options and waits for you to choose.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "This is harder than it sounds, because our entire environment is designed to keep us receiving. Every interface, every recommendation system, every application process, every social script is built around presenting options and waiting for you to choose."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proposing means deciding intentionally what you want before seeing what is available.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "Proposing means:\n- Deciding intentionally what you want before seeing what's available\n- Pursuing specific things rather than evaluating presented options  \n- Being willing to create opportunities rather than waiting for them\n- Accepting the friction of going against default flows"
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It means pursuing specific things rather than evaluating presented options.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "Proposing means:\n- Deciding intentionally what you want before seeing what's available\n- Pursuing specific things rather than evaluating presented options  \n- Being willing to create opportunities rather than waiting for them\n- Accepting the friction of going against default flows"
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It means being willing to create opportunities rather than waiting for them.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "Proposing means:\n- Deciding intentionally what you want before seeing what's available\n- Pursuing specific things rather than evaluating presented options  \n- Being willing to create opportunities rather than waiting for them\n- Accepting the friction of going against default flows"
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It means accepting the friction of going against default flows.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "Proposing means:\n- Deciding intentionally what you want before seeing what's available\n- Pursuing specific things rather than evaluating presented options  \n- Being willing to create opportunities rather than waiting for them\n- Accepting the friction of going against default flows"
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It means asking what do I actually want before every major decision and most minor ones.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "It means asking \"what do I actually want?\" before every major decision and most minor ones. Then acting on that answer intentionally, even when it's inconvenient."
+    }
+   ]
+  },
+  {
+   "id": "8.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Then acting on that answer intentionally, even when it is inconvenient.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "It means asking \"what do I actually want?\" before every major decision and most minor ones. Then acting on that answer intentionally, even when it's inconvenient."
+    }
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Most people will not do this: it is effortful, and the receiver position is comfortable enough not to motivate change.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "Most people won't do this. It's effortful. The receiver position is comfortable enough to not motivate change. And after years of receiver mode, most people have lost the capacity to even know what they'd want to propose."
+    }
+   ]
+  },
+  {
+   "id": "8.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "After years of receiver mode, most people have lost the capacity to even know what they would want to propose.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "Most people won't do this. It's effortful. The receiver position is comfortable enough to not motivate change. And after years of receiver mode, most people have lost the capacity to even know what they'd want to propose."
+    }
+   ]
+  },
+  {
+   "id": "8.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For those who do shift, real life does not follow the exact mathematics but shares enough of the structure.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "But for those who do make the shift: while real life doesn't follow the exact mathematics of the Gale-Shapley algorithm, it shares enough of the structure that the outcomes follow the same pattern. Systematically better. Not just incrementally—structurally."
+    }
+   ]
+  },
+  {
+   "id": "8.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Systematically better, not just incrementally: structurally.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "But for those who do make the shift: while real life doesn't follow the exact mathematics of the Gale-Shapley algorithm, it shares enough of the structure that the outcomes follow the same pattern. Systematically better. Not just incrementally—structurally."
+    }
+   ]
+  },
+  {
+   "id": "8.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question is not whether this dynamic exists; the mathematics and the patterns we see around us both point to it.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "The question isn't whether this dynamic exists. The mathematics and the patterns we see around us both point to it."
+    }
+   ]
+  },
+  {
+   "id": "8.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question is whether you are willing to do something about it.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "The question is whether you're willing to do something about it."
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Start with tomorrow morning, not your career or life partner.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "## What You Can Do Tomorrow\nDon't start with your career or life partner. Start with tomorrow morning."
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Before you check your phone, decide intentionally what you actually want from the first hour: calm, energy, connection, or solitude.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "Before you check your phone, decide intentionally: what do you actually want from the first hour of your day? Not \"I'll see what notifications I have\" but specifically: do you want calm? Energy? Connection? Solitude?"
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If you want calm, do not open apps that will agitate you; if connection, reach out to someone specific; if energy, do something physical.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "Then pursue that. If you want calm, don't open apps that will agitate you. If you want connection, reach out to someone specific. If you want energy, do something physical."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Notice how different this feels from scrolling until something grabs you.",
+   "evidence": [
+    {
+     "ref": "¶52",
+     "text": "Notice how different this feels from scrolling until something grabs you."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Do this for a week with small things, breakfast, evening activities, weekend plans, noticing what actually satisfies you versus what just filled time.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "Do this for a week with small things—breakfast, evening activities, weekend plans. Notice what actually satisfies you versus what just filled time. Those patterns are the beginning of intention."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Those patterns are the beginning of intention.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "Do this for a week with small things—breakfast, evening activities, weekend plans. Notice what actually satisfies you versus what just filled time. Those patterns are the beginning of intention."
+    }
+   ]
+  },
+  {
+   "id": "9.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Then scale up: before looking at job postings, decide what kind of work you want to do.",
+   "evidence": [
+    {
+     "ref": "¶54",
+     "text": "Then scale up. Apply it to bigger decisions. Before looking at job postings, decide what kind of work you want to do. Before swiping on dating apps, decide what kind of relationship you're looking for. Before browsing products, decide what problem you're trying to solve."
+    }
+   ]
+  },
+  {
+   "id": "9.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Before swiping on dating apps, decide what kind of relationship you are looking for, and before browsing products, what problem you are solving.",
+   "evidence": [
+    {
+     "ref": "¶54",
+     "text": "Then scale up. Apply it to bigger decisions. Before looking at job postings, decide what kind of work you want to do. Before swiping on dating apps, decide what kind of relationship you're looking for. Before browsing products, decide what problem you're trying to solve."
+    }
+   ]
+  },
+  {
+   "id": "9.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The practice builds the muscle, the muscle enables larger intentions, larger intentions become values, and values make you a proposer.",
+   "evidence": [
+    {
+     "ref": "¶55",
+     "text": "The practice builds the muscle. The muscle enables larger intentions. Larger intentions become values. Values make you a proposer."
+    }
+   ]
+  },
+  {
+   "id": "9.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proposers, whether in the pure mathematics of matching algorithms or the messy approximations of real life, end up with better outcomes.",
+   "evidence": [
+    {
+     "ref": "¶56",
+     "text": "And proposers—whether in the pure mathematics of matching algorithms or in the messy approximations of real life—end up with better outcomes."
+    }
+   ]
+  },
+  {
+   "id": "9.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Not because they are special, but because they are on the other side of the equation.",
+   "evidence": [
+    {
+     "ref": "¶57",
+     "text": "Not because they're special. Because they're on the other side of the equation.\n---"
+    }
+   ]
+  }
+ ]
+}

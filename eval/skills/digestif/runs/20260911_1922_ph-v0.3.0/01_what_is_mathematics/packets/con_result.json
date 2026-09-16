@@ -1,0 +1,1191 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "source.txt",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Document thesis headline carrying the core argument."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 1 spine claim, not restated elsewhere."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Professor grading analogy source instance; canonical for recap."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds cross-domain scope beyond mathematics."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "States the old definition under test."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ground-truth premise, distinct from definition claim."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Names the two prompting sources and their question."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Author agreement nuance, new positioning."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "1.7"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C126",
+   "reasoning": "Restates First Proof result already stated in appendix."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "1.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Cost-per-solution figure appears here first."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "1.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Erdos 728 machine-checked event, distinct evidence."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "1.10"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Unit distance disproof event, distinct evidence."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "1.11"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical split-of-roles claim, recapped later."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "1.12"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C126",
+   "reasoning": "Restates First Proof result and cost with looser phrasing."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "1.13"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Human problem-selection nuance, not repeated."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "1.14"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Conjecture generators distinction, new point."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "1.15"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Dilemma formulation, load-bearing inference."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "1.16"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Author verdict that mathematics continues."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "1.17"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C115",
+   "reasoning": "Restates proving-as-chore, finding-as-real claim."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "1.18"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concession on hidden anthropocentric assumption."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "1.19"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Image reference, no argument content."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 2 spine claim on verification."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Tao hypothesis framing, distinct."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Voevodsky retraction evidence, canonical."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Deligne lemma detail, distinct from C024."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Years of unnoticed error, adds severity."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Causal response pushing computer verification."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "2.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Generalizes unreliability, section-level claim."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "2.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Author argument on comparable AI error."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "2.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Numbers on assumed premise, never trivia."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 3 spine, process-as-product thesis."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Moradifam teaching aims, distinct evidence."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Offloading and illusion definitions."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Calculator analogy nuance, new."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Causal confusion of output for learning."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Airport ad example carrying a point."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "3.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Instrumental versus constitutive distinction."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "3.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Chore versus thinking offload contrast."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "3.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Boundary concession with historical analogues."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "3.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Named GPS atrophy studies, never trivia."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "3.10"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C123",
+   "reasoning": "Restates proving-as-gym training claim."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "3.11"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Failed proofs still teach, new nuance."
+  },
+  {
+   "claim_id": "C043",
+   "loglog_ids": [
+    "3.12"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "AI-polished proof character, distinct."
+  },
+  {
+   "claim_id": "C044",
+   "loglog_ids": [
+    "3.13"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Missing literature links and friction."
+  },
+  {
+   "claim_id": "C045",
+   "loglog_ids": [
+    "3.14"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Thurston success definition, distinct."
+  },
+  {
+   "claim_id": "C046",
+   "loglog_ids": [
+    "3.15"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Pipeline optimizes away struggle."
+  },
+  {
+   "claim_id": "C047",
+   "loglog_ids": [
+    "3.16"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Tao community optimization question."
+  },
+  {
+   "claim_id": "C048",
+   "loglog_ids": [
+    "4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 4 spine, bottleneck shift."
+  },
+  {
+   "claim_id": "C049",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Stated Working Hypothesis definition."
+  },
+  {
+   "claim_id": "C050",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Tao community-goals nuance."
+  },
+  {
+   "claim_id": "C051",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Goodhart mechanism, partially supported but distinct."
+  },
+  {
+   "claim_id": "C052",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Two-piles evidence, distinct."
+  },
+  {
+   "claim_id": "C053",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Acceptance as slow human external stage."
+  },
+  {
+   "claim_id": "C054",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonicalization value claim, distinct."
+  },
+  {
+   "claim_id": "C055",
+   "loglog_ids": [
+    "4.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Pipeline figure description, supports heading."
+  },
+  {
+   "claim_id": "C056",
+   "loglog_ids": [
+    "4.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Per-stage mismatch list, distinct."
+  },
+  {
+   "claim_id": "C057",
+   "loglog_ids": [
+    "4.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Halmos and Tao exposition recommendation."
+  },
+  {
+   "claim_id": "C058",
+   "loglog_ids": [
+    "4.10"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Leiden Declaration recommendation."
+  },
+  {
+   "claim_id": "C059",
+   "loglog_ids": [
+    "4.11"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C003",
+   "reasoning": "Recaps professor producing-versus-checking motif."
+  },
+  {
+   "claim_id": "C060",
+   "loglog_ids": [
+    "5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 5 spine on unstable importance."
+  },
+  {
+   "claim_id": "C061",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Davies and AlphaTensor evidence, distinct."
+  },
+  {
+   "claim_id": "C062",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C013",
+   "reasoning": "Restates AI-proposes, humans-digest split."
+  },
+  {
+   "claim_id": "C063",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Four-color and classification precedent."
+  },
+  {
+   "claim_id": "C064",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Builder-to-interpreter shift, distinct."
+  },
+  {
+   "claim_id": "C065",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Thesis that judgment becomes valuable."
+  },
+  {
+   "claim_id": "C066",
+   "loglog_ids": [
+    "5.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Where each source stops, distinct."
+  },
+  {
+   "claim_id": "C067",
+   "loglog_ids": [
+    "5.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Meta stance of the blog, keeps scope."
+  },
+  {
+   "claim_id": "C068",
+   "loglog_ids": [
+    "5.8"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C031",
+   "reasoning": "Restates process-as-product thesis."
+  },
+  {
+   "claim_id": "C069",
+   "loglog_ids": [
+    "5.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Importance not stable judgment, distinct."
+  },
+  {
+   "claim_id": "C070",
+   "loglog_ids": [
+    "5.10"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Applicability lever, first of two levers."
+  },
+  {
+   "claim_id": "C071",
+   "loglog_ids": [
+    "5.11"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Big-name taste lever, distinct."
+  },
+  {
+   "claim_id": "C072",
+   "loglog_ids": [
+    "5.12"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Nash example, named and unverified caveat."
+  },
+  {
+   "claim_id": "C073",
+   "loglog_ids": [
+    "5.13"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Neither lever pure judgment, new synthesis."
+  },
+  {
+   "claim_id": "C074",
+   "loglog_ids": [
+    "5.14"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Sourcing concession with hedge, not trivia."
+  },
+  {
+   "claim_id": "C075",
+   "loglog_ids": [
+    "6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 6 spine on influencer economy."
+  },
+  {
+   "claim_id": "C076",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Everything-is-sales framing, distinct."
+  },
+  {
+   "claim_id": "C077",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Blogs-versus-books shift evidence."
+  },
+  {
+   "claim_id": "C078",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Random voices beat experts, distinct."
+  },
+  {
+   "claim_id": "C079",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Timeline guess, numbers kept."
+  },
+  {
+   "claim_id": "C080",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Tao and Gowers standing contrast."
+  },
+  {
+   "claim_id": "C081",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Gatekeeping concession with negation caveat."
+  },
+  {
+   "claim_id": "C082",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Compute-budget priority prediction."
+  },
+  {
+   "claim_id": "C083",
+   "loglog_ids": [
+    "6.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Private attention allocation point."
+  },
+  {
+   "claim_id": "C084",
+   "loglog_ids": [
+    "6.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Alignment-so-far nuance, distinct."
+  },
+  {
+   "claim_id": "C085",
+   "loglog_ids": [
+    "6.10"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Structural old trust evidence, distinct."
+  },
+  {
+   "claim_id": "C086",
+   "loglog_ids": [
+    "6.11"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Engagement standing contrast."
+  },
+  {
+   "claim_id": "C087",
+   "loglog_ids": [
+    "6.12"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Seeming-versus-judging causal claim."
+  },
+  {
+   "claim_id": "C088",
+   "loglog_ids": [
+    "6.13"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canon simulation evidence, distinct."
+  },
+  {
+   "claim_id": "C089",
+   "loglog_ids": [
+    "6.14"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Attention canon selects legibility."
+  },
+  {
+   "claim_id": "C090",
+   "loglog_ids": [
+    "6.15"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C112",
+   "reasoning": "Restates floor/ceiling and social-layer claim."
+  },
+  {
+   "claim_id": "C091",
+   "loglog_ids": [
+    "6.16"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Feedback loop into training data."
+  },
+  {
+   "claim_id": "C092",
+   "loglog_ids": [
+    "6.17"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Stable culture doubt, distinct nuance."
+  },
+  {
+   "claim_id": "C093",
+   "loglog_ids": [
+    "6.18"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterpoint that not all is doom."
+  },
+  {
+   "claim_id": "C094",
+   "loglog_ids": [
+    "6.19"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Danger is audience change, distinct."
+  },
+  {
+   "claim_id": "C095",
+   "loglog_ids": [
+    "7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 7 spine on hollow middle."
+  },
+  {
+   "claim_id": "C096",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "CNC furniture evidence, distinct."
+  },
+  {
+   "claim_id": "C097",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Carpenter vanishing nuance."
+  },
+  {
+   "claim_id": "C098",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "AI apps stall evidence, distinct."
+  },
+  {
+   "claim_id": "C099",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Digestion shop causal link."
+  },
+  {
+   "claim_id": "C100",
+   "loglog_ids": [
+    "8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 8 spine on shared reasoning."
+  },
+  {
+   "claim_id": "C101",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Trust-in-meanings nuance."
+  },
+  {
+   "claim_id": "C102",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Why agreers agree question."
+  },
+  {
+   "claim_id": "C103",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Delta holds information definition."
+  },
+  {
+   "claim_id": "C104",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Corroboration and warning mechanisms."
+  },
+  {
+   "claim_id": "C105",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Deference amputates reasoning, distinct."
+  },
+  {
+   "claim_id": "C106",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Atiyah example, named and dated."
+  },
+  {
+   "claim_id": "C107",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Attention strips reasoning in transit."
+  },
+  {
+   "claim_id": "C108",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "AI conclusions without process."
+  },
+  {
+   "claim_id": "C109",
+   "loglog_ids": [
+    "8.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Risk of losing why, distinct."
+  },
+  {
+   "claim_id": "C110",
+   "loglog_ids": [
+    "8.10"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Bare thought-experiment reference, no content."
+  },
+  {
+   "claim_id": "C111",
+   "loglog_ids": [
+    "9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Section 9 spine, finding plus proving."
+  },
+  {
+   "claim_id": "C112",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical floor/ceiling formulation."
+  },
+  {
+   "claim_id": "C113",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Importance social dimension, distinct."
+  },
+  {
+   "claim_id": "C114",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Publish-anything versus grant behavior."
+  },
+  {
+   "claim_id": "C115",
+   "loglog_ids": [
+    "9.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical proving-cheap, finding-human claim."
+  },
+  {
+   "claim_id": "C116",
+   "loglog_ids": [
+    "9.5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Speculative mix shift, distinct."
+  },
+  {
+   "claim_id": "C117",
+   "loglog_ids": [
+    "9.6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Deciding unpaid with no home."
+  },
+  {
+   "claim_id": "C118",
+   "loglog_ids": [
+    "9.7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "AI reveals practice, judgment remainder."
+  },
+  {
+   "claim_id": "C119",
+   "loglog_ids": [
+    "9.8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Undecided fates, distinct."
+  },
+  {
+   "claim_id": "C120",
+   "loglog_ids": [
+    "9.9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Statistics precedent, distinct from C057."
+  },
+  {
+   "claim_id": "C121",
+   "loglog_ids": [
+    "9.10"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Craft loses living, distinct."
+  },
+  {
+   "claim_id": "C122",
+   "loglog_ids": [
+    "9.11"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Thinking as purpose, distinct."
+  },
+  {
+   "claim_id": "C123",
+   "loglog_ids": [
+    "9.12"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical proof-as-gym metaphor."
+  },
+  {
+   "claim_id": "C124",
+   "loglog_ids": [
+    "9.13"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Coach without lifting risk."
+  },
+  {
+   "claim_id": "C125",
+   "loglog_ids": [
+    "9.14"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "First Proof methodology, new detail."
+  },
+  {
+   "claim_id": "C126",
+   "loglog_ids": [
+    "9.15"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Canonical detailed First Proof result, supersedes repeats."
+  },
+  {
+   "claim_id": "C127",
+   "loglog_ids": [
+    "9.16"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds system names and translator detail."
+  },
+  {
+   "claim_id": "C128",
+   "loglog_ids": [
+    "9.17"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds technical bound and method detail."
+  },
+  {
+   "claim_id": "C129",
+   "loglog_ids": [
+    "9.18"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Names the human digesters, distinct."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 129,
+  "unique": 119,
+  "duplicates": 8,
+  "trivia": 2,
+  "redundancy_rate": 0.062,
+  "trivia_rate": 0.016,
+  "structured_tokens": 129,
+  "tokens_per_unique_claim": 1.084
+ },
+ "prune_list": [
+  "C009 duplicates C126, safe to merge",
+  "C014 duplicates C126, safe to merge",
+  "C019 duplicates C115, safe to merge",
+  "C041 duplicates C123, safe to merge",
+  "C059 duplicates C003, safe to merge",
+  "C062 duplicates C013, safe to merge",
+  "C068 duplicates C031, safe to merge",
+  "C090 duplicates C112, safe to merge",
+  "C021 trivia, drop image reference",
+  "C110 trivia, drop thought-experiment reference"
+ ]
+}

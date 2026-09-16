@@ -1,0 +1,251 @@
+{
+ "sample": "05_manufacturing_taste",
+ "part": 4,
+ "of": 5,
+ "nodes": [
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Story 3 wins: quality is a loose filter that sets a floor and a ceiling, and the vast middle is dominated by capital and luck.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "## What This Means\nStory 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will. But the vast middle ground, where most artists live, is dominated by capital and luck."
+    },
+    {
+     "ref": "¶36",
+     "text": "There are a few implications worth spelling out."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The greatest composer who ever lived, made precise, is the greatest among those with the resources to be heard, published, and preserved.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "**When someone says \"Bach is the greatest composer who ever lived,\"** a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\" There may have been equally gifted composers whose music was never performed, never published, and never survived. We don't know. We can't know. But the simulation says it's very likely."
+    }
+   ]
+  },
+  {
+   "id": "5.1.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "**When someone says \"Bach is the greatest composer who ever lived,\"** a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\" There may have been equally gifted composers whose music was never performed, never published, and never survived. We don't know. We can't know. But the simulation says it's very likely."
+    }
+   ]
+  },
+  {
+   "id": "5.1.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "We cannot know, but the simulation says it is very likely.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "**When someone says \"Bach is the greatest composer who ever lived,\"** a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\" There may have been equally gifted composers whose music was never performed, never published, and never survived. We don't know. We can't know. But the simulation says it's very likely."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The mechanisms are stronger today, not weaker.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "**The mechanisms are stronger today, not weaker.** The feedback loops we model (exposure bias, social influence, cumulative advantage) operate faster in the age of algorithmic recommendations. An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours. The scale of winner-take-all dynamics is vastly larger than anything in the historical record."
+    }
+   ]
+  },
+  {
+   "id": "5.2.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "**The mechanisms are stronger today, not weaker.** The feedback loops we model (exposure bias, social influence, cumulative advantage) operate faster in the age of algorithmic recommendations. An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours. The scale of winner-take-all dynamics is vastly larger than anything in the historical record."
+    }
+   ]
+  },
+  {
+   "id": "5.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "**The mechanisms are stronger today, not weaker.** The feedback loops we model (exposure bias, social influence, cumulative advantage) operate faster in the age of algorithmic recommendations. An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours. The scale of winner-take-all dynamics is vastly larger than anything in the historical record."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The highest-leverage intervention is not better judgment, it is wider exposure.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "**The highest-leverage intervention isn't better judgment, it's wider exposure.** Our model says audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself. Blind auditions for orchestras, widely adopted in the 1970s-80s, are the proof of concept: when the screen went up, the proportion of women hired by major US orchestras went from 5% to 25%. The talent was always there. The barrier was exposure."
+    }
+   ]
+  },
+  {
+   "id": "5.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Audiences are already decent judges within the limits of what they are exposed to; the bottleneck is exposure itself.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "**The highest-leverage intervention isn't better judgment, it's wider exposure.** Our model says audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself. Blind auditions for orchestras, widely adopted in the 1970s-80s, are the proof of concept: when the screen went up, the proportion of women hired by major US orchestras went from 5% to 25%. The talent was always there. The barrier was exposure."
+    }
+   ]
+  },
+  {
+   "id": "5.3.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "**The highest-leverage intervention isn't better judgment, it's wider exposure.** Our model says audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself. Blind auditions for orchestras, widely adopted in the 1970s-80s, are the proof of concept: when the screen went up, the proportion of women hired by major US orchestras went from 5% to 25%. The talent was always there. The barrier was exposure."
+    }
+   ]
+  },
+  {
+   "id": "5.3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The talent was always there; the barrier was exposure.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "**The highest-leverage intervention isn't better judgment, it's wider exposure.** Our model says audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself. Blind auditions for orchestras, widely adopted in the 1970s-80s, are the proof of concept: when the screen went up, the proportion of women hired by major US orchestras went from 5% to 25%. The talent was always there. The barrier was exposure."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The deeper pattern is the gap between the metric and what we care about: canon survival is a proxy for being the best.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "This connects to something I keep coming back to in these posts: the gap between the metric and the thing we actually care about. We use \"survived into the canon\" as a proxy for \"was the best,\" then build entire curricula and cultural narratives on that proxy, forgetting it was ever a proxy at all. The simulation doesn't tell us what the canon *should* look like. It just tells us that the one we got is far more contingent than we assume."
+    }
+   ]
+  },
+  {
+   "id": "5.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The simulation does not say what the canon should look like, only that the one we got is far more contingent than we assume.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "This connects to something I keep coming back to in these posts: the gap between the metric and the thing we actually care about. We use \"survived into the canon\" as a proxy for \"was the best,\" then build entire curricula and cultural narratives on that proxy, forgetting it was ever a proxy at all. The simulation doesn't tell us what the canon *should* look like. It just tells us that the one we got is far more contingent than we assume."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Three caveats bound what the model can tell us.",
+   "evidence": [
+    {
+     "ref": "¶41",
+     "text": "## The Caveats\nI want to be honest about what this can and can't tell us."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "The model assumes quality is a real, stable property that exists independently of who hears it. That's philosophically debatable. If \"quality\" is partly constituted by social processes, if great art is partly art that has been widely shared and discussed, then the whole decomposition may be ill-posed. I don't have a satisfying answer to this. I just think it's worth noting."
+    }
+   ]
+  },
+  {
+   "id": "6.1.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "If quality is partly constituted by social processes, the whole decomposition may be ill-posed.",
+   "evidence": [
+    {
+     "ref": "¶42",
+     "text": "The model assumes quality is a real, stable property that exists independently of who hears it. That's philosophically debatable. If \"quality\" is partly constituted by social processes, if great art is partly art that has been widely shared and discussed, then the whole decomposition may be ill-posed. I don't have a satisfying answer to this. I just think it's worth noting."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "The calibration data comes from the Salganik MusicLab experiment, which studied American teenagers evaluating pop songs over weeks. Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith. The mechanisms (mere exposure, social influence, cumulative advantage) are well-documented across many contexts, but the specific parameter values are uncertain."
+    }
+   ]
+  },
+  {
+   "id": "6.2.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The mechanisms are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "evidence": [
+    {
+     "ref": "¶43",
+     "text": "The calibration data comes from the Salganik MusicLab experiment, which studied American teenagers evaluating pop songs over weeks. Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith. The mechanisms (mere exposure, social influence, cumulative advantage) are well-documented across many contexts, but the specific parameter values are uncertain."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The model omits genre formation, critical discourse, technological change, and cultural politics.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "There are important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics. Any model is a simplification. The question is whether it's a useful simplification, and I think it is. The direction of the effects is robust across a wide range of parameter values, even if the precise magnitudes are uncertain."
+    }
+   ]
+  },
+  {
+   "id": "6.3.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Any model is a simplification; the direction of the effects is robust across parameter values, even if the magnitudes are uncertain.",
+   "evidence": [
+    {
+     "ref": "¶44",
+     "text": "There are important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics. Any model is a simplification. The question is whether it's a useful simplification, and I think it is. The direction of the effects is robust across a wide range of parameter values, even if the precise magnitudes are uncertain."
+    }
+   ]
+  }
+ ]
+}

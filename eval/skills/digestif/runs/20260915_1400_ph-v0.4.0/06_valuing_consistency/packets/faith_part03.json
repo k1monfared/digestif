@@ -1,0 +1,287 @@
+{
+ "sample": "06_valuing_consistency",
+ "part": 3,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "The harder question is why the anchor moves, because that is where the moral weight actually lives.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "## Why anchors move\nThat settles when *behavior* should move. The harder question is why the *anchor* moves, because that's where the moral weight actually lives."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The world's facts can change, or your grasp of them can, giving you new evidence.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "Two forces can move a person. The world's facts can change, or your grasp of them can, giving you new evidence. Or the cost of expressing a given position can change, with no new evidence at all. Cross those forces with whether the anchor actually moved and you get four cells:"
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Or the cost of expressing a given position can change, with no new evidence at all.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "Two forces can move a person. The world's facts can change, or your grasp of them can, giving you new evidence. Or the cost of expressing a given position can change, with no new evidence at all. Cross those forces with whether the anchor actually moved and you get four cells:"
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Crossing those forces with whether the anchor actually moved gives four cells.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "Two forces can move a person. The world's facts can change, or your grasp of them can, giving you new evidence. Or the cost of expressing a given position can change, with no new evidence at all. Cross those forces with whether the anchor actually moved and you get four cells:"
+    },
+    {
+     "ref": "¶33",
+     "text": "|  | Anchor updates | Anchor stays fixed |\n|---|---|---|\n| **Driven by evidence** | Rational revision: the good case | Ossification: the bad case |\n| **Driven by cost** | Preference laundering: the bad case | Anchor held, two sub-cases below |"
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Rational revision: the world showed you something true and you believed it.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Ossification: the evidence moved and the anchor refused; not swinging is stubbornness in the costume of principle.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Preference laundering: everyone is doing it now, so I guess it is fine.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Social proof gets laundered into belief that was never actually re-examined; the anchor moved, but on cost, not evidence.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Anchor held: when cost changes but the anchor genuinely does not move, behavior still needs sorting.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Revealed preference: behavior snaps to the anchor once the cost of expressing it drops; the swing was suppression seen from outside.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.7.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "A charitable reading of the clothing story: not a shift in belief, just a cost that finally lifted.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.7.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Hysteresis: behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.7.4",
+   "type": "example",
+   "attribution": "author",
+   "text": "Still flinching at a threat that no longer exists.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- **Rational revision.** The world showed you something true and you believed it.\n- **Ossification.** The evidence moved and the anchor refused to. \"Not swinging\" is stubbornness in the costume of principle.\n- **Preference laundering.** \"Everyone's doing it now, so I guess it's fine.\" Social proof gets laundered into belief that was never actually re-examined. The anchor moved, but on cost, not evidence.\n- **Anchor held.** When cost changes but the anchor genuinely doesn't move, behavior still needs sorting:\n    - **Revealed preference.** Behavior snaps to the anchor once the cost of expressing it drops. The person \"swinging\" here was consistent the entire time. The swing is what suppression looked like from outside. This is a charitable way to read the clothing story: not a shift in belief, just a cost that finally lifted.\n    - **Hysteresis.** Behavior fails to snap back even after the cost is gone, because the fear got installed deeply enough to run on its own. Still flinching at a threat that no longer exists."
+    }
+   ]
+  },
+  {
+   "id": "6.8",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Perspective gain: the evidence column does not require the reference itself to have moved, as when static tax law meets a growing grasp of it.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "One cell deserves a footnote. The evidence column doesn't require the reference itself to have moved. Tax law can sit perfectly still while your grasp of it moves from nothing to something. That still counts as evidence-driven anchor movement, just happening inside your model of a static reference. And since what you gained is a belief rather than a settled fact, a second pass at the very same unchanged reference can overturn it again. Call it perspective gain."
+    }
+   ]
+  },
+  {
+   "id": "6.8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "What was gained is a belief rather than a settled fact, so a second pass at the same unchanged reference can overturn it again.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "One cell deserves a footnote. The evidence column doesn't require the reference itself to have moved. Tax law can sit perfectly still while your grasp of it moves from nothing to something. That still counts as evidence-driven anchor movement, just happening inside your model of a static reference. And since what you gained is a belief rather than a settled fact, a second pass at the very same unchanged reference can overturn it again. Call it perspective gain."
+    }
+   ]
+  },
+  {
+   "id": "6.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Rational revision and preference laundering can produce an identical new anchor from an identical old one: same destination, opposite process.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "Now the uncomfortable part. Rational revision and preference laundering can produce an identical new anchor from an identical old one. Same destination, opposite process. From outside they are indistinguishable. Often from inside too."
+    }
+   ]
+  },
+  {
+   "id": "6.9.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "From outside they are indistinguishable, and often from inside too.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "Now the uncomfortable part. Rational revision and preference laundering can produce an identical new anchor from an identical old one. Same destination, opposite process. From outside they are indistinguishable. Often from inside too."
+    }
+   ]
+  },
+  {
+   "id": "6.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The aphorism: no heart if you are not a socialist at 20, no head if you still are at 40.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "## A parable in one aphorism\nYou've heard this one: \"If you're not a socialist at 20, you have no heart. If you're still a socialist at 40, you have no head.\""
+    }
+   ]
+  },
+  {
+   "id": "6.10.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "It gets offered as an evidence-based claim: with age comes direct experience of taxes, hiring, saving, and incentives.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "It gets offered as an evidence-based claim. With age comes direct experience of taxes, hiring, saving, and incentives, and views update accordingly. Structurally that's the lifecycle investing story: rational revision, tracking new information about how the world works."
+    }
+   ]
+  },
+  {
+   "id": "6.10.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Structurally that is the lifecycle investing story: rational revision, tracking new information about how the world works.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "It gets offered as an evidence-based claim. With age comes direct experience of taxes, hiring, saving, and incentives, and views update accordingly. Structurally that's the lifecycle investing story: rational revision, tracking new information about how the world works."
+    }
+   ]
+  },
+  {
+   "id": "6.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "But the same trajectory falls out of a much less flattering process: aging brings assets, income, and things to lose from redistribution.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "But the same trajectory falls out of a much less flattering process. As people age they typically acquire assets, income, and things to lose from redistribution. Views can drift to track self-interest rather than evidence. Preference laundering with extra steps. Both processes produce the same trajectory and the same retrospective story: \"I used to be naive.\" Nothing about the shift itself tells you which one occurred."
+    }
+   ]
+  },
+  {
+   "id": "6.11.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "So views can drift to track self-interest rather than evidence: preference laundering with extra steps.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "But the same trajectory falls out of a much less flattering process. As people age they typically acquire assets, income, and things to lose from redistribution. Views can drift to track self-interest rather than evidence. Preference laundering with extra steps. Both processes produce the same trajectory and the same retrospective story: \"I used to be naive.\" Nothing about the shift itself tells you which one occurred."
+    }
+   ]
+  },
+  {
+   "id": "6.12",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Both processes produce the same trajectory and the same retrospective story, I used to be naive, so the shift itself tells you nothing.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "But the same trajectory falls out of a much less flattering process. As people age they typically acquire assets, income, and things to lose from redistribution. Views can drift to track self-interest rather than evidence. Preference laundering with extra steps. Both processes produce the same trajectory and the same retrospective story: \"I used to be naive.\" Nothing about the shift itself tells you which one occurred."
+    }
+   ]
+  }
+ ]
+}

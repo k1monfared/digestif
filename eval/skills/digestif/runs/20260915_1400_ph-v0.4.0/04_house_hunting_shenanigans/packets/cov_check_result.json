@@ -1,0 +1,154 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "house-hunting-shenanigans",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "The author has been house hunting for almost a year in a strange market where some houses sit for a very long time while others sell within 1-2 days.",
+   "weight": "Nice to have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, context/background only."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "On Wednesday afternoon the author offered the highest price he could afford on a house he liked, still about $30K below the asking price, hoping he might have a chance.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, opening event with key number."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "By Thursday 6pm the offer was not accepted and the sellers were moving forward with other offers.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, resolution of first offer."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "After viewing a newly listed house on Friday, the author decided to offer the full asking price with generous terms to avoid a bidding war and give no time for other showings, rejecting his realtor N's advice to write 10K below and negotiate upward.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, central strategy decision plus the 10K advice."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "On Friday 6pm the offer was sent at the asking price with as many favorable terms as possible and a deadline of midnight the same day.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, key event and deadline."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "At Friday 10:30pm the seller's realtor, who was busy driving up island, asked to extend the offer to the next midnight and mentioned in passing that another offer existed; the author extended only until 10:30am Saturday.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, key turn with competing-offer claim and partial extension."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Saturday morning produced nothing, so the author suspected his offer was being kept open as leverage against other buyers and asked for disclosure of the other offer.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, suspicion and request for written disclosure."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "On Saturday 5pm, after N reported another offer to be considered within an hour, the author dropped his offer by $20K from the asking price and removed most of the favorable terms, over N's strong advice against doing so.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, pivotal number and conflict with realtor."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "On Saturday 7pm the seller's realtor's partner C asked N to 'fix' the price drop; meanwhile J's name was replaced by C on the REW site and removed from all four of her listings, which the author read as the seller being angry over losing $20K.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, key side event revealing seller/realtor tension."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "At Saturday 9pm the author received a disclosure of multiple offers letter plus a counteroffer at $5K above the asking price, with a request for a response by 11pm.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, counteroffer and number."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "On Sunday 8am the author instructed N to resubmit at 10K below the asking price, remove every favorable term, and give until 11am, as his best and final offer, rejecting N's push to meet or exceed the counteroffer.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, final offer terms and numbers."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "On Sunday the author read the forwarded emails between N and the assistant L, which were unprofessional and appeared to scapegoat the assistant; the author noted they had thrown the assistant under the bus.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, correspondence episode and its interpretation."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "On Monday morning the author set two explicit rules: N must not volunteer information about existing or competing offers unless explicitly asked, and any seller-agent claim of a competing offer must be provided in writing as a disclosure letter.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, explicit recommendations."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "About two weeks later the house sold for 10K below the asking price, vindicating the author's read; he and N had bet a coffee, and the first house he offered on sold for way above asking.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, outcome and validation with numbers."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "The closing thesis: realtors have built a system that serves them while buyers and sellers are like pawns in a chess game, and society has given up fighting for change in countless processes from phone holders and laptops to stocks, taxes, cars, and houses.",
+   "weight": "Must have",
+   "presence": "Unknown",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind extraction, central argument and call for attention."
+  }
+ ],
+ "metrics": {
+  "total_points": 0,
+  "must_have_total": 0,
+  "must_have_present": 0,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 0,
+  "must_recall": 0.0,
+  "overall_recall": 0.0
+ },
+ "missing_list": []
+}

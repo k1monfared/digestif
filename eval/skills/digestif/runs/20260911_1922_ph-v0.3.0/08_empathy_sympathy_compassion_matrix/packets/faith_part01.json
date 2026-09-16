@@ -1,0 +1,395 @@
+{
+ "sample": "08_empathy_sympathy_compassion_matrix",
+ "part": 1,
+ "of": 1,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Matrix contrasts cognitive/affective empathy, sympathy, compassion across five profiles from psychopath to integrated ideal.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "**Legend:**\n    ✓ = present / defining\n    ~ = partial / possible\n      = absent / not required"
+    },
+    {
+     "ref": "¶2",
+     "text": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest: psychopath, sociopath, empath, altruist, and the integrated ideal. Rows stay ordered by the two dark profiles' contrast, in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither."
+    },
+    {
+     "ref": "¶28",
+     "text": "10. **The five profile columns are ideal types on a dark-to-light spectrum.** The psychopath is the cognitive column standing alone. The sociopath is affective empathy plus sympathy clamped to an in-group and stripped of regulation. The empath is the affective column maxed out and unregulated, which is why it lights up emotion-sharing, contagion, and vividness bias while failing on boundary, scope, and scalability: it is the opposite of the psychopath's coldness but it inherits the sociopath's distortions, so it is not the moral ideal. The altruist is the compassion column embodied, matching the research \"Light Triad\" (Kantianism, Humanism, and Faith in Humanity, from Kaufman et al., 2019). The integrated ideal is the only column that scores well across every block, including the \"present in neither\" rows, so it is the true opposite of both dark profiles at once."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Cold-control block: modeling, boundary, manipulators, control across components and dark profiles.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest: psychopath, sociopath, empath, altruist, and the integrated ideal. Rows stay ordered by the two dark profiles' contrast, in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither."
+    },
+    {
+     "ref": "¶3",
+     "text": "| Feature | Empathy: cognitive | Empathy: affective | Sympathy | Compassion | Psychopath | Sociopath | Empath | Altruist | Integrated |"
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Accurate modeling: cog ✓, aff ~, sym ~, comp ✓; psy ✓, soc ~, emp ~, alt ✓, int ✓.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "| Accurately modeling the other's mental state | ✓ | ~ | ~ | ✓ | ✓ | ~ | ~ | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Boundary kept: cog ✓, aff blank, sym ✓, comp ✓; psy ✓, soc ~, emp blank, alt ✓, int ✓.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "| Maintains self/other boundary | ✓ |   | ✓ | ✓ | ✓ | ~ |   | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Manipulators possible: cog ✓ only; psy ✓, soc ~, all others blank.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "| Can exist in manipulators / con artists | ✓ |   |   |   | ✓ | ~ |   |   |   |"
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Controlled not reactive: cog ✓, sym ~, comp ✓; psy ✓, alt ✓, int ✓, others blank.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "| Controlled / instrumental rather than reactive / impulsive | ✓ |   | ~ | ✓ | ✓ |   |   | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Affective-care block belongs to sociopath not psychopath, with partial marks throughout.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest: psychopath, sociopath, empath, altruist, and the integrated ideal. Rows stay ordered by the two dark profiles' contrast, in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Sharing emotion: aff ✓; soc ~, emp ✓, alt ~, int ✓; rest blank.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "| Actually sharing / mirroring the emotion |   | ✓ |   |   |   | ~ | ✓ | ~ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Capacity to care at all: aff ~, sym ✓, comp ✓; soc ✓, emp ✓, alt ✓, int ✓; psy blank.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "| Capacity to genuinely care about the person *at all* |   | ~ | ✓ | ✓ |   | ✓ | ✓ | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Motivation to help: aff ~, sym ~, comp ✓; soc ~, emp ~, alt ✓, int ✓; psy blank.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "| Motivation to help or act |   | ~ | ~ | ✓ |   | ~ | ~ | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Guilt after harm: emp ✓; aff ~, sym ~, comp ~, soc ~, alt ~, int ~; cog blank, psy blank.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "| Produces guilt / remorse after causing harm |   | ~ | ~ | ~ |   | ~ | ✓ | ~ | ~ |"
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Contagion-burnout risk: aff ✓, emp ✓; sym ~, soc ~, int ~; rest blank.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "| Risk of emotional contagion and burnout |   | ✓ | ~ |   |   | ~ | ✓ |   | ~ |"
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Vivid-similar bias: aff ✓, soc ✓, emp ✓; cog ~, sym ~, int ~; rest blank.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "| Biased toward vivid, similar individuals | ~ | ✓ | ~ |   |   | ✓ | ✓ |   | ~ |"
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Ends-not-means: comp ✓, emp ✓, alt ✓, int ✓; aff ~, sym ~, soc ~; cog blank, psy blank.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "| Treats people as ends, not means (Kantianism) |   | ~ | ~ | ✓ |   | ~ | ✓ | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "2.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Dignity-worth: sym ✓, comp ✓, emp ✓, alt ✓, int ✓; aff ~, soc ~; cog blank, psy blank.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "| Values each person's dignity and worth (Humanism) |   | ~ | ✓ | ✓ |   | ~ | ✓ | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Beyond-in-group scope, faith, and scalability belong to neither dark profile.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest: psychopath, sociopath, empath, altruist, and the integrated ideal. Rows stay ordered by the two dark profiles' contrast, in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Beyond vivid in-group: sym ~, comp ✓, alt ✓, int ✓; all others blank.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "| Concern reaches *beyond* a vivid / similar in-group |   |   | ~ | ✓ |   |   |   | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Fundamentally good: sym ~, comp ~, emp ✓, alt ✓, int ✓; dark both blank.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "| Believes people are fundamentally good (Faith in Humanity) |   |   | ~ | ~ |   |   | ✓ | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Sustainable scalable guide: cog ~, sym ~, comp ✓, alt ✓, int ✓; rest blank.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "| Sustainable and scalable as a moral guide | ~ |   | ~ | ✓ |   |   |   | ✓ | ✓ |"
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Notes interpret the matrix and limit its scope to ideal types.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "6. **Reading the two dark profiles as columns**: the psychopath is close to the *cognitive-empathy column standing alone*, accurate modeling with the affective and caring machinery deleted. The sociopath is close to the *affective-empathy and sympathy columns clamped to a narrow in-group* and stripped of regulation. The row groups make the asymmetry visible: almost everything the psychopath has, the sociopath also has in degraded form, so the psychopath's one distinguishing possession is cold instrumental control, while a whole cluster of affective and caring rows belongs to the sociopath and not the psychopath."
+    },
+    {
+     "ref": "¶26",
+     "text": "8. **Clinical caveat on the two profiles**: \"psychopath\" and \"sociopath\" are not formal diagnoses. Both fall under Antisocial Personality Disorder, and the split between them is a contested, largely theoretical convention. Treat these two columns as ideal types, not categories."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Sympathy models minds only ~: pity can misread; understanding helps but not constitutive.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "1. **Sympathy gets \"~\" on modeling the other's mind** because you can pity someone while badly misreading them. Accurate understanding helps sympathy but isn't constitutive of it, the way it is for cognitive empathy."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Affective empathy cares only ~: contagion is involuntary, can merely prompt escape.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "2. **Affective empathy gets \"~\" on \"capacity to care\"**: emotional contagion can happen involuntarily, without any real concern for the person: you can catch someone's anxiety and simply want to get away from them."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Manipulators row diagnoses cog/aff split; cog alone fits cruelty and psychopath signature.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "3. **The \"manipulators\" row is the sharpest diagnostic** for the cognitive/affective split, and it is essentially the psychopath's signature. Cognitive empathy alone is compatible with cruelty: a skilled con artist models minds precisely without resonating with or caring about them."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "nuance",
+   "attribution": "reported",
+   "text": "Sustainability reflects Bloom/Singer position, not consensus; critics warn of abstract paternalism.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "4. **The \"sustainable and scalable\" row reflects the Bloom/Singer argument** (Paul Bloom, *Against Empathy*, and Tania Singer's compassion-training research), which is a position, not a consensus. Critics reply that compassion without empathic grounding risks becoming abstract or paternalistic."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Boundary is structural: affective merging drives motivation plus burnout and bias.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "5. **Boundary maintenance is the structural difference** between affective empathy and everything else in the table: empathizing affectively means partially merging with the other's state, which is what drives both its motivational power and its burnout and bias problems."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Psychopath is cog alone; sociopath is clamped affect-sympathy minus regulation.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "6. **Reading the two dark profiles as columns**: the psychopath is close to the *cognitive-empathy column standing alone*, accurate modeling with the affective and caring machinery deleted. The sociopath is close to the *affective-empathy and sympathy columns clamped to a narrow in-group* and stripped of regulation. The row groups make the asymmetry visible: almost everything the psychopath has, the sociopath also has in degraded form, so the psychopath's one distinguishing possession is cold instrumental control, while a whole cluster of affective and caring rows belongs to the sociopath and not the psychopath."
+    }
+   ]
+  },
+  {
+   "id": "4.7",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Etiology excluded: psychopathy often innate, sociopathy acquired; causes would muddy shape logic.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "7. **Etiology is deliberately left out as a row**: psychopathy is often theorized as innate and temperamental, sociopathy as environmentally acquired. That is a claim about *causes*, not about the shape of the response, so it does not belong in a feature table. Every other row answers \"what is the response like,\" and mixing in an origin variable would muddy that logic."
+    }
+   ]
+  },
+  {
+   "id": "4.8",
+   "type": "counterpoint",
+   "attribution": "author",
+   "text": "Psychopath/sociopath are contested ideal types under ASPD, not formal diagnoses.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "8. **Clinical caveat on the two profiles**: \"psychopath\" and \"sociopath\" are not formal diagnoses. Both fall under Antisocial Personality Disorder, and the split between them is a contested, largely theoretical convention. Treat these two columns as ideal types, not categories."
+    }
+   ]
+  },
+  {
+   "id": "4.9",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Table uses neutral research sympathy, not Brown-style distancing; empathic concern differs.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "9. **Terminology caveat**: usage varies across the literature. Some authors use \"empathic concern\" roughly where this table uses \"compassion,\" and pop-psych usage (e.g. Brené Brown) treats \"sympathy\" as inherently distancing. This table uses the more neutral research sense."
+    }
+   ]
+  },
+  {
+   "id": "4.10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Spectrum: empath is maxed unregulated affect, altruist embodies compassion Light Triad Kaufman 2019, integrated scores everywhere.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "10. **The five profile columns are ideal types on a dark-to-light spectrum.** The psychopath is the cognitive column standing alone. The sociopath is affective empathy plus sympathy clamped to an in-group and stripped of regulation. The empath is the affective column maxed out and unregulated, which is why it lights up emotion-sharing, contagion, and vividness bias while failing on boundary, scope, and scalability: it is the opposite of the psychopath's coldness but it inherits the sociopath's distortions, so it is not the moral ideal. The altruist is the compassion column embodied, matching the research \"Light Triad\" (Kantianism, Humanism, and Faith in Humanity, from Kaufman et al., 2019). The integrated ideal is the only column that scores well across every block, including the \"present in neither\" rows, so it is the true opposite of both dark profiles at once."
+    }
+   ]
+  },
+  {
+   "id": "4.11",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Triad rows partly restate: Kantianism inverts manipulators; Humanism overlaps care; only Faith adds new attitude.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "11. **The three Light Triad rows partly restate earlier rows.** \"Treats people as ends, not means\" (Kantianism) is essentially the inverse of the \"manipulators\" row: the psychopath is blank here precisely because it excels at instrumentalizing people. \"Values each person's dignity and worth\" (Humanism) overlaps with the caring and beyond-the-in-group rows. Only \"Believes people are fundamentally good\" (Faith in Humanity) adds a genuinely new dimension, an attitude rather than an empathy component, which is why both dark profiles score blank while the empath and the lighter profiles do not."
+    }
+   ]
+  }
+ ]
+}

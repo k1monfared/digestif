@@ -1,0 +1,343 @@
+{
+ "sample": "08_empathy_sympathy_compassion_matrix",
+ "part": 1,
+ "of": 1,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "The matrix separates cognitive and affective empathy, sympathy, and compassion, then profiles psychopath, sociopath, empath, altruist, and integrated ideal.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Legend: check mark = present / defining; tilde = partial / possible; blank = absent / not required."
+    },
+    {
+     "ref": "¶2",
+     "text": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest: psychopath, sociopath, empath, altruist, and the integrated ideal. Rows stay ordered by the two dark profiles' contrast, in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither."
+    },
+    {
+     "ref": "¶8",
+     "text": "Note 6: the psychopath is close to the cognitive-empathy column standing alone; the sociopath is close to the affective-empathy and sympathy columns clamped to a narrow in-group and stripped of regulation; almost everything the psychopath has, the sociopath also has in degraded form, so cold instrumental control is the psychopath's one distinguishing possession."
+    },
+    {
+     "ref": "¶10",
+     "text": "Note 9: terminology varies across literature (empathic concern, Brown-style sympathy). Note 10: the five profile columns are ideal types on a dark-to-light spectrum; empath is not the moral ideal; altruist matches the Light Triad (Kaufman et al., 2019); integrated ideal alone scores well across every block. Note 11: the three Light Triad rows partly restate earlier rows; only Faith in Humanity adds a new dimension."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Four components sit left of the double rule; five dark-to-light profiles sit right.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest: psychopath, sociopath, empath, altruist, and the integrated ideal. Rows stay ordered by the two dark profiles' contrast, in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Rows fall in four blocks: present in both, psychopath only, sociopath only, neither.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "The four component columns (cognitive and affective empathy, sympathy, compassion) sit left of the double rule. The five to the right are whole-person profiles, arranged darkest to lightest: psychopath, sociopath, empath, altruist, and the integrated ideal. Rows stay ordered by the two dark profiles' contrast, in four blocks separated by blank dividers: present in both, in the psychopath only, in the sociopath only, and in neither."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Cognitive empathy means accurate modeling, boundary, and control; it survives in manipulators.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Block present-in-both plus psychopath-only rows. Accurately modeling the other's mental state: cognitive check, affective partial, sympathy partial, compassion check; Psychopath check, Sociopath partial, Empath partial, Altruist check, Integrated check. Maintains self/other boundary: cognitive check, sympathy check, compassion check; Psychopath check, Sociopath partial, Altruist check, Integrated check. Can exist in manipulators / con artists: cognitive check only; Psychopath check, Sociopath partial. Controlled / instrumental rather than reactive / impulsive: cognitive check, sympathy partial, compassion check; Psychopath check, Altruist check, Integrated check."
+    },
+    {
+     "ref": "¶6",
+     "text": "Note 1: Sympathy gets tilde on modeling the other's mind because you can pity someone while badly misreading them. Note 2: Affective empathy gets tilde on capacity to care: contagion can happen involuntarily, without real concern. Note 3: The manipulators row is the sharpest diagnostic for the cognitive/affective split and the psychopath's signature; cognitive empathy alone is compatible with cruelty."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The psychopath column is essentially the cognitive-empathy column standing alone.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Note 6: the psychopath is close to the cognitive-empathy column standing alone; the sociopath is close to the affective-empathy and sympathy columns clamped to a narrow in-group and stripped of regulation; almost everything the psychopath has, the sociopath also has in degraded form, so cold instrumental control is the psychopath's one distinguishing possession."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Sympathy earns only partial on modeling: pity can badly misread people.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "Note 1: Sympathy gets tilde on modeling the other's mind because you can pity someone while badly misreading them. Note 2: Affective empathy gets tilde on capacity to care: contagion can happen involuntarily, without real concern. Note 3: The manipulators row is the sharpest diagnostic for the cognitive/affective split and the psychopath's signature; cognitive empathy alone is compatible with cruelty."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Affective empathy means sharing emotion, with contagion, burnout, and vividness bias.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Block sociopath-only rows. Actually sharing / mirroring the emotion: affective check; Sociopath partial, Empath check, Altruist partial, Integrated check. Capacity to genuinely care about the person at all: affective partial, sympathy check, compassion check; Sociopath check, Empath check, Altruist check, Integrated check. Motivation to help or act: affective partial, sympathy partial, compassion check; Sociopath partial, Empath partial, Altruist check, Integrated check. Produces guilt / remorse after causing harm: affective partial, sympathy partial, compassion partial; Sociopath partial, Empath check, Integrated partial. Risk of emotional contagion and burnout: affective check, sympathy partial; Sociopath partial, Empath check, Integrated partial. Biased toward vivid, similar individuals: cognitive partial, affective check, sympathy partial; Sociopath check, Empath check, Integrated partial. Treats people as ends, not means (Kantianism): affective partial, sympathy partial, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check. Values each person's dignity and worth (Humanism): affective partial, sympathy check, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check."
+    },
+    {
+     "ref": "¶7",
+     "text": "Note 4: The sustainable and scalable row reflects the Bloom/Singer argument (Paul Bloom, Against Empathy, and Tania Singer's compassion-training research), which is a position, not a consensus; critics reply compassion without empathic grounding risks becoming abstract or paternalistic. Note 5: Boundary maintenance is the structural difference between affective empathy and everything else: merging drives its power, burnout, and bias."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Affective empathy lacks boundary maintenance, unlike everything else in the table.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "Note 4: The sustainable and scalable row reflects the Bloom/Singer argument (Paul Bloom, Against Empathy, and Tania Singer's compassion-training research), which is a position, not a consensus; critics reply compassion without empathic grounding risks becoming abstract or paternalistic. Note 5: Boundary maintenance is the structural difference between affective empathy and everything else: merging drives its power, burnout, and bias."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Affective empathy earns only partial on caring: contagion can occur without concern.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "Note 1: Sympathy gets tilde on modeling the other's mind because you can pity someone while badly misreading them. Note 2: Affective empathy gets tilde on capacity to care: contagion can happen involuntarily, without real concern. Note 3: The manipulators row is the sharpest diagnostic for the cognitive/affective split and the psychopath's signature; cognitive empathy alone is compatible with cruelty."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The sociopath resembles affective empathy plus sympathy clamped to an in-group, unregulated.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Note 6: the psychopath is close to the cognitive-empathy column standing alone; the sociopath is close to the affective-empathy and sympathy columns clamped to a narrow in-group and stripped of regulation; almost everything the psychopath has, the sociopath also has in degraded form, so cold instrumental control is the psychopath's one distinguishing possession."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Compassion alone combines caring, motivation to help, wide scope, and sustainability.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Block sociopath-only rows. Actually sharing / mirroring the emotion: affective check; Sociopath partial, Empath check, Altruist partial, Integrated check. Capacity to genuinely care about the person at all: affective partial, sympathy check, compassion check; Sociopath check, Empath check, Altruist check, Integrated check. Motivation to help or act: affective partial, sympathy partial, compassion check; Sociopath partial, Empath partial, Altruist check, Integrated check. Produces guilt / remorse after causing harm: affective partial, sympathy partial, compassion partial; Sociopath partial, Empath check, Integrated partial. Risk of emotional contagion and burnout: affective check, sympathy partial; Sociopath partial, Empath check, Integrated partial. Biased toward vivid, similar individuals: cognitive partial, affective check, sympathy partial; Sociopath check, Empath check, Integrated partial. Treats people as ends, not means (Kantianism): affective partial, sympathy partial, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check. Values each person's dignity and worth (Humanism): affective partial, sympathy check, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check."
+    },
+    {
+     "ref": "¶5",
+     "text": "Block neither rows. Concern reaches beyond a vivid / similar in-group: sympathy partial, compassion check; Altruist check, Integrated check. Believes people are fundamentally good (Faith in Humanity): sympathy partial, compassion partial; Empath check, Altruist check, Integrated check. Sustainable and scalable as a moral guide: cognitive partial, sympathy partial, compassion check; Altruist check, Integrated check."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Only compassion scores full marks on helping motivation and sustainable scalable guidance.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Block sociopath-only rows. Actually sharing / mirroring the emotion: affective check; Sociopath partial, Empath check, Altruist partial, Integrated check. Capacity to genuinely care about the person at all: affective partial, sympathy check, compassion check; Sociopath check, Empath check, Altruist check, Integrated check. Motivation to help or act: affective partial, sympathy partial, compassion check; Sociopath partial, Empath partial, Altruist check, Integrated check. Produces guilt / remorse after causing harm: affective partial, sympathy partial, compassion partial; Sociopath partial, Empath check, Integrated partial. Risk of emotional contagion and burnout: affective check, sympathy partial; Sociopath partial, Empath check, Integrated partial. Biased toward vivid, similar individuals: cognitive partial, affective check, sympathy partial; Sociopath check, Empath check, Integrated partial. Treats people as ends, not means (Kantianism): affective partial, sympathy partial, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check. Values each person's dignity and worth (Humanism): affective partial, sympathy check, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check."
+    },
+    {
+     "ref": "¶5",
+     "text": "Block neither rows. Concern reaches beyond a vivid / similar in-group: sympathy partial, compassion check; Altruist check, Integrated check. Believes people are fundamentally good (Faith in Humanity): sympathy partial, compassion partial; Empath check, Altruist check, Integrated check. Sustainable and scalable as a moral guide: cognitive partial, sympathy partial, compassion check; Altruist check, Integrated check."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "nuance",
+   "attribution": "reported",
+   "text": "The Bloom and Singer pro-compassion case is a position, not a consensus.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "Note 4: The sustainable and scalable row reflects the Bloom/Singer argument (Paul Bloom, Against Empathy, and Tania Singer's compassion-training research), which is a position, not a consensus; critics reply compassion without empathic grounding risks becoming abstract or paternalistic. Note 5: Boundary maintenance is the structural difference between affective empathy and everything else: merging drives its power, burnout, and bias."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The psychopath keeps only cold instrumental control; the sociopath holds the affective cluster.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Note 6: the psychopath is close to the cognitive-empathy column standing alone; the sociopath is close to the affective-empathy and sympathy columns clamped to a narrow in-group and stripped of regulation; almost everything the psychopath has, the sociopath also has in degraded form, so cold instrumental control is the psychopath's one distinguishing possession."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Almost all psychopath traits recur degraded in sociopath; only control is psychopath-only.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Note 6: the psychopath is close to the cognitive-empathy column standing alone; the sociopath is close to the affective-empathy and sympathy columns clamped to a narrow in-group and stripped of regulation; almost everything the psychopath has, the sociopath also has in degraded form, so cold instrumental control is the psychopath's one distinguishing possession."
+    },
+    {
+     "ref": "¶3",
+     "text": "Block present-in-both plus psychopath-only rows. Accurately modeling the other's mental state: cognitive check, affective partial, sympathy partial, compassion check; Psychopath check, Sociopath partial, Empath partial, Altruist check, Integrated check. Maintains self/other boundary: cognitive check, sympathy check, compassion check; Psychopath check, Sociopath partial, Altruist check, Integrated check. Can exist in manipulators / con artists: cognitive check only; Psychopath check, Sociopath partial. Controlled / instrumental rather than reactive / impulsive: cognitive check, sympathy partial, compassion check; Psychopath check, Altruist check, Integrated check."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Emotion-sharing, caring, helping, guilt, and contagion rows belong to sociopath, not psychopath.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Block sociopath-only rows. Actually sharing / mirroring the emotion: affective check; Sociopath partial, Empath check, Altruist partial, Integrated check. Capacity to genuinely care about the person at all: affective partial, sympathy check, compassion check; Sociopath check, Empath check, Altruist check, Integrated check. Motivation to help or act: affective partial, sympathy partial, compassion check; Sociopath partial, Empath partial, Altruist check, Integrated check. Produces guilt / remorse after causing harm: affective partial, sympathy partial, compassion partial; Sociopath partial, Empath check, Integrated partial. Risk of emotional contagion and burnout: affective check, sympathy partial; Sociopath partial, Empath check, Integrated partial. Biased toward vivid, similar individuals: cognitive partial, affective check, sympathy partial; Sociopath check, Empath check, Integrated partial. Treats people as ends, not means (Kantianism): affective partial, sympathy partial, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check. Values each person's dignity and worth (Humanism): affective partial, sympathy check, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The empath maximizes affect unregulated, so it is not the moral ideal.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Note 9: terminology varies across literature (empathic concern, Brown-style sympathy). Note 10: the five profile columns are ideal types on a dark-to-light spectrum; empath is not the moral ideal; altruist matches the Light Triad (Kaufman et al., 2019); integrated ideal alone scores well across every block. Note 11: the three Light Triad rows partly restate earlier rows; only Faith in Humanity adds a new dimension."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The empath lights up sharing, contagion, and bias but fails boundary, scope, and scalability.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Note 9: terminology varies across literature (empathic concern, Brown-style sympathy). Note 10: the five profile columns are ideal types on a dark-to-light spectrum; empath is not the moral ideal; altruist matches the Light Triad (Kaufman et al., 2019); integrated ideal alone scores well across every block. Note 11: the three Light Triad rows partly restate earlier rows; only Faith in Humanity adds a new dimension."
+    },
+    {
+     "ref": "¶4",
+     "text": "Block sociopath-only rows. Actually sharing / mirroring the emotion: affective check; Sociopath partial, Empath check, Altruist partial, Integrated check. Capacity to genuinely care about the person at all: affective partial, sympathy check, compassion check; Sociopath check, Empath check, Altruist check, Integrated check. Motivation to help or act: affective partial, sympathy partial, compassion check; Sociopath partial, Empath partial, Altruist check, Integrated check. Produces guilt / remorse after causing harm: affective partial, sympathy partial, compassion partial; Sociopath partial, Empath check, Integrated partial. Risk of emotional contagion and burnout: affective check, sympathy partial; Sociopath partial, Empath check, Integrated partial. Biased toward vivid, similar individuals: cognitive partial, affective check, sympathy partial; Sociopath check, Empath check, Integrated partial. Treats people as ends, not means (Kantianism): affective partial, sympathy partial, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check. Values each person's dignity and worth (Humanism): affective partial, sympathy check, compassion check; Sociopath partial, Empath check, Altruist check, Integrated check."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The altruist embodies compassion and the Light Triad: Kantianism, Humanism, Faith in Humanity.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Note 9: terminology varies across literature (empathic concern, Brown-style sympathy). Note 10: the five profile columns are ideal types on a dark-to-light spectrum; empath is not the moral ideal; altruist matches the Light Triad (Kaufman et al., 2019); integrated ideal alone scores well across every block. Note 11: the three Light Triad rows partly restate earlier rows; only Faith in Humanity adds a new dimension."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The integrated ideal alone scores well across every block, opposing both dark profiles.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Note 9: terminology varies across literature (empathic concern, Brown-style sympathy). Note 10: the five profile columns are ideal types on a dark-to-light spectrum; empath is not the moral ideal; altruist matches the Light Triad (Kaufman et al., 2019); integrated ideal alone scores well across every block. Note 11: the three Light Triad rows partly restate earlier rows; only Faith in Humanity adds a new dimension."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Kantianism inverts the manipulators row; only Faith in Humanity adds a new dimension.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Note 9: terminology varies across literature (empathic concern, Brown-style sympathy). Note 10: the five profile columns are ideal types on a dark-to-light spectrum; empath is not the moral ideal; altruist matches the Light Triad (Kaufman et al., 2019); integrated ideal alone scores well across every block. Note 11: the three Light Triad rows partly restate earlier rows; only Faith in Humanity adds a new dimension."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The table limits its scope deliberately and treats dark columns as ideal types.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Note 7: Etiology is deliberately left out as a row: psychopathy is often theorized as innate, sociopathy as acquired; causes are not response shapes. Note 8: psychopath and sociopath are not formal diagnoses; both fall under Antisocial Personality Disorder and the split is contested; treat the columns as ideal types."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Etiology stays out: causal origin is not a response shape.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Note 7: Etiology is deliberately left out as a row: psychopathy is often theorized as innate, sociopathy as acquired; causes are not response shapes. Note 8: psychopath and sociopath are not formal diagnoses; both fall under Antisocial Personality Disorder and the split is contested; treat the columns as ideal types."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Psychopath and sociopath are not formal diagnoses; both fall under antisocial personality disorder.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Note 7: Etiology is deliberately left out as a row: psychopathy is often theorized as innate, sociopathy as acquired; causes are not response shapes. Note 8: psychopath and sociopath are not formal diagnoses; both fall under Antisocial Personality Disorder and the split is contested; treat the columns as ideal types."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Terminology varies; empathic concern and pop-psych sympathy differ from table usage.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Note 9: terminology varies across literature (empathic concern, Brown-style sympathy). Note 10: the five profile columns are ideal types on a dark-to-light spectrum; empath is not the moral ideal; altruist matches the Light Triad (Kaufman et al., 2019); integrated ideal alone scores well across every block. Note 11: the three Light Triad rows partly restate earlier rows; only Faith in Humanity adds a new dimension."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+  "source_id": "unspecified",
+  "inputs": {
+    "faithfulness_precision": 0.9714,
+    "critical_errors": 0,
+    "must_recall": 0.8571,
+    "overall_recall": 0.8667,
+    "redundancy_rate": 0.0571,
+    "trivia_rate": 0.0286
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4*0.9714 + 0.4*0.8571 - 0.2*0.0571 = 0.38856 + 0.34284 - 0.01142 = 0.71998 ~= 0.72. Gates: critical_errors 0 <= 0 (pass); faithfulness_precision 0.9714 >= 0.95 (pass); must_recall 0.8571 >= 0.9 (FAIL by 0.0429); redundancy_rate 0.0571 <= 0.15 (pass).",
+  "weighted_score": 0.72,
+  "verdict": "Fail",
+  "tradeoff_note": "The sample fails the must_recall hard gate: 4 of 14 Must-have points are only Partial (K07, K09, K12, K15), leaving must_recall at 0.8571 versus the 0.90 minimum. Concision is comfortably inside max (redundancy 0.0571, trivia 0.0286), and no Critical or Contradicted claim exists, but concision never rescues a coverage fail.",
+  "fix_list": [
+    "K12: restore the author's evaluative core, that the forwarded N-L emails scapegoated L and threw the assistant under the bus (L023/L024); this is the largest single Must-have content gap.",
+    "K15: extend the closing thesis beyond the pawn metaphor to the societal give-up argument (phone holders, laptops, stocks, taxes, cars, houses) per L031, so the conclusion is not narrowed.",
+    "K09: add C's demand that N 'fix' the price drop on Saturday 7pm (L019), keeping the existing REW name-swap and $20K seller-anger reading.",
+    "K07: include the explicit request that the rival offer be disclosed, not just the leverage suspicion and silent Saturday (L015/L021).",
+    "C003: retain the source qualifier 'usually' on the 1-2 day house turnover (1.1) to remove the only Partially supported claim."
+  ],
+  "reasoning": "Gate order per config.top_policy. Hard fail check first: critical_errors = 0 and contradicted = 0, so the Critical Contradicted gate passes. faithfulness_precision = 34/35 = 0.9714, above the 0.95 minimum, so the faithfulness gate passes; the lone non-supported claim is C003 (Partially supported, Harmless), a dropped 'usually' qualifier on 1-2 day turnover from loglog 1.1, which does not touch a Must-have point and is severity Harmless. Coverage gate: must_recall = 10 present / 14 Must-have total = 0.8571 after crediting the 4 Partial points as no credit, which is below the 0.90 minimum by 0.0429; this is the decisive hard fail. The four Partial Must-haves are K07 (leverage suspicion and silent Saturday present but the disclosure request dropped, L015/L021), K09 (listing/name swap and seller-anger reading present but C's 'fix the price drop' demand absent, L019/L040), K12 (email content present but the scapegoat / throw-under-the-bus interpretation absent, L023/L024), and K15 (self-serving realtor system and pawn metaphor present but the broader societal give-up thesis absent, L031). Overall recall 0.8667 and redundancy_rate 0.0571 (below the 0.15 max) and trivia_rate 0.0286 show the draft is concise, but concision is explicitly non-compensatory for a coverage miss, so no rescue applies. Because a hard gate was missed, I do not reduce to the weighted rank and the verdict is Fail rather than Borderline; the numbers-only Borderline condition is moot. For audit completeness the weighted score is shown: 0.4*0.9714 + 0.4*0.8571 - 0.2*0.0571 = 0.71998 ~= 0.72. No aspect-judge factual conflicts arose, so SOURCE was not reread. Note that must_have_present + must_have_partial = 14 with must_have_missing = 0, so the failure is entirely due to truncated Must-have points, and the fix list prioritizes the two partials with the deepest missing evaluative content (K12, K15)."
+}

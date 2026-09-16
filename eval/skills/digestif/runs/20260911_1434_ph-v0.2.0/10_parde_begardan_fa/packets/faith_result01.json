@@ -1,0 +1,308 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "10_parde_begardan_fa",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "راوی از شیفتگی کودکی به سنتور و محدودیت کوک دیاتونیک آن به سنتور کلیددار تازه‌ای می‌رسد که جابه‌جایی آزاد میان دستگاه‌ها را ممکن می‌کند.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "سنتور یه ساز دیاتونیک هست ... اگه بخوای مدلاسیون انجام بدی باید کوک عوض بشه ... یه سنتوری درست کردن که از چنگ ایده گرفتن و یه سری کلید تعبیه کردن",
+   "reasoning": "Summary faithfully compresses the childhood fascination, the diatonic tuning limit, and the keyed santur enabling free movement."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "شیفتگی آغازین: دیدار هفت‌سالگی با سنتور خاله و اصرار برای داشتن آن.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "۷ سالم که بود یه شب شام خونه خاله‌م بودیم ... تمام طول راه رو زر زدم که سنتور میخوام",
+   "reasoning": "Age seven, aunt's santur, and the insistent demand are all present in the source."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "سنتور گوشه اتاق بود و خاله «زرد ملیجه» را نواخت.",
+   "claim_type": "fact",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "یه آهنگ هم برامون زد، «زرد ملیجه» بود فکر کنم",
+   "reasoning": "Source hedges the song with فکر کنم (I think); loglog states it as certain, dropping the hedge."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "آخر شب به‌زور او را از پای ساز بلند کردند.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "آخر شب به زور من رو از پای ساز بلند کردن که بریم خونه",
+   "reasoning": "Direct restatement of the source's forced removal from the santur."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "شش ماه اصرار تا خرید سنتور هجده‌هزار تومانی انجامید.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "شیش ماه که این زر زدن‌ها و لج‌کردن‌ها ادامه داشت ... ۲۰هزار تومن، با تخفیف شد ۱۸هزار تومن",
+   "reasoning": "Six months of insistence and the final 18-thousand price match the source."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "سال‌های آموزش: کلاس، اتاق سرد پذیرایی و دشواری کوک.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "سنتورم تو اتاق پذیرایی بود که همیشه درش بسته بود و سردتر از بقیه اتاقها ... کار هرکسی نیست کوک کردنش",
+   "reasoning": "Cold living room, lessons, and tuning difficulty are all stated in the source."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "استاد نخست به خانه می‌آمد چون آموزشگاهی در شهر نبود.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "اوایل استادم میومد خونه، چون تو شهرمون آموزشگاهی نبود که من برم",
+   "reasoning": "Exact restatement of the early home lessons and absence of a local institute."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "ساز بزرگ‌تر از کودک بود و برای کوک ۷۲ سیم به کلاس می‌رفت.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "سازم از خودم گنده‌تر بود ... باید ساز رو میبردم که کوک بشه چون لاکردار ۷۲ تا سیم داره",
+   "reasoning": "Both the oversized santur and the 72 strings requiring class tuning are stated."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "با آمدن تیونر دیگر لازم نبود ساز برای کوک به کلاس برده شود.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "بعدترها که تیونر اومد بازار دیگه نیاز نبود ساز رو ببرم سر کلاس",
+   "reasoning": "Directly restates the source's statement about the tuner removing the need."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "محدودیت دیاتونیک: یک دستگاه در هر کوک و رنج بازی ناتمام.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "در آن واحد فقط میشه یک دستگاه/گام رو روش نواخت ... نمیتونستم بازی دیگه‌ای بکنم",
+   "reasoning": "One dastgah per tuning and the incomplete-game feeling are both in the source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "مدولاسیون نیازمند صرف زمان برای تغییر کوک بود.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "اگه بخوای مدلاسیون انجام بدی باید کوک عوض بشه که خب زمانبره",
+   "reasoning": "Matches the source's statement that modulation requires time-consuming retuning."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "حس بچه‌ای که در مهمانی فقط یک بازی برایش مجاز است.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "حس بچه‌ای رو داشته باشم که تو مهمونی بهش فقط اجازه یه بازی رو داده باشن",
+   "reasoning": "Close paraphrase preserving the only-one-game-at-a-party analogy."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "بازی محبوب دیگران را فقط از گوشه‌ای ساکت نگاه می‌کرد.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "من مجبور بودم ساکت بشینم یه گوشه‌ای و نگاهشون کنم. حتی اگه اون بازی‌ رو خیلی دوست داشتم",
+   "reasoning": "The quiet corner-watching of a game he liked is accurately conveyed."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "گشایش: سنتور کلیددار الهام‌گرفته از چنگ با مدولاسیون ثانیه‌ای.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "یه سنتوری درست کردن که از چنگ ایده گرفتن و یه سری کلید تعبیه کردن ... در کسری از ثانیه",
+   "reasoning": "Harp-inspired keyed santur and second-scale modulation are both stated."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "کلیدها هر نت را در کسری از ثانیه ربع یا نیم پرده زیرتر می‌کنند.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "کلید تعبیه کردن که ربع یا نیم پرده زیرتر کردن هر نتی رو در کسری از ثانیه میشه انجام داد",
+   "reasoning": "Exact preservation of quarter/half-tone raising and the fraction-of-a-second timing."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "جابه‌جایی میان دستگاه‌ها فقط با چند کلیک ممکن شد.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "میشد سریع از هر دستگاهی به هر دستگاه دیگه برم، فقط با چند کلیک، فقط در چند ثانیه",
+   "reasoning": "Matches the source's any-dastgah switch via a few clicks in seconds."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "وصال پس از دو سال انتظار: از لنگرود تا لنگفورد.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "دو سالی بود که بهش فکر میکردم ولی نمیدونستم چطور میتونم سالم از لنگرود بیارمش لنگفورد",
+   "reasoning": "Two-year wait and the Langroud-to-Langford transport are both stated."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "با کمک خانواده و دوستان و مسئولان ساز سالم به دستش رسید.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "با کمکهای بی دریغ خانواده و دوستان و مسئولین و ائمه امروز رسید به دستم",
+   "reasoning": "Core claim holds; source additionally lists ائمه, but omission does not alter the asserted meaning."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "بی‌وقفه از اصفهان به سه‌گاه و نوا و شور و همایون رفت.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "هی از این دستگاه رفتم تو اون دستگاه، از اصفهان به سه‌گاه، از سه‌گاه به نوا، از نوا به شور، از شور به همایون",
+   "reasoning": "The exact dastgah sequence is preserved; the repeated هی supports the continuous reading."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "باورش نمی‌شد این کار این‌قدر راحت باشد؛ انگار خواب می‌دید.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "اصلا نمیتونستم تصورش رو هم بکنم که اینقدر راحته این کار، انگار داشتم خواب میدیدم",
+   "reasoning": "Close restatement of the disbelief, easiness, and dream-like feeling."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "سرمستی نوازندگی بی‌وقفه و دلتنگی سفر پیش رو.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "هی ساز زدم، اینقدر که پشتم درد گرفت ... حالا از فردا یک هفته‌ای مسافرتم، ناراحتم",
+   "reasoning": "Continuous playing and sadness over the upcoming trip are both present."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "ناهار نخورد و آن‌قدر زد تا پشتش درد گرفت.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "نهار نخوردم، هی ساز زدم، اینقدر که پشتم درد گرفت",
+   "reasoning": "Direct restatement of skipping lunch and playing until back pain."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "حس شب اول خاله، کودک آزاد در بازی و گوینده آزاد در سخن.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "حس شب اولی رو داشتم که خاله‌م مضراب‌های سنتور رو داد دستم ... حس کسی رو داشتم که هر حرفی رو میخواست میتونست بزنه",
+   "reasoning": "All three feelings from the closing passage are accurately reflected."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "از فردا یک هفته سفر است و دلتنگ ساز ننواخته مانده است.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "حالا از فردا یک هفته‌ای مسافرتم، ناراحتم که چرا خونه نیستم که ساز بزنم",
+   "reasoning": "One-week trip and sadness at being away from playing are both stated."
+  }
+ ],
+ "metrics": {
+  "total_claims": 24,
+  "supported": 23,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9583
+ },
+ "fail_list": [
+  "C03 partially supported: dropped the source's hedge فکر کنم on the song title زرد ملیجه, stating it as fact (Minor)"
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "02_case_for_transparent_government",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "Transparency is the measuring stick, not one value to balance against others.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Transparency is not a value to be balanced. It's the measuring stick.",
+   "reasoning": "Source uses identical wording and rejects the balancing framing."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "Document current speed, publish it, and let the record pressure consistency and reasoning.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "document everything. Make it available... the availability of that record will create pressure: pressure for consistency, pressure for sound reasoning",
+   "reasoning": "Source states document everything, make available, and record creates pressure for consistency and reasoning."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Reaching full transparency forces solving speed and accountability along the way.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "In order to reach 100% transparency, you'll have to solve speed and accountability along the way.",
+   "reasoning": "Near-verbatim match, preserving the 100% and along-the-way qualifiers."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Linux proves complex global collaboration works in full public view.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Linux... is built by thousands of people across the world, working in full public view.",
+   "reasoning": "Source describes Linux built in full public view and complex collaborative work happening transparently."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "You cannot fork a country, so coerced citizens deserve oversight most.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "You can't fork your country... The less choice you have about being affected by decisions, the more right you have to see how those decisions are made.",
+   "reasoning": "Source states you can't fork your country and lack of choice increases the right to oversight."
+  }
+ ],
+ "metrics": {
+  "total_claims": 5,
+  "supported": 5,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

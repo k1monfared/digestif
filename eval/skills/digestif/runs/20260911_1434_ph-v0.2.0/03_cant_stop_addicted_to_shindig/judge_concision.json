@@ -1,0 +1,311 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "03_cant_stop_addicted_to_shindig",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "L002"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Thesis summary stated first, sets roadmap, repeats no earlier claim ID."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "L003"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Core push-your-luck rules definition, no prior statement."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "L004"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Board geometry setup, new factual content."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "L005"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Forced-move rule definition, new."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "L006"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete forced-move example naming specific columns."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "L007"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Central distribution claim, first full statement."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "L008"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Two-dice baseline percentage, number never trivia."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "L009"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Three-pairings fact, distinct new content."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "L010"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "171/1296 number, never trivia."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "L011"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "834/1296 number with method, never trivia."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "L012"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ratio interpretation carrying numbers, cannot be trivia."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "L013"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Combination thesis, first statement, new point."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "L014"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Expected-roll figures, numeric, never trivia."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "L015"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Per-roll success percentages, new numbers."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "L016"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Combination stats; only overlaps C014 worst-case 43.8%, adds median and count."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "L017"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Stopping-rule definition, new."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "L018"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Banked-step thresholds, unique numeric content."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "L019"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Clean-roll percentages, distinct metric, never trivia."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "L020"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Hedged switching concession, new content not stated earlier."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "L021"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Simulation headline, first statement of consistency-over-speed."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "L022"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "38 families number, never trivia despite partial support."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "L023"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Greedy speed and bust numbers, unique."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "L024"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "50% survival win rate, unique number."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "L025"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C020",
+      "reasoning": "Restates C020 consistency-over-speed; greedy loss already given in C022."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "L026"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "First-player edge number, unique, never trivia."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "L027"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Balance thesis, first statement of forced-move compensating role."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "L028"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "13.6% deviation bound, new numeric content beyond C013."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "L029"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Counterfactual step adjustment, unique numeric claim."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "L030"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds strategy-interest consequence beyond C026 contamination idea."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "L031"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Player and designer advice, first statement of recommendation."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "L032"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete column 5-9 guidance, new specificity beyond C030."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "L033"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Reproducibility meta-note maps to no analysis point, low value at this length."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 32,
+    "unique": 30,
+    "duplicates": 1,
+    "trivia": 1,
+    "redundancy_rate": 0.0312,
+    "trivia_rate": 0.0312,
+    "structured_tokens": 480,
+    "tokens_per_unique_claim": 16.0
+  },
+  "prune_list": [
+    "C024 duplicates C020, safe to merge",
+    "C032 reproducibility meta-note maps to no scoring point, move to appendix or drop",
+    "Cross-links L035-L038 restate C005/C011/C018/C024/C029/C031, safe to trim without claim loss"
+  ]
+}

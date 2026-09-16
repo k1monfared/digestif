@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+  "source_id": "point-hierarchy assessment run",
+  "inputs": {
+    "faithfulness_precision": 1.0,
+    "critical_errors": 0,
+    "must_recall": 0.875,
+    "overall_recall": 0.875,
+    "redundancy_rate": 0.1026,
+    "trivia_rate": 0.0513
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "Hard gates first: critical_errors = 0 <= critical_contradicted_max (0) PASS; faithfulness_precision = 1.0 >= faithfulness_precision_min (0.95) PASS; must_recall = 0.875 < must_recall_min (0.9) FAIL; redundancy_rate = 0.1026 <= redundancy_max (0.15) PASS. Weighted score for audit only: 0.4 * 1.0 + 0.4 * 0.875 - 0.2 * 0.1026 = 0.4 + 0.35 - 0.02052 = 0.72948.",
+  "weighted_score": 0.72948,
+  "verdict": "Fail",
+  "tradeoff_note": "Faithfulness is perfect and redundancy is well within budget, so length cost is not the problem. The single blocking issue is a coverage shortfall: must_recall sits at 0.875 against a 0.9 minimum because four Must-have points (K02, K08, K12, K15) are only Partial, each from dropped numbers or conditions rather than absent ideas.",
+  "fix_list": [
+    "Restore the dropped numbers on the four Partial Must-have points: K02 add the 'Wikipedia lists several hundred' count; K12 add the defining conditions (few wealthy patrons, strong word-of-mouth, no recording). These are the cheapest recall gains and alone would lift must_recall to 1.0.",
+    "K08: add the gatekeeper agent type and the formal power analysis to complete the model-setup description.",
+    "K15: re-add the Salganik teenagers-over-weeks calibration detail plus the omitted critical discourse and technological change caveats.",
+    "Optional after recall is fixed: fold the four duplicates (C003/C019 into C001, C028 into C009, C034 into C029) and drop the two section-header trivia restatements (C006, C011) to push redundancy_rate down further, though it is already under the gate."
+  ],
+  "reasoning": "Gate checks, in priority order per config.top_policy. (1) Critical contradicted: faithfulness judge reports critical_errors = 0 (39 supported, 0 partial, 0 unverifiable, 0 contradicted), so the critical_contradicted_max = 0 gate passes with no Critical errors to fail on. (2) Faithfulness precision: 1.0 >= 0.95 minimum, passes cleanly. (3) Must recall: coverage reports must_recall = 0.875 (12 present + 4 partial out of 16 Must-have points), which is below the must_recall_min of 0.9. Per decision policy step 1, a must_recall below config minimum fails the sample regardless of the other gates. This is the sole hard failure and it is definitive: 14/16 = 0.875, short by 0.025, i.e. roughly two of the four Partial points need to move to Present. (4) Redundancy: 0.1026 <= 0.15 max, passes, and trivia_rate 0.0513 is a quality signal but not a hard gate. Because a hard gate is missed, concision cannot rescue the verdict, and no weighted ranking is applied; the weighted score 0.72948 is shown for audit as 0.4*1.0 + 0.4*0.875 - 0.2*0.1026. The four Partial Must-have points all fail for the same structural reason, a summarizing line that keeps headline numbers but drops qualifiers. K02 (L003) keeps Viennese 200-500 and the 3,400 catalogue but drops the Wikipedia 'several hundred'. K08 (L017-L019) keeps producer/consumer counts, ~2 min runtime, and 360+ runs but drops the gatekeeper agent type and the power analysis. K12 (L026) keeps 300 composers, distance 0.97, and 2.5 percent shared but drops the defining conditions (few wealthy patrons, strong word-of-mouth, no recording). K15 (L034) keeps the core caveats but drops the Salganik teenagers-over-weeks calibration detail and the omitted critical discourse and technological change. No conflict between the faithfulness and coverage judges on any fact, so SOURCE was not reread. Borderline is not used because the miss is a hard gate, not a numeric pass with a lingering Partial. Fixing K02 and K12 alone (adding one number and three conditions) reaches must_recall 0.9375 and flips the verdict, which is why they head the fix list."
+}

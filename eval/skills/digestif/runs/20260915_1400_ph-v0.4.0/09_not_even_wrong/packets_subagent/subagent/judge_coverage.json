@@ -1,0 +1,205 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "09_not_even_wrong",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "The not-even-wrong definition, popularized by Wolfgang Pauli: ideas so flawed they cannot be evaluated as correct or incorrect.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "1",
+        "1.1"
+      ],
+      "evidence_quote": "\"Not-even-wrong ideas are so fundamentally flawed or ill-constructed they cannot be meaningfully evaluated as either correct or incorrect\" (1)",
+      "reasoning": "Definition and Pauli attribution both present with the cannot-be-evaluated negation."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "The Atiyah case: at 89, with the Fields Medal and Abel Prize, he claimed to solve the Riemann hypothesis (open since 1859); many called the proof not even wrong, lacking rigor and outside evaluation.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "1.2",
+        "1.3"
+      ],
+      "evidence_quote": "\"At 89, having earned both the Fields Medal and Abel Prize, Atiyah claimed to solve the Riemann hypothesis, open since 1859\" (1.2); \"lacking necessary rigor and coherence, it wasn't just incorrect but outside traditional evaluation\" (1.3)",
+      "reasoning": "All numbers, names, and the not-just-incorrect negation preserved."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "The concept extends beyond mathematics to powerful figures whose rhetoric sounds compelling but operates outside traditional evaluation.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "evidence_quote": "\"Many powerful figures' rhetoric sounds compelling but functions outside traditional evaluation, extending the concept beyond math\" (1.4)",
+      "reasoning": "Extension claim intact."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "The investment-belief loop: financial stake incentivizes belief in vision and competence, resolves cognitive dissonance rather than just protecting the investment, and makes investors receptive to claims outside expertise.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "2",
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ],
+      "evidence_quote": "\"isn't just about mentally protecting the investment; it's about resolving cognitive dissonance\" (2.2); \"more receptive to claims even outside the leader's areas of demonstrated expertise\" (2.3)",
+      "reasoning": "Incentive, dissonance framing (with negation), outside-expertise scope, and milestone reinforcement all present."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "Self-reinforcing cycle: financial to emotional investment to receptivity to further investment, combining material self-interest with identity formation.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "2.5",
+        "2.6"
+      ],
+      "evidence_quote": "\"financial investment to emotional investment to receptivity, which can lead to further financial investment\" (2.5); \"being a supporter becomes part of who someone is\" (2.6)",
+      "reasoning": "Cycle stages, the can hedge, and identity formation present."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "Verifiable promises about current products paired with grandiose unfalsifiable claims; fulfillment lends credibility to the grandiose ones despite completely different evidentiary standards.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "2.7",
+        "2.8"
+      ],
+      "evidence_quote": "\"Fulfilled concrete promises lend credibility to the grandiose ones, though they rest on completely different evidentiary standards\" (2.8)",
+      "reasoning": "The might hedge in 2.7 and the even-though contrast in 2.8 preserved."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "Social proof: thousands or millions praising a leader's genius makes the visions seem credible, since humans look to others for belief cues.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "3.1",
+        "3.2"
+      ],
+      "evidence_quote": "\"Thousands or millions praising a leader's genius provides social proof\" (3.1); \"Humans naturally look to others for cues about what to believe\" (3.2)",
+      "reasoning": "Both the quantity and the general principle present."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "Outsider positioning creates a tribal dynamic where questioning claims feels like betraying the tribe or siding with the opposition.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "evidence_quote": "\"questioning claims can feel like betraying the tribe or siding with the opposition\" (3.3)",
+      "reasoning": "The often hedge and the betrayal/siding framing preserved."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "Social media amplification: algorithms tend to feed reinforcing content into echo chambers, while frequent seemingly unfiltered posts build connection and authenticity that strengthen emotional investment.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "3.4",
+        "3.5"
+      ],
+      "evidence_quote": "\"Algorithms tend to reinforce existing beliefs via echo chambers\" (3.4); \"seemingly unfiltered posts ... strengthens emotional investment\" (3.5)",
+      "reasoning": "Both amplification mechanisms and both hedges (tend to, seemingly) present."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "The vulnerability thesis: we are not purely rational, and evaluations are influenced by financial interests, consistency, belonging, and narratives or personalities; these factors can override critical faculties.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "4",
+        "4.1",
+        "4.2"
+      ],
+      "evidence_quote": "\"We are not purely rational beings\" (4); \"attraction to narratives\" (4.1); \"can override critical faculties ... might otherwise scrutinize\" (4.2)",
+      "reasoning": "Thesis, all four factors (names compressed), and both can/might hedges present."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "Standards asymmetry: Atiyah's claim was ultimately rejected by peers, while leaders' statements often escape rigorous evaluation and society lacks comparable frameworks.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "evidence_quote": "\"Atiyah's claim was rejected by peers; business and political leaders' statements often escape rigorous evaluation; society lacks comparable frameworks\" (4.3)",
+      "reasoning": "All three clauses, the often hedge, and comparable frameworks preserved."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "Individual paths: separate finance from belief, practice domain-specific evaluation, seek counter-narratives from credible sources in relevant domains, and adopt investment detachment with the would-I-believe counterfactual.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "5",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "evidence_quote": "\"credible sources in relevant domains, not critics for critics' sake\" (5.3); \"ask whether you'd believe the claim without the investment\" (5.4)",
+      "reasoning": "All four measures present; the v0.3.0 dropped qualifiers (credible, relevant) are restored in 5.3."
+    },
+    {
+      "point_id": "K13",
+      "point_text": "Societal paths: technological literacy, domain expert visibility, frameworks balancing optimism with realistic assessment, and healthier discourse norms where skepticism is not framed as opposition.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "evidence_quote": "\"teach technological literacy, elevate domain experts, build assessment frameworks, normalize skepticism without animosity\" (5.5)",
+      "reasoning": "All four measures present; the no-frame-as-opposition negation carried by \"without animosity\"."
+    },
+    {
+      "point_id": "K14",
+      "point_text": "Beyond tribal thinking: not for or against any figure, separate claim evaluation from support or opposition, evaluate independently between blind acceptance and reflexive rejection, and keep shared standards as society's central challenge and best hope.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "6",
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5"
+      ],
+      "evidence_quote": "\"Not for or against any figure: the challenge is developing tools to engage critically while appreciating innovations\" (6.1); \"shared standards; balancing openness with evidence is perhaps the central challenge\" (6.4)",
+      "reasoning": "The closing argument, the may-be hedge, the perhaps hedge, and the Atiyah-standards parallel all present."
+    },
+    {
+      "point_id": "K15",
+      "point_text": "Book recommendations: Calling Bullshit for understanding statements directly (narrow focus, broad applicability) and Surveillance Capitalism for narrative-steering and belief formation indirectly.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "evidence_quote": "\"Calling Bullshit addresses statements directly, narrow in focus but broadly applicable; Surveillance Capitalism covers narrative-steering and belief formation indirectly\" (6.6)",
+      "reasoning": "Both characterizations and the direct/indirect contrast present; authors omitted but the point content is intact."
+    }
+  ],
+  "metrics": {
+    "total_points": 15,
+    "must_have_total": 14,
+    "must_have_present": 14,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+  },
+  "missing_list": []
+}

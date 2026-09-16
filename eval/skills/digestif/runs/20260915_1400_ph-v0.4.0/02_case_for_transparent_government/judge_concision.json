@@ -1,0 +1,1971 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "02_case_for_transparent_government",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Thesis summary; introduces the three-pillar argument, no earlier claim covers it."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Core recommendation; new, not stated earlier."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines the full decision chain; new content."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Framing that the demand is mundane accountability; new."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Explains why it sounds radical; new framing."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Owner example; illustrative, not stated elsewhere."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lists secrecy excuses citizens meet; new."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Taxpayer stake and inheritance; new claim."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "1.7"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Draft-status note, no argumentative content, low information value."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "1.8"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Meta aside about author stance; adds no substantive point."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Principal-agent framing; new core claim."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "CEO-could-read-every-email point; new."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Trail causes accountability; new causal claim."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bankrupt company example; new illustration."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Applies company analogy to government; new attribution."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Availability versus consumption distinction; new."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Defines transparency direction; new."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Elaborates what transparency is about; distinct from C017."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Elaborates what transparency is not; new."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Direction matters, CEO analogy; new angle."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Aggregate versus individual figure example; new."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical technical-feasibility claim; first statement of privacy-tech point."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sets up empirical evidence section; new."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical Sweden 1766 claim; first occurrence."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Details what the 1766 act did; new."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "4.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Political-conflict origin of the law; new."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "4.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Chydenius attribution; new named fact."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "4.1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "260-year continuity; new number claim."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "4.1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sweden survived, Nordic ranking; new."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical Seoul OPEN claim; first occurrence."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "4.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Real-time decision trace detail; new."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "4.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pre-OPEN bribery condition; new causal claim."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "4.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Research and institutional recognition; new."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical X-Road scale claim; first occurrence."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "4.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Signing and logging detail; new."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "4.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Citizen access visibility; new."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "4.3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "UN ranking and breach record; new numbers."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "4.3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "MIT license and deployment scale; new."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "4.3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Feasibility and will bottleneck; new interpretation."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical Brazil portal claim; first occurrence."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "4.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Portal access volume; new number."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "4.4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Transparency Card notifications; new numbers."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "4.4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pension-data investigation; canonical, first occurrence."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "4.4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Takeaway that tools expose fraud; new interpretation."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical NZ Cabinet-papers claim; first occurrence."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "4.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cabinet is normally protected category; new."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "4.5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Government did not halt; distinct outcome claim."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "vTaiwan Pol.is mechanism; new."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "4.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "26 issues, 80 percent action; new numbers."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "4.6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Downstream-of-transparency framing; new."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Secrecy programs revealed illegal; new main claim."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pentagon Papers evidence; new."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "COINTELPRO evidence; new."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Snowden NSA evidence; new."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical catastrophe-predicted pattern; first occurrence."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ninth Circuit 2020 ruling; new."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "5.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "FISA relevance holding; new."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "5.5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Stone found no attacks stopped; new."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "5.5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "NSA abandoned program 2018; new."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Oversight bodies failed inside secrecy; new."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "5.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Secret oversight capture modes; new."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "5.6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Structural argument, secret oversight fails; new."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "5.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical USA FREEDOM Act claim; first occurrence."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "5.7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Act ended bulk collection; new."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "5.7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Tech transparency reports and HTTPS; new."
+    },
+    {
+      "claim_id": "C066",
+      "loglog_ids": [
+        "5.7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "GDPR accelerated by revelations; new."
+    },
+    {
+      "claim_id": "C067",
+      "loglog_ids": [
+        "5.7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Operational-harm uncertainty caveat; new."
+    },
+    {
+      "claim_id": "C068",
+      "loglog_ids": [
+        "5.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Correction came from outside bubble; new."
+    },
+    {
+      "claim_id": "C069",
+      "loglog_ids": [
+        "5.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Leaks are not the model; new framing."
+    },
+    {
+      "claim_id": "C070",
+      "loglog_ids": [
+        "5.9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Snowden as system symptom; new."
+    },
+    {
+      "claim_id": "C071",
+      "loglog_ids": [
+        "5.9.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Designed transparency counterfactual; new."
+    },
+    {
+      "claim_id": "C072",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sets up objections section; new."
+    },
+    {
+      "claim_id": "C073",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Privacy objection statement; new."
+    },
+    {
+      "claim_id": "C074",
+      "loglog_ids": [
+        "6.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "2019 Pew numbers; new evidence."
+    },
+    {
+      "claim_id": "C075",
+      "loglog_ids": [
+        "6.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "2000 ABC poll; new number."
+    },
+    {
+      "claim_id": "C076",
+      "loglog_ids": [
+        "6.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Polls misread distinction; new rebuttal."
+    },
+    {
+      "claim_id": "C077",
+      "loglog_ids": [
+        "6.1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Spending versus medical records; new."
+    },
+    {
+      "claim_id": "C078",
+      "loglog_ids": [
+        "6.1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Infrastructure spending example; new."
+    },
+    {
+      "claim_id": "C079",
+      "loglog_ids": [
+        "6.1.6"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C022",
+      "reasoning": "Repeats C022 privacy-tech feasibility; adds nothing new."
+    },
+    {
+      "claim_id": "C080",
+      "loglog_ids": [
+        "6.1.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Bundled-data separation solution; new."
+    },
+    {
+      "claim_id": "C081",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Deliberation objection statement; new."
+    },
+    {
+      "claim_id": "C082",
+      "loglog_ids": [
+        "6.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cambridge EU Council study; new."
+    },
+    {
+      "claim_id": "C083",
+      "loglog_ids": [
+        "6.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "IMF fortress metaphor; new."
+    },
+    {
+      "claim_id": "C084",
+      "loglog_ids": [
+        "6.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Robodebt numbers; new."
+    },
+    {
+      "claim_id": "C085",
+      "loglog_ids": [
+        "6.2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Speed versus documentation distinction; new."
+    },
+    {
+      "claim_id": "C086",
+      "loglog_ids": [
+        "6.2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "CEO wants documentation not slowness; new."
+    },
+    {
+      "claim_id": "C087",
+      "loglog_ids": [
+        "6.2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Improve systems recommendation; new."
+    },
+    {
+      "claim_id": "C088",
+      "loglog_ids": [
+        "6.2.7"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C045",
+      "reasoning": "Repeats NZ 30-day release already in C045."
+    },
+    {
+      "claim_id": "C089",
+      "loglog_ids": [
+        "6.2.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Opacity unaccountable, transparency pressures consistency; canonical first."
+    },
+    {
+      "claim_id": "C090",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Diplomacy objection statement; new."
+    },
+    {
+      "claim_id": "C091",
+      "loglog_ids": [
+        "6.3.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Concession filler, no substantive information."
+    },
+    {
+      "claim_id": "C092",
+      "loglog_ids": [
+        "6.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "JCPOA and Camp David backchannels; new."
+    },
+    {
+      "claim_id": "C093",
+      "loglog_ids": [
+        "6.3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Democratic dilemma framing; new."
+    },
+    {
+      "claim_id": "C094",
+      "loglog_ids": [
+        "6.3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "CEO confidentiality analogy; new."
+    },
+    {
+      "claim_id": "C095",
+      "loglog_ids": [
+        "6.3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Temporary versus permanent secrecy; new recommendation."
+    },
+    {
+      "claim_id": "C096",
+      "loglog_ids": [
+        "6.3.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Time-delayed transparency; canonical first occurrence."
+    },
+    {
+      "claim_id": "C097",
+      "loglog_ids": [
+        "6.3.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Foreign-government argument proves too much; new."
+    },
+    {
+      "claim_id": "C098",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Special-interest objection statement; new."
+    },
+    {
+      "claim_id": "C099",
+      "loglog_ids": [
+        "6.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Harden-Kirkland 50-state study; new."
+    },
+    {
+      "claim_id": "C100",
+      "loglog_ids": [
+        "6.4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lobbying and correlation findings; new."
+    },
+    {
+      "claim_id": "C101",
+      "loglog_ids": [
+        "6.4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Harden conclusion on interest groups; new."
+    },
+    {
+      "claim_id": "C102",
+      "loglog_ids": [
+        "6.4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Arnold 1990 open markup finding; new."
+    },
+    {
+      "claim_id": "C103",
+      "loglog_ids": [
+        "6.4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "2024 Irish experiment numbers; new."
+    },
+    {
+      "claim_id": "C104",
+      "loglog_ids": [
+        "6.4.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Attention asymmetry argument; new."
+    },
+    {
+      "claim_id": "C105",
+      "loglog_ids": [
+        "6.4.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Build citizen capacity recommendation; canonical first."
+    },
+    {
+      "claim_id": "C106",
+      "loglog_ids": [
+        "6.4.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Fiquem Sabendo FOI volume; new."
+    },
+    {
+      "claim_id": "C107",
+      "loglog_ids": [
+        "6.4.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Electoral environment conclusion; new."
+    },
+    {
+      "claim_id": "C108",
+      "loglog_ids": [
+        "6.4.10"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C089",
+      "reasoning": "Repeats C089 opacity-versus-accountability point."
+    },
+    {
+      "claim_id": "C109",
+      "loglog_ids": [
+        "6.4.11"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C105",
+      "reasoning": "Repeats C105 build-capacity-not-reduce-information recommendation."
+    },
+    {
+      "claim_id": "C110",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Harassment objection statement; new."
+    },
+    {
+      "claim_id": "C111",
+      "loglog_ids": [
+        "6.5.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Concession filler, no substantive content beyond transition."
+    },
+    {
+      "claim_id": "C112",
+      "loglog_ids": [
+        "6.5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Brennan survey methodology numbers; new."
+    },
+    {
+      "claim_id": "C113",
+      "loglog_ids": [
+        "6.5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Threat prevalence percentages; new."
+    },
+    {
+      "claim_id": "C114",
+      "loglog_ids": [
+        "6.5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Assault fear and resignation numbers; new."
+    },
+    {
+      "claim_id": "C115",
+      "loglog_ids": [
+        "6.5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "In-person threat percentage; new."
+    },
+    {
+      "claim_id": "C116",
+      "loglog_ids": [
+        "6.5.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "NAAG doxxing and swatting analysis; new."
+    },
+    {
+      "claim_id": "C117",
+      "loglog_ids": [
+        "6.5.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "22-state protection count; new."
+    },
+    {
+      "claim_id": "C118",
+      "loglog_ids": [
+        "6.5.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Decisions public, personal data protected; new recommendation."
+    },
+    {
+      "claim_id": "C119",
+      "loglog_ids": [
+        "6.5.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Work-product versus personal vulnerability distinction; new."
+    },
+    {
+      "claim_id": "C120",
+      "loglog_ids": [
+        "6.5.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Harassment stems from opacity, conspiracy needs gaps; canonical first."
+    },
+    {
+      "claim_id": "C121",
+      "loglog_ids": [
+        "6.5.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Reasoning transparency may reduce rage; new."
+    },
+    {
+      "claim_id": "C122",
+      "loglog_ids": [
+        "6.5.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Combined protection and transparency solution; new."
+    },
+    {
+      "claim_id": "C123",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "National-security objection statement; new."
+    },
+    {
+      "claim_id": "C124",
+      "loglog_ids": [
+        "6.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Chicago Council support numbers; new."
+    },
+    {
+      "claim_id": "C125",
+      "loglog_ids": [
+        "6.6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Majority says IC could share more; new."
+    },
+    {
+      "claim_id": "C126",
+      "loglog_ids": [
+        "6.6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "12 to 17 percent liberties concern; new."
+    },
+    {
+      "claim_id": "C127",
+      "loglog_ids": [
+        "6.6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Brennan over-classification finding; new."
+    },
+    {
+      "claim_id": "C128",
+      "loglog_ids": [
+        "6.6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Excess secrecy undermines self-government; new."
+    },
+    {
+      "claim_id": "C129",
+      "loglog_ids": [
+        "6.6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "SIPRI military transparency point; new."
+    },
+    {
+      "claim_id": "C130",
+      "loglog_ids": [
+        "6.6.7"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C055",
+      "reasoning": "Repeats C055 predicted-catastrophe pattern using Snowden."
+    },
+    {
+      "claim_id": "C131",
+      "loglog_ids": [
+        "6.6.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Everything classified by default; new."
+    },
+    {
+      "claim_id": "C132",
+      "loglog_ids": [
+        "6.6.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Citizen-CEO default-inversion proposal; new."
+    },
+    {
+      "claim_id": "C133",
+      "loglog_ids": [
+        "6.6.10"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C095",
+      "reasoning": "Repeats C095 temporary operational secrecy concession."
+    },
+    {
+      "claim_id": "C134",
+      "loglog_ids": [
+        "6.6.11"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C096",
+      "reasoning": "Repeats C096 post-conclusion disclosure recommendation."
+    },
+    {
+      "claim_id": "C135",
+      "loglog_ids": [
+        "6.6.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Security label overused to hide wrongdoing; new."
+    },
+    {
+      "claim_id": "C136",
+      "loglog_ids": [
+        "6.6.13"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Who-decides conflict of interest; new."
+    },
+    {
+      "claim_id": "C137",
+      "loglog_ids": [
+        "6.6.14"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Meta aside about the author, no substantive point."
+    },
+    {
+      "claim_id": "C138",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Populist-weaponization objection; canonical first occurrence."
+    },
+    {
+      "claim_id": "C139",
+      "loglog_ids": [
+        "6.7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Kyle-Gultchin dataset scope; new."
+    },
+    {
+      "claim_id": "C140",
+      "loglog_ids": [
+        "6.7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "4x damage likelihood numbers; new."
+    },
+    {
+      "claim_id": "C141",
+      "loglog_ids": [
+        "6.7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Corruption-index drops; new."
+    },
+    {
+      "claim_id": "C142",
+      "loglog_ids": [
+        "6.7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Constitution-rewrite percentage; new."
+    },
+    {
+      "claim_id": "C143",
+      "loglog_ids": [
+        "6.7.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Populist tenure length; new."
+    },
+    {
+      "claim_id": "C144",
+      "loglog_ids": [
+        "6.7.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Stanford short-term incentive analysis; new."
+    },
+    {
+      "claim_id": "C145",
+      "loglog_ids": [
+        "6.7.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sweden Democrats FOI repurposing; new."
+    },
+    {
+      "claim_id": "C146",
+      "loglog_ids": [
+        "6.7.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Causal story reversed; new."
+    },
+    {
+      "claim_id": "C147",
+      "loglog_ids": [
+        "6.7.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Selective transparency exploitation; new."
+    },
+    {
+      "claim_id": "C148",
+      "loglog_ids": [
+        "6.7.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "No cherry-picking full record; new."
+    },
+    {
+      "claim_id": "C149",
+      "loglog_ids": [
+        "6.7.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Short-term incentives independent of transparency; new."
+    },
+    {
+      "claim_id": "C150",
+      "loglog_ids": [
+        "6.7.12"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Documentation protects wise decisions; new."
+    },
+    {
+      "claim_id": "C151",
+      "loglog_ids": [
+        "6.7.13"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Transparency as populism antidote; new."
+    },
+    {
+      "claim_id": "C152",
+      "loglog_ids": [
+        "6.7.14"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Meta aside about the author, no substantive point."
+    },
+    {
+      "claim_id": "C153",
+      "loglog_ids": [
+        "6.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Misinformation objection; canonical first occurrence."
+    },
+    {
+      "claim_id": "C154",
+      "loglog_ids": [
+        "6.8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "2023 Canadian panel finding; new."
+    },
+    {
+      "claim_id": "C155",
+      "loglog_ids": [
+        "6.8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Perception-linked democratic decline; new."
+    },
+    {
+      "claim_id": "C156",
+      "loglog_ids": [
+        "6.8.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Disclosure-content reaction experiment; new."
+    },
+    {
+      "claim_id": "C157",
+      "loglog_ids": [
+        "6.8.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Direction of causation clarified; new."
+    },
+    {
+      "claim_id": "C158",
+      "loglog_ids": [
+        "6.8.5"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C120",
+      "reasoning": "Repeats C120 conspiracy-theories-need-information-gaps claim."
+    },
+    {
+      "claim_id": "C159",
+      "loglog_ids": [
+        "6.8.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Transparency provides ground truth; new."
+    },
+    {
+      "claim_id": "C160",
+      "loglog_ids": [
+        "6.8.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Latent transparency and CEO framing; new."
+    },
+    {
+      "claim_id": "C161",
+      "loglog_ids": [
+        "6.8.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Trust requires consistency over time; new."
+    },
+    {
+      "claim_id": "C162",
+      "loglog_ids": [
+        "6.8.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Accessibility and intermediaries; new."
+    },
+    {
+      "claim_id": "C163",
+      "loglog_ids": [
+        "6.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Trader-exploitation objection; new."
+    },
+    {
+      "claim_id": "C164",
+      "loglog_ids": [
+        "6.9.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Narrow concern, time-delayed fix; distinct objection rebuttal."
+    },
+    {
+      "claim_id": "C165",
+      "loglog_ids": [
+        "6.9.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Fed FOMC release timing; new."
+    },
+    {
+      "claim_id": "C166",
+      "loglog_ids": [
+        "6.9.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "TTIP secrecy backlash; new."
+    },
+    {
+      "claim_id": "C167",
+      "loglog_ids": [
+        "6.9.4"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C096",
+      "reasoning": "Repeats C096 time-delayed transparency recommendation."
+    },
+    {
+      "claim_id": "C168",
+      "loglog_ids": [
+        "6.9.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Nothing stays secret forever; standalone claim."
+    },
+    {
+      "claim_id": "C169",
+      "loglog_ids": [
+        "6.9.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Procurement secrecy enables corruption; new."
+    },
+    {
+      "claim_id": "C170",
+      "loglog_ids": [
+        "6.9.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Brazil contracts sunlight effect; new."
+    },
+    {
+      "claim_id": "C171",
+      "loglog_ids": [
+        "6.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Power-will-never-allow objection; new."
+    },
+    {
+      "claim_id": "C172",
+      "loglog_ids": [
+        "6.10.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Political challenge not principled objection; new."
+    },
+    {
+      "claim_id": "C173",
+      "loglog_ids": [
+        "6.10.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Iceland crowdsourced drafting; new."
+    },
+    {
+      "claim_id": "C174",
+      "loglog_ids": [
+        "6.10.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Iceland approval margins; new."
+    },
+    {
+      "claim_id": "C175",
+      "loglog_ids": [
+        "6.10.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Parliament refused ratification; new."
+    },
+    {
+      "claim_id": "C176",
+      "loglog_ids": [
+        "6.10.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "OGP country and commitment numbers; new."
+    },
+    {
+      "claim_id": "C177",
+      "loglog_ids": [
+        "6.10.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Other delay causes; new."
+    },
+    {
+      "claim_id": "C178",
+      "loglog_ids": [
+        "6.10.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Opacity beneficiaries resist; new."
+    },
+    {
+      "claim_id": "C179",
+      "loglog_ids": [
+        "6.10.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Resistance is the point; new."
+    },
+    {
+      "claim_id": "C180",
+      "loglog_ids": [
+        "6.10.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Three reform precedents; new."
+    },
+    {
+      "claim_id": "C181",
+      "loglog_ids": [
+        "6.10.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "CEO framing asks who works for whom; new."
+    },
+    {
+      "claim_id": "C182",
+      "loglog_ids": [
+        "6.10.11"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Governance design not permission problem; new."
+    },
+    {
+      "claim_id": "C183",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Measuring-stick thesis; canonical first occurrence."
+    },
+    {
+      "claim_id": "C184",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Reject tradeoff framing; new recommendation."
+    },
+    {
+      "claim_id": "C185",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Speed and accountability as byproducts; new."
+    },
+    {
+      "claim_id": "C186",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Record availability creates pressure; new."
+    },
+    {
+      "claim_id": "C187",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Reviewed reasoning improves reasoning; new."
+    },
+    {
+      "claim_id": "C188",
+      "loglog_ids": [
+        "7.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Trail makes prosecution easier; new."
+    },
+    {
+      "claim_id": "C189",
+      "loglog_ids": [
+        "7.6"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C183",
+      "reasoning": "Repeats C183 measuring-stick claim."
+    },
+    {
+      "claim_id": "C190",
+      "loglog_ids": [
+        "8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Open-source analogy thesis; new."
+    },
+    {
+      "claim_id": "C191",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Linux public-build evidence; new."
+    },
+    {
+      "claim_id": "C192",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Maintainer accountability and forking; new."
+    },
+    {
+      "claim_id": "C193",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Bridging transition, no substantive information."
+    },
+    {
+      "claim_id": "C194",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cannot fork your country; new."
+    },
+    {
+      "claim_id": "C195",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Less choice strengthens transparency case; new."
+    },
+    {
+      "claim_id": "C196",
+      "loglog_ids": [
+        "8.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Closing call to action; distinct rhetorical close."
+    },
+    {
+      "claim_id": "C197",
+      "loglog_ids": [
+        "9"
+      ],
+      "label": "Boilerplate",
+      "canonical_id": null,
+      "reasoning": "Section header describing appendix; formatting only, excluded."
+    },
+    {
+      "claim_id": "C198",
+      "loglog_ids": [
+        "9.1"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C024",
+      "reasoning": "Appendix recap of C024 Sweden 1766 claim."
+    },
+    {
+      "claim_id": "C199",
+      "loglog_ids": [
+        "9.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C034",
+      "reasoning": "Appendix recap of C034 X-Road claim."
+    },
+    {
+      "claim_id": "C200",
+      "loglog_ids": [
+        "9.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C040",
+      "reasoning": "Appendix recap of C040 Brazil portal claim."
+    },
+    {
+      "claim_id": "C201",
+      "loglog_ids": [
+        "9.3.1"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C043",
+      "reasoning": "Near-verbatim repeat of C043 pension-data finding."
+    },
+    {
+      "claim_id": "C202",
+      "loglog_ids": [
+        "9.4"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C030",
+      "reasoning": "Appendix recap of C030 Seoul OPEN claim."
+    },
+    {
+      "claim_id": "C203",
+      "loglog_ids": [
+        "9.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Source recap but adds Uber test, Tang, g0v details."
+    },
+    {
+      "claim_id": "C204",
+      "loglog_ids": [
+        "9.6"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C063",
+      "reasoning": "Appendix recap of C063 USA FREEDOM claim."
+    },
+    {
+      "claim_id": "C205",
+      "loglog_ids": [
+        "9.7"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C074",
+      "reasoning": "Appendix recap of C074 Pew numbers."
+    },
+    {
+      "claim_id": "C206",
+      "loglog_ids": [
+        "9.8"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C082",
+      "reasoning": "Appendix recap of C082-C084 efficiency sources."
+    },
+    {
+      "claim_id": "C207",
+      "loglog_ids": [
+        "9.9"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C092",
+      "reasoning": "Appendix recap of C092 diplomacy backchannel evidence."
+    },
+    {
+      "claim_id": "C208",
+      "loglog_ids": [
+        "9.10"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C099",
+      "reasoning": "Appendix recap of C099-C104 special-interest studies."
+    },
+    {
+      "claim_id": "C209",
+      "loglog_ids": [
+        "9.11"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C112",
+      "reasoning": "Appendix recap of C112-C118 safety survey."
+    },
+    {
+      "claim_id": "C210",
+      "loglog_ids": [
+        "9.12"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C124",
+      "reasoning": "Appendix recap of C124-C130 security sources."
+    },
+    {
+      "claim_id": "C211",
+      "loglog_ids": [
+        "9.13"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C138",
+      "reasoning": "Appendix recap of C138 populism objection and sources."
+    },
+    {
+      "claim_id": "C212",
+      "loglog_ids": [
+        "9.14"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C153",
+      "reasoning": "Appendix recap of C153 misinformation objection."
+    },
+    {
+      "claim_id": "C213",
+      "loglog_ids": [
+        "9.15"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C176",
+      "reasoning": "Appendix recap of C176 OGP structural-barrier evidence."
+    },
+    {
+      "claim_id": "C214",
+      "loglog_ids": [
+        "9.16"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Adds Finland 1999 act and Nordicom comparison, new sources."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 214,
+    "unique": 181,
+    "duplicates": 25,
+    "trivia": 7,
+    "redundancy_rate": 0.1168,
+    "trivia_rate": 0.0327,
+    "structured_tokens": 214,
+    "tokens_per_unique_claim": 1.1383
+  },
+  "prune_list": [
+    "C079 duplicates C022 (privacy-tech feasibility), safe to merge",
+    "C088 duplicates C045 (NZ 30-day release), safe to merge",
+    "C108 duplicates C089 (opacity, no accountability), safe to merge",
+    "C109 duplicates C105 (build capacity, not reduce info), safe to merge",
+    "C130 duplicates C055 (predicted catastrophe, minimal impact), safe to merge",
+    "C133 duplicates C095 (temporary operational secrecy), safe to merge",
+    "C134 duplicates C096 (post-conclusion disclosure), safe to merge",
+    "C158 duplicates C120 (conspiracy needs information gaps), safe to merge",
+    "C167 duplicates C096 (time-delayed transparency), safe to merge",
+    "C189 duplicates C183 (transparency is the measuring stick), safe to merge",
+    "C198 duplicates C024 (Sweden 1766), appendix recap",
+    "C199 duplicates C034 (X-Road), appendix recap",
+    "C200 duplicates C040 (Brazil portal), appendix recap",
+    "C201 duplicates C043 (60GB pension data), near-verbatim",
+    "C202 duplicates C030 (Seoul OPEN), appendix recap",
+    "C204 duplicates C063 (USA FREEDOM Act), appendix recap",
+    "C205 duplicates C074 (Pew 66%), appendix recap",
+    "C206 duplicates C082 (IMF, Cambridge, Robodebt), appendix recap",
+    "C207 duplicates C092 (diplomacy backchannels), appendix recap",
+    "C208 duplicates C099 (50-state lobbying study), appendix recap",
+    "C209 duplicates C112 (Brennan 735 survey), appendix recap",
+    "C210 duplicates C124 (Chicago Council), appendix recap",
+    "C211 duplicates C138 (populism sources), appendix recap",
+    "C212 duplicates C153 (misinformation sources), appendix recap",
+    "C213 duplicates C176 (OGP), appendix recap"
+  ]
+}

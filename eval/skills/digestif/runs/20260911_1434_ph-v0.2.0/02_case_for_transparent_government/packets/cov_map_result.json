@@ -1,0 +1,224 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "source.txt",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: every government decision should be fully documented and publicly available across the whole chain (data, considerations, people, alternatives, arguments, implementation, evaluation, course-correction, reconsideration), framed as basic accountability rather than radicalism.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005",
+    "L006",
+    "L007"
+   ],
+   "evidence_quote": "Every government decision needs a full public chain from data to course-correction plans.",
+   "reasoning": "L006 enumerates the chain elements nearly verbatim (data, people, alternatives, arguments, implementation, evaluation, reconsideration) and L007 preserves the 'basic board-level accountability, only opacity makes it sound radical' framing."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "Citizen-as-CEO framing: citizens are principals/CEOs, public servants are agents/employees spending citizens' money; accountability exists because a reviewable trail exists, unlike a government that classifies and refuses to explain.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L002",
+    "L008",
+    "L009",
+    "L010"
+   ],
+   "evidence_quote": "In a democracy citizens are principals and every official is their employee-agent.",
+   "reasoning": "L008 states the principal-agent framing explicitly, L009-L010 preserve the reviewability and 'company with classified emails would die of unseen corruption' counterpart."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Availability versus consumption: the citizen-CEO need not read every email or attend every meeting but must be able to trace any decision that matters; availability alone changes behavior.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L009",
+    "L011"
+   ],
+   "evidence_quote": "Availability matters, not consumption: CEOs value the traceable record, not reading everything.",
+   "reasoning": "L011 captures the distinction directly and L009 preserves the behavior-shaping and traceability claim."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Scope clarification: transparency is government decisions and officials flowing to citizens, NOT citizens surveilling each other or exposing personal records; privacy-preserving methods (aggregation, anonymization, differential privacy) separate the two.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L012",
+    "L013",
+    "L014"
+   ],
+   "evidence_quote": "Transparency means government visible to citizens, never citizens exposed to each other.",
+   "reasoning": "L012 states the direction distinction, L013 gives the aggregate fiscal example, and L014 preserves anonymization and differential privacy as making separation straightforward."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Sweden 1766: world's first freedom of information law, now constitutional, born of Hats vs Caps conflict, driven by Chydenius with anti-corruption motive; 260 years later documents are public by default and the country has not collapsed, with Nordics among the least corrupt and most effective democracies.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L016",
+    "L017",
+    "L019"
+   ],
+   "evidence_quote": "Sweden's 1766 press act made documents public by default; Nordics rank least corrupt.",
+   "reasoning": "The salient identifiers (1766, public by default, least-corrupt outcome) and the origin nuance (Hats-Caps conflict, Chydenius, anti-corruption motive) are all preserved in L016 and L019-L017. The incidental descriptors 'world's first' and '260 years' are dropped but the precedent and its effect are intact."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Seoul/South Korea 1999: OPEN system tracks 70 corruption-prone municipal tasks (construction permits, environmental regulation, urban planning) showing who decided what at which point in real time; visibility removed bribery leverage and research confirmed corruption decreases as e-participation increases.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L020",
+    "L021"
+   ],
+   "evidence_quote": "Seoul's 1999 OPEN tracked 70 corruption-prone tasks live, removing bribery leverage.",
+   "reasoning": "Year 1999, the count 70, the real-time tracking, the removed bribery leverage, and a reference to the supporting study (L021) are all present. The specific example task list is dropped but it is illustrative detail, not the core claim."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "Estonia 2001: X-Road connects 929+ institutions, 1,887 information systems, 3,000+ digital services; every transaction timestamped, cryptographically signed, and logged; ranks 2nd in UN E-Government Development Index with no major breaches in 20+ years, proving feasibility and that will, not technology, is the bottleneck.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L022",
+    "L023"
+   ],
+   "evidence_quote": "Estonia's X-Road links thousands of services with signed, logged, breach-free exchange.",
+   "reasoning": "The core mechanism (signed, logged, breach-free exchange) survives, but the point's defining scale numbers (929 institutions, 1,887 systems, 3,000 services), the 2001 date, the 2nd-place EGDI ranking, and the 20-year no-breach figure are all collapsed to 'thousands.' Losing the concrete scale weakens the stated feasibility argument."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Brazil 2004: Transparency Portal publishes all federal spending (contracts, transfers, salaries, travel, credit card) with 20+ million accesses/year; Transparency Card sends real-time political spending notifications (430,000+ cards, 20+ million notifications); journalists using the Access to Information Law uncovered 60GB of pension data going back 27 years.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L024",
+    "L025"
+   ],
+   "evidence_quote": "Brazil's portal draws 20 million yearly visits; journalists surfaced 27 hidden pension years.",
+   "reasoning": "The portal's 20 million yearly visits and the 27-year pension disclosure are captured, but the 2004 date, the entire Transparency Card component (430,000 cards, 20 million notifications), and the 60GB figure are absent, substantially narrowing the point."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "New Zealand 2019: government proactively publishes all Cabinet papers and minutes within 30 business days of decisions even though cabinet deliberations are the most protected category; government has not ground to a halt and citizens can see why decisions were made.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L026",
+    "L044"
+   ],
+   "evidence_quote": "New Zealand publishes cabinet papers by default within 30 days without halting government.",
+   "reasoning": "The policy (cabinet papers by default), the timeframe (30 days, close to '30 business days'), and the no-halt outcome are all preserved in L026 and reinforced by L044. The 2019 date is dropped but incidental to the precedent."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Recurring pattern: secret programs are later revealed as illegal or built on lies, and internal oversight failed because it operated inside the same secrecy bubble. Examples: Pentagon Papers 1971 (Vietnam unwinnable), COINTELPRO 1971 (illegal surveillance of civil rights leaders), Snowden 2013 (NSA bulk metadata, PRISM, surveilling foreign leaders).",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L030",
+    "L031",
+    "L032",
+    "L035"
+   ],
+   "evidence_quote": "Secret programs recur; internal oversight fails inside the same secrecy bubble.",
+   "reasoning": "The pattern claim and the three named cases (Pentagon Papers, COINTELPRO, Snowden), plus the failed-oversight mechanism (L035), are present. However the identifying dates (1971, 1971, 2013) and the substantive details of each case (Vietnam deception, civil-rights surveillance, PRISM and foreign-leader targeting) are dropped, narrowing the evidence."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Snowden aftermath: Sept 2020 Ninth Circuit ruled NSA bulk phone record collection illegal and possibly unconstitutional under FISA; Stone found no evidence it stopped attacks; NSA abandoned it in 2018; USA FREEDOM Act 2015 reined in spying; tech transparency reporting, default HTTPS, and EU GDPR followed; operational harm uncertain but legality and oversight failures are not.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L033",
+    "L036",
+    "L037"
+   ],
+   "evidence_quote": "Courts ruled bulk collection illegal; its own reviewers found it stopped no attacks.",
+   "reasoning": "The legality ruling, the no-attacks-stopped finding, the FREEDOM Act and downstream reforms (transparency reports, HTTPS, GDPR), and the conceded uncertainty about operational harm (L037) are all present. Lost are the 2020 Ninth Circuit and 2018/2015 dates, the FISA relevance requirement, and Stone's name, so the point is partial."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Privacy and harassment objections: privacy fears (66% concerned about government data collection; 86% opposed to online public records) concern citizen data, not visible government decisions, a direction confusion; official threats are real (Brennan Center 2024, 735 officials: 38% threatened, 34% know a resignation, up from 22% in 2023), so publish decisions while protecting personal data; much harassment stems from opaque processes.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L041",
+    "L042",
+    "L054",
+    "L055",
+    "L056"
+   ],
+   "evidence_quote": "Polls fear citizen-data exposure, not visible decisions; aggregate reporting separates them.",
+   "reasoning": "The direction-confusion rebuttal, the citizen-data polls (L042), and the threat statistic (38% threatened per L055) plus the 'a third know resignations' figure are present. The specific poll numbers 66% and 86%, the Brennan Center 2024 attribution, 735 respondents, and the 22%-to-34% rise are dropped, so precision is lost."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Secrecy-based objections rebutted: gridlock confuses speed with documentation (NZ shows transparency documents at current speed); diplomacy (JCPOA Oman backchannel, Camp David, Cold War) and markets (Fed FOMC minutes three weeks, transcripts five years; TTIP harmed by secrecy) justify only temporary operational secrecy with time-delayed release (30-90 days), never permanent secrecy; national security is overused and the burden of proof should be reversed.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L044",
+    "L046",
+    "L047",
+    "L059",
+    "L060",
+    "L061"
+   ],
+   "evidence_quote": "Concede temporary negotiation secrecy, then publish everything within 30 to 90 days.",
+   "reasoning": "The gridlock rebuttal (L044), diplomacy and national-security objections with the 30-90 day temporary-secrecy rule (L047), and the burden-flip recommendation (L060) are preserved. The specific supporting examples (Oman JCPOA, Camp David, FOMC three-week/five-year delays, TTIP) are dropped, thinning the argument."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Empirical misuse concerns acknowledged then rebutted: Harden and Kirkland find open meetings bring more lobbying and no better opinion correlation; 2024 Irish experiment finds lobbying transparency does not raise trust; Kyle and Gultchin (43 countries, 1990-2018) find populists 4x more likely to damage democracy and countries falling ~5 CPI places; misinformation reduces perceived transparency. Answer: build citizen capacity and better transparency, not less transparency.",
+   "weight": "Must have",
+   "presence": "Partial",
+   "loglog_ids": [
+    "L051",
+    "L052",
+    "L053",
+    "L063",
+    "L064",
+    "L067",
+    "L068"
+   ],
+   "evidence_quote": "Harden and Kirkland show open meetings aid organized interests without improving representation.",
+   "reasoning": "The Harden-Kirkland finding, the Irish experiment, the populist-damage rebuttal, and the misinformation/perceived-transparency point are all present with the citizen-capacity prescription (L052). The quantified findings (43 countries, 1990-2018, 4x, ~5 CPI places) are absent, so the empirical force is diluted."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Resistance and closing vision: 'those in power will never allow this' is a description of the political challenge, not a principled objection (Iceland's 2008 crowdsourced constitution blocked despite referendum; OGP commitments fail on funding, coordination, transitions); the CEO framing reframes it as a governance design problem; transparency is the measuring stick, speed and accountability are byproducts, open source shows public collaboration works, and the case is stronger because citizens cannot fork their country.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L074",
+    "L075",
+    "L078",
+    "L079",
+    "L080",
+    "L081",
+    "L082"
+   ],
+   "evidence_quote": "You cannot fork a country, so coerced citizens deserve oversight most.",
+   "reasoning": "The Iceland-blocked-constitution and OGP resistance rebuttal (L074), the design-not-permission reframe (L075), transparency-as-measuring-stick with speed/accountability as byproducts (L078-L080), the Linux public-collaboration example (L081), and the cannot-fork-a-country closing (L082) are all captured."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 15,
+  "must_have_present": 8,
+  "must_have_partial": 7,
+  "must_have_missing": 0,
+  "overall_present": 8,
+  "must_recall": 0.767,
+  "overall_recall": 0.767
+ },
+ "missing_list": []
+}

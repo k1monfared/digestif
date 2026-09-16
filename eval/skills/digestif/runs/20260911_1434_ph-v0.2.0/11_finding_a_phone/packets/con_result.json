@@ -1,0 +1,300 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "11_finding_a_phone",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Document-level meta overview; orients the whole piece, not a restated sub-header."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds the phoneless-spell transition absent from its child claims."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specific Sony Ericsson durability detail."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specific Droid centrality detail."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Frames being made a consumer and retreating to dial-pad."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Mechanism: notifications and apps created problems."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Interpretive claim that all form factors failed alike."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concrete tactics: unneeded features, ads, ecosystems."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "4"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C010",
+   "reasoning": "Re-lists C010 positives plus C011 negatives with no new content."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specifies wanted attributes: battery, waterproofing, SD, jack, mic."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Explicit exclusions: camera, AI, cloud storage."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Causal claim about Apple and Google offline limits."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "5"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Price and benefit verdict on Ulefone."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Adds shockproof, dustproof, dual SIM beyond C010's wish list."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Anecdotal durability evidence from drops and swims."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "6"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Interpretive stance on phones as tools versus status."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "7"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Pixel deal narrative with lock-in anxiety."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Outcome detail: paid nothing, returned to market."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "8"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Pipeline framing of the LLM comparison; near-redundant with children only."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "O1 naming correct but specs generally wrong."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Scraper implementation detail for gsmarena links."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Cleaning extraction fields list."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Caveat that unverified code is a starting point only."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "9"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Filtered candidate result and continuing search."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Drawbacks of the two surviving candidates."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Edge 40 disqualification for lacking SD slot."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Next scraping approach: pandas read_html with proxies."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "10"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "TCL failure verdict plus next candidate G85."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "10.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "TCL heat and readability evidence."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "10.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Paper and ink modes poorly implemented."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "10.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "G75 unavailable, so G85 is the compromise."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 31,
+  "unique": 30,
+  "duplicates": 1,
+  "trivia": 0,
+  "redundancy_rate": 0.0323,
+  "trivia_rate": 0.0,
+  "structured_tokens": 556,
+  "tokens_per_unique_claim": 18.53
+ },
+ "prune_list": [
+  "C009 duplicates C010 (and C011); safe to merge the requirements re-listing into the evidence lines"
+ ]
+}

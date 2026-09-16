@@ -1,0 +1,415 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 4,
+ "of": 9,
+ "nodes": [
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Tao's pipeline: proof abundance threatens to break the correlation of the community's goals, and the bottleneck shifts to digestion, the work treated as low prestige.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "Tao reaches this point and then keeps going in a direction neither document takes. Once the struggle stops being scarce, he asks, what is the community actually optimizing for?"
+    },
+    {
+     "ref": "¶31",
+     "text": "## Tao's pipeline"
+    },
+    {
+     "ref": "¶37",
+     "text": "His punchline: we are moving from proof scarcity to proof abundance. Under the Working Hypothesis, mismatches appear at every stage. AI proofs accumulate, unverified. Verified proofs await readable writeups."
+    },
+    {
+     "ref": "¶38",
+     "text": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Tao keeps going where neither document does: once the struggle stops being scarce, what is the community optimizing for?",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "Tao reaches this point and then keeps going in a direction neither document takes. Once the struggle stops being scarce, he asks, what is the community actually optimizing for?"
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Working Hypothesis: AI tools will reasonably soon perform a reasonable fraction of research-level mathematics, with reasonable success, quality, supervision, and cost.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "Tao's talk is conditional. He states a \"Working Hypothesis\": AI tools will, reasonably soon, become capable of performing a reasonable fraction of research-level mathematics, with reasonable success, quality, supervision, and cost. He asks you not to believe it, only to assume it, and then he asks the orthogonal question: what are the goals and values of the mathematical community, the explicit ones and the implicit ones we actually pursue in practice? This is the question math has historically delegated to the humanities."
+    }
+   ]
+  },
+  {
+   "id": "3.2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Tao asks you not to believe it, only assume it, then asks which goals and values the community actually pursues, explicit and implicit.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "Tao's talk is conditional. He states a \"Working Hypothesis\": AI tools will, reasonably soon, become capable of performing a reasonable fraction of research-level mathematics, with reasonable success, quality, supervision, and cost. He asks you not to believe it, only to assume it, and then he asks the orthogonal question: what are the goals and values of the mathematical community, the explicit ones and the implicit ones we actually pursue in practice? This is the question math has historically delegated to the humanities."
+    }
+   ]
+  },
+  {
+   "id": "3.2.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "That question was historically delegated to the humanities.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "Tao's talk is conditional. He states a \"Working Hypothesis\": AI tools will, reasonably soon, become capable of performing a reasonable fraction of research-level mathematics, with reasonable success, quality, supervision, and cost. He asks you not to believe it, only to assume it, and then he asks the orthogonal question: what are the goals and values of the mathematical community, the explicit ones and the implicit ones we actually pursue in practice? This is the question math has historically delegated to the humanities."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Goodhart's law: when a measure becomes a target, it ceases to be a good measure.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "His argument runs through [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law), that when a measure becomes a target, it ceases to be a good measure. Historically the community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works, all moved together, so any one or two of them could proxy for the rest, and the rest could stay implicit. AI optimization threatens to break the correlation. Generative AI is ungrounded by nature, and AI companies have financial incentives, so the use of AI is particularly vulnerable to Goodhart. The goals can diverge."
+    }
+   ]
+  },
+  {
+   "id": "3.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "His argument runs through [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law), that when a measure becomes a target, it ceases to be a good measure. Historically the community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works, all moved together, so any one or two of them could proxy for the rest, and the rest could stay implicit. AI optimization threatens to break the correlation. Generative AI is ungrounded by nature, and AI companies have financial incentives, so the use of AI is particularly vulnerable to Goodhart. The goals can diverge."
+    }
+   ]
+  },
+  {
+   "id": "3.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Any one or two goals could proxy for the rest, and the rest could stay implicit.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "His argument runs through [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law), that when a measure becomes a target, it ceases to be a good measure. Historically the community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works, all moved together, so any one or two of them could proxy for the rest, and the rest could stay implicit. AI optimization threatens to break the correlation. Generative AI is ungrounded by nature, and AI companies have financial incentives, so the use of AI is particularly vulnerable to Goodhart. The goals can diverge."
+    }
+   ]
+  },
+  {
+   "id": "3.3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "AI optimization threatens to break the correlation; generative AI is ungrounded by nature and AI companies have financial incentives.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "His argument runs through [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law), that when a measure becomes a target, it ceases to be a good measure. Historically the community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works, all moved together, so any one or two of them could proxy for the rest, and the rest could stay implicit. AI optimization threatens to break the correlation. Generative AI is ungrounded by nature, and AI companies have financial incentives, so the use of AI is particularly vulnerable to Goodhart. The goals can diverge."
+    }
+   ]
+  },
+  {
+   "id": "3.3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "So AI use is particularly vulnerable to Goodhart, and the goals can diverge.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "His argument runs through [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law), that when a measure becomes a target, it ceases to be a good measure. Historically the community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works, all moved together, so any one or two of them could proxy for the rest, and the rest could stay implicit. AI optimization threatens to break the correlation. Generative AI is ungrounded by nature, and AI companies have financial incentives, so the use of AI is particularly vulnerable to Goodhart. The goals can diverge."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Case study: start with the goal solve as many unsolved problems as possible.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "Then the case study. Start with the goal \"solve as many unsolved problems as possible.\" Refine it once, add verification, or you get a pile of incorrect solutions. Refine it again, add exposition, because a pile of correct but unreadable solutions isn't progress either. On [erdosproblems.com](https://www.erdosproblems.com) there are already dozens of AI-generated proofs, many likely correct, that no human expert has volunteered to verify and vouch for, and in several cases the human submitters declared themselves unqualified to do it."
+    }
+   ]
+  },
+  {
+   "id": "3.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Refine once: add verification, or you get a pile of incorrect solutions.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "Then the case study. Start with the goal \"solve as many unsolved problems as possible.\" Refine it once, add verification, or you get a pile of incorrect solutions. Refine it again, add exposition, because a pile of correct but unreadable solutions isn't progress either. On [erdosproblems.com](https://www.erdosproblems.com) there are already dozens of AI-generated proofs, many likely correct, that no human expert has volunteered to verify and vouch for, and in several cases the human submitters declared themselves unqualified to do it."
+    }
+   ]
+  },
+  {
+   "id": "3.4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Refine again: add exposition, because correct but unreadable solutions are not progress either.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "Then the case study. Start with the goal \"solve as many unsolved problems as possible.\" Refine it once, add verification, or you get a pile of incorrect solutions. Refine it again, add exposition, because a pile of correct but unreadable solutions isn't progress either. On [erdosproblems.com](https://www.erdosproblems.com) there are already dozens of AI-generated proofs, many likely correct, that no human expert has volunteered to verify and vouch for, and in several cases the human submitters declared themselves unqualified to do it."
+    }
+   ]
+  },
+  {
+   "id": "3.4.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "On erdosproblems.com, dozens of AI-generated proofs, many likely correct, await an expert volunteer to verify and vouch for them.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "Then the case study. Start with the goal \"solve as many unsolved problems as possible.\" Refine it once, add verification, or you get a pile of incorrect solutions. Refine it again, add exposition, because a pile of correct but unreadable solutions isn't progress either. On [erdosproblems.com](https://www.erdosproblems.com) there are already dozens of AI-generated proofs, many likely correct, that no human expert has volunteered to verify and vouch for, and in several cases the human submitters declared themselves unqualified to do it."
+    }
+   ]
+  },
+  {
+   "id": "3.4.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "In several cases the human submitters declared themselves unqualified to verify.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "Then the case study. Start with the goal \"solve as many unsolved problems as possible.\" Refine it once, add verification, or you get a pile of incorrect solutions. Refine it again, add exposition, because a pile of correct but unreadable solutions isn't progress either. On [erdosproblems.com](https://www.erdosproblems.com) there are already dozens of AI-generated proofs, many likely correct, that no human expert has volunteered to verify and vouch for, and in several cases the human submitters declared themselves unqualified to do it."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Refine again: add community acceptance, since a proof no one has digested contributes nothing to the field.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "Refine again, add community acceptance, because a proof no one has digested contributes nothing to the field, and acceptance is slow, human, and external, something the authors and their AI tools cannot optimize directly. It is currently produced by volunteer editors and referees, work regarded as less prestigious than generating proofs, though it is how individual achievements become collective progress. Refine one more time, add canonicalization, incorporation into the definitive theory of the field, the textbooks and reference material taught to the next generation. This, he says, is the slowest stage of all, the least amenable to optimization, and the most valuable."
+    }
+   ]
+  },
+  {
+   "id": "3.5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Acceptance is slow, human, and external; authors and their AI tools cannot optimize it directly.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "Refine again, add community acceptance, because a proof no one has digested contributes nothing to the field, and acceptance is slow, human, and external, something the authors and their AI tools cannot optimize directly. It is currently produced by volunteer editors and referees, work regarded as less prestigious than generating proofs, though it is how individual achievements become collective progress. Refine one more time, add canonicalization, incorporation into the definitive theory of the field, the textbooks and reference material taught to the next generation. This, he says, is the slowest stage of all, the least amenable to optimization, and the most valuable."
+    }
+   ]
+  },
+  {
+   "id": "3.5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Volunteer editors and referees produce it, work less prestigious than generating proofs, yet it turns individual achievements into collective progress.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "Refine again, add community acceptance, because a proof no one has digested contributes nothing to the field, and acceptance is slow, human, and external, something the authors and their AI tools cannot optimize directly. It is currently produced by volunteer editors and referees, work regarded as less prestigious than generating proofs, though it is how individual achievements become collective progress. Refine one more time, add canonicalization, incorporation into the definitive theory of the field, the textbooks and reference material taught to the next generation. This, he says, is the slowest stage of all, the least amenable to optimization, and the most valuable."
+    }
+   ]
+  },
+  {
+   "id": "3.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Refine once more: add canonicalization, incorporation into the definitive theory, textbooks, and reference material taught to the next generation.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "Refine again, add community acceptance, because a proof no one has digested contributes nothing to the field, and acceptance is slow, human, and external, something the authors and their AI tools cannot optimize directly. It is currently produced by volunteer editors and referees, work regarded as less prestigious than generating proofs, though it is how individual achievements become collective progress. Refine one more time, add canonicalization, incorporation into the definitive theory of the field, the textbooks and reference material taught to the next generation. This, he says, is the slowest stage of all, the least amenable to optimization, and the most valuable."
+    }
+   ]
+  },
+  {
+   "id": "3.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This is the slowest stage, the least amenable to optimization, and the most valuable.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "Refine again, add community acceptance, because a proof no one has digested contributes nothing to the field, and acceptance is slow, human, and external, something the authors and their AI tools cannot optimize directly. It is currently produced by volunteer editors and referees, work regarded as less prestigious than generating proofs, though it is how individual achievements become collective progress. Refine one more time, add canonicalization, incorporation into the definitive theory of the field, the textbooks and reference material taught to the next generation. This, he says, is the slowest stage of all, the least amenable to optimization, and the most valuable."
+    }
+   ]
+  },
+  {
+   "id": "3.7",
+   "type": "example",
+   "attribution": "reported",
+   "text": "Tao's pipeline runs open problems through generation, verification, publication, exposition, digestion, and canonicalization into definitive solutions.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "![Tao's pipeline from his ICM 2026 talk: open problems flow through generation, verification, publication, exposition, digestion, and canonicalization into definitive solutions.](files/20260806/tao_pipeline.png)"
+    }
+   ]
+  },
+  {
+   "id": "3.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Punchline: mathematics is moving from proof scarcity to proof abundance.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "His punchline: we are moving from proof scarcity to proof abundance. Under the Working Hypothesis, mismatches appear at every stage. AI proofs accumulate, unverified. Verified proofs await readable writeups."
+    }
+   ]
+  },
+  {
+   "id": "3.8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Under the Working Hypothesis, mismatches appear at every stage: AI proofs accumulate unverified, verified proofs await readable writeups.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "His punchline: we are moving from proof scarcity to proof abundance. Under the Working Hypothesis, mismatches appear at every stage. AI proofs accumulate, unverified. Verified proofs await readable writeups."
+    }
+   ]
+  },
+  {
+   "id": "3.8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Correct and well-written proofs overwhelm peer review; published proofs are too numerous to ever digest.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "3.8.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The bottleneck shifts to proof digestion, the work currently treated as low prestige.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "3.9",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Paul Halmos, a top mathematician, wanted to be known for exposition rather than cutting-edge research.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "3.10",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Tao's recommendations: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "3.10.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Increase the emphasis on exposition, publication, and canonicalization.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "3.10.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "He points to the Leiden Declaration, a community statement on AI in mathematics endorsed by the International Mathematical Union.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "3.10.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Rule of thumb: if authors cannot convincingly give a clear, expert-level talk on their correct, properly attributed result, do not publish it.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "3.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The LinkedIn professor is the human version: his reward for succeeding is demotion to checking others' work.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "The professor in that LinkedIn post is the human version of this. He got into research because he loved producing and hated grading. His reward for succeeding is to be demoted to the thing he hated, checking other people's work. Experimental science ran the same inversion when instrumentation made routine measurement cheap, and prestige moved from the measuring to the designing of experiments. That is the prestige inversion Tao is pointing at, and it is already happening."
+    }
+   ]
+  },
+  {
+   "id": "3.11.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Experimental science saw the same inversion when measurement got cheap: prestige moved from measuring to designing experiments.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "The professor in that LinkedIn post is the human version of this. He got into research because he loved producing and hated grading. His reward for succeeding is to be demoted to the thing he hated, checking other people's work. Experimental science ran the same inversion when instrumentation made routine measurement cheap, and prestige moved from the measuring to the designing of experiments. That is the prestige inversion Tao is pointing at, and it is already happening."
+    }
+   ]
+  },
+  {
+   "id": "3.11.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "That prestige inversion is already happening.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "The professor in that LinkedIn post is the human version of this. He got into research because he loved producing and hated grading. His reward for succeeding is to be demoted to the thing he hated, checking other people's work. Experimental science ran the same inversion when instrumentation made routine measurement cheap, and prestige moved from the measuring to the designing of experiments. That is the prestige inversion Tao is pointing at, and it is already happening."
+    }
+   ]
+  }
+ ]
+}

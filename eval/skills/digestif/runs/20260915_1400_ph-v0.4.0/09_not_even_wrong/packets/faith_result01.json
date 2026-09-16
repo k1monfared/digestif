@@ -1,0 +1,390 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "09_not_even_wrong",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Unverifiable not-even-wrong claims persuade through investment, identity, and social proof rather than evidence and reasoning.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "powerful psychological forces that shape what we find persuasive - forces tied to our investments, both financial and emotional, and our sense of identity and belonging",
+   "reasoning": "Source thesis links persuasion to investment, identity, belonging rather than evidence; 'unverifiable' echoes later phrase."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Not-even-wrong ideas are so fundamentally flawed or ill-constructed they cannot be meaningfully evaluated as either correct or incorrect.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "describes ideas so fundamentally flawed or ill-constructed that they cannot be meaningfully evaluated as either correct or incorrect",
+   "reasoning": "Near-verbatim restatement of the source definition."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Theoretical physicist Wolfgang Pauli popularized the phrase 'not even wrong'.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "popularized by theoretical physicist Wolfgang Pauli",
+   "reasoning": "Source attributes popularization to Wolfgang Pauli, theoretical physicist."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "At 89, having earned both the Fields Medal and Abel Prize, Atiyah claimed to solve the Riemann hypothesis, open since 1859.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "At age 89, having already earned both the Fields Medal and Abel Prize ... he claimed to have solved the Riemann hypothesis—a famous problem that had stumped mathematicians since 1859",
+   "reasoning": "Age 89, both prizes, Riemann hypothesis, and 1859 all match exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "Many called the proof 'not even wrong': lacking necessary rigor and coherence, it wasn't just incorrect but outside traditional evaluation.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "many described Atiyah's proposed solution as \"not even wrong.\" His proof lacked the necessary mathematical rigor and coherence ... It wasn't simply incorrect, it operated outside the boundaries where traditional evaluation was possible",
+   "reasoning": "All elements present; 'wasn't just incorrect' matches 'wasn't simply incorrect'."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "Many powerful figures' rhetoric sounds compelling but functions outside traditional evaluation, extending the concept beyond math.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This concept extends far beyond mathematics. Many powerful figures ... employ rhetoric that functions similarly ... Their statements sound compelling but operate outside the boundaries where traditional evaluation is possible",
+   "reasoning": "Faithful compression of paragraph five's assertion."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Financial, social, or ethical investment in visionaries triggers belief-reinforcing psychology.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "people financially (or otherwise, e.g. socially, ethically etc) invest in companies led by charismatic visionaries, a fascinating psychological process unfolds",
+   "reasoning": "Matches source's inclusion of social and ethical investment forms."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "The financial stake creates a powerful incentive to believe in the leader's vision and competence.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The financial stake creates a powerful incentive to believe in that leader's vision and competence",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "It isn't just about mentally protecting the investment; it's about resolving cognitive dissonance.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This isn't just about mentally protecting the investment - it's about resolving cognitive dissonance",
+   "reasoning": "Verbatim restatement preserving both negations."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Committed investors become more receptive to claims even outside the leader's areas of demonstrated expertise.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "investors become more receptive to the leader's other claims and predictions, even those outside their areas of demonstrated expertise",
+   "reasoning": "Direct restatement."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "Each successful product or milestone reinforces trust, easing acceptance of bold claims about future innovations without rigorous scrutiny.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Each successful product or milestone reinforces this trust, making it easier to accept bold claims about future innovations ... without applying rigorous scrutiny",
+   "reasoning": "Preserves the 'without' negation."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "claim_text": "Self-reinforcing cycle: financial investment to emotional investment to receptivity, which can lead to further financial investment.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "financial investment leads to emotional investment, which leads to greater receptivity to future claims, which can lead to further financial investment",
+   "reasoning": "Matches cycle order and the 'can' qualifier."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "2.6"
+   ],
+   "claim_text": "The cycle combines material self-interest with identity formation; being a supporter becomes part of who someone is.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "combines material self-interest with identity formation - being a supporter becomes part of who someone is",
+   "reasoning": "Direct restatement."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "2.7"
+   ],
+   "claim_text": "A founder might pair verifiable promises about current products with grandiose, unfalsifiable claims about transforming civilization.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A company founder might make specific verifiable promises about their current products while simultaneously making grandiose, unfalsifiable claims about transforming civilization",
+   "reasoning": "Retains 'might' hedge and all descriptors."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "2.8"
+   ],
+   "claim_text": "Fulfilled concrete promises lend credibility to the grandiose ones, though they rest on completely different evidentiary standards.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "When the concrete promises are fulfilled, it lends credibility to the grandiose ones, even though they operate on completely different evidentiary standards",
+   "reasoning": "Faithful, preserves the contrast clause."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Popularity and outsider framing create tribal social proof, amplified by platforms.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "how popularity creates powerful social validation effects ... a tribal dynamic ... Social media amplifies both effects",
+   "reasoning": "Synthesis of paragraphs 10-12 accurately."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Thousands or millions praising a leader's genius provides social proof that their visions are credible.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "sees thousands or millions of people praising a business leader's genius, it provides social proof that their visions are credible",
+   "reasoning": "Direct restatement with quantities intact."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Humans naturally look to others for cues about what to believe.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Humans naturally look to others for cues about what to believe",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Influential figures often position themselves as outsiders; questioning claims can feel like betraying the tribe or siding with the opposition.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Influential figures often position themselves as outsiders fighting entrenched interests ... questioning any of their claims can feel like betraying the tribe or siding with the opposition",
+   "reasoning": "Preserves 'often' and 'can' hedges."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Algorithms tend to reinforce existing beliefs via echo chambers where supporters mainly see positive content.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Algorithms tend to show people content that reinforces existing beliefs, creating echo chambers where supporters primarily see positive content",
+   "reasoning": "'Mainly' matches 'primarily'; 'tend to' retained."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "claim_text": "Frequent, seemingly unfiltered posts create a sense of personal connection and authenticity that strengthens emotional investment.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "frequent, seemingly unfiltered posts from these figures create a sense of personal connection and authenticity that further strengthens emotional investment",
+   "reasoning": "Direct restatement."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "We are not purely rational beings who evaluate each claim independently on evidence.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We are not purely rational beings who evaluate each claim independently based on evidence",
+   "reasoning": "Preserves the negation exactly."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Evaluations are deeply influenced by financial interests, desire for consistency, need for belonging, and attraction to narratives.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "our evaluations are deeply influenced by: Our financial interests ... Our desire for consistency ... Our need for social belonging and identity ... Our attraction to compelling narratives and personalities",
+   "reasoning": "All four listed factors faithfully reproduced."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Factors aligned behind a leader or company can override critical faculties, leading us to accept claims we might otherwise scrutinize.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they can override our critical faculties, leading us to accept claims we might otherwise scrutinize more carefully",
+   "reasoning": "Preserves 'can' and 'might' hedges."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Atiyah's claim was rejected by peers; business and political leaders' statements often escape rigorous evaluation; society lacks comparable frameworks.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Atiyah's mathematical claim, which was ultimately rejected by his peers ... often escape rigorous evaluation ... our broader society lacks comparable frameworks",
+   "reasoning": "All three clauses match, including 'often'."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Paths forward: personal practices for individuals and broader societal measures.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "## Paths Forward ### For Individuals: ... ### For Broader Society:",
+   "reasoning": "Accurately labels the section's two-part structure."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Individuals: separate finance from belief; investing can be sound without accepting all leadership claims.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "investing in a company can be financially sound without accepting all claims made by its leadership",
+   "reasoning": "Preserves 'can' and 'without'."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Individuals: practice domain-specific evaluation; expertise doesn't transfer automatically across fields.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Recognize that expertise doesn't automatically transfer across fields",
+   "reasoning": "Preserves negation and 'automatically'."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Individuals: expose yourself to thoughtful criticism from credible sources in relevant domains, not critics for critics' sake.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This isn't about finding critics for critics' sake but about seeking subject-matter experts",
+   "reasoning": "Preserves the contrast and negation."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Individuals: adopt investment detachment; ask whether you'd believe the claim without the investment.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Adopt investment detachment ... Ask: \"Would I believe this claim if I hadn't invested in this company?\"",
+   "reasoning": "Faithful paraphrase of the recommended question."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "5.5"
+   ],
+   "claim_text": "Society: teach technological literacy, elevate domain experts, build assessment frameworks, normalize skepticism without animosity.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Develop better technological literacy ... Strengthen domain expert visibility ... Create better frameworks for assessing innovation ... doesn't immediately frame skepticism as opposition or criticism as animosity",
+   "reasoning": "All four societal recommendations accurately compressed."
+  }
+ ],
+ "metrics": {
+  "total_claims": 31,
+  "supported": 31,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

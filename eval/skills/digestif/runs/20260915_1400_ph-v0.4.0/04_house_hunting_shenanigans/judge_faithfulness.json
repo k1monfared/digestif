@@ -1,0 +1,1245 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "04_house_hunting_shenanigans",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "claim_text": "A weekend of offers and counteroffers led the buyer to suspect the sellers' realtors bluffed about competing offers and to change how he shares information.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I don't even believe there was another offer ... please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it",
+      "reasoning": "Source shows both the bluff suspicion and the new information-sharing rules the buyer requested from N."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "claim_text": "Context: almost a year of house hunting in a weird market, told through a table of events, thoughts, and details.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I've been looking for a house for almost a year now ... the market has been weird",
+      "reasoning": "Source states the year-long search, weird market, and table format with events and thoughts."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "claim_text": "The post is not a typical blog post but a representation of events and the author's thoughts.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This is not a typical blog post ... It is a representations of events happening and my thoughts on them.",
+      "reasoning": "Direct restatement of the bracketed author note."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "claim_text": "He had been looking for a house for almost a year, longer than expected, in a weird market.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "almost a year now. It's been way longer than I expected and the market has been weird",
+      "reasoning": "All three elements (almost a year, longer than expected, weird market) appear verbatim in source."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "claim_text": "Houses either stay on the market a long time or are gone in usually 1-2 days.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "there are a lot of houses that come to the market and stay for a loooooong time and there are some that are gone in usually 1-2 days",
+      "reasoning": "Paraphrase preserves both behaviors and the hedge usually, matching the source framing."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "claim_text": "Cast: N his realtor, J the seller's realtor, C J's partner, L their assistant.",
+      "claim_type": "name_or_entity",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "N is my realtor, J is the seller's realtor, C is J's partner, L is J and C's assistant",
+      "reasoning": "All four roles and relationships match the source key exactly."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "claim_text": "The events are laid out in a table with Time, Events, My Thoughts, and Other Details columns.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Time ... Events ... My Thoughts ... Other Details",
+      "reasoning": "The four column headers are quoted directly from the source table."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "claim_text": "Thursday noon he sent other houses to N to book showings for the weekend.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Thursday Noon ... I send a couple of other houses to my realtor to book a showing for over the weekend.",
+      "reasoning": "Matches the Thursday noon table row."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2"
+      ],
+      "claim_text": "House A: the offer at his maximum affordable price, about 30K below asking, was rejected.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I put the highest price I can afford ... about 30K below the asking price ... my offer is not accepted",
+      "reasoning": "Summary accurately combines the Wednesday offer details and the Thursday rejection."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "claim_text": "Wednesday afternoon he put the highest price he could afford on a house he liked, about 30K below asking.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I put the highest price I can afford on a house that I like, but that is still about 30K below the asking price.",
+      "reasoning": "Time, amount, and the 30K figure all match the source."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "claim_text": "He hoped he might have a chance since the house was worth more than his offer.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The house is worth more than my offer but I'm hoping I might have a chance.",
+      "reasoning": "Near-verbatim restatement retaining the hedging might."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "claim_text": "Thursday 6pm the offer was not accepted; the sellers moved forward with other offers.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Thursday 6pm ... my offer is not accepted and they are moving forward with other offers.",
+      "reasoning": "Time and rejection with negation preserved exactly."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "claim_text": "He took it as fine but decided to move faster on the new houses.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "this is fine, I've gotta move faster with the new ones",
+      "reasoning": "Direct paraphrase of the buyer's reaction."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "claim_text": "The house he first offered on later sold for waaaaay higher than the asking price.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the first one that I put an offer on is gone for waaaaay higher than the asking price",
+      "reasoning": "Matches the source verbatim, including the emphasis waaaaay."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "claim_text": "An earlier house he offered on sold 5% above his price after 7 months; N had pushed for 5-10% more.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "about 7 months ago ... He again pushed me multiple times to go 5-10% more ... sold for 5% more than my price ... it took 7 months",
+      "reasoning": "All figures (7 months, 5%, 5-10%) and the push by N match the source."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "claim_text": "He could not really afford that earlier house at the higher price.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "In this case I couldn't really afford it at that price.",
+      "reasoning": "Direct restatement with the negation could not preserved."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3"
+      ],
+      "claim_text": "House B, Friday: an asking-price offer with sweeteners, a midnight deadline, then a first extension.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "an offer with as much sweet things in it as possible at the asking price with the deadline of same day midnight ... I extend the offer until 10:30am Saturday",
+      "reasoning": "Summary correctly captures the sweetened asking-price offer, midnight deadline, and extension."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "claim_text": "Thursday 5pm a new house came on the market and N added it to the weekend tour.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Thursday 5pm ... a new house comes on the market ... He adds it to our weekend tour.",
+      "reasoning": "Matches the Thursday 5pm row."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "claim_text": "Thursday 7pm he asked N to book that showing as soon as possible on Friday.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Thursday 7pm ... Asked N to book the showing for the last house as soon as possible on Friday.",
+      "reasoning": "Matches the Thursday 7pm row exactly."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "claim_text": "Friday 1pm he saw the house, liked it, and decided to offer the full asking price.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Friday 1pm ... We see the house. I like it. I'm going to put an offer at the asking price.",
+      "reasoning": "All three elements and the time match the source."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "claim_text": "He wanted to avoid a bidding war, so he made the offer as sweet as possible with no time for other showings.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I don't want to get into a bidding war ... I'll make the offer as sweet as possible ... but I don't give them time for other showings.",
+      "reasoning": "Preserves the motive and both clauses from the source thought."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "claim_text": "N advised writing 10K below and letting them negotiate up; the buyer was not convinced.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "N says to write an offer 10K below and let them negotiate and then go up ... I'm not convinced",
+      "reasoning": "10K figure and the buyer's lack of conviction both match."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "3.6"
+      ],
+      "claim_text": "Friday 6pm they sent a sweetened offer at the asking price with a same-day midnight deadline.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Friday 6pm ... as much sweet things in it as possible at the asking price with the deadline of same day midnight.",
+      "reasoning": "Time, terms, and same-day midnight deadline match."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "3.7"
+      ],
+      "claim_text": "He judged other showings unlikely to yield an asking-price offer, so he had a good chance.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "it is unlikely that they'll get an offer at the asking price. So I should have a good chance.",
+      "reasoning": "Near-verbatim restatement retaining the hedge unlikely."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "3.8"
+      ],
+      "claim_text": "Friday 9pm N could not reach the sellers' realtor and said he would keep trying.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Friday 9pm ... he can't get a hold of their realtor ... He says he'll keep trying.",
+      "reasoning": "The negation and N's stated intent are preserved."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "3.9"
+      ],
+      "claim_text": "N found the non-response a bit unprofessional but understood people might be busy with life.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "N think it is a but unprofessional that they don't respond, but also hegets it, people might be busy with life.",
+      "reasoning": "Correctly reads the typo 'a but' as 'a bit' and preserves the hedge might."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "3.10"
+      ],
+      "claim_text": "Friday 10:30pm J was driving up island for a family thing and asked to extend the offer to Saturday midnight.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Friday 10:30pm ... she is driving up island for a family thing ... They are asking us to extend the offer until tomorrow midnight.",
+      "reasoning": "J is the seller's realtor and tomorrow from Friday is Saturday, so attribution and date hold."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "3.11"
+      ],
+      "claim_text": "They mentioned in passing that there was another offer on the house.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "They mention in passing that there's another offer on the house.",
+      "reasoning": "Direct restatement of the source sentence."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "3.12"
+      ],
+      "claim_text": "The buyer didn't buy it, didn't want a bidding war, and didn't want his offer used to push others higher.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I don't buy this ... I don't want to get into a bidding war and my offer to be used for pushing others to put a higher price.",
+      "reasoning": "All three negations are preserved from the source thought."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "3.13"
+      ],
+      "claim_text": "They had 4 more showings the next day.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "They have 4 more showings tomorrow.",
+      "reasoning": "The count 4 and next-day timing match exactly."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "3.14"
+      ],
+      "claim_text": "Friday 11pm he extended the offer until 10:30am Saturday, reasoning a morning should be enough.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Friday 11pm ... I extend the offer until 10:30am Saturday ... tomorrow morning should be enough",
+      "reasoning": "Time and 10:30am figure match, and the reasoning is preserved."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "4"
+      ],
+      "claim_text": "The Saturday standoff: the buyer dropped the offer 20K, then refused to chase the counteroffer.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I drop the offer by 20K from the asking price ... The counter offer is for 5K \"above\" the asking price.",
+      "reasoning": "Source shows the 20K drop and that he countered lower rather than chasing, matching the summary."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "claim_text": "Saturday morning nothing happened; he suspected they kept his offer open to compete and to advertise it.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Nothing happens. Seems like they just wanted to keep my offer open so that they use it to compete with another offers ... and also to tell potential buyers that there is an offer.",
+      "reasoning": "Both the event and the suspicion are directly stated."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "claim_text": "N thought the other offer was better; the buyer asked them to disclose it.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "N thinks the other offer was better ... I ask them to disclose the other offer.",
+      "reasoning": "Directly matches the source sentences."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "claim_text": "Saturday afternoon he took a nap and had moved on emotionally.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I take a nap. ... I've moved on emotionally.",
+      "reasoning": "Both details appear verbatim."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "claim_text": "Naps are super rare for him, about once every few years, usually when a big load is lifted.",
+      "claim_type": "interpretation",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "It is super rare for me to take a nap in the afternoon, like once every few years.",
+      "reasoning": "Source restricts rarity to afternoon naps, node generalizes to all naps, dropping that scope qualifier."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "claim_text": "Saturday 5pm N relayed that another offer would be considered in an hour and they should submit in time.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "they have another offer which they're going to consider in an hour and if we are interested, we should provide ours in time.",
+      "reasoning": "Faithful restatement of the relaying event."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "claim_text": "The buyer concluded no other offer came in and the sellers wanted him to rewrite his offer.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "They've had their shows, no other offer came in. ... they want to encourage me to rewrite the offer.",
+      "reasoning": "Both conclusions match the buyer's stated thoughts."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "4.7"
+      ],
+      "claim_text": "He dropped the offer by 20K from asking and removed most sweeteners; N strongly advised against it.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I drop the offer by 20K from the asking price and remove most of those sweet things ... N strongly advises me against doing it.",
+      "reasoning": "Numbers and advice reported accurately."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "4.8"
+      ],
+      "claim_text": "Saturday 6pm they sent the new offer, open until 8:30pm the same day.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "We send the new offer and keep it open until 8:30pm the same day.",
+      "reasoning": "Time and deadline preserved exactly."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "4.9"
+      ],
+      "claim_text": "Saturday 7pm C called N noticing the price drop and wondering if he could 'fix' that; N offered a counteroffer route.",
+      "claim_type": "name_or_entity",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the partner of the seller's realtor called N saying they've noticed the drop in price ... He says if they want they can write a counteroffer.",
+      "reasoning": "C is defined as J's partner, so attributing the call to C is faithful."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "4.10"
+      ],
+      "claim_text": "The buyer thought the other offer sucked and that they were trying to work with him.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The other offer apparently sucks and sucks real bad. They are trying to work with me.",
+      "reasoning": "Verbatim match of the buyer's thoughts."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "4.11"
+      ],
+      "claim_text": "J's name was removed from all her 4 listings on REW and replaced by C's; the buyer guessed they were angry about the 20K loss.",
+      "claim_type": "name_or_entity",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the name of the seller's realtor J on the REW website is changed to her partner's C, and in fact, her name is removed from all her listings (a total of 4)!",
+      "reasoning": "Names, count of 4, and the guess about the 20K loss all match."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "4.12"
+      ],
+      "claim_text": "She was meanwhile busy with showings of a $3.5M house.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "In the meantime she was busy with showings of a $3.5M house too.",
+      "reasoning": "The $3.5M figure is preserved exactly."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "4.13"
+      ],
+      "claim_text": "Saturday 9pm a disclosure of multiple offers arrived with a counteroffer 5K 'above' the asking price.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I receive the disclosure of multiple offers letter and a counteroffer. The counter offer is for 5K \"above\" the asking price.",
+      "reasoning": "Time, document, and 5K figure match exactly."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "4.14"
+      ],
+      "claim_text": "He read it as 'defending forward': recouping 20K by pretending the other offer was much better.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Seems like they are \"defending forward\" ... They saw they lost 20K, now they want to recoup that by pretending the other offer is so much better.",
+      "reasoning": "Interpretation and 20K figure reproduced faithfully."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "4.15"
+      ],
+      "claim_text": "N thought the other offer was at that price but had a condition they disliked; the buyer didn't buy any of it.",
+      "claim_type": "interpretation",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "He thinks the other offer is actually at this price but there might be a condition in there that they don't like it.",
+      "reasoning": "Source hedges with 'might be a condition', node states 'had a condition' as settled fact."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "4.16"
+      ],
+      "claim_text": "They wanted a response by 11pm; N said to respond in the morning.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "They want a response by 11pm. I ask it to be extended for 24 hours. N says let's just respond in the morning.",
+      "reasoning": "Time and N's advice match the source."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "4.17"
+      ],
+      "claim_text": "Saturday 9:30pm N called to say he thought the buyer did the right thing and thanked him.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Saturday 9:30pm N calls, he says he thinks I did the right thing and he thanks me for doing so.",
+      "reasoning": "Time and content match verbatim."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "4.18"
+      ],
+      "claim_text": "Sunday 8am he told N to update to 10K below asking, remove every sweetener, and give until 11am.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I tell him to update it to 10K below the asking price, remove every single sweet thing in the offer, and give them until 11am.",
+      "reasoning": "All instructions and figures preserved."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "4.19"
+      ],
+      "claim_text": "He believed they could get 45K below and that competing could have brought them up to 30K below.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I believe they could get an offer at 45K below and with competing they probably could have brought them up to 30K below.",
+      "reasoning": "Both 45K and 30K figures and the hedge 'probably' framing are preserved."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "4.19.1"
+      ],
+      "claim_text": "He was almost certain no offer was above 30K below and might reduce his own offer even more.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I'm almost certain they don't have anything above that and I might want to actually reduce it even more.",
+      "reasoning": "The 30K reference and both hedges ('almost certain', 'might') are retained."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "4.20"
+      ],
+      "claim_text": "N got angry and favored the 5K-higher counter; the buyer settled on 10K below as best and final.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "N thinks I should meet them at the asking price or even at the 5K higher counteroffer. ... He gets angry ... I'm ok with 10K below and that's best and final offer.",
+      "reasoning": "Anger, N's preferred counter, and the 10K final figure all match."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "4.21"
+      ],
+      "claim_text": "They had 3 more showings that day and he didn't want another offer open while they collected more.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "They have 3 more showings today and I don't want another offer open until they get more.",
+      "reasoning": "Count of 3 and the stated rationale match exactly."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "5"
+      ],
+      "claim_text": "Correspondence is the Sunday email exchange between N and J's assistant L over the revived offer.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Sunday 3pm ... N forwards me a series of back and forth with the assistant of J, L.",
+      "reasoning": "Source presents the Sunday exchange with assistant L over the submitted offer."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "claim_text": "Sunday 3pm N forwarded a series of back and forth with J's assistant L.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Sunday 3pm ... N forwards me a series of back and forth with the assistant of J, L.",
+      "reasoning": "Matches source row exactly, time and participants intact."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "claim_text": "Sunday 9am N sent the offer with dates adjusted to the sellers' preference, calling it his client's best and final.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The dates have adjusted to meet your client's preference. This is my client's best an final offer.",
+      "reasoning": "Quoted email states adjusted dates and best and final offer."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "claim_text": "L replied that the offer had already expired, asking why they got a new Sunday-morning offer with less than 2 hours.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I just realized that this Offer has expired. Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours",
+      "reasoning": "Source email from L states expiration and two-hour window."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "claim_text": "N answered their offer came at 9:15 PM till 11 PM, his at 9:15 AM till 11 AM, and they could accept and extend.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "submitted at 9:15 PM and open till 11 PM ... this morning was sent at 9:15 AM and open till 11 AM ... free to accept the new offer and extend",
+      "reasoning": "All four times and the accept/extend statement match the source."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "claim_text": "L cited over 37 years in real estate administration and said their fully-signed offer needed less response time.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "working in real Estate Admin positions in V. for over 37 years ... already fully signed, so much less response time required",
+      "reasoning": "37 years and the signed-offer point both appear in L's message."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "claim_text": "N replied their team stalled on the Friday full-price offer and ended up with 2nd and 3rd offers they don't want.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "work with our excellent Full Price offer on Friday night / Saturday morning. Instead your team stalled and ended up with a 2nd and 3rd offers your clients are not interested in.",
+      "reasoning": "Paraphrase preserves the stall, full-price, and unwanted-offer content."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "5.7"
+      ],
+      "claim_text": "Sunday 5:30pm the buyer replied thanking N and saying they're throwing the assistant under the bus.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Sunday 5:30pm ... Sorry you had to deal with this. And now they're throwing the assistant under the bus.",
+      "reasoning": "Directly stated in the source row."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "5.8"
+      ],
+      "claim_text": "He proposed presenting his offer in person Monday after 5:30, in N's office.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Likely Monday after 5:30, and if you don't mind in your office.",
+      "reasoning": "Source email matches the in-person proposal and timing."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "5.9"
+      ],
+      "claim_text": "He thought the claim that the assistant missed the offer was a game, and pathetic.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I think this is also a game from them trying to play the game that oh it was the assistant that didn't actually see the offer. That's pathetic.",
+      "reasoning": "Both the game characterization and pathetic judgment are in the source."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "5.10"
+      ],
+      "claim_text": "N thought they were actually incompetent and didn't know what they were doing.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "N thinks they are actually incompetent and they don't know what they're doing.",
+      "reasoning": "Verbatim match to the source line."
+    },
+    {
+      "claim_id": "C066",
+      "loglog_ids": [
+        "5.11"
+      ],
+      "claim_text": "N replied the best outcome would be acceptance needing only an initialed deadline, and that in-person presentations never happen.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "acceptance of your offer that only requires you initialing a new deadline time. In regards to presenting an offer in person this never happens.",
+      "reasoning": "Both elements and the 'never' negation are preserved."
+    },
+    {
+      "claim_id": "C067",
+      "loglog_ids": [
+        "5.12"
+      ],
+      "claim_text": "N doubted the team was representing their clients well, the right hand maybe not knowing the left.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I don't think this team is doing a solid job of representing their clients. The right hand maybe not knowing what the left hand is doing?",
+      "reasoning": "Both the doubt and right/left hand hedge match."
+    },
+    {
+      "claim_id": "C068",
+      "loglog_ids": [
+        "5.13"
+      ],
+      "claim_text": "The buyer replied he didn't believe they missed the offer, figured the showings produced no better offer, and would not write another.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I do not believe that they didn't see the offer ... today's showings didn't produce a better offer, or any at all ... I'm certainly not writing another offer",
+      "reasoning": "All three negations and beliefs are preserved from the source."
+    },
+    {
+      "claim_id": "C069",
+      "loglog_ids": [
+        "5.14"
+      ],
+      "claim_text": "He said the weekend gave him valuable information whether or not the transaction happens.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "gave me a ton of valuable information which I really appreciate, whether this transaction happens or not.",
+      "reasoning": "Matches the source's conditional phrasing."
+    },
+    {
+      "claim_id": "C070",
+      "loglog_ids": [
+        "6"
+      ],
+      "claim_text": "Aftermath covers process changes, the coffee bet, and the house selling 10K below asking.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the house is sold for 10K below the asking price ... N is going to buy me a coffee!",
+      "reasoning": "All three elements appear in the later source rows."
+    },
+    {
+      "claim_id": "C071",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "claim_text": "Monday morning he thanked N and asked that competing offers never be volunteered and that agents provide disclosure letters in writing.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "please do not volunteer any information regarding existing or competing offers ... ask them to provide that in writing in form of the disclosure letter.",
+      "reasoning": "The prohibition and writing requirement both match the source."
+    },
+    {
+      "claim_id": "C072",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "claim_text": "His reasoning: realtors push buyers to raise prices even when evidence points the other way.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "a million levers that realtors have to push you to increase the price, even when everything is pointing the other way",
+      "reasoning": "Paraphrase retains the push and contrary-evidence clause."
+    },
+    {
+      "claim_id": "C073",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "claim_text": "He didn't want to pay an extra 5-10% for a house just because others might.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so.",
+      "reasoning": "Percentage and the hedge 'might' preserve the source's uncertainty."
+    },
+    {
+      "claim_id": "C074",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "claim_text": "One week later they bet a coffee: N thought the house sold 5K above asking, the buyer thought below.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "one week later ... N says he thinks the house had an offer of 5K above asking price. I said I think it is below the asking price.",
+      "reasoning": "Timing, 5K figure, and both positions match."
+    },
+    {
+      "claim_id": "C075",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "claim_text": "Two weeks later the house sold for 10K below the asking price, so N owes him a coffee.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "two weeks later ... the house is sold for 10K below the asking price ... N is going to buy me a coffee!",
+      "reasoning": "Timing, 10K figure, and coffee consequence all match."
+    },
+    {
+      "claim_id": "C076",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "claim_text": "He judged them not only stupid but also having a very huge ego.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "They were not only stupid but also had a very huge ego.",
+      "reasoning": "Verbatim paraphrase of the source judgment."
+    },
+    {
+      "claim_id": "C077",
+      "loglog_ids": [
+        "7"
+      ],
+      "claim_text": "Reflections: the seller was a marketer, the realtor-run system treats buyers as pawns, and people stop fighting processes.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the seller is a marketing and sales person ... playing with us as pawns in their chess game ... we don't even want to talk about it.",
+      "reasoning": "All three reflection elements are present in the final-thoughts section."
+    },
+    {
+      "claim_id": "C078",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "claim_text": "The seller was a marketing and sales person who teaches car dealerships how to sell cars.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the seller is a marketing and sales person who teaches car dealerships how to sell cars.",
+      "reasoning": "Verbatim match to the source bullet."
+    },
+    {
+      "claim_id": "C079",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "claim_text": "He feels realtors created a system that works fine for them, making buyers and sellers pawns in their chess game.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the realtors have created this system that works fine for them, and the buyers and sellers now have to obey ... playing with us as pawns in their chess game.",
+      "reasoning": "Source names both buyers and sellers under the system and the pawn metaphor."
+    },
+    {
+      "claim_id": "C080",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "claim_text": "He acknowledges he is exaggerating quite a bit, but the feeling is there.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I know I'm exaggerating quite a bit, but the feeling is there.",
+      "reasoning": "Direct quote preserved intact."
+    },
+    {
+      "claim_id": "C081",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "claim_text": "He compares giving up on phone holders, laptops, stocks, tax returns, cars, and houses to not wanting to fix processes.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "a phone holder ... a laptop ... a stock ... a tax return ... a car ... a house ... when it comes to fixing the processes we don't even want to talk about it.",
+      "reasoning": "All six listed items and the process-fixing point match the source."
+    },
+    {
+      "claim_id": "C082",
+      "loglog_ids": [
+        "7.5"
+      ],
+      "claim_text": "He finds it wrong that people negotiate hours over small things but won't talk about fixing processes.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "we spend hours and hours ... 'negotiating' on the smallest things ... when it comes to fixing the processes we don't even want to talk about it. It is so wrong.",
+      "reasoning": "The contrast and the 'so wrong' judgment are both in source."
+    },
+    {
+      "claim_id": "C083",
+      "loglog_ids": [
+        "7.6"
+      ],
+      "claim_text": "He links a ChatGPT conversation about the situation.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "If you are interested in reading a conversation with chatgpt around this, take a look [here]",
+      "reasoning": "Source includes the ChatGPT conversation link."
+    },
+    {
+      "claim_id": "C084",
+      "loglog_ids": [
+        "8"
+      ],
+      "claim_text": "Reported AI take: a Claude 3.5 haiku debrief, analysis, and recommendations on the transaction.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I couldn't share the conversation with Claude (3.5 haiku) but here are the key takeaways ... An analysis of what worked and what didn't using Claude 3.5 haiku ... Recommendations:",
+      "reasoning": "SOURCE contains all three sections from Claude 3.5 haiku: debrief, analysis, recommendations."
+    },
+    {
+      "claim_id": "C085",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "claim_text": "The author shares key takeaways from a Claude 3.5 haiku transaction debrief.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "here are the key takeaways",
+      "reasoning": "SOURCE states the author is sharing key takeaways from the Claude 3.5 haiku content."
+    },
+    {
+      "claim_id": "C086",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "claim_text": "Debrief overview: February 2025, residential house, 3 days (Friday-Sunday), outcome: walked away.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Date of Experience: February 2025 - Property Type: Residential House - Negotiation Duration: 3 Days (Friday-Sunday) - Final Outcome: Walked away",
+      "reasoning": "All four details match SOURCE exactly."
+    },
+    {
+      "claim_id": "C087",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "claim_text": "First offer was the full asking price with comprehensive favorable conditions, not immediately accepted.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "First Offer: Full asking price with comprehensive favorable conditions ... Outcome: Offer not immediately accepted",
+      "reasoning": "SOURCE states the same offer description and outcome."
+    },
+    {
+      "claim_id": "C088",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "claim_text": "Pivots: Friday extended the deadline, Saturday reduced the offer by $20,000, Sunday slightly increased it (10K) with minimal conditions.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Friday Evening: Extended offer deadline ... Saturday Afternoon: Deliberately reduced offer by $20,000 - Sunday Morning: Slightly increased (10K) offer with minimal conditions",
+      "reasoning": "Numbers and days match SOURCE debrief exactly."
+    },
+    {
+      "claim_id": "C089",
+      "loglog_ids": [
+        "8.5"
+      ],
+      "claim_text": "Emotional state moved from cautiously optimistic to skeptical to detached, managed partly by strategic price adjustments.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Initial Stage: Cautiously optimistic - Mid-Negotiation: Increasing skepticism ... Late Stage: Emotionally detached ... Used strategic price adjustments as emotional buffer",
+      "reasoning": "SOURCE describes the same emotional progression and price-adjustment buffer."
+    },
+    {
+      "claim_id": "C090",
+      "loglog_ids": [
+        "8.6"
+      ],
+      "claim_text": "Strategic moves: written disclosure requests, limited information sharing, rapid modifications, short windows, no bidding war.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Requested written disclosure of competing offers - Limited information sharing ... Rapid offer modifications - Setting strict, short-duration offer windows ... Avoiding bidding war engagement",
+      "reasoning": "Each listed tactic appears in the SOURCE strategic moves section."
+    },
+    {
+      "claim_id": "C091",
+      "loglog_ids": [
+        "8.7"
+      ],
+      "claim_text": "Lessons: realtors may use competing-offer narratives to manipulate pricing, and written documentation of claims should be requested.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Realtors may use competing offer narratives to manipulate pricing - Important to request written documentation of claims",
+      "reasoning": "SOURCE states both lessons with the same hedge 'may'."
+    },
+    {
+      "claim_id": "C092",
+      "loglog_ids": [
+        "8.7.1"
+      ],
+      "claim_text": "First offers are rarely accepted in competitive markets.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "First offers are rarely accepted in competitive markets",
+      "reasoning": "Verbatim match to SOURCE."
+    },
+    {
+      "claim_id": "C093",
+      "loglog_ids": [
+        "8.7.2"
+      ],
+      "claim_text": "Emotional detachment is a significant negotiation advantage; information asymmetry can be mitigated through strategic questioning.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Emotional detachment is a significant negotiation advantage - Market information asymmetry can be mitigated through strategic questioning",
+      "reasoning": "Both statements match SOURCE verbatim."
+    },
+    {
+      "claim_id": "C094",
+      "loglog_ids": [
+        "8.8"
+      ],
+      "claim_text": "Improvements: offer guidelines, response templates, escalation process, market research, a walk-away threshold, emotional regulation.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "explicit initial offer guidelines - standardized response template ... escalation process ... pre-offer market research ... \"walk away\" price threshold ... emotional regulation techniques",
+      "reasoning": "All listed improvements correspond to SOURCE Potential Improvements items."
+    },
+    {
+      "claim_id": "C095",
+      "loglog_ids": [
+        "8.9"
+      ],
+      "claim_text": "Market context: manipulation potential, systemic information asymmetry, and psychological pressure tactics were identified.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Observed manipulation potential ... Identified systemic information asymmetry - Recognized psychological pressure tactics used in negotiations",
+      "reasoning": "SOURCE lists exactly these three market context observations."
+    },
+    {
+      "claim_id": "C096",
+      "loglog_ids": [
+        "8.10"
+      ],
+      "claim_text": "Personal growth: adaptability, real-time adjustment, critical thinking; recommended: negotiation skills, market dynamics, emotional intelligence.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Demonstrated adaptability ... learn and adjust strategy in real-time ... Maintained critical thinking ... Continue developing negotiation skills - Study real estate market dynamics - Practice emotional intelligence",
+      "reasoning": "SOURCE contains both the demonstrated traits and recommended development items."
+    },
+    {
+      "claim_id": "C097",
+      "loglog_ids": [
+        "8.11"
+      ],
+      "claim_text": "Reflection: the value was understanding negotiation mechanisms, not securing the property; information and emotional control beat transactional success.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The primary value was not in securing a specific property, but in understanding the intricate negotiation mechanisms ... information, emotional control, and strategic flexibility are more valuable than immediate transactional success",
+      "reasoning": "Same reflection and takeaway as SOURCE."
+    },
+    {
+      "claim_id": "C098",
+      "loglog_ids": [
+        "8.12"
+      ],
+      "claim_text": "The post then includes a Claude 3.5 haiku analysis of what worked and what didn't.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "An analysis of what worked and what didn't using Claude 3.5 haiku",
+      "reasoning": "Verbatim header match in SOURCE."
+    },
+    {
+      "claim_id": "C099",
+      "loglog_ids": [
+        "8.13"
+      ],
+      "claim_text": "Successes: identified likely bluffs, predicted market behavior, avoided overpaying, and kept price discipline.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Successfully identified when competing offers were likely bluffs - Accurately predicted market behavior ... Avoided overpaying due to FOMO or pressure ... Maintained discipline on maximum price point",
+      "reasoning": "All successes match SOURCE Successes list."
+    },
+    {
+      "claim_id": "C100",
+      "loglog_ids": [
+        "8.14"
+      ],
+      "claim_text": "Failures: no house purchased, multiple failed negotiations, time spent, and tension with selling agents.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "No house purchased - Multiple failed negotiations - Time spent without achieving primary goal ... Created tension with selling agents",
+      "reasoning": "Matches SOURCE Failures list."
+    },
+    {
+      "claim_id": "C101",
+      "loglog_ids": [
+        "8.15"
+      ],
+      "claim_text": "Neutral: time-pressure tactics and the price reduction worked situation-dependently, long-term effect unknown.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Sometimes created leverage - Sometimes backfired - Effectiveness appears situation-dependent ... Unknown if this helped or hurt long-term",
+      "reasoning": "SOURCE hedges match the neutral category content."
+    },
+    {
+      "claim_id": "C102",
+      "loglog_ids": [
+        "8.16"
+      ],
+      "claim_text": "Recommendations: keep market analysis and price discipline; modify timeline flexibility and relationships; add success metrics and alternative paths.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Keep: Market analysis approach - Price discipline ... Modify: Timeline flexibility ... Relationship management ... Add: Clear success metrics beyond just price ... Alternative paths to deal completion",
+      "reasoning": "All keep/modify/add items correspond to SOURCE Recommendations."
+    }
+  ],
+  "metrics": {
+    "total_claims": 102,
+    "supported": 100,
+    "partially_supported": 2,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9804
+  },
+  "fail_list": [
+    "C036",
+    "C047"
+  ]
+}

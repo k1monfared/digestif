@@ -1,0 +1,40 @@
+- Empathy sympathy compassion feature matrix (source: 08_empathy_sympathy_compassion_matrix/source.txt)
+    Summary: Matrix contrasts cognitive/affective empathy, sympathy, compassion across five profiles from psychopath to integrated ideal. (¶1, ¶2, ¶28)
+        - 1 Theme: Cold-control block: modeling, boundary, manipulators, control across components and dark profiles. (¶2, ¶3)
+            - 1.1 Accurate modeling: cog ✓, aff ~, sym ~, comp ✓; psy ✓, soc ~, emp ~, alt ✓, int ✓. (¶4)
+            - 1.2 Boundary kept: cog ✓, aff blank, sym ✓, comp ✓; psy ✓, soc ~, emp blank, alt ✓, int ✓. (¶5)
+            - 1.3 Manipulators possible: cog ✓ only; psy ✓, soc ~, all others blank. (¶6)
+            - 1.4 Controlled not reactive: cog ✓, sym ~, comp ✓; psy ✓, alt ✓, int ✓, others blank. (¶7)
+        - 2 Theme: Affective-care block belongs to sociopath not psychopath, with partial marks throughout. (¶2)
+            - 2.1 Sharing emotion: aff ✓; soc ~, emp ✓, alt ~, int ✓; rest blank. (¶8)
+            - 2.2 Capacity to care at all: aff ~, sym ✓, comp ✓; soc ✓, emp ✓, alt ✓, int ✓; psy blank. (¶9)
+            - 2.3 Motivation to help: aff ~, sym ~, comp ✓; soc ~, emp ~, alt ✓, int ✓; psy blank. (¶10)
+            - 2.4 Guilt after harm: emp ✓; aff ~, sym ~, comp ~, soc ~, alt ~, int ~; cog blank, psy blank. (¶11)
+            - 2.5 Contagion-burnout risk: aff ✓, emp ✓; sym ~, soc ~, int ~; rest blank. (¶12)
+            - 2.6 Vivid-similar bias: aff ✓, soc ✓, emp ✓; cog ~, sym ~, int ~; rest blank. (¶13)
+            - 2.7 Ends-not-means: comp ✓, emp ✓, alt ✓, int ✓; aff ~, sym ~, soc ~; cog blank, psy blank. (¶14)
+            - 2.8 Dignity-worth: sym ✓, comp ✓, emp ✓, alt ✓, int ✓; aff ~, soc ~; cog blank, psy blank. (¶15)
+        - 3 Theme: Beyond-in-group scope, faith, and scalability belong to neither dark profile. (¶2)
+            - 3.1 Beyond vivid in-group: sym ~, comp ✓, alt ✓, int ✓; all others blank. (¶16)
+            - 3.2 Fundamentally good: sym ~, comp ~, emp ✓, alt ✓, int ✓; dark both blank. (¶17)
+            - 3.3 Sustainable scalable guide: cog ~, sym ~, comp ✓, alt ✓, int ✓; rest blank. (¶18)
+        - 4 Theme: Notes interpret the matrix and limit its scope to ideal types. (¶24, ¶26)
+            - 4.1 Nuance: Sympathy models minds only ~: pity can misread; understanding helps but not constitutive. (¶19)
+            - 4.2 Nuance: Affective empathy cares only ~: contagion is involuntary, can merely prompt escape. (¶20)
+            - 4.3 Evidence: Manipulators row diagnoses cog/aff split; cog alone fits cruelty and psychopath signature. (¶21)
+            - 4.4 Nuance: Sustainability reflects Bloom/Singer position, not consensus; critics warn of abstract paternalism. (¶22) [reported]
+            - 4.5 Boundary is structural: affective merging drives motivation plus burnout and bias. (¶23)
+            - 4.6 Psychopath is cog alone; sociopath is clamped affect-sympathy minus regulation. (¶24)
+            - 4.7 Nuance: Etiology excluded: psychopathy often innate, sociopathy acquired; causes would muddy shape logic. (¶25)
+            - 4.8 Counterpoint: Psychopath/sociopath are contested ideal types under ASPD, not formal diagnoses. (¶26)
+            - 4.9 Nuance: Table uses neutral research sympathy, not Brown-style distancing; empathic concern differs. (¶27)
+            - 4.10 Spectrum: empath is maxed unregulated affect, altruist embodies compassion Light Triad Kaufman 2019, integrated scores everywhere. (¶28)
+            - 4.11 Nuance: Triad rows partly restate: Kantianism inverts manipulators; Humanism overlaps care; only Faith adds new attitude. (¶29)
+    - Cross-links
+        - 2.7 restates 4.11 (¶29) note: Kantianism row is stated as inverse of manipulators row
+        - 2.8 restates 4.11 (¶29) note: Humanism row overlaps caring and beyond-in-group rows
+        - 4.3 supports 1.3 (¶21) note: manipulators row is the stated sharpest diagnostic of the split
+        - 4.4 qualifies 3.3 (¶22) note: Bloom/Singer reading is a position with critics, limiting the row
+        - 4.5 supports 2.5 (¶23) note: boundary merging drives motivation, burnout and bias together
+        - 4.6 supports 2 (¶24) note: dark-column reading summarizes the block asymmetry
+    - Coverage: 29 of 29 passages cited

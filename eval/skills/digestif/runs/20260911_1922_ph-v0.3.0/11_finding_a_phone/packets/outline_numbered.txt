@@ -1,0 +1,33 @@
+L001: - Finding a phone: from obsession to purpose (source: 11_finding_a_phone/source.txt)
+L002:     Summary: Seeking problem-solving rugged phones over ecosystems, from Droid obsession to Ulefone and data-driven search. (¶1, ¶10)
+L003:         - 1 Theme: From reliable J100 and day-one Droid centerpiece to disillusioned dial-pad switch. (¶2)
+L004:             - 1.1 J100 was no-frills reliable; Droid bought day one became life centerpiece. (¶2)
+L005:             - 1.2 Smartphones created notifications and attention traps; felt consumer, not user. (¶3)
+L006:             - 1.3 Honeymoon ended after smartwatch experiments; switched to dial-pad phone. (¶3)
+L007:         - 2 Theme: Wanted offline functionality: battery, toughness, SD, jack, mic, customization. (¶4, ¶5)
+L008:             - 2.1 Needed long battery, waterproof shockproof, SD plus jack, decent mic speaker. (¶5)
+L009:             - 2.2 Dismissed best camera, AI enhancements, cloud; preferred simple offline independence. (¶5)
+L010:             - 2.3 Apple and Google deliberately cut SD and storage to push cloud. (¶6)
+L011:         - 3 Theme: Ulefone rugged value: durable, practical, week-long single model, 1/10th price. (¶7, ¶8)
+L012:             - 3.1 Small Chinese Ulefone: waterproof shockproof dustproof, dual SIM, SD, jack. (¶7)
+L013:             - 3.2 One Ulefone model lasted an entire week on a single charge. (¶8)
+L014:             - 3.3 Ulefone costs about 1/10th the price of major-brand flagships. (¶8)
+L015:             - 3.4 Evidence: Survived countless drops and swims; deep lake dive hurt but still works. (¶9)
+L016:         - 4 Theme: Pixel deal declined; LLM-assisted GSMArena scraping and cleaning began. (¶11, ¶12)
+L017:             - 4.1 Declined Pixel over lock-in years and extra charges; O1 gave names, wrong specs. (¶11)
+L018:             - 4.2 Scraper retries 3 times, sleeps 2 to 5 seconds, parses GSMArena into DataFrame. (¶12)
+L019:             - 4.3 Listed 18 GSMArena URLs with duplicated Narzo; refined Claude prompts iteratively. (¶13)
+L020:             - 4.4 Cleaner extracts 5G, eSIM, year, screen, battery, SD, cameras, price. (¶14)
+L021:         - 5 Theme: Only two matches disappointed; TCL returned; G85 next after G75 unavailable. (¶15, ¶16)
+L022:             - 5.1 Only Fairphone 4 from 2021 and Moto G Power matched; Edge 40 lacks SD. (¶15, ¶13)
+L023:             - 5.2 TCL returned: weak, hot calls, unreadable light screen, fake ink mode. (¶16)
+L024:             - 5.3 Next Motorola G85 water-repellent only; wanted IP68 G75, unavailable in stores. (¶16)
+L025:     - Cross-links
+L026:         - 1.3 supports 1.2 (¶3) note: creating problems versus solving them motivated the dial-pad switch
+L027:         - 2.3 supports 2.1 (¶6) note: mountain offline use explains the SD jack battery demands
+L028:         - 3.1 contradicts 5.2 (¶16) note: TCL heat and unreadability counterexample to rugged usefulness
+L029:         - 3.2 qualifies 2.1 (¶8) note: single-model week figure, not a general battery requirement
+L030:         - 3.4 supports 3.1 (¶9) note: lake dive test evidences the durability claim
+L031:         - 4.2 qualifies 4.1 (¶11) note: O1 specs were generally wrong though model names were correct
+L032:         - 4.4 qualifies 5.1 (¶13) note: cleaner output is an unverified starting point with several assumed errors
+L033:     - Coverage: 16 of 16 passages cited

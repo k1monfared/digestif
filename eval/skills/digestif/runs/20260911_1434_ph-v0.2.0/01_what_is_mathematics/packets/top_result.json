@@ -1,0 +1,31 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "point-hierarchy run (not provided)",
+ "inputs": {
+  "faithfulness_precision": 0.9231,
+  "critical_errors": 0,
+  "must_recall": 0.8214,
+  "overall_recall": 0.8,
+  "redundancy_rate": 0.0615,
+  "trivia_rate": 0.0
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score = 0.4 * 0.9231 + 0.4 * 0.8214 - 0.2 * 0.0615 = 0.36924 + 0.32856 - 0.01230 = 0.68550",
+ "weighted_score": 0.6855,
+ "verdict": "Fail",
+ "tradeoff_note": "Concision is healthy (redundancy 0.0615, below the 0.15 max) but cannot rescue the sample: faithfulness precision 0.9231 is under the 0.95 gate and must-have recall 0.8214 is under the 0.9 gate, so no length-versus-coverage trade is available. The length budget is not the problem, under-faithful and under-complete point nodes are.",
+ "fix_list": [
+  "Raise must-have recall by restoring the dropped numbers and named sources in K03 (the $10-$1000 per-problem compute figure, the 'First Proof' name, and the n^(1+epsilon) unit-distance construction) via L006-L008, since these are Must have with concrete facts the loglog flattens.",
+  "Complete K09 by adding the erdosproblems.com likely-correct AI proof backlog and the Leiden Declaration endorsement to L032-L035, and complete K05 by restoring the Fields Medal 2002 detail (L017-L020) so both Must have nodes stop being Partial.",
+  "Fix the faithfulness partials that weigh on Must have points: C022 (4.2) currently asserts offloading worsens the illusion of explanatory depth where the source attributes the mistake to confident AI tone, and C042 (6.6) states 'takes decades' as fact while the source hedges 'probably decades, not sure'.",
+  "Tighten the remaining interpretation partials to match source hedging: C001 (0) narrows math's product to judgment though the source says the process of thinking was the product and math was 'always both', and C054 (7.4) asserts what the falling-tree analogy means when the source only links the thought experiment.",
+  "Merge the safe duplicates C009/C010/C020/C055 into their bases to keep redundancy comfortably below the max as the other fixes add restored detail."
+ ],
+ "reasoning": "Gate checks in order. Hard fails first: critical_errors = 0, so no critical contradiction fail. must_recall = 0.8214 versus must_recall_min = 0.90, which is below the gate and fails the sample. faithfulness_precision = 0.9231 versus faithfulness_precision_min = 0.95, also below the gate and fails the sample. Redundancy 0.0615 is under redundancy_max 0.15, and trivia_rate 0.0, so concision passes but per top_policy concision never compensates for a faithfulness or coverage loss. Two independent hard gates are missed, so the verdict is Fail regardless of the weighted score. For audit completeness I computed the weighted score even though it does not decide the outcome: 0.4 * 0.9231 (faithfulness) = 0.36924, 0.4 * 0.8214 (must recall) = 0.32856, minus 0.2 * 0.0615 (redundancy penalty) = 0.01230, giving 0.68550. The score would only matter among passes. The coverage judge reports must_have_total = 14, present = 9, partial = 5, missing = 0, so no Must have point is wholly absent, but the partials K03, K05, K08, K09, K10 all drop specifics. K03 (L006-L008) drops the $10-$1000 compute band, the 'First Proof' label, and the n^(1+epsilon) construction; K05 (L017-L020) drops Fields Medal 2002; K09 (L030-L035) drops the erdosproblems.com backlog and the Leiden Declaration; K08 (L027-L028) drops the prior-literature failure and the helpful role of human mistakes; K10 (L014-L015) drops the four-color and finite-simple-groups examples plus the framing/judgment/taste thesis. These partials are what pull must_recall to 0.8214. On faithfulness, 60 of 65 claims are supported, 4 partial, 1 unverifiable (C054), 0 contradicted. The partials C001 (0), C022 (4.2), and C042 (6.6) are interpretations that drop source hedges, and C005 (2) narrows the dollar band. Because precision is below 0.95, that gate fails independently. Since gates are missed, Borderline is not applicable (Borderline requires gates met on numbers). The highest leverage fixes are restoring K03's concrete facts and K09/K05 completeness, which lift must recall, and repairing C022/C042 hedging, which lifts precision toward 0.95; the duplicate merges are hygiene that preserves the already-passing concision margin."
+}

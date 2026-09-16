@@ -1,0 +1,275 @@
+{
+ "sample": "07_intentionalism",
+ "part": 2,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Start tomorrow morning with the first hour, then scale practice upward.",
+   "evidence": [
+    {
+     "ref": "¶57",
+     "text": "## What You Can Do Tomorrow"
+    },
+    {
+     "ref": "¶58",
+     "text": "Don't start with your career or life partner. Start with tomorrow morning."
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Name calm, energy, connection, or solitude; pursue it instead of notifications.",
+   "evidence": [
+    {
+     "ref": "¶59",
+     "text": "Before you check your phone, decide intentionally: what do you actually want from the first hour of your day? Not \"I'll see what notifications I have\" but specifically: do you want calm? Energy? Connection? Solitude?"
+    },
+    {
+     "ref": "¶60",
+     "text": "Then pursue that. If you want calm, don't open apps that will agitate you. If you want connection, reach out to someone specific. If you want energy, do something physical."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Notice scrolling versus intending; log satisfaction across small choices for a week.",
+   "evidence": [
+    {
+     "ref": "¶61",
+     "text": "Notice how different this feels from scrolling until something grabs you."
+    },
+    {
+     "ref": "¶62",
+     "text": "Do this for a week with small things—breakfast, evening activities, weekend plans. Notice what actually satisfies you versus what just filled time. Those patterns are the beginning of intention."
+    }
+   ]
+  },
+  {
+   "id": "9.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Scale to jobs, dating, purchases by deciding criteria before browsing options.",
+   "evidence": [
+    {
+     "ref": "¶63",
+     "text": "Then scale up. Apply it to bigger decisions. Before looking at job postings, decide what kind of work you want to do. Before swiping on dating apps, decide what kind of relationship you're looking for. Before browsing products, decide what problem you're trying to solve."
+    }
+   ]
+  },
+  {
+   "id": "9.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Muscle enables intentions, intentions become values, values make proposers.",
+   "evidence": [
+    {
+     "ref": "¶64",
+     "text": "The practice builds the muscle. The muscle enables larger intentions. Larger intentions become values. Values make you a proposer."
+    }
+   ]
+  },
+  {
+   "id": "9.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proposers end better across math and mess, not from specialness but position.",
+   "evidence": [
+    {
+     "ref": "¶65",
+     "text": "And proposers—whether in the pure mathematics of matching algorithms or in the messy approximations of real life—end up with better outcomes."
+    },
+    {
+     "ref": "¶66",
+     "text": "Not because they're special. Because they're on the other side of the equation."
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Appendix gives progressive exercises for entertainment, shopping, jobs, relationships, days.",
+   "evidence": [
+    {
+     "ref": "¶67",
+     "text": "---"
+    },
+    {
+     "ref": "¶68",
+     "text": "## Appendix: Building Intention - Concrete Steps"
+    },
+    {
+     "ref": "¶69",
+     "text": "The shift from receiver to proposer requires practicing intention in progressively larger domains. Here are specific exercises for the scenarios mentioned throughout this post."
+    }
+   ]
+  },
+  {
+   "id": "10.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Entertainment: name intention week one, seek week two, protect with timers week three.",
+   "evidence": [
+    {
+     "ref": "¶70",
+     "text": "### Entertainment (Netflix, YouTube, TikTok)"
+    },
+    {
+     "ref": "¶71",
+     "text": "**Week 1: Name your intention**\n- Before opening any entertainment app, write down (or say aloud) what you want to feel: \"I want to laugh,\" \"I want to learn about X,\" \"I want to feel inspired,\" \"I want to relax completely\"\n- If you can't name it, close the app and try again later\n- Keep a simple log: intention → what you watched → did it deliver?"
+    },
+    {
+     "ref": "¶72",
+     "text": "**Week 2: Seek intentionally**\n- Based on your named intention, search for specific content rather than scrolling recommendations\n- If \"laugh\" → search for specific comedians you know make you laugh\n- If \"learn\" → search for specific topics, not just what's trending\n- Notice how much faster you find satisfaction"
+    },
+    {
+     "ref": "¶73",
+     "text": "**Week 3: Protect your intention**\n- Set a timer for how long you intended to spend\n- When autoplay starts, ask: \"Does this serve my original intention?\"\n- Practice closing the app when your intention is fulfilled, not when you're exhausted"
+    }
+   ]
+  },
+  {
+   "id": "10.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "Shopping: define problem, list must-haves, research features, ignore layout, 24-hour rule.",
+   "evidence": [
+    {
+     "ref": "¶74",
+     "text": "### Shopping (Phones, Products, Toothpaste)"
+    },
+    {
+     "ref": "¶75",
+     "text": "**Before any purchase:**\n1. **Define the problem**: Write down specifically what problem you're trying to solve. Not \"I need a phone\" but \"I need reliable video calls with family, good camera for travel, battery that lasts full days\"\n2. **List must-haves**: What 3-5 features actually matter to you? Be honest about what you'll actually use vs. what sounds cool\n3. **Research intentionally**: Look up those specific features, not \"best phones 2025\"\n4. **Ignore the store layout**: When shopping in person, go directly to compare items that meet your criteria. Don't browse.\n5. **24-hour rule**: For anything over $100, wait a day after deciding. If you still want that specific item, buy it."
+    }
+   ]
+  },
+  {
+   "id": "10.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Toothpaste drill: identify need, find ingredient, buy it, notice packaging-free choosing.",
+   "evidence": [
+    {
+     "ref": "¶76",
+     "text": "**Practice run**: Next time you need toothpaste\n- Before going to store: What do you actually need? (sensitive teeth? whitening? just clean teeth?)\n- Research which ingredient addresses that need\n- Go to store, find that ingredient, buy it\n- Notice how different this feels from standing in the aisle comparing packaging"
+    }
+   ]
+  },
+  {
+   "id": "10.4",
+   "type": "example",
+   "attribution": "author",
+   "text": "Career: set five non-negotiables, approach firms directly, apply only to strong matches.",
+   "evidence": [
+    {
+     "ref": "¶77",
+     "text": "### Jobs and Career"
+    },
+    {
+     "ref": "¶78",
+     "text": "**Quarterly intention-setting** (do this even if you're not job hunting):\n1. **Map your energy**: For two weeks, note what tasks give you energy vs. drain you\n2. **Identify patterns**: What type of problems do you enjoy solving? What environments let you thrive?\n3. **Define your criteria**: Write 5 non-negotiables for your next role (not \"good pay\" but \"solving X type of problem, with Y type of people, in Z type of environment\")\n4. **Find the companies**: Research companies doing that work, regardless of whether they have postings\n5. **Reach out intentionally**: Contact people at those companies, explain what you're looking for, ask about their experience"
+    },
+    {
+     "ref": "¶79",
+     "text": "**If you must apply to postings:**\n- Only apply to roles that match at least 4 of your 5 criteria\n- Customize every application to explain why this specific role matches your intentions\n- Track: are you just submitting many applications (receiver) or carefully selecting few (proposer)?"
+    }
+   ]
+  },
+  {
+   "id": "10.5",
+   "type": "example",
+   "attribution": "author",
+   "text": "Dating: write relationship vision, require value alignment, filter first dates intentionally.",
+   "evidence": [
+    {
+     "ref": "¶80",
+     "text": "### Relationships (Dating, Friendships)"
+    },
+    {
+     "ref": "¶81",
+     "text": "**Before dating:**\n1. **Write your relationship intention**: Not \"find someone\" but specifically what kind of relationship you want to build. What does daily life look like? How do you handle conflict? What do you build together?\n2. **Identify values alignment**: What 3-5 values absolutely must align? (not \"nice person\" but specific things like \"prioritizes growth,\" \"values deep conversation,\" \"wants intellectual partnership\")\n3. **Seek intentionally**: Look for people who demonstrate those values, not just attractive profiles\n4. **First date filter**: Ask questions that reveal value alignment, not just \"getting to know you\" surface chat"
+    }
+   ]
+  },
+  {
+   "id": "10.6",
+   "type": "example",
+   "attribution": "author",
+   "text": "Friendship: name needed qualities, join matching communities, initiate specific activities.",
+   "evidence": [
+    {
+     "ref": "¶82",
+     "text": "**For friendships:**\n1. **Name what you need**: \"I want friends who push me intellectually,\" \"I want friends I can be quiet with,\" \"I want friends who share this specific hobby\"\n2. **Go where those people are**: Join specific communities, not just \"networking events\"\n3. **Initiate based on intention**: Invite people to do specific things you actually want to do, not generic \"let's hang out sometime\""
+    }
+   ]
+  },
+  {
+   "id": "10.7",
+   "type": "example",
+   "attribution": "author",
+   "text": "Daily: three morning intentions, evening proposer review, ten-second pause before choices.",
+   "evidence": [
+    {
+     "ref": "¶83",
+     "text": "### Daily Micro-Practices"
+    },
+    {
+     "ref": "¶84",
+     "text": "**Morning routine** (5 minutes):\n- Before checking phone: \"What are my three intentions for today?\" (Write them down)\n- Not \"be productive\" but specific: \"have meaningful conversation with X,\" \"make progress on Y,\" \"spend 30 minutes on Z\""
+    },
+    {
+     "ref": "¶85",
+     "text": "**Evening review** (5 minutes):\n- Did you act as proposer or receiver today?\n- When you were a receiver, what would you propose instead tomorrow?\n- Note one small thing you'll do intentionally tomorrow"
+    },
+    {
+     "ref": "¶86",
+     "text": "**The pause practice**:\n- Before any significant choice today, pause for 10 seconds\n- Ask: \"Am I choosing this intentionally, or just selecting from what's in front of me?\"\n- This builds awareness, which is the first step"
+    }
+   ]
+  },
+  {
+   "id": "10.8",
+   "type": "example",
+   "attribution": "author",
+   "text": "Journal situation, mode, outcome; thirty days reveal proposer satisfaction pattern.",
+   "evidence": [
+    {
+     "ref": "¶87",
+     "text": "### Tracking Progress"
+    },
+    {
+     "ref": "¶88",
+     "text": "Keep a simple journal with three columns:\n- **Situation**: What was the choice?\n- **Mode**: Did I propose (decide what I want, then pursue it) or receive (choose from what was offered)?\n- **Outcome**: How satisfied am I with the result?"
+    },
+    {
+     "ref": "¶89",
+     "text": "After 30 days, you'll see the pattern clearly. Proposer entries will show higher satisfaction. This evidence will motivate continued practice."
+    }
+   ]
+  },
+  {
+   "id": "10.9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Intention means asking what is wanted before others answer; small reps grow capacity.",
+   "evidence": [
+    {
+     "ref": "¶90",
+     "text": "### The Key Insight"
+    },
+    {
+     "ref": "¶91",
+     "text": "Intention isn't about always knowing exactly what you want for your entire life. It's about practicing the question \"what do I want?\" before someone else provides the answer. Start small. The muscle builds. The capacity grows. Eventually, the intentional approach becomes natural—and that's when you've truly shifted from receiver to proposer."
+    }
+   ]
+  }
+ ]
+}

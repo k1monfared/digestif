@@ -1,0 +1,282 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "09_not_even_wrong",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Unverifiable not-even-wrong claims persuade via investment, identity, and tribal proof, not evidence alone.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "beneath our conscious reasoning lie powerful psychological forces that shape what we find persuasive - forces tied to our investments... identity and belonging",
+   "reasoning": "Source's thesis matches: psychological forces beyond evidence drive persuasion."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "Not-even-wrong ideas are too ill-constructed for correct-or-incorrect evaluation.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "ideas so fundamentally flawed or ill-constructed that they cannot be meaningfully evaluated as either correct or incorrect",
+   "reasoning": "Direct restatement of the source's definition."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Pauli popularized not-even-wrong for fundamentally flawed ill-constructed ideas.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "popularized by theoretical physicist Wolfgang Pauli, describes ideas so fundamentally flawed or ill-constructed",
+   "reasoning": "Name and attribution preserved exactly."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "At age 89, Fields and Abel winner Atiyah claimed Riemann solution stumping math since 1859.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "At age 89... Fields Medal and Abel Prize... solved the Riemann hypothesis... stumped mathematicians since 1859",
+   "reasoning": "Age, honors, name, and year all match the source."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "Atiyah proof lacked rigor, sat outside evaluation; leaders rhetoric functions similarly.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "His proof lacked the necessary mathematical rigor... It wasn't simply incorrect, it operated outside the boundaries",
+   "reasoning": "Both the proof critique and the extension to leaders are stated."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Financial, social, or ethical investment in visionaries triggers belief-reinforcing psychology.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "financially (or otherwise, e.g. socially, ethically etc) invest... a fascinating psychological process unfolds",
+   "reasoning": "Source states the same trigger and psychological process."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Financial stake incentivizes belief in vision; dissonance resolution, not just protection.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "isn't just about mentally protecting the investment - it's about resolving cognitive dissonance",
+   "reasoning": "The not-just-protection distinction is preserved."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Committed investors accept outside-expertise predictions; milestones ease scrutiny of bold futures.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "more receptive to the leader's other claims... even those outside their areas of demonstrated expertise... milestone reinforces this trust",
+   "reasoning": "Both supporting details match the source."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Cycle: financial to emotional investment to receptivity to further investment plus identity.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "financial investment leads to emotional investment, which leads to greater receptivity to future claims, which can lead to further financial investment",
+   "reasoning": "Chain and identity element accurately reproduced."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "Founder might pair verifiable product promises with grandiose unfalsifiable civilization claims.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "might make specific verifiable promises... simultaneously making grandiose, unfalsifiable claims about transforming civilization",
+   "reasoning": "Hedge 'might' retained; content matches."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Popularity and outsider framing create tribal social proof amplified by platforms.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "popularity creates powerful social validation effects... position themselves as outsiders... Social media amplifies both effects",
+   "reasoning": "All three elements appear in the source."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Thousands or millions praising genius give social proof; humans follow others cues.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "thousands or millions of people praising a business leader's genius, it provides social proof... Humans naturally look to others for cues",
+   "reasoning": "Numbers and claim match verbatim."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "Figures often pose as outsiders; questioning claims can feel like tribal betrayal.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "often position themselves as outsiders... questioning any of their claims can feel like betraying the tribe",
+   "reasoning": "Hedges 'often' and 'can' preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "Algorithms tend to reinforce beliefs via echo chambers; seemingly unfiltered posts build sense of authenticity.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Algorithms tend to show people content that reinforces existing beliefs... seemingly unfiltered posts... authenticity",
+   "reasoning": "Causal claim and hedge match the source."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "We are not purely rational; interests, consistency, belonging, narratives shape evaluations.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "We are not purely rational beings... financial interests... consistency... social belonging and identity... compelling narratives",
+   "reasoning": "Negation and all four influences preserved."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Aligned factors can override criticism, letting us accept claims we might otherwise scrutinize.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "they can override our critical faculties, leading us to accept claims we might otherwise scrutinize more carefully",
+   "reasoning": "Hedges 'can' and 'might' retained accurately."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Atiyah was ultimately rejected; leaders often escape; society lacks comparable proof frameworks.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "ultimately rejected by his peers... often escape rigorous evaluation... our broader society lacks comparable frameworks",
+   "reasoning": "All three sub-claims match the source."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Separate claim evaluation from investment via literacy, experts, frameworks, norms.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Separate financial from epistemic decisions... technological literacy... domain expert visibility... frameworks... healthier discourse norms",
+   "reasoning": "Recommendation summary reflects both individual and societal lists."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "Individuals: separate finance from belief, check domains, seek counter-narratives; if invested ask Would-I-believe test.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Separate financial from epistemic decisions... domain-specific evaluation... Seek counter-narratives... Would I believe this claim if I hadn't invested",
+   "reasoning": "All four individual recommendations captured."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "Society: teach tech literacy, platform experts, build frameworks, normalize skepticism without animosity.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Develop better technological literacy... Strengthen domain expert visibility... better frameworks... skepticism is not opposition, criticism is not animosity",
+   "reasoning": "All societal recommendations and the non-animosity clause preserved."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Judge claims independently between blind acceptance and reflexive rejection, honoring innovation and integrity.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "navigate between blind acceptance and reflexive rejection... honors both innovation and intellectual integrity",
+   "reasoning": "Phrasing and meaning match the source's conclusion."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "Calling Bullshit covers statements directly; Surveillance Capitalism covers narrative-steering indirectly.",
+   "claim_type": "name_or_entity",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Calling Bullshit... directly about how to understand statements... Surveillance Capitalism... doesn't directly talk to this topic, but goes very deep in how certain companies are strealing the narrative",
+   "reasoning": "Titles and direct/indirect distinction accurately preserved."
+  }
+ ],
+ "metrics": {
+  "total_claims": 22,
+  "supported": 22,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

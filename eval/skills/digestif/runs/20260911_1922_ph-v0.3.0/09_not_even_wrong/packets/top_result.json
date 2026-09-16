@@ -1,0 +1,29 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "point-hierarchy-unspecified",
+ "inputs": {
+  "faithfulness_precision": 1.0,
+  "critical_errors": 0,
+  "must_recall": 0.9667,
+  "overall_recall": 0.9667,
+  "redundancy_rate": 0.0909,
+  "trivia_rate": 0.0455
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "0.4 * 1.0 = 0.4; 0.4 * 0.9667 = 0.38668; 0.2 * 0.0909 = 0.01818; weighted_score = 0.4 + 0.38668 - 0.01818 = 0.7685",
+ "weighted_score": 0.7685,
+ "verdict": "Borderline",
+ "tradeoff_note": "Coverage is near complete and redundancy (0.0909) sits below the 0.15 max, so the length cost is justified and no concision gain should be traded against recall. The verdict is Borderline rather than Pass only because the single non-full Must have point K05 is Partial, which warrants human review of the narrowed phrasing.",
+ "fix_list": [
+  "Expand K05 from generic 'leaders' back to the source's named categories (politicians, business leaders, celebrities) at L006/L018/L019 to convert the Partial into Present.",
+  "Demote or drop C001, which recaps C002-C018, to raise uniqueness without losing content.",
+  "Merge duplicate pairs C016/C015 and C021/C018 to remove the two duplicates and lower redundancy below 0.0909."
+ ],
+ "reasoning": "Gate checks. Hard fails first per top_policy. (1) critical_contradicted_max = 0: faithfulness reports critical_errors = 0, so no contradiction hard fail. (2) must_recall_min = 0.9: must_recall = 0.9667 (must_have_present 14, must_have_partial 1 counted at 0.5, must_have_missing 0 across 15 Must have points), 0.9667 >= 0.9, so it clears. (3) faithfulness_precision_min = 0.95: faithfulness_precision = 1.0 (22 supported, 0 partial, 0 unverifiable, 0 contradicted), so it clears. No hard gate is missed. Tradeoff step. All gates pass, so compute the config-weighted score: 0.4 * 1.0 (faithfulness_precision) + 0.4 * 0.9667 (coverage_must_recall) - 0.2 * 0.0909 (redundancy_penalty) = 0.4 + 0.38668 - 0.01818 = 0.7685. Concision role check. Redundancy_rate = 0.0909 is below redundancy_max = 0.15 and concision never rescues a faithfulness or coverage fail, so it is used only as a penalty term, not as a corrective. There is no coverage gain to weigh against length here because overall_recall already equals must_recall (0.9667) with zero missing points, so the current length is not buying recall at a redundancy overage. Borderline determination. Numbers meet every gate, which alone would read Pass, but the Borderline clause applies: coverage reports K05 as Partial (must_have_partial = 1) and K05 is weighted Must have. Per the Partial/Unverifiable rule, a Partial claim affecting a Must have point forces Borderline. The affecting claim is K05, 'not even wrong extends beyond mathematics', whose evidence quote narrows the source's explicit politicians/business leaders/celebrities (loglog L006, L018, L019) to a generic 'leaders', losing breadth. Fixing that wording flips the sample to a clean Pass without touching faithfulness or concision, so it is the highest-leverage fix. The prune list (C001 recap, C016/C015 duplicate, C021/C018 duplicate) is secondary because redundancy is already under the max, but merging them still improves uniqueness at no content cost."
+}

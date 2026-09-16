@@ -1,0 +1,28 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+  "source_id": "point-hierarchy sample",
+  "inputs": {
+    "faithfulness_precision": 0.9919,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.0887,
+    "trivia_rate": 0.0323
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted score equals 0.4 times faithfulness plus 0.4 times must recall minus 0.2 times redundancy = 0.4*0.9919 + 0.4*1.0 - 0.2*0.0887 = 0.39676 + 0.40000 - 0.01774 = 0.77902",
+  "weighted_score": 0.77902,
+  "verdict": "Borderline",
+  "tradeoff_note": "Coverage is maximal and redundancy sits well under the 0.15 max, so no length-vs-coverage tradeoff is at stake. The lone concern is a Minor Partial claim (C090) that drops the source's hedge on a Must-have point, which trips the Borderline rule and warrants human review despite all numeric gates passing.",
+  "fix_list": [
+    "C090 (loglog 6.11): restore the source's 'typically' qualifier so 'aging brings assets' reads 'as people age they typically acquire assets', removing the unsupported absolute causal phrasing that affects this Must-have point.",
+    "Merge the 11 duplicate claims flagged by concision (C029, C031, C041, C050, C069, C082, C092, C107, C108, C119, C123) to lower redundancy further, though redundancy already passes at 0.0887."
+  ],
+  "reasoning": "Gate checks in order. Hard fails: critical_errors = 0 (need <= 0, per pass_gates.critical_contradicted_max = 0) so no critical failure. faithfulness_precision = 0.9919 (need >= 0.95) passes. must_recall = 1.0 (need >= 0.9) passes. redundancy_rate = 0.0887 (need <= 0.15) passes. Since all gates pass, compute the weighted score with aspect_weights: 0.4*0.9919 = 0.39676, 0.4*1.0 = 0.4, 0.2*0.0887 = 0.01774, giving 0.39676 + 0.4 - 0.01774 = 0.77902. Tradeoff among passes: coverage is perfect (14/14 must-have present, 15/15 overall present, zero missing), so no coverage-driven length expansion is being justified and concision is not rescuing any coverage loss. Redundancy is well below max, so the 11 duplicate claims are a clean-up opportunity, not a gate problem. Verdict nuance: the top_policy Borderline rule states that gates can pass on numbers while a Partial or Unverifiable claim impacts a Must-have point. Faithfulness reports exactly one non-supported claim, C090 (causal_link, Minor, Partially supported), which drops the source's 'typically' hedge and states 'aging brings assets, income, and things to lose from redistribution' as an absolute. C090 maps to loglog 6.11, a Must-have point (coverage lists all 14 must-haves present, indexed by point IDs including 6.x). Because this Partial claim touches a Must-have point, per the output spec the correct label is Borderline rather than Pass, and the specific claim is named here. This is a single-word qualifier fix, low blast radius: the causal spine is otherwise fully supported (123/124 supported, 0 contradicted, 0 critical), and coverage is complete, so the sample is close to a Pass once C090's hedge is restored."
+}

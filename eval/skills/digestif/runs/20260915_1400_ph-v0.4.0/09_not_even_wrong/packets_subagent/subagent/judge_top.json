@@ -1,0 +1,28 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "09_not_even_wrong",
+  "inputs": {
+    "faithfulness_precision": 1.0,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.0,
+    "trivia_rate": 0.0
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted_score = 0.4 * faithfulness_precision (1.0) + 0.4 * must_recall (1.0) - 0.2 * redundancy_rate (0.0) = 0.4 + 0.4 - 0.0 = 0.8",
+  "weighted_score": 0.8,
+  "verdict": "Pass",
+  "tradeoff_note": "Full negation and hedge fidelity plus full Must-have recall at zero redundancy: no tradeoff was needed, and the v0.3.0 qualifier loss in 5.3 is repaired.",
+  "fix_list": [
+    "No fixes required: all 38 claims Supported, all 14 Must-have points Present, redundancy 0.0.",
+    "Optional polish only: node 4.1 elides 'compelling' and 'personalities' from the fourth influence factor; adding them back would match the source list exactly without changing meaning."
+  ],
+  "reasoning": "Gate checks against config.json: critical_errors 0 <= critical_contradicted_max 0, pass. faithfulness_precision 1.0 >= 0.95, pass. must_recall 1.0 >= 0.9, pass. redundancy_rate 0.0 <= 0.15, pass. Negation audit drove the Judge F pass: cannot-be-evaluated (1), wasn't-just-incorrect (1.3), isn't-just-protection (2.2), without-rigorous-scrutiny (2.4), not-purely-rational (4), can-be-sound-without-accepting-all (5.1), doesn't-transfer-automatically (5.2), not-critics-for-critics-sake (5.3), doesn't-frame-skepticism-as-opposition (5.5), not-for-or-against (6.1), doesn't-directly-talk rendered as indirectly (6.6). Every polarity holds and no only/never/no/without polarity was dropped. Numbers and names verified exact: age 89, Fields Medal, Abel Prize, Riemann hypothesis, 1859, thousands or millions; Pauli, Atiyah, Bergstrom and West, Zuboff (books), Bloom reference not in this sample. Hedges all survive: might (2.7 founder, 4.2, 6.5), often (3.3, 4.3), tend to (3.4), can (2.5, 4.2, 5.1, 6.2), may be (6.3), perhaps (6.4), seemingly (3.5), roughly is not used here. Coverage: 14 Must-have points all Present including individual and societal path lists; the v0.3.0 residual fault (dropped credible-sources-in-relevant-domains qualifier) is now restored in node 5.3, and every hedged qualifier maps. must_recall = 14/14 = 1.0; overall_recall = 15/15 = 1.0. Concision: all 38 claims Unique, no filler, redundancy 0.0. Borderline considered and rejected: no Partial or Unverifiable claim exists at all, so no Must-have point can be flagged. Verdict Pass, weighted_score 0.8."
+}

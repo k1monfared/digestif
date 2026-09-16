@@ -1,0 +1,475 @@
+{
+ "sample": "04_house_hunting_shenanigans",
+ "part": 1,
+ "of": 1,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Buyer chronicles a failed asking-price negotiation, retaliatory cuts, walkaway, and lessons on realtor leverage.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Looking for a house for almost a year. Many houses stay a looooong time; some gone in usually 1-2 days. Cast: N is my realtor; J is seller's realtor; C is J's partner; L is J and C's assistant."
+    },
+    {
+     "ref": "¶18",
+     "text": "Sunday 6pm buyer refuses another open offer: sellers had an offer each of past 3 showing days. Monday: thanks N, orders no volunteered competing-offer info and written disclosure letters henceforth. Realtors push 5-10% more to close; buyer won't pay extra 5-10%."
+    },
+    {
+     "ref": "¶19",
+     "text": "One week later: bet pays coffee if at/above asking, coffee owed if 10K below or lower. Two weeks later house sold 10K below asking; N buys coffee. First Wednesday house gone for waaay higher than asking."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Year-long search in a split market with N, J, C, and L.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Looking for a house for almost a year. Many houses stay a looooong time; some gone in usually 1-2 days. Cast: N is my realtor; J is seller's realtor; C is J's partner; L is J and C's assistant."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Many houses linger very long; some vanish in 1-2 days.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Looking for a house for almost a year. Many houses stay a looooong time; some gone in usually 1-2 days. Cast: N is my realtor; J is seller's realtor; C is J's partner; L is J and C's assistant."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "N buyer's realtor; J seller's realtor; C partner; L assistant.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Looking for a house for almost a year. Many houses stay a looooong time; some gone in usually 1-2 days. Cast: N is my realtor; J is seller's realtor; C is J's partner; L is J and C's assistant."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "theme",
+   "attribution": "author",
+   "text": "First Wednesday offer at affordability ceiling still fails.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "Wednesday afternoon: puts highest affordable price on a liked house, still about 30K below asking. Thinks house worth more than offer; hopes for a chance."
+    },
+    {
+     "ref": "¶4",
+     "text": "Thursday 6pm: first offer not accepted; sellers move forward with other offers. Buyer accepts limits, will move faster; new house very exciting."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Highest affordable bid sits about 30K below asking price.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "Wednesday afternoon: puts highest affordable price on a liked house, still about 30K below asking. Thinks house worth more than offer; hopes for a chance."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Thursday 6pm rejection; sellers proceed with other offers.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Thursday 6pm: first offer not accepted; sellers move forward with other offers. Buyer accepts limits, will move faster; new house very exciting."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Friday asking-price bid seeks instant acceptance before rivals.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Friday 1pm: likes house, will offer asking price. Wants sweet terms for instant acceptance before rival showings. N advises 10K below to allow negotiation; buyer unconvinced asking price needs negotiating."
+    },
+    {
+     "ref": "¶6",
+     "text": "Friday 6pm: offer sent at asking with maximum sweets, deadline same-day midnight. Other showings happened today but an asking-price rival unlikely; good chance."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Friday 1pm showing convinces; sweet asking-price offer planned.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Thursday noon sends other houses for weekend showings. Thursday 5pm new house comes on market, added to weekend tour. Thursday 7pm asks N to book last house ASAP Friday."
+    },
+    {
+     "ref": "¶5",
+     "text": "Friday 1pm: likes house, will offer asking price. Wants sweet terms for instant acceptance before rival showings. N advises 10K below to allow negotiation; buyer unconvinced asking price needs negotiating."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "N advises 10K below to leave negotiation room; buyer unconvinced.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Friday 1pm: likes house, will offer asking price. Wants sweet terms for instant acceptance before rival showings. N advises 10K below to allow negotiation; buyer unconvinced asking price needs negotiating."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Friday 6pm offer at asking with sweets, deadline midnight same day.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "Friday 6pm: offer sent at asking with maximum sweets, deadline same-day midnight. Other showings happened today but an asking-price rival unlikely; good chance."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "theme",
+   "attribution": "reported",
+   "text": "Seller side cites busyness, seeks extension, mentions rival offer.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "Friday 9pm N can't reach seller realtor, keeps trying. N finds silence a bit unprofessional but understands busyness."
+    },
+    {
+     "ref": "¶8",
+     "text": "Friday 10:30pm: seller realtor driving up island, busy; asks extension to tomorrow midnight; mentions another offer in passing. Buyer doubts offer, fears bid-war leverage. 4 more showings tomorrow; fears competing offer while waiting."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Friday 10:30pm: driving up island; extend to tomorrow midnight; another offer mentioned.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Friday 10:30pm: seller realtor driving up island, busy; asks extension to tomorrow midnight; mentions another offer in passing. Buyer doubts offer, fears bid-war leverage. 4 more showings tomorrow; fears competing offer while waiting."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Buyer doubts the rival offer and fears bid-war leverage.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Friday 10:30pm: seller realtor driving up island, busy; asks extension to tomorrow midnight; mentions another offer in passing. Buyer doubts offer, fears bid-war leverage. 4 more showings tomorrow; fears competing offer while waiting."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Friday 11pm counter: extension only to 10:30am Saturday.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Friday 11pm: extends offer to 10:30am Saturday. Reasons morning suffices to accept an offer meeting all conditions."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Buyer retaliates with cuts; sellers counter above asking.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Saturday 5pm: told another offer will be considered in an hour, submit in time. Buyer suspects no new offer came, his is better, they want a rewrite to pit against other. Drops offer 20K from asking, removes most sweets. N strongly advises against; buyer proceeds."
+    },
+    {
+     "ref": "¶13",
+     "text": "Saturday 9pm: receives multiple-offers disclosure plus counteroffer 5K above asking, response by 11pm. Buyer reads it as defending forward to recoup 20K. N thinks other offer may really be there with a disliked condition. Extended to morning."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Saturday 5pm: buyer drops 20K from asking, strips sweets, defying N.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Saturday 5pm: told another offer will be considered in an hour, submit in time. Buyer suspects no new offer came, his is better, they want a rewrite to pit against other. Drops offer 20K from asking, removes most sweets. N strongly advises against; buyer proceeds."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "J replaced by C on REW, gone from 4 listings; $3.5M showing noted.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Saturday 6pm new offer open until 8:30pm. 7pm: C asks N to fix the price drop, says counteroffer possible. J's name replaced by C on REW; removed from all 4 listings. Meanwhile J busy showing a $3.5M house."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Saturday 9pm counter 5K above asking with disclosure; reply by 11pm.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Saturday 9pm: receives multiple-offers disclosure plus counteroffer 5K above asking, response by 11pm. Buyer reads it as defending forward to recoup 20K. N thinks other offer may really be there with a disliked condition. Extended to morning."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Saturday silence, rare nap as load lifts; N later endorses cuts.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Saturday morning nothing happens; buyer suspects offer kept open to compete with today offers and advertise an offer exists. Asks disclosure of other offer. Saturday afternoon takes a nap; emotionally moved on. Naps once every few years when a big load lifts."
+    },
+    {
+     "ref": "¶14",
+     "text": "Saturday 9:30pm N calls: thinks buyer did the right thing and thanks him."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Sunday email fight ends cooperation; buyer demands in-person terms.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Sunday 1pm L to N: offer expired; sending a new Sunday-morning offer with under 2 hours is unprofessional, not in clients' interest. L notes 37 years in V. real-estate admin. N replies: Friday full-price offer stalled; team left 2nd and 3rd unwanted offers; tight timeline fits their pace."
+    },
+    {
+     "ref": "¶17",
+     "text": "Sunday 9am N to JCL sends best and final offer. Sunday 5:30pm buyer wants in-person presentation only, likely Monday after 5:30 in N's office. 6pm N replies in-person never happens; sellers hire representation; team may accept by initialing a new deadline; offers resending tonight optionally."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "L calls sub-2-hour Sunday deadline unprofessional; cites 37 years admin experience.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Sunday 1pm L to N: offer expired; sending a new Sunday-morning offer with under 2 hours is unprofessional, not in clients' interest. L notes 37 years in V. real-estate admin. N replies: Friday full-price offer stalled; team left 2nd and 3rd unwanted offers; tight timeline fits their pace."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "rebuttal",
+   "attribution": "reported",
+   "text": "N replies Friday full-price stall left unwanted 2nd and 3rd offers.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Sunday 1pm L to N: offer expired; sending a new Sunday-morning offer with under 2 hours is unprofessional, not in clients' interest. L notes 37 years in V. real-estate admin. N replies: Friday full-price offer stalled; team left 2nd and 3rd unwanted offers; tight timeline fits their pace."
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Sunday 8am: 10K below asking, no sweets, 11am deadline; believes rival ceiling is 45K-30K below.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Sunday 8am: revise to 10K below asking, remove every sweet, respond by 11am. 3 more showings today. Believes they could get 45K below and compete up to 30K below, almost certain nothing above that; calls 10K below best and final."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Buyer refuses further open offers; wants in-person Monday after 5:30.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Sunday 9am N to JCL sends best and final offer. Sunday 5:30pm buyer wants in-person presentation only, likely Monday after 5:30 in N's office. 6pm N replies in-person never happens; sellers hire representation; team may accept by initialing a new deadline; offers resending tonight optionally."
+    },
+    {
+     "ref": "¶18",
+     "text": "Sunday 6pm buyer refuses another open offer: sellers had an offer each of past 3 showing days. Monday: thanks N, orders no volunteered competing-offer info and written disclosure letters henceforth. Realtors push 5-10% more to close; buyer won't pay extra 5-10%."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "theme",
+   "attribution": "author",
+   "text": "House sells below asking; buyer sets disclosure rules.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Sunday 6pm buyer refuses another open offer: sellers had an offer each of past 3 showing days. Monday: thanks N, orders no volunteered competing-offer info and written disclosure letters henceforth. Realtors push 5-10% more to close; buyer won't pay extra 5-10%."
+    },
+    {
+     "ref": "¶19",
+     "text": "One week later: bet pays coffee if at/above asking, coffee owed if 10K below or lower. Two weeks later house sold 10K below asking; N buys coffee. First Wednesday house gone for waaay higher than asking."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Two weeks later sold 10K below asking; N owes coffee.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "One week later: bet pays coffee if at/above asking, coffee owed if 10K below or lower. Two weeks later house sold 10K below asking; N buys coffee. First Wednesday house gone for waaay higher than asking."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "New rule: no volunteered offer talk; written disclosure letters required.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Sunday 6pm buyer refuses another open offer: sellers had an offer each of past 3 showing days. Monday: thanks N, orders no volunteered competing-offer info and written disclosure letters henceforth. Realtors push 5-10% more to close; buyer won't pay extra 5-10%."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Earlier house resisted 5-10% push; sold 5% over bid after 7 months.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "Final thoughts: 7 months ago resisted repeated pushes to go 5-10% more on another house; it sold 5% over buyer price after 7 months. Seller is a marketing/sales person teaching car dealerships to sell."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Seller trains car dealerships; realtor system plays clients as pawns.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "Final thoughts: 7 months ago resisted repeated pushes to go 5-10% more on another house; it sold 5% over buyer price after 7 months. Seller is a marketing/sales person teaching car dealerships to sell."
+    },
+    {
+     "ref": "¶21",
+     "text": "System critique: realtors built a system buyers/sellers must obey, playing us as pawns; buyer admits exaggerating. Society negotiates phone holders to houses yet avoids fixing processes."
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "type": "theme",
+   "attribution": "reported",
+   "text": "Claude debrief: February 2025, 3-day Friday-Sunday talks, walked away.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Claude debrief: February 2025 residential house, 3-day Friday-Sunday negotiation, walked away. First offer full asking with sweets to avoid bidding war. Pivots: Friday extension, Saturday 20K cut, Sunday 10K-below minimal offer, strict timelines."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Arc: optimistic start, skeptical middle, detached strategic end.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "Claude debrief: February 2025 residential house, 3-day Friday-Sunday negotiation, walked away. First offer full asking with sweets to avoid bidding war. Pivots: Friday extension, Saturday 20K cut, Sunday 10K-below minimal offer, strict timelines."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Tactics: disclosure demands, short windows, stripped sweets, no bidding war.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Debrief tactics and lessons: requested written competing-offer disclosure, limited sharing, short windows, stripped sweets, avoided bidding war. Lessons: competing-offer narratives manipulate; demand documentation; detachment advantages; asymmetry mitigated by questioning."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Successes: bluff detection, discipline; failures: no purchase, strained ties.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Debrief verdict: successes were bluff detection, price discipline, learning system; failures no purchase and strained relations; time pressure and price cuts situational. Keep discipline and verification; modify timelines, style, relationships; add metrics and walkaway thresholds."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "nuance",
+   "attribution": "reported",
+   "text": "Keep verification; soften timelines and style; add walkaway thresholds.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Debrief verdict: successes were bluff detection, price discipline, learning system; failures no purchase and strained relations; time pressure and price cuts situational. Keep discipline and verification; modify timelines, style, relationships; add metrics and walkaway thresholds."
+    }
+   ]
+  }
+ ]
+}

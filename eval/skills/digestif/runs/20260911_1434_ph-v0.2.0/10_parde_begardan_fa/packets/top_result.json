@@ -1,0 +1,30 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "unknown",
+ "inputs": {
+  "faithfulness_precision": 0.9583,
+  "critical_errors": 0,
+  "must_recall": 0.8125,
+  "overall_recall": 0.8,
+  "redundancy_rate": 0.0417,
+  "trivia_rate": 0.0417
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted_score = 0.4 * 0.9583 + 0.4 * 0.8125 - 0.2 * 0.0417 = 0.38332 + 0.32500 - 0.00834 = 0.69998 ~ 0.7000",
+ "weighted_score": 0.7,
+ "verdict": "Fail",
+ "tradeoff_note": "Concision is healthy (redundancy 0.0417, below the 0.15 max) but never rescues a gate miss. The coverage gate fails on its own: must_recall 0.8125 is below the 0.9 minimum, driven by Must-have points K01, K03, and K11 sitting at Partial rather than losing to length or redundancy.",
+ "fix_list": [
+  "Raise must_have recall above 0.9 by fully landing the three Must-have partials: K01 (restore the cousin as instrument-buyer and the mizrab lesson from L003/L005), K03 (restore the 20,000-toman list price and discount from L006), K11 (restore clerics/community leaders and the 'today' timing from L019).",
+  "Restore the source hedge on C003 / L004: the song identification is 'فکر کنم' (I think), currently stated as certain in loglog line 1.1; this is the only Partially supported claim and drives faithfulness_precision to 0.9583.",
+  "Recover the dropped descriptive detail on Nice-to-have partials K02 (one of the first songs taught to beginners), K04 (six-month lesson delay and Ershad office class), and K13 (the penned fattened-sheep set-loose metaphor from L023) once the Must-haves are fixed.",
+  "Merge duplicate C023 into C004 and drop or rewrite the C021 header restatement to trim the residual trivia without touching coverage."
+ ],
+ "reasoning": "Gate checks in policy order. (1) Critical errors: faithfulness critical_errors = 0, and critical_contradicted_max = 0, so no hard fail here. Contradicted = 0 as well; the single non-supported claim C003 is Partially supported at Minor severity, not contradicted. (2) Faithfulness precision gate: 0.9583 >= faithfulness_precision_min 0.95, so it passes, though only by 0.0083 and entirely dependent on the one partial claim C003 (loglog 1.1 drops the 'فکر کنم' hedge from the source). (3) Must-have recall gate: must_recall = 0.8125 = 5 present / 8 Must have (with 3 partial counting as failures to the strict 0.9 floor), which is below must_recall_min 0.9. This is the decisive hard fail. The three Must-have partials are K01 (age-7 first santur encounter, L003/L005: cousin and mizrab lesson replaced by 'سنتور خاله' and the mizrab teaching omitted), K03 (purchase, L006: 20,000 list price and discount dropped, only the 18,000 figure kept), and K11 (delivery, L019: clerics/community leaders omitted and 'today' timing dropped). Per top_policy, any Must-have recall below minimum fails the sample regardless of other strengths. (4) Coverage is otherwise sound at overall_recall 0.8 with no Must-have fully missing; the remaining partials K02 (L004, drops 'one of the first songs taught to beginners'), K04 (L008, drops six-month lesson delay and Ershad office class), and K13 (L023, drops the sheep-set-loose metaphor) are Nice to have and secondary. (5) Concision: redundancy_rate 0.0417 and trivia_rate 0.0417 both sit far below redundancy_max 0.15; there is ample length budget, so the coverage shortfall is not a length tradeoff, it is omitted content. Duplicates C023/C004 and the C021 header restatement are trivial and non-decisive. Since a hard gate (must_recall) is missed, the verdict is Fail, not Borderline, even though faithfulness and redundancy cleanly pass. Weighted score is reported for audit only (0.69998) and does not override the gate failure."
+}

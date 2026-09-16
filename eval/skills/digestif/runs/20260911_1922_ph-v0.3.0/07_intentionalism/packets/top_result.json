@@ -1,0 +1,30 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "gale-shapley-point-hierarchy",
+ "inputs": {
+  "faithfulness_precision": 0.9444,
+  "critical_errors": 0,
+  "must_recall": 0.9167,
+  "overall_recall": 0.9333,
+  "redundancy_rate": 0.0833,
+  "trivia_rate": 0.0278
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score = 0.4*0.9444 + 0.4*0.9167 - 0.2*0.0833 = 0.37776 + 0.36668 - 0.01666 = 0.72778. Gate check: critical_errors 0 <= 0 pass; must_recall 0.9167 >= 0.90 pass; faithfulness_precision 0.9444 < 0.95 FAIL; redundancy 0.0833 <= 0.15 pass.",
+ "weighted_score": 0.72778,
+ "verdict": "Fail",
+ "tradeoff_note": "Faithfulness precision lands at 0.9444, just under the 0.95 gate, so the sample fails on a hard gate before any tradeoff applies. Concision is healthy at 0.0833 redundancy and must_recall is above its floor, so the failure is narrow and driven by two softened-hedge claims rather than coverage loss.",
+ "fix_list": [
+  "Restore source hedging in C006 (loglog 3): the node universalizes 'most real-world situations' into 'Real situations', which drops the quantifier and pushes precision below the 0.95 gate.",
+  "Restore source hedging in C010 (loglog 4.1): change the absolute 'structure favors proposers' back to 'outcomes tend to favor whoever is proposing'.",
+  "Add the mechanism to K03 (loglog L005): state that proposers move down their preference list while receivers tentatively accept or reject, so readers learn how deferred acceptance runs, not only its outcome.",
+  "State the existence guarantee in K02 (loglog L004): deferred acceptance always yields a stable matching when one exists, closing the dropped-condition gap."
+ ],
+ "reasoning": "Gate sweep per top_policy: critical_errors is 0 and critical_contradicted_max is 0, so no Critical failure. must_recall is 0.9167 against must_recall_min 0.90, so coverage clears (10 of 12 Must haves fully present, 2 partial as K02 and K03, 0 missing). redundancy_rate is 0.0833 against redundancy_max 0.15, so concision clears. The failing gate is faithfulness_precision: 34 supported + 2 partial over 36 claims gives 34/36 = 0.9444, which is 0.0056 below the 0.95 minimum. Under the policy, faithfulness_precision below config minimum is a hard fail, so the verdict is Fail regardless of the weighted score. The weighted score is 0.4*0.9444 + 0.4*0.9167 - 0.2*0.0833 = 0.72778, reported for audit but not used to override the gate. The two partial claims are both Minor and both the same defect: C006 (loglog 3) drops 'most' and C010 (loglog 4.1) drops 'tend to', turning hedged source statements into absolutes. Neither is contradicted and neither touches a Must-have point directly, so if the hedging were restored the sample would move to Pass or Borderline. Because gates fail on numbers with no Critical error, the boundary between Fail and Borderline hinges on the precision miss alone, and the fix list targets the two hedge drops first since each is a single-token restoration with the highest leverage toward the 0.95 gate. No aspect judges conflict on a fact, so SOURCE was not reread."
+}

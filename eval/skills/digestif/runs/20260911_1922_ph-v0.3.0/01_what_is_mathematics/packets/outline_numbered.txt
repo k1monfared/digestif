@@ -1,0 +1,173 @@
+L001: - What is mathematics (source: source.txt)
+L002:     Summary: Automated proving shows math was struggling toward importance, now risking capture by attention. (¶9, ¶16, ¶27, ¶32, ¶57, ¶59)
+L003:         - 1 Old definition broke when AI automated proof production while humans kept choosing problems. (¶6, ¶7, ¶9)
+L004:             - 1.1 Evidence: Professor loves research, hates grading; research now feels grading a clever lying student. (¶1)
+L005:             - 1.2 Nuance: That grading feeling is shared beyond mathematics, in open-source software and creative writing. (¶1)
+L006:             - 1.3 Old answer: mathematics finds patterns where claims can be proven. (¶3)
+L007:             - 1.4 Experts could settle right or wrong for good, well, most of the times; math had ground truth. (¶4)
+L008:             - 1.5 Evidence: Summer 2026 Tao lecture and Moradifam essay ask what math is when proofs stop being scarce. (¶5) [reported]
+L009:             - 1.6 Nuance: Author mostly agrees with both, but wants speculation they must avoid. (¶5)
+L010:             - 1.7 Evidence: Late May 2026 First Proof: four systems solved seven of ten unpublished problems. (¶7) [reported]
+L011:             - 1.8 Evidence: Those solutions reached publication quality for ten to a thousand dollars of compute each. (¶7) [reported]
+L012:             - 1.9 Evidence: Early 2026 machine-checked Lean proof of Erdős Problem #728; humans wrote digestible version. (¶8) [reported]
+L013:             - 1.10 Evidence: May 2026 OpenAI model disproved planar unit distance conjecture Erdős posed in 1946. (¶8) [reported]
+L014:             - 1.11 Split: models produced results; humans checked, digested, and presented them. (¶9)
+L015:             - 1.12 Evidence: Seven of ten novel problems solved for a few hundred to a few thousand dollars each. (¶9)
+L016:             - 1.13 Nuance: Problems were chosen by people, handed one at a time; models still might need much handholding. (¶9)
+L017:             - 1.14 Conjecture generators propose patterns but do not decide which ones matter. (¶9)
+L018:             - 1.15 So either mathematics is over, or the old definition was wrong. (¶9)
+L019:             - 1.16 It is not over; if anything it has just started, author thinks. (¶10)
+L020:             - 1.17 Implicit: Maybe proving was the chore and finding was always the real thing. (¶10)
+L021:             - 1.18 Concession: Argument implicitly assumes mathematics is what we humans do. (¶10)
+L022:             - 1.19 Example: The linked post image that started the discussion. (¶2)
+L023:         - 2 Verification is human work too, unreliable, and being automated as well. (¶11, ¶12, ¶15)
+L024:             - 2.1 Tao hypothesis covers performing tasks including verification; tolerance for error is the question. (¶12) [reported]
+L025:             - 2.2 Evidence: Voevodsky, Fields Medal 2002, had to retract work years later after Deligne found wrong lemma. (¶13) [reported]
+L026:             - 2.3 Evidence: Late nineties Deligne found key lemma unsalvageable as stated; Kapranov paper theorem proved false. (¶13) [reported]
+L027:             - 2.4 Evidence: Multiple groups used and taught those papers, yet nobody noticed for years. (¶13) [reported]
+L028:             - 2.5 Evidence: Scared Voevodsky asked who ensures no forgotten mistake, then pushed computer verification. (¶14) [reported]
+L029:             - 2.6 Human verification is not reliable; a key lemma stayed wrong for years, a theorem for decades. (¶15)
+L030:             - 2.7 AI verification with comparable error will look like business as usual, author argues. (¶15)
+L031:             - 2.8 Nuance: Premise assumed, not measured: generation plus verification automated, imperfect like people; years by hand versus million daily checks. (¶15)
+L032:         - 3 Mathematics was never theorem production; the thinking process was the product. (¶16, ¶17, ¶20)
+L033:             - 3.1 Evidence: Moradifam: we teach math for struggle, tracking assumptions, moving concrete to general, persisting. (¶17) [reported]
+L034:             - 3.2 Evidence: Cognitive offloading delegates effort; illusion of explanatory depth confuses fluency with ownership. (¶17) [reported]
+L035:             - 3.3 Nuance: Fluent instant solutions risk equating exposure with understanding; calculator helps only after place-value understanding. (¶17) [reported]
+L036:             - 3.4 AI gives plausible confident explanations, so student and instructor may mistake output for learning. (¶17) [reported]
+L037:             - 3.5 Example: Airport ad said let AI do thinking; marketing treats thinking like laundry toil. (¶18) [reported]
+L038:             - 3.6 Fixing a car is instrumental; thinking is constitutive, building judgment with no shortcut. (¶18)
+L039:             - 3.7 Offload the chore, keep the car; offload thinking, keep an answer with unchanged mind. (¶18)
+L040:             - 3.8 Concession: Boundary is blurry; same was said of arithmetic, memorized poetry, navigation, some losses fine. (¶19) [conceded]
+L041:             - 3.9 Evidence: GPS atrophy documented: Dahmani and Bohbot 2020 hippocampal decline; Ruginski 2019 worse rotation. (¶19) [reported]
+L042:             - 3.10 Load-bearing activities are framing, noticing gaps, deciding attention; proving is the gym training finding. (¶19)
+L043:             - 3.11 Nuance: Even failed proofs bring ideas to mind and learning occurs. (¶19)
+L044:             - 3.12 Evidence: AI-polished proofs are near-flawless, almost too flawless, dwelling on trivialities, rushing novelty. (¶20) [reported]
+L045:             - 3.13 Nuance: They fail literature links and remove friction; mistakes can mark where work is. (¶20) [reported]
+L046:             - 3.14 Evidence: Thurston: success is enabling clearer mathematical understanding and thought, not production quotas. (¶20) [reported]
+L047:             - 3.15 Struggle, friction, process are what the pipeline optimizes away; slides are non-technical delight. (¶21)
+L048:             - 3.16 Tao asks what community optimizes for once struggle stops being scarce. (¶22) [reported]
+L049:         - 4 Tao pipeline moves scarcity to abundance; digestion becomes the bottleneck. (¶23, ¶24, ¶27)
+L050:             - 4.1 Working Hypothesis: reasonably soon AI does reasonable fraction of research math, reasonably well; assume, do not believe. (¶23) [reported]
+L051:             - 4.2 Nuance: Tao asks explicit and implicit community goals, historically delegated to humanities. (¶23) [reported]
+L052:             - 4.3 Goodhart: correlated goals let one proxy rest; ungrounded AI plus financial incentives break correlation. (¶24) [reported]
+L053:             - 4.4 Evidence: Solving alone piles incorrect work; exposition alone piles unreadable work; erdosproblems holds dozens likely-correct unvouched proofs. (¶25) [reported]
+L054:             - 4.5 Acceptance is slow, human, external, by less-prestigious volunteers, turning achievements into collective progress. (¶25) [reported]
+L055:             - 4.6 Canonicalization into taught textbooks is slowest, least optimizable, most valuable stage. (¶25) [reported]
+L056:             - 4.7 Example: Pipeline image flows open problems through generation to definitive solutions. (¶26)
+L057:             - 4.8 Evidence: Mismatches at every stage: unverified pile, unreadable pile, overwhelmed review, undigestible publications. (¶27) [reported]
+L058:             - 4.9 Evidence: Halmos sought fame for exposition over cutting-edge research; Tao urges disclosure, less generation-first, more exposition. (¶27) [reported]
+L059:             - 4.10 Nuance: Leiden Declaration endorsed by IMU; no publication without a clear expert attributed talk. (¶27) [reported]
+L060:             - 4.11 Example: Professor is human version: loved producing, now demoted to hated checking; science inverted likewise. (¶28)
+L061:         - 5 AI proposes while humans digest, but importance was never stable human judgment. (¶29, ¶30, ¶31, ¶32)
+L062:             - 5.1 Evidence: Davies ML pumped knot intuitions humans formalized; AlphaTensor gamed new matrix-multiplication algorithms. (¶29) [reported]
+L063:             - 5.2 Pattern repeats: AI proposes, humans check, digest, present; by 2026 AI takes most discovery. (¶29) [reported]
+L064:             - 5.3 Evidence: Opaque precedents four-color and finite-simple classification survive communal verification beyond any individual. (¶30) [reported]
+L065:             - 5.4 Understanding shifts constructive rebuilding to hermeneutic interpreting; builder becomes interpreter. (¶30) [reported]
+L066:             - 5.5 Thesis: automated routine makes framing, judgment, taste more visible and more valuable. (¶30) [reported]
+L067:             - 5.6 Moradifam keeps interesting and deep human; Tao keeps acceptance external and non-optimizable by authors. (¶31) [reported]
+L068:             - 5.7 Concession: Both stop rightly there; this blog speculates onward, building rather than correcting. (¶31)
+L069:             - 5.8 Process as product means importance, what was worth thinking, is what matters. (¶32)
+L070:             - 5.9 Importance was never stable purely human judgment, author thinks and suspects. (¶32)
+L071:             - 5.10 First lever applicability: real use elsewhere, fairly measurable, partly steered by funding. (¶33)
+L072:             - 5.11 Second lever big-name taste compounds fame, genuine interest, network favoritism. (¶34)
+L073:             - 5.12 Example: Nash allegedly but not verified worked only on problems that could make him famous. (¶34) [reported]
+L074:             - 5.13 Neither lever is pure judgment; both social, hidden while slow, local, invisible. (¶35)
+L075:             - 5.14 Concession: Author leans on Tao and Moradifam for checkable reasoning, not names, perhaps imperfectly. (¶36) [conceded]
+L076:         - 6 Cheap generation leaves scarce attention, inviting an influencer economy for mathematics. (¶37, ¶39, ¶45)
+L077:             - 6.1 Everything is sales; globalization widened competition, production cheapened, distribution constrains. (¶37)
+L078:             - 6.2 Evidence: Blogs outproduced books while readership fell; important lost to popular; video displaced writing. (¶38)
+L079:             - 6.3 Nuance: Random possibly-unqualified voices beat experts; paid relatable urgency beats challenge, supporting priors. (¶38)
+L080:             - 6.4 Nuance: Math faces similar shift in years, probably decades, not months, author guesses. (¶39)
+L081:             - 6.5 Current influencers Tao and Gowers earned standing under slow journal-seminar canon; old gatekeeping flawed, coming worse. (¶39)
+L082:             - 6.6 Concession: Gatekeeping has a function needing merit, per Levitsky nostalgia, author not endorsing old politics. (¶39) [conceded]
+L083:             - 6.7 Compute budgets will prize direct impact first, influencer advertising second; applied tails may self-solve separately. (¶39)
+L084:             - 6.8 Naive faith treats Tao as disinterested; attention allocation is private with public consequences, unaudited. (¶40)
+L085:             - 6.9 Nuance: Private acts likely aligned publicly so far, with no guarantee under influencer incentives. (¶40)
+L086:             - 6.10 Evidence: Old trust was structural: decades of checkable work, checkable judgments, wrong calls costing standing. (¶41)
+L087:             - 6.11 Engagement standing answers only to engagement; slow journals gave little gain from attention-seeking. (¶41)
+L088:             - 6.12 Visibility into grants, posts, media, training data pits seeming to judge well against judging well. (¶42)
+L089:             - 6.13 Evidence: Canon simulation: reshuffled exposure yields almost entirely different canons; middle is lottery. (¶43)
+L090:             - 6.14 Attention canon selects legible narratable brand over nearby usefulness; unread theorems are inert. (¶43)
+L091:             - 6.15 Floor is checkability, ceiling structural buildability; social layer decides vast middle housing careers. (¶44)
+L092:             - 6.16 Attention metric invites viral framing; loop feeds problem choice; biases freeze into training data. (¶45)
+L093:             - 6.17 Nuance: Moradifam stable culture is up for grabs; social-media precedent gives doubt, not certainty. (¶45)
+L094:             - 6.18 Concession: Not all doom: Polymath, blogging, arXiv widened judgment; small checkable audience resists farming. (¶46) [conceded]
+L095:             - 6.19 Danger is AI changing the audience, shifting selection from peer trust to engagement. (¶46)
+L096:         - 7 The middle where craft lives risks emptying like furniture and software middles. (¶47, ¶48, ¶49)
+L097:             - 7.1 Evidence: CNC made most furniture cheap Ikea, some mid-scale local, some custom costing thousands. (¶47)
+L098:             - 7.2 Nuance: Neighborhood creative carpenter vanished; fixing cheap Ikea beats nobody buying new. (¶47)
+L099:             - 7.3 Evidence: AI apps generate in minutes, stall in details, get abandoned; starts rise, finishes fall. (¶48)
+L100:             - 7.4 Digestion work is the carpenter shop; empty it and results lose legibility and teaching. (¶49)
+L101:         - 8 Agreement without shared reasoning is coincidence, not evidence. (¶50, ¶52, ¶54)
+L102:             - 8.1 Nuance: Middle desert is also whom to trust on what results mean. (¶50)
+L103:             - 8.2 Evidence: Author asks why agreers agree; divergent paths sometimes enlighten, sometimes void agreement. (¶51)
+L104:             - 8.3 Same conclusion by different reasoning differs epistemically; delta holds the information. (¶52)
+L105:             - 8.4 Sound distinct path corroborates doubly; broken path warns your arrival needs recheck. (¶52)
+L106:             - 8.5 Tao-tier deference amputates reasoning; copies correlate, mimicking consensus with sample size one. (¶53)
+L107:             - 8.6 Example: Atiyah Riemann claim failed harsh scrutiny despite authority; imagine a million daily lesser claims. (¶53)
+L108:             - 8.7 Attention economy spreads conclusions fast while expensive reasoning is stripped in transit. (¶54)
+L109:             - 8.8 AI answers are conclusions without process; fluent feel need not be perspective gain. (¶55)
+L110:             - 8.9 Nuance: Risk is losing why as the question, keeping conclusions as mere byproducts. (¶55)
+L111:             - 8.10 Example: Related thought experiment: tree falling unheard in a jungle. (¶56)
+L112:         - 9 Math was finding plus proving; automation shifts weight to deciding what matters. (¶57, ¶59, ¶60)
+L113:             - 9.1 Correctness was the floor; importance deciding attention, depth, teaching was the constraint. (¶57)
+L114:             - 9.2 Nuance: Importance is partly social within checkability floor and structural ceiling; confession hard for a mathematician. (¶57)
+L115:             - 9.3 Evidence: Some publish anything provable; grants chase big problems, then publish detours. (¶58)
+L116:             - 9.4 Proving, the checking chore, got cheap; finding, deciding worth, stays human. (¶59)
+L117:             - 9.5 Nuance: Mix is speculatively shifting toward deciding values; software already split love versus attention. (¶59)
+L118:             - 9.6 Deciding was never counted or paid, holding no professional home. (¶60)
+L119:             - 9.7 AI reveals rather than replaces practice; judgment becomes visible as the ungeneratable remainder. (¶60)
+L120:             - 9.8 Nuance: Fate undecided: loved fun, influencer attention, or compute ownership; outside physics steering answered to results. (¶60)
+L121:             - 9.9 Evidence: Statistics precedent: cheap arithmetic moved identity to question design; Halmos made exposition prestigious. (¶61) [reported]
+L122:             - 9.10 Craft need not die yet loses living; question is whether paid creative middle survives. (¶62)
+L123:             - 9.11 Thinking is what we are for; math practices it publicly with checkable stakes. (¶63)
+L124:             - 9.12 Proof is the gym: unlike the sport, unloved, yet quitting ends performance. (¶63)
+L125:             - 9.13 Nuance: Coach keeps taste without lifting; robot athletes plus human coach risk judgment floating free. (¶63)
+L126:             - 9.14 Evidence: First Proof collects unpublished problems, picks ten, allows one attempt each, grades blind. (¶64) [reported]
+L127:             - 9.15 Evidence: Second batch late May 2026: four systems, seven of ten at publication quality, ten to thousand dollars each. (¶64) [reported]
+L128:             - 9.16 Evidence: GPT-5.2 Pro plus Aristotle gave machine-checked Lean #728, translated by Sothanaphan, marked proved. (¶65) [reported]
+L129:             - 9.17 Evidence: May 2026 model built infinite families with at least n^1+eps versus n^1+o(1), via algebraic number theory. (¶65) [reported]
+L130:             - 9.18 Nuance: Alon, Bloom, Gowers and others digested that disproof for the community. (¶65) [reported]
+L131:     - Cross-links
+L132:         - 1.7 supports 1 (¶7)
+L133:         - 1.7 restates 9.15 (¶64) note: restatement link
+L134:         - 1.9 supports 1 (¶8)
+L135:         - 1.10 supports 1 (¶8)
+L136:         - 1.12 supports 1 (¶9)
+L137:         - 1.12 restates 9.15 (¶9, ¶64) note: body restates appendix with looser cost phrasing
+L138:         - 1.15 supports 9 (¶9)
+L139:         - 1.17 restates 9.4 (¶59) note: restatement link
+L140:         - 2.2 supports 2.6 (¶13)
+L141:         - 2.5 supports 2 (¶14)
+L142:         - 2.6 supports 2 (¶15)
+L143:         - 3.4 supports 8.8 (¶55) note: classroom confusion evidence supports limit-case claim
+L144:         - 3.5 exemplifies 3 (¶18)
+L145:         - 3.9 qualifies 3.8 (¶19)
+L146:         - 3.10 supports 3 (¶19)
+L147:         - 3.10 restates 9.12 (¶63) note: restatement link
+L148:         - 3.12 supports 3 (¶20)
+L149:         - 4.3 supports 4 (¶24)
+L150:         - 4.4 supports 4 (¶25)
+L151:         - 4.5 qualifies 4 (¶25)
+L152:         - 4.8 supports 4 (¶27)
+L153:         - 4.11 exemplifies 4.8 (¶28)
+L154:         - 5.3 supports 5.5 (¶30)
+L155:         - 5.10 supports 5.9 (¶33)
+L156:         - 5.11 supports 5.9 (¶34)
+L157:         - 5.13 supports 5.9 (¶35)
+L158:         - 6.13 supports 6 (¶43)
+L159:         - 6.15 supports 5.9 (¶44)
+L160:         - 6.15 restates 9.1 (¶44)
+L161:         - 6.16 supports 4.3 (¶45)
+L162:         - 6.18 qualifies 6 (¶46)
+L163:         - 6.19 qualifies 6.18 (¶46)
+L164:         - 7.1 supports 7 (¶47)
+L165:         - 7.3 supports 7 (¶48)
+L166:         - 7.3 exemplifies 7.1 (¶48)
+L167:         - 7.4 supports 4.8 (¶49)
+L168:         - 8.5 supports 8 (¶53)
+L169:         - 8.6 exemplifies 8.5 (¶53)
+L170:         - 8.7 supports 6 (¶54)
+L171:         - 9.9 supports 9 (¶61)
+L172:         - 9.18 supports 1.11 (¶65)
+L173:     - Coverage: 65 of 65 passages cited

@@ -1,0 +1,200 @@
+{
+  "judge": "coverage",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "04_house_hunting_shenanigans",
+  "key_points": [
+    {
+      "point_id": "K01",
+      "point_text": "The author has been house hunting for almost a year in a strange market where some houses sit for a very long time while others sell within 1-2 days.",
+      "weight": "Nice to have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L005",
+        "L006"
+      ],
+      "evidence_quote": "He had been looking for a house for almost a year, longer than expected, in a weird market. / Houses either stay on the market a long time or are gone in usually 1-2 days.",
+      "reasoning": "L005 captures the nearly one-year search in a weird market, L006 captures the bimodal market behavior with the 1-2 day timing intact."
+    },
+    {
+      "point_id": "K02",
+      "point_text": "On Wednesday afternoon the author offered the highest price he could afford on a house he liked, still about $30K below the asking price, hoping he might have a chance.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L011",
+        "L012"
+      ],
+      "evidence_quote": "Wednesday afternoon he put the highest price he could afford on a house he liked, about 30K below asking. / He hoped he might have a chance since the house was worth more than his offer.",
+      "reasoning": "Timing (Wednesday afternoon), the maximum-affordable framing, the ~30K below-asking gap, and the hope are all preserved."
+    },
+    {
+      "point_id": "K03",
+      "point_text": "By Thursday 6pm the offer was not accepted and the sellers were moving forward with other offers.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L013"
+      ],
+      "evidence_quote": "Thursday 6pm the offer was not accepted; the sellers moved forward with other offers.",
+      "reasoning": "Exact time and the rejection/other-offers outcome are stated verbatim in meaning."
+    },
+    {
+      "point_id": "K04",
+      "point_text": "After viewing a newly listed house on Friday, the author decided to offer the full asking price with generous terms to avoid a bidding war and give no time for other showings, rejecting his realtor N's advice to write 10K below and negotiate upward.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L021",
+        "L022",
+        "L023"
+      ],
+      "evidence_quote": "Friday 1pm he saw the house, liked it, and decided to offer the full asking price. / He wanted to avoid a bidding war, so he made the offer as sweet as possible with no time for other showings. / N advised writing 10K below and letting them negotiate up; the buyer was not convinced.",
+      "reasoning": "All components intact: Friday viewing, full asking price, sweeteners, no time for other showings, and rejection of N's 10K-below advice."
+    },
+    {
+      "point_id": "K05",
+      "point_text": "On Friday 6pm the offer was sent at the asking price with as many favorable terms as possible and a deadline of midnight the same day.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L024"
+      ],
+      "evidence_quote": "Friday 6pm they sent a sweetened offer at the asking price with a same-day midnight deadline.",
+      "reasoning": "Time (Friday 6pm), asking price, sweetened/favorable terms, and same-day midnight deadline all captured."
+    },
+    {
+      "point_id": "K06",
+      "point_text": "At Friday 10:30pm the seller's realtor, who was busy driving up island, asked to extend the offer to the next midnight and mentioned in passing that another offer existed; the author extended only until 10:30am Saturday.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L028",
+        "L029",
+        "L032"
+      ],
+      "evidence_quote": "Friday 10:30pm J was driving up island for a family thing and asked to extend the offer to Saturday midnight. / They mentioned in passing that there was another offer on the house. / Friday 11pm he extended the offer until 10:30am Saturday, reasoning a morning should be enough.",
+      "reasoning": "Time, driving-up-island detail, requested extension to Saturday midnight, the passing competing-offer mention, and the partial extension to 10:30am are all preserved."
+    },
+    {
+      "point_id": "K07",
+      "point_text": "Saturday morning produced nothing, so the author suspected his offer was being kept open as leverage against other buyers and asked for disclosure of the other offer.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L034",
+        "L035"
+      ],
+      "evidence_quote": "Saturday morning nothing happened; he suspected they kept his offer open to compete and to advertise it. / N thought the other offer was better; the buyer asked them to disclose it.",
+      "reasoning": "Nothing happening Saturday morning, the leverage suspicion, and the disclosure request are all captured."
+    },
+    {
+      "point_id": "K08",
+      "point_text": "On Saturday 5pm, after N reported another offer to be considered within an hour, the author dropped his offer by $20K from the asking price and removed most of the favorable terms, over N's strong advice against doing so.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L038",
+        "L040"
+      ],
+      "evidence_quote": "Saturday 5pm N relayed that another offer would be considered in an hour and they should submit in time. / He dropped the offer by 20K from asking and removed most sweeteners; N strongly advised against it.",
+      "reasoning": "Time, the one-hour competing-offer relay, the 20K drop from asking, removal of sweeteners, and N's strong contrary advice are all intact."
+    },
+    {
+      "point_id": "K09",
+      "point_text": "On Saturday 7pm the seller's realtor's partner C asked N to 'fix' the price drop; meanwhile J's name was replaced by C on the REW site and removed from all four of her listings, which the author read as the seller being angry over losing $20K.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L042",
+        "L044"
+      ],
+      "evidence_quote": "Saturday 7pm C called N noticing the price drop and wondering if he could 'fix' that; N offered a counteroffer route. / J's name was removed from all her 4 listings on REW and replaced by C's; the buyer guessed they were angry about the 20K loss.",
+      "reasoning": "Time (7pm), C's 'fix' request, the four-listings REW name replacement, and the 20K-anger interpretation are preserved."
+    },
+    {
+      "point_id": "K10",
+      "point_text": "At Saturday 9pm the author received a disclosure of multiple offers letter plus a counteroffer at $5K above the asking price, with a request for a response by 11pm.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L046",
+        "L049"
+      ],
+      "evidence_quote": "Saturday 9pm a disclosure of multiple offers arrived with a counteroffer 5K 'above' the asking price. / They wanted a response by 11pm; N said to respond in the morning.",
+      "reasoning": "Time, disclosure-to-multiple-offers letter, the 5K-above-asking counteroffer, and 11pm response demand all captured."
+    },
+    {
+      "point_id": "K11",
+      "point_text": "On Sunday 8am the author instructed N to resubmit at 10K below the asking price, remove every favorable term, and give until 11am, as his best and final offer, rejecting N's push to meet or exceed the counteroffer.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L051",
+        "L054"
+      ],
+      "evidence_quote": "Sunday 8am he told N to update to 10K below asking, remove every sweetener, and give until 11am. / N got angry and favored the 5K-higher counter; the buyer settled on 10K below as best and final.",
+      "reasoning": "Sunday 8am, 10K below asking, removal of all sweeteners, 11am deadline, best-and-final status, and rejection of N's push to meet the counter are all present."
+    },
+    {
+      "point_id": "K12",
+      "point_text": "On Sunday the author read the forwarded emails between N and the assistant L, which were unprofessional and appeared to scapegoat the assistant; the author noted they had thrown the assistant under the bus.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L057",
+        "L063",
+        "L065"
+      ],
+      "evidence_quote": "Sunday 3pm N forwarded a series of back and forth with J's assistant L. / Sunday 5:30pm the buyer replied thanking N and saying they're throwing the assistant under the bus. / He thought the claim that the assistant missed the offer was a game, and pathetic.",
+      "reasoning": "The forwarded N-L correspondence, the buyer's thrown-under-the-bus judgment, and the scapegoat/game reading are all captured."
+    },
+    {
+      "point_id": "K13",
+      "point_text": "On Monday morning the author set two explicit rules: N must not volunteer information about existing or competing offers unless explicitly asked, and any seller-agent claim of a competing offer must be provided in writing as a disclosure letter.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L072"
+      ],
+      "evidence_quote": "Monday morning he thanked N and asked that competing offers never be volunteered and that agents provide disclosure letters in writing.",
+      "reasoning": "Both explicit rules (no volunteering of competing offers, written disclosure letter) and the Monday morning timing are captured."
+    },
+    {
+      "point_id": "K14",
+      "point_text": "About two weeks later the house sold for 10K below the asking price, vindicating the author's read; he and N had bet a coffee, and the first house he offered on sold for way above asking.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L015",
+        "L075",
+        "L076"
+      ],
+      "evidence_quote": "The house he first offered on later sold for waaaaay higher than the asking price. / One week later they bet a coffee: N thought the house sold 5K above asking, the buyer thought below. / Two weeks later the house sold for 10K below the asking price, so N owes him a coffee.",
+      "reasoning": "Two-week outcome at 10K below asking, the coffee bet, and the first house selling well above asking are all present and consistent with the source."
+    },
+    {
+      "point_id": "K15",
+      "point_text": "The closing thesis: realtors have built a system that serves them while buyers and sellers are like pawns in a chess game, and society has given up fighting for change in countless processes from phone holders and laptops to stocks, taxes, cars, and houses.",
+      "weight": "Must have",
+      "presence": "Present",
+      "loglog_ids": [
+        "L080",
+        "L082"
+      ],
+      "evidence_quote": "He feels realtors created a system that works fine for them, making buyers and sellers pawns in their chess game. / He compares giving up on phone holders, laptops, stocks, tax returns, cars, and houses to not wanting to fix processes.",
+      "reasoning": "The realtor-serving system, buyers/sellers as pawns in a chess game, and the list of abandoned processes (phone holders, laptops, stocks, taxes, cars, houses) are all captured."
+    }
+  ],
+  "metrics": {
+    "total_points": 15,
+    "must_have_total": 14,
+    "must_have_present": 14,
+    "must_have_partial": 0,
+    "must_have_missing": 0,
+    "overall_present": 15,
+    "must_recall": 1.0,
+    "overall_recall": 1.0
+  },
+  "missing_list": []
+}

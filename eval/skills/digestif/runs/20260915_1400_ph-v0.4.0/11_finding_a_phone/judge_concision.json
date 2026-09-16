@@ -1,0 +1,554 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "11_finding_a_phone",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Top-level thesis, first occurrence, framing not stated elsewhere."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header summarizing C003-C008, adds no new information."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specific first-phone fact with brand and durability detail."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Droid purchase and central role, distinct event."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Droid market-first claim, new historical detail."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Feature exploration and early smartwatch, new content."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Disillusion causes, distinct from retreat claim."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete dial-pad switch, unique action."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Section header restating C010-C016, no information beyond children."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "List of tested form factors, new specificity."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Feeling phones not built for him, distinct from C027 angle."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Filler transition restating theme 2 functionality-over-flashiness, no new fact."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concrete priority list, new specifics."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Negated preferences, never trivia."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Apple/Google offline-limitation claim, distinct causal fact."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Mountain offline use case, concrete scenario."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Section header restating C018-C023, redundant summary."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Ulefone positioning as small rugged maker, new."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Durability and port features, distinct content."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "One week battery figure, numeric never trivia."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "One tenth price figure, numeric never trivia."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Abuse-survival evidence, distinct experience."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "3.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lake-dive survival episode, distinct evidence."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Section header restating C025-C029, no new information."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Tools-not-status-symbols stance, distinct argument."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Personal fit and respect wants, distinct phrasing."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Named big players and profit motive, adds specifics."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Gap-filling conclusion, distinct at this level."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Takeaway recommendation, not a restatement."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Closing recap of same journey and anti-gimmick thesis, no new point."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Section header restating C032 and C036, redundant."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Sub-header restating C033-C035, redundant."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "5.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pixel order specifics, distinct event."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "5.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lock-in anxiety reasoning, distinct content."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "5.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Cancellation and return to market, distinct outcome."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Section header restating C037-C046, no new information."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "5.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "O1 query and criteria list, new specifics."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "5.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Wrong-specs observation, distinct finding."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "5.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "GSMArena comparison problem and scrape request, new."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "5.2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Scraper mechanics, technical specifics not repeated."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "5.2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Eighteen URLs and CSV output, numeric never trivia."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "5.2.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Wish for existing tool, distinct motivation."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "5.2.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Claude cleaning attempt and failure mode, new."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "5.2.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Unchecked caveat, caveat never trivia."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "5.2.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Extracted column list, distinct specification."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "5.2.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Parser comparison and next steps, new technical detail."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Section header restating C048 and C053, redundant."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Sub-header restating C049-C052, no new information."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "6.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Table rows, year range, missing prices, adds over C041."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "6.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": "null",
+      "reasoning": "Only two qualifying matches, distinct result."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "6.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Fairphone age concern and search expansion, new."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "6.1.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Edge 40 absence and SD gap, distinct gap."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Sub-header restating C054-C058, redundant."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "6.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "TCL return reasons, distinct trial result."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "6.2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Readability failure, distinct defect."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "6.2.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Color mode limits, distinct defect."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "6.2.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "G85 next and G75 unavailability, new candidate."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "6.2.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Motorola camera expectation, distinct caveat."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 58,
+    "unique": 46,
+    "duplicates": 1,
+    "trivia": 11,
+    "redundancy_rate": 0.0172,
+    "trivia_rate": 0.1897,
+    "structured_tokens": 971,
+    "tokens_per_unique_claim": 21.11
+  },
+  "prune_list": [
+    "C002 restated header of C003-C008, safe to merge",
+    "C009 restated header of C010-C016, safe to merge",
+    "C012 filler transition restating theme 2, safe to drop",
+    "C017 restated header of C018-C023, safe to merge",
+    "C024 restated header of C025-C029, safe to merge",
+    "C030 duplicates C001, safe to merge",
+    "C031 restated header of C032/C036, safe to merge",
+    "C032 restated header of C033-C035, safe to merge",
+    "C036 restated header of C037-C046, safe to merge",
+    "C047 restated header of C048/C053, safe to merge",
+    "C048 restated header of C049-C052, safe to merge",
+    "C053 restated header of C054-C058, safe to merge"
+  ]
+}

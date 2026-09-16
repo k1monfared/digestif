@@ -1,0 +1,755 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "02_case_for_transparent_government",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Thesis summary; later nodes elaborate rather than merely repeat it."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical corporate-secrecy analogy for point 1."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Taxpayer-stake nuance adds who bears consequences."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Core recommendation of full public decision chain."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Enumerates chain elements, adding specifics beyond summary."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Framing that board accountability is normal, opacity is anomaly."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Principal-agent framing distinct from summary."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical reviewability-over-reading point."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C002",
+      "reasoning": "Repeats corporate-secrecy-would-fail analogy across branches."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C008",
+      "reasoning": "Restates availability matters, not consumption."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Directional definition of transparency is distinct."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Aggregate fiscal example supplies new concrete support."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Technical nuance on anonymization and differential privacy."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Section thesis that existing working pieces prove feasibility."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sweden 1766 dated precedent carries irreplaceable information."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "5.1.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, restates parent fact with low argument value."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "5.1.2"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Citation index restating the Nordic comparison, little new content."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "5.1.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Anti-corruption motive behind Chydenius is new."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Seoul OPEN example with dates and numbers is substantive."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "5.2.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, repeats OPEN fact without new argument."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "5.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Estonia X-Road example remains visible despite partial support."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "5.3.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, low value beyond parent X-Road claim."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Brazil portal numbers and pension finding are distinct."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "5.4.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, restates parent Brazil facts."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "5.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New Zealand 30-day default is a dated, distinct precedent."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "5.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "vTaiwan figures add a distinct participation case."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "5.6.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, low value beyond parent vTaiwan claim."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "5.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "General lesson that citizen tools expose fraud."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Pattern claim about secret programs and failed oversight."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Named cases supply evidence for the secrecy pattern."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Prediction-versus-outcome contrast is distinct."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "6.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Court ruling and reviewer finding carry new specifics."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "6.3.1"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, repeats bulk-collection outcome."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "6.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Overseer-capture causal point visible despite partial support."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "6.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lists concrete reforms disclosure produced."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "6.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concession on uncertain harm is distinct from illegality."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "6.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Leaks-as-symptom framing is a separate interpretation."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "7"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Section intro framing, a restated header with no argument."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Privacy objection is a needed counterpoint."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "7.1.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Polls fear citizen-data exposure, adding survey finding."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "7.1.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Contradicted in Judge F, out of concision scope, excluded from metrics."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Paralysis objection is a distinct counterpoint."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "7.2.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Documentation-is-not-slower rebuttal adds new argument."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "7.2.2"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, low value beyond parent deliberation point."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "7.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Diplomacy objection remains visible despite partial support."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "7.3.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical temporary-secrecy-then-publish recommendation."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "7.3.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Critique of others-wont-deal rationale is distinct."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "7.3.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, restates backchannel dilemma."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "7.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Lobbyist-capture objection is a distinct counterpoint."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "7.4.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Harden and Kirkland evidence adds organized-interest finding."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "7.4.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Citizen-capacity recommendation is actionable and new."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "7.4.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, low value beyond lobbyist argument."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "7.5"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Harassment objection is a distinct counterpoint."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "7.5.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Survey numbers are load-bearing and never trivia."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "7.5.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Publish-decisions-protect-data rebuttal adds causal claim."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "7.5.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, repeats threat and protection facts."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "7.5.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "AI scraping escalation and 22-state figure are new."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "7.6"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "National-security objection is a distinct counterpoint."
+    },
+    {
+      "claim_id": "C059",
+      "loglog_ids": [
+        "7.6.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Burden-flip argument distinct from temporary-secrecy rule."
+    },
+    {
+      "claim_id": "C060",
+      "loglog_ids": [
+        "7.6.2"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C046",
+      "reasoning": "Repeats temporary-secrecy-then-publish recommendation in security branch."
+    },
+    {
+      "claim_id": "C061",
+      "loglog_ids": [
+        "7.6.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, restates overclassification point."
+    },
+    {
+      "claim_id": "C062",
+      "loglog_ids": [
+        "7.7"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Populist-weaponization objection is distinct."
+    },
+    {
+      "claim_id": "C063",
+      "loglog_ids": [
+        "7.7.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Populists-reduce-transparency causal claim is new."
+    },
+    {
+      "claim_id": "C064",
+      "loglog_ids": [
+        "7.7.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Long-term-reasoning protection is a distinct nuance."
+    },
+    {
+      "claim_id": "C065",
+      "loglog_ids": [
+        "7.7.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, low value beyond populism claim."
+    },
+    {
+      "claim_id": "C066",
+      "loglog_ids": [
+        "7.8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Misinformation objection is a distinct counterpoint."
+    },
+    {
+      "claim_id": "C067",
+      "loglog_ids": [
+        "7.8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "False-belief-versus-verifiability rebuttal is new."
+    },
+    {
+      "claim_id": "C068",
+      "loglog_ids": [
+        "7.8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Available-but-unread records nuance adds argument."
+    },
+    {
+      "claim_id": "C069",
+      "loglog_ids": [
+        "7.8.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, restates perceived-opacity finding."
+    },
+    {
+      "claim_id": "C070",
+      "loglog_ids": [
+        "7.9"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Market front-running objection is distinct."
+    },
+    {
+      "claim_id": "C071",
+      "loglog_ids": [
+        "7.9.1"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C046",
+      "reasoning": "Repeats delay-then-publish recommendation in markets branch."
+    },
+    {
+      "claim_id": "C072",
+      "loglog_ids": [
+        "7.10"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Those-in-power objection is a distinct counterpoint."
+    },
+    {
+      "claim_id": "C073",
+      "loglog_ids": [
+        "7.10.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Iceland and OGP resistance evidence is distinct."
+    },
+    {
+      "claim_id": "C074",
+      "loglog_ids": [
+        "7.10.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Design-over-permission recommendation is actionable."
+    },
+    {
+      "claim_id": "C075",
+      "loglog_ids": [
+        "7.10.3"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Source list only, low value beyond resistance claim."
+    },
+    {
+      "claim_id": "C076",
+      "loglog_ids": [
+        "7.11"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Status note requesting feedback, procedural not argumentative."
+    },
+    {
+      "claim_id": "C077",
+      "loglog_ids": [
+        "8"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Measuring-stick conclusion is a distinct framing."
+    },
+    {
+      "claim_id": "C078",
+      "loglog_ids": [
+        "8.1"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Document-and-publish action is distinct from conclusion."
+    },
+    {
+      "claim_id": "C079",
+      "loglog_ids": [
+        "8.2"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Claim that transparency forces speed and accountability is new."
+    },
+    {
+      "claim_id": "C080",
+      "loglog_ids": [
+        "8.3"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Linux example supplies separate evidence."
+    },
+    {
+      "claim_id": "C081",
+      "loglog_ids": [
+        "8.4"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "No-fork coercion argument is distinct."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 81,
+    "unique": 60,
+    "duplicates": 4,
+    "trivia": 17,
+    "redundancy_rate": 0.0494,
+    "trivia_rate": 0.2099,
+    "structured_tokens": 1412,
+    "tokens_per_unique_claim": 23.93
+  },
+  "prune_list": [
+    "C009 duplicates C002, corporate-secrecy analogy repeats across branches, safe to merge",
+    "C010 duplicates C008, availability-over-consumption restated, safe to merge",
+    "C060 duplicates C046, temporary-secrecy rule repeats in security branch, safe to merge",
+    "C071 duplicates C046, delay-then-publish repeats in markets branch, safe to merge",
+    "C016, C017, C020, C022, C024, C027, C033, C044, C048, C052, C056, C061, C065, C069, C075 are source-list evidence nodes foldable into parents",
+    "C038 section-intro framing and C076 status note are non-argumentative, fold or drop"
+  ]
+}

@@ -1,0 +1,390 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "03_cant_stop_addicted_to_shindig",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Simulations of 38 strategies across 14 families (3.6 million games) show probabilistic play winning and consistency beating speed.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I tested 38 strategies across 14 different strategic families (¶48); 3.6 million total games (¶47); Probabilistic strategies dominate (¶77); consistency beats raw speed (¶70)",
+   "reasoning": "SOURCE states all three components: 38 strategies, 14 families, 3.6M games, probabilistic dominance, consistency over speed."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Single-player, GreedyUntil1Col is fastest at 10.5 turns but has sigma = 5.73 and 7.50 busts per game.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "GreedyUntil1Col is fastest (10.5 turns) but has high variance (σ=5.73) and bust rate (7.5 per game) (¶54); table 7.50 (¶53)",
+   "reasoning": "All figures 10.5, 5.73, 7.50 match SOURCE table and key insights."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "FiftyPercentSurvival is second at 11.3 turns with sigma = 2.86 and only 2.67 busts per game.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "FiftyPercentSurvival balances speed with remarkable consistency (σ=2.86, only 2.67 busts) (¶54); rank 2, 11.3 (¶53)",
+   "reasoning": "Rank 2, 11.3 turns, σ=2.86, 2.67 busts all match SOURCE."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Head-to-head, FiftyPercentSurvival wins 69.84% (132,696/190,000), then Heuristic(1.5) 66.46% and Heuristic(2.0) 63.26%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "FiftyPercentSurvival 69.84% 132,696/190,000; Heuristic(1.5) 66.46%; Heuristic(2.0) 63.26% (¶57)",
+   "reasoning": "All percentages and counts match the head-to-head table."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "The champion rolls until cumulative survival probability drops below 50%, with n = log(0.5)/log(P_success).",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Roll until cumulative survival probability drops below 50%, calculated as n = log(0.5) / log(P_success) (¶60)",
+   "reasoning": "Direct restatement of SOURCE strategy definition with identical formula."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "It wins through sound probability math, balanced risk, speed and consistency (sigma = 2.86), and only +9.42% position bias.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Mathematically sound... Optimal risk tolerance... Low variance, σ of 2.86... Moderate position bias - +9.42% (¶61)",
+   "reasoning": "All five listed reasons match SOURCE points, including σ=2.86 and +9.42%."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "Its favorite columns are middle ones: most completed 8 (42.0%), 7 (38.4%), 6 (37.7%).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Most completed: Column 8 (42.0%), Column 7 (38.4%), Column 6 (37.7%) (¶62)",
+   "reasoning": "Percentages and column ordering match SOURCE exactly."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "Key matchups: 55.22% vs GreedyUntil1Col, 54.38% vs Heuristic(1.5), 63.09% vs MonteCarloLookahead, 50.00% in self-play.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "vs GreedyUntil1Col: 55.22%; vs Heuristic(1.5): 54.38%; vs MonteCarloLookahead: 63.09%; vs itself: 50.00% (¶63)",
+   "reasoning": "All four matchup percentages match SOURCE exactly."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "6.8"
+   ],
+   "claim_text": "GreedyUntil1Col finishes in 10.5 turns but wins only 58.90%, while FiftyPercentSurvival takes 0.8 turns longer and wins 10.9% more.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "only achieves 58.90% competitive win rate (¶68); takes 0.8 turns longer but wins 10.9% more games (¶69)",
+   "reasoning": "58.90%, 0.8 turns, and 10.9% all match SOURCE."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "6.8.1"
+   ],
+   "claim_text": "The fastest strategy is not the best competitive strategy.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the fastest strategy is not the best competitive strategy (¶66)",
+   "reasoning": "Verbatim match to SOURCE."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "6.9"
+   ],
+   "claim_text": "Core families: Greedy and Random (30% stop), Conservative(k) with k in {1,2,3,4}, Heuristic(alpha) with alpha in {0.3,0.5,1.0,1.5,2.0}, and OpponentAware variants.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Greedy (always rolls) and Random (30% stop probability); Conservative(k) k ∈ {1,2,3,4}; Heuristic(α) α ∈ {0.3,0.5,1.0,1.5,2.0}; OpponentAware... four variants (¶49)",
+   "reasoning": "Family names and parameter sets match SOURCE exactly."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "6.10"
+   ],
+   "claim_text": "Other core types: Greedy-Improved, Adaptive, Proportional, progressive milestones, probabilistic, and column-count strategies.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "5. Greedy-Improved... 6. Adaptive... 7. Proportional... 8. Progressive Milestones... 9. Probabilistic... 10. Column-Count (¶50)",
+   "reasoning": "All six listed family names match SOURCE groups 5-10."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "6.11"
+   ],
+   "claim_text": "Newer groups 11-14 cover outside/middle preference, runner-aware, column-quality, and hybrid/advanced strategies.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "New Strategy Types (Groups 11-14): 11. Outside/Middle Preference... 12. Runner-Aware... 13. Column-Quality... 14. Hybrid/Advanced (¶51)",
+   "reasoning": "Groups 11-14 labels match SOURCE exactly."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "6.12"
+   ],
+   "claim_text": "RiskBudget caps cumulative bust risk at 20% per turn; MonteCarloLookahead simulates 100 future rolls.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "RiskBudget (20% cumulative bust limit per turn), and MonteCarloLookahead (simulates 100 future rolls (¶51)",
+   "reasoning": "20% cap and 100 rolls match SOURCE definitions."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "6.13"
+   ],
+   "claim_text": "The top 15 all finish in 10.5 to 12.8 turns; conservative strategies like Heuristic(2.0) average under 1 bust per game.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Conservative strategies like Heuristic(2.0) and MonteCarloLookahead average <1 bust per game; The top 15 all complete games in 10.5-12.8 turns (¶54)",
+   "reasoning": "Range 10.5-12.8 and <1 bust statement match SOURCE."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6.14"
+   ],
+   "claim_text": "A full head-to-head win-rate matrix and a downloadable CSV accompany the rankings.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Here's the complete head-to-head win-rate matrix... [Download full CSV] (¶64)",
+   "reasoning": "SOURCE provides the matrix and a CSV download link."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.15"
+   ],
+   "claim_text": "Probabilistic strategies dominate: the top 7 all use probability calculations, and pure Greedy lost essentially every game.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The top 7 strategies ALL use mathematical probability calculations... The pure Greedy strategy (never stop voluntarily) lost essentially every game (¶77)",
+   "reasoning": "Both statements match SOURCE verbatim."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6.16"
+   ],
+   "claim_text": "MonteCarloLookahead, simulating 100 future rolls, only places 4th at 63.09%, so simpler rules are near-optimal.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Despite simulating 100 future rolls per decision... MonteCarloLookahead only places 4th (63.09%)... suggesting we've found near-optimal play (¶78)",
+   "reasoning": "100 rolls, 4th place, 63.09%, and near-optimal inference all match SOURCE."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.17"
+   ],
+   "claim_text": "Opponent-aware variants all underperformed simple thresholds because they only looked at completed columns, not partial progress.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "All three performed worse than simple threshold strategies. The problem? They only looked at completed columns, not partial progress (¶78)",
+   "reasoning": "The underperformance and stated reason match SOURCE exactly."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.18"
+   ],
+   "claim_text": "For players: use FiftyPercentSurvival, aim for columns 5-9, avoid forced activation of 2-3 and 11-12, and prioritize consistency.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Use the FiftyPercentSurvival strategy... Aim for columns 5-9, avoid forcing activation of columns 2-3 and 11-12, and prioritize consistency (¶100)",
+   "reasoning": "Recommendation matches SOURCE player advice verbatim."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "6.19"
+   ],
+   "claim_text": "For probability nerds: near-optimal play sits near 70% win rate; breaking the 75% barrier remains an open question.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "we've found near-optimal play at ~70% win rate. The question is whether any strategy can break the 75% barrier (¶101)",
+   "reasoning": "~70% and the 75% barrier question match SOURCE."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "6.20"
+   ],
+   "claim_text": "The conclusion restates this: probabilistic strategies dominate, with FiftyPercentSurvival's 69.84% win rate beating even Monte Carlo 'perfect play'.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Probabilistic strategies dominate - The champion strategy (FiftyPercentSurvival, 69.84% win rate)... beating even \"perfect play\" Monte Carlo simulation (¶97)",
+   "reasoning": "Conclusion point 3 matches SOURCE exactly."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "6.21"
+   ],
+   "claim_text": "The conclusion restates this: consistency beats speed, since finishing in 11 turns reliably outperforms averaging 10.5 with high variance.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Consistency beats speed - Finishing in 11 turns reliably outperforms averaging 10.5 turns with high variance (¶97)",
+   "reasoning": "Conclusion point 4 matches SOURCE verbatim."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Simulations revealed a significant first-player advantage: Player 1 wins 55.59%, +11.18%, larger than chess (~5%) or Go (~7%).",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Player 1 win rate: 55.59%... First-player advantage: +11.18% (¶71); larger than chess (~5%) or Go (~7%) (¶72)",
+   "reasoning": "All figures 55.59%, +11.18%, ~5%, ~7% match SOURCE."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "Going first likely helps via first access to middle columns 6-8, setting the pace, and initiative in column selection.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "likely due to: 1. First access to middle columns (6-8) 2. Setting the pace... 3. Initiative in column selection (¶72)",
+   "reasoning": "All three proposed reasons match SOURCE and retain the hedge likely."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "GreedyUntil1Col (+31.24%) and GreedyFraction(0.5) (+31.00%) show severe position bias; OpponentAware(0.3,1,2) is high at +18.94%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "GreedyUntil1Col +31.24% SEVERE bias; GreedyFraction(0.5) +31.00% SEVERE bias; OpponentAware(0.3,1,2) +18.94% High bias (¶73)",
+   "reasoning": "All three percentages and bias labels match SOURCE table."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Fairest: OpponentAware(2,1,0.3) at -4.14% favors P2, Greedy -0.03%, Heuristic(0.3) +0.65%, Heuristic(0.5) +3.30%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "OpponentAware(2,1,0.3) -4.14%; Greedy -0.03%; Heuristic(0.3) +0.65%; Heuristic(0.5) +3.30% (¶74)",
+   "reasoning": "All four values and the P2 interpretation match SOURCE table."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "High position bias may overrate strategies like GreedyUntil1Col in aggregate statistics.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Strategies with high position bias (like GreedyUntil1Col) may be overrated in aggregate statistics (¶75)",
+   "reasoning": "Verbatim match, including the hedge may."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "The 'opposite' OpponentAware, conservative when behind, performs better as Player 2, suggesting catching up rewards patience.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The \"opposite\" OpponentAware strategy (conservative when behind, aggressive when ahead) actually performs better as Player 2, suggesting that catching up rewards patience (¶75)",
+   "reasoning": "Matches SOURCE description and stated suggestion exactly."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "claim_text": "GreedyUntil1Col wins 73% as P1 but only 42% as P2, with sigma = 5.73 and 7.5 busts per game.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "High variance (σ=5.73)... Extreme bust rate (7.5 per game)... Wins 73% as P1, only 42% as P2 (¶68)",
+   "reasoning": "All figures 73%, 42%, 5.73, 7.5 match SOURCE."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "7.7"
+   ],
+   "claim_text": "The conclusion restates this: the first-player advantage is significant, Player 1 winning 55.59% (+11.18%), larger than chess or Go.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "First-player advantage is significant - Player 1 wins 55.59% of games (+11.18% advantage), larger than chess or Go (¶98)",
+   "reasoning": "Conclusion point 5 matches SOURCE exactly."
+  }
+ ],
+ "metrics": {
+  "total_claims": 31,
+  "supported": 31,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

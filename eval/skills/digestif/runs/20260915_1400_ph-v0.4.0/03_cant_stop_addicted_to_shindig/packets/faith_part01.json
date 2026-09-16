@@ -1,0 +1,411 @@
+{
+ "sample": "03_cant_stop_addicted_to_shindig",
+ "part": 1,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Can't Stop's four-dice probabilities and forced-move rule make it nearly balanced, and simulations show probabilistic, consistent play wins, though going first is a large advantage.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "I recently got introduced to this game called [Can't Stop](https://boardgamegeek.com/boardgame/41/cant-stop) and it got me thinking about probabilities. You know how it is - you start playing a dice game and suddenly you're knee-deep in combinatorics at 2am.\n\n![Can't Stop Board And Dice](files/20251201/cant-stop.png)"
+    },
+    {
+     "ref": "¶2",
+     "text": "The game is deceptively simple but mathematically rich. In this post, I'll take you through:\n- The probability foundations (2-dice vs 4-dice)\n- Which columns to choose and why\n- When to stop rolling (the eternal question!)\n- Whether to continue your current columns or switch to new ones\n- How different strategies perform head-to-head\n- Whether the game designers nailed the balance"
+    },
+    {
+     "ref": "¶95",
+     "text": "## Conclusion\n\nCan't Stop is a masterclass in practical game design. The mathematics reveal that:"
+    },
+    {
+     "ref": "¶96",
+     "text": "1. **Four-dice probabilities flatten the distribution** - P(7) = 64.4% vs P(2) = 13.2%, only a 4.88× difference compared to 6× with two dice\n\n2. **Column combinations matter more than individual columns** - {6,7,8} has 92% success rate, {2,3,12} has 44%"
+    },
+    {
+     "ref": "¶98",
+     "text": "5. **First-player advantage is significant** - Player 1 wins 55.59% of games (+11.18% advantage), larger than chess or Go. Some strategies amplify this (GreedyUntil1Col: +31.24%), while others minimize it (FiftyPercentSurvival: +9.42%)\n\n6. **The forced-move rule is brilliant** - It compensates for mathematical imbalances by forcing contamination of good column combinations"
+    },
+    {
+     "ref": "¶100",
+     "text": "**For players:** Use the FiftyPercentSurvival strategy - roll until cumulative survival probability drops below 50%. Aim for columns 5-9, avoid forcing activation of columns 2-3 and 11-12, and prioritize consistency over aggressive play.\n\n**For game designers:** Prioritize playability over mathematical perfection, then use rules to compensate for inevitable imbalances. Be aware that turn order can create significant advantages - consider handicap systems for competitive play."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Can't Stop has players roll four dice, pair them into sums, and advance markers on columns 2 through 12, needing three completed columns to win.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Let's dive in.\n\n## The Game\n\nThe rules are straightforward: roll four dice, pair them up however you want, move your markers on a board. The catch? You can keep rolling as long as you want, but if you can't move any of your three active markers, you lose everything you've gained that turn. Classic push-your-luck. [Here](https://www.youtube.com/watch?v=L6Zk7j1mJDE) is a brief explanation of how the game is played."
+    },
+    {
+     "ref": "¶4",
+     "text": "The board has columns numbered 2 through 12, with different lengths:\n- Columns 2 and 12: 3 steps\n- Columns 3 and 11: 5 steps\n- Columns 4 and 10: 7 steps\n- Columns 5 and 9: 9 steps\n- Columns 6 and 8: 11 steps\n- Column 7: 13 steps"
+    },
+    {
+     "ref": "¶5",
+     "text": "You need to complete three columns to win.\n\nI've implemented a fully interactive web version of the game with a Python/FastAPI backend and React frontend. You can [play it online](https://cantstop-frontend.onrender.com/) and check out the\n  [source code](https://github.com/k1monfared/cantstop-game)."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You can keep rolling as long as you want, but busting when no marker can move loses the turn's gains.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Let's dive in.\n\n## The Game\n\nThe rules are straightforward: roll four dice, pair them up however you want, move your markers on a board. The catch? You can keep rolling as long as you want, but if you can't move any of your three active markers, you lose everything you've gained that turn. Classic push-your-luck. [Here](https://www.youtube.com/watch?v=L6Zk7j1mJDE) is a brief explanation of how the game is played."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Column lengths run 3, 5, 7, 9, 11, 13, 11, 9, 7, 5, and 3 steps for columns 2 through 12.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The board has columns numbered 2 through 12, with different lengths:\n- Columns 2 and 12: 3 steps\n- Columns 3 and 11: 5 steps\n- Columns 4 and 10: 7 steps\n- Columns 5 and 9: 9 steps\n- Columns 6 and 8: 11 steps\n- Column 7: 13 steps"
+    }
+   ]
+  },
+  {
+   "id": "1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The forced-move rule requires taking all legal moves from a chosen pairing, even unwanted ones.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "**The Forced-Move Rule (Important!)**\n\nHere's a critical rule that shapes the entire strategy: **you must take all available moves**. If you roll the dice and choose a pairing that creates any valid move, you must make ALL legal moves from that pairing, even if you don't want them.\n\nFor example, if you're working on columns {6, 7, 8} and you roll (1,1,3,4), you could choose pairing (1,1)+(3,4) = 2+7. But if you do, you're forced to take BOTH the 2 and the 7, even though column 2 isn't in your plan. You can't just cherry-pick the 7.\n\nThis rule prevents the game from being trivially easy and adds tactical depth."
+    }
+   ]
+  },
+  {
+   "id": "1.4",
+   "type": "example",
+   "attribution": "author",
+   "text": "On {6,7,8}, rolling (1,1,3,4) and pairing 2+7 forces moving both 2 and 7 as well.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "**The Forced-Move Rule (Important!)**\n\nHere's a critical rule that shapes the entire strategy: **you must take all available moves**. If you roll the dice and choose a pairing that creates any valid move, you must make ALL legal moves from that pairing, even if you don't want them.\n\nFor example, if you're working on columns {6, 7, 8} and you roll (1,1,3,4), you could choose pairing (1,1)+(3,4) = 2+7. But if you do, you're forced to take BOTH the 2 and the 7, even though column 2 isn't in your plan. You can't just cherry-pick the 7.\n\nThis rule prevents the game from being trivially easy and adds tactical depth."
+    }
+   ]
+  },
+  {
+   "id": "1.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The forced-move rule prevents trivial play and adds tactical depth.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "**The Forced-Move Rule (Important!)**\n\nHere's a critical rule that shapes the entire strategy: **you must take all available moves**. If you roll the dice and choose a pairing that creates any valid move, you must make ALL legal moves from that pairing, even if you don't want them.\n\nFor example, if you're working on columns {6, 7, 8} and you roll (1,1,3,4), you could choose pairing (1,1)+(3,4) = 2+7. But if you do, you're forced to take BOTH the 2 and the 7, even though column 2 isn't in your plan. You can't just cherry-pick the 7.\n\nThis rule prevents the game from being trivially easy and adds tactical depth."
+    }
+   ]
+  },
+  {
+   "id": "1.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "An interactive web version exists with a Python/FastAPI backend and React frontend.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "You need to complete three columns to win.\n\nI've implemented a fully interactive web version of the game with a Python/FastAPI backend and React frontend. You can [play it online](https://cantstop-frontend.onrender.com/) and check out the\n  [source code](https://github.com/k1monfared/cantstop-game)."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Four dice flatten the distribution: P(7) rises to 64.4% and P(2) to 13.2%, far closer together than with two dice.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "## Probability Foundations\n\n### Two Dice: The Baseline\n\nYou probably know this one already, but let's start here for comparison. With two dice, how likely are you to roll each sum?"
+    },
+    {
+     "ref": "¶15",
+     "text": "13.2%! That's way higher than the 2.78% we had with two dice.\n\n#### Computing P(can make a 7)\n\nTo make a 7, I need one of these pairs: (1,6), (2,5), or (3,4). The intuition: I want to count rolls with at least one of these complementary pairs, but I need to be careful not to double-count rolls that contain multiple pairs. I'll use inclusion-exclusion."
+    },
+    {
+     "ref": "¶21",
+     "text": "With two dice, P(7) was 16.67%. With four dice, it jumped to 64.4%. And P(2) went from 2.78% to 13.2%.\n\nDid the distribution get flatter?"
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "With two dice, sum 7 is most likely at 16.67% and exactly 6× more likely than sum 2 at 2.78%.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "| Sum | Ways to make it | Probability | Percentage |\n|----:|:---------------|------------:|-----------:|\n| 2 | (1,1) | 1/36 | 2.78% |\n| 3 | (1,2), (2,1) | 2/36 | 5.56% |\n| 4 | (1,3), (2,2), (3,1) | 3/36 | 8.33% |\n| 5 | (1,4), (2,3), (3,2), (4,1) | 4/36 | 11.11% |\n| 6 | (1,5), (2,4), (3,3), (4,2), (5,1) | 5/36 | 13.89% |\n| 7 | (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) | 6/36 | 16.67% |\n| 8 | (2,6), (3,5), (4,4), (5,3), (6,2) | 5/36 | 13.89% |\n| 9 | (3,6), (4,5), (5,4), (6,3) | 4/36 | 11.11% |\n| 10 | (4,6), (5,5), (6,4) | 3/36 | 8.33% |\n| 11 | (5,6), (6,5) | 2/36 | 5.56% |\n| 12 | (6,6) | 1/36 | 2.78% |"
+    },
+    {
+     "ref": "¶9",
+     "text": "![Two Dice Distribution](files/20251201/two_dice_distribution.png)\n\nSum 7 is the most likely at 16.67%, and it's exactly 6× more likely than sum 2 at 2.78%.\n\n**Quick proof:** For sum 2, there's only one way: both dice must show 1. That's $\\frac{1}{6} \\times \\frac{1}{6} = \\frac{1}{36}$. For sum 7, you need complementary pairs: (1,6), (2,5), or (3,4), and order matters, so that's 6 ways total out of 36 possible outcomes."
+    }
+   ]
+  },
+  {
+   "id": "2.1.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Sum 2 requires both dice showing 1 (1/36); sum 7 has 6 order-sensitive ways: (1,6), (2,5), (3,4).",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "![Two Dice Distribution](files/20251201/two_dice_distribution.png)\n\nSum 7 is the most likely at 16.67%, and it's exactly 6× more likely than sum 2 at 2.78%.\n\n**Quick proof:** For sum 2, there's only one way: both dice must show 1. That's $\\frac{1}{6} \\times \\frac{1}{6} = \\frac{1}{36}$. For sum 7, you need complementary pairs: (1,6), (2,5), or (3,4), and order matters, so that's 6 ways total out of 36 possible outcomes."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "If Can't Stop used two dice, column 7 would need to be 6× longer than column 2, but it is only 13/3 ≈ 4.3×.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Now if Can't Stop used two dice, column 7 would need to be 6× longer than column 2 to be equally hard. Instead it's only $\\frac{13}{3} \\approx 4.3\\times$ longer. So something interesting must be happening with four dice."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Rolling 2, 3, 4, 5 gives just three pairings: 5 and 9, 6 and 8, or 7 and 7.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "### Four Dice: This Is Where It Gets Interesting\n\nIn Can't Stop, you roll FOUR dice and then pair them up. Say you roll 2, 3, 4, 5. You can make:\n- (2,3)+(4,5) = 5 and 9\n- (2,4)+(3,5) = 6 and 8\n- (2,5)+(3,4) = 7 and 7\n\nThat's it, just three possible pairings. The question is: if I'm trying to hit column 7, what's the probability that at least one of those pairings gives me a 7?\n\nLet me work this out properly."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Four dice give P(can make a 2) = 171/1296 ≈ 13.2%, requiring at least two 1s among the four.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "#### Computing P(can make a 2)\n\nTo make a 2, I need a pair that sums to 2, which means two 1's. So I need at least two 1's among my four dice."
+    },
+    {
+     "ref": "¶13",
+     "text": "**Probability of NOT getting enough 1's:**\n\n- $P(\\text{zero 1's}) = \\left(\\frac{5}{6}\\right)^4 = \\frac{625}{1296}$\n\n- $P(\\text{exactly one 1}) = \\binom{4}{1} \\times \\left(\\frac{1}{6}\\right)^1 \\times \\left(\\frac{5}{6}\\right)^3 = 4 \\times \\frac{1}{6} \\times \\frac{125}{216} = \\frac{500}{1296}$"
+    },
+    {
+     "ref": "¶14",
+     "text": "**Therefore:**\n\n$$P(\\text{can make a 2}) = 1 - \\frac{625}{1296} - \\frac{500}{1296} = \\frac{171}{1296} \\approx 13.2\\%$$"
+    }
+   ]
+  },
+  {
+   "id": "2.4.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "P(zero 1s) = 625/1296 and P(exactly one 1) = 500/1296, so P(can make 2) = 1 - 625/1296 - 500/1296.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "**Probability of NOT getting enough 1's:**\n\n- $P(\\text{zero 1's}) = \\left(\\frac{5}{6}\\right)^4 = \\frac{625}{1296}$\n\n- $P(\\text{exactly one 1}) = \\binom{4}{1} \\times \\left(\\frac{1}{6}\\right)^1 \\times \\left(\\frac{5}{6}\\right)^3 = 4 \\times \\frac{1}{6} \\times \\frac{125}{216} = \\frac{500}{1296}$"
+    },
+    {
+     "ref": "¶14",
+     "text": "**Therefore:**\n\n$$P(\\text{can make a 2}) = 1 - \\frac{625}{1296} - \\frac{500}{1296} = \\frac{171}{1296} \\approx 13.2\\%$$"
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Four dice give P(can make a 7) = 834/1296 ≈ 64.4%, via inclusion-exclusion over pairs (1,6), (2,5), (3,4).",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "13.2%! That's way higher than the 2.78% we had with two dice.\n\n#### Computing P(can make a 7)\n\nTo make a 7, I need one of these pairs: (1,6), (2,5), or (3,4). The intuition: I want to count rolls with at least one of these complementary pairs, but I need to be careful not to double-count rolls that contain multiple pairs. I'll use inclusion-exclusion."
+    },
+    {
+     "ref": "¶16",
+     "text": "Let A = \"I can make pair (1,6)\" = \"I have at least one 1 AND at least one 6\"\nLet B = \"I can make pair (2,5)\" = \"I have at least one 2 AND at least one 5\"\nLet C = \"I can make pair (3,4)\" = \"I have at least one 3 AND at least one 4\""
+    },
+    {
+     "ref": "¶20",
+     "text": "**Final answer:**\n\n$$P(\\text{can make a 7}) = P(A \\cup B \\cup C) = 302 + 302 + 302 - 24 - 24 - 24 + 0 = \\frac{834}{1296} \\approx 64.4\\%$$"
+    }
+   ]
+  },
+  {
+   "id": "2.5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Each pair event has probability 302/1296, each pairwise overlap 24/1296, and the triple overlap is 0.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "**First, P(A) - having both a 1 and a 6:**\n\n$$P(A) = 1 - P(\\text{no 1's}) - P(\\text{no 6's}) + P(\\text{no 1's AND no 6's})$$\n$$= 1 - \\left(\\frac{5}{6}\\right)^4 - \\left(\\frac{5}{6}\\right)^4 + \\left(\\frac{4}{6}\\right)^4$$\n$$= \\frac{1296 - 625 - 625 + 256}{1296} = \\frac{302}{1296}$$"
+    },
+    {
+     "ref": "¶18",
+     "text": "By the same logic, $P(B) = \\frac{302}{1296}$ and $P(C) = \\frac{302}{1296}$.\n\n**Next, the overlaps:**"
+    },
+    {
+     "ref": "¶19",
+     "text": "$P(A \\cap B) = P(\\text{have 1, 6, 2, 5})$ = $\\frac{24}{1296}$ (all four distinct values among four dice)\n\nSimilarly, $P(A \\cap C) = \\frac{24}{1296}$ and $P(B \\cap C) = \\frac{24}{1296}$.\n\n$P(A \\cap B \\cap C) = 0$ because you'd need 6 specific dice values with only 4 dice."
+    }
+   ]
+  },
+  {
+   "id": "2.5.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Final sum: 302 + 302 + 302 - 24 - 24 - 24 + 0 = 834/1296 ≈ 64.4%.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "**Final answer:**\n\n$$P(\\text{can make a 7}) = P(A \\cup B \\cup C) = 302 + 302 + 302 - 24 - 24 - 24 + 0 = \\frac{834}{1296} \\approx 64.4\\%$$"
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The full four-dice table shows at-least-one-pair counts from 171 (13.2%) for sum 2 up to 834 (64.4%) for sum 7.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "#### The Complete Picture\n\nLet me calculate all of them (see [probability_calculations.py](files/20251201/probability_calculations.py) for the code):"
+    },
+    {
+     "ref": "¶23",
+     "text": "| Sum | At Least One Pair | Normalized | Column Length | Normalized |\n|----:|-----------------:|-----------:|--------------:|-----------:|\n| 2 | 171 (13.2%) | 1.00 | 3 | 1.00 |\n| 3 | 302 (23.3%) | 1.77 | 5 | 1.67 |\n| 4 | 461 (35.6%) | 2.70 | 7 | 2.33 |\n| 5 | 580 (44.8%) | 3.39 | 9 | 3.00 |\n| 6 | 727 (56.1%) | 4.25 | 11 | 3.67 |\n| 7 | 834 (64.4%) | 4.88 | 13 | 4.33 |\n| 8 | 727 (56.1%) | 4.25 | 11 | 3.67 |\n| 9 | 580 (44.8%) | 3.39 | 9 | 3.00 |\n| 10 | 461 (35.6%) | 2.70 | 7 | 2.33 |\n| 11 | 302 (23.3%) | 1.77 | 5 | 1.67 |\n| 12 | 171 (13.2%) | 1.00 | 3 | 1.00 |"
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The probability ratio from column 2 to 7 is 4.88 against a length ratio of 4.33, close enough to suggest deliberate design.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "![Four Dice Distribution](files/20251201/four_dice_distribution.png)\n\nNow look at those normalized columns. The probability ratio from 2 to 7 is 4.88. The length ratio is 4.33. Pretty close! The game designers were definitely thinking about this."
+    }
+   ]
+  },
+  {
+   "id": "2.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The conclusion restates this: four-dice probabilities flatten the distribution, with P(7) = 64.4% versus P(2) = 13.2%, only a 4.88× difference.",
+   "evidence": [
+    {
+     "ref": "¶96",
+     "text": "1. **Four-dice probabilities flatten the distribution** - P(7) = 64.4% vs P(2) = 13.2%, only a 4.88× difference compared to 6× with two dice\n\n2. **Column combinations matter more than individual columns** - {6,7,8} has 92% success rate, {2,3,12} has 44%"
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Single columns are nearly balanced: expected rolls stay between 19.60 and 22.73 across all columns.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "## Column Selection Strategy\n\n### Which Column Should You Go For?\n\nOn one hand, column 2 is only 3 steps. On the other hand, you'll only hit it 13.2% of the time. Column 7 is 13 steps but you hit it 64.4% of the time."
+    },
+    {
+     "ref": "¶26",
+     "text": "**Expected number of rolls to complete column n:**\n\n$$\\mathbb{E}[\\text{rolls}] = \\frac{\\text{length}}{\\text{probability}} = \\frac{L(n)}{P(n)}$$\n\nFor column 2: $\\frac{3}{0.132} = 22.73$ rolls\nFor column 7: $\\frac{13}{0.644} = 20.18$ rolls\n\nColumn 7 is slightly faster, even though it's 4× longer. Let me check all of them:"
+    },
+    {
+     "ref": "¶27",
+     "text": "| Column | Length | P(n) | Expected Rolls |\n|-------:|-------:|-----:|---------------:|\n| 2, 12 | 3 | 13.2% | 22.73 |\n| 3, 11 | 5 | 23.3% | 21.46 |\n| 4, 10 | 7 | 35.6% | 19.67 |\n| 5, 9 | 9 | 44.8% | 20.09 |\n| 6, 8 | 11 | 56.1% | 19.60 |\n| 7 | 13 | 64.4% | 20.18 |"
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Expected rolls equal length over probability: column 2 needs 3/0.132 = 22.73 rolls; column 7 needs 13/0.644 = 20.18.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "**Expected number of rolls to complete column n:**\n\n$$\\mathbb{E}[\\text{rolls}] = \\frac{\\text{length}}{\\text{probability}} = \\frac{L(n)}{P(n)}$$\n\nFor column 2: $\\frac{3}{0.132} = 22.73$ rolls\nFor column 7: $\\frac{13}{0.644} = 20.18$ rolls\n\nColumn 7 is slightly faster, even though it's 4× longer. Let me check all of them:"
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Column 7 is slightly faster than column 2 even though it is 4× longer.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "**Expected number of rolls to complete column n:**\n\n$$\\mathbb{E}[\\text{rolls}] = \\frac{\\text{length}}{\\text{probability}} = \\frac{L(n)}{P(n)}$$\n\nFor column 2: $\\frac{3}{0.132} = 22.73$ rolls\nFor column 7: $\\frac{13}{0.644} = 20.18$ rolls\n\nColumn 7 is slightly faster, even though it's 4× longer. Let me check all of them:"
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Expected rolls by column: 22.73 (2/12), 21.46 (3/11), 19.67 (4/10), 20.09 (5/9), 19.60 (6/8), 20.18 (7).",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "| Column | Length | P(n) | Expected Rolls |\n|-------:|-------:|-----:|---------------:|\n| 2, 12 | 3 | 13.2% | 22.73 |\n| 3, 11 | 5 | 23.3% | 21.46 |\n| 4, 10 | 7 | 35.6% | 19.67 |\n| 5, 9 | 9 | 44.8% | 20.09 |\n| 6, 8 | 11 | 56.1% | 19.60 |\n| 7 | 13 | 64.4% | 20.18 |"
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Columns 2 and 12 require the most rolls; columns 6, 7, and 8 cluster near 20.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "Columns 2 and 12 require the most rolls. Columns 6, 7, and 8 are all close to each other around 20 rolls.\n\n![Expected Rolls per Column](files/20251201/expected_rolls_per_column.png)\n\n### But Wait - Three Columns at Once\n\nHere's the thing though: you don't play Can't Stop one column at a time. You have THREE active columns, and you bust if you can't hit ANY of them."
+    }
+   ]
+  },
+  {
+   "id": "3.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Column 2 is only 3 steps but hit 13.2% of the time; column 7 is 13 steps but hit 64.4% of the time.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "## Column Selection Strategy\n\n### Which Column Should You Go For?\n\nOn one hand, column 2 is only 3 steps. On the other hand, you'll only hit it 13.2% of the time. Column 7 is 13 steps but you hit it 64.4% of the time."
+    }
+   ]
+  }
+ ]
+}

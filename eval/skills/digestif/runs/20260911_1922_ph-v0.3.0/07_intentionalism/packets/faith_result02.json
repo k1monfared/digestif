@@ -1,0 +1,138 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "07_intentionalism part 2 of 2",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "Start tomorrow morning small, practice a week, then scale to big decisions.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Start with tomorrow morning... Do this for a week with small things... Then scale up. Apply it to bigger decisions.",
+   "reasoning": "SOURCE prescribes morning start, one week of small practice, then scaling to larger decisions."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "Morning: decide the first hour's want before the phone, then pursue it.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Before you check your phone, decide intentionally: what do you actually want from the first hour of your day?... Then pursue that.",
+   "reasoning": "SOURCE states decide first-hour want before phone, then pursue it."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "9.2"
+   ],
+   "claim_text": "Log small satisfactions a week, then decide work, love, and problems first.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Do this for a week with small things... Then scale up... decide what kind of work you want to do... what kind of relationship you're looking for... what problem you're trying to solve.",
+   "reasoning": "SOURCE matches week of small things then deciding work, relationship, and problem first; 'love' compresses relationship."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "9.3"
+   ],
+   "claim_text": "Muscle enables intentions, intentions values; proposers win from the other side.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The muscle enables larger intentions. Larger intentions become values... Because they're on the other side of the equation.",
+   "reasoning": "SOURCE gives the muscle-intentions-values chain and proposers ending better from the equation's other side."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "9.4"
+   ],
+   "claim_text": "Entertainment drill: three weeks of naming, seeking, and protecting intention with timers.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Week 1: Name your intention... Week 2: Seek intentionally... Week 3: Protect your intention... Set a timer.",
+   "reasoning": "SOURCE appendix gives three weeks named, seeking, then protecting intention with a timer."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "9.5"
+   ],
+   "claim_text": "Shopping drill: exact problem, 3-5 must-haves, 24-hour rule over $100.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Define the problem... List must-haves: What 3-5 features actually matter... 24-hour rule: For anything over $100, wait a day.",
+   "reasoning": "SOURCE matches problem definition, 3-5 must-haves, and $100 threshold rule."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "9.6"
+   ],
+   "claim_text": "Jobs drill: two-week energy map, five non-negotiables, apply only at 4-of-5 matches.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "For two weeks, note what tasks give you energy... Write 5 non-negotiables... Only apply to roles that match at least 4 of your 5 criteria.",
+   "reasoning": "SOURCE gives two-week energy mapping, five non-negotiables, and at-least-4-of-5 application filter."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "9.7"
+   ],
+   "claim_text": "Relationships drill: specific intention plus 3-5 must-align values, seek and filter.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Write your relationship intention... What 3-5 values absolutely must align?... Seek intentionally... First date filter.",
+   "reasoning": "SOURCE matches specific relationship intention, 3-5 must-align values, intentional seeking, first-date filtering."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "9.8"
+   ],
+   "claim_text": "Micro-practices: 5-minute morning trio, 5-minute review, 10-second pause.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Morning routine (5 minutes): What are my three intentions for today?... Evening review (5 minutes)... pause for 10 seconds.",
+   "reasoning": "SOURCE gives five-minute morning with three intentions, five-minute evening review, ten-second pause."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "9.9"
+   ],
+   "claim_text": "Three-column journal for 30 days: situation, mode, outcome; start small.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "a simple journal with three columns: Situation... Mode... Outcome... After 30 days... Start small.",
+   "reasoning": "SOURCE matches three-column journal, 30 days, and start-small framing."
+  }
+ ],
+ "metrics": {
+  "total_claims": 10,
+  "supported": 10,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

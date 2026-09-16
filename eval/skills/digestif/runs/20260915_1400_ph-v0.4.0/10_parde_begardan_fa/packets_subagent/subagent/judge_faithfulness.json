@@ -1,0 +1,438 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "10_parde_begardan_fa",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "loglog_ids": ["L02"],
+      "claim_text": "As a child, the narrator fell in love with the santur (summary compression).",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "تمام طول راه رو زر زدم که سنتور میخوام",
+      "reasoning": "The age-seven night plus six months of demanding a santur directly imply childhood attachment; the summary recomposes the arc without adding anything the source does not state."
+    },
+    {
+      "claim_id": "C02",
+      "loglog_ids": ["L02"],
+      "claim_text": "She lived for years with the diatonic tuning limitation.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "اما این محدودیت کوک سنتور جنبه‌های دیگه هم داشت",
+      "reasoning": "The narrative runs from age seven to the recently made keyed santur, and the limitation paragraph is recounted as a long-standing condition, so salha (years) is directly implied, not invented."
+    },
+    {
+      "claim_id": "C03",
+      "loglog_ids": ["L02"],
+      "claim_text": "The keyed santur brought her modulation freedom.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "این یعنی میشد سریع از هر دستگاهی به هر دستگاه دیگه برم",
+      "reasoning": "Source states fast movement between any dastgahs with the keyed instrument; the summary compression preserves the payoff."
+    },
+    {
+      "claim_id": "C04",
+      "loglog_ids": ["L03"],
+      "claim_text": "Theme 1 synthesis: on a night at age seven, with the aunt's santur and a song she thinks was Zard-e Malijeh, she fell in love with the instrument.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "۷ سالم که بود یه شب شام خونه خاله‌م بودیم و سنتوری که تازه خریده بود و داشت یاد میگرفت رو نشونمون داد ... «زرد ملیجه» بود فکر کنم",
+      "reasoning": "Hedge فکر کنم survives in the header itself (this was the v0.3.0 residual fault for this sample, now repaired), and the love-of-instrument synthesis is directly implied by the forced removal and the six months of nagging."
+    },
+    {
+      "claim_id": "C05",
+      "loglog_ids": ["L04"],
+      "claim_text": "She was seven years old.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "۷ سالم که بود",
+      "reasoning": "Exact number match; ۷ rendered as هفت, no drift."
+    },
+    {
+      "claim_id": "C06",
+      "loglog_ids": ["L04"],
+      "claim_text": "The aunt's santur, which she had newly bought and was learning, was in the corner of the room.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "سنتوری که تازه خریده بود و داشت یاد می‌گرفت ... تو کنج اتاق بود",
+      "reasoning": "All three details (newly bought, being learned, corner of the room) are direct source statements about the same santur."
+    },
+    {
+      "claim_id": "C07",
+      "loglog_ids": ["L04"],
+      "claim_text": "The aunt played Zard-e Malijeh, the narrator thinks (hedge retained).",
+      "claim_type": "name_or_entity",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "«زرد ملیجه» بود فکر کنم",
+      "reasoning": "Song name kept and the فکر کنم hedge carried over verbatim in meaning."
+    },
+    {
+      "claim_id": "C08",
+      "loglog_ids": ["L05"],
+      "claim_text": "Zard-e Malijeh is one of the first songs taught in santur instruction.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "از اولین آهنگ‌هاییه که تو آموزش سنتور یاد میدن",
+      "reasoning": "Direct rephrase; the one-of-the-firsts scope is preserved."
+    },
+    {
+      "claim_id": "C09",
+      "loglog_ids": ["L05"],
+      "claim_text": "The aunt gladly showed her how to hold the mallet.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "اونم با روی گشاده من رو نشوند جلوی ساز و مضراب دست گرفتن رو بهم نشون داد",
+      "reasoning": "Gladly qualifier and the mallet lesson both preserved."
+    },
+    {
+      "claim_id": "C10",
+      "loglog_ids": ["L06"],
+      "claim_text": "The only thing she remembers from that night is being forcibly lifted away from the instrument at the end of the night.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "تنها چیزی که از اون شب یادم میاد اینه که آخر شب به زور من رو از پای ساز بلند کردن",
+      "reasoning": "Only-scope and force both retained; dropping the trailing به بریم خونه adds no falsehood."
+    },
+    {
+      "claim_id": "C11",
+      "loglog_ids": ["L07"],
+      "claim_text": "Probably she was away from the instrument only at dinner time (hedge retained).",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "احتمالا فقط موقع شام پای ساز نبودم",
+      "reasoning": "احتمالا and فقط both survive with identical scope."
+    },
+    {
+      "claim_id": "C12",
+      "loglog_ids": ["L07"],
+      "claim_text": "All the way home she nagged that she wanted a santur.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "تمام طول راه رو زر زدم که سنتور میخوام",
+      "reasoning": "Direct restatement."
+    },
+    {
+      "claim_id": "C13",
+      "loglog_ids": ["L08"],
+      "claim_text": "After six months of nagging and stubbornness, they finally bought her a santur.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "شیش ماه که این زر زدن‌ها و لج‌کردن‌ها ادامه داشت بالاخره برام یه سنتور خریدن",
+      "reasoning": "Duration exact, agent correctly kept in the third person (they bought for her), outcome exact."
+    },
+    {
+      "claim_id": "C14",
+      "loglog_ids": ["L09"],
+      "claim_text": "Theme 2 synthesis: she got the santur at a discount.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "بالاخره برام یه سنتور خریدن. ۲۰هزار تومن، با تخفیف شد ۱۸هزار تومن",
+      "reasoning": "The header renders برام ... خریدن in first-person memoir voice as خریدم, a voice compression of her own acquisition, not a new agent claim; 1.5 keeps the correct third-person agency and 2.1 keeps the figures, so meaning survives."
+    },
+    {
+      "claim_id": "C15",
+      "loglog_ids": ["L09"],
+      "claim_text": "Learning began amid difficulties of the instrument and the place.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "تو شهرمون آموزشگاهی نبود که من برم ... سازم از خودم گنده‌تر بود و به زور میکشیدمش که ببرمش سر کلاس",
+      "reasoning": "The difficulty framing is directly implied by the no-institute, cold-room, oversize-instrument passages that the theme gathers."
+    },
+    {
+      "claim_id": "C16",
+      "loglog_ids": ["L10"],
+      "claim_text": "The santur cost 20,000 toman, reduced to 18,000 with the discount.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "۲۰هزار تومن، با تخفیف شد ۱۸هزار تومن",
+      "reasoning": "Both figures exact, direction of the discount correct."
+    },
+    {
+      "claim_id": "C17",
+      "loglog_ids": ["L10"],
+      "claim_text": "Six months later she went to class and started learning.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "شیش ماه بعدتر هم رفتم کلاس و شروع کردم به یاد گرفتن",
+      "reasoning": "The second six-month interval is kept distinct from the nagging interval; no number conflation."
+    },
+    {
+      "claim_id": "C18",
+      "loglog_ids": ["L11"],
+      "claim_text": "At first the teacher came to the house because there was no institute in their city.",
+      "claim_type": "causal_link",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "اوایل استادم میومد خونه، چون تو شهرمون آموزشگاهی نبود که من برم",
+      "reasoning": "Cause and arrangement both preserved."
+    },
+    {
+      "claim_id": "C19",
+      "loglog_ids": ["L11"],
+      "claim_text": "The santur was in the living room, door always closed and colder than other rooms, at least as she remembers (hedge retained).",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "سنتورم تو اتاق پذیرایی بود که همیشه درش بسته بود و سردتر از بقیه اتاق‌ها. حداقل اینطور تو ذهن من مونده",
+      "reasoning": "All three details plus the memory hedge حداقل اینطور تو ذهن من مونده survive."
+    },
+    {
+      "claim_id": "C20",
+      "loglog_ids": ["L12"],
+      "claim_text": "The sofas in that room were used only when they had guests (only-scope retained).",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "مبل‌ها هم تو اون اتاق بودن و فقط وقتی مهمون داشتیم استفاده میشدن",
+      "reasoning": "Only-scope retained exactly."
+    },
+    {
+      "claim_id": "C21",
+      "loglog_ids": ["L12"],
+      "claim_text": "Later the Ershad office set up a class and the teacher taught there.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "بعدترها اداره ارشاد کلاس دایر کرد و استادم همونجا تدریس میکرد",
+      "reasoning": "Direct restatement; the source also adds و من هم میرفتم اونجا, whose omission asserts nothing false and is covered by the class attendance in 2.1."
+    },
+    {
+      "claim_id": "C22",
+      "loglog_ids": ["L13"],
+      "claim_text": "Her instrument was bigger than her and she forced it along to class.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "سازم از خودم گنده‌تر بود و به زور میکشیدمش که ببرمش سر کلاس",
+      "reasoning": "Direct restatement of the size and the difficulty."
+    },
+    {
+      "claim_id": "C23",
+      "loglog_ids": ["L13"],
+      "claim_text": "The santur had 72 strings and tuning it was not just anyone's job (negation retained).",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "۷۲ تا سیم داره و کار هرکسی نیست کوک کردنش",
+      "reasoning": "Count exact and the کار هرکسی نیست negation preserved; the source's why-she-carried-it link is only not asserted, which is not a falsehood."
+    },
+    {
+      "claim_id": "C24",
+      "loglog_ids": ["L14"],
+      "claim_text": "Theme 3 synthesis: the diatonic tuning limitation made playing the santur like a restricted game.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "این باعث شده بود که همیشه موقع ساز زدن حس بچه‌ای رو داشته باشم که تو مهمونی بهش فقط اجازه یه بازی رو داده باشن",
+      "reasoning": "The theme abstracts exactly the source's stated analogy, with the restriction sense intact."
+    },
+    {
+      "claim_id": "C25",
+      "loglog_ids": ["L15"],
+      "claim_text": "Later the tuner arrived and she no longer needed to take the instrument to class for tuning (no-longer negation retained).",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "بعدترها که تیونر اومد بازار دیگه نیاز نبود ساز رو ببرم سر کلاس",
+      "reasoning": "دیگه نیاز نبود negation preserved; the dropped reason clause چون خودم میتونستم کوکش کنم is compression that adds no false claim."
+    },
+    {
+      "claim_id": "C26",
+      "loglog_ids": ["L15"],
+      "claim_text": "But the tuning limitation had other aspects.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "اما این محدودیت کوک سنتور جنبه‌های دیگه هم داشت",
+      "reasoning": "Direct restatement of the pivot that keeps the limitation alive after the tuner."
+    },
+    {
+      "claim_id": "C27",
+      "loglog_ids": ["L16"],
+      "claim_text": "The santur is diatonic: at one time only one dastgah/scale can be played (only-scope retained).",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "سنتور یه ساز دیاتونیک هست، ینی در آن واحد فقط میشه یک دستگاه/گام رو روش نواخت",
+      "reasoning": "Definition and only-one-at-a-time scope exact."
+    },
+    {
+      "claim_id": "C28",
+      "loglog_ids": ["L16"],
+      "claim_text": "Modulation means changing the tuning, which is time-consuming.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "اگه بخوای مدلاسیون انجام بدی باید کوک عوض بشه که خب زمانبره",
+      "reasoning": "Conditional and time-consuming qualifier both retained."
+    },
+    {
+      "claim_id": "C29",
+      "loglog_ids": ["L17"],
+      "claim_text": "She felt like a child at a party who was allowed only one game (only-scope retained).",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "حس بچه‌ای رو داشته باشم که تو مهمونی بهش فقط اجازه یه بازی رو داده باشن",
+      "reasoning": "Same simile with فقط intact; the tense rendering does not change meaning."
+    },
+    {
+      "claim_id": "C30",
+      "loglog_ids": ["L18"],
+      "claim_text": "If she tired of that game, she first had to pack away all the toys and then bring out another; it was not worth it, the feeling of play left.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "باید اول همه اسباب‌بازی‌هام رو جمع میکردم و بعد اسباب‌بازی‌های دیگه رو در میاوردم. نمی‌صرفید، تا اون موقع حس بازی میرفت",
+      "reasoning": "All three beats preserved in order."
+    },
+    {
+      "claim_id": "C31",
+      "loglog_ids": ["L19"],
+      "claim_text": "When the other kids moved from one game to another, she had to sit quietly in a corner and watch, even if she really liked that game.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "من مجبور بودم ساکت بشینم یه گوشه‌ای و نگاهشون کنم. حتی اگه اون بازی‌ رو خیلی دوست داشتم",
+      "reasoning": "Direct restatement including the حتی اگه concession."
+    },
+    {
+      "claim_id": "C32",
+      "loglog_ids": ["L20"],
+      "claim_text": "Theme 4 synthesis: the keyed solution based on the harp idea removed the diatonic limitation.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "از چنگ ایده گرفتن و یه سری کلید تعبیه کردن ... میشد سریع از هر دستگاهی به هر دستگاه دیگه برم",
+      "reasoning": "Harp-origin, keys, and the removal of the limitation are all directly implied by the source's mechanism plus its announced payoff."
+    },
+    {
+      "claim_id": "C33",
+      "loglog_ids": ["L21"],
+      "claim_text": "The keys made sharpening any note by a quarter or half step possible in a fraction of a second.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "ربع یا نیم پرده زیرتر کردن هر نتی رو در کسری از ثانیه میشه انجام داد",
+      "reasoning": "ربع یا نیم پرده and کسری از ثانیه exact; زیرتر (raise/sharpen) is not inverted."
+    },
+    {
+      "claim_id": "C34",
+      "loglog_ids": ["L22"],
+      "claim_text": "Fast movement from any dastgah to any other became possible, with just a few clicks and within seconds.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "میشد سریع از هر دستگاهی به هر دستگاه دیگه برم، فقط با چند کلیک، فقط در چند ثانیه",
+      "reasoning": "Any-to-any scope, clicks, and seconds all exact; the single فقط covers both source stresses without change of meaning."
+    },
+    {
+      "claim_id": "C35",
+      "loglog_ids": ["L23"],
+      "claim_text": "She had been thinking about it for two years but did not know how to bring it safe from Langroud to Langford.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "دو سالی بود که بهش فکر میکردم ولی نمیدونستم چطور میتونم سالم از لنگرود بیارمش لنگفورد",
+      "reasoning": "Duration, both place names, the safe qualifier, and the inability negation all preserved."
+    },
+    {
+      "claim_id": "C36",
+      "loglog_ids": ["L24"],
+      "claim_text": "With unstinting help from family, friends, officials, and imams, it reached her hands today.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "با کمک‌های بی دریغ خانواده و دوستان و مسئولین و ائمه امروز رسید به دستم",
+      "reasoning": "Full helper list and امروز preserved; بی‌دریغ kept as بیدریغ."
+    },
+    {
+      "claim_id": "C37",
+      "loglog_ids": ["L25"],
+      "claim_text": "Theme 5 synthesis: the joy of free playing and the longing of the trip ahead.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "اصلا نمیتونستم تصورش رو هم بکنم که اینقدر راحته این کار ... ناراحتم که چرا خونه نیستم که ساز بزنم",
+      "reasoning": "Both halves are directly implied by the closing passages; the synthesis adds no fact."
+    },
+    {
+      "claim_id": "C38",
+      "loglog_ids": ["L26"],
+      "claim_text": "She went from Esfahan to Segah, from Segah to Nava, from Nava to Shur, from Shur to Homayoun; it was as if she was dreaming.",
+      "claim_type": "name_or_entity",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "از اصفهان به سه‌گاه، از سه‌گاه به نوا، از نوا به شور، از شور به همایون ... انگار داشتم خواب میدیدم",
+      "reasoning": "All five dastgah names and their order match; the dream simile is kept. The dropped نمیتونستم تصورش clause is compression, not assertion, and the disbelief is carried by the simile."
+    },
+    {
+      "claim_id": "C39",
+      "loglog_ids": ["L27"],
+      "claim_text": "She felt like a released fattened sheep running without pause; she skipped lunch and played until her back hurt.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "حکم گوسفند پرواری‌ای رو داشتم که بازش کرده بودن و بدون وقفه داشت میدوید، نهار نخوردم ... اینقدر که پشتم درد گرفت",
+      "reasoning": "Simile, skipped lunch, and back pain all match; بازش کرده بودن correctly compressed to رهاشده."
+    },
+    {
+      "claim_id": "C40",
+      "loglog_ids": ["L28"],
+      "claim_text": "She had the feeling of the first night when her aunt put the santur mallets in her hand; the feeling of a child with any game and a person with any word.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "حس شب اولی رو داشتم که خاله‌م مضراب‌های سنتور رو داد دستم. حس بچه‌ای رو داشتم که هر بازی‌ای که دوست داشت میتونست بکنه، حس کسی رو داشتم که هر حرفی رو میخواست میتونست بزنه",
+      "reasoning": "First-night referent and both unrestricted-choice feelings preserved; rendering میتونست بکنه as با هر بازی keeps the any-game sense in contrast to the earlier one-game restriction."
+    },
+    {
+      "claim_id": "C41",
+      "loglog_ids": ["L29"],
+      "claim_text": "Starting tomorrow she is traveling for a week; she is sad she is not home to play the instrument.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "حالا از فردا یک هفته‌ای مسافرتم، ناراحتم که چرا خونه نیستم که ساز بزنم",
+      "reasoning": "Timing (tomorrow, one week) and the sadness both exact."
+    },
+    {
+      "claim_id": "C42",
+      "loglog_ids": ["L30"],
+      "claim_text": "Before leaving, she is waiting to return and sit at the instrument.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "نرفته منتظرم برگردم و بشینم پای ساز",
+      "reasoning": "نرفته و انتظار و برگشتن به پای ساز all retained."
+    }
+  ],
+  "metrics": {
+    "total_claims": 42,
+    "supported": 42,
+    "partially_supported": 0,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 1.0
+  },
+  "fail_list": []
+}

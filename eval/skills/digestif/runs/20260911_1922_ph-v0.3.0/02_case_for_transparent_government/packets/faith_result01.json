@@ -1,0 +1,282 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "02_case_for_transparent_government_part1",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "Citizens are governments' CEO-principals, so every decision should be fully documented and traceable, with objections answered and precedents proving feasibility.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "every government decision should be fully documented and publicly available ... You are the principal ... Pieces of this system already exist",
+   "reasoning": "Summary tracks the thesis, principal-agent framing, and the objections and precedents sections of the source."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "A manager hiding a million-dollar decision would be fired, yet governments do the same.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "You'd fire them. ... That's how your government operates.",
+   "reasoning": "Source states the owner would fire the manager and later says government operates the same way."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "Manager refused to explain a million-dollar decision, citing lost leverage.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "If you know how I make these decisions, I lose my leverage.",
+   "reasoning": "Direct paraphrase of the manager's quoted refusal about the million-dollar budget decision."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "An owner would sue, force disclosure, and fire that manager.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "You'd take them to court. You'd force disclosure. You'd fire them.",
+   "reasoning": "Matches the source's three listed responses exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "Governments refuse with classified, security, operations, and speed excuses.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "you're told it's classified. It's a matter of national security. It would compromise ongoing operations. It would slow things down.",
+   "reasoning": "All four cited excuses map directly to the source's listed justifications."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "Every government decision should be fully documented and publicly available.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "every government decision should be fully documented and publicly available",
+   "reasoning": "Verbatim restatement of the source's central proposition."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "Document data used, considerations made, and who was involved.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "What data was used ... What considerations were made ... Who was involved",
+   "reasoning": "First three items of the source's chain list, preserved."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "Document alternatives considered, arguments for and against, implementation steps.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "What alternatives were considered ... arguments for and against ... How it will be implemented",
+   "reasoning": "Maps to the middle items of the source's documentation chain list."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "Document evaluation, course-correction plans, and reconsideration terms.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "How it will be evaluated ... course-correction plans ... When and how it will be reconsidered, and what it takes to change it",
+   "reasoning": "Covers the final items of the source's documentation chain list."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "Competent boards and CEOs already demand this basic accountability.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "This is what any competent board of directors expects ... It's what any CEO expects ... It's basic accountability.",
+   "reasoning": "Aligns with the source's board, CEO, and basic accountability statements."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "claim_text": "It sounds radical only because the opposite was normalized.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "The only thing that makes it sound radical is that we've normalized the opposite.",
+   "reasoning": "Near-verbatim, with the restrictive 'only' preserved as in the source."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "In democracy citizens are principals; officials are their employee-agents.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "You are the principal in a principal-agent relationship ... is an agent working on your behalf ... They are your employees.",
+   "reasoning": "Faithfully captures the source's principal-agent and employees framing."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "Every servant from licensing clerk to president works for you.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "Every public servant, from the clerk at your local licensing office to the president, is an agent working on your behalf.",
+   "reasoning": "Same endpoints and scope as the source span."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "CEOs need not read everything, but reviewability shapes behavior.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "The CEO doesn't read every email. But they *could*. And that knowledge - that anything could be reviewed at any time - shapes behavior.",
+   "reasoning": "Preserves both the non-consumption point and the behavioral effect of reviewability."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "A company letting managers classify emails would go bankrupt within a year.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "That company would be bankrupt within a year, eaten alive by internal corruption and incompetence",
+   "reasoning": "Timeline and outcome match the source's hypothetical exactly."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Availability matters, not consumption: trace decisions affecting your life.",
+   "claim_type": "nuance",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "The distinction between \"availability\" and \"consumption\" is crucial ... if a decision affects your community, your livelihood, your children's future - you *can* trace it back.",
+   "reasoning": "Reflects the source's availability-versus-consumption distinction and traceability point."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Transparency flows from government to citizens, never the reverse.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "the government's decisions, data, and processes flow *to* citizens. Not the other way around.",
+   "reasoning": "One-directional claim matches the source's directional definition and negation."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "Decisions visible, processes traceable, officials accountable to citizens.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "Government decisions being visible to citizens. Government processes being traceable by citizens. Government officials being accountable to citizens.",
+   "reasoning": "Direct restatement of the source's 'This is about' list."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Not tax returns, medical records, or citizens surveilling each other.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "This is NOT about: Your tax returns ... Your medical records being public. Citizens surveilling each other.",
+   "reasoning": "Negated exclusions preserved exactly from the source's 'This is NOT about' list."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "CEOs see work product, not employees' medical records.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "The CEO sees employee work product. The CEO does not publish employees' medical records to angry customers.",
+   "reasoning": "Preserves the work-product versus medical-records contrast and the negation."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "Publish $X/$Y/$Z/$W spending, not John Smith's $47,000 taxes.",
+   "claim_type": "example",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "spent it as follows: $Y on healthcare, $Z on defense, $W on infrastructure ... It does *not* mean: \"John Smith paid $47,000 in taxes last year.\"",
+   "reasoning": "Example structure and the $47,000 figure match the source exactly."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "Aggregation, anonymization, and differential privacy make separation technically straightforward.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "None",
+   "evidence_quote": "Privacy-preserving approaches - aggregate data, anonymization, differential privacy - make this technically straightforward.",
+   "reasoning": "All three named techniques and the 'straightforward' qualifier match the source."
+  }
+ ],
+ "metrics": {
+  "total_claims": 22,
+  "supported": 22,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

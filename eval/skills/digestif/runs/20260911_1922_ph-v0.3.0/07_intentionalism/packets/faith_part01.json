@@ -1,0 +1,323 @@
+{
+ "sample": "07_intentionalism",
+ "part": 1,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Life systematically favors proposers over receivers, so build intention by proposing.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Hook: some people end up with better outcomes for a mathematical reason unrelated to talent, luck, or choice quality: whether they propose or receive."
+    },
+    {
+     "ref": "¶25",
+     "text": "The muscle enables larger intentions, intentions become values, values make a proposer. Proposers end better in matching math and messy life alike, not from specialness but from the equation's other side."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Better outcomes come from whether one proposes or receives, not talent or luck.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "Hook: some people end up with better outcomes for a mathematical reason unrelated to talent, luck, or choice quality: whether they propose or receive."
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "In 1962 Gale and Shapley sought pairings no unmatched pair would break.",
+   "evidence": [
+    {
+     "ref": "¶2",
+     "text": "Setup: in 1962 Gale and Shapley studied stable pairings between two groups, seeking matchings where no unmatched pair prefers each other over assigned partners."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Deferred acceptance gives each proposer their best stable partner, each receiver their worst.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Result: in deferred acceptance, one side proposes in preference order while the other tentatively accepts or rejects. Proposers get their best possible partner among all stable matchings; receivers get their worst possible one: systematically, provably extreme."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The gap is systematically, provably, mathematically extreme, not slight.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "Result: in deferred acceptance, one side proposes in preference order while the other tentatively accepts or rejects. Proposers get their best possible partner among all stable matchings; receivers get their worst possible one: systematically, provably extreme."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Real situations skip the exact algorithm but share the propose-respond structure.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "Beyond math: most real situations skip the exact algorithm but share the structure of one side initiating and the other selecting from offerings; expect the same proposer advantage, roughly."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "Netflix, phones, jobs, friendships: pre-decided pursuit versus presented selection.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "Four receiver questions: Netflix scrolling versus pre-decided experience; store-display phones versus researched needs; posted jobs versus pursued companies; proximity friendships versus sought qualities."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For most of these, most of us are receivers choosing from presentations.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "For most of these, most of us are receivers: choosing from what is presented, not pursuing what is wanted, inside the same propose-respond structure."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Receivers get acceptable, good-enough outcomes, never terrible ones.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "The insidious part: receivers get acceptable, good-enough outcomes (decent shows, functional phones, reasonable jobs, pleasant friends), not terrible ones."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Decent differs from best-serving; structure favors proposers without conspiracy.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "But decent differs from what would serve best; the Gale-Shapley properties favor proposers informally too, by structure rather than conspiracy."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Fine feelings block revolt-driving dissatisfaction; quiet under-service stays stable.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "Worse: fine-feeling outcomes never build revolt-driving dissatisfaction; the system is stable (self-sustaining) because it under-serves quietly and consistently, hiding what is missed."
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Intention is needed to propose, yet intention develops only through proposing.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Chicken and egg: proposing needs intention, but intention develops through proposing. Receiver-mode choices only reveal the least-disliked available option, never what one would pursue freely."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Receiver choices reveal the least-disliked option, never freely pursued desire.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "Chicken and egg: proposing needs intention, but intention develops through proposing. Receiver-mode choices only reveal the least-disliked available option, never what one would pursue freely."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "Algorithmic songs and swiped partners leave wants as reactions to offerings.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Music served by algorithms, partners picked by swiping: after years of receiver mode, preferences are reactions to offerings, and the capacity to want independently is lost or never developed."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The intention muscle builds progressively; no jump from Netflix to life vision.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Training ground: the muscle of intention builds progressively; nobody jumps from Netflix picks to a life-work vision."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Tonight: name the hour's want (laugh, learn, calm, challenge), then seek it.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "Tonight's exercise: before opening any app, decide specifically what the next hour should deliver (laugh, learn, calm, challenge), then seek it actively instead of scrolling."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Patterns become preferences, preferences values; values are practiced into, not thought into.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "The practice rebuilds intending-then-acting; patterns become preferences, preferences become values. Values cannot be thought into, only practiced into."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Major decisions usually evaluate presented options; receiving feels like agency.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "Major decisions (marriage, jobs, cities, study): most people evaluate presented options (posted positions, received offers) rather than deciding first and pursuing. Choosing as a receiver feels like agency."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proposers of work, partners, and cities win systematically from structural position.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Proposers who identify desired work, partners, and cities first end with systematically better outcomes, not from brains or luck but from standing on the favored side of the structure."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Platforms take optimal outcomes (attention, data, money); users keep good-enough engagement.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "Collective effect: with most people receiving, systems optimize for proposers. Companies, dating apps, and platforms get optimal outcomes (attention, data, money); users get good-enough outcomes that serve engagement, not interests."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Staying wins because leaving feels harder; stability is resistance to change.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Users stay because leaving feels harder than accepting good enough; that stability is resistance to change, which is why the system persists."
+    }
+   ]
+  },
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Understanding changes nothing; one must actually switch positions against designed defaults.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Breaking out: understanding the disadvantage changes nothing; one must actually switch positions. Every interface and script is built to keep us receiving."
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Propose: decide before seeing options, pursue specifics, create openings, accept friction.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "Proposing means deciding intentionally before seeing options, pursuing specifics, creating opportunities, accepting friction. It means asking what one actually wants before every major decision and most minor ones, then acting even when inconvenient."
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Ask what one wants before every major decision and most minor ones, then act.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "Proposing means deciding intentionally before seeing options, pursuing specifics, creating opportunities, accepting friction. It means asking what one actually wants before every major decision and most minor ones, then acting even when inconvenient."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "concession",
+   "attribution": "author",
+   "text": "Most will refuse: effortful, comfortable, and forgetful of what to propose.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "Most people won't: it is effortful, the receiver seat is comfortable, and years of receiving erase knowledge of what one would propose. But shifters gain systematically, structurally better outcomes."
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The dynamic is confirmed; the open question is whether the reader acts.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "The question isn't whether the dynamic exists; mathematics and observed patterns both confirm it. The question is whether the reader will act on it."
+    }
+   ]
+  }
+ ]
+}

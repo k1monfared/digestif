@@ -1,0 +1,155 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "not-even-wrong-what-we-believe-and-why",
+ "phase": "1",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: we believe we evaluate ideas on evidence and reasoned analysis, but subconscious psychological forces (financial and emotional investment, identity, belonging) shape what we find persuasive.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "The 'not even wrong' concept, popularized by physicist Wolfgang Pauli, describes ideas so fundamentally flawed they cannot be meaningfully evaluated as correct or incorrect.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Sir Michael Atiyah, at age 89 and already holding both the Fields Medal and Abel Prize, claimed to have solved the Riemann hypothesis, a problem open since 1859.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "The mathematical community rejected Atiyah's proposed proof as 'not even wrong' because it lacked the rigor and coherence to be assessed under mathematical standards, operating outside the bounds of traditional evaluation.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "The 'not even wrong' pattern extends far beyond mathematics: politicians, business leaders, and celebrities use compelling rhetoric that sounds credible but operates outside the boundaries where traditional evaluation is possible.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Financial (or social/ethical) investment creates an incentive to believe a leader's vision, driven by resolving cognitive dissonance rather than merely protecting the investment, making investors more receptive to the leader's claims beyond their demonstrated expertise.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "A self-reinforcing loop runs financial investment to emotional investment to greater receptivity to future claims to further financial investment, and it is especially powerful because being a supporter becomes part of a person's identity.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "When a founder's concrete, verifiable promises about current products are fulfilled, it lends undue credibility to their grandiose, unfalsifiable claims, even though the two operate on completely different evidentiary standards.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Social proof: seeing thousands or millions praise a leader's genius makes their visions seem credible, because humans naturally look to others for cues about what to believe.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "Tribal identity: influential figures frame themselves as outsiders fighting entrenched interests, so questioning any of their claims feels like betraying the tribe or siding with the opposition.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Social media amplifies both effects: algorithms create echo chambers showing supporters mostly positive content, while frequent unfiltered posts create a sense of personal connection and authenticity that deepens emotional investment.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Humans are not purely rational evaluators; assessments are swayed by four factors: financial interests and commitments, desire for consistency in beliefs, need for social belonging and identity, and attraction to compelling narratives and personalities.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Unlike Atiyah's claim, which peers ultimately rejected, 'not even wrong' statements by powerful business and political leaders often escape rigorous evaluation, because society lacks standards comparable to the mathematical community's proof standards.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Individual recommendations: separate financial from epistemic decisions, practice domain-specific evaluation, deliberately seek credible counter-narratives, and adopt investment detachment (ask whether you would believe the claim absent your investment).",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Societal recommendations: improve technological literacy on realistic timelines and limits, strengthen domain-expert visibility, build frameworks for assessing innovation that balance optimism with technical and regulatory realities, and foster discourse norms where skepticism is not treated as opposition.",
+   "weight": "Must have",
+   "presence": "Missing",
+   "loglog_ids": [],
+   "evidence_quote": "",
+   "reasoning": "Phase 1 blind checklist, presence not yet assessed."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 15,
+  "must_have_present": 0,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 0,
+  "must_recall": 0.0,
+  "overall_recall": 0.0
+ },
+ "missing_list": []
+}

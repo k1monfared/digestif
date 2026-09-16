@@ -1,0 +1,29 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "point-hierarchy",
+ "inputs": {
+  "faithfulness_precision": 1.0,
+  "critical_errors": 0,
+  "must_recall": 0.9643,
+  "overall_recall": 0.9333,
+  "redundancy_rate": 0.1,
+  "trivia_rate": 0.0
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "Hard gates: critical_errors=0 <= critical_contradicted_max=0 (pass); must_recall=0.9643 >= must_recall_min=0.9 (pass); faithfulness_precision=1.0 >= faithfulness_precision_min=0.95 (pass). All gates pass, so weighted score applies: 0.4*1.0 + 0.4*0.9643 - 0.2*0.1 = 0.4 + 0.38572 - 0.02 = 0.76572.",
+ "weighted_score": 0.76572,
+ "verdict": "Borderline",
+ "tradeoff_note": "Coverage is strong at 0.9643 must recall and concision is healthy at 0.1 redundancy, so no tradeoff pressure, but the Partial on Must-have point K09 drops the verdict to Borderline because the structural insight is absent even though the taxonomy survives.",
+ "fix_list": [
+  "K09 (Must have, Partial): restore the missing structural claim that the independent posture is the only one needing no information about the reference, and therefore the two absolutes are closer to each other than to the independent. The L016/L017 spectrum enumeration alone leaves this payoff unstated.",
+  "K15 (Nice to have, Partial): add the dropped half of PS2, that the model coefficient is unconstrained (not restricted to 0 to 1), which is what permits the amplifier region (L009).",
+  "Merge redundancy without losing content: C012 duplicates C001, C022 duplicates C017, C033 duplicates C031, C040 duplicates C001. This can lower redundancy_rate from 0.1 toward 0 with no coverage cost."
+ ],
+ "reasoning": "Gate check in policy order. (1) Hard fail on Critical errors: Judge F reports critical_errors=0, so no fail; all 40 claims supported, 0 contradicted, 0 unverifiable, 0 partial. (2) Hard fail on must recall: 13 of 14 Must-have points present, 1 partial, 0 missing, giving 0.9643, above the 0.9 gate. (3) Hard fail on faithfulness precision: 1.0, above the 0.95 gate. All numeric gates pass, so the weighted formula is applied: 0.4*1.0 (faithfulness) + 0.4*0.9643 (must recall) - 0.2*0.1 (redundancy) = 0.76572. Concision plays only a tiebreak and penalty role here; redundancy_rate 0.1 is below the 0.15 max, so no length penalty beyond the standard weight, and the four duplicate claims (C012/C001, C022/C017, C033/C031, C040/C001) do not damage faithfulness or coverage, so they cannot force a fail. Coverage gain justifies length since redundancy stays under max. The verdict is Borderline rather than Pass because policy 4 applies: gates pass but a Partial affects a Must-have point. The specific claim is K09, where L016/L017 enumerate the full w-posture spectrum correctly yet omit the structural point that the independent is the only posture needing no reference information, so the two absolutes are nearer each other than to the independent. K15 is also Partial but is only Nice to have, so it does not drive the Borderline label; it is recorded as a secondary fix. No source reread was needed since the two aspect judges do not conflict on any fact."
+}

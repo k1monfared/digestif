@@ -1,0 +1,483 @@
+{
+ "sample": "05_manufacturing_taste",
+ "part": 3,
+ "of": 5,
+ "nodes": [
+  {
+   "id": "4",
+   "type": "theme",
+   "attribution": "author",
+   "text": "The model was run thousands of times to test how social signals, money, and patronage shape the canon.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Each of these alone is well-understood. What I wanted to know is: when you put all three together in a system and let them interact over many generations, what happens?"
+    },
+    {
+     "ref": "¶19",
+     "text": "I ran this thousands of times under different conditions. Each run takes about two minutes with 1,000 producers and 10,000 consumers, so I parallelized it across CPU cores and ran 360+ per condition for the main experiments, with formal power analysis to make sure the sample sizes were sufficient."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "## What The Simulation Does\nThe model has three types of agents: producers (composers/artists), consumers (audiences), and gatekeepers (critics, curators, playlist editors). Each producer gets a quality score drawn randomly (how good their work actually is) and a capital score drawn independently (how much money and access they start with). Quality and capital are uncorrelated. Being wealthy doesn't make you talented."
+    }
+   ]
+  },
+  {
+   "id": "4.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Each producer gets a random quality score and an independently drawn capital score, so being wealthy does not make you talented.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "## What The Simulation Does\nThe model has three types of agents: producers (composers/artists), consumers (audiences), and gatekeepers (critics, curators, playlist editors). Each producer gets a quality score drawn randomly (how good their work actually is) and a capital score drawn independently (how much money and access they start with). Quality and capital are uncorrelated. Being wealthy doesn't make you talented."
+    }
+   ]
+  },
+  {
+   "id": "4.1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Producers with more capital get more exposure, and consumers form opinions from quality, mere exposure, and social signals.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Then the simulation runs. Producers with more capital get more exposure. Consumers form opinions based on actual quality plus the mere exposure effect plus social signals. Success feeds back into more exposure (cumulative advantage). After many rounds, some producers achieve \"canonical\" status. They're the ones we remember."
+    }
+   ]
+  },
+  {
+   "id": "4.1.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Success feeds back into more exposure, and after many rounds some producers achieve canonical status.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "Then the simulation runs. Producers with more capital get more exposure. Consumers form opinions based on actual quality plus the mere exposure effect plus social signals. Success feeds back into more exposure (cumulative advantage). After many rounds, some producers achieve \"canonical\" status. They're the ones we remember."
+    }
+   ]
+  },
+  {
+   "id": "4.1.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "I ran this thousands of times under different conditions. Each run takes about two minutes with 1,000 producers and 10,000 consumers, so I parallelized it across CPU cores and ran 360+ per condition for the main experiments, with formal power analysis to make sure the sample sizes were sufficient."
+    }
+   ]
+  },
+  {
+   "id": "4.1.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The author ran 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "I ran this thousands of times under different conditions. Each run takes about two minutes with 1,000 producers and 10,000 consumers, so I parallelized it across CPU cores and ran 360+ per condition for the main experiments, with formal power analysis to make sure the sample sizes were sufficient."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Experiment 1: visible social influence weakens the quality-success link.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "## What Happened\n### Does social influence weaken the quality-success link?\nYes. When simulated listeners can see what others are consuming, the correlation between actual quality and commercial success drops significantly (p < 0.0001 across 360 runs per condition). In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success. But in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker. A mediocre work that gets lucky early can ride social proof to stardom, while an equally good work that starts slow may never recover."
+    }
+   ]
+  },
+  {
+   "id": "4.2.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition).",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "## What Happened\n### Does social influence weaken the quality-success link?\nYes. When simulated listeners can see what others are consuming, the correlation between actual quality and commercial success drops significantly (p < 0.0001 across 360 runs per condition). In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success. But in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker. A mediocre work that gets lucky early can ride social proof to stardom, while an equally good work that starts slow may never recover."
+    }
+   ]
+  },
+  {
+   "id": "4.2.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "## What Happened\n### Does social influence weaken the quality-success link?\nYes. When simulated listeners can see what others are consuming, the correlation between actual quality and commercial success drops significantly (p < 0.0001 across 360 runs per condition). In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success. But in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker. A mediocre work that gets lucky early can ride social proof to stardom, while an equally good work that starts slow may never recover."
+    }
+   ]
+  },
+  {
+   "id": "4.2.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "In our world of charts, recommendations, and trending labels, the link gets weaker.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "## What Happened\n### Does social influence weaken the quality-success link?\nYes. When simulated listeners can see what others are consuming, the correlation between actual quality and commercial success drops significantly (p < 0.0001 across 360 runs per condition). In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success. But in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker. A mediocre work that gets lucky early can ride social proof to stardom, while an equally good work that starts slow may never recover."
+    }
+   ]
+  },
+  {
+   "id": "4.2.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A mediocre work that gets lucky early can ride social proof to stardom.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "## What Happened\n### Does social influence weaken the quality-success link?\nYes. When simulated listeners can see what others are consuming, the correlation between actual quality and commercial success drops significantly (p < 0.0001 across 360 runs per condition). In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success. But in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker. A mediocre work that gets lucky early can ride social proof to stardom, while an equally good work that starts slow may never recover."
+    }
+   ]
+  },
+  {
+   "id": "4.2.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "An equally good work that starts slow may never recover.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "## What Happened\n### Does social influence weaken the quality-success link?\nYes. When simulated listeners can see what others are consuming, the correlation between actual quality and commercial success drops significantly (p < 0.0001 across 360 runs per condition). In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success. But in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker. A mediocre work that gets lucky early can ride social proof to stardom, while an equally good work that starts slow may never recover."
+    }
+   ]
+  },
+  {
+   "id": "4.2.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Every Top 40 chart, Customers Also Bought widget, and view count is a form of social influence pushing us away from independent judgment.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "This is, incidentally, why I distrust recommendation algorithms so much. Every \"Top 40\" chart, every \"Customers Also Bought\" widget, every view count is a form of social influence that systematically pushes us away from independent judgment. It's the measurement trap I wrote about [before](https://k1monfared.com/notes/blog/20251023-from-measurement-to-intention/). We use popularity as a proxy for quality, then optimize for the proxy, then forget it was a proxy."
+    }
+   ]
+  },
+  {
+   "id": "4.2.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The measurement trap: popularity is used as a proxy for quality, then optimized for, then forgotten as a proxy.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "This is, incidentally, why I distrust recommendation algorithms so much. Every \"Top 40\" chart, every \"Customers Also Bought\" widget, every view count is a form of social influence that systematically pushes us away from independent judgment. It's the measurement trap I wrote about [before](https://k1monfared.com/notes/blog/20251023-from-measurement-to-intention/). We use popularity as a proxy for quality, then optimize for the proxy, then forget it was a proxy."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Experiment 2: holding talent constant and reshuffling only resources produces almost entirely different canons.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "### If we replayed history, would we get the same canon?\nThis is the experiment that surprised me most. I held talent constant. Every simulated composer kept the exact same quality score. I only reshuffled their resources: who had wealthy patrons and who didn't. Then I ran it 200 times."
+    }
+   ]
+  },
+  {
+   "id": "4.3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means \"identical canon every time\" and 1 means \"completely different canons every time.\" Almost entirely different canons from just reshuffling money."
+    }
+   ]
+  },
+  {
+   "id": "4.3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then it was only about 1 in 4. For everyone in the 50th to 90th percentile of quality, the solidly good but not unmistakably transcendent, canonical status was effectively a lottery."
+    }
+   ]
+  },
+  {
+   "id": "4.3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For everyone in the 50th to 90th percentile of quality, canonical status was effectively a lottery.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then it was only about 1 in 4. For everyone in the 50th to 90th percentile of quality, the solidly good but not unmistakably transcendent, canonical status was effectively a lottery."
+    }
+   ]
+  },
+  {
+   "id": "4.3.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This is the simulation equivalent of the Haydn question: excellence alone is not enough when the exposure pipeline is narrow.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "This is the simulation equivalent of the Haydn question. If the Esterházys had hired someone else, Haydn would very likely be one of the hundreds of forgotten 18th-century composers you've never heard of. Not because he wasn't excellent, but because excellence alone isn't enough when the exposure pipeline is this narrow."
+    }
+   ]
+  },
+  {
+   "id": "4.3.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Had the Esterházys hired someone else, Haydn would very likely be one of the hundreds of forgotten composers.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "This is the simulation equivalent of the Haydn question. If the Esterházys had hired someone else, Haydn would very likely be one of the hundreds of forgotten 18th-century composers you've never heard of. Not because he wasn't excellent, but because excellence alone isn't enough when the exposure pipeline is this narrow."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Experiment 3: unequal money distorts the canon more than herd behavior.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "### What matters more: unequal money or herd behavior?\nI ran the simulation under four conditions, removing one factor at a time:"
+    },
+    {
+     "ref": "¶28",
+     "text": "Turning off social influence barely helps. But equalizing starting resources jumps the quality-canon correlation by 44%. The biggest distortion isn't that audiences follow trends. It's that some artists never get heard in the first place."
+    }
+   ]
+  },
+  {
+   "id": "4.4.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "1. **Full model** (everything active): quality-canon correlation = 0.32\n2. **No social influence** (people judge independently): 0.35\n3. **Equal capital** (everyone starts with the same resources): 0.46\n4. **Quality only** (no social influence, no capital inequality): 0.46"
+    }
+   ]
+  },
+  {
+   "id": "4.4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "Turning off social influence barely helps. But equalizing starting resources jumps the quality-canon correlation by 44%. The biggest distortion isn't that audiences follow trends. It's that some artists never get heard in the first place."
+    }
+   ]
+  },
+  {
+   "id": "4.4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The biggest distortion is not that audiences follow trends; it is that some artists never get heard in the first place.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "Turning off social influence barely helps. But equalizing starting resources jumps the quality-canon correlation by 44%. The biggest distortion isn't that audiences follow trends. It's that some artists never get heard in the first place."
+    }
+   ]
+  },
+  {
+   "id": "4.4.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "This maps directly to the modern world. The problem isn't that people blindly follow Spotify playlists. It's that only major-label artists get on those playlists to begin with. Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification."
+    }
+   ]
+  },
+  {
+   "id": "4.4.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The modern mapping: the problem is not that people blindly follow Spotify playlists, but that only major-label artists get on them.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "This maps directly to the modern world. The problem isn't that people blindly follow Spotify playlists. It's that only major-label artists get on those playlists to begin with. Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Experiment 4: a stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "### What about 18th-century Vienna specifically?\nI built a stylized version: 300 composers, a handful of very wealthy patrons, strong word-of-mouth, no recording technology. The counterfactual distance was 0.97, near maximum. Only 2.5% of canonical composers were shared between any two alternate histories."
+    }
+   ]
+  },
+  {
+   "id": "4.5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "### What about 18th-century Vienna specifically?\nI built a stylized version: 300 composers, a handful of very wealthy patrons, strong word-of-mouth, no recording technology. The counterfactual distance was 0.97, near maximum. Only 2.5% of canonical composers were shared between any two alternate histories."
+    }
+   ]
+  },
+  {
+   "id": "4.5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Rewinding to 1750 and randomly reassigning court positions would make the names we teach almost entirely different.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "To say that plainly: if you could rewind to 1750 and randomly reassign which composers got which court positions, the names we teach in music history would be almost entirely different. The winners in our timeline were very likely excellent. You had to be good to compete for a court position. But dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery."
+    }
+   ]
+  },
+  {
+   "id": "4.5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The winners were very likely excellent, since you had to be good to compete for a court position.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "To say that plainly: if you could rewind to 1750 and randomly reassign which composers got which court positions, the names we teach in music history would be almost entirely different. The winners in our timeline were very likely excellent. You had to be good to compete for a court position. But dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery."
+    }
+   ]
+  },
+  {
+   "id": "4.5.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "To say that plainly: if you could rewind to 1750 and randomly reassign which composers got which court positions, the names we teach in music history would be almost entirely different. The winners in our timeline were very likely excellent. You had to be good to compete for a court position. But dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery."
+    }
+   ]
+  },
+  {
+   "id": "4.5.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Manufacturing taste means the winners were not bad, but the losers were not meaningfully worse.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "That's what \"manufacturing taste\" means. Not that the winners were bad. That the losers weren't meaningfully worse."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Robustness: the results held with every parameter varied by ±50%.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "### How robust is this?\nI varied every parameter by ±50%. The single most important factor is how steeply money converts into attention. If doubling your marketing budget more than doubles your audience (a convex relationship), the rich get richer very fast and quality barely matters. If doubling your budget less than doubles your audience, quality has more room to breathe."
+    }
+   ]
+  },
+  {
+   "id": "4.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The single most important factor is how steeply money converts into attention.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "### How robust is this?\nI varied every parameter by ±50%. The single most important factor is how steeply money converts into attention. If doubling your marketing budget more than doubles your audience (a convex relationship), the rich get richer very fast and quality barely matters. If doubling your budget less than doubles your audience, quality has more room to breathe."
+    }
+   ]
+  },
+  {
+   "id": "4.6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "### How robust is this?\nI varied every parameter by ±50%. The single most important factor is how steeply money converts into attention. If doubling your marketing budget more than doubles your audience (a convex relationship), the rich get richer very fast and quality barely matters. If doubling your budget less than doubles your audience, quality has more room to breathe."
+    }
+   ]
+  },
+  {
+   "id": "4.6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If doubling a budget less than doubles the audience, quality has more room to breathe.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "### How robust is this?\nI varied every parameter by ±50%. The single most important factor is how steeply money converts into attention. If doubling your marketing budget more than doubles your audience (a convex relationship), the rich get richer very fast and quality barely matters. If doubling your budget less than doubles your audience, quality has more room to breathe."
+    }
+   ]
+  },
+  {
+   "id": "4.6.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "In the industry, a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "This isn't just a modeling knob. It corresponds to a real structural question about the industry. When a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500, the capital-to-exposure curve is extremely steep. Our model predicts that under those conditions, quality has very little to do with who becomes famous."
+    }
+   ]
+  },
+  {
+   "id": "4.6.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Under such an extremely steep capital-to-exposure curve, quality has very little to do with who becomes famous.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "This isn't just a modeling knob. It corresponds to a real structural question about the industry. When a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500, the capital-to-exposure curve is extremely steep. Our model predicts that under those conditions, quality has very little to do with who becomes famous."
+    }
+   ]
+  }
+ ]
+}

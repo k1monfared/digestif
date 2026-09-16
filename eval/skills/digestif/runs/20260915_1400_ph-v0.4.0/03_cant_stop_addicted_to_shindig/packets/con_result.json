@@ -1,0 +1,849 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash 2026-09-15",
+ "source_id": "03_cant_stop_addicted_to_shindig",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "L002"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Opening thesis/summary, first occurrence framing the whole analysis."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "L003"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Core rules fact, no prior occurrence."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "L004"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Roll-until-bust rule, distinct mechanic."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "L005"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Board column lengths, foundational numbers."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "L006"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Forced-move definition, needed later."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "L007"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Concrete forced-move example, not repeated."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "L008"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Depth interpretation; distinct from balancing claim."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "L009"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Web artifact mention, low analytical value for the argument."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "L010"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Four-dice distribution claim, canonical for its recaps."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "L011"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Two-dice baseline, new comparative data."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "L012"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Combinatorial evidence with counts, never trivia."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "L013"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counterfactual length ratio, distinct nuance."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "L014"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Pairing example, distinct illustration."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "L015"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "P(can make 2) result, numeric."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "L016"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Derivation of that probability, numeric evidence."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "L017"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "P(can make 7) result, numeric."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "L018"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Inclusion-exclusion terms, supporting numeric detail."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "L019"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Arithmetic sum, numeric evidence."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "L020"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Full-table evidence, adds table existence beyond C009."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "L021"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ratio-versus-length design inference, distinct."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "L022"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C009",
+   "reasoning": "Explicit conclusion recap of section 2; adds nothing."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "L023"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Expected-rolls balance claim, new section."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "L024"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Formula and two worked values, numeric."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "L025"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Column 7 faster nuance, distinct interpretation."
+  },
+  {
+   "claim_id": "C025",
+   "loglog_ids": [
+    "L026"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Full expected-rolls table, numeric evidence."
+  },
+  {
+   "claim_id": "C026",
+   "loglog_ids": [
+    "L027"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Which columns cost most, numeric summary."
+  },
+  {
+   "claim_id": "C027",
+   "loglog_ids": [
+    "L028"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Length-versus-frequency juxtaposition, distinct framing."
+  },
+  {
+   "claim_id": "C028",
+   "loglog_ids": [
+    "L029"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Combination success claim, new section."
+  },
+  {
+   "claim_id": "C029",
+   "loglog_ids": [
+    "L030"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Counts evidence, canonical for its recap."
+  },
+  {
+   "claim_id": "C030",
+   "loglog_ids": [
+    "L031"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Distribution across 165 combos, new numbers."
+  },
+  {
+   "claim_id": "C031",
+   "loglog_ids": [
+    "L032"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Best-combo stats, numeric."
+  },
+  {
+   "claim_id": "C032",
+   "loglog_ids": [
+    "L033"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Worst-combo stats, numeric."
+  },
+  {
+   "claim_id": "C033",
+   "loglog_ids": [
+    "L034"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Clean-move definition, needed for Q."
+  },
+  {
+   "claim_id": "C034",
+   "loglog_ids": [
+    "L035"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Contamination rates, numeric."
+  },
+  {
+   "claim_id": "C035",
+   "loglog_ids": [
+    "L036"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Balancing interpretation, canonical for C076."
+  },
+  {
+   "claim_id": "C036",
+   "loglog_ids": [
+    "L037"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C029",
+   "reasoning": "Explicit conclusion recap of section 4; adds nothing."
+  },
+  {
+   "claim_id": "C037",
+   "loglog_ids": [
+    "L038"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "EV stopping-rule definition, new."
+  },
+  {
+   "claim_id": "C038",
+   "loglog_ids": [
+    "L039"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Worked EV example, numeric."
+  },
+  {
+   "claim_id": "C039",
+   "loglog_ids": [
+    "L040"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Second worked EV example, numeric."
+  },
+  {
+   "claim_id": "C040",
+   "loglog_ids": [
+    "L041"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Q and U definitions, needed for the rule."
+  },
+  {
+   "claim_id": "C041",
+   "loglog_ids": [
+    "L042"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Simulation headline, new results."
+  },
+  {
+   "claim_id": "C042",
+   "loglog_ids": [
+    "L043"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Greedy speed/variance numbers, numeric."
+  },
+  {
+   "claim_id": "C043",
+   "loglog_ids": [
+    "L044"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Second-place numbers, numeric."
+  },
+  {
+   "claim_id": "C044",
+   "loglog_ids": [
+    "L045"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Head-to-head win rates, numeric."
+  },
+  {
+   "claim_id": "C045",
+   "loglog_ids": [
+    "L046"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Champion rule definition, new."
+  },
+  {
+   "claim_id": "C046",
+   "loglog_ids": [
+    "L047"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Champion strengths including new +9.42% bias."
+  },
+  {
+   "claim_id": "C047",
+   "loglog_ids": [
+    "L048"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Favorite-column percentages, numeric."
+  },
+  {
+   "claim_id": "C048",
+   "loglog_ids": [
+    "L049"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Matchup percentages, numeric."
+  },
+  {
+   "claim_id": "C049",
+   "loglog_ids": [
+    "L050"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Speed-versus-wins comparison, numeric."
+  },
+  {
+   "claim_id": "C050",
+   "loglog_ids": [
+    "L051"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Fastest-is-not-best lesson, canonical for C063."
+  },
+  {
+   "claim_id": "C051",
+   "loglog_ids": [
+    "L052"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Strategy-family enumeration with parameters, defines scope."
+  },
+  {
+   "claim_id": "C052",
+   "loglog_ids": [
+    "L053"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Additional strategy types, defines scope."
+  },
+  {
+   "claim_id": "C053",
+   "loglog_ids": [
+    "L054"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Newer strategy groups, defines scope."
+  },
+  {
+   "claim_id": "C054",
+   "loglog_ids": [
+    "L055"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "RiskBudget/MonteCarlo definitions with numbers."
+  },
+  {
+   "claim_id": "C055",
+   "loglog_ids": [
+    "L056"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Top-15 turn range, numeric."
+  },
+  {
+   "claim_id": "C056",
+   "loglog_ids": [
+    "L057"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Matrix/CSV artifact mention, no analytical value."
+  },
+  {
+   "claim_id": "C057",
+   "loglog_ids": [
+    "L058"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Probabilistic-dominance claim, canonical for C062."
+  },
+  {
+   "claim_id": "C058",
+   "loglog_ids": [
+    "L059"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "MonteCarlo fourth-place nuance, numeric."
+  },
+  {
+   "claim_id": "C059",
+   "loglog_ids": [
+    "L060"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Opponent-aware failure cause, distinct."
+  },
+  {
+   "claim_id": "C060",
+   "loglog_ids": [
+    "L061"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Player recommendation, actionable."
+  },
+  {
+   "claim_id": "C061",
+   "loglog_ids": [
+    "L062"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Win-rate target and open question, distinct."
+  },
+  {
+   "claim_id": "C062",
+   "loglog_ids": [
+    "L063"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C057",
+   "reasoning": "Conclusion recap of probabilistic dominance; repeats C057/C044."
+  },
+  {
+   "claim_id": "C063",
+   "loglog_ids": [
+    "L064"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C050",
+   "reasoning": "Conclusion recap of consistency-beats-speed; repeats C050."
+  },
+  {
+   "claim_id": "C064",
+   "loglog_ids": [
+    "L065"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "First-player advantage claim, canonical for C071."
+  },
+  {
+   "claim_id": "C065",
+   "loglog_ids": [
+    "L066"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Causal explanation of the advantage, distinct."
+  },
+  {
+   "claim_id": "C066",
+   "loglog_ids": [
+    "L067"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Position-bias magnitudes, numeric."
+  },
+  {
+   "claim_id": "C067",
+   "loglog_ids": [
+    "L068"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Fairest strategies list, numeric."
+  },
+  {
+   "claim_id": "C068",
+   "loglog_ids": [
+    "L069"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Bias overrating interpretation, distinct."
+  },
+  {
+   "claim_id": "C069",
+   "loglog_ids": [
+    "L070"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Opposite-variant P2 strength, distinct causal link."
+  },
+  {
+   "claim_id": "C070",
+   "loglog_ids": [
+    "L071"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Greedy P1/P2 split, numeric."
+  },
+  {
+   "claim_id": "C071",
+   "loglog_ids": [
+    "L072"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C064",
+   "reasoning": "Conclusion recap of first-player advantage; adds nothing."
+  },
+  {
+   "claim_id": "C072",
+   "loglog_ids": [
+    "L073"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Design conclusion, canonical for C087."
+  },
+  {
+   "claim_id": "C073",
+   "loglog_ids": [
+    "L074"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Single-column deviation bound, numeric."
+  },
+  {
+   "claim_id": "C074",
+   "loglog_ids": [
+    "L075"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Multi-column turn comparison, numeric."
+  },
+  {
+   "claim_id": "C075",
+   "loglog_ids": [
+    "L076"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Design constraints, historical context."
+  },
+  {
+   "claim_id": "C076",
+   "loglog_ids": [
+    "L077"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C035",
+   "reasoning": "Restates 4.7 balancing mechanism per cross-link; same point."
+  },
+  {
+   "claim_id": "C077",
+   "loglog_ids": [
+    "L078"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Perfect-balance lengths, numeric."
+  },
+  {
+   "claim_id": "C078",
+   "loglog_ids": [
+    "L079"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Current board max/deviation, numeric."
+  },
+  {
+   "claim_id": "C079",
+   "loglog_ids": [
+    "L080"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "14-step board alternative, numeric."
+  },
+  {
+   "claim_id": "C080",
+   "loglog_ids": [
+    "L081"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "20-step board alternative, numeric."
+  },
+  {
+   "claim_id": "C081",
+   "loglog_ids": [
+    "L082"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Why current board kept, distinct interpretation."
+  },
+  {
+   "claim_id": "C082",
+   "loglog_ids": [
+    "L083"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Linear step=2.25 design, numeric."
+  },
+  {
+   "claim_id": "C083",
+   "loglog_ids": [
+    "L084"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Integer linear design, numeric."
+  },
+  {
+   "claim_id": "C084",
+   "loglog_ids": [
+    "L085"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Linear-cannot-balance causal claim, distinct."
+  },
+  {
+   "claim_id": "C085",
+   "loglog_ids": [
+    "L086"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Author preference recommendation, distinct."
+  },
+  {
+   "claim_id": "C086",
+   "loglog_ids": [
+    "L087"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Designer recommendations, actionable."
+  },
+  {
+   "claim_id": "C087",
+   "loglog_ids": [
+    "L088"
+   ],
+   "label": "Duplicate",
+   "canonical_id": "C072",
+   "reasoning": "Conclusion recap of design conclusion; adds nothing."
+  },
+  {
+   "claim_id": "C088",
+   "loglog_ids": [
+    "L089"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Continue-versus-switch tradeoff, new section."
+  },
+  {
+   "claim_id": "C089",
+   "loglog_ids": [
+    "L090"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Progress-dependent guidance, distinct."
+  },
+  {
+   "claim_id": "C090",
+   "loglog_ids": [
+    "L091"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Caveat that this is unanalyzed; caveats never trivia."
+  },
+  {
+   "claim_id": "C091",
+   "loglog_ids": [
+    "L092"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Code/data link meta, no analytical value."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 91,
+  "unique": 81,
+  "duplicates": 7,
+  "trivia": 3,
+  "redundancy_rate": 0.077,
+  "trivia_rate": 0.033,
+  "structured_tokens": 112,
+  "tokens_per_unique_claim": 1.38
+ },
+ "prune_list": [
+  "C021 duplicates C009, safe to merge (section 2 recap)",
+  "C036 duplicates C029, safe to merge (section 4 recap)",
+  "C062 duplicates C057, safe to merge (section 6 recap)",
+  "C063 duplicates C050, safe to merge (section 6 recap)",
+  "C071 duplicates C064, safe to merge (section 7 recap)",
+  "C076 duplicates C035, safe to merge (same balancing mechanism)",
+  "C087 duplicates C072, safe to merge (section 8 recap)",
+  "C008 artifact mention, low value, consider cutting",
+  "C056 artifact mention, low value, consider cutting",
+  "C091 artifact mention, low value, consider cutting"
+ ]
+}

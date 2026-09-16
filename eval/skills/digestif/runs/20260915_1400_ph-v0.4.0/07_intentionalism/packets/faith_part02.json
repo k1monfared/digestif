@@ -1,0 +1,295 @@
+{
+ "sample": "07_intentionalism",
+ "part": 2,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "5",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Intention and initiative build progressively, like a muscle.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "## The Training Ground\nYou can't jump straight from \"I pick from what Netflix recommends\" to \"I have a clear vision for my life's work.\" The muscle of intention and initiative builds progressively."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You cannot jump straight from picking from Netflix recommendations to a clear vision for your life's work.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "## The Training Ground\nYou can't jump straight from \"I pick from what Netflix recommends\" to \"I have a clear vision for my life's work.\" The muscle of intention and initiative builds progressively."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "Start tonight: before opening any app, decide what you actually want from the next hour, specifically whether to laugh, learn, feel calm, or be challenged.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "Start small. Tonight, before opening any app, decide intentionally what you actually want from the next hour. Not \"something entertaining\" but specifically: do you want to laugh? Learn something? Feel calm? Be challenged?"
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Then pursue that intentionally: do not open Netflix and see what it suggests, do not scroll TikTok until something catches you.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "Then pursue that intentionally. Don't open Netflix and see what it suggests. Don't scroll TikTok until something catches you. Actively seek what you decided you wanted."
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The practice is not about one evening; it rebuilds the capacity to intend and then act on that intention.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "The practice isn't about that one evening's entertainment. It's about rebuilding the capacity to intend and then act on that intention. Do this enough times, and you start to notice patterns in what satisfies you. Those patterns become preferences. Those preferences become values."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Do it enough times and patterns in what satisfies you become preferences, and preferences become values.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "The practice isn't about that one evening's entertainment. It's about rebuilding the capacity to intend and then act on that intention. Do this enough times, and you start to notice patterns in what satisfies you. Those patterns become preferences. Those preferences become values."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You cannot think your way into values; you have to practice your way into them.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "You can't think your way into values. You have to practice your way into them."
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "The same receiver default shows up in major life decisions.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "## Where This Shows Up\nThink about the last time you made a major life decision. Getting married, taking a job, moving to a city, choosing what to study."
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "A last major life decision: getting married, taking a job, moving to a city, or choosing what to study.",
+   "evidence": [
+    {
+     "ref": "¶32",
+     "text": "## Where This Shows Up\nThink about the last time you made a major life decision. Getting married, taking a job, moving to a city, choosing what to study."
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question is whether you decided what you wanted first and then pursued it, or evaluated options that presented themselves.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "Did you decide what you wanted first and then pursue it? Or did you evaluate among options that presented themselves—people who expressed interest, positions that were posted, cities where you happened to get offers, majors that seemed practical?"
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Most people, most of the time, are evaluating presented options.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "Most people, most of the time, are evaluating presented options. This feels like agency because you're choosing. But you're choosing as a receiver, which means you're operating in a structure that systematically favors the other side."
+    }
+   ]
+  },
+  {
+   "id": "6.3.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "This feels like agency because you are choosing, but you are choosing as a receiver, in a structure that systematically favors the other side.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "Most people, most of the time, are evaluating presented options. This feels like agency because you're choosing. But you're choosing as a receiver, which means you're operating in a structure that systematically favors the other side."
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proposers decide intentionally what kind of work they want and pursue those specific opportunities.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "The proposers—the people who decided intentionally what kind of work they wanted to do and pursued those specific opportunities, who identified what they valued in a partner and sought those people out, who picked cities based on how they wanted to live rather than where they got offers—those people end up with systematically better outcomes."
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "They identify what they value in a partner and seek those people out.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "The proposers—the people who decided intentionally what kind of work they wanted to do and pursued those specific opportunities, who identified what they valued in a partner and sought those people out, who picked cities based on how they wanted to live rather than where they got offers—those people end up with systematically better outcomes."
+    }
+   ]
+  },
+  {
+   "id": "6.5.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "They pick cities based on how they want to live rather than where they got offers.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "The proposers—the people who decided intentionally what kind of work they wanted to do and pursued those specific opportunities, who identified what they valued in a partner and sought those people out, who picked cities based on how they wanted to live rather than where they got offers—those people end up with systematically better outcomes."
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Those people end up with systematically better outcomes.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "The proposers—the people who decided intentionally what kind of work they wanted to do and pursued those specific opportunities, who identified what they valued in a partner and sought those people out, who picked cities based on how they wanted to live rather than where they got offers—those people end up with systematically better outcomes."
+    }
+   ]
+  },
+  {
+   "id": "6.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Not because they are smarter or luckier, but because they are on the other side of a structure that mathematically favors proposers.",
+   "evidence": [
+    {
+     "ref": "¶36",
+     "text": "Not because they're smarter or luckier. Because they're on the other side of a structure that mathematically favors proposers."
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "theme",
+   "attribution": "author",
+   "text": "When most people are receivers, entire systems shift to optimize for whoever is doing the proposing.",
+   "evidence": [
+    {
+     "ref": "¶37",
+     "text": "## The Collective Effect\nThis isn't just about individual outcomes. When most people are receivers, entire systems shift to optimize for whoever's doing the proposing."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Companies build for what they can convince people to want among presented options, not for what people need.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Companies don't build products for what people need—they build for what they can convince people to want among presented options. Dating apps don't facilitate people finding compatible partners—they optimize for engagement among available profiles. Content platforms don't serve what would genuinely satisfy you—they test what keeps you scrolling among suggested posts."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Dating apps optimize for engagement among available profiles, not for people finding compatible partners.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Companies don't build products for what people need—they build for what they can convince people to want among presented options. Dating apps don't facilitate people finding compatible partners—they optimize for engagement among available profiles. Content platforms don't serve what would genuinely satisfy you—they test what keeps you scrolling among suggested posts."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Content platforms test what keeps you scrolling among suggested posts, not what would genuinely satisfy you.",
+   "evidence": [
+    {
+     "ref": "¶38",
+     "text": "Companies don't build products for what people need—they build for what they can convince people to want among presented options. Dating apps don't facilitate people finding compatible partners—they optimize for engagement among available profiles. Content platforms don't serve what would genuinely satisfy you—they test what keeps you scrolling among suggested posts."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The proposers in these systems are not the users; they are the platforms.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "The proposers in these systems aren't the users. They're the platforms. And the structure suggests exactly what we see: the platforms get optimal outcomes (your attention, your data, your money), and you get outcomes that are good enough to keep you participating, but not actually serving your best interests."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The platforms get your attention, data, and money, while you get outcomes good enough to keep participating but not serving your best interests.",
+   "evidence": [
+    {
+     "ref": "¶39",
+     "text": "The proposers in these systems aren't the users. They're the platforms. And the structure suggests exactly what we see: the platforms get optimal outcomes (your attention, your data, your money), and you get outcomes that are good enough to keep you participating, but not actually serving your best interests."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "You stay because leaving feels harder than accepting good enough; that stability, resistance to change, is why the system persists.",
+   "evidence": [
+    {
+     "ref": "¶40",
+     "text": "You stay because leaving feels harder than accepting \"good enough.\" That's stability (resistance to change). That's why the system persists."
+    }
+   ]
+  }
+ ]
+}

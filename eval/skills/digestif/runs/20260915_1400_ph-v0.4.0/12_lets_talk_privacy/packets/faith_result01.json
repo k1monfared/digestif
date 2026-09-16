@@ -1,0 +1,381 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash 2026-09-15",
+ "source_id": "12_lets_talk_privacy_part1",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "0"
+   ],
+   "claim_text": "E2EE trust varies by architecture: WhatsApp mediates keys, Proton stores password-encrypted keys, Signal never holds them, and plaintext password storage stays unverifiable.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the server can directly grant key access to any device it authenticates ... Signal literally cannot decrypt your backups ... we don't know for certain",
+   "reasoning": "Each component matches the source: WhatsApp server-mediated keys, Proton server-stored encrypted key, Signal never sees key, plaintext storage uncertain."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "1"
+   ],
+   "claim_text": "End-to-end encryption can mean several things in practice, and the real question is whether the provider can access your data.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they could mean several things in practical terms ... can Facebook access the content of your WhatsApp messages or not",
+   "reasoning": "Source states multiple meanings and frames the core question as provider access, matching the node."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "claim_text": "The author is not a security expert and writes this as an attempt to understand privacy as an end user.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "I'm not a security expert ... This is an attempt to understand this as an end user",
+   "reasoning": "Direct restatement of the disclaimer paragraph."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "claim_text": "Encrypting on the sender's device and decrypting on the receiver's device without decryption along the way is the definition of E2EE.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "encrypted \"on sender's device\" and then decrypted \"on receiver's device\" without it ever being decrypted along the way is in fact the definition of it",
+   "reasoning": "Node reproduces the source definition verbatim in meaning."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "claim_text": "If the purpose is only to defeat a man-in-the-middle attack, most implementations should be good enough.",
+   "claim_type": "interpretation",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "If the purpose is that a man-in-the-middle attack will not likely compromise your data, then most implementations of this should be good enough",
+   "reasoning": "Source hedges with \"not likely compromise\"; node strengthens to \"defeat\" and adds \"only\", dropping the probabilistic qualifier."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "1.4"
+   ],
+   "claim_text": "Usually the purpose is that no one, and in particular the provider, can access the data.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In general one wants E2EE so that \"no one\" can access the data outside the sender and receivers, and in particular \"the provider\"",
+   "reasoning": "\"Usually\" matches \"In general\"; the no-one/provider purpose is stated directly."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "1.5"
+   ],
+   "claim_text": "With WhatsApp, you do not want Facebook to access message content, though it still knows your network, communication frequency, amount, and times.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you don't want Facebook as a company to have access to the content of your messages ... they know your network, the frequency and amount of communication, times of communication",
+   "reasoning": "All listed metadata matches the source's example."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "1.6"
+   ],
+   "claim_text": "The real question is whether Facebook can access the content of your WhatsApp messages in theory and in practice.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "in theory, and in practice, can Facebook access the content of your WhatsApp messages or not",
+   "reasoning": "Direct restatement of the source's framing question."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "2"
+   ],
+   "claim_text": "WhatsApp's answer is not completely clear: it depends on unverifiable implementation claims.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The answer is not completely clear ... we won't really know because the app is not open source, and hence not really auditable",
+   "reasoning": "Node captures the source's uncertainty and lack of auditability."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "claim_text": "If they implemented things as claimed and added no secret backdoors, then yes, they cannot access the data.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if they have implemented the things in the way they \"claim\" they have, and if they haven't implemented other backdoors ... then yes, they \"can't\" access that data",
+   "reasoning": "Both conditions and the negative conclusion match the source."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "claim_text": "We will not really know, because the app is not open source and hence not really auditable.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "we won't really know because the app is not open source, and hence not really auditable",
+   "reasoning": "Near-verbatim restatement including the causal because clause."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "claim_text": "External audits and tests lack certainty in the negative direction: they can never claim it cannot access the data.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "external audits and tests will lack any certainty in the \"negative\" direction. That is, they can never claim it can't access those data",
+   "reasoning": "Reproduces the source's point about unprovable negatives."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "claim_text": "The 2021 privacy policy changes allow sharing data with Facebook for relevant offers and ads across Meta company products.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "their 2021 privacy policy changes that allow sharing data with Facebook for \"showing relevant offers and ads across the Meta Company Products\"",
+   "reasoning": "Year 2021 and the sharing purpose match the source exactly."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "2.5"
+   ],
+   "claim_text": "Previous security failures include storing hundreds of millions of passwords in plaintext.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "previous security failures like storing hundreds of millions of passwords in plaintext",
+   "reasoning": "Quantity and plaintext detail preserved from source."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "2.6"
+   ],
+   "claim_text": "Given the company's business, you can almost be certain that they can, and do, access the messages.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "when you think about what the company's business is ... you can almost be certain that they can, and they do access them",
+   "reasoning": "The hedge \"almost be certain\" and the claim of access match source."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "2.7"
+   ],
+   "claim_text": "A smoking gun is whether the platform or app can back up your data.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "For me, a smoking gun is whether the platform/app is able to \"backup\" your data",
+   "reasoning": "Direct restatement of the author's smoking gun."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "2.7.1"
+   ],
+   "claim_text": "It is whether you can access history across devices without manually linking them somehow.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Whether you can access your history across devices without \"manually\" linking them somehow",
+   "reasoning": "Verbatim in meaning, including the manual-linking condition."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "2.8"
+   ],
+   "claim_text": "Encryption is locking something with a key: one that only locks and that everyone has, and a master key only the receiver holds.",
+   "claim_type": "definition",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "I think of encryption as locking something and having a key (usually a pair of keys, the one that only locks it and everyone has that, and a master key that only the receiver of the data has it",
+   "reasoning": "Source frames this as the author's model and hedges \"usually a pair of keys\"; node states it as a flat definition."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "2.9"
+   ],
+   "claim_text": "Your master key is created and stored on your phone by default when you create an account.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "this is by default the case when you create an account the key is created and stored on your phone",
+   "reasoning": "Matches the source's default-storage statement."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "2.10"
+   ],
+   "claim_text": "In a simple implementation, another device should not have the same master key to decrypt past messages.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "In a simple implementation, there shouldn't be a way for that other device to have the same master key and decrypt your past messages",
+   "reasoning": "Preserves the negation and the simple-implementation qualifier."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "2.10.1"
+   ],
+   "claim_text": "This is what happens in Signal, where you somehow copy the key from your original device to the new one.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is what happens in Signal. What you need to do is to somehow copy the key from your original device to your new device",
+   "reasoning": "Direct restatement of the Signal key-copy behavior."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "2.11"
+   ],
+   "claim_text": "If at any time Facebook has access to the key, the situation is compromised.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if at any time, Facebook has access to it ... They can take the key and decrypt any/all of your messages whenever they want",
+   "reasoning": "Node paraphrases the source's consequence of Facebook holding the key."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "2.11.1"
+   ],
+   "claim_text": "It is as if you locked your door and left a copy at the local farmers market billboard.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it is as if you've locked your door and left a copy at the local farmers market billboard",
+   "reasoning": "Reproduces the author's analogy exactly."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "2.12"
+   ],
+   "claim_text": "WhatsApp's official documentation says the server stores encrypted message history and maintains mappings between your account and your device identities.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "According to their official documentation, the server stores encrypted message history and maintains mappings between your account and all your device identities",
+   "reasoning": "Attribution and both server functions match the source."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "2.13"
+   ],
+   "claim_text": "When you add a new device, the server authenticates it and provides the keys needed to decrypt your message history.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "When you add a new device, the server authenticates it and provides it with the keys needed to decrypt your message history",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "2.14"
+   ],
+   "claim_text": "This is fundamentally different from Signal: the server is a trusted intermediary that controls access to your encryption keys.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is fundamentally different from Signal's approach - the server is a trusted intermediary that controls access to your encryption keys",
+   "reasoning": "Direct restatement including the Signal contrast."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "2.15"
+   ],
+   "claim_text": "Meta could theoretically authenticate a device that is not yours and give it access to decrypt your messages.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "WhatsApp (Meta) *could* theoretically authenticate a \"device\" that isn't actually yours and give it access to decrypt your messages",
+   "reasoning": "Preserves the theoretical possibility and the device-not-yours condition."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "2.15.1"
+   ],
+   "claim_text": "The claimed safeguards, device lists you can check and security codes you can verify, depend on the server accurately reporting what devices exist.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Their claimed safeguards (device lists you can check, security codes you can verify) all depend on the server honestly reporting what devices exist",
+   "reasoning": "Both safeguards and the dependency on honest server reporting are preserved."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "2.15.2"
+   ],
+   "claim_text": "Since they control that server, they could simply hide a rogue device from your device list entirely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "since they control that server, they could simply hide a rogue device from your device list entirely",
+   "reasoning": "Direct restatement."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "2.16"
+   ],
+   "claim_text": "The multi-device description comes from Meta's engineering post on how WhatsApp enables multi-device capability, from July 2021.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "How WhatsApp enables multi-device capability ... (Engineering at Meta, July 2021)",
+   "reasoning": "Attribution, title, and July 2021 date match the source's reference list."
+  }
+ ],
+ "metrics": {
+  "total_claims": 30,
+  "supported": 28,
+  "partially_supported": 2,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.9333333333333333
+ },
+ "fail_list": [
+  "C05 partially supported: source hedge \"will not likely compromise\" becomes absolute \"defeat\" in the node, changing a probabilistic purpose into a definite one",
+  "C18 partially supported: source frames encryption keys as the author's model with \"usually a pair of keys\", node states it as a flat definition"
+ ]
+}

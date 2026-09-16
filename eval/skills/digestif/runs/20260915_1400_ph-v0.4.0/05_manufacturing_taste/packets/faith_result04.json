@@ -1,0 +1,258 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "05_manufacturing_taste part 4 of 5",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "Story 3 wins: quality is a loose filter setting a floor and ceiling, and the vast middle is dominated by capital and luck.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Story 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will.",
+   "reasoning": "Source states this nearly verbatim, including the middle dominated by capital and luck."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "The greatest composer who ever lived, made precise, is the greatest among those with resources to be heard, published, and preserved.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\"",
+   "reasoning": "Faithful generalization of the source's Bach-specific restatement, same meaning and qualifier."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "5.1.1"
+   ],
+   "claim_text": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "There may have been equally gifted composers whose music was never performed, never published, and never survived.",
+   "reasoning": "Node reproduces the source sentence exactly, hedge included."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "5.1.2"
+   ],
+   "claim_text": "We cannot know, but the simulation says it is very likely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "We don't know. We can't know. But the simulation says it's very likely.",
+   "reasoning": "Node preserves both the epistemic hedge and the simulation's likelihood claim."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "The mechanisms are stronger today, not weaker.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The mechanisms are stronger today, not weaker.",
+   "reasoning": "Exact restatement of the source heading."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "5.2.1"
+   ],
+   "claim_text": "An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours.",
+   "reasoning": "Same two timeframes joined by a semicolon, meaning unchanged."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "5.2.2"
+   ],
+   "claim_text": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.",
+   "reasoning": "Verbatim source sentence."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "The highest-leverage intervention is not better judgment, it is wider exposure.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The highest-leverage intervention isn't better judgment, it's wider exposure.",
+   "reasoning": "Exact match, negation preserved."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "5.3.1"
+   ],
+   "claim_text": "Audiences are already decent judges within the limits of what they are exposed to; the bottleneck is exposure itself.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself.",
+   "reasoning": "Same claim; only dropped the framing phrase \"Our model says\"."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "5.3.2"
+   ],
+   "claim_text": "Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "widely adopted in the 1970s-80s... the proportion of women hired by major US orchestras went from 5% to 25%.",
+   "reasoning": "All figures, date range, and entities match the source exactly."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "5.3.3"
+   ],
+   "claim_text": "The talent was always there; the barrier was exposure.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The talent was always there. The barrier was exposure.",
+   "reasoning": "Verbatim source statement."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "claim_text": "The deeper pattern is the gap between the metric and what we care about: canon survival is a proxy for being the best.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the gap between the metric and the thing we actually care about. We use \"survived into the canon\" as a proxy for \"was the best,\"",
+   "reasoning": "Faithful compression of the source's proxy point."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "5.4.1"
+   ],
+   "claim_text": "The simulation does not say what the canon should look like, only that the one we got is far more contingent than we assume.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The simulation doesn't tell us what the canon *should* look like. It just tells us that the one we got is far more contingent than we assume.",
+   "reasoning": "Same two-part claim, negation and emphasis preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Three caveats bound what the model can tell us.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "## The Caveats\nI want to be honest about what this can and can't tell us.",
+   "reasoning": "Source presents three distinct caveat topics (quality assumption, calibration, omitted factors), supporting the count."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The model assumes quality is a real, stable property that exists independently of who hears it. That's philosophically debatable.",
+   "reasoning": "Node matches the source sentence and its debatable qualifier."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "6.1.1"
+   ],
+   "claim_text": "If quality is partly constituted by social processes, the whole decomposition may be ill-posed.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "If \"quality\" is partly constituted by social processes... then the whole decomposition may be ill-posed.",
+   "reasoning": "Node keeps the conditional and the \"may be\" hedge intact."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "studied American teenagers evaluating pop songs over weeks. Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith.",
+   "reasoning": "Same claim; only the phrase \"evaluating orchestral music\" is compressed out."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "6.2.1"
+   ],
+   "claim_text": "The mechanisms are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the mechanisms... are well-documented across many contexts, but the specific parameter values are uncertain.",
+   "reasoning": "Verbatim source statement aside from the parenthetical mechanism list."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "The model omits genre formation, critical discourse, technological change, and cultural politics.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics.",
+   "reasoning": "All four omitted items match the source list."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "claim_text": "Any model is a simplification; the direction of the effects is robust across parameter values, even if the magnitudes are uncertain.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Any model is a simplification... The direction of the effects is robust across a wide range of parameter values, even if the precise magnitudes are uncertain.",
+   "reasoning": "Same claim; \"wide range of\" is compressed to \"across\" with no meaning change."
+  }
+ ],
+ "metrics": {
+  "total_claims": 20,
+  "supported": 20,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

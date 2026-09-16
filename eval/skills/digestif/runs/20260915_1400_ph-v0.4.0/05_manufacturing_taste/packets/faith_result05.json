@@ -1,0 +1,294 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "05_manufacturing_taste",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "7"
+   ],
+   "claim_text": "Bach was excellent AND well-positioned, and the second half matters more than the first.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "He was excellent AND well-positioned. But the simulation tells us the \"AND\" is doing most of the work, and the second half matters more than the first.",
+   "reasoning": "Source states the exact conjunction and that the second half matters more."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "7.1"
+   ],
+   "claim_text": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "reasoning": "Direct restatement of the source sentence with identical meaning."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "7.1.1"
+   ],
+   "claim_text": "The pop pipeline can manufacture a global phenomenon from someone good enough to carry a tune and look good on camera, a bar millions meet.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion.",
+   "reasoning": "Preserves the criteria and the millions-meet-the-bar qualifier."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "7.1.2"
+   ],
+   "claim_text": "A court position required writing for liturgical services, entertaining aristocrats, training choirs, and improvising fugues on demand.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand.",
+   "reasoning": "All four requirements listed match the source exactly."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "7.1.3"
+   ],
+   "claim_text": "The quality floor of that world was genuinely high.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The quality floor was genuinely high.",
+   "reasoning": "Verbatim restatement of the source claim."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "7.2"
+   ],
+   "claim_text": "Reshuffling patronage gives an almost entirely different canon, with only 2.5% overlap between alternate histories.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Reshuffle patronage and you get an almost entirely different canon. Only 2.5% overlap between alternate histories.",
+   "reasoning": "The 2.5% figure and the near-total difference are stated identically."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "7.3"
+   ],
+   "claim_text": "Bach is like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "reasoning": "The analogy and the number fifty are preserved exactly."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "7.3.1"
+   ],
+   "claim_text": "A New York Times profile led to speaking invitations, a book deal, and a reputation as the best surgeon in the country.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\"",
+   "reasoning": "The causal chain and outlet name match the source."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "7.3.2"
+   ],
+   "claim_text": "The other 49 are just as good, and you have never heard of them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The other 49 are just as good. You've never heard of them.",
+   "reasoning": "Both the count 49 and the negation are preserved."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "7.4"
+   ],
+   "claim_text": "The question was never whether Bach was great; he almost certainly was.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The question was never whether Bach was great. He almost certainly was.",
+   "reasoning": "The negation and the almost-certainly hedge are both kept."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "7.4.1"
+   ],
+   "claim_text": "The question is whether we listen because he was the greatest, or because he was great AND landed the right church job in Leipzig.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig.",
+   "reasoning": "The dichotomy and the Leipzig detail match exactly."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "7.4.2"
+   ],
+   "claim_text": "The simulation says it is the second.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The simulation says it's the second.",
+   "reasoning": "Direct restatement of the source's attribution to the simulation."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "7.4.3"
+   ],
+   "claim_text": "There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "reasoning": "The range 20 to 50 and the probably hedge are preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "7.5"
+   ],
+   "claim_text": "The canon is one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as inevitable.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "it's one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as if it were inevitable.",
+   "reasoning": "Meaning identical; only the 'as if' wording is compressed."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "7.6"
+   ],
+   "claim_text": "Bach's harmonic language, his structures, and his aesthetic sensibility are the foundations of how we hear and judge music today.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today.",
+   "reasoning": "Direct restatement of all three elements and their role."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "7.6.1"
+   ],
+   "claim_text": "With a different set of composers surviving into the canon, we would have inherited different foundations and would hear and judge differently.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently.",
+   "reasoning": "The conditional and its consequences match the source."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "7.6.2"
+   ],
+   "claim_text": "What we call good taste would be a different taste entirely.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "What we call \"good taste\" would be a different taste entirely.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "7.7"
+   ],
+   "claim_text": "Our taste was manufactured along with the canon: we like what we were taught to like.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "It's that our taste was manufactured along with it. We like what we were taught to like.",
+   "reasoning": "Both halves are stated directly in the source."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "7.7.1"
+   ],
+   "claim_text": "The survivors were selected by money and luck as much as by merit.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "the survivors were selected by money and luck as much as by merit.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "7.7.2"
+   ],
+   "claim_text": "The whole chain from who got funded to what counts as beautiful is more contingent than it feels from the inside.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside.",
+   "reasoning": "Verbatim restatement."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "7.8"
+   ],
+   "claim_text": "Whether people 300 years from now will listen to Bieber and call it the peak of our era is unknown.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know.",
+   "reasoning": "The unknown status and the 300-year frame are preserved."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "7.8.1"
+   ],
+   "claim_text": "If the mechanisms are right, the 2000s canon will track distribution deals and the most favorable algorithms more than the best music.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music.",
+   "reasoning": "The conditional and the comparison are preserved exactly."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "7.8.2"
+   ],
+   "claim_text": "And we will not be around to correct them.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "And we won't be around to correct them.",
+   "reasoning": "The negation and meaning are identical."
+  }
+ ],
+ "metrics": {
+  "total_claims": 23,
+  "supported": 23,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

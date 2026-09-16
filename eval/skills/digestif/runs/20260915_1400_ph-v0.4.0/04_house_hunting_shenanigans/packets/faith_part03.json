@@ -1,0 +1,375 @@
+{
+ "sample": "04_house_hunting_shenanigans",
+ "part": 3,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "5",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Correspondence: the Sunday email exchange between N and J's assistant L over the revived offer.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "  <tr>\n    <td>Sunday 3pm</td>\n    <td>N forwards me a series of back and forth with the assistant of J, L.</td>\n    <td></td>\n    <td>read them below:</td>\n  </tr>"
+    },
+    {
+     "ref": "¶24",
+     "text": "  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td> Here are the correspondences verbatim (pi removed):\n        <br><br>Sunday 9am, from N to JCL: Good morning, L, J and C, Please see the attached offer on [...]. The dates have adjusted to meet your client’s preference. This is my client’s best an final offer. Thank you, N\n        <br><br>Sunday 1pm, from L to N: I just realized that this Offer has expired. Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond?  That seems very unprofessional to me, and certainly not in the best interest of your Clients. ~L. Unlicensed Assistant to J-C\n        <br><br>Sunday 1pm, from N to L: Hello L, I informed C last night that we would be submitting an offer first thing in the morning. I sent the offer, a touch base and text messages first thing in the morning. The offer you sent us last night was submitted at 9:15 PM and open till 11 PM. The offer we sent you this morning was sent at 9:15 AM and open till 11 AM. You are free to accept the new offer and extend the time for signing. Cheer, N\n        <br><br>Sunday 1pm, from L to N: The Offer we sent to you last night was already fully signed, so much less response time required from your Clients. It just bothers me as a member of the Public, who has been working in real Estate Admin positions in V. for over 37 years, to see a Realtor not doing their best for their Clients. Your turn around time was not reasonable. L\n        <br><br>Sunday 1:30pm, from N to L: Hello L, Professional and to your client’s interest service would have been to work with our excellent Full Price offer on Friday night / Saturday morning. Instead your team stalled and ended up with a 2nd and 3rd offers your clients are not interested in. The offer you have from us is exactly as my client wants it presented. The timeline was tight because even with 3 realtors your team has shown that they are not able work with us in a timely manner. Instead of spending time lobbing insults how about getting the job done? All the best, N\n    </td>\n  </tr>"
+    },
+    {
+     "ref": "¶27",
+     "text": "  <tr>\n    <td>Sunday 6pm</td>\n    <td>I respond: Hi N, I do not believe that they didn't see the offer. My understanding is that today's showings didn't produce a better offer, or any at all. And now they are saying they want to open the closed doors again by pretending the assistant didn't see it on time, sure. OK, I get it, they wanted to try the whole weekend, and lucky for them I didn't have another house in mind to write an offer on, because I totally would. Anyways, what has happened over the weekend gave me a ton of valuable information which I really appreciate, whether this transaction happens or not. I'm certainly not writing another offer, I will not have an open offer for any period of time, so it is either what you mentioned happening or what I asked as an in person thing, whether it has every happened before or not is none of my concerns. What I know is that I'm not giving them another chance to try to find another competing offer. I've done more than enough in that regard. K</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Sunday 3pm N forwarded a series of back and forth with J's assistant L.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "  <tr>\n    <td>Sunday 3pm</td>\n    <td>N forwards me a series of back and forth with the assistant of J, L.</td>\n    <td></td>\n    <td>read them below:</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Sunday 9am N sent the offer with dates adjusted to the sellers' preference, calling it his client's best and final.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td> Here are the correspondences verbatim (pi removed):\n        <br><br>Sunday 9am, from N to JCL: Good morning, L, J and C, Please see the attached offer on [...]. The dates have adjusted to meet your client’s preference. This is my client’s best an final offer. Thank you, N\n        <br><br>Sunday 1pm, from L to N: I just realized that this Offer has expired. Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond?  That seems very unprofessional to me, and certainly not in the best interest of your Clients. ~L. Unlicensed Assistant to J-C\n        <br><br>Sunday 1pm, from N to L: Hello L, I informed C last night that we would be submitting an offer first thing in the morning. I sent the offer, a touch base and text messages first thing in the morning. The offer you sent us last night was submitted at 9:15 PM and open till 11 PM. The offer we sent you this morning was sent at 9:15 AM and open till 11 AM. You are free to accept the new offer and extend the time for signing. Cheer, N\n        <br><br>Sunday 1pm, from L to N: The Offer we sent to you last night was already fully signed, so much less response time required from your Clients. It just bothers me as a member of the Public, who has been working in real Estate Admin positions in V. for over 37 years, to see a Realtor not doing their best for their Clients. Your turn around time was not reasonable. L\n        <br><br>Sunday 1:30pm, from N to L: Hello L, Professional and to your client’s interest service would have been to work with our excellent Full Price offer on Friday night / Saturday morning. Instead your team stalled and ended up with a 2nd and 3rd offers your clients are not interested in. The offer you have from us is exactly as my client wants it presented. The timeline was tight because even with 3 realtors your team has shown that they are not able work with us in a timely manner. Instead of spending time lobbing insults how about getting the job done? All the best, N\n    </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "L replied that the offer had already expired, asking why they got a new Sunday-morning offer with less than 2 hours.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td> Here are the correspondences verbatim (pi removed):\n        <br><br>Sunday 9am, from N to JCL: Good morning, L, J and C, Please see the attached offer on [...]. The dates have adjusted to meet your client’s preference. This is my client’s best an final offer. Thank you, N\n        <br><br>Sunday 1pm, from L to N: I just realized that this Offer has expired. Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond?  That seems very unprofessional to me, and certainly not in the best interest of your Clients. ~L. Unlicensed Assistant to J-C\n        <br><br>Sunday 1pm, from N to L: Hello L, I informed C last night that we would be submitting an offer first thing in the morning. I sent the offer, a touch base and text messages first thing in the morning. The offer you sent us last night was submitted at 9:15 PM and open till 11 PM. The offer we sent you this morning was sent at 9:15 AM and open till 11 AM. You are free to accept the new offer and extend the time for signing. Cheer, N\n        <br><br>Sunday 1pm, from L to N: The Offer we sent to you last night was already fully signed, so much less response time required from your Clients. It just bothers me as a member of the Public, who has been working in real Estate Admin positions in V. for over 37 years, to see a Realtor not doing their best for their Clients. Your turn around time was not reasonable. L\n        <br><br>Sunday 1:30pm, from N to L: Hello L, Professional and to your client’s interest service would have been to work with our excellent Full Price offer on Friday night / Saturday morning. Instead your team stalled and ended up with a 2nd and 3rd offers your clients are not interested in. The offer you have from us is exactly as my client wants it presented. The timeline was tight because even with 3 realtors your team has shown that they are not able work with us in a timely manner. Instead of spending time lobbing insults how about getting the job done? All the best, N\n    </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "N answered their offer came at 9:15 PM till 11 PM, his at 9:15 AM till 11 AM, and they could accept and extend.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td> Here are the correspondences verbatim (pi removed):\n        <br><br>Sunday 9am, from N to JCL: Good morning, L, J and C, Please see the attached offer on [...]. The dates have adjusted to meet your client’s preference. This is my client’s best an final offer. Thank you, N\n        <br><br>Sunday 1pm, from L to N: I just realized that this Offer has expired. Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond?  That seems very unprofessional to me, and certainly not in the best interest of your Clients. ~L. Unlicensed Assistant to J-C\n        <br><br>Sunday 1pm, from N to L: Hello L, I informed C last night that we would be submitting an offer first thing in the morning. I sent the offer, a touch base and text messages first thing in the morning. The offer you sent us last night was submitted at 9:15 PM and open till 11 PM. The offer we sent you this morning was sent at 9:15 AM and open till 11 AM. You are free to accept the new offer and extend the time for signing. Cheer, N\n        <br><br>Sunday 1pm, from L to N: The Offer we sent to you last night was already fully signed, so much less response time required from your Clients. It just bothers me as a member of the Public, who has been working in real Estate Admin positions in V. for over 37 years, to see a Realtor not doing their best for their Clients. Your turn around time was not reasonable. L\n        <br><br>Sunday 1:30pm, from N to L: Hello L, Professional and to your client’s interest service would have been to work with our excellent Full Price offer on Friday night / Saturday morning. Instead your team stalled and ended up with a 2nd and 3rd offers your clients are not interested in. The offer you have from us is exactly as my client wants it presented. The timeline was tight because even with 3 realtors your team has shown that they are not able work with us in a timely manner. Instead of spending time lobbing insults how about getting the job done? All the best, N\n    </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "L cited over 37 years in real estate administration and said their fully-signed offer needed less response time.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td> Here are the correspondences verbatim (pi removed):\n        <br><br>Sunday 9am, from N to JCL: Good morning, L, J and C, Please see the attached offer on [...]. The dates have adjusted to meet your client’s preference. This is my client’s best an final offer. Thank you, N\n        <br><br>Sunday 1pm, from L to N: I just realized that this Offer has expired. Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond?  That seems very unprofessional to me, and certainly not in the best interest of your Clients. ~L. Unlicensed Assistant to J-C\n        <br><br>Sunday 1pm, from N to L: Hello L, I informed C last night that we would be submitting an offer first thing in the morning. I sent the offer, a touch base and text messages first thing in the morning. The offer you sent us last night was submitted at 9:15 PM and open till 11 PM. The offer we sent you this morning was sent at 9:15 AM and open till 11 AM. You are free to accept the new offer and extend the time for signing. Cheer, N\n        <br><br>Sunday 1pm, from L to N: The Offer we sent to you last night was already fully signed, so much less response time required from your Clients. It just bothers me as a member of the Public, who has been working in real Estate Admin positions in V. for over 37 years, to see a Realtor not doing their best for their Clients. Your turn around time was not reasonable. L\n        <br><br>Sunday 1:30pm, from N to L: Hello L, Professional and to your client’s interest service would have been to work with our excellent Full Price offer on Friday night / Saturday morning. Instead your team stalled and ended up with a 2nd and 3rd offers your clients are not interested in. The offer you have from us is exactly as my client wants it presented. The timeline was tight because even with 3 realtors your team has shown that they are not able work with us in a timely manner. Instead of spending time lobbing insults how about getting the job done? All the best, N\n    </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "N replied their team stalled on the Friday full-price offer and ended up with 2nd and 3rd offers they don't want.",
+   "evidence": [
+    {
+     "ref": "¶24",
+     "text": "  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td> Here are the correspondences verbatim (pi removed):\n        <br><br>Sunday 9am, from N to JCL: Good morning, L, J and C, Please see the attached offer on [...]. The dates have adjusted to meet your client’s preference. This is my client’s best an final offer. Thank you, N\n        <br><br>Sunday 1pm, from L to N: I just realized that this Offer has expired. Why on earth would you send a completely new Offer on a Sunday morning with less than 2 hours for the Sellers to respond?  That seems very unprofessional to me, and certainly not in the best interest of your Clients. ~L. Unlicensed Assistant to J-C\n        <br><br>Sunday 1pm, from N to L: Hello L, I informed C last night that we would be submitting an offer first thing in the morning. I sent the offer, a touch base and text messages first thing in the morning. The offer you sent us last night was submitted at 9:15 PM and open till 11 PM. The offer we sent you this morning was sent at 9:15 AM and open till 11 AM. You are free to accept the new offer and extend the time for signing. Cheer, N\n        <br><br>Sunday 1pm, from L to N: The Offer we sent to you last night was already fully signed, so much less response time required from your Clients. It just bothers me as a member of the Public, who has been working in real Estate Admin positions in V. for over 37 years, to see a Realtor not doing their best for their Clients. Your turn around time was not reasonable. L\n        <br><br>Sunday 1:30pm, from N to L: Hello L, Professional and to your client’s interest service would have been to work with our excellent Full Price offer on Friday night / Saturday morning. Instead your team stalled and ended up with a 2nd and 3rd offers your clients are not interested in. The offer you have from us is exactly as my client wants it presented. The timeline was tight because even with 3 realtors your team has shown that they are not able work with us in a timely manner. Instead of spending time lobbing insults how about getting the job done? All the best, N\n    </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Sunday 5:30pm the buyer replied thanking N and saying they're throwing the assistant under the bus.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "  <tr>\n    <td>Sunday 5:30pm</td>\n    <td>I see the emails and respond to N: Lol. Sorry you had to deal with this. And now they're throwing the assistant under the bus. Of course! At least we got to know J and C and their level of competence. If we do hear from them I will only present my offer in person and would need a response right away. Likely Monday after 5:30, and if you don't mind in your office. Please let me know if that's possible. Cheers, K</td>\n    <td>I think this is also a game from them trying to play the game that oh it was the assistant that didn't actually see the offer. That's pathetic.</td>\n    <td>N thinks they are actually incompetent and they don't know what they're doing.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He proposed presenting his offer in person Monday after 5:30, in N's office.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "  <tr>\n    <td>Sunday 5:30pm</td>\n    <td>I see the emails and respond to N: Lol. Sorry you had to deal with this. And now they're throwing the assistant under the bus. Of course! At least we got to know J and C and their level of competence. If we do hear from them I will only present my offer in person and would need a response right away. Likely Monday after 5:30, and if you don't mind in your office. Please let me know if that's possible. Cheers, K</td>\n    <td>I think this is also a game from them trying to play the game that oh it was the assistant that didn't actually see the offer. That's pathetic.</td>\n    <td>N thinks they are actually incompetent and they don't know what they're doing.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.9",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "He thought the claim that the assistant missed the offer was a game, and pathetic.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "  <tr>\n    <td>Sunday 5:30pm</td>\n    <td>I see the emails and respond to N: Lol. Sorry you had to deal with this. And now they're throwing the assistant under the bus. Of course! At least we got to know J and C and their level of competence. If we do hear from them I will only present my offer in person and would need a response right away. Likely Monday after 5:30, and if you don't mind in your office. Please let me know if that's possible. Cheers, K</td>\n    <td>I think this is also a game from them trying to play the game that oh it was the assistant that didn't actually see the offer. That's pathetic.</td>\n    <td>N thinks they are actually incompetent and they don't know what they're doing.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.10",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "N thought they were actually incompetent and didn't know what they were doing.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "  <tr>\n    <td>Sunday 5:30pm</td>\n    <td>I see the emails and respond to N: Lol. Sorry you had to deal with this. And now they're throwing the assistant under the bus. Of course! At least we got to know J and C and their level of competence. If we do hear from them I will only present my offer in person and would need a response right away. Likely Monday after 5:30, and if you don't mind in your office. Please let me know if that's possible. Cheers, K</td>\n    <td>I think this is also a game from them trying to play the game that oh it was the assistant that didn't actually see the offer. That's pathetic.</td>\n    <td>N thinks they are actually incompetent and they don't know what they're doing.</td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.11",
+   "type": "claim",
+   "attribution": "author",
+   "text": "N replied the best outcome would be acceptance needing only an initialed deadline, and that in-person presentations never happen.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "  <tr>\n    <td>Sunday 6pm</td>\n    <td>N responds: Hello K, What would be positive is if they reach out to us this evening or tomorrow morning with an acceptance of your offer that only requires you initialing a new deadline time. In regards to presenting an offer in person this never happens. This is why both sellers and purchasers hire independent representation. It’s frustrating in this situation in that I don’t think this team is doing a solid job of representing their clients. The right hand maybe not knowing what the left hand is doing? They most certainly have the legal obligation to present your offer and the seller is ultimately responsible to make a decision on what to do with it. You can send them this offer again tonight open for a few hours if you want to? </td>\n    <td>I don't want to present another offer. They have had an offer from me each of the past 3 days they've had a showing. That's an accomplishment on their side. I'm not going to help them with that anymore.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.12",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "N doubted the team was representing their clients well, the right hand maybe not knowing the left.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "  <tr>\n    <td>Sunday 6pm</td>\n    <td>N responds: Hello K, What would be positive is if they reach out to us this evening or tomorrow morning with an acceptance of your offer that only requires you initialing a new deadline time. In regards to presenting an offer in person this never happens. This is why both sellers and purchasers hire independent representation. It’s frustrating in this situation in that I don’t think this team is doing a solid job of representing their clients. The right hand maybe not knowing what the left hand is doing? They most certainly have the legal obligation to present your offer and the seller is ultimately responsible to make a decision on what to do with it. You can send them this offer again tonight open for a few hours if you want to? </td>\n    <td>I don't want to present another offer. They have had an offer from me each of the past 3 days they've had a showing. That's an accomplishment on their side. I'm not going to help them with that anymore.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.13",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The buyer replied he didn't believe they missed the offer, figured the showings produced no better offer, and would not write another.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "  <tr>\n    <td>Sunday 6pm</td>\n    <td>I respond: Hi N, I do not believe that they didn't see the offer. My understanding is that today's showings didn't produce a better offer, or any at all. And now they are saying they want to open the closed doors again by pretending the assistant didn't see it on time, sure. OK, I get it, they wanted to try the whole weekend, and lucky for them I didn't have another house in mind to write an offer on, because I totally would. Anyways, what has happened over the weekend gave me a ton of valuable information which I really appreciate, whether this transaction happens or not. I'm certainly not writing another offer, I will not have an open offer for any period of time, so it is either what you mentioned happening or what I asked as an in person thing, whether it has every happened before or not is none of my concerns. What I know is that I'm not giving them another chance to try to find another competing offer. I've done more than enough in that regard. K</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "5.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He said the weekend gave him valuable information whether or not the transaction happens.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "  <tr>\n    <td>Sunday 6pm</td>\n    <td>I respond: Hi N, I do not believe that they didn't see the offer. My understanding is that today's showings didn't produce a better offer, or any at all. And now they are saying they want to open the closed doors again by pretending the assistant didn't see it on time, sure. OK, I get it, they wanted to try the whole weekend, and lucky for them I didn't have another house in mind to write an offer on, because I totally would. Anyways, what has happened over the weekend gave me a ton of valuable information which I really appreciate, whether this transaction happens or not. I'm certainly not writing another offer, I will not have an open offer for any period of time, so it is either what you mentioned happening or what I asked as an in person thing, whether it has every happened before or not is none of my concerns. What I know is that I'm not giving them another chance to try to find another competing offer. I've done more than enough in that regard. K</td>\n    <td></td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "6",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Aftermath: process changes, the coffee bet, and the house selling 10K below asking.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "  <tr>\n    <td>Monday morning</td>\n    <td>I send this to my realtor: Hi N, What a weekend that was. Thank you very much for working so patiently with me, and I'm sorry you had to deal with those unprofessional behaviors. Anyways, this was a great experience for me and I learned a lot. Going forward I would like to make a couple of changes: please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it. Also, any time that a seller's agent mentions an existing or competing offer please ask them to provide that in writing in form of the disclosure letter. I think this will immensely help me make better decisions and have a smoother process. Cheers, K</td>\n    <td>Feels like there are a million levers that realtors have to push you to increase the price, even when everything is pointing the other way, which makes sense. They want the deal to close and as a buyer I have more chance of doing that if I increase the price, hence the push. But I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so. And it takes energy to distill all information and remove noise that influences my decision in the heat of back and forth in negotiations.</td>\n    <td></td>\n  </tr>"
+    },
+    {
+     "ref": "¶29",
+     "text": "  <tr>\n      <td>\n          one week later\n      </td>\n      <td>\n          N says he thinks the house had an offer of 5K above asking price. I said I think it is below the asking price. We bet if it is the asking price or higher, I'll buy him a coffee, if it is 10K below asking price or lower, he'll buy me a coffee.\n      </td>\n      <td>\n          I think N still believes in those seller's realtors way too much.\n      </td>\n      <td>\n      </td>\n  </tr>"
+    },
+    {
+     "ref": "¶30",
+     "text": "  <tr>\n      <td>\n          two weeks later\n      </td>\n      <td>\n          the house is sold for 10K below the asking price.\n      </td>\n      <td>\n          They were not only stupid but also had a very huge ego.\n      </td>\n      <td>\n          N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price.\n      </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Monday morning he thanked N and asked that competing offers never be volunteered and that agents provide disclosure letters in writing.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "  <tr>\n    <td>Monday morning</td>\n    <td>I send this to my realtor: Hi N, What a weekend that was. Thank you very much for working so patiently with me, and I'm sorry you had to deal with those unprofessional behaviors. Anyways, this was a great experience for me and I learned a lot. Going forward I would like to make a couple of changes: please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it. Also, any time that a seller's agent mentions an existing or competing offer please ask them to provide that in writing in form of the disclosure letter. I think this will immensely help me make better decisions and have a smoother process. Cheers, K</td>\n    <td>Feels like there are a million levers that realtors have to push you to increase the price, even when everything is pointing the other way, which makes sense. They want the deal to close and as a buyer I have more chance of doing that if I increase the price, hence the push. But I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so. And it takes energy to distill all information and remove noise that influences my decision in the heat of back and forth in negotiations.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "6.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "His reasoning: realtors push buyers to raise prices even when evidence points the other way.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "  <tr>\n    <td>Monday morning</td>\n    <td>I send this to my realtor: Hi N, What a weekend that was. Thank you very much for working so patiently with me, and I'm sorry you had to deal with those unprofessional behaviors. Anyways, this was a great experience for me and I learned a lot. Going forward I would like to make a couple of changes: please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it. Also, any time that a seller's agent mentions an existing or competing offer please ask them to provide that in writing in form of the disclosure letter. I think this will immensely help me make better decisions and have a smoother process. Cheers, K</td>\n    <td>Feels like there are a million levers that realtors have to push you to increase the price, even when everything is pointing the other way, which makes sense. They want the deal to close and as a buyer I have more chance of doing that if I increase the price, hence the push. But I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so. And it takes energy to distill all information and remove noise that influences my decision in the heat of back and forth in negotiations.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "6.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "He didn't want to pay an extra 5-10% for a house just because others might.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "  <tr>\n    <td>Monday morning</td>\n    <td>I send this to my realtor: Hi N, What a weekend that was. Thank you very much for working so patiently with me, and I'm sorry you had to deal with those unprofessional behaviors. Anyways, this was a great experience for me and I learned a lot. Going forward I would like to make a couple of changes: please do not volunteer any information regarding existing or competing offers on any property to me unless I explicitly ask for it. Also, any time that a seller's agent mentions an existing or competing offer please ask them to provide that in writing in form of the disclosure letter. I think this will immensely help me make better decisions and have a smoother process. Cheers, K</td>\n    <td>Feels like there are a million levers that realtors have to push you to increase the price, even when everything is pointing the other way, which makes sense. They want the deal to close and as a buyer I have more chance of doing that if I increase the price, hence the push. But I don't want to pay extra 5-10% for a house just because others (maybe) are willing to do so. And it takes energy to distill all information and remove noise that influences my decision in the heat of back and forth in negotiations.</td>\n    <td></td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "6.4",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "One week later they bet a coffee: N thought the house sold 5K above asking, the buyer thought below.",
+   "evidence": [
+    {
+     "ref": "¶29",
+     "text": "  <tr>\n      <td>\n          one week later\n      </td>\n      <td>\n          N says he thinks the house had an offer of 5K above asking price. I said I think it is below the asking price. We bet if it is the asking price or higher, I'll buy him a coffee, if it is 10K below asking price or lower, he'll buy me a coffee.\n      </td>\n      <td>\n          I think N still believes in those seller's realtors way too much.\n      </td>\n      <td>\n      </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "6.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Two weeks later the house sold for 10K below the asking price, so N owes him a coffee.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "  <tr>\n      <td>\n          two weeks later\n      </td>\n      <td>\n          the house is sold for 10K below the asking price.\n      </td>\n      <td>\n          They were not only stupid but also had a very huge ego.\n      </td>\n      <td>\n          N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price.\n      </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "6.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He judged them not only stupid but also having a very huge ego.",
+   "evidence": [
+    {
+     "ref": "¶30",
+     "text": "  <tr>\n      <td>\n          two weeks later\n      </td>\n      <td>\n          the house is sold for 10K below the asking price.\n      </td>\n      <td>\n          They were not only stupid but also had a very huge ego.\n      </td>\n      <td>\n          N is going to buy me a coffee! Also the first one that I put an offer on is gone for waaaaay higher than the asking price.\n      </td>\n  </tr>"
+    }
+   ]
+  },
+  {
+   "id": "7",
+   "type": "theme",
+   "attribution": "author",
+   "text": "Reflections: the seller was a marketer, the realtor-run system treats buyers as pawns, and people stop fighting processes.",
+   "evidence": [
+    {
+     "ref": "¶31",
+     "text": "Final thoughts:"
+    },
+    {
+     "ref": "¶34",
+     "text": "- It feels like the realtors have created this system that works fine for them, and the buyers and sellers now have to obey by how they work and in this, they basically are playing with us as pawns in their chess game. I know I'm exaggerating quite a bit, but the feeling is there. Not sure what can be done about this situation. For most people they just want to buy/sell a house and don't want to engage with the situation that much. But I find that counterproductive. We as a society have given up on so many things, a phone holder bought from amazon is not worth fighting for, let amazon do what they are doing, a laptop bought from bestbuy is not worth fighting for, let them do whatever, a stock from stockexchange is not worth fighting for, we don't even know how the stock market works, let them be, a tax return is not worth fighting for, just pay whatever the app tells you, a car bought from a dealership is not worth fighting for, this is what's available in the market, and a house bought/sold is not worth fighting for, realtors know what they're doing. I feel as if we spend hours and hours of our lived \"negotiating\" on the smallest things from a phone holder to a house, but when it comes to fixing the processes we don't even want to talk about it. It is so wrong."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The seller was a marketing and sales person who teaches car dealerships how to sell cars.",
+   "evidence": [
+    {
+     "ref": "¶33",
+     "text": "- I had to dig a bit and figured out the seller is a marketing and sales person who teaches car dealerships how to sell cars. Interpret that however you wish."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He feels realtors created a system that works fine for them, making buyers and sellers pawns in their chess game.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- It feels like the realtors have created this system that works fine for them, and the buyers and sellers now have to obey by how they work and in this, they basically are playing with us as pawns in their chess game. I know I'm exaggerating quite a bit, but the feeling is there. Not sure what can be done about this situation. For most people they just want to buy/sell a house and don't want to engage with the situation that much. But I find that counterproductive. We as a society have given up on so many things, a phone holder bought from amazon is not worth fighting for, let amazon do what they are doing, a laptop bought from bestbuy is not worth fighting for, let them do whatever, a stock from stockexchange is not worth fighting for, we don't even know how the stock market works, let them be, a tax return is not worth fighting for, just pay whatever the app tells you, a car bought from a dealership is not worth fighting for, this is what's available in the market, and a house bought/sold is not worth fighting for, realtors know what they're doing. I feel as if we spend hours and hours of our lived \"negotiating\" on the smallest things from a phone holder to a house, but when it comes to fixing the processes we don't even want to talk about it. It is so wrong."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "He acknowledges he is exaggerating quite a bit, but the feeling is there.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- It feels like the realtors have created this system that works fine for them, and the buyers and sellers now have to obey by how they work and in this, they basically are playing with us as pawns in their chess game. I know I'm exaggerating quite a bit, but the feeling is there. Not sure what can be done about this situation. For most people they just want to buy/sell a house and don't want to engage with the situation that much. But I find that counterproductive. We as a society have given up on so many things, a phone holder bought from amazon is not worth fighting for, let amazon do what they are doing, a laptop bought from bestbuy is not worth fighting for, let them do whatever, a stock from stockexchange is not worth fighting for, we don't even know how the stock market works, let them be, a tax return is not worth fighting for, just pay whatever the app tells you, a car bought from a dealership is not worth fighting for, this is what's available in the market, and a house bought/sold is not worth fighting for, realtors know what they're doing. I feel as if we spend hours and hours of our lived \"negotiating\" on the smallest things from a phone holder to a house, but when it comes to fixing the processes we don't even want to talk about it. It is so wrong."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "He compares giving up on phone holders, laptops, stocks, tax returns, cars, and houses to not wanting to fix processes.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- It feels like the realtors have created this system that works fine for them, and the buyers and sellers now have to obey by how they work and in this, they basically are playing with us as pawns in their chess game. I know I'm exaggerating quite a bit, but the feeling is there. Not sure what can be done about this situation. For most people they just want to buy/sell a house and don't want to engage with the situation that much. But I find that counterproductive. We as a society have given up on so many things, a phone holder bought from amazon is not worth fighting for, let amazon do what they are doing, a laptop bought from bestbuy is not worth fighting for, let them do whatever, a stock from stockexchange is not worth fighting for, we don't even know how the stock market works, let them be, a tax return is not worth fighting for, just pay whatever the app tells you, a car bought from a dealership is not worth fighting for, this is what's available in the market, and a house bought/sold is not worth fighting for, realtors know what they're doing. I feel as if we spend hours and hours of our lived \"negotiating\" on the smallest things from a phone holder to a house, but when it comes to fixing the processes we don't even want to talk about it. It is so wrong."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "He finds it wrong that people negotiate hours over small things but won't talk about fixing processes.",
+   "evidence": [
+    {
+     "ref": "¶34",
+     "text": "- It feels like the realtors have created this system that works fine for them, and the buyers and sellers now have to obey by how they work and in this, they basically are playing with us as pawns in their chess game. I know I'm exaggerating quite a bit, but the feeling is there. Not sure what can be done about this situation. For most people they just want to buy/sell a house and don't want to engage with the situation that much. But I find that counterproductive. We as a society have given up on so many things, a phone holder bought from amazon is not worth fighting for, let amazon do what they are doing, a laptop bought from bestbuy is not worth fighting for, let them do whatever, a stock from stockexchange is not worth fighting for, we don't even know how the stock market works, let them be, a tax return is not worth fighting for, just pay whatever the app tells you, a car bought from a dealership is not worth fighting for, this is what's available in the market, and a house bought/sold is not worth fighting for, realtors know what they're doing. I feel as if we spend hours and hours of our lived \"negotiating\" on the smallest things from a phone holder to a house, but when it comes to fixing the processes we don't even want to talk about it. It is so wrong."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "He links a ChatGPT conversation about the situation.",
+   "evidence": [
+    {
+     "ref": "¶35",
+     "text": "----\n\nIf you are interested in reading a conversation with chatgpt around this, take a look [here](https://chatgpt.com/share/67a15e86-56f8-8004-93cd-845159f7a4fe)."
+    }
+   ]
+  }
+ ]
+}

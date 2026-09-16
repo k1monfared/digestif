@@ -1,0 +1,377 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "05_manufacturing_taste",
+  "labels": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "L002"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical one-line thesis; anchor for later restatements."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "L003"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Specific composer counts; numbers never trivia."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "L004"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Patronage-versus-merit framing restates the thesis already given."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "L005"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Replayable-model rationale; negation, not trivia."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "L006"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Distinct Bach/Bieber hook framing."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "L007"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated section header listing hypotheses detailed below."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "L008"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Hypothesis 1 stated in full."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "L009"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Hypothesis 2 stated in full."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "L010"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical Floors and Ceilings hypothesis for later recap."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "L011"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Job-market illustration adds a concrete example."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "L012"
+      ],
+      "label": "Trivia",
+      "canonical_id": null,
+      "reasoning": "Restated header enumerating three mechanisms detailed below."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "L013"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Mere-exposure evidence with statistics."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "L014"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Causal airtime mechanism; distinct from proxy point."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "L015"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "MusicLab numbers; specific evidence."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "L016"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Matthew effect as cumulative-advantage mechanism."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "L017"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Model definition; substantive setup."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "L018"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Simulation scale numbers."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "L019"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Provenance and paper link; distinct meta."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "L020"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C001",
+      "reasoning": "Results recap restates thesis and repeats body results below."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "L021"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Correlation drop with p-value; statistics."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "L022"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Proxy-optimization nuance adds new mechanism."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "L023"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Counterfactual distance number."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "L024"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Top-10-percent and 1-in-4 numbers."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "L025"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Model-comparison numbers; distinct from qualitative recap."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "L026"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Vienna run numbers; not the composer inventory."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "L027"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Parameter-sweep robustness claim."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "L028"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Reach-gap numbers; concrete example."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "L029"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C009",
+      "reasoning": "Conclusion restates Floors and Ceilings hypothesis nearly verbatim."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "L030"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Canonical Bach-positioning nuance for later verdict."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "L031"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Temporal acceleration comparison adds new point."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "L032"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Blind-audition numbers; leverage definition."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "L033"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Survival-as-proxy interpretation; distinct from taste point."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "L034"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Caveats and exclusions; caveats never trivia."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "L035"
+      ],
+      "label": "Duplicate",
+      "canonical_id": "C029",
+      "reasoning": "Final verdict restates Bach-positioning nuance."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "L036"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Surgeon analogy is a distinct example."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "L037"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New 20-50 estimate; numbers never trivia."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "L038"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Conditional forecast scoped to mechanisms."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "L039"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Manufactured-taste point; distinct explanatory angle."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "L040"
+      ],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Concession answering the Bieber half; negations not trivia."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 39,
+    "unique": 33,
+    "duplicates": 4,
+    "trivia": 2,
+    "redundancy_rate": 0.1026,
+    "trivia_rate": 0.0513,
+    "structured_tokens": 788,
+    "tokens_per_unique_claim": 23.88
+  },
+  "prune_list": [
+    "C003 duplicates C001, fold patronage/access phrasing into the thesis line",
+    "C019 duplicates C001, results recap repeats the thesis and body results",
+    "C028 duplicates C009, conclusion restates Floors and Ceilings",
+    "C034 duplicates C029, verdict restates Bach-positioning",
+    "C006 trivia, restated section header listing hypotheses, drop",
+    "C011 trivia, restated section header listing mechanisms, drop"
+  ]
+}

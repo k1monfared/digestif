@@ -1,0 +1,258 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "12_lets_talk_privacy",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "8"
+   ],
+   "claim_text": "The verification question gets its own treatment: what can and cannot be checked.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "## How Do We Know Companies Don't Store Plaintext Passwords?",
+   "reasoning": "Source devotes a section to verifying plaintext storage, then enumerates what can and cannot be verified."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "8.1"
+   ],
+   "claim_text": "What you can verify: open-source clients hash or encrypt passwords before sending, though this proves only what the client does.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "you can verify the client hashes/encrypts passwords before sending. But this only proves what the client does",
+   "reasoning": "Source states the same scope limitation verbatim."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "8.2"
+   ],
+   "claim_text": "Network traffic inspection with tools like Wireshark shows what is transmitted; plaintext over the network is a red flag.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Tools like Wireshark can show what's transmitted. If passwords are sent in plaintext over the network, that's a red flag.",
+   "reasoning": "Matches source exactly."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "8.2.1"
+   ],
+   "claim_text": "Even with HTTPS encryption, you cannot see what the server does after decryption.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "even with HTTPS encryption, you can't see what the server does after decryption",
+   "reasoning": "Identical meaning, negation preserved."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "8.3"
+   ],
+   "claim_text": "Security audits: independent auditors can review server code if given access, but you trust the auditor and that the audited code was deployed.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Independent auditors can review server code if given access. But you're trusting the auditor and trusting the company deployed the audited code.",
+   "reasoning": "Both trust conditions retained."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "8.4"
+   ],
+   "claim_text": "What you cannot verify: server-side code is almost always closed source, and even if shown to auditors you cannot verify it is what runs.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Server-side code: Almost always closed-source. Even if shown to auditors, you can't verify that's what's actually running.",
+   "reasoning": "Qualifier 'almost always' and negation preserved."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "8.5"
+   ],
+   "claim_text": "Even if truthful during an audit, they could add password logging in a later update.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Even if honest during an audit, they could add password logging in a later update.",
+   "reasoning": "'truthful' is an equivalent restatement of 'honest'."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "8.6"
+   ],
+   "claim_text": "An employee with server access could modify the code, or someone who breaches their systems could inject logging.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "an employee with server access could modify it, or someone who breaches their systems could inject logging",
+   "reasoning": "Matches source; omitted lead-in condition does not alter the claim's meaning."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "8.7"
+   ],
+   "claim_text": "Good signs: open-source server code, independent audits with published results, and breach disclosure where passwords were not compromised.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Open-source server code ... Independent security audits ... with published results ... If breached and passwords weren't compromised",
+   "reasoning": "All three good signs accurately listed with negation intact."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "8.8"
+   ],
+   "claim_text": "Bad signs: being able to reset a password and access old data, security through obscurity, and a history of privacy violations.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Can reset password and access old data ... Security through obscurity ... History of privacy violations",
+   "reasoning": "All three bad signs match source items."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "8.9"
+   ],
+   "claim_text": "Facebook 2019: between 200-600 million passwords were logged in plaintext and searchable by over 20,000 Facebook employees.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "between 200-600 million passwords in plaintext ... searchable by over 20,000 Facebook employees",
+   "reasoning": "Numbers, range, and entity preserved exactly."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "8.9.1"
+   ],
+   "claim_text": "Some archives dated back to 2012, and Facebook claimed the logging was unintentional.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "with some archives dating back to 2012. Facebook claimed this was unintentional",
+   "reasoning": "Date and attribution to Facebook's claim match source."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "8.10"
+   ],
+   "claim_text": "Adobe 2013: the breach revealed stored password hints in plaintext, making brute-forcing easier, though at least passwords were hashed.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Adobe (2013): Breach revealed they stored password hints in plaintext, making brute-forcing easier (but at least passwords were hashed)",
+   "reasoning": "Year, name, and the hashed-password caveat all preserved."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "8.11"
+   ],
+   "claim_text": "Many small services store passwords in plaintext or use MD5 without salt, and you find out when they get breached.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Many small services: Store passwords in plaintext or use weak hashing (MD5 without salt)",
+   "reasoning": "Matches source, including MD5-without-salt detail."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "8.12"
+   ],
+   "claim_text": "You are always trusting the server operator to some degree unless one of three conditions holds.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "You're always trusting the server operator to some degree unless:",
+   "reasoning": "Source lists exactly three numbered conditions."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "8.12.1"
+   ],
+   "claim_text": "All cryptography happens client-side, like Signal with recovery keys.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "All cryptography happens client-side (like Signal with recovery keys)",
+   "reasoning": "Verbatim match of condition one."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "8.12.2"
+   ],
+   "claim_text": "The server never sees anything that could decrypt your data, as with zero-knowledge proof systems.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "The server never sees anything that could decrypt your data (zero-knowledge proof systems)",
+   "reasoning": "Verbatim match of condition two, 'never' preserved."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "8.12.3"
+   ],
+   "claim_text": "Server code is open-source and reproducibly built, and you can verify what is running.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Server code is open-source AND reproducibly built AND you can verify what's running",
+   "reasoning": "Conjunctive conditions preserved."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "9"
+   ],
+   "claim_text": "The bottom line: for most commercial services you trust reputation, jurisdiction, business model, and past behavior rather than cryptographic guarantees.",
+   "claim_type": "claim",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "you're trusting their reputation, jurisdiction, business model, and past behavior rather than cryptographically verifiable guarantees",
+   "reasoning": "Scope 'most commercial services' and contrast retained."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "9.1"
+   ],
+   "claim_text": "Security-conscious people prefer client-side encryption, open-source everything, decentralized systems that minimize trust, and hardware keys like YubiKey that never expose the secret.",
+   "claim_type": "recommendation",
+   "verdict": "Supported",
+   "severity": "none",
+   "evidence_quote": "Security-conscious people prefer client-side encryption, open-source everything, decentralized systems that minimize trust, and hardware security keys (like YubiKey) that never expose the secret",
+   "reasoning": "Verbatim match including YubiKey example and 'never' negation."
+  }
+ ],
+ "metrics": {
+  "total_claims": 20,
+  "supported": 20,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

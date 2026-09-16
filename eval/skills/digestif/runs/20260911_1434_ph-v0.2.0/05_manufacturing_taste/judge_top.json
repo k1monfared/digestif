@@ -1,0 +1,29 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "point-hierarchy sample under review",
+  "inputs": {
+    "faithfulness_precision": 0.9412,
+    "critical_errors": 0,
+    "must_recall": 0.875,
+    "overall_recall": 0.875,
+    "redundancy_rate": 0.0588,
+    "trivia_rate": 0.0392
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted score = 0.4*faithfulness_precision + 0.4*must_recall - 0.2*redundancy_rate = 0.4*0.9412 + 0.4*0.875 - 0.2*0.0588 = 0.37648 + 0.35 - 0.01176 = 0.71472",
+  "weighted_score": 0.71472,
+  "verdict": "Fail",
+  "tradeoff_note": "The sample fails two hard gates before any tradeoff: must_recall 0.875 is below the 0.9 minimum and faithfulness_precision 0.9412 is below the 0.95 minimum. Concision is comfortably within limits (redundancy 0.0588 under 0.15) but concision never rescues faithfulness or coverage fails, so the length already spent buys neither recall nor precision here.",
+  "fix_list": [
+    "Raise must_recall above 0.9 by completing the four Partial Must-haves: restore K06 inverted-U qualifier and 208-experiment meta-analysis count, K07 14,341 participants/48 songs/independent control, K12 Vienna defining conditions (few patrons, word-of-mouth, no recording), K13 convex-vs-concave mechanism.",
+    "Raise faithfulness_precision above 0.95 by restoring the dropped hedges on C041 ('may be ill-posed'), C048 ('probably' 20 to 50), and C051 (conditional 'if the mechanisms are right'), or downgrade those node statements to matches the source's modality.",
+    "Merge C034 into C008, C039 into C022, and remove trivia C035 and C040 to shave length, freeing budget for the Must-have completions which are the binding constraint."
+  ],
+  "reasoning": "Gate check in policy order. (1) critical_errors is 0 and config pass_gates.critical_contradicted_max is 0, so no hard fail there and contradicted count is 0. (2) must_recall is 0.875 against pass_gates.must_recall_min 0.9: 0.875 < 0.9, hard fail. Root cause is four Partial Must-have points, none missing entirely: K06 drops the 208-experiment Bornstein meta-analysis count and the entire inverted-U qualifier (peaks at moderate exposure, reverses with overexposure), K07 drops 14,341 participants, the 48-song set, and the independent-judgment control condition, K12 keeps exact figures (300 composers, distance 0.97, 2.5 percent shared) but drops the scenario's defining conditions including the 'no recording' negation that makes contingency near maximal, and K13 keeps the plus-minus 50 percent sweep and capital-to-exposure primacy but drops the convex-vs-concave mechanism that explains why steepness matters. (3) faithfulness_precision is 0.9412 against pass_gates.faithfulness_precision_min 0.95: 0.9412 < 0.95, hard fail. The shortfall comes from three Partially supported Minor claims, all of the same modality-dropping type: C041 drops the source's 'may' hedge on ill-posed decomposition, C048 drops 'probably' from the 20 to 50 contemporaries figure, and C051 drops the 'if the mechanisms in this simulation are right' conditional before asserting future canon outcomes. These are all Minor severity with no Critical errors, but 0.9412 falls below the 0.95 bar regardless of severity. Because two hard gates are missed, the verdict is Fail by policy and I do not use Borderline, which requires gates to pass on numbers. The weighted score is recorded for audit only: 0.4*0.9412 + 0.4*0.875 - 0.2*0.0588 = 0.71472; the 0.2-weighted redundancy term is a net positive contribution since redundancy_rate 0.0588 is well under redundancy_max 0.15, and trivia_rate is 0.0392, so the concision dimension is the one aspect that clears its gate. The prune list (C034 dup of C008, C039 dup of C022, C048 dup of C025, trivia C035 and C040) shows cheap length available, but recovering that length only helps if it is reinvested in the four Partial Must-haves and the trilogy of dropped hedges, since coverage and faithfulness are the failing dimensions."
+}

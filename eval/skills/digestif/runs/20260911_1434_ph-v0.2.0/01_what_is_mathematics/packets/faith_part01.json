@@ -1,0 +1,459 @@
+{
+ "sample": "01_what_is_mathematics",
+ "part": 1,
+ "of": 2,
+ "nodes": [
+  {
+   "id": "0",
+   "type": "summary",
+   "attribution": "author",
+   "text": "Mathematics was never the production of proofs but the judgment of which patterns deserve proving.",
+   "evidence": [
+    {
+     "ref": "¶4",
+     "text": "The summer of 2026 things happened that warranted another take on this question. At the International Congress of Mathematicians, Terence Tao gave a public lecture called \"[Mathematics in the age of AI](files/20260806/Tao_slides.pdf)\". Around the same time, Amir Moradifam published an essay, \"[What Remains Human in Mathematics in the Age of AI](files/20260806/Moradifam_paper.pdf)\". Both are attempts to say what mathematics is when the production of proofs stops being scarce. I read them, argued with them, and I mostly agree with them. However, they stop at the edge of the question I want to push on: the next step is speculation, which they have to avoid and the do so perfectly."
+    },
+    {
+     "ref": "¶15",
+     "text": "The process was the product\n\nThe old definition was wrong, and both authors know it. The sentence underneath everything they wrote is that mathematics was never the production of theorems. It was a process of thinking, and the process was the product."
+    },
+    {
+     "ref": "¶53",
+     "text": "So the answer to the title question is not \"the production of correct statements of found patterns.\" Mathematics was never one of those things alone. It was always both: finding patterns, and proving them. The proving is the chore, the checking, the part that has now gotten cheap, and the finding is the deciding, which patterns are worth the proving, and that part is still human. I am not claiming mathematics was always mostly the finding. I am speculating that the mix is shifting: as proving and verification get automated, the weight moves to deciding which patterns matter, and that is where the field's values will live. Software engineering already made this turn. A lot of engineers today spend more of their time deciding what to build and why than writing the code. Some became product managers, some became architects. The coding got cheap, and the deciding got loud. Did the turn land well? Both ways, which is the point: open source runs on love, the framework wars run on attention, and software is already the two futures at once."
+    }
+   ]
+  },
+  {
+   "id": "1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Mathematics was the discipline of finding provable patterns with expert-settled ground truth.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "For a long time I had a confident answer to the question in the title, the kind you give outsiders and then stop thinking about.\n\n> Mathematics is the discipline of finding patterns where claims can be proven.\n\nAn idea can be right or wrong, and a community of experts can settle which, for good, well, most of the times. That was what made math different from art criticism, politics, business, psychology, biology, or even physics. Everything else had opinions. Math had ground truth."
+    }
+   ]
+  },
+  {
+   "id": "1.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Unlike art, politics, or physics, math offered ground truth instead of opinions.",
+   "evidence": [
+    {
+     "ref": "¶3",
+     "text": "For a long time I had a confident answer to the question in the title, the kind you give outsiders and then stop thinking about.\n\n> Mathematics is the discipline of finding patterns where claims can be proven.\n\nAn idea can be right or wrong, and a community of experts can settle which, for good, well, most of the times. That was what made math different from art criticism, politics, business, psychology, biology, or even physics. Everything else had opinions. Math had ground truth."
+    }
+   ]
+  },
+  {
+   "id": "1.2",
+   "type": "example",
+   "attribution": "author",
+   "text": "A professor's viral post likened AI-era research to grading a lying grade-grubber.",
+   "evidence": [
+    {
+     "ref": "¶1",
+     "text": "What is mathematics\n\nLast night Ehssan sent me a post from a math professor that has been making the rounds. The professor loves research and hates grading. Who doesn't? But lately, he wrote, his research has started to feel like grading the proofs of a very clever student who is desperate to get an A and doesn't mind lying to do so. A lot of people shared that feeling. Not only in mathematics, but also in (open source) software, in creative writing, and other areas."
+    },
+    {
+     "ref": "¶2",
+     "text": "![The post that started all this](files/20260806/OBryant_post.jpg){: width=\"55%\" }"
+    }
+   ]
+  },
+  {
+   "id": "2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "In 2026 AI produced publication-quality proofs of novel problems for hundreds of dollars.",
+   "evidence": [
+    {
+     "ref": "¶5",
+     "text": "The answer that stopped working\n\nLet's start with the facts that broke the old answer into two."
+    },
+    {
+     "ref": "¶6",
+     "text": "First Proof, an independent group, ran a standardized test[*](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full) of AI at research mathematics in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each, and the one step they could not automate was choosing the problems, which is exactly the judgment this post is about."
+    },
+    {
+     "ref": "¶7",
+     "text": "In early 2026, an AI system produced a machine-checked Lean proof of Erdős Problem #728, and in May 2026 an OpenAI model disproved the planar unit distance conjecture Erdős had posed in 1946[**](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full). In all cases human mathematicians verified the proofs and wrote human digestable versions of them."
+    }
+   ]
+  },
+  {
+   "id": "2.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Four systems solved seven of ten unpublished problems; choosing problems resisted automation.",
+   "evidence": [
+    {
+     "ref": "¶6",
+     "text": "First Proof, an independent group, ran a standardized test[*](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full) of AI at research mathematics in late May 2026: four leading systems solved seven of ten unpublished problems to publication quality, for ten to a thousand dollars of compute each, and the one step they could not automate was choosing the problems, which is exactly the judgment this post is about."
+    },
+    {
+     "ref": "¶56",
+     "text": "Appendix\n\n\\* [First Proof](https://1stproof.org/) is an independent group of mathematicians trying to answer a concrete question: how good are AI systems at research mathematics? Their method is essentially a standardized test. They collect unpublished research problems from mathematicians across fields, pick ten for each batch, hand them to the leading AI systems to solve with one attempt each, then have human referees grade the solutions blind. The second batch ran in late May 2026, against four leading AI systems. Seven of the ten problems were solved at publication quality by at least one team, at a compute cost of ten to a thousand dollars per problem. The step they could not automate was the choosing, and it did its work before any model ran: which ten problems deserve the batch's compute is exactly the judgment this post is about."
+    }
+   ]
+  },
+  {
+   "id": "2.2",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "AI proved Erdos 728 in Lean and disproved the 1946 unit-distance conjecture; humans digested both.",
+   "evidence": [
+    {
+     "ref": "¶7",
+     "text": "In early 2026, an AI system produced a machine-checked Lean proof of Erdős Problem #728, and in May 2026 an OpenAI model disproved the planar unit distance conjecture Erdős had posed in 1946[**](https://github.com/k1monfared/notes/blob/main/blog/posts/2026/20260806_what_is_mathematics.md#appendix-the-facts-in-full). In all cases human mathematicians verified the proofs and wrote human digestable versions of them."
+    },
+    {
+     "ref": "¶57",
+     "text": "\\** In early 2026, a system combining OpenAI's GPT-5.2 Pro with [Harmonic's Aristotle](https://aristotle.harmonic.fun/) produced a formal [Lean proof](https://github.com/plby/lean-proofs/blob/main/ErdosProblems/Erdos728.md) (Lean is a proof assistant that checks proofs mechanically) of [Erdős Problem #728](https://www.erdosproblems.com/728). A human mathematician, Nat Sothanaphan, translated it into a [conventional argument](https://arxiv.org/abs/2601.07421). The Lean proof itself is machine-checked, and the problem is now marked [proved on the Erdős problems list](https://www.erdosproblems.com/728). In May 2026, an OpenAI reasoning model disproved the [planar unit distance conjecture](https://cdn.openai.com/pdf/74c24085-19b0-4534-9c90-465b8e29ad73/unit-distance-proof.pdf), posed by Erdős in 1946. The conjecture said the maximum number of unit distances among $n$ points in the plane grows like $n^{1+o(1)}$. The model constructed infinite families of point sets with at least $n^{1+\\varepsilon}$ unit distances, using ideas from algebraic number theory. A [paper](https://arxiv.org/abs/2605.20695) with Alon, Bloom, Gowers and others then digested the result for the community."
+    }
+   ]
+  },
+  {
+   "id": "2.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Models prove what humans choose; which patterns matter stays human, with handholding.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "2.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Conjecture generators propose patterns but never decide which ones matter.",
+   "evidence": [
+    {
+     "ref": "¶8",
+     "text": "Notice the split here: The model produced the result, the humans checked it, digested it, and presented it. That split is a big part of the story. Under the old definition, mathematics was the production of correct statements, and while on the surface it seems that the typical mathematician is busy proving theorems they're building intuitioin and finding clues to find patterns. The production of proofs has been automated, or it will be, under Tao's working assumption. Seven out of ten novel research problems, solved to publication quality, for a few hundred to a few thousand dollars of compute. And notice what was not automated. The problems were still chosen by people and handed to the models one at a time. That which patterns were worth chasing, is still human, and the models prove what we want them to prove. Although they still might need a lot of handholding to do so. On the other hand, there are conjecture generators out there, and there have been for years, but they propose patterns, they do not decide which ones matter. So either mathematics is over, or the old definition was wrong."
+    }
+   ]
+  },
+  {
+   "id": "2.5",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Proving may have been the chore all along; the finding was always the real thing.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "It's so over baby.\n\nlol jk, it isn't. I don't think it is, if anything, I think it has just started. But I want to explore how my old definition was wrong. Or maybe the proving was the chore and the finding was always the real thing?! And meanwhile in all of this I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing, so anything that goes wrong is not part of that religion."
+    }
+   ]
+  },
+  {
+   "id": "2.6",
+   "type": "implicit",
+   "attribution": "author",
+   "text": "The argument assumes mathematics is what humans do, like a self-justifying faith.",
+   "evidence": [
+    {
+     "ref": "¶9",
+     "text": "It's so over baby.\n\nlol jk, it isn't. I don't think it is, if anything, I think it has just started. But I want to explore how my old definition was wrong. Or maybe the proving was the chore and the finding was always the real thing?! And meanwhile in all of this I'm implicitely assuming mathematics \"is what we humans do\". Like a religion that assumes the god is the right thing, so anything that goes wrong is not part of that religion."
+    }
+   ]
+  },
+  {
+   "id": "2.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Proof verification, the process's second half, is being automated too.",
+   "evidence": [
+    {
+     "ref": "¶10",
+     "text": "The proof process has a second half though. Verifying the proof is often implicitly part of the proof process, and that is being automated too."
+    }
+   ]
+  },
+  {
+   "id": "2.8",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Davies-style intuition pumps and AlphaTensor show AI proposing, humans formalizing.",
+   "evidence": [
+    {
+     "ref": "¶27",
+     "text": "What remains human\n\nMoradifam walks the research side faster. The [Davies results](https://www.nature.com/articles/s41586-021-04086-x) used machine learning as an intuition pump, finding correlations in knot theory that humans then formalized. [AlphaTensor](https://www.nature.com/articles/s41586-022-05172-4) framed matrix multiplication search as a game and found algorithms humans had not. The pattern is the same every time: the AI proposes, humans check, digest, and present. Then the line of work speeds up into the 2026 results I listed above, where AI takes on most of the discovery process."
+    }
+   ]
+  },
+  {
+   "id": "2.9",
+   "type": "nuance",
+   "attribution": "reported",
+   "text": "Understanding shifts from reconstructing proofs to interpreting opaque machine results.",
+   "evidence": [
+    {
+     "ref": "¶28",
+     "text": "His epistemology section is the interesting one. Mathematics already has precedents for accepted-but-opaque results: the [four-color theorem](https://en.wikipedia.org/wiki/Four_color_theorem), the [classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups). We use them as tools because they survived extensive communal verification, even though no single person holds the whole proof in mind. As AI produces longer and more complex proofs, we may accept truths whose full deductive structure lies beyond any individual. And this changes the nature of understanding itself. Historically, mathematical understanding was constructive: you deepen it by reconstructing the proof. When a result arrives from an opaque process, understanding shifts from constructive to hermeneutic. The mathematician becomes less a builder and more an interpreter, trying to extract meaning from a proof produced by something that cannot explain itself. His thesis, in one sentence: as routine tasks get automated, problem framing, judgment, and taste become more visible and more valuable. I think that is right as far as it goes."
+    }
+   ]
+  },
+  {
+   "id": "3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Tao's hypothesis covers verification too; the question is tolerated error level.",
+   "evidence": [
+    {
+     "ref": "¶11",
+     "text": "Verification is human work too\n\nTao's Working Hypothesis covers performing mathematical tasks, and verifying is one. So taken seriously, the hypothesis covers verification too. The question is what level of error we tolerate in it."
+    }
+   ]
+  },
+  {
+   "id": "3.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Deligne found Voevodsky's key lemma wrong years later; a main theorem failed unchallenged for years.",
+   "evidence": [
+    {
+     "ref": "¶12",
+     "text": "Here the right calibration is a story Hadi brought up: a Fields medalist who had to retract work years later. That was [Vladimir Voevodsky](https://www.ias.edu/news/2017/vladimir-voevodsky-obituary), Fields Medal in 2002. In the late nineties, Pierre Deligne went through his foundational paper line by line while Voevodsky lectured, and they found that the proof of a key lemma was wrong and could not be salvaged as stated. The earlier paper with Kapranov, on $\\infty$-groupoids, had a main theorem that was eventually shown to be false, which [Voevodsky did not accept until years later](https://www.ias.edu/ideas/2014/voevodsky-origins). Multiple groups had studied those papers, used them, taught them, and nobody noticed for years."
+    }
+   ]
+  },
+  {
+   "id": "3.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Frightened Voevodsky spent his career pushing computer verification over human trust.",
+   "evidence": [
+    {
+     "ref": "¶13",
+     "text": "[Voevodsky was scared by this](https://www.ias.edu/ideas/2014/voevodsky-origins). He asked: who would ensure that I did not forget something and did not make a mistake, if even the mistakes in much simpler arguments take years to uncover. He spent the rest of his career pushing for computer proof verification, because he no longer trusted the human process."
+    }
+   ]
+  },
+  {
+   "id": "3.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Human verification is unreliable, so comparable AI error rates look like business as usual.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "3.4",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The AI-side error rate is assumed, not measured, and machine volume compounds mistakes.",
+   "evidence": [
+    {
+     "ref": "¶14",
+     "text": "That is the calibration that matters. Human verification is not reliable. It is a Fields medalist's foundational paper carrying a wrong key lemma for years, and a main theorem that stood unchallenged for decades. So when AI verification arrives with an error rate comparable to that, it will not look unacceptable. It will look like business as usual. Which means the premise for everything that follows holds: generation and verification both automated, both imperfect, both roughly as imperfect as the people they replace. The AI-side rate is assumed, not measured, and the volume compounds: years to surface a mistake by hand, a million checks a day by machine."
+    }
+   ]
+  },
+  {
+   "id": "4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Mathematics was never theorem production; the thinking process was the product.",
+   "evidence": [
+    {
+     "ref": "¶15",
+     "text": "The process was the product\n\nThe old definition was wrong, and both authors know it. The sentence underneath everything they wrote is that mathematics was never the production of theorems. It was a process of thinking, and the process was the product."
+    }
+   ]
+  },
+  {
+   "id": "4.1",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Teaching math builds judgment through struggle; fluency must not be confused with understanding.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Moradifam opens with the reason we teach math at all: not the facts, the struggle. A student sits with a problem, tries an idea, hits a wall, tries again, and slowly discovers what matters and what does not. That process builds the habit of tracking assumptions, the ability to move between concrete examples and general principles, the confidence to keep thinking when the answer is not immediate. He brings in the cognitive science. [Cognitive offloading](https://en.wikipedia.org/wiki/Cognitive_offloading) is the tendency to delegate mental effort to an external tool. The [illusion of explanatory depth](https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth) is the way fluency gets confused with ownership. A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it. They are not the same. A calculator does not undermine arithmetic for a student who already understands place value. It becomes harmful when it arrives before the understanding. AI is that, with one new twist: it produces plausible explanations in a confident tone, so both student and instructor can mistake the output for the learning."
+    }
+   ]
+  },
+  {
+   "id": "4.2",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Cognitive offloading and confident AI tone worsen the illusion of explanatory depth.",
+   "evidence": [
+    {
+     "ref": "¶16",
+     "text": "Moradifam opens with the reason we teach math at all: not the facts, the struggle. A student sits with a problem, tries an idea, hits a wall, tries again, and slowly discovers what matters and what does not. That process builds the habit of tracking assumptions, the ability to move between concrete examples and general principles, the confidence to keep thinking when the answer is not immediate. He brings in the cognitive science. [Cognitive offloading](https://en.wikipedia.org/wiki/Cognitive_offloading) is the tendency to delegate mental effort to an external tool. The [illusion of explanatory depth](https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth) is the way fluency gets confused with ownership. A student who can summon a complete, fluent solution within seconds risks equating exposure to an idea with understanding it. They are not the same. A calculator does not undermine arithmetic for a student who already understands place value. It becomes harmful when it arrives before the understanding. AI is that, with one new twist: it produces plausible explanations in a confident tone, so both student and instructor can mistake the output for the learning."
+    }
+   ]
+  },
+  {
+   "id": "4.3",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Thinking is constitutive, not instrumental like laundry or car repair.",
+   "evidence": [
+    {
+     "ref": "¶17",
+     "text": "I keep coming back to an ad I saw in the San Francisco airport, from an early AI company: \"let the AI do the thinking for you.\" The marketing treats thinking the way earlier automation treated laundry, as toil to be eliminated. The ad glosses over a real distinction between automating chores and automating thinking. Fixing a car is instrumental. You want the fixed car, not the experience of fixing it. Thinking is constitutive. The process of working through a problem is what builds judgment, and there is no shortcut that gives you the judgment without the process. Offload the chore and you keep the car. Offload the thinking and you keep an answer with an unchanged mind."
+    }
+   ]
+  },
+  {
+   "id": "4.4",
+   "type": "concession",
+   "attribution": "conceded",
+   "text": "Arithmetic, poetry, and navigation losses were survivable; the chore-thinking boundary is blurry.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "The fair version of my own argument has to admit the boundary is blurry. We said the same things about mental arithmetic, memorizing poetry, navigation. Some of those losses turned out fine. Some cost us something real, and the atrophying of spatial reasoning under GPS is decently documented: longitudinal work finds that more GPS use predicts a steeper decline in hippocampal-dependent spatial memory ([Dahmani & Bohbot, 2020](https://www.nature.com/articles/s41598-020-62877-0)), and long-term GPS use is associated with worse mental rotation and perspective-taking, which in turn hurts environmental learning ([Ruginski et al., 2019](https://www.sciencedirect.com/science/article/abs/pii/S0272494418308211)). So the question was never chores versus thinking as fixed categories. It is which cognitive activities are load-bearing for everything else. Calculation turned out not to be. Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing, and those are precisely the things the ad proposes to outsource. And proving is the gym where the finding is trained. The slog of writing a rigorous proof is what builds the muscle for spotting patterns, and the chore and the training are the same act. Even when proofs go wrong and don't work, there are a slew of ideas that comes to the mathematician's mind and learning occurs."
+    }
+   ]
+  },
+  {
+   "id": "4.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "GPS atrophies spatial memory, but framing and attention look load-bearing; proving trains finding.",
+   "evidence": [
+    {
+     "ref": "¶18",
+     "text": "The fair version of my own argument has to admit the boundary is blurry. We said the same things about mental arithmetic, memorizing poetry, navigation. Some of those losses turned out fine. Some cost us something real, and the atrophying of spatial reasoning under GPS is decently documented: longitudinal work finds that more GPS use predicts a steeper decline in hippocampal-dependent spatial memory ([Dahmani & Bohbot, 2020](https://www.nature.com/articles/s41598-020-62877-0)), and long-term GPS use is associated with worse mental rotation and perspective-taking, which in turn hurts environmental learning ([Ruginski et al., 2019](https://www.sciencedirect.com/science/article/abs/pii/S0272494418308211)). So the question was never chores versus thinking as fixed categories. It is which cognitive activities are load-bearing for everything else. Calculation turned out not to be. Problem framing, noticing what's missing, deciding what's worth attention, those look load-bearing, and those are precisely the things the ad proposes to outsource. And proving is the gym where the finding is trained. The slog of writing a rigorous proof is what builds the muscle for spotting patterns, and the chore and the training are the same act. Even when proofs go wrong and don't work, there are a slew of ideas that comes to the mathematician's mind and learning occurs."
+    }
+   ]
+  },
+  {
+   "id": "4.6",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Over-polished AI proofs dwell on trivia, rush novelty, and remove the friction readers need.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Tao reaches the same place from the other end, through exposition. AI-polished proofs, he says, are close to flawless in spelling, grammar, and formatting, almost too flawless in a way. They dwell on trivialities and rush past the novel parts of an argument. They fail to connect to prior literature. And they remove friction. In a human-written proof, the parts the author found difficult keep a natural friction that makes the reader slow down and pay attention. An over-polished proof removes both natural and artificial friction, and the reader sails through without learning the key ideas. Paradoxically, mistakes in human exposition can be helpful. They mark where the work is. He quotes [Thurston](https://arxiv.org/abs/math/9404236): \"We are not trying to meet some abstract production quota of definitions, theorems and proofs. The measure of our success is whether what we do enables people to understand and think more clearly and effectively about math.\""
+    }
+   ]
+  },
+  {
+   "id": "4.7",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Thurston: success is enabling clearer thought, not meeting quotas of theorems.",
+   "evidence": [
+    {
+     "ref": "¶19",
+     "text": "Tao reaches the same place from the other end, through exposition. AI-polished proofs, he says, are close to flawless in spelling, grammar, and formatting, almost too flawless in a way. They dwell on trivialities and rush past the novel parts of an argument. They fail to connect to prior literature. And they remove friction. In a human-written proof, the parts the author found difficult keep a natural friction that makes the reader slow down and pay attention. An over-polished proof removes both natural and artificial friction, and the reader sails through without learning the key ideas. Paradoxically, mistakes in human exposition can be helpful. They mark where the work is. He quotes [Thurston](https://arxiv.org/abs/math/9404236): \"We are not trying to meet some abstract production quota of definitions, theorems and proofs. The measure of our success is whether what we do enables people to understand and think more clearly and effectively about math.\""
+    }
+   ]
+  },
+  {
+   "id": "4.8",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Once struggle stops being scarce, the community must ask what it optimizes for.",
+   "evidence": [
+    {
+     "ref": "¶20",
+     "text": "The struggle, the friction, the process. All three point at the same thing, and it is the thing the pipeline optimizes away. The whole set of slides is a delight to go through, and it is completely non-technical ([files/20260806/Tao_slides.pdf](files/20260806/Tao_slides.pdf)).\n\nTao reaches this point and then keeps going in a direction neither document takes. Once the struggle stops being scarce, he asks, what is the community actually optimizing for?"
+    }
+   ]
+  },
+  {
+   "id": "5",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Tao assumes capable AI and asks what goals and values the community actually pursues.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "Tao's pipeline\n\nTao's talk is conditional. He states a \"Working Hypothesis\": AI tools will, reasonably soon, become capable of performing a reasonable fraction of research-level mathematics, with reasonable success, quality, supervision, and cost. He asks you not to believe it, only to assume it, and then he asks the orthogonal question: what are the goals and values of the mathematical community, the explicit ones and the implicit ones we actually pursue in practice? This is the question math has historically delegated to the humanities."
+    }
+   ]
+  },
+  {
+   "id": "5.1",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "The Working Hypothesis asks belief be suspended; the values question belongs to the humanities.",
+   "evidence": [
+    {
+     "ref": "¶21",
+     "text": "Tao's pipeline\n\nTao's talk is conditional. He states a \"Working Hypothesis\": AI tools will, reasonably soon, become capable of performing a reasonable fraction of research-level mathematics, with reasonable success, quality, supervision, and cost. He asks you not to believe it, only to assume it, and then he asks the orthogonal question: what are the goals and values of the mathematical community, the explicit ones and the implicit ones we actually pursue in practice? This is the question math has historically delegated to the humanities."
+    }
+   ]
+  },
+  {
+   "id": "5.2",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Goodhart's law threatens correlated goals: AI optimization breaks their old proxies.",
+   "evidence": [
+    {
+     "ref": "¶22",
+     "text": "His argument runs through [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law), that when a measure becomes a target, it ceases to be a good measure. Historically the community's goals were positively correlated: solving problems, building theory, training the next generation, creating enduring aesthetic works, all moved together, so any one or two of them could proxy for the rest, and the rest could stay implicit. AI optimization threatens to break the correlation. Generative AI is ungrounded by nature, and AI companies have financial incentives, so the use of AI is particularly vulnerable to Goodhart. The goals can diverge."
+    }
+   ]
+  },
+  {
+   "id": "5.3",
+   "type": "evidence",
+   "attribution": "reported",
+   "text": "Solving needs verifying, exposition, acceptance, canonicalization; AI piles stall at each stage.",
+   "evidence": [
+    {
+     "ref": "¶23",
+     "text": "Then the case study. Start with the goal \"solve as many unsolved problems as possible.\" Refine it once, add verification, or you get a pile of incorrect solutions. Refine it again, add exposition, because a pile of correct but unreadable solutions isn't progress either. On [erdosproblems.com](https://www.erdosproblems.com) there are already dozens of AI-generated proofs, many likely correct, that no human expert has volunteered to verify and vouch for, and in several cases the human submitters declared themselves unqualified to do it. Refine again, add community acceptance, because a proof no one has digested contributes nothing to the field, and acceptance is slow, human, and external, something the authors and their AI tools cannot optimize directly. It is currently produced by volunteer editors and referees, work regarded as less prestigious than generating proofs, though it is how individual achievements become collective progress. Refine one more time, add canonicalization, incorporation into the definitive theory of the field, the textbooks and reference material taught to the next generation. This, he says, is the slowest stage of all, the least amenable to optimization, and the most valuable."
+    },
+    {
+     "ref": "¶24",
+     "text": "![Tao's pipeline from his ICM 2026 talk: open problems flow through generation, verification, publication, exposition, digestion, and canonicalization into definitive solutions.](files/20260806/tao_pipeline.png)"
+    }
+   ]
+  },
+  {
+   "id": "5.4",
+   "type": "claim",
+   "attribution": "reported",
+   "text": "Under proof abundance the bottleneck is digestion, today's lowest-prestige work.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "His punchline: we are moving from proof scarcity to proof abundance. Under the Working Hypothesis, mismatches appear at every stage. AI proofs accumulate, unverified. Verified proofs await readable writeups. Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "5.5",
+   "type": "nuance",
+   "attribution": "reported",
+   "text": "Tao urges disclosure norms, less first-past-posting, and a clear-talk rule for publication.",
+   "evidence": [
+    {
+     "ref": "¶25",
+     "text": "His punchline: we are moving from proof scarcity to proof abundance. Under the Working Hypothesis, mismatches appear at every stage. AI proofs accumulate, unverified. Verified proofs await readable writeups. Correct and well-written proofs overwhelm peer review. Published proofs are too numerous to ever digest. The bottleneck shifts to proof digestion, and digestion is the work we currently treat as low prestige. This reminds me of how Paul Halmos liked to present himself: he was a top mathematician, but he wanted to be known for exposition, for making math accessible to the rest of the mathematical community, rather than for doing cutting edge research. Tao's recommendations follow: normalize responsible disclosure of AI assistance, decrease the emphasis on generation and on being first, increase the emphasis on exposition, publication, and canonicalization. He points to the [Leiden Declaration](https://leidendeclaration.ai), a community statement on how AI should be used in mathematics, endorsed by the International Mathematical Union. And he offers a rule of thumb: if the authors cannot convincingly demonstrate that they can give a clear, expert-level talk on their result, correct and properly attributed, then the result should not be published."
+    }
+   ]
+  },
+  {
+   "id": "5.6",
+   "type": "example",
+   "attribution": "author",
+   "text": "The research-loving professor demoted to grading embodies Tao's prestige inversion.",
+   "evidence": [
+    {
+     "ref": "¶26",
+     "text": "The professor in that LinkedIn post is the human version of this. He got into research because he loved producing and hated grading. His reward for succeeding is to be demoted to the thing he hated, checking other people's work. Experimental science ran the same inversion when instrumentation made routine measurement cheap, and prestige moved from the measuring to the designing of experiments. That is the prestige inversion Tao is pointing at, and it is already happening."
+    }
+   ]
+  }
+ ]
+}

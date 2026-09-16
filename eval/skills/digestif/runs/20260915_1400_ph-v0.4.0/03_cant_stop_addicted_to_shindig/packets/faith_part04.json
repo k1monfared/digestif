@@ -1,0 +1,287 @@
+{
+ "sample": "03_cant_stop_addicted_to_shindig",
+ "part": 4,
+ "of": 4,
+ "nodes": [
+  {
+   "id": "8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The designers balanced individual columns but not combinations; the forced-move rule compensates, and better boards exist.",
+   "evidence": [
+    {
+     "ref": "¶79",
+     "text": "## Game Design: Is It Balanced?\n\nOkay, back to game design. Is Can't Stop balanced? That is, do all columns take roughly the same time to complete?"
+    },
+    {
+     "ref": "¶80",
+     "text": "### Single-Column Balance\n\nWith single-column analysis, here's what we get:"
+    }
+   ]
+  },
+  {
+   "id": "8.1",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Single-column deviations from 20 expected rolls are at most ±13.6% on the current board, good given integer lengths.",
+   "evidence": [
+    {
+     "ref": "¶81",
+     "text": "| Column | Length | P(n) | Expected Rolls | Deviation from 20 |\n|-------:|-------:|-----:|---------------:|------------------:|\n| 2 | 3 | 13.2% | 22.73 | +13.6% |\n| 3 | 5 | 23.3% | 21.46 | +7.3% |\n| 4 | 7 | 35.6% | 19.67 | -1.6% |\n| 5 | 9 | 44.8% | 20.09 | +0.4% |\n| 6 | 11 | 56.1% | 19.60 | -2.0% |\n| 7 | 13 | 64.4% | 20.18 | +0.9% |\n| 8 | 11 | 56.1% | 19.60 | -2.0% |\n| 9 | 9 | 44.8% | 20.09 | +0.4% |\n| 10 | 7 | 35.6% | 19.67 | -1.6% |\n| 11 | 5 | 23.3% | 21.46 | +7.3% |\n| 12 | 3 | 13.2% | 22.73 | +13.6% |"
+    },
+    {
+     "ref": "¶82",
+     "text": "The deviations are ±13.6% at most. That's pretty good given that lengths must be integers!\n\n### Multi-Column Reality\n\nBut in realistic multi-column play, column combination choice dominates individual column balance:"
+    }
+   ]
+  },
+  {
+   "id": "8.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "In multi-column play, column 7 in {6,7,8} completes in about 2 turns while column 2 in {2,3,12} takes about 30.",
+   "evidence": [
+    {
+     "ref": "¶82",
+     "text": "The deviations are ±13.6% at most. That's pretty good given that lengths must be integers!\n\n### Multi-Column Reality\n\nBut in realistic multi-column play, column combination choice dominates individual column balance:"
+    },
+    {
+     "ref": "¶83",
+     "text": "- Column 7 in {6,7,8}: expected completion in ~2 turns\n- Column 2 in {2,3,12}: expected completion in ~30 turns\n\nThe game heavily favors middle columns. The designers DID balance individual column completion times, but they couldn't (or didn't want to) balance the three-column combinations."
+    }
+   ]
+  },
+  {
+   "id": "8.3",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Design constraints were simplicity (the 3-5-7-9-11-13 board), 1980 manufacturability, and emotional engagement from visual length.",
+   "evidence": [
+    {
+     "ref": "¶84",
+     "text": "### Design Philosophy\n\nCan't Stop's designer, Sid Sackson, was known for mathematical rigor, but practical constraints shaped the final design:\n\n1. **Simple enough to understand** - The current board (3-5-7-9-11-13) is instantly graspable\n2. **Physically manufacturable** - Integer lengths, reasonable board size (especially in 1980)\n3. **Engaging to a broad audience** - The visual length creates emotional investment"
+    }
+   ]
+  },
+  {
+   "id": "8.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The forced-move rule compensates by forcing sub-optimal columns, preventing all-{6,7,8} play, and adding tactical complexity.",
+   "evidence": [
+    {
+     "ref": "¶85",
+     "text": "Then, **rules and mechanics compensate for inevitable imbalances**. In Can't Stop, that compensating rule is the forced-move rule: you MUST take both columns even if you don't want them.\n\nThis rule:\n- Forces players into sub-optimal column combinations\n- Prevents the game from devolving into \"everyone only picks {6,7,8}\"\n- Adds tactical complexity\n- **Compensates for the mathematical imbalance**"
+    }
+   ]
+  },
+  {
+   "id": "8.5",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "Perfect balance needs lengths as exact multiples of probability: 171 steps for columns 2/12 and 834 for column 7, about 8 hours per game.",
+   "evidence": [
+    {
+     "ref": "¶86",
+     "text": "This is elegant game design: accept imperfect balance in the core mechanics, then add rules that turn that imbalance into interesting strategic choices.\n\n### Could They Have Done Better?\n\nFor perfect balance where every column takes exactly the same expected number of rolls, we'd need column lengths that are exact multiples of their probabilities. The minimum integer solution requires:"
+    },
+    {
+     "ref": "¶87",
+     "text": "- Column 2/12: 171 steps\n- Column 7: 834 steps\n\nGame duration: ~8 hours. Yeah, that's not happening."
+    }
+   ]
+  },
+  {
+   "id": "8.6",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The current board has maximum height 13 steps and maximum deviation ±13.6%.",
+   "evidence": [
+    {
+     "ref": "¶88",
+     "text": "But what about smaller improvements? Running an optimization (see [cant_stop_optimization.py](files/20251201/cant_stop_optimization.py)):\n\n**Current board:**\n- Max height: 13 steps\n- Max deviation: ±13.6%\n- Lengths: [3, 5, 7, 9, 11, 13, 11, 9, 7, 5, 3]"
+    }
+   ]
+  },
+  {
+   "id": "8.7",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "A board one step higher per column (max 14) cuts maximum deviation to ±3.09%, 4× more balanced.",
+   "evidence": [
+    {
+     "ref": "¶89",
+     "text": "**Optimal board (±1 step from current):**\n- Max height: 14 steps\n- Max deviation: ±3.09%\n- Lengths: [3, 5, 8, 10, 12, 14, 12, 10, 8, 5, 3]\n- **4× more balanced with just +1 step!**"
+    }
+   ]
+  },
+  {
+   "id": "8.8",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "A 20-step board gives lengths [4,7,11,14,17,20,17,14,11,7,4] and maximum deviation ±2.17%, a 6× improvement.",
+   "evidence": [
+    {
+     "ref": "¶90",
+     "text": "**Best balance under 20 steps:**\n- Max height: 20 steps\n- Max deviation: ±2.17%\n- Lengths: [4, 7, 11, 14, 17, 20, 17, 14, 11, 7, 4]\n- **6× improvement in balance**"
+    }
+   ]
+  },
+  {
+   "id": "8.9",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The designers likely kept the current board for round numbers, intentional tension, 1980 testing limits, and player psychology.",
+   "evidence": [
+    {
+     "ref": "¶91",
+     "text": "Why didn't the designers do this?\n\n1. **Round numbers** - The current design uses nice symmetric patterns\n2. **Intentional imbalance** - Maybe they wanted strategic tension\n3. **Testing limitations** - In 1980, computing optimal scales would have required extensive manual calculation\n4. **Player psychology** - A 13-step column \"feels\" much harder than a 3-step column, even if mathematically balanced"
+    }
+   ]
+  },
+  {
+   "id": "8.10",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "The current lengths rise by 2 steps; a linear step=2.25 design gives ±3.09%, 3.2× better balance with +1 step.",
+   "evidence": [
+    {
+     "ref": "¶92",
+     "text": "The current design is excellent for 1980. For a modern Can't Stop 2.0, I'd seriously consider the 20-step board.\n\n### Linear Progression\n\nOne elegant feature of the current design is its linear progression: columns increase by exactly 2 steps each time. What if we maintained this constraint but optimized the parameters?"
+    },
+    {
+     "ref": "¶93",
+     "text": "(See [cant_stop_linear_optimization.py](files/20251201/cant_stop_linear_optimization.py) for full analysis)\n\n**Best linear design with similar size (step=2.25):**\n- Lengths: [3, 5, 8, 10, 12, 14, 12, 10, 8, 5, 3]\n- Max deviation: ±3.09%\n- **3.2× better balance with just +1 step!**"
+    }
+   ]
+  },
+  {
+   "id": "8.11",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "An integer linear design (base=5, step=4) yields lengths 5 to 25 and ±3.32% deviation, keeping odd, manufacturable numbers.",
+   "evidence": [
+    {
+     "ref": "¶94",
+     "text": "**Best with integer step (base=5, step=4):**\n- Lengths: [5, 9, 13, 17, 21, 25, 21, 17, 13, 9, 5]\n- Max deviation: ±3.32%\n- Maintains aesthetic appeal (all odd numbers, easy to manufacture)\n\nLinear designs can never achieve perfect balance because the probability curve is nonlinear, but they can get within ~2-3% deviation while maintaining elegance."
+    }
+   ]
+  },
+  {
+   "id": "8.12",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "Linear designs can never achieve perfect balance because the probability curve is nonlinear.",
+   "evidence": [
+    {
+     "ref": "¶94",
+     "text": "**Best with integer step (base=5, step=4):**\n- Lengths: [5, 9, 13, 17, 21, 25, 21, 17, 13, 9, 5]\n- Max deviation: ±3.32%\n- Maintains aesthetic appeal (all odd numbers, easy to manufacture)\n\nLinear designs can never achieve perfect balance because the probability curve is nonlinear, but they can get within ~2-3% deviation while maintaining elegance."
+    }
+   ]
+  },
+  {
+   "id": "8.13",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The author would seriously consider the 20-step board for a modern Can't Stop 2.0.",
+   "evidence": [
+    {
+     "ref": "¶92",
+     "text": "The current design is excellent for 1980. For a modern Can't Stop 2.0, I'd seriously consider the 20-step board.\n\n### Linear Progression\n\nOne elegant feature of the current design is its linear progression: columns increase by exactly 2 steps each time. What if we maintained this constraint but optimized the parameters?"
+    }
+   ]
+  },
+  {
+   "id": "8.14",
+   "type": "claim",
+   "attribution": "author",
+   "text": "For designers: prioritize playability over mathematical perfection, compensate imbalances with rules, and consider turn-order handicaps.",
+   "evidence": [
+    {
+     "ref": "¶100",
+     "text": "**For players:** Use the FiftyPercentSurvival strategy - roll until cumulative survival probability drops below 50%. Aim for columns 5-9, avoid forcing activation of columns 2-3 and 11-12, and prioritize consistency over aggressive play.\n\n**For game designers:** Prioritize playability over mathematical perfection, then use rules to compensate for inevitable imbalances. Be aware that turn order can create significant advantages - consider handicap systems for competitive play."
+    }
+   ]
+  },
+  {
+   "id": "8.15",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The conclusion restates this: perfect balance isn't necessary, as the game is engaging despite (or because of) favoring middle columns.",
+   "evidence": [
+    {
+     "ref": "¶99",
+     "text": "7. **Perfect balance isn't necessary** - The game is engaging despite (or because of) favoring middle columns"
+    }
+   ]
+  },
+  {
+   "id": "9",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Continuation versus switching depends on progress: the math favors continuing, but forced-move contamination can force strategic switches.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "## Continuation vs. Switching\n\nShould you continue your current columns or switch to new ones? This depends on progress already made: if columns are nearly complete (e.g., 10/11 steps), continuing makes sense. But with minimal progress (2-3 steps), switching to a better combination might be faster.\n\nThe mathematics favor continuation in most cases: wasting accumulated progress hurts more than the marginal benefit of a slightly better combination. However, the forced-move rule gradually contaminates good combinations over time, sometimes forcing strategic switches."
+    }
+   ]
+  },
+  {
+   "id": "9.1",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "With columns nearly complete (e.g., 10/11 steps) continuing makes sense; with 2-3 steps, switching might be faster.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "## Continuation vs. Switching\n\nShould you continue your current columns or switch to new ones? This depends on progress already made: if columns are nearly complete (e.g., 10/11 steps), continuing makes sense. But with minimal progress (2-3 steps), switching to a better combination might be faster.\n\nThe mathematics favor continuation in most cases: wasting accumulated progress hurts more than the marginal benefit of a slightly better combination. However, the forced-move rule gradually contaminates good combinations over time, sometimes forcing strategic switches."
+    }
+   ]
+  },
+  {
+   "id": "9.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The author has not analyzed this quantitatively; comparing 'always continue' versus 'switch when X' is left open.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "**Note:** I haven't fully analyzed this aspect quantitatively. A complete treatment would require simulating \"always continue\" vs \"switch when X\" strategies across different board states and comparing their win rates. This is an interesting open question for future work, but for now I'm focusing on the stopping decision given a fixed set of active columns."
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "type": "evidence",
+   "attribution": "author",
+   "text": "All analysis code and simulation data are linked: probability, column-combination, strategy, and design scripts plus results.",
+   "evidence": [
+    {
+     "ref": "¶102",
+     "text": "---\n\n## Code and Data"
+    },
+    {
+     "ref": "¶103",
+     "text": "All analysis code and simulation results are available:\n\n**Probability calculations:**\n- [probability_calculations.py](files/20251201/probability_calculations.py) - 2-dice and 4-dice probabilities\n- [column_combinations.py](files/20251201/column_combinations.py) - All 165 three-column combinations"
+    },
+    {
+     "ref": "¶104",
+     "text": "**Strategy implementation and simulation:**\n- [strategies_correct_implementation.py](files/20251201/strategies_correct_implementation.py) - All 38 strategies with correct game rules\n- [comprehensive_benchmark_enhanced.py](files/20251201/comprehensive_benchmark_enhanced.py) - Full simulation framework\n- [data_loader.py](files/20251201/data_loader.py) - Data loading and analysis utilities\n- [stopping_heuristic.py](files/20251201/stopping_heuristic.py) - Mathematical stopping rule"
+    },
+    {
+     "ref": "¶105",
+     "text": "**Game design:**\n- [cant_stop_optimization.py](files/20251201/cant_stop_optimization.py) - Optimal board designs\n- [cant_stop_linear_optimization.py](files/20251201/cant_stop_linear_optimization.py) - Linear progression optimization"
+    },
+    {
+     "ref": "¶106",
+     "text": "**Simulation results (3.6M games, 3.89 hours runtime):**\n- [COMPREHENSIVE_RESULTS.md](files/20251201/COMPREHENSIVE_RESULTS.md) - **Complete analysis with all findings**\n- [results/summary_report_20251210_145529.md](files/20251201/results/summary_report_20251210_145529.md) - Top 10 rankings\n- [results/single_player_raw_20251210_145529.jsonl.gz](files/20251201/results/single_player_raw_20251210_145529.jsonl.gz) - 38,000 trials (658 KB compressed)\n- [results/head_to_head_raw_20251210_145529.jsonl.gz](files/20251201/results/head_to_head_raw_20251210_145529.jsonl.gz) - 3.6M games (20 MB compressed)\n- [DATA_FORMATS_GUIDE.md](files/20251201/DATA_FORMATS_GUIDE.md) - How to analyze the data\n- [DATA_DOCUMENTATION.md](files/20251201/DATA_DOCUMENTATION.md) - Complete field definitions"
+    },
+    {
+     "ref": "¶107",
+     "text": "**Reference:**\n- [column_combinations_all.csv](files/20251201/column_combinations_all.csv) - All 165 combinations analyzed\n- [strategy_analysis_updated.md](files/20251201/strategy_analysis_updated.md) - Strategy descriptions and design rationale"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,287 @@
+{
+ "sample": "05_manufacturing_taste",
+ "part": 5,
+ "of": 5,
+ "nodes": [
+  {
+   "id": "7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Bach was excellent AND well-positioned, and the second half of that conjunction matters more than the first.",
+   "evidence": [
+    {
+     "ref": "¶45",
+     "text": "## So, Was Bach the Justin Bieber of His Time?\nAfter all of this, I have an answer to the question I asked Hadi. Not exactly, but closer than I expected."
+    },
+    {
+     "ref": "¶47",
+     "text": "So Bach wasn't just popular. He was excellent AND well-positioned. But the simulation tells us the \"AND\" is doing most of the work, and the second half matters more than the first. Reshuffle patronage and you get an almost entirely different canon. Only 2.5% overlap between alternate histories."
+    }
+   ]
+  },
+  {
+   "id": "7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The Bieber analogy gets the mechanism right but the quality floor wrong.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "The Bieber analogy gets the mechanism right but the quality floor wrong. The pop music pipeline can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion. Bach's world was different: to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand. The quality floor was genuinely high."
+    }
+   ]
+  },
+  {
+   "id": "7.1.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The pop pipeline can manufacture a global phenomenon from someone good enough to carry a tune and look good on camera, a bar millions meet.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "The Bieber analogy gets the mechanism right but the quality floor wrong. The pop music pipeline can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion. Bach's world was different: to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand. The quality floor was genuinely high."
+    }
+   ]
+  },
+  {
+   "id": "7.1.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "A court position in Bach's world required writing for liturgical services, entertaining aristocrats, training choirs, and improvising fugues on demand.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "The Bieber analogy gets the mechanism right but the quality floor wrong. The pop music pipeline can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion. Bach's world was different: to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand. The quality floor was genuinely high."
+    }
+   ]
+  },
+  {
+   "id": "7.1.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The quality floor of that world was genuinely high.",
+   "evidence": [
+    {
+     "ref": "¶46",
+     "text": "The Bieber analogy gets the mechanism right but the quality floor wrong. The pop music pipeline can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion. Bach's world was different: to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand. The quality floor was genuinely high."
+    }
+   ]
+  },
+  {
+   "id": "7.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Reshuffling patronage gives an almost entirely different canon, with only 2.5% overlap between alternate histories.",
+   "evidence": [
+    {
+     "ref": "¶47",
+     "text": "So Bach wasn't just popular. He was excellent AND well-positioned. But the simulation tells us the \"AND\" is doing most of the work, and the second half matters more than the first. Reshuffle patronage and you get an almost entirely different canon. Only 2.5% overlap between alternate histories."
+    }
+   ]
+  },
+  {
+   "id": "7.3",
+   "type": "example",
+   "attribution": "author",
+   "text": "Bach is like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "I think Bach was less like Justin Bieber and more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals. All fifty are excellent. All fifty could do the job. But one happened to get a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\" The other 49 are just as good. You've never heard of them."
+    }
+   ]
+  },
+  {
+   "id": "7.3.1",
+   "type": "example",
+   "attribution": "author",
+   "text": "A New York Times profile led to speaking invitations, a book deal, and a reputation as the best surgeon in the country.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "I think Bach was less like Justin Bieber and more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals. All fifty are excellent. All fifty could do the job. But one happened to get a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\" The other 49 are just as good. You've never heard of them."
+    }
+   ]
+  },
+  {
+   "id": "7.3.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The other 49 are just as good, and you have never heard of them.",
+   "evidence": [
+    {
+     "ref": "¶48",
+     "text": "I think Bach was less like Justin Bieber and more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals. All fifty are excellent. All fifty could do the job. But one happened to get a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\" The other 49 are just as good. You've never heard of them."
+    }
+   ]
+  },
+  {
+   "id": "7.4",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question was never whether Bach was great; he almost certainly was.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "The question was never whether Bach was great. He almost certainly was. The question is whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig. The simulation says it's the second. And it says there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know, because they didn't get that job."
+    }
+   ]
+  },
+  {
+   "id": "7.4.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The question is whether we listen because he was the greatest, or because he was great AND landed the right church job in Leipzig.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "The question was never whether Bach was great. He almost certainly was. The question is whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig. The simulation says it's the second. And it says there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know, because they didn't get that job."
+    }
+   ]
+  },
+  {
+   "id": "7.4.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The simulation says it is the second.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "The question was never whether Bach was great. He almost certainly was. The question is whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig. The simulation says it's the second. And it says there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know, because they didn't get that job."
+    }
+   ]
+  },
+  {
+   "id": "7.4.3",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.",
+   "evidence": [
+    {
+     "ref": "¶49",
+     "text": "The question was never whether Bach was great. He almost certainly was. The question is whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig. The simulation says it's the second. And it says there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know, because they didn't get that job."
+    }
+   ]
+  },
+  {
+   "id": "7.5",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The canon is one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as inevitable.",
+   "evidence": [
+    {
+     "ref": "¶50",
+     "text": "That's what sits with me. Not that the canon is wrong. But that it's one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as if it were inevitable."
+    }
+   ]
+  },
+  {
+   "id": "7.6",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Bach's harmonic language, his structures, and his aesthetic sensibility are the foundations of how we hear and judge music today.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "And there's a deeper question here that I haven't been able to shake. We think of Bach's music as what \"great music\" sounds like. His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today. But if someone else had gotten the Leipzig job, if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently. What we call \"good taste\" would be a different taste entirely."
+    }
+   ]
+  },
+  {
+   "id": "7.6.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "With a different set of composers surviving into the canon, we would have inherited different foundations and would hear and judge differently.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "And there's a deeper question here that I haven't been able to shake. We think of Bach's music as what \"great music\" sounds like. His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today. But if someone else had gotten the Leipzig job, if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently. What we call \"good taste\" would be a different taste entirely."
+    }
+   ]
+  },
+  {
+   "id": "7.6.2",
+   "type": "claim",
+   "attribution": "author",
+   "text": "What we call good taste would be a different taste entirely.",
+   "evidence": [
+    {
+     "ref": "¶51",
+     "text": "And there's a deeper question here that I haven't been able to shake. We think of Bach's music as what \"great music\" sounds like. His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today. But if someone else had gotten the Leipzig job, if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently. What we call \"good taste\" would be a different taste entirely."
+    }
+   ]
+  },
+  {
+   "id": "7.7",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Our taste was manufactured along with the canon: we like what we were taught to like.",
+   "evidence": [
+    {
+     "ref": "¶52",
+     "text": "That's the real meaning of the title. It's not just that the canon was manufactured. It's that our taste was manufactured along with it. We like what we were taught to like, and we were taught to like the survivors, and the survivors were selected by money and luck as much as by merit. The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside."
+    }
+   ]
+  },
+  {
+   "id": "7.7.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "The survivors were selected by money and luck as much as by merit.",
+   "evidence": [
+    {
+     "ref": "¶52",
+     "text": "That's the real meaning of the title. It's not just that the canon was manufactured. It's that our taste was manufactured along with it. We like what we were taught to like, and we were taught to like the survivors, and the survivors were selected by money and luck as much as by merit. The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside."
+    }
+   ]
+  },
+  {
+   "id": "7.7.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "The whole chain from who got funded to what counts as beautiful is more contingent than it feels from the inside.",
+   "evidence": [
+    {
+     "ref": "¶52",
+     "text": "That's the real meaning of the title. It's not just that the canon was manufactured. It's that our taste was manufactured along with it. We like what we were taught to like, and we were taught to like the survivors, and the survivors were selected by money and luck as much as by merit. The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside."
+    }
+   ]
+  },
+  {
+   "id": "7.8",
+   "type": "claim",
+   "attribution": "author",
+   "text": "Whether people 300 years from now will listen to Bieber and call it the peak of our era is unknown.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "As for the other half of the question, whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know. But if the mechanisms in this simulation are right, then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music. And we won't be around to correct them."
+    }
+   ]
+  },
+  {
+   "id": "7.8.1",
+   "type": "claim",
+   "attribution": "author",
+   "text": "If the mechanisms are right, the 2000s canon will track distribution deals and the most favorable algorithms more than the best music.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "As for the other half of the question, whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know. But if the mechanisms in this simulation are right, then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music. And we won't be around to correct them."
+    }
+   ]
+  },
+  {
+   "id": "7.8.2",
+   "type": "nuance",
+   "attribution": "author",
+   "text": "And we will not be around to correct them.",
+   "evidence": [
+    {
+     "ref": "¶53",
+     "text": "As for the other half of the question, whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know. But if the mechanisms in this simulation are right, then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music. And we won't be around to correct them."
+    }
+   ]
+  }
+ ]
+}

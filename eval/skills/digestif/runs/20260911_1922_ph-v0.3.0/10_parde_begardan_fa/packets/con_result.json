@@ -1,0 +1,241 @@
+{
+ "judge": "concision",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "10_parde_begardan_fa",
+ "labels": [
+  {
+   "claim_id": "C001",
+   "loglog_ids": [
+    "0"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Top-level arc: childhood love, diatonic limitation, keyed freedom. The document's thesis, not restated elsewhere."
+  },
+  {
+   "claim_id": "C002",
+   "loglog_ids": [
+    "1"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Restated section header; the concrete detail lives in C003-C005 and the summary."
+  },
+  {
+   "claim_id": "C003",
+   "loglog_ids": [
+    "1.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Specifics: age seven, aunt's santur in the corner, Zard-e-Malijeh, hedged memory."
+  },
+  {
+   "claim_id": "C004",
+   "loglog_ids": [
+    "1.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "First lessons, learning mizrab, being forced off the instrument. New content."
+  },
+  {
+   "claim_id": "C005",
+   "loglog_ids": [
+    "1.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Stubbornness, six months of sulking, walking the whole road. Distinct detail."
+  },
+  {
+   "claim_id": "C006",
+   "loglog_ids": [
+    "2"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Restated section header; all substance carried by C007-C010."
+  },
+  {
+   "claim_id": "C007",
+   "loglog_ids": [
+    "2.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Discounted price 20k to 18k and six-month delay are non-trivial numbers."
+  },
+  {
+   "claim_id": "C008",
+   "loglog_ids": [
+    "2.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Teacher came home, cold living room, explicit hedge. Caveat keeps it in scope."
+  },
+  {
+   "claim_id": "C009",
+   "loglog_ids": [
+    "2.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Ershad office hosted classes later; couches reserved for guests. Human detail."
+  },
+  {
+   "claim_id": "C010",
+   "loglog_ids": [
+    "2.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Seventy-two strings and hard tuning are concrete facts beyond the header."
+  },
+  {
+   "claim_id": "C011",
+   "loglog_ids": [
+    "3"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Restated section header; limitation and tuning cost detailed in C013-C015."
+  },
+  {
+   "claim_id": "C012",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Tuner removed the need to carry the instrument to class. New operational fact."
+  },
+  {
+   "claim_id": "C013",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Explicit definition: diatonic, one dastgah per time, time-consuming modulation."
+  },
+  {
+   "claim_id": "C014",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Child-with-one-permitted-game analogy adds the boredom consequence, not just the image."
+  },
+  {
+   "claim_id": "C015",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Watching from the corner when others switch games. Distinct behavioral detail."
+  },
+  {
+   "claim_id": "C016",
+   "loglog_ids": [
+    "4"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Restated section header; the quarter-tone mechanism is developed in C017-C019."
+  },
+  {
+   "claim_id": "C017",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Quarter or half tone raised in fractions of a second; adds half-step and timing."
+  },
+  {
+   "claim_id": "C018",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Two years of thinking and the Langarud-to-Langford transfer problem. Specific."
+  },
+  {
+   "claim_id": "C019",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Arrival credited to family, friends, officials, and imams. Specific and unsourced elsewhere."
+  },
+  {
+   "claim_id": "C020",
+   "loglog_ids": [
+    "5"
+   ],
+   "label": "Trivia",
+   "canonical_id": null,
+   "reasoning": "Restated section header; the return and one-week trip recur concretely in C023-C024."
+  },
+  {
+   "claim_id": "C021",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Named dastgahs, Isfahan through Homayoun, dream-like feel. Detail beyond the header."
+  },
+  {
+   "claim_id": "C022",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Vivid specifics: no lunch, back pain, fattened-lamb simile, first-night feeling."
+  },
+  {
+   "claim_id": "C023",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Child-with-every-game simile plus departing tomorrow for a week. New framing."
+  },
+  {
+   "claim_id": "C024",
+   "loglog_ids": [
+    "5.4"
+   ],
+   "label": "Unique",
+   "canonical_id": null,
+   "reasoning": "Waiting to return and sit at the instrument adds a distinct longing image."
+  }
+ ],
+ "metrics": {
+  "scored_claims": 24,
+  "unique": 19,
+  "duplicates": 0,
+  "trivia": 5,
+  "redundancy_rate": 0.0,
+  "trivia_rate": 0.2083,
+  "structured_tokens": 24,
+  "tokens_per_unique_claim": 1.26
+ },
+ "prune_list": [
+  "C002 restated header, redundant with C003-C005, safe to cut",
+  "C006 restated header, redundant with C007-C010, safe to cut",
+  "C011 restated header, redundant with C013-C015, safe to cut",
+  "C016 restated header, redundant with C017-C019, safe to cut",
+  "C020 restated header, redundant with C021-C024, safe to cut"
+ ]
+}

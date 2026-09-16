@@ -1,0 +1,30 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "deepseek-v4.1-flash, 2026-09-15",
+  "source_id": "point-hierarchy",
+  "inputs": {
+    "faithfulness_precision": 0.9355,
+    "critical_errors": 0,
+    "must_recall": 0.8636,
+    "overall_recall": 0.8333,
+    "redundancy_rate": 0.0323,
+    "trivia_rate": 0.0
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "weighted score equals 0.4 times faithfulness plus 0.4 times must recall minus 0.2 times redundancy: 0.4*0.9355 = 0.37420; 0.4*0.8636 = 0.34544; 0.2*0.0323 = 0.00646; 0.37420 + 0.34544 - 0.00646 = 0.71318. Score computed for ranking only, hard gates already failed.",
+  "weighted_score": 0.71318,
+  "verdict": "Fail",
+  "tradeoff_note": "Two hard gates are missed at once: must_recall 0.8636 is below the 0.9 minimum and faithfulness_precision 0.9355 is below the 0.95 minimum, so concision (redundancy 0.0323, well under the 0.15 max) cannot rescue the sample. The length saving is real but bought a coverage and precision shortfall, not a gain.",
+  "fix_list": [
+    "Restore the dropped must-have specifics on the partial points: K06 add shockproofing and speaker quality as stated requirements; K08 add the mechanism (removed SD card slots, minimal onboard storage); K15 add the missing model name TCL 50 XE NXTPAPER and the weak-performance, average-camera, not-true-e-ink details. These three Must-have partials are the direct cause of must_recall 0.8636.",
+    "Tighten C010 to the source requirement: write 'long battery life' rather than 'week-long battery', which injects a duration only present as a Ulefone feature (loglog 4.1).",
+    "Tighten C026 to match the source hedge: 'it seems like it does not have an SD card slot' rather than asserting the absence as certain (loglog 9.2). These two partials hold precision at 0.9355.",
+    "Merge the requirements re-listing noted in the prune list (C009 duplicates C010 and C011) into the evidence lines, which is safe and does not affect the failed gates."
+  ],
+  "reasoning": "Gate checks first, per policy. critical_errors = 0 against critical_contradicted_max = 0, so no critical hard fail. must_recall = 0.8636 against must_recall_min = 0.9: 0.8636 < 0.9, HARD FAIL. faithfulness_precision = 0.9355 against faithfulness_precision_min = 0.95: 0.9355 < 0.95, HARD FAIL. Two independent hard gates missed, so the verdict is Fail regardless of the weighted score. The score 0.71318 (0.4*0.9355 + 0.4*0.8636 - 0.2*0.0323) is shown for audit and would place mid-range among passes, but per top_policy it cannot lift a failed sample. Concision does not compensate: redundancy_rate 0.0323 is far below redundancy_max 0.15 and trivia_rate is 0.0, so concision is healthy and irrelevant to the failure; it never rescues faithfulness or coverage. The must_recall shortfall traces to three Must-have partials: K06 (drops shockproofing and speaker quality from the enumerated requirement list), K08 (drops the SD-slot/minimal-storage mechanism that substantiates the Apple/Google accusation), and K15 (drops the model name and several evaluation details though it keeps the core verdicts). The precision shortfall traces to two Minor partials: C010 (adds 'week-long' duration not required by loglog 4.1) and C026 (states SD-slot absence as fact where loglog 9.2 hedges with 'seems like'). No two aspect judges conflict on a fact, so SOURCE was not reread. Borderline does not apply because gates were missed on numbers, which is a Fail by definition. Highest-leverage fixes are the coverage additions on K06/K08/K15, followed by the editorial tightenings on C010/C026; the C009/C010/C011 duplicate merge is safe housekeeping."
+}

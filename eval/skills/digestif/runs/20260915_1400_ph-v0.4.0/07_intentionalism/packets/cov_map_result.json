@@ -1,0 +1,227 @@
+{
+ "judge": "coverage",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "source.txt",
+ "key_points": [
+  {
+   "point_id": "K01",
+   "point_text": "Central thesis: proposers systematically end up with better outcomes than receivers, and this is not because of talent, luck, or the quality of their choices.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L003",
+    "L004",
+    "L011"
+   ],
+   "evidence_quote": "Some people consistently end up with better outcomes for reasons having nothing to do with talent, luck, or even the quality of their choices. ... It is about whether they propose or receive.",
+   "reasoning": "L003 states the outcome gap and explicitly negates talent, luck, and choice quality; L004 attributes it to propose versus receive; L011 restates the proposer advantage. All qualifiers intact."
+  },
+  {
+   "point_id": "K02",
+   "point_text": "In 1962 mathematicians-economists David Gale and Lloyd Shapley worked on creating stable pairings between two groups and proved a stable matching (no unmatched pair preferring each other) always exists.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L005",
+    "L006"
+   ],
+   "evidence_quote": "In 1962, David Gale and Lloyd Shapley worked on creating stable pairings, where no two unmatched people would prefer each other over their assigned partners. They proved you could always match everyone this way, and presented an algorithm to find such matchings.",
+   "reasoning": "Year, names, stable pairing definition, and the existence proof are all captured in L005 and L006."
+  },
+  {
+   "point_id": "K03",
+   "point_text": "Their deferred acceptance algorithm works by having one side propose in order of preference while the other side accepts or tentatively rejects based on its preferences.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L007"
+   ],
+   "evidence_quote": "In their deferred acceptance algorithm, one side makes proposals in order of preference, and the other accepts or tentatively rejects.",
+   "reasoning": "L007 names the deferred acceptance algorithm and both roles with the tentative rejection mechanic preserved."
+  },
+  {
+   "point_id": "K04",
+   "point_text": "Core mathematical result: proposers each get their best possible stable partner and receivers each get their worst possible stable partner, a provably extreme gap, not a slight difference.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L008",
+    "L009"
+   ],
+   "evidence_quote": "Proposers get their best possible partner among all stable matchings, while receivers get their worst possible partner. This is not slightly better or worse: it is systematically, provably, mathematically extreme for each individual.",
+   "reasoning": "L008 gives the best/worst extremal result and L009 explicitly denies it is slight, preserving both the theorem and its extreme framing."
+  },
+  {
+   "point_id": "K05",
+   "point_text": "Most real-world situations do not follow the exact algorithm but share the same proposer/receiver structure, so the same pattern of advantage should be expected even when only approximate.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L010",
+    "L012",
+    "L068",
+    "L069"
+   ],
+   "evidence_quote": "The situations are not running the exact Gale-Shapley algorithm, but they share the structure: one side initiates, the other responds.",
+   "reasoning": "L012 states the approximate structure and L010/L011 the expected pattern; L068-L069 reaffirm structural, systematic (not incremental) advantage in real life."
+  },
+  {
+   "point_id": "K06",
+   "point_text": "Everyday illustrations show most people are receivers: choosing Netflix by scrolling, picking among displayed phones, applying to posted jobs, accepting friendships formed by proximity.",
+   "weight": "Nice to have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L014",
+    "L015",
+    "L016",
+    "L017",
+    "L018"
+   ],
+   "evidence_quote": "Netflix: scrolling through recommendations ... Phone: choosing among what was prominently displayed ... Job: applying to positions that happened to be posted ... Friendship: accepting a connection that formed through proximity.",
+   "reasoning": "All four examples plus the concluding receiver framing in L018 are preserved."
+  },
+  {
+   "point_id": "K07",
+   "point_text": "The insidious part is that receivers get acceptable, good-enough outcomes, so they never feel dissatisfied enough to change, and the system stays stable (self-sustaining) while quietly giving them less than they could have.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L019",
+    "L021",
+    "L022",
+    "L023",
+    "L056"
+   ],
+   "evidence_quote": "The system is self-sustaining precisely because it does not screw you badly enough to make you revolt. It just quietly, consistently ensures you get less than you could have if you were on the other side of the equation.",
+   "reasoning": "L019 gives good-enough outcomes, L022-L023 the self-sustaining less-than-possible mechanism, and L056 reinforces stability and resistance to change."
+  },
+  {
+   "point_id": "K08",
+   "point_text": "Chicken-and-egg trap: you need intention to propose, but you develop intention through proposing; choosing among presented options only reveals what you dislike least, not what you would pursue.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L026",
+    "L027",
+    "L028"
+   ],
+   "evidence_quote": "This is the trap: you need intention to propose, but you develop intention through proposing. ... those choices reveal which option you dislike least.",
+   "reasoning": "L028 states the trap verbatim and L027 preserves the dislike-least qualifier; L026 supplies the precondition of needing intention."
+  },
+  {
+   "point_id": "K09",
+   "point_text": "Training ground: the muscle of intention builds progressively, so start small by intentionally deciding what you want from the next hour before opening any app, rather than scrolling until something catches you.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L033",
+    "L035",
+    "L036"
+   ],
+   "evidence_quote": "Start tonight: before opening any app, decide what you actually want from the next hour ... do not open Netflix and see what it suggests, do not scroll TikTok until something catches you.",
+   "reasoning": "L033 frames intention as a progressive muscle; L035-L036 give the next-hour, pre-app small start and the negative contrast."
+  },
+  {
+   "point_id": "K10",
+   "point_text": "You cannot think your way into values, you have to practice your way into them: repeated intentional acts yield patterns, patterns become preferences, preferences become values.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L038",
+    "L039"
+   ],
+   "evidence_quote": "Do it enough times and patterns in what satisfies you become preferences, and preferences become values. You cannot think your way into values; you have to practice your way into them.",
+   "reasoning": "Both the progression chain and the think-versus-practice maxim are captured verbatim in L038-L039."
+  },
+  {
+   "point_id": "K11",
+   "point_text": "Structural disadvantage does not disappear with understanding, you must actually switch positions, and proposing means deciding what you want before seeing options, pursuing specifics, creating opportunities, and accepting friction against default flows.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L057",
+    "L060",
+    "L061",
+    "L062",
+    "L063"
+   ],
+   "evidence_quote": "Understanding the disadvantage does not remove it; you have to actually switch positions. ... Proposing means deciding intentionally what you want before seeing what is available. It means pursuing specific things ... creating opportunities ... accepting the friction of going against default flows.",
+   "reasoning": "L057 keeps understanding-does-not-remove-it, and L060-L063 enumerate all four meaning components of proposing."
+  },
+  {
+   "point_id": "K12",
+   "point_text": "Collective effect: when most people are receivers, systems optimize for the proposers, namely the platforms, which capture optimal outcomes (attention, data, money) while users get only good-enough outcomes.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L050",
+    "L054",
+    "L055"
+   ],
+   "evidence_quote": "The proposers in these systems are not the users; they are the platforms. The platforms get your attention, data, and money, while you get outcomes good enough to keep participating but not serving your best interests.",
+   "reasoning": "L050 states systems optimize for proposers; L054-L055 identify platforms as proposers and preserve the attention/data/money versus good-enough asymmetry."
+  },
+  {
+   "point_id": "K13",
+   "point_text": "Most people will not make the shift because it is effortful, the receiver position is comfortable, and after years of receiver mode many have lost the capacity to know what they would want to propose.",
+   "weight": "Nice to have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L066",
+    "L067"
+   ],
+   "evidence_quote": "Most people will not do this: it is effortful, and the receiver position is comfortable enough not to motivate change. After years of receiver mode, most people have lost the capacity to even know what they would want to propose.",
+   "reasoning": "Both causes, effort and comfort, and the lost-capacity consequence are captured in L066-L067."
+  },
+  {
+   "point_id": "K14",
+   "point_text": "Practical progression: begin with tomorrow morning before checking your phone, practice for a week on small things (breakfast, evening activities, weekend plans), then scale to bigger decisions like work, relationships, and purchases.",
+   "weight": "Must have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L072",
+    "L073",
+    "L074",
+    "L076",
+    "L078",
+    "L079"
+   ],
+   "evidence_quote": "Before you check your phone, decide intentionally what you actually want from the first hour ... Do this for a week with small things, breakfast, evening activities, weekend plans ... Then scale up: before looking at job postings, decide what kind of work you want to do ... before swiping on dating apps ... before browsing products.",
+   "reasoning": "L072-L073 give the morning start; L076 the one-week small-things span with breakfast/evening/weekend; L078-L079 the scaled larger domains of work, relationships, and purchases."
+  },
+  {
+   "point_id": "K15",
+   "point_text": "Appendix concrete tools: domain exercises (entertainment, shopping with must-haves and 24-hour rule over $100, career with 5 non-negotiables and applying only when 4 of 5 match, relationships), daily pause and journaling practices, and a 30-day tracking journal showing proposers report higher satisfaction.",
+   "weight": "Nice to have",
+   "presence": "Present",
+   "loglog_ids": [
+    "L083",
+    "L084",
+    "L096",
+    "L102",
+    "L105",
+    "L108",
+    "L110",
+    "L112",
+    "L120",
+    "L125",
+    "L128",
+    "L132"
+   ],
+   "evidence_quote": "For anything over $100, wait a day ... Write 5 non-negotiables for your next role ... apply only to roles that match at least 4 of your 5 criteria ... The pause practice: before any significant choice today, pause for 10 seconds ... After 30 days the pattern is clear: proposer entries show higher satisfaction.",
+   "reasoning": "The appendix is fully retained: entertainment (L084), shopping with must-haves and the over-$100 day rule (L096-L102), career with 5 non-negotiables and 4-of-5 match rule (L105-L110), relationships (L112), daily pause and journaling (L120-L128), and the 30-day satisfaction-tracking journal (L132). All key numbers and thresholds preserved."
+  }
+ ],
+ "metrics": {
+  "total_points": 15,
+  "must_have_total": 12,
+  "must_have_present": 12,
+  "must_have_partial": 0,
+  "must_have_missing": 0,
+  "overall_present": 15,
+  "must_recall": 1.0,
+  "overall_recall": 1.0
+ },
+ "missing_list": []
+}

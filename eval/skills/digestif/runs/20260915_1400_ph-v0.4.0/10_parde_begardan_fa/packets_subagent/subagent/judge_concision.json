@@ -1,0 +1,313 @@
+{
+  "judge": "concision",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "10_parde_begardan_fa",
+  "labels": [
+    {
+      "claim_id": "C01",
+      "loglog_ids": ["L02"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Compressed thesis; no body node states the whole childhood-to-freedom arc."
+    },
+    {
+      "claim_id": "C02",
+      "loglog_ids": ["L02"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Years-of-coping synthesis; body episodes supply the mechanism but never the span."
+    },
+    {
+      "claim_id": "C03",
+      "loglog_ids": ["L02"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Payoff framing of the keyed santur; mechanism numbers live in section 4."
+    },
+    {
+      "claim_id": "C04",
+      "loglog_ids": ["L03"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme 1 adds the fell-in-love synthesis and the age-seven frame; 1.1 adds scene detail rather than repeating the theme."
+    },
+    {
+      "claim_id": "C05",
+      "loglog_ids": ["L04"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Number fact (age seven); numbers are never trivia."
+    },
+    {
+      "claim_id": "C06",
+      "loglog_ids": ["L04"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New scene details: newly bought, being learned, corner of the room."
+    },
+    {
+      "claim_id": "C07",
+      "loglog_ids": ["L04"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Hedged song identification; names and hedges are never trivia."
+    },
+    {
+      "claim_id": "C08",
+      "loglog_ids": ["L05"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New background fact about lesson order for Zard-e Malijeh."
+    },
+    {
+      "claim_id": "C09",
+      "loglog_ids": ["L05"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New event (mallet lesson) with the gladly qualifier."
+    },
+    {
+      "claim_id": "C10",
+      "loglog_ids": ["L06"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New event (forced removal) carrying the only-memory scope."
+    },
+    {
+      "claim_id": "C11",
+      "loglog_ids": ["L07"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New hedged detail (probably, only at dinner); hedges are never trivia."
+    },
+    {
+      "claim_id": "C12",
+      "loglog_ids": ["L07"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New event (all-the-way nagging)."
+    },
+    {
+      "claim_id": "C13",
+      "loglog_ids": ["L08"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New duration and the purchase outcome; first statement of the six-month persistence."
+    },
+    {
+      "claim_id": "C14",
+      "loglog_ids": ["L09"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme 2 synthesis of the discount acquisition; 2.1 supplies the figures, so neither repeats the other."
+    },
+    {
+      "claim_id": "C15",
+      "loglog_ids": ["L09"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Synthesis of the difficulty framing; children add the specific hardships."
+    },
+    {
+      "claim_id": "C16",
+      "loglog_ids": ["L10"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Price figures 20 and 18; numbers are never trivia."
+    },
+    {
+      "claim_id": "C17",
+      "loglog_ids": ["L10"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Duration plus class start; distinct interval from the nagging six months."
+    },
+    {
+      "claim_id": "C18",
+      "loglog_ids": ["L11"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New arrangement fact (home lessons) with the no-institute reason."
+    },
+    {
+      "claim_id": "C19",
+      "loglog_ids": ["L11"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New scene detail with the memory hedge; hedges are never trivia."
+    },
+    {
+      "claim_id": "C20",
+      "loglog_ids": ["L12"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New detail with the guest-only scope."
+    },
+    {
+      "claim_id": "C21",
+      "loglog_ids": ["L12"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New event (Ershad office class)."
+    },
+    {
+      "claim_id": "C22",
+      "loglog_ids": ["L13"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New image (instrument bigger than the child); v0.3.0's header duplication of this image is gone."
+    },
+    {
+      "claim_id": "C23",
+      "loglog_ids": ["L13"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Count 72 and the not-anyone's-job negation; numbers and negations are never trivia."
+    },
+    {
+      "claim_id": "C24",
+      "loglog_ids": ["L14"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme 3 synthesis binding the tuning mechanism to the game analogy."
+    },
+    {
+      "claim_id": "C25",
+      "loglog_ids": ["L15"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New resolution fact (tuner) with the no-longer negation."
+    },
+    {
+      "claim_id": "C26",
+      "loglog_ids": ["L15"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New qualifier: the limitation survives the tuner with other aspects."
+    },
+    {
+      "claim_id": "C27",
+      "loglog_ids": ["L16"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Definition with the only-one-dastgah scope."
+    },
+    {
+      "claim_id": "C28",
+      "loglog_ids": ["L16"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "New mechanism fact: modulation is a time-consuming retune."
+    },
+    {
+      "claim_id": "C29",
+      "loglog_ids": ["L17"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Analogy half one (the one-game permission); theme 3 only abstracts it."
+    },
+    {
+      "claim_id": "C30",
+      "loglog_ids": ["L18"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Analogy half two (packing toys first; not worth it)."
+    },
+    {
+      "claim_id": "C31",
+      "loglog_ids": ["L19"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Analogy half three with the even-if qualifier."
+    },
+    {
+      "claim_id": "C32",
+      "loglog_ids": ["L20"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme 4 synthesis of the keyed solution; 4.1 and 4.2 add the figures."
+    },
+    {
+      "claim_id": "C33",
+      "loglog_ids": ["L21"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Mechanism figures with the quarter-or-half-step scope; numbers are never trivia."
+    },
+    {
+      "claim_id": "C34",
+      "loglog_ids": ["L22"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Payoff figures (a few clicks, a few seconds); distinct from the per-note mechanism in 4.1."
+    },
+    {
+      "claim_id": "C35",
+      "loglog_ids": ["L23"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Duration plus both place names and the safe-transport problem; numbers and names are never trivia."
+    },
+    {
+      "claim_id": "C36",
+      "loglog_ids": ["L24"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Helper list and today; first statement of how the instrument arrived."
+    },
+    {
+      "claim_id": "C37",
+      "loglog_ids": ["L25"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Theme 5 synthesis of joy and longing; no child states both halves."
+    },
+    {
+      "claim_id": "C38",
+      "loglog_ids": ["L26"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Full dastgah chain with all five names; names are never trivia."
+    },
+    {
+      "claim_id": "C39",
+      "loglog_ids": ["L27"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Sheep simile plus skipped lunch and back ache."
+    },
+    {
+      "claim_id": "C40",
+      "loglog_ids": ["L28"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "First-night feeling and the two unrestricted-choice feelings; the first-night referent is recapped from 1.2 but the new content is the present feeling itself."
+    },
+    {
+      "claim_id": "C41",
+      "loglog_ids": ["L29"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Trip timing (one week from tomorrow) with the sadness; v0.3.0's merged timing/simile line is now split cleanly from 5.3."
+    },
+    {
+      "claim_id": "C42",
+      "loglog_ids": ["L30"],
+      "label": "Unique",
+      "canonical_id": null,
+      "reasoning": "Closing waiting-to-return claim; distinct from the trip timing in 5.4."
+    }
+  ],
+  "metrics": {
+    "scored_claims": 42,
+    "unique": 42,
+    "duplicates": 0,
+    "trivia": 0,
+    "redundancy_rate": 0.0,
+    "trivia_rate": 0.0,
+    "structured_tokens": 677,
+    "tokens_per_unique_claim": 16.12
+  },
+  "prune_list": []
+}

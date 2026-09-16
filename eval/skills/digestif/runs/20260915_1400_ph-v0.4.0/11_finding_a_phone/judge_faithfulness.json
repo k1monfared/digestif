@@ -1,0 +1,716 @@
+{
+  "judge": "faithfulness",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (opencode) scripted pipeline 2026-09-15",
+  "source_id": "11_finding_a_phone",
+  "claims": [
+    {
+      "claim_id": "C001",
+      "loglog_ids": [
+        "0"
+      ],
+      "claim_text": "Seeking a phone that solves problems without ecosystems or gimmicks, from Droid obsession to rugged Ulefone and a data-driven search.",
+      "claim_type": "meta",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "finding one that genuinely solves my problems without forcing me into unnecessary ecosystems or gimmicks ... my current obsession with rugged, no-nonsense devices",
+      "reasoning": "Summary matches author's stated aim and arc; Droid era captivation and later scraping search are in source."
+    },
+    {
+      "claim_id": "C002",
+      "loglog_ids": [
+        "1"
+      ],
+      "claim_text": "Early phone history: simple reliability, smartphone immersion, then disillusion and retreat.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "it was reliable, durable, and hardy ... I became disillusioned with smartphones ... I switched to a dial-pad phone",
+      "reasoning": "Source states reliable first phone, immersion in Droid era, disillusion, and retreat to dial-pad."
+    },
+    {
+      "claim_id": "C003",
+      "loglog_ids": [
+        "1.1"
+      ],
+      "claim_text": "The first phone, a Sony Ericsson J100, was no-frills, reliable, durable, and hardy; it never let him down.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "My first cellphone was a Sony Ericsson J100. It was a no-frills device ... reliable, durable, and hardy ... it never let me down.",
+      "reasoning": "Name and all descriptors preserved exactly from source."
+    },
+    {
+      "claim_id": "C004",
+      "loglog_ids": [
+        "1.2"
+      ],
+      "claim_text": "After a phoneless spell, he bought the Motorola Droid on day one; it quickly became a centerpiece of his life.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "For a while, I didn’t even own a phone ... I bought it on day one, and it quickly became a centerpiece of my life.",
+      "reasoning": "Phoneless period, day-one purchase, and centerpiece claim all stated in source."
+    },
+    {
+      "claim_id": "C005",
+      "loglog_ids": [
+        "1.3"
+      ],
+      "claim_text": "The Droid was one of the first Android smartphones widely available in the U.S., and it ushered in a new era.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "one of the first Android smartphones widely available in the U.S. ... The Droid ushered in a new era for me.",
+      "reasoning": "Both the U.S. availability and new-era claims are directly stated."
+    },
+    {
+      "claim_id": "C006",
+      "loglog_ids": [
+        "1.4"
+      ],
+      "claim_text": "He explored every feature, tried one of the world's first smartwatches, and was captivated; his phone was tool, organizer, and companion.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I explored every feature it offered and even experimented with one of the world’s first smartwatches ... I was captivated. My phone was a tool, an organizer, and a companion",
+      "reasoning": "All elements quoted verbatim from source with no drift."
+    },
+    {
+      "claim_id": "C007",
+      "loglog_ids": [
+        "1.5"
+      ],
+      "claim_text": "The honeymoon didn't last: notifications, endless customization, and attention-stealing apps made him feel more consumer than user.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "the honeymoon phase didn’t last ... Notifications, endless customization, and attention-stealing apps made me feel more like a consumer than a user.",
+      "reasoning": "Negation and all three causes preserved as in source."
+    },
+    {
+      "claim_id": "C008",
+      "loglog_ids": [
+        "1.6"
+      ],
+      "claim_text": "He made a drastic decision and switched to a dial-pad phone.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I made a drastic decision: I switched to a dial-pad phone.",
+      "reasoning": "Direct restatement of source sentence."
+    },
+    {
+      "claim_id": "C009",
+      "loglog_ids": [
+        "2"
+      ],
+      "claim_text": "Needs redefined: offline functionality, toughness, and independence over flashy features.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "phones that prioritized functionality over flashiness ... Cloud storage—I preferred offline independence",
+      "reasoning": "Themes of offline independence, toughness, and functionality over flash match source."
+    },
+    {
+      "claim_id": "C010",
+      "loglog_ids": [
+        "2.1"
+      ],
+      "claim_text": "He tested small and large screens, physical keyboards, stylus-equipped phones, and the latest smartwatches.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I tried it all: Small screens and large screens, Physical keyboards, Stylus-equipped phones, The latest smartwatches",
+      "reasoning": "All four tested categories match the source list exactly."
+    },
+    {
+      "claim_id": "C011",
+      "loglog_ids": [
+        "2.2"
+      ],
+      "claim_text": "No matter what he tried, phones were not built for people like him: they sold unneeded features, pushed unwanted ads, locked him into avoided ecosystems.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "these phones were not built for people like me. They were built to sell features I didn’t need, push ads I didn’t want, and lock me into ecosystems I avoided.",
+      "reasoning": "Negation and all three critiques carried over faithfully."
+    },
+    {
+      "claim_id": "C012",
+      "loglog_ids": [
+        "2.3"
+      ],
+      "claim_text": "That realization shifted his focus to phones prioritizing functionality over flashiness.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This realization shifted my focus. I started looking for phones that prioritized functionality over flashiness.",
+      "reasoning": "Direct restatement with the same causation and priority."
+    },
+    {
+      "claim_id": "C013",
+      "loglog_ids": [
+        "2.4"
+      ],
+      "claim_text": "Priorities: long battery life, waterproofing and shockproofing, SD card slots and headphone jacks, decent mic and speaker, customization.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Long battery life ... Waterproofing and shockproofing ... SD card slots and headphone jacks ... Decent mic and speaker quality ... Customization options",
+      "reasoning": "All five listed priorities match the source essentials."
+    },
+    {
+      "claim_id": "C014",
+      "loglog_ids": [
+        "2.5"
+      ],
+      "claim_text": "Didn't care about the best camera, AI photo 'enhancements', or cloud storage; preferred offline independence.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I didn’t care about: Having the best camera—a simple one was fine. AI “enhancements” in photos ... Cloud storage—I preferred offline independence.",
+      "reasoning": "Negation and all three disinterests preserved."
+    },
+    {
+      "claim_id": "C015",
+      "loglog_ids": [
+        "2.6"
+      ],
+      "claim_text": "Apple and Google deliberately limited offline options, removing SD card slots and offering minimal onboard storage to push cloud services.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Companies like Apple and Google deliberately limited options for offline use, removing SD card slots and offering minimal onboard storage to push cloud services.",
+      "reasoning": "Attribution, deliberate limit, removed slots, and motivation all match."
+    },
+    {
+      "claim_id": "C016",
+      "loglog_ids": [
+        "2.7"
+      ],
+      "claim_text": "He wanted to take the phone to the mountains for music, reading, and notes without worrying about connectivity.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I wanted to take my phone to the mountains, listen to music, read, and take notes without worrying about connectivity.",
+      "reasoning": "All activities and the no-connectivity-worry qualifier preserved."
+    },
+    {
+      "claim_id": "C017",
+      "loglog_ids": [
+        "3"
+      ],
+      "claim_text": "Ulefone delivered rugged value: toughness, battery, price, and survival.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Durability: Waterproof, shockproof, and dustproof ... One model lasted an entire week ... 1/10th the price ... they’ve held up remarkably well",
+      "reasoning": "Toughness, battery, price, and survival themes all evidenced in source."
+    },
+    {
+      "claim_id": "C018",
+      "loglog_ids": [
+        "3.1"
+      ],
+      "claim_text": "Ulefone devices were a revelation: a small Chinese company specializing in rugged phones, not competing with Apple or Samsung but solving real problems.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Ulefone, a small Chinese company specializing in rugged phones. These devices were a revelation ... weren’t trying to compete with the likes of Apple or Samsung ... solving real problems",
+      "reasoning": "Company description, non-competition, and problem-solving role all match."
+    },
+    {
+      "claim_id": "C019",
+      "loglog_ids": [
+        "3.2"
+      ],
+      "claim_text": "Loved the durability (waterproof, shockproof, dustproof) and practical features: dual SIM, SD card slots, headphone jacks.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Durability: Waterproof, shockproof, and dustproof. Practical features: Dual SIM, SD card slots, headphone jacks.",
+      "reasoning": "Both bullets reproduced verbatim from source."
+    },
+    {
+      "claim_id": "C020",
+      "loglog_ids": [
+        "3.3"
+      ],
+      "claim_text": "One Ulefone model lasted an entire week on a single charge.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "One model lasted an entire week on a single charge.",
+      "reasoning": "Duration claim matches source exactly, no number drift."
+    },
+    {
+      "claim_id": "C021",
+      "loglog_ids": [
+        "3.4"
+      ],
+      "claim_text": "These phones cost about 1/10th the price of flagship devices from major brands.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "These phones cost about 1/10th the price of flagship devices from major brands.",
+      "reasoning": "Fraction, hedge 'about', and comparison target preserved verbatim."
+    },
+    {
+      "claim_id": "C022",
+      "loglog_ids": [
+        "3.5"
+      ],
+      "claim_text": "Put through hell: countless drops, swimming, abuse that would destroy most devices; they held up remarkably well.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I’ve put these phones through hell. I’ve dropped them countless times, taken them swimming ... would destroy most devices. Yet they’ve held up remarkably well.",
+      "reasoning": "All evidence elements match source wording and meaning."
+    },
+    {
+      "claim_id": "C023",
+      "loglog_ids": [
+        "3.6"
+      ],
+      "claim_text": "A dive a bit too deep into a lake this summer made the current Ulefone act up, but it still works.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "This summer, I dived a bit too deep into a lake with my current Ulefone, and while it started acting up, it still works.",
+      "reasoning": "Season, lake dive, acting up, and still-works all preserved."
+    },
+    {
+      "claim_id": "C024",
+      "loglog_ids": [
+        "4"
+      ],
+      "claim_text": "Why this matters: phones as tools, with smaller makers filling the gap.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "phones are tools, not status symbols ... Smaller companies like Ulefone, however, are filling that gap.",
+      "reasoning": "Tools framing and gap-filling by smaller companies both stated."
+    },
+    {
+      "claim_id": "C025",
+      "loglog_ids": [
+        "4.1"
+      ],
+      "claim_text": "Phones are tools, not status symbols; he doesn't want a device that decides what's important or forces conformity.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "phones are tools, not status symbols. I don’t want a device that decides what’s important for me or forces me to conform to its limitations.",
+      "reasoning": "Negations and tool-not-status framing preserved exactly."
+    },
+    {
+      "claim_id": "C026",
+      "loglog_ids": [
+        "4.2"
+      ],
+      "claim_text": "He wants a phone that fits his life, solves his problems, and respects his choices.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "I want a phone that fits into my life, solves my problems, and respects my choices.",
+      "reasoning": "Direct restatement of source sentence."
+    },
+    {
+      "claim_id": "C027",
+      "loglog_ids": [
+        "4.3"
+      ],
+      "claim_text": "Big players (Apple, Google, Samsung) don't cater to people like him; their ecosystems prioritize profit over genuine user needs.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "The big players in the industry—Apple, Google, Samsung—don’t cater to people like me. Their focus is on creating ecosystems that prioritize profit over genuine user needs.",
+      "reasoning": "Entities, negation, and profit-over-needs claim all match source."
+    },
+    {
+      "claim_id": "C028",
+      "loglog_ids": [
+        "4.4"
+      ],
+      "claim_text": "Smaller companies like Ulefone are filling that gap.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "Smaller companies like Ulefone, however, are filling that gap.",
+      "reasoning": "Verbatim restatement of source."
+    },
+    {
+      "claim_id": "C029",
+      "loglog_ids": [
+        "4.5"
+      ],
+      "claim_text": "You don't have to settle for what the market says you need; searching can find tools that work for you, not against you.",
+      "claim_type": "recommendation",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "you don’t have to settle for what the market says you need. With a bit of searching, you can find tools that work for you—not against you.",
+      "reasoning": "Recommendation and both negations preserved."
+    },
+    {
+      "claim_id": "C030",
+      "loglog_ids": [
+        "4.6"
+      ],
+      "claim_text": "His journey was about rejecting trends and seeking solutions; the world chases megapixels and AI gimmicks while he keeps a rugged, reliable phone.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Harmless",
+      "evidence_quote": "My journey with cellphones has been about rejecting trends and seeking solutions. While the world chases megapixels and AI gimmicks, I’ll be here with my rugged, reliable phone",
+      "reasoning": "All elements reproduced faithfully from the closing paragraphs."
+    },
+    {
+      "claim_id": "C031",
+      "loglog_ids": [
+        "5"
+      ],
+      "claim_text": "An abandoned Pixel deal led to an LLM-assisted search and comparison pipeline.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Fortunately, I hadn't paid for anything yet ... I declined and got back on the market ... I asked openAI's O1 model ... I asked gpt-4o-mini to to write some python code",
+      "reasoning": "Source recounts abandoning the Pixel order, then using O1 and gpt-4o-mini to search and build the comparison table."
+    },
+    {
+      "claim_id": "C032",
+      "loglog_ids": [
+        "5.1"
+      ],
+      "claim_text": "Pixel detour: ordering on a deal, anxiety, then walking away.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "ordered a latest version of google pixel ... I was getting anxious ... I declined and got back on the market",
+      "reasoning": "Ordering, anxiety while waiting, and declining charges to walk away all appear in the source."
+    },
+    {
+      "claim_id": "C033",
+      "loglog_ids": [
+        "5.1.1"
+      ],
+      "claim_text": "Ordered a latest Google Pixel on a Black Friday deal, thinking to maybe try the always-connected life; people generally said good things.",
+      "claim_type": "fact",
+      "verdict": "Partially supported",
+      "severity": "Minor",
+      "evidence_quote": "just as black Friday was approaching I got fooled by a deal from my network provider and ordered a latest version of google pixel",
+      "reasoning": "Source says a network-provider deal as Black Friday approached; loglog recasts it as a Black Friday deal and drops the provider."
+    },
+    {
+      "claim_id": "C034",
+      "loglog_ids": [
+        "5.1.2"
+      ],
+      "claim_text": "While waiting he grew anxious: multi-year lock-in then remainder payment, for a phone he wouldn't enjoy and that would limit his choices.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "I'm paying a hefty amount of money to first lock myself in for a couple of years and then have to pay the remaining amount ... I am not going to enjoy it",
+      "reasoning": "All elements (waiting anxiety, lock-in, remainder payment, no enjoyment, limited choices) are stated in the source."
+    },
+    {
+      "claim_id": "C035",
+      "loglog_ids": [
+        "5.1.3"
+      ],
+      "claim_text": "He hadn't paid; after extra charges for random things appeared, he declined them and got back on the market.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "I hadn't paid for anything yet ... extra charges for random things which I declined and got back on the market",
+      "reasoning": "Source states the unpaid status, the extra random charges, his refusal, and return to the market."
+    },
+    {
+      "claim_id": "C036",
+      "loglog_ids": [
+        "5.2"
+      ],
+      "claim_text": "Pipeline: O1 suggestions, GSMArena specs, scraper and cleaner code.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "I asked openAI's O1 model ... found specs on all of them in gsmarena.com ... asked gpt-4o-mini to to write some python code",
+      "reasoning": "The source describes exactly these stages: O1 list, GSMArena lookup, scraper, and cleaning code."
+    },
+    {
+      "claim_id": "C037",
+      "loglog_ids": [
+        "5.2.1"
+      ],
+      "claim_text": "Friends' recommendations weren't enough; asked OpenAI's O1 for smaller-company phones matching his 5G, eSIM, SD, battery, waterproof, and camera wants.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "recommendations from friends but that wasn't enough ... I asked openAI's O1 model to give me a list of phones from smaller companies that have the features I want, 5G, e-sim, SD card, good battery, water proof, and decent camera",
+      "reasoning": "Source lists the same desired features and the request to O1 after friends' tips proved insufficient."
+    },
+    {
+      "claim_id": "C038",
+      "loglog_ids": [
+        "5.2.2"
+      ],
+      "claim_text": "O1 gave a bunch of phones with generally wrong specs but correct model names.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "It gave me a bunch of them with generally wrong specs, but the model names where correct.",
+      "reasoning": "Nearly verbatim match to the source statement."
+    },
+    {
+      "claim_id": "C039",
+      "loglog_ids": [
+        "5.2.3"
+      ],
+      "claim_text": "He found specs on gsmarena.com, but comparing was hard, so asked gpt-4o-mini to write scraping code.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "found specs on all of them in gsmarena.com. It got hard to compare them, so again I asked gpt-4o-mini to to write some python code that ... scrapes the phone specs",
+      "reasoning": "Source states the GSMArena lookup, comparison difficulty, and gpt-4o-mini scraping code request."
+    },
+    {
+      "claim_id": "C040",
+      "loglog_ids": [
+        "5.2.4"
+      ],
+      "claim_text": "The scraper rotates user agents, retries 3 times with backoff, sleeps 2 to 5 seconds, and parses GSMArena specs into a DataFrame.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "USER_AGENTS = [...] ... Retry(total=3, backoff_factor=1, ...) ... time.sleep(uniform(2, 5)) ... phones_df = pd.DataFrame(all_phones)",
+      "reasoning": "The pasted code defines user-agent rotation, three retries with backoff, a 2-5 second sleep, and DataFrame parsing."
+    },
+    {
+      "claim_id": "C041",
+      "loglog_ids": [
+        "5.2.5"
+      ],
+      "claim_text": "Gave it 18 GSMArena URLs, including a duplicated realme Narzo 60 entry, and saved the table to CSV.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "\"https://www.gsmarena.com/realme_narzo_60-12395.php\" ... df.to_csv(\"smartphone_specs.csv\", index=False)",
+      "reasoning": "The URL list has 18 entries, Narzo 60 appears twice, and the code writes smartphone_specs.csv."
+    },
+    {
+      "claim_id": "C042",
+      "loglog_ids": [
+        "5.2.6"
+      ],
+      "claim_text": "Wished websites existed to do this analysis simply without scraping them.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "I wish there were websites that would allow me to do these analysis simply without scraping them.",
+      "reasoning": "Direct paraphrase of the author's stated wish."
+    },
+    {
+      "claim_id": "C043",
+      "loglog_ids": [
+        "5.2.7"
+      ],
+      "claim_text": "Asked Claude 3.5 Sonnet to clean the table; it first ignored the actual columns, then mostly worked after more prompts.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Asking claude-3.5 sonnet ... it didn't consider what is in df rows. Then I prompted it ... then a few more prompts and it made it mostly work.",
+      "reasoning": "Source names Claude 3.5 Sonnet, its initial column-ignoring failure, and eventual mostly-working result."
+    },
+    {
+      "claim_id": "C044",
+      "loglog_ids": [
+        "5.2.8"
+      ],
+      "claim_text": "Caveat: unchecked; he assumes it made several errors but calls it a good starting point.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "I haven't checked any of this and I assume it has made several errors, but it gives a good starting point.",
+      "reasoning": "Matches the unchecked status, assumed errors, and good-starting-point framing."
+    },
+    {
+      "claim_id": "C045",
+      "loglog_ids": [
+        "5.2.9"
+      ],
+      "claim_text": "The cleaner extracts brand, model, 5G, eSIM, release year, screen size, dual SIM, battery mAh, charging speed, SD slot, cameras, and price.",
+      "claim_type": "definition",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "cleaned_df['brand'] ... ['model'] ... ['has_5g'] ... ['has_esim'] ... ['release_year'] ... ['screen_size'] ... ['battery_mah'] ... ['charging_speed'] ... ['has_sd_slot'] ... ['main_camera_mpx'] ... ['price_usd']",
+      "reasoning": "Every listed field corresponds to a column produced by clean_phone_specs in the pasted code."
+    },
+    {
+      "claim_id": "C046",
+      "loglog_ids": [
+        "5.2.10"
+      ],
+      "claim_text": "BeautifulSoup misses a lot of details; pandas read_html reads this site well; request volume and proxies need managing next.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "The BeautifulSoup approach is not great, it misses a lot of details, pandas has this `read_html` functionality which reads very well from this website. I also need to manage how many requests ... and change the proxy",
+      "reasoning": "All three assertions align with the source's closing paragraph."
+    },
+    {
+      "claim_id": "C047",
+      "loglog_ids": [
+        "6"
+      ],
+      "claim_text": "Filter outcomes: two matches, a returned trial, and the next candidate.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "only fairphone 4 and Moto G Power have 5g, esim, and sdcard slot ... So, I've returned it. ... Next I'm going to try a motorolla Motorola G85",
+      "reasoning": "Two filter matches, the returned TCL trial, and the next G85 candidate are all present."
+    },
+    {
+      "claim_id": "C048",
+      "loglog_ids": [
+        "6.1"
+      ],
+      "claim_text": "Results and gaps: two matches, Fairphone too old, Edge 40 missing.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "only fairphone 4 and Moto G Power ... fairphone 4 seems a bit too old (2021) ... I wanted to compare motorola edge 40 but it didn't show up",
+      "reasoning": "Source states the two matches, Fairphone's age concern, and Edge 40 not appearing."
+    },
+    {
+      "claim_id": "C049",
+      "loglog_ids": [
+        "6.1.1"
+      ],
+      "claim_text": "The results table has 18 rows (duplicated Narzo 60), release years 2021 to 2024, and many missing prices.",
+      "claim_type": "number_or_date",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "| 8 | fairphone | 4 | ... | 2021 | ... | 16 | motorola | Moto G Power (2024) | ... | 2024 |",
+      "reasoning": "Table rows 0-17 give 18 rows, Narzo 60 repeats, years span 2021-2024, and many price cells read nan."
+    },
+    {
+      "claim_id": "C050",
+      "loglog_ids": [
+        "6.1.2"
+      ],
+      "claim_text": "Only Fairphone 4 (2021) and Moto G Power (2024) have 5G, eSIM, and an SD slot; cameras aren't great, screens too big.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "only fairphone 4 and Moto G Power have 5g, esim, and sdcard slot. Their cameras are not great ... screen sizes are too big",
+      "reasoning": "Sources matches, camera assessment, and screen-size complaint directly; years come from the table."
+    },
+    {
+      "claim_id": "C051",
+      "loglog_ids": [
+        "6.1.3"
+      ],
+      "claim_text": "Fairphone 4 seems a bit too old (2021); he might have to expand the search a little.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "fairphone 4 seems a bit too old (2021). I might have to expand my search a little bit.",
+      "reasoning": "Both the hedge about age and the possible search expansion match the source."
+    },
+    {
+      "claim_id": "C052",
+      "loglog_ids": [
+        "6.1.4"
+      ],
+      "claim_text": "Wanted to compare the Motorola Edge 40 but it didn't show up; it seems to lack an SD card slot.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "I wanted to compare motorola edge 40 but it didn't show up. it seems like it doesn't have sd card slot!",
+      "reasoning": "Nearly verbatim to the source's note about Edge 40 not appearing and likely lacking SD."
+    },
+    {
+      "claim_id": "C053",
+      "loglog_ids": [
+        "6.2"
+      ],
+      "claim_text": "TCL 50 XE trial failed; Motorola G85 next.",
+      "claim_type": "interpretation",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "So, I've returned it. Next I'm going to try a motorolla Motorola G85",
+      "reasoning": "The return of the TCL and the plan to try the G85 both come from the source."
+    },
+    {
+      "claim_id": "C054",
+      "loglog_ids": [
+        "6.2.1"
+      ],
+      "claim_text": "TCL 50 XE NXTPAPER returned after a couple of weeks: weak performance, uncomfortably hot video calls, so-so camera.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "tried the TCL 50 XE NXTPAPER for a couple of weeks. It is pretty weak in terms of performance. It got pretty hot while on a video call to the point it was uncomfortable ... The camera is so so ... I've returned it.",
+      "reasoning": "Trial duration, weak performance, uncomfortable heat, so-so camera, and return all match."
+    },
+    {
+      "claim_id": "C055",
+      "loglog_ids": [
+        "6.2.2"
+      ],
+      "claim_text": "The TCL screen was not at all readable in direct light, even lamp light, worse than regular screens where tilting helps.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "the screen wasn't at all readable in direct light, even lamp light ... With regular screens you can turn the screen slightly and it will be resolved, with this phone, even that is not possible!",
+      "reasoning": "The negation, lamp-light scope, and comparison to tiltable regular screens are all stated."
+    },
+    {
+      "claim_id": "C056",
+      "loglog_ids": [
+        "6.2.3"
+      ],
+      "claim_text": "Paper and ink color modes were good ideas but restricted and not customizable; the ink mode was just black-and-white, not e-ink as advertised.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "paper color and ink color modes are good ideas, but not best implemented, there's lots of restrictions and not much customizable ... I thought the ink color mode is actually e-ink ... but that's not the case, it is just a blakc and while mode",
+      "reasoning": "The good-idea but restricted assessment and the not-e-ink reality align with the source."
+    },
+    {
+      "claim_id": "C057",
+      "loglog_ids": [
+        "6.2.4"
+      ],
+      "claim_text": "Next: Motorola G85, water repellent design only; wanted the more waterproof IP68 G75 but couldn't find it in stores.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Next I'm going to try a motorolla Motorola G85. I wanted a G75 model since it is more waterproof (IP68), but I couldn't find it in any stores. G85 only has a water repellent design",
+      "reasoning": "Model names, IP68 rating, unavailable-in-stores condition, and water-repellent-only G85 all match."
+    },
+    {
+      "claim_id": "C058",
+      "loglog_ids": [
+        "6.2.5"
+      ],
+      "claim_text": "Motorola generally isn't supposed to have a good camera, so he won't expect much there.",
+      "claim_type": "fact",
+      "verdict": "Supported",
+      "severity": "Critical",
+      "evidence_quote": "Motorla generally is not supposed to have good camera, so I'm not going to expect much there.",
+      "reasoning": "Direct restatement of the source's expectation about Motorola cameras."
+    }
+  ],
+  "metrics": {
+    "total_claims": 58,
+    "supported": 57,
+    "partially_supported": 1,
+    "unverifiable": 0,
+    "contradicted": 0,
+    "critical_errors": 0,
+    "faithfulness_precision": 0.9828
+  },
+  "fail_list": [
+    "C033"
+  ]
+}

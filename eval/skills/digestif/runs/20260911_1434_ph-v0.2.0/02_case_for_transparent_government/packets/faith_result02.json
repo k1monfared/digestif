@@ -1,0 +1,128 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+ "source_id": "02_case_for_transparent_government part 2",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "6"
+   ],
+   "claim_text": "Secret programs recur; internal oversight fails inside the same secrecy bubble.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "There is a recurring pattern ... they failed because they operated inside the same secrecy bubble.",
+   "reasoning": "SOURCE states the recurring pattern and the same cause verbatim."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "6.1"
+   ],
+   "claim_text": "Pentagon Papers, COINTELPRO, and Snowden each exposed illegal or deceptive secret programs.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "the programs turned out to be illegal, unconstitutional, or based on deliberate deception of the public.",
+   "reasoning": "SOURCE describes all three exposures and later confirms illegality or deception."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "6.2"
+   ],
+   "claim_text": "Each disclosure was predicted catastrophic; each program proved illegal or deceptive.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "In each case, the government predicted catastrophe from disclosure. In each case, the programs turned out to be illegal, unconstitutional, or based on deliberate deception.",
+   "reasoning": "Node faithfully mirrors both clauses of the SOURCE sentence."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "6.3"
+   ],
+   "claim_text": "Courts ruled bulk collection illegal; its own reviewers found it stopped no attacks.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "ruled ... that the NSA's bulk phone record collection was illegal ... \"no evidence that the bulk collection of phone data had stopped any terror attacks.\"",
+   "reasoning": "SOURCE reports the Ninth Circuit ruling and the reviewer's finding in the same terms."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "6.3.1"
+   ],
+   "claim_text": "EFF, IAPP, TechCrunch, and ACLU document reforms, GDPR effects, and court rulings.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "### Snowden and Surveillance ... 18. Electronic Frontier Foundation ... 19. IAPP ... 20. TechCrunch ... 21. ACLU",
+   "reasoning": "Appendix lists exactly those four sources covering reforms, GDPR, and court rulings."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "6.4"
+   ],
+   "claim_text": "Secret courts and committees failed because secrecy captured the overseers themselves.",
+   "claim_type": "causal_link",
+   "verdict": "Partially supported",
+   "severity": "Minor",
+   "evidence_quote": "They failed because they operated inside the secrecy structure ... Oversight that is itself secret is oversight that can be captured, co-opted, or simply worn down by institutional pressure.",
+   "reasoning": "SOURCE hedges capture with 'can be ... or simply worn down' while node asserts capture as the fact."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "6.5"
+   ],
+   "claim_text": "Disclosure brought the FREEDOM Act, tech transparency reports, HTTPS, and faster GDPR.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The USA FREEDOM Act (2015) ... The tech sector adopted transparency reporting ... HTTPS encryption became the default ... GDPR was accelerated by the revelations.",
+   "reasoning": "All four listed gains appear directly in the SOURCE passage."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "6.6"
+   ],
+   "claim_text": "Whether disclosures harmed operations is genuinely uncertain; their illegality is not.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Whether these disclosures caused operational harm is genuinely uncertain ... But the legality question is not uncertain. The programs were illegal.",
+   "reasoning": "Node restates both the hedge and the certainty exactly as SOURCE gives them."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "6.7"
+   ],
+   "claim_text": "Leaks are the symptom of no designed transparency, not the model for it.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The CEO framing lesson is not that whistleblower leaks are the model. It's that they are what happens in the absence of a model ... Snowden is not the solution. Snowden is the symptom",
+   "reasoning": "Node preserves both the negation and the symptom framing from SOURCE."
+  }
+ ],
+ "metrics": {
+  "total_claims": 9,
+  "supported": 8,
+  "partially_supported": 1,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 0.8889
+ },
+ "fail_list": [
+  "C06 Partially supported: SOURCE hedges with 'can be captured, co-opted, or simply worn down' while the node asserts secrecy captured the overseers as settled fact."
+ ]
+}

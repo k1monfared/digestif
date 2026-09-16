@@ -1,0 +1,174 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "03_cant_stop_addicted_to_shindig, part 2 of 4",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "{6,7,8} succeeds 92.0% of the time while {2,3,12} succeeds only 43.8%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Result: 1193/1296 = 92.0% success rate ... Result: 568/1296 = 43.8% success rate",
+   "reasoning": "SOURCE states both success percentages exactly for the same two combinations."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "{6,7,8} succeeds on 1193/1296 rolls; {2,3,12} on 568/1296, less than half.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "1193/1296 = 92.0% success rate ... 568/1296 = 43.8% success rate ... Less than 50% chance of not busting",
+   "reasoning": "Counts and the less-than-half qualifier match SOURCE exactly."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Across all 165 combinations, 37 are excellent at ≥85% success, the median is 79.6%, and the worst fall to 43.8%.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "37 combinations are \"excellent\" (≥85% success rate) ... median combination still succeeds 79.6% ... worst combinations drop ... to just 43.8%",
+   "reasoning": "All four figures (165, 37, 79.6%, 43.8%) appear verbatim in SOURCE."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "The best combination, {6,7,8}, has 92.0% success, 8.0% bust, 39.8% clean moves, and Q = 1.43.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "| 1 | {6,7,8} | 92.0% | 8.0% | 39.8% | 1.43 |",
+   "reasoning": "Every value matches the top table row for {6,7,8} in SOURCE."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "The worst, {2,11,12}, has 43.8% success, 56.2% bust, 2.3% clean moves, and Q = 1.05.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "| 165 | {2,11,12} | 43.8% | 56.2% | 2.3% | 1.05 |",
+   "reasoning": "All four values match the rank-165 row for {2,11,12} in SOURCE."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "A 'clean' move hits only wanted columns; even {6,7,8} is clean only 39.8% of the time.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "A \"clean\" move is one where you only hit columns you actually want. Even the best combination {6,7,8} only has 39.8% clean moves",
+   "reasoning": "Definition and the 39.8% figure match SOURCE verbatim."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "claim_text": "52.2% of {6,7,8} rolls force unwanted columns, and only 2.3% of {2,3,12} rolls are clean.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "The other 52.2% of rolls ... force you onto unwanted columns ... For {2,3,12}: Only 2.3% of rolls are clean!",
+   "reasoning": "Both percentages correspond exactly to SOURCE statements for those combinations."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "4.7"
+   ],
+   "claim_text": "The forced-move rule is a balancing mechanism preventing {6,7,8} from being completely dominant, and is the design's compensating rule.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "The forced-move rule is a balancing mechanism. It prevents {6,7,8} from being completely dominant ... It compensates for mathematical imbalances",
+   "reasoning": "Both the balancing claim and compensating-rule framing are stated in SOURCE."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "4.8"
+   ],
+   "claim_text": "The conclusion restates: column combinations matter more than individual columns, {6,7,8} at 92% success and {2,3,12} at 44%.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "Column combinations matter more than individual columns** - {6,7,8} has 92% success rate, {2,3,12} has 44%",
+   "reasoning": "SOURCE conclusion states this point with the same rounded percentages."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "5"
+   ],
+   "claim_text": "The stopping rule is EV-based: keep rolling if P(success) × Q exceeds P(bust) × U.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "**Keep rolling if:** $(P_{\\text{success}} \\times Q) > (P_{\\text{bust}} \\times U)$",
+   "reasoning": "The inequality and its variable meanings match SOURCE exactly."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "5.1"
+   ],
+   "claim_text": "For {6,7,8} with 5 unsaved steps: loss 0.08 × 5 = 0.4 versus gain 0.92 × 1.43 = 1.32, so keep rolling.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "Expected loss: $0.08 \\times 5 = 0.4$ steps ... Expected gain: $0.92 \\times 1.43 = 1.32$ steps ... Since $1.32 > 0.4$, you should keep rolling.",
+   "reasoning": "Inputs, products, and the keep-rolling conclusion match SOURCE arithmetic."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "5.2"
+   ],
+   "claim_text": "For {2,3,12} with 2 unsaved steps: loss 0.562 × 2 = 1.12 versus gain 0.438 × 1.05 = 0.46, so stop.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Critical",
+   "evidence_quote": "**Risk:** $0.562 \\times 2 = 1.12$ steps ... **Expected gain:** $0.438 \\times 1.05 = 0.46$ steps ... Since $1.12 > 0.46$, you should STOP.",
+   "reasoning": "All values and the stop conclusion match SOURCE exactly."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "5.3"
+   ],
+   "claim_text": "Q is expected markers advanced on a successful roll; U is unsaved progress lost on a bust.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Minor",
+   "evidence_quote": "$Q$ = expected number of markers you'll advance on a successful roll ... $U$ = unsaved progress (steps you'd lose if you bust)",
+   "reasoning": "Both variable definitions match SOURCE wording."
+  }
+ ],
+ "metrics": {
+  "total_claims": 13,
+  "supported": 13,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}

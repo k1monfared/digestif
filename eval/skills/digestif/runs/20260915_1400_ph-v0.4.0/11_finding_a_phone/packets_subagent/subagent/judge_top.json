@@ -1,0 +1,29 @@
+{
+  "judge": "overall",
+  "judge_version": "1.0.0",
+  "model": "opencode-go/deepseek-v4.1-flash (2026-09-15)",
+  "source_id": "11_finding_a_phone",
+  "inputs": {
+    "faithfulness_precision": 0.9915,
+    "critical_errors": 0,
+    "must_recall": 1.0,
+    "overall_recall": 1.0,
+    "redundancy_rate": 0.0085,
+    "trivia_rate": 0.0
+  },
+  "weights_used": {
+    "faithfulness_precision": 0.4,
+    "coverage_must_recall": 0.4,
+    "redundancy_penalty": 0.2
+  },
+  "computation": "Gates: critical_errors 0 <= 0 pass; faithfulness_precision 0.9915 >= 0.95 pass; must_recall 1.0 >= 0.9 pass; redundancy_rate 0.0085 <= 0.15 pass. weighted_score = 0.4 * 0.9915 + 0.4 * 1.0 - 0.2 * 0.0085 = 0.3966 + 0.4 - 0.0017 = 0.7949 (exact: 0.4*(116/117) + 0.4 - 0.2*(1/117) = 0.794872, reported 0.7949).",
+  "weighted_score": 0.7949,
+  "verdict": "Pass",
+  "tradeoff_note": "All four gates pass with no Critical errors: full Must-have recall and near-full faithfulness at a redundancy rate 18x below the max, so length is fully justified. The two prior-version defects are confirmed fixed: every hierarchy header (nodes 0-6) abstracts over its children with zero duplicate labels in Judge Con, and the week-long battery figure stays scoped to one Ulefone model (C39, node 3.3) with cross-link 3.3->2.4 explicitly warning it is not a general battery requirement.",
+  "fix_list": [
+    "C69 (node 5.2.4): only faithfulness miss. Change 'The scraper rotates user agents' to match the code, which defines the UA list (l.93) and get_random_headers() (l.109-119) but sends fixed headers in the active request path (l.134-139, l.147); either reword to 'defines user-agent rotation' or wire rotation into get_phone_specs. Minor, touches no Must-have point.",
+    "C88 (node 6.1.1): only redundancy. Drop the duplicated-Narzo-60 parenthetical, canonical C74 (node 5.2.5); the 18-row count already implies the duplicate row. Rate is already 0.0085, so this is polish only.",
+    "Optional polish: node 5.1.1 drops the provider attribution ('a deal from my network provider', source l.79). Restoring it costs a few words and improves traceability; no gate impact."
+  ],
+  "reasoning": "Gate chain against config.json: hard fails first. critical_contradicted_max is 0 and Judge F recorded critical_errors 0 (the single non-Supported claim, C69, is Minor). faithfulness_precision_min is 0.95 and Judge F computed 116/117 = 0.9915, pass. must_recall_min is 0.9 and Judge Cov found all 12 Must-have points Present (must_recall 12/12 = 1.0; overall_recall 15/15 = 1.0), pass. redundancy_max is 0.15 and Judge Con found 1 duplicate in 117 scored claims (C88 duplicating C74), rate 1/117 = 0.0085, pass; trivia 0. Tradeoff: coverage is complete across all 15 key points including every number and negation (J100, Droid day one, 1/10th price, 18 URLs with duplicate, 2021/2024 matches, IP68 G75), so there is no coverage-versus-length tension; the single duplicate is a four-word parenthetical. Borderline was considered and rejected: the condition requires a Partial or Unverifiable claim affecting a Must-have point, and C69 concerns an implementation detail of the scraper (UA rotation) that no key point requires; K11 (scraping pipeline) rests on nodes 5.2.3 and 5.2.5, both fully Supported, so nothing touching a Must-have point is flagged. Prior-version regression checks, which drove this run: (1) header/detail duplication is gone. The 11 hierarchy headers (0, 1, 2, 3, 4, 5, 5.1, 5.2, 6, 6.1, 6.2) each abstract over their children and none was labeled Duplicate; the only duplicate is the cross-branch Narzo parenthetical C88. (2) The week-long battery figure stays scoped: node 3.3 says 'One Ulefone model' and cross-link C113 states the figure belongs to one model, not a general battery requirement. Fix list is ordered by leverage: the only faithfulness miss first, then the only redundancy, then an optional attribution restoration."
+}

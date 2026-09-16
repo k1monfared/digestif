@@ -1,0 +1,29 @@
+{
+ "judge": "overall",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "point-hierarchy",
+ "inputs": {
+  "faithfulness_precision": 0.9918,
+  "critical_errors": 0,
+  "must_recall": 0.9688,
+  "overall_recall": 0.9688,
+  "redundancy_rate": 0.082,
+  "trivia_rate": 0.0246
+ },
+ "weights_used": {
+  "faithfulness_precision": 0.4,
+  "coverage_must_recall": 0.4,
+  "redundancy_penalty": 0.2
+ },
+ "computation": "weighted score = 0.4 * 0.9918 + 0.4 * 0.9688 - 0.2 * 0.082 = 0.39672 + 0.38752 - 0.0164 = 0.76784",
+ "weighted_score": 0.76784,
+ "verdict": "Borderline",
+ "tradeoff_note": "All numeric gates pass with length well under the redundancy ceiling, so concision neither rescues nor harms anything here. Human review is advised because Must have point K10 is only Partial (dropped run count of 200) and Minor partial claim C035 asserts a fact the source hedges.",
+ "fix_list": [
+  "K10 (L057-L060): restore the explicit run count of 200 for the counterfactual experiment so the Must have point is fully supported and must_recall rises toward 1.0",
+  "C035 (3.2.3): reinstate the source hedge, change 'ranked 1st ... and 40th' to 'could rank 1st ... and 40th', to clear the sole non-supported claim",
+  "Prune the 10 duplicate claims per the concision list (e.g. C059/C019, C060/C061/C007, C090/C088) to lower redundancy without touching coverage"
+ ],
+ "reasoning": "Hard gates checked first. critical_errors = 0, at or below critical_contradicted_max = 0, so no Critical fail. faithfulness_precision = 0.9918 (121 supported + 0.5 credit for the 1 partial of 122) is above faithfulness_precision_min = 0.95. must_recall = 0.9688 (15 present of 16 must have, with 1 partial) is above must_recall_min = 0.9. redundancy_rate = 0.082 is below redundancy_max = 0.15. All gates pass, so I computed the weighted score with the configured aspect_weights: 0.4 * 0.9918 = 0.39672; 0.4 * 0.9688 = 0.38752; 0.2 * 0.082 = 0.0164; weighted_score = 0.76784. On tradeoffs, the redundancy penalty is small and the coverage loss is confined to one Must have point, so no coverage-for-length trade needs adjudication. Concision does not enter as a rescue because there is no faithfulness or coverage failure. The verdict is Borderline rather than Pass because the decision policy's borderline rule fires: K10 is a Must have point whose presence is Partial, driven by dropped number '200' for the counterfactual experiment while L058-L060 supply 0.88, top 10%, ~1 in 4, and the 50th-90th lottery. Claim C035 is also only Partially supported, a Minor number_or_date claim where the source says 'could rank 1st ... and 40th' but the summary states it as certain. Neither is a Critical error, so the sample does not Fail, but the partial Must have point warrants human review, hence Borderline. The highest leverage fix is regaining full support on K10, which would lift must_recall and remove the borderline trigger; second is hedging C035, which would take faithfulness_precision to 1.0."
+}

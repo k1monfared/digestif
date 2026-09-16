@@ -1,0 +1,438 @@
+{
+ "judge": "faithfulness",
+ "judge_version": "1.0.0",
+ "model": "deepseek-v4.1-flash, 2026-09-15",
+ "source_id": "12_lets_talk_privacy",
+ "claims": [
+  {
+   "claim_id": "C01",
+   "loglog_ids": [
+    "3"
+   ],
+   "claim_text": "Proton stores your encrypted private key on its servers, so the trust shifts to the client.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "your encrypted private key lives on Proton's servers ... This is why having open-source clients matters",
+   "reasoning": "Source states key storage on servers and that the client becomes the trust concern."
+  },
+  {
+   "claim_id": "C02",
+   "loglog_ids": [
+    "3.1"
+   ],
+   "claim_text": "When you create a Proton account, your private key is generated in your browser and encrypted with your password.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "your private key is generated in your browser, then encrypted with your password",
+   "reasoning": "Direct restatement of the source's account-creation description."
+  },
+  {
+   "claim_id": "C03",
+   "loglog_ids": [
+    "3.1.1"
+   ],
+   "claim_text": "The encryption uses bcrypt and AES-256 before the key is sent to Proton's servers for storage.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "encrypted with your password using bcrypt and AES-256 before being sent to their servers",
+   "reasoning": "Source names bcrypt and AES-256 and the send-for-storage step."
+  },
+  {
+   "claim_id": "C04",
+   "loglog_ids": [
+    "3.2"
+   ],
+   "claim_text": "The crucial point: your encrypted private key lives on Proton's servers, not just on your original device.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "your encrypted private key lives on Proton's servers, not just on your original device",
+   "reasoning": "Near-verbatim restatement including the 'not just' qualifier."
+  },
+  {
+   "claim_id": "C05",
+   "loglog_ids": [
+    "3.3"
+   ],
+   "claim_text": "On a new device or browser, the login sequence runs as follows.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "When you log in on a new device or browser, here's what happens",
+   "reasoning": "Faithful lead-in to the enumerated login steps."
+  },
+  {
+   "claim_id": "C06",
+   "loglog_ids": [
+    "3.3.1"
+   ],
+   "claim_text": "You type your password, and your browser hashes it with bcrypt using a salt provided by Proton's server.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "hashes the password using bcrypt (with a salt provided by Proton's server)",
+   "reasoning": "Matches source step 2 exactly, including the server-provided salt."
+  },
+  {
+   "claim_id": "C07",
+   "loglog_ids": [
+    "3.3.2"
+   ],
+   "claim_text": "The hashed password is sent to Proton to prove you know the password.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "sent to Proton to authenticate you (prove you know the password)",
+   "reasoning": "Matches source step 3 without altering meaning."
+  },
+  {
+   "claim_id": "C08",
+   "loglog_ids": [
+    "3.3.3"
+   ],
+   "claim_text": "The server sends your encrypted private key back to your browser.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The server sends your encrypted private key back to your browser",
+   "reasoning": "Matches source step 4 verbatim."
+  },
+  {
+   "claim_id": "C09",
+   "loglog_ids": [
+    "3.3.4"
+   ],
+   "claim_text": "Your browser uses your original password to decrypt the private key locally, and now you can read your emails.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "uses your original password to decrypt this private key locally ... Now you can read your emails",
+   "reasoning": "Combines source steps 5 and 6 with identical meaning."
+  },
+  {
+   "claim_id": "C10",
+   "loglog_ids": [
+    "3.4"
+   ],
+   "claim_text": "Hashing is one-way: you can turn a password into a hash, but you theoretically cannot reverse a hash back into the password.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "A one-way function ... you theoretically cannot reverse a hash back into the password",
+   "reasoning": "Preserves the 'theoretically' hedge and the one-way definition."
+  },
+  {
+   "claim_id": "C11",
+   "loglog_ids": [
+    "3.5"
+   ],
+   "claim_text": "Proton receives your hashed password to verify you are who you claim to be, but this hash alone should not reveal your password.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "this hash alone shouldn't let them figure out your actual password",
+   "reasoning": "Keeps the source's 'shouldn't' hedge; meaning unchanged."
+  },
+  {
+   "claim_id": "C12",
+   "loglog_ids": [
+    "3.6"
+   ],
+   "claim_text": "Encryption is two-way: you encrypt data with a key and decrypt it with that same key or a paired one.",
+   "claim_type": "definition",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "you can decrypt it back using that same key (or a paired key)",
+   "reasoning": "Matches the source's two-way definition including the paired-key parenthetical."
+  },
+  {
+   "claim_id": "C13",
+   "loglog_ids": [
+    "3.7"
+   ],
+   "claim_text": "Your private key is encrypted with your actual password, not the hash, so it can be decrypted when you provide the password again.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "encrypted with your actual password (not the hash), so it can be decrypted when you provide the password again",
+   "reasoning": "Preserves the 'not the hash' negation and the decryption condition."
+  },
+  {
+   "claim_id": "C14",
+   "loglog_ids": [
+    "3.8"
+   ],
+   "claim_text": "The security model: Proton receives your hashed password, but the private key is encrypted with your actual password, so the hash cannot decrypt it.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "even though they see your hashed password, they can't use that hash to decrypt your encrypted private key",
+   "reasoning": "Retains the in-theory hedge and the hash-cannot-decrypt conclusion."
+  },
+  {
+   "claim_id": "C15",
+   "loglog_ids": [
+    "3.9"
+   ],
+   "claim_text": "There is a critical vulnerability: Proton could serve malicious client code, in the web app or through an app update.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "there's still a critical vulnerability: Proton could serve you malicious client code (either in the web app or through an app update)",
+   "reasoning": "Matches the vulnerability and both cited delivery channels."
+  },
+  {
+   "claim_id": "C16",
+   "loglog_ids": [
+    "3.9.1"
+   ],
+   "claim_text": "That code could capture your actual password when you type it, before it gets hashed.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "captures your actual password when you type it - before it gets hashed",
+   "reasoning": "Restates the capture-before-hashing point faithfully."
+  },
+  {
+   "claim_id": "C17",
+   "loglog_ids": [
+    "3.10"
+   ],
+   "claim_text": "Since they already store your encrypted private key on their servers, if they capture your password they can decrypt it.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Since they already store your encrypted private key on their servers, if they capture your password, they can decrypt it",
+   "reasoning": "Causal claim matches source nearly verbatim."
+  },
+  {
+   "claim_id": "C18",
+   "loglog_ids": [
+    "3.11"
+   ],
+   "claim_text": "This is why having open-source clients matters: the community can verify that the client is not doing anything malicious.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "having open-source clients matters - the community can verify that the client isn't doing anything malicious",
+   "reasoning": "Preserves the open-source rationale and its negation."
+  },
+  {
+   "claim_id": "C19",
+   "loglog_ids": [
+    "3.12"
+   ],
+   "claim_text": "But you still have to trust several things.",
+   "claim_type": "meta",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "But you still have to trust that:",
+   "reasoning": "Faithful lead-in to the three trust bullets; 'several' matches the three items."
+  },
+  {
+   "claim_id": "C20",
+   "loglog_ids": [
+    "3.12.1"
+   ],
+   "claim_text": "That the code they are actually serving matches the open-source code.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "The code they're actually serving matches the open-source code",
+   "reasoning": "First trust bullet restated without change."
+  },
+  {
+   "claim_id": "C21",
+   "loglog_ids": [
+    "3.12.2"
+   ],
+   "claim_text": "That they will not be compelled to inject malicious code in the future.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "They won't be compelled to inject malicious code in the future",
+   "reasoning": "Second trust bullet's negation preserved."
+  },
+  {
+   "claim_id": "C22",
+   "loglog_ids": [
+    "3.12.3"
+   ],
+   "claim_text": "That their infrastructure has not been compromised by someone else who could serve malicious code.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Their infrastructure hasn't been compromised by someone else who could serve malicious code",
+   "reasoning": "Third trust bullet's negation preserved."
+  },
+  {
+   "claim_id": "C23",
+   "loglog_ids": [
+    "3.13"
+   ],
+   "claim_text": "The crucial difference from WhatsApp is that Proton does not have direct access to your keys in a usable form.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Proton doesn't have direct access to your encryption keys in a form they can use",
+   "reasoning": "Matches the source's contrast and negation."
+  },
+  {
+   "claim_id": "C24",
+   "loglog_ids": [
+    "3.14"
+   ],
+   "claim_text": "They would need to actively compromise the client to steal your password first, while WhatsApp's server can directly grant key access.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "they'd need to actively compromise the client to steal your password first. WhatsApp's architecture doesn't even require that step; the server can directly grant key access",
+   "reasoning": "Both halves of the contrast preserved with the same conditions."
+  },
+  {
+   "claim_id": "C25",
+   "loglog_ids": [
+    "3.15"
+   ],
+   "claim_text": "Proton documents key storage and zero-access encryption in its support and security pages.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "How is the private key stored? (Proton Support) ... Protect your data with zero-access encryption (Proton Security)",
+   "reasoning": "Accurately summarizes the two cited Proton sources."
+  },
+  {
+   "claim_id": "C26",
+   "loglog_ids": [
+    "4"
+   ],
+   "claim_text": "Signal never holds your keys: its servers are never in a position to grant access to your message history.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Signal's servers are never in a position to grant access to your message history",
+   "reasoning": "Matches the 'never' framing and the server-access claim."
+  },
+  {
+   "claim_id": "C27",
+   "loglog_ids": [
+    "4.1"
+   ],
+   "claim_text": "By default, message history is stored only on your device and deleted from Signal's servers after delivery.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "By default, message history is stored only on your device and deleted from Signal's servers after delivery",
+   "reasoning": "Verbatim restatement of the default storage behavior."
+  },
+  {
+   "claim_id": "C28",
+   "loglog_ids": [
+    "4.2"
+   ],
+   "claim_text": "Switching devices leaves you three options.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "When you want to switch devices, you have three options",
+   "reasoning": "The count of three matches the source exactly."
+  },
+  {
+   "claim_id": "C29",
+   "loglog_ids": [
+    "4.3"
+   ],
+   "claim_text": "Manual local backup on Android: create an encrypted backup file protected by a 30-digit passphrase, then physically transfer it to your new device.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "encrypted backup file protected by a 30-digit passphrase, then physically transfer it to your new device",
+   "reasoning": "The 30-digit number and Android scope match the source."
+  },
+  {
+   "claim_id": "C30",
+   "loglog_ids": [
+    "4.4"
+   ],
+   "claim_text": "Direct device-to-device transfer: both devices must be physically present and you transfer everything locally over your network.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Both devices must be physically present and you transfer everything locally over your network",
+   "reasoning": "Restates option two with no altered conditions."
+  },
+  {
+   "claim_id": "C31",
+   "loglog_ids": [
+    "4.5"
+   ],
+   "claim_text": "Signal Secure Backups: messages are encrypted with a 64-character recovery key that Signal never sees or has access to.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "encrypted with a 64-character recovery key that Signal never sees or has access to",
+   "reasoning": "The 64-character figure and the 'never sees' negation are intact."
+  },
+  {
+   "claim_id": "C32",
+   "loglog_ids": [
+    "4.6"
+   ],
+   "claim_text": "Even with the newer cloud backup feature, the recovery key stays on your device.",
+   "claim_type": "fact",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Even with the newer cloud backup feature, the recovery key stays on your device",
+   "reasoning": "Matches the source's concession and key-location claim."
+  },
+  {
+   "claim_id": "C33",
+   "loglog_ids": [
+    "4.6.1"
+   ],
+   "claim_text": "Signal literally cannot decrypt your backups even if they wanted to, and cannot help you recover them if you lose the key.",
+   "claim_type": "causal_link",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Signal literally cannot decrypt your backups even if they wanted to, and they cannot help you recover them if you lose your recovery key",
+   "reasoning": "Both incapacity claims restated without change."
+  },
+  {
+   "claim_id": "C34",
+   "loglog_ids": [
+    "4.7"
+   ],
+   "claim_text": "This is genuinely zero-knowledge architecture, not just marketing claims.",
+   "claim_type": "interpretation",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "This is genuinely zero-knowledge architecture, not just marketing claims.",
+   "reasoning": "Verbatim restatement of the source's assessment."
+  },
+  {
+   "claim_id": "C35",
+   "loglog_ids": [
+    "4.8"
+   ],
+   "claim_text": "Signal documents Secure Backups in a September 2024 blog post and support article.",
+   "claim_type": "number_or_date",
+   "verdict": "Supported",
+   "severity": "Harmless",
+   "evidence_quote": "Introducing Signal Secure Backups (Signal Blog, September 2024) ... Signal Secure Backups (Signal Support)",
+   "reasoning": "The September 2024 date and both source types match the citation list."
+  }
+ ],
+ "metrics": {
+  "total_claims": 35,
+  "supported": 35,
+  "partially_supported": 0,
+  "unverifiable": 0,
+  "contradicted": 0,
+  "critical_errors": 0,
+  "faithfulness_precision": 1.0
+ },
+ "fail_list": []
+}
