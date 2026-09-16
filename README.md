@@ -18,7 +18,7 @@ One command runs the extraction through the agent CLI you already have installed
 
 No API keys, no configuration. The thinking is done by Claude Code, Codex, or opencode in headless mode, reusing the login you already have. Everything after the graph exists is plain Python: rendering, checking, and the viewer.
 
-**Live example**: [k1monfared.github.io/digestif](https://k1monfared.github.io/digestif/) is the generated viewer on a real run of this tool over a 6,600 word blog post. The same artifacts are kept in `docs/example/`.
+**Live example**: [k1monfared.com/digestif](https://k1monfared.com/digestif/) is the generated viewer on a real run of this tool over a 6,600 word blog post. The same artifacts are kept in `docs/example/`.
 
 ## Install
 
