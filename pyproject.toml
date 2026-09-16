@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digestif"
+version = "0.1.0"
+description = "Turn any text into a rooted, fully cited idea graph: a loglog outline and an interactive viewer, with the extraction run through the agent CLI you already use"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GPL-3.0-only" }
+authors = [{ name = "Keivan Monfared" }]
+keywords = ["knowledge-graph", "loglog", "idea-graph", "llm", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+digestif = "digestif.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+digestif = ["skill/*", "skill/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

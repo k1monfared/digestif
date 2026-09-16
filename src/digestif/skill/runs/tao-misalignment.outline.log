@@ -1,0 +1,50 @@
+- A Severe Misalignment of AI in Mathematics (Terence Tao, 2026) (source: https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/)
+    Summary: Twenty-five Fields Medallists warn that benchmark-driven AI problem-solving is severely misaligned with the goals of the mathematical community. (¶1, ¶5)
+        - 1 Twenty-five Fields Medallists jointly signed a declaration, posted it publicly, and invite further signatures. (¶1, ¶2)
+            - 1.1 Nuance: The statement was released urgently, without the consultative process used for the earlier Leiden declaration. (¶2)
+            - 1.2 Evidence: An Economist article covers the declaration. (¶3) [reported]
+            - 1.3 Evidence: The 25 signatories are all Fields Medallists, from Deligne (1978) to Deng (2026). (¶34)
+        - 2 Using mathematics as an AI benchmark is detrimental to the science and to its community. (¶5)
+            - 2.1 Evidence: LLM mathematical capability has improved dramatically, now solving major outstanding problems across many fields. (¶4)
+            - 2.2 The goals of AI companies and of the mathematical community are severely misaligned. (¶5)
+            - 2.3 This is part of broader alignment issues affecting other professions and society at large. (¶6)
+        - 3 Research mathematics seeks understanding of basic structures; its accumulated tools underpin modern technologies and sciences. (¶7)
+        - 4 Famous problems serve as landmarks, and solving one signals insights the community slowly digests. (¶8, ¶9)
+            - 4.1 Famous problems are landmarks and lighthouses for measuring improved understanding. (¶8)
+            - 4.2 A solution is a certain sign of new insights and interesting methods. (¶9)
+            - 4.3 The community studies results through long, arduous talks, discussions, and simplifications. (¶9)
+            - 4.4 Nuance: Ideally the journey ends in a textbook any undergraduate can study. (¶10)
+            - 4.5 Some ideas become tools used by the whole population, decades or centuries later. (¶11)
+        - 5 The mathematical community works as a miniature humanity, individuals joined by core values. (¶12, ¶13)
+            - 5.1 Its most precious resources are students and ideas, nurtured to live lives of their own. (¶14, ¶15)
+            - 5.2 Students get problems chosen to develop research-ready skills. (¶16)
+            - 5.3 Ideas are disseminated through talks, discussions, and careful writeups connected to prior work. (¶17)
+            - 5.4 These processes invariably take time and rest on human interaction. (¶18)
+        - 6 Solving problems is only a proxy for the primary goal: conceptual understanding and insight. (¶20)
+            - 6.1 Evidence: AI successes on major problems recently made headlines beyond mathematics. (¶19)
+            - 6.2 Forgetting the proxy role in the AI world may turn the tool against the goal. (¶21)
+            - 6.3 Mass-producing true/false statements at ever faster pace could destroy fertile ground rather than inspire ideas. (¶22)
+        - 7 Current AI practice brings concrete harms to the mathematical ecosystem. (¶23, ¶25)
+            - 7.1 Solutions announced in a rush leave no time for proper writeup, method isolation, or citing prior work. (¶23)
+            - 7.2 This raises severe attribution and plagiarism questions, as in all creative professions. (¶24)
+            - 7.3 Without mathematicians integrating AI ideas into the canon, the human transmission chain is lost. (¶25)
+        - 8 The misalignment is a general threat to intellectual work, reaching all of humanity. (¶26, ¶29)
+            - 8.1 Long training traditionally built understanding and the capacity to pose new questions, not just answers. (¶27)
+            - 8.2 AI increasingly delivers the final results of such work directly. (¶28)
+            - 8.3 As AI changes how work is done, humanity must not lose sight of work's purpose. (¶29)
+        - 9 The outcome depends on human decisions, and the issues demand urgent action. (¶32, ¶33)
+            - 9.1 AI holds genuine potential to enhance and accelerate mathematical study and understanding. (¶30)
+            - 9.2 Mathematics as a profession will need to adapt in several ways. (¶31)
+            - 9.3 Nuance: Benefit or destruction will largely be decided by the humans controlling the technology. (¶32)
+            - 9.4 The issues must be addressed urgently by the community, the companies, and society. (¶33)
+    - Cross-links
+        - 1.1 restates 9.4 (¶2, ¶33) note: urgency recurs: justifying the release speed, then demanding response
+        - 2.3 restates 8 (¶6, ¶26) note: the broader-scope claim announced early returns developed
+        - 4 supports 6.3 (¶9, ¶22) note: the fertile ground at risk is the slow communal digestion of solutions
+        - 5 supports 6.3 (¶14, ¶22) note: students and ideas are the fertile ground mass production threatens
+        - 5.4 contradicts 7.1 (¶18, ¶23) note: processes that take time vs announcements in a rush
+        - 6 supports 2 (¶20, ¶21, ¶22) note: the proxy argument is the ground for the detriment claim
+        - 7 supports 2 (¶23, ¶24, ¶25) note: concrete harms instantiate the detriment
+        - 9.1 qualifies 2 (¶30) note: AI's potential benefit qualifies the blanket detriment claim
+        - 9.3 qualifies 2 (¶32) note: the detriment is conditional, not inevitable
+    - Coverage: 34 of 34 passages cited

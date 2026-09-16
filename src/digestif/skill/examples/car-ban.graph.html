@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Point Graph</title>
+<style>
+  :root {
+    --bg: #f7f7f4;
+    --panel-bg: #ffffff;
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #2563eb;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; overflow: hidden; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+  #topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 20;
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    padding: 10px 14px; background: rgba(255,255,255,.92); border-bottom: 1px solid var(--line);
+  }
+  #topbar h1 { font-size: 15px; margin: 0 8px 0 0; font-weight: 650; }
+  #topbar .src { color: var(--muted); font-size: 12px; margin-right: 6px; }
+  #topbar button, #topbar input[type="text"] {
+    font: inherit; font-size: 12.5px; padding: 5px 10px; border: 1px solid var(--line);
+    border-radius: 7px; background: #fff; color: var(--ink); cursor: pointer;
+  }
+  #topbar button:hover { border-color: var(--accent); }
+  #topbar input[type="range"] { width: 120px; }
+  #searchBox { width: 180px; cursor: text; }
+  #searchCount { font-size: 12px; color: var(--muted); }
+  #canvasWrap { position: absolute; left: 0; right: 0; top: 52px; bottom: 0; overflow: auto; cursor: grab; }
+  #canvasWrap.panning { cursor: grabbing; }
+  #world { padding: 110vh 110vw; width: max-content; }
+  #canvasWrap::-webkit-scrollbar { width: 10px; height: 10px; }
+  #canvasWrap::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 5px; }
+  svg { display: block; cursor: grab; }
+  svg.panning { cursor: grabbing; }
+  svg text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  #blPanel {
+    position: fixed; left: 12px; bottom: 12px; z-index: 20; max-width: 500px;
+    background: rgba(255,255,255,.94); border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px 12px; font-size: 12px;
+  }
+  #helpHead {
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    cursor: pointer; font-weight: 650; font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .06em; user-select: none;
+  }
+  #blPanel.collapsed #helpBody { display: none; }
+  #helpToggle { border: none; background: none; cursor: pointer; color: var(--muted); font-size: 14px; line-height: 1; padding: 0 2px; }
+  #helpBody { margin-top: 6px; color: var(--ink); }
+  #helpGrid { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; align-items: baseline; }
+  #helpBody .k { color: var(--accent); font-weight: 600; white-space: nowrap; }
+  #legend { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 2px; }
+  #legend .lg-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 0; align-items: center; }
+  #legend .chip {
+    display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px;
+    border: 1px solid var(--line); border-radius: 999px; background: #fff; cursor: pointer;
+    user-select: none;
+  }
+  #legend .chip.off { opacity: .35; text-decoration: line-through; }
+  #legend .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  #legend .lswatch { width: 22px; height: 0; border-top-width: 2.4px; display: inline-block; }
+  #panel {
+    position: fixed; top: 52px; right: 12px; bottom: 12px; width: 330px; z-index: 25;
+    background: var(--panel-bg); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px; overflow-y: auto; display: none; box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  }
+  #panel.open { display: block; }
+  #panel h2 { font-size: 13px; margin: 0 0 8px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+  #panel .close { float: right; border: none; background: none; font-size: 16px; cursor: pointer; color: var(--muted); }
+  #panel .tagrow { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  #panel .tag { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #eef2ff; color: #3730a3; }
+  #panel .text { font-size: 14px; line-height: 1.45; margin-bottom: 10px; }
+  #panel .sect { font-size: 11.5px; font-weight: 650; color: var(--muted); margin: 12px 0 4px; text-transform: uppercase; letter-spacing: .05em; }
+  #panel .linkrow { display: block; width: 100%; text-align: left; font: inherit; font-size: 12.5px; padding: 5px 7px; margin: 2px 0; border: 1px solid var(--line); border-radius: 7px; background: #fff; cursor: pointer; }
+  #panel .linkrow:hover, #panel .kbd-focus { border-color: var(--accent); }
+  #panel .kbd-focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  #panel .linkrow .etype { color: var(--accent); font-weight: 600; }
+  #panel .note { font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+  #panel .srcbtn { display: inline-block; font: inherit; font-size: 12px; padding: 3px 8px; margin: 2px 4px 2px 0; border: 1px solid var(--line); border-radius: 7px; background: #fff; cursor: pointer; }
+  #panel .passage { display: none; font-size: 12.5px; line-height: 1.5; background: #f7f7f4; border: 1px solid var(--line); border-radius: 7px; padding: 8px; margin: 4px 0; }
+  #panel .passage.show { display: block; cursor: pointer; }
+  #panelHead { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  #panelHead h2 { flex: 1; margin: 0; }
+  #pMode { font-size: 11px; padding: 3px 9px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); cursor: pointer; white-space: nowrap; }
+  #pMode:hover { border-color: var(--accent); }
+  #pMode.on { background: #eef2ff; border-color: var(--accent); color: var(--accent); }
+  #sourceBody { font-size: 12.5px; line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
+  #sourceBody mark { background: transparent; border-radius: 2px; cursor: pointer; padding: 0 1px; }
+  #panelHandle {
+    position: fixed; top: 52px; bottom: 12px; width: 9px; right: 0; z-index: 26;
+    cursor: col-resize; display: none; border-radius: 5px;
+  }
+  #panelHandle.open { display: block; }
+  #panelHandle:hover, #panelHandle.dragging { background: rgba(37, 99, 235, .25); }
+  .node rect { stroke-width: 1.2; }
+  .node { cursor: pointer; }
+  .node.dim { opacity: .12; pointer-events: none; }
+  .node.match rect { stroke: #f59e0b; stroke-width: 3; }
+  .node.selected rect { stroke: #111827; stroke-width: 2.6; }
+  .edge { fill: none; }
+  .edge.hl { stroke-width: 3; }
+  #gTop { pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="topbar">
+  <h1 id="title"></h1><span class="src" id="srcname"></span>
+  <button id="btnAll">All layers</button>
+  <button id="btnFit">Fit</button>
+  <button id="btnReset">Reset</button>
+  <input type="text" id="searchBox" placeholder="search ideas...">
+  <span id="searchCount"></span>
+</div>
+<div id="canvasWrap"><div id="world"><svg id="canvas">
+  <defs id="defs"></defs>
+  <g id="gEdges"></g>
+  <g id="gXEdges"></g>
+  <g id="gNodes"></g>
+  <g id="gTop"></g>
+</svg></div></div>
+<div id="blPanel" class="collapsed">
+  <div id="helpHead"><span>help &amp; legend</span><button id="helpToggle" title="collapse/expand">+</button></div>
+  <div id="helpBody">
+    <div id="helpGrid">
+      <span class="k">scroll</span><span>move the page</span>
+      <span class="k">shift+scroll</span><span>move sideways</span>
+      <span class="k">ctrl+scroll</span><span>zoom at cursor</span>
+      <span class="k">ctrl+= / ctrl+-</span><span>zoom in and out</span>
+      <span class="k">drag</span><span>free pan in any direction</span>
+      <span class="k">dblclick</span><span>fit view</span>
+      <span class="k">arrows</span><span>navigate, top to bottom order</span>
+      <span class="k">left</span><span>fold the branch, or go to parent</span>
+      <span class="k">right</span><span>unfold, go to first child</span>
+      <span class="k">space</span><span>fold or unfold selected branch</span>
+      <span class="k">enter</span><span>step into the sidebar</span>
+      <span class="k">esc</span><span>back to the graph</span>
+      <span class="k">ctrl+1..9</span><span>show that many layers</span>
+      <span class="k">ctrl+0</span><span>unfold everything</span>
+      <span class="k">ctrl+alt+1..9</span><span>focus the selected branch</span>
+      <span class="k">source</span><span>sidebar toggle between excerpts and the full source</span>
+      <span class="k">drag edge</span><span>resize the sidebar</span>
+      <span class="k">click</span><span>select a node</span>
+    </div>
+    <div id="legend">
+      <div class="lg-row" id="legendNodeChips"></div>
+      <div class="lg-row" id="legendEdgeChips"></div>
+    </div>
+  </div>
+</div>
+<div id="panel"></div>
+<div id="panelHandle" title="drag to resize the sidebar"></div>
+<script>
+const GRAPH = {"meta": {"title": "Car ban paragraph, point graph", "source": "car-ban.txt", "passages": {"¶1": "Cities should ban cars from their centers.", "¶2": "Some argue this hurts businesses, but studies of Madrid and Oslo show retail revenue rose after restrictions.", "¶3": "Of course, buses and delivery vehicles must be exempt, otherwise goods do not reach shops.", "¶4": "Critics also say such bans only work in wealthy cities. That may be true today, yet the same was said of bike lanes, which now succeed in Bogota and Jakarta.", "¶5": "Public transit must expand first, though. A ban without transit is just displacement."}, "sourceText": "Cities should ban cars from their centers. Some argue this hurts businesses, but studies of Madrid and Oslo show retail revenue rose after restrictions. Of course, buses and delivery vehicles must be exempt, otherwise goods do not reach shops. Critics also say such bans only work in wealthy cities. That may be true today, yet the same was said of bike lanes, which now succeed in Bogota and Jakarta. Public transit must expand first, though. A ban without transit is just displacement.\n", "spans": {"¶1": [0, 42], "¶2": [43, 152], "¶3": [153, 243], "¶4": [244, 401], "¶5": [402, 487]}, "edgeTypes": {"supports": {"direction": "directed", "inverse": "supported-by", "style": "solid green"}, "exemplifies": {"direction": "directed", "inverse": "exemplified-by", "style": "dotted green"}, "contradicts": {"direction": "symmetric", "inverse": "contradicts", "style": "solid red"}, "qualifies": {"direction": "directed", "inverse": "qualified-by", "style": "dashed blue"}, "concedes": {"direction": "directed", "inverse": "conceded-by", "style": "dashed gray"}, "restates": {"direction": "symmetric", "inverse": "restates", "style": "dotted gray"}, "precondition": {"direction": "directed", "inverse": "prerequisite-of", "style": "solid orange"}, "contains": {"direction": "directed", "inverse": "contained-in", "style": "tree"}}}, "nodes": [{"id": "0", "type": "summary", "text": "Cities should ban car traffic from centers, but only after transit expands, since business-harm and elitism objections fail.", "attribution": "author", "source": ["¶1", "¶5"]}, {"id": "1", "type": "claim", "text": "Cities should ban cars from their centers.", "attribution": "author", "source": ["¶1"]}, {"id": "1.1", "type": "counterpoint", "text": "Car bans hurt businesses.", "attribution": "counter", "source": ["¶2"]}, {"id": "1.1.1", "type": "rebuttal", "text": "Retail revenue rose in Madrid and Oslo after restrictions.", "attribution": "author", "source": ["¶2"]}, {"id": "1.2", "type": "nuance", "text": "Buses and delivery vehicles must be exempt or goods cannot reach shops.", "attribution": "author", "source": ["¶3"]}, {"id": "2", "type": "counterpoint", "text": "Car bans only work in wealthy cities.", "attribution": "counter", "source": ["¶4"]}, {"id": "2.1", "type": "concession", "text": "This may be true today.", "attribution": "conceded", "source": ["¶4"]}, {"id": "2.2", "type": "rebuttal", "text": "The same objection was raised against bike lanes, now successful in Bogota and Jakarta.", "attribution": "author", "source": ["¶4"]}, {"id": "3", "type": "claim", "text": "Public transit must expand before any ban takes effect.", "attribution": "author", "source": ["¶5"]}, {"id": "3.1", "type": "nuance", "text": "A ban without transit is displacement, not improvement.", "attribution": "author", "source": ["¶5"]}], "edges": [{"from": "0", "to": "1", "type": "contains"}, {"from": "0", "to": "2", "type": "contains"}, {"from": "0", "to": "3", "type": "contains"}, {"from": "1", "to": "1.1", "type": "contains"}, {"from": "1.1", "to": "1.1.1", "type": "contains"}, {"from": "1", "to": "1.2", "type": "contains"}, {"from": "2", "to": "2.1", "type": "contains"}, {"from": "2", "to": "2.2", "type": "contains"}, {"from": "3", "to": "3.1", "type": "contains"}, {"from": "1.1.1", "to": "1.1", "type": "supports", "source": ["¶2"], "note": "study evidence rebuts the business-harm objection"}, {"from": "2.2", "to": "1", "type": "supports", "source": ["¶4"], "note": "historical analogy supports the main claim"}, {"from": "3", "to": "1", "type": "qualifies", "source": ["¶5"], "note": "scope limit: the ban is advocated conditionally"}]};
+
+const COL_GAP = 56, ROW_GAP = 14, PAD = 50, BODY_W = 240, LINE_H = 14, HEADER_H = 12, VPAD = 7, HPAD = 9;
+const FONT_STACK = "system-ui, -apple-system, 'Segoe UI', sans-serif";
+const FILL = {
+  summary: "#1f2937", theme: "#4f46e5", claim: "#dbeafe", evidence: "#dcfce7",
+  example: "#ccfbf1", counterpoint: "#fee2e2", rebuttal: "#ffedd5", nuance: "#ede9fe",
+  concession: "#f1f5f9", contradiction: "#fecaca", implicit: "#fef9c3"
+};
+const STROKE = {
+  summary: "#111827", theme: "#3730a3", claim: "#2563eb", evidence: "#16a34a",
+  example: "#0d9488", counterpoint: "#dc2626", rebuttal: "#ea580c", nuance: "#7c3aed",
+  concession: "#64748b", contradiction: "#b91c1c", implicit: "#ca8a04"
+};
+const DARKFILL = { summary: true, theme: true };
+const PALETTE = { green: "#16a34a", red: "#dc2626", blue: "#2563eb", gray: "#64748b", orange: "#ea580c", purple: "#7c3aed", teal: "#0d9488" };
+
+const registry = (GRAPH.meta && GRAPH.meta.edgeTypes) || {};
+const nodes = new Map();
+GRAPH.nodes.forEach(n => nodes.set(n.id, n));
+const children = new Map(), parent = new Map(), containsE = [], crossE = [];
+GRAPH.edges.forEach(e => {
+  if (e.type === "contains") {
+    containsE.push(e);
+    parent.set(e.to, e.from);
+    if (!children.has(e.from)) children.set(e.from, []);
+    children.get(e.from).push(e.to);
+  } else {
+    crossE.push(e);
+  }
+});
+children.forEach(list => list.sort(cmpIds));
+
+function depthOf(id) { return id === "0" ? 0 : id.split(".").length; }
+const maxDepth = Math.max(1, ...GRAPH.nodes.map(n => depthOf(n.id)));
+let showLayers = Math.min(2, maxDepth + 1);
+let collapsed = new Set(), opened = new Set(), forceVisible = new Set();
+let hiddenNodeTypes = new Set(), hiddenEdgeTypes = new Set();
+let selected = null, searchQ = "", sideMode = false, sideIdx = 0;
+let dragMoved = false, textDragged = false;
+let z = 1;
+let pos = new Map(), sizes = new Map(), vis = new Set();
+let contentW = 800, contentH = 600;
+let spanW = 300, spanH = 200;
+const MINZ = 0.15;
+
+const wrap = document.getElementById("canvasWrap");
+const svg = document.getElementById("canvas");
+const gE = document.getElementById("gEdges");
+const gX = document.getElementById("gXEdges");
+const gN = document.getElementById("gNodes");
+const gTop = document.getElementById("gTop");
+const defs = document.getElementById("defs");
+const mBody = document.createElement("canvas").getContext("2d");
+const mHead = document.createElement("canvas").getContext("2d");
+mBody.font = `11.5px ${FONT_STACK}`;
+mHead.font = `9.5px ${FONT_STACK}`;
+
+function cmpIds(a, b) {
+  const A = a.split(".").map(Number), B = b.split(".").map(Number);
+  for (let i = 0; i < Math.max(A.length, B.length); i++) {
+    const d = (A[i] || 0) - (B[i] || 0);
+    if (d) return d;
+  }
+  return 0;
+}
+function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+function textOf(id) { const n = nodes.get(id); return n ? n.text : id; }
+function styleOf(type) {
+  const st = (registry[type] && registry[type].style) || "solid gray";
+  const toks = String(st).split(/\s+/);
+  let color = PALETTE.gray, dash = "";
+  toks.forEach(t => {
+    if (t === "dashed") dash = "7 4";
+    if (t === "dotted") dash = "2 4";
+    if (PALETTE[t]) color = PALETTE[t];
+  });
+  return { color, dash };
+}
+
+function computeVisible() {
+  vis = new Set(forceVisible);
+  if (nodes.has("0")) vis.add("0");
+  const stack = [...vis];
+  while (stack.length) {
+    const p = stack.pop();
+    if (collapsed.has(p) && !forceVisible.has(p)) continue;
+    for (const c of children.get(p) || []) {
+      if (vis.has(c)) continue;
+      if (depthOf(c) <= showLayers - 1 || opened.has(p) || forceVisible.has(c)) {
+        vis.add(c);
+        stack.push(c);
+      }
+    }
+  }
+}
+
+function wrapText(text, maxW) {
+  const words = String(text).split(/\s+/).filter(Boolean);
+  const lines = [];
+  let cur = "";
+  for (const wd of words) {
+    const t = cur ? cur + " " + wd : wd;
+    if (!cur || mBody.measureText(t).width <= maxW) cur = t;
+    else { lines.push(cur); cur = wd; }
+  }
+  if (cur) lines.push(cur);
+  return lines.length ? lines : [""];
+}
+
+function measureNode(id) {
+  const n = nodes.get(id);
+  const bits = [id === "0" ? "summary" : id + " " + n.type];
+  if (n.attribution && n.attribution !== "author" && n.attribution !== "n/a") bits.push("[" + n.attribution + "]");
+  const header = bits.join("   ");
+  const lines = wrapText(n.text, BODY_W);
+  const wBody = Math.max(...lines.map(L => mBody.measureText(L).width));
+  const w = Math.max(wBody, mHead.measureText(header).width) + HPAD * 2;
+  const h = VPAD * 2 + HEADER_H + lines.length * LINE_H;
+  sizes.set(id, { w, h, lines, header });
+}
+
+function layout() {
+  sizes = new Map();
+  pos = new Map();
+  let ycur = 0;
+  const walk = id => {
+    measureNode(id);
+    const s = sizes.get(id);
+    const p = parent.get(id);
+    const x = id === "0" ? 0 : pos.get(p).x + pos.get(p).w + COL_GAP;
+    const kids = (children.get(id) || []).filter(c => vis.has(c));
+    if (!kids.length) {
+      pos.set(id, { x, y: ycur, w: s.w, h: s.h });
+      ycur += s.h + ROW_GAP;
+      return;
+    }
+    pos.set(id, { x, y: 0, w: s.w, h: s.h });
+    kids.forEach(walk);
+    const f = pos.get(kids[0]), l = pos.get(kids[kids.length - 1]);
+    const center = (f.y + f.h / 2 + l.y + l.h / 2) / 2;
+    pos.set(id, { x, y: center - s.h / 2, w: s.w, h: s.h });
+  };
+  if (nodes.has("0")) walk("0");
+  let maxX = 0, maxY = 0;
+  pos.forEach(r => {
+    r.x += PAD;
+    r.y += PAD;
+    maxX = Math.max(maxX, r.x + r.w);
+    maxY = Math.max(maxY, r.y + r.h);
+  });
+  spanW = Math.max(maxX - PAD, 200);
+  spanH = Math.max(maxY - PAD, 120);
+  contentW = maxX + PAD;
+  contentH = maxY + PAD;
+}
+
+function svgEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+}
+function edgeGeometry(a, b, dyA, dyB) {
+  const x1 = a.x + a.w, y1 = a.y + a.h / 2 + (dyA || 0);
+  const x2 = b.x, y2 = b.y + b.h / 2 + (dyB || 0);
+  if (x2 >= x1) {
+    const bend = Math.max(28, (x2 - x1) / 2);
+    return `M ${x1} ${y1} C ${x1 + bend} ${y1}, ${x2 - bend} ${y2}, ${x2} ${y2}`;
+  }
+  const xr = b.x + b.w, bend = 40;
+  return `M ${x1} ${y1} C ${x1 + bend} ${y1}, ${xr + bend} ${y2}, ${xr} ${y2}`;
+}
+function edgesFor(id) {
+  const out = [];
+  containsE.forEach(e => { if (e.from === id || e.to === id) out.push({ e, home: gE }); });
+  crossE.forEach(e => { if (e.from === id || e.to === id) out.push({ e, home: gX }); });
+  return out;
+}
+function setEdgeFocus(id, on) {
+  edgesFor(id).forEach(({ e, home }) => {
+    const el = e._el;
+    if (!el) return;
+    if (on) {
+      if (el.parentNode) gTop.appendChild(el);
+      el.classList.add("hl");
+    } else if (selected !== id) {
+      if (el.parentNode === gTop) home.appendChild(el);
+      el.classList.remove("hl");
+    }
+  });
+}
+function applySize() {
+  svg.setAttribute("viewBox", `0 0 ${contentW} ${contentH}`);
+  svg.style.width = (contentW * z) + "px";
+  svg.style.height = (contentH * z) + "px";
+}
+function render() {
+  computeVisible();
+  layout();
+  applySize();
+  gE.innerHTML = ""; gX.innerHTML = ""; gN.innerHTML = ""; gTop.innerHTML = ""; defs.innerHTML = "";
+
+  const markerTypes = [...new Set(crossE.map(e => e.type))];
+  markerTypes.forEach(t => {
+    const st = styleOf(t);
+    const m = svgEl("marker", { id: "arw-" + t.replace(/[^a-z0-9-]/gi, ""), viewBox: "0 0 10 10", refX: 8, refY: 5, markerWidth: 7, markerHeight: 7, markerUnits: "userSpaceOnUse", orient: "auto-start-reverse" });
+    m.appendChild(svgEl("path", { d: "M 1 1 L 8 5 L 1 9", fill: "none", stroke: st.color, "stroke-width": 1.5, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+    defs.appendChild(m);
+  });
+
+  const dyF = new Map(), dyT = new Map();
+  const outs = new Map(), ins = new Map();
+  containsE.concat(crossE).forEach(e => {
+    if (!pos.get(e.from) || !pos.get(e.to)) return;
+    if (!outs.has(e.from)) outs.set(e.from, []);
+    outs.get(e.from).push(e);
+    if (!ins.has(e.to)) ins.set(e.to, []);
+    ins.get(e.to).push(e);
+  });
+  outs.forEach((list, nid) => {
+    if (list.length < 2) return;
+    list.sort((x, y) => cmpIds(x.to, y.to));
+    const h = pos.get(nid).h;
+    const span = Math.min(11, Math.max(4, (h - 14) / list.length));
+    list.forEach((e, i) => dyF.set(e, (i - (list.length - 1) / 2) * span));
+  });
+  ins.forEach((list, nid) => {
+    if (list.length < 2) return;
+    list.sort((x, y) => cmpIds(x.from, y.from));
+    const h = pos.get(nid).h;
+    const span = Math.min(11, Math.max(4, (h - 14) / list.length));
+    list.forEach((e, i) => dyT.set(e, (i - (list.length - 1) / 2) * span));
+  });
+
+  containsE.forEach(e => {
+    const pa = pos.get(e.from), pb = pos.get(e.to);
+    if (!pa || !pb || pa === pb) { e._el = null; return; }
+    const p = svgEl("path", { d: edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), class: "edge", stroke: "#9ca3af", "stroke-width": 1.4 });
+    e._el = p;
+    gE.appendChild(p);
+  });
+
+  crossE.forEach(e => {
+    if (hiddenEdgeTypes.has(e.type)) { e._el = null; return; }
+    const pa = pos.get(e.from), pb = pos.get(e.to);
+    if (!pa || !pb || pa === pb) { e._el = null; return; }
+    const st = styleOf(e.type);
+    const sym = registry[e.type] && registry[e.type].direction === "symmetric";
+    const attrs = { d: edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), class: "edge xedge", stroke: st.color, "stroke-width": 1.7 };
+    if (st.dash) attrs["stroke-dasharray"] = st.dash;
+    attrs["marker-end"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
+    if (sym) attrs["marker-start"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
+    const p = svgEl("path", attrs);
+    const tip = svgEl("title", {});
+    tip.textContent = `${e.type}: ${textOf(e.from)} -> ${textOf(e.to)}` +
+      (e.source && e.source.length ? `  (${e.source.join(", ")})` : "") +
+      (e.note ? `  note: ${e.note}` : "");
+    p.appendChild(tip);
+    e._el = p;
+    gX.appendChild(p);
+  });
+
+  const searching = searchQ.length > 0;
+  GRAPH.nodes.forEach(n => {
+    const r = pos.get(n.id);
+    if (!r) return;
+    const s = sizes.get(n.id);
+    const g = svgEl("g", { class: "node", transform: `translate(${r.x},${r.y})` });
+    const dark = DARKFILL[n.type];
+    g.appendChild(svgEl("rect", {
+      width: r.w, height: r.h, rx: 9,
+      fill: FILL[n.type] || "#e5e7eb", stroke: STROKE[n.type] || "#9ca3af"
+    }));
+    const head = svgEl("text", { x: HPAD, y: VPAD + 9, "font-size": 9.5, fill: dark ? "rgba(255,255,255,.75)" : "#6b7280" });
+    head.textContent = s.header;
+    g.appendChild(head);
+    s.lines.forEach((L, i) => {
+      const t = svgEl("text", { x: HPAD, y: VPAD + HEADER_H + i * LINE_H + 11, "font-size": 11.5, fill: dark ? "#f9fafb" : "#1f2937" });
+      t.textContent = L;
+      g.appendChild(t);
+    });
+    if ((children.get(n.id) || []).length) {
+      const kidsShown = (children.get(n.id) || []).some(c => vis.has(c));
+      const c = svgEl("circle", { cx: r.w - 10, cy: 10, r: 7.5, fill: "#fff", stroke: "#9ca3af", "stroke-width": 1 });
+      const sign = svgEl("path", {
+        d: kidsShown
+          ? `M ${r.w - 14} 10 H ${r.w - 6}`
+          : `M ${r.w - 14} 10 H ${r.w - 6} M ${r.w - 10} 6 V 14`,
+        stroke: "#374151", "stroke-width": 1.6, fill: "none"
+      });
+      const hit = svgEl("circle", { cx: r.w - 10, cy: 10, r: 11, fill: "transparent" });
+      hit.addEventListener("click", ev => {
+        ev.stopPropagation();
+        selected = n.id;
+        toggleFold(n.id);
+        ensureVisible(n.id);
+        buildPanel(n.id);
+      });
+      g.appendChild(c); g.appendChild(sign); g.appendChild(hit);
+    }
+    if (hiddenNodeTypes.has(n.type)) g.classList.add("dim");
+    if (searching) {
+      if (n.text.toLowerCase().includes(searchQ) || n.id.includes(searchQ)) g.classList.add("match");
+      else g.classList.add("dim");
+    }
+    if (selected === n.id) g.classList.add("selected");
+    g.addEventListener("mouseenter", () => setEdgeFocus(n.id, true));
+    g.addEventListener("mouseleave", () => setEdgeFocus(n.id, false));
+    g.addEventListener("click", ev => {
+      ev.stopPropagation();
+      if (textDragged) return;
+      const domSel = window.getSelection();
+      if (domSel && domSel.toString()) domSel.removeAllRanges();
+      select(n.id);
+    });
+    gN.appendChild(g);
+  });
+
+  if (selected) {
+    edgesFor(selected).forEach(({ e }) => {
+      if (e._el) {
+        gTop.appendChild(e._el);
+        e._el.classList.add("hl");
+      }
+    });
+  }
+  updateCulling();
+  updateSourceHighlights(false);
+}
+function updateCulling() {
+  if (!pos.size) return;
+  const off = svgOffset();
+  const pad = 40;
+  const vx0 = (wrap.scrollLeft - off.x) / z - pad;
+  const vy0 = (wrap.scrollTop - off.y) / z - pad;
+  const vx1 = (wrap.scrollLeft + wrap.clientWidth - off.x) / z + pad;
+  const vy1 = (wrap.scrollTop + wrap.clientHeight - off.y) / z + pad;
+  const inView = r => r && r.x <= vx1 && r.x + r.w >= vx0 && r.y <= vy1 && r.y + r.h >= vy0;
+  containsE.concat(crossE).forEach(e => {
+    if (!e._el) return;
+    e._el.style.display = (inView(pos.get(e.from)) || inView(pos.get(e.to))) ? "" : "none";
+  });
+}
+
+function svgOffset() {
+  const wrapRect = wrap.getBoundingClientRect();
+  const svgRect = svg.getBoundingClientRect();
+  return {
+    x: svgRect.left - wrapRect.left + wrap.scrollLeft,
+    y: svgRect.top - wrapRect.top + wrap.scrollTop
+  };
+}
+function zoomAt(mx, my, k) {
+  const off = svgOffset();
+  const wx = (wrap.scrollLeft + mx - off.x) / z;
+  const wy = (wrap.scrollTop + my - off.y) / z;
+  const nz = Math.min(Math.max(z * k, MINZ), 4);
+  if (nz === z) return;
+  z = nz;
+  applySize();
+  wrap.scrollLeft = Math.max(0, off.x + wx * z - mx);
+  wrap.scrollTop = Math.max(0, off.y + wy * z - my);
+  updateCulling();
+}
+function fitView() {
+  if (!pos.size) return;
+  const wr = Math.max(wrap.clientWidth - 24, 200), hr = Math.max(wrap.clientHeight - 24, 200);
+  z = Math.min(Math.max(Math.min(wr / spanW, hr / spanH), MINZ), 1.6);
+  applySize();
+  const off = svgOffset();
+  wrap.scrollLeft = Math.max(0, off.x + contentW * z / 2 - wrap.clientWidth / 2);
+  wrap.scrollTop = Math.max(0, off.y + contentH * z / 2 - wrap.clientHeight / 2);
+  updateCulling();
+}
+function ensureVisible(id) {
+  const r = pos.get(id);
+  if (!r) return;
+  const off = svgOffset();
+  const m = 30;
+  const x0 = off.x + r.x * z, y0 = off.y + r.y * z;
+  const x1 = off.x + (r.x + r.w) * z, y1 = off.y + (r.y + r.h) * z;
+  const vl = wrap.scrollLeft, vt = wrap.scrollTop;
+  const vw = wrap.clientWidth, vh = wrap.clientHeight;
+  if (x1 - x0 > vw - 2 * m) wrap.scrollLeft = Math.max(0, x0 - m);
+  else if (x0 < vl + m) wrap.scrollLeft = Math.max(0, x0 - m);
+  else if (x1 > vl + vw - m) wrap.scrollLeft = Math.max(0, x1 - vw + m);
+  if (y1 - y0 > vh - 2 * m) wrap.scrollTop = Math.max(0, y0 - m);
+  else if (y0 < vt + m) wrap.scrollTop = Math.max(0, y0 - m);
+  else if (y1 > vt + vh - m) wrap.scrollTop = Math.max(0, y1 - vh + m);
+}
+function screenOf(id) {
+  const r = pos.get(id);
+  const off = svgOffset();
+  return { x: off.x + r.x * z - wrap.scrollLeft, y: off.y + r.y * z - wrap.scrollTop };
+}
+function keepAnchored(id, fn, stillValid) {
+  const hasPos = id && pos.has(id);
+  const before = hasPos ? { x: pos.get(id).x, y: pos.get(id).y, sl: wrap.scrollLeft, st: wrap.scrollTop } : null;
+  fn();
+  if (!before || !id || !pos.has(id) || (stillValid && !stillValid())) return;
+  const after = pos.get(id);
+  const desiredL = before.sl + (after.x - before.x) * z;
+  const desiredT = before.st + (after.y - before.y) * z;
+  const maxL = Math.max(0, wrap.scrollWidth - wrap.clientWidth);
+  const maxT = Math.max(0, wrap.scrollHeight - wrap.clientHeight);
+  if (desiredL < -2 || desiredT < -2 || desiredL > maxL + 2 || desiredT > maxT + 2) {
+    ensureVisible(id);
+    updateCulling();
+    return;
+  }
+  wrap.scrollLeft = desiredL;
+  wrap.scrollTop = desiredT;
+  updateCulling();
+  const target = screenOf(id);
+  requestAnimationFrame(() => {
+    if (!id || !pos.has(id) || (stillValid && !stillValid())) return;
+    const now = screenOf(id);
+    const dx = now.x - target.x, dy = now.y - target.y;
+    if (Math.abs(dx) > 1 || Math.abs(dy) > 1) {
+      wrap.scrollLeft = Math.max(0, wrap.scrollLeft - dx);
+      wrap.scrollTop = Math.max(0, wrap.scrollTop - dy);
+      updateCulling();
+    }
+  });
+}
+function keepSelectedAnchored(fn) {
+  const id = selected;
+  keepAnchored(id, fn, () => selected === id);
+}
+function jump(id) {
+  if (!nodes.has(id)) return;
+  forceVisible.clear();
+  for (let p = parent.get(id); p !== undefined; p = parent.get(p)) {
+    collapsed.delete(p);
+    opened.add(p);
+  }
+  selected = id;
+  sideMode = false;
+  render();
+  ensureVisible(id);
+  buildPanel(id);
+}
+function select(id) {
+  if (!nodes.has(id)) return;
+  selected = id;
+  render();
+  ensureVisible(id);
+  buildPanel(id);
+}
+function toggleFold(id) {
+  const kids = children.get(id) || [];
+  if (!kids.length) return;
+  keepSelectedAnchored(() => {
+    if (kids.some(c => vis.has(c))) {
+      collapsed.add(id);
+      opened.delete(id);
+    } else {
+      collapsed.delete(id);
+      opened.add(id);
+    }
+    render();
+  });
+}
+function visiblePreorder() {
+  const out = [];
+  const walk = id => {
+    if (!vis.has(id)) return;
+    out.push(id);
+    (children.get(id) || []).forEach(walk);
+  };
+  if (nodes.has("0")) walk("0");
+  return out;
+}
+function foldToLayer(level) {
+  const L = Math.min(Math.max(level, 1), maxDepth + 1);
+  let targetId = selected;
+  if (selected && depthOf(selected) + 1 > L) {
+    let anc = selected;
+    while (anc !== "0" && depthOf(anc) + 1 > L) anc = parent.get(anc);
+    targetId = anc;
+  }
+  const adjusted = targetId !== selected;
+  keepAnchored(targetId, () => {
+    showLayers = L;
+    collapsed.clear();
+    opened.clear();
+    forceVisible = new Set();
+    if (adjusted) selected = targetId;
+    render();
+  });
+  if (adjusted) buildPanel(targetId);
+}
+function focusToLayer(level) {
+  keepSelectedAnchored(() => {
+    showLayers = Math.min(Math.max(level, 1), maxDepth + 1);
+    collapsed.clear();
+    opened.clear();
+    forceVisible = new Set();
+    if (selected) {
+      forceVisible.add(selected);
+      for (let p = parent.get(selected); p !== undefined; p = parent.get(p)) forceVisible.add(p);
+    }
+    render();
+  });
+}
+function closePanel() {
+  document.getElementById("panel").classList.remove("open");
+  document.getElementById("panelHandle").classList.remove("open");
+  wrap.style.right = "0px";
+  updateCulling();
+  sideMode = false;
+}
+let panelW = 330;
+let panelMode = "excerpts";
+let sourceBodyEl = null;
+function applyPanelWidth() {
+  const max = Math.max(260, Math.round(window.innerWidth * 0.75));
+  panelW = Math.min(Math.max(panelW, 260), max);
+  document.getElementById("panel").style.width = panelW + "px";
+  document.getElementById("panelHandle").style.right = (panelW + 10) + "px";
+  wrap.style.right = (panelW + 24) + "px";
+  updateCulling();
+}
+function panelItems() {
+  return [...document.getElementById("panel").querySelectorAll(".linkrow, .srcbtn")];
+}
+const citing = new Map();
+GRAPH.nodes.forEach(n => (n.source || []).forEach(r => {
+  if (!citing.has(r)) citing.set(r, []);
+  citing.get(r).push(n.id);
+}));
+function refMarkId(ref) {
+  return "src-" + String(ref).replace(/[^0-9]/g, "");
+}
+function buildSourceBody() {
+  const text = (GRAPH.meta && GRAPH.meta.sourceText) || "";
+  const spans = (GRAPH.meta && GRAPH.meta.spans) || {};
+  const body = document.createElement("div");
+  body.id = "sourceBody";
+  if (!text) return body;
+  const key = r => { const m = String(r).match(/\d+/); return m ? +m[0] : 0; };
+  const refs = Object.keys(spans).sort((a, b) => key(a) - key(b));
+  let cursor = 0;
+  refs.forEach(ref => {
+    const span = spans[ref];
+    if (!Array.isArray(span) || span.length !== 2) return;
+    const s = span[0], e = span[1];
+    if (s > cursor) body.appendChild(document.createTextNode(text.slice(cursor, s)));
+    const m = document.createElement("mark");
+    m.id = refMarkId(ref);
+    m.dataset.ref = ref;
+    m.textContent = text.slice(s, e);
+    m.title = ref + (citing.has(ref) ? " - cited by " + citing.get(ref).join(", ") : "");
+    m.addEventListener("click", () => {
+      const ids = citing.get(ref) || [];
+      if (ids.length) select(ids[0]);
+    });
+    body.appendChild(m);
+    cursor = e;
+  });
+  if (cursor < text.length) body.appendChild(document.createTextNode(text.slice(cursor)));
+  return body;
+}
+function paintMark(ref, bg, title) {
+  const m = document.getElementById(refMarkId(ref));
+  if (!m) return;
+  m.style.background = bg;
+  if (title) m.title = title;
+}
+const HL_BG = { summary: "#e5e7eb", theme: "#e0e7ff" };
+function paintSelectedRefs(id) {
+  const node = nodes.get(id);
+  if (!node) return;
+  const bg = HL_BG[node.type] || FILL[node.type] || "#e5e7eb";
+  (node.source || []).forEach(r => paintMark(r, bg, r + " - " + node.type + " " + id));
+}
+function paintRelatedRefs(id) {
+  const seen = new Set((nodes.get(id) || {}).source || []);
+  crossE.forEach(e => {
+    if (e.from !== id && e.to !== id) return;
+    const other = e.from === id ? e.to : e.from;
+    const on = nodes.get(other);
+    if (!on) return;
+    const col = styleOf(e.type).color;
+    (on.source || []).forEach(r => {
+      if (seen.has(r)) return;
+      seen.add(r);
+      paintMark(r, col + "22", r + " - " + other + " " + e.type + " " + id);
+    });
+  });
+}
+function updateSourceHighlights(scroll) {
+  document.querySelectorAll("#sourceBody mark").forEach(m => {
+    m.style.background = "transparent";
+    m.title = m.dataset.ref + (citing.has(m.dataset.ref) ? " - cited by " + citing.get(m.dataset.ref).join(", ") : "");
+  });
+  if (!selected || !nodes.has(selected)) return;
+  paintRelatedRefs(selected);
+  paintSelectedRefs(selected);
+  if (scroll) {
+    const node = nodes.get(selected);
+    const first = (node.source || []).map(refMarkId).map(mid => document.getElementById(mid)).find(Boolean);
+    if (first) first.scrollIntoView({ block: "nearest" });
+  }
+}
+function scrollToRef(ref) {
+  const m = document.getElementById(refMarkId(ref));
+  if (m) m.scrollIntoView({ block: "center" });
+}
+function buildPanel(id) {
+  const n = nodes.get(id);
+  const panel = document.getElementById("panel");
+  const out = crossE.filter(e => e.from === id);
+  const inc = crossE.filter(e => e.to === id);
+  const srcs = (n.source || []).map(r => {
+    const passage = (GRAPH.meta.passages || {})[r];
+    return `<button class="srcbtn" data-ref="${esc(r)}">${esc(r)}</button>` +
+      `<div class="passage show" id="pass-${esc(r.slice(1))}">${passage != null ? esc(passage) : "(passage text not embedded)"}</div>`;
+  }).join("");
+  const edgeRow = (e, dir) => {
+    const col = styleOf(e.type).color;
+    return `<button class="linkrow" data-jump="${dir === "out" ? esc(e.to) : esc(e.from)}" style="border-left:3px solid ${col}">` +
+      `<span class="etype" style="color:${col}">${esc(e.type)}</span> ${dir === "out" ? "&#8594;" : "&#8592;"} ${dir === "out" ? esc(e.to) : esc(e.from)}` +
+      ` ${textOf(dir === "out" ? e.to : e.from).slice(0, 60)}` +
+      (e.source && e.source.length ? ` <span class="note">${esc(e.source.join(", "))}</span>` : "") +
+      (e.note ? `<div class="note">${esc(e.note)}</div>` : "") + `</button>`;
+  };
+  if (!sourceBodyEl) panelMode = "excerpts";
+  const modeBtn = sourceBodyEl
+    ? `<button id="pMode" class="${panelMode === "source" ? "on" : ""}" title="${panelMode === "source" ? "switch back to the cited excerpts" : "show this node in the full source text"}">${panelMode === "source" ? "Excerpts" : "Source"}</button>`
+    : "";
+  panel.innerHTML =
+    `<div id="panelHead"><h2>Node ${esc(id)}</h2>${modeBtn}<button class="close" id="pClose">&#215;</button></div>` +
+    `<div class="tagrow"><span class="tag">${esc(n.type)}</span>` +
+    (n.attribution && n.attribution !== "n/a" ? `<span class="tag">${esc(n.attribution)}</span>` : "") +
+    `</div>` +
+    (panelMode === "source"
+      ? `<div class="sect">Source text</div>`
+      : `<div class="sect">Where it comes from</div>${srcs}`) +
+    (out.length ? `<div class="sect">Links out</div>${out.map(e => edgeRow(e, "out")).join("")}` : "") +
+    (inc.length ? `<div class="sect">Links in</div>${inc.map(e => edgeRow(e, "in")).join("")}` : "");
+  if (panelMode === "source" && sourceBodyEl) panel.appendChild(sourceBodyEl);
+  panel.classList.add("open");
+  document.getElementById("panelHandle").classList.add("open");
+  applyPanelWidth();
+  const mode = document.getElementById("pMode");
+  if (mode) mode.addEventListener("click", () => {
+    panelMode = panelMode === "source" ? "excerpts" : "source";
+    buildPanel(id);
+  });
+  panel.querySelectorAll(".srcbtn").forEach(b => b.addEventListener("click", () => {
+    const t = document.getElementById("pass-" + b.dataset.ref.slice(1));
+    if (t) t.classList.toggle("show");
+  }));
+  panel.querySelectorAll(".passage").forEach(el => el.addEventListener("click", () => {
+    panelMode = "source";
+    buildPanel(id);
+    scrollToRef(el.id.replace("pass-", "¶"));
+  }));
+  panel.querySelectorAll("[data-jump]").forEach(b => b.addEventListener("click", () => jump(b.dataset.jump)));
+  document.getElementById("pClose").addEventListener("click", () => {
+    closePanel();
+    selected = null;
+    render();
+  });
+  updateSourceHighlights(true);
+}
+function buildLegend() {
+  const counts = {};
+  GRAPH.nodes.forEach(n => counts[n.type] = (counts[n.type] || 0) + 1);
+  const nodeChips = Object.keys(counts).sort().map(t =>
+    `<span class="chip" data-nt="${esc(t)}"><span class="swatch" style="background:${FILL[t] || "#e5e7eb"};border:1px solid ${STROKE[t] || "#9ca3af"}"></span>${esc(t)} ${counts[t]}</span>`).join("");
+  const etypes = [...new Set(crossE.map(e => e.type))].sort();
+  const edgeChips = etypes.map(t => {
+    const st = styleOf(t);
+    return `<span class="chip" data-et="${esc(t)}"><span class="lswatch" style="border-top-style:${st.dash === "7 4" ? "dashed" : st.dash === "2 4" ? "dotted" : "solid"};border-top-color:${st.color}"></span>${esc(t)}</span>`;
+  }).join("");
+  document.getElementById("legendNodeChips").innerHTML = nodeChips;
+  document.getElementById("legendEdgeChips").innerHTML = edgeChips;
+  document.querySelectorAll("#legend [data-nt]").forEach(c => c.addEventListener("click", () => {
+    const t = c.dataset.nt;
+    if (hiddenNodeTypes.has(t)) hiddenNodeTypes.delete(t); else hiddenNodeTypes.add(t);
+    c.classList.toggle("off");
+    render();
+  }));
+  document.querySelectorAll("#legend [data-et]").forEach(c => c.addEventListener("click", () => {
+    const t = c.dataset.et;
+    if (hiddenEdgeTypes.has(t)) hiddenEdgeTypes.delete(t); else hiddenEdgeTypes.add(t);
+    c.classList.toggle("off");
+    render();
+  }));
+  const togglePanel = () => {
+    const off = document.getElementById("blPanel").classList.toggle("collapsed");
+    document.getElementById("helpToggle").innerHTML = off ? "+" : "&#8722;";
+  };
+  document.getElementById("helpHead").addEventListener("click", togglePanel);
+}
+function init() {
+  document.getElementById("title").textContent = (GRAPH.meta && GRAPH.meta.title) || "Point graph";
+  document.getElementById("srcname").textContent = (GRAPH.meta && GRAPH.meta.source) || "";
+  const topbar = document.getElementById("topbar");
+  const fitCanvasToTopbar = () => {
+    wrap.style.top = topbar.offsetHeight + "px";
+    document.getElementById("panelHandle").style.top = topbar.offsetHeight + "px";
+  };
+  fitCanvasToTopbar();
+  window.addEventListener("resize", () => { fitCanvasToTopbar(); applyPanelWidth(); });
+  buildLegend();
+  if (GRAPH.meta && GRAPH.meta.sourceText) sourceBodyEl = buildSourceBody();
+  selected = nodes.has("0") ? "0" : null;
+  render();
+  if (selected) buildPanel(selected);
+  fitView();
+
+  const handle = document.getElementById("panelHandle");
+  let resize = null;
+  handle.addEventListener("mousedown", ev => {
+    ev.preventDefault();
+    resize = { x: ev.clientX, w: panelW };
+    handle.classList.add("dragging");
+  });
+  window.addEventListener("mousemove", ev => {
+    if (!resize) return;
+    panelW = resize.w + (resize.x - ev.clientX);
+    applyPanelWidth();
+  });
+  window.addEventListener("mouseup", () => {
+    if (!resize) return;
+    resize = null;
+    handle.classList.remove("dragging");
+  });
+
+  let drag = null;
+  let ndText = null;
+  wrap.addEventListener("mousedown", ev => {
+    if (ev.button !== 0) return;
+    if (ev.target && ev.target.tagName === "text") {
+      ndText = { x: ev.clientX, y: ev.clientY };
+      textDragged = false;
+      return;
+    }
+    ndText = null;
+    ev.preventDefault();
+    const domSel = window.getSelection();
+    if (domSel && domSel.toString()) domSel.removeAllRanges();
+    drag = { x: ev.clientX, y: ev.clientY, sl: wrap.scrollLeft, st: wrap.scrollTop };
+    dragMoved = false;
+    wrap.classList.add("panning");
+  });
+  window.addEventListener("mousemove", ev => {
+    if (ndText) {
+      if (Math.abs(ev.clientX - ndText.x) + Math.abs(ev.clientY - ndText.y) > 4) textDragged = true;
+      return;
+    }
+    if (!drag) return;
+    const dx = ev.clientX - drag.x, dy = ev.clientY - drag.y;
+    if (Math.abs(dx) + Math.abs(dy) > 4) dragMoved = true;
+    if (dragMoved) {
+      wrap.scrollLeft = drag.sl - dx;
+      wrap.scrollTop = drag.st - dy;
+    }
+  });
+  window.addEventListener("mouseup", () => {
+    drag = null;
+    ndText = null;
+    wrap.classList.remove("panning");
+  });
+  wrap.addEventListener("click", ev => {
+    if (dragMoved) return;
+    if (ev.target === svg || ev.target === wrap) {
+      selected = null;
+      closePanel();
+      render();
+    }
+  });
+  svg.addEventListener("dblclick", () => fitView());
+
+  wrap.addEventListener("wheel", ev => {
+    if (ev.ctrlKey) {
+      ev.preventDefault();
+      const wrapRect = wrap.getBoundingClientRect();
+      const k = ev.deltaY > 0 ? 1 / 1.12 : 1.12;
+      zoomAt(ev.clientX - wrapRect.left, ev.clientY - wrapRect.top, k);
+    }
+  }, { passive: false });
+  let cullPending = false;
+  wrap.addEventListener("scroll", () => {
+    if (cullPending) return;
+    cullPending = true;
+    requestAnimationFrame(() => { cullPending = false; updateCulling(); });
+  }, { passive: true });
+
+  document.getElementById("btnAll").addEventListener("click", () => {
+    keepSelectedAnchored(() => { showLayers = maxDepth + 1; render(); });
+  });
+  document.getElementById("btnFit").addEventListener("click", fitView);
+  document.getElementById("btnReset").addEventListener("click", () => {
+    collapsed.clear(); opened.clear(); hiddenNodeTypes.clear(); hiddenEdgeTypes.clear();
+    forceVisible.clear(); searchQ = ""; selected = null; sideMode = false;
+    document.getElementById("searchBox").value = "";
+    document.getElementById("searchCount").textContent = "";
+    closePanel();
+    showLayers = Math.min(2, maxDepth + 1);
+    document.querySelectorAll("#legend .chip").forEach(c => c.classList.remove("off"));
+    render();
+    fitView();
+  });
+  document.getElementById("searchBox").addEventListener("input", ev => {
+    let count = 0;
+    keepSelectedAnchored(() => {
+      searchQ = ev.target.value.trim().toLowerCase();
+      forceVisible = new Set();
+      if (searchQ) {
+        nodes.forEach((n, id) => {
+          if (n.text.toLowerCase().includes(searchQ) || id.includes(searchQ)) {
+            count += 1;
+            forceVisible.add(id);
+            for (let p = parent.get(id); p !== undefined; p = parent.get(p)) forceVisible.add(p);
+          }
+        });
+      }
+      render();
+    });
+    document.getElementById("searchCount").textContent = searchQ ? `${count} matches` : "";
+  });
+
+  document.addEventListener("keydown", ev => {
+    if (ev.target && (ev.target.tagName === "INPUT" || ev.target.tagName === "TEXTAREA")) return;
+    if (ev.ctrlKey && !ev.altKey && (ev.key === "=" || ev.key === "+" || ev.key === "-" || ev.key === "_")) {
+      ev.preventDefault();
+      const k = (ev.key === "=" || ev.key === "+") ? 1.12 : 1 / 1.12;
+      zoomAt(wrap.clientWidth / 2, wrap.clientHeight / 2, k);
+      return;
+    }
+    if (ev.ctrlKey && !ev.shiftKey && ev.key >= "0" && ev.key <= "9") {
+      ev.preventDefault();
+      if (ev.key === "0") foldToLayer(maxDepth + 1);
+      else if (ev.altKey) focusToLayer(+ev.key);
+      else foldToLayer(+ev.key);
+      return;
+    }
+    if (sideMode) {
+      const items = panelItems();
+      if (ev.key === "Escape") {
+        sideMode = false;
+        panelItems().forEach(el => el.classList.remove("kbd-focus"));
+        return;
+      }
+      if (!items.length) return;
+      if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+        ev.preventDefault();
+        sideIdx = ev.key === "ArrowDown"
+          ? Math.min(sideIdx + 1, items.length - 1)
+          : Math.max(sideIdx - 1, 0);
+        items.forEach((el, i) => el.classList.toggle("kbd-focus", i === sideIdx));
+        items[sideIdx].scrollIntoView({ block: "nearest" });
+        return;
+      }
+      if (ev.key === "Enter") {
+        ev.preventDefault();
+        if (items[sideIdx]) items[sideIdx].click();
+        return;
+      }
+      return;
+    }
+    switch (ev.key) {
+      case "ArrowDown":
+      case "ArrowUp": {
+        ev.preventDefault();
+        if (!selected) { select("0"); break; }
+        const order = visiblePreorder();
+        const i = order.indexOf(selected);
+        if (i === -1) { if (order[0]) select(order[0]); break; }
+        const nxt = order[i + (ev.key === "ArrowDown" ? 1 : -1)];
+        if (nxt) select(nxt);
+        break;
+      }
+      case "ArrowLeft": {
+        ev.preventDefault();
+        if (!selected) break;
+        const kids = children.get(selected) || [];
+        if (kids.some(c => vis.has(c))) {
+          keepSelectedAnchored(() => {
+            collapsed.add(selected);
+            opened.delete(selected);
+            render();
+          });
+        } else if (parent.get(selected) !== undefined) {
+          select(parent.get(selected));
+        }
+        break;
+      }
+      case "ArrowRight": {
+        ev.preventDefault();
+        if (!selected) break;
+        const kids = children.get(selected) || [];
+        if (kids.length) {
+          collapsed.delete(selected);
+          opened.add(selected);
+          render();
+          select(kids[0]);
+        } else {
+          const order = visiblePreorder();
+          const i = order.indexOf(selected);
+          if (i !== -1 && i + 1 < order.length) select(order[i + 1]);
+        }
+        break;
+      }
+      case " ":
+        ev.preventDefault();
+        if (selected) toggleFold(selected);
+        break;
+      case "Enter": {
+        ev.preventDefault();
+        if (!selected) select("0");
+        buildPanel(selected);
+        sideMode = true;
+        sideIdx = 0;
+        const items = panelItems();
+        items.forEach((el, i) => el.classList.toggle("kbd-focus", i === 0));
+        if (items[0]) items[0].scrollIntoView({ block: "nearest" });
+        break;
+      }
+      case "Escape":
+        if (selected) {
+          selected = null;
+          closePanel();
+          render();
+        }
+        break;
+    }
+  });
+}
+init();
+</script>
+</body>
+</html>

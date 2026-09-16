@@ -1,0 +1,3 @@
+include LICENSE README.md
+recursive-include src/digestif/skill *
+global-exclude __pycache__ *.pyc
