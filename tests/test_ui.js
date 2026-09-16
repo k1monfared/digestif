@@ -137,13 +137,40 @@ const state = page => page.evaluate(() => {
     selected: (() => { const g = document.querySelector("#gNodes g.selected"); return g ? g.querySelector("text").textContent.split(" ")[0] : null; })()
   }));
   ok("sidebar: clicking a node selects but does not open it", !afterClick.open && afterClick.selected === "3", afterClick);
+  const hit4b = await page.evaluate(() => {
+    const g = [...document.querySelectorAll("#gNodes g")].find(el => el.querySelector("text").textContent.startsWith("4 "));
+    const circles = g.querySelectorAll("circle");
+    const h = circles[circles.length - 1];
+    const r = h.getBoundingClientRect();
+    return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
+  });
+  await page.mouse.click(hit4b.x, hit4b.y);
+  await page.waitForTimeout(180);
+  const afterToggleClick = await page.evaluate(() => ({
+    open: document.getElementById("panel").classList.contains("open"),
+    selected: (() => { const g = document.querySelector("#gNodes g.selected"); return g ? g.querySelector("text").textContent.split(" ")[0] : null; })(),
+    nodes: document.querySelectorAll("#gNodes g").length
+  }));
+  ok("sidebar: +/- selects and folds without opening it",
+    !afterToggleClick.open && afterToggleClick.selected === "4" && afterToggleClick.nodes === 15, afterToggleClick);
   await page.keyboard.press("Enter");
   await page.waitForTimeout(120);
   const afterEnter = await page.evaluate(() => ({
     open: document.getElementById("panel").classList.contains("open"),
     title: document.getElementById("panelTitle").textContent
   }));
-  ok("sidebar: enter opens it on the selected node", afterEnter.open && afterEnter.title === "Node 3", afterEnter);
+  ok("sidebar: enter opens it on the selected node", afterEnter.open && afterEnter.title === "Node 4", afterEnter);
+  const hit4c = await page.evaluate(() => {
+    const g = [...document.querySelectorAll("#gNodes g")].find(el => el.querySelector("text").textContent.startsWith("4 "));
+    const circles = g.querySelectorAll("circle");
+    const h = circles[circles.length - 1];
+    const r = h.getBoundingClientRect();
+    return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
+  });
+  await page.mouse.click(hit4c.x, hit4c.y);
+  await page.waitForTimeout(150);
+  s = await state(page);
+  ok("sidebar: node 4 folded back for the next checks", s.nodes === 10, s.nodes);
   nb = await boxOf("summary");
   await page.mouse.click(nb.x, nb.y);
   await page.waitForTimeout(120);

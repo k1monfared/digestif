@@ -520,9 +520,10 @@ function render() {
       hit.addEventListener("click", ev => {
         ev.stopPropagation();
         selected = n.id;
+        sideMode = false;
         toggleFold(n.id);
         ensureVisible(n.id);
-        buildPanel(n.id);
+        refreshPanel();
       });
       g.appendChild(c); g.appendChild(sign); g.appendChild(hit);
     }
