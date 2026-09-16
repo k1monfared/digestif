@@ -170,6 +170,22 @@ const state = page => page.evaluate(() => {
   await page.keyboard.press("ArrowDown");
   s = await state(page);
   ok("back to node 2 after source checks", s.selected === "2", s.selected);
+
+  await page.click("#searchBox");
+  await page.keyboard.press("Control+3");
+  s = await state(page);
+  ok("ctrl+3 works while the search box is focused", s.nodes === 38, s.nodes);
+  const keepFocus = await page.evaluate(() => document.activeElement && document.activeElement.id);
+  ok("control shortcut leaves the search box focused", keepFocus === "searchBox", keepFocus);
+  await page.keyboard.press("Escape");
+  const afterEsc = await page.evaluate(() => ({
+    id: document.activeElement ? document.activeElement.id : null,
+    q: document.getElementById("searchBox").value
+  }));
+  ok("escape releases and clears the search box", afterEsc.id !== "searchBox" && afterEsc.q === "", afterEsc);
+  await page.keyboard.press("Control+2");
+  s = await state(page);
+  ok("back to two layers after the search box check", s.nodes === 10 && s.selected === "2", s);
   await page.click("#pMode");
   await page.waitForTimeout(100);
 
@@ -379,6 +395,40 @@ const state = page => page.evaluate(() => {
     Math.abs(rOffBack.x - rOffBefore.x) <= 2 && Math.abs(rOffBack.y - rOffBefore.y) <= 2,
     [rOffBefore, rOffBack]);
 
+  await page.evaluate(() => {
+    const w = document.querySelector("#canvasWrap");
+    w.scrollLeft = 0; w.scrollTop = 0;
+    w.dispatchEvent(new Event("scroll"));
+  });
+  await page.waitForTimeout(60);
+  await page.keyboard.press("Control+3");
+  await page.waitForTimeout(120);
+  await page.evaluate(() => {
+    const w = document.querySelector("#canvasWrap");
+    w.scrollLeft += 800; w.scrollTop += 3000;
+    w.dispatchEvent(new Event("scroll"));
+  });
+  await page.waitForTimeout(60);
+  const rootOffBefore = await page.evaluate(() => {
+    const w = document.getElementById("canvasWrap").getBoundingClientRect();
+    const g = [...document.querySelectorAll("#gNodes g")].find(el => el.querySelector("text").textContent.startsWith("summary"));
+    const r = g.getBoundingClientRect();
+    return r.bottom < w.top || r.top > w.bottom;
+  });
+  ok("root is off screen before the fold", rootOffBefore, rootOffBefore);
+  await page.keyboard.press("Control+1");
+  await page.waitForTimeout(140);
+  const afterFarFold = await page.evaluate(() => {
+    const wrap = document.getElementById("canvasWrap");
+    const w = wrap.getBoundingClientRect();
+    const g = [...document.querySelectorAll("#gNodes g")].find(el => el.querySelector("text").textContent.startsWith("summary"));
+    const r = g.getBoundingClientRect();
+    return { off: r.bottom < w.top || r.top > w.bottom, scrollTop: wrap.scrollTop };
+  });
+  s = await state(page);
+  ok("unreachable anchor clamps instead of jumping to reveal",
+    s.selected === "summary" && afterFarFold.off, [s, afterFarFold]);
+
   await page.evaluate(() => document.getElementById("btnFit").click());
   await page.waitForTimeout(120);
   await page.keyboard.press("Control+3");
@@ -418,9 +468,15 @@ const state = page => page.evaluate(() => {
   await page.waitForTimeout(160);
   s = await state(page);
   const rRootFoldAfter = await rectOf("summary");
+  const foldClamp = await page.evaluate(() => {
+    const w = document.getElementById("canvasWrap");
+    return { clampedX: w.scrollLeft >= w.scrollWidth - w.clientWidth - 2 };
+  });
   ok("ctrl+1: root anchors, no jump",
-    s.selected === "summary" && Math.abs(rRootFoldAfter.x - rRootFoldBefore.x) <= 2 && Math.abs(rRootFoldAfter.y - rRootFoldBefore.y) <= 2,
-    [rRootFoldBefore, rRootFoldAfter, s]);
+    s.selected === "summary" &&
+    Math.abs(rRootFoldAfter.y - rRootFoldBefore.y) <= 2 &&
+    (Math.abs(rRootFoldAfter.x - rRootFoldBefore.x) <= 2 || foldClamp.clampedX),
+    [rRootFoldBefore, rRootFoldAfter, foldClamp, s]);
 
   const rSeqBefore = await rectOf("summary");
   await page.keyboard.press("Control+2");
