@@ -143,7 +143,6 @@
   .node rect { stroke-width: 1.2; }
   .node { cursor: pointer; }
   .node.dim { opacity: .12; pointer-events: none; }
-  .node.hide { display: none; }
   .node.match rect { stroke: #f59e0b; stroke-width: 3; }
   .node.selected rect { stroke: #111827; stroke-width: 2.6; }
   .edge { fill: none; }
@@ -349,13 +348,15 @@ function measureNode(id) {
 function layout() {
   sizes = new Map();
   pos = new Map();
+  const searching = searchQ.length > 0;
+  const inLayout = id => searching ? forceVisible.has(id) : vis.has(id);
   let ycur = 0;
   const walk = id => {
     measureNode(id);
     const s = sizes.get(id);
     const p = parent.get(id);
     const x = id === "0" ? 0 : pos.get(p).x + pos.get(p).w + COL_GAP;
-    const kids = (children.get(id) || []).filter(c => vis.has(c));
+    const kids = (children.get(id) || []).filter(c => inLayout(c));
     if (!kids.length) {
       pos.set(id, { x, y: ycur, w: s.w, h: s.h });
       ycur += s.h + ROW_GAP;
@@ -367,7 +368,7 @@ function layout() {
     const center = (f.y + f.h / 2 + l.y + l.h / 2) / 2;
     pos.set(id, { x, y: center - s.h / 2, w: s.w, h: s.h });
   };
-  if (nodes.has("0")) walk("0");
+  if (nodes.has("0") && inLayout("0")) walk("0");
   let maxX = 0, maxY = 0;
   pos.forEach(r => {
     r.x += PAD;
@@ -389,12 +390,19 @@ function svgEl(tag, attrs) {
 function edgeGeometry(a, b, dyA, dyB) {
   const x1 = a.x + a.w, y1 = a.y + a.h / 2 + (dyA || 0);
   const x2 = b.x, y2 = b.y + b.h / 2 + (dyB || 0);
+  let c1x = x1, c1y = y1, c2x = x2, c2y = y2, ex = x2;
   if (x2 >= x1) {
     const bend = Math.max(28, (x2 - x1) / 2);
-    return `M ${x1} ${y1} C ${x1 + bend} ${y1}, ${x2 - bend} ${y2}, ${x2} ${y2}`;
+    c1x = x1 + bend; c2x = x2 - bend;
+  } else {
+    const bend = 40;
+    c1x = x1 + bend; c2x = b.x + b.w + bend; ex = b.x + b.w;
   }
-  const xr = b.x + b.w, bend = 40;
-  return `M ${x1} ${y1} C ${x1 + bend} ${y1}, ${xr + bend} ${y2}, ${xr} ${y2}`;
+  return {
+    d: `M ${x1} ${y1} C ${c1x} ${c1y}, ${c2x} ${c2y}, ${ex} ${y2}`,
+    x0: Math.min(x1, c1x, c2x, ex), y0: Math.min(y1, c1y, c2y, y2),
+    x1: Math.max(x1, c1x, c2x, ex), y1: Math.max(y1, c1y, c2y, y2)
+  };
 }
 function addEdgeArtifacts(parent, e, d, attrs) {
   const p = svgEl("path", Object.assign({ d }, attrs));
@@ -480,24 +488,27 @@ function render() {
 
   containsE.forEach(e => {
     const pa = pos.get(e.from), pb = pos.get(e.to);
-    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; return; }
-    const { p, hit } = addEdgeArtifacts(gE, e, edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)),
+    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; e._bb = null; return; }
+    const geo = edgeGeometry(pa, pb, dyF.get(e), dyT.get(e));
+    const { p, hit } = addEdgeArtifacts(gE, e, geo.d,
       { class: "edge", stroke: "#9ca3af", "stroke-width": 1.4 });
     e._el = p;
     e._hit = hit;
+    e._bb = geo;
   });
 
   crossE.forEach(e => {
-    if (hiddenEdgeTypes.has(e.type)) { e._el = null; e._hit = null; return; }
+    if (hiddenEdgeTypes.has(e.type)) { e._el = null; e._hit = null; e._bb = null; return; }
     const pa = pos.get(e.from), pb = pos.get(e.to);
-    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; return; }
+    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; e._bb = null; return; }
     const st = styleOf(e.type);
     const sym = registry[e.type] && registry[e.type].direction === "symmetric";
     const attrs = { class: "edge xedge", stroke: st.color, "stroke-width": 1.7 };
     if (st.dash) attrs["stroke-dasharray"] = st.dash;
     attrs["marker-end"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
     if (sym) attrs["marker-start"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
-    const { p, hit } = addEdgeArtifacts(gX, e, edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), attrs);
+    const geo = edgeGeometry(pa, pb, dyF.get(e), dyT.get(e));
+    const { p, hit } = addEdgeArtifacts(gX, e, geo.d, attrs);
     const tip = svgEl("title", {});
     tip.textContent = `${e.type}: ${textOf(e.from)} -> ${textOf(e.to)}` +
       (e.source && e.source.length ? `  (${e.source.join(", ")})` : "") +
@@ -505,6 +516,7 @@ function render() {
     p.appendChild(tip);
     e._el = p;
     e._hit = hit;
+    e._bb = geo;
   });
 
   const searching = searchQ.length > 0;
@@ -549,8 +561,7 @@ function render() {
     if (hiddenNodeTypes.has(n.type)) g.classList.add("dim");
     if (searching) {
       if (n.text.toLowerCase().includes(searchQ) || n.id.includes(searchQ)) g.classList.add("match");
-      else if (forceVisible.has(n.id)) g.classList.add("dim");
-      else g.classList.add("hide");
+      else g.classList.add("dim");
     }
     if (selected === n.id) g.classList.add("selected");
     g.addEventListener("mouseenter", () => setEdgeFocus(n.id, true));
@@ -593,15 +604,11 @@ function updateCulling() {
   const vx1 = (wrap.scrollLeft + wrap.clientWidth - off.x) / z + pad;
   const vy1 = (wrap.scrollTop + wrap.clientHeight - off.y) / z + pad;
   const inView = r => r && r.x <= vx1 && r.x + r.w >= vx0 && r.y <= vy1 && r.y + r.h >= vy0;
+  const inBox = bb => bb && bb.x0 <= vx1 && bb.x1 >= vx0 && bb.y0 <= vy1 && bb.y1 >= vy0;
   containsE.concat(crossE).forEach(e => {
     if (!e._el && !e._hit) return;
-    let on;
-    if (searchQ) {
-      on = forceVisible.has(e.from) && forceVisible.has(e.to);
-    } else {
-      const keep = e === edgeSelected || (selected && (e.from === selected || e.to === selected));
-      on = keep || inView(pos.get(e.from)) || inView(pos.get(e.to));
-    }
+    const keep = e === edgeSelected || (selected && (e.from === selected || e.to === selected));
+    const on = keep || inView(pos.get(e.from)) || inView(pos.get(e.to)) || inBox(e._bb);
     if (e._el) e._el.style.display = on ? "" : "none";
     if (e._hit) e._hit.style.display = on ? "" : "none";
   });

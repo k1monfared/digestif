@@ -311,31 +311,81 @@ const state = page => page.evaluate(() => {
   await page.waitForTimeout(180);
   const searchState = await page.evaluate(() => {
     const nodeEls = [...document.querySelectorAll("#gNodes g")];
+    const rectOf = ref => {
+      const g = nodeEls.find(el => el.querySelector("text").textContent.startsWith(ref));
+      return g ? g.getBoundingClientRect() : null;
+    };
+    const rootRect = rectOf("summary");
+    const mainRect = rectOf("1 ");
     const visibleEdges = [...document.querySelectorAll("#gEdges path.edge, #gXEdges path.edge, #gTop path.edge")]
       .filter(p => p.style.display !== "none");
     return {
       total: nodeEls.length,
-      hidden: nodeEls.filter(g => g.classList.contains("hide")).length,
       dim: nodeEls.filter(g => g.classList.contains("dim")).length,
       match: nodeEls.filter(g => g.classList.contains("match")).length,
       visibleEdges: visibleEdges.length,
-      count: document.getElementById("searchCount").textContent
+      count: document.getElementById("searchCount").textContent,
+      gap: rootRect && mainRect ? Math.round(Math.abs(mainRect.top - rootRect.top)) : null
     };
   });
-  ok("search: non-matching nodes are hidden, not dimmed", searchState.hidden === 8 && searchState.match === 1, searchState);
-  ok("search: the parents of the match stay as a masked skeleton", searchState.dim === 2, searchState);
+  ok("search: only the match and its path are rendered", searchState.total === 3 && searchState.match === 1 && searchState.dim === 2, searchState);
+  ok("search: the skeleton is compacted vertically", searchState.gap !== null && searchState.gap < 60, searchState);
   ok("search: only the skeleton keeps its edges", searchState.visibleEdges === 2, searchState);
   ok("search: result count is shown", searchState.count === "1 matches", searchState.count);
   await page.fill("#searchBox", "");
   await page.waitForTimeout(180);
-  const searchCleared = await page.evaluate(() => ({
-    hidden: [...document.querySelectorAll("#gNodes g")].filter(g => g.classList.contains("hide")).length,
-    total: document.querySelectorAll("#gNodes g").length,
-    visibleEdges: [...document.querySelectorAll("#gEdges path.edge, #gXEdges path.edge, #gTop path.edge")]
-      .filter(p => p.style.display !== "none").length
-  }));
-  ok("search: clearing restores every node and edge",
-    searchCleared.hidden === 0 && searchCleared.total === 10 && searchCleared.visibleEdges >= 11, searchCleared);
+  const searchCleared = await page.evaluate(() => {
+    const nodeEls = [...document.querySelectorAll("#gNodes g")];
+    const rectOf = ref => {
+      const g = nodeEls.find(el => el.querySelector("text").textContent.startsWith(ref));
+      return g ? g.getBoundingClientRect() : null;
+    };
+    const rootRect = rectOf("summary");
+    const mainRect = rectOf("1 ");
+    return {
+      total: nodeEls.length,
+      visibleEdges: [...document.querySelectorAll("#gEdges path.edge, #gXEdges path.edge, #gTop path.edge")]
+        .filter(p => p.style.display !== "none").length,
+      gap: rootRect && mainRect ? Math.round(Math.abs(mainRect.top - rootRect.top)) : null
+    };
+  });
+  ok("search: clearing restores every node and the original layout",
+    searchCleared.total === 10 && searchCleared.visibleEdges >= 11 && searchCleared.gap > 100, searchCleared);
+
+  await page.evaluate(() => document.getElementById("btnFit").click());
+  await page.keyboard.press("Control+3");
+  await page.waitForTimeout(120);
+  for (let i = 0; i < 4; i++) {
+    await page.keyboard.press("Control+=");
+    await page.waitForTimeout(60);
+  }
+  await page.waitForTimeout(150);
+  const crossing = await page.evaluate(() => {
+    const off = svgOffset();
+    const pad = 40;
+    const vx0 = (wrap.scrollLeft - off.x) / z - pad;
+    const vy0 = (wrap.scrollTop - off.y) / z - pad;
+    const vx1 = (wrap.scrollLeft + wrap.clientWidth - off.x) / z + pad;
+    const vy1 = (wrap.scrollTop + wrap.clientHeight - off.y) / z + pad;
+    const inView = r => r && r.x <= vx1 && r.x + r.w >= vx0 && r.y <= vy1 && r.y + r.h >= vy0;
+    const wr = document.getElementById("canvasWrap").getBoundingClientRect();
+    const edges = containsE.concat(crossE).filter(e => e._el && e._bb);
+    const across = edges.filter(e =>
+      !inView(pos.get(e.from)) && !inView(pos.get(e.to)) &&
+      e._bb.x0 <= vx1 && e._bb.x1 >= vx0 && e._bb.y0 <= vy1 && e._bb.y1 >= vy0);
+    const shown = across.filter(e => e._el.style.display !== "none");
+    let clientCross = 0;
+    shown.forEach(e => {
+      const r = e._el.getBoundingClientRect();
+      if (r.left <= wr.right && r.right >= wr.left && r.top <= wr.bottom && r.bottom >= wr.top) clientCross++;
+    });
+    return { across: across.length, shown: shown.length, clientCross };
+  });
+  ok("edges spanning off screen stay visible and really cross the view",
+    crossing.across > 0 && crossing.shown === crossing.across && crossing.clientCross > 0, crossing);
+  await page.evaluate(() => document.getElementById("btnFit").click());
+  await page.keyboard.press("Control+2");
+  await page.waitForTimeout(150);
 
   const edgeHit = await page.evaluate(() => {
     const hit = document.querySelector('path.edge-hit[data-from="6"][data-to="2"]');
