@@ -337,15 +337,22 @@ const state = page => page.evaluate(() => {
   }));
   ok("edge: minimal follow popup appears", popOpen.open && popOpen.type === "supports", popOpen);
   ok("edge: arrow points back when the selected node is the target end", popOpen.arrow === "\u2190", popOpen.arrow);
+  const taoNote = (() => {
+    const g = JSON.parse(fs.readFileSync(path.join(ROOT, "src/digestif/skill/runs/tao-misalignment.graph.json"), "utf8"));
+    const e = g.edges.find(x => x.from === "6" && x.to === "2" && x.type === "supports");
+    return e && e.note ? e.note : "";
+  })();
+  const popNote = await page.evaluate(() => document.getElementById("edgePopNote").textContent);
+  ok("edge: popup shows the relation note", taoNote.length > 0 && popNote === taoNote, [popNote, taoNote]);
   const edgeMarked = await page.evaluate(() => {
     const p = document.querySelector('#gTop path.edge[data-from="6"][data-to="2"]');
     return !!p && p.classList.contains("edge-sel");
   });
   ok("edge: clicked edge is highlighted and raised", edgeMarked);
-  await page.click("#edgeFollow");
+  await page.click("#edgePopType");
   await page.waitForTimeout(400);
   s = await state(page);
-  ok("edge: follow pans to the other end", s.selected === "6", s.selected);
+  ok("edge: clicking the popup body follows the edge", s.selected === "6", s.selected);
 
   await page.evaluate(() => {
     const w = document.getElementById("canvasWrap");
@@ -360,6 +367,28 @@ const state = page => page.evaluate(() => {
   ok("selected node edges stay bold when panned out of view",
     bold.total > 0 && bold.visible === bold.total, bold);
 
+  await page.evaluate(() => {
+    window.__samples = [];
+    const w = document.getElementById("canvasWrap");
+    const t0 = performance.now();
+    const rec = () => {
+      window.__samples.push([performance.now() - t0, w.scrollTop, w.scrollLeft]);
+      if (performance.now() - t0 < 600) requestAnimationFrame(rec);
+    };
+    requestAnimationFrame(rec);
+  });
+  await page.keyboard.press("ArrowDown");
+  await page.waitForTimeout(450);
+  const kbAnim = await page.evaluate(() => {
+    const s = window.__samples;
+    const first = s[0], last = s[s.length - 1];
+    const mid = s.filter(x => (x[1] !== first[1] || x[2] !== first[2]) && (x[1] !== last[1] || x[2] !== last[2]));
+    return { samples: s.length, mid: mid.length, last: [last[1], last[2]], first: [first[1], first[2]] };
+  });
+  ok("keyboard transitions animate the pan too", kbAnim.mid > 1 && (kbAnim.last[0] !== kbAnim.first[0] || kbAnim.last[1] !== kbAnim.first[1]), kbAnim);
+  await page.keyboard.press("ArrowUp");
+  await page.waitForTimeout(400);
+
   const reHit = await page.evaluate(() => {
     const hit = document.querySelector('path.edge-hit[data-from="6"][data-to="2"]');
     if (!hit) return null;
@@ -373,6 +402,28 @@ const state = page => page.evaluate(() => {
   ok("edge: panned-away edge is still clickable", reHit === true);
   const arrowFwd = await page.evaluate(() => document.getElementById("edgeFollow").textContent);
   ok("edge: arrow points forward when the selected node is the source end", arrowFwd === "\u2192", arrowFwd);
+  await page.click("#edgePopClose");
+  await page.waitForTimeout(120);
+  const closedPop = await page.evaluate(() => ({
+    open: document.getElementById("edgePop").classList.contains("open"),
+    marked: !!document.querySelector("path.edge.edge-sel")
+  }));
+  ok("edge: close button dismisses the popup and the highlight", !closedPop.open && !closedPop.marked, closedPop);
+  await page.evaluate(() => {
+    const hit = document.querySelector('path.edge-hit[data-from="6"][data-to="2"]');
+    const r = hit.getBoundingClientRect();
+    hit.dispatchEvent(new MouseEvent("click", {
+      bubbles: true, cancelable: true,
+      clientX: r.x + r.width / 2, clientY: r.y + r.height / 2
+    }));
+  });
+  await page.waitForTimeout(120);
+  await page.evaluate(() => {
+    const w = document.getElementById("canvasWrap");
+    w.scrollLeft = 0; w.scrollTop = 0;
+    w.dispatchEvent(new Event("scroll"));
+  });
+  await page.waitForTimeout(120);
   await page.evaluate(() => {
     window.__samples = [];
     const w = document.getElementById("canvasWrap");
