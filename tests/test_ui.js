@@ -25,7 +25,7 @@ const state = page => page.evaluate(() => {
   const sel = document.querySelector("#gNodes g.selected");
   const header = sel ? sel.querySelector("text").textContent : null;
   const w = document.querySelector("#canvasWrap");
-  const all = [...document.querySelectorAll("#gEdges path, #gXEdges path, #gTop path")];
+  const all = [...document.querySelectorAll("#gEdges path.edge, #gXEdges path.edge, #gTop path.edge")];
   return {
     nodes: document.querySelectorAll("#gNodes g").length,
     selected: header ? header.split(" ")[0] : null,
@@ -58,6 +58,8 @@ const state = page => page.evaluate(() => {
   ok("initial: panel open on root", s.panelOpen && s.panelTitle === "Node 0", s);
   ok("initial: 9 contains edges, 2 cross edges", s.containsPaths === 9 && s.xPaths === 2, s);
   ok("initial: nothing culled in view", s.hiddenPaths === 0, s.hiddenPaths);
+  const noBars = await page.evaluate(() => getComputedStyle(document.getElementById("canvasWrap")).scrollbarWidth);
+  ok("graph area hides scrollbars", noBars === "none", noBars);
 
   const panelInfo = await page.evaluate(() => {
     const p = document.getElementById("panel");
@@ -186,6 +188,52 @@ const state = page => page.evaluate(() => {
   await page.keyboard.press("Control+2");
   s = await state(page);
   ok("back to two layers after the search box check", s.nodes === 10 && s.selected === "2", s);
+
+  const edgeHit = await page.evaluate(() => {
+    const hit = document.querySelector('path.edge-hit[data-from="6"][data-to="2"]');
+    if (!hit) return null;
+    const r = hit.getBoundingClientRect();
+    const x = r.x + r.width / 2, y = r.y + r.height / 2;
+    hit.dispatchEvent(new MouseEvent("click", { bubbles: true, cancelable: true, clientX: x, clientY: y }));
+    return { x: Math.round(x), y: Math.round(y) };
+  });
+  ok("edge: cross edges are clickable", !!edgeHit, edgeHit);
+  const popOpen = await page.evaluate(() => ({
+    open: document.getElementById("edgePop").classList.contains("open"),
+    type: document.getElementById("edgePopType").textContent
+  }));
+  ok("edge: minimal follow popup appears", popOpen.open && popOpen.type === "supports", popOpen);
+  const edgeMarked = await page.evaluate(() => {
+    const p = document.querySelector('#gTop path.edge[data-from="6"][data-to="2"]');
+    return !!p && p.classList.contains("edge-sel");
+  });
+  ok("edge: clicked edge is highlighted and raised", edgeMarked);
+  await page.click("#edgeFollow");
+  await page.waitForTimeout(150);
+  s = await state(page);
+  ok("edge: follow pans to the other end", s.selected === "6", s.selected);
+
+  await page.evaluate(() => {
+    const w = document.getElementById("canvasWrap");
+    w.scrollLeft = 0; w.scrollTop = 0;
+    w.dispatchEvent(new Event("scroll"));
+  });
+  await page.waitForTimeout(120);
+  const bold = await page.evaluate(() => {
+    const paths = [...document.querySelectorAll("#gTop path.edge")];
+    return { total: paths.length, visible: paths.filter(p => p.style.display !== "none").length };
+  });
+  ok("selected node edges stay bold when panned out of view",
+    bold.total > 0 && bold.visible === bold.total, bold);
+
+  await page.evaluate(() => document.getElementById("btnFit").click());
+  await page.keyboard.press("ArrowUp");
+  await page.keyboard.press("ArrowUp");
+  await page.keyboard.press("ArrowUp");
+  await page.keyboard.press("ArrowUp");
+  await page.keyboard.press("Control+2");
+  s = await state(page);
+  ok("back to node 2 for the fold checks", s.selected === "2" && s.nodes === 10, s);
   await page.click("#pMode");
   await page.waitForTimeout(100);
 
@@ -326,7 +374,7 @@ const state = page => page.evaluate(() => {
   });
   await page.waitForTimeout(80);
   s = await state(page);
-  ok("scrolled to empty corner: all edges culled", s.hiddenPaths === 11, s);
+  ok("scrolled to empty corner: unrelated edges culled, selected node edges kept", s.hiddenPaths === 2, s);
   await page.evaluate(() => document.getElementById("btnFit").click());
   await page.waitForTimeout(80);
   s = await state(page);
@@ -589,6 +637,48 @@ const state = page => page.evaluate(() => {
   const noSrc = await page.evaluate(() => !document.getElementById("pMode"));
   ok("big graph: no source toggle without source text", noSrc);
   fs.rmSync(bigTmp, { recursive: true, force: true });
+
+  const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
+  await mobile.goto(TAO);
+  await mobile.waitForTimeout(400);
+  const m = await mobile.evaluate(() => ({
+    panelOpen: document.getElementById("panel").classList.contains("open"),
+    fab: getComputedStyle(document.getElementById("panelFab")).display,
+    wrapRight: document.getElementById("canvasWrap").style.right,
+    touchAction: getComputedStyle(document.getElementById("canvasWrap")).touchAction,
+    scrollbar: getComputedStyle(document.getElementById("canvasWrap")).scrollbarWidth
+  }));
+  ok("mobile: panel starts closed with a floating toggle", !m.panelOpen && m.fab === "flex", m);
+  ok("mobile: canvas owns touch gestures and hides scrollbars",
+    m.touchAction === "pan-x pan-y" && m.scrollbar === "none" && m.wrapRight !== undefined, m);
+  await mobile.tap("#panelFab");
+  await mobile.waitForTimeout(150);
+  const m2 = await mobile.evaluate(() => ({
+    open: document.getElementById("panel").classList.contains("open"),
+    fabShifted: document.getElementById("panelFab").classList.contains("shifted"),
+    wrapRight: document.getElementById("canvasWrap").style.right
+  }));
+  ok("mobile: floating toggle opens the drawer", m2.open && m2.fabShifted, m2);
+  ok("mobile: drawer overlays the graph without shrinking it", m2.wrapRight === "0px", m2.wrapRight);
+  const zBefore = await mobile.evaluate(() => z);
+  await mobile.evaluate(() => {
+    const wrap = document.getElementById("canvasWrap");
+    const mk = (type, pts) => {
+      const touches = pts.map((p, i) => new Touch({ identifier: i, target: wrap, clientX: p.x, clientY: p.y }));
+      return new TouchEvent(type, { touches, targetTouches: touches, changedTouches: touches, bubbles: true, cancelable: true });
+    };
+    wrap.dispatchEvent(mk("touchstart", [{ x: 120, y: 500 }, { x: 220, y: 500 }]));
+    wrap.dispatchEvent(mk("touchmove", [{ x: 80, y: 500 }, { x: 260, y: 500 }]));
+    wrap.dispatchEvent(mk("touchend", []));
+  });
+  await mobile.waitForTimeout(120);
+  const zAfter = await mobile.evaluate(() => z);
+  ok("mobile: pinch zooms the graph, not the page", zAfter > zBefore * 1.4, [zBefore, zAfter]);
+  await mobile.tap("#panelFab");
+  await mobile.waitForTimeout(150);
+  const m3 = await mobile.evaluate(() => document.getElementById("panel").classList.contains("open"));
+  ok("mobile: floating toggle closes the drawer", !m3, m3);
+  await mobile.close();
 
   ok("no page errors", errors.length === 0, errors);
 

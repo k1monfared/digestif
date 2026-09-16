@@ -31,11 +31,10 @@
   #topbar input[type="range"] { width: 120px; }
   #searchBox { width: 180px; cursor: text; }
   #searchCount { font-size: 12px; color: var(--muted); }
-  #canvasWrap { position: absolute; left: 0; right: 0; top: 52px; bottom: 0; overflow: auto; cursor: grab; }
+  #canvasWrap { position: absolute; left: 0; right: 0; top: 52px; bottom: 0; overflow: auto; cursor: grab; touch-action: pan-x pan-y; scrollbar-width: none; }
   #canvasWrap.panning { cursor: grabbing; }
   #world { padding: 110vh 110vw; width: max-content; }
-  #canvasWrap::-webkit-scrollbar { width: 10px; height: 10px; }
-  #canvasWrap::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 5px; }
+  #canvasWrap::-webkit-scrollbar { display: none; }
   svg { display: block; cursor: grab; }
   svg.panning { cursor: grabbing; }
   svg text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
@@ -97,6 +96,37 @@
   }
   #panelHandle.open { display: block; }
   #panelHandle:hover, #panelHandle.dragging { background: rgba(37, 99, 235, .25); }
+  #panelFab {
+    position: fixed; top: 60px; right: 12px; z-index: 27;
+    width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line);
+    background: rgba(255, 255, 255, .95); color: var(--ink); cursor: pointer;
+    display: none; align-items: center; justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .10);
+  }
+  #panelFab svg { width: 18px; height: 18px; display: block; }
+  #panelFab:hover { border-color: var(--accent); }
+  #edgePop {
+    position: fixed; z-index: 28; display: none; align-items: center; gap: 6px;
+    background: rgba(255, 255, 255, .97); border: 1px solid var(--line); border-radius: 999px;
+    padding: 3px 5px 3px 11px; box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+    font-size: 11.5px; color: var(--muted);
+  }
+  #edgePop.open { display: flex; }
+  #edgeFollow {
+    width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line);
+    background: #eef2ff; color: var(--accent); font-size: 14px; line-height: 1; cursor: pointer;
+  }
+  #edgeFollow:hover { border-color: var(--accent); }
+  .edge-hit { pointer-events: stroke; }
+  @media (max-width: 720px) {
+    #panelFab { display: flex; }
+    #panelFab.shifted { right: calc(min(88vw, 360px) + 20px); }
+    #panelHandle { display: none !important; }
+    #panel { width: min(88vw, 360px); top: 56px; }
+    #blPanel { max-width: calc(100vw - 24px); }
+    #searchBox { width: 120px; }
+    #topbar h1 { font-size: 14px; }
+  }
   .node rect { stroke-width: 1.2; }
   .node { cursor: pointer; }
   .node.dim { opacity: .12; pointer-events: none; }
@@ -104,6 +134,7 @@
   .node.selected rect { stroke: #111827; stroke-width: 2.6; }
   .edge { fill: none; }
   .edge.hl { stroke-width: 3; }
+  .edge.edge-sel { stroke-width: 4.5; }
   #gTop { pointer-events: none; }
 </style>
 </head>
@@ -143,6 +174,7 @@
       <span class="k">ctrl+0</span><span>unfold everything</span>
       <span class="k">ctrl+alt+1..9</span><span>focus the selected branch</span>
       <span class="k">source</span><span>sidebar toggle between excerpts and the full source</span>
+      <span class="k">edge</span><span>click an edge, then follow it to the other end</span>
       <span class="k">drag edge</span><span>resize the sidebar</span>
       <span class="k">click</span><span>select a node</span>
     </div>
@@ -154,6 +186,13 @@
 </div>
 <div id="panel"></div>
 <div id="panelHandle" title="drag to resize the sidebar"></div>
+<button id="panelFab" title="toggle the sidebar" aria-label="toggle the sidebar">
+  <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6">
+    <rect x="1.5" y="3" width="15" height="12" rx="2"></rect>
+    <line x1="11" y1="3" x2="11" y2="15"></line>
+  </svg>
+</button>
+<div id="edgePop"><span id="edgePopType"></span><button id="edgeFollow" title="follow this edge to the other end">&#8594;</button></div>
 <script>
 const GRAPH = {"meta": {"title": "Car ban paragraph, point graph", "source": "car-ban.txt", "passages": {"¶1": "Cities should ban cars from their centers.", "¶2": "Some argue this hurts businesses, but studies of Madrid and Oslo show retail revenue rose after restrictions.", "¶3": "Of course, buses and delivery vehicles must be exempt, otherwise goods do not reach shops.", "¶4": "Critics also say such bans only work in wealthy cities. That may be true today, yet the same was said of bike lanes, which now succeed in Bogota and Jakarta.", "¶5": "Public transit must expand first, though. A ban without transit is just displacement."}, "sourceText": "Cities should ban cars from their centers. Some argue this hurts businesses, but studies of Madrid and Oslo show retail revenue rose after restrictions. Of course, buses and delivery vehicles must be exempt, otherwise goods do not reach shops. Critics also say such bans only work in wealthy cities. That may be true today, yet the same was said of bike lanes, which now succeed in Bogota and Jakarta. Public transit must expand first, though. A ban without transit is just displacement.\n", "spans": {"¶1": [0, 42], "¶2": [43, 152], "¶3": [153, 243], "¶4": [244, 401], "¶5": [402, 487]}, "edgeTypes": {"supports": {"direction": "directed", "inverse": "supported-by", "style": "solid green"}, "exemplifies": {"direction": "directed", "inverse": "exemplified-by", "style": "dotted green"}, "contradicts": {"direction": "symmetric", "inverse": "contradicts", "style": "solid red"}, "qualifies": {"direction": "directed", "inverse": "qualified-by", "style": "dashed blue"}, "concedes": {"direction": "directed", "inverse": "conceded-by", "style": "dashed gray"}, "restates": {"direction": "symmetric", "inverse": "restates", "style": "dotted gray"}, "precondition": {"direction": "directed", "inverse": "prerequisite-of", "style": "solid orange"}, "contains": {"direction": "directed", "inverse": "contained-in", "style": "tree"}}}, "nodes": [{"id": "0", "type": "summary", "text": "Cities should ban car traffic from centers, but only after transit expands, since business-harm and elitism objections fail.", "attribution": "author", "source": ["¶1", "¶5"]}, {"id": "1", "type": "claim", "text": "Cities should ban cars from their centers.", "attribution": "author", "source": ["¶1"]}, {"id": "1.1", "type": "counterpoint", "text": "Car bans hurt businesses.", "attribution": "counter", "source": ["¶2"]}, {"id": "1.1.1", "type": "rebuttal", "text": "Retail revenue rose in Madrid and Oslo after restrictions.", "attribution": "author", "source": ["¶2"]}, {"id": "1.2", "type": "nuance", "text": "Buses and delivery vehicles must be exempt or goods cannot reach shops.", "attribution": "author", "source": ["¶3"]}, {"id": "2", "type": "counterpoint", "text": "Car bans only work in wealthy cities.", "attribution": "counter", "source": ["¶4"]}, {"id": "2.1", "type": "concession", "text": "This may be true today.", "attribution": "conceded", "source": ["¶4"]}, {"id": "2.2", "type": "rebuttal", "text": "The same objection was raised against bike lanes, now successful in Bogota and Jakarta.", "attribution": "author", "source": ["¶4"]}, {"id": "3", "type": "claim", "text": "Public transit must expand before any ban takes effect.", "attribution": "author", "source": ["¶5"]}, {"id": "3.1", "type": "nuance", "text": "A ban without transit is displacement, not improvement.", "attribution": "author", "source": ["¶5"]}], "edges": [{"from": "0", "to": "1", "type": "contains"}, {"from": "0", "to": "2", "type": "contains"}, {"from": "0", "to": "3", "type": "contains"}, {"from": "1", "to": "1.1", "type": "contains"}, {"from": "1.1", "to": "1.1.1", "type": "contains"}, {"from": "1", "to": "1.2", "type": "contains"}, {"from": "2", "to": "2.1", "type": "contains"}, {"from": "2", "to": "2.2", "type": "contains"}, {"from": "3", "to": "3.1", "type": "contains"}, {"from": "1.1.1", "to": "1.1", "type": "supports", "source": ["¶2"], "note": "study evidence rebuts the business-harm objection"}, {"from": "2.2", "to": "1", "type": "supports", "source": ["¶4"], "note": "historical analogy supports the main claim"}, {"from": "3", "to": "1", "type": "qualifies", "source": ["¶5"], "note": "scope limit: the ban is advocated conditionally"}]};
 
@@ -195,6 +234,7 @@ let collapsed = new Set(), opened = new Set(), forceVisible = new Set();
 let hiddenNodeTypes = new Set(), hiddenEdgeTypes = new Set();
 let selected = null, searchQ = "", sideMode = false, sideIdx = 0;
 let dragMoved = false, textDragged = false;
+let edgeSelected = null;
 let z = 1;
 let pos = new Map(), sizes = new Map(), vis = new Set();
 let contentW = 800, contentH = 600;
@@ -327,6 +367,23 @@ function edgeGeometry(a, b, dyA, dyB) {
   const xr = b.x + b.w, bend = 40;
   return `M ${x1} ${y1} C ${x1 + bend} ${y1}, ${xr + bend} ${y2}, ${xr} ${y2}`;
 }
+function addEdgeArtifacts(parent, e, d, attrs) {
+  const p = svgEl("path", Object.assign({ d }, attrs));
+  p.dataset.from = e.from;
+  p.dataset.to = e.to;
+  p.dataset.type = e.type;
+  parent.appendChild(p);
+  const hit = svgEl("path", { d, class: "edge-hit", stroke: "transparent", "stroke-width": 12, fill: "none" });
+  hit.dataset.from = e.from;
+  hit.dataset.to = e.to;
+  hit.dataset.type = e.type;
+  hit.addEventListener("click", ev => {
+    ev.stopPropagation();
+    selectEdge(e, ev.clientX, ev.clientY);
+  });
+  parent.appendChild(hit);
+  return { p, hit };
+}
 function edgesFor(id) {
   const out = [];
   containsE.forEach(e => { if (e.from === id || e.to === id) out.push({ e, home: gE }); });
@@ -335,14 +392,17 @@ function edgesFor(id) {
 }
 function setEdgeFocus(id, on) {
   edgesFor(id).forEach(({ e, home }) => {
-    const el = e._el;
-    if (!el) return;
-    if (on) {
-      if (el.parentNode) gTop.appendChild(el);
-      el.classList.add("hl");
-    } else if (selected !== id) {
-      if (el.parentNode === gTop) home.appendChild(el);
-      el.classList.remove("hl");
+    [e._el, e._hit].forEach(el => {
+      if (!el) return;
+      if (on) {
+        if (el.parentNode) gTop.appendChild(el);
+      } else if (selected !== id && el.parentNode === gTop) {
+        home.appendChild(el);
+      }
+    });
+    if (e._el) {
+      if (on) e._el.classList.add("hl");
+      else if (selected !== id) e._el.classList.remove("hl");
     }
   });
 }
@@ -391,30 +451,31 @@ function render() {
 
   containsE.forEach(e => {
     const pa = pos.get(e.from), pb = pos.get(e.to);
-    if (!pa || !pb || pa === pb) { e._el = null; return; }
-    const p = svgEl("path", { d: edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), class: "edge", stroke: "#9ca3af", "stroke-width": 1.4 });
+    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; return; }
+    const { p, hit } = addEdgeArtifacts(gE, e, edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)),
+      { class: "edge", stroke: "#9ca3af", "stroke-width": 1.4 });
     e._el = p;
-    gE.appendChild(p);
+    e._hit = hit;
   });
 
   crossE.forEach(e => {
-    if (hiddenEdgeTypes.has(e.type)) { e._el = null; return; }
+    if (hiddenEdgeTypes.has(e.type)) { e._el = null; e._hit = null; return; }
     const pa = pos.get(e.from), pb = pos.get(e.to);
-    if (!pa || !pb || pa === pb) { e._el = null; return; }
+    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; return; }
     const st = styleOf(e.type);
     const sym = registry[e.type] && registry[e.type].direction === "symmetric";
-    const attrs = { d: edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), class: "edge xedge", stroke: st.color, "stroke-width": 1.7 };
+    const attrs = { class: "edge xedge", stroke: st.color, "stroke-width": 1.7 };
     if (st.dash) attrs["stroke-dasharray"] = st.dash;
     attrs["marker-end"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
     if (sym) attrs["marker-start"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
-    const p = svgEl("path", attrs);
+    const { p, hit } = addEdgeArtifacts(gX, e, edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), attrs);
     const tip = svgEl("title", {});
     tip.textContent = `${e.type}: ${textOf(e.from)} -> ${textOf(e.to)}` +
       (e.source && e.source.length ? `  (${e.source.join(", ")})` : "") +
       (e.note ? `  note: ${e.note}` : "");
     p.appendChild(tip);
     e._el = p;
-    gX.appendChild(p);
+    e._hit = hit;
   });
 
   const searching = searchQ.length > 0;
@@ -479,7 +540,15 @@ function render() {
         gTop.appendChild(e._el);
         e._el.classList.add("hl");
       }
+      if (e._hit) gTop.appendChild(e._hit);
     });
+  }
+  if (edgeSelected) {
+    if (edgeSelected._el) {
+      gTop.appendChild(edgeSelected._el);
+      edgeSelected._el.classList.add("edge-sel");
+    }
+    if (edgeSelected._hit) gTop.appendChild(edgeSelected._hit);
   }
   updateCulling();
   updateSourceHighlights(false);
@@ -494,9 +563,40 @@ function updateCulling() {
   const vy1 = (wrap.scrollTop + wrap.clientHeight - off.y) / z + pad;
   const inView = r => r && r.x <= vx1 && r.x + r.w >= vx0 && r.y <= vy1 && r.y + r.h >= vy0;
   containsE.concat(crossE).forEach(e => {
-    if (!e._el) return;
-    e._el.style.display = (inView(pos.get(e.from)) || inView(pos.get(e.to))) ? "" : "none";
+    if (!e._el && !e._hit) return;
+    const keep = e === edgeSelected || (selected && (e.from === selected || e.to === selected));
+    const on = keep || inView(pos.get(e.from)) || inView(pos.get(e.to));
+    if (e._el) e._el.style.display = on ? "" : "none";
+    if (e._hit) e._hit.style.display = on ? "" : "none";
   });
+}
+function selectEdge(e, x, y) {
+  edgeSelected = e;
+  render();
+  document.getElementById("edgePopType").textContent = e.type;
+  const pop = document.getElementById("edgePop");
+  pop.style.left = Math.min(Math.max(x + 14, 8), window.innerWidth - 150) + "px";
+  pop.style.top = Math.min(Math.max(y + 14, 8), window.innerHeight - 52) + "px";
+  pop.classList.add("open");
+}
+function hideEdgePop() {
+  document.getElementById("edgePop").classList.remove("open");
+}
+function clearEdgeSelection() {
+  if (!edgeSelected) { hideEdgePop(); return; }
+  edgeSelected = null;
+  hideEdgePop();
+  render();
+}
+function followEdge() {
+  if (!edgeSelected) return;
+  const e = edgeSelected;
+  let target = e.to;
+  if (selected && e.from === selected && e.to !== selected) target = e.to;
+  else if (selected && e.to === selected && e.from !== selected) target = e.from;
+  edgeSelected = null;
+  hideEdgePop();
+  select(target);
 }
 
 function svgOffset() {
@@ -587,6 +687,8 @@ function keepSelectedAnchored(fn) {
 }
 function jump(id) {
   if (!nodes.has(id)) return;
+  edgeSelected = null;
+  hideEdgePop();
   forceVisible.clear();
   for (let p = parent.get(id); p !== undefined; p = parent.get(p)) {
     collapsed.delete(p);
@@ -600,6 +702,8 @@ function jump(id) {
 }
 function select(id) {
   if (!nodes.has(id)) return;
+  edgeSelected = null;
+  hideEdgePop();
   selected = id;
   render();
   ensureVisible(id);
@@ -671,12 +775,18 @@ function closePanel() {
 let panelW = 330;
 let panelMode = "excerpts";
 let sourceBodyEl = null;
+function isMobile() {
+  return window.innerWidth <= 720;
+}
 function applyPanelWidth() {
+  const mobile = isMobile();
   const max = Math.max(260, Math.round(window.innerWidth * 0.75));
   panelW = Math.min(Math.max(panelW, 260), max);
-  document.getElementById("panel").style.width = panelW + "px";
+  const panel = document.getElementById("panel");
+  panel.style.width = mobile ? "" : panelW + "px";
   document.getElementById("panelHandle").style.right = (panelW + 10) + "px";
-  wrap.style.right = (panelW + 24) + "px";
+  wrap.style.right = mobile ? "0px" : (panelW + 24) + "px";
+  document.getElementById("panelFab").classList.toggle("shifted", mobile && panel.classList.contains("open"));
   updateCulling();
 }
 function panelItems() {
@@ -860,6 +970,7 @@ function init() {
   const fitCanvasToTopbar = () => {
     wrap.style.top = topbar.offsetHeight + "px";
     document.getElementById("panelHandle").style.top = topbar.offsetHeight + "px";
+    document.getElementById("panelFab").style.top = (topbar.offsetHeight + 10) + "px";
   };
   fitCanvasToTopbar();
   window.addEventListener("resize", () => { fitCanvasToTopbar(); applyPanelWidth(); });
@@ -867,8 +978,19 @@ function init() {
   if (GRAPH.meta && GRAPH.meta.sourceText) sourceBodyEl = buildSourceBody();
   selected = nodes.has("0") ? "0" : null;
   render();
-  if (selected) buildPanel(selected);
+  if (selected && !isMobile()) buildPanel(selected);
   fitView();
+
+  document.getElementById("panelFab").addEventListener("click", () => {
+    const panel = document.getElementById("panel");
+    if (panel.classList.contains("open")) {
+      closePanel();
+      render();
+    } else {
+      buildPanel(selected || "0");
+    }
+  });
+  document.getElementById("edgeFollow").addEventListener("click", followEdge);
 
   const handle = document.getElementById("panelHandle");
   let resize = null;
@@ -899,6 +1021,7 @@ function init() {
     }
     ndText = null;
     ev.preventDefault();
+    hideEdgePop();
     const domSel = window.getSelection();
     if (domSel && domSel.toString()) domSel.removeAllRanges();
     drag = { x: ev.clientX, y: ev.clientY, sl: wrap.scrollLeft, st: wrap.scrollTop };
@@ -926,6 +1049,7 @@ function init() {
   wrap.addEventListener("click", ev => {
     if (dragMoved) return;
     if (ev.target === svg || ev.target === wrap) {
+      clearEdgeSelection();
       selected = null;
       closePanel();
       render();
@@ -936,6 +1060,7 @@ function init() {
   wrap.addEventListener("wheel", ev => {
     if (ev.ctrlKey) {
       ev.preventDefault();
+      hideEdgePop();
       const wrapRect = wrap.getBoundingClientRect();
       const k = ev.deltaY > 0 ? 1 / 1.12 : 1.12;
       zoomAt(ev.clientX - wrapRect.left, ev.clientY - wrapRect.top, k);
@@ -945,8 +1070,38 @@ function init() {
   wrap.addEventListener("scroll", () => {
     if (cullPending) return;
     cullPending = true;
-    requestAnimationFrame(() => { cullPending = false; updateCulling(); });
+    requestAnimationFrame(() => {
+      cullPending = false;
+      updateCulling();
+    });
   }, { passive: true });
+
+  let pinch = null;
+  wrap.addEventListener("touchstart", ev => {
+    if (ev.touches.length === 2) {
+      const a = ev.touches[0], b = ev.touches[1];
+      pinch = { d: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY) };
+      ev.preventDefault();
+    }
+  }, { passive: false });
+  wrap.addEventListener("touchmove", ev => {
+    if (!pinch || ev.touches.length !== 2) return;
+    ev.preventDefault();
+    const a = ev.touches[0], b = ev.touches[1];
+    const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+    if (d > 0 && pinch.d > 0) {
+      const rect = wrap.getBoundingClientRect();
+      const mx = (a.clientX + b.clientX) / 2 - rect.left;
+      const my = (a.clientY + b.clientY) / 2 - rect.top;
+      zoomAt(mx, my, d / pinch.d);
+    }
+    pinch.d = d;
+  }, { passive: false });
+  wrap.addEventListener("touchend", ev => {
+    if (ev.touches.length < 2) pinch = null;
+  });
+  wrap.addEventListener("touchcancel", () => { pinch = null; });
+  wrap.addEventListener("touchmove", () => hideEdgePop(), { passive: true });
 
   document.getElementById("btnAll").addEventListener("click", () => {
     keepSelectedAnchored(() => { showLayers = maxDepth + 1; render(); });
@@ -1087,6 +1242,7 @@ function init() {
         break;
       }
       case "Escape":
+        if (edgeSelected) { clearEdgeSelection(); break; }
         if (selected) {
           selected = null;
           closePanel();

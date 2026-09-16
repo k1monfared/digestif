@@ -31,11 +31,10 @@
   #topbar input[type="range"] { width: 120px; }
   #searchBox { width: 180px; cursor: text; }
   #searchCount { font-size: 12px; color: var(--muted); }
-  #canvasWrap { position: absolute; left: 0; right: 0; top: 52px; bottom: 0; overflow: auto; cursor: grab; }
+  #canvasWrap { position: absolute; left: 0; right: 0; top: 52px; bottom: 0; overflow: auto; cursor: grab; touch-action: pan-x pan-y; scrollbar-width: none; }
   #canvasWrap.panning { cursor: grabbing; }
   #world { padding: 110vh 110vw; width: max-content; }
-  #canvasWrap::-webkit-scrollbar { width: 10px; height: 10px; }
-  #canvasWrap::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 5px; }
+  #canvasWrap::-webkit-scrollbar { display: none; }
   svg { display: block; cursor: grab; }
   svg.panning { cursor: grabbing; }
   svg text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
@@ -97,6 +96,37 @@
   }
   #panelHandle.open { display: block; }
   #panelHandle:hover, #panelHandle.dragging { background: rgba(37, 99, 235, .25); }
+  #panelFab {
+    position: fixed; top: 60px; right: 12px; z-index: 27;
+    width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line);
+    background: rgba(255, 255, 255, .95); color: var(--ink); cursor: pointer;
+    display: none; align-items: center; justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .10);
+  }
+  #panelFab svg { width: 18px; height: 18px; display: block; }
+  #panelFab:hover { border-color: var(--accent); }
+  #edgePop {
+    position: fixed; z-index: 28; display: none; align-items: center; gap: 6px;
+    background: rgba(255, 255, 255, .97); border: 1px solid var(--line); border-radius: 999px;
+    padding: 3px 5px 3px 11px; box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+    font-size: 11.5px; color: var(--muted);
+  }
+  #edgePop.open { display: flex; }
+  #edgeFollow {
+    width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line);
+    background: #eef2ff; color: var(--accent); font-size: 14px; line-height: 1; cursor: pointer;
+  }
+  #edgeFollow:hover { border-color: var(--accent); }
+  .edge-hit { pointer-events: stroke; }
+  @media (max-width: 720px) {
+    #panelFab { display: flex; }
+    #panelFab.shifted { right: calc(min(88vw, 360px) + 20px); }
+    #panelHandle { display: none !important; }
+    #panel { width: min(88vw, 360px); top: 56px; }
+    #blPanel { max-width: calc(100vw - 24px); }
+    #searchBox { width: 120px; }
+    #topbar h1 { font-size: 14px; }
+  }
   .node rect { stroke-width: 1.2; }
   .node { cursor: pointer; }
   .node.dim { opacity: .12; pointer-events: none; }
@@ -104,6 +134,7 @@
   .node.selected rect { stroke: #111827; stroke-width: 2.6; }
   .edge { fill: none; }
   .edge.hl { stroke-width: 3; }
+  .edge.edge-sel { stroke-width: 4.5; }
   #gTop { pointer-events: none; }
 </style>
 </head>
@@ -143,6 +174,7 @@
       <span class="k">ctrl+0</span><span>unfold everything</span>
       <span class="k">ctrl+alt+1..9</span><span>focus the selected branch</span>
       <span class="k">source</span><span>sidebar toggle between excerpts and the full source</span>
+      <span class="k">edge</span><span>click an edge, then follow it to the other end</span>
       <span class="k">drag edge</span><span>resize the sidebar</span>
       <span class="k">click</span><span>select a node</span>
     </div>
@@ -154,6 +186,13 @@
 </div>
 <div id="panel"></div>
 <div id="panelHandle" title="drag to resize the sidebar"></div>
+<button id="panelFab" title="toggle the sidebar" aria-label="toggle the sidebar">
+  <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6">
+    <rect x="1.5" y="3" width="15" height="12" rx="2"></rect>
+    <line x1="11" y1="3" x2="11" y2="15"></line>
+  </svg>
+</button>
+<div id="edgePop"><span id="edgePopType"></span><button id="edgeFollow" title="follow this edge to the other end">&#8594;</button></div>
 <script>
 const GRAPH = {"meta": {"title": "A Severe Misalignment of AI in Mathematics (Terence Tao, 2026)", "source": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/", "passages": {"¶1": "I am proud to be among the list of 25 initial signatories — all Fields Medallists — to the declaration below, which grew out of discussions between ourselves over the last week.", "¶2": "We have also posted our declaration on this web page, and (similarly to the Leiden declaration) invite further signatures. (It is unfortunate that we did not have the time to have a more consultative process, as with Leiden; but we decided that the urgency of the situation was such that we needed to release a statement sooner rather than later.)", "¶3": "See also this recent article in the Economist regarding our declaration.", "¶4": "Over the last few months, the mathematical capabilities of LLMs have improved dramatically, to the point that they can solve major outstanding problems in many fields of mathematics.", "¶5": "However, the push by AI companies to solve mathematical problems as a benchmark is detrimental to the science of mathematics, and to the mathematical community. The goals of the AI companies and the goals of the mathematical community are severely misaligned.", "¶6": "We see these as part of broader alignment issues impacting other scientific and creative professions, as well as the whole of society.", "¶7": "Research mathematics deals with understanding basic structures of shapes, numbers, and natural phenomena. Over the course of generations, it has built a large corpus of sophisticated ideas, methods, abstractions, and other tools to comprehend the mathematical landscape. In turn, modern technologies and sciences are based on mathematical tools.", "¶8": "Famous problems have often served as landmarks and lighthouses against which one can measure an improved understanding of this landscape.", "¶9": "Solving one of these problems has been a certain sign of new insights and interesting methods, which would then be studied by a community of mathematicians, through a long and arduous process of talks, discussions, simplifications.", "¶10": "At the end of this process, one will ideally find a textbook presentation of the results suitable for any graduate or even undergraduate student to study.", "¶11": "Some of the mathematical ideas pursue their journey even further to become, decades or centuries after, tools that are understood and used by the whole population.", "¶12": "The mathematical community functions, in many ways, as a miniature version of humanity.", "¶13": "It consists of individuals using a wide variety of different approaches, joined by core values.", "¶14": "The most precious resources of our profession are students and ideas, and these we nurture with great care.", "¶15": "We feel responsible to let them grow to their full potential, until they can live a life of their own in the mathematical world.", "¶16": "For students we often suggest problems with the core intention of developing skills making them well-positioned for advances in research and elsewhere.", "¶17": "Our ideas we disseminate in talks, private discussions and careful writeups, connecting them to the previous ideas of others.", "¶18": "These processes invariably take time and are based on human interaction.", "¶19": "In recent months, the success of AI in solving major mathematical problems has made headlines even outside mathematical circles.", "¶20": "But solving problems is only a tool and proxy for achieving the primary goal of conceptual understanding and insight.", "¶21": "Forgetting this in the world of AI may turn the tool against the primary goal.", "¶22": "Indeed, the mass production at faster and faster pace of “true/false” statements could destroy fertile ground instead of breathing life into new ideas.", "¶23": "Often these solutions are announced in a rush, leaving no time for a proper writeup, the isolation of new methods and ideas, and citing relevant previous work of others.", "¶24": "As in all creative professions, this raises severe attribution and plagiarism questions.", "¶25": "Moreover, without the willing mathematicians who must take care of their development and integration into the mathematical canon, AI-conceived ideas would never become fully alive and the crucial human transmission chain between mathematicians would be lost.", "¶26": "We are witnessing a general threat to intellectual work, with misalignment between the outcome of the use of AI and its initial purpose.", "¶27": "In many fields and activities, years of training have traditionally served not only to produce a final answer or product, but also to develop understanding and the ability to formulate new questions and ideas.", "¶28": "However, building on a vast body of previous human work, AI systems are becoming increasingly capable of producing the results of such work directly, and these goals cease to align.", "¶29": "The issues the mathematical community faces now are similar to issues that other scientific and creative professions are facing, and indicate issues that all of humanity might face: how to make sure that, as AI changes the way work is done, we do not lose sight of what that work was meant to achieve in the first place.", "¶30": "AI offers the potential of enhancing and accelerating genuine mathematical study and understanding.", "¶31": "Mathematics as a profession will need to adapt to these changes in several ways.", "¶32": "However, whether these changes ultimately benefit the field or have a destructive effect will in large part be determined by the decisions of the humans in control of this new technology.", "¶33": "These issues must be addressed urgently, in the mathematical community, by the companies developing these technologies and, more broadly, by a society that will confront similar problems in many other forms of intellectual work.", "¶34": "Signatories: Artur Avila (Fields Medal 2014), Manjul Bhargava (2014), Caucher Birkar (2018), Pierre Deligne (1978), Yu Deng (2026), Simon Donaldson (1986), Hugo Duminil-Copin (2022), Alessio Figalli (2018), Martin Hairer (2014), June Huh (2022), Maxim Kontsevich (1998), Elon Lindenstrauss (2010), Pierre-Louis Lions (1994), James Maynard (2022), Curt McMullen (1998), Shigefumi Mori (1990), Ngô Bảo Châu (2010), Andrei Okounkov (2006), Peter Scholze (2018), Stanislav Smirnov (2010), Terence Tao (2006), Maryna Viazovska (2022), Cédric Villani (2010), Wendelin Werner (2006), Efim Zelmanov (1994)."}, "sourceText": "A Severe Misalignment of AI in Mathematics\nTerence Tao, 11 September 2026\nhttps://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/\n\nI am proud to be among the list of 25 initial signatories — all Fields Medallists — to the declaration below, which grew out of discussions between ourselves over the last week. We have also posted our declaration on this web page, and (similarly to the Leiden declaration) invite further signatures. (It is unfortunate that we did not have the time to have a more consultative process, as with Leiden; but we decided that the urgency of the situation was such that we needed to release a statement sooner rather than later.)\n\nSee also this recent article in the Economist regarding our declaration.\n\nOver the last few months, the mathematical capabilities of LLMs have improved dramatically, to the point that they can solve major outstanding problems in many fields of mathematics. However, the push by AI companies to solve mathematical problems as a benchmark is detrimental to the science of mathematics, and to the mathematical community. The goals of the AI companies and the goals of the mathematical community are severely misaligned. We see these as part of broader alignment issues impacting other scientific and creative professions, as well as the whole of society.\n\nResearch mathematics deals with understanding basic structures of shapes, numbers, and natural phenomena. Over the course of generations, it has built a large corpus of sophisticated ideas, methods, abstractions, and other tools to comprehend the mathematical landscape. In turn, modern technologies and sciences are based on mathematical tools.\n\nFamous problems have often served as landmarks and lighthouses against which one can measure an improved understanding of this landscape. Solving one of these problems has been a certain sign of new insights and interesting methods, which would then be studied by a community of mathematicians, through a long and arduous process of talks, discussions, simplifications. At the end of this process, one will ideally find a textbook presentation of the results suitable for any graduate or even undergraduate student to study. Some of the mathematical ideas pursue their journey even further to become, decades or centuries after, tools that are understood and used by the whole population.\n\nThe mathematical community functions, in many ways, as a miniature version of humanity. It consists of individuals using a wide variety of different approaches, joined by core values. The most precious resources of our profession are students and ideas, and these we nurture with great care. We feel responsible to let them grow to their full potential, until they can live a life of their own in the mathematical world. For students we often suggest problems with the core intention of developing skills making them well-positioned for advances in research and elsewhere. Our ideas we disseminate in talks, private discussions and careful writeups, connecting them to the previous ideas of others. These processes invariably take time and are based on human interaction.\n\nIn recent months, the success of AI in solving major mathematical problems has made headlines even outside mathematical circles. But solving problems is only a tool and proxy for achieving the primary goal of conceptual understanding and insight. Forgetting this in the world of AI may turn the tool against the primary goal. Indeed, the mass production at faster and faster pace of “true/false” statements could destroy fertile ground instead of breathing life into new ideas.\n\nOften these solutions are announced in a rush, leaving no time for a proper writeup, the isolation of new methods and ideas, and citing relevant previous work of others. As in all creative professions, this raises severe attribution and plagiarism questions. Moreover, without the willing mathematicians who must take care of their development and integration into the mathematical canon, AI-conceived ideas would never become fully alive and the crucial human transmission chain between mathematicians would be lost.\n\nWe are witnessing a general threat to intellectual work, with misalignment between the outcome of the use of AI and its initial purpose. In many fields and activities, years of training have traditionally served not only to produce a final answer or product, but also to develop understanding and the ability to formulate new questions and ideas. However, building on a vast body of previous human work, AI systems are becoming increasingly capable of producing the results of such work directly, and these goals cease to align. The issues the mathematical community faces now are similar to issues that other scientific and creative professions are facing, and indicate issues that all of humanity might face: how to make sure that, as AI changes the way work is done, we do not lose sight of what that work was meant to achieve in the first place.\n\nAI offers the potential of enhancing and accelerating genuine mathematical study and understanding. Mathematics as a profession will need to adapt to these changes in several ways. However, whether these changes ultimately benefit the field or have a destructive effect will in large part be determined by the decisions of the humans in control of this new technology.\n\nThese issues must be addressed urgently, in the mathematical community, by the companies developing these technologies and, more broadly, by a society that will confront similar problems in many other forms of intellectual work.\n\nSignatories: Artur Avila (Fields Medal 2014), Manjul Bhargava (2014), Caucher Birkar (2018), Pierre Deligne (1978), Yu Deng (2026), Simon Donaldson (1986), Hugo Duminil-Copin (2022), Alessio Figalli (2018), Martin Hairer (2014), June Huh (2022), Maxim Kontsevich (1998), Elon Lindenstrauss (2010), Pierre-Louis Lions (1994), James Maynard (2022), Curt McMullen (1998), Shigefumi Mori (1990), Ngô Bảo Châu (2010), Andrei Okounkov (2006), Peter Scholze (2018), Stanislav Smirnov (2010), Terence Tao (2006), Maryna Viazovska (2022), Cédric Villani (2010), Wendelin Werner (2006), Efim Zelmanov (1994).\n", "spans": {"¶1": [161, 338], "¶2": [339, 686], "¶3": [688, 760], "¶4": [762, 944], "¶5": [945, 1204], "¶6": [1205, 1339], "¶7": [1341, 1686], "¶8": [1688, 1825], "¶9": [1826, 2057], "¶10": [2058, 2212], "¶11": [2213, 2376], "¶12": [2378, 2465], "¶13": [2466, 2561], "¶14": [2562, 2669], "¶15": [2670, 2798], "¶16": [2799, 2950], "¶17": [2951, 3076], "¶18": [3077, 3149], "¶19": [3151, 3279], "¶20": [3280, 3397], "¶21": [3398, 3476], "¶22": [3477, 3628], "¶23": [3630, 3799], "¶24": [3800, 3888], "¶25": [3889, 4147], "¶26": [4149, 4285], "¶27": [4286, 4495], "¶28": [4496, 4677], "¶29": [4678, 4998], "¶30": [5000, 5099], "¶31": [5100, 5180], "¶32": [5181, 5368], "¶33": [5370, 5598], "¶34": [5600, 6198]}, "edgeTypes": {"supports": {"direction": "directed", "inverse": "supported-by", "style": "solid green"}, "exemplifies": {"direction": "directed", "inverse": "exemplified-by", "style": "dotted green"}, "contradicts": {"direction": "symmetric", "inverse": "contradicts", "style": "solid red"}, "qualifies": {"direction": "directed", "inverse": "qualified-by", "style": "dashed blue"}, "concedes": {"direction": "directed", "inverse": "conceded-by", "style": "dashed gray"}, "restates": {"direction": "symmetric", "inverse": "restates", "style": "dotted gray"}, "precondition": {"direction": "directed", "inverse": "prerequisite-of", "style": "solid orange"}, "contains": {"direction": "directed", "inverse": "contained-in", "style": "tree"}}}, "nodes": [{"id": "0", "type": "summary", "text": "Twenty-five Fields Medallists warn that benchmark-driven AI problem-solving is severely misaligned with the goals of the mathematical community.", "attribution": "author", "source": ["¶1", "¶5"]}, {"id": "1", "type": "claim", "text": "Twenty-five Fields Medallists jointly signed a declaration, posted it publicly, and invite further signatures.", "attribution": "author", "source": ["¶1", "¶2"]}, {"id": "1.1", "type": "nuance", "text": "The statement was released urgently, without the consultative process used for the earlier Leiden declaration.", "attribution": "author", "source": ["¶2"]}, {"id": "1.2", "type": "evidence", "text": "An Economist article covers the declaration.", "attribution": "reported", "source": ["¶3"]}, {"id": "1.3", "type": "evidence", "text": "The 25 signatories are all Fields Medallists, from Deligne (1978) to Deng (2026).", "attribution": "author", "source": ["¶34"]}, {"id": "2", "type": "claim", "text": "Using mathematics as an AI benchmark is detrimental to the science and to its community.", "attribution": "author", "source": ["¶5"]}, {"id": "2.1", "type": "evidence", "text": "LLM mathematical capability has improved dramatically, now solving major outstanding problems across many fields.", "attribution": "author", "source": ["¶4"]}, {"id": "2.2", "type": "claim", "text": "The goals of AI companies and of the mathematical community are severely misaligned.", "attribution": "author", "source": ["¶5"]}, {"id": "2.3", "type": "claim", "text": "This is part of broader alignment issues affecting other professions and society at large.", "attribution": "author", "source": ["¶6"]}, {"id": "3", "type": "claim", "text": "Research mathematics seeks understanding of basic structures; its accumulated tools underpin modern technologies and sciences.", "attribution": "author", "source": ["¶7"]}, {"id": "4", "type": "claim", "text": "Famous problems serve as landmarks, and solving one signals insights the community slowly digests.", "attribution": "author", "source": ["¶8", "¶9"]}, {"id": "4.1", "type": "claim", "text": "Famous problems are landmarks and lighthouses for measuring improved understanding.", "attribution": "author", "source": ["¶8"]}, {"id": "4.2", "type": "claim", "text": "A solution is a certain sign of new insights and interesting methods.", "attribution": "author", "source": ["¶9"]}, {"id": "4.3", "type": "claim", "text": "The community studies results through long, arduous talks, discussions, and simplifications.", "attribution": "author", "source": ["¶9"]}, {"id": "4.4", "type": "nuance", "text": "Ideally the journey ends in a textbook any undergraduate can study.", "attribution": "author", "source": ["¶10"]}, {"id": "4.5", "type": "claim", "text": "Some ideas become tools used by the whole population, decades or centuries later.", "attribution": "author", "source": ["¶11"]}, {"id": "5", "type": "claim", "text": "The mathematical community works as a miniature humanity, individuals joined by core values.", "attribution": "author", "source": ["¶12", "¶13"]}, {"id": "5.1", "type": "claim", "text": "Its most precious resources are students and ideas, nurtured to live lives of their own.", "attribution": "author", "source": ["¶14", "¶15"]}, {"id": "5.2", "type": "claim", "text": "Students get problems chosen to develop research-ready skills.", "attribution": "author", "source": ["¶16"]}, {"id": "5.3", "type": "claim", "text": "Ideas are disseminated through talks, discussions, and careful writeups connected to prior work.", "attribution": "author", "source": ["¶17"]}, {"id": "5.4", "type": "claim", "text": "These processes invariably take time and rest on human interaction.", "attribution": "author", "source": ["¶18"]}, {"id": "6", "type": "claim", "text": "Solving problems is only a proxy for the primary goal: conceptual understanding and insight.", "attribution": "author", "source": ["¶20"]}, {"id": "6.1", "type": "evidence", "text": "AI successes on major problems recently made headlines beyond mathematics.", "attribution": "author", "source": ["¶19"]}, {"id": "6.2", "type": "claim", "text": "Forgetting the proxy role in the AI world may turn the tool against the goal.", "attribution": "author", "source": ["¶21"]}, {"id": "6.3", "type": "claim", "text": "Mass-producing true/false statements at ever faster pace could destroy fertile ground rather than inspire ideas.", "attribution": "author", "source": ["¶22"]}, {"id": "7", "type": "claim", "text": "Current AI practice brings concrete harms to the mathematical ecosystem.", "attribution": "author", "source": ["¶23", "¶25"]}, {"id": "7.1", "type": "claim", "text": "Solutions announced in a rush leave no time for proper writeup, method isolation, or citing prior work.", "attribution": "author", "source": ["¶23"]}, {"id": "7.2", "type": "claim", "text": "This raises severe attribution and plagiarism questions, as in all creative professions.", "attribution": "author", "source": ["¶24"]}, {"id": "7.3", "type": "claim", "text": "Without mathematicians integrating AI ideas into the canon, the human transmission chain is lost.", "attribution": "author", "source": ["¶25"]}, {"id": "8", "type": "claim", "text": "The misalignment is a general threat to intellectual work, reaching all of humanity.", "attribution": "author", "source": ["¶26", "¶29"]}, {"id": "8.1", "type": "claim", "text": "Long training traditionally built understanding and the capacity to pose new questions, not just answers.", "attribution": "author", "source": ["¶27"]}, {"id": "8.2", "type": "claim", "text": "AI increasingly delivers the final results of such work directly.", "attribution": "author", "source": ["¶28"]}, {"id": "8.3", "type": "claim", "text": "As AI changes how work is done, humanity must not lose sight of work's purpose.", "attribution": "author", "source": ["¶29"]}, {"id": "9", "type": "claim", "text": "The outcome depends on human decisions, and the issues demand urgent action.", "attribution": "author", "source": ["¶32", "¶33"]}, {"id": "9.1", "type": "claim", "text": "AI holds genuine potential to enhance and accelerate mathematical study and understanding.", "attribution": "author", "source": ["¶30"]}, {"id": "9.2", "type": "claim", "text": "Mathematics as a profession will need to adapt in several ways.", "attribution": "author", "source": ["¶31"]}, {"id": "9.3", "type": "nuance", "text": "Benefit or destruction will largely be decided by the humans controlling the technology.", "attribution": "author", "source": ["¶32"]}, {"id": "9.4", "type": "claim", "text": "The issues must be addressed urgently by the community, the companies, and society.", "attribution": "author", "source": ["¶33"]}], "edges": [{"from": "0", "to": "1", "type": "contains"}, {"from": "0", "to": "2", "type": "contains"}, {"from": "0", "to": "3", "type": "contains"}, {"from": "0", "to": "4", "type": "contains"}, {"from": "0", "to": "5", "type": "contains"}, {"from": "0", "to": "6", "type": "contains"}, {"from": "0", "to": "7", "type": "contains"}, {"from": "0", "to": "8", "type": "contains"}, {"from": "0", "to": "9", "type": "contains"}, {"from": "1", "to": "1.1", "type": "contains"}, {"from": "1", "to": "1.2", "type": "contains"}, {"from": "1", "to": "1.3", "type": "contains"}, {"from": "2", "to": "2.1", "type": "contains"}, {"from": "2", "to": "2.2", "type": "contains"}, {"from": "2", "to": "2.3", "type": "contains"}, {"from": "4", "to": "4.1", "type": "contains"}, {"from": "4", "to": "4.2", "type": "contains"}, {"from": "4", "to": "4.3", "type": "contains"}, {"from": "4", "to": "4.4", "type": "contains"}, {"from": "4", "to": "4.5", "type": "contains"}, {"from": "5", "to": "5.1", "type": "contains"}, {"from": "5", "to": "5.2", "type": "contains"}, {"from": "5", "to": "5.3", "type": "contains"}, {"from": "5", "to": "5.4", "type": "contains"}, {"from": "6", "to": "6.1", "type": "contains"}, {"from": "6", "to": "6.2", "type": "contains"}, {"from": "6", "to": "6.3", "type": "contains"}, {"from": "7", "to": "7.1", "type": "contains"}, {"from": "7", "to": "7.2", "type": "contains"}, {"from": "7", "to": "7.3", "type": "contains"}, {"from": "8", "to": "8.1", "type": "contains"}, {"from": "8", "to": "8.2", "type": "contains"}, {"from": "8", "to": "8.3", "type": "contains"}, {"from": "9", "to": "9.1", "type": "contains"}, {"from": "9", "to": "9.2", "type": "contains"}, {"from": "9", "to": "9.3", "type": "contains"}, {"from": "9", "to": "9.4", "type": "contains"}, {"from": "6", "to": "2", "type": "supports", "source": ["¶20", "¶21", "¶22"], "note": "the proxy argument is the ground for the detriment claim"}, {"from": "7", "to": "2", "type": "supports", "source": ["¶23", "¶24", "¶25"], "note": "concrete harms instantiate the detriment"}, {"from": "4", "to": "6.3", "type": "supports", "source": ["¶9", "¶22"], "note": "the fertile ground at risk is the slow communal digestion of solutions"}, {"from": "5", "to": "6.3", "type": "supports", "source": ["¶14", "¶22"], "note": "students and ideas are the fertile ground mass production threatens"}, {"from": "5.4", "to": "7.1", "type": "contradicts", "source": ["¶18", "¶23"], "note": "processes that take time vs announcements in a rush"}, {"from": "2.3", "to": "8", "type": "restates", "source": ["¶6", "¶26"], "note": "the broader-scope claim announced early returns developed"}, {"from": "9.1", "to": "2", "type": "qualifies", "source": ["¶30"], "note": "AI's potential benefit qualifies the blanket detriment claim"}, {"from": "9.3", "to": "2", "type": "qualifies", "source": ["¶32"], "note": "the detriment is conditional, not inevitable"}, {"from": "1.1", "to": "9.4", "type": "restates", "source": ["¶2", "¶33"], "note": "urgency recurs: justifying the release speed, then demanding response"}]};
 
@@ -195,6 +234,7 @@ let collapsed = new Set(), opened = new Set(), forceVisible = new Set();
 let hiddenNodeTypes = new Set(), hiddenEdgeTypes = new Set();
 let selected = null, searchQ = "", sideMode = false, sideIdx = 0;
 let dragMoved = false, textDragged = false;
+let edgeSelected = null;
 let z = 1;
 let pos = new Map(), sizes = new Map(), vis = new Set();
 let contentW = 800, contentH = 600;
@@ -327,6 +367,23 @@ function edgeGeometry(a, b, dyA, dyB) {
   const xr = b.x + b.w, bend = 40;
   return `M ${x1} ${y1} C ${x1 + bend} ${y1}, ${xr + bend} ${y2}, ${xr} ${y2}`;
 }
+function addEdgeArtifacts(parent, e, d, attrs) {
+  const p = svgEl("path", Object.assign({ d }, attrs));
+  p.dataset.from = e.from;
+  p.dataset.to = e.to;
+  p.dataset.type = e.type;
+  parent.appendChild(p);
+  const hit = svgEl("path", { d, class: "edge-hit", stroke: "transparent", "stroke-width": 12, fill: "none" });
+  hit.dataset.from = e.from;
+  hit.dataset.to = e.to;
+  hit.dataset.type = e.type;
+  hit.addEventListener("click", ev => {
+    ev.stopPropagation();
+    selectEdge(e, ev.clientX, ev.clientY);
+  });
+  parent.appendChild(hit);
+  return { p, hit };
+}
 function edgesFor(id) {
   const out = [];
   containsE.forEach(e => { if (e.from === id || e.to === id) out.push({ e, home: gE }); });
@@ -335,14 +392,17 @@ function edgesFor(id) {
 }
 function setEdgeFocus(id, on) {
   edgesFor(id).forEach(({ e, home }) => {
-    const el = e._el;
-    if (!el) return;
-    if (on) {
-      if (el.parentNode) gTop.appendChild(el);
-      el.classList.add("hl");
-    } else if (selected !== id) {
-      if (el.parentNode === gTop) home.appendChild(el);
-      el.classList.remove("hl");
+    [e._el, e._hit].forEach(el => {
+      if (!el) return;
+      if (on) {
+        if (el.parentNode) gTop.appendChild(el);
+      } else if (selected !== id && el.parentNode === gTop) {
+        home.appendChild(el);
+      }
+    });
+    if (e._el) {
+      if (on) e._el.classList.add("hl");
+      else if (selected !== id) e._el.classList.remove("hl");
     }
   });
 }
@@ -391,30 +451,31 @@ function render() {
 
   containsE.forEach(e => {
     const pa = pos.get(e.from), pb = pos.get(e.to);
-    if (!pa || !pb || pa === pb) { e._el = null; return; }
-    const p = svgEl("path", { d: edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), class: "edge", stroke: "#9ca3af", "stroke-width": 1.4 });
+    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; return; }
+    const { p, hit } = addEdgeArtifacts(gE, e, edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)),
+      { class: "edge", stroke: "#9ca3af", "stroke-width": 1.4 });
     e._el = p;
-    gE.appendChild(p);
+    e._hit = hit;
   });
 
   crossE.forEach(e => {
-    if (hiddenEdgeTypes.has(e.type)) { e._el = null; return; }
+    if (hiddenEdgeTypes.has(e.type)) { e._el = null; e._hit = null; return; }
     const pa = pos.get(e.from), pb = pos.get(e.to);
-    if (!pa || !pb || pa === pb) { e._el = null; return; }
+    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; return; }
     const st = styleOf(e.type);
     const sym = registry[e.type] && registry[e.type].direction === "symmetric";
-    const attrs = { d: edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), class: "edge xedge", stroke: st.color, "stroke-width": 1.7 };
+    const attrs = { class: "edge xedge", stroke: st.color, "stroke-width": 1.7 };
     if (st.dash) attrs["stroke-dasharray"] = st.dash;
     attrs["marker-end"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
     if (sym) attrs["marker-start"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
-    const p = svgEl("path", attrs);
+    const { p, hit } = addEdgeArtifacts(gX, e, edgeGeometry(pa, pb, dyF.get(e), dyT.get(e)), attrs);
     const tip = svgEl("title", {});
     tip.textContent = `${e.type}: ${textOf(e.from)} -> ${textOf(e.to)}` +
       (e.source && e.source.length ? `  (${e.source.join(", ")})` : "") +
       (e.note ? `  note: ${e.note}` : "");
     p.appendChild(tip);
     e._el = p;
-    gX.appendChild(p);
+    e._hit = hit;
   });
 
   const searching = searchQ.length > 0;
@@ -479,7 +540,15 @@ function render() {
         gTop.appendChild(e._el);
         e._el.classList.add("hl");
       }
+      if (e._hit) gTop.appendChild(e._hit);
     });
+  }
+  if (edgeSelected) {
+    if (edgeSelected._el) {
+      gTop.appendChild(edgeSelected._el);
+      edgeSelected._el.classList.add("edge-sel");
+    }
+    if (edgeSelected._hit) gTop.appendChild(edgeSelected._hit);
   }
   updateCulling();
   updateSourceHighlights(false);
@@ -494,9 +563,40 @@ function updateCulling() {
   const vy1 = (wrap.scrollTop + wrap.clientHeight - off.y) / z + pad;
   const inView = r => r && r.x <= vx1 && r.x + r.w >= vx0 && r.y <= vy1 && r.y + r.h >= vy0;
   containsE.concat(crossE).forEach(e => {
-    if (!e._el) return;
-    e._el.style.display = (inView(pos.get(e.from)) || inView(pos.get(e.to))) ? "" : "none";
+    if (!e._el && !e._hit) return;
+    const keep = e === edgeSelected || (selected && (e.from === selected || e.to === selected));
+    const on = keep || inView(pos.get(e.from)) || inView(pos.get(e.to));
+    if (e._el) e._el.style.display = on ? "" : "none";
+    if (e._hit) e._hit.style.display = on ? "" : "none";
   });
+}
+function selectEdge(e, x, y) {
+  edgeSelected = e;
+  render();
+  document.getElementById("edgePopType").textContent = e.type;
+  const pop = document.getElementById("edgePop");
+  pop.style.left = Math.min(Math.max(x + 14, 8), window.innerWidth - 150) + "px";
+  pop.style.top = Math.min(Math.max(y + 14, 8), window.innerHeight - 52) + "px";
+  pop.classList.add("open");
+}
+function hideEdgePop() {
+  document.getElementById("edgePop").classList.remove("open");
+}
+function clearEdgeSelection() {
+  if (!edgeSelected) { hideEdgePop(); return; }
+  edgeSelected = null;
+  hideEdgePop();
+  render();
+}
+function followEdge() {
+  if (!edgeSelected) return;
+  const e = edgeSelected;
+  let target = e.to;
+  if (selected && e.from === selected && e.to !== selected) target = e.to;
+  else if (selected && e.to === selected && e.from !== selected) target = e.from;
+  edgeSelected = null;
+  hideEdgePop();
+  select(target);
 }
 
 function svgOffset() {
@@ -587,6 +687,8 @@ function keepSelectedAnchored(fn) {
 }
 function jump(id) {
   if (!nodes.has(id)) return;
+  edgeSelected = null;
+  hideEdgePop();
   forceVisible.clear();
   for (let p = parent.get(id); p !== undefined; p = parent.get(p)) {
     collapsed.delete(p);
@@ -600,6 +702,8 @@ function jump(id) {
 }
 function select(id) {
   if (!nodes.has(id)) return;
+  edgeSelected = null;
+  hideEdgePop();
   selected = id;
   render();
   ensureVisible(id);
@@ -671,12 +775,18 @@ function closePanel() {
 let panelW = 330;
 let panelMode = "excerpts";
 let sourceBodyEl = null;
+function isMobile() {
+  return window.innerWidth <= 720;
+}
 function applyPanelWidth() {
+  const mobile = isMobile();
   const max = Math.max(260, Math.round(window.innerWidth * 0.75));
   panelW = Math.min(Math.max(panelW, 260), max);
-  document.getElementById("panel").style.width = panelW + "px";
+  const panel = document.getElementById("panel");
+  panel.style.width = mobile ? "" : panelW + "px";
   document.getElementById("panelHandle").style.right = (panelW + 10) + "px";
-  wrap.style.right = (panelW + 24) + "px";
+  wrap.style.right = mobile ? "0px" : (panelW + 24) + "px";
+  document.getElementById("panelFab").classList.toggle("shifted", mobile && panel.classList.contains("open"));
   updateCulling();
 }
 function panelItems() {
@@ -860,6 +970,7 @@ function init() {
   const fitCanvasToTopbar = () => {
     wrap.style.top = topbar.offsetHeight + "px";
     document.getElementById("panelHandle").style.top = topbar.offsetHeight + "px";
+    document.getElementById("panelFab").style.top = (topbar.offsetHeight + 10) + "px";
   };
   fitCanvasToTopbar();
   window.addEventListener("resize", () => { fitCanvasToTopbar(); applyPanelWidth(); });
@@ -867,8 +978,19 @@ function init() {
   if (GRAPH.meta && GRAPH.meta.sourceText) sourceBodyEl = buildSourceBody();
   selected = nodes.has("0") ? "0" : null;
   render();
-  if (selected) buildPanel(selected);
+  if (selected && !isMobile()) buildPanel(selected);
   fitView();
+
+  document.getElementById("panelFab").addEventListener("click", () => {
+    const panel = document.getElementById("panel");
+    if (panel.classList.contains("open")) {
+      closePanel();
+      render();
+    } else {
+      buildPanel(selected || "0");
+    }
+  });
+  document.getElementById("edgeFollow").addEventListener("click", followEdge);
 
   const handle = document.getElementById("panelHandle");
   let resize = null;
@@ -899,6 +1021,7 @@ function init() {
     }
     ndText = null;
     ev.preventDefault();
+    hideEdgePop();
     const domSel = window.getSelection();
     if (domSel && domSel.toString()) domSel.removeAllRanges();
     drag = { x: ev.clientX, y: ev.clientY, sl: wrap.scrollLeft, st: wrap.scrollTop };
@@ -926,6 +1049,7 @@ function init() {
   wrap.addEventListener("click", ev => {
     if (dragMoved) return;
     if (ev.target === svg || ev.target === wrap) {
+      clearEdgeSelection();
       selected = null;
       closePanel();
       render();
@@ -936,6 +1060,7 @@ function init() {
   wrap.addEventListener("wheel", ev => {
     if (ev.ctrlKey) {
       ev.preventDefault();
+      hideEdgePop();
       const wrapRect = wrap.getBoundingClientRect();
       const k = ev.deltaY > 0 ? 1 / 1.12 : 1.12;
       zoomAt(ev.clientX - wrapRect.left, ev.clientY - wrapRect.top, k);
@@ -945,8 +1070,38 @@ function init() {
   wrap.addEventListener("scroll", () => {
     if (cullPending) return;
     cullPending = true;
-    requestAnimationFrame(() => { cullPending = false; updateCulling(); });
+    requestAnimationFrame(() => {
+      cullPending = false;
+      updateCulling();
+    });
   }, { passive: true });
+
+  let pinch = null;
+  wrap.addEventListener("touchstart", ev => {
+    if (ev.touches.length === 2) {
+      const a = ev.touches[0], b = ev.touches[1];
+      pinch = { d: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY) };
+      ev.preventDefault();
+    }
+  }, { passive: false });
+  wrap.addEventListener("touchmove", ev => {
+    if (!pinch || ev.touches.length !== 2) return;
+    ev.preventDefault();
+    const a = ev.touches[0], b = ev.touches[1];
+    const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+    if (d > 0 && pinch.d > 0) {
+      const rect = wrap.getBoundingClientRect();
+      const mx = (a.clientX + b.clientX) / 2 - rect.left;
+      const my = (a.clientY + b.clientY) / 2 - rect.top;
+      zoomAt(mx, my, d / pinch.d);
+    }
+    pinch.d = d;
+  }, { passive: false });
+  wrap.addEventListener("touchend", ev => {
+    if (ev.touches.length < 2) pinch = null;
+  });
+  wrap.addEventListener("touchcancel", () => { pinch = null; });
+  wrap.addEventListener("touchmove", () => hideEdgePop(), { passive: true });
 
   document.getElementById("btnAll").addEventListener("click", () => {
     keepSelectedAnchored(() => { showLayers = maxDepth + 1; render(); });
@@ -1087,6 +1242,7 @@ function init() {
         break;
       }
       case "Escape":
+        if (edgeSelected) { clearEdgeSelection(); break; }
         if (selected) {
           selected = null;
           closePanel();
