@@ -106,12 +106,14 @@
   #panelFab svg { width: 18px; height: 18px; display: block; }
   #panelFab:hover { border-color: var(--accent); }
   #edgePop {
-    position: fixed; z-index: 28; display: none; align-items: center; gap: 6px;
+    position: fixed; z-index: 28; display: flex; align-items: center; gap: 6px;
     background: rgba(255, 255, 255, .97); border: 1px solid var(--line); border-radius: 999px;
     padding: 3px 5px 3px 11px; box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
     font-size: 11.5px; color: var(--muted);
+    opacity: 0; visibility: hidden; transform: translateY(3px); pointer-events: none;
+    transition: opacity .13s ease, transform .13s ease, visibility .13s;
   }
-  #edgePop.open { display: flex; }
+  #edgePop.open { opacity: 1; visibility: visible; transform: none; pointer-events: auto; }
   #edgeFollow {
     width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line);
     background: #eef2ff; color: var(--accent); font-size: 14px; line-height: 1; cursor: pointer;
@@ -570,10 +572,16 @@ function updateCulling() {
     if (e._hit) e._hit.style.display = on ? "" : "none";
   });
 }
+function edgeFollowTarget(e) {
+  if (selected && e.from === selected && e.to !== selected) return e.to;
+  if (selected && e.to === selected && e.from !== selected) return e.from;
+  return e.to;
+}
 function selectEdge(e, x, y) {
   edgeSelected = e;
   render();
   document.getElementById("edgePopType").textContent = e.type;
+  document.getElementById("edgeFollow").textContent = edgeFollowTarget(e) === e.from ? "\u2190" : "\u2192";
   const pop = document.getElementById("edgePop");
   pop.style.left = Math.min(Math.max(x + 14, 8), window.innerWidth - 150) + "px";
   pop.style.top = Math.min(Math.max(y + 14, 8), window.innerHeight - 52) + "px";
@@ -590,13 +598,14 @@ function clearEdgeSelection() {
 }
 function followEdge() {
   if (!edgeSelected) return;
-  const e = edgeSelected;
-  let target = e.to;
-  if (selected && e.from === selected && e.to !== selected) target = e.to;
-  else if (selected && e.to === selected && e.from !== selected) target = e.from;
+  const target = edgeFollowTarget(edgeSelected);
   edgeSelected = null;
   hideEdgePop();
-  select(target);
+  selected = target;
+  render();
+  buildPanel(target);
+  const rt = revealTarget(target);
+  if (rt) animateScrollTo(rt.l, rt.t);
 }
 
 function svgOffset() {
@@ -629,31 +638,66 @@ function fitView() {
   wrap.scrollTop = Math.max(0, off.y + contentH * z / 2 - wrap.clientHeight / 2);
   updateCulling();
 }
-function ensureVisible(id) {
+function revealTarget(id) {
   const r = pos.get(id);
-  if (!r) return;
+  if (!r) return null;
   const off = svgOffset();
   const m = 30;
   const x0 = off.x + r.x * z, y0 = off.y + r.y * z;
   const x1 = off.x + (r.x + r.w) * z, y1 = off.y + (r.y + r.h) * z;
   const vl = wrap.scrollLeft, vt = wrap.scrollTop;
   const vw = wrap.clientWidth, vh = wrap.clientHeight;
+  let l = vl, t = vt;
   if (x1 - x0 > vw - 2 * m) {
-    if (x1 < vl + m) wrap.scrollLeft = Math.max(0, x1 - m);
-    else if (x0 > vl + vw - m) wrap.scrollLeft = Math.max(0, x0 - vw + m);
+    if (x1 < vl + m) l = Math.max(0, x1 - m);
+    else if (x0 > vl + vw - m) l = Math.max(0, x0 - vw + m);
   } else if (x0 < vl + m) {
-    wrap.scrollLeft = Math.max(0, x0 - m);
+    l = Math.max(0, x0 - m);
   } else if (x1 > vl + vw - m) {
-    wrap.scrollLeft = Math.max(0, x1 - vw + m);
+    l = Math.max(0, x1 - vw + m);
   }
   if (y1 - y0 > vh - 2 * m) {
-    if (y1 < vt + m) wrap.scrollTop = Math.max(0, y1 - m);
-    else if (y0 > vt + vh - m) wrap.scrollTop = Math.max(0, y0 - vh + m);
+    if (y1 < vt + m) t = Math.max(0, y1 - m);
+    else if (y0 > vt + vh - m) t = Math.max(0, y0 - vh + m);
   } else if (y0 < vt + m) {
-    wrap.scrollTop = Math.max(0, y0 - m);
+    t = Math.max(0, y0 - m);
   } else if (y1 > vt + vh - m) {
-    wrap.scrollTop = Math.max(0, y1 - vh + m);
+    t = Math.max(0, y1 - vh + m);
   }
+  return { l, t };
+}
+function ensureVisible(id) {
+  const t = revealTarget(id);
+  if (!t) return;
+  wrap.scrollLeft = t.l;
+  wrap.scrollTop = t.t;
+}
+let scrollAnim = null;
+function cancelScrollAnim() {
+  if (scrollAnim) {
+    cancelAnimationFrame(scrollAnim);
+    scrollAnim = null;
+  }
+}
+function animateScrollTo(l, t) {
+  cancelScrollAnim();
+  if (Math.abs(l - wrap.scrollLeft) < 1 && Math.abs(t - wrap.scrollTop) < 1) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    wrap.scrollLeft = l;
+    wrap.scrollTop = t;
+    return;
+  }
+  const l0 = wrap.scrollLeft, t0 = wrap.scrollTop;
+  const dur = 260;
+  const start = performance.now();
+  const step = now => {
+    const p = Math.min(1, (now - start) / dur);
+    const k = 1 - Math.pow(1 - p, 3);
+    wrap.scrollLeft = l0 + (l - l0) * k;
+    wrap.scrollTop = t0 + (t - t0) * k;
+    scrollAnim = p < 1 ? requestAnimationFrame(step) : null;
+  };
+  scrollAnim = requestAnimationFrame(step);
 }
 function screenOf(id) {
   const r = pos.get(id);
@@ -1022,6 +1066,7 @@ function init() {
     ndText = null;
     ev.preventDefault();
     hideEdgePop();
+    cancelScrollAnim();
     const domSel = window.getSelection();
     if (domSel && domSel.toString()) domSel.removeAllRanges();
     drag = { x: ev.clientX, y: ev.clientY, sl: wrap.scrollLeft, st: wrap.scrollTop };
@@ -1061,6 +1106,7 @@ function init() {
     if (ev.ctrlKey) {
       ev.preventDefault();
       hideEdgePop();
+      cancelScrollAnim();
       const wrapRect = wrap.getBoundingClientRect();
       const k = ev.deltaY > 0 ? 1 / 1.12 : 1.12;
       zoomAt(ev.clientX - wrapRect.left, ev.clientY - wrapRect.top, k);
@@ -1101,7 +1147,7 @@ function init() {
     if (ev.touches.length < 2) pinch = null;
   });
   wrap.addEventListener("touchcancel", () => { pinch = null; });
-  wrap.addEventListener("touchmove", () => hideEdgePop(), { passive: true });
+  wrap.addEventListener("touchmove", () => { hideEdgePop(); cancelScrollAnim(); }, { passive: true });
 
   document.getElementById("btnAll").addEventListener("click", () => {
     keepSelectedAnchored(() => { showLayers = maxDepth + 1; render(); });

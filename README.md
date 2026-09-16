@@ -100,7 +100,7 @@ The generated `graph.html` is one self-contained file, no server and no network 
 - Arrows navigate in top to bottom order, left folds or goes to the parent, right unfolds and descends, space folds the selected branch.
 - Ctrl+1..9 show that many layers, Ctrl+0 shows all of them, Ctrl+Alt+1..9 focus the selected branch.
 - The selected node's edges are bold and stay bold even when the node is panned out of view, so you can trace a link to its far end.
-- Click or tap an edge to highlight it. A small pill appears with the relation type and a follow button that pans the graph to the other end of the edge.
+- Click or tap an edge to highlight it. A small pill appears with the relation type and a follow button. The arrow points in the direction of travel relative to the selected node, and following smoothly pans the graph to the other end over a quarter second instead of jumping.
 - The sidebar shows the selected node: type, attribution, its cited excerpts expanded by default, and every relation with its color. Its left edge drags to resize the panel. On small screens it becomes a drawer toggled by a floating button in the top right, and the graph keeps the full width.
 - The Source toggle in the sidebar switches between the excerpts and the full source text. The selected node's sentences are tinted in its type color, related nodes' sentences in the color of the relation, claim blue, evidence green, contradicts red, and so on. Clicking a highlighted sentence jumps to a node that cites it.
 

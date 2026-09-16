@@ -200,16 +200,18 @@ const state = page => page.evaluate(() => {
   ok("edge: cross edges are clickable", !!edgeHit, edgeHit);
   const popOpen = await page.evaluate(() => ({
     open: document.getElementById("edgePop").classList.contains("open"),
-    type: document.getElementById("edgePopType").textContent
+    type: document.getElementById("edgePopType").textContent,
+    arrow: document.getElementById("edgeFollow").textContent
   }));
   ok("edge: minimal follow popup appears", popOpen.open && popOpen.type === "supports", popOpen);
+  ok("edge: arrow points back when the selected node is the target end", popOpen.arrow === "\u2190", popOpen.arrow);
   const edgeMarked = await page.evaluate(() => {
     const p = document.querySelector('#gTop path.edge[data-from="6"][data-to="2"]');
     return !!p && p.classList.contains("edge-sel");
   });
   ok("edge: clicked edge is highlighted and raised", edgeMarked);
   await page.click("#edgeFollow");
-  await page.waitForTimeout(150);
+  await page.waitForTimeout(400);
   s = await state(page);
   ok("edge: follow pans to the other end", s.selected === "6", s.selected);
 
@@ -226,12 +228,45 @@ const state = page => page.evaluate(() => {
   ok("selected node edges stay bold when panned out of view",
     bold.total > 0 && bold.visible === bold.total, bold);
 
+  const reHit = await page.evaluate(() => {
+    const hit = document.querySelector('path.edge-hit[data-from="6"][data-to="2"]');
+    if (!hit) return null;
+    const r = hit.getBoundingClientRect();
+    hit.dispatchEvent(new MouseEvent("click", {
+      bubbles: true, cancelable: true,
+      clientX: r.x + r.width / 2, clientY: r.y + r.height / 2
+    }));
+    return true;
+  });
+  ok("edge: panned-away edge is still clickable", reHit === true);
+  const arrowFwd = await page.evaluate(() => document.getElementById("edgeFollow").textContent);
+  ok("edge: arrow points forward when the selected node is the source end", arrowFwd === "\u2192", arrowFwd);
+  await page.evaluate(() => {
+    window.__samples = [];
+    const w = document.getElementById("canvasWrap");
+    const t0 = performance.now();
+    const rec = () => {
+      window.__samples.push([performance.now() - t0, w.scrollTop, w.scrollLeft]);
+      if (performance.now() - t0 < 700) requestAnimationFrame(rec);
+    };
+    requestAnimationFrame(rec);
+  });
+  await page.click("#edgeFollow");
+  await page.waitForTimeout(550);
+  const anim = await page.evaluate(() => {
+    const s = window.__samples;
+    if (!s.length) return { samples: 0 };
+    const first = s[0], last = s[s.length - 1];
+    const moved = s.filter(x => x[1] !== first[1] || x[2] !== first[2]);
+    const mid = moved.filter(x => x[1] !== last[1] || x[2] !== last[2]);
+    return { samples: s.length, moved: moved.length, mid: mid.length };
+  });
+  ok("edge: follow animates the pan instead of jumping", anim.mid > 1, anim);
+  await page.waitForTimeout(150);
+  s = await state(page);
+  ok("edge: animated follow selects the destination", s.selected === "2", s.selected);
+
   await page.evaluate(() => document.getElementById("btnFit").click());
-  await page.keyboard.press("ArrowUp");
-  await page.keyboard.press("ArrowUp");
-  await page.keyboard.press("ArrowUp");
-  await page.keyboard.press("ArrowUp");
-  await page.keyboard.press("Control+2");
   s = await state(page);
   ok("back to node 2 for the fold checks", s.selected === "2" && s.nodes === 10, s);
   await page.click("#pMode");
