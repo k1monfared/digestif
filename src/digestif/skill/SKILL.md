@@ -164,6 +164,23 @@ The outline reads:
 
 The viewer opens the layered reading: the root tells you what the text is about, one layer down the main points, one more layer the details, with cross edges drawn even between collapsed branches.
 
+## Publishing a viewer on the blog
+
+The blog at `k1monfared.com/notes/blog/` (local checkout `~/public/notes`, builder `blog/build.py`) picks up a graph with one frontmatter line in the post:
+
+```
+graph: files/YYYYMMDD/name.graph.html
+```
+
+Steps and rules:
+
+1. Copy the run's `graph.html` to `blog/files/YYYYMMDD/name.graph.html`. The `.graph.html` suffix matters: the blog build keeps such paths relative and bundles them into `_site/files/` even in CDN mode, because the raw GitHub CDN serves HTML as `text/plain` with `nosniff`, so the file must not be served from there.
+2. Optionally copy `outline.log` next to it as `name.outline.log`, for readers who want the plain-text outline.
+3. The build renders an "interactive graph" chip next to the post's tags under the title, linking to the standalone viewer page. The viewer is not embedded in the post body. If the prose should point at it, add a normal markdown link to the same path.
+4. Images for the post belong in the same `blog/files/YYYYMMDD/` directory and are referenced as `../../files/YYYYMMDD/image.png`, so editors like VS Code render them in preview. The build normalizes any `../` prefix back to `files/` for the site, so both forms work.
+
+Since the post text itself is the digested source, a post about digestif can link to the graph of itself, and the reader explores the very text they are reading.
+
 ## Edge cases
 
 - **No clear argument** in narrative text: use `theme` nodes for the top layer and say so in `meta.title` or a note. Do not manufacture claims the text does not make.
