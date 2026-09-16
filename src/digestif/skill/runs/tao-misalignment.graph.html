@@ -742,6 +742,7 @@ function keepAnchored(id, fn, stillValid) {
   const hasPos = id && pos.has(id);
   const before = hasPos ? { x: pos.get(id).x, y: pos.get(id).y, sl: wrap.scrollLeft, st: wrap.scrollTop } : null;
   fn();
+  cancelScrollAnim();
   if (!before || !id || !pos.has(id) || (stillValid && !stillValid())) return;
   const after = pos.get(id);
   wrap.scrollLeft = Math.max(0, before.sl + (after.x - before.x) * z);

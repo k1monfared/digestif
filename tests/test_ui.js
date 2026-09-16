@@ -21,6 +21,22 @@ const ok = (name, cond, extra) => {
   else { fail++; console.log("  FAIL: " + name + (extra !== undefined ? "  got " + JSON.stringify(extra) : "")); }
 };
 
+const settle = async pg => {
+  await pg.evaluate(() => {
+    window.__prev = [wrap.scrollLeft, wrap.scrollTop];
+    window.__still = 0;
+  });
+  await pg.waitForFunction(() => {
+    const cur = [wrap.scrollLeft, wrap.scrollTop];
+    if (cur[0] === window.__prev[0] && cur[1] === window.__prev[1]) window.__still += 1;
+    else {
+      window.__still = 0;
+      window.__prev = cur;
+    }
+    return window.__still > 4;
+  }, { timeout: 3000 }).catch(() => {});
+};
+
 const state = page => page.evaluate(() => {
   const sel = document.querySelector("#gNodes g.selected");
   const header = sel ? sel.querySelector("text").textContent : null;
@@ -710,7 +726,7 @@ const state = page => page.evaluate(() => {
     return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
   });
   await page.mouse.click(c21.x, c21.y);
-  await page.waitForTimeout(100);
+  await settle(page);
   s = await state(page);
   ok("zoom flow: deep node 2.1 selected", s.selected === "2.1", s.selected);
   await page.evaluate(() => {
@@ -785,6 +801,7 @@ const state = page => page.evaluate(() => {
   await page.keyboard.press("ArrowDown");
   await page.keyboard.press("ArrowRight");
   await page.keyboard.press("ArrowRight");
+  await settle(page);
   s = await state(page);
   ok("car-ban: back at leaf for parent anchor test", s.selected === "1.1.1" && s.nodes === 7, s);
   const rParentBefore = await rectOf("1 ");
@@ -800,6 +817,7 @@ const state = page => page.evaluate(() => {
   await page.waitForTimeout(100);
   await page.keyboard.press("ArrowDown");
   await page.keyboard.press("ArrowDown");
+  await settle(page);
   s = await state(page);
   ok("car-ban: leaf selected again, parent on screen", s.selected === "1.1.1", s.selected);
   await page.evaluate(() => {
