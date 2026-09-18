@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Car ban paragraph, point graph",
+    "source": "car-ban.txt",
+    "passages": {
+      "¶1": "Cities should ban cars from their centers.",
+      "¶2": "Some argue this hurts businesses, but studies of Madrid and Oslo show retail revenue rose after restrictions.",
+      "¶3": "Of course, buses and delivery vehicles must be exempt, otherwise goods do not reach shops.",
+      "¶4": "Critics also say such bans only work in wealthy cities. That may be true today, yet the same was said of bike lanes, which now succeed in Bogota and Jakarta.",
+      "¶5": "Public transit must expand first, though. A ban without transit is just displacement."
+    },
+    "sourceText": "Cities should ban cars from their centers. Some argue this hurts businesses, but studies of Madrid and Oslo show retail revenue rose after restrictions. Of course, buses and delivery vehicles must be exempt, otherwise goods do not reach shops. Critics also say such bans only work in wealthy cities. That may be true today, yet the same was said of bike lanes, which now succeed in Bogota and Jakarta. Public transit must expand first, though. A ban without transit is just displacement.\n",
+    "spans": {
+      "¶1": [
+        0,
+        42
+      ],
+      "¶2": [
+        43,
+        152
+      ],
+      "¶3": [
+        153,
+        243
+      ],
+      "¶4": [
+        244,
+        401
+      ],
+      "¶5": [
+        402,
+        487
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "0",
+      "type": "summary",
+      "text": "Cities should ban car traffic from centers, but only after transit expands, since business-harm and elitism objections fail.",
+      "attribution": "author",
+      "source": [
+        "¶1",
+        "¶5"
+      ]
+    },
+    {
+      "id": "1",
+      "type": "claim",
+      "text": "Cities should ban cars from their centers.",
+      "attribution": "author",
+      "source": [
+        "¶1"
+      ]
+    },
+    {
+      "id": "1.1",
+      "type": "counterpoint",
+      "text": "Car bans hurt businesses.",
+      "attribution": "counter",
+      "source": [
+        "¶2"
+      ]
+    },
+    {
+      "id": "1.1.1",
+      "type": "rebuttal",
+      "text": "Retail revenue rose in Madrid and Oslo after restrictions.",
+      "attribution": "author",
+      "source": [
+        "¶2"
+      ]
+    },
+    {
+      "id": "1.2",
+      "type": "nuance",
+      "text": "Buses and delivery vehicles must be exempt or goods cannot reach shops.",
+      "attribution": "author",
+      "source": [
+        "¶3"
+      ]
+    },
+    {
+      "id": "2",
+      "type": "counterpoint",
+      "text": "Car bans only work in wealthy cities.",
+      "attribution": "counter",
+      "source": [
+        "¶4"
+      ]
+    },
+    {
+      "id": "2.1",
+      "type": "concession",
+      "text": "This may be true today.",
+      "attribution": "conceded",
+      "source": [
+        "¶4"
+      ]
+    },
+    {
+      "id": "2.2",
+      "type": "rebuttal",
+      "text": "The same objection was raised against bike lanes, now successful in Bogota and Jakarta.",
+      "attribution": "author",
+      "source": [
+        "¶4"
+      ]
+    },
+    {
+      "id": "3",
+      "type": "claim",
+      "text": "Public transit must expand before any ban takes effect.",
+      "attribution": "author",
+      "source": [
+        "¶5"
+      ]
+    },
+    {
+      "id": "3.1",
+      "type": "nuance",
+      "text": "A ban without transit is displacement, not improvement.",
+      "attribution": "author",
+      "source": [
+        "¶5"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "0",
+      "to": "1",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "2",
+      "type": "contains"
+    },
+    {
+      "from": "0",
+      "to": "3",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.1",
+      "type": "contains"
+    },
+    {
+      "from": "1.1",
+      "to": "1.1.1",
+      "type": "contains"
+    },
+    {
+      "from": "1",
+      "to": "1.2",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.1",
+      "type": "contains"
+    },
+    {
+      "from": "2",
+      "to": "2.2",
+      "type": "contains"
+    },
+    {
+      "from": "3",
+      "to": "3.1",
+      "type": "contains"
+    },
+    {
+      "from": "1.1.1",
+      "to": "1.1",
+      "type": "supports",
+      "source": [
+        "¶2"
+      ],
+      "note": "study evidence rebuts the business-harm objection"
+    },
+    {
+      "from": "2.2",
+      "to": "1",
+      "type": "supports",
+      "source": [
+        "¶4"
+      ],
+      "note": "historical analogy supports the main claim"
+    },
+    {
+      "from": "3",
+      "to": "1",
+      "type": "qualifies",
+      "source": [
+        "¶5"
+      ],
+      "note": "scope limit: the ban is advocated conditionally"
+    }
+  ]
+}

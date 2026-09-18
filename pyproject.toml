@@ -34,7 +34,7 @@ include-package-data = true
 where = ["src"]
 
 [tool.setuptools.package-data]
-digestif = ["skill/*", "skill/**/*"]
+digestif = ["skill/*", "skill/**/*", "skill-fitsegid/*", "skill-fitsegid/**/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

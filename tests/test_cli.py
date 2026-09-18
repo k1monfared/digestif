@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 EXAMPLES = ROOT / "src" / "digestif" / "skill" / "examples"
+FITSEGID_EXAMPLES = ROOT / "src" / "digestif" / "skill-fitsegid" / "examples"
 FIXTURES = ROOT / "tests" / "fixtures"
 FAKE_AGENT = ROOT / "tests" / "fake_agent.py"
 
@@ -23,6 +24,10 @@ def run_cli(*args, cwd=None):
 
 def fake_agent_cmd(graph):
     return "%s %s --graph %s" % (sys.executable, FAKE_AGENT, graph)
+
+
+def fake_prose_cmd(prose):
+    return "%s %s --prose %s" % (sys.executable, FAKE_AGENT, prose)
 
 
 def test_agents_lists_backends():
@@ -102,13 +107,40 @@ def test_validate_and_render_examples(tmp_path):
     assert r.returncode == 0, r.stdout + r.stderr
 
 
+def test_fitsegid_with_fake_agent(tmp_path):
+    run_dir = tmp_path / "run"
+    run_dir.mkdir()
+    import shutil as _shutil
+    _shutil.copyfile(EXAMPLES / "car-ban.graph.json", run_dir / "graph.json")
+    r = run_cli(
+        "fitsegid", run_dir,
+        "--agent-cmd", fake_prose_cmd(FITSEGID_EXAMPLES / "car-ban.fitsegid.md"),
+    )
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert (run_dir / "fitsegid.md").is_file()
+    assert (run_dir / "fitsegid-clean.md").is_file()
+    assert (run_dir / "FITSEGID.md").is_file()
+    assert (run_dir / "skill-fitsegid" / "SKILL.md").is_file()
+    assert "OK: prose is grounded" in (run_dir / "fitsegid-validation.txt").read_text()
+    assert "[1.1]" not in (run_dir / "fitsegid-clean.md").read_text()
+
+
 def test_install_skill_to_directory(tmp_path):
     r = run_cli("install-skill", "--dir", tmp_path)
     assert r.returncode == 0, r.stderr
     dest = tmp_path / "digestif"
     assert (dest / "SKILL.md").is_file()
     assert "name: digestif" in (dest / "SKILL.md").read_text()
+    assert (tmp_path / "fitsegid" / "SKILL.md").is_file()
+    assert "name: fitsegid" in (tmp_path / "fitsegid" / "SKILL.md").read_text()
     r = run_cli("install-skill", "--dir", tmp_path)
     assert r.returncode == 1
     r = run_cli("install-skill", "--dir", tmp_path, "--force")
     assert r.returncode == 0
+
+
+def test_install_skill_single(tmp_path):
+    r = run_cli("install-skill", "--dir", tmp_path, "--skill", "fitsegid")
+    assert r.returncode == 0, r.stderr
+    assert (tmp_path / "fitsegid" / "SKILL.md").is_file()
+    assert not (tmp_path / "digestif").exists()

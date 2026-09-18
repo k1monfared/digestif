@@ -10,6 +10,8 @@ from . import __version__, agents
 from . import pipeline
 
 SKILL_DIR = pipeline.SKILL_DIR
+FITSEGID_DIR = pipeline.FITSEGID_DIR
+SKILLS = {"digestif": SKILL_DIR, "fitsegid": FITSEGID_DIR}
 
 
 def _agent_flags(p):
@@ -36,6 +38,10 @@ def cmd_prep(args):
 
 def cmd_finish(args):
     return pipeline.finish(args)
+
+
+def cmd_fitsegid(args):
+    return pipeline.fitsegid(args)
 
 
 def cmd_render(args):
@@ -105,6 +111,17 @@ def cmd_doctor(args):
             print("renderer: ok")
         else:
             problems.append("renderer check failed:\n%s" % out)
+    if FITSEGID_DIR.is_dir():
+        print("fitsegid: %s" % FITSEGID_DIR)
+        code, out = pipeline.run_fitsegid(FITSEGID_DIR, [
+            "check-prose", str(FITSEGID_DIR / "examples" / "car-ban.fitsegid.md"),
+            str(FITSEGID_DIR / "examples" / "car-ban.graph.json")])
+        if code == 0:
+            print("fitsegid checker: ok")
+        else:
+            problems.append("fitsegid checker failed:\n%s" % out)
+    else:
+        problems.append("fitsegid skill directory missing: %s" % FITSEGID_DIR)
     if shutil.which("node"):
         print("node: %s (headless UI tests available)" % shutil.which("node"))
     else:
@@ -139,23 +156,28 @@ def cmd_install_skill(args):
     else:
         print("error: pass --target {%s} or --dir DIR" % "|".join(TARGETS))
         return 1
-    dest = base / "digestif"
-    if dest.is_symlink() or dest.exists():
-        if not args.force:
-            print("error: %s already exists, pass --force to replace it" % dest)
-            return 1
-        if dest.is_symlink() or dest.is_file():
-            dest.unlink()
-        else:
-            shutil.rmtree(dest)
+    names = sorted(SKILLS) if args.skill == "both" else [args.skill]
+    existing = [base / n for n in names if (base / n).is_symlink() or (base / n).exists()]
+    if existing and not args.force:
+        print("error: %s already exists, pass --force to replace it"
+              % ", ".join(str(p) for p in existing))
+        return 1
     base.mkdir(parents=True, exist_ok=True)
-    if args.link:
-        dest.symlink_to(SKILL_DIR)
-        print("linked %s -> %s" % (dest, SKILL_DIR))
-    else:
-        shutil.copytree(SKILL_DIR, dest)
-        print("installed skill to %s" % dest)
-    print("the skill is usable on its own, any agent that reads SKILL.md can follow it")
+    for name in names:
+        src = SKILLS[name]
+        dest = base / name
+        if dest.is_symlink() or dest.exists():
+            if dest.is_symlink() or dest.is_file():
+                dest.unlink()
+            else:
+                shutil.rmtree(dest)
+        if args.link:
+            dest.symlink_to(src)
+            print("linked %s -> %s" % (dest, src))
+        else:
+            shutil.copytree(src, dest)
+            print("installed skill to %s" % dest)
+    print("both skills are usable on their own, any agent that reads SKILL.md can follow them")
     return 0
 
 
@@ -190,6 +212,19 @@ def main(argv=None):
     _run_flags(f)
     f.set_defaults(func=cmd_finish)
 
+    fg = sub.add_parser("fitsegid",
+                        help="turn a graph back into cited prose, the inverse of build")
+    fg.add_argument("input", help="a run directory, or a path to graph.json")
+    fg.add_argument("--lod", default="max",
+                    help="level of detail: max (default) or a number of layers")
+    fg.add_argument("--words", type=int, help="target word count, overrides --lod")
+    _agent_flags(fg)
+    fg.add_argument("--retries", type=int, default=2,
+                    help="repair rounds when the checker fails (default: 2)")
+    fg.add_argument("--timeout", type=int, default=1800,
+                    help="seconds allowed per agent invocation (default: 1800)")
+    fg.set_defaults(func=cmd_fitsegid)
+
     r = sub.add_parser("render", help="generate outline.log and graph.html, no agent")
     r.add_argument("graph", help="path to graph.json")
     r.add_argument("--no-open", action="store_true")
@@ -211,6 +246,8 @@ def main(argv=None):
 
     i = sub.add_parser("install-skill", help="install or link the skill into an agent config")
     i.add_argument("--target", choices=sorted(TARGETS), help="claude, opencode or project")
+    i.add_argument("--skill", choices=["digestif", "fitsegid", "both"], default="both",
+                   help="which skill to install (default: both)")
     i.add_argument("--dir", help="custom directory to install into")
     i.add_argument("--link", action="store_true", help="symlink instead of copy")
     i.add_argument("--force", action="store_true", help="replace an existing install")

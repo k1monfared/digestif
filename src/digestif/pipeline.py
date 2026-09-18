@@ -13,6 +13,8 @@ from . import agents
 
 SKILL_DIR = Path(__file__).resolve().parent / "skill"
 GRAPH_PY = SKILL_DIR / "scripts" / "graph.py"
+FITSEGID_DIR = Path(__file__).resolve().parent / "skill-fitsegid"
+FITSEGID_PY = FITSEGID_DIR / "scripts" / "fitsegid.py"
 
 AGENTS_MD = """# Task: build graph.json from source.txt
 
@@ -45,6 +47,35 @@ source.txt. The exact output of the last check follows.
 
 """
 
+FITSEGID_AGENTS_MD = """# Task: write {prose} from {graph}
+
+You are running fitsegid, the inverse of digestif. Read the full skill and follow it exactly:
+
+- `skill-fitsegid/SKILL.md`
+
+Input: `{graph}`, a validated digestif graph.
+Output: `{prose}`, the only file you may write.
+
+Level of detail: {lod}.
+
+Workflow:
+
+1. Read `{graph}`. Follow the skill's order, sentence roles, and connective grammar to write
+   coherent prose where every sentence cites the nodes it comes from.
+2. Open the file with the frontmatter manifest (`skill`, `lod`, `dropped`). Every node must be
+   either cited in the prose or listed in `dropped`.
+3. Run `python3 skill-fitsegid/scripts/fitsegid.py check-prose {prose} {graph}` and fix every
+   error. Run it again after each fix until it passes.
+4. Do not edit `{graph}` and do not write any other file. The clean copy is produced by the
+   command line tool afterwards.
+"""
+
+FITSEGID_REPAIR_MD = """The prose you produced is not accepted yet. Fix it in place, editing only
+{prose}. Keep the frontmatter manifest accurate, keep every sentence cited, and account for
+every node as either cited or dropped. The exact output of the last check follows.
+
+"""
+
 
 def slugify(text):
     slug = re.sub(r"[^a-z0-9]+", "-", str(text).lower()).strip("-")
@@ -73,6 +104,14 @@ def create_workspace(out_root, slug, text, source_name):
 def run_graph(run_dir, args):
     proc = subprocess.run(
         [sys.executable, str(GRAPH_PY)] + args,
+        cwd=str(run_dir), capture_output=True, text=True,
+    )
+    return proc.returncode, (proc.stdout + proc.stderr).strip()
+
+
+def run_fitsegid(run_dir, args):
+    proc = subprocess.run(
+        [sys.executable, str(FITSEGID_PY)] + args,
         cwd=str(run_dir), capture_output=True, text=True,
     )
     return proc.returncode, (proc.stdout + proc.stderr).strip()
@@ -212,6 +251,95 @@ def build(args):
     if not args.no_open:
         open_viewer(run_dir)
     print("done: %s" % run_dir)
+    return 0
+
+
+def fitsegid(args):
+    target = Path(args.input)
+    if target.is_dir():
+        run_dir, graph_name = target, "graph.json"
+    elif target.is_file():
+        run_dir, graph_name = target.parent, target.name
+    else:
+        print("error: input not found: %s" % args.input)
+        return 1
+    if not graph_name.endswith(".json"):
+        print("error: expected a graph.json, got %s" % graph_name)
+        return 1
+
+    code, out = run_graph(run_dir, ["validate", graph_name])
+    if code != 0:
+        print("error: %s did not validate, finish the digestif run first" % graph_name)
+        print(out)
+        return 1
+
+    if graph_name == "graph.json":
+        prose_name = "fitsegid.md"
+    else:
+        stem = graph_name[:-6] if graph_name.endswith(".graph.json") else Path(graph_name).stem
+        prose_name = stem + ".fitsegid.md"
+    if args.words:
+        lod = ("about %d words, choose what to compress and list every dropped node"
+               % args.words)
+    elif args.lod == "max":
+        lod = "maximum, lossless: every node realized, lod: max and dropped: []"
+    else:
+        lod = ("%s layers below the summary: lod: %s, list every deeper node in dropped"
+               % (args.lod, args.lod))
+
+    skill_dst = run_dir / "skill-fitsegid"
+    if not skill_dst.is_dir():
+        shutil.copytree(FITSEGID_DIR, skill_dst)
+    (run_dir / "FITSEGID.md").write_text(
+        FITSEGID_AGENTS_MD.format(graph=graph_name, prose=prose_name, lod=lod),
+        encoding="utf-8")
+
+    def repair(prompt):
+        announce(1, 3, "repair round: asking the agent to fix %s" % prose_name)
+        return invoke(run_dir, args.agent, args.agent_cmd, args.model, args.timeout,
+                      prompt=prompt, prompt_file_name="fitsegid-repair_prompt.md")
+
+    announce(1, 3, "writing %s from %s" % (prose_name, graph_name))
+    invoke(run_dir, args.agent, args.agent_cmd, args.model, args.timeout,
+           prompt="Work in this directory and do the task in FITSEGID.md. "
+                  "Read skill-fitsegid/SKILL.md first and follow it.",
+           prompt_file_name="fitsegid-prompt.md")
+
+    if not (run_dir / prose_name).is_file():
+        print("error: the agent did not produce %s" % prose_name)
+        print("last lines of run.log:")
+        print(log_tail(run_dir))
+        return 1
+
+    announce(2, 3, "prose written, checking citations")
+    last, ok = "", False
+    can_repair = bool(args.agent or args.agent_cmd or agents.detected())
+    for attempt in range(args.retries + 1):
+        code, out = run_fitsegid(run_dir, ["check-prose", prose_name, graph_name])
+        if code == 0:
+            ok = True
+            break
+        last = out
+        if attempt >= args.retries or not can_repair:
+            break
+        (run_dir / "repair-fitsegid.md").write_text(
+            FITSEGID_REPAIR_MD.format(prose=prose_name) + "```\n" + out + "\n```\n",
+            encoding="utf-8")
+        repair("The %s you produced was rejected. Follow repair-fitsegid.md in this directory, "
+               "fix %s only, and rerun check-prose until it passes." % (prose_name, prose_name))
+    (run_dir / "fitsegid-validation.txt").write_text((out if ok else last) + "\n", encoding="utf-8")
+    if not ok:
+        print("error: %s did not pass the checker" % prose_name)
+        print(last)
+        return 1
+
+    announce(3, 3, "grounded, writing the clean copy")
+    code, out = run_fitsegid(run_dir, ["strip-prose", prose_name])
+    if code != 0:
+        print("error: strip-prose failed\n%s" % out)
+        return 1
+    print(out)
+    print("done: %s" % (run_dir / prose_name))
     return 0
 
 

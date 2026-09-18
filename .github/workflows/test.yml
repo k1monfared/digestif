@@ -17,6 +17,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install -e ".[dev]"
       - run: bash tests/test_graph.sh
+      - run: bash tests/test_fitsegid.sh
       - run: pytest -q
 
   ui:
