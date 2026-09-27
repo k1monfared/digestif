@@ -199,6 +199,14 @@ def open_viewer(run_dir):
     return False
 
 
+def open_file(path):
+    path = Path(path)
+    if path.is_file():
+        webbrowser.open(path.resolve().as_uri())
+        return True
+    return False
+
+
 def announce(step, total, message):
     print("[%d/%d] %s" % (step, total, message), flush=True)
 
@@ -295,11 +303,11 @@ def fitsegid(args):
         encoding="utf-8")
 
     def repair(prompt):
-        announce(1, 3, "repair round: asking the agent to fix %s" % prose_name)
+        announce(1, 4, "repair round: asking the agent to fix %s" % prose_name)
         return invoke(run_dir, args.agent, args.agent_cmd, args.model, args.timeout,
                       prompt=prompt, prompt_file_name="fitsegid-repair_prompt.md")
 
-    announce(1, 3, "writing %s from %s" % (prose_name, graph_name))
+    announce(1, 4, "writing %s from %s" % (prose_name, graph_name))
     invoke(run_dir, args.agent, args.agent_cmd, args.model, args.timeout,
            prompt="Work in this directory and do the task in FITSEGID.md. "
                   "Read skill-fitsegid/SKILL.md first and follow it.",
@@ -311,7 +319,7 @@ def fitsegid(args):
         print(log_tail(run_dir))
         return 1
 
-    announce(2, 3, "prose written, checking citations")
+    announce(2, 4, "prose written, checking citations")
     last, ok = "", False
     can_repair = bool(args.agent or args.agent_cmd or agents.detected())
     for attempt in range(args.retries + 1):
@@ -333,12 +341,22 @@ def fitsegid(args):
         print(last)
         return 1
 
-    announce(3, 3, "grounded, writing the clean copy")
+    announce(3, 4, "grounded, writing the clean copy")
     code, out = run_fitsegid(run_dir, ["strip-prose", prose_name])
     if code != 0:
         print("error: strip-prose failed\n%s" % out)
         return 1
     print(out)
+
+    review_name = Path(prose_name).with_suffix(".html").name
+    announce(4, 4, "building the review viewer")
+    code, out = run_fitsegid(run_dir, ["render", prose_name, graph_name, "-o", review_name])
+    if code != 0:
+        print("error: review render failed\n%s" % out)
+        return 1
+    print(out)
+    if not getattr(args, "no_open", False):
+        open_file(run_dir / review_name)
     print("done: %s" % (run_dir / prose_name))
     return 0
 

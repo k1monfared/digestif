@@ -115,14 +115,17 @@ def test_fitsegid_with_fake_agent(tmp_path):
     r = run_cli(
         "fitsegid", run_dir,
         "--agent-cmd", fake_prose_cmd(FITSEGID_EXAMPLES / "car-ban.fitsegid.md"),
+        "--no-open",
     )
     assert r.returncode == 0, r.stdout + r.stderr
     assert (run_dir / "fitsegid.md").is_file()
     assert (run_dir / "fitsegid-clean.md").is_file()
+    assert (run_dir / "fitsegid.html").is_file()
     assert (run_dir / "FITSEGID.md").is_file()
     assert (run_dir / "skill-fitsegid" / "SKILL.md").is_file()
     assert "OK: prose is grounded" in (run_dir / "fitsegid-validation.txt").read_text()
     assert "[1.1]" not in (run_dir / "fitsegid-clean.md").read_text()
+    assert "const DATA = {" in (run_dir / "fitsegid.html").read_text()
 
 
 def test_install_skill_to_directory(tmp_path):

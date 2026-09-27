@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fitsegid review</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --note: #3730a3;
+    --note-bg: #eef2ff;
+    --bar: #d1d5db;
+    --bar-hover: #60a5fa;
+    --bar-sel: #1d4ed8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg); color: var(--ink);
+  }
+  header {
+    position: sticky; top: 0; z-index: 5;
+    display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap;
+    padding: 12px 26px; background: rgba(250,249,246,.96);
+    border-bottom: 1px solid var(--line);
+  }
+  #title { font-size: 15px; font-weight: 650; white-space: nowrap; }
+  #srcname { font-size: 12px; color: var(--muted); }
+  #root {
+    flex: 1 1 320px; min-width: 0; display: flex; align-items: baseline; gap: 8px;
+    font-size: 13px; color: var(--muted); line-height: 1.4;
+  }
+  #root .tag {
+    flex: none; font-size: 10px; text-transform: uppercase; letter-spacing: .06em;
+    color: var(--note); background: var(--note-bg); border-radius: 999px; padding: 1px 8px;
+  }
+  main { max-width: 1120px; margin: 0 auto; padding: 26px 26px 90px; }
+  #content { position: relative; }
+  .head { margin: 26px 0 10px; }
+  .head:first-child { margin-top: 0; }
+  .head h1 { font-size: 22px; margin: 0; }
+  .head h2 { font-size: 17px; margin: 0; color: var(--muted); }
+  .para {
+    display: grid; grid-template-columns: minmax(0, 1fr) 26px 250px; align-items: start;
+    padding: 16px 0; border-top: 1px solid var(--line);
+    transition: background .12s, opacity .12s;
+  }
+  .para:first-of-type { border-top: none; }
+  .para.act { background: #f5f8ff; }
+  .para.dim { opacity: .66; }
+  .body { font-size: 15.5px; line-height: 1.75; padding-right: 30px; }
+  .notes { padding-left: 18px; padding-top: 3px; }
+  .note {
+    position: relative; padding-left: 12px; margin: 0 0 10px;
+    font-size: 12px; line-height: 1.45; color: var(--muted); cursor: pointer;
+    transition: color .12s, opacity .12s;
+  }
+  .note::before {
+    content: ""; position: absolute; left: 0; top: 2px; bottom: 2px;
+    width: 2px; border-radius: 2px; background: var(--note-bg); transition: background .12s;
+  }
+  .note .nid { color: var(--note); font-weight: 650; margin-right: 5px; }
+  .note.hov { color: var(--ink); }
+  .note.hov::before { background: var(--bar-hover); }
+  .note.sel { color: var(--ink); }
+  .note.sel::before { background: var(--bar-sel); }
+  .note.dim { opacity: .4; }
+  .note.warn { color: #b45309; cursor: default; }
+  .note.warn::before { background: #fde68a; }
+  .note.warn .nid { color: #b45309; }
+  .note.rootnote { cursor: default; }
+  .note.rootnote .nid { color: var(--muted); }
+  #rail { position: absolute; inset: 0; pointer-events: none; }
+  .bar {
+    position: absolute; width: 3px; margin-left: -1.5px; border-radius: 3px;
+    background: var(--bar); opacity: .55; pointer-events: auto; cursor: pointer;
+    transition: background .12s, opacity .12s;
+  }
+  .bar.hov { background: var(--bar-hover); opacity: 1; }
+  .bar.sel { background: var(--bar-sel); opacity: 1; }
+  .bar.dim { opacity: .12; }
+  .bar.sel::after {
+    content: ""; position: absolute; left: 3px; right: 3px; top: -2px; bottom: -2px;
+    border-radius: 4px; background: inherit; opacity: .18;
+  }
+  @media (max-width: 820px) {
+    .para { grid-template-columns: 1fr; }
+    .body { padding-right: 0; }
+    .notes { padding-left: 12px; padding-top: 0; border-left: 2px solid var(--note-bg); margin-top: 8px; }
+    #rail { display: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div id="title"></div>
+  <div id="srcname"></div>
+  <div id="root"><span class="tag">root</span><span id="rootText"></span></div>
+</header>
+<main><div id="content"><div id="rail"></div><div id="doc"></div></div></main>
+<script>
+const DATA = __REVIEW_JSON__;
+const nodeById = {};
+DATA.nodes.forEach(n => nodeById[n.id] = n);
+const children = DATA.children || {};
+const mainPoints = (DATA.mainPoints || []).slice()
+  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+function ancestors(id) {
+  const out = []; let c = id;
+  while (c) { out.push(c); if (c === "0") break; c = nodeById[c] ? nodeById[c].parent : null; }
+  return out;
+}
+function descendants(id) {
+  const out = new Set();
+  (function w(x) { out.add(x); (children[x] || []).forEach(w); })(id);
+  return out;
+}
+function mainPointsOf(ids) {
+  const out = [];
+  ids.forEach(id => ancestors(id).forEach(a => { if (mainPoints.includes(a) && !out.includes(a)) out.push(a); }));
+  return out.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+}
+
+const paras = DATA.blocks.filter(b => b.kind === "p");
+const paraIds = paras.map(p => p.ids);
+const paraEls = [];
+const descSets = {};
+mainPoints.forEach(mp => descSets[mp] = descendants(mp));
+const spanOf = {};       // main point -> [paragraph indices]
+const firstOf = {};      // main point -> first paragraph index
+mainPoints.forEach(mp => {
+  const idx = [];
+  paraIds.forEach((ids, i) => { if (ids.some(x => descSets[mp].has(x))) idx.push(i); });
+  spanOf[mp] = idx;
+  firstOf[mp] = idx.length ? idx[0] : null;
+});
+
+let hoverPoint = null, hoverParas = null, selectedPoint = null;
+
+function build() {
+  document.title = DATA.title + " · fitsegid review";
+  document.getElementById("title").textContent = DATA.title;
+  document.getElementById("srcname").textContent = DATA.source || "";
+  const rootNode = nodeById["0"];
+  document.getElementById("rootText").textContent = rootNode ? rootNode.text : "";
+
+  const doc = document.getElementById("doc");
+  DATA.blocks.forEach(b => {
+    if (b.kind === "h") {
+      const wrap = document.createElement("div");
+      wrap.className = "head";
+      const h = document.createElement(b.level <= 1 ? "h1" : "h2");
+      h.textContent = b.text; wrap.appendChild(h);
+      doc.appendChild(wrap); return;
+    }
+    const idx = paras.indexOf(b);
+    const para = document.createElement("div");
+    para.className = "para"; para.dataset.i = idx;
+
+    const body = document.createElement("div");
+    body.className = "body";
+    body.textContent = b.sentences.map(s => s.text).join(" ");
+    body.addEventListener("mouseenter", () => { if (!hoverPoint) { hoverParas = new Set(mainPointsOf(b.ids)); reconcile(); } });
+    body.addEventListener("mouseleave", () => { hoverParas = null; reconcile(); });
+    para.appendChild(body);
+    para.appendChild(document.createElement("div")); // gutter
+
+    const notes = document.createElement("aside");
+    notes.className = "notes";
+    const pts = mainPointsOf(b.ids).filter(mp => firstOf[mp] === idx);
+    pts.forEach(mp => notes.appendChild(noteEl(mp, nodeById[mp] ? nodeById[mp].text : "")));
+    if (!pts.length && b.ids.includes("0")) {
+      const n = document.createElement("div");
+      n.className = "note rootnote";
+      n.innerHTML = '<span class="nid">thesis</span>states the whole argument';
+      notes.appendChild(n);
+    } else if (b.ids.length === 0) {
+      const n = document.createElement("div");
+      n.className = "note warn";
+      n.innerHTML = '<span class="nid">!</span>no citation';
+      notes.appendChild(n);
+    }
+    para.appendChild(notes);
+    doc.appendChild(para);
+    paraEls[idx] = para;
+  });
+  layoutRail();
+  reconcile();
+  window.addEventListener("resize", layoutRail);
+  if (window.ResizeObserver) new ResizeObserver(layoutRail).observe(document.getElementById("content"));
+  document.addEventListener("keydown", e => { if (e.key === "Escape") { selectedPoint = null; reconcile(); } });
+}
+
+function noteEl(mp, text) {
+  const n = document.createElement("div");
+  n.className = "note"; n.dataset.point = mp;
+  n.innerHTML = '<span class="nid">' + mp + "</span>" + esc(text);
+  n.addEventListener("mouseenter", () => { hoverPoint = mp; reconcile(); });
+  n.addEventListener("mouseleave", () => { hoverPoint = null; reconcile(); });
+  n.addEventListener("click", e => { e.stopPropagation(); toggle(mp); });
+  return n;
+}
+
+function layoutRail() {
+  const rail = document.getElementById("rail");
+  rail.innerHTML = "";
+  if (!paraEls.length || window.innerWidth <= 820) return;
+  const first = paraEls[0];
+  const gutterX = (first.children[0].offsetLeft + first.children[0].offsetWidth + first.children[2].offsetLeft) / 2;
+  mainPoints.forEach(mp => {
+    const idx = spanOf[mp];
+    if (!idx.length) return;
+    let runStart = idx[0];
+    for (let k = 1; k <= idx.length; k++) {
+      const end = k < idx.length && idx[k] === idx[k - 1] + 1;
+      if (!end) {
+        const a = paraEls[runStart], z = paraEls[idx[k - 1]];
+        if (!a || !z) { runStart = idx[k]; continue; }
+        const bar = document.createElement("div");
+        bar.className = "bar"; bar.dataset.point = mp;
+        bar.style.left = gutterX + "px";
+        bar.style.top = a.offsetTop + 2 + "px";
+        bar.style.height = (z.offsetTop + z.offsetHeight - a.offsetTop - 4) + "px";
+        bar.addEventListener("mouseenter", () => { hoverPoint = mp; reconcile(); });
+        bar.addEventListener("mouseleave", () => { hoverPoint = null; reconcile(); });
+        bar.addEventListener("click", e => { e.stopPropagation(); toggle(mp); });
+        rail.appendChild(bar);
+        runStart = k < idx.length ? idx[k] : runStart;
+      }
+    }
+  });
+  reconcile();
+}
+
+function toggle(mp) { selectedPoint = (selectedPoint === mp) ? null : mp; reconcile(); }
+
+function activePoints() {
+  const s = new Set();
+  if (selectedPoint) s.add(selectedPoint);
+  if (hoverPoint) s.add(hoverPoint);
+  if (hoverParas) hoverParas.forEach(p => s.add(p));
+  return s;
+}
+
+function reconcile() {
+  const act = activePoints();
+  document.querySelectorAll(".bar").forEach(b => {
+    const id = b.dataset.point;
+    b.classList.toggle("sel", id === selectedPoint);
+    b.classList.toggle("hov", id === hoverPoint || !!(hoverParas && hoverParas.has(id)));
+    b.classList.toggle("dim", act.size > 0 && !act.has(id));
+  });
+  document.querySelectorAll(".note[data-point]").forEach(n => {
+    const id = n.dataset.point;
+    n.classList.toggle("sel", id === selectedPoint);
+    n.classList.toggle("hov", id === hoverPoint || !!(hoverParas && hoverParas.has(id)));
+    n.classList.toggle("dim", act.size > 0 && !act.has(id));
+  });
+  paraEls.forEach((el, i) => {
+    let on = false;
+    act.forEach(mp => { if (spanOf[mp] && spanOf[mp].includes(i)) on = true; });
+    el.classList.toggle("act", on);
+    el.classList.toggle("dim", act.size > 0 && !on);
+  });
+}
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+build();
+</script>
+</body>
+</html>

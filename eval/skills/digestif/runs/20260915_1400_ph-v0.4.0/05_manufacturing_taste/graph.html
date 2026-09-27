@@ -1,0 +1,1380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Point Graph</title>
+<style>
+  :root {
+    --bg: #f7f7f4;
+    --panel-bg: #ffffff;
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #2563eb;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; overflow: hidden; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+  #topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 20;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px;
+    padding: 8px 12px; background: rgba(255,255,255,.94); border-bottom: 1px solid var(--line);
+  }
+  #brand { display: flex; align-items: baseline; gap: 8px; flex: 1 1 200px; min-width: 0; }
+  #title { font-size: 14.5px; margin: 0; font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #srcname { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #tools { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+  #topbar button, #topbar input[type="text"] {
+    font: inherit; font-size: 12.5px; height: 28px; padding: 0 10px; border: 1px solid var(--line);
+    border-radius: 7px; background: #fff; color: var(--ink); cursor: pointer;
+  }
+  #topbar button:hover { border-color: var(--accent); }
+  #topbar button.on { background: #eef2ff; border-color: var(--accent); color: var(--accent); }
+  #searchBox { width: 190px; cursor: text; }
+  #searchCount { font-size: 12px; color: var(--muted); }
+  #canvasWrap { position: absolute; left: 0; right: 0; top: 52px; bottom: 0; overflow: auto; cursor: grab; touch-action: pan-x pan-y; scrollbar-width: none; }
+  #canvasWrap.panning { cursor: grabbing; }
+  #world { padding: 110vh 110vw; width: max-content; }
+  #canvasWrap::-webkit-scrollbar { display: none; }
+  svg { display: block; cursor: grab; }
+  svg.panning { cursor: grabbing; }
+  svg text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .pop {
+    position: fixed; left: 12px; z-index: 21; display: none; max-width: 520px;
+    background: rgba(255,255,255,.97); border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px 14px; font-size: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    max-height: calc(100vh - 100px); overflow: auto;
+  }
+  .pop.open { display: block; }
+  #helpGrid { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; align-items: baseline; }
+  #helpGrid .k { color: var(--accent); font-weight: 600; white-space: nowrap; }
+  #legend .lg-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; align-items: center; }
+  #legend .lg-row:last-child { margin-bottom: 0; }
+  #legend .chip {
+    display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px;
+    border: 1px solid var(--line); border-radius: 999px; background: #fff; cursor: pointer;
+    user-select: none;
+  }
+  #legend .chip.off { opacity: .35; text-decoration: line-through; }
+  #legend .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  #legend .lswatch { width: 22px; height: 0; border-top-width: 2.4px; display: inline-block; }
+  #panel {
+    position: fixed; top: 52px; right: 0; bottom: 0; width: 330px; z-index: 25;
+    background: var(--panel-bg); border-left: 1px solid var(--line);
+    display: none; flex-direction: column;
+  }
+  #panel.open { display: flex; }
+  #panelHead {
+    display: flex; align-items: center; gap: 8px; flex: none;
+    padding: 9px 56px 9px 14px; border-bottom: 1px solid var(--line); background: var(--panel-bg);
+  }
+  #panelTitle { flex: 1; margin: 0; font-size: 13px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #panelBody { flex: 1; overflow-y: auto; padding: 12px 14px 20px; }
+  #panelBody h2 { font-size: 13px; margin: 0 0 8px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+  #panel .tagrow { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  #panel .tag { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: #eef2ff; color: #3730a3; }
+  #panel .text { font-size: 14px; line-height: 1.45; margin-bottom: 10px; }
+  #panel .sect { font-size: 11.5px; font-weight: 650; color: var(--muted); margin: 12px 0 4px; text-transform: uppercase; letter-spacing: .05em; }
+  #panel .linkrow { display: block; width: 100%; text-align: left; font: inherit; font-size: 12.5px; padding: 5px 7px; margin: 2px 0; border: 1px solid var(--line); border-radius: 7px; background: #fff; cursor: pointer; }
+  #panel .linkrow:hover, #panel .kbd-focus { border-color: var(--accent); }
+  #panel .kbd-focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  #panel .linkrow .etype { color: var(--accent); font-weight: 600; }
+  #panel .note { font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+  #panel .srcbtn { display: inline-block; font: inherit; font-size: 12px; padding: 3px 8px; margin: 2px 4px 2px 0; border: 1px solid var(--line); border-radius: 7px; background: #fff; cursor: pointer; }
+  #panel .passage { display: none; font-size: 12.5px; line-height: 1.5; background: #f7f7f4; border: 1px solid var(--line); border-radius: 7px; padding: 8px; margin: 4px 0; }
+  #panel .passage.show { display: block; cursor: pointer; }
+  #pMode { font-size: 11px; height: 24px; padding: 0 9px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); cursor: pointer; white-space: nowrap; }
+  #pMode:hover { border-color: var(--accent); }
+  #pMode.on { background: #eef2ff; border-color: var(--accent); color: var(--accent); }
+  #sourceBody { font-size: 12.5px; line-height: 1.6; white-space: pre-wrap; word-break: break-word; }
+  #sourceBody mark { background: transparent; border-radius: 2px; cursor: pointer; padding: 0 1px; }
+  #panelHandle {
+    position: fixed; top: 52px; bottom: 0; width: 14px; right: 0; z-index: 26;
+    cursor: col-resize; display: none; align-items: center; justify-content: center;
+  }
+  #panelHandle.open { display: flex; }
+  #panelGrip { width: 4px; height: 42px; border-radius: 3px; background: #d1d5db; transition: background .12s; }
+  #panelHandle:hover #panelGrip, #panelHandle.dragging #panelGrip { background: var(--accent); }
+  #panelToggle {
+    position: fixed; top: 60px; right: 10px; z-index: 27;
+    width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--line);
+    background: rgba(255,255,255,.95); color: var(--ink); cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #panelToggle svg { width: 17px; height: 17px; display: block; }
+  #panelToggle:hover { border-color: var(--accent); }
+  #panelToggle.on { background: #eef2ff; border-color: var(--accent); color: var(--accent); }
+  #edgePop {
+    position: fixed; z-index: 28; display: flex; align-items: center; gap: 6px;
+    background: rgba(255, 255, 255, .97); border: 1px solid var(--line); border-radius: 10px;
+    padding: 6px 6px 6px 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+    font-size: 11.5px; color: var(--muted); cursor: pointer;
+    max-width: min(380px, 90vw);
+    opacity: 0; visibility: hidden; transform: translateY(3px); pointer-events: none;
+    transition: opacity .13s ease, transform .13s ease, visibility .13s;
+  }
+  #edgePop.open { opacity: 1; visibility: visible; transform: none; pointer-events: auto; }
+  #edgePop:hover { border-color: var(--accent); }
+  #edgePopBody { min-width: 0; }
+  #edgePopType { font-size: 11px; color: var(--accent); font-weight: 600; }
+  #edgePopNote { font-size: 11.5px; color: var(--muted); margin-top: 2px; max-width: 290px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #edgePopNote:empty { display: none; }
+  #edgeFollow {
+    width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line);
+    background: #eef2ff; color: var(--accent); font-size: 14px; line-height: 1; cursor: pointer; flex: none;
+  }
+  #edgeFollow:hover { border-color: var(--accent); }
+  #edgePopClose {
+    width: 24px; height: 24px; border-radius: 50%; border: none; background: none;
+    color: var(--muted); font-size: 13px; line-height: 1; cursor: pointer; flex: none;
+  }
+  #edgePopClose:hover { background: #f1f5f9; color: var(--ink); }
+  .edge-hit { pointer-events: stroke; }
+  @media (max-width: 720px) {
+    #topbar { padding: 7px 10px; gap: 6px 8px; }
+    #brand { flex: 1 1 100%; }
+    #tools { flex: 1 1 100%; margin-left: 0; }
+    #searchBox { flex: 1 1 120px; width: auto; min-width: 110px; }
+    #panel { width: min(88vw, 360px); }
+    #panelHandle { display: none !important; }
+    .pop { left: 8px; right: 8px; max-width: none; }
+  }
+  .node rect { stroke-width: 1.2; }
+  .node { cursor: pointer; }
+  .node.dim { opacity: .12; pointer-events: none; }
+  .node.match rect { stroke: #f59e0b; stroke-width: 3; }
+  .node.selected rect { stroke: #111827; stroke-width: 2.6; }
+  .edge { fill: none; }
+  .edge.hl { stroke-width: 3; }
+  .edge.edge-sel { stroke-width: 4.5; }
+  #gTop { pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="topbar">
+  <div id="brand"><h1 id="title"></h1><span id="srcname"></span></div>
+  <div id="tools">
+    <button id="btnAll">All layers</button>
+    <button id="btnFit">Fit</button>
+    <button id="btnReset">Reset</button>
+    <button id="btnHelp">Help</button>
+    <button id="btnLegend">Legend</button>
+    <input type="text" id="searchBox" placeholder="search ideas...">
+    <span id="searchCount"></span>
+  </div>
+</div>
+<div id="canvasWrap"><div id="world"><svg id="canvas">
+  <defs id="defs"></defs>
+  <g id="gEdges"></g>
+  <g id="gXEdges"></g>
+  <g id="gNodes"></g>
+  <g id="gTop"></g>
+</svg></div></div>
+<div id="help" class="pop">
+  <div id="helpGrid">
+    <span class="k">scroll</span><span>move the page</span>
+    <span class="k">shift+scroll</span><span>move sideways</span>
+    <span class="k">ctrl+scroll</span><span>zoom at cursor</span>
+    <span class="k">ctrl+= / ctrl+-</span><span>zoom in and out</span>
+    <span class="k">drag</span><span>free pan in any direction</span>
+    <span class="k">dblclick</span><span>fit view</span>
+    <span class="k">arrows</span><span>navigate, top to bottom order</span>
+    <span class="k">left</span><span>fold the branch, or go to parent</span>
+    <span class="k">right</span><span>unfold, go to first child</span>
+    <span class="k">space</span><span>fold or unfold selected branch</span>
+    <span class="k">enter</span><span>open the sidebar and step into it</span>
+    <span class="k">esc</span><span>back to the graph, close popovers</span>
+    <span class="k">ctrl+1..9</span><span>show that many layers</span>
+    <span class="k">ctrl+0</span><span>unfold everything</span>
+    <span class="k">ctrl+alt+1..9</span><span>focus the selected branch</span>
+    <span class="k">sidebar</span><span>the top right button opens and closes it</span>
+    <span class="k">source</span><span>sidebar toggle between excerpts and the full source</span>
+    <span class="k">edge</span><span>click an edge, then follow it to the other end</span>
+    <span class="k">cursor pill</span><span>drag the divider to resize the sidebar</span>
+    <span class="k">click</span><span>select a node, it does not open the sidebar</span>
+  </div>
+</div>
+<div id="legend" class="pop">
+  <div class="lg-row" id="legendNodeChips"></div>
+  <div class="lg-row" id="legendEdgeChips"></div>
+</div>
+<aside id="panel">
+  <div id="panelHead">
+    <h2 id="panelTitle"></h2>
+    <button id="pMode" style="display: none"></button>
+  </div>
+  <div id="panelBody"></div>
+</aside>
+<div id="panelHandle" title="drag to resize the sidebar"><span id="panelGrip"></span></div>
+<button id="panelToggle" title="open or close the sidebar" aria-label="open or close the sidebar">
+  <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6">
+    <rect x="1.5" y="3" width="15" height="12" rx="2"></rect>
+    <line x1="11" y1="3" x2="11" y2="15"></line>
+  </svg>
+</button>
+<div id="edgePop">
+  <div id="edgePopBody">
+    <div id="edgePopType"></div>
+    <div id="edgePopNote"></div>
+  </div>
+  <button id="edgeFollow" title="follow this edge to the other end">&#8594;</button>
+  <button id="edgePopClose" title="close">&#215;</button>
+</div>
+<script>
+const GRAPH = {"meta": {"title": "Manufacturing Taste, point graph", "source": "source.txt", "passages": {"¶1": "---\ntags: simulation, statistics, philosophy, observation, python\n---\n# Manufacturing Taste", "¶2": "I asked Hadi, half-jokingly, whether Bach was the Justin Bieber of his time. Are we just listening to the most \"popular\" artists of the 1700s and calling it high culture? And the flip side: will people 300 years from now be listening to Bieber and think that was the best we had to offer? He strongly disagreed, but the question stuck with me.", "¶3": "Because here's the thing: in 18th-century Vienna alone, there were somewhere between 200 and 500 active composers at any given time. Across all of Europe during the Classical era, [IMSLP catalogs over 3,400 composers](https://imslp.org/wiki/Category:People_from_the_Classical_era) whose work survived in some form, and many more left no trace at all. [Wikipedia's curated list](https://en.wikipedia.org/wiki/List_of_Classical-era_composers) names several hundred. We remember fewer than 20. The standard explanation says we remember the best ones. But were they the best? Or were they the ones who happened to have the right patron, the right court position, the right access to orchestras and publishers?", "¶4": "We can't rewind history and run it again with different initial conditions. If the Esterházy family had hired a different Kapellmeister instead of Haydn, would we still know Haydn's name? We literally cannot answer that question empirically. But we can build a model of how cultural markets work and run *that* thousands of times.", "¶5": "So that's what I did. I built a [simulation](https://github.com/k1monfared/manufacturing_taste) to find out. The full technical paper is [here](https://github.com/k1monfared/manufacturing_taste/blob/master/paper/paper.pdf). This post is the less formal version.", "¶6": "## Three Stories About How Canons Form\nI set up the project to test three competing hypotheses. Each tells a different story.", "¶7": "**Story 1: The Cream Rises.** The works we remember are the best works. Period. Money might help someone get a head start, but over long enough time horizons, genuine quality wins. If you replayed history with different patrons, you'd end up with roughly the same canon.", "¶8": "**Story 2: Money Writes History.** Success is mostly about who gets heard first. A composer with a wealthy patron gets performed; audiences grow to like what they hear (a real psychological phenomenon, more on this below); that familiarity gets retroactively interpreted as quality; and institutions lock it in for future generations. Quality is almost irrelevant.", "¶9": "**Story 3: Floors and Ceilings.** Both are partly right. The truly terrible never succeed no matter how much money backs them. The truly transcendent sometimes break through despite everything. But for the vast majority in the middle, the \"very good but not obviously once-in-a-generation\" group, whether they become famous or forgotten depends on luck, money, and timing, not on the difference between their talent and their peers'.", "¶10": "Think of it like a job market. The very best candidate and the very worst are easy to rank. But among the twenty \"pretty good\" candidates, who gets hired often comes down to who knew someone, who happened to interview on a good day, or whose resume landed on top of the pile. The classical music canon is the same problem at civilizational scale.", "¶11": "## The Mechanisms\nThe model incorporates three phenomena that are individually well-documented in psychology and economics, but whose *combined* effect on cultural canons hasn't been quantified.", "¶12": "**The Mere Exposure Effect.** We tend to like things we've encountered before. A song that plays on the radio ten times starts to feel \"catchy\" even if it didn't grab you the first time. This isn't about learning to appreciate complexity. It happens with nonsense syllables, abstract shapes, faces of strangers. Zajonc demonstrated this in 1968, and Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26. The effect peaks at moderate exposure and reverses with overexposure (hence \"I'm sick of that song\").", "¶13": "What this means for canons: artists who get more initial airtime develop an artificial quality advantage. Audiences genuinely perceive their work as better, not because they're deluded, but because familiarity really does affect aesthetic experience. The problem isn't that people are bad judges. It's that the judging is contaminated by the exposure, and the exposure was determined by money.", "¶14": "**Social Influence.** We look at what others consume and use it as a shortcut for what's good. Bestseller lists, download counts, \"trending\" labels, view counts: all social signals that nudge us toward what's already popular. This creates snowball effects. The [Salganik MusicLab experiment](https://doi.org/10.1126/science.1121066) (2006) demonstrated this beautifully: they created an online music market where 14,341 participants could listen to 48 unknown songs. Some participants saw download counts; others didn't. Result: the same song could rank 1st in one version of the world and 40th in another, purely because of random early differences in who happened to download it first.", "¶15": "**Cumulative Advantage.** The rich get richer. An artist whose first album sells well gets a bigger marketing budget, better tour slots, more press, more prominent playlist placement, all of which make the second album more likely to succeed regardless of whether it's better. The sociologist Robert Merton called this the Matthew Effect. Small initial differences, which may be due to luck or timing or money, get magnified into enormous gaps over time. A composer who secures a court position at age 20 accumulates decades of performances, publications, and reputation that a composer who missed that appointment by one year never gets to build.", "¶16": "Each of these alone is well-understood. What I wanted to know is: when you put all three together in a system and let them interact over many generations, what happens?", "¶17": "## What The Simulation Does\nThe model has three types of agents: producers (composers/artists), consumers (audiences), and gatekeepers (critics, curators, playlist editors). Each producer gets a quality score drawn randomly (how good their work actually is) and a capital score drawn independently (how much money and access they start with). Quality and capital are uncorrelated. Being wealthy doesn't make you talented.", "¶18": "Then the simulation runs. Producers with more capital get more exposure. Consumers form opinions based on actual quality plus the mere exposure effect plus social signals. Success feeds back into more exposure (cumulative advantage). After many rounds, some producers achieve \"canonical\" status. They're the ones we remember.", "¶19": "I ran this thousands of times under different conditions. Each run takes about two minutes with 1,000 producers and 10,000 consumers, so I parallelized it across CPU cores and ran 360+ per condition for the main experiments, with formal power analysis to make sure the sample sizes were sufficient.", "¶20": "## What Happened\n### Does social influence weaken the quality-success link?\nYes. When simulated listeners can see what others are consuming, the correlation between actual quality and commercial success drops significantly (p < 0.0001 across 360 runs per condition). In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success. But in a world with charts, recommendations, and \"trending\" labels (our world), the link gets weaker. A mediocre work that gets lucky early can ride social proof to stardom, while an equally good work that starts slow may never recover.", "¶21": "This is, incidentally, why I distrust recommendation algorithms so much. Every \"Top 40\" chart, every \"Customers Also Bought\" widget, every view count is a form of social influence that systematically pushes us away from independent judgment. It's the measurement trap I wrote about [before](https://k1monfared.com/notes/blog/20251023-from-measurement-to-intention/). We use popularity as a proxy for quality, then optimize for the proxy, then forget it was a proxy.", "¶22": "### If we replayed history, would we get the same canon?\nThis is the experiment that surprised me most. I held talent constant. Every simulated composer kept the exact same quality score. I only reshuffled their resources: who had wealthy patrons and who didn't. Then I ran it 200 times.", "¶23": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means \"identical canon every time\" and 1 means \"completely different canons every time.\" Almost entirely different canons from just reshuffling money.", "¶24": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then it was only about 1 in 4. For everyone in the 50th to 90th percentile of quality, the solidly good but not unmistakably transcendent, canonical status was effectively a lottery.", "¶25": "This is the simulation equivalent of the Haydn question. If the Esterházys had hired someone else, Haydn would very likely be one of the hundreds of forgotten 18th-century composers you've never heard of. Not because he wasn't excellent, but because excellence alone isn't enough when the exposure pipeline is this narrow.", "¶26": "### What matters more: unequal money or herd behavior?\nI ran the simulation under four conditions, removing one factor at a time:", "¶27": "1. **Full model** (everything active): quality-canon correlation = 0.32\n2. **No social influence** (people judge independently): 0.35\n3. **Equal capital** (everyone starts with the same resources): 0.46\n4. **Quality only** (no social influence, no capital inequality): 0.46", "¶28": "Turning off social influence barely helps. But equalizing starting resources jumps the quality-canon correlation by 44%. The biggest distortion isn't that audiences follow trends. It's that some artists never get heard in the first place.", "¶29": "This maps directly to the modern world. The problem isn't that people blindly follow Spotify playlists. It's that only major-label artists get on those playlists to begin with. Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.", "¶30": "### What about 18th-century Vienna specifically?\nI built a stylized version: 300 composers, a handful of very wealthy patrons, strong word-of-mouth, no recording technology. The counterfactual distance was 0.97, near maximum. Only 2.5% of canonical composers were shared between any two alternate histories.", "¶31": "To say that plainly: if you could rewind to 1750 and randomly reassign which composers got which court positions, the names we teach in music history would be almost entirely different. The winners in our timeline were very likely excellent. You had to be good to compete for a court position. But dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery.", "¶32": "That's what \"manufacturing taste\" means. Not that the winners were bad. That the losers weren't meaningfully worse.", "¶33": "### How robust is this?\nI varied every parameter by ±50%. The single most important factor is how steeply money converts into attention. If doubling your marketing budget more than doubles your audience (a convex relationship), the rich get richer very fast and quality barely matters. If doubling your budget less than doubles your audience, quality has more room to breathe.", "¶34": "This isn't just a modeling knob. It corresponds to a real structural question about the industry. When a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500, the capital-to-exposure curve is extremely steep. Our model predicts that under those conditions, quality has very little to do with who becomes famous.", "¶35": "## What This Means\nStory 3 wins. Quality acts as a loose filter. It sets a floor below which you can't succeed and a ceiling above which you probably will. But the vast middle ground, where most artists live, is dominated by capital and luck.", "¶36": "There are a few implications worth spelling out.", "¶37": "**When someone says \"Bach is the greatest composer who ever lived,\"** a more precise statement would be: \"Bach is the greatest composer who ever lived among those who had the resources to be heard, published, and preserved.\" There may have been equally gifted composers whose music was never performed, never published, and never survived. We don't know. We can't know. But the simulation says it's very likely.", "¶38": "**The mechanisms are stronger today, not weaker.** The feedback loops we model (exposure bias, social influence, cumulative advantage) operate faster in the age of algorithmic recommendations. An 18th-century patronage decision played out over decades. A Spotify playlist placement plays out in hours. The scale of winner-take-all dynamics is vastly larger than anything in the historical record.", "¶39": "**The highest-leverage intervention isn't better judgment, it's wider exposure.** Our model says audiences are already decent judges of quality within the limits of what they're exposed to. The bottleneck is the exposure itself. Blind auditions for orchestras, widely adopted in the 1970s-80s, are the proof of concept: when the screen went up, the proportion of women hired by major US orchestras went from 5% to 25%. The talent was always there. The barrier was exposure.", "¶40": "This connects to something I keep coming back to in these posts: the gap between the metric and the thing we actually care about. We use \"survived into the canon\" as a proxy for \"was the best,\" then build entire curricula and cultural narratives on that proxy, forgetting it was ever a proxy at all. The simulation doesn't tell us what the canon *should* look like. It just tells us that the one we got is far more contingent than we assume.", "¶41": "## The Caveats\nI want to be honest about what this can and can't tell us.", "¶42": "The model assumes quality is a real, stable property that exists independently of who hears it. That's philosophically debatable. If \"quality\" is partly constituted by social processes, if great art is partly art that has been widely shared and discussed, then the whole decomposition may be ill-posed. I don't have a satisfying answer to this. I just think it's worth noting.", "¶43": "The calibration data comes from the Salganik MusicLab experiment, which studied American teenagers evaluating pop songs over weeks. Generalizing to 18th-century European aristocrats evaluating orchestral music over decades requires a leap of faith. The mechanisms (mere exposure, social influence, cumulative advantage) are well-documented across many contexts, but the specific parameter values are uncertain.", "¶44": "There are important things the model doesn't include: genre formation, critical discourse, technological change, cultural politics. Any model is a simplification. The question is whether it's a useful simplification, and I think it is. The direction of the effects is robust across a wide range of parameter values, even if the precise magnitudes are uncertain.", "¶45": "## So, Was Bach the Justin Bieber of His Time?\nAfter all of this, I have an answer to the question I asked Hadi. Not exactly, but closer than I expected.", "¶46": "The Bieber analogy gets the mechanism right but the quality floor wrong. The pop music pipeline can take someone who is good enough (can carry a tune, looks good on camera, millions meet that bar) and manufacture a global phenomenon through marketing and algorithmic promotion. Bach's world was different: to hold a court position you had to write music that worked for liturgical services, entertain aristocrats, train choirs, improvise fugues on demand. The quality floor was genuinely high.", "¶47": "So Bach wasn't just popular. He was excellent AND well-positioned. But the simulation tells us the \"AND\" is doing most of the work, and the second half matters more than the first. Reshuffle patronage and you get an almost entirely different canon. Only 2.5% overlap between alternate histories.", "¶48": "I think Bach was less like Justin Bieber and more like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals. All fifty are excellent. All fifty could do the job. But one happened to get a profile in the New York Times, which led to speaking invitations, which led to a book deal, which led to a reputation as \"the best surgeon in the country.\" The other 49 are just as good. You've never heard of them.", "¶49": "The question was never whether Bach was great. He almost certainly was. The question is whether we're listening to him because he was the *greatest*, or because he was great AND he landed the right church job in Leipzig. The simulation says it's the second. And it says there were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know, because they didn't get that job.", "¶50": "That's what sits with me. Not that the canon is wrong. But that it's one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as if it were inevitable.", "¶51": "And there's a deeper question here that I haven't been able to shake. We think of Bach's music as what \"great music\" sounds like. His harmonic language, his structures, his aesthetic sensibility: these are the foundations of how we hear and judge music today. But if someone else had gotten the Leipzig job, if a different set of composers had survived into the canon, we would have inherited a different set of foundations. We would hear differently. We would judge differently. What we call \"good taste\" would be a different taste entirely.", "¶52": "That's the real meaning of the title. It's not just that the canon was manufactured. It's that our taste was manufactured along with it. We like what we were taught to like, and we were taught to like the survivors, and the survivors were selected by money and luck as much as by merit. The whole chain from \"who got funded\" to \"what counts as beautiful\" is more contingent than it feels from the inside.", "¶53": "As for the other half of the question, whether people 300 years from now will be listening to Bieber and calling it the peak of our era, I honestly don't know. But if the mechanisms in this simulation are right, then whoever survives into the canon of the 2000s will have more to do with who had the best distribution deals and the most favorable algorithms than with who made the best music. And we won't be around to correct them."}, "edgeTypes": {"supports": {"direction": "directed", "inverse": "supported-by", "style": "solid green"}, "exemplifies": {"direction": "directed", "inverse": "exemplified-by", "style": "dotted green"}, "contradicts": {"direction": "symmetric", "inverse": "contradicts", "style": "solid red"}, "qualifies": {"direction": "directed", "inverse": "qualified-by", "style": "dashed blue"}, "concedes": {"direction": "directed", "inverse": "conceded-by", "style": "dashed gray"}, "restates": {"direction": "symmetric", "inverse": "restates", "style": "dotted gray"}, "precondition": {"direction": "directed", "inverse": "prerequisite-of", "style": "solid orange"}, "contains": {"direction": "directed", "inverse": "contained-in", "style": "tree"}}}, "nodes": [{"id": "0", "type": "summary", "text": "A simulation finds quality only loosely filters canon success, exposure and capital dominate, so the canon and our taste are more contingent than they feel.", "attribution": "author", "source": ["¶1", "¶35", "¶52"]}, {"id": "1", "type": "claim", "text": "The canon's winners may be the best, or merely the best positioned, and history cannot tell us which.", "attribution": "author", "source": ["¶3", "¶4"]}, {"id": "1.1", "type": "claim", "text": "The question began half-jokingly: was Bach the Justin Bieber of his time?", "attribution": "author", "source": ["¶2"]}, {"id": "1.2", "type": "claim", "text": "In 18th-century Vienna alone, somewhere between 200 and 500 composers were active at any given time.", "attribution": "author", "source": ["¶3"]}, {"id": "1.3", "type": "claim", "text": "IMSLP catalogs over 3,400 Classical-era composers whose work survived, Wikipedia's list names several hundred, and many more left no trace; we remember fewer than 20.", "attribution": "author", "source": ["¶3"]}, {"id": "1.4", "type": "claim", "text": "The standard explanation says we remember the best, but the winners may be those with the right patron, court position, orchestra, and publisher.", "attribution": "author", "source": ["¶3"]}, {"id": "1.5", "type": "claim", "text": "If the Esterházys had hired a different Kapellmeister instead of Haydn, would we still know his name?", "attribution": "author", "source": ["¶4"]}, {"id": "1.6", "type": "claim", "text": "That question cannot be answered empirically, but a model of cultural markets can be run thousands of times.", "attribution": "author", "source": ["¶4"]}, {"id": "1.7", "type": "claim", "text": "The author built a simulation and wrote this less formal version of the full technical paper.", "attribution": "author", "source": ["¶5"]}, {"id": "2", "type": "theme", "text": "Three competing hypotheses were set up to explain how canons form.", "attribution": "author", "source": ["¶6"]}, {"id": "2.1", "type": "claim", "text": "Story 1 (The Cream Rises): the works we remember are the best works, and over long horizons genuine quality wins.", "attribution": "author", "source": ["¶7"]}, {"id": "2.1.1", "type": "claim", "text": "Money might buy a head start, but replaying history with different patrons would end with roughly the same canon.", "attribution": "author", "source": ["¶7"]}, {"id": "2.2", "type": "claim", "text": "Story 2 (Money Writes History): success is mostly about who gets heard first, and quality is almost irrelevant.", "attribution": "author", "source": ["¶8"]}, {"id": "2.2.1", "type": "claim", "text": "A wealthy patron gets a composer performed, audiences like what they hear, and the familiarity gets read as quality.", "attribution": "author", "source": ["¶8"]}, {"id": "2.2.2", "type": "claim", "text": "Institutions lock that advantage in for future generations.", "attribution": "author", "source": ["¶8"]}, {"id": "2.3", "type": "claim", "text": "Story 3 (Floors and Ceilings): both stories are partly right.", "attribution": "author", "source": ["¶9"]}, {"id": "2.3.1", "type": "claim", "text": "The truly terrible never succeed no matter how much money backs them.", "attribution": "author", "source": ["¶9"]}, {"id": "2.3.2", "type": "claim", "text": "The truly transcendent sometimes break through despite everything.", "attribution": "author", "source": ["¶9"]}, {"id": "2.3.3", "type": "claim", "text": "For the vast majority in the middle, fame depends on luck, money, and timing, not on talent differences with peers.", "attribution": "author", "source": ["¶9"]}, {"id": "2.4", "type": "example", "text": "The canon is like a job market: the very best and the very worst candidates are easy to rank.", "attribution": "author", "source": ["¶10"]}, {"id": "2.4.1", "type": "example", "text": "Among twenty pretty good candidates, who gets hired often comes down to who knew someone, a good interview day, or resume order.", "attribution": "author", "source": ["¶10"]}, {"id": "2.4.2", "type": "nuance", "text": "The classical music canon is the same problem at civilizational scale.", "attribution": "author", "source": ["¶10"]}, {"id": "3", "type": "theme", "text": "Three mechanisms, each individually well-documented, were combined in a way that had not been quantified.", "attribution": "author", "source": ["¶11"]}, {"id": "3.1", "type": "claim", "text": "Mere exposure: we tend to like things we have encountered before.", "attribution": "author", "source": ["¶12"]}, {"id": "3.1.1", "type": "example", "text": "A song played on the radio ten times starts to feel catchy even if it did not grab you the first time.", "attribution": "author", "source": ["¶12"]}, {"id": "3.1.2", "type": "claim", "text": "This is not about learning to appreciate complexity; it happens with nonsense syllables, abstract shapes, and strangers' faces.", "attribution": "author", "source": ["¶12"]}, {"id": "3.1.3", "type": "evidence", "text": "Zajonc demonstrated the effect in 1968.", "attribution": "reported", "source": ["¶12"]}, {"id": "3.1.4", "type": "evidence", "text": "Bornstein's 1989 meta-analysis across 208 experiments confirmed it with an average effect size of r = 0.26.", "attribution": "reported", "source": ["¶12"]}, {"id": "3.1.5", "type": "nuance", "text": "The effect peaks at moderate exposure and reverses with overexposure.", "attribution": "author", "source": ["¶12"]}, {"id": "3.1.6", "type": "claim", "text": "Artists who get more initial airtime develop an artificial quality advantage, because audiences genuinely perceive funded work as better.", "attribution": "author", "source": ["¶13"]}, {"id": "3.1.7", "type": "nuance", "text": "The problem is not that people are bad judges; the judging is contaminated by exposure, and the exposure was determined by money.", "attribution": "author", "source": ["¶13"]}, {"id": "3.2", "type": "claim", "text": "Social influence: we use what others consume as a shortcut for what is good.", "attribution": "author", "source": ["¶14"]}, {"id": "3.2.1", "type": "claim", "text": "Bestseller lists, download counts, trending labels, and view counts nudge us toward what is already popular, creating snowball effects.", "attribution": "author", "source": ["¶14"]}, {"id": "3.2.2", "type": "evidence", "text": "The 2006 Salganik MusicLab experiment let 14,341 participants choose among 48 unknown songs, some seeing download counts, others not.", "attribution": "reported", "source": ["¶14"]}, {"id": "3.2.3", "type": "evidence", "text": "The same song ranked 1st in one version of the world and 40th in another, purely from random early differences in downloads.", "attribution": "reported", "source": ["¶14"]}, {"id": "3.3", "type": "claim", "text": "Cumulative advantage: the rich get richer, what the sociologist Robert Merton called the Matthew Effect.", "attribution": "author", "source": ["¶15"]}, {"id": "3.3.1", "type": "claim", "text": "A first album that sells well buys a bigger marketing budget, better tour slots, more press, and prominent playlist placement.", "attribution": "author", "source": ["¶15"]}, {"id": "3.3.2", "type": "nuance", "text": "Small initial differences, whether from luck, timing, or money, get magnified into enormous gaps over time.", "attribution": "author", "source": ["¶15"]}, {"id": "3.3.3", "type": "example", "text": "A composer who secures a court position at 20 accumulates decades of performances and reputation that a one-year miss never builds.", "attribution": "author", "source": ["¶15"]}, {"id": "3.4", "type": "nuance", "text": "Each mechanism is well-understood alone; the open question is what happens when all three interact over many generations.", "attribution": "author", "source": ["¶16"]}, {"id": "4", "type": "theme", "text": "The model was run thousands of times to test how social signals, money, and patronage shape the canon.", "attribution": "author", "source": ["¶16", "¶19"]}, {"id": "4.1", "type": "claim", "text": "Model design: producers, consumers, and gatekeepers, with quality and capital drawn independently.", "attribution": "author", "source": ["¶17"]}, {"id": "4.1.1", "type": "claim", "text": "Each producer gets a random quality score and an independently drawn capital score, so being wealthy does not make you talented.", "attribution": "author", "source": ["¶17"]}, {"id": "4.1.2", "type": "claim", "text": "Producers with more capital get more exposure, and consumers form opinions from quality, mere exposure, and social signals.", "attribution": "author", "source": ["¶18"]}, {"id": "4.1.3", "type": "claim", "text": "Success feeds back into more exposure, and after many rounds some producers achieve canonical status.", "attribution": "author", "source": ["¶18"]}, {"id": "4.1.4", "type": "evidence", "text": "Each run took about two minutes with 1,000 producers and 10,000 consumers, parallelized across CPU cores.", "attribution": "author", "source": ["¶19"]}, {"id": "4.1.5", "type": "evidence", "text": "The author ran 360+ runs per condition for the main experiments, with formal power analysis to check sample sizes.", "attribution": "author", "source": ["¶19"]}, {"id": "4.2", "type": "claim", "text": "Experiment 1: visible social influence weakens the quality-success link.", "attribution": "author", "source": ["¶20"]}, {"id": "4.2.1", "type": "evidence", "text": "When listeners could see others' consumption, the quality-success correlation dropped significantly (p < 0.0001 across 360 runs per condition).", "attribution": "author", "source": ["¶20"]}, {"id": "4.2.2", "type": "claim", "text": "In a world where nobody could see what anyone else was listening to, quality would be a moderately good predictor of success.", "attribution": "author", "source": ["¶20"]}, {"id": "4.2.3", "type": "claim", "text": "In our world of charts, recommendations, and trending labels, the link gets weaker.", "attribution": "author", "source": ["¶20"]}, {"id": "4.2.3.1", "type": "claim", "text": "A mediocre work that gets lucky early can ride social proof to stardom.", "attribution": "author", "source": ["¶20"]}, {"id": "4.2.3.2", "type": "claim", "text": "An equally good work that starts slow may never recover.", "attribution": "author", "source": ["¶20"]}, {"id": "4.2.4", "type": "claim", "text": "Every Top 40 chart, Customers Also Bought widget, and view count is a form of social influence pushing us away from independent judgment.", "attribution": "author", "source": ["¶21"]}, {"id": "4.2.5", "type": "claim", "text": "The measurement trap: popularity is used as a proxy for quality, then optimized for, then forgotten as a proxy.", "attribution": "author", "source": ["¶21"]}, {"id": "4.3", "type": "claim", "text": "Experiment 2: holding talent constant and reshuffling only resources produces almost entirely different canons.", "attribution": "author", "source": ["¶22"]}, {"id": "4.3.1", "type": "evidence", "text": "The counterfactual distance was 0.88 on a 0-to-1 scale, where 0 means identical canons and 1 means completely different ones.", "attribution": "author", "source": ["¶23"]}, {"id": "4.3.2", "type": "claim", "text": "Only the top 10% of talent had a meaningful shot at fame regardless of funding, and even then only about one in four.", "attribution": "author", "source": ["¶24"]}, {"id": "4.3.3", "type": "claim", "text": "For everyone in the 50th to 90th percentile of quality, canonical status was effectively a lottery.", "attribution": "author", "source": ["¶24"]}, {"id": "4.3.4", "type": "claim", "text": "This is the simulation equivalent of the Haydn question: excellence alone is not enough when the exposure pipeline is narrow.", "attribution": "author", "source": ["¶25"]}, {"id": "4.3.5", "type": "claim", "text": "Had the Esterházys hired someone else, Haydn would very likely be one of the hundreds of forgotten composers.", "attribution": "author", "source": ["¶25"]}, {"id": "4.4", "type": "claim", "text": "Experiment 3: unequal money distorts the canon more than herd behavior.", "attribution": "author", "source": ["¶26", "¶28"]}, {"id": "4.4.1", "type": "evidence", "text": "Quality-canon correlation by condition: full model 0.32, no social influence 0.35, equal capital 0.46, quality only 0.46.", "attribution": "author", "source": ["¶27"]}, {"id": "4.4.2", "type": "claim", "text": "Turning off social influence barely helps, but equalizing starting resources jumps the quality-canon correlation by 44%.", "attribution": "author", "source": ["¶28"]}, {"id": "4.4.3", "type": "claim", "text": "The biggest distortion is not that audiences follow trends; it is that some artists never get heard in the first place.", "attribution": "author", "source": ["¶28"]}, {"id": "4.4.4", "type": "claim", "text": "Capital gates access to the exposure pipeline, and everything downstream of that is noise amplification.", "attribution": "author", "source": ["¶29"]}, {"id": "4.4.5", "type": "claim", "text": "The modern mapping: the problem is not that people blindly follow Spotify playlists, but that only major-label artists get on them.", "attribution": "author", "source": ["¶29"]}, {"id": "4.5", "type": "claim", "text": "Experiment 4: a stylized Vienna run used 300 composers, a handful of very wealthy patrons, strong word-of-mouth, and no recording technology.", "attribution": "author", "source": ["¶30"]}, {"id": "4.5.1", "type": "evidence", "text": "Its counterfactual distance was 0.97, near maximum, with only 2.5% of canonical composers shared between any two alternate histories.", "attribution": "author", "source": ["¶30"]}, {"id": "4.5.2", "type": "claim", "text": "Rewinding to 1750 and randomly reassigning court positions would make the names we teach almost entirely different.", "attribution": "author", "source": ["¶31"]}, {"id": "4.5.3", "type": "claim", "text": "The winners were very likely excellent, since you had to be good to compete for a court position.", "attribution": "author", "source": ["¶31"]}, {"id": "4.5.4", "type": "claim", "text": "Dozens of equally excellent composers were lost to history because they drew the short straw in the patronage lottery.", "attribution": "author", "source": ["¶31"]}, {"id": "4.5.5", "type": "claim", "text": "Manufacturing taste means the winners were not bad, but the losers were not meaningfully worse.", "attribution": "author", "source": ["¶32"]}, {"id": "4.6", "type": "claim", "text": "Robustness: the results held with every parameter varied by ±50%.", "attribution": "author", "source": ["¶33"]}, {"id": "4.6.1", "type": "claim", "text": "The single most important factor is how steeply money converts into attention.", "attribution": "author", "source": ["¶33"]}, {"id": "4.6.2", "type": "claim", "text": "If doubling a marketing budget more than doubles the audience, the rich get richer very fast and quality barely matters.", "attribution": "author", "source": ["¶33"]}, {"id": "4.6.3", "type": "claim", "text": "If doubling a budget less than doubles the audience, quality has more room to breathe.", "attribution": "author", "source": ["¶33"]}, {"id": "4.6.4", "type": "evidence", "text": "In the industry, a major label can buy a front-page Spotify placement reaching 50 million listeners while an independent artist's self-promotion reaches 500.", "attribution": "author", "source": ["¶34"]}, {"id": "4.6.5", "type": "claim", "text": "Under such an extremely steep capital-to-exposure curve, quality has very little to do with who becomes famous.", "attribution": "author", "source": ["¶34"]}, {"id": "5", "type": "claim", "text": "Story 3 wins: quality is a loose filter that sets a floor and a ceiling, and the vast middle is dominated by capital and luck.", "attribution": "author", "source": ["¶35", "¶36"]}, {"id": "5.1", "type": "nuance", "text": "The greatest composer who ever lived, made precise, is the greatest among those with the resources to be heard, published, and preserved.", "attribution": "author", "source": ["¶37"]}, {"id": "5.1.1", "type": "nuance", "text": "There may have been equally gifted composers whose music was never performed, never published, and never survived.", "attribution": "author", "source": ["¶37"]}, {"id": "5.1.2", "type": "nuance", "text": "We cannot know, but the simulation says it is very likely.", "attribution": "author", "source": ["¶37"]}, {"id": "5.2", "type": "claim", "text": "The mechanisms are stronger today, not weaker.", "attribution": "author", "source": ["¶38"]}, {"id": "5.2.1", "type": "example", "text": "An 18th-century patronage decision played out over decades; a Spotify playlist placement plays out in hours.", "attribution": "author", "source": ["¶38"]}, {"id": "5.2.2", "type": "claim", "text": "The scale of winner-take-all dynamics is vastly larger than anything in the historical record.", "attribution": "author", "source": ["¶38"]}, {"id": "5.3", "type": "claim", "text": "The highest-leverage intervention is not better judgment, it is wider exposure.", "attribution": "author", "source": ["¶39"]}, {"id": "5.3.1", "type": "claim", "text": "Audiences are already decent judges within the limits of what they are exposed to; the bottleneck is exposure itself.", "attribution": "author", "source": ["¶39"]}, {"id": "5.3.2", "type": "evidence", "text": "Blind auditions for orchestras, widely adopted in the 1970s-80s, raised the proportion of women hired by major US orchestras from 5% to 25%.", "attribution": "author", "source": ["¶39"]}, {"id": "5.3.3", "type": "claim", "text": "The talent was always there; the barrier was exposure.", "attribution": "author", "source": ["¶39"]}, {"id": "5.4", "type": "claim", "text": "The deeper pattern is the gap between the metric and what we care about: canon survival is a proxy for being the best.", "attribution": "author", "source": ["¶40"]}, {"id": "5.4.1", "type": "claim", "text": "The simulation does not say what the canon should look like, only that the one we got is far more contingent than we assume.", "attribution": "author", "source": ["¶40"]}, {"id": "6", "type": "theme", "text": "Three caveats bound what the model can tell us.", "attribution": "author", "source": ["¶41"]}, {"id": "6.1", "type": "nuance", "text": "The model assumes quality is a real, stable property independent of who hears it, which is philosophically debatable.", "attribution": "author", "source": ["¶42"]}, {"id": "6.1.1", "type": "nuance", "text": "If quality is partly constituted by social processes, the whole decomposition may be ill-posed.", "attribution": "author", "source": ["¶42"]}, {"id": "6.2", "type": "nuance", "text": "The calibration data comes from American teenagers evaluating pop songs over weeks; generalizing to 18th-century European aristocrats over decades requires a leap of faith.", "attribution": "author", "source": ["¶43"]}, {"id": "6.2.1", "type": "nuance", "text": "The mechanisms are well-documented across many contexts, but the specific parameter values are uncertain.", "attribution": "author", "source": ["¶43"]}, {"id": "6.3", "type": "nuance", "text": "The model omits genre formation, critical discourse, technological change, and cultural politics.", "attribution": "author", "source": ["¶44"]}, {"id": "6.3.1", "type": "nuance", "text": "Any model is a simplification; the direction of the effects is robust across parameter values, even if the magnitudes are uncertain.", "attribution": "author", "source": ["¶44"]}, {"id": "7", "type": "claim", "text": "Bach was excellent AND well-positioned, and the second half of that conjunction matters more than the first.", "attribution": "author", "source": ["¶45", "¶47"]}, {"id": "7.1", "type": "claim", "text": "The Bieber analogy gets the mechanism right but the quality floor wrong.", "attribution": "author", "source": ["¶46"]}, {"id": "7.1.1", "type": "claim", "text": "The pop pipeline can manufacture a global phenomenon from someone good enough to carry a tune and look good on camera, a bar millions meet.", "attribution": "author", "source": ["¶46"]}, {"id": "7.1.2", "type": "claim", "text": "A court position in Bach's world required writing for liturgical services, entertaining aristocrats, training choirs, and improvising fugues on demand.", "attribution": "author", "source": ["¶46"]}, {"id": "7.1.3", "type": "nuance", "text": "The quality floor of that world was genuinely high.", "attribution": "author", "source": ["¶46"]}, {"id": "7.2", "type": "claim", "text": "Reshuffling patronage gives an almost entirely different canon, with only 2.5% overlap between alternate histories.", "attribution": "author", "source": ["¶47"]}, {"id": "7.3", "type": "example", "text": "Bach is like the one surgeon who gets famous out of fifty equally skilled surgeons at major hospitals.", "attribution": "author", "source": ["¶48"]}, {"id": "7.3.1", "type": "example", "text": "A New York Times profile led to speaking invitations, a book deal, and a reputation as the best surgeon in the country.", "attribution": "author", "source": ["¶48"]}, {"id": "7.3.2", "type": "nuance", "text": "The other 49 are just as good, and you have never heard of them.", "attribution": "author", "source": ["¶48"]}, {"id": "7.4", "type": "claim", "text": "The question was never whether Bach was great; he almost certainly was.", "attribution": "author", "source": ["¶49"]}, {"id": "7.4.1", "type": "claim", "text": "The question is whether we listen because he was the greatest, or because he was great AND landed the right church job in Leipzig.", "attribution": "author", "source": ["¶49"]}, {"id": "7.4.2", "type": "claim", "text": "The simulation says it is the second.", "attribution": "author", "source": ["¶49"]}, {"id": "7.4.3", "type": "nuance", "text": "There were probably 20 to 50 of his contemporaries who were equally great, whose names we will never know.", "attribution": "author", "source": ["¶49"]}, {"id": "7.5", "type": "claim", "text": "The canon is one canon out of hundreds of equally valid ones we could have ended up with, and we treat it as inevitable.", "attribution": "author", "source": ["¶50"]}, {"id": "7.6", "type": "claim", "text": "Bach's harmonic language, his structures, and his aesthetic sensibility are the foundations of how we hear and judge music today.", "attribution": "author", "source": ["¶51"]}, {"id": "7.6.1", "type": "claim", "text": "With a different set of composers surviving into the canon, we would have inherited different foundations and would hear and judge differently.", "attribution": "author", "source": ["¶51"]}, {"id": "7.6.2", "type": "claim", "text": "What we call good taste would be a different taste entirely.", "attribution": "author", "source": ["¶51"]}, {"id": "7.7", "type": "claim", "text": "Our taste was manufactured along with the canon: we like what we were taught to like.", "attribution": "author", "source": ["¶52"]}, {"id": "7.7.1", "type": "claim", "text": "The survivors were selected by money and luck as much as by merit.", "attribution": "author", "source": ["¶52"]}, {"id": "7.7.2", "type": "nuance", "text": "The whole chain from who got funded to what counts as beautiful is more contingent than it feels from the inside.", "attribution": "author", "source": ["¶52"]}, {"id": "7.8", "type": "claim", "text": "Whether people 300 years from now will listen to Bieber and call it the peak of our era is unknown.", "attribution": "author", "source": ["¶53"]}, {"id": "7.8.1", "type": "claim", "text": "If the mechanisms are right, the 2000s canon will track distribution deals and the most favorable algorithms more than the best music.", "attribution": "author", "source": ["¶53"]}, {"id": "7.8.2", "type": "nuance", "text": "And we will not be around to correct them.", "attribution": "author", "source": ["¶53"]}], "edges": [{"from": "0", "to": "1", "type": "contains"}, {"from": "0", "to": "2", "type": "contains"}, {"from": "0", "to": "3", "type": "contains"}, {"from": "0", "to": "4", "type": "contains"}, {"from": "0", "to": "5", "type": "contains"}, {"from": "0", "to": "6", "type": "contains"}, {"from": "0", "to": "7", "type": "contains"}, {"from": "1", "to": "1.1", "type": "contains"}, {"from": "1", "to": "1.2", "type": "contains"}, {"from": "1", "to": "1.3", "type": "contains"}, {"from": "1", "to": "1.4", "type": "contains"}, {"from": "1", "to": "1.5", "type": "contains"}, {"from": "1", "to": "1.6", "type": "contains"}, {"from": "1", "to": "1.7", "type": "contains"}, {"from": "2", "to": "2.1", "type": "contains"}, {"from": "2", "to": "2.2", "type": "contains"}, {"from": "2", "to": "2.3", "type": "contains"}, {"from": "2", "to": "2.4", "type": "contains"}, {"from": "2.1", "to": "2.1.1", "type": "contains"}, {"from": "2.2", "to": "2.2.1", "type": "contains"}, {"from": "2.2", "to": "2.2.2", "type": "contains"}, {"from": "2.3", "to": "2.3.1", "type": "contains"}, {"from": "2.3", "to": "2.3.2", "type": "contains"}, {"from": "2.3", "to": "2.3.3", "type": "contains"}, {"from": "2.4", "to": "2.4.1", "type": "contains"}, {"from": "2.4", "to": "2.4.2", "type": "contains"}, {"from": "3", "to": "3.1", "type": "contains"}, {"from": "3", "to": "3.2", "type": "contains"}, {"from": "3", "to": "3.3", "type": "contains"}, {"from": "3", "to": "3.4", "type": "contains"}, {"from": "3.1", "to": "3.1.1", "type": "contains"}, {"from": "3.1", "to": "3.1.2", "type": "contains"}, {"from": "3.1", "to": "3.1.3", "type": "contains"}, {"from": "3.1", "to": "3.1.4", "type": "contains"}, {"from": "3.1", "to": "3.1.5", "type": "contains"}, {"from": "3.1", "to": "3.1.6", "type": "contains"}, {"from": "3.1", "to": "3.1.7", "type": "contains"}, {"from": "3.2", "to": "3.2.1", "type": "contains"}, {"from": "3.2", "to": "3.2.2", "type": "contains"}, {"from": "3.2", "to": "3.2.3", "type": "contains"}, {"from": "3.3", "to": "3.3.1", "type": "contains"}, {"from": "3.3", "to": "3.3.2", "type": "contains"}, {"from": "3.3", "to": "3.3.3", "type": "contains"}, {"from": "4", "to": "4.1", "type": "contains"}, {"from": "4", "to": "4.2", "type": "contains"}, {"from": "4", "to": "4.3", "type": "contains"}, {"from": "4", "to": "4.4", "type": "contains"}, {"from": "4", "to": "4.5", "type": "contains"}, {"from": "4", "to": "4.6", "type": "contains"}, {"from": "4.1", "to": "4.1.1", "type": "contains"}, {"from": "4.1", "to": "4.1.2", "type": "contains"}, {"from": "4.1", "to": "4.1.3", "type": "contains"}, {"from": "4.1", "to": "4.1.4", "type": "contains"}, {"from": "4.1", "to": "4.1.5", "type": "contains"}, {"from": "4.2", "to": "4.2.1", "type": "contains"}, {"from": "4.2", "to": "4.2.2", "type": "contains"}, {"from": "4.2", "to": "4.2.3", "type": "contains"}, {"from": "4.2", "to": "4.2.4", "type": "contains"}, {"from": "4.2", "to": "4.2.5", "type": "contains"}, {"from": "4.2.3", "to": "4.2.3.1", "type": "contains"}, {"from": "4.2.3", "to": "4.2.3.2", "type": "contains"}, {"from": "4.3", "to": "4.3.1", "type": "contains"}, {"from": "4.3", "to": "4.3.2", "type": "contains"}, {"from": "4.3", "to": "4.3.3", "type": "contains"}, {"from": "4.3", "to": "4.3.4", "type": "contains"}, {"from": "4.3", "to": "4.3.5", "type": "contains"}, {"from": "4.4", "to": "4.4.1", "type": "contains"}, {"from": "4.4", "to": "4.4.2", "type": "contains"}, {"from": "4.4", "to": "4.4.3", "type": "contains"}, {"from": "4.4", "to": "4.4.4", "type": "contains"}, {"from": "4.4", "to": "4.4.5", "type": "contains"}, {"from": "4.5", "to": "4.5.1", "type": "contains"}, {"from": "4.5", "to": "4.5.2", "type": "contains"}, {"from": "4.5", "to": "4.5.3", "type": "contains"}, {"from": "4.5", "to": "4.5.4", "type": "contains"}, {"from": "4.5", "to": "4.5.5", "type": "contains"}, {"from": "4.6", "to": "4.6.1", "type": "contains"}, {"from": "4.6", "to": "4.6.2", "type": "contains"}, {"from": "4.6", "to": "4.6.3", "type": "contains"}, {"from": "4.6", "to": "4.6.4", "type": "contains"}, {"from": "4.6", "to": "4.6.5", "type": "contains"}, {"from": "5", "to": "5.1", "type": "contains"}, {"from": "5", "to": "5.2", "type": "contains"}, {"from": "5", "to": "5.3", "type": "contains"}, {"from": "5", "to": "5.4", "type": "contains"}, {"from": "5.1", "to": "5.1.1", "type": "contains"}, {"from": "5.1", "to": "5.1.2", "type": "contains"}, {"from": "5.2", "to": "5.2.1", "type": "contains"}, {"from": "5.2", "to": "5.2.2", "type": "contains"}, {"from": "5.3", "to": "5.3.1", "type": "contains"}, {"from": "5.3", "to": "5.3.2", "type": "contains"}, {"from": "5.3", "to": "5.3.3", "type": "contains"}, {"from": "5.4", "to": "5.4.1", "type": "contains"}, {"from": "6", "to": "6.1", "type": "contains"}, {"from": "6", "to": "6.2", "type": "contains"}, {"from": "6", "to": "6.3", "type": "contains"}, {"from": "6.1", "to": "6.1.1", "type": "contains"}, {"from": "6.2", "to": "6.2.1", "type": "contains"}, {"from": "6.3", "to": "6.3.1", "type": "contains"}, {"from": "7", "to": "7.1", "type": "contains"}, {"from": "7", "to": "7.2", "type": "contains"}, {"from": "7", "to": "7.3", "type": "contains"}, {"from": "7", "to": "7.4", "type": "contains"}, {"from": "7", "to": "7.5", "type": "contains"}, {"from": "7", "to": "7.6", "type": "contains"}, {"from": "7", "to": "7.7", "type": "contains"}, {"from": "7", "to": "7.8", "type": "contains"}, {"from": "7.1", "to": "7.1.1", "type": "contains"}, {"from": "7.1", "to": "7.1.2", "type": "contains"}, {"from": "7.1", "to": "7.1.3", "type": "contains"}, {"from": "7.3", "to": "7.3.1", "type": "contains"}, {"from": "7.3", "to": "7.3.2", "type": "contains"}, {"from": "7.4", "to": "7.4.1", "type": "contains"}, {"from": "7.4", "to": "7.4.2", "type": "contains"}, {"from": "7.4", "to": "7.4.3", "type": "contains"}, {"from": "7.6", "to": "7.6.1", "type": "contains"}, {"from": "7.6", "to": "7.6.2", "type": "contains"}, {"from": "7.7", "to": "7.7.1", "type": "contains"}, {"from": "7.7", "to": "7.7.2", "type": "contains"}, {"from": "7.8", "to": "7.8.1", "type": "contains"}, {"from": "7.8", "to": "7.8.2", "type": "contains"}, {"from": "3.1.6", "to": "4.2", "type": "supports", "source": ["¶13", "¶20"], "note": "exposure buys an artificial quality advantage, which flattens the quality-success link"}, {"from": "3.2.1", "to": "4.2.1", "type": "supports", "source": ["¶14", "¶20"], "note": "snowballing social signals explain the weakened correlation"}, {"from": "3.3.1", "to": "4.4.3", "type": "supports", "source": ["¶15", "¶28"], "note": "cumulative advantage explains why the never-heard never recover"}, {"from": "2.3.3", "to": "4.3.3", "type": "restates", "source": ["¶9", "¶24"], "note": "the middle depends on luck, later quantified as a lottery"}, {"from": "1.5", "to": "4.3.4", "type": "restates", "source": ["¶4", "¶25"], "note": "the Haydn counterfactual returns as the simulation equivalent"}, {"from": "4.5.1", "to": "7.2", "type": "restates", "source": ["¶30", "¶47"], "note": "the 2.5% overlap recurs in the closing answer"}, {"from": "5.1", "to": "7.4.1", "type": "restates", "source": ["¶37", "¶49"], "note": "the qualified Bach statement recurs as the final answer"}, {"from": "7.3", "to": "7.4.1", "type": "exemplifies", "source": ["¶48", "¶49"], "note": "the surgeon analogy illustrates being great AND positioned"}, {"from": "4.6.4", "to": "4.6.2", "type": "exemplifies", "source": ["¶33", "¶34"], "note": "50 million versus 500 illustrates the steep convex conversion"}, {"from": "7.8.1", "to": "4.4.3", "type": "supports", "source": ["¶28", "¶53"], "note": "the exposure bottleneck extends to the future canon"}]};
+
+const COL_GAP = 56, ROW_GAP = 14, PAD = 50, BODY_W = 240, LINE_H = 14, HEADER_H = 12, VPAD = 7, HPAD = 9;
+const FONT_STACK = "system-ui, -apple-system, 'Segoe UI', sans-serif";
+const FILL = {
+  summary: "#1f2937", theme: "#4f46e5", claim: "#dbeafe", evidence: "#dcfce7",
+  example: "#ccfbf1", counterpoint: "#fee2e2", rebuttal: "#ffedd5", nuance: "#ede9fe",
+  concession: "#f1f5f9", contradiction: "#fecaca", implicit: "#fef9c3"
+};
+const STROKE = {
+  summary: "#111827", theme: "#3730a3", claim: "#2563eb", evidence: "#16a34a",
+  example: "#0d9488", counterpoint: "#dc2626", rebuttal: "#ea580c", nuance: "#7c3aed",
+  concession: "#64748b", contradiction: "#b91c1c", implicit: "#ca8a04"
+};
+const DARKFILL = { summary: true, theme: true };
+const PALETTE = { green: "#16a34a", red: "#dc2626", blue: "#2563eb", gray: "#64748b", orange: "#ea580c", purple: "#7c3aed", teal: "#0d9488" };
+
+const registry = (GRAPH.meta && GRAPH.meta.edgeTypes) || {};
+const nodes = new Map();
+GRAPH.nodes.forEach(n => nodes.set(n.id, n));
+const children = new Map(), parent = new Map(), containsE = [], crossE = [];
+GRAPH.edges.forEach(e => {
+  if (e.type === "contains") {
+    containsE.push(e);
+    parent.set(e.to, e.from);
+    if (!children.has(e.from)) children.set(e.from, []);
+    children.get(e.from).push(e.to);
+  } else {
+    crossE.push(e);
+  }
+});
+children.forEach(list => list.sort(cmpIds));
+
+function depthOf(id) { return id === "0" ? 0 : id.split(".").length; }
+const maxDepth = Math.max(1, ...GRAPH.nodes.map(n => depthOf(n.id)));
+let showLayers = Math.min(2, maxDepth + 1);
+let collapsed = new Set(), opened = new Set(), forceVisible = new Set();
+let hiddenNodeTypes = new Set(), hiddenEdgeTypes = new Set();
+let selected = null, searchQ = "", sideMode = false, sideIdx = 0;
+let dragMoved = false, textDragged = false;
+let edgeSelected = null;
+let z = 1;
+let pos = new Map(), sizes = new Map(), vis = new Set();
+let contentW = 800, contentH = 600;
+let spanW = 300, spanH = 200;
+const MINZ = 0.15;
+
+const wrap = document.getElementById("canvasWrap");
+const svg = document.getElementById("canvas");
+const gE = document.getElementById("gEdges");
+const gX = document.getElementById("gXEdges");
+const gN = document.getElementById("gNodes");
+const gTop = document.getElementById("gTop");
+const defs = document.getElementById("defs");
+const mBody = document.createElement("canvas").getContext("2d");
+const mHead = document.createElement("canvas").getContext("2d");
+mBody.font = `11.5px ${FONT_STACK}`;
+mHead.font = `9.5px ${FONT_STACK}`;
+
+function cmpIds(a, b) {
+  const A = a.split(".").map(Number), B = b.split(".").map(Number);
+  for (let i = 0; i < Math.max(A.length, B.length); i++) {
+    const d = (A[i] || 0) - (B[i] || 0);
+    if (d) return d;
+  }
+  return 0;
+}
+function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+function textOf(id) { const n = nodes.get(id); return n ? n.text : id; }
+function styleOf(type) {
+  const st = (registry[type] && registry[type].style) || "solid gray";
+  const toks = String(st).split(/\s+/);
+  let color = PALETTE.gray, dash = "";
+  toks.forEach(t => {
+    if (t === "dashed") dash = "7 4";
+    if (t === "dotted") dash = "2 4";
+    if (PALETTE[t]) color = PALETTE[t];
+  });
+  return { color, dash };
+}
+
+function computeVisible() {
+  vis = new Set(forceVisible);
+  if (nodes.has("0")) vis.add("0");
+  const stack = [...vis];
+  while (stack.length) {
+    const p = stack.pop();
+    if (collapsed.has(p) && !forceVisible.has(p)) continue;
+    for (const c of children.get(p) || []) {
+      if (vis.has(c)) continue;
+      if (depthOf(c) <= showLayers - 1 || opened.has(p) || forceVisible.has(c)) {
+        vis.add(c);
+        stack.push(c);
+      }
+    }
+  }
+}
+
+function wrapText(text, maxW) {
+  const words = String(text).split(/\s+/).filter(Boolean);
+  const lines = [];
+  let cur = "";
+  for (const wd of words) {
+    const t = cur ? cur + " " + wd : wd;
+    if (!cur || mBody.measureText(t).width <= maxW) cur = t;
+    else { lines.push(cur); cur = wd; }
+  }
+  if (cur) lines.push(cur);
+  return lines.length ? lines : [""];
+}
+
+function measureNode(id) {
+  const n = nodes.get(id);
+  const bits = [id === "0" ? "summary" : id + " " + n.type];
+  if (n.attribution && n.attribution !== "author" && n.attribution !== "n/a") bits.push("[" + n.attribution + "]");
+  const header = bits.join("   ");
+  const lines = wrapText(n.text, BODY_W);
+  const wBody = Math.max(...lines.map(L => mBody.measureText(L).width));
+  const w = Math.max(wBody, mHead.measureText(header).width) + HPAD * 2;
+  const h = VPAD * 2 + HEADER_H + lines.length * LINE_H;
+  sizes.set(id, { w, h, lines, header });
+}
+
+function layout() {
+  sizes = new Map();
+  pos = new Map();
+  const searching = searchQ.length > 0;
+  const inLayout = id => searching ? forceVisible.has(id) : vis.has(id);
+  let ycur = 0;
+  const walk = id => {
+    measureNode(id);
+    const s = sizes.get(id);
+    const p = parent.get(id);
+    const x = id === "0" ? 0 : pos.get(p).x + pos.get(p).w + COL_GAP;
+    const kids = (children.get(id) || []).filter(c => inLayout(c));
+    if (!kids.length) {
+      pos.set(id, { x, y: ycur, w: s.w, h: s.h });
+      ycur += s.h + ROW_GAP;
+      return;
+    }
+    pos.set(id, { x, y: 0, w: s.w, h: s.h });
+    kids.forEach(walk);
+    const f = pos.get(kids[0]), l = pos.get(kids[kids.length - 1]);
+    const center = (f.y + f.h / 2 + l.y + l.h / 2) / 2;
+    pos.set(id, { x, y: center - s.h / 2, w: s.w, h: s.h });
+  };
+  if (nodes.has("0") && inLayout("0")) walk("0");
+  let maxX = 0, maxY = 0;
+  pos.forEach(r => {
+    r.x += PAD;
+    r.y += PAD;
+    maxX = Math.max(maxX, r.x + r.w);
+    maxY = Math.max(maxY, r.y + r.h);
+  });
+  spanW = Math.max(maxX - PAD, 200);
+  spanH = Math.max(maxY - PAD, 120);
+  contentW = maxX + PAD;
+  contentH = maxY + PAD;
+}
+
+function svgEl(tag, attrs) {
+  const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const k in attrs) el.setAttribute(k, attrs[k]);
+  return el;
+}
+function edgeGeometry(a, b, dyA, dyB) {
+  const x1 = a.x + a.w, y1 = a.y + a.h / 2 + (dyA || 0);
+  const x2 = b.x, y2 = b.y + b.h / 2 + (dyB || 0);
+  let c1x = x1, c1y = y1, c2x = x2, c2y = y2, ex = x2;
+  if (x2 >= x1) {
+    const bend = Math.max(28, (x2 - x1) / 2);
+    c1x = x1 + bend; c2x = x2 - bend;
+  } else {
+    const bend = 40;
+    c1x = x1 + bend; c2x = b.x + b.w + bend; ex = b.x + b.w;
+  }
+  return {
+    d: `M ${x1} ${y1} C ${c1x} ${c1y}, ${c2x} ${c2y}, ${ex} ${y2}`,
+    x0: Math.min(x1, c1x, c2x, ex), y0: Math.min(y1, c1y, c2y, y2),
+    x1: Math.max(x1, c1x, c2x, ex), y1: Math.max(y1, c1y, c2y, y2)
+  };
+}
+function addEdgeArtifacts(parent, e, d, attrs) {
+  const p = svgEl("path", Object.assign({ d }, attrs));
+  p.dataset.from = e.from;
+  p.dataset.to = e.to;
+  p.dataset.type = e.type;
+  parent.appendChild(p);
+  const hit = svgEl("path", { d, class: "edge-hit", stroke: "transparent", "stroke-width": 12, fill: "none" });
+  hit.dataset.from = e.from;
+  hit.dataset.to = e.to;
+  hit.dataset.type = e.type;
+  hit.addEventListener("click", ev => {
+    ev.stopPropagation();
+    selectEdge(e, ev.clientX, ev.clientY);
+  });
+  parent.appendChild(hit);
+  return { p, hit };
+}
+function edgesFor(id) {
+  const out = [];
+  containsE.forEach(e => { if (e.from === id || e.to === id) out.push({ e, home: gE }); });
+  crossE.forEach(e => { if (e.from === id || e.to === id) out.push({ e, home: gX }); });
+  return out;
+}
+function setEdgeFocus(id, on) {
+  edgesFor(id).forEach(({ e, home }) => {
+    [e._el, e._hit].forEach(el => {
+      if (!el) return;
+      if (on) {
+        if (el.parentNode) gTop.appendChild(el);
+      } else if (selected !== id && el.parentNode === gTop) {
+        home.appendChild(el);
+      }
+    });
+    if (e._el) {
+      if (on) e._el.classList.add("hl");
+      else if (selected !== id) e._el.classList.remove("hl");
+    }
+  });
+}
+function applySize() {
+  svg.setAttribute("viewBox", `0 0 ${contentW} ${contentH}`);
+  svg.style.width = (contentW * z) + "px";
+  svg.style.height = (contentH * z) + "px";
+}
+function render() {
+  computeVisible();
+  layout();
+  applySize();
+  gE.innerHTML = ""; gX.innerHTML = ""; gN.innerHTML = ""; gTop.innerHTML = ""; defs.innerHTML = "";
+
+  const markerTypes = [...new Set(crossE.map(e => e.type))];
+  markerTypes.forEach(t => {
+    const st = styleOf(t);
+    const m = svgEl("marker", { id: "arw-" + t.replace(/[^a-z0-9-]/gi, ""), viewBox: "0 0 10 10", refX: 8, refY: 5, markerWidth: 7, markerHeight: 7, markerUnits: "userSpaceOnUse", orient: "auto-start-reverse" });
+    m.appendChild(svgEl("path", { d: "M 1 1 L 8 5 L 1 9", fill: "none", stroke: st.color, "stroke-width": 1.5, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+    defs.appendChild(m);
+  });
+
+  const dyF = new Map(), dyT = new Map();
+  const outs = new Map(), ins = new Map();
+  containsE.concat(crossE).forEach(e => {
+    if (!pos.get(e.from) || !pos.get(e.to)) return;
+    if (!outs.has(e.from)) outs.set(e.from, []);
+    outs.get(e.from).push(e);
+    if (!ins.has(e.to)) ins.set(e.to, []);
+    ins.get(e.to).push(e);
+  });
+  outs.forEach((list, nid) => {
+    if (list.length < 2) return;
+    list.sort((x, y) => cmpIds(x.to, y.to));
+    const h = pos.get(nid).h;
+    const span = Math.min(11, Math.max(4, (h - 14) / list.length));
+    list.forEach((e, i) => dyF.set(e, (i - (list.length - 1) / 2) * span));
+  });
+  ins.forEach((list, nid) => {
+    if (list.length < 2) return;
+    list.sort((x, y) => cmpIds(x.from, y.from));
+    const h = pos.get(nid).h;
+    const span = Math.min(11, Math.max(4, (h - 14) / list.length));
+    list.forEach((e, i) => dyT.set(e, (i - (list.length - 1) / 2) * span));
+  });
+
+  containsE.forEach(e => {
+    const pa = pos.get(e.from), pb = pos.get(e.to);
+    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; e._bb = null; return; }
+    const geo = edgeGeometry(pa, pb, dyF.get(e), dyT.get(e));
+    const { p, hit } = addEdgeArtifacts(gE, e, geo.d,
+      { class: "edge", stroke: "#9ca3af", "stroke-width": 1.4 });
+    e._el = p;
+    e._hit = hit;
+    e._bb = geo;
+  });
+
+  crossE.forEach(e => {
+    if (hiddenEdgeTypes.has(e.type)) { e._el = null; e._hit = null; e._bb = null; return; }
+    const pa = pos.get(e.from), pb = pos.get(e.to);
+    if (!pa || !pb || pa === pb) { e._el = null; e._hit = null; e._bb = null; return; }
+    const st = styleOf(e.type);
+    const sym = registry[e.type] && registry[e.type].direction === "symmetric";
+    const attrs = { class: "edge xedge", stroke: st.color, "stroke-width": 1.7 };
+    if (st.dash) attrs["stroke-dasharray"] = st.dash;
+    attrs["marker-end"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
+    if (sym) attrs["marker-start"] = `url(#arw-${e.type.replace(/[^a-z0-9-]/gi, "")})`;
+    const geo = edgeGeometry(pa, pb, dyF.get(e), dyT.get(e));
+    const { p, hit } = addEdgeArtifacts(gX, e, geo.d, attrs);
+    const tip = svgEl("title", {});
+    tip.textContent = `${e.type}: ${textOf(e.from)} -> ${textOf(e.to)}` +
+      (e.source && e.source.length ? `  (${e.source.join(", ")})` : "") +
+      (e.note ? `  note: ${e.note}` : "");
+    p.appendChild(tip);
+    e._el = p;
+    e._hit = hit;
+    e._bb = geo;
+  });
+
+  const searching = searchQ.length > 0;
+  GRAPH.nodes.forEach(n => {
+    const r = pos.get(n.id);
+    if (!r) return;
+    const s = sizes.get(n.id);
+    const g = svgEl("g", { class: "node", transform: `translate(${r.x},${r.y})` });
+    const dark = DARKFILL[n.type];
+    g.appendChild(svgEl("rect", {
+      width: r.w, height: r.h, rx: 9,
+      fill: FILL[n.type] || "#e5e7eb", stroke: STROKE[n.type] || "#9ca3af"
+    }));
+    const head = svgEl("text", { x: HPAD, y: VPAD + 9, "font-size": 9.5, fill: dark ? "rgba(255,255,255,.75)" : "#6b7280" });
+    head.textContent = s.header;
+    g.appendChild(head);
+    s.lines.forEach((L, i) => {
+      const t = svgEl("text", { x: HPAD, y: VPAD + HEADER_H + i * LINE_H + 11, "font-size": 11.5, fill: dark ? "#f9fafb" : "#1f2937" });
+      t.textContent = L;
+      g.appendChild(t);
+    });
+    if ((children.get(n.id) || []).length) {
+      const kidsShown = (children.get(n.id) || []).some(c => vis.has(c));
+      const c = svgEl("circle", { cx: r.w - 10, cy: 10, r: 7.5, fill: "#fff", stroke: "#9ca3af", "stroke-width": 1 });
+      const sign = svgEl("path", {
+        d: kidsShown
+          ? `M ${r.w - 14} 10 H ${r.w - 6}`
+          : `M ${r.w - 14} 10 H ${r.w - 6} M ${r.w - 10} 6 V 14`,
+        stroke: "#374151", "stroke-width": 1.6, fill: "none"
+      });
+      const hit = svgEl("circle", { cx: r.w - 10, cy: 10, r: 11, fill: "transparent" });
+      hit.addEventListener("click", ev => {
+        ev.stopPropagation();
+        selected = n.id;
+        sideMode = false;
+        toggleFold(n.id);
+        revealAnimated(n.id);
+        refreshPanel();
+      });
+      g.appendChild(c); g.appendChild(sign); g.appendChild(hit);
+    }
+    if (hiddenNodeTypes.has(n.type)) g.classList.add("dim");
+    if (searching) {
+      if (n.text.toLowerCase().includes(searchQ) || n.id.includes(searchQ)) g.classList.add("match");
+      else g.classList.add("dim");
+    }
+    if (selected === n.id) g.classList.add("selected");
+    g.addEventListener("mouseenter", () => setEdgeFocus(n.id, true));
+    g.addEventListener("mouseleave", () => setEdgeFocus(n.id, false));
+    g.addEventListener("click", ev => {
+      ev.stopPropagation();
+      if (textDragged) return;
+      const domSel = window.getSelection();
+      if (domSel && domSel.toString()) domSel.removeAllRanges();
+      select(n.id);
+    });
+    gN.appendChild(g);
+  });
+
+  if (selected) {
+    edgesFor(selected).forEach(({ e }) => {
+      if (e._el) {
+        gTop.appendChild(e._el);
+        e._el.classList.add("hl");
+      }
+      if (e._hit) gTop.appendChild(e._hit);
+    });
+  }
+  if (edgeSelected) {
+    if (edgeSelected._el) {
+      gTop.appendChild(edgeSelected._el);
+      edgeSelected._el.classList.add("edge-sel");
+    }
+    if (edgeSelected._hit) gTop.appendChild(edgeSelected._hit);
+  }
+  updateCulling();
+  updateSourceHighlights(false);
+}
+function updateCulling() {
+  if (!pos.size) return;
+  const off = svgOffset();
+  const pad = 40;
+  const vx0 = (wrap.scrollLeft - off.x) / z - pad;
+  const vy0 = (wrap.scrollTop - off.y) / z - pad;
+  const vx1 = (wrap.scrollLeft + wrap.clientWidth - off.x) / z + pad;
+  const vy1 = (wrap.scrollTop + wrap.clientHeight - off.y) / z + pad;
+  const inView = r => r && r.x <= vx1 && r.x + r.w >= vx0 && r.y <= vy1 && r.y + r.h >= vy0;
+  const inBox = bb => bb && bb.x0 <= vx1 && bb.x1 >= vx0 && bb.y0 <= vy1 && bb.y1 >= vy0;
+  containsE.concat(crossE).forEach(e => {
+    if (!e._el && !e._hit) return;
+    const keep = e === edgeSelected || (selected && (e.from === selected || e.to === selected));
+    const on = keep || inView(pos.get(e.from)) || inView(pos.get(e.to)) || inBox(e._bb);
+    if (e._el) e._el.style.display = on ? "" : "none";
+    if (e._hit) e._hit.style.display = on ? "" : "none";
+  });
+}
+function edgeFollowTarget(e) {
+  if (selected && e.from === selected && e.to !== selected) return e.to;
+  if (selected && e.to === selected && e.from !== selected) return e.from;
+  return e.to;
+}
+function selectEdge(e, x, y) {
+  edgeSelected = e;
+  render();
+  document.getElementById("edgePopType").textContent = e.type;
+  document.getElementById("edgePopNote").textContent = e.note || "";
+  document.getElementById("edgeFollow").textContent = edgeFollowTarget(e) === e.from ? "\u2190" : "\u2192";
+  const pop = document.getElementById("edgePop");
+  pop.classList.add("open");
+  const pr = pop.getBoundingClientRect();
+  pop.style.left = Math.min(Math.max(x + 14, 8), Math.max(8, window.innerWidth - pr.width - 8)) + "px";
+  pop.style.top = Math.min(Math.max(y + 14, 8), Math.max(8, window.innerHeight - pr.height - 8)) + "px";
+}
+function hideEdgePop() {
+  document.getElementById("edgePop").classList.remove("open");
+}
+function clearEdgeSelection() {
+  if (!edgeSelected) { hideEdgePop(); return; }
+  edgeSelected = null;
+  hideEdgePop();
+  render();
+}
+function followEdge() {
+  if (!edgeSelected) return;
+  const target = edgeFollowTarget(edgeSelected);
+  edgeSelected = null;
+  hideEdgePop();
+  sideMode = false;
+  selected = target;
+  render();
+  refreshPanel();
+  revealAnimated(target);
+}
+
+function svgOffset() {
+  const wrapRect = wrap.getBoundingClientRect();
+  const svgRect = svg.getBoundingClientRect();
+  return {
+    x: svgRect.left - wrapRect.left + wrap.scrollLeft,
+    y: svgRect.top - wrapRect.top + wrap.scrollTop
+  };
+}
+function zoomAt(mx, my, k) {
+  const off = svgOffset();
+  const wx = (wrap.scrollLeft + mx - off.x) / z;
+  const wy = (wrap.scrollTop + my - off.y) / z;
+  const nz = Math.min(Math.max(z * k, MINZ), 4);
+  if (nz === z) return;
+  z = nz;
+  applySize();
+  wrap.scrollLeft = Math.max(0, off.x + wx * z - mx);
+  wrap.scrollTop = Math.max(0, off.y + wy * z - my);
+  updateCulling();
+}
+function fitView() {
+  if (!pos.size) return;
+  const wr = Math.max(wrap.clientWidth - 24, 200), hr = Math.max(wrap.clientHeight - 24, 200);
+  z = Math.min(Math.max(Math.min(wr / spanW, hr / spanH), MINZ), 1.6);
+  applySize();
+  const off = svgOffset();
+  wrap.scrollLeft = Math.max(0, off.x + contentW * z / 2 - wrap.clientWidth / 2);
+  wrap.scrollTop = Math.max(0, off.y + contentH * z / 2 - wrap.clientHeight / 2);
+  updateCulling();
+}
+function revealTarget(id) {
+  const r = pos.get(id);
+  if (!r) return null;
+  const off = svgOffset();
+  const m = 30;
+  const x0 = off.x + r.x * z, y0 = off.y + r.y * z;
+  const x1 = off.x + (r.x + r.w) * z, y1 = off.y + (r.y + r.h) * z;
+  const vl = wrap.scrollLeft, vt = wrap.scrollTop;
+  const vw = wrap.clientWidth, vh = wrap.clientHeight;
+  let l = vl, t = vt;
+  if (x1 - x0 > vw - 2 * m) {
+    if (x1 < vl + m) l = Math.max(0, x1 - m);
+    else if (x0 > vl + vw - m) l = Math.max(0, x0 - vw + m);
+  } else if (x0 < vl + m) {
+    l = Math.max(0, x0 - m);
+  } else if (x1 > vl + vw - m) {
+    l = Math.max(0, x1 - vw + m);
+  }
+  if (y1 - y0 > vh - 2 * m) {
+    if (y1 < vt + m) t = Math.max(0, y1 - m);
+    else if (y0 > vt + vh - m) t = Math.max(0, y0 - vh + m);
+  } else if (y0 < vt + m) {
+    t = Math.max(0, y0 - m);
+  } else if (y1 > vt + vh - m) {
+    t = Math.max(0, y1 - vh + m);
+  }
+  return { l, t };
+}
+function revealAnimated(id) {
+  const t = revealTarget(id);
+  if (t) animateScrollTo(t.l, t.t);
+}
+let scrollAnim = null;
+function cancelScrollAnim() {
+  if (scrollAnim) {
+    cancelAnimationFrame(scrollAnim);
+    scrollAnim = null;
+  }
+}
+function animateScrollTo(l, t) {
+  cancelScrollAnim();
+  if (Math.abs(l - wrap.scrollLeft) < 1 && Math.abs(t - wrap.scrollTop) < 1) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    wrap.scrollLeft = l;
+    wrap.scrollTop = t;
+    return;
+  }
+  const l0 = wrap.scrollLeft, t0 = wrap.scrollTop;
+  const dur = 260;
+  const start = performance.now();
+  const step = now => {
+    const p = Math.min(1, (now - start) / dur);
+    const k = 1 - Math.pow(1 - p, 3);
+    wrap.scrollLeft = l0 + (l - l0) * k;
+    wrap.scrollTop = t0 + (t - t0) * k;
+    scrollAnim = p < 1 ? requestAnimationFrame(step) : null;
+  };
+  scrollAnim = requestAnimationFrame(step);
+}
+function screenOf(id) {
+  const r = pos.get(id);
+  const off = svgOffset();
+  return { x: off.x + r.x * z - wrap.scrollLeft, y: off.y + r.y * z - wrap.scrollTop };
+}
+function keepAnchored(id, fn, stillValid) {
+  const hasPos = id && pos.has(id);
+  const before = hasPos ? { x: pos.get(id).x, y: pos.get(id).y, sl: wrap.scrollLeft, st: wrap.scrollTop } : null;
+  fn();
+  cancelScrollAnim();
+  if (!before || !id || !pos.has(id) || (stillValid && !stillValid())) return;
+  const after = pos.get(id);
+  wrap.scrollLeft = Math.max(0, before.sl + (after.x - before.x) * z);
+  wrap.scrollTop = Math.max(0, before.st + (after.y - before.y) * z);
+  updateCulling();
+  const target = screenOf(id);
+  requestAnimationFrame(() => {
+    if (!id || !pos.has(id) || (stillValid && !stillValid())) return;
+    const now = screenOf(id);
+    const dx = now.x - target.x, dy = now.y - target.y;
+    if (Math.abs(dx) > 1 || Math.abs(dy) > 1) {
+      wrap.scrollLeft = Math.max(0, wrap.scrollLeft - dx);
+      wrap.scrollTop = Math.max(0, wrap.scrollTop - dy);
+      updateCulling();
+    }
+  });
+}
+function keepSelectedAnchored(fn) {
+  const id = selected;
+  keepAnchored(id, fn, () => selected === id);
+}
+function jump(id) {
+  if (!nodes.has(id)) return;
+  edgeSelected = null;
+  hideEdgePop();
+  forceVisible.clear();
+  for (let p = parent.get(id); p !== undefined; p = parent.get(p)) {
+    collapsed.delete(p);
+    opened.add(p);
+  }
+  selected = id;
+  sideMode = false;
+  render();
+  revealAnimated(id);
+  buildPanel(id);
+}
+function select(id) {
+  if (!nodes.has(id)) return;
+  edgeSelected = null;
+  hideEdgePop();
+  sideMode = false;
+  selected = id;
+  render();
+  revealAnimated(id);
+  refreshPanel();
+}
+function toggleFold(id) {
+  const kids = children.get(id) || [];
+  if (!kids.length) return;
+  keepSelectedAnchored(() => {
+    if (kids.some(c => vis.has(c))) {
+      collapsed.add(id);
+      opened.delete(id);
+    } else {
+      collapsed.delete(id);
+      opened.add(id);
+    }
+    render();
+  });
+}
+function visiblePreorder() {
+  const out = [];
+  const walk = id => {
+    if (!vis.has(id)) return;
+    out.push(id);
+    (children.get(id) || []).forEach(walk);
+  };
+  if (nodes.has("0")) walk("0");
+  return out;
+}
+function foldToLayer(level) {
+  const L = Math.min(Math.max(level, 1), maxDepth + 1);
+  let targetId = selected;
+  if (selected && depthOf(selected) + 1 > L) {
+    let anc = selected;
+    while (anc !== "0" && depthOf(anc) + 1 > L) anc = parent.get(anc);
+    targetId = anc;
+  }
+  const adjusted = targetId !== selected;
+  keepAnchored(targetId, () => {
+    showLayers = L;
+    collapsed.clear();
+    opened.clear();
+    forceVisible = new Set();
+    if (adjusted) selected = targetId;
+    render();
+  });
+  if (adjusted) buildPanel(targetId);
+}
+function focusToLayer(level) {
+  keepSelectedAnchored(() => {
+    showLayers = Math.min(Math.max(level, 1), maxDepth + 1);
+    collapsed.clear();
+    opened.clear();
+    forceVisible = new Set();
+    if (selected) {
+      forceVisible.add(selected);
+      for (let p = parent.get(selected); p !== undefined; p = parent.get(p)) forceVisible.add(p);
+    }
+    render();
+  });
+}
+function closePanel() {
+  document.getElementById("panel").classList.remove("open");
+  document.getElementById("panelHandle").classList.remove("open");
+  document.getElementById("panelToggle").classList.remove("on");
+  wrap.style.right = "0px";
+  updateCulling();
+  sideMode = false;
+}
+let panelW = 330;
+let panelMode = "excerpts";
+let sourceBodyEl = null;
+function isMobile() {
+  return window.innerWidth <= 720;
+}
+function applyPanelWidth() {
+  const mobile = isMobile();
+  const max = Math.max(260, Math.round(window.innerWidth * 0.75));
+  panelW = Math.min(Math.max(panelW, 260), max);
+  document.getElementById("panel").style.width = mobile ? "" : panelW + "px";
+  document.getElementById("panelHandle").style.right = (panelW - 7) + "px";
+  wrap.style.right = mobile ? "0px" : panelW + "px";
+  updateCulling();
+}
+function panelItems() {
+  return [...document.getElementById("panel").querySelectorAll(".linkrow, .srcbtn")];
+}
+const citing = new Map();
+GRAPH.nodes.forEach(n => (n.source || []).forEach(r => {
+  if (!citing.has(r)) citing.set(r, []);
+  citing.get(r).push(n.id);
+}));
+function refMarkId(ref) {
+  return "src-" + String(ref).replace(/[^0-9]/g, "");
+}
+function buildSourceBody() {
+  const text = (GRAPH.meta && GRAPH.meta.sourceText) || "";
+  const spans = (GRAPH.meta && GRAPH.meta.spans) || {};
+  const body = document.createElement("div");
+  body.id = "sourceBody";
+  if (!text) return body;
+  const key = r => { const m = String(r).match(/\d+/); return m ? +m[0] : 0; };
+  const refs = Object.keys(spans).sort((a, b) => key(a) - key(b));
+  let cursor = 0;
+  refs.forEach(ref => {
+    const span = spans[ref];
+    if (!Array.isArray(span) || span.length !== 2) return;
+    const s = span[0], e = span[1];
+    if (s > cursor) body.appendChild(document.createTextNode(text.slice(cursor, s)));
+    const m = document.createElement("mark");
+    m.id = refMarkId(ref);
+    m.dataset.ref = ref;
+    m.textContent = text.slice(s, e);
+    m.title = ref + (citing.has(ref) ? " - cited by " + citing.get(ref).join(", ") : "");
+    m.addEventListener("click", () => {
+      const ids = citing.get(ref) || [];
+      if (ids.length) select(ids[0]);
+    });
+    body.appendChild(m);
+    cursor = e;
+  });
+  if (cursor < text.length) body.appendChild(document.createTextNode(text.slice(cursor)));
+  return body;
+}
+function paintMark(ref, bg, title) {
+  const m = document.getElementById(refMarkId(ref));
+  if (!m) return;
+  m.style.background = bg;
+  if (title) m.title = title;
+}
+const HL_BG = { summary: "#e5e7eb", theme: "#e0e7ff" };
+function paintSelectedRefs(id) {
+  const node = nodes.get(id);
+  if (!node) return;
+  const bg = HL_BG[node.type] || FILL[node.type] || "#e5e7eb";
+  (node.source || []).forEach(r => paintMark(r, bg, r + " - " + node.type + " " + id));
+}
+function paintRelatedRefs(id) {
+  const seen = new Set((nodes.get(id) || {}).source || []);
+  crossE.forEach(e => {
+    if (e.from !== id && e.to !== id) return;
+    const other = e.from === id ? e.to : e.from;
+    const on = nodes.get(other);
+    if (!on) return;
+    const col = styleOf(e.type).color;
+    (on.source || []).forEach(r => {
+      if (seen.has(r)) return;
+      seen.add(r);
+      paintMark(r, col + "22", r + " - " + other + " " + e.type + " " + id);
+    });
+  });
+}
+function updateSourceHighlights(scroll) {
+  document.querySelectorAll("#sourceBody mark").forEach(m => {
+    m.style.background = "transparent";
+    m.title = m.dataset.ref + (citing.has(m.dataset.ref) ? " - cited by " + citing.get(m.dataset.ref).join(", ") : "");
+  });
+  if (!selected || !nodes.has(selected)) return;
+  paintRelatedRefs(selected);
+  paintSelectedRefs(selected);
+  if (scroll) {
+    const node = nodes.get(selected);
+    const first = (node.source || []).map(refMarkId).map(mid => document.getElementById(mid)).find(Boolean);
+    if (first) first.scrollIntoView({ block: "nearest" });
+  }
+}
+function scrollToRef(ref) {
+  const m = document.getElementById(refMarkId(ref));
+  if (m) m.scrollIntoView({ block: "center" });
+}
+function buildPanel(id) {
+  const n = nodes.get(id);
+  const panel = document.getElementById("panel");
+  const out = crossE.filter(e => e.from === id);
+  const inc = crossE.filter(e => e.to === id);
+  const srcs = (n.source || []).map(r => {
+    const passage = (GRAPH.meta.passages || {})[r];
+    return `<button class="srcbtn" data-ref="${esc(r)}">${esc(r)}</button>` +
+      `<div class="passage show" id="pass-${esc(r.slice(1))}">${passage != null ? esc(passage) : "(passage text not embedded)"}</div>`;
+  }).join("");
+  const edgeRow = (e, dir) => {
+    const col = styleOf(e.type).color;
+    return `<button class="linkrow" data-jump="${dir === "out" ? esc(e.to) : esc(e.from)}" style="border-left:3px solid ${col}">` +
+      `<span class="etype" style="color:${col}">${esc(e.type)}</span> ${dir === "out" ? "&#8594;" : "&#8592;"} ${dir === "out" ? esc(e.to) : esc(e.from)}` +
+      ` ${textOf(dir === "out" ? e.to : e.from).slice(0, 60)}` +
+      (e.source && e.source.length ? ` <span class="note">${esc(e.source.join(", "))}</span>` : "") +
+      (e.note ? `<div class="note">${esc(e.note)}</div>` : "") + `</button>`;
+  };
+  if (!sourceBodyEl) panelMode = "excerpts";
+  const body = document.getElementById("panelBody");
+  body.innerHTML =
+    `<div class="tagrow"><span class="tag">${esc(n.type)}</span>` +
+    (n.attribution && n.attribution !== "n/a" ? `<span class="tag">${esc(n.attribution)}</span>` : "") +
+    `</div>` +
+    (panelMode === "source"
+      ? `<div class="sect">Source text</div>`
+      : `<div class="sect">Where it comes from</div>${srcs}`) +
+    (out.length ? `<div class="sect">Links out</div>${out.map(e => edgeRow(e, "out")).join("")}` : "") +
+    (inc.length ? `<div class="sect">Links in</div>${inc.map(e => edgeRow(e, "in")).join("")}` : "");
+  if (panelMode === "source" && sourceBodyEl) body.appendChild(sourceBodyEl);
+  document.getElementById("panelTitle").textContent = "Node " + id;
+  const mode = document.getElementById("pMode");
+  mode.style.display = sourceBodyEl ? "" : "none";
+  mode.textContent = panelMode === "source" ? "Excerpts" : "Source";
+  mode.classList.toggle("on", panelMode === "source");
+  mode.title = panelMode === "source" ? "switch back to the cited excerpts" : "show this node in the full source text";
+  panel.classList.add("open");
+  document.getElementById("panelHandle").classList.add("open");
+  document.getElementById("panelToggle").classList.add("on");
+  applyPanelWidth();
+  body.querySelectorAll(".srcbtn").forEach(b => b.addEventListener("click", () => {
+    const t = document.getElementById("pass-" + b.dataset.ref.slice(1));
+    if (t) t.classList.toggle("show");
+  }));
+  body.querySelectorAll(".passage").forEach(el => el.addEventListener("click", () => {
+    panelMode = "source";
+    buildPanel(id);
+    scrollToRef(el.id.replace("pass-", "¶"));
+  }));
+  body.querySelectorAll("[data-jump]").forEach(b => b.addEventListener("click", () => jump(b.dataset.jump)));
+  updateSourceHighlights(true);
+}
+function panelOpen() {
+  return document.getElementById("panel").classList.contains("open");
+}
+function refreshPanel() {
+  if (panelOpen() && selected) buildPanel(selected);
+}
+function togglePanel() {
+  if (panelOpen()) {
+    closePanel();
+  } else {
+    buildPanel(selected || "0");
+  }
+}
+function buildLegend() {
+  const counts = {};
+  GRAPH.nodes.forEach(n => counts[n.type] = (counts[n.type] || 0) + 1);
+  const nodeChips = Object.keys(counts).sort().map(t =>
+    `<span class="chip" data-nt="${esc(t)}"><span class="swatch" style="background:${FILL[t] || "#e5e7eb"};border:1px solid ${STROKE[t] || "#9ca3af"}"></span>${esc(t)} ${counts[t]}</span>`).join("");
+  const etypes = [...new Set(crossE.map(e => e.type))].sort();
+  const edgeChips = etypes.map(t => {
+    const st = styleOf(t);
+    return `<span class="chip" data-et="${esc(t)}"><span class="lswatch" style="border-top-style:${st.dash === "7 4" ? "dashed" : st.dash === "2 4" ? "dotted" : "solid"};border-top-color:${st.color}"></span>${esc(t)}</span>`;
+  }).join("");
+  document.getElementById("legendNodeChips").innerHTML = nodeChips;
+  document.getElementById("legendEdgeChips").innerHTML = edgeChips;
+  document.querySelectorAll("#legend [data-nt]").forEach(c => c.addEventListener("click", () => {
+    const t = c.dataset.nt;
+    if (hiddenNodeTypes.has(t)) hiddenNodeTypes.delete(t); else hiddenNodeTypes.add(t);
+    c.classList.toggle("off");
+    render();
+  }));
+  document.querySelectorAll("#legend [data-et]").forEach(c => c.addEventListener("click", () => {
+    const t = c.dataset.et;
+    if (hiddenEdgeTypes.has(t)) hiddenEdgeTypes.delete(t); else hiddenEdgeTypes.add(t);
+    c.classList.toggle("off");
+    render();
+  }));
+}
+function init() {
+  document.getElementById("title").textContent = (GRAPH.meta && GRAPH.meta.title) || "Point graph";
+  document.getElementById("srcname").textContent = (GRAPH.meta && GRAPH.meta.source) || "";
+  const topbar = document.getElementById("topbar");
+  const fitCanvasToTopbar = () => {
+    const h = topbar.offsetHeight;
+    wrap.style.top = h + "px";
+    document.getElementById("panel").style.top = h + "px";
+    document.getElementById("panelHandle").style.top = h + "px";
+    document.getElementById("panelToggle").style.top = (h + 9) + "px";
+    document.getElementById("help").style.top = (h + 6) + "px";
+    document.getElementById("legend").style.top = (h + 6) + "px";
+  };
+  fitCanvasToTopbar();
+  window.addEventListener("resize", () => { fitCanvasToTopbar(); applyPanelWidth(); });
+  buildLegend();
+  if (GRAPH.meta && GRAPH.meta.sourceText) sourceBodyEl = buildSourceBody();
+  selected = nodes.has("0") ? "0" : null;
+  render();
+  if (selected && !isMobile()) buildPanel(selected);
+  fitView();
+
+  document.getElementById("panelToggle").addEventListener("click", togglePanel);
+  document.getElementById("edgePop").addEventListener("click", ev => {
+    if (ev.target.closest("#edgePopClose")) return;
+    followEdge();
+  });
+  document.getElementById("edgePopClose").addEventListener("click", ev => {
+    ev.stopPropagation();
+    clearEdgeSelection();
+  });
+  document.getElementById("pMode").addEventListener("click", () => {
+    panelMode = panelMode === "source" ? "excerpts" : "source";
+    if (selected) buildPanel(selected);
+  });
+  const closePops = () => {
+    document.getElementById("help").classList.remove("open");
+    document.getElementById("legend").classList.remove("open");
+    document.getElementById("btnHelp").classList.remove("on");
+    document.getElementById("btnLegend").classList.remove("on");
+  };
+  const togglePop = (id, btn) => {
+    const pop = document.getElementById(id);
+    const wasOpen = pop.classList.contains("open");
+    closePops();
+    if (!wasOpen) {
+      pop.classList.add("open");
+      btn.classList.add("on");
+    }
+  };
+  document.getElementById("btnHelp").addEventListener("click", ev => {
+    togglePop("help", ev.currentTarget);
+  });
+  document.getElementById("btnLegend").addEventListener("click", ev => {
+    togglePop("legend", ev.currentTarget);
+  });
+  wrap.addEventListener("mousedown", closePops);
+
+  const handle = document.getElementById("panelHandle");
+  let resize = null;
+  handle.addEventListener("mousedown", ev => {
+    ev.preventDefault();
+    resize = { x: ev.clientX, w: panelW };
+    handle.classList.add("dragging");
+  });
+  window.addEventListener("mousemove", ev => {
+    if (!resize) return;
+    panelW = resize.w + (resize.x - ev.clientX);
+    applyPanelWidth();
+  });
+  window.addEventListener("mouseup", () => {
+    if (!resize) return;
+    resize = null;
+    handle.classList.remove("dragging");
+  });
+
+  let drag = null;
+  let ndText = null;
+  wrap.addEventListener("mousedown", ev => {
+    if (ev.button !== 0) return;
+    if (ev.target && ev.target.tagName === "text") {
+      ndText = { x: ev.clientX, y: ev.clientY };
+      textDragged = false;
+      return;
+    }
+    ndText = null;
+    ev.preventDefault();
+    hideEdgePop();
+    cancelScrollAnim();
+    const domSel = window.getSelection();
+    if (domSel && domSel.toString()) domSel.removeAllRanges();
+    drag = { x: ev.clientX, y: ev.clientY, sl: wrap.scrollLeft, st: wrap.scrollTop };
+    dragMoved = false;
+    wrap.classList.add("panning");
+  });
+  window.addEventListener("mousemove", ev => {
+    if (ndText) {
+      if (Math.abs(ev.clientX - ndText.x) + Math.abs(ev.clientY - ndText.y) > 4) textDragged = true;
+      return;
+    }
+    if (!drag) return;
+    const dx = ev.clientX - drag.x, dy = ev.clientY - drag.y;
+    if (Math.abs(dx) + Math.abs(dy) > 4) dragMoved = true;
+    if (dragMoved) {
+      wrap.scrollLeft = drag.sl - dx;
+      wrap.scrollTop = drag.st - dy;
+    }
+  });
+  window.addEventListener("mouseup", () => {
+    drag = null;
+    ndText = null;
+    wrap.classList.remove("panning");
+  });
+  wrap.addEventListener("click", ev => {
+    if (dragMoved) return;
+    if (ev.target === svg || ev.target === wrap) {
+      clearEdgeSelection();
+      selected = null;
+      render();
+    }
+  });
+  svg.addEventListener("dblclick", () => fitView());
+
+  wrap.addEventListener("wheel", ev => {
+    if (ev.ctrlKey) {
+      ev.preventDefault();
+      hideEdgePop();
+      cancelScrollAnim();
+      const wrapRect = wrap.getBoundingClientRect();
+      const k = ev.deltaY > 0 ? 1 / 1.12 : 1.12;
+      zoomAt(ev.clientX - wrapRect.left, ev.clientY - wrapRect.top, k);
+    }
+  }, { passive: false });
+  let cullPending = false;
+  wrap.addEventListener("scroll", () => {
+    if (cullPending) return;
+    cullPending = true;
+    requestAnimationFrame(() => {
+      cullPending = false;
+      updateCulling();
+    });
+  }, { passive: true });
+
+  let pinch = null;
+  wrap.addEventListener("touchstart", ev => {
+    if (ev.touches.length === 2) {
+      const a = ev.touches[0], b = ev.touches[1];
+      pinch = { d: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY) };
+      ev.preventDefault();
+    }
+  }, { passive: false });
+  wrap.addEventListener("touchmove", ev => {
+    if (!pinch || ev.touches.length !== 2) return;
+    ev.preventDefault();
+    const a = ev.touches[0], b = ev.touches[1];
+    const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+    if (d > 0 && pinch.d > 0) {
+      const rect = wrap.getBoundingClientRect();
+      const mx = (a.clientX + b.clientX) / 2 - rect.left;
+      const my = (a.clientY + b.clientY) / 2 - rect.top;
+      zoomAt(mx, my, d / pinch.d);
+    }
+    pinch.d = d;
+  }, { passive: false });
+  wrap.addEventListener("touchend", ev => {
+    if (ev.touches.length < 2) pinch = null;
+  });
+  wrap.addEventListener("touchcancel", () => { pinch = null; });
+  wrap.addEventListener("touchmove", () => { hideEdgePop(); cancelScrollAnim(); }, { passive: true });
+
+  document.getElementById("btnAll").addEventListener("click", () => {
+    keepSelectedAnchored(() => { showLayers = maxDepth + 1; render(); });
+  });
+  document.getElementById("btnFit").addEventListener("click", fitView);
+  document.getElementById("btnReset").addEventListener("click", () => {
+    collapsed.clear(); opened.clear(); hiddenNodeTypes.clear(); hiddenEdgeTypes.clear();
+    forceVisible.clear(); searchQ = ""; selected = null; sideMode = false;
+    document.getElementById("searchBox").value = "";
+    document.getElementById("searchCount").textContent = "";
+    closePanel();
+    showLayers = Math.min(2, maxDepth + 1);
+    document.querySelectorAll("#legend .chip").forEach(c => c.classList.remove("off"));
+    render();
+    fitView();
+  });
+  document.getElementById("searchBox").addEventListener("input", ev => {
+    let count = 0;
+    keepSelectedAnchored(() => {
+      searchQ = ev.target.value.trim().toLowerCase();
+      forceVisible = new Set();
+      if (searchQ) {
+        nodes.forEach((n, id) => {
+          if (n.text.toLowerCase().includes(searchQ) || id.includes(searchQ)) {
+            count += 1;
+            forceVisible.add(id);
+            for (let p = parent.get(id); p !== undefined; p = parent.get(p)) forceVisible.add(p);
+          }
+        });
+      }
+      render();
+    });
+    document.getElementById("searchCount").textContent = searchQ ? `${count} matches` : "";
+  });
+
+  document.addEventListener("keydown", ev => {
+    const typing = ev.target && (ev.target.tagName === "INPUT" || ev.target.tagName === "TEXTAREA");
+    if (typing && ev.key === "Escape") {
+      ev.target.value = "";
+      ev.target.dispatchEvent(new Event("input"));
+      ev.target.blur();
+      return;
+    }
+    if (ev.ctrlKey && !ev.altKey && (ev.key === "=" || ev.key === "+" || ev.key === "-" || ev.key === "_")) {
+      ev.preventDefault();
+      const k = (ev.key === "=" || ev.key === "+") ? 1.12 : 1 / 1.12;
+      zoomAt(wrap.clientWidth / 2, wrap.clientHeight / 2, k);
+      return;
+    }
+    if (ev.ctrlKey && !ev.shiftKey && ev.key >= "0" && ev.key <= "9") {
+      ev.preventDefault();
+      if (ev.key === "0") foldToLayer(maxDepth + 1);
+      else if (ev.altKey) focusToLayer(+ev.key);
+      else foldToLayer(+ev.key);
+      return;
+    }
+    if (typing) return;
+    if (sideMode) {
+      const items = panelItems();
+      if (ev.key === "Escape") {
+        sideMode = false;
+        panelItems().forEach(el => el.classList.remove("kbd-focus"));
+        return;
+      }
+      if (!items.length) return;
+      if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+        ev.preventDefault();
+        sideIdx = ev.key === "ArrowDown"
+          ? Math.min(sideIdx + 1, items.length - 1)
+          : Math.max(sideIdx - 1, 0);
+        items.forEach((el, i) => el.classList.toggle("kbd-focus", i === sideIdx));
+        items[sideIdx].scrollIntoView({ block: "nearest" });
+        return;
+      }
+      if (ev.key === "Enter") {
+        ev.preventDefault();
+        if (items[sideIdx]) items[sideIdx].click();
+        return;
+      }
+      return;
+    }
+    switch (ev.key) {
+      case "ArrowDown":
+      case "ArrowUp": {
+        ev.preventDefault();
+        if (!selected) { select("0"); break; }
+        const order = visiblePreorder();
+        const i = order.indexOf(selected);
+        if (i === -1) { if (order[0]) select(order[0]); break; }
+        const nxt = order[i + (ev.key === "ArrowDown" ? 1 : -1)];
+        if (nxt) select(nxt);
+        break;
+      }
+      case "ArrowLeft": {
+        ev.preventDefault();
+        if (!selected) break;
+        const kids = children.get(selected) || [];
+        if (kids.some(c => vis.has(c))) {
+          keepSelectedAnchored(() => {
+            collapsed.add(selected);
+            opened.delete(selected);
+            render();
+          });
+        } else if (parent.get(selected) !== undefined) {
+          select(parent.get(selected));
+        }
+        break;
+      }
+      case "ArrowRight": {
+        ev.preventDefault();
+        if (!selected) break;
+        const kids = children.get(selected) || [];
+        if (kids.length) {
+          collapsed.delete(selected);
+          opened.add(selected);
+          render();
+          select(kids[0]);
+        } else {
+          const order = visiblePreorder();
+          const i = order.indexOf(selected);
+          if (i !== -1 && i + 1 < order.length) select(order[i + 1]);
+        }
+        break;
+      }
+      case " ":
+        ev.preventDefault();
+        if (selected) toggleFold(selected);
+        break;
+      case "Enter": {
+        ev.preventDefault();
+        if (!selected) select("0");
+        buildPanel(selected);
+        sideMode = true;
+        sideIdx = 0;
+        const items = panelItems();
+        items.forEach((el, i) => el.classList.toggle("kbd-focus", i === 0));
+        if (items[0]) items[0].scrollIntoView({ block: "nearest" });
+        break;
+      }
+      case "Escape":
+        if (document.getElementById("help").classList.contains("open") ||
+            document.getElementById("legend").classList.contains("open")) {
+          closePops();
+          break;
+        }
+        if (edgeSelected) { clearEdgeSelection(); break; }
+        if (selected) {
+          selected = null;
+          render();
+        }
+        break;
+    }
+  });
+}
+init();
+</script>
+</body>
+</html>

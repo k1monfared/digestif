@@ -185,6 +185,20 @@ else
     PASS=$((PASS + 1)); echo "  PASS: frontmatter stripped from clean copy"
 fi
 
+echo "=== render ==="
+assert_exit_code "renders the review viewer" 0 python3 "$FITSEGID" render "$PROSE" "$GRAPH" -o "$TMP/review.html"
+out="$(cat "$TMP/review.html")"
+assert_contains "review embeds the payload" "const DATA = {" "$out"
+assert_contains "review embeds nodes" '"maxDepth"' "$out"
+TESTS_RUN=$((TESTS_RUN + 1))
+if grep -q '__REVIEW_JSON__' "$TMP/review.html"; then
+    FAIL=$((FAIL + 1)); echo "  FAIL: template token replaced"
+else
+    PASS=$((PASS + 1)); echo "  PASS: template token replaced"
+fi
+assert_exit_code "render accepts an outline" 0 python3 "$FITSEGID" render "$PROSE" --outline "$TMP/car-ban.outline.log" -o "$TMP/review2.html"
+assert_exit_code "render rejects an unknown node graph" 1 python3 "$FITSEGID" render "$PROSE" /nonexistent/graph.json -o "$TMP/none.html"
+
 echo ""
 echo "=== Results: $PASS passed, $FAIL failed, $TESTS_RUN total ==="
 [[ $FAIL -eq 0 ]]

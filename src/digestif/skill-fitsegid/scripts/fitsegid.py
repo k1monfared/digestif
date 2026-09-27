@@ -84,7 +84,8 @@ def load_graph(path):
         if isinstance(n, dict) and isinstance(n.get("id"), str):
             nodes[n["id"]] = n
     passages = (g.get("meta") or {}).get("passages") or {}
-    return nodes, passages
+    edges = [e for e in g.get("edges", []) if isinstance(e, dict)]
+    return nodes, passages, edges
 
 
 def parse_outline(text):
@@ -121,7 +122,7 @@ def parse_outline(text):
         ntype, text = (t.group(1).lower(), t.group(2)) if t else ("claim", rest)
         nodes[nid] = {"id": nid, "type": ntype, "text": text.strip(),
                       "attribution": attribution, "source": refs}
-    return nodes, {}
+    return nodes, {}, []
 
 
 def _strip_attr(rest):
@@ -312,29 +313,30 @@ def _trim(text, limit=60):
     return text if len(text) <= limit else text[: limit - 1] + "…"
 
 
+def resolve_input(graph, outline):
+    """Load nodes, passages and edges from a graph.json, run directory or outline.log."""
+    if outline and graph:
+        raise FitsegidError("pass either a graph.json or --outline, not both")
+    if outline:
+        nodes, passages, edges = parse_outline(Path(outline).read_text(encoding="utf-8"))
+        return nodes, passages, edges, outline
+    path = graph
+    if path and Path(path).is_dir():
+        path = str(Path(path) / "graph.json")
+    if not path:
+        raise FitsegidError("pass a graph.json (or --outline outline.log)")
+    nodes, passages, edges = load_graph(path)
+    return nodes, passages, edges, path
+
+
 def cmd_check(args):
     try:
         prose = Path(args.prose).read_text(encoding="utf-8")
     except OSError as exc:
         print(f"error: cannot read prose {args.prose}: {exc}", file=sys.stderr)
         return 1
-    if args.outline and args.graph:
-        print("error: pass either a graph.json or --outline, not both", file=sys.stderr)
-        return 1
     try:
-        if args.outline:
-            nodes, passages = parse_outline(
-                Path(args.outline).read_text(encoding="utf-8"))
-            source = args.outline
-        else:
-            graph_path = args.graph
-            if graph_path and Path(graph_path).is_dir():
-                graph_path = str(Path(graph_path) / "graph.json")
-            if not graph_path:
-                print("error: pass a graph.json (or --outline outline.log)", file=sys.stderr)
-                return 1
-            nodes, passages = load_graph(graph_path)
-            source = graph_path
+        nodes, passages, _edges, source = resolve_input(args.graph, args.outline)
     except FitsegidError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
@@ -365,6 +367,112 @@ def strip_citations(text):
     text = re.sub(r"[ \t]{2,}", " ", text)
     text = "\n".join(line.rstrip() for line in text.splitlines())
     return re.sub(r"\n{3,}", "\n\n", text).strip() + "\n"
+
+
+def parse_prose_blocks(prose):
+    """Split the cited prose into heading and paragraph blocks with per-sentence node ids."""
+    meta, body = parse_frontmatter(prose, [])
+    blocks = []
+    for raw in body.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith("#"):
+            level = len(line) - len(line.lstrip("#"))
+            blocks.append({"kind": "h", "level": level, "text": line.lstrip("#").strip()})
+            continue
+        if line[:2] in ("- ", "* ", "+ "):
+            line = line[2:].strip()
+        sentences, ids = [], []
+        for sent in split_sentences(line):
+            sids = citations_in(sent, [], "")
+            text = CITATION_BLOCK_RE.sub("", sent).strip()
+            text = re.sub(r"[ \t]{2,}", " ", text)
+            sentences.append({"text": text, "ids": sids})
+            for i in sids:
+                if i not in ids:
+                    ids.append(i)
+        blocks.append({"kind": "p", "sentences": sentences, "ids": ids})
+    return meta, blocks
+
+
+def build_review(nodes, edges, prose):
+    meta, blocks = parse_prose_blocks(prose)
+    heading = next((b["text"] for b in blocks if b["kind"] == "h"), "")
+    children = {nid: [] for nid in nodes}
+    parent = {}
+    for nid in nodes:
+        p = parent_of(nid)
+        parent[nid] = p if p in nodes else None
+        if p is not None and p in children:
+            children[p].append(nid)
+    for k in children:
+        children[k].sort(key=num_key)
+    node_list, max_depth = [], 0
+    for nid in sorted(nodes, key=num_key):
+        n = nodes[nid]
+        d = depth_of(nid)
+        max_depth = max(max_depth, d)
+        node_list.append({
+            "id": nid,
+            "type": n.get("type", "claim"),
+            "attribution": n.get("attribution", "n/a"),
+            "text": n.get("text", ""),
+            "source": [str(r) for r in (n.get("source") or [])],
+            "depth": d,
+            "parent": parent[nid],
+        })
+    cross = [{"from": e.get("from"), "to": e.get("to"), "type": e.get("type"),
+              "note": e.get("note", "")}
+             for e in edges if e.get("type") != "contains"]
+    return {
+        "title": meta.get("title") or heading or "fitsegid review",
+        "source": meta.get("source") or "",
+        "lod": meta.get("lod", "max"),
+        "nodes": node_list,
+        "children": children,
+        "cross": cross,
+        "mainPoints": children.get("0", []),
+        "blocks": blocks,
+        "maxDepth": max_depth,
+    }
+
+
+def render_review(nodes, edges, prose, out_path):
+    payload = build_review(nodes, edges, prose)
+    template_path = Path(__file__).resolve().parent.parent / "templates" / "review.html"
+    try:
+        template = template_path.read_text(encoding="utf-8")
+    except OSError as exc:
+        raise FitsegidError(f"cannot read review template {template_path}: {exc}")
+    if "__REVIEW_JSON__" not in template:
+        raise FitsegidError(f"review template {template_path} has no __REVIEW_JSON__ token")
+    data = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
+    Path(out_path).write_text(template.replace("__REVIEW_JSON__", data), encoding="utf-8")
+
+
+def cmd_render(args):
+    try:
+        prose = Path(args.prose).read_text(encoding="utf-8")
+    except OSError as exc:
+        print(f"error: cannot read prose {args.prose}: {exc}", file=sys.stderr)
+        return 1
+    try:
+        nodes, _passages, edges, _source = resolve_input(args.graph, args.outline)
+    except FitsegidError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+    if not nodes:
+        print("error: no nodes to render", file=sys.stderr)
+        return 1
+    out = Path(args.out) if args.out else Path(args.prose).with_suffix(".html")
+    try:
+        render_review(nodes, edges, prose, out)
+    except FitsegidError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+    print(f"wrote {out}")
+    return 0
 
 
 def cmd_strip(args):
@@ -401,6 +509,13 @@ def main(argv=None):
     s.add_argument("prose", help="path to NAME.fitsegid.md")
     s.add_argument("-o", "--out", help="output path, default NAME.fitsegid-clean.md")
     s.set_defaults(func=cmd_strip)
+
+    r = sub.add_parser("render", help="build the two-pane review viewer for a prose file")
+    r.add_argument("prose", help="path to NAME.fitsegid.md")
+    r.add_argument("graph", nargs="?", help="path to graph.json or a run directory")
+    r.add_argument("--outline", help="use a digestif outline.log instead of graph.json")
+    r.add_argument("-o", "--out", help="output .html path, default next to the prose")
+    r.set_defaults(func=cmd_render)
 
     args = p.parse_args(argv)
     try:

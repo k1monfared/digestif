@@ -223,6 +223,8 @@ def main(argv=None):
                     help="repair rounds when the checker fails (default: 2)")
     fg.add_argument("--timeout", type=int, default=1800,
                     help="seconds allowed per agent invocation (default: 1800)")
+    fg.add_argument("--no-open", action="store_true",
+                    help="do not open the review viewer in a browser")
     fg.set_defaults(func=cmd_fitsegid)
 
     r = sub.add_parser("render", help="generate outline.log and graph.html, no agent")

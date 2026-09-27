@@ -1,0 +1,45 @@
+- Empathy, sympathy, compassion feature matrix, point graph (source: 08_empathy_sympathy_compassion_matrix/source.txt)
+    Summary: Feature matrix contrasts cognitive and affective empathy, sympathy, and compassion across five profiles from psychopath to integrated ideal. (¶1, ¶2, ¶28)
+        - 1 Theme: Cold-control block: rows present in both dark profiles, plus the psychopath-only control row. (¶2, ¶3)
+            - 1.1 Accurate modeling: cognitive ✓, affective ~, sympathy ~, compassion ✓; psychopath ✓, sociopath ~, empath ~, altruist ✓, integrated ✓. (¶4)
+            - 1.2 Boundary kept: cognitive ✓, affective blank, sympathy ✓, compassion ✓; psychopath ✓, sociopath ~, empath blank, altruist ✓, integrated ✓. (¶5)
+            - 1.3 Manipulators row: cognitive ✓ only; psychopath ✓, sociopath ~, all others blank. (¶6)
+            - 1.4 Controlled/instrumental, not reactive/impulsive: cognitive ✓, sympathy ~, compassion ✓; psychopath ✓, altruist ✓, integrated ✓; affective, sociopath, empath blank. (¶7)
+        - 2 Theme: Affective-care block: rows the sociopath has and the psychopath lacks, mostly partial marks. (¶2)
+            - 2.1 Sharing/mirroring emotion: affective ✓; sociopath ~, empath ✓, altruist ~, integrated ✓; others blank. (¶8)
+            - 2.2 Capacity to care at all: affective ~, sympathy ✓, compassion ✓; sociopath ✓, empath ✓, altruist ✓, integrated ✓; psychopath blank. (¶9)
+            - 2.3 Motivation to help/act: affective ~, sympathy ~, compassion ✓; sociopath ~, empath ~, altruist ✓, integrated ✓; psychopath blank. (¶10)
+            - 2.4 Guilt/remorse after harm: empath ✓; affective ~, sympathy ~, compassion ~, sociopath ~, altruist ~, integrated ~; cognitive and psychopath blank. (¶11)
+            - 2.5 Contagion/burnout risk: affective ✓, empath ✓; sympathy ~, sociopath ~, integrated ~; others blank. (¶12)
+            - 2.6 Vivid/similar bias: affective ✓, sociopath ✓, empath ✓; cognitive ~, sympathy ~, integrated ~; others blank. (¶13)
+            - 2.7 Ends, not means (Kantianism): compassion ✓, empath ✓, altruist ✓, integrated ✓; affective ~, sympathy ~, sociopath ~; cognitive and psychopath blank. (¶14)
+            - 2.8 Dignity and worth (Humanism): sympathy ✓, compassion ✓, empath ✓, altruist ✓, integrated ✓; affective ~, sociopath ~; cognitive and psychopath blank. (¶15)
+        - 3 Theme: Neither-dark block: beyond in-group, faith, and scalability rows, blank for both dark profiles. (¶2)
+            - 3.1 Beyond a vivid/similar in-group: sympathy ~, compassion ✓, altruist ✓, integrated ✓; all others blank. (¶16)
+            - 3.2 Fundamentally good (Faith in Humanity): sympathy ~, compassion ~, empath ✓, altruist ✓, integrated ✓; both dark profiles blank. (¶17)
+            - 3.3 Sustainable/scalable guide: cognitive ~, sympathy ~, compassion ✓, altruist ✓, integrated ✓; others blank. (¶18)
+        - 4 Theme: Notes interpret the matrix rows and limit its scope to ideal types. (¶19, ¶29)
+            - 4.1 Nuance: Sympathy is '~' on modeling minds: one can pity while badly misreading; understanding helps but isn't constitutive, unlike cognitive empathy. (¶19)
+            - 4.2 Nuance: Affective empathy's care is '~': contagion can happen involuntarily, without real concern, and simply make one want to get away. (¶20)
+            - 4.3 Evidence: 'Manipulators' row is the sharpest diagnostic and essentially the psychopath's signature: cognitive empathy alone is compatible with cruelty. (¶21)
+            - 4.4 Nuance: Sustainability row reflects the Bloom/Singer argument (Paul Bloom's Against Empathy; Tania Singer's research), a position not a consensus; critics warn of abstract, paternalistic compassion. (¶22) [reported]
+            - 4.5 Boundary maintenance is the structural difference: partially merging with the other's state drives both motivational power and burnout/bias problems. (¶23)
+            - 4.6 Dark-column reading: psychopath is the cognitive column standing alone; sociopath is affect plus sympathy clamped to a narrow in-group, stripped of regulation. (¶24)
+            - 4.7 Nuance: Asymmetry: almost everything the psychopath has, the sociopath shares in degraded form; the psychopath's one distinguishing possession is cold instrumental control. (¶24)
+            - 4.8 Nuance: Etiology deliberately left out: psychopathy is often theorized as innate, sociopathy as environmentally acquired; causes don't describe the response's shape. (¶25)
+            - 4.9 Nuance: Clinical caveat: the two profiles aren't formal diagnoses; both fall under Antisocial Personality Disorder; the split is a contested, largely theoretical convention. (¶26)
+            - 4.10 Nuance: Terminology varies: some authors use 'empathic concern' roughly where the table says compassion; this table uses the neutral research sense of sympathy. (¶27)
+            - 4.11 Empath profile: affective column maxed and unregulated, failing boundary, scope, and scalability; inherits the sociopath's distortions, so not the moral ideal. (¶28)
+            - 4.12 Altruist profile: compassion column embodied, matching the research 'Light Triad' (Kaufman et al., 2019). (¶28)
+            - 4.13 Integrated ideal: the only column scoring well across every block, including the 'present in neither' rows; true opposite of both dark profiles. (¶28)
+            - 4.14 Nuance: Kantianism row is essentially the inverse of the manipulators row; Humanism overlaps the caring and beyond-the-in-group rows. (¶29)
+            - 4.15 Nuance: Only Faith in Humanity adds a genuinely new dimension, an attitude rather than an empathy component; both dark profiles score blank there. (¶29)
+    - Cross-links
+        - 2.7 restates 4.14 (¶29) note: Kantianism row is stated as the inverse of the manipulators row
+        - 2.8 restates 4.14 (¶29) note: Humanism row is stated as overlapping the caring and beyond-in-group rows
+        - 4.3 supports 1.3 (¶21) note: manipulators row is the stated sharpest diagnostic of the cognitive/affective split
+        - 4.4 qualifies 3.3 (¶22) note: the Bloom/Singer reading is a position with critics, limiting the sustainability row
+        - 4.5 supports 2.3 (¶23) note: affective merging is what drives the motivational power
+        - 4.5 supports 2.5 (¶23) note: affective merging is also what drives burnout and bias
+        - 4.6 supports 2 (¶24) note: dark-column reading summarizes the block asymmetry
+    - Coverage: 29 of 29 passages cited

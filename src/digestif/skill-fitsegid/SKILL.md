@@ -33,9 +33,10 @@ python3 scripts/fitsegid.py check-prose name.fitsegid.md name.graph.json
 python3 scripts/fitsegid.py check-prose name.fitsegid.md --outline name.outline.log
 python3 scripts/fitsegid.py check-prose name.fitsegid.md name.graph.json --strict
 python3 scripts/fitsegid.py strip-prose name.fitsegid.md
+python3 scripts/fitsegid.py render name.fitsegid.md name.graph.json -o name.fitsegid.html
 ```
 
-`check-prose` exits 1 on any error. `strip-prose` writes `name.fitsegid-clean.md` by default.
+`check-prose` exits 1 on any error. `strip-prose` writes `name.fitsegid-clean.md` by default. `render` builds the two-pane review viewer, prose on the left and an expandable dendrogram on the right, for evaluating how well the prose maps onto the graph.
 
 ## The citation contract
 
