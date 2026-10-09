@@ -272,6 +272,12 @@ const cardTop = (page, id) => page.evaluate(id => {
   for (let i = 0; i < cross.k; i++) await key(page, "ArrowDown");
   const crossed = await page.evaluate(() => ({ sel: ALIGNED.state.selected, vis: ALIGNED.visible().includes(ALIGNED.state.selected) }));
   ok("down crosses into the next branch at the same depth, opening it", crossed.sel === cross.order[cross.k] && crossed.vis, [crossed, cross.order[cross.k]]);
+  const leaf = await selectedId(page);
+  const leafHasKids = await page.evaluate(id => G.edges.some(e => e.type === "contains" && e.from === id), leaf);
+  ok("the crossed point is a leaf, for the right-arrow check", !leafHasKids, leaf);
+  await key(page, "ArrowRight");
+  const lh = await page.evaluate(() => document.getElementById("hint").classList.contains("open") && document.getElementById("hint").textContent);
+  ok("right on a leaf stays and says there are no children", (await selectedId(page)) === leaf && lh === "No children under " + leaf, [await selectedId(page), lh]);
   await key(page, "ArrowLeft");
   const expectParent = cross.order[cross.k].split(".").slice(0, 2).join(".");
   ok("left from there goes to its own parent", (await selectedId(page)) === expectParent, [await selectedId(page), expectParent]);

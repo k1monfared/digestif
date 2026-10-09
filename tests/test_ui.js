@@ -980,6 +980,10 @@ const state = page => page.evaluate(() => {
   await settle(page);
   s = await state(page);
   ok("down crosses into the next branch, opening it", s.selected === "2.1", s.selected);
+  await page.keyboard.press("ArrowRight");
+  s = await state(page);
+  const leafHint = await page.evaluate(() => document.getElementById("hint").classList.contains("open") && document.getElementById("hint").textContent);
+  ok("right on a leaf stays and says there are no children", s.selected === "2.1" && leafHint === "No children under 2.1", [s.selected, leafHint]);
   await page.keyboard.press("ArrowLeft");
   s = await state(page);
   ok("left from there goes to its own parent", s.selected === "2", s.selected);

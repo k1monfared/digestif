@@ -1470,7 +1470,7 @@ function init() {
         ev.preventDefault();
         if (!selected) { select("0"); break; }
         const kids = children.get(selected) || [];
-        if (!kids.length) break;
+        if (!kids.length) { showHint("No children under " + (selected === "0" ? "the summary" : selected)); break; }
         if (!vis.has(kids[0])) {
           collapsed.delete(selected);
           opened.add(selected);

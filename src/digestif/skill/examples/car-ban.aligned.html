@@ -1028,7 +1028,7 @@ function onKey(ev) {
       ev.preventDefault();
       if (!sel) { sameDepthStep(1); break; }
       const ks = kids[sel] || [];
-      if (!ks.length) break;
+      if (!ks.length) { showHint("No children under " + sel); break; }
       if (!viewSet.has(ks[0]) || state.folded.has(depthOf(ks[0]))) {
         keepAnchored(sel, () => {
           state.collapsed.delete(sel); state.opened.add(sel);
