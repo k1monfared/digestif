@@ -187,7 +187,7 @@
     <span class="k">ctrl+= / ctrl+-</span><span>zoom in and out</span>
     <span class="k">drag</span><span>free pan in any direction</span>
     <span class="k">dblclick</span><span>fit view</span>
-    <span class="k">up / down</span><span>move between nodes at the same depth</span>
+    <span class="k">up / down</span><span>previous or next node at the same depth, opening folded branches</span>
     <span class="k">left</span><span>go to the parent</span>
     <span class="k">right</span><span>go to the first child, showing it if folded</span>
     <span class="k">ctrl+j</span><span>fold or unfold the selected node</span>
@@ -1142,12 +1142,25 @@ function paintBack() {
   b.style.display = top ? "" : "none";
   if (top) b.textContent = "← " + (top.id === "0" ? "summary" : top.id);
 }
+function fullPreorder() {
+  const out = [];
+  const walk = id => { out.push(id); (children.get(id) || []).forEach(walk); };
+  if (nodes.has("0")) walk("0");
+  return out;
+}
+// up and down walk every node at the same depth in document order,
+// opening the branch of the next one when it is folded
 function sameDepthStep(d) {
   if (!selected) { select("0"); return; }
-  const order = visiblePreorder().filter(id => depthOf(id) === depthOf(selected));
+  const order = fullPreorder().filter(id => depthOf(id) === depthOf(selected));
   const i = order.indexOf(selected);
   const nxt = order[i + d];
-  if (i !== -1 && nxt) select(nxt);
+  if (i === -1 || !nxt) return;
+  if (!vis.has(nxt)) {
+    openPathTo(nxt);
+    render();
+  }
+  select(nxt);
 }
 function togglePanel() {
   if (panelOpen()) {

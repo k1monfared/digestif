@@ -972,6 +972,18 @@ const state = page => page.evaluate(() => {
     s.selected === "1" && Math.abs(rOffParentAfter.x - rOffParentBefore.x) <= 2 && Math.abs(rOffParentAfter.y - rOffParentBefore.y) <= 2,
     [rOffParentBefore, rOffParentAfter, s]);
 
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("ArrowDown");
+  s = await state(page);
+  ok("car-ban: down to the last child of 1", s.selected === "1.2", s.selected);
+  await page.keyboard.press("ArrowDown");
+  await settle(page);
+  s = await state(page);
+  ok("down crosses into the next branch, opening it", s.selected === "2.1", s.selected);
+  await page.keyboard.press("ArrowLeft");
+  s = await state(page);
+  ok("left from there goes to its own parent", s.selected === "2", s.selected);
+
   const { execFileSync } = require("child_process");
   const os = require("os");
   const bigGraph = path.join(ROOT, "tests/fixtures/big.graph.json");

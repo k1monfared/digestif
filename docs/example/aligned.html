@@ -201,7 +201,7 @@
   <div id="helpGrid">
     <span class="k">click</span><span>select a point and tint its passages</span>
     <span class="k">+ / &#8722;</span><span>show or hide the points under a point</span>
-    <span class="k">up / down</span><span>move between points at the same depth, top to bottom</span>
+    <span class="k">up / down</span><span>previous or next point at the same depth, opening folded branches</span>
     <span class="k">left</span><span>go to the parent</span>
     <span class="k">right</span><span>go to the first child, showing it if folded</span>
     <span class="k">ctrl+j</span><span>fold or unfold the selected point</span>
@@ -926,13 +926,18 @@ function paintBack() {
   b.style.display = top ? "" : "none";
   if (top) b.textContent = "← " + top.id;
 }
+// up and down walk every point at the same depth in tree order, as in the
+// graph view, opening the branch of the next one when it is folded
 function sameDepthStep(d) {
   const sel = state.selected;
-  const order = visualOrder();
-  if (!sel) { const first = order.find(id => depthOf(id) === 1) || order[0]; if (first) select(first); return; }
-  const same = order.filter(id => depthOf(id) === depthOf(sel));
+  if (!sel) { const first = (kids["0"] || [])[0]; if (first) select(first); return; }
+  const same = [];
+  (function walk(id) { (kids[id] || []).forEach(c => { if (depthOf(c) === depthOf(sel)) same.push(c); walk(c); }); })("0");
   const i = same.indexOf(sel);
-  if (i !== -1 && same[i + d]) select(same[i + d]);
+  const nxt = same[i + d];
+  if (i === -1 || !nxt) return;
+  if (!viewSet.has(nxt) || state.folded.has(depthOf(nxt))) { openPathTo(nxt); render(); }
+  select(nxt);
 }
 
 // ---------- chrome: legend, popovers, keys ----------

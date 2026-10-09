@@ -253,6 +253,30 @@ const cardTop = (page, id) => page.evaluate(id => {
      sk.visible.filter(id => id.split(".").length > 1).every(id => chain.includes(id)), sk.visible);
   await key(page, "Control+1");
   await key(page, "Escape");
+  await page.evaluate(() => window.scrollTo(0, 0));
+  const cross = await page.evaluate(() => {
+    const order = [];
+    (function walk(id) {
+      G.edges.filter(e => e.type === "contains" && e.from === id).map(e => e.to)
+        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+        .forEach(c => { if (c.split(".").length === 3) order.push(c); walk(c); });
+    })("0");
+    const first = order[0], pre = first.split(".").slice(0, 2).join(".");
+    const k = order.findIndex(id => !id.startsWith(pre + "."));
+    return { order, k };
+  });
+  await key(page, "ArrowDown");
+  await key(page, "ArrowRight");
+  await key(page, "ArrowRight");
+  ok("arrows reach the first point at depth 3", (await selectedId(page)) === cross.order[0], [await selectedId(page), cross.order[0]]);
+  for (let i = 0; i < cross.k; i++) await key(page, "ArrowDown");
+  const crossed = await page.evaluate(() => ({ sel: ALIGNED.state.selected, vis: ALIGNED.visible().includes(ALIGNED.state.selected) }));
+  ok("down crosses into the next branch at the same depth, opening it", crossed.sel === cross.order[cross.k] && crossed.vis, [crossed, cross.order[cross.k]]);
+  await key(page, "ArrowLeft");
+  const expectParent = cross.order[cross.k].split(".").slice(0, 2).join(".");
+  ok("left from there goes to its own parent", (await selectedId(page)) === expectParent, [await selectedId(page), expectParent]);
+  await key(page, "Control+1");
+  await key(page, "Escape");
 
   console.log("=== edges ===");
   await key(page, "Control+0");
