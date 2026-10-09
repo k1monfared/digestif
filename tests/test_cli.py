@@ -65,7 +65,7 @@ def test_build_with_fake_agent(tmp_path):
     )
     assert r.returncode == 0, r.stdout + r.stderr
     run_dir = next(tmp_path.iterdir())
-    for name in ["graph.json", "outline.log", "graph.html", "validation.txt", "run.log"]:
+    for name in ["graph.json", "outline.log", "graph.html", "aligned.html", "validation.txt", "run.log"]:
         assert (run_dir / name).is_file(), name
     graph = json.loads((run_dir / "graph.json").read_text())
     assert graph["meta"]["sourceText"]
@@ -105,6 +105,32 @@ def test_validate_and_render_examples(tmp_path):
     assert "coverage 5/5" in r.stdout
     r = run_cli("render", EXAMPLES / "car-ban.graph.json", "--no-open")
     assert r.returncode == 0, r.stdout + r.stderr
+
+
+def test_align_run_dir_and_graph(tmp_path):
+    import shutil as _shutil
+    run_dir = tmp_path / "run"
+    run_dir.mkdir()
+    _shutil.copyfile(EXAMPLES / "car-ban.graph.json", run_dir / "graph.json")
+    r = run_cli("align", run_dir, "--no-open")
+    assert r.returncode == 0, r.stdout + r.stderr
+    html = (run_dir / "aligned.html").read_text()
+    assert "const G = {" in html and "__GRAPH_JSON__" not in html
+    _shutil.copyfile(EXAMPLES / "car-ban.graph.json", tmp_path / "car-ban.graph.json")
+    r = run_cli("align", tmp_path / "car-ban.graph.json", "--no-open")
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert (tmp_path / "car-ban.aligned.html").is_file()
+
+
+def test_align_refuses_unlocated_graph(tmp_path):
+    graph = json.loads((EXAMPLES / "car-ban.graph.json").read_text())
+    graph["meta"].pop("spans")
+    graph["meta"].pop("sourceText")
+    (tmp_path / "graph.json").write_text(json.dumps(graph))
+    r = run_cli("align", tmp_path, "--no-open")
+    assert r.returncode == 1
+    assert "run locate first" in r.stdout + r.stderr
+    assert not (tmp_path / "aligned.html").exists()
 
 
 def test_fitsegid_with_fake_agent(tmp_path):

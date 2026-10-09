@@ -56,7 +56,7 @@ const state = page => page.evaluate(() => {
 });
 
 (async () => {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch(process.env.PW_CHROMIUM ? { executablePath: process.env.PW_CHROMIUM } : {});
   const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
   const errors = [];
   page.on("pageerror", e => errors.push(String(e)));
@@ -195,21 +195,25 @@ const state = page => page.evaluate(() => {
 
   await page.keyboard.press("Enter");
   s = await state(page);
-  ok("enter: sidebar focus on first row", s.kbdFocus === 1, s.kbdFocus);
-  await page.keyboard.press("Escape");
-  s = await state(page);
-  ok("escape: leaves sidebar focus", s.kbdFocus === 0, s.kbdFocus);
+  const hint = await page.evaluate(() => document.getElementById("hint").classList.contains("open") && document.getElementById("hint").textContent);
+  ok("enter on a node without links: a short hint, no focus", s.kbdFocus === 0 && /No links/.test(hint || ""), [s.kbdFocus, hint]);
 
   await page.keyboard.press(" ");
   s = await state(page);
-  ok("space: folds root", s.nodes === 1, s.nodes);
-  await page.keyboard.press(" ");
+  ok("space does nothing", s.nodes === 10 && s.selected === "summary", s);
+  await page.keyboard.press("Control+j");
   s = await state(page);
-  ok("space: unfolds root", s.nodes === 10, s.nodes);
+  ok("ctrl+j: folds root", s.nodes === 1, s.nodes);
+  await page.keyboard.press("Control+j");
+  s = await state(page);
+  ok("ctrl+j: unfolds root", s.nodes === 10, s.nodes);
 
   await page.keyboard.press("ArrowDown");
   s = await state(page);
-  ok("down from root: first main point", s.selected === "1", s.selected);
+  ok("down from root: root is alone at its depth, stays", s.selected === "summary", s.selected);
+  await page.keyboard.press("ArrowRight");
+  s = await state(page);
+  ok("right from root: first main point", s.selected === "1", s.selected);
   await page.keyboard.press("ArrowDown");
   await page.keyboard.press("ArrowDown");
   s = await state(page);
@@ -286,7 +290,7 @@ const state = page => page.evaluate(() => {
   }));
   s = await state(page);
   ok("source: clicking an excerpt jumps into the source view", fromPassage.inPanel && fromPassage.marks === 34 && s.selected === "summary", [fromPassage, s.selected]);
-  await page.keyboard.press("ArrowDown");
+  await page.keyboard.press("ArrowRight");
   await page.keyboard.press("ArrowDown");
   s = await state(page);
   ok("back to node 2 after source checks", s.selected === "2", s.selected);
@@ -549,16 +553,16 @@ const state = page => page.evaluate(() => {
   ok("sidebar: resize clamps at the minimum width", Math.abs(minW - 260) <= 1, minW);
 
   const rSpaceBefore = await rectOf("2 ");
-  await page.keyboard.press(" ");
+  await page.keyboard.press("Control+j");
   s = await state(page);
-  ok("space: one tap unfolds depth-hidden children", s.nodes === 13, s.nodes);
+  ok("ctrl+j: one tap unfolds depth-hidden children", s.nodes === 13, s.nodes);
   const rSpaceAfter = await rectOf("2 ");
-  ok("space anchoring: selected node does not move on screen",
+  ok("ctrl+j anchoring: selected node does not move on screen",
     Math.abs(rSpaceAfter.x - rSpaceBefore.x) <= 2 && Math.abs(rSpaceAfter.y - rSpaceBefore.y) <= 2,
     [rSpaceBefore, rSpaceAfter]);
-  await page.keyboard.press(" ");
+  await page.keyboard.press("Control+j");
   s = await state(page);
-  ok("space: second tap folds again", s.nodes === 10, s.nodes);
+  ok("ctrl+j: second tap folds again", s.nodes === 10, s.nodes);
 
   const rCtrlBefore = await rectOf("2 ");
   const scCtrlBefore = (await state(page)).scroll;
@@ -606,7 +610,12 @@ const state = page => page.evaluate(() => {
   ok("left from leaf: goes to parent", s.selected === "2" && s.nodes === 13, s);
   await page.keyboard.press("ArrowLeft");
   s = await state(page);
-  ok("left on unfolded: folds, stays", s.selected === "2" && s.nodes === 10, s);
+  ok("left on unfolded: goes to parent, never folds", s.selected === "summary" && s.nodes === 13, s);
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("ArrowDown");
+  await page.keyboard.press("Control+j");
+  s = await state(page);
+  ok("ctrl+j folds node 2 back", s.selected === "2" && s.nodes === 10, s);
 
   const hitPos4 = () => page.evaluate(() => {
     const g = [...document.querySelectorAll("#gNodes g")].find(el => el.querySelector("text").textContent.startsWith("4 "));
@@ -824,11 +833,80 @@ const state = page => page.evaluate(() => {
     Math.abs(rSeqAfter.y - rSeqMid.y) <= 2 && Math.abs(rSeqAfter.x - rSeqMid.x) <= 2,
     [rSeqBefore, rSeqMid, rSeqAfter]);
 
+  // links mode and history
+  await page.keyboard.press("Control+2");
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("ArrowDown");
+  await settle(page);
+  s = await state(page);
+  ok("links: node 2 selected to start", s.selected === "2", s.selected);
+  const r2 = await rectOf("2 ");
+  const ring = () => page.evaluate(() => {
+    const g = document.querySelector("#gNodes g.lnk-target");
+    return g ? g.querySelector("text").textContent.split(" ")[0] : null;
+  });
+  await page.keyboard.press("Enter");
+  await settle(page);
+  s = await state(page);
+  ok("enter: opens the sidebar on the links of node 2", s.panelOpen && s.panelTitle === "Node 2" && s.kbdFocus === 1, s);
+  ok("enter: the first link's far end gets a ring", (await ring()) === "6", await ring());
+  await page.keyboard.press("ArrowDown");
+  await settle(page);
+  ok("down picks the next link", (await ring()) === "7" && (await state(page)).selected === "2", await ring());
+  await page.keyboard.press("Enter");
+  await settle(page);
+  s = await state(page);
+  ok("enter on a link follows it", s.selected === "7" && s.panelTitle === "Node 2", s);
+  await page.keyboard.press("Enter");
+  await settle(page);
+  ok("enter again follows it back", (await state(page)).selected === "2");
+  await page.keyboard.press("ArrowDown");
+  const before91 = (await state(page)).nodes;
+  await page.keyboard.press("Enter");
+  await settle(page);
+  s = await state(page);
+  ok("following into a folded branch opens the path", s.selected === "9.1" && s.nodes > before91, [s.selected, before91, s.nodes]);
+  await page.keyboard.press("ArrowLeft");
+  await page.keyboard.press(" ");
+  ok("left, right and space do nothing in links mode", (await state(page)).selected === "9.1");
+  await page.keyboard.press("Escape");
+  await settle(page);
+  s = await state(page);
+  const pill = await page.evaluate(() => { const b = document.getElementById("btnBack"); return b.style.display !== "none" && b.textContent; });
+  ok("escape leaves the links on the end you are at", s.selected === "9.1" && s.kbdFocus === 0 && s.panelTitle === "Node 9.1", s);
+  ok("the back pill names where back goes", pill === "\u2190 2", pill);
+  await page.keyboard.press("ArrowLeft");
+  await settle(page);
+  ok("arrow moves are visits: the pill now names 9.1", await page.evaluate(() => document.getElementById("btnBack").textContent) === "\u2190 9.1");
+  await page.keyboard.press("Backspace");
+  await settle(page);
+  ok("backspace retraces the arrow move", (await state(page)).selected === "9.1", (await state(page)).selected);
+  await page.keyboard.press("Backspace");
+  await settle(page);
+  s = await state(page);
+  ok("backspace again goes back across the link jump", s.selected === "2", s.selected);
+  const r2b = await rectOf("2 ");
+  ok("back returns the node to the same spot on screen", Math.abs(r2b.x - r2.x) <= 3 && Math.abs(r2b.y - r2.y) <= 3, [r2, r2b]);
+  const backTop = await page.evaluate(() => document.getElementById("btnBack").textContent);
+  ok("link mode previews are not visits", backTop !== "\u2190 7", backTop);
+  await page.keyboard.press("Alt+ArrowRight");
+  await settle(page);
+  ok("alt+right goes forward again", (await state(page)).selected === "9.1", (await state(page)).selected);
+  await page.keyboard.press("Alt+ArrowRight");
+  await settle(page);
+  ok("alt+right again reaches the last visit", (await state(page)).selected === "9", (await state(page)).selected);
+  await page.keyboard.press("Alt+ArrowLeft");
+  await page.keyboard.press("Alt+ArrowLeft");
+  await settle(page);
+  ok("alt+left twice goes back to 2", (await state(page)).selected === "2");
+  await page.keyboard.press("Escape");
+  await page.keyboard.press("Control+1");
+
   await page.goto(CARBAN);
   await page.waitForTimeout(300);
   s = await state(page);
   ok("car-ban initial: 4 nodes, root selected", s.nodes === 4 && s.selected === "summary", s);
-  await page.keyboard.press("ArrowDown");
+  await page.keyboard.press("ArrowRight");
   await page.keyboard.press("ArrowRight");
   await page.keyboard.press("ArrowRight");
   s = await state(page);
@@ -848,7 +926,7 @@ const state = page => page.evaluate(() => {
 
   await page.evaluate(() => document.getElementById("btnFit").click());
   await page.waitForTimeout(120);
-  await page.keyboard.press("ArrowDown");
+  await page.keyboard.press("ArrowRight");
   await page.keyboard.press("ArrowRight");
   await page.keyboard.press("ArrowRight");
   await settle(page);
@@ -865,8 +943,8 @@ const state = page => page.evaluate(() => {
 
   await page.keyboard.press("Control+4");
   await page.waitForTimeout(100);
-  await page.keyboard.press("ArrowDown");
-  await page.keyboard.press("ArrowDown");
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("ArrowRight");
   await settle(page);
   s = await state(page);
   ok("car-ban: leaf selected again, parent on screen", s.selected === "1.1.1", s.selected);
@@ -916,10 +994,10 @@ const state = page => page.evaluate(() => {
   await page.waitForTimeout(150);
   s = await state(page);
   ok("big graph: ctrl+1 shows only the summary", s.nodes === 1 && s.selected === "summary", s);
-  await page.keyboard.press(" ");
+  await page.keyboard.press("Control+j");
   await page.waitForTimeout(150);
   s = await state(page);
-  ok("big graph: space unfolds the summary", s.nodes === 1 + bigMains, s.nodes);
+  ok("big graph: ctrl+j unfolds the summary", s.nodes === 1 + bigMains, s.nodes);
   const noSrc = await page.evaluate(() => getComputedStyle(document.getElementById("pMode")).display);
   ok("big graph: no source toggle without source text", noSrc === "none", noSrc);
   fs.rmSync(bigTmp, { recursive: true, force: true });

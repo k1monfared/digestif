@@ -191,6 +191,30 @@ def render(run_dir):
     return run_graph(run_dir, ["render", "graph.json"])
 
 
+def align(args):
+    target = Path(args.target)
+    if target.is_dir():
+        run_dir, graph_name = target, "graph.json"
+    elif target.is_file() and target.suffix == ".json":
+        run_dir, graph_name = target.parent, target.name
+    else:
+        print("error: %s is neither a run directory nor a graph.json" % args.target)
+        return 1
+    if not (run_dir / graph_name).is_file():
+        print("error: no %s in %s" % (graph_name, run_dir))
+        return 1
+    code, out = run_graph(run_dir, ["to-aligned", graph_name])
+    print(out)
+    if code != 0:
+        return code
+    stem = graph_name[:-len(".json")]
+    name = "aligned.html" if stem == "graph" else (
+        stem[:-len(".graph")] if stem.endswith(".graph") else stem) + ".aligned.html"
+    if not args.no_open:
+        open_file(run_dir / name)
+    return 0
+
+
 def open_viewer(run_dir):
     html = Path(run_dir) / "graph.html"
     if html.is_file():
@@ -256,6 +280,8 @@ def build(args):
         return 1
     announce(4, total, "wrote %s" % (run_dir / "outline.log"))
     announce(4, total, "wrote %s" % (run_dir / "graph.html"))
+    if (run_dir / "aligned.html").is_file():
+        announce(4, total, "wrote %s" % (run_dir / "aligned.html"))
     if not args.no_open:
         open_viewer(run_dir)
     print("done: %s" % run_dir)
@@ -397,6 +423,8 @@ def finish(args):
         return 1
     announce(3, 3, "wrote %s" % (run_dir / "outline.log"))
     announce(3, 3, "wrote %s" % (run_dir / "graph.html"))
+    if (run_dir / "aligned.html").is_file():
+        announce(3, 3, "wrote %s" % (run_dir / "aligned.html"))
     if not args.no_open:
         open_viewer(run_dir)
     print("done: %s" % run_dir)

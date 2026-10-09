@@ -13,6 +13,7 @@ One command runs the extraction through the agent CLI you already have installed
 | `graph.json` | The canonical artifact. Nodes, typed edges, citations, character offsets. The only file the LLM writes |
 | `outline.log` | A readable loglog outline generated from the graph |
 | `graph.html` | A self-contained interactive viewer, opens in the browser automatically |
+| `aligned.html` | The aligned reading view: the original text as written, with the points beside the passages they come from |
 | `validation.txt` | The final validator and citation-locator output |
 | `run.log` | Every agent invocation and validation round, for audit |
 
@@ -65,7 +66,8 @@ digestif build INPUT            full pipeline: agent, validate, repair, render, 
 digestif prep INPUT             prepare a workspace for any agent, no LLM call
 digestif finish RUN_DIR         validate, repair if an agent is available, render, open
 digestif fitsegid INPUT         graph back to cited prose, the inverse of build
-digestif render GRAPH_JSON      deterministic only: outline.log and graph.html
+digestif align RUN_DIR          build and open the aligned reading view
+digestif render GRAPH_JSON      deterministic only: outline.log, graph.html, aligned.html
 digestif validate GRAPH_JSON    integrity and citation check, exit 1 on errors
 digestif open RUN_DIR           open a finished run in the browser
 digestif agents                 list detected agent CLIs and readiness
@@ -85,6 +87,7 @@ digestif-runs/essay-20260915-1800/
   graph.json        the canonical graph
   outline.log       generated loglog outline
   graph.html        generated interactive viewer
+  aligned.html      generated aligned reading view
   AGENTS.md         the task file the agent followed
   CLAUDE.md         wrapper for Claude Code
   prompt.md         the exact prompt used
@@ -104,18 +107,37 @@ The generated `graph.html` is one self-contained file, no server and no network 
 
 - The root summary, then main points, then details, as a zoomable tree with typed cross-links drawn across branches.
 - Scroll moves, shift+scroll moves sideways, ctrl+scroll zooms at the cursor, ctrl+= and ctrl+- zoom from the keyboard. On touch screens pinch zooms the graph, one finger pans it, and the page itself does not zoom while you are on the canvas. The graph area has no scrollbars, panning is by drag, scroll, and pinch.
-- Arrows navigate in top to bottom order, left folds or goes to the parent, right unfolds and descends, space folds the selected branch.
-- Ctrl+1..9 show that many layers, Ctrl+0 shows all of them, Ctrl+Alt+1..9 focus the selected branch.
+- The keyboard follows four rules, the same in this viewer and in the aligned view:
+  - Arrows move. Up and down go to the previous or next node at the same depth across the whole document, left goes to the parent, right goes to the first child and shows it if it was folded. Ctrl+J folds or unfolds the selected node. Space does nothing.
+  - Enter goes into the selected node's links, Escape comes out. Enter opens the sidebar on the node's links out and in, up and down pick one, and its far end gets a dashed ring. Enter on a link follows it to the other end, Enter again follows it back. Escape leaves the links on whichever end you are at. A node without links shows a short hint instead.
+  - Back and forward retrace every node you visited, as in a browser: arrow moves, clicks, and following links. Backspace or Alt+Left goes back, Alt+Right goes forward, and the node returns to the spot on screen where it was. Inside the links, flipping between the two ends is only a preview, so just the end where you leave counts. A small pill in the top bar names where back goes and works as a back button.
+  - Ctrl+digits set how much is shown: Ctrl+1..9 show that many layers, Ctrl+0 shows all of them, Ctrl+Alt+1..9 show that many layers and keep the selected branch open.
 - The selected node's edges are bold and stay bold even when the node is panned out of view, so you can trace a link to its far end.
 - Click or tap an edge to highlight it. A small card appears with the relation type, the note that explains how the relation holds when the graph carries one, a follow button whose arrow points in the direction of travel relative to the selected node, and a close button. The card is fully clickable, following smoothly pans the graph to the other end, and a click on close or Escape dismisses it.
 - Every view transition is animated the same way, a quarter second ease-out pan: keyboard navigation, clicking links in and out in the sidebar, jumping from a source sentence, and following an edge. Panning and zooming by hand stay direct and instant.
 - Searching keeps only the matches and their ancestor path: matches keep the highlight ring, the parent chain stays as a faded skeleton, the hidden branches leave no empty space behind because the skeleton is laid out compactly, and everything returns to the original layout when the search is cleared.
 - Edges that span the view stay visible even when both of their endpoints are off screen, so a long connection crossing the viewport can always be traced instead of disappearing at the edge of the screen.
 - The sidebar is docked to the right edge, top to bottom, with a thin divider. A small pill in the middle of the divider drags left and right to resize it. The sidebar header, with the node title and the Source toggle, stays in place while the content below it scrolls. Its body shows the selected node: type, attribution, its cited excerpts expanded by default, and every relation with its color.
-- A toggle button in the top right opens and closes the sidebar. It sits in the top right corner of the graph when the sidebar is closed, and becomes part of the sidebar header when it is open. This works the same on every screen size. Clicking or tapping a node selects it but no longer opens the sidebar, and Enter opens it on the selected node.
+- A toggle button in the top right opens and closes the sidebar. It sits in the top right corner of the graph when the sidebar is closed, and becomes part of the sidebar header when it is open. This works the same on every screen size. Clicking or tapping a node selects it but no longer opens the sidebar, and Enter opens it on the selected node's links.
 - Help and Legend sit as two separate buttons in the top bar, each opening a small popover. The top bar lays itself out in two clean rows on narrow screens instead of wrapping raggedly.
 - On small screens the sidebar becomes a drawer at 88 percent of the width, toggled by the same button, and it overlays the graph instead of shrinking it.
 - The Source toggle in the sidebar switches between the excerpts and the full source text. The selected node's sentences are tinted in its type color, related nodes' sentences in the color of the relation, claim blue, evidence green, contradicts red, and so on. Clicking a highlighted sentence jumps to a node that cites it.
+
+## The aligned reading view
+
+`aligned.html` shows the original text exactly as written, with the graph's points beside it. Live example: [k1monfared.com/digestif/example/aligned.html](https://k1monfared.com/digestif/example/aligned.html).
+
+- Each depth gets its own column: main points first, then their children, and so on. Only the main points show at first, and `+` on a point adds its children in the next column, one branch at a time. `−` hides them again.
+- A point sits next to the earliest passage it cites. The text breaks into rows at those passages, so each point lines up with the sentence where it starts, and opening deeper points adds more breaks.
+- A thin colored bar beside the text marks every passage a point cites. A point that draws on several separate places has one bar per place. Clicking a bar jumps to the next place and wraps from the last back to the first, so all of a point's source can be read in order.
+- Each column header folds that column to a thin strip, to make room without changing the row breaks or the bars. Clicking the strip opens it again.
+- Clicking a point selects it and tints its passages in the text.
+- Cross-links are drawn as curves between the cards, in the same colors and dash styles as the graph view, whenever both ends are showing. The selected point's links are bold and the rest fade. Clicking a link opens the same small card as in the graph view, with the relation, its note, and a follow button that scrolls to the other end and selects it.
+- The keyboard is the same as in the graph view, see the four rules above, with columns in place of layers. The links list opens as a small panel in the top right corner. Every move is a short animated scroll, and folding keeps the selected card where it was on screen.
+- Search keeps only the matching points and their parents, marks the matches, and shows how many there are. Escape in the box clears it.
+- Help and Legend in the top bar list the controls and the colors.
+
+`build` and `finish` write it automatically. For an older run, `digestif align digestif-runs/<run>` builds and opens it. It needs a located graph, one that went through `graph.py locate`, because it uses the passage offsets in `meta.spans`.
 
 ## The skills
 
@@ -158,7 +180,7 @@ Critics argue that car bans hurt businesses. [1.1] Retail revenue rose in Madrid
 
 `fitsegid` is grounded the same way digestif is. A deterministic checker, `src/digestif/skill-fitsegid/scripts/fitsegid.py`, rejects any orphan sentence with no citation, any citation to an unknown node, any node that is neither written into the prose nor listed in `dropped`, and any layer count contradicted by the citations. It warns when a number or a capitalized name in a sentence appears nowhere in the nodes it cites, and when a counter or conceded node is stated without attribution. Nothing is invented, and nothing disappears silently: the manifest says exactly what was left out, and `--lod max` (the default) leaves nothing out at all. The same checker can run against an `outline.log` when the graph is not at hand.
 
-`digestif fitsegid` also builds `fitsegid.html`, a two-pane review viewer for judging how well the prose maps onto the graph: the document on the left, an inspector and an expandable dendrogram on the right. Clicking a paragraph highlights the nodes it cites and shows which main points it belongs to. Clicking a node shows every paragraph that supports it, directly or through its subtree, which is what catches a paragraph that is really talking to several main points at once. The opening panel audits the mapping, listing main points with no paragraph, paragraphs that span several main points, and uncited paragraphs. Growing the tree one layer at a time shows whether the structure stays clean as detail is added.
+`digestif fitsegid` also builds `fitsegid.html`, a review viewer for judging how well the prose maps onto the graph. Each paragraph of the prose is a row, with the main points it introduces as notes in a margin column on the right, and a bar in the gutter spans the run of paragraphs that belong to each main point. Hovering a paragraph or a note highlights everything that belongs to the same main points, clicking pins that highlight, and paragraphs with no citation are flagged in the margin. A paragraph whose bars belong to several main points is the one that is really talking to several of them at once.
 
 ## Why the checking matters
 
@@ -217,7 +239,7 @@ pip install -e ".[dev]"
 pytest -q                     # CLI pipeline tests with a fake agent, no LLM calls
 bash tests/test_graph.sh      # validator, locator, renderer suite
 bash tests/test_fitsegid.sh   # inverse prose checker suite
-bash tests/test_ui.sh         # headless browser suite, needs node and playwright, skips otherwise
+bash tests/test_ui.sh         # headless browser suites for both viewers, need node and playwright, skip otherwise
 ```
 
 All of these run in CI on every push except the UI suite, which runs in its own job.

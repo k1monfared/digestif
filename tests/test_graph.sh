@@ -178,11 +178,36 @@ print('shipped example span count:', len(g['meta'].get('spans', {})))
 assert_contains "shipped example span count" "5" "$out"
 
 echo "=== render ==="
-assert_exit_code "render generates both outputs" 0 python3 "$GRAPH" render "$EXAMPLE" -o "$TMP/render"
+assert_exit_code "render generates all outputs" 0 python3 "$GRAPH" render "$EXAMPLE" -o "$TMP/render"
 [[ -f "$TMP/render/car-ban.outline.log" && -f "$TMP/render/car-ban.graph.html" ]]
 assert_contains "rendered outline has coverage" "Coverage: 5 of 5" "$(cat "$TMP/render/car-ban.outline.log")"
 assert_contains "rendered html embeds graph" "const GRAPH" "$(cat "$TMP/render/car-ban.graph.html")"
 assert_exit_code "render refuses invalid graph" 1 python3 "$GRAPH" render "$TMP/bad_endpoint.json" -o "$TMP/render2"
+[[ -f "$TMP/render/car-ban.aligned.html" ]] \
+    && { TESTS_RUN=$((TESTS_RUN + 1)); PASS=$((PASS + 1)); echo "  PASS: render writes the aligned view for a located graph"; } \
+    || { TESTS_RUN=$((TESTS_RUN + 1)); FAIL=$((FAIL + 1)); echo "  FAIL: render writes the aligned view for a located graph"; }
+out="$(python3 "$GRAPH" render "$TMP/uncited.json" -o "$TMP/render3" 2>&1)"
+assert_contains "render skips the aligned view without spans" "note: skipped uncited.aligned.html" "$out"
+[[ -f "$TMP/render3/uncited.aligned.html" ]] \
+    && { TESTS_RUN=$((TESTS_RUN + 1)); FAIL=$((FAIL + 1)); echo "  FAIL: no aligned file without spans"; } \
+    || { TESTS_RUN=$((TESTS_RUN + 1)); PASS=$((PASS + 1)); echo "  PASS: no aligned file without spans"; }
+
+echo "=== to-aligned ==="
+assert_exit_code "generates the aligned view" 0 python3 "$GRAPH" to-aligned "$EXAMPLE" -o "$TMP/aligned.html"
+assert_contains "aligned view embeds the graph" "const G = {" "$(cat "$TMP/aligned.html")"
+assert_contains "aligned view embeds the source text" "Madrid and Oslo" "$(cat "$TMP/aligned.html")"
+grep -q "__GRAPH_JSON__" "$TMP/aligned.html" \
+    && { TESTS_RUN=$((TESTS_RUN + 1)); FAIL=$((FAIL + 1)); echo "  FAIL: aligned placeholder replaced"; } \
+    || { TESTS_RUN=$((TESTS_RUN + 1)); PASS=$((PASS + 1)); echo "  PASS: aligned placeholder replaced"; }
+assert_exit_code "to-aligned refuses invalid graph" 1 python3 "$GRAPH" to-aligned "$TMP/bad_endpoint.json" -o "$TMP/bad_aligned.html"
+out="$(python3 "$GRAPH" to-aligned "$TMP/uncited.json" -o "$TMP/nospans.html" 2>&1 || true)"
+assert_contains "to-aligned refuses a graph without spans" "run locate first" "$out"
+mkdir -p "$TMP/run"
+cp "$EXAMPLE" "$TMP/run/graph.json"
+python3 "$GRAPH" to-aligned "$TMP/run/graph.json" > /dev/null
+[[ -f "$TMP/run/aligned.html" ]] \
+    && { TESTS_RUN=$((TESTS_RUN + 1)); PASS=$((PASS + 1)); echo "  PASS: graph.json defaults to aligned.html"; } \
+    || { TESTS_RUN=$((TESTS_RUN + 1)); FAIL=$((FAIL + 1)); echo "  FAIL: graph.json defaults to aligned.html"; }
 
 echo "=== loglog interop ==="
 python3 "$GRAPH" to-outline "$EXAMPLE" -o "$TMP/out.log" > /dev/null

@@ -2,17 +2,19 @@
 """Deterministic tooling for point-hierarchy graphs.
 
 One graph.json per text is the single source of truth. Everything else
-(outline.log, graph.html) is generated from it by this script. No LLM
-touches the generated artifacts.
+(outline.log, graph.html, aligned.html) is generated from it by this
+script. No LLM touches the generated artifacts.
 
 Subcommands:
   validate    check structural and citation integrity, exit 1 on errors
   stats       coverage, tree-ness, hubs, cycles
   renumber    rewrite node ids so they follow tree position exactly
   locate      add the full source text and passage character offsets
-  render      generate outline.log and graph.html together
+  render      generate outline.log, graph.html and aligned.html together
   to-outline  generate a loglog outline from the graph
   to-html     generate the interactive viewer from the graph
+  to-aligned  generate the aligned reading view: source text with the
+              points beside the passages they cite
 """
 
 import argparse
@@ -548,18 +550,33 @@ def cmd_to_outline(args):
     return 0
 
 
-def render_html(g, out):
+def embed_template(g, out, name):
     embedded = json.loads(json.dumps(g))
     embedded.setdefault("meta", {})["edgeTypes"] = merged_registry(g)
-    template_path = Path(__file__).resolve().parent.parent / "templates" / "viewer.html"
+    template_path = Path(__file__).resolve().parent.parent / "templates" / name
     try:
         template = template_path.read_text(encoding="utf-8")
     except OSError as exc:
-        raise GraphError(f"cannot read viewer template {template_path}: {exc}")
+        raise GraphError(f"cannot read template {template_path}: {exc}")
     if "__GRAPH_JSON__" not in template:
-        raise GraphError(f"viewer template {template_path} has no __GRAPH_JSON__ token")
+        raise GraphError(f"template {template_path} has no __GRAPH_JSON__ token")
     payload = json.dumps(embedded, ensure_ascii=False).replace("</", "<\\/")
     Path(out).write_text(template.replace("__GRAPH_JSON__", payload), encoding="utf-8")
+
+
+def render_html(g, out):
+    embed_template(g, out, "viewer.html")
+
+
+def has_spans(g):
+    meta = g.get("meta") or {}
+    return bool(meta.get("spans")) and bool(meta.get("sourceText"))
+
+
+def render_aligned(g, out):
+    if not has_spans(g):
+        raise GraphError("the aligned view needs meta.sourceText and meta.spans, run locate first")
+    embed_template(g, out, "aligned.html")
 
 
 def cmd_to_html(args):
@@ -574,6 +591,32 @@ def cmd_to_html(args):
         Path(args.graph).stem.replace(".graph", "") + ".graph.html"))
     try:
         render_html(g, out)
+    except GraphError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+    print(f"wrote {out}")
+    return 0
+
+
+def aligned_name(graph_path):
+    base = Path(graph_path)
+    if base.stem == "graph":
+        return "aligned.html"
+    stem = base.stem[:-6] if base.stem.endswith(".graph") else base.stem
+    return f"{stem}.aligned.html"
+
+
+def cmd_to_aligned(args):
+    g = load_graph(args.graph)
+    errors, _, _ = validate(g)
+    if errors and not args.force:
+        for e in errors:
+            print(f"error: {e}", file=sys.stderr)
+        print("refusing to render an invalid graph, use --force to override", file=sys.stderr)
+        return 1
+    out = args.out or str(Path(args.graph).parent / aligned_name(args.graph))
+    try:
+        render_aligned(g, out)
     except GraphError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
@@ -607,6 +650,16 @@ def cmd_render(args):
         return 1
     print(f"wrote {outline_path}")
     print(f"wrote {html_path}")
+    aligned_path = outdir / aligned_name(base)
+    if has_spans(g):
+        try:
+            render_aligned(g, aligned_path)
+        except GraphError as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        print(f"wrote {aligned_path}")
+    else:
+        print(f"note: skipped {aligned_path.name}, the graph has no passage offsets yet (run locate)")
     return 0
 
 
@@ -648,7 +701,13 @@ def main(argv=None):
     h.add_argument("-f", "--force", action="store_true")
     h.set_defaults(func=cmd_to_html)
 
-    rn = sub.add_parser("render", help="generate outline and viewer in one step")
+    al = sub.add_parser("to-aligned", help="generate the aligned reading view, needs located spans")
+    al.add_argument("graph")
+    al.add_argument("-o", "--out", help="output .html path, default next to the graph")
+    al.add_argument("-f", "--force", action="store_true")
+    al.set_defaults(func=cmd_to_aligned)
+
+    rn = sub.add_parser("render", help="generate outline, viewer and aligned view in one step")
     rn.add_argument("graph")
     rn.add_argument("-o", "--outdir", help="output directory, default next to the graph")
     rn.add_argument("-f", "--force", action="store_true")

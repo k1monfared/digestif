@@ -60,6 +60,10 @@ def cmd_render(args):
     return 0
 
 
+def cmd_align(args):
+    return pipeline.align(args)
+
+
 def cmd_validate(args):
     graph = Path(args.graph)
     if not graph.is_file():
@@ -227,7 +231,13 @@ def main(argv=None):
                     help="do not open the review viewer in a browser")
     fg.set_defaults(func=cmd_fitsegid)
 
-    r = sub.add_parser("render", help="generate outline.log and graph.html, no agent")
+    al = sub.add_parser("align",
+                        help="build the aligned reading view: source text with the points beside it")
+    al.add_argument("target", help="a run directory, or a path to a located graph.json")
+    al.add_argument("--no-open", action="store_true", help="do not open the view in a browser")
+    al.set_defaults(func=cmd_align)
+
+    r = sub.add_parser("render", help="generate outline.log, graph.html and aligned.html, no agent")
     r.add_argument("graph", help="path to graph.json")
     r.add_argument("--no-open", action="store_true")
     r.set_defaults(func=cmd_render)

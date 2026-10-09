@@ -1,0 +1,1098 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aligned reading view</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #2563eb;
+    --head-h: 52px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg); color: var(--ink);
+  }
+  header {
+    position: sticky; top: 0; left: 0; z-index: 10; height: var(--head-h); width: 100vw;
+    display: flex; align-items: center; gap: 16px;
+    padding: 0 24px; background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  #title { font-size: 15px; font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 30vw; }
+  #srcname { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  #root {
+    flex: 1 1 auto; min-width: 0; display: flex; align-items: baseline; gap: 8px;
+    font-size: 13px; color: var(--muted); line-height: 1.35;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  #root .tag {
+    flex: none; font-size: 10px; text-transform: uppercase; letter-spacing: .06em;
+    color: #3730a3; background: #eef2ff; border-radius: 999px; padding: 1px 8px;
+  }
+  #rootText { overflow: hidden; text-overflow: ellipsis; }
+  #tools { display: flex; gap: 6px; flex: none; }
+  #tools button, #tools input {
+    font: inherit; font-size: 12.5px; height: 28px; padding: 0 10px; border: 1px solid var(--line);
+    border-radius: 7px; background: #fff; color: var(--ink); cursor: pointer;
+  }
+  #tools button:hover { border-color: var(--accent); }
+  #tools button.on { background: #eef2ff; border-color: var(--accent); color: var(--accent); }
+  .pop {
+    position: fixed; top: calc(var(--head-h) + 6px); right: 12px; z-index: 21; display: none; max-width: 480px;
+    background: rgba(255,255,255,.97); border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px 14px; font-size: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    max-height: calc(100vh - 100px); overflow: auto;
+  }
+  .pop.open { display: block; }
+  #helpGrid { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; align-items: baseline; }
+  #helpGrid .k { color: var(--accent); font-weight: 600; white-space: nowrap; }
+  #legend .lg-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 8px; align-items: center; }
+  #legend .lg-row:last-child { margin-bottom: 0; }
+  #legend .chip {
+    display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px;
+    border: 1px solid var(--line); border-radius: 999px; background: #fff;
+  }
+  #legend .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  #legend .lswatch { width: 22px; height: 0; border-top: 2.4px solid; display: inline-block; }
+  main { padding: 0 24px 90px; width: max-content; min-width: 100%; }
+  #wrap { position: relative; width: max-content; min-width: 100%; }
+  #grid { display: grid; align-items: stretch; }
+  .ch {
+    position: sticky; top: var(--head-h); z-index: 6;
+    background: var(--bg); border-bottom: 1px solid var(--line);
+    font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+    padding: 10px 0 8px; display: flex; align-items: center; gap: 6px; min-height: 36px;
+  }
+  .ch.card-h { padding-left: 10px; }
+  .ch .fold {
+    margin-left: auto; margin-right: 6px; font: inherit; font-size: 12px; line-height: 1;
+    border: 1px solid var(--line); background: #fff; color: var(--muted);
+    border-radius: 6px; width: 22px; height: 22px; cursor: pointer; padding: 0;
+  }
+  .ch .fold:hover { border-color: var(--accent); color: var(--accent); }
+  .ch.folded { justify-content: center; padding-left: 0; cursor: pointer; }
+  .ch.folded:hover { color: var(--accent); }
+  .txt {
+    white-space: pre-wrap; overflow-wrap: anywhere;
+    font-size: 15.5px; line-height: 1.75; padding: 12px 26px 12px 0;
+    border-top: 1px dashed var(--line);
+  }
+  .txt.first { border-top: none; }
+  .p { border-radius: 3px; transition: background .2s; }
+  .p.flash { background: var(--flash, #fde68a) !important; }
+  .cell {
+    padding: 12px 0 12px 10px; border-top: 1px dashed var(--line);
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .cell.first { border-top: none; }
+  .cell.folded { padding: 0; }
+  .lanecell { border-top: 1px dashed var(--line); }
+  .lanecell.first { border-top: none; }
+  .card {
+    position: relative; z-index: 3; background: #fff; border: 1px solid var(--line);
+    border-left: 3px solid var(--c, #2563eb); border-radius: 7px;
+    padding: 6px 8px 7px 9px; font-size: 13px; line-height: 1.42; cursor: pointer;
+    transition: box-shadow .12s, border-color .12s;
+  }
+  .card:hover { box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  .card.sel { box-shadow: 0 0 0 2px var(--c, #2563eb); }
+  .card .meta { display: flex; align-items: center; gap: 6px; font-size: 10.5px; color: var(--muted); margin-bottom: 2px; }
+  .card .nid { font-weight: 650; color: var(--ink); }
+  .card .ty { text-transform: uppercase; letter-spacing: .05em; color: var(--c); }
+  .card .attr { font-style: italic; }
+  .card .tog {
+    margin-left: auto; font: inherit; font-size: 13px; line-height: 1; font-weight: 600;
+    width: 20px; height: 20px; padding: 0; border-radius: 5px;
+    border: 1px solid var(--line); background: #fff; color: var(--muted); cursor: pointer;
+  }
+  .card .tog:hover { border-color: var(--accent); color: var(--accent); }
+  .card .tog.open { background: #eef2ff; color: var(--accent); border-color: #c7d2fe; }
+  #edges { position: absolute; left: 0; top: 0; z-index: 2; pointer-events: none; overflow: visible; }
+  .edge { fill: none; opacity: .38; stroke-width: 1.5; transition: opacity .12s; }
+  .edge.hl { opacity: 1; stroke-width: 2.6; }
+  .edge.edge-sel { opacity: 1; stroke-width: 3.6; }
+  .edge.dim { opacity: .14; }
+  .edge-hit { fill: none; stroke: transparent; stroke-width: 11; pointer-events: stroke; cursor: pointer; }
+  #bars { position: absolute; inset: 0; z-index: 4; pointer-events: none; }
+  .bar {
+    position: absolute; width: 4px; border-radius: 3px;
+    background: var(--c, #9ca3af); opacity: .5; pointer-events: auto; cursor: pointer;
+    transition: opacity .12s, transform .12s;
+  }
+  .bar:hover { opacity: 1; transform: scaleX(1.5); }
+  .bar.sel { opacity: 1; }
+  .bar.dim { opacity: .18; }
+  .bar.cur { opacity: 1; box-shadow: 0 0 0 2px rgba(255,255,255,.9), 0 0 0 3px var(--c); }
+  #edgePop {
+    position: fixed; z-index: 28; display: flex; align-items: center; gap: 6px;
+    background: rgba(255, 255, 255, .97); border: 1px solid var(--line); border-radius: 10px;
+    padding: 6px 6px 6px 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+    font-size: 11.5px; color: var(--muted); cursor: pointer; max-width: min(380px, 90vw);
+    opacity: 0; visibility: hidden; transform: translateY(3px); pointer-events: none;
+    transition: opacity .13s ease, transform .13s ease, visibility .13s;
+  }
+  #edgePop.open { opacity: 1; visibility: visible; transform: none; pointer-events: auto; }
+  #edgePop:hover { border-color: var(--accent); }
+  #edgePopBody { min-width: 0; }
+  #edgePopType { font-size: 11px; color: var(--accent); font-weight: 600; }
+  #edgePopNote { font-size: 11.5px; color: var(--muted); margin-top: 2px; max-width: 290px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #edgePopNote:empty { display: none; }
+  #edgeFollow {
+    width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line);
+    background: #eef2ff; color: var(--accent); font-size: 14px; line-height: 1; cursor: pointer; flex: none;
+  }
+  #edgeFollow:hover { border-color: var(--accent); }
+  #edgePopClose {
+    width: 24px; height: 24px; border-radius: 50%; border: none; background: none;
+    color: var(--muted); font-size: 13px; line-height: 1; cursor: pointer; flex: none;
+  }
+  #edgePopClose:hover { background: #f1f5f9; color: var(--ink); }
+  #searchBox { width: 170px; cursor: text !important; }
+  #searchCount { font-size: 12px; color: var(--muted); align-self: center; white-space: nowrap; }
+  .card.match { box-shadow: 0 0 0 2px #f59e0b; }
+  .card.match.sel { box-shadow: 0 0 0 2px var(--c), 0 0 0 4px #f59e0b; }
+  .card.lnk-target { outline: 2px dashed #f59e0b; outline-offset: 2px; }
+  #links {
+    position: fixed; top: calc(var(--head-h) + 46px); right: 14px; z-index: 22; display: none;
+    width: 340px; max-height: calc(100vh - 140px); overflow: auto;
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.1); padding: 10px 12px; font-size: 12.5px;
+  }
+  #links.open { display: block; }
+  #links h3 { margin: 0 0 6px; font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+  #links .sect { font-size: 11px; font-weight: 650; color: var(--muted); margin: 8px 0 3px; text-transform: uppercase; letter-spacing: .05em; }
+  .lrow {
+    display: block; width: 100%; text-align: left; font: inherit; font-size: 12.5px; line-height: 1.35;
+    padding: 5px 7px; margin: 2px 0; border: 1px solid var(--line); border-radius: 7px;
+    background: #fff; cursor: pointer; color: var(--ink);
+  }
+  .lrow:hover { border-color: var(--accent); }
+  .lrow.kbd-focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .lrow .etype { font-weight: 600; }
+  .lrow .folded { font-size: 10.5px; color: var(--muted); font-style: italic; }
+  #hint {
+    position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 30;
+    background: #1f2937; color: #fff; font-size: 12.5px; padding: 7px 14px; border-radius: 8px;
+    opacity: 0; pointer-events: none; transition: opacity .15s;
+  }
+  #hint.open { opacity: .92; }
+</style>
+</head>
+<body>
+<header>
+  <div id="title"></div>
+  <div id="srcname"></div>
+  <div id="root"><span class="tag">root</span><span id="rootText"></span></div>
+  <div id="tools">
+    <button id="btnBack" style="display: none" title="back to the previous point (Backspace or Alt+Left)"></button>
+    <input type="text" id="searchBox" placeholder="search points...">
+    <span id="searchCount"></span>
+    <button id="btnHelp">Help</button><button id="btnLegend">Legend</button>
+  </div>
+</header>
+<div id="help" class="pop">
+  <div id="helpGrid">
+    <span class="k">click</span><span>select a point and tint its passages</span>
+    <span class="k">+ / &#8722;</span><span>show or hide the points under a point</span>
+    <span class="k">up / down</span><span>move between points at the same depth, top to bottom</span>
+    <span class="k">left</span><span>go to the parent</span>
+    <span class="k">right</span><span>go to the first child, showing it if folded</span>
+    <span class="k">ctrl+j</span><span>fold or unfold the selected point</span>
+    <span class="k">enter</span><span>go into the point's links, up and down pick one</span>
+    <span class="k">enter on a link</span><span>follow it, enter again follows it back</span>
+    <span class="k">esc</span><span>leave the links on the end you are at, close popovers, clear the selection</span>
+    <span class="k">backspace, alt+left</span><span>back to the previous point you visited</span>
+    <span class="k">alt+right</span><span>forward again</span>
+    <span class="k">ctrl+1..9</span><span>show that many columns</span>
+    <span class="k">ctrl+0</span><span>unfold everything</span>
+    <span class="k">ctrl+alt+1..9</span><span>show that many columns and keep the selected branch open</span>
+    <span class="k">search</span><span>keep only matching points and their parents, esc clears</span>
+    <span class="k">bar</span><span>jump to the next passage the point cites, wraps at the end</span>
+    <span class="k">edge</span><span>click an edge, then follow it to the other end</span>
+    <span class="k">column header</span><span>fold the column to a strip, click the strip to reopen</span>
+  </div>
+</div>
+<div id="legend" class="pop">
+  <div class="lg-row" id="legendNodeChips"></div>
+  <div class="lg-row" id="legendEdgeChips"></div>
+</div>
+<div id="links"></div>
+<div id="hint"></div>
+<div id="edgePop">
+  <div id="edgePopBody">
+    <div id="edgePopType"></div>
+    <div id="edgePopNote"></div>
+  </div>
+  <button id="edgeFollow" title="follow this edge to the other end">&#8594;</button>
+  <button id="edgePopClose" title="close">&#215;</button>
+</div>
+<main><div id="wrap"><div id="grid"></div><svg id="edges"><defs id="defs"></defs><g id="gEdges"></g></svg><div id="bars"></div></div></main>
+<script>
+const G = __GRAPH_JSON__;
+
+const STROKE = {
+  summary: "#111827", theme: "#3730a3", claim: "#2563eb", evidence: "#16a34a",
+  example: "#0d9488", counterpoint: "#dc2626", rebuttal: "#ea580c", nuance: "#7c3aed",
+  concession: "#64748b", contradiction: "#b91c1c", implicit: "#ca8a04"
+};
+const PALETTE = { green: "#16a34a", red: "#dc2626", blue: "#2563eb", gray: "#64748b", orange: "#ea580c", purple: "#7c3aed", teal: "#0d9488" };
+const TEXT_W_MIN = 360, TEXT_W_MAX = 660, CARD_W = 250, FOLD_W = 30, LANE_STEP = 6, LANE_PAD = 6;
+const SVGNS = "http://www.w3.org/2000/svg";
+
+const meta = G.meta || {};
+const SRC = meta.sourceText || "";
+const SPANS = meta.spans || {};
+const registry = meta.edgeTypes || {};
+const nodeById = {};
+(G.nodes || []).forEach(n => nodeById[n.id] = n);
+const numCmp = (a, b) => a.localeCompare(b, undefined, { numeric: true });
+const kids = {}, parentOf = {}, crossE = [];
+(G.nodes || []).forEach(n => kids[n.id] = []);
+(G.edges || []).forEach(e => {
+  if (e.type === "contains") {
+    if (kids[e.from] && nodeById[e.to]) { kids[e.from].push(e.to); parentOf[e.to] = e.from; }
+  } else if (nodeById[e.from] && nodeById[e.to]) {
+    crossE.push(e);
+  }
+});
+Object.values(kids).forEach(l => l.sort(numCmp));
+const depthOf = id => id === "0" ? 0 : id.split(".").length;
+const MAX_DEPTH = Math.max(1, ...(G.nodes || []).map(n => depthOf(n.id)));
+
+// passages in source order, each with its character range
+const PASS = Object.keys(SPANS)
+  .map(k => ({ key: k, s: SPANS[k][0], e: SPANS[k][1] }))
+  .sort((a, b) => a.s - b.s);
+const pidx = {};
+PASS.forEach((p, i) => pidx[p.key] = i);
+
+function cited(id) {
+  const n = nodeById[id];
+  const out = [...new Set((n && n.source || []).map(k => pidx[k]).filter(i => i !== undefined))];
+  return out.sort((a, b) => a - b);
+}
+function runsOf(id) {
+  const c = cited(id), runs = [];
+  c.forEach(i => {
+    const last = runs[runs.length - 1];
+    if (last && i === last[1] + 1) last[1] = i; else runs.push([i, i]);
+  });
+  return runs;
+}
+const anchorOf = id => { const c = cited(id); return c.length ? c[0] : 0; };
+const colorOf = id => STROKE[(nodeById[id] || {}).type] || "#6b7280";
+function styleOf(type) {
+  const st = (registry[type] && registry[type].style) || "solid gray";
+  let color = PALETTE.gray, dash = "";
+  String(st).split(/\s+/).forEach(t => {
+    if (t === "dashed") dash = "7 4";
+    if (t === "dotted") dash = "2 4";
+    if (PALETTE[t]) color = PALETTE[t];
+  });
+  return { color, dash, directed: !registry[type] || registry[type].direction !== "symmetric" };
+}
+
+// visibility follows the graph viewer: a layer count, plus per node folds and opens
+const state = {
+  layers: 1, collapsed: new Set(), opened: new Set(), force: new Set(),
+  folded: new Set(), selected: null, edge: null, cursor: {},
+  search: "", searchSet: null, linkMode: null, linkTarget: null, back: [], fwd: []
+};
+
+function isShown(c) {
+  const p = parentOf[c];
+  if (p === undefined) return false;
+  if (state.searchSet) return state.searchSet.has(c);
+  if (state.collapsed.has(p) && !state.force.has(c)) return false;
+  return depthOf(c) <= state.layers || state.opened.has(p) || state.force.has(c);
+}
+function visibleNodes() {
+  const out = [];
+  (function walk(id) {
+    (kids[id] || []).forEach(c => { if (isShown(c)) { out.push(c); walk(c); } });
+  })("0");
+  return out;
+}
+const childrenShown = id => (kids[id] || []).some(c => view.includes(c));
+
+let rowOfPass = [], view = [], viewSet = new Set();
+
+function render() {
+  view = visibleNodes();
+  viewSet = new Set(view);
+  if (state.selected && !viewSet.has(state.selected)) state.selected = null;
+  if (state.edge && !(viewSet.has(state.edge.from) && viewSet.has(state.edge.to))) { state.edge = null; hideEdgePop(); }
+  if (state.linkMode && !viewSet.has(state.linkMode.origin)) exitLinks(false);
+  const maxDepth = view.reduce((m, id) => Math.max(m, depthOf(id)), 1);
+  [...state.folded].forEach(d => { if (d > maxDepth) state.folded.delete(d); });
+
+  // cut the source into rows at the anchors of the visible nodes
+  const cuts = [...new Set([0].concat(view.map(anchorOf)))].sort((a, b) => a - b);
+  rowOfPass = [];
+  cuts.forEach((c, r) => {
+    const end = r + 1 < cuts.length ? cuts[r + 1] : PASS.length;
+    for (let i = c; i < end; i++) rowOfPass[i] = r;
+  });
+
+  // lanes per depth: overlapping runs of different nodes sit side by side
+  const lanes = {}, laneOf = {};
+  view.slice().sort((a, b) => anchorOf(a) - anchorOf(b) || numCmp(a, b)).forEach(id => {
+    const d = depthOf(id), rs = runsOf(id);
+    lanes[d] = lanes[d] || [];
+    let li = lanes[d].findIndex(lane => !lane.some(([a, b]) => rs.some(([x, y]) => x <= b && a <= y)));
+    if (li < 0) { lanes[d].push([]); li = lanes[d].length - 1; }
+    lanes[d][li].push(...rs);
+    laneOf[id] = li;
+  });
+
+  const avail = window.innerWidth - 48;
+  const cols = [];
+  for (let d = 1; d <= maxDepth; d++) {
+    const nl = Math.max(1, (lanes[d] || []).length);
+    cols.push(LANE_PAD * 2 + LANE_STEP * (nl - 1) + 4 + "px");
+    cols.push((state.folded.has(d) ? FOLD_W : CARD_W) + "px");
+  }
+  const used = cols.reduce((s, w) => s + parseFloat(w), 0);
+  const textW = Math.max(TEXT_W_MIN, Math.min(TEXT_W_MAX, avail - used));
+  const grid = document.getElementById("grid");
+  grid.style.gridTemplateColumns = [textW + "px"].concat(cols).join(" ");
+  grid.innerHTML = "";
+
+  // column headers
+  grid.appendChild(cell("div", "ch", 1, 1, "Original text"));
+  for (let d = 1; d <= maxDepth; d++) {
+    const lane = cell("div", "ch lane-h", 1, 2 * d);
+    lane.dataset.depth = d;
+    grid.appendChild(lane);
+    const h = cell("div", "ch card-h", 1, 2 * d + 1);
+    h.dataset.depth = d;
+    if (state.folded.has(d)) {
+      h.classList.add("folded");
+      h.textContent = "L" + d;
+      h.title = "Show level " + d;
+      h.addEventListener("click", () => { state.folded.delete(d); render(); });
+    } else {
+      const label = document.createElement("span");
+      label.textContent = d === 1 ? "L1 main points" : "L" + d;
+      h.appendChild(label);
+      const b = document.createElement("button");
+      b.className = "fold"; b.textContent = "‹"; b.title = "Fold level " + d;
+      b.addEventListener("click", () => { state.folded.add(d); render(); });
+      h.appendChild(b);
+    }
+    grid.appendChild(h);
+  }
+
+  // text rows
+  cuts.forEach((c, r) => {
+    const end = r + 1 < cuts.length ? cuts[r + 1] : PASS.length;
+    const from = r === 0 ? 0 : PASS[c].s;
+    const to = end < PASS.length ? PASS[end].s : SRC.length;
+    const t = cell("div", "txt" + (r === 0 ? " first" : ""), r + 2, 1);
+    t.dataset.row = r;
+    let cur = from;
+    const pieces = [];
+    for (let i = c; i < end; i++) {
+      if (PASS[i].s > cur) pieces.push([SRC.slice(cur, PASS[i].s), null]);
+      pieces.push([SRC.slice(PASS[i].s, PASS[i].e), i]);
+      cur = PASS[i].e;
+    }
+    if (to > cur) pieces.push([SRC.slice(cur, to), null]);
+    // breaks between rows already separate the points, so drop the outer whitespace
+    while (pieces.length && pieces[pieces.length - 1][1] === null && !pieces[pieces.length - 1][0].trim()) pieces.pop();
+    if (pieces.length && pieces[pieces.length - 1][1] === null) pieces[pieces.length - 1][0] = pieces[pieces.length - 1][0].replace(/\s+$/, "");
+    if (pieces.length && pieces[0][1] === null) pieces[0][0] = pieces[0][0].replace(/^\s+/, "");
+    pieces.forEach(([txt, i]) => {
+      if (i === null) { t.appendChild(document.createTextNode(txt)); return; }
+      const s = document.createElement("span");
+      s.className = "p"; s.dataset.p = i; s.dataset.key = PASS[i].key;
+      s.textContent = txt;
+      t.appendChild(s);
+    });
+    grid.appendChild(t);
+    for (let d = 1; d <= maxDepth; d++) {
+      grid.appendChild(cell("div", "lanecell" + (r === 0 ? " first" : ""), r + 2, 2 * d));
+      const k = cell("div", "cell" + (r === 0 ? " first" : "") + (state.folded.has(d) ? " folded" : ""), r + 2, 2 * d + 1);
+      k.dataset.row = r; k.dataset.depth = d;
+      grid.appendChild(k);
+    }
+  });
+
+  // cards at their anchors
+  view.slice().sort(numCmp).forEach(id => {
+    const d = depthOf(id);
+    if (state.folded.has(d)) return;
+    const r = rowOfPass[anchorOf(id)];
+    const host = grid.querySelector('.cell[data-row="' + r + '"][data-depth="' + d + '"]');
+    if (host) host.appendChild(cardEl(id));
+  });
+
+  state.laneOf = laneOf;
+  paintSelection();
+  layoutOverlay();
+}
+
+function cell(tag, cls, row, col, text) {
+  const el = document.createElement(tag);
+  el.className = cls;
+  el.style.gridRow = row; el.style.gridColumn = col;
+  if (text) el.textContent = text;
+  return el;
+}
+
+function cardEl(id) {
+  const n = nodeById[id];
+  const c = document.createElement("div");
+  c.className = "card" + (state.selected === id ? " sel" : "") +
+    (state.linkTarget === id ? " lnk-target" : "") + (isMatch(id) ? " match" : "");
+  c.dataset.id = id;
+  c.style.setProperty("--c", colorOf(id));
+  const m = document.createElement("div");
+  m.className = "meta";
+  const nid = document.createElement("span"); nid.className = "nid"; nid.textContent = id;
+  const ty = document.createElement("span"); ty.className = "ty"; ty.textContent = n.type || "";
+  m.appendChild(nid); m.appendChild(ty);
+  if (n.attribution && n.attribution !== "author" && n.attribution !== "n/a") {
+    const a = document.createElement("span"); a.className = "attr"; a.textContent = n.attribution;
+    m.appendChild(a);
+  }
+  if ((kids[id] || []).length) {
+    const open = (kids[id] || []).some(isShown);
+    const b = document.createElement("button");
+    b.className = "tog" + (open ? " open" : "");
+    b.textContent = open ? "−" : "+";
+    b.title = open ? "Hide the points under " + id : "Show the " + kids[id].length + " points under " + id;
+    b.addEventListener("click", e => { e.stopPropagation(); select(id, false); toggleFold(id); });
+    m.appendChild(b);
+  }
+  c.appendChild(m);
+  const t = document.createElement("div"); t.className = "text"; t.textContent = n.text || "";
+  c.appendChild(t);
+  c.addEventListener("click", e => { e.stopPropagation(); select(id, false); });
+  return c;
+}
+
+// ---------- folding, with the anchor point kept in place on screen ----------
+
+function cardTop(id) {
+  const el = id && document.querySelector('.card[data-id="' + id + '"]');
+  return el ? el.getBoundingClientRect().top : null;
+}
+function keepAnchored(id, fn) {
+  const before = cardTop(id);
+  fn();
+  cancelScroll();
+  const after = cardTop(id);
+  if (before !== null && after !== null) window.scrollBy(0, after - before);
+}
+function toggleFold(id) {
+  if (!(kids[id] || []).length) return;
+  keepAnchored(id, () => {
+    if ((kids[id] || []).some(isShown)) { state.collapsed.add(id); state.opened.delete(id); }
+    else { state.collapsed.delete(id); state.opened.add(id); }
+    render();
+  });
+}
+function foldToLayer(level) {
+  clearSearch(false);
+  const L = Math.min(Math.max(level, 1), MAX_DEPTH);
+  let target = state.selected;
+  if (target && depthOf(target) > L) {
+    while (depthOf(target) > L) target = parentOf[target];
+  }
+  keepAnchored(target, () => {
+    state.layers = L;
+    state.collapsed.clear(); state.opened.clear(); state.force = new Set();
+    state.selected = target;
+    render();
+  });
+}
+function focusToLayer(level) {
+  clearSearch(false);
+  keepAnchored(state.selected, () => {
+    state.layers = Math.min(Math.max(level, 1), MAX_DEPTH);
+    state.collapsed.clear(); state.opened.clear(); state.force = new Set();
+    for (let p = state.selected; p && p !== "0"; p = parentOf[p]) state.force.add(p);
+    render();
+  });
+}
+
+// ---------- selection and navigation ----------
+
+function select(id, reveal = true) {
+  if (state.linkMode) exitLinks(false);
+  if (state.selected && id && state.selected !== id) pushHistory();
+  state.selected = id;
+  if (state.edge) { state.edge = null; hideEdgePop(); }
+  document.querySelectorAll(".card").forEach(c => c.classList.toggle("sel", c.dataset.id === id));
+  paintSelection();
+  paintOverlay();
+  if (id && reveal) revealCard(id);
+}
+function visualOrder() {
+  const at = id => {
+    const el = document.querySelector('.card[data-id="' + id + '"]');
+    return el ? el.getBoundingClientRect() : null;
+  };
+  return view.map(id => ({ id, r: at(id) })).filter(o => o.r)
+    .sort((a, b) => (a.r.top - b.r.top) || (a.r.left - b.r.left))
+    .map(o => o.id);
+}
+function headerBottom() {
+  const ch = document.querySelector(".ch");
+  return ch ? ch.getBoundingClientRect().bottom : document.querySelector("header").offsetHeight;
+}
+function revealCard(id) {
+  const el = document.querySelector('.card[data-id="' + id + '"]');
+  if (!el) return;
+  const r = el.getBoundingClientRect(), m = 24, top = headerBottom();
+  let dy = 0;
+  if (r.top < top + m) dy = r.top - top - m;
+  else if (r.bottom > window.innerHeight - m) dy = Math.min(r.bottom - window.innerHeight + m, r.top - top - m);
+  let dx = 0;
+  if (r.left < m) dx = r.left - m;
+  else if (r.right > window.innerWidth - m) dx = r.right - window.innerWidth + m;
+  if (dx || dy) animateScrollTo(window.scrollX + dx, window.scrollY + dy);
+}
+let scrollAnim = null;
+function cancelScroll() { if (scrollAnim) { cancelAnimationFrame(scrollAnim); scrollAnim = null; } }
+function animateScrollTo(x, y) {
+  cancelScroll();
+  x = Math.max(0, x); y = Math.max(0, y);
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) { window.scrollTo(x, y); return; }
+  const x0 = window.scrollX, y0 = window.scrollY, dur = 260, start = performance.now();
+  const step = now => {
+    const p = Math.min(1, (now - start) / dur), k = 1 - Math.pow(1 - p, 3);
+    window.scrollTo(x0 + (x - x0) * k, y0 + (y - y0) * k);
+    scrollAnim = p < 1 ? requestAnimationFrame(step) : null;
+  };
+  scrollAnim = requestAnimationFrame(step);
+}
+
+function paintSelection() {
+  document.querySelectorAll(".p").forEach(s => s.style.background = "");
+  if (!state.selected) return;
+  const tint = colorOf(state.selected) + "2e";
+  cited(state.selected).forEach(i => {
+    document.querySelectorAll('.p[data-p="' + i + '"]').forEach(s => s.style.background = tint);
+  });
+}
+
+// ---------- bars and edges ----------
+
+function layoutOverlay() {
+  const wrap = document.getElementById("wrap");
+  const box = wrap.getBoundingClientRect();
+  const bars = document.getElementById("bars");
+  bars.innerHTML = "";
+  const laneX = {};
+  document.querySelectorAll(".ch.lane-h").forEach(h => laneX[h.dataset.depth] = h.offsetLeft + LANE_PAD);
+  view.forEach(id => {
+    const d = depthOf(id), x = laneX[d];
+    if (x === undefined) return;
+    const runs = runsOf(id);
+    runs.forEach((run, k) => {
+      const a = document.querySelector('.p[data-p="' + run[0] + '"]');
+      const z = document.querySelector('.p[data-p="' + run[1] + '"]');
+      if (!a || !z) return;
+      const ra = a.getClientRects(), rz = z.getClientRects();
+      if (!ra.length || !rz.length) return;
+      const top = ra[0].top - box.top, bottom = rz[rz.length - 1].bottom - box.top;
+      const b = document.createElement("div");
+      b.className = "bar";
+      b.dataset.id = id; b.dataset.run = k;
+      b.style.setProperty("--c", colorOf(id));
+      b.style.left = x + LANE_STEP * (state.laneOf[id] || 0) + "px";
+      b.style.top = top + 1 + "px";
+      b.style.height = Math.max(6, bottom - top - 2) + "px";
+      b.title = id + ": " + (nodeById[id].text || "") + (runs.length > 1 ? "  (click for the next part)" : "");
+      b.addEventListener("click", e => { e.stopPropagation(); cycle(id, k); });
+      bars.appendChild(b);
+    });
+  });
+  layoutEdges(box);
+  paintOverlay();
+}
+
+function cardBox(id, box) {
+  const el = document.querySelector('.card[data-id="' + id + '"]');
+  if (!el) return null;
+  const r = el.getBoundingClientRect();
+  return { l: r.left - box.left, r: r.right - box.left, t: r.top - box.top, h: r.height };
+}
+function layoutEdges(box) {
+  const svg = document.getElementById("edges");
+  svg.setAttribute("width", box.width);
+  svg.setAttribute("height", box.height);
+  const g = document.getElementById("gEdges");
+  const defs = document.getElementById("defs");
+  g.innerHTML = ""; defs.innerHTML = "";
+  const markers = {};
+  const marker = color => {
+    if (markers[color]) return markers[color];
+    const id = "m" + Object.keys(markers).length;
+    const m = document.createElementNS(SVGNS, "marker");
+    m.setAttribute("id", id); m.setAttribute("viewBox", "0 0 10 10");
+    m.setAttribute("refX", "9"); m.setAttribute("refY", "5");
+    m.setAttribute("markerWidth", "7"); m.setAttribute("markerHeight", "7");
+    m.setAttribute("orient", "auto-start-reverse");
+    const p = document.createElementNS(SVGNS, "path");
+    p.setAttribute("d", "M0,0 L10,5 L0,10 z"); p.setAttribute("fill", color);
+    m.appendChild(p); defs.appendChild(m);
+    return (markers[color] = id);
+  };
+  crossE.forEach(e => {
+    const a = cardBox(e.from, box), b = cardBox(e.to, box);
+    if (!a || !b) return;
+    const ya = a.t + Math.min(a.h / 2, 18), yb = b.t + Math.min(b.h / 2, 18);
+    let d;
+    if (Math.abs(a.l - b.l) < 2) {
+      const bulge = 28 + Math.min(90, Math.abs(yb - ya) * 0.12);
+      d = `M${a.r},${ya} C${a.r + bulge},${ya} ${b.r + bulge},${yb} ${b.r},${yb}`;
+    } else {
+      const fromLeft = a.l < b.l;
+      const x1 = fromLeft ? a.r : a.l, x2 = fromLeft ? b.l : b.r;
+      const k = Math.max(30, Math.abs(x2 - x1) * 0.45) * (fromLeft ? 1 : -1);
+      d = `M${x1},${ya} C${x1 + k},${ya} ${x2 - k},${yb} ${x2},${yb}`;
+    }
+    const st = styleOf(e.type);
+    const p = document.createElementNS(SVGNS, "path");
+    p.setAttribute("d", d);
+    p.setAttribute("class", "edge");
+    p.setAttribute("stroke", st.color);
+    if (st.dash) p.setAttribute("stroke-dasharray", st.dash);
+    if (st.directed) p.setAttribute("marker-end", "url(#" + marker(st.color) + ")");
+    p.dataset.from = e.from; p.dataset.to = e.to; p.dataset.type = e.type;
+    e._el = p;
+    const hit = document.createElementNS(SVGNS, "path");
+    hit.setAttribute("d", d);
+    hit.setAttribute("class", "edge-hit");
+    hit.dataset.from = e.from; hit.dataset.to = e.to; hit.dataset.type = e.type;
+    const tip = document.createElementNS(SVGNS, "title");
+    tip.textContent = e.from + " " + e.type + " " + e.to + (e.note ? ": " + e.note : "");
+    hit.appendChild(tip);
+    hit.addEventListener("click", ev => { ev.stopPropagation(); selectEdge(e, ev.clientX, ev.clientY); });
+    e._hit = hit;
+    g.appendChild(p); g.appendChild(hit);
+  });
+}
+
+function paintOverlay() {
+  const sel = state.selected;
+  document.querySelectorAll(".bar").forEach(b => {
+    const id = b.dataset.id;
+    b.classList.toggle("sel", id === sel);
+    b.classList.toggle("dim", !!sel && id !== sel);
+    b.classList.toggle("cur", state.cursor[id] !== undefined && +b.dataset.run === state.cursor[id]);
+  });
+  const g = document.getElementById("gEdges");
+  const top = [];
+  crossE.forEach(e => {
+    if (!e._el || !e._el.isConnected) return;
+    const mine = !!sel && (e.from === sel || e.to === sel);
+    e._el.classList.toggle("hl", mine);
+    const picked = e === state.edge || (state.linkMode && e === state.linkMode.rows[state.linkMode.idx].e);
+    e._el.classList.toggle("edge-sel", !!picked);
+    e._el.classList.toggle("dim", !!sel && !mine && !picked);
+    if (mine || picked) top.push(e);
+  });
+  // the selected node's edges are drawn last so they stay on top
+  top.forEach(e => { g.appendChild(e._el); g.appendChild(e._hit); });
+}
+
+function edgeFollowTarget(e) {
+  const sel = state.selected;
+  if (sel && e.from === sel && e.to !== sel) return e.to;
+  if (sel && e.to === sel && e.from !== sel) return e.from;
+  return e.to;
+}
+function selectEdge(e, x, y) {
+  state.edge = e;
+  paintOverlay();
+  document.getElementById("edgePopType").textContent = e.from + "  " + e.type + "  " + e.to;
+  document.getElementById("edgePopNote").textContent = e.note || "";
+  document.getElementById("edgeFollow").textContent = edgeFollowTarget(e) === e.from ? "←" : "→";
+  const pop = document.getElementById("edgePop");
+  pop.classList.add("open");
+  const pr = pop.getBoundingClientRect();
+  pop.style.left = Math.min(Math.max(x + 14, 8), Math.max(8, window.innerWidth - pr.width - 8)) + "px";
+  pop.style.top = Math.min(Math.max(y + 14, 8), Math.max(8, window.innerHeight - pr.height - 8)) + "px";
+}
+function hideEdgePop() { document.getElementById("edgePop").classList.remove("open"); }
+function clearEdge() { state.edge = null; hideEdgePop(); paintOverlay(); }
+function followEdge() {
+  if (!state.edge) return;
+  const target = edgeFollowTarget(state.edge);
+  state.edge = null;
+  hideEdgePop();
+  pushHistory();
+  goTo(target);
+}
+
+function cycle(id, from) {
+  const runs = runsOf(id);
+  const k = (from + 1) % runs.length;
+  state.cursor[id] = k;
+  paintOverlay();
+  const run = runs[k];
+  const first = document.querySelector('.p[data-p="' + run[0] + '"]');
+  if (!first) return;
+  const r = first.getClientRects()[0];
+  animateScrollTo(window.scrollX, window.scrollY + r.top - headerBottom() - window.innerHeight * 0.2);
+  const spans = [];
+  for (let i = run[0]; i <= run[1]; i++) document.querySelectorAll('.p[data-p="' + i + '"]').forEach(s => spans.push(s));
+  spans.forEach(s => { s.style.setProperty("--flash", colorOf(id) + "40"); s.classList.add("flash"); });
+  clearTimeout(cycle.timer);
+  cycle.timer = setTimeout(() => spans.forEach(s => s.classList.remove("flash")), 1400);
+}
+
+// ---------- search ----------
+
+function isMatch(id) {
+  if (!state.search) return false;
+  const n = nodeById[id];
+  return id.includes(state.search) || (n && (n.text || "").toLowerCase().includes(state.search));
+}
+function applySearch(q) {
+  state.search = q.trim().toLowerCase();
+  let count = 0;
+  if (state.search) {
+    const set = new Set();
+    Object.keys(nodeById).forEach(id => {
+      if (id === "0" || !isMatch(id)) return;
+      count += 1;
+      for (let x = id; x && x !== "0"; x = parentOf[x]) set.add(x);
+    });
+    state.searchSet = set;
+  } else {
+    state.searchSet = null;
+  }
+  keepAnchored(state.selected, render);
+  document.getElementById("searchCount").textContent = state.search ? count + " matches" : "";
+}
+function clearSearch(rerender = true) {
+  if (!state.search && !state.searchSet) return;
+  document.getElementById("searchBox").value = "";
+  state.search = ""; state.searchSet = null;
+  document.getElementById("searchCount").textContent = "";
+  if (rerender) render();
+}
+
+// ---------- links mode and history, shared model with the graph view ----------
+
+function openPathTo(id) {
+  if (state.searchSet && !state.searchSet.has(id)) clearSearch(false);
+  for (let p = parentOf[id]; p && p !== "0"; p = parentOf[p]) { state.collapsed.delete(p); state.opened.add(p); }
+  for (let p = parentOf[id]; p !== undefined; p = parentOf[p]) state.collapsed.delete(p);
+  state.folded.delete(depthOf(id));
+}
+function goTo(id) {
+  if (!viewSet.has(id) || state.folded.has(depthOf(id))) { openPathTo(id); render(); }
+  select(id);
+}
+let hintTimer = null;
+function showHint(text) {
+  const h = document.getElementById("hint");
+  h.textContent = text;
+  h.classList.add("open");
+  clearTimeout(hintTimer);
+  hintTimer = setTimeout(() => h.classList.remove("open"), 1400);
+}
+function linkRowsFor(id) {
+  return crossE.filter(e => e.from === id).map(e => ({ e, other: e.to, dir: "out" }))
+    .concat(crossE.filter(e => e.to === id).map(e => ({ e, other: e.from, dir: "in" })));
+}
+function buildLinksPanel() {
+  const lm = state.linkMode, box = document.getElementById("links");
+  box.innerHTML = "";
+  const h = document.createElement("h3");
+  h.textContent = "Links of " + lm.origin;
+  box.appendChild(h);
+  let lastDir = null;
+  lm.rows.forEach((row, i) => {
+    if (row.dir !== lastDir) {
+      const s = document.createElement("div");
+      s.className = "sect"; s.textContent = row.dir === "out" ? "Outgoing" : "Incoming";
+      box.appendChild(s);
+      lastDir = row.dir;
+    }
+    const st = styleOf(row.e.type);
+    const b = document.createElement("button");
+    b.className = "lrow"; b.dataset.i = i;
+    b.style.borderLeft = "3px solid " + st.color;
+    const ty = document.createElement("span");
+    ty.className = "etype"; ty.style.color = st.color; ty.textContent = row.e.type;
+    b.appendChild(ty);
+    b.appendChild(document.createTextNode(" " + (row.dir === "out" ? "→ " : "← ") + row.other + " " +
+      (nodeById[row.other].text || "").slice(0, 70)));
+    if (!viewSet.has(row.other)) {
+      const f = document.createElement("span"); f.className = "folded"; f.textContent = "  folded";
+      b.appendChild(f);
+    }
+    b.addEventListener("click", ev => {
+      ev.stopPropagation();
+      const origin = lm.origin, pos = lm.pos;
+      exitLinks(false);
+      pushHistory({ id: origin, pos });
+      state.selected = origin;
+      goTo(row.other);
+    });
+    box.appendChild(b);
+  });
+  box.classList.add("open");
+}
+function paintLinkFocus() {
+  const rows = [...document.querySelectorAll("#links .lrow")];
+  rows.forEach((el, i) => el.classList.toggle("kbd-focus", !!state.linkMode && i === state.linkMode.idx));
+  if (state.linkMode && rows[state.linkMode.idx]) rows[state.linkMode.idx].scrollIntoView({ block: "nearest" });
+}
+function showLinkEnd() {
+  const lm = state.linkMode, row = lm.rows[lm.idx];
+  const at = lm.atFar ? row.other : lm.origin;
+  state.linkTarget = lm.atFar ? lm.origin : row.other;
+  if (!viewSet.has(at) || state.folded.has(depthOf(at))) openPathTo(at);
+  state.selected = at;
+  render();
+  buildLinksPanel();
+  revealCard(at);
+  paintLinkFocus();
+}
+function enterLinks() {
+  const id = state.selected;
+  if (!id) return;
+  const rows = linkRowsFor(id);
+  if (!rows.length) { showHint("No links from " + id); return; }
+  state.linkMode = { origin: id, rows, idx: 0, atFar: false, pos: cardPos(id) };
+  if (state.edge) { state.edge = null; hideEdgePop(); }
+  showLinkEnd();
+}
+function moveLink(d) {
+  const lm = state.linkMode;
+  const i = Math.min(Math.max(lm.idx + d, 0), lm.rows.length - 1);
+  if (i === lm.idx && !lm.atFar) return;
+  lm.idx = i; lm.atFar = false;
+  showLinkEnd();
+}
+function flipLink() { state.linkMode.atFar = !state.linkMode.atFar; showLinkEnd(); }
+function exitLinks(land = true) {
+  const lm = state.linkMode;
+  state.linkMode = null;
+  state.linkTarget = null;
+  document.getElementById("links").classList.remove("open");
+  if (!lm) return;
+  if (land && lm.atFar) pushHistory({ id: lm.origin, pos: lm.pos });
+  if (land) render();
+}
+function cardPos(id) {
+  const el = document.querySelector('.card[data-id="' + id + '"]');
+  return el ? { top: el.getBoundingClientRect().top, x: window.scrollX } : null;
+}
+function pushHistory(entry) {
+  if (!entry) {
+    if (!state.selected) return;
+    entry = { id: state.selected, pos: cardPos(state.selected) };
+  }
+  const top = state.back[state.back.length - 1];
+  if (top && top.id === entry.id) top.pos = entry.pos || top.pos;
+  else state.back.push(entry);
+  if (state.back.length > 200) state.back.shift();
+  state.fwd.length = 0;
+  paintBack();
+}
+function goHistory(from, to) {
+  if (!from.length) return;
+  if (state.linkMode) exitLinks(false);
+  const entry = from.pop();
+  if (state.selected) to.push({ id: state.selected, pos: cardPos(state.selected) });
+  if (!viewSet.has(entry.id) || state.folded.has(depthOf(entry.id))) openPathTo(entry.id);
+  state.selected = entry.id;
+  if (state.edge) { state.edge = null; hideEdgePop(); }
+  render();
+  const now = cardPos(entry.id);
+  if (entry.pos && now) animateScrollTo(entry.pos.x, window.scrollY + now.top - entry.pos.top);
+  else revealCard(entry.id);
+  paintBack();
+}
+function paintBack() {
+  const b = document.getElementById("btnBack");
+  const top = state.back[state.back.length - 1];
+  b.style.display = top ? "" : "none";
+  if (top) b.textContent = "← " + top.id;
+}
+function sameDepthStep(d) {
+  const sel = state.selected;
+  const order = visualOrder();
+  if (!sel) { const first = order.find(id => depthOf(id) === 1) || order[0]; if (first) select(first); return; }
+  const same = order.filter(id => depthOf(id) === depthOf(sel));
+  const i = same.indexOf(sel);
+  if (i !== -1 && same[i + d]) select(same[i + d]);
+}
+
+// ---------- chrome: legend, popovers, keys ----------
+
+function buildLegend() {
+  const nodesRow = document.getElementById("legendNodeChips");
+  const types = [...new Set((G.nodes || []).filter(n => n.id !== "0").map(n => n.type))];
+  types.forEach(t => {
+    const c = document.createElement("span"); c.className = "chip";
+    const s = document.createElement("span"); s.className = "swatch"; s.style.background = STROKE[t] || "#6b7280";
+    c.appendChild(s); c.appendChild(document.createTextNode(t));
+    nodesRow.appendChild(c);
+  });
+  const edgesRow = document.getElementById("legendEdgeChips");
+  [...new Set(crossE.map(e => e.type))].forEach(t => {
+    const st = styleOf(t);
+    const c = document.createElement("span"); c.className = "chip";
+    const s = document.createElement("span"); s.className = "lswatch";
+    s.style.borderTopColor = st.color;
+    s.style.borderTopStyle = st.dash === "2 4" ? "dotted" : st.dash ? "dashed" : "solid";
+    c.appendChild(s); c.appendChild(document.createTextNode(t));
+    edgesRow.appendChild(c);
+  });
+}
+function closePops() {
+  ["help", "legend"].forEach(id => document.getElementById(id).classList.remove("open"));
+  ["btnHelp", "btnLegend"].forEach(id => document.getElementById(id).classList.remove("on"));
+}
+function togglePop(id, btn) {
+  const pop = document.getElementById(id), was = pop.classList.contains("open");
+  closePops();
+  if (!was) { pop.classList.add("open"); btn.classList.add("on"); }
+}
+
+function onKey(ev) {
+  const typing = ev.target && (ev.target.tagName === "INPUT" || ev.target.tagName === "TEXTAREA");
+  if (typing && ev.key === "Escape") {
+    ev.target.blur();
+    clearSearch();
+    return;
+  }
+  if (ev.ctrlKey && !ev.shiftKey && ev.key >= "0" && ev.key <= "9") {
+    ev.preventDefault();
+    if (state.linkMode) exitLinks();
+    if (ev.key === "0") foldToLayer(MAX_DEPTH);
+    else if (ev.altKey) focusToLayer(+ev.key);
+    else foldToLayer(+ev.key);
+    return;
+  }
+  if (ev.ctrlKey && !ev.altKey && (ev.key === "j" || ev.key === "J")) {
+    ev.preventDefault();
+    if (state.linkMode) exitLinks();
+    if (state.selected) toggleFold(state.selected);
+    return;
+  }
+  if (typing) return;
+  if (ev.altKey && (ev.key === "ArrowLeft" || ev.key === "ArrowRight")) {
+    ev.preventDefault();
+    if (ev.key === "ArrowLeft") goHistory(state.back, state.fwd);
+    else goHistory(state.fwd, state.back);
+    return;
+  }
+  if (ev.key === "Backspace") {
+    ev.preventDefault();
+    goHistory(state.back, state.fwd);
+    return;
+  }
+  if (ev.ctrlKey || ev.metaKey || ev.altKey) return;
+  if (state.linkMode) {
+    if (ev.key === "ArrowDown" || ev.key === "ArrowUp") { ev.preventDefault(); moveLink(ev.key === "ArrowDown" ? 1 : -1); }
+    else if (ev.key === "Enter") { ev.preventDefault(); flipLink(); }
+    else if (ev.key === "Escape") { if (document.querySelector(".pop.open")) closePops(); else exitLinks(); }
+    else if (ev.key === "ArrowLeft" || ev.key === "ArrowRight" || ev.key === " ") ev.preventDefault();
+    return;
+  }
+  const sel = state.selected;
+  switch (ev.key) {
+    case "ArrowDown":
+    case "ArrowUp":
+      ev.preventDefault();
+      sameDepthStep(ev.key === "ArrowDown" ? 1 : -1);
+      break;
+    case "ArrowLeft":
+      ev.preventDefault();
+      if (sel && parentOf[sel] && parentOf[sel] !== "0") select(parentOf[sel]);
+      break;
+    case "ArrowRight": {
+      ev.preventDefault();
+      if (!sel) { sameDepthStep(1); break; }
+      const ks = kids[sel] || [];
+      if (!ks.length) break;
+      if (!viewSet.has(ks[0]) || state.folded.has(depthOf(ks[0]))) {
+        keepAnchored(sel, () => {
+          state.collapsed.delete(sel); state.opened.add(sel);
+          if (state.searchSet) ks.forEach(k => state.searchSet.add(k));
+          state.folded.delete(depthOf(ks[0]));
+          render();
+        });
+      }
+      select(ks[0]);
+      break;
+    }
+    case " ":
+      ev.preventDefault();
+      break;
+    case "Enter":
+      ev.preventDefault();
+      enterLinks();
+      break;
+    case "Escape":
+      if (document.querySelector(".pop.open")) { closePops(); break; }
+      if (state.edge) { clearEdge(); break; }
+      if (sel) select(null);
+      break;
+  }
+}
+
+function init() {
+  document.title = (meta.title || "Untitled") + " · aligned";
+  document.getElementById("title").textContent = meta.title || "Untitled";
+  document.getElementById("srcname").textContent = meta.source || "";
+  document.getElementById("rootText").textContent = nodeById["0"] ? nodeById["0"].text : "";
+  document.getElementById("root").title = nodeById["0"] ? nodeById["0"].text : "";
+  buildLegend();
+  document.getElementById("btnHelp").addEventListener("click", ev => togglePop("help", ev.currentTarget));
+  document.getElementById("btnLegend").addEventListener("click", ev => togglePop("legend", ev.currentTarget));
+  document.getElementById("btnBack").addEventListener("click", () => goHistory(state.back, state.fwd));
+  document.getElementById("searchBox").addEventListener("input", ev => applySearch(ev.target.value));
+  document.getElementById("edgePop").addEventListener("click", ev => {
+    if (ev.target.closest("#edgePopClose")) return;
+    followEdge();
+  });
+  document.getElementById("edgePopClose").addEventListener("click", ev => { ev.stopPropagation(); clearEdge(); });
+  document.querySelector("main").addEventListener("mousedown", closePops);
+  document.querySelector("main").addEventListener("click", ev => {
+    if (ev.target.closest(".card, .bar, .edge-hit, .ch, .txt")) return;
+    if (state.linkMode) { exitLinks(); return; }
+    if (state.edge) clearEdge();
+    else if (state.selected) select(null);
+  });
+  window.addEventListener("wheel", hideEdgePop, { passive: true });
+  if (!PASS.length) {
+    document.getElementById("grid").textContent =
+      "This graph has no passage offsets. Run graph.py locate on it first.";
+    return;
+  }
+  render();
+  let pending = null;
+  const relayout = () => { cancelAnimationFrame(pending); pending = requestAnimationFrame(layoutOverlay); };
+  window.addEventListener("resize", () => { cancelAnimationFrame(pending); pending = requestAnimationFrame(render); });
+  if (window.ResizeObserver) new ResizeObserver(relayout).observe(document.getElementById("grid"));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(relayout);
+  document.addEventListener("keydown", onKey);
+}
+
+window.ALIGNED = {
+  state, render, visible: () => view.slice(), runsOf, anchorOf, visualOrder,
+  rowOf: id => rowOfPass[anchorOf(id)], crossEdges: () => crossE, depthOf
+};
+init();
+</script>
+</body>
+</html>

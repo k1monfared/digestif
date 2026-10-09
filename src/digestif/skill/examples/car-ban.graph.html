@@ -131,6 +131,13 @@
   }
   #edgePopClose:hover { background: #f1f5f9; color: var(--ink); }
   .edge-hit { pointer-events: stroke; }
+  .node.lnk-target rect { stroke: #f59e0b; stroke-width: 2.6; stroke-dasharray: 5 3; }
+  #hint {
+    position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 30;
+    background: #1f2937; color: #fff; font-size: 12.5px; padding: 7px 14px; border-radius: 8px;
+    opacity: 0; pointer-events: none; transition: opacity .15s;
+  }
+  #hint.open { opacity: .92; }
   @media (max-width: 720px) {
     #topbar { padding: 7px 10px; gap: 6px 8px; }
     #brand { flex: 1 1 100%; }
@@ -158,6 +165,7 @@
     <button id="btnAll">All layers</button>
     <button id="btnFit">Fit</button>
     <button id="btnReset">Reset</button>
+    <button id="btnBack" style="display: none" title="back to the previous node (Backspace or Alt+Left)"></button>
     <button id="btnHelp">Help</button>
     <button id="btnLegend">Legend</button>
     <input type="text" id="searchBox" placeholder="search ideas...">
@@ -179,12 +187,15 @@
     <span class="k">ctrl+= / ctrl+-</span><span>zoom in and out</span>
     <span class="k">drag</span><span>free pan in any direction</span>
     <span class="k">dblclick</span><span>fit view</span>
-    <span class="k">arrows</span><span>navigate, top to bottom order</span>
-    <span class="k">left</span><span>fold the branch, or go to parent</span>
-    <span class="k">right</span><span>unfold, go to first child</span>
-    <span class="k">space</span><span>fold or unfold selected branch</span>
-    <span class="k">enter</span><span>open the sidebar and step into it</span>
-    <span class="k">esc</span><span>back to the graph, close popovers</span>
+    <span class="k">up / down</span><span>move between nodes at the same depth</span>
+    <span class="k">left</span><span>go to the parent</span>
+    <span class="k">right</span><span>go to the first child, showing it if folded</span>
+    <span class="k">ctrl+j</span><span>fold or unfold the selected node</span>
+    <span class="k">enter</span><span>go into the node's links, up and down pick one</span>
+    <span class="k">enter on a link</span><span>follow it, enter again follows it back</span>
+    <span class="k">esc</span><span>leave the links on the end you are at, close popovers</span>
+    <span class="k">backspace, alt+left</span><span>back to the previous node you visited</span>
+    <span class="k">alt+right</span><span>forward again</span>
     <span class="k">ctrl+1..9</span><span>show that many layers</span>
     <span class="k">ctrl+0</span><span>unfold everything</span>
     <span class="k">ctrl+alt+1..9</span><span>focus the selected branch</span>
@@ -213,6 +224,7 @@
     <line x1="11" y1="3" x2="11" y2="15"></line>
   </svg>
 </button>
+<div id="hint"></div>
 <div id="edgePop">
   <div id="edgePopBody">
     <div id="edgePopType"></div>
@@ -260,7 +272,9 @@ const maxDepth = Math.max(1, ...GRAPH.nodes.map(n => depthOf(n.id)));
 let showLayers = Math.min(2, maxDepth + 1);
 let collapsed = new Set(), opened = new Set(), forceVisible = new Set();
 let hiddenNodeTypes = new Set(), hiddenEdgeTypes = new Set();
-let selected = null, searchQ = "", sideMode = false, sideIdx = 0;
+let selected = null, searchQ = "";
+let linkMode = null, linkTarget = null;
+const backStack = [], fwdStack = [];
 let dragMoved = false, textDragged = false;
 let edgeSelected = null;
 let z = 1;
@@ -550,8 +564,9 @@ function render() {
       const hit = svgEl("circle", { cx: r.w - 10, cy: 10, r: 11, fill: "transparent" });
       hit.addEventListener("click", ev => {
         ev.stopPropagation();
+        if (linkMode) exitLinks();
+        if (selected && selected !== n.id) pushHistory();
         selected = n.id;
-        sideMode = false;
         toggleFold(n.id);
         revealAnimated(n.id);
         refreshPanel();
@@ -564,6 +579,7 @@ function render() {
       else g.classList.add("dim");
     }
     if (selected === n.id) g.classList.add("selected");
+    if (linkTarget === n.id) g.classList.add("lnk-target");
     g.addEventListener("mouseenter", () => setEdgeFocus(n.id, true));
     g.addEventListener("mouseleave", () => setEdgeFocus(n.id, false));
     g.addEventListener("click", ev => {
@@ -644,7 +660,9 @@ function followEdge() {
   const target = edgeFollowTarget(edgeSelected);
   edgeSelected = null;
   hideEdgePop();
-  sideMode = false;
+  if (linkMode) exitLinks(false);
+  pushHistory();
+  openPathTo(target);
   selected = target;
   render();
   refreshPanel();
@@ -776,12 +794,8 @@ function jump(id) {
   edgeSelected = null;
   hideEdgePop();
   forceVisible.clear();
-  for (let p = parent.get(id); p !== undefined; p = parent.get(p)) {
-    collapsed.delete(p);
-    opened.add(p);
-  }
+  openPathTo(id);
   selected = id;
-  sideMode = false;
   render();
   revealAnimated(id);
   buildPanel(id);
@@ -790,7 +804,8 @@ function select(id) {
   if (!nodes.has(id)) return;
   edgeSelected = null;
   hideEdgePop();
-  sideMode = false;
+  if (linkMode) exitLinks(false);
+  if (selected && selected !== id) pushHistory();
   selected = id;
   render();
   revealAnimated(id);
@@ -858,7 +873,7 @@ function closePanel() {
   document.getElementById("panelToggle").classList.remove("on");
   wrap.style.right = "0px";
   updateCulling();
-  sideMode = false;
+  if (linkMode) exitLinks(false);
 }
 let panelW = 330;
 let panelMode = "excerpts";
@@ -874,9 +889,6 @@ function applyPanelWidth() {
   document.getElementById("panelHandle").style.right = (panelW - 7) + "px";
   wrap.style.right = mobile ? "0px" : panelW + "px";
   updateCulling();
-}
-function panelItems() {
-  return [...document.getElementById("panel").querySelectorAll(".linkrow, .srcbtn")];
 }
 const citing = new Map();
 GRAPH.nodes.forEach(n => (n.source || []).forEach(r => {
@@ -1010,14 +1022,132 @@ function buildPanel(id) {
     buildPanel(id);
     scrollToRef(el.id.replace("pass-", "¶"));
   }));
-  body.querySelectorAll("[data-jump]").forEach(b => b.addEventListener("click", () => jump(b.dataset.jump)));
+  body.querySelectorAll("[data-jump]").forEach(b => b.addEventListener("click", () => {
+    if (linkMode) { const origin = linkMode.origin; exitLinks(false); selected = origin; }
+    pushHistory();
+    jump(b.dataset.jump);
+  }));
   updateSourceHighlights(true);
 }
 function panelOpen() {
   return document.getElementById("panel").classList.contains("open");
 }
 function refreshPanel() {
+  if (linkMode) { buildPanel(linkMode.origin); paintLinkFocus(); return; }
   if (panelOpen() && selected) buildPanel(selected);
+}
+
+// ---------- links mode and history, shared model with the aligned view ----------
+
+function openPathTo(id) {
+  for (let p = parent.get(id); p !== undefined; p = parent.get(p)) {
+    collapsed.delete(p);
+    opened.add(p);
+  }
+}
+function linkRowsFor(id) {
+  return crossE.filter(e => e.from === id).map(e => ({ e, other: e.to }))
+    .concat(crossE.filter(e => e.to === id).map(e => ({ e, other: e.from })));
+}
+let hintTimer = null;
+function showHint(text) {
+  const h = document.getElementById("hint");
+  h.textContent = text;
+  h.classList.add("open");
+  clearTimeout(hintTimer);
+  hintTimer = setTimeout(() => h.classList.remove("open"), 1400);
+}
+function paintLinkFocus() {
+  const rows = [...document.querySelectorAll("#panel .linkrow")];
+  rows.forEach((el, i) => el.classList.toggle("kbd-focus", !!linkMode && i === linkMode.idx));
+  if (linkMode && rows[linkMode.idx]) rows[linkMode.idx].scrollIntoView({ block: "nearest" });
+}
+function showLinkEnd() {
+  const row = linkMode.rows[linkMode.idx];
+  const at = linkMode.atFar ? row.other : linkMode.origin;
+  edgeSelected = row.e;
+  linkTarget = linkMode.atFar ? linkMode.origin : row.other;
+  if (!vis.has(at)) openPathTo(at);
+  selected = at;
+  render();
+  revealAnimated(at);
+  paintLinkFocus();
+}
+function enterLinks() {
+  if (!selected) return;
+  const rows = linkRowsFor(selected);
+  if (!rows.length) { showHint("No links from " + (selected === "0" ? "the summary" : selected)); return; }
+  linkMode = { origin: selected, rows, idx: 0, atFar: false, pos: screenOf(selected) };
+  buildPanel(selected);
+  showLinkEnd();
+}
+function moveLink(d) {
+  const i = Math.min(Math.max(linkMode.idx + d, 0), linkMode.rows.length - 1);
+  if (i === linkMode.idx && !linkMode.atFar) return;
+  linkMode.idx = i;
+  linkMode.atFar = false;
+  showLinkEnd();
+}
+function flipLink() {
+  linkMode.atFar = !linkMode.atFar;
+  showLinkEnd();
+}
+function exitLinks(land = true) {
+  const lm = linkMode;
+  linkMode = null;
+  linkTarget = null;
+  edgeSelected = null;
+  if (!lm) return;
+  if (land && lm.atFar) pushHistory({ id: lm.origin, pos: lm.pos });
+  document.querySelectorAll("#panel .kbd-focus").forEach(el => el.classList.remove("kbd-focus"));
+  if (land) {
+    render();
+    if (panelOpen() && selected) buildPanel(selected);
+  }
+}
+function pushHistory(entry) {
+  if (!entry) {
+    if (!selected || !pos.has(selected)) return;
+    entry = { id: selected, pos: screenOf(selected) };
+  }
+  const top = backStack[backStack.length - 1];
+  if (top && top.id === entry.id) top.pos = entry.pos;
+  else backStack.push(entry);
+  if (backStack.length > 200) backStack.shift();
+  fwdStack.length = 0;
+  paintBack();
+}
+function goHistory(from, to) {
+  if (!from.length) return;
+  if (linkMode) exitLinks(false);
+  const entry = from.pop();
+  if (selected && pos.has(selected)) to.push({ id: selected, pos: screenOf(selected) });
+  edgeSelected = null;
+  hideEdgePop();
+  openPathTo(entry.id);
+  selected = entry.id;
+  render();
+  refreshPanel();
+  if (entry.pos && pos.has(entry.id)) {
+    const now = screenOf(entry.id);
+    animateScrollTo(wrap.scrollLeft + now.x - entry.pos.x, wrap.scrollTop + now.y - entry.pos.y);
+  } else {
+    revealAnimated(entry.id);
+  }
+  paintBack();
+}
+function paintBack() {
+  const b = document.getElementById("btnBack");
+  const top = backStack[backStack.length - 1];
+  b.style.display = top ? "" : "none";
+  if (top) b.textContent = "← " + (top.id === "0" ? "summary" : top.id);
+}
+function sameDepthStep(d) {
+  if (!selected) { select("0"); return; }
+  const order = visiblePreorder().filter(id => depthOf(id) === depthOf(selected));
+  const i = order.indexOf(selected);
+  const nxt = order[i + d];
+  if (i !== -1 && nxt) select(nxt);
 }
 function togglePanel() {
   if (panelOpen()) {
@@ -1104,6 +1234,7 @@ function init() {
   document.getElementById("btnHelp").addEventListener("click", ev => {
     togglePop("help", ev.currentTarget);
   });
+  document.getElementById("btnBack").addEventListener("click", () => goHistory(backStack, fwdStack));
   document.getElementById("btnLegend").addEventListener("click", ev => {
     togglePop("legend", ev.currentTarget);
   });
@@ -1227,7 +1358,8 @@ function init() {
   document.getElementById("btnFit").addEventListener("click", fitView);
   document.getElementById("btnReset").addEventListener("click", () => {
     collapsed.clear(); opened.clear(); hiddenNodeTypes.clear(); hiddenEdgeTypes.clear();
-    forceVisible.clear(); searchQ = ""; selected = null; sideMode = false;
+    forceVisible.clear(); searchQ = ""; selected = null;
+    if (linkMode) exitLinks(false);
     document.getElementById("searchBox").value = "";
     document.getElementById("searchCount").textContent = "";
     closePanel();
@@ -1271,94 +1403,76 @@ function init() {
     }
     if (ev.ctrlKey && !ev.shiftKey && ev.key >= "0" && ev.key <= "9") {
       ev.preventDefault();
+      if (linkMode) exitLinks();
       if (ev.key === "0") foldToLayer(maxDepth + 1);
       else if (ev.altKey) focusToLayer(+ev.key);
       else foldToLayer(+ev.key);
       return;
     }
+    if (ev.ctrlKey && !ev.altKey && (ev.key === "j" || ev.key === "J")) {
+      ev.preventDefault();
+      if (linkMode) exitLinks();
+      if (selected) toggleFold(selected);
+      return;
+    }
     if (typing) return;
-    if (sideMode) {
-      const items = panelItems();
-      if (ev.key === "Escape") {
-        sideMode = false;
-        panelItems().forEach(el => el.classList.remove("kbd-focus"));
-        return;
-      }
-      if (!items.length) return;
+    if (ev.altKey && (ev.key === "ArrowLeft" || ev.key === "ArrowRight")) {
+      ev.preventDefault();
+      if (ev.key === "ArrowLeft") goHistory(backStack, fwdStack);
+      else goHistory(fwdStack, backStack);
+      return;
+    }
+    if (ev.key === "Backspace") {
+      ev.preventDefault();
+      goHistory(backStack, fwdStack);
+      return;
+    }
+    if (ev.ctrlKey || ev.metaKey || ev.altKey) return;
+    if (linkMode) {
       if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
         ev.preventDefault();
-        sideIdx = ev.key === "ArrowDown"
-          ? Math.min(sideIdx + 1, items.length - 1)
-          : Math.max(sideIdx - 1, 0);
-        items.forEach((el, i) => el.classList.toggle("kbd-focus", i === sideIdx));
-        items[sideIdx].scrollIntoView({ block: "nearest" });
-        return;
-      }
-      if (ev.key === "Enter") {
+        moveLink(ev.key === "ArrowDown" ? 1 : -1);
+      } else if (ev.key === "Enter") {
         ev.preventDefault();
-        if (items[sideIdx]) items[sideIdx].click();
-        return;
+        flipLink();
+      } else if (ev.key === "Escape") {
+        if (document.querySelector(".pop.open")) closePops();
+        else exitLinks();
+      } else if (ev.key === "ArrowLeft" || ev.key === "ArrowRight" || ev.key === " ") {
+        ev.preventDefault();
       }
       return;
     }
     switch (ev.key) {
       case "ArrowDown":
-      case "ArrowUp": {
+      case "ArrowUp":
         ev.preventDefault();
-        if (!selected) { select("0"); break; }
-        const order = visiblePreorder();
-        const i = order.indexOf(selected);
-        if (i === -1) { if (order[0]) select(order[0]); break; }
-        const nxt = order[i + (ev.key === "ArrowDown" ? 1 : -1)];
-        if (nxt) select(nxt);
+        sameDepthStep(ev.key === "ArrowDown" ? 1 : -1);
         break;
-      }
-      case "ArrowLeft": {
+      case "ArrowLeft":
         ev.preventDefault();
-        if (!selected) break;
-        const kids = children.get(selected) || [];
-        if (kids.some(c => vis.has(c))) {
-          keepSelectedAnchored(() => {
-            collapsed.add(selected);
-            opened.delete(selected);
-            render();
-          });
-        } else if (parent.get(selected) !== undefined) {
-          select(parent.get(selected));
-        }
+        if (selected && parent.get(selected) !== undefined) select(parent.get(selected));
         break;
-      }
       case "ArrowRight": {
         ev.preventDefault();
-        if (!selected) break;
+        if (!selected) { select("0"); break; }
         const kids = children.get(selected) || [];
-        if (kids.length) {
+        if (!kids.length) break;
+        if (!vis.has(kids[0])) {
           collapsed.delete(selected);
           opened.add(selected);
           render();
-          select(kids[0]);
-        } else {
-          const order = visiblePreorder();
-          const i = order.indexOf(selected);
-          if (i !== -1 && i + 1 < order.length) select(order[i + 1]);
         }
+        select(kids[0]);
         break;
       }
       case " ":
         ev.preventDefault();
-        if (selected) toggleFold(selected);
         break;
-      case "Enter": {
+      case "Enter":
         ev.preventDefault();
-        if (!selected) select("0");
-        buildPanel(selected);
-        sideMode = true;
-        sideIdx = 0;
-        const items = panelItems();
-        items.forEach((el, i) => el.classList.toggle("kbd-focus", i === 0));
-        if (items[0]) items[0].scrollIntoView({ block: "nearest" });
+        enterLinks();
         break;
-      }
       case "Escape":
         if (document.getElementById("help").classList.contains("open") ||
             document.getElementById("legend").classList.contains("open")) {

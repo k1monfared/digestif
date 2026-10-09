@@ -1,13 +1,19 @@
 #!/usr/bin/env bash
-# Headless UI tests for the point-hierarchy viewer (requires playwright + chromium)
-set -euo pipefail
+# Headless UI tests for the graph viewer and the aligned reading view
+# (requires playwright + chromium, skips otherwise)
+set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-node "$SCRIPT_DIR/test_ui.js"
-code=$?
-if [[ $code -eq 2 ]]; then
-    echo "=== UI test skipped: playwright not available ==="
-    exit 0
-fi
-exit $code
+status=0
+for suite in test_ui.js test_aligned_ui.js; do
+    echo "### $suite"
+    node "$SCRIPT_DIR/$suite"
+    code=$?
+    if [[ $code -eq 2 ]]; then
+        echo "=== $suite skipped: playwright not available ==="
+    elif [[ $code -ne 0 ]]; then
+        status=$code
+    fi
+done
+exit $status
